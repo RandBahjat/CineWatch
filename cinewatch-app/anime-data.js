@@ -119,7 +119,6 @@ window._ANIME_DATA = [
       }
     ]
   },
-  
   {
     "title": "One Piece",
     "type": "TV Show",
@@ -162,307 +161,490 @@ window._ANIME_DATA = [
           {
             "episode": 1,
             "title": "I'm Luffy! The Man Who Will Become the Pirate King!",
-            "absoluteEpisode": 1
+            "absoluteEpisode": 1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734143.jpg",
+            "duration": "25m",
+            "overview": "A band of pirates led by Alvida plundered a ship, only to find a barrel which contains a strange boy named Luffy. Luffy is on a quest to find the legendary treasure \"One Piece\" and he befriends the ship's cabin-boy, Koby, who actually wants to become a marine officer. Luffy defeats Alvida and the two journey on in search of crewmates."
           },
           {
             "episode": 2,
             "title": "The Great Swordsman Appears! Pirate Hunter, Roronoa Zoro",
-            "absoluteEpisode": 2
+            "absoluteEpisode": 2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734144.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Koby arrive at Shell Island, a Marine base. They meet the bounty hunter Roronoa Zoro, held under arrest by the infamous marine, Captain Morgan, and his son Helmeppo."
           },
           {
             "episode": 3,
             "title": "Morgan VS Luffy! Who's This Beautiful Young Girl?",
-            "absoluteEpisode": 3
+            "absoluteEpisode": 3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734145.jpg",
+            "duration": "25m",
+            "overview": "Luffy convinces Zoro to join his crew, but they must first defeat Captain Morgan. After freeing the island from Morgan's oppressive rule, Koby is accepted as a marine while the other two continue on their journey."
           },
           {
             "episode": 4,
             "title": "Luffy's Past! The Red-haired Shanks appears",
-            "absoluteEpisode": 4
+            "absoluteEpisode": 4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734146.jpg",
+            "duration": "25m",
+            "overview": "Out on the sea, Luffy almost loses his hat and reflects on his past, and how a pirate named Shanks influenced him. Afterwards, Luffy meets Nami, and Buggy the Clown's men."
           },
           {
             "episode": 5,
             "title": "Fear, Mysterious Power! Pirate Clown Captain Buggy!",
-            "absoluteEpisode": 5
+            "absoluteEpisode": 5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734147.jpg",
+            "duration": "25m",
+            "overview": "In order to save herself and steal a map to the Grand Line, Nami tricks Luffy into allowing her to turn him over to Buggy."
           },
           {
             "episode": 6,
             "title": "Desperate Situation! Beast Tamer Mohji vs Luffy!",
-            "absoluteEpisode": 6
+            "absoluteEpisode": 6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734148.jpg",
+            "duration": "25m",
+            "overview": "Mohji and Richie show up for revenge after Buggy's humiliating defeat in the previous episode, and Luffy meets a small dog guarding his master's store, even though he knows that he is long dead."
           },
           {
             "episode": 7,
             "title": "Grand Duel! Zoro the Swordsman vs Cabaji the Acrobat!",
-            "absoluteEpisode": 7
+            "absoluteEpisode": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734149.jpg",
+            "duration": "25m",
+            "overview": "Enraged by the actions of Buggy's crew, the city's mayor rushes to fight Buggy himself, but the Straw Hat Pirates come to his rescue. Zoro fights Cabaji, despite still being wounded from his previous encounter with Buggy, while Luffy faces the clown pirate himself and Nami searches for the map to the Grand Line."
           },
           {
             "episode": 8,
             "title": "Who Will Win? Showdown Between the True Powers of the Devil!",
-            "absoluteEpisode": 8
+            "absoluteEpisode": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734150.jpg",
+            "duration": "25m",
+            "overview": "Buggy's link to Shanks is revealed, and when he rips the straw hat Shanks gave Luffy, his rage knows no bounds. Who will win in this clash between Devil Fruit users?"
           },
           {
             "episode": 9,
             "title": "The Honorable Liar? Captain Usopp!",
-            "absoluteEpisode": 9
+            "absoluteEpisode": 9,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734151.jpg",
+            "duration": "25m",
+            "overview": "With Nami forming an alliance with the crew as their navigator (though not as an actual member), the crew arrives at the Syrup Village in search of a proper ship, where they meet the town liar, Usopp, who too has ties to Shanks."
           },
           {
             "episode": 10,
             "title": "The Weirdest Guy Ever! Jango the Hypnotist!",
-            "absoluteEpisode": 10
+            "absoluteEpisode": 10,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734152.jpg",
+            "duration": "25m",
+            "overview": "When trying to convince his rich friend, Kaya, to give the Straw Hats a ship, Usopp is told to stay away from her by her caretaker, Klahadore. However, when Usopp and Luffy later see him conversing with a strange man, they learn of a plot to kill Kaya."
           },
           {
             "episode": 11,
             "title": "Expose the Plot! Pirate Butler, Captain Kuro!",
-            "absoluteEpisode": 11
+            "absoluteEpisode": 11,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734153.jpg",
+            "duration": "25m",
+            "overview": "After learning of Captain Kuro's evil plan, Usopp runs back to the village to warn Kaya, only to find that after all his years of lying no one believes him."
           },
           {
             "episode": 12,
             "title": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
-            "absoluteEpisode": 12
+            "absoluteEpisode": 12,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734154.jpg",
+            "duration": "25m",
+            "overview": "Usopp resolves to keep his story of pirates attacking the town a lie by making sure none reach it. Luffy, Zoro, Nami, and Usopp then try to keep the Black Cat Pirates at bay."
           },
           {
             "episode": 13,
             "title": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
-            "absoluteEpisode": 13
+            "absoluteEpisode": 13,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734155.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats manage to take out most of the opposing Black Cat Pirates, so Jango orders the Nyaban Brothers to attack. Meanwhile, after getting hypnotized by Jango, Luffy gets himself stuck under the collapsed mast of the Black Cat Pirates' ship."
           },
           {
             "episode": 14,
             "title": "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
-            "absoluteEpisode": 14
+            "absoluteEpisode": 14,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734156.jpg",
+            "duration": "25m",
+            "overview": "Captain Kuro himself arrives at the scene, and with Zoro too injured to fight, Luffy being incapacitated, and the other two being too weak to handle him, things seem hopeless. However, Kaya herself appears to bargain with Kuro."
           },
           {
             "episode": 15,
             "title": "Beat Kuro! Usopp the Man's Tearful Resolve!",
-            "absoluteEpisode": 15
+            "absoluteEpisode": 15,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734157.jpg",
+            "duration": "25m",
+            "overview": "Zoro and Buchi (of the Nyaban Brothers) face off once again as Luffy and Kuro begin their fight. Usopp orders the Usopp Pirates to run away with Kaya, but Jango goes after them. A flashback reveals how Captain Kuro faked his death with Captain Morgan and how he became Kaya's butler."
           },
           {
             "episode": 16,
             "title": "Protect Kaya! The Usopp Pirates' Great Efforts!",
-            "absoluteEpisode": 16
+            "absoluteEpisode": 16,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734158.jpg",
+            "duration": "25m",
+            "overview": "As the fight between Luffy and Kuro is close to an end, the Usopp Pirates do their best to avoid Jango."
           },
           {
             "episode": 17,
             "title": "Anger Explosion! Kuro vs. Luffy! How it Ends!",
-            "absoluteEpisode": 17
+            "absoluteEpisode": 17,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734159.jpg",
+            "duration": "25m",
+            "overview": "Kuro's ultimate attack, \"Shakushi\", attacks everything in the area, whether friend or foe, and Luffy becomes enraged by his lack of regard for his crew. Will Luffy's determination overcome Kuro's sheer speed?"
           },
           {
             "episode": 18,
             "title": "You're the Weird Creature! Gaimon and His Strange Friends!",
-            "absoluteEpisode": 18
+            "absoluteEpisode": 18,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734160.jpg",
+            "duration": "25m",
+            "overview": "With Usopp now in the crew and a new ship, the Going Merry, under their command, the Straw Hats head to an island said to hold a fabled treasure, only to encounter a strange man stuck in a treasure box that has also been looking for this treasure."
           },
           {
             "episode": 19,
             "title": "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
-            "absoluteEpisode": 19
+            "absoluteEpisode": 19,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734161.jpg",
+            "duration": "25m",
+            "overview": "While Usopp &amp; Luffy fool around with the ship's cannon one day, Zoro dreams about his childhood and the promise he made to Kuina."
           },
           {
             "episode": 20,
             "title": "Famous Cook! Sanji of the Sea Restaurant!",
-            "absoluteEpisode": 20
+            "absoluteEpisode": 20,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734162.jpg",
+            "duration": "25m",
+            "overview": "The crew meets Johnny and Yosaku, Zoro's former companions, and they set sail for the Baratie restaurant in search of a cook."
           },
           {
             "episode": 21,
             "title": "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
-            "absoluteEpisode": 21
+            "absoluteEpisode": 21,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734163.jpg",
+            "duration": "25m",
+            "overview": "Sanji, a cook at the Baratie, helps a starving pirate named Gin. Luffy begins his job as a waiter to pay for the damage he did to the Baratie, and tries to convince Sanji to join his crew."
           },
           {
             "episode": 22,
             "title": "The Strongest Pirate Fleet! Commodore Don Krieg!",
-            "absoluteEpisode": 22
+            "absoluteEpisode": 22,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734164.jpg",
+            "duration": "25m",
+            "overview": "Gin returns to the Baratie with his also-starving captain, Don Krieg, to whom Sanji once more gives food, but Don Krieg betrays the cook once he regains his energy."
           },
           {
             "episode": 23,
             "title": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
-            "absoluteEpisode": 23
+            "absoluteEpisode": 23,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734165.jpg",
+            "duration": "25m",
+            "overview": "It is revealed that Chef Zeff was a great pirate known as Red Leg Zeff. Gin explains the catastrophe the fleet met in Grand Line when they encountered Hawk-Eyes Mihawk, and Krieg attempts to take control of the Baratie."
           },
           {
             "episode": 24,
             "title": "Hawk-Eye Mihawk! The Great Swordsman Zoro Falls At Sea!",
-            "absoluteEpisode": 24
+            "absoluteEpisode": 24,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734166.jpg",
+            "duration": "25m",
+            "overview": "As Nami steals the Going Merry, Mihawk has returned to finish the job, but Zoro challenges him to a duel in order to achieve his dream."
           },
           {
             "episode": 25,
             "title": "The Deadly Foot Technique Bursts Forth! Sanji vs. The Invincible Pearl!",
-            "absoluteEpisode": 25
+            "absoluteEpisode": 25,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734167.jpg",
+            "duration": "25m",
+            "overview": "Mihawk leaves after defeating Zoro, so Krieg continues his invasion and has Pearl, one of his stronger crewmates, attack, and Sanji reveals his fighting skills. Meanwhile Johnny and Yosaku leave with Usopp and the wounded Zoro to go after Nami."
           },
           {
             "episode": 26,
             "title": "Zeff and Sanji's Dream! The Illusory All Blue!",
-            "absoluteEpisode": 26
+            "absoluteEpisode": 26,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734168.jpg",
+            "duration": "25m",
+            "overview": "With Zeff held captive by Gin, Sanji has no choice but to take Pearl's hits, and he reflects on why Zeff means so much to him."
           },
           {
             "episode": 27,
             "title": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
-            "absoluteEpisode": 27
+            "absoluteEpisode": 27,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734169.jpg",
+            "duration": "25m",
+            "overview": "Gin finishes off Pearl, claiming that he wants to kill Sanji himself. Still wounded, Sanji faces Gin while Luffy attacks Don Krieg."
           },
           {
             "episode": 28,
             "title": "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
-            "absoluteEpisode": 28
+            "absoluteEpisode": 28,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734171.jpg",
+            "duration": "25m",
+            "overview": "When Gin refuses to kill Sanji, Krieg uses a poison gas on him. Luffy seems to have the advantage in the fight until Krieg pulls out his explosive Battle Spear."
           },
           {
             "episode": 29,
             "title": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
-            "absoluteEpisode": 29
+            "absoluteEpisode": 29,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734172.jpg",
+            "duration": "25m",
+            "overview": "Even after taking several hits from the Battle Spear, Luffy refuses to give up."
           },
           {
             "episode": 30,
             "title": "Set Sail! The Seafaring Cook Sets Off With Luffy!",
-            "absoluteEpisode": 30
+            "absoluteEpisode": 30,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734173.jpg",
+            "duration": "25m",
+            "overview": "After the battle, Gin decides to go back to the Grand Line with Krieg despite still being poisoned, and Sanji makes the difficult decision on whether to stay or to go with Luffy just as Yosaku comes back with news that he knows where Nami is."
           },
           {
             "episode": 31,
             "title": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
-            "absoluteEpisode": 31
+            "absoluteEpisode": 31,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734389.jpg",
+            "duration": "25m",
+            "overview": "The crew chases after Nami, who stole their ship, and Yosaku takes time during the trip to explain about Arlong and his Fishmen to Luffy and Sanji. Meanwhile, Usopp, Johnny, and Zoro arrive at the island Nami docked at."
           },
           {
             "episode": 32,
             "title": "Witch of Cocoyashi Village! Arlong's Female Leader!",
-            "absoluteEpisode": 32
+            "absoluteEpisode": 32,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734390.jpg",
+            "duration": "25m",
+            "overview": "Zoro is captured by the fishmen after Usopp and Johnny ditch him, and it's revealed that Nami was part of Arlong's crew the entire time. When a group of Fishmen attack Cocoyashi Village, Usopp comes to the rescue."
           },
           {
             "episode": 33,
             "title": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
-            "absoluteEpisode": 33
+            "absoluteEpisode": 33,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734392.jpg",
+            "duration": "25m",
+            "overview": "After Zoro escapes with Nami's help, she tries to prove her loyalty to the Arlong Pirates by appearing to kill Usopp. Meanwhile, Luffy's group finally arrives at the island."
           },
           {
             "episode": 34,
             "title": "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
-            "absoluteEpisode": 34
+            "absoluteEpisode": 34,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734393.jpg",
+            "duration": "25m",
+            "overview": "Johnny tells the others about Nami killing Usopp, and Luffy does not believe them until Nami appears herself and confirms it. She tells them to stay out of her business and leave without her, but Luffy stubbornly decides to stay on the island. Usopp returns, revealing that Nami only pretended to kill him, and Nami's sister, Nojiko, starts to explain why Nami is acting the way she is."
           },
           {
             "episode": 35,
             "title": "Untold Past! Female Warrior Bellemere!",
-            "absoluteEpisode": 35
+            "absoluteEpisode": 35,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734394.jpg",
+            "duration": "25m",
+            "overview": "Nojiko starts her story about Nami's childhood and their adopted mother, Bellemere. Despite being poor and none of them being related by blood, they had a happy life."
           },
           {
             "episode": 36,
             "title": "Survive! Mother Bellemere and Nami's Bond!",
-            "absoluteEpisode": 36
+            "absoluteEpisode": 36,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734395.jpg",
+            "duration": "25m",
+            "overview": "Nojiko continues her story, explaining how their life was ruined when the Arlong Pirates first took over the village."
           },
           {
             "episode": 37,
             "title": "Luffy Rises! Result of the Broken Promise!",
-            "absoluteEpisode": 37
+            "absoluteEpisode": 37,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734396.jpg",
+            "duration": "25m",
+            "overview": "When a marine officer under Arlong's pay confiscates all the money Nami stole over the years, in order to one day buy the village from Arlong, the villagers decide that enough is enough and fight back, despite Nami's pleads that they do not and that they'd all be killed. Upon seeing Nami's sorrow, the Straw Hats head for Arlong Park."
           },
           {
             "episode": 38,
             "title": "Luffy in Big Trouble! Fishmen vs. The Luffy Pirates!",
-            "absoluteEpisode": 38
+            "absoluteEpisode": 38,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734397.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats face the Fishmen themselves as the villagers watch from the sidelines."
           },
           {
             "episode": 39,
             "title": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
-            "absoluteEpisode": 39
+            "absoluteEpisode": 39,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734398.jpg",
+            "duration": "25m",
+            "overview": "Arlong has trapped Luffy in the ocean and Zoro faces the six-sword wielding octopus Hatchan."
           },
           {
             "episode": 40,
             "title": "Proud Warriors! Sanji and Usopp's Fierce Battles!",
-            "absoluteEpisode": 40
+            "absoluteEpisode": 40,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734399.jpg",
+            "duration": "25m",
+            "overview": "With Hatchan defeated, two of the fishmen battle Sanji and Usopp. Things look grim for Sanji as he attempts to face Kuroobi underwater, and Usopp gets the chance to prove that he too is a brave warrior."
           },
           {
             "episode": 41,
             "title": "Luffy at Full Power! Nami's Determination and the Straw Hat!",
-            "absoluteEpisode": 41
+            "absoluteEpisode": 41,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734400.jpg",
+            "duration": "25m",
+            "overview": "Arlong's officers have been defeated, but Sanji and Zoro prove to be no match for Arlong in their current state. However, with Luffy finally free, he just may be able to defeat the \"most wicked man in the East Blue\". Meanwhile, Nami finally gathers the courage to face Arlong."
           },
           {
             "episode": 42,
             "title": "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
-            "absoluteEpisode": 42
+            "absoluteEpisode": 42,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734401.jpg",
+            "duration": "25m",
+            "overview": "Luffy returns to the fight, and the battle with Arlong versus Luffy begins."
           },
           {
             "episode": 43,
             "title": "End of the Fishman Empire! Nami's My Friend!",
-            "absoluteEpisode": 43
+            "absoluteEpisode": 43,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734402.jpg",
+            "duration": "25m",
+            "overview": "The battle spreads into Arlong Park itself and Arlong is no longer holding back."
           },
           {
             "episode": 44,
             "title": "Setting Out with a Smile! Farewell, Hometown Cocoyashi Village!",
-            "absoluteEpisode": 44
+            "absoluteEpisode": 44,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734403.jpg",
+            "duration": "25m",
+            "overview": "Arlong's reign of terror is over, and no one has anything on their mind except to party. As the crew celebrates, Nami reflects on her hometown and decides to officially join the Straw Hat Pirates."
           },
           {
             "episode": 45,
             "title": "Bounty! Straw Hat Luffy Becomes Known to the World!",
-            "absoluteEpisode": 45
+            "absoluteEpisode": 45,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734404.jpg",
+            "duration": "25m",
+            "overview": "As a result of defeating Buggy, Krieg and Arlong, Luffy now has the highest bounty in all of East Blue. News quickly spreads to Shanks, who celebrates Luffy's arrival into the world of pirates by partying with Mihawk, despite already being severely hungover."
           },
           {
             "episode": 46,
             "title": "Chase Straw Hat! Little Buggy's Big Adventure!",
-            "absoluteEpisode": 46
+            "absoluteEpisode": 46,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734405.jpg",
+            "duration": "25m",
+            "overview": "After his fight with Luffy, Buggy was sent flying to another island with several body parts missing. Thus, Buggy begins his journey to find his crew and his body parts, making some unlikely friends."
           },
           {
             "episode": 47,
             "title": "The Wait is Over! The Return of Captain Buggy!",
-            "absoluteEpisode": 47
+            "absoluteEpisode": 47,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734406.jpg",
+            "duration": "25m",
+            "overview": "With Buggy assumed to be dead, his crew fights over who will be the new captain, only to be captured by a tribe of cannibals."
           },
           {
             "episode": 48,
             "title": "The Town of the Beginning and the End! Landfall at Logue Town!",
-            "absoluteEpisode": 48
+            "absoluteEpisode": 48,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734407.jpg",
+            "duration": "25m",
+            "overview": "The crew arrives at the last large town before the entrance to the Grand Line--Loguetown, the place where Gold Roger was both born and executed, where they stock up on supplies and sightsee. As Luffy heads for the execution platform where Roger was killed, old enemies are searching for him."
           },
           {
             "episode": 49,
             "title": "Zoro's New Swords and the Woman Sergeant Major!",
-            "absoluteEpisode": 49
+            "absoluteEpisode": 49,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734408.jpg",
+            "duration": "25m",
+            "overview": "While searching for new swords to replace the ones shattered by Mihawk, Zoro meets a woman named Tashigi, who looks exactly like an older Kuina, who then helps him look."
           },
           {
             "episode": 50,
             "title": "Usopp vs. Daddy the Parent! Showdown at High!",
-            "absoluteEpisode": 50
+            "absoluteEpisode": 50,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734409.jpg",
+            "duration": "25m",
+            "overview": "Usopp manages to anger the daughter of bounty hunter Daddy the Father, and finds his own life at stake. When Daddy discovers that Usopp is the son of Yasopp, the only man to beat him, he challenges him to a duel."
           },
           {
             "episode": 51,
             "title": "Fiery Cooking Battle? Sanji vs. The Beautiful Chef!",
-            "absoluteEpisode": 51
+            "absoluteEpisode": 51,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734410.jpg",
+            "duration": "25m",
+            "overview": "In order to win a rare fish, Sanji enters a cooking contest and faces a woman named Carmen."
           },
           {
             "episode": 52,
             "title": "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
-            "absoluteEpisode": 52
+            "absoluteEpisode": 52,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734411.jpg",
+            "duration": "25m",
+            "overview": "Luffy arrives at the execution platform only to be caught in a trap by Buggy and Alvida."
           },
           {
             "episode": 53,
             "title": "The Legend Has Started! Head for the Grand Line!",
-            "absoluteEpisode": 53
+            "absoluteEpisode": 53,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734412.jpg",
+            "duration": "25m",
+            "overview": "Miraculously saved from death by an unnatural green gust and a lightning bolt to Buggy, the Straw Hats rush out of Loguetown, only for Zoro to be stopped by Tashigi and Luffy to be stopped by Captain Smoker."
           },
           {
             "episode": 54,
             "title": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
-            "absoluteEpisode": 54
+            "absoluteEpisode": 54,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734419.jpg",
+            "duration": "25m",
+            "overview": "On a stormy night a girl called Apis escapes from the Marines and arrives at Straw hat's ship, but the girl upon knowing that they are pirates begins to hide some of the reasons which she is being wanted by the Marines. As the Straw Hats escape from the Marines, they get caught in the Calm Belt."
           },
           {
             "episode": 55,
             "title": "Miraculous Creature! Apis's Secret and The Legendary Island!",
-            "absoluteEpisode": 55
+            "absoluteEpisode": 55,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734420.jpg",
+            "duration": "25m",
+            "overview": "The Calm Belt is revealed to have no winds or currents as well as being the home of many giant sea kings. Apis forms a plan with Luffy's help and escapes the sea kings by riding with one's sneeze. Later, the crew reaches Warship Island, where they listen to the soporific story of the island's creation. After following Apis into a cave where a dragon is hidden, Luffy and Nami find the reason why Apis is being chased."
           },
           {
             "episode": 56,
             "title": "Eric Attacks! Great Escape From Warship Island!",
-            "absoluteEpisode": 56
+            "absoluteEpisode": 56,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734421.jpg",
+            "duration": "25m",
+            "overview": "Now that the crew is informed about the reasons for which Apis was followed, they hurry to escape the island so Ryuuji could be saved, but they meet with a foe that wants Ryuuji to himself. Zoro and Usopp bring the ship to a thin rock at the side while Nami and Apis get Ryuuji onto a cart. Luffy and Sanji fight the Marines to buy time for all preparations. In the end, the ship pulls the cart away on the search for Lost Island."
           },
           {
             "episode": 57,
             "title": "A Solitary Island in the Distant Sea! The Legendary Lost Island!",
-            "absoluteEpisode": 57
+            "absoluteEpisode": 57,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734422.jpg",
+            "duration": "25m",
+            "overview": "After arriving to what might seemed as the Lost Island the Straw hats where looking for, they find an old Temple with paintings that might indicate where the Lost Island really is, and also Eric who has been following them throughout the sea."
           },
           {
             "episode": 58,
             "title": "Showdown in the Ruins! Tense Zoro vs. Eric!",
-            "absoluteEpisode": 58
+            "absoluteEpisode": 58,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734423.jpg",
+            "duration": "25m",
+            "overview": "Zoro is left fighting with Eric while Luffy and the gang run to the ship in order to get to Lost Island, but only find more problems."
           },
           {
             "episode": 59,
             "title": "Luffy, Completely Surrounded! Commodore Nelson's Secret Strategy!",
-            "absoluteEpisode": 59
+            "absoluteEpisode": 59,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734424.jpg",
+            "duration": "25m",
+            "overview": "At last Admiral Nelson has seen through the ambitions of Eric, but takes it a little too personally and now the mystical dragon's life is in danger."
           },
           {
             "episode": 60,
             "title": "Through the Sky They Soar! The 1000 Year Legend Lives Again!",
-            "absoluteEpisode": 60
+            "absoluteEpisode": 60,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734425.jpg",
+            "duration": "25m",
+            "overview": "With his last breath, Ryuuji calls all his fellow dragons, and the Lost Island re-surfaced. Meanwhile Luffy takes out Admiral Nelson and his gang."
           },
           {
             "episode": 61,
             "title": "An Angry Showdown! Cross the Red Line!",
-            "absoluteEpisode": 61
+            "absoluteEpisode": 61,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734426.jpg",
+            "duration": "25m",
+            "overview": "After leaving Warship Island the Going Merry is now towards the Grand Line, and the crew now returns to the Great Adventure."
           }
         ]
       },
@@ -472,82 +654,130 @@ window._ANIME_DATA = [
           {
             "episode": 62,
             "title": "The First Line of Defense? The Giant Whale Laboon Appears!",
-            "absoluteEpisode": 62
+            "absoluteEpisode": 62,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734465.jpg",
+            "duration": "25m",
+            "overview": "Upon entering the Grand Line, the ship is swallowed by a giant whale, inside of which they discover a strange place. In addition, they are not the only ones there."
           },
           {
             "episode": 63,
             "title": "A Promise Between Men! Luffy and the Whale Vow to Meet Again!",
-            "absoluteEpisode": 63
+            "absoluteEpisode": 63,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734466.jpg",
+            "duration": "25m",
+            "overview": "After hearing the story of Laboon the whale, Luffy comes up with a clever solution to his problems. From Laboon's caretaker, Crocus, the crew learns more about the Grand Line and how to navigate through it, since compasses are useless there."
           },
           {
             "episode": 64,
             "title": "A Town that Welcomes Pirates? Setting Foot on Whisky Peak!",
-            "absoluteEpisode": 64
+            "absoluteEpisode": 64,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734467.jpg",
+            "duration": "25m",
+            "overview": "Luffy and friends arrive at Whisky Peak, a town of pirate-lovers who hold them a feast."
           },
           {
             "episode": 65,
             "title": "Explosion! The Three Swords Style! Zoro vs. Baroque Works!",
-            "absoluteEpisode": 65
+            "absoluteEpisode": 65,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734468.jpg",
+            "duration": "25m",
+            "overview": "Zoro battles a hundred members of Baroque Works, and discovers there is more to them than meets the eye."
           },
           {
             "episode": 66,
             "title": "All Out Battle! Luffy vs. Zoro, Mysterious Grand Duel!",
-            "absoluteEpisode": 66
+            "absoluteEpisode": 66,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734469.jpg",
+            "duration": "25m",
+            "overview": "Luffy, who does not realize the town is full of bounty hunters, engages in a battle with Zoro after he discovers that Zoro attacked the townsfolk, while Mr. 5 and Miss Valentine head for Princess Vivi."
           },
           {
             "episode": 67,
             "title": "Deliver Princess Vivi! The Luffy Pirates Set Sail!",
-            "absoluteEpisode": 67
+            "absoluteEpisode": 67,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734470.jpg",
+            "duration": "25m",
+            "overview": "Luffy's crew manages to become targets of Crocodile, one of the Shichibukai, and decide to help Princess Vivi. They also meet Miss All-Sunday, the second strongest member of Baroque Works and partner of Crocodile."
           },
           {
             "episode": 68,
             "title": "Try Hard, Coby! Coby and Helmeppo's Struggles in the Marines!",
-            "absoluteEpisode": 68
+            "absoluteEpisode": 68,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734471.jpg",
+            "duration": "25m",
+            "overview": "As Luffy and his crew are sailing in the Grand Line, Koby and Helmeppo are stuck doing odd-jobs for the marines back in East Blue, and encounter Vice-Admiral Garp."
           },
           {
             "episode": 69,
             "title": "Coby and Helmeppo's Resolve! Vice-Admiral Garp's Parental Affection!",
-            "absoluteEpisode": 69
+            "absoluteEpisode": 69,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734472.jpg",
+            "duration": "25m",
+            "overview": "Vice Admiral Garp mentors Koby and Helmeppo to become marines."
           },
           {
             "episode": 70,
             "title": "An Ancient Island! The Shadow Hiding in Little Garden!",
-            "absoluteEpisode": 70
+            "absoluteEpisode": 70,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734473.jpg",
+            "duration": "25m",
+            "overview": "Luffy and friends land on Little Garden, a prehistoric island inhabited by dinosaurs and giants."
           },
           {
             "episode": 71,
             "title": "Huge Duel! The Giants Dorry and Broggy!",
-            "absoluteEpisode": 71
+            "absoluteEpisode": 71,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734474.jpg",
+            "duration": "25m",
+            "overview": "Nami and Usopp meet a giant named Brogy, while Luffy and Vivi encounter Brogy's rival, Dorry. The Straw Hats little suspect that Officer Agents of Baroque Works are on their tail."
           },
           {
             "episode": 72,
             "title": "Luffy Gets Angry! A Dirty Trick Violates the Sacred Duel!",
-            "absoluteEpisode": 72
+            "absoluteEpisode": 72,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734475.jpg",
+            "duration": "25m",
+            "overview": "Dorry, critically injured by exploding ale, blames the Straw Hats. Luffy is enraged that someone would pull such a cowardly trick to sabotage the giants' honorable duel."
           },
           {
             "episode": 73,
             "title": "Broggy's Bitter Tears of Victory! The Conclusion of Elbaf!",
-            "absoluteEpisode": 73
+            "absoluteEpisode": 73,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734476.jpg",
+            "duration": "25m",
+            "overview": "Luffy tries in vain to convince the injured Dorry not to fight Brogy. The Officer Agents who sabotaged Dorry's ale further tamper with the giants' duel."
           },
           {
             "episode": 74,
             "title": "The Devilish Candle! Tears of Regret and Tears of Anger!",
-            "absoluteEpisode": 74
+            "absoluteEpisode": 74,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734477.jpg",
+            "duration": "25m",
+            "overview": "Having subdued the giants, Baroque Works makes their move. Mr. 3 introduces Zoro, Nami, Vivi, and Brogy to the slow torture of becoming living statues of wax."
           },
           {
             "episode": 75,
             "title": "A Hex on Luffy! Colors Trap!",
-            "absoluteEpisode": 75
+            "absoluteEpisode": 75,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734478.jpg",
+            "duration": "25m",
+            "overview": "Luffy attempts to rescue his friends but only accelerates the deadly waxing process. To make matters worse, Miss Goldenweek interferes and reveals her own terrifying ability."
           },
           {
             "episode": 76,
             "title": "Time to Fight Back! Usopp�s Quick Thinking and Fire Star!",
-            "absoluteEpisode": 76
+            "absoluteEpisode": 76,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734479.jpg",
+            "duration": "25m",
+            "overview": "Usopp frees Luffy from Miss Goldenweek's control. With Karoo's help, Usopp and Luffy rescue the others, who take on Mr. 5 and Miss Valentine. Luffy and Karoo pursue Mr. 3 and Miss Goldenweek into the forest."
           },
           {
             "episode": 77,
             "title": "Farewell Giant Island! Head for Alabasta!",
-            "absoluteEpisode": 77
+            "absoluteEpisode": 77,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734480.jpg",
+            "duration": "25m",
+            "overview": "After having a pleasant chat with Mr. 0 and encountering the \"Unluckies\", Sanji retrieves an Eternal Pose for Arabasta. The crew leaves Little Garden and sets sail for Arabasta."
           }
         ]
       },
@@ -557,72 +787,114 @@ window._ANIME_DATA = [
           {
             "episode": 78,
             "title": "Nami's Sick? Beyond the Snow Falling on the Sea!",
-            "absoluteEpisode": 78
+            "absoluteEpisode": 78,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734481.jpg",
+            "duration": "25m",
+            "overview": "Nami is sick, but the crew does not have a doctor to help her."
           },
           {
             "episode": 79,
             "title": "A Raid! The Tin Tyrant and Tin Plate Wapol!",
-            "absoluteEpisode": 79
+            "absoluteEpisode": 79,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734482.jpg",
+            "duration": "25m",
+            "overview": "While looking for a doctor, the crew meets the pirate Wapol, who attacks them, but only makes Luffy send him flying. Meanwhile Smoker manages to intercept the conversation between Mr. 0 and Sanji and plans to go to Arabasta. Back with the crew they arrive at last to an island only to find out they are not welcome."
           },
           {
             "episode": 80,
             "title": "An Island without Doctors? Adventure in a Nameless Land!",
-            "absoluteEpisode": 80
+            "absoluteEpisode": 80,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734483.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat crew manages to gain the trust of the people that attacked them, and are taken to the village, except for Zoro and Karoo, who guard the ship. Luffy and Sanji must take Nami to the island's sole doctor who lives on a mountain-top. Vivi and Usopp discover the past of the island, and about the pirate Wapol from Dalton."
           },
           {
             "episode": 81,
             "title": "Are You Happy? The Doctor Called Witch!",
-            "absoluteEpisode": 81
+            "absoluteEpisode": 81,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734484.jpg",
+            "duration": "25m",
+            "overview": "While Sanji and Luffy fight off the wilderness, the islander's worst nightmare turns true, as Wapol returns to the island. The doctor is discovered to be on the other side of the island, and Usopp, Vivi and Dalton rush to find her. Dalton however returns as he hears of Wapol's return."
           },
           {
             "episode": 82,
             "title": "Dalton's Resolve! Wapol's Corps Lands on the Island!",
-            "absoluteEpisode": 82
+            "absoluteEpisode": 82,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734772.jpg",
+            "duration": "25m",
+            "overview": "Dalton faces Wapol, but only gets himself hit by arrows thrown by his former comrade Chess. An avalanche stops the battle, but injures Sanji. Luffy must carry both Nami and Sanji to the doctor, and begins his ascent."
           },
           {
             "episode": 83,
             "title": "The Island Where Snow Lives! Climb the Drum Rockies!",
-            "absoluteEpisode": 83
+            "absoluteEpisode": 83,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734773.jpg",
+            "duration": "25m",
+            "overview": "The Lapahn help Luffy escape from Wapol, giving him enough time to climb to the castle where doctor Kureha lives. Vivi, Usopp and Zoro deal with the king's army in order to save Dalton. The recovering Nami meets a strange creature."
           },
           {
             "episode": 84,
             "title": "Blue-nosed Reindeer! Chopper's Secret!",
-            "absoluteEpisode": 84
+            "absoluteEpisode": 84,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734774.jpg",
+            "duration": "25m",
+            "overview": "Nami asks Chopper to join the crew, but he is not interested. Kureha tells Nami some of what was Chopper's background. After realizing the abilities that Chopper has, Luffy is eager to make him join the crew."
           },
           {
             "episode": 85,
             "title": "An Outcast's Dream! Hiriluk the Quack!",
-            "absoluteEpisode": 85
+            "absoluteEpisode": 85,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734775.jpg",
+            "duration": "25m",
+            "overview": "Doctorine continues to tell how Chopper lived his life and how the quack doctor Hiriluk took care of him."
           },
           {
             "episode": 86,
             "title": "Hiriluk's Cherry Blossoms and the Will that Gets Carried On!",
-            "absoluteEpisode": 86
+            "absoluteEpisode": 86,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734777.jpg",
+            "duration": "25m",
+            "overview": "More of Chopper's past is revealed, including the fate of doctor Hiriluk and Wapol's cruelties as the king. Meanwhile, Wapol reaches the castle where the crew is residing."
           },
           {
             "episode": 87,
             "title": "Fight Wapol's Crew! The Power of the Munch Munch Fruit!",
-            "absoluteEpisode": 87
+            "absoluteEpisode": 87,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734779.jpg",
+            "duration": "25m",
+            "overview": "Wapol is determined to bring down Hiriluk's flag, and to do that, he engages Sanji, Luffy and Chopper in a fight."
           },
           {
             "episode": 88,
             "title": "Zoan-type Devil Fruit! Chopper's Seven-form Transformation!",
-            "absoluteEpisode": 88
+            "absoluteEpisode": 88,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734780.jpg",
+            "duration": "25m",
+            "overview": "Chopper demonstrates the abilities of Rumble Balls when fighting Chessmarimo. Dalton is uncovered from the avalanche."
           },
           {
             "episode": 89,
             "title": "When the Kingdom's Rule Ends! The Flag of Faith Flies Forever!",
-            "absoluteEpisode": 89
+            "absoluteEpisode": 89,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734782.jpg",
+            "duration": "25m",
+            "overview": "After trying every trick in the castle, Wapol is finally hunted down by Luffy. The villagers along with Zoro, Vivi and Usopp start their ascent to the castle through a ropeway."
           },
           {
             "episode": 90,
             "title": "Hiriluk's Cherry Blossoms! Miracle in the Drum Rockies!",
-            "absoluteEpisode": 90
+            "absoluteEpisode": 90,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734783.jpg",
+            "duration": "25m",
+            "overview": "After finally been convinced to join the team, Chopper announces his intentions to Dr. Kureha, who does not take it too well; but after escaping from the castle, she has decided to give the whole Straw Hat crew a farewell gift."
           },
           {
             "episode": 91,
             "title": "Goodbye Drum Island! I'm Going Out to Sea!",
-            "absoluteEpisode": 91
+            "absoluteEpisode": 91,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734785.jpg",
+            "duration": "25m",
+            "overview": "Chopper joins the Straw Hat crew as they continue their journey to Vivi's homeland."
           }
         ]
       },
@@ -632,197 +904,314 @@ window._ANIME_DATA = [
           {
             "episode": 92,
             "title": "Alabasta's Hero and a Ballerina on the Ship!",
-            "absoluteEpisode": 92
+            "absoluteEpisode": 92,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734787.jpg",
+            "duration": "25m",
+            "overview": "Crocodile appears to stop rampaging pirates. Luffy and his crew meet Mr. 2 Bon Kurei, who shows off his Devil Fruit power; Vivi sees a shocking sight."
           },
           {
             "episode": 93,
             "title": "Off to the Desert Kingdom! The Rain-Summing Powder and the Rebel Army!",
-            "absoluteEpisode": 93
+            "absoluteEpisode": 93,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734788.jpg",
+            "duration": "25m",
+            "overview": "Luffy separates from the rest of the crew, right after arriving at Arabasta's port city of Nanohana. The crew dons disguises while Luffy learns of Dance Powder."
           },
           {
             "episode": 94,
             "title": "The Heroes Reunion! His Name is Fire Fist Ace!",
-            "absoluteEpisode": 94
+            "absoluteEpisode": 94,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734789.jpg",
+            "duration": "25m",
+            "overview": "While in Nanohana, the Straw Hats encounter Smoker and Tashigi. A powerful pirate named Portgas D. Ace appears, and is revealed to be Luffy's older brother."
           },
           {
             "episode": 95,
             "title": "Ace and Luffy! Hot Emotions and Brotherly Bonds!",
-            "absoluteEpisode": 95
+            "absoluteEpisode": 95,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734790.jpg",
+            "duration": "25m",
+            "overview": "Ace fights Smoker while the Straw Hats run for their ship. Luffy reunites with his brother, and together take down agents of Baroque Works."
           },
           {
             "episode": 96,
             "title": "Erumalu, The City of Green and the Kung Fu Dugongs!!",
-            "absoluteEpisode": 96
+            "absoluteEpisode": 96,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734791.jpg",
+            "duration": "25m",
+            "overview": "Ace decides to travel with the Straw Hats, as he is hunting for a man known as Blackbeard. The group arrives first at the 'Green City' of Erumalu only to find it abandoned to the desert. Vivi and Nami explain what Dance Powder is and what it has done to Arabasta."
           },
           {
             "episode": 97,
             "title": "Adventure in the Country of Sand! The Monsters that Live in the Scorching Land!",
-            "absoluteEpisode": 97
+            "absoluteEpisode": 97,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734793.jpg",
+            "duration": "25m",
+            "overview": "After leaving Erumalu, the Straw Hats plus Vivi &amp; Ace continue through the desert, facing the many dangers of it."
           },
           {
             "episode": 98,
             "title": "Enter the Desert Pirates! The Men Who Live Freely!",
-            "absoluteEpisode": 98
+            "absoluteEpisode": 98,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734795.jpg",
+            "duration": "25m",
+            "overview": "Nami and Vivi found themselves an easier way to travel in the desert and leave all men behind. While trying to catch up with them, Ace gets lost. Luffy and the rest of the gang find the Desert Pirates, and Vivi meets a figure from her past."
           },
           {
             "episode": 99,
             "title": "False Fortitude! Camu, Rebel Soldier at Heart!",
-            "absoluteEpisode": 99
+            "absoluteEpisode": 99,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734797.jpg",
+            "duration": "25m",
+            "overview": "After hearing that a small village has fake Rebel Army bodyguards that have been keeping peace, Vivi asks the men of the crew to test if they are worthy of staying."
           },
           {
             "episode": 100,
             "title": "Rebel Warrior Koza! The Dream Vowed to Vivi!",
-            "absoluteEpisode": 100
+            "absoluteEpisode": 100,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734799.jpg",
+            "duration": "25m",
+            "overview": "Still trekking through the Arabasta desert, the crew beats up a giant desert scorpion for lunch, while Vivi tells Nami about her past and her friendship with Koza."
           },
           {
             "episode": 101,
             "title": "Showdown in a Heat Haze! Ace vs. the Gallant Scorpion!",
-            "absoluteEpisode": 101
+            "absoluteEpisode": 101,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734801.jpg",
+            "duration": "25m",
+            "overview": "Ace finds out that Blackbeard is not in Arabasta after all, and leaves the group to continue looking for him. He leaves Luffy a mysterious piece of paper, explaining that it 'will let them meet again.'"
           },
           {
             "episode": 102,
             "title": "Ruins and Lost Ways! Vivi, Her Friends, and the Country's Form!",
-            "absoluteEpisode": 102
+            "absoluteEpisode": 102,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734802.jpg",
+            "duration": "25m",
+            "overview": "Zoro, Chopper and Luffy manage to get themselves lost and stumble across some huge underground ruins."
           },
           {
             "episode": 103,
             "title": "Spiders Caf� at 8 o'Clock! The Enemy Leaders Gather!",
-            "absoluteEpisode": 103
+            "absoluteEpisode": 103,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734803.jpg",
+            "duration": "25m",
+            "overview": "Baroque Works plan starts to take effect, and for that, the Number Agents gather to meet Mr. 0. Meanwhile, crew finds out that the Rebel Army has moved out of Yuba and headed to Katorea, and the rebel leader Koza is determined to attack."
           },
           {
             "episode": 104,
             "title": "Luffy vs. Vivi! The Tearful Vow to Put Friends on the Line!",
-            "absoluteEpisode": 104
+            "absoluteEpisode": 104,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/426/1065572.jpg",
+            "duration": "25m",
+            "overview": "Vivi and Luffy disagree in how to stop the rebel army and Baroque Works, leading to a fight."
           },
           {
             "episode": 105,
             "title": "The Battlefront of Alabasta! Rainbase, the City of Dreams!",
-            "absoluteEpisode": 105
+            "absoluteEpisode": 105,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734807.jpg",
+            "duration": "25m",
+            "overview": "The crew travels to the city of Rainbase to take down Crocodile and Baroque Works, but run afoul of Smoker and Tashigi."
           },
           {
             "episode": 106,
             "title": "The Trap of Certain Defeat! Storming Raindinners!",
-            "absoluteEpisode": 106
+            "absoluteEpisode": 106,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734808.jpg",
+            "duration": "25m",
+            "overview": "Most of the Straw Hats, along with Smoker, are trapped by Crocodile. Vivi reunites with the royal guardian Pell, but is captured by Miss All-Sunday. Crocodile reveals his invincible Devil Fruit power."
           },
           {
             "episode": 107,
             "title": "Operation Utopia Commences! The Swell of Rebellion Stirs!",
-            "absoluteEpisode": 107
+            "absoluteEpisode": 107,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734810.jpg",
+            "duration": "25m",
+            "overview": "Baroque Works' plan to take over Arabasta is set in motion. The king is kidnapped and framed for a crime, and the rebel army begins to move."
           },
           {
             "episode": 108,
             "title": "The Terrifying Banana Gators and Mr. Prince!",
-            "absoluteEpisode": 108
+            "absoluteEpisode": 108,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734811.jpg",
+            "duration": "25m",
+            "overview": "Most of the Straw Hats are helplessly trapped, but Crocodile is contacted by \"Mr. Prince\"."
           },
           {
             "episode": 109,
             "title": "The Key to a Great Comeback Escape! The Wax-Wax Ball!",
-            "absoluteEpisode": 109
+            "absoluteEpisode": 109,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734813.jpg",
+            "duration": "25m",
+            "overview": "Chopper distracts Crocodile while Sanji frees the rest of the crew, but find themselves trapped yet again. Smoker's view on Luffy changes a little."
           },
           {
             "episode": 110,
             "title": "Merciless Mortal Combat! Luffy vs. Crocodile!",
-            "absoluteEpisode": 110
+            "absoluteEpisode": 110,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734815.jpg",
+            "duration": "25m",
+            "overview": "After escaping from Rain Dinners, the Straw Hats and Vivi cross the desert to Alubarne, where the final battle will take place. Crocodile, however, manages to catch Luffy, beginning the first round of their battle."
           },
           {
             "episode": 111,
             "title": "Dash For a Miracle! Alabasta Animal Land!",
-            "absoluteEpisode": 111
+            "absoluteEpisode": 111,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734816.jpg",
+            "duration": "25m",
+            "overview": "Luffy is left for dead by Crocodile, but is helped by the mysteríous Miss All-Sunday. Meanwhile, the rest of the Straw Hats reach Alubarna after encountering the Spot-Billed Duck Squad and dangers of Arabasta's main river."
           },
           {
             "episode": 112,
             "title": "Rebel Army vs. Royal Army! Showdown at Alubarna!",
-            "absoluteEpisode": 112
+            "absoluteEpisode": 112,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734817.jpg",
+            "duration": "25m",
+            "overview": "The revolution is on the verge of starting and the crew comes out with a plan that could stop it."
           },
           {
             "episode": 113,
             "title": "Alubarna Grieves! The Fierce Captain Karoo!",
-            "absoluteEpisode": 113
+            "absoluteEpisode": 113,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734818.jpg",
+            "duration": "25m",
+            "overview": "Vivi's attempts to stop the rebel army go to waste, and she is attacked by Mr. 2 Bon Kurei, but manages to escape. Meanwhile, the battle of Usopp and Chopper vs. the Mr. 4 team begins."
           },
           {
             "episode": 114,
             "title": "Sworn on a Friend's Dream! The Battle of Molehill, Block 4!",
-            "absoluteEpisode": 114
+            "absoluteEpisode": 114,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/426/1065701.jpg",
+            "duration": "25m",
+            "overview": "Things look hopeless for Usopp &amp; Chopper as they continue to suffer from every attack that the Mr.4 team makes. However, the tides may be beginning to turn as Usopp learns what it truly means to be a man."
           },
           {
             "episode": 115,
             "title": "Big Opening Day Today! The Copy-Copy Montage!",
-            "absoluteEpisode": 115
+            "absoluteEpisode": 115,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734821.jpg",
+            "duration": "25m",
+            "overview": "Albeit severely beaten and bruised, Usopp and Chopper have finally defeated the Mr.4 team. However, Mr. 2 has figured out Sanji's weakness."
           },
           {
             "episode": 116,
             "title": "Transformed into Nami! Bon Clay's Rapid-Fire Ballet Kenpo!",
-            "absoluteEpisode": 116
+            "absoluteEpisode": 116,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734823.jpg",
+            "duration": "25m",
+            "overview": "Though Mr. 2 discovers Sanji's weakness, Sanji still defeats his opponent after an evenly-matched fight. Meanwhile, before Vivi could give the word to blow up the palace, Crocodile appears."
           },
           {
             "episode": 117,
             "title": "Nami's Cyclone Advisory! Clima Takt Burst!",
-            "absoluteEpisode": 117
+            "absoluteEpisode": 117,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734824.jpg",
+            "duration": "25m",
+            "overview": "Nami faces off against Miss Doublefinger and tries to figure out her new weapon that Usopp made, the Clima-Tact."
           },
           {
             "episode": 118,
             "title": "Secret Passed Down in the Royal Family! The Ancient Weapon Pluton!",
-            "absoluteEpisode": 118
+            "absoluteEpisode": 118,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734825.jpg",
+            "duration": "25m",
+            "overview": "While Crocodile reveals to Vivi about the ancient weapon Pluton, Nami attempts to defeat Miss Doublefinger with her most powerful attack: The Tornado Tempo."
           },
           {
             "episode": 119,
             "title": "Secret of Powerful Swordplay! Ability to Cut Steel and the Rhythm Things Have!",
-            "absoluteEpisode": 119
+            "absoluteEpisode": 119,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734827.jpg",
+            "duration": "25m",
+            "overview": "While Miss. Doublefinger's fight with Nami was challenging, Zoro is having an even more difficult time fighting Mr.1: A man who can change his entire body into steel - something that Zoro cannot cut. As Zoro nears death, he must discover the secret to \"the breath of all things\"."
           },
           {
             "episode": 120,
             "title": "The Battle is Over! Koza Raises the White Flag!",
-            "absoluteEpisode": 120
+            "absoluteEpisode": 120,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734828.jpg",
+            "duration": "25m",
+            "overview": "When Vivi reveals Crocodile's plan to Koza, he attempts to stop the fighting, but is shot. Crocodile reveals that he has set up a massive bomb in the city."
           },
           {
             "episode": 121,
             "title": "Where Vivi's Voice Gets Heard! The Hero Descends!",
-            "absoluteEpisode": 121
+            "absoluteEpisode": 121,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734830.jpg",
+            "duration": "25m",
+            "overview": "As Koza tries to stop the Rebel Army, both sides are once more fighting due to the intervention of Baroque Works. Vivi is thrown to her certain death when Luffy saves her and challenges Crocodile to a second round."
           },
           {
             "episode": 122,
             "title": "Sand Croc and Water Luffy! The Second Round of the Duel",
-            "absoluteEpisode": 122
+            "absoluteEpisode": 122,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734832.jpg",
+            "duration": "25m",
+            "overview": "Luffy fights Crocodile with more success this time by using water, but still loses this round. Meanwhile, the other Straw Hats hurry to locate the bomb before it goes off. Nico Robin forces the king to take her to the tomb where the Pluton Poneglyph is hidden."
           },
           {
             "episode": 123,
             "title": "That Looks Croc-ish! Luffy, Run to the Royal Tomb!",
-            "absoluteEpisode": 123
+            "absoluteEpisode": 123,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734833.jpg",
+            "duration": "25m",
+            "overview": "Crocodile joins Robin in the tomb, and orders her to translate the Poneglyph. Robin tells him that Pluton was not mentioned and that it was only about history, but Crocodile figures out that she was lying and stabs her in response. When Luffy recovers from the last round of fighting, he chases after Crocodile into the tomb."
           },
           {
             "episode": 124,
             "title": "The Nightmare Draws Near! This is the Sand-Sand Clan's Secret Base!",
-            "absoluteEpisode": 124
+            "absoluteEpisode": 124,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734835.jpg",
+            "duration": "25m",
+            "overview": "Luffy fights with Crocodile by using blood on his fists. Meanwhile Vivi finds the bomb, and calls the Straw Hats together."
           },
           {
             "episode": 125,
             "title": "Magnificent Wings! My Name is Pell, Guardian Deity of the Country!",
-            "absoluteEpisode": 125
+            "absoluteEpisode": 125,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734836.jpg",
+            "duration": "25m",
+            "overview": "Vivi finds the bomb inside of the clock tower, but the Mr. 7 pair of Baroque Works are there to protect it. Vivi defeats them, but she realizes the bomb cannot be stopped so easily. It has a timer, and right before it blows up, Pell shows up and takes it into the atmosphere, where he sacrifices himself to save Arabasta."
           },
           {
             "episode": 126,
             "title": "I Will Surpass You! Rain Falls in Alabasta!",
-            "absoluteEpisode": 126
+            "absoluteEpisode": 126,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734838.jpg",
+            "duration": "25m",
+            "overview": "Luffy defeats Crocodile by punching him through solid bedrock. When Crocodile falls, the rain-drops calm the soldiers."
           },
           {
             "episode": 127,
             "title": "A Farewell to Arms! Pirates and Different Ideas of Justice!",
-            "absoluteEpisode": 127
+            "absoluteEpisode": 127,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734839.jpg",
+            "duration": "25m",
+            "overview": "Now that the battle has ended, the outcome is tallied. Igaram appears with proof of Cobra's innocence, as well as Koza telling everything. Tashigi and Smoker both are rewarded for taking on Crocodile, but neither one of them believes that is right, considering the Straw Hat pirates did all the work."
           },
           {
             "episode": 128,
             "title": "The Pirates' Banquet and Operation Escape from Alabasta!",
-            "absoluteEpisode": 128
+            "absoluteEpisode": 128,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734841.jpg",
+            "duration": "25m",
+            "overview": "Luffy is rescued from the collapsed tomb where he fought Crocodile and brought into Cobra's palace to rest. When he awakens, a magnificent banquet is thrown for the pirates, then, the Straw Hats are invited to enjoy the hot spring steam room inside the palace."
           },
           {
             "episode": 129,
             "title": "It All Started On That Day! Vivi Tells the Story of Her Adventure!",
-            "absoluteEpisode": 129
+            "absoluteEpisode": 129,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734842.jpg",
+            "duration": "25m",
+            "overview": "It's the day for Vivi's speech and her decision whether or not to continue to be with the Straw Hats. Meanwhile, Bon Kurei and his crew attempt to protect the Straw Hats from Hina."
           },
           {
             "episode": 130,
             "title": "Scent of Danger! The Seventh Member is Nico Robin!",
-            "absoluteEpisode": 130
+            "absoluteEpisode": 130,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734844.jpg",
+            "duration": "25m",
+            "overview": "The Marines fail again to catch the Straw Hats. After escaping from Marines, Nico Robin (Ms. All Sunday) appears from inside of Straw Hats ship. She manages to persuade the crew to let her join. Pell is seen at the end standing over his own grave."
           }
         ]
       },
@@ -832,67 +1221,106 @@ window._ANIME_DATA = [
           {
             "episode": 131,
             "title": "The First Patient! The Untold Story of the Rumble Ball!",
-            "absoluteEpisode": 131
+            "absoluteEpisode": 131,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734845.jpg",
+            "duration": "25m",
+            "overview": "After their adventures in Arabasta, the crew come upon another deserted island and split up tasks amongst themselves. Chopper is left in charge of guarding the ship, and he reminisces about the day he first made the rumble ball and his first patient, Dr. Kureha, while spending some time with the newest crewmember: Nico Robin."
           },
           {
             "episode": 132,
             "title": "Uprising of the Navigator! For the Unyielding Dream!",
-            "absoluteEpisode": 132
+            "absoluteEpisode": 132,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734846.jpg",
+            "duration": "25m",
+            "overview": "A weird salesman is fished out of the water and onto the Going Merry, and Nami buys a ton of \"1000 year paper\" from him to draw her sea maps. However, that's not going to be easy with the rest of the crew goofing off as usual."
           },
           {
             "episode": 133,
             "title": "A Recipe Handed Down! Sanji, the Iron Man of Curry!",
-            "absoluteEpisode": 133
+            "absoluteEpisode": 133,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734847.jpg",
+            "duration": "25m",
+            "overview": "The Going Merry runs into several Marine ships in some fog, and the Straw Hats meet a trainee Marine chef named Tajiyo. Sanji helps him out of a bit of cooking trouble."
           },
           {
             "episode": 134,
             "title": "I Will Make it Bloom! Usopp, the Man, and the Eight-Foot Shell!",
-            "absoluteEpisode": 134
+            "absoluteEpisode": 134,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734848.jpg",
+            "duration": "25m",
+            "overview": "The crew stops on an island that's having its annual fireworks festival; Usopp meets a young fireworks-maker named Kodama and helps her achieve her dream."
           },
           {
             "episode": 135,
             "title": "The Fabled Pirate Hunter! Zoro, the Wandering Swordsman!",
-            "absoluteEpisode": 135
+            "absoluteEpisode": 135,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734850.jpg",
+            "duration": "25m",
+            "overview": "Zoro has a flashback about the time when he first met Johnny and Yosaku, and faced off against Bandits and, Dick."
           },
           {
             "episode": 136,
             "title": "Zenny of the Island of Goats and the Pirate Ship in the Mountains!",
-            "absoluteEpisode": 136
+            "absoluteEpisode": 136,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735041.jpg",
+            "duration": "25m",
+            "overview": "After escaping from several Marine ships, the Straw Hats land on an uncharted island and meet an old man named Zenny. Chopper finds out that, because of his bad heart, Zenny probably only has three days to live."
           },
           {
             "episode": 137,
             "title": "How's Tricks? The Designs of Zenny the Moneylender!",
-            "absoluteEpisode": 137
+            "absoluteEpisode": 137,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735042.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats help Zenny out, hoping to make his last days good ones; they learn about Zenny's past as a money lender, and his dream of becoming a pirate. But Zoro realizes that Zenny has outlived Chopper's predictions and so the straw hats decide that, after helping him finish his pirate ship, they will leave the island."
           },
           {
             "episode": 138,
             "title": "Whereabouts of the Island Treasure! Attack of the Zenny Pirates!",
-            "absoluteEpisode": 138
+            "absoluteEpisode": 138,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735044.jpg",
+            "duration": "25m",
+            "overview": "Zenny decides to follow his dream and become a pirate, despite his age. He helps the Straw Hats out of trouble with the Marines, and then they part ways."
           },
           {
             "episode": 139,
             "title": "Legend of the Rainbow Mist! Old Man Henzo of Luluka Island!",
-            "absoluteEpisode": 139
+            "absoluteEpisode": 139,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735045.jpg",
+            "duration": "25m",
+            "overview": "On Ruluka Island, some of the Straw Hats make enemies of the Mayor and his men, who have placed high taxes on everything. Robin, Usopp, and Luffy meet Professor Henzo, who's doing research on the island's rainbow mist. When some of the mist shows up, Henzo borrows the Going Merry to go explore it."
           },
           {
             "episode": 140,
             "title": "Residents of the Land of Eternity! The Pumpkin Pirates!",
-            "absoluteEpisode": 140
+            "absoluteEpisode": 140,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735046.jpg",
+            "duration": "25m",
+            "overview": "The inside of the Rainbow Mist full of wrecked ships and treasure, and is guarded by five kids. The kids are actually friends of Henzo's that got lost in the mist over 50 years ago."
           },
           {
             "episode": 141,
             "title": "Thoughts of Home! The Pirate Graveyard of No Escape!",
-            "absoluteEpisode": 141
+            "absoluteEpisode": 141,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735047.jpg",
+            "duration": "25m",
+            "overview": "Henzo, his friends, and the others try to find a way out of the ship graveyard. Meanwhile, the Mayor and his men let the information about the Rainbow Mist slip to the remaining Straw Hats still on Ruluka."
           },
           {
             "episode": 142,
             "title": "An Inevitable Melee! Wetton's Schemes and the Rainbow Tower!",
-            "absoluteEpisode": 142
+            "absoluteEpisode": 142,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735048.jpg",
+            "duration": "25m",
+            "overview": "Luffy accidentally propels himself and Rapanui to the end of the mist. Nami appears in the ship graveyard with a rowboat full of treasure and a string connected to the real world, which are both stolen by Wetton's subordinate. The Mayor uses the Rainbow Tower to make a bridge to the Rainbow Mist."
           },
           {
             "episode": 143,
             "title": "And so, the Legend Begins! To the Other Side of the Rainbow!",
-            "absoluteEpisode": 143
+            "absoluteEpisode": 143,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735049.jpg",
+            "duration": "25m",
+            "overview": "The Going Merry escapes from the Rainbow Mist, getting badly damaged on the way. The Mayor gets arrested by a bunch of powerful marines that turn out to be older versions of Henzo's friends, who were thrown 50 years into the past by the Rainbow Mist's collapse."
           }
         ]
       },
@@ -902,262 +1330,418 @@ window._ANIME_DATA = [
           {
             "episode": 144,
             "title": "The Log is Taken! Salvage King, Masira!",
-            "absoluteEpisode": 144
+            "absoluteEpisode": 144,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735050.jpg",
+            "duration": "25m",
+            "overview": "Nami's log pose begins to point to the sky, and the crew finds a map of an island named 'Skypiea' on a 200-year-old ship. They compete with the monkey-like Masira's salvage crew while they search for more clues on how to get there."
           },
           {
             "episode": 145,
             "title": "Monsters Appear! Don't Mess with the Whitebeard Pirates!",
-            "absoluteEpisode": 145
+            "absoluteEpisode": 145,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735051.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats decide to go to Jaya island to look for information on Skypeia. Meanwhile, Ace suddenly shows up on Buggy's ship; Buggy does not let any of his men attack Ace, fearing Whitebeard's retribution."
           },
           {
             "episode": 146,
             "title": "Quit Dreaming! Mock Town, the Town of Ridicule!",
-            "absoluteEpisode": 146
+            "absoluteEpisode": 146,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735052.jpg",
+            "duration": "25m",
+            "overview": "Jaya's main town is full of famous pirates that are constantly brawling with each other. Luffy and Zoro have a run-in with a pirate known as 'Bellamy the Hyena,' who ridicules their dreams and beats them up."
           },
           {
             "episode": 147,
             "title": "Distinguished Pirates! A Man Who Talks of Dreams and the King of Undersea Search!",
-            "absoluteEpisode": 147
+            "absoluteEpisode": 147,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735053.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro and Nami meet the man who is later revealed to be Blackbeard. They leave Mock Town, and get into a fight with Masira's brother Shoujou, another salvage monkey."
           },
           {
             "episode": 148,
             "title": "Legendary Family! Noland, the Liar!",
-            "absoluteEpisode": 148
+            "absoluteEpisode": 148,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/427/1067684.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats meet with Mont Blanc Cricket on another part of Jaya; Cricket is a descendant of Montblanc Noland, an infamous \"liar\" who told of a gold city on Jaya, and Cricket was outcast for looking for artifacts of the gold city. He may be the only person who knows how to get to Skypiea."
           },
           {
             "episode": 149,
             "title": "Steer for the Clouds! Capture the South Bird!",
-            "absoluteEpisode": 149
+            "absoluteEpisode": 149,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735055.jpg",
+            "duration": "25m",
+            "overview": "Cricket explains how the Straw Hats can ride a dangerous vertical current called the Knock-Up Stream to get to Skypeia. However, they first have to catch a southbird to point them toward the point where the stream will erupt from the ocean."
           },
           {
             "episode": 150,
             "title": "Dreams Don't Come True?! Bellamy Versus the Saruyama Alliance!",
-            "absoluteEpisode": 150
+            "absoluteEpisode": 150,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735056.jpg",
+            "duration": "25m",
+            "overview": "While the Straw Hats are looking for a Southbird, Bellamy and his crew attack Cricket's house, and steal the gold artifacts he'd collected over the years from his salvage work. When the Straw Hats return and see what happened, Luffy decides to take a side trip back to Mock Town."
           },
           {
             "episode": 151,
             "title": "100 Million Man! World's Greatest Power and Pirate Black Beard!",
-            "absoluteEpisode": 151
+            "absoluteEpisode": 151,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735057.jpg",
+            "duration": "25m",
+            "overview": "Luffy takes out Bellamy with a single punch. Meanwhile, the world government heads are concerned over Whitebeard, Shanks, and Luffy. The marines try to decide who will replace Crocodile as a Shichibukai - one of Blackbeard's crew shows up uninvited and nominates his captain."
           },
           {
             "episode": 152,
             "title": "Take to the Sky! Ride the Knockup Stream!",
-            "absoluteEpisode": 152
+            "absoluteEpisode": 152,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735058.jpg",
+            "duration": "25m",
+            "overview": "The Going Merry is refitted by Masira and Shoujou to be more flight capable, and the Straw Hats catch a ride on the Knock-Up Stream for Skypeia."
           },
           {
             "episode": 153,
             "title": "Sail the White Sea! The Sky Knight and the Gate in the Clouds!",
-            "absoluteEpisode": 153
+            "absoluteEpisode": 153,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735059.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats arrive in an ocean above the clouds. Usopp almost falls out of the Going Merry but is saved at the last minute. The crew is also attacked by a mysterious looking warrior, but is saved by the Knight of the Sky. Finally, they arrive at the border which transports them to the upper realm, Skypiea."
           },
           {
             "episode": 154,
             "title": "Godland, Skypiea! Angels on a Beach of Clouds!",
-            "absoluteEpisode": 154
+            "absoluteEpisode": 154,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735060.jpg",
+            "duration": "25m",
+            "overview": "As the crew arrives in Skypiea, they are greeted by Conis and her pet Su. Both she and her father start explaining how the life in Skypiea is and how the different Dials work."
           },
           {
             "episode": 155,
             "title": "The Forbidden Sacred Ground! The Island Where God Lives and Heaven's Judgement!",
-            "absoluteEpisode": 155
+            "absoluteEpisode": 155,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735061.jpg",
+            "duration": "25m",
+            "overview": "Nami finds out what should happen to anyone who enters the forest. Meanwhile, the rest of the gang are waiting for the wind to change but are rudely assaulted by Skypiea's police who are going to carry out Heaven's Judgement."
           },
           {
             "episode": 156,
             "title": "Already Criminals?! Skypiea's Upholder of the Law!",
-            "absoluteEpisode": 156
+            "absoluteEpisode": 156,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735062.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats have some problems with the local justice enforcer force called \"The White Berets.\""
           },
           {
             "episode": 157,
             "title": "Is Escape Possible?!? God's Challenge is Set in Motion",
-            "absoluteEpisode": 157
+            "absoluteEpisode": 157,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735063.jpg",
+            "duration": "25m",
+            "overview": "While trying to escape from Sky Island, Robin, Chopper, Nami and Zoro are held hostages by God Enel."
           },
           {
             "episode": 158,
             "title": "A Trap on Lovely Street! The Almighty Eneru",
-            "absoluteEpisode": 158
+            "absoluteEpisode": 158,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735064.jpg",
+            "duration": "25m",
+            "overview": "Conis leads Luffy, Usopp, and Sanji to a boat to get to Upper Yard, but she tells them it is a trap and almost gets hit by \"Heaven's Judgment\"."
           },
           {
             "episode": 159,
             "title": "Onward Little Crow! To the Sacrificial Altar!",
-            "absoluteEpisode": 159
+            "absoluteEpisode": 159,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735065.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Usopp and Sanji finally enter Upper Yard, only to find out that the whole road is trapped heavily, but at last they arrive at the Ordeal Gates. Meanwhile Robin, Zoro, and Nami go out to explore Upper Yard while Chopper stays behind to guard the ship."
           },
           {
             "episode": 160,
             "title": "10% Survival Rate! Satori, the Mantra Master!",
-            "absoluteEpisode": 160
+            "absoluteEpisode": 160,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735066.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Sanji, and Usopp enter the Ordeal of Balls gate and encounter the Priest Satori."
           },
           {
             "episode": 161,
             "title": "The Ordeal of Spheres! Desperate Struggle in the Lost Forest!",
-            "absoluteEpisode": 161
+            "absoluteEpisode": 161,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735067.jpg",
+            "duration": "25m",
+            "overview": "Usopp, Sanji and Luffy fight Satori, but the power of Mantra seems to be too strong."
           },
           {
             "episode": 162,
             "title": "Chopper in Danger! Former God vs. Priest Shura!",
-            "absoluteEpisode": 162
+            "absoluteEpisode": 162,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735068.jpg",
+            "duration": "25m",
+            "overview": "Chopper, threatened by priest Shura, blows the whistle for Gan Fall to come, but before he can arrive, Priest Shura assaults Chopper and begins destroying the Going Merry."
           },
           {
             "episode": 163,
             "title": "Profound Mystery! Ordeal of String and Ordeal of Love?!?",
-            "absoluteEpisode": 163
+            "absoluteEpisode": 163,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735069.jpg",
+            "duration": "25m",
+            "overview": "Gan Fall cannot handle Shura and lost the battle. Meanwhile, Satori is finally defeated by Luffy and Sanji."
           },
           {
             "episode": 164,
             "title": "Light the Fire of Shandora! Wyper the Warrior!",
-            "absoluteEpisode": 164
+            "absoluteEpisode": 164,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735070.jpg",
+            "duration": "25m",
+            "overview": "Chopper is saved by a bunch of giant Southbirds, who tell him that Gan Fall was actually God. Nami, Zoro and Robin discover the reason why Upper Yard is a soil island: It was once part of Jaya, and this is the part that Liar Noland saw. Meanwhile the Shandia attack Upper Yard."
           },
           {
             "episode": 165,
             "title": "Jaya, City of Gold in the Sky! Head for God's Shrine!",
-            "absoluteEpisode": 165
+            "absoluteEpisode": 165,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735071.jpg",
+            "duration": "25m",
+            "overview": "The Shandia attack on Upper Yard has started. The crew is finally reunited, and everyone speaks up about what has happened. Chopper takes care of Gan Fall, and the pirates plan to steal the gold on the island."
           },
           {
             "episode": 166,
             "title": "Festival on the Night Before Gold-Hunting! Feelings for \"Vearth!\"",
-            "absoluteEpisode": 166
+            "absoluteEpisode": 166,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735072.jpg",
+            "duration": "25m",
+            "overview": "After befriending a wolf pack, Gan Fall tells the crew a little more about the history of Upper Yard."
           },
           {
             "episode": 167,
             "title": "Enter God Eneru! Farewell to the Survivors!",
-            "absoluteEpisode": 167
+            "absoluteEpisode": 167,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735073.jpg",
+            "duration": "25m",
+            "overview": "Enel takes away the limitations of the priests. Also, Usopp witnesses a mysterious person fixing the ship; the next day Merry is found to be back to her original form. After getting her off the altar, the pirates plan out their course of action."
           },
           {
             "episode": 168,
             "title": "A Giant Snake Bares Its Fangs! The Survival Game Begins!",
-            "absoluteEpisode": 168
+            "absoluteEpisode": 168,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735074.jpg",
+            "duration": "25m",
+            "overview": "A giant python makes Luffy, Robin, Chopper and Zoro split while going to the ruins at the south."
           },
           {
             "episode": 169,
             "title": "The Deadly Reject! War Demon Wyper's Resolve!",
-            "absoluteEpisode": 169
+            "absoluteEpisode": 169,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735075.jpg",
+            "duration": "25m",
+            "overview": "Wyper takes out Shura and tells his goal to the Shandia, and Enel speaks up about how many people will be alive by the end of his plan."
           },
           {
             "episode": 170,
             "title": "Fierce Mid-Air Battle! Pirate Zoro vs. Warrior Braham!",
-            "absoluteEpisode": 170
+            "absoluteEpisode": 170,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735076.jpg",
+            "duration": "25m",
+            "overview": "Zoro fights the Shandia warrior Braham, and defeats him with Ittoryu (one sword style) 36 Pound Cannon technique."
           },
           {
             "episode": 171,
             "title": "The Roaring Burn Bazooka!! Pirate Luffy vs. War Demon Wyper!",
-            "absoluteEpisode": 171
+            "absoluteEpisode": 171,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735077.jpg",
+            "duration": "25m",
+            "overview": "Luffy fights Wyper, but after some time, he falls into some underground ruins. Meanwhile, Enel appears on the Going Merry and after telling that his true goal was the City of Gold, he takes out both Usopp and Sanji; then he vanishes and leaves Satori's brothers: Hotori and Kotori to avenge him."
           },
           {
             "episode": 172,
             "title": "The Ordeal of Swamp! Chopper vs Priest Gedatsu!",
-            "absoluteEpisode": 172
+            "absoluteEpisode": 172,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735078.jpg",
+            "duration": "25m",
+            "overview": "Chopper is attacked by Gedatsu, who turns out to be a complete moron, and eventually defeats him, sending him plummeting to the Blue Sea. Conis and Pagaya help Aisa, and head to Upper Yard."
           },
           {
             "episode": 173,
             "title": "Unbeatable Powers! Eneru's True Form is Revealed!",
-            "absoluteEpisode": 173
+            "absoluteEpisode": 173,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735079.jpg",
+            "duration": "25m",
+            "overview": "Enel defeats several members of the Shandia Tribe. Meanwhile, Gan Fall and Nami start and finish their fight with Kotori and Hotori. Hotori is defeated by Nami while Kotori is defeated by Gan Fall."
           },
           {
             "episode": 174,
             "title": "A Mystical City! The Grand Ruins of Shandora!",
-            "absoluteEpisode": 174
+            "absoluteEpisode": 174,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735081.jpg",
+            "duration": "25m",
+            "overview": "While Robin is looking at some ruins she found, Yama, The Chief Enforcer, attacks her. Yama is easily defeated by Robin. Later, she discovers the legendary city, Shandora."
           },
           {
             "episode": 175,
             "title": "0% Survival Rate! Chopper vs. Ohm, the Sword Wielding Priest!",
-            "absoluteEpisode": 175
+            "absoluteEpisode": 175,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735082.jpg",
+            "duration": "25m",
+            "overview": "Priest Ohm appears and starts fighting everyone."
           },
           {
             "episode": 176,
             "title": "Climb Giant Jack! Deadly Combat in the Upper Ruins!",
-            "absoluteEpisode": 176
+            "absoluteEpisode": 176,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735083.jpg",
+            "duration": "25m",
+            "overview": "At the Upper Ruins, the fight between Ohm, Zoro, Gan Fall and Wyper begins. When Nami appears, she is swallowed by the giant python, along with Gan Fall and Aisa."
           },
           {
             "episode": 177,
             "title": "The Ordeal of Iron! White Barbed Death Match!",
-            "absoluteEpisode": 177
+            "absoluteEpisode": 177,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735084.jpg",
+            "duration": "25m",
+            "overview": "Ohm makes matters worse, creating a barbed wire cage around the area. Laki is knocked out by Enel, and Nami, Aisa, and Gan Fall find out why the python was rampaging so much."
           },
           {
             "episode": 178,
             "title": "Bursting Slash! Zoro vs Ohm!",
-            "absoluteEpisode": 178
+            "absoluteEpisode": 178,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735085.jpg",
+            "duration": "25m",
+            "overview": "Zoro finally defeats Priest Ohm with his 108 Pound Cannon technique. Meanwhile Pagaya and Conis hear the terrible truth about the goal of Enel: to eradicate every person in the sky."
           },
           {
             "episode": 179,
             "title": "Collapsing Upper Ruins! The Quintet for the Finale!",
-            "absoluteEpisode": 179
+            "absoluteEpisode": 179,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/427/1068270.jpg",
+            "duration": "25m",
+            "overview": "Enel appears only to reduce the group as close to his prediction as he can."
           },
           {
             "episode": 180,
             "title": "Showdown in the Ancient Ruins! Sky God Eneru's Goal!",
-            "absoluteEpisode": 180
+            "absoluteEpisode": 180,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735087.jpg",
+            "duration": "25m",
+            "overview": "Enel counterattacks Gan Fall and lands a finishing hit. He then knocks out Robin as she tries to manipulate him. Zoro impresses Enel with his power but is easily beaten, while trying to make him pay for what he did to Robin; but it takes Wyper with a secret weapon to take Enel down."
           },
           {
             "episode": 181,
             "title": "Ambition Towards the Endless Vearth! The Ark Maxim!",
-            "absoluteEpisode": 181
+            "absoluteEpisode": 181,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735089.jpg",
+            "duration": "25m",
+            "overview": "Enel defeats Zoro and Wyper. Upon seeing this, Nami follows him to a cave where his ark, Maxim, is. Luffy finally gets out of the snake, along with Aisa, only to find out the outcome of the fight against Enel. When Aisa tells him that she knows where he is, he asks her to take him there."
           },
           {
             "episode": 182,
             "title": "They Finally Clash! Pirate Luffy vs God Eneru!",
-            "absoluteEpisode": 182
+            "absoluteEpisode": 182,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735090.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Enel start fighting. Conis tells the dangers of staying in Sky Island to the other Skypieans."
           },
           {
             "episode": 183,
             "title": "Maxim Surfaces! Deathpiea is Activated!",
-            "absoluteEpisode": 183
+            "absoluteEpisode": 183,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735091.jpg",
+            "duration": "25m",
+            "overview": "The fight between Enel and Luffy continues with Enel starting a machine that would bring the death of Skypiea: Deathpiea."
           },
           {
             "episode": 184,
             "title": "Luffy Falls! Eneru's Judgement and Nami's Wish!",
-            "absoluteEpisode": 184
+            "absoluteEpisode": 184,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735092.jpg",
+            "duration": "25m",
+            "overview": "Luffy falls from the ark. Nami starts fighting Enel while Sanji and Usopp try to rescue her."
           },
           {
             "episode": 185,
             "title": "The Two Awaken! On the Front Lines of the Burning Love Rescue!",
-            "absoluteEpisode": 185
+            "absoluteEpisode": 185,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735093.jpg",
+            "duration": "25m",
+            "overview": "Usopp and Sanji split up to rescue Nami, but the first one to get on deck is Usopp."
           },
           {
             "episode": 186,
             "title": "Capriccio for Despair! The Impending Doom of Sky Island!",
-            "absoluteEpisode": 186
+            "absoluteEpisode": 186,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735094.jpg",
+            "duration": "25m",
+            "overview": "Enel's thunderclouds are coming down to Sky Island while the evacuation is half complete."
           },
           {
             "episode": 187,
             "title": "Lead by a Bell's Sound! Tale of the Great Warrior and the Explorer!",
-            "absoluteEpisode": 187
+            "absoluteEpisode": 187,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735095.jpg",
+            "duration": "25m",
+            "overview": "The history of Noland and Kalgara is told, as a flashback from Wyper."
           },
           {
             "episode": 188,
             "title": "Free From the Spell! The Great Warrior Sheads Tears!",
-            "absoluteEpisode": 188
+            "absoluteEpisode": 188,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735096.jpg",
+            "duration": "25m",
+            "overview": "Noland and Kalgara are enjoying themselves, as well as the villagers and Noland's crew, but that changes one day, as the villagers start hating their new friends."
           },
           {
             "episode": 189,
             "title": "Eternal Friends! The Vowed Bell Echoes Across the Mighty Seas!",
-            "absoluteEpisode": 189
+            "absoluteEpisode": 189,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735097.jpg",
+            "duration": "25m",
+            "overview": "The cause of the hatred is discovered and explained. Meanwhile, Kalgara vows to meet Noland again."
           },
           {
             "episode": 190,
             "title": "Angel Island, Obliterated! The Horror of The Raigo's Advent!!",
-            "absoluteEpisode": 190
+            "absoluteEpisode": 190,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735098.jpg",
+            "duration": "25m",
+            "overview": "Angel Island is destroyed by Enel's attacks. Luffy decides to go and ring the golden bell before Enel takes it away."
           },
           {
             "episode": 191,
             "title": "Knock Over Giant Jack! Last Hope for Escape!",
-            "absoluteEpisode": 191
+            "absoluteEpisode": 191,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735099.jpg",
+            "duration": "25m",
+            "overview": "Nami finds out a way to get to Enel, by cutting down Giant Jack. Wyper finds out from Robin that Noland has a descendant that is searching for the Gold City, and that's the reason why Luffy wants to ring the Golden Bell."
           },
           {
             "episode": 192,
             "title": "Miracle on Skypiea! The Love Song Heard in the Clouds!",
-            "absoluteEpisode": 192
+            "absoluteEpisode": 192,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735100.jpg",
+            "duration": "25m",
+            "overview": "Luffy defeats Enel, ringing the Golden Bell in the process."
           },
           {
             "episode": 193,
             "title": "The Battle Ends! Proud Fantasia Echoes Far!",
-            "absoluteEpisode": 193
+            "absoluteEpisode": 193,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735102.jpg",
+            "duration": "25m",
+            "overview": "The 400 year war on Sky Island comes to an end. Montblanc Cricket and the Masira Brothers hear the Golden Bell ringing and realize that the Gold City was always in the sky. Enel, who was thrown to the Blue Sea heads out to the Fairy Vearth (the Moon). The Sky People (both Skypieans and Shandia) celebrate the end of the war with a great bonfire."
           },
           {
             "episode": 194,
             "title": "I Made it here! The Yarn the Poneglyphs Spin!",
-            "absoluteEpisode": 194
+            "absoluteEpisode": 194,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735104.jpg",
+            "duration": "25m",
+            "overview": "Robin deciphers the poneglyphs on the Golden Bell and realizes how to find the Rio Poneglyph. She also discovers that the poneglyphs on the Bell were written by Gol D. Roger, who could understand poneglyphs, who had discovered the Rio Poneglyph, and had once visited Skypiea. Soon afterwards, the Straw Hats steal a bunch of gold from the Giant Anaconda's belly and they begin to leave Skypiea."
           },
           {
             "episode": 195,
             "title": "Off to the Blue Sea!! A Heartfelt Finale!!",
-            "absoluteEpisode": 195
+            "absoluteEpisode": 195,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735106.jpg",
+            "duration": "25m",
+            "overview": "The Golden Bell rings as the Straw Hats are going down to the sea, meaning that they are welcome and are deeply thankful for what they did. When the ship finally rests on the sea, problems appear, as the ship has landed in a Marine base."
           }
         ]
       },
@@ -1167,167 +1751,266 @@ window._ANIME_DATA = [
           {
             "episode": 196,
             "title": "A State of Emergency is Issued! A Notorious Pirate Ship has Infiltrated!",
-            "absoluteEpisode": 196
+            "absoluteEpisode": 196,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735120.jpg",
+            "duration": "25m",
+            "overview": "The Marines are convinced the Going Merry is a ghost ship after it crashes inside their fortress from above. The crew members are scattered around the premises."
           },
           {
             "episode": 197,
             "title": "Sanji the Cook! Proving His Merit at the Marine Dining Hall!",
-            "absoluteEpisode": 197
+            "absoluteEpisode": 197,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735121.jpg",
+            "duration": "25m",
+            "overview": "In disguise, Sanji shows the Marine chefs the proper way to prepare a meal."
           },
           {
             "episode": 198,
             "title": "Captured Zoro! Chopper's Emergency Operations!",
-            "absoluteEpisode": 198
+            "absoluteEpisode": 198,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735122.jpg",
+            "duration": "25m",
+            "overview": "Zoro is taken prisoner as Chopper and Nami assist a nervous doctor in treating injured Marines."
           },
           {
             "episode": 199,
             "title": "The Marines Dragnet Closes In! The Second Member Captured!",
-            "absoluteEpisode": 199
+            "absoluteEpisode": 199,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735123.jpg",
+            "duration": "25m",
+            "overview": "Robin and Usopp both disguise themselves as the same visiting inspector, and Usopp is thrown in the brig with Zoro. Luffy and Sanji are discovered by Jonathan after a slight mishap."
           },
           {
             "episode": 200,
             "title": "Luffy and Sanji's Daring Rescue Mission!",
-            "absoluteEpisode": 200
+            "absoluteEpisode": 200,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735124.jpg",
+            "duration": "25m",
+            "overview": "The real Inspector is thrown in the brig with Zoro and Usopp, while Sanji and Luffy race to rescue the two while avoiding detection."
           },
           {
             "episode": 201,
             "title": "Enter the Hot-Blooded Special Forces! Battle on the Bridge!",
-            "absoluteEpisode": 201
+            "absoluteEpisode": 201,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735125.jpg",
+            "duration": "25m",
+            "overview": "Sanji and Luffy, after freeing Usopp and Zoro, try to escape Navarone. As the Burning Soul combat unit is deployed, Dr. Kobato leads Nami and Chopper to the docks."
           },
           {
             "episode": 202,
             "title": "Breaking Through the Seige! The Going Merry is Recovered!",
-            "absoluteEpisode": 202
+            "absoluteEpisode": 202,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735126.jpg",
+            "duration": "25m",
+            "overview": "The crew meets at the docks and are surrounded by Marines. Using Nami as their fake hostage, they trick the Marines into letting them back on the Going Merry."
           },
           {
             "episode": 203,
             "title": "The Pirate Ship Disappears! Fortress Battle, Round #2!",
-            "absoluteEpisode": 203
+            "absoluteEpisode": 203,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735127.jpg",
+            "duration": "25m",
+            "overview": "The crew disguises the Going Merry as a Marine ship so they can get their treasure back. With the gold, they decide they'll hire a shipwright."
           },
           {
             "episode": 204,
             "title": "The Gold and Waver Recovery Operations!",
-            "absoluteEpisode": 204
+            "absoluteEpisode": 204,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735128.jpg",
+            "duration": "25m",
+            "overview": "Usopp splits up the crew into two teams: the gold retrieval team and the waver retrieval team. Inspector Shepherd decides to catch Luffy on his own."
           },
           {
             "episode": 205,
             "title": "The One Fell Swoop Plan! Jonathan's Surefire Secret Tactic!",
-            "absoluteEpisode": 205
+            "absoluteEpisode": 205,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735129.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats continue to search for their treasure. Luffy leads Nami to the captain's quarters where they retrieve their gold."
           },
           {
             "episode": 206,
             "title": "Farewell, Marine Fortress! The Last Battle for Escape!",
-            "absoluteEpisode": 206
+            "absoluteEpisode": 206,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735130.jpg",
+            "duration": "25m",
+            "overview": "The Going Merry is grounded during a period of low tide and Jonathan believes they've reached \"checkmate\". They cleverly use the impact dial to boost the ship and the breath and flame dials to inflate the octopus balloon again so they can escape."
           },
           {
             "episode": 207,
             "title": "Great Adventure at Long Ring Long Land!",
-            "absoluteEpisode": 207
+            "absoluteEpisode": 207,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735415.jpg",
+            "duration": "25m",
+            "overview": "Luffy and company come across a mysterious pirate ship after trying to escape a giant wave. Soon, they arrive on an island inhabited by strange animals. Going Merry is captured by the Foxy Pirate crew."
           },
           {
             "episode": 208,
             "title": "A Davy Back with the Foxy Pirates!",
-            "absoluteEpisode": 208
+            "absoluteEpisode": 208,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735416.jpg",
+            "duration": "25m",
+            "overview": "After Tonjit re-unites with his horse, they are soon attacked by Captain Foxy and his subordinates, who challenge Luffy in a Davy Back Fight, a contest of pirates where the stakes are members of the crew."
           },
           {
             "episode": 209,
             "title": "Round 1! One Lap of the Donut Race!",
-            "absoluteEpisode": 209
+            "absoluteEpisode": 209,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735417.jpg",
+            "duration": "25m",
+            "overview": "The first round of Davy Back Fight involves a race around the island with tiny boats. Zoro's and Chopper's boat is eliminated."
           },
           {
             "episode": 210,
             "title": "Silver Fox Foxy! The Merciless Interference!",
-            "absoluteEpisode": 210
+            "absoluteEpisode": 210,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735418.jpg",
+            "duration": "25m",
+            "overview": "With only Luffy, Nami, and Porche's boat remaining, it's an all out war to the goal, but after Foxy exposes his Devil Fruit powers, Porche wins and takes Tony Tony Chopper from Luffy. The second round prepares to start."
           },
           {
             "episode": 211,
             "title": "Round 2! Shoot it into the Groggy Ring!",
-            "absoluteEpisode": 211
+            "absoluteEpisode": 211,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735419.jpg",
+            "duration": "25m",
+            "overview": "Without Chopper, Sanji and Zoro must face the Foxy Pirates in a ball game, but are hampered by their blatant cheating and the crooked referee."
           },
           {
             "episode": 212,
             "title": "A Barrage of Red Cards in Groggy Ring!",
-            "absoluteEpisode": 212
+            "absoluteEpisode": 212,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735420.jpg",
+            "duration": "25m",
+            "overview": "The bickering rivals Sanji and Zoro manage to overcome the opposing team by working together. Luffy chooses Tonjit's horse, Shelly over Chopper."
           },
           {
             "episode": 213,
             "title": "Round 3! The Round-and-Round Roller Race!",
-            "absoluteEpisode": 213
+            "absoluteEpisode": 213,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735421.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats face Foxy a race around a giant ring on roller skates."
           },
           {
             "episode": 214,
             "title": "A Seriously Heated Race! Into The Final Round!",
-            "absoluteEpisode": 214
+            "absoluteEpisode": 214,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735422.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates stop Foxy and his dirty tricks and win the race."
           },
           {
             "episode": 215,
             "title": "Screaming-Hot Bombardment! Pirate Dodgeball!",
-            "absoluteEpisode": 215
+            "absoluteEpisode": 215,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735423.jpg",
+            "duration": "25m",
+            "overview": "With Luffy's victory, he takes Chopper back, but foolishly accepts another challenge by Foxy."
           },
           {
             "episode": 216,
             "title": "Showdown on the Cliff! Red Light, Green Light!",
-            "absoluteEpisode": 216
+            "absoluteEpisode": 216,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735424.jpg",
+            "duration": "25m",
+            "overview": "Foxy decides to take Robin from Luffy this time because of her Devil Fruit ability. The next match is a race to the top of the island."
           },
           {
             "episode": 217,
             "title": "The Captains Square Off! The Final Combat Round!",
-            "absoluteEpisode": 217
+            "absoluteEpisode": 217,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735426.jpg",
+            "duration": "25m",
+            "overview": "With Chopper gone again from Luffy's crew, Luffy and Foxy face off in the final game: a battle of brawn aboard Foxy's ship."
           },
           {
             "episode": 218,
             "title": "Full-Blast Slow-Slow Onslaught Vs. Invulnerable Luffy!",
-            "absoluteEpisode": 218
+            "absoluteEpisode": 218,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735427.jpg",
+            "duration": "25m",
+            "overview": "Luffy continues to battle Foxy with the odds not in his favor, and the fight continues inside Foxy's ship."
           },
           {
             "episode": 219,
             "title": "Epic, Heated Combat! The Fateful Final Conclusion!",
-            "absoluteEpisode": 219
+            "absoluteEpisode": 219,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735428.jpg",
+            "duration": "25m",
+            "overview": "Luffy manages to finally defeat Foxy by using his ability against him. After dismissing his new crewmembers, the Straw Hats leave in search for a shipwright."
           },
           {
             "episode": 220,
             "title": "Was It Lost? Stolen? Who Are You?",
-            "absoluteEpisode": 220
+            "absoluteEpisode": 220,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735429.jpg",
+            "duration": "25m",
+            "overview": "A mysterious figure appears during the night and steals the memories of the crew. In the morning, Robin is the only one who remembers the Straw Hats adventures together. Her attempts to keep the crew together fail as Nami and Zoro go separate ways."
           },
           {
             "episode": 221,
             "title": "A Mysterious Boy with a Horn and Robin's Deduction!",
-            "absoluteEpisode": 221
+            "absoluteEpisode": 221,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735430.jpg",
+            "duration": "25m",
+            "overview": "Robin suggests that only those who were sleeping lost their memories. Luffy and the others then remember seeing the mysterious boy who played some kind of flute. Later that night, they discover the boy outside and Luffy tries to fight him. At the last second, he proclaims his memory has returned."
           },
           {
             "episode": 222,
             "title": "Now, Let's Get Back Our Memories! The Pirate Crew Lands on the Island!",
-            "absoluteEpisode": 222
+            "absoluteEpisode": 222,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735431.jpg",
+            "duration": "25m",
+            "overview": "During the night, Usopp, Chopper, and Sanji question what brought them to the Going Merry. In the morning, Usopp builds them a raft and they sail to the island where they meet Nami again. Meanwhile, the boy sets his sights on Zoro."
           },
           {
             "episode": 223,
             "title": "Zoro Bares His Fangs! A Savage Animal Stands in the Way!",
-            "absoluteEpisode": 223
+            "absoluteEpisode": 223,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735432.jpg",
+            "duration": "25m",
+            "overview": "On their way to \"The Palace of the Sea God\" Robin's group meets an entranced Zoro. It looks like Zoro wants to fight so Luffy urges the others to keep going without him. They apprehend the kid but the whistle was what was really stealing their memories. Zoro returns, still entranced, but Luffy's nowhere to be seen."
           },
           {
             "episode": 224,
             "title": "The Last Counterattack by the Memory Thief Who Reveals His True Colors!",
-            "absoluteEpisode": 224
+            "absoluteEpisode": 224,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735433.jpg",
+            "duration": "25m",
+            "overview": "Luffy returns and knocks some sense into Zoro. Cornered, the sea horse spreads illusions of the people in their memories to distract them. It steals their complete memories and claims that it has become a Sennenryu. Luffy defeats it and returns all the memories but the townspeople are convinced they are the memory stealers."
           },
           {
             "episode": 225,
             "title": "Proud Man! Silver Fox Foxy!",
-            "absoluteEpisode": 225
+            "absoluteEpisode": 225,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735434.jpg",
+            "duration": "25m",
+            "overview": "Luffy rescues Foxy, Hamburg, and Porche from a storm at sea. When they reunite with the Sexy Foxy ship, they find it captained by somebody new. Foxy accepts a Davy Back Fight in order to regain his ship and crew. Donning the afro once again, Luffy vows to defeat the captain."
           },
           {
             "episode": 226,
             "title": "The Guy Who's The Closest To Invincible? And the Most Dangerous Man!",
-            "absoluteEpisode": 226
+            "absoluteEpisode": 226,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735435.jpg",
+            "duration": "25m",
+            "overview": "Once Foxy wins back his crew, he captures the Straw Hats. Nami and Luffy fight Foxy and although he's defeated, his crew accepts him back. Later, they sail to an island where they meet someone Robin knows: a Marine named Aokiji."
           },
           {
             "episode": 227,
             "title": "Marine Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!",
-            "absoluteEpisode": 227
+            "absoluteEpisode": 227,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735436.jpg",
+            "duration": "25m",
+            "overview": "The man they met, Marine High Admiral Aokiji, appears to be incredibly lazy. He first displays his Devil's Fruit ability by freezing the sea so some deserted people can get off the island. Unfortunately, he's determined to catch Robin. Luffy, Sanji, and Zoro attack but they seem to be no match."
           },
           {
             "episode": 228,
             "title": "Duel Between Rubber and Ice! Luffy vs. Aokiji!",
-            "absoluteEpisode": 228
+            "absoluteEpisode": 228,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735437.jpg",
+            "duration": "25m",
+            "overview": "Luffy insists on fighting Aokiji alone and risks it all so the crew can save the frozen Robin."
           }
         ]
       },
@@ -1337,177 +2020,282 @@ window._ANIME_DATA = [
           {
             "episode": 229,
             "title": "The Dashing Sea Train and the City of Water: Water Seven!",
-            "absoluteEpisode": 229
+            "absoluteEpisode": 229,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735438.jpg",
+            "duration": "25m",
+            "overview": "After the Going Merry narrowly escapes being hit by a Sea Train, the crew meets an old woman, Kokoro, and her granddaughter, Chimney. Kokoro gives Luffy a map to Water 7."
           },
           {
             "episode": 230,
             "title": "Adventure in the City On the Water! Head to the Mammoth Shipbuilding Plant!",
-            "absoluteEpisode": 230
+            "absoluteEpisode": 230,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735439.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Nami, and Usopp get strange greetings from the residents and they get to experience the roller coaster-like channels of Water 7. Luffy's group finds out that some pirates had been beaten at the hands of some powerful craftsmen; the Galley La Company. Chopper loses Robin and some strange new people threaten Zoro back on the ship."
           },
           {
             "episode": 231,
             "title": "The Franky Family and Iceberg!",
-            "absoluteEpisode": 231
+            "absoluteEpisode": 231,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735440.jpg",
+            "duration": "25m",
+            "overview": "The people who attacked Zoro reveal themselves to be the feared \"Franky Family\", though they are no match for Zoro. Luffy's group has the gold exchanged for cash. After, they meet a man who resembles Usopp, Galley La's carpenter employment foreman, Kaku. Two of the suitcases of money are stolen by the Franky Family."
           },
           {
             "episode": 232,
             "title": "Galley-La Company! A Grand Sight: Dock #1!",
-            "absoluteEpisode": 232
+            "absoluteEpisode": 232,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735441.jpg",
+            "duration": "25m",
+            "overview": "Paulie makes his debut when he retrieves Usopp's stolen money as he runs from debt collectors. Kalifa shows Luffy, Nami, and Usopp around Dock No.1 and tells them how Iceburg founded the Galley La Company. Kaku returns from the Going Merry and tells them that their keel is irreparably damaged."
           },
           {
             "episode": 233,
             "title": "Pirate Abduction Incident! A Pirate Ship That Can Only Await Her End!",
-            "absoluteEpisode": 233
+            "absoluteEpisode": 233,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735442.jpg",
+            "duration": "25m",
+            "overview": "Luffy refuses to believe that Galley La cannot repair the Going Merry. The two soon realize that not only is Usopp missing now, the two brief cases that were returned to them are empty! Nami decides to head to Franky House and finds Usopp on the way in a pitiful state. As she heads back to the ship for help, Usopp goes to the Franky House himself."
           },
           {
             "episode": 234,
             "title": "Rescuing Our Friend! Raid on the Franky House!",
-            "absoluteEpisode": 234
+            "absoluteEpisode": 234,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735443.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Sanji, Zoro, and Chopper follow Usopp's bloody trail to the Franky House where they find him passed out in front. The four of them challenge the Franky Family only to find out that their real target, Franky himself, is gone and has taken the money with him."
           },
           {
             "episode": 235,
             "title": "Big Fight under the Moon! The Pirate Flag Flutters with Sorrow!",
-            "absoluteEpisode": 235
+            "absoluteEpisode": 235,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735444.jpg",
+            "duration": "25m",
+            "overview": "Once they are back on the ship, Luffy has to finally tell Usopp that the Going Merry can no longer be repaired and that they've chosen to get a new ship without him. Usopp believes that Luffy has abandoned the dignity of their ship and says he's leaving the crew. That night, he challenges Luffy to a duel."
           },
           {
             "episode": 236,
             "title": "Luffy vs. Usopp! Collision of Two Men's Pride!",
-            "absoluteEpisode": 236
+            "absoluteEpisode": 236,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735445.jpg",
+            "duration": "25m",
+            "overview": "Usopp fights Luffy in order to decide who keeps the Going Merry; he fights harder than he's ever fought before. Luffy actually seems to pose no threat but all the while, he's remembering what great friends they used to be, sailing together on the same ship."
           },
           {
             "episode": 237,
             "title": "Severe Shock Hits the City of Water! Iceberg Targeted!",
-            "absoluteEpisode": 237
+            "absoluteEpisode": 237,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735446.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats get themselves a hotel room. Nami finds the crew on the roof with urgent news; Iceburg has been shot. As the Galley La Company frantically search for answers, Nami and Luffy decide to check on his condition - only to be met by closed gates. Franky appears then to exact his revenge - with style."
           },
           {
             "episode": 238,
             "title": "Gum-Gum Human Vs. Fire-Breathing Cyborg!",
-            "absoluteEpisode": 238
+            "absoluteEpisode": 238,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735447.jpg",
+            "duration": "25m",
+            "overview": "In the streets outside of the hospital, Luffy fights Franky. Inside, Iceburg recalls seeing Nico Robin and another tall man before he was shot. The Galley La company run outside and stop Franky and Luffy and tell them that they suspect the Straw Hat Pirates of the crime."
           },
           {
             "episode": 239,
             "title": "The Straw Hat Pirates are the Culprits? The Protectors of the City of Water!",
-            "absoluteEpisode": 239
+            "absoluteEpisode": 239,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735448.jpg",
+            "duration": "25m",
+            "overview": "The Galley La Company continues to fight Luffy and Franky is enraged that they've stolen his opponent. An incredibly high tide called the \"Aqua Laguna\" is coming and Chopper and Sanji rush to warn Usopp. Luffy raises some chaos in order to meet with Iceburg and he demands to know what's happening. Iceburg says he wants to see Robin one more time."
           },
           {
             "episode": 240,
             "title": "Eternal Farewell? Nico Robin, the Woman Who Draws Darkness!",
-            "absoluteEpisode": 240
+            "absoluteEpisode": 240,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735449.jpg",
+            "duration": "25m",
+            "overview": "In a bar, Franky talks with Kokoro about her theory on who shot Iceburg. The rumors she speaks of seem to have some truth as we see Robin meeting with someone from an organization called CP9. While the crew hide from angry residents, Sanji and Chopper discover Robin and she tells them what they've feared: she's responsible and she wants to part ways."
           },
           {
             "episode": 241,
             "title": "Capture Robin! The Determination of the Straw Hats!",
-            "absoluteEpisode": 241
+            "absoluteEpisode": 241,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735450.jpg",
+            "duration": "25m",
+            "overview": "Chopper reunites with the others without Sanji and they discuss what's happened. Luffy decides that in order to know the full truth, they must catch Robin. Usopp attempts to repair the ship enough to withstand the Aqua Laguna and the Straw Hats make their way to the Galley La Company."
           },
           {
             "episode": 242,
             "title": "Cannon Fire Is the Signal! CP9 Goes Into Action!",
-            "absoluteEpisode": 242
+            "absoluteEpisode": 242,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735451.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats (still missing Sanji) rush to Galley La where Robin and CP9 begin a raid. In Iceburg's room, Robin and the mysterious man Iceburg saw before, tell him that they've purposely placed the blame on the pirates. Their true aim is the blueprints he would've passed down to Paulie. Luffy separates from his group."
           },
           {
             "episode": 243,
             "title": "CP9 Takes Off Their Masks! Their Shocking True Faces!",
-            "absoluteEpisode": 243
+            "absoluteEpisode": 243,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735452.jpg",
+            "duration": "25m",
+            "overview": "Robin speaks with Iceburg inside his room still. We already know that Robin can read the poneglyphs - and it seems Iceburg is the one with the blueprints to the ultimate weapon, Pluton. The true enemies are revealed to be Iceburg's own allies. Elsewhere, Luffy is tied up with Paulie after Paulie tells members of CP9 that his blueprints are fake."
           },
           {
             "episode": 244,
             "title": "Secret Bond! Iceberg and Franky!",
-            "absoluteEpisode": 244
+            "absoluteEpisode": 244,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735453.jpg",
+            "duration": "25m",
+            "overview": "Lucci tells Iceburg their hypothesis and has Kaku check his pulse to tell if the things he tells him are true. They suspect that Iceburg's friend from the past, Cutty Flam, is really Franky and it's revealed to be true. Therefore, Franky has the real blueprints. The Straw Hat Pirates and Paulie break into the room where they find Iceburg and CP9."
           },
           {
             "episode": 245,
             "title": "Come Back, Robin! Showdown with CP9!",
-            "absoluteEpisode": 245
+            "absoluteEpisode": 245,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735454.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the others request that Robin comes back to the crew. She refuses and tells them that she cannot accomplish her \"wish\" if she were to stay with them. Robin turns to leave and CP9 try to hold the pirates back. Robin successfully escapes and Lucci shows those remaining his \"transformation\"."
           },
           {
             "episode": 246,
             "title": "The Straw Hat Pirates Annihilated? The Menace of the Leopard Model!",
-            "absoluteEpisode": 246
+            "absoluteEpisode": 246,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735455.jpg",
+            "duration": "25m",
+            "overview": "Lucci's transformation is a result of a Devil's Fruit; a Zoan Type leopard. He quickly disposes of the crew and CP9 tie up Paulie and Iceburg, leaving them alone as the building slowly burns down around them. In Franky's underground hideout, Usopp tells him his story and Franky is finally touched. In return, Franky tells him a little about Tom's contributions to Water 7."
           },
           {
             "episode": 247,
             "title": "The Man Who Is Loved Even by His Ship! Usopp's Tears!",
-            "absoluteEpisode": 247
+            "absoluteEpisode": 247,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735456.jpg",
+            "duration": "25m",
+            "overview": "Usopp believes that the person who repaired the Going Merry in Skypeia was really the Going Merry itself. Franky says that the ship was inhabited by a spirit who enters ships who are dearly cared for. The spirit repaired their ship just enough for them to reach the next island. The doorbell rings from the sea side and CP9 enter."
           },
           {
             "episode": 248,
             "title": "Franky's Past! The Day the Sea Train First Ran!",
-            "absoluteEpisode": 248
+            "absoluteEpisode": 248,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735458.jpg",
+            "duration": "25m",
+            "overview": "CP9 discover Franky's hidden room and he fears they'll trample his memories. A long flashback ensues, covering Franky's past in Tom's Workers and how he and Iceburg helped create the Sea Train."
           },
           {
             "episode": 249,
             "title": "Spandam's Scheme! The Day the Sea Train Shook!",
-            "absoluteEpisode": 249
+            "absoluteEpisode": 249,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735460.jpg",
+            "duration": "25m",
+            "overview": "(Franky's flashback) Spandam, a CP5 representative, was determined to get Tom proven guilty in his trial so he could get the blueprints. As Franky walked into the town, people from the government began to attack with the battleships he had personally constructed. Tom and Iceburg run to their shipyard where they are attacked by two ships which also destroy the others. Iceburg tells Franky that he has to take responsibility or he will never forgive him."
           },
           {
             "episode": 250,
             "title": "The End of the Legendary Man! The Day the Sea Train Cried!",
-            "absoluteEpisode": 250
+            "absoluteEpisode": 250,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735461.jpg",
+            "duration": "25m",
+            "overview": "(Franky's flashback) Franky said that if a ship of his were to be used as a weapon, then it's no longer one of his ships. That enraged Tom and he punched Franky for the first time, telling him he had to take pride in the ships he created. He then told the judge that he would accept the punishment for both his previous crime and the recent attack. Franky tried to stop the train to Enies Lobby with his bare hands."
           },
           {
             "episode": 251,
             "title": "The Truth Behind Her Betrayal! Robin�s Sorrowful Decision!",
-            "absoluteEpisode": 251
+            "absoluteEpisode": 251,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735462.jpg",
+            "duration": "25m",
+            "overview": "Chopper escapes the burning building with Paulie and Iceburg on his back and collapses outside. Iceburg makes it clear to Nami that Robin wanted to recover the blueprints and to do that, she wanted her companions to leave the island without her. Nami rushes to tell Chopper so they can go looking for the rest of the crew. Elsewhere, the foremen let go of the Going Merry so she would be destroyed at sea."
           },
           {
             "episode": 252,
             "title": "The Steam Whistle Forces Friends Apart! The Sea Train Starts to Run!",
-            "absoluteEpisode": 252
+            "absoluteEpisode": 252,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735463.jpg",
+            "duration": "25m",
+            "overview": "Paulie helps clear the name of the Straw Hats but does not tell the mob everything he knows. He gets the mob to follow Chopper so they can search for the rest of the crew. Nami goes her own way so she can rush to the Sea Train. As Nami nears the station, Sanji, ahead of her, approaches the train."
           },
           {
             "episode": 253,
             "title": "Sanji Barges In! Sea Train Battle in the Storm!",
-            "absoluteEpisode": 253
+            "absoluteEpisode": 253,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735464.jpg",
+            "duration": "25m",
+            "overview": "Nami and the conductors are rescued by Paulie when the Aqua Laguna floods the main station. A man hands Nami a letter he found from Sanji. It informs her that Usopp, Franky, and he are on board the train that had just departed. On board, he storms the cars. High up in the city, Nami speaks with Kokoro and spots Luffy, stuck in between two buildings, in the back streets where the Aqua Laguna will hit first."
           },
           {
             "episode": 254,
             "title": "Nami's Soul Cries Out! Straw Hat Luffy Makes a Comeback!",
-            "absoluteEpisode": 254
+            "absoluteEpisode": 254,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735465.jpg",
+            "duration": "25m",
+            "overview": "Nami finally reaches Luffy and tells him that he needs to hurry before Robin reaches Enies Lobby. Chopper finds Zoro and hands him the Sandai Kitetsu so he can escape the chimney. Luffy pushes apart the buildings he was stuck between and Paulie grabs them all so they can escape the Aqua Laguna's massive wave."
           },
           {
             "episode": 255,
             "title": "Another Sea Train? Rocketman Charges Forth!",
-            "absoluteEpisode": 255
+            "absoluteEpisode": 255,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735466.jpg",
+            "duration": "25m",
+            "overview": "Sanji fights his way through another train car and finds Usopp and Franky. Seeing how determined Luffy is to save Robin, Kokoro and Iceburg lends the Straw Hat crew the use of another sea train, Rocket Man. The Franky Family shows up, pleading with Luffy to let them join them because they'll do anything for their leader."
           },
           {
             "episode": 256,
             "title": "Rescue Our Friends! A Bond Among Foes Sworn with Fists!",
-            "absoluteEpisode": 256
+            "absoluteEpisode": 256,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735467.jpg",
+            "duration": "25m",
+            "overview": "The Rocket Man finally makes it out to sea. As the train connects with the tracks, Luffy has to rescue Chimney before she's thrown off by the wind. In the meantime, Iceburg has a flashback about when he finally met Franky again in Water 7. With Luffy and Chimney safe in the train, Paulie tells his fellow carpenters who the real culprits were. The Straw Hats, Franky Family, and Galley La Company form an alliance."
           },
           {
             "episode": 257,
             "title": "Smash the Wave! Luffy and Zoro Use the Strongest Combo!",
-            "absoluteEpisode": 257
+            "absoluteEpisode": 257,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735468.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Zoro perform a move that acts similar to a cannon and blasts a hole through the wall of the tidal wave ahead of them, opening up a channel for them to pass through. They miraculously pass through unscathed and the passengers rejoice. Sanji contacts the rest of the crew and fills them in on his current situation. Usopp separates from them but later, when Sanji and Franky are spotted, a man named Sogeking comes to their rescue."
           },
           {
             "episode": 258,
             "title": "A Mysterious Man Appears?! His Name Is Sogeking!",
-            "absoluteEpisode": 258
+            "absoluteEpisode": 258,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735470.jpg",
+            "duration": "25m",
+            "overview": "Sogeking makes his grand entrance. Franky and Sanji aren't fooled by his costume but they try to humor him. They devise a plan first, then detach the last two cars and fight their way through the rest. Back in the Rocket Man, Luffy, Zoro, Nami, and Chopper get an outfit change; Nami shows off the weapon Usopp upgraded for her while he was still with them."
           },
           {
             "episode": 259,
             "title": "Showdown Between Cooks! Sanji vs. Ramen Kenpo",
-            "absoluteEpisode": 259
+            "absoluteEpisode": 259,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735471.jpg",
+            "duration": "25m",
+            "overview": "Kalifa updates the CP9 on the situation with Franky, Sanji, and Usopp. Sanji tells Franky and Usopp to go on without him so he can fight Wanze and his \"Ramen Kenpo\". Franky begins to fight Nero, CP9's \"Weasel\", and Sogeking meets with Robin."
           },
           {
             "episode": 260,
             "title": "Rooftop Duel! Franky vs. Nero",
-            "absoluteEpisode": 260
+            "absoluteEpisode": 260,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735472.jpg",
+            "duration": "25m",
+            "overview": "Franky's fight with Nero continues. Nero discovers that Franky's weak spot is his back, so Franky lies down flat so he cannot get to it. Nero demands that he fight seriously, so Franky gets up to perform his \"Centaur\" form. Sogeking talks with Robin and tells her that the crew knows about her reasons for leaving. Those on the Rocket Man encounter the discarded cars and Zoro slices them so they can pass."
           },
           {
             "episode": 261,
             "title": "Clash! Demon-Slasher Zoro vs. Ship-Slasher T-Bone!",
-            "absoluteEpisode": 261
+            "absoluteEpisode": 261,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/428/1071065.jpg",
+            "duration": "25m",
+            "overview": "Zoro clashes with \"Ship Cutter\" T-Bone. The fight is short and Zoro joins the crew again in the Rocket Man. On the Puffing Tom, Sanji beats Wanze beautiful, though Wanze thinks he's ruined his face. Franky finally gains the upper hand against Nero and defeats him. After beating their respective opponents, Franky and Sanji stand to fight against the other CP9."
           },
           {
             "episode": 262,
             "title": "Scramble over Robin! A Cunning Plan by Sogeking!!",
-            "absoluteEpisode": 262
+            "absoluteEpisode": 262,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735474.jpg",
+            "duration": "25m",
+            "overview": "After hiding under Robin's cloak for a few episodes, Sogeking finally shows himself. They stumble into the room with the CP9 and meet with Sanji and Franky. Sogeking produces a smokescreen. The four head into another car, detach it, and escape. It's not long before Blueno pulls their car back, though. Franky knocks down the wall so they can escape but ends up on the enemy car. Blueno opens a door then back in the Straw Hat car."
           },
           {
             "episode": 263,
             "title": "The Judicial Island! Full View of Enies Lobby!",
-            "absoluteEpisode": 263
+            "absoluteEpisode": 263,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735475.jpg",
+            "duration": "25m",
+            "overview": "Robin willingly follows Blueno into his improvised door and Sogeking and Sanji are left alone. For a while, Blueno explains a little of Robin's past involving the Buster Call. Back at the Rocket Man, Yokuzuna the frog jumps onto the front of the train, knocking them from the rails. After Kokoro speaks with him, he joins the group. The CP9, Franky, and Robin finally reach Enies Lobby and disembark."
           }
         ]
       },
@@ -1517,367 +2305,586 @@ window._ANIME_DATA = [
           {
             "episode": 264,
             "title": "Landing Operations Start! Charge in, Straw Hats!",
-            "absoluteEpisode": 264
+            "absoluteEpisode": 264,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735476.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the others finally catch up to Sanji, Usopp, and the rest of the Franky Family as they near Enies Lobby. Paulie sits down with the group and talks about their plan. Luffy does not bother to follow the plan, and slingshots himself beyond the gates before the train stops."
           },
           {
             "episode": 265,
             "title": "Luffy Cuts Through! Big Showdown on the Judicial Island!",
-            "absoluteEpisode": 265
+            "absoluteEpisode": 265,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735477.jpg",
+            "duration": "25m",
+            "overview": "Spandam is informed that an intruder has entered the area. Luffy confuses the Marines guarding the entrance gate by manipulating one of their own comrades to fight against them. The rest of Luffy's group come in after he already slingshot himself over the gates. Because they aren't all quite as limber as Luffy, they have to band together to get inside. Giant Gate Keepers Kaashii and Oimo come to fight the Franky Family."
           },
           {
             "episode": 266,
             "title": "Battle Against Giants! Open the Second Gate!",
-            "absoluteEpisode": 266
+            "absoluteEpisode": 266,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735478.jpg",
+            "duration": "25m",
+            "overview": "In a David and Goliath turn around, the Franky Family and Galley La bring down Kaashi. Spandam receives an incomplete report about Luffy and believes that he's no longer a threat. The Cipher Pol 9 members meet with Spandam and it looks more like a comedy routine than a briefing."
           },
           {
             "episode": 267,
             "title": "Find a Way Out! Rocketman Takes Flight!",
-            "absoluteEpisode": 267
+            "absoluteEpisode": 267,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735479.jpg",
+            "duration": "25m",
+            "overview": "While Robin and Franky are brought before Spandam, Luffy blasts his way through another wave of marines. In order to get past the gate, Zoro orders that they just keep going. Yokozuna the frog bends down the outside gates and they fly over the gate inside. Back on the ground, Paulie is stabbed by someone from \"The Law's Watch Dogs\", the Houbantai. The Rocket Man flies over the gate and the point of the train smashes into Oimo's back, knocking him out cold."
           },
           {
             "episode": 268,
             "title": "Catch Up with Luffy! The Straw Hats' All-Out Battle",
-            "absoluteEpisode": 268
+            "absoluteEpisode": 268,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735480.jpg",
+            "duration": "25m",
+            "overview": "As the title of the episode suggests, the Straw Hats enter an all-out war to catch up with Luffy, albeit a humorous one; Sanji and Zoro bicker over who's more dangerous, Nami injures her own comrades with her improved weapon, and Sogeking fails at being a decoy. The Houbantai show up to stop them and the foremen of Galley La stay behind to fight."
           },
           {
             "episode": 269,
             "title": "Robin Betrayed! The Motive of the World Government!",
-            "absoluteEpisode": 269
+            "absoluteEpisode": 269,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735481.jpg",
+            "duration": "25m",
+            "overview": "Robin questions why Spandam was given rights to the Buster Call. The CP9 plan to kill the Straw Hats because they violated the original arrangement; that they entered Enies Lobby after leaving Water 7. Back in the fray, Franky's Giant Bulls talk with Chopper. He translates and they notice that Sogeking is not with them anymore. Elsewhere, Blueno appears before Luffy."
           },
           {
             "episode": 270,
             "title": "Give Robin Back! Luffy vs. Blueno!",
-            "absoluteEpisode": 270
+            "absoluteEpisode": 270,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735482.jpg",
+            "duration": "25m",
+            "overview": "For a while, Sogeking talks with Oimo about how he and Kaashi came to support the marines and hears a familiar story. The majority of the episode is a Little Garden flashback. Soddom the Giant Bull takes severe damage and urges those riding him to run before he collapses. Back at the fight between Blueno and Luffy, Luffy throws the first punch to initiate the battle."
           },
           {
             "episode": 271,
             "title": "Don�t Stop! Hoist the Counterattack Signal!",
-            "absoluteEpisode": 271
+            "absoluteEpisode": 271,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735483.jpg",
+            "duration": "25m",
+            "overview": "Kokoro contacts the Straw Hats by way of Nami's baby den den mushi. The Franky family decide to lower the inner bridge so the others can enter the courthouse first. After Gomorrah is blinded, Sogeking arrives with the giants as back up. Shortly after, Gomorrah tells those riding him to hold on, as he plans to take them to the courthouse. Inside, Spandam gives Kaku and Kalifa Devil's Fruits."
           },
           {
             "episode": 272,
             "title": "Almost to Luffy! Gather at the Courthouse Plaza!",
-            "absoluteEpisode": 272
+            "absoluteEpisode": 272,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735484.jpg",
+            "duration": "25m",
+            "overview": "Although Gomorrah was blinded, he continues to rush ahead. Spandam receives word of their progress right as the Straw Hats reach the gate. Zoro slices right through it and while up top, Luffy activates \"Gear Second\"."
           },
           {
             "episode": 273,
             "title": "Everything Is to Protect My Friends! Second Gear Activated!",
-            "absoluteEpisode": 273
+            "absoluteEpisode": 273,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735485.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats enter and Yokozuna the frog and the Franky Family stay behind at the door to watch their backs. The three-headed judge attempts to stop them but the Franky Family holds him off. Elsewhere, Luffy's Gear Second is put into action, ultimately defeating Blueno without having to activate Gear Third."
           },
           {
             "episode": 274,
             "title": "Give Us Your Answer, Robin! The Straw Hats' Outcry!",
-            "absoluteEpisode": 274
+            "absoluteEpisode": 274,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735486.jpg",
+            "duration": "25m",
+            "overview": "Franky helps Robin escape from their chains and they make it outside to see Luffy. Luffy wants to come over to rescue Robin but she tells him to stay, that she only wants to die. Below, as Yokozuna falls, the giants come to cover. All the Straw hats arrive on the roof, and ask Robin to return."
           },
           {
             "episode": 275,
             "title": "Robin's Past! The Girl was Called a Devil!",
-            "absoluteEpisode": 275
+            "absoluteEpisode": 275,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735487.jpg",
+            "duration": "25m",
+            "overview": "20 years ago, on the West Blue island of Ohara, Nico Robin becomes an archaeologist, but Professor Clover forbids her from researching the Void Century. She meets the giant Saul who has washed up on the beach. Meanwhile, Spandine is just off the coast of Ohara."
           },
           {
             "episode": 276,
             "title": "Fated Mother and Daughter! The Mother's Name is Olvia!",
-            "absoluteEpisode": 276
+            "absoluteEpisode": 276,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735488.jpg",
+            "duration": "25m",
+            "overview": "Robin continues talking with Saul, and Saul is shocked to learn that Robin is Nico Olvia's daughter and that he is on Ohara. Olvia returns to Ohara to warn the other scholars that the World Government's forces are headed there. She decides not to reveal herself to Robin, not wanting her daughter to be branded a criminal because of her. CP9 arrives on the island, capturing Olvia and rounding up the scholars."
           },
           {
             "episode": 277,
             "title": "The Tragedy of Ohara! The Terror of the Buster Call!",
-            "absoluteEpisode": 277
+            "absoluteEpisode": 277,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735489.jpg",
+            "duration": "25m",
+            "overview": "Clover reveals that the Poneglyphs were most likely carved by an ancient country in order to prevent their enemy, the World Government, from completely erasing their history, but is shot by Spandine, who then activates the Golden Den Den Mushi. Robin recognizes Olvia as her mother, but Olvia denies it, causing Robin to admit that she is an archaeologist and can read the Poneglyphs. The Buster Call commences, and, after a tearful reunion with her daughter, Olvia entrusts Saul with Robin's care."
           },
           {
             "episode": 278,
             "title": "Say You Want to Live! We Are Your Friends!!",
-            "absoluteEpisode": 278
+            "absoluteEpisode": 278,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735490.jpg",
+            "duration": "25m",
+            "overview": "Robin finishes her story and says that while she considers the Straw Hats her friends, she believes that one day, they will be no longer able to protect her from her pursuers, and betray her like the others did. After Spandam points out that taking in Robin means declaring war on the entire world, Luffy tells Sogeking to shoot the World Government flag. Sogeking uses his Sure-kill Firebird Star to burn up the flag, declaring war on the world for Robin's sake. Robin, moved by the depth of Luffy's action, cries out that she wants to live and return to the sea with Luffy, and Luffy and the others prepare to do battle with CP9 and save Robin."
           },
           {
             "episode": 279,
             "title": "Jump Towards the Falls! Luffy�s Feelings!",
-            "absoluteEpisode": 279
+            "absoluteEpisode": 279,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735491.jpg",
+            "duration": "25m",
+            "overview": "Luffy's backstory."
           },
           {
             "episode": 280,
             "title": "The Ways of Men! Zoro's Techniques, Usopp's Dream!",
-            "absoluteEpisode": 280
+            "absoluteEpisode": 280,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735492.jpg",
+            "duration": "25m",
+            "overview": "Zoro and Usopp's backstories."
           },
           {
             "episode": 281,
             "title": "A Bond of Friendship Woven by Tears! Nami's World Map!",
-            "absoluteEpisode": 281
+            "absoluteEpisode": 281,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735493.jpg",
+            "duration": "25m",
+            "overview": "Nami's backstory."
           },
           {
             "episode": 282,
             "title": "Parting Builds a Man's Character! Sanji and Chopper!",
-            "absoluteEpisode": 282
+            "absoluteEpisode": 282,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735494.jpg",
+            "duration": "25m",
+            "overview": "The backstories to Sanji and Chopper."
           },
           {
             "episode": 283,
             "title": "Everything Is for Her Friends! Robin in the Darkness!",
-            "absoluteEpisode": 283
+            "absoluteEpisode": 283,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735495.jpg",
+            "duration": "25m",
+            "overview": "The reasons for Nico Robin's recent actions, as well as a summary of her back story."
           },
           {
             "episode": 284,
             "title": "I'm Not Gonna Hand Over the Blueprints! Franky's Decision!",
-            "absoluteEpisode": 284
+            "absoluteEpisode": 284,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735496.jpg",
+            "duration": "25m",
+            "overview": "After Robin decides she wants to live, the Straw Hats wait for the bridge so they can battle CP9. Franky reveals that the Pluton blueprints are with him and burns them in front of Spandam, saying that he's betting it all on the Straw hats. With unexpected help from Kokoro, Franky and the Straw Hats make a dramatic entrance into the Tower of Justice."
           },
           {
             "episode": 285,
             "title": "Retrieve the 5 Keys! The Straw Hat Crew VS CP9",
-            "absoluteEpisode": 285
+            "absoluteEpisode": 285,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735497.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats and Franky made it to the Tower of Justice. However, Fukurou reveals that one of the CP9 members has the key to Robin's handcuffs, and will not say which, so the Straw Hats must fight every member to find the key. Meanwhile, Chimney follows Spandam and Lucci down a secret corridor."
           },
           {
             "episode": 286,
             "title": "Power of the Devil Fruit! Kaku and Jabura Transform",
-            "absoluteEpisode": 286
+            "absoluteEpisode": 286,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735498.jpg",
+            "duration": "25m",
+            "overview": "Zoro begins his intense battle with Kaku, and Sogeking fails to retrieve the key from a sleeping Jabra. Kaku reveals his Devil Fruit power and causes the floor to collapse in the process. Meanwhile, Luffy searches high and low in the Tower of Justice, and attempts to cross the whirlpools to the Bridge of Hesitation."
           },
           {
             "episode": 287,
             "title": "I Won't Kick Even If It Costs Me My Life! Sanji's Chivalry!",
-            "absoluteEpisode": 287
+            "absoluteEpisode": 287,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735499.jpg",
+            "duration": "25m",
+            "overview": "Nami barely escapes from Kumadori, stealing his key in the process. Kaku utilizes his new body to cut the Tower of Justice in half, and Sanji attempts to get the key from Kalifa."
           },
           {
             "episode": 288,
             "title": "Fukurou's Miscalculation! My Cola is the Water of Life!",
-            "absoluteEpisode": 288
+            "absoluteEpisode": 288,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/69/172591.jpg",
+            "duration": "25m",
+            "overview": "Chimney and Gombe show Luffy the secret passage that leads to Robin; Franky puts on a display of raw punching power."
           },
           {
             "episode": 289,
             "title": "Zoro Busts Out a New Technique! The Sword's Name is Sniperking?",
-            "absoluteEpisode": 289
+            "absoluteEpisode": 289,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/69/172632.jpg",
+            "duration": "25m",
+            "overview": "Franky's brawl spills into the ocean; Usopp and Sanji attempt to overcome their handcuffs by outsmarting their opponents."
           },
           {
             "episode": 290,
             "title": "Uncontrollable! Chopper's Forbidden Rumble!",
-            "absoluteEpisode": 290
+            "absoluteEpisode": 290,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/69/172633.jpg",
+            "duration": "25m",
+            "overview": "After Chopper's first Rumble ball wears off and his second fails he is forced to break a promise to Dr. Kureha. He uses his third Rumble Ball in a row and transform into his most powerful and deadly form: Monster Point."
           },
           {
             "episode": 291,
             "title": "Boss Luffy Returns! Is It a Dream or Reality? Lottery Ruckus!",
-            "absoluteEpisode": 291
+            "absoluteEpisode": 291,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/69/172660.jpg",
+            "duration": "25m",
+            "overview": "A madcap adventure starring the Straw Hats; A camel that eats lottery tickets."
           },
           {
             "episode": 292,
             "title": "A Big Rice Cake Tossing Race at the Castle! Red Nose's Plot!",
-            "absoluteEpisode": 292
+            "absoluteEpisode": 292,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/69/172693.jpg",
+            "duration": "25m",
+            "overview": "The madcap throwback continues as Luffy and the gang competes for a priceless treasure hidden inside a tasty snack."
           },
           {
             "episode": 293,
             "title": "Bubble Master Kalifa! The Soap Trap Closes in on Nami!",
-            "absoluteEpisode": 293
+            "absoluteEpisode": 293,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/70/176273.jpg",
+            "duration": "25m",
+            "overview": "Nami battles a bathing beauty and her lethal bubbles; Chopper unleashes his inner beast; Luffy inches even closer to catching up with Robin."
           },
           {
             "episode": 294,
             "title": "Resounding Bad News! The Buster Call Invoked!",
-            "absoluteEpisode": 294
+            "absoluteEpisode": 294,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/70/176277.jpg",
+            "duration": "25m",
+            "overview": "Spandam accidentally invokes the Buster Call on Enies Lobby with the Golden Den Den Mushi. He also accidentally informs everyone on the island of the coming destruction."
           },
           {
             "episode": 295,
             "title": "Five Namis? Nami Strikes Back With Mirages",
-            "absoluteEpisode": 295
+            "absoluteEpisode": 295,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072538.jpg",
+            "duration": "25m",
+            "overview": "Zoro uses Usopp as a decoy in his beast battle; Nami discovers a secret."
           },
           {
             "episode": 296,
             "title": "Nami's Decision! Fire at the Out-Of-Control Chopper!",
-            "absoluteEpisode": 296
+            "absoluteEpisode": 296,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/70/176284.jpg",
+            "duration": "25m",
+            "overview": "Franky and Nami form a plan to stop Choppers rampage; Usopp and Zoro spend time apart."
           },
           {
             "episode": 297,
             "title": "Hunter Sanji Makes An Entrence? Elegy for a Lying Wolf!",
-            "absoluteEpisode": 297
+            "absoluteEpisode": 297,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/70/176580.jpg",
+            "duration": "25m",
+            "overview": "Usopp's life is saved by a familiar foot; Luffy struggles to hit a formidable foe."
           },
           {
             "episode": 298,
             "title": "Fiery Kicks! Sanji's Full Course of Foot Techniques!",
-            "absoluteEpisode": 298
+            "absoluteEpisode": 298,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072540.jpg",
+            "duration": "25m",
+            "overview": "Sanji uses the Devil's leg to even the odds."
           },
           {
             "episode": 299,
             "title": "Fierce Sword Attacks! Zoro vs. Kaku, Powerful Sword Fighting Showdown!",
-            "absoluteEpisode": 299
+            "absoluteEpisode": 299,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072543.jpg",
+            "duration": "25m",
+            "overview": "The battle between Zoro and Kaku rages on. Meanwhile Franky finally reaches Luffy."
           },
           {
             "episode": 300,
             "title": "Demon God Zoro! An Incarnation Of Asura Born From Fighting Spirit!",
-            "absoluteEpisode": 300
+            "absoluteEpisode": 300,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072547.jpg",
+            "duration": "25m",
+            "overview": "Zoro unleashes a demonic nine-sword fighting style on his giraffe opponent. Meanwhile Luffy activates Gear Second in his fight against Rob Lucci, who transforms into his half-leopard form."
           },
           {
             "episode": 301,
             "title": "Spandam Frightened! The Hero on the Tower of Law!",
-            "absoluteEpisode": 301
+            "absoluteEpisode": 301,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735501.jpg",
+            "duration": "25m",
+            "overview": "Robin finds out that Spandam is the son of Spandine, the man who invoked the buster call on Ohara. Sogeking stops Spandam with his Kabuto and saves Robin, while Franky releases her Seastone handcuffs. Now free to use her Devil Fruit powers again, Robin finally releases her anger on Spandam with her Seis Fleur Slap. However, the Buster Call on Enies Lobby has just begun."
           },
           {
             "episode": 302,
             "title": "Robin Freed! Luffy vs. Lucci, Showdown Between Leaders!",
-            "absoluteEpisode": 302
+            "absoluteEpisode": 302,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735502.jpg",
+            "duration": "25m",
+            "overview": "Luffy's battle with Lucci reveals the powerful secrets of the rubber man's second gear; Spandam's thoughtless Buster Call begins."
           },
           {
             "episode": 303,
             "title": "Boss Luffy is the Culprit? Track Down the Missing Great Cherry Tree!",
-            "absoluteEpisode": 303
+            "absoluteEpisode": 303,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735503.jpg",
+            "duration": "25m",
+            "overview": "An ancient tree is stolen by a madman with the power to freeze time."
           },
           {
             "episode": 304,
             "title": "I Can't Protect Anyone Unless I Win! Third Gear Activated",
-            "absoluteEpisode": 304
+            "absoluteEpisode": 304,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072565.jpg",
+            "duration": "25m",
+            "overview": "While Sanji and the others are trapped in a tunnel with water pouring in, Luffy activates Gear Third in the battle against Lucci."
           },
           {
             "episode": 305,
             "title": "The Terrifying Past! Dark Justice and Rob Lucci",
-            "absoluteEpisode": 305
+            "absoluteEpisode": 305,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/80/200426.jpg",
+            "duration": "25m",
+            "overview": "The past of Rob Lucci is told by the commander of the Marines."
           },
           {
             "episode": 306,
             "title": "A Mysterious Mermaid Appears? As Consciousness Fades Away...",
-            "absoluteEpisode": 306
+            "absoluteEpisode": 306,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072607.jpg",
+            "duration": "25m",
+            "overview": "Robin rejoins the fight; the Straw Hats struggle to survive underwater."
           },
           {
             "episode": 307,
             "title": "Cannon Fire Sinks the Island! Franky's Lamentation!",
-            "absoluteEpisode": 307
+            "absoluteEpisode": 307,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/80/200443.jpg",
+            "duration": "25m",
+            "overview": "Thanks to a Mermaid the Straw Hats make it safely to the ship. However, Luffy is still fighting Lucci in the first tower of the Bridge of Hesitation."
           },
           {
             "episode": 308,
             "title": "Wait for Luffy! Mortal Combat on the Bridge of Hesitation!",
-            "absoluteEpisode": 308
+            "absoluteEpisode": 308,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735512.jpg",
+            "duration": "25m",
+            "overview": "Luffy pushes his body to the breaking point during his battle with Rob Lucci; the rest of the Straw Hats try to fight off a fleet of Marines."
           },
           {
             "episode": 309,
             "title": "Fists Full of Emotion! Luffy Unleashes Gatling with All His Might!",
-            "absoluteEpisode": 309
+            "absoluteEpisode": 309,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735513.jpg",
+            "duration": "25m",
+            "overview": "Usopp's desperate pleas inspire the rubber-man to mount one final attack on Rob Lucci."
           },
           {
             "episode": 310,
             "title": "From the Sea, a Friend Arrives! The Straw Hats Share the Strongest Bond!",
-            "absoluteEpisode": 310
+            "absoluteEpisode": 310,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072626.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats must throw themselves into the sea to survive."
           },
           {
             "episode": 311,
             "title": "Everyone Makes a Great Escape! The Road to Victory is for the Pirates!",
-            "absoluteEpisode": 311
+            "absoluteEpisode": 311,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072631.jpg",
+            "duration": "25m",
+            "overview": "With the arrival of Going Merry, the Straw Hats make their great escape from Enies Lobby. Thanks to Sanji and his clever strategy of closing the Gates of Justice, the Marines are unable to get a clear shot at Merry."
           },
           {
             "episode": 312,
             "title": "Thank You, Merry! Snow Falls Over the Parting Sea!",
-            "absoluteEpisode": 312
+            "absoluteEpisode": 312,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072638.jpg",
+            "duration": "25m",
+            "overview": "The Going Merry cracks and breaks under her own weight, and the crew say their own farewells as they give the ship a Viking funeral, finally putting her to rest. As she goes up in flames, Merry apologizes and then thanks the Staw Hats for treasuring her for so long."
           },
           {
             "episode": 313,
             "title": "Peace Interrupted! A Navy Vice Admiral with a Fist of Love!",
-            "absoluteEpisode": 313
+            "absoluteEpisode": 313,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072699.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats get some much needed rest; Franky makes a big announcement; Vice Admiral Garp tracks down his grandson."
           },
           {
             "episode": 314,
             "title": "The Strongest Family? Luffy's Father Revealed!",
-            "absoluteEpisode": 314
+            "absoluteEpisode": 314,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735520.jpg",
+            "duration": "25m",
+            "overview": "Luffy's friends learn that Luffy's grandfather is a marine hero, Luffy learns who his father is."
           },
           {
             "episode": 315,
             "title": "Its Name Is The New World! The Fate of the Grand Line!",
-            "absoluteEpisode": 315
+            "absoluteEpisode": 315,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735522.jpg",
+            "duration": "25m",
+            "overview": "Luffy has the chance to catch up on things with his old friend Coby; Nami does some serious snooping around."
           },
           {
             "episode": 316,
             "title": "Shanks Makes a Move! The Linchpin to the Reckless Era!",
-            "absoluteEpisode": 316
+            "absoluteEpisode": 316,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735523.jpg",
+            "duration": "25m",
+            "overview": "Shanks visits Whitebeard with a serious request; Franky and Iceberg begin construction on a ship."
           },
           {
             "episode": 317,
             "title": "A Girl in Search of Her Yagara! Great Search in the City of Water!",
-            "absoluteEpisode": 317
+            "absoluteEpisode": 317,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072741.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Chopper risk their lives to help a heartbroken young girl track down her long lost pet."
           },
           {
             "episode": 318,
             "title": "Mothers are Strong! Zoro's Hectic Household Chores!",
-            "absoluteEpisode": 318
+            "absoluteEpisode": 318,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735527.jpg",
+            "duration": "25m",
+            "overview": "Zoro's day is ruined by a group of orphans as he searches for a new sword."
           },
           {
             "episode": 319,
             "title": "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!",
-            "absoluteEpisode": 319
+            "absoluteEpisode": 319,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735528.jpg",
+            "duration": "25m",
+            "overview": "While out shopping with Chimney, Sanji is persuaded by her to go to a good cook whom which she calls grandpa, the old man teaches Sanji the reason why his food tastes so good, salt which is produced by the Aqua Laguna."
           },
           {
             "episode": 320,
             "title": "Everyone Finally Has A Bounty! A Pirate Group Worth Over Six Hundred Million!",
-            "absoluteEpisode": 320
+            "absoluteEpisode": 320,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735529.jpg",
+            "duration": "25m",
+            "overview": "Franky and Iceberg stay up all night, trying to see who can do the most work to finish the new ship for the Straw Hats."
           },
           {
             "episode": 321,
             "title": "The King of Animals that Overlooks the Sea! The Dream Ship Magnificently Completed!",
-            "absoluteEpisode": 321
+            "absoluteEpisode": 321,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735530.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the rest of the Staw Hats prepare to set sail on their newly completed ship; Franky discovers that he now is wanted by the government."
           },
           {
             "episode": 322,
             "title": "Goodbye My Dear Underlings! Franky Departs!",
-            "absoluteEpisode": 322
+            "absoluteEpisode": 322,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735531.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats press Franky to leave with them."
           },
           {
             "episode": 323,
             "title": "Departing the City of Water! Usopp Mans Up and Brings Closure to the Duel!",
-            "absoluteEpisode": 323
+            "absoluteEpisode": 323,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735532.jpg",
+            "duration": "25m",
+            "overview": "While awaiting the return of Usopp, Luffy and the Straw Hats face a barrage of cannon fire by the marines."
           },
           {
             "episode": 324,
             "title": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!",
-            "absoluteEpisode": 324
+            "absoluteEpisode": 324,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735533.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats choose a name for their new ship, the crew has a chance to show off the ship during battle with the marines."
           },
           {
             "episode": 325,
             "title": "The Most Heinous Power! Blackbeard's Darkness Attacks Ace!",
-            "absoluteEpisode": 325
+            "absoluteEpisode": 325,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1072899.jpg",
+            "duration": "25m",
+            "overview": "Blackbeard and Ace match their devil fruit powers against each other."
           },
           {
             "episode": 326,
             "title": "The Mysterious Band of Pirates! Sunny and the Dangerous Trap!",
-            "absoluteEpisode": 326
+            "absoluteEpisode": 326,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735848.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats try to help another ships crew."
           },
           {
             "episode": 327,
             "title": "Sunny in a Pinch! Roar, Secret Superspeed Mecha!",
-            "absoluteEpisode": 327
+            "absoluteEpisode": 327,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735849.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats are lead into a trap when they encounter what appears to be marines."
           },
           {
             "episode": 328,
             "title": "The Dream Sinking in the New World! The Disillusioned Pirate, Puzzle!",
-            "absoluteEpisode": 328
+            "absoluteEpisode": 328,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735850.jpg",
+            "duration": "25m",
+            "overview": "The captain of the Phoenix Pirates loses his will to fight; The Straw Hats try to figure out the Iceberg trap."
           },
           {
             "episode": 329,
             "title": "The Assassins Attack! The Great Battle on Ice Begins!",
-            "absoluteEpisode": 329
+            "absoluteEpisode": 329,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735851.jpg",
+            "duration": "25m",
+            "overview": "Using the Shark Submerge III, Nami and Franky find out that penguins are moving the icebergs. Afterwards, they are attacked by Hockera. Usopp and Sanji are knocked off the Thousand Sunny by an iceberg, and encounter Salchow and Arbell."
           },
           {
             "episode": 330,
             "title": "The Staw Hat�s Hard Battles! A Pirate Soul Risking It All for the Flag!",
-            "absoluteEpisode": 330
+            "absoluteEpisode": 330,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735852.jpg",
+            "duration": "25m",
+            "overview": "The fights continue with Luffy, distracted due to the lost flag, has initial trouble with Brindo, but the Phoenix Pirates help capture him."
           },
           {
             "episode": 331,
             "title": "Hot Full Throttle! The Twin�s Magnetic Power Drawing Near!",
-            "absoluteEpisode": 331
+            "absoluteEpisode": 331,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735853.jpg",
+            "duration": "25m",
+            "overview": "Luffy battles a set of magnetic twins; Zorro drinks with the man who stole the Straw Hats Flag."
           },
           {
             "episode": 332,
             "title": "Mansion of Great Chaos! The Enraged Don and the Captured Crew!",
-            "absoluteEpisode": 332
+            "absoluteEpisode": 332,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/99/247859.jpg",
+            "duration": "25m",
+            "overview": "Robin's cola care package helps spring her friends from an icy prison; Luffy's bold words inspire a battered and beaten pirate to keep fighting."
           },
           {
             "episode": 333,
             "title": "The Return of the Phoenix! The Dream of the Pirate Flag Sworn to a Friend!",
-            "absoluteEpisode": 333
+            "absoluteEpisode": 333,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/99/247863.jpg",
+            "duration": "25m",
+            "overview": "Luffy continues his battle with the magnetic twins; Chopper uses a rumble ball in his battle with a hockey player."
           },
           {
             "episode": 334,
             "title": "The Red Hot Decisive Battle! Luffy vs. The Scorching Don!",
-            "absoluteEpisode": 334
+            "absoluteEpisode": 334,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735854.jpg",
+            "duration": "25m",
+            "overview": "Luffy battles an opponent too hot to handle; Robin is attacked by a jungle when a little girl does not get her way; Chopper makes a heroic dash."
           },
           {
             "episode": 335,
             "title": "Waiting in the New World! Farewell to the Brave Pirates!",
-            "absoluteEpisode": 335
+            "absoluteEpisode": 335,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735855.jpg",
+            "duration": "25m",
+            "overview": "Luffy's battle with Papa threatens to destroy the entire icy island."
           },
           {
             "episode": 336,
             "title": "Chopperman to the Rescue! Protect the TV Station by the Shore!",
-            "absoluteEpisode": 336
+            "absoluteEpisode": 336,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735856.jpg",
+            "duration": "25m",
+            "overview": "Chopperman must battle a hideously evil villain to regain control of his favorite tv station."
           }
         ]
       },
@@ -1887,227 +2894,362 @@ window._ANIME_DATA = [
           {
             "episode": 337,
             "title": "Plunging into the Devil�s Sea! The Mysterious Skeleton Floating in the Fog!",
-            "absoluteEpisode": 337
+            "absoluteEpisode": 337,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735857.jpg",
+            "duration": "25m",
+            "overview": "The crew is surrounded by a dense fog and they meet skeleton Brook, who tells them his sad story."
           },
           {
             "episode": 338,
             "title": "The Joy of Seeing People! The Gentleman Skeleton�s True Identity!",
-            "absoluteEpisode": 338
+            "absoluteEpisode": 338,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735858.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats attempt to unravel the mystery of their new comrade then discover that they have a problem."
           },
           {
             "episode": 339,
             "title": "One Unnatural Phenomenon After the Next! Disembarking on Thriller Bark!",
-            "absoluteEpisode": 339
+            "absoluteEpisode": 339,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735859.jpg",
+            "duration": "25m",
+            "overview": "After getting stranded at Thriller Bark, Chopper, Nami, and Usopp are chased by a three headed beast. Back on the boat, Luffy and the rest of the Straw Hats are terrorized by an unseen enemy!"
           },
           {
             "episode": 340,
             "title": "The Man Called a Genius! Hogback Makes His Appearance!",
-            "absoluteEpisode": 340
+            "absoluteEpisode": 340,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735860.jpg",
+            "duration": "25m",
+            "overview": "Chopper, Nami, and Usopp get scared out of their minds when they encounter a graveyard full of zombies! Meanwhile, the rest of the crew gets trapped in super creepy sea web!"
           },
           {
             "episode": 341,
             "title": "Nami�s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
-            "absoluteEpisode": 341
+            "absoluteEpisode": 341,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735861.jpg",
+            "duration": "25m",
+            "overview": "Nami, Usopp and Chopper meet Dr Hogback and they spend a crazy night in his castle. The rest of the crew is crossing the forest in order to rescue them."
           },
           {
             "episode": 342,
             "title": "The Zombie�s Secret! Hogback�s Nightmarish Laboratory!",
-            "absoluteEpisode": 342
+            "absoluteEpisode": 342,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735862.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats discover who the creator of the Zombies is."
           },
           {
             "episode": 343,
             "title": "His Name is Moria! The Great Shadow-Seizing Pirate's Trap!",
-            "absoluteEpisode": 343
+            "absoluteEpisode": 343,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735863.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats find out that they were specifically lured to this strange place."
           },
           {
             "episode": 344,
             "title": "Feast of the Zombie Song! The Night Raid's Bell is the Sound of Darkness!",
-            "absoluteEpisode": 344
+            "absoluteEpisode": 344,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735864.jpg",
+            "duration": "25m",
+            "overview": "Usopp, Chopper, and Nami get trapped in a coffin after being slashed by a zombie samurai. Meanwhile, Luffy and the rest of the Straw Hats make short work of some haunted paintings!"
           },
           {
             "episode": 345,
             "title": "A Bunch of Animals? Perona's Wonder Garden!",
-            "absoluteEpisode": 345
+            "absoluteEpisode": 345,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/104/261600.jpg",
+            "duration": "25m",
+            "overview": "Usopp, Chopper and Nami do battle with a garden full of adorably dead zombie animals."
           },
           {
             "episode": 346,
             "title": "The Vanishing Straw Hat Crew! A Mysterious Swordsman Appears!",
-            "absoluteEpisode": 346
+            "absoluteEpisode": 346,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/104/261599.jpg",
+            "duration": "25m",
+            "overview": "A mysterious swordsman appears during the fights, Luffy has a encounter he may not be able to escape from."
           },
           {
             "episode": 347,
             "title": "Chivalry Remains! The Traitorous Zombie Protects Nami!",
-            "absoluteEpisode": 347
+            "absoluteEpisode": 347,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/104/261614.jpg",
+            "duration": "25m",
+            "overview": "Robin and Franky end up having to deal with the giant spider zombie while Luffy is turned into a zombie and expected to fight his fellow Straw Hats."
           },
           {
             "episode": 348,
             "title": "Appearing from the Sky! That Man Is the Humming Swordsman!",
-            "absoluteEpisode": 348
+            "absoluteEpisode": 348,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735865.jpg",
+            "duration": "25m",
+            "overview": "Nami gives love advice to a zombie; Luffy finds himself face-to-face with Gecko Moria; Robin gets caught in a spookyspider web."
           },
           {
             "episode": 349,
             "title": "Luffy's Emergency Situation! The Ultimate Shadow's Destination!",
-            "absoluteEpisode": 349
+            "absoluteEpisode": 349,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/104/261631.jpg",
+            "duration": "25m",
+            "overview": "Brook strikes the final blow in his battle with the spider monkey, Gecko Moria's plan is revealed. Luffy almost escapes."
           },
           {
             "episode": 350,
             "title": "The Warrior Known As the \"Devil\"!! The Moment of Oars' Revival",
-            "absoluteEpisode": 350
+            "absoluteEpisode": 350,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735866.jpg",
+            "duration": "25m",
+            "overview": "Brook tells Franky and Robin the secret to slaying Zombies; Gecko Moria revels the terrifying monster that will be the recipient of Luffy's shadow."
           },
           {
             "episode": 351,
             "title": "Awakening After 500 Years!! Oars Opens His Eyes!!",
-            "absoluteEpisode": 351
+            "absoluteEpisode": 351,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/124/311794.jpg",
+            "duration": "25m",
+            "overview": "After Luffy's shadow is forced into a monster, Nami is kidnapped and Usopp and Chopper try to rescue her."
           },
           {
             "episode": 352,
             "title": "A Belief Worth Begging to Live for!! Brook Defends His Afro",
-            "absoluteEpisode": 352
+            "absoluteEpisode": 352,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/124/311798.jpg",
+            "duration": "25m",
+            "overview": "Gecko Moria's minions struggle with the burden of feeding a giant zombie."
           },
           {
             "episode": 353,
             "title": "A Man's Promise Never Dies!! To the Friend Waiting Under the Distant Sky",
-            "absoluteEpisode": 353
+            "absoluteEpisode": 353,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314167.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zorro and Sanji discover that their shadows are missing; Franky relates to Brooks story about a promise he made to a very special whale."
           },
           {
             "episode": 354,
             "title": "I Swear to Go See Him! Brook and the Cape of Promise",
-            "absoluteEpisode": 354
+            "absoluteEpisode": 354,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314177.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the Straw Hats flash back to the story of Laboon the abandoned whale; revelations about Brook's battle with the zombie samurai."
           },
           {
             "episode": 355,
             "title": "Food, Nami and Shadows!! Luffy's Enraged Counterattack",
-            "absoluteEpisode": 355
+            "absoluteEpisode": 355,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314181.jpg",
+            "duration": "25m",
+            "overview": "Luffy sets out to regain his shadow and convince the walking skeleton Brooks to become a member of his crew. Meanwhile, Sanji races to stop the Zombie leader from his plan to marry Nami."
           },
           {
             "episode": 356,
             "title": "Usopp's the Strongest? Leave Anything Negative to Him",
-            "absoluteEpisode": 356
+            "absoluteEpisode": 356,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314184.jpg",
+            "duration": "25m",
+            "overview": "Usopp surprises everyone when he encounters the ghosts."
           },
           {
             "episode": 357,
             "title": "The General Zombies Are Down in a Flash!! Oars Feels Like an Adventure!!",
-            "absoluteEpisode": 357
+            "absoluteEpisode": 357,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314206.jpg",
+            "duration": "25m",
+            "overview": "Brook is overmatched by the zombie samurai; Luffy prepares for his battle; Sanji interrupts the undead wedding."
           },
           {
             "episode": 358,
             "title": "Blazing Knight Sanji!! Kick Down the Fake Wedding",
-            "absoluteEpisode": 358
+            "absoluteEpisode": 358,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314208.jpg",
+            "duration": "25m",
+            "overview": "Luffy struggles to land a blow against Gecko Moria; Sanji's passionate attempt to defeat Nami's beastly abductor."
           },
           {
             "episode": 359,
             "title": "A Clear-Clear History? Sanji's Stolen Dream",
-            "absoluteEpisode": 359
+            "absoluteEpisode": 359,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314225.jpg",
+            "duration": "25m",
+            "overview": "Sanji takes a beating when his opponent suddenly turns invisible; Usopp battles with a zombie bear."
           },
           {
             "episode": 360,
             "title": "Save Me, Hero!! My Enemy Is the Immortal Princess",
-            "absoluteEpisode": 360
+            "absoluteEpisode": 360,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314250.jpg",
+            "duration": "25m",
+            "overview": "Usopp battles the ghost girl and tries to discover the secret of her sudden confidence."
           },
           {
             "episode": 361,
             "title": "Perona Is Terrified!! Usopp and Untruthful Share the Same \"U\"",
-            "absoluteEpisode": 361
+            "absoluteEpisode": 361,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/125/314251.jpg",
+            "duration": "25m",
+            "overview": "Usopp reaches deep into himself to help even the odds during his battle with the tricky Perona; Luffy finds during his battle that even laying a finger on Gecko Moria may be a major problem."
           },
           {
             "episode": 362,
             "title": "Slashes Dancing On the Rooftop!! Zoro vs. Ryuma's Showdown",
-            "absoluteEpisode": 362
+            "absoluteEpisode": 362,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/145/363514.jpg",
+            "duration": "25m",
+            "overview": "Ryuma and Zoro duel in Hogback's laboratory while Franky guards the injured Brook. Neither opponent is able to gain over the other during the fight. Their attacks on each other quickly destroy the lab."
           },
           {
             "episode": 363,
             "title": "Chopper Is Furious!! Hogback's Evil Medical Practices",
-            "absoluteEpisode": 363
+            "absoluteEpisode": 363,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735867.jpg",
+            "duration": "25m",
+            "overview": "Dr Hogback tells Chopper how he met Cindri. Chopper goes mad and bids Cindry to rebel against her zombie nature. Robin fools Hogback so he makes Sanji and Zoro's zombies fall from the tower. Luffy finally faces Oars."
           },
           {
             "episode": 364,
             "title": "Oars Roars! Come Out, Straw Hat Crew",
-            "absoluteEpisode": 364
+            "absoluteEpisode": 364,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735868.jpg",
+            "duration": "25m",
+            "overview": "Moria's mansion is reduced to ruins as the zombie with Luffy's shadow stalks the Straw Hats! As the walls come tumbling down, Chopper puts the hurt on Hogback, and Nami vanishes right before Sanji's eyes!"
           },
           {
             "episode": 365,
             "title": "Luffy Is the Enemy! The Ultimate Zombie vs. The Straw Hat Crew",
-            "absoluteEpisode": 365
+            "absoluteEpisode": 365,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735869.jpg",
+            "duration": "25m",
+            "overview": "One by one, the Straw Hats attack Oars, but the monstrous zombie appears too powerful to be defeated. Luffy's got his sights set on Moria, but he'd better hurry if he wants to save his crew!"
           },
           {
             "episode": 366,
             "title": "You're Going Down, Absalom!! Nami's Lightning Attack of Friendship!!",
-            "absoluteEpisode": 366
+            "absoluteEpisode": 366,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735870.jpg",
+            "duration": "25m",
+            "overview": "Absalom is about to kiss Nami when she wakes up and suddenly Lola appears and pretends to fight Nami so she can escape. Absalom falls under Nami's lightning bolt while the rest of the straw hat crew is gathering to stop Oars."
           },
           {
             "episode": 367,
             "title": "Knock Him Down!! Special Attack: Straw Hat Docking",
-            "absoluteEpisode": 367
+            "absoluteEpisode": 367,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735871.jpg",
+            "duration": "25m",
+            "overview": "Nami attempts to track down some missing treasure; Brook searches the kitchen for a mystery ingredient; a heroic team battle against Oars in a effort to topple him."
           },
           {
             "episode": 368,
             "title": "The Silent Assault!! The Mysterious Visitor, Tyrant Kuma",
-            "absoluteEpisode": 368
+            "absoluteEpisode": 368,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735872.jpg",
+            "duration": "25m",
+            "overview": "Nami chases after Perona, who is fleeing from Thriller Bark; Kuma arrives and wrecks the place."
           },
           {
             "episode": 369,
             "title": "Oars + Moria! The Most Heinous Combination of Brains and Brawn",
-            "absoluteEpisode": 369
+            "absoluteEpisode": 369,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735873.jpg",
+            "duration": "25m",
+            "overview": "Luffy discovers that he has been chasing Gekko's shadow wile the real Gekko escaped."
           },
           {
             "episode": 370,
             "title": "The Secret Plan to Turn the Tables! Nightmare Luffy Makes His Appearance",
-            "absoluteEpisode": 370
+            "absoluteEpisode": 370,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735874.jpg",
+            "duration": "25m",
+            "overview": "Oars manages to turn the tide of the battle by countering the Straw Hats; Nami arrives and joins the fight; Luffy meets some interesting individuals who might be of help."
           },
           {
             "episode": 371,
             "title": "The Straw Hat Crew Gets Wiped Out! The Shadow-Shadow's Powers in Full Swing",
-            "absoluteEpisode": 371
+            "absoluteEpisode": 371,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735875.jpg",
+            "duration": "25m",
+            "overview": "Brook joins the fight; the Straw Hats try to hold off Oars and Moria until Luffy is able to return but they may not be able to."
           },
           {
             "episode": 372,
             "title": "The Incredible Battle Starts! Luffy vs Luffy",
-            "absoluteEpisode": 372
+            "absoluteEpisode": 372,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735876.jpg",
+            "duration": "25m",
+            "overview": "While Oars and Moria is ruthlessly pummeling the Straw Hat pirates, Nightmare Luffy arrives to join the battle."
           },
           {
             "episode": 373,
             "title": "The End of the Battle Is Nigh! Pound in the Finishing Move",
-            "absoluteEpisode": 373
+            "absoluteEpisode": 373,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735878.jpg",
+            "duration": "25m",
+            "overview": "After Luffy's shadow power disappears, he needs help from the rest of the Straw Hats to land the finishing blow in his battle against Oars."
           },
           {
             "episode": 374,
             "title": "Our Bodies Vanish! The Morning Sun Shines On the Nightmarish Island!",
-            "absoluteEpisode": 374
+            "absoluteEpisode": 374,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735879.jpg",
+            "duration": "25m",
+            "overview": "Moria gobbles up every shadow in sight to power up for the final showdown with Luffy."
           },
           {
             "episode": 375,
             "title": "Not Out of Danger Yet! Orders to Annihilate the Straw Hat Crew",
-            "absoluteEpisode": 375
+            "absoluteEpisode": 375,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735880.jpg",
+            "duration": "25m",
+            "overview": "The battle between Luffy and Moria reaches it's end; Kuma causes panic on the island."
           },
           {
             "episode": 376,
             "title": "It Repels Everything! Kuma�s Paw-Paw Power!",
-            "absoluteEpisode": 376
+            "absoluteEpisode": 376,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/431/1078159.jpg",
+            "duration": "25m",
+            "overview": "The World Government orders Kuma to obliterate every living being on the island."
           },
           {
             "episode": 377,
             "title": "The Pain of My Crewmates Is My Pain! Zoro's Desperate Fight!",
-            "absoluteEpisode": 377
+            "absoluteEpisode": 377,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735882.jpg",
+            "duration": "25m",
+            "overview": "A heated confrontation occurs when Zoro and Sanji have to make a decision so they can save Luffy."
           },
           {
             "episode": 378,
             "title": "The Promise from a Distant Day! The Pirates' Song and a Small Whale!",
-            "absoluteEpisode": 378
+            "absoluteEpisode": 378,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735883.jpg",
+            "duration": "25m",
+            "overview": "Hogback and Absalom escape Thriller Bark with the unconscious Moria  and reveal that Blackbeard gained his status as a Shichibukai by defeating Ace."
           },
           {
             "episode": 379,
             "title": "Brook's Past! A Sad Farewell with His Cheerful Comrade!",
-            "absoluteEpisode": 379
+            "absoluteEpisode": 379,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735884.jpg",
+            "duration": "25m",
+            "overview": "Brook recalls his past, when the whale Laboon started following his pirate ship and befriended the crew."
           },
           {
             "episode": 380,
             "title": "Bink's Booze! The Song that Connects the Past with the Present!",
-            "absoluteEpisode": 380
+            "absoluteEpisode": 380,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735885.jpg",
+            "duration": "25m",
+            "overview": "Brook continues to tell the tale of the Rumbar Pirates' fateful journey into the Grand Line, and the decision he made at the end of his original life."
           },
           {
             "episode": 381,
             "title": "A New Crewmate! The Musician, Humming Brook!",
-            "absoluteEpisode": 381
+            "absoluteEpisode": 381,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735886.jpg",
+            "duration": "25m",
+            "overview": "Brook pledges himself to the Straw Hat Pirates, becoming their ninth member, as the crew settles their affairs at Thriller Bark and continue their journey."
           }
         ]
       },
@@ -2117,132 +3259,210 @@ window._ANIME_DATA = [
           {
             "episode": 382,
             "title": "The Slow-Slow Menace! 'Silver Fox' Foxy Returns!",
-            "absoluteEpisode": 382
+            "absoluteEpisode": 382,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735888.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates are taking a vacation at Spa Island, but there, they encounter Foxy and his crew, who are pursuing two small girls: Lina and her older sister, Sayo."
           },
           {
             "episode": 383,
             "title": "The Great Scramble for Treasure! Collapse! Spa Island!",
-            "absoluteEpisode": 383
+            "absoluteEpisode": 383,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735889.jpg",
+            "duration": "25m",
+            "overview": "In order to rescue Lina's sister, the crew destroys the Spa Island and look for the hot cross which is the clue to make the gems of Lina's father."
           },
           {
             "episode": 384,
             "title": "Brook's Great Struggle! Is the Path to Becoming a True Comrade Rigorous?",
-            "absoluteEpisode": 384
+            "absoluteEpisode": 384,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735890.jpg",
+            "duration": "25m",
+            "overview": "Brook tries to help his new nakamas because he fears that otherwise he will be dispensed, but Robin tell him her story of Water 7 and he recovers his confidence."
           },
           {
             "episode": 385,
             "title": "Arriving at Halfway Through the Grand Line! The Red Line",
-            "absoluteEpisode": 385
+            "absoluteEpisode": 385,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735901.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates are about to reach the Red Line but a terrible storm delays them. Log Pose is pointing downwards and the crew needs more information to get to Gyojin Island."
           },
           {
             "episode": 386,
             "title": "Hatred for the Straw Hats! Iron Mask Duval Appears!",
-            "absoluteEpisode": 386
+            "absoluteEpisode": 386,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735902.jpg",
+            "duration": "25m",
+            "overview": "Camie and Pappag introduce themselves to the Straw Hats, who then later find out that their fishman friend has been kidnapped by Iron Mask Duval and the Macro Gang."
           },
           {
             "episode": 387,
             "title": "The Fated Reunion! Save the Imprisoned Fish-man",
-            "absoluteEpisode": 387
+            "absoluteEpisode": 387,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735903.jpg",
+            "duration": "25m",
+            "overview": "The mysterious Duval gets excited when the crew that rescued Camie turns out to be the Straw Hat Pirates."
           },
           {
             "episode": 388,
             "title": "Tragedy! The Truth of the Unmasked Duval",
-            "absoluteEpisode": 388
+            "absoluteEpisode": 388,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735904.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates do battle with the Flying Fish Riders and Macro Fishman Pirates. The stakes rise when Duval reveals himself, and exactly who his grudge is against: Sanji."
           },
           {
             "episode": 389,
             "title": "Explosion! The Sunny's Super Secret Weapon: Gaon Cannon",
-            "absoluteEpisode": 389
+            "absoluteEpisode": 389,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735905.jpg",
+            "duration": "25m",
+            "overview": "Duval reveals that he was once a small-time bandit until Sanji's wanted poster came to light. Since then he hid his face with the iron mask until he could get revenge on Sanji."
           },
           {
             "episode": 390,
             "title": "Landing to Get to Fish-man Island � The Sabaody Archipelago",
-            "absoluteEpisode": 390
+            "absoluteEpisode": 390,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735906.jpg",
+            "duration": "25m",
+            "overview": "With the Flying Fish Riders taken care of, the Straw Hats rest as Hatchan treats them to the promised takoyaki."
           },
           {
             "episode": 391,
             "title": "Tyranny! The Rulers of Sabaody, the Celestial Dragons",
-            "absoluteEpisode": 391
+            "absoluteEpisode": 391,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735907.jpg",
+            "duration": "25m",
+            "overview": "After landing on the Sabaody Archipelago, the Straw Hats begin searching for a man Hatchan knows who can coat their ship, so they can continue onto Fishman Island."
           },
           {
             "episode": 392,
             "title": "New Rivals Gather! The 11 Supernovas",
-            "absoluteEpisode": 392
+            "absoluteEpisode": 392,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735908.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates fight and defeat some bounty hunters who want their bounty."
           },
           {
             "episode": 393,
             "title": "The Target is Camie! The Looming Clutches of a Professional Kidnapper",
-            "absoluteEpisode": 393
+            "absoluteEpisode": 393,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735909.jpg",
+            "duration": "25m",
+            "overview": "Departing from Shakky's Rip-off Bar, Luffy's group attempt to search for Rayleigh but is distracted by the Sabaody Park. Zoro is disrespectful to Saint Charlos, causing him to be shot at."
           },
           {
             "episode": 394,
             "title": "Rescue Camie! The Archipelago�s Lingering Dark History",
-            "absoluteEpisode": 394
+            "absoluteEpisode": 394,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735910.jpg",
+            "duration": "25m",
+            "overview": "Duval and his crew arrive on the Archipelago and start gathering the Straw Hats up to bring them to the Human Auctioning House, where the kidnappers have brought Camie."
           },
           {
             "episode": 395,
             "title": "Time Limit � The Human Auction Begins",
-            "absoluteEpisode": 395
+            "absoluteEpisode": 395,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735911.jpg",
+            "duration": "25m",
+            "overview": "The human auction finally begins, and it is only then that the Straw Hats discovered that their mermaid friend is being sold off at Grove 1."
           },
           {
             "episode": 396,
             "title": "The Fist Explodes! Destroy the Auction",
-            "absoluteEpisode": 396
+            "absoluteEpisode": 396,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735912.jpg",
+            "duration": "25m",
+            "overview": "The auction continues, but Saint Charlos arrives and ruins the Straw Hats' plan to buy Camie back by placing an exorbitant bid on her."
           },
           {
             "episode": 397,
             "title": "Major Panic! Desperate Struggle at the Auction House",
-            "absoluteEpisode": 397
+            "absoluteEpisode": 397,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735913.jpg",
+            "duration": "25m",
+            "overview": "After Luffy punches Charlos, the guards begin to attack the Straw Hats, and most of the observers, except for Charlos' family, Kid and Law's crews, evacuate."
           },
           {
             "episode": 398,
             "title": "Admiral Kizaru Takes Action! Sabaody Archipelago Thrown into Chaos",
-            "absoluteEpisode": 398
+            "absoluteEpisode": 398,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735914.jpg",
+            "duration": "25m",
+            "overview": "Sengoku dispatches Admiral Kizaru to defend the honor of the Celestial Dragons at Sabaody Archipelago."
           },
           {
             "episode": 399,
             "title": "Break Through the Siege! The Navy vs. the Three Captains",
-            "absoluteEpisode": 399
+            "absoluteEpisode": 399,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735915.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Law and Kid's crews join the fight and defeat the rest of the Marines outside the Auction House. The three captains promise to meet and fight in the New World."
           },
           {
             "episode": 400,
             "title": "Roger and Rayleigh � the King of the Pirates and His Right Hand Man",
-            "absoluteEpisode": 400
+            "absoluteEpisode": 400,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735916.jpg",
+            "duration": "25m",
+            "overview": "Upon arriving back at Shakky's Bar, Silvers Rayleigh reveals to the Straw Hats that he was the first mate of the legendary Gol D. Roger and also reveals the truth about his crew's dismissal."
           },
           {
             "episode": 401,
             "title": "No Escape!? Admiral Kizaru�s Light Speed Kick!!",
-            "absoluteEpisode": 401
+            "absoluteEpisode": 401,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735917.jpg",
+            "duration": "25m",
+            "overview": "Admiral Kizaru appears at the Archipelago and demonstrates his mysterious light abilities, before taking on the Supernova, Basil Hawkins, whilst Urouge and X Drake fight a Pacifista."
           },
           {
             "episode": 402,
             "title": "Overwhelming! The Navy�s Fighting Weapons, the Pacifistas",
-            "absoluteEpisode": 402
+            "absoluteEpisode": 402,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735918.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates fight one of the Pacifistas, and while it does not have Kuma's Devil Fruit powers, it is still able to withstand their strongest attacks."
           },
           {
             "episode": 403,
             "title": "An Even Stronger Enemy Appears! The Battle Axe-Carrying Sentomaru",
-            "absoluteEpisode": 403
+            "absoluteEpisode": 403,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735919.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates combine their strongest attacks to defeat the Pacifista, but are exhausted after the battle."
           },
           {
             "episode": 404,
             "title": "Admiral Kizaru's Fierce Assault! The Straw Hats Face Certain Death!",
-            "absoluteEpisode": 404
+            "absoluteEpisode": 404,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735920.jpg",
+            "duration": "25m",
+            "overview": "Usopp and Brook's attempt to attack Kizaru and save Zoro's life failed."
           },
           {
             "episode": 405,
             "title": "Eliminated Friends � The Final Day of the Straw Hat Crew",
-            "absoluteEpisode": 405
+            "absoluteEpisode": 405,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735921.jpg",
+            "duration": "25m",
+            "overview": "Sentomaru reveals that Kuma has the ability to make people fly through the sky to far away places."
           },
           {
             "episode": 406,
             "title": "Feudal Era Side Story � Boss Luffy Appears Again",
-            "absoluteEpisode": 406
+            "absoluteEpisode": 406,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735922.jpg",
+            "duration": "25m",
+            "overview": "In an alternate universe set in Edo period Japan, the Mikoshi (portable shrine) race is about to take place, the winner of which receives Beli1,000,000, and Boss Luffy and his friends recruit Franky to build them a mikoshi."
           },
           {
             "episode": 407,
             "title": "Feudal Era Side Story � Defeat Thriller Company's Trap",
-            "absoluteEpisode": 407
+            "absoluteEpisode": 407,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735923.jpg",
+            "duration": "25m",
+            "overview": "Robin reveals Brook's past to Luffy and his friends, and decide to help him. Brook is captured by Thriller LTD, but Luffy and Zoro arrive to help him escape."
           }
         ]
       },
@@ -2252,72 +3472,114 @@ window._ANIME_DATA = [
           {
             "episode": 408,
             "title": "Landing! The All-Female Island, Amazon Lily",
-            "absoluteEpisode": 408
+            "absoluteEpisode": 408,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735924.jpg",
+            "duration": "25m",
+            "overview": "Having been hit by Kuma, Luffy is teleported to an unknown island."
           },
           {
             "episode": 409,
             "title": "Hurry Back to Your Friends! The Maiden Island Adventure",
-            "absoluteEpisode": 409
+            "absoluteEpisode": 409,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735925.jpg",
+            "duration": "25m",
+            "overview": "It is revealed that Luffy is on Amazon Lily, an island populated entirely by the Kuja tribe of women warriors."
           },
           {
             "episode": 410,
             "title": "Everyone Falls in Love! Pirate Empress Hancock",
-            "absoluteEpisode": 410
+            "absoluteEpisode": 410,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735926.jpg",
+            "duration": "25m",
+            "overview": "Luffy decides to leave the island, reunite with his crew and defeat the enemies who had overpowered them earlier, and is determined to borrow a ship."
           },
           {
             "episode": 411,
             "title": "The Secret Hidden on the Backs � Luffy and the Snake Princess Meet",
-            "absoluteEpisode": 411
+            "absoluteEpisode": 411,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735927.jpg",
+            "duration": "25m",
+            "overview": "Boa Hancock's ship reaches Amazon Lily and she returns to her palace."
           },
           {
             "episode": 412,
             "title": "Heartless Judgment! Margaret is Turned to Stone!!",
-            "absoluteEpisode": 412
+            "absoluteEpisode": 412,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735928.jpg",
+            "duration": "25m",
+            "overview": "Luffy looks at Boa Hancock's back and notes that he has seen what was on it before. Hancock tries, but fails to turn him to stone with her powers when he mistakes her Mero Mero no Mi abilities for Foxy's Noro Noro Beam."
           },
           {
             "episode": 413,
             "title": "A Difficult Fight for Luffy! The Snake Sisters' Haki Power!!",
-            "absoluteEpisode": 413
+            "absoluteEpisode": 413,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735929.jpg",
+            "duration": "25m",
+            "overview": "Luffy is challenged to battle Boa Marigold and Boa Sandersonia in the Amazon Lily arena with the spectators calling for Luffy to be executed."
           },
           {
             "episode": 414,
             "title": "All-Out Special Power Battle!! Gum-Gum vs. Snake-Snake",
-            "absoluteEpisode": 414
+            "absoluteEpisode": 414,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735930.jpg",
+            "duration": "25m",
+            "overview": "Luffy activates Gear Second and is currently taking the lead."
           },
           {
             "episode": 415,
             "title": "Hancock's Confession � The Sisters' Abhorrent Past",
-            "absoluteEpisode": 415
+            "absoluteEpisode": 415,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735931.jpg",
+            "duration": "25m",
+            "overview": "Hancock decides to test Luffy by giving him an ultimatum: either he gets a ship so he can leave the island while the girls remain statues or she changes them back and Luffy finds another way to the archipelago."
           },
           {
             "episode": 416,
             "title": "Saving Ace! The Next Stop: the Great Prison!",
-            "absoluteEpisode": 416
+            "absoluteEpisode": 416,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735932.jpg",
+            "duration": "25m",
+            "overview": "Following a party, Luffy learns from Nyon that Hancock is a Shichibukai, and that they have been called together as the Marines is launching an all-out offensive on Whitebeard."
           },
           {
             "episode": 417,
             "title": "Love is a Hurricane! Hancock Madly in Love!",
-            "absoluteEpisode": 417
+            "absoluteEpisode": 417,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735933.jpg",
+            "duration": "25m",
+            "overview": "When Nyon visits Hancock, she deduces her illness and when she mentions Luffy wishes to see her, this causes Hancock to get up and speak with him."
           },
           {
             "episode": 418,
             "title": "The Friends' Whereabouts � The Science of Weather and the Mechanical Island",
-            "absoluteEpisode": 418
+            "absoluteEpisode": 418,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735934.jpg",
+            "duration": "25m",
+            "overview": "After being sent away by Kuma, Nami lands on a sky island called Weatheria, while Franky lands on a snowy island called Karakuri Island."
           },
           {
             "episode": 419,
             "title": "The Friends' Whereabouts! An Island of Giant Birds and a Pink Paradise!",
-            "absoluteEpisode": 419
+            "absoluteEpisode": 419,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735935.jpg",
+            "duration": "25m",
+            "overview": "Chopper is awakened by giant birds that want to use him as a toy. Meanwhile, Sanji wakes up in the lap of a beautiful \"woman\" on an island thats makes everything girly."
           },
           {
             "episode": 420,
             "title": "The Friends' Whereabouts � Bridging the Islands and Vicious Vegetations!",
-            "absoluteEpisode": 420
+            "absoluteEpisode": 420,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735936.jpg",
+            "duration": "25m",
+            "overview": "Robin is found unconscious by Soran in the snow on the Tequila Wolf, a huge bridge that has been under construction for over 700 years. Usopp is chased by a large beetle, but he is saved by a man named Heracles."
           },
           {
             "episode": 421,
             "title": "The Friends' Whereabouts! A Princess Negativity and the King of Demons!",
-            "absoluteEpisode": 421
+            "absoluteEpisode": 421,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735937.jpg",
+            "duration": "25m",
+            "overview": "Zoro lands on the island where Kuma also sent Perona, who treats his wounds. Brook finds himself on Namakura Island, where he is mistaken for Satan, whom the islanders had summoned for revenge against the Longarm Tribe. Meanwhile, the Marines gather at Marine Headquarters."
           }
         ]
       },
@@ -2327,507 +3589,810 @@ window._ANIME_DATA = [
           {
             "episode": 422,
             "title": "A Deadly Infiltration! The Underwater Prison Impel Down",
-            "absoluteEpisode": 422
+            "absoluteEpisode": 422,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735939.jpg",
+            "duration": "25m",
+            "overview": "Vice Admiral Garp talked proudly to Ace at Impel Down about some of Luffy's actions, and mentions that they both have the blood of a world class criminal."
           },
           {
             "episode": 423,
             "title": "A Reunion in Hell?! The Man Who Ate the Chop-Chop Fruit!",
-            "absoluteEpisode": 423
+            "absoluteEpisode": 423,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735940.jpg",
+            "duration": "25m",
+            "overview": "Hancock turns Domino to stone before she can undergo the body-check, allowing Luffy to escape into the prison."
           },
           {
             "episode": 424,
             "title": "Break Through the Crimson Hell! Buggy's Chaos-Inducing Plan",
-            "absoluteEpisode": 424
+            "absoluteEpisode": 424,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735941.jpg",
+            "duration": "25m",
+            "overview": "Buggy and Luffy fight their way through to the entrance of Level 2 by going through Level 1, Crimson Hell, where the lowest ranking criminals are held."
           },
           {
             "episode": 425,
             "title": "The Strongest Man in the Prison! Poison Man Magellan Appears",
-            "absoluteEpisode": 425
+            "absoluteEpisode": 425,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735943.jpg",
+            "duration": "25m",
+            "overview": "Hancock and the others finally reach the office of Magellan, a large man who has eaten the Doku Doku no Mi."
           },
           {
             "episode": 426,
             "title": "A Special Presentation Related to the Movie! A Gold Lion's Ambition on the Move",
-            "absoluteEpisode": 426
+            "absoluteEpisode": 426,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735944.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro, Usopp, and Sanji arrive on an island called Little East Blue, a smaller version of the East Blue, which is where they met each other."
           },
           {
             "episode": 427,
             "title": "A Special Presentation Related to the Movie! Little East Blue in Danger",
-            "absoluteEpisode": 427
+            "absoluteEpisode": 427,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735945.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Sanji, Zoro, and Usopp arrive on the island and go to their favorite places in the East Blue."
           },
           {
             "episode": 428,
             "title": "A Special Presentation Related to the Movie! The Fierce Onslaught of the Amigo Pirates",
-            "absoluteEpisode": 428
+            "absoluteEpisode": 428,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735946.jpg",
+            "duration": "25m",
+            "overview": "Largo uses his devil fruit power to create nets from his body and trap Zoro and Sanji."
           },
           {
             "episode": 429,
             "title": "A Special Presentation Related to the Movie! The Battle Is On! Luffy vs. Largo",
-            "absoluteEpisode": 429
+            "absoluteEpisode": 429,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735947.jpg",
+            "duration": "25m",
+            "overview": "After escaping from the net, Luffy knocks Largo far away and goes off to fight him."
           },
           {
             "episode": 430,
             "title": "A Warlord in Prison! Jimbei, the Honorable Pirate",
-            "absoluteEpisode": 430
+            "absoluteEpisode": 430,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735948.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Buggy find Galdino and together they continue to fight through Level 2 of Impel Down, hounded by both Manticores and Puzzle Scorpions."
           },
           {
             "episode": 431,
             "title": "Chief Guard Saldeath's Trap! Level 3 - Starvation Hell",
-            "absoluteEpisode": 431
+            "absoluteEpisode": 431,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735949.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Buggy, and Galdino find themselves on Level 3, a barren floor of extreme heat."
           },
           {
             "episode": 432,
             "title": "The Unleashed Swan! A Reunion with Bon Clay",
-            "absoluteEpisode": 432
+            "absoluteEpisode": 432,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735950.jpg",
+            "duration": "25m",
+            "overview": "The prison staff and Hancock finally arrive on the floor where Ace is being held."
           },
           {
             "episode": 433,
             "title": "Warden Magellan's Strategy! Straw Hat Entrapment Completed!",
-            "absoluteEpisode": 433
+            "absoluteEpisode": 433,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735951.jpg",
+            "duration": "25m",
+            "overview": "Magellan finally receives word of Luffy's break-in, and decides to gather his forces to Level 4, to cut off Luffy and his allies."
           },
           {
             "episode": 434,
             "title": "All Forces Have Gathered! The Battle on Level 4, the Burning Heat Hell!",
-            "absoluteEpisode": 434
+            "absoluteEpisode": 434,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735952.jpg",
+            "duration": "25m",
+            "overview": "Luffy and his team fall to the hot fire while Magellan works out the plan to capture them."
           },
           {
             "episode": 435,
             "title": "Mighty Magellan! Bon Clay Bugs Out",
-            "absoluteEpisode": 435
+            "absoluteEpisode": 435,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735953.jpg",
+            "duration": "25m",
+            "overview": "Luffy begins fighting Magellan despite Bentham's warnings to flee, and finds that he is unable to go on the offensive because of Magellan's poisonous body and long-range poison attacks."
           },
           {
             "episode": 436,
             "title": "The Showdown Has Come! Luffy's Desperate Last Attack!",
-            "absoluteEpisode": 436
+            "absoluteEpisode": 436,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735954.jpg",
+            "duration": "25m",
+            "overview": "Magellan has Luffy backed into a corner and is using his devil fruit powers to poison Luffy."
           },
           {
             "episode": 437,
             "title": "For His Friend! Bon Clay Goes to the Deadly Rescue!",
-            "absoluteEpisode": 437
+            "absoluteEpisode": 437,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735955.jpg",
+            "duration": "25m",
+            "overview": "Luffy is thrown into a cell where he is left to die of poisoning."
           },
           {
             "episode": 438,
             "title": "A Paradise in Hell! Impel Down Level 5.5!",
-            "absoluteEpisode": 438
+            "absoluteEpisode": 438,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735956.jpg",
+            "duration": "25m",
+            "overview": "Mr. 2 apologizes for abandoning Luffy and searches for Ivankov."
           },
           {
             "episode": 439,
             "title": "Luffy's Treatment Begins! Ivan-san's Miraculous Power!",
-            "absoluteEpisode": 439
+            "absoluteEpisode": 439,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735957.jpg",
+            "duration": "25m",
+            "overview": "Emporio Ivankov displays some of his powers, including stopping a vengeful pirate's cannon shot merely by winking."
           },
           {
             "episode": 440,
             "title": "Believe in Miracles! Bon Clay's Cries from the Heart",
-            "absoluteEpisode": 440
+            "absoluteEpisode": 440,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735958.jpg",
+            "duration": "25m",
+            "overview": "Bentham learns that Ivankov has the ability to control hormones."
           },
           {
             "episode": 441,
             "title": "Luffy's Back! Ivan-san Begins the Breakout Plan!",
-            "absoluteEpisode": 441
+            "absoluteEpisode": 441,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735959.jpg",
+            "duration": "25m",
+            "overview": "As Luffy is finally revived, he is informed by Emporio Ivankov about Iva's background."
           },
           {
             "episode": 442,
             "title": "Ace's Convoy Begins! Battle on the Lowest Floor, Level 6!",
-            "absoluteEpisode": 442
+            "absoluteEpisode": 442,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735960.jpg",
+            "duration": "25m",
+            "overview": "When Luffy made it to Level 6 with Ivankov and Inazuma, they met up with the former cellmate of Ace, Jinbe."
           },
           {
             "episode": 443,
             "title": "The Ultimate Team Has Formed! Shaking Impel Down!",
-            "absoluteEpisode": 443
+            "absoluteEpisode": 443,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735961.jpg",
+            "duration": "25m",
+            "overview": "Luffy is reluctant to free Crocodile, but Ivankov offers to keep him in line by blackmailing him with a weakness he knows about."
           },
           {
             "episode": 444,
             "title": "Even More Chaos! Here Comes Blackbeard Teech!",
-            "absoluteEpisode": 444
+            "absoluteEpisode": 444,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735962.jpg",
+            "duration": "25m",
+            "overview": "While Luffy and his allies continue fighting on Level 4 of Impel Down, Buggy and Mr. 3 reach Level 2 and release the prisoners there to cause a riot to cover their escape."
           },
           {
             "episode": 445,
             "title": "The Dangerous Encounter! Blackbeard and Shiryu of the Rain!",
-            "absoluteEpisode": 445
+            "absoluteEpisode": 445,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735963.jpg",
+            "duration": "25m",
+            "overview": "The Jailer Beasts arrive and overpower many of the prisoners, but Luffy, Jinbe and Crocodile defeat them in a single attack each."
           },
           {
             "episode": 446,
             "title": "No Price Too High! Serious Hannyabal!",
-            "absoluteEpisode": 446
+            "absoluteEpisode": 446,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735964.jpg",
+            "duration": "25m",
+            "overview": "Luffy fights Hannyabal who tries to stop the escapees, but then Blackbeard shows up and breaks up the fight between Luffy and Hannyabal."
           },
           {
             "episode": 447,
             "title": "Jet Pistol of Anger! Luffy vs. Blackbeard!",
-            "absoluteEpisode": 447
+            "absoluteEpisode": 447,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735965.jpg",
+            "duration": "25m",
+            "overview": "Although Luffy wants a proper battle with Blackbeard, Jinbe reminds him there's no time for that as Ace's execution will occur in only a few short hours."
           },
           {
             "episode": 448,
             "title": "Stop Magellan! Ivan-san's Esoteric Technique Explodes",
-            "absoluteEpisode": 448
+            "absoluteEpisode": 448,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735966.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the other prisoners are getting closer to the surface, having made it through levels 3 and 2."
           },
           {
             "episode": 449,
             "title": "Magellan's Tricky Move! A Foiled Escape Plan!",
-            "absoluteEpisode": 449
+            "absoluteEpisode": 449,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735967.jpg",
+            "duration": "25m",
+            "overview": "Luffy becomes enraged after learning about Magellan defeating Emporio Ivankov and Inazuma, but Mr. 2 and Jinbe persuade him that escaping takes priority."
           },
           {
             "episode": 450,
             "title": "The Escapee Team in Trouble! The Forbidden Move: Venom Demon!",
-            "absoluteEpisode": 450
+            "absoluteEpisode": 450,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735968.jpg",
+            "duration": "25m",
+            "overview": "Jinbe, Crocodile and Daz Bones finally secure a Marine vessel to escape with. Meanwhile, Luffy continues his fight against Magellan, with the assistance of Galdino's Doru Doru no Mi powers."
           },
           {
             "episode": 451,
             "title": "Come, Final Miracle! Break Through the Gate of Justice!",
-            "absoluteEpisode": 451
+            "absoluteEpisode": 451,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735969.jpg",
+            "duration": "25m",
+            "overview": "Bentham puts himself on the line to save Luffy and the others, by disguising himself as Warden Magellan."
           },
           {
             "episode": 452,
             "title": "To the Navy Headquarters! Off to Rescue Ace!",
-            "absoluteEpisode": 452
+            "absoluteEpisode": 452,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735970.jpg",
+            "duration": "25m",
+            "overview": "Shiryu saves Blackbeard and his crew by giving them antidotes to Magellan's poison before taking the opportunity to join with them."
           },
           {
             "episode": 453,
             "title": "The Friends' Whereabouts! The Weatheria Report and the Cyborg Animals!",
-            "absoluteEpisode": 453
+            "absoluteEpisode": 453,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735971.jpg",
+            "duration": "25m",
+            "overview": "As Luffy's ship heads to the Marine Headquarters, the scene shifts to a point some time in the past."
           },
           {
             "episode": 454,
             "title": "The Friends' Whereabouts! A Cheeper of Giant Birds and a Pink Showdown!",
-            "absoluteEpisode": 454
+            "absoluteEpisode": 454,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/735972.jpg",
+            "duration": "25m",
+            "overview": "Sanji is chased by okamas to Caroline - the queen's stand in."
           },
           {
             "episode": 455,
             "title": "The Friends' Whereabouts! Revolutionaries and the Gorging Forest's Trap!",
-            "absoluteEpisode": 455
+            "absoluteEpisode": 455,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736182.jpg",
+            "duration": "25m",
+            "overview": "Robin was captured by the guards of Tequila Wolf and was sent to the Prison Tower."
           },
           {
             "episode": 456,
             "title": "The Friends' Whereabouts! A Huge Tomb and the Panty Debt!",
-            "absoluteEpisode": 456
+            "absoluteEpisode": 456,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736183.jpg",
+            "duration": "25m",
+            "overview": "While heading to the sea to return to the Sabaody Archipelago, Zoro and Perona stumble upon an enormous tombstone. Brook decides he has to wait to find Luffy and the others until he can fulfill his debt to the people of Harahettania."
           },
           {
             "episode": 457,
             "title": "A Special Retrospective Before Marineford! The Vow of the Brotherhood!",
-            "absoluteEpisode": 457
+            "absoluteEpisode": 457,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/435/1088514.jpg",
+            "duration": "25m",
+            "overview": "Luffy recalls his childhood with Ace and meeting Marshall D. Teach in Jaya without knowing who he was."
           },
           {
             "episode": 458,
             "title": "A Special Retrospective Before Marineford! The Three Navy Admirals Come Together!",
-            "absoluteEpisode": 458
+            "absoluteEpisode": 458,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736185.jpg",
+            "duration": "25m",
+            "overview": "While Luffy's on his way to rescue Ace, everyone at Marine Headquarters gets ready for the execution."
           },
           {
             "episode": 459,
             "title": "Ticking Down to the Time of Battle! The Navy's Strongest Lineup in Position!",
-            "absoluteEpisode": 459
+            "absoluteEpisode": 459,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736186.jpg",
+            "duration": "25m",
+            "overview": "Only three hours remain until Ace's execution. Luffy reaches Marineford but finds the Gates of Justice closed."
           },
           {
             "episode": 460,
             "title": "A Vast Fleet Appears! Here Come the Whitebeard Pirates!",
-            "absoluteEpisode": 460
+            "absoluteEpisode": 460,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736187.jpg",
+            "duration": "25m",
+            "overview": "The world is shocked by the revelation of Ace's father's identity."
           },
           {
             "episode": 461,
             "title": "The Beginning of the War! Ace and Whitebeard's Past!",
-            "absoluteEpisode": 461
+            "absoluteEpisode": 461,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736188.jpg",
+            "duration": "25m",
+            "overview": "Whitebeard reveals his Devil Fruit powers in front of the Marines."
           },
           {
             "episode": 462,
             "title": "The Force That Could Destroy the World! The Power of the Tremor-Tremor Fruit!",
-            "absoluteEpisode": 462
+            "absoluteEpisode": 462,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736189.jpg",
+            "duration": "25m",
+            "overview": "The sea-quakes made by Whitebeard cause a tsunami to come upon Marineford."
           },
           {
             "episode": 463,
             "title": "An All-Consuming Inferno!! Admiral Akainu's Power!",
-            "absoluteEpisode": 463
+            "absoluteEpisode": 463,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736190.jpg",
+            "duration": "25m",
+            "overview": "All the various Whitebeard Commanders show off their skills and abilities, as do some Marines."
           },
           {
             "episode": 464,
             "title": "A Descendent of the Beast! Little Oars Jr. - Full Speed Ahead!",
-            "absoluteEpisode": 464
+            "absoluteEpisode": 464,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736191.jpg",
+            "duration": "25m",
+            "overview": "Oars Jr. goes straight for Ace, but the Giant Squad attempts to stop him without much success."
           },
           {
             "episode": 465,
             "title": "Justice for the Winners! Sengoku's Strategy in Action!",
-            "absoluteEpisode": 465
+            "absoluteEpisode": 465,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736192.jpg",
+            "duration": "25m",
+            "overview": "Koby and Helmeppo attempted to flee from the war after feeling too overwhelmed by the deaths and chaos, but stumbled upon Akainu and an apparent plan by Sengoku."
           },
           {
             "episode": 466,
             "title": "Straw Hat Team Arrives! Tension Grows at the Battlefield",
-            "absoluteEpisode": 466
+            "absoluteEpisode": 466,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736193.jpg",
+            "duration": "25m",
+            "overview": "Luffy finally shows up together with his formed alliance from the escaped prisoners of Impel Down."
           },
           {
             "episode": 467,
             "title": "Even If It Means Death! Luffy vs. the Navy; The Battle Starts!",
-            "absoluteEpisode": 467
+            "absoluteEpisode": 467,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736194.jpg",
+            "duration": "25m",
+            "overview": "With Luffy as their inspiration, the other pirates fight back with renewed vigor."
           },
           {
             "episode": 468,
             "title": "Hard Battles, One After Another! Devil Fruit Eaters vs. Devil Fruit Eaters!",
-            "absoluteEpisode": 468
+            "absoluteEpisode": 468,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736195.jpg",
+            "duration": "25m",
+            "overview": "One battle after another, it is complete chaos out on the battlefield."
           },
           {
             "episode": 469,
             "title": "Kuma's Transformation! Ivan-san's Blow of Anger!",
-            "absoluteEpisode": 469
+            "absoluteEpisode": 469,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736196.jpg",
+            "duration": "25m",
+            "overview": "Luffy receives the key to Ace's handcuffs from Hancock, who then fantasizes about a wedding ceremony held on Amazon Lily."
           },
           {
             "episode": 470,
             "title": "The Great Swordsman Mihawk! Luffy Comes Under the Attack of the Black Sword!",
-            "absoluteEpisode": 470
+            "absoluteEpisode": 470,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736197.jpg",
+            "duration": "25m",
+            "overview": "Luffy stumbles upon Mihawk, whom he tries to avoid."
           },
           {
             "episode": 471,
             "title": "The Extermination Strategy in Action! The Power of the Pacifistas!",
-            "absoluteEpisode": 471
+            "absoluteEpisode": 471,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736198.jpg",
+            "duration": "25m",
+            "overview": "The Pacifista enter Marineford as part of Sengoku's plan to win the war against Whitebeard."
           },
           {
             "episode": 472,
             "title": "Akainu's Plot! Whitebeard Entrapped!",
-            "absoluteEpisode": 472
+            "absoluteEpisode": 472,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736199.jpg",
+            "duration": "25m",
+            "overview": "As Squard stabs Whitebeard, the pirates and even marines in the war are shocked due to his betrayal."
           },
           {
             "episode": 473,
             "title": "The Encircling Walls Activated! The Whitebeard Pirates backed into a corner!",
-            "absoluteEpisode": 473
+            "absoluteEpisode": 473,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736200.jpg",
+            "duration": "25m",
+            "overview": "In a desperate attempt to stop Whitebeard from advancing to the execution platform, the Marines activate walls to block Whitebeard's path, but gets stopped by the ice."
           },
           {
             "episode": 474,
             "title": "Execution Order Issued! Break Through the Encircling Walls!",
-            "absoluteEpisode": 474
+            "absoluteEpisode": 474,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736201.jpg",
+            "duration": "25m",
+            "overview": "Akainu's Meteor Volcano melts the nearly all the ice and destroys the Whitebeard Pirates' ships, dropping them into boiling water, enabling the cannons on the wall to bombard them while the Pacifistas block the way out."
           },
           {
             "episode": 475,
             "title": "Moving into the Final Phase! Whitebeard's Trump Card for Recovery!",
-            "absoluteEpisode": 475
+            "absoluteEpisode": 475,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736203.jpg",
+            "duration": "25m",
+            "overview": "Luffy attempts to slip past the admirals, but Kizaru easily catches up to him and knocks him to the ground."
           },
           {
             "episode": 476,
             "title": "Luffy at the End of His Tether! An All-out Battle at the Oris Plaza!",
-            "absoluteEpisode": 476
+            "absoluteEpisode": 476,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736204.jpg",
+            "duration": "25m",
+            "overview": "Ace thinks back to his childhood, when he fought with anyone who spoke ill of Roger, and wondering if he should ever have been born."
           },
           {
             "episode": 477,
             "title": "The Power That Will Shorten One's Life! Energy Hormone, Redux!",
-            "absoluteEpisode": 477
+            "absoluteEpisode": 477,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736206.jpg",
+            "duration": "25m",
+            "overview": "Whitebeard falters for a moment as a result of his age and physical condition."
           },
           {
             "episode": 478,
             "title": "To Live Up to a Promise! Luffy and Coby Collide!",
-            "absoluteEpisode": 478
+            "absoluteEpisode": 478,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736207.jpg",
+            "duration": "25m",
+            "overview": "Luffy with his newly restored strength continues on to the execution platform to save Ace and is warned by Ivankov that the hormones only trick his body."
           },
           {
             "episode": 479,
             "title": "The Scaffold at Last! The Way to Ace Has Opened!",
-            "absoluteEpisode": 479
+            "absoluteEpisode": 479,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736208.jpg",
+            "duration": "25m",
+            "overview": "Luffy uses Haki unintentionally just as Ace is about to be executed."
           },
           {
             "episode": 480,
             "title": "Each on Different Paths! Luffy vs. Garp!",
-            "absoluteEpisode": 480
+            "absoluteEpisode": 480,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736209.jpg",
+            "duration": "25m",
+            "overview": "Luffy unwillingly hits Garp, who is blocking his way to Ace. As Garp falls, the bridge crumbles."
           },
           {
             "episode": 481,
             "title": "Ace Rescued! Whitebeard's Final Order!",
-            "absoluteEpisode": 481
+            "absoluteEpisode": 481,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736210.jpg",
+            "duration": "25m",
+            "overview": "Ace is freed at last as he and Luffy fight their way back to escape from Marineford."
           },
           {
             "episode": 482,
             "title": "The Power That Can Burn Even Fire! Akainu's Ruthless Pursuit!",
-            "absoluteEpisode": 482
+            "absoluteEpisode": 482,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736211.jpg",
+            "duration": "25m",
+            "overview": "Whitebeard aims to take down the whole of Marineford and orders his crew and the other pirates to flee."
           },
           {
             "episode": 483,
             "title": "Looking for the Answer!",
-            "absoluteEpisode": 483
+            "absoluteEpisode": 483,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736212.jpg",
+            "duration": "25m",
+            "overview": "An eerie silence falls over the battlefield as Luffy and Ace share a heartbreaking final moment together."
           },
           {
             "episode": 484,
             "title": "The Navy Headquarters Falls! Whitebeard's Unspeakable Wrath!",
-            "absoluteEpisode": 484
+            "absoluteEpisode": 484,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736213.jpg",
+            "duration": "25m",
+            "overview": "Luffy's has a breakdown due to the emotional trauma of Ace's death, causing Jinbe to take him away."
           },
           {
             "episode": 485,
             "title": "Ending the Matter! Whitebeard vs. The Blackbeard Pirates!",
-            "absoluteEpisode": 485
+            "absoluteEpisode": 485,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736214.jpg",
+            "duration": "25m",
+            "overview": "Blackbeard and his pirates arrive in Marineford, as they are taken down from the execution platform by Whitebeard."
           },
           {
             "episode": 486,
             "title": "The Show Begins! Blackbeard's Plot is Revealed!",
-            "absoluteEpisode": 486
+            "absoluteEpisode": 486,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736215.jpg",
+            "duration": "25m",
+            "overview": "The news of Whitebeard's death is already spreading all over the world. Silvers Rayleigh also hears the news."
           },
           {
             "episode": 487,
             "title": "Akainu's Tenacity! The Fist of Magma Attacks Luffy",
-            "absoluteEpisode": 487
+            "absoluteEpisode": 487,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736216.jpg",
+            "duration": "25m",
+            "overview": "Blackbeard expresses his desire to sink Marineford into the ocean after destroying the fortress, but Sengoku attacks him, saying that the island is a symbol of justice in the world."
           },
           {
             "episode": 488,
             "title": "The Desperate Scream! Courageous Moments that Will Change the Future",
-            "absoluteEpisode": 488
+            "absoluteEpisode": 488,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736218.jpg",
+            "duration": "25m",
+            "overview": "The fight in Marineford still rages on, as Trafalgar Law arrives to rescue Luffy."
           },
           {
             "episode": 489,
             "title": "Here Comes Shanks! The War of the Best is Finally Over!",
-            "absoluteEpisode": 489
+            "absoluteEpisode": 489,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736219.jpg",
+            "duration": "25m",
+            "overview": "Law and his crew take Jinbe and Luffy inside their submarine."
           },
           {
             "episode": 490,
             "title": "Mighty Leaders Face Each Other Down! Heralding the 'New Era'!",
-            "absoluteEpisode": 490
+            "absoluteEpisode": 490,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736220.jpg",
+            "duration": "25m",
+            "overview": "As Luffy's fate hangs in the balance, word spreads that the war is over and people all over the world rejoice on the news of the Marines' victory."
           },
           {
             "episode": 491,
             "title": "Landing at the Maiden Island! The Harsh Reality Falls upon Luffy!",
-            "absoluteEpisode": 491
+            "absoluteEpisode": 491,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736221.jpg",
+            "duration": "25m",
+            "overview": "Brownbeard was seen taking over Foodvalten saying it was not a Whitebeard territory anymore, Iva said goodbye to Jinbe and the others."
           },
           {
             "episode": 492,
             "title": "The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (II)",
-            "absoluteEpisode": 492
+            "absoluteEpisode": 492,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736222.jpg",
+            "duration": "25m",
+            "overview": "After eating the Hungrila Bird that they captured, Luffy and Toriko team up again to save Nami and Komatsu who have been kidnapped by the Cocoalas."
           },
           {
             "episode": 493,
             "title": "Luffy and Ace! The Story of How the Brothers Met!",
-            "absoluteEpisode": 493
+            "absoluteEpisode": 493,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736223.jpg",
+            "duration": "25m",
+            "overview": "Garp drops Luffy to live with the Dadan Family where he meets Ace - who immediately dislikes Luffy."
           },
           {
             "episode": 494,
             "title": "Here Comes Sabo! The Boy at the Gray Terminal!",
-            "absoluteEpisode": 494
+            "absoluteEpisode": 494,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736224.jpg",
+            "duration": "25m",
+            "overview": "Luffy discovers the end of the forest is a slum dumpster named Gray Terminal, a lawless area full of homeless people searching for valuables thrown out by the town's people."
           },
           {
             "episode": 495,
             "title": "I Won't Run! Ace's Desperate Rescue Operation!",
-            "absoluteEpisode": 495
+            "absoluteEpisode": 495,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736225.jpg",
+            "duration": "25m",
+            "overview": "Ace and Sabo rescue Luffy from Porchemy by defeating him."
           },
           {
             "episode": 496,
             "title": "To The Sea Someday! The Pledge of the Three Brats!",
-            "absoluteEpisode": 496
+            "absoluteEpisode": 496,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736226.jpg",
+            "duration": "25m",
+            "overview": "Sabo is seen by his father but Sabo pretends to not know him."
           },
           {
             "episode": 497,
             "title": "Leaving the Dadan Family for Good?! The Kids' Hideout Has Been Built!",
-            "absoluteEpisode": 497
+            "absoluteEpisode": 497,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736227.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Ace and Sabo were going about their usual mischief until Garp turned up, and attacked them for still wanting to be pirates."
           },
           {
             "episode": 498,
             "title": "Luffy Becoming an Apprentice?! A Man Who Fought Against the King of the Pirates!",
-            "absoluteEpisode": 498
+            "absoluteEpisode": 498,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736228.jpg",
+            "duration": "25m",
+            "overview": "Ace, Sabo, and Luffy chase down a Danpa and succeeds to catch it, but a tiger steals it."
           },
           {
             "episode": 499,
             "title": "The Battle against the Big Tiger! Who is Going to be Captain?!",
-            "absoluteEpisode": 499
+            "absoluteEpisode": 499,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736229.jpg",
+            "duration": "25m",
+            "overview": "Ace, Sabo and Luffy help Naguri make a pirate ship."
           },
           {
             "episode": 500,
             "title": "Freedom Taken Away! The Nobles' Plot Closing in on the Brothers!",
-            "absoluteEpisode": 500
+            "absoluteEpisode": 500,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736230.jpg",
+            "duration": "25m",
+            "overview": "Sabo, Luffy and Ace are caught by the Bluejam Pirates."
           },
           {
             "episode": 501,
             "title": "The Fire Has Been Set! The Gray Terminal in Crisis!",
-            "absoluteEpisode": 501
+            "absoluteEpisode": 501,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736231.jpg",
+            "duration": "25m",
+            "overview": "Sabo is being chased by his father's men."
           },
           {
             "episode": 502,
             "title": "Where can freedom be found? A Sad Departure of a Boy!",
-            "absoluteEpisode": 502
+            "absoluteEpisode": 502,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736232.jpg",
+            "duration": "25m",
+            "overview": "While Dadan and Ace stay behind to fight Bluejam, the rest of the Dadan Family and Luffy make a quick escape."
           },
           {
             "episode": 503,
             "title": "Take Good Care of Him! A Letter from the Brother!",
-            "absoluteEpisode": 503
+            "absoluteEpisode": 503,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736233.jpg",
+            "duration": "25m",
+            "overview": "Sabo's ship is destroyed by a World Noble."
           },
           {
             "episode": 504,
             "title": "To Live Up to the Promise! Departures of Their Own!",
-            "absoluteEpisode": 504
+            "absoluteEpisode": 504,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736234.jpg",
+            "duration": "25m",
+            "overview": "After the death of Sabo, Ace and Luffy continue their training while the others discover the Revolutionaries' ship."
           },
           {
             "episode": 505,
             "title": "I Want to See Them! Luffy's Mournful Cry!",
-            "absoluteEpisode": 505
+            "absoluteEpisode": 505,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736235.jpg",
+            "duration": "25m",
+            "overview": "Luffy still distraught at the death of Ace, blames it on his weakness."
           },
           {
             "episode": 506,
             "title": "Straw Hats in Shock! The Bad News Has Reached Them!",
-            "absoluteEpisode": 506
+            "absoluteEpisode": 506,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736236.jpg",
+            "duration": "25m",
+            "overview": "On Kuraigana Island, Zoro confronts several Humandrills and is nearly defeated, but then Mihawk appears and scares them away."
           },
           {
             "episode": 507,
             "title": "Reunited with Dark King Rayleigh! Decision Time for Luffy!",
-            "absoluteEpisode": 507
+            "absoluteEpisode": 507,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736237.jpg",
+            "duration": "25m",
+            "overview": "On Maiden Island, Rayleigh kills a Sea King and arrives on the island in front of Law's crew."
           },
           {
             "episode": 508,
             "title": "Back to Our Captain! A Jail Break at the Sky Island and the Incident on the Winter Island!",
-            "absoluteEpisode": 508
+            "absoluteEpisode": 508,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736238.jpg",
+            "duration": "25m",
+            "overview": "At Amazon Lily, Luffy tries to make up his mind regarding Rayleigh's offer, as he made a promise to his crew to meet in three days."
           },
           {
             "episode": 509,
             "title": "Encounter! The Great Swordsman Mihawk! Zoro's Self-Willed Deadly Struggle!",
-            "absoluteEpisode": 509
+            "absoluteEpisode": 509,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736239.jpg",
+            "duration": "25m",
+            "overview": "Zoro tried to go back to the sea using the small boat given to him by Mihawk but he could not get past the humandrills."
           },
           {
             "episode": 510,
             "title": "A Disaster for Sanji! The Queen's Return to the Kingdom!",
-            "absoluteEpisode": 510
+            "absoluteEpisode": 510,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736240.jpg",
+            "duration": "25m",
+            "overview": "Chopper leaves the Torino Kingdom, while riding one of the birds, hoping to be able to aid Luffy."
           },
           {
             "episode": 511,
             "title": "Unexpected Relanding! Luffy, to Marineford!",
-            "absoluteEpisode": 511
+            "absoluteEpisode": 511,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736241.jpg",
+            "duration": "25m",
+            "overview": "The Marine Headquarters have started rebuilding, and the Marines had a meeting about Monkey D. Luffy."
           },
           {
             "episode": 512,
             "title": "With Hopes It Will Reach My Friends! Big News Spreading Fast!",
-            "absoluteEpisode": 512
+            "absoluteEpisode": 512,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736242.jpg",
+            "duration": "25m",
+            "overview": "Some of Luffy's old friends from Impel Down and around the world read the news about Luffy's second appearance at Marineford."
           },
           {
             "episode": 513,
             "title": "Pirates Get on the Move! Astounding New World!",
-            "absoluteEpisode": 513
+            "absoluteEpisode": 513,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736243.jpg",
+            "duration": "25m",
+            "overview": "Trafalgar Law and his crew talk about going to the New World."
           },
           {
             "episode": 514,
             "title": "Living through Hell! Sanji's Fight for His Manhood!",
-            "absoluteEpisode": 514
+            "absoluteEpisode": 514,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736244.jpg",
+            "duration": "25m",
+            "overview": "Nami tricks the old men into letting her stay on Weatheria. Franky stumbles upon Vegapunk's hidden laboratory and finds more blueprints and decides to study them."
           },
           {
             "episode": 515,
             "title": "I Will Get Much, Much Stronger! Zoro's Pledge to His Captain!",
-            "absoluteEpisode": 515
+            "absoluteEpisode": 515,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736245.jpg",
+            "duration": "25m",
+            "overview": "While being put on display in a cage, Brook feels appreciative towards all that Luffy had done for him and decides that he will move on and continue to aid Luffy."
           },
           {
             "episode": 516,
             "title": "Luffy's Training Begins! To the Place We Promised in 2 Years!",
-            "absoluteEpisode": 516
+            "absoluteEpisode": 516,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736246.jpg",
+            "duration": "25m",
+            "overview": "Jinbe leaves Luffy with Rayleigh. Rayleigh takes Luffy to an abandoned island to begin his training. Rayleigh introduces Luffy to the concept of Haki and then demonstrates the three different types of Haki."
           },
           {
             "episode": 517,
             "title": "The Beginning of The New Chapter! The Straw Hats Reunited!",
-            "absoluteEpisode": 517
+            "absoluteEpisode": 517,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736508.jpg",
+            "duration": "25m",
+            "overview": "After two years of being separated, the Straw Hats return to Sabaody Archipelago."
           },
           {
             "episode": 518,
             "title": "An Explosive Situation! Luffy vs. Fake Luffy!",
-            "absoluteEpisode": 518
+            "absoluteEpisode": 518,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736509.jpg",
+            "duration": "25m",
+            "overview": "Fake Luffy and the real Luffy come face-to-face, though the imposter is quickly beaten thanks to Luffy's use of Haki."
           },
           {
             "episode": 519,
             "title": "The Navy Has Set Out! The Straw Hats in Danger!",
-            "absoluteEpisode": 519
+            "absoluteEpisode": 519,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736510.jpg",
+            "duration": "25m",
+            "overview": "Robin visits the Thousand Sunny and meets Franky there. Chopper goes to the Fake Straw Hat Pirates, mistaking them for his own crew."
           },
           {
             "episode": 520,
             "title": "Big Guns Assembled! The Danger of the Fake Straw Hats!",
-            "absoluteEpisode": 520
+            "absoluteEpisode": 520,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736511.jpg",
+            "duration": "25m",
+            "overview": "Brook finishes his concert, while deciding between the pirate life and rock-n-roll fame when the Marines arrive to capture him, but he escapes. Luffy walks into a very dodgy crowd."
           },
           {
             "episode": 521,
             "title": "The Battle is on! Show Them What You Got From Training!",
-            "absoluteEpisode": 521
+            "absoluteEpisode": 521,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736512.jpg",
+            "duration": "25m",
+            "overview": "Luffy shows off his new powers in a battle between pirates, navy soldiers, and deadly pacifists."
           },
           {
             "episode": 522,
             "title": "Everyone Together! Luffy, Setting Out for the New World!",
-            "absoluteEpisode": 522
+            "absoluteEpisode": 522,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736513.jpg",
+            "duration": "25m",
+            "overview": "Luffy and his gang reunite, but before they can set sail, they'll need help from all their friends. Luffy along with Zoro and Sanji are heading to Grove #42."
           }
         ]
       },
@@ -2837,292 +4402,466 @@ window._ANIME_DATA = [
           {
             "episode": 523,
             "title": "A Surprising Fact! The Man Who Guarded the Sunny!",
-            "absoluteEpisode": 523
+            "absoluteEpisode": 523,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736514.jpg",
+            "duration": "25m",
+            "overview": "As world of the Straw Hat resurrection spreads through the navy, Luffy and his crew get acclimated. Caribou is seen punishing the Fake Straw Hats for making him join them instead of the real Straw Hat Pirates."
           },
           {
             "episode": 524,
             "title": "Deadly Combat under the Sea! The Demon of the Ocean Strikes!",
-            "absoluteEpisode": 524
+            "absoluteEpisode": 524,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736515.jpg",
+            "duration": "25m",
+            "overview": "The Caribou Pirates attack the Straw Hats. While Caribou manages to get on the Thousand Sunny, the rest of his crew gets pulled away by Mohmoo, who gets frightened when he recognizes the Straw Hats from his time in Arlong Park."
           },
           {
             "episode": 525,
             "title": "Lost in the Deep Sea! The Straw Hats Get Separated!",
-            "absoluteEpisode": 525
+            "absoluteEpisode": 525,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736516.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro and Sanji are facing the Kraken."
           },
           {
             "episode": 526,
             "title": "Undersea Volcanic Eruption! Drifting to the Fish-Man Island!",
-            "absoluteEpisode": 526
+            "absoluteEpisode": 526,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736517.jpg",
+            "duration": "25m",
+            "overview": "The Flying Dutchman shows up and Vander Decken tells Wadatsumi to crush the Thousand Sunny, but then the Kraken beats Wadatsumi."
           },
           {
             "episode": 527,
             "title": "Landing at the Fish-Man Island! Beautiful Mermaids!",
-            "absoluteEpisode": 527
+            "absoluteEpisode": 527,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736518.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates encounter Hammond, some sea-beasts and other fishmen from the New Fishman Pirates."
           },
           {
             "episode": 528,
             "title": "Excitement Blow-out! Sanji's Life Under Threat!",
-            "absoluteEpisode": 528
+            "absoluteEpisode": 528,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736519.jpg",
+            "duration": "25m",
+            "overview": "Sanji playing in a pool with the mermaids in Mermaid Cove, Luffy, soaking his feet on the side of the pool, comments on how nice it must be to swim, Camie suggests that Luffy could wear a bubble in order to do so."
           },
           {
             "episode": 529,
             "title": "The Fish-Man Island Will Be Annihilated?! Sharley's Prophecy!",
-            "absoluteEpisode": 529
+            "absoluteEpisode": 529,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736520.jpg",
+            "duration": "25m",
+            "overview": "As blood donors are finally found, the recovering Sanji stays at the Mermaid Cafe while Luffy, Usopp and Camie meet Pappag and Brook."
           },
           {
             "episode": 530,
             "title": "The King of the Fish-Man Island! Neptune, the God of the Sea!",
-            "absoluteEpisode": 530
+            "absoluteEpisode": 530,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736521.jpg",
+            "duration": "25m",
+            "overview": "Straw Hat Pirates are in a town on Fishman Island and King Neptune and Megalo appear to invite the Straw Hats to Ryugu Palace."
           },
           {
             "episode": 531,
             "title": "Ryugu Palace! Taken by the Shark that They Saved!",
-            "absoluteEpisode": 531
+            "absoluteEpisode": 531,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736522.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Nami, Usopp, Brook, Camie, and Pappag travel with King Neptune to Ryugu Palace."
           },
           {
             "episode": 532,
             "title": "A Coward and a Crybaby! The Princess in the Hard Shell Tower!",
-            "absoluteEpisode": 532
+            "absoluteEpisode": 532,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736523.jpg",
+            "duration": "25m",
+            "overview": "Vander Decken IX reveals that he plans to marry the princess, using his Mark-Mark Fruit curse to throw a giant axe at her."
           },
           {
             "episode": 533,
             "title": "It's An Emergency! The Ryugu Palace Is Occupied!",
-            "absoluteEpisode": 533
+            "absoluteEpisode": 533,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736524.jpg",
+            "duration": "25m",
+            "overview": "The guards around Zoro and the others are preparing to pop their air bubble, however, Nami found some bubbly coral and made the whole room fill with air and Zoro prepares to fight Neptune."
           },
           {
             "episode": 534,
             "title": "The Ryugu Palace in Shock! the Kidnapping of Shirahoshi!",
-            "absoluteEpisode": 534
+            "absoluteEpisode": 534,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736525.jpg",
+            "duration": "25m",
+            "overview": "Luffy leads Shirahoshi out of her tower inside Megalo while Brook and the Minister of the Right tells them to stop."
           },
           {
             "episode": 535,
             "title": "Hordy's Onslaught! The Retaliatory Plan Set Into Motion!",
-            "absoluteEpisode": 535
+            "absoluteEpisode": 535,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736526.jpg",
+            "duration": "25m",
+            "overview": "Luffy is still on his way to the Sea Forest with Shirahoshi, when he notices something going to the Ryugu Palace, which is revealed to be Hody and Vander Decken IX."
           },
           {
             "episode": 536,
             "title": "The Ryugu Palace Fight! Zoro vs. Hordy!",
-            "absoluteEpisode": 536
+            "absoluteEpisode": 536,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736527.jpg",
+            "duration": "25m",
+            "overview": "Neptune begs someone to protect her daughter. Hody just comments on how weak he is and states he only joined his army for military strength and knowledge. He states he will revive the dream and ambition of Arlong."
           },
           {
             "episode": 537,
             "title": "Keep Shirahoshi Safe! Decken Close Behind!",
-            "absoluteEpisode": 537
+            "absoluteEpisode": 537,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736528.jpg",
+            "duration": "25m",
+            "overview": "Chopper tries to persuade Sanji to not turn around, or else he will see Shirahoshi and die. But Sanji turns around and after seeing the princess, turns into stone."
           },
           {
             "episode": 538,
             "title": "The Straw Hats Defeated!? Hordy Gains Control of the Ryugu Palace!",
-            "absoluteEpisode": 538
+            "absoluteEpisode": 538,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736529.jpg",
+            "duration": "25m",
+            "overview": "Zoro cuts Hody and asks for Neptune's help to escape from Ryugu Palace. Unfortunately, Hody who was unconscious comes to his senses after taking an Energy Steroid and successfully stops Neptune and the Straw Hats from escaping."
           },
           {
             "episode": 539,
             "title": "The Haunting Ties! Nami And The Fish-Man Pirates! The Resurrected Destiny! Nami and the Fishman Pirate Crew!",
-            "absoluteEpisode": 539
+            "absoluteEpisode": 539,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736530.jpg",
+            "duration": "25m",
+            "overview": "Robin continues her search while the New Fishman Pirates begin to take over. People are also seen being forced to step on a photo, and if they do not, they are considered as enemies."
           },
           {
             "episode": 540,
             "title": "A Hero Who Freed The Slaves! An Adventurer Tiger!",
-            "absoluteEpisode": 540
+            "absoluteEpisode": 540,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736531.jpg",
+            "duration": "25m",
+            "overview": "Otohime confronts a robber who was stealing money so he could buy food for his ten children. Otohime and Jinbe try to change Fishman island, and Jinbe leaves the Army to join the Sun Pirates."
           },
           {
             "episode": 541,
             "title": "Kizaru Appears! A Trap To Catch Tiger!",
-            "absoluteEpisode": 541
+            "absoluteEpisode": 541,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736532.jpg",
+            "duration": "25m",
+            "overview": "Entering a flashback, Neptune holds a baby Shirahoshi commenting on Tiger's attack on Mary Geoise, stating he would not be able to attend a summit for a long time because of it."
           },
           {
             "episode": 542,
             "title": "A Team Is Formed! Save Chopper (II)",
-            "absoluteEpisode": 542
+            "absoluteEpisode": 542,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736533.jpg",
+            "duration": "25m",
+            "overview": "Toriko and Komatsu are seen fishing when Komatsu catches a Harusame. After defeating it, Luffy suddenly comes out of the Harusame's mouth and surprises Toriko and Komatsu."
           },
           {
             "episode": 543,
             "title": "The Death of the Hero! A Shocking Truth of Tiger!",
-            "absoluteEpisode": 543
+            "absoluteEpisode": 543,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736534.jpg",
+            "duration": "25m",
+            "overview": "The Sun Pirates start making their way to Koala's hometown, while giving her a slight makeover, new clothes and cutting her hair. on their ship, Koala still acts like a slave would, doing chores without being asked and asking for orders."
           },
           {
             "episode": 544,
             "title": "The Sun Pirates Split! Jimbei vs. Arlong!",
-            "absoluteEpisode": 544
+            "absoluteEpisode": 544,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736535.jpg",
+            "duration": "25m",
+            "overview": "After Fisher Tiger's death, Arlong, enraged, betrays his last wishes and decides to attack and kill villagers of Koala's village for selling him out, upon trying he is easily beaten by Vice-Admiral Borsalino and taken into Marine custody."
           },
           {
             "episode": 545,
             "title": "Shaking Fish-Man Island! A Celestial Dragon Drifts In!",
-            "absoluteEpisode": 545
+            "absoluteEpisode": 545,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736536.jpg",
+            "duration": "25m",
+            "overview": "With Jinbe having been accepted as a Shichibukai, the Sun Pirates return to Fishman Island."
           },
           {
             "episode": 546,
             "title": "A Sudden Tragedy! A Gunshot Shuts Down the Future!",
-            "absoluteEpisode": 546
+            "absoluteEpisode": 546,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736537.jpg",
+            "duration": "25m",
+            "overview": "Vander Decken IX discovers about the Tamatebako and wishes to use it to age Shirahoshi after she grows up a little."
           },
           {
             "episode": 547,
             "title": "Back to the Present! Hordy Makes a Move!",
-            "absoluteEpisode": 547
+            "absoluteEpisode": 547,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736538.jpg",
+            "duration": "25m",
+            "overview": "After Otohime passed away, Hody Jones had found and killed the suspected human assassin and showed him to the people."
           },
           {
             "episode": 548,
             "title": "The Kingdom in Shock! An Order to Execute Neptune Issued!",
-            "absoluteEpisode": 548
+            "absoluteEpisode": 548,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736539.jpg",
+            "duration": "25m",
+            "overview": "Hody makes his announcement to take over the Ryugu Kingdom with the execution of King Neptune as the start of his new rule. Hody also announces that he will kill Straw Hats so that they will serve as example to all humans in the surface."
           },
           {
             "episode": 549,
             "title": "A Rift Opens Up! Luffy vs. Jimbei!",
-            "absoluteEpisode": 549
+            "absoluteEpisode": 549,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736540.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Jinbe start their duel to see who gets to fight Hody, but their fight was cut short by Sanji's and Robin's interference."
           },
           {
             "episode": 550,
             "title": "Something Has Happened to Hordy! The True Power of the Evil Drug!",
-            "absoluteEpisode": 550
+            "absoluteEpisode": 550,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736541.jpg",
+            "duration": "25m",
+            "overview": "The New Fishman Pirates head to the Gyoncorde Plaza to execute King Neptune but before getting at the plaza, they demonstrate a little taste of their power by terrorizing and destroying everything in their path."
           },
           {
             "episode": 551,
             "title": "The Battle is on! At Conchcorde Plaza!",
-            "absoluteEpisode": 551
+            "absoluteEpisode": 551,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736542.jpg",
+            "duration": "25m",
+            "overview": "Neptune's army put up an attempt to stop Hody Jones and his pirates from reaching Gyoncorde Plaza but seeing the king held hostage prevents them from attacking."
           },
           {
             "episode": 552,
             "title": "Surprising Confession! The Truth Behind the Assassination of Otohime!",
-            "absoluteEpisode": 552
+            "absoluteEpisode": 552,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736543.jpg",
+            "duration": "25m",
+            "overview": "Jinbe and Shirahoshi are captured by the New Fishman Pirates when they fall into a trap due to a balloon version of King Neptune which easily tricks Shirahoshi and Megalo."
           },
           {
             "episode": 553,
             "title": "Shirahoshi's Tears! Luffy Finally Shows Up!",
-            "absoluteEpisode": 553
+            "absoluteEpisode": 553,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736544.jpg",
+            "duration": "25m",
+            "overview": "Shirahoshi reveals that Megalo witnessed Hody shooting Queen Otohime and told her in secret."
           },
           {
             "episode": 554,
             "title": "A Great Clash! The Straw Hat Crew vs. 100,000 Enemies",
-            "absoluteEpisode": 554
+            "absoluteEpisode": 554,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736545.jpg",
+            "duration": "25m",
+            "overview": "The citizens celebrate at the arrival of Luffy and his crew. Jinbe comments on how his plan with the Straw Hat Pirates crew worked. Luffy takes down half of Hody's forces with Haki."
           },
           {
             "episode": 555,
             "title": "Deadly Attacks One After Another! Zoro and Sanji Join The Battle!",
-            "absoluteEpisode": 555
+            "absoluteEpisode": 555,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736546.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates begin their attack with Luffy, Zoro and Sanji taking the lead in the fight but mostly it is the latter two of the three who begin showing their new powers and abilities from their two year separation and training."
           },
           {
             "episode": 556,
             "title": "Unveiled! The Secret Weapons of the Sunny!",
-            "absoluteEpisode": 556
+            "absoluteEpisode": 556,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736547.jpg",
+            "duration": "25m",
+            "overview": "The battle rages on between the Straw Hats and the New Fishman Pirates. Sanji and Zoro are competing over who can take down the most fishmen."
           },
           {
             "episode": 557,
             "title": "Iron Pirates! General Franky Appears",
-            "absoluteEpisode": 557
+            "absoluteEpisode": 557,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736548.jpg",
+            "duration": "25m",
+            "overview": "The battle between the New Fishman Pirates and the Straw Hats continues, with the Straw Hats gaining the upper hand. Seeing this, Daruma decides to join the fight, targeting the Brachio Tank V and collapsing the ground underneath it."
           },
           {
             "episode": 558,
             "title": "Noah Approaches! The Crisis of Fishman Island's Destruction!",
-            "absoluteEpisode": 558
+            "absoluteEpisode": 558,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736549.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Hody continue their fight with Luffy getting the upper hand with Haki and Hody's attacks being ineffective against Luffy."
           },
           {
             "episode": 559,
             "title": "Hurry Up, Luffy! Shirahoshi's Desperate Situation",
-            "absoluteEpisode": 559
+            "absoluteEpisode": 559,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736550.jpg",
+            "duration": "25m",
+            "overview": "Shirahoshi begins swimming out to sea in an attempt to lure the ark Noah away and save Fishman Island, while Luffy gets Sanji's help to allow him to reach the ship's chains and stop Hody."
           },
           {
             "episode": 560,
             "title": "The Battle Begins! Luffy Vs. Hordy!",
-            "absoluteEpisode": 560
+            "absoluteEpisode": 560,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736551.jpg",
+            "duration": "25m",
+            "overview": "Hody takes his trident out of Vander Decken's body and, after a short fight, Decken is defeated. Then Hody goes after Shirahoshi, slicing through Ryuboshi and Manboshi, reaches her with his incomparable underwater speed, and grabs her hair."
           },
           {
             "episode": 561,
             "title": "A Massive Confused Fight! The Straw Hats vs. The New Fish-Man Pirates!",
-            "absoluteEpisode": 561
+            "absoluteEpisode": 561,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736552.jpg",
+            "duration": "25m",
+            "overview": "Luffy along with the three princes try to protect Shirahoshi against Hody Jones."
           },
           {
             "episode": 562,
             "title": "Luffy Loses the Fight?! Hordy's Long Awaited Revenge!",
-            "absoluteEpisode": 562
+            "absoluteEpisode": 562,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736553.jpg",
+            "duration": "25m",
+            "overview": "As the Noah falls onto the Fishman Island, Shirahoshi desperately tries to tell Decken to wake up only for Hody to attack her but Manboshi takes the blunt of the attack."
           },
           {
             "episode": 563,
             "title": "A Shocking Fact! The True Identity of Hordy!",
-            "absoluteEpisode": 563
+            "absoluteEpisode": 563,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736554.jpg",
+            "duration": "25m",
+            "overview": "The story goes back before the Noah started falling back to the island. Jinbe and Sanji continue to fight Wadatsumi and Wadatsumi becomes angry and inflates himself, crushing some of his allies unknowingly."
           },
           {
             "episode": 564,
             "title": "Back to Zero! Ernest Wishes for Luffy!",
-            "absoluteEpisode": 564
+            "absoluteEpisode": 564,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736555.jpg",
+            "duration": "25m",
+            "overview": "As Fukaboshi begins to state who Hody really is, Hody's past is revealed as he recalls his hatred towards humans. The New Fish-Man Pirates officers were taught as kids that the humans are an inferior species and that they should be punished by heaven."
           },
           {
             "episode": 565,
             "title": "Luffy's All-out Attack! Red Hawk Blasts!",
-            "absoluteEpisode": 565
+            "absoluteEpisode": 565,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736556.jpg",
+            "duration": "25m",
+            "overview": "Brook continues to fight Zeo and reveals his new control over his Yomi Yomi no Mi abilities. Usopp continues to fight Daruma and has set traps for him."
           },
           {
             "episode": 566,
             "title": "Coming to an End! The Final Decisive Battle Against Hordy",
-            "absoluteEpisode": 566
+            "absoluteEpisode": 566,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736557.jpg",
+            "duration": "25m",
+            "overview": "Hody recovers thanks to the Energy Steroids and manages to overwhelm Luffy and bite him again in the same spot."
           },
           {
             "episode": 567,
             "title": "Stop, Noah! Desperate Elephant Gantling!",
-            "absoluteEpisode": 567
+            "absoluteEpisode": 567,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736558.jpg",
+            "duration": "25m",
+            "overview": "All of the New Fishman Pirates lie down defeated while the Straw Hat Pirates are relaxing and waiting for Luffy."
           },
           {
             "episode": 568,
             "title": "To the Future! The Path to the Sun!",
-            "absoluteEpisode": 568
+            "absoluteEpisode": 568,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736559.jpg",
+            "duration": "25m",
+            "overview": "With the Sea Kings having stopped and saved the great ship Noah, Shirahoshi learns a startling secret from the Sea Kings."
           },
           {
             "episode": 569,
             "title": "The Secret Revealed! The Truth About the Ancient Weapon!",
-            "absoluteEpisode": 569
+            "absoluteEpisode": 569,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736560.jpg",
+            "duration": "25m",
+            "overview": "As the whole Fishman Island celebrates the capture and defeat of Hody and the New Fishman Pirates by the Straw Hats, who make their own plans to leave Fishman Island soon."
           },
           {
             "episode": 570,
             "title": "The Straw Hats Stunned! The New Fleet Admiral of the Navy!",
-            "absoluteEpisode": 570
+            "absoluteEpisode": 570,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736561.jpg",
+            "duration": "25m",
+            "overview": "King Neptune talks about the Ancient Weapons with Shirahoshi and Nico Robin while Caribou listens and makes his way to Shirahoshi's room."
           },
           {
             "episode": 571,
             "title": "She Loves Sweets! Big Mom of the Four Emperors!",
-            "absoluteEpisode": 571
+            "absoluteEpisode": 571,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736562.jpg",
+            "duration": "25m",
+            "overview": "The rest of the Straw Hats are waiting for Luffy, Zoro, and Sanji to return the treasure from Caribou. They find Caribou easily with all the treasure."
           },
           {
             "episode": 572,
             "title": "Many Problems Lie Ahead! A Trap Awaiting in the New World!",
-            "absoluteEpisode": 572
+            "absoluteEpisode": 572,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736563.jpg",
+            "duration": "25m",
+            "overview": "The Minister of the Right was thanking the Straw Hats for saving Fishman Island, when suddenly he got a report that the Tamate Box is gone and is in the hands of Baron Tamago and Pekoms."
           },
           {
             "episode": 573,
             "title": "Finally Time to Go! Goodbye, Fish-Man Island!",
-            "absoluteEpisode": 573
+            "absoluteEpisode": 573,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736564.jpg",
+            "duration": "25m",
+            "overview": "The mermaids and Keimi from the Mermaid Cafe ask Madam Shyarly if they can say good bye to the Straw Hats. Madam Shyarly says that her prediction that Luffy will destroy Fishman Island was wrong since they defeated Hody and his Pirates."
           },
           {
             "episode": 574,
             "title": "To the New World! Heading for the Ultimate Sea!",
-            "absoluteEpisode": 574
+            "absoluteEpisode": 574,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/294/736565.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats are Heading into the New World."
           },
           {
             "episode": 575,
             "title": "Z's Ambition! Lily the Little Giant!",
-            "absoluteEpisode": 575
+            "absoluteEpisode": 575,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739392.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats find themselves in a middle of an infamous sea in the New World known for its mirages and outrageous weather patterns."
           },
           {
             "episode": 576,
             "title": "Z's Ambition! A Dark and Powerful Army!",
-            "absoluteEpisode": 576
+            "absoluteEpisode": 576,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739393.jpg",
+            "duration": "25m",
+            "overview": "Nami creates a plan for the Straw Hats to rescue Lily's father, Panz Fry. Chopper, Robin, Brook, and Luffy are the diversion group while Usopp, Sanji, Zoro, and Lily are in the submarine."
           },
           {
             "episode": 577,
             "title": "Z's Ambition! A Great and Desperate Escape Plan!",
-            "absoluteEpisode": 577
+            "absoluteEpisode": 577,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739394.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Zoro face off against Shuzo and Momonga. The Straw Hats, Lily, and her father manage to escape with a Coup de Burst and the anchor connected to the Thousand Sunny."
           },
           {
             "episode": 578,
             "title": "Z's Ambition! Luffy vs. Shuzo!",
-            "absoluteEpisode": 578
+            "absoluteEpisode": 578,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739395.jpg",
+            "duration": "25m",
+            "overview": "Shuzo orders his men to be launched at the island like torpedoes and sacrifice themselves for him."
           },
           {
             "episode": 579,
             "title": "Arriving! A Burning Island - Punk Hazard!",
-            "absoluteEpisode": 579
+            "absoluteEpisode": 579,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739396.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats have arrived at a volcanic island that does not show on the New World Log Pose. Luffy in his enthusiasm votes to go to the island, though most of the crew were reluctant to go because of the sea of fire blocking their way."
           },
           {
             "episode": 580,
             "title": "A Battle in the Heat! Luffy vs. The Giant Dragon!",
-            "absoluteEpisode": 580
+            "absoluteEpisode": 580,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739397.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Zoro start fighting the dragon, which is shown to be able to speak and breathe fire."
           }
         ]
       },
@@ -3132,312 +4871,498 @@ window._ANIME_DATA = [
           {
             "episode": 581,
             "title": "The Straw Hats Stunned! Enter: A Samurai's Horrifying Severed Head!",
-            "absoluteEpisode": 581
+            "absoluteEpisode": 581,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739398.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro, Usopp, and Robin are standing near the dead dragon that Zoro killed and Luffy is trying to pull out the man who is stuck in the dragon's body."
           },
           {
             "episode": 582,
             "title": "Startling! The Secret of the Island Is Finally Revealed",
-            "absoluteEpisode": 582
+            "absoluteEpisode": 582,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739399.jpg",
+            "duration": "25m",
+            "overview": "Franky, Sanji, Nami and Chopper are surprised that the samurai is still alive after being cut."
           },
           {
             "episode": 583,
             "title": "Save the Children! The Straw Hats Start to Fight!",
-            "absoluteEpisode": 583
+            "absoluteEpisode": 583,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739400.jpg",
+            "duration": "25m",
+            "overview": "Nami's group escaped the prison cell and end up in the Biscuits Room, where they find giant children."
           },
           {
             "episode": 584,
             "title": "A Swordplay Showdown! Brook Vs. The Mysterious Torso Samurai!",
-            "absoluteEpisode": 584
+            "absoluteEpisode": 584,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739401.jpg",
+            "duration": "25m",
+            "overview": "At the lake, Luffy's group have been attacked by Brownbeard and his centaur unit who's job was to intercept and eliminate any obvious intruders."
           },
           {
             "episode": 585,
             "title": "The Warlord! Trafalgar Law",
-            "absoluteEpisode": 585
+            "absoluteEpisode": 585,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739402.jpg",
+            "duration": "25m",
+            "overview": "Chopper and Nami, leading the children stumble upon a room with people frozen in it. Franky, Sanji and the samurai start to make their way towards Nami and Chopper. Luffy, Zoro, Usopp and Robin get attacked by the centaurs."
           },
           {
             "episode": 586,
             "title": "In a Real Pinch! Luffy Sinks into the Ice-cold Lake!",
-            "absoluteEpisode": 586
+            "absoluteEpisode": 586,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739403.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro, Usopp and Robin try to get to the ice side of Punk Hazard but their ship gets capsized by Brownbeard. As Brownbeard's troop prepares attack them again, Zoro gets ready to destroy their bullets but gets dragged down by sharks."
           },
           {
             "episode": 587,
             "title": "A Collision! Law vs. Vice Admiral Smoker!",
-            "absoluteEpisode": 587
+            "absoluteEpisode": 587,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739404.jpg",
+            "duration": "25m",
+            "overview": "Law was going to to cut up Tashigi into little pieces but Smoker saved her and started fighting against Law. Luffy, Zoro, Robin and Usopp are riding on top of Brownbeard after defeating him and his centaurs."
           },
           {
             "episode": 588,
             "title": "Meeting Again After Two Years! Luffy and Law!",
-            "absoluteEpisode": 588
+            "absoluteEpisode": 588,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739405.jpg",
+            "duration": "25m",
+            "overview": "Tashigi tries to see what happened in the fight. Luffy's group sees the flying warship. Luffy sees Law and thanks him for saving him two years ago. Law says that they aren't friends and Luffy agrees since they were both after One Piece."
           },
           {
             "episode": 589,
             "title": "The Worst in the World! A Scientist of Terror - Caesar!",
-            "absoluteEpisode": 589
+            "absoluteEpisode": 589,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739406.jpg",
+            "duration": "25m",
+            "overview": "The G-5 Marines discussed if Caesar Clown was probably behind the unusual events at the island and that the child abduction cases in that area may have been real."
           },
           {
             "episode": 590,
             "title": "History's Strongest Collaboration vs. Glutton of the Sea (II)",
-            "absoluteEpisode": 590
+            "absoluteEpisode": 590,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739407.jpg",
+            "duration": "25m",
+            "overview": "Featured characters of One Piece, Toriko, and Dragon Ball Z enter the IGO tournament in order to gain the Carat meat, which is said to be the most tasteful in the world. However, it leads in a tie between Goku, Toriko, and Luffy."
           },
           {
             "episode": 591,
             "title": "Chopper's Fury! The Master's Inhumane Experiment!",
-            "absoluteEpisode": 591
+            "absoluteEpisode": 591,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739408.jpg",
+            "duration": "25m",
+            "overview": "The children and the Straw Hat Pirates are in a cave with Brownbeard tied up talking about the Master. Zoro, Sanji and Brook go to look for Kin'emon, who had gone to look for his torso."
           },
           {
             "episode": 592,
             "title": "To Annihilate the Straw Hats! Legendary Assassins Descend!",
-            "absoluteEpisode": 592
+            "absoluteEpisode": 592,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739409.jpg",
+            "duration": "25m",
+            "overview": "Yeti Cool Brothers make their way to the destroyed lab where the Straw Hats and the children are. Monet tells Caesar Clown about Law having some relation to Luffy, which makes Caesar mistrust Law until Law reassures him."
           },
           {
             "episode": 593,
             "title": "Save Nami! Luffy's Fight on the Snow-Capped Mountains!",
-            "absoluteEpisode": 593
+            "absoluteEpisode": 593,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739410.jpg",
+            "duration": "25m",
+            "overview": "Chopper tells the others that Nami in Franky's body was kidnapped by the Yeti Cool Brothers. Franky in Chopper's body takes a Rumble Ball. Luffy and Franky go after the Yeti Cool Brothers to save Nami and defeat them."
           },
           {
             "episode": 594,
             "title": "Formed! Luffy and Law's Pirate Alliance!",
-            "absoluteEpisode": 594
+            "absoluteEpisode": 594,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739411.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Law agree on an alliance; the rest of the Straw Hat Pirates disapprove while Nico Robin approves, even if she warns Luffy about a possible betrayal in a pirate alliance."
           },
           {
             "episode": 595,
             "title": "Capture M! The Pirate Alliance's Operation Launches!",
-            "absoluteEpisode": 595
+            "absoluteEpisode": 595,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739414.jpg",
+            "duration": "25m",
+            "overview": "Zoro, Sanji and Brook are trying to find the samurai and remember what happened to them. They had been knocked out by the Yeti Cool Brothers, who used a gas that makes people drunk."
           },
           {
             "episode": 596,
             "title": "On the Verge of Annihilation! A Deadly Monster Comes Flying In!",
-            "absoluteEpisode": 596
+            "absoluteEpisode": 596,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739415.jpg",
+            "duration": "25m",
+            "overview": "Luffy declares that he will capture Caesar. Law will distract Monet while Chopper finds an antidote for drug."
           },
           {
             "episode": 597,
             "title": "An Intense Battle! Caesar Exercises His True Power!",
-            "absoluteEpisode": 597
+            "absoluteEpisode": 597,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739416.jpg",
+            "duration": "25m",
+            "overview": "Sanji, Kin'emon, Brook and Zoro see Smiley. Brook talks about a story of a creature called Slime which melts the clothes of women, making everyone act perverted except for Zoro, who points out that the slime is killing the fish in the lake."
           },
           {
             "episode": 598,
             "title": "The Samurai that Cuts the Fire! Kin'emon of Foxfire!",
-            "absoluteEpisode": 598
+            "absoluteEpisode": 598,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739417.jpg",
+            "duration": "25m",
+            "overview": "Law's heart is crushed by the mysterious man named Vergo who was sent along with Monet to watch over Caesar."
           },
           {
             "episode": 599,
             "title": "Shocking! The True Identity of the Mystery Man Vergo!",
-            "absoluteEpisode": 599
+            "absoluteEpisode": 599,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739418.jpg",
+            "duration": "25m",
+            "overview": "Law gets beaten up by Vergo. Yarisugi tells the parents of the missing children that they are dead. Caesar takes the children from Usopp and Nami."
           },
           {
             "episode": 600,
             "title": "Save the Children! The Master's Evil Hands Close in!",
-            "absoluteEpisode": 600
+            "absoluteEpisode": 600,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739419.jpg",
+            "duration": "25m",
+            "overview": "As Luffy and Law remain captives in Caesar's lab along with the others who were captured, Caesar Clown goes to retrieve the children from the remaining Straw Hat Pirates."
           },
           {
             "episode": 601,
             "title": "Shaking Up the New World! Caesar's Horrendous Experiment!",
-            "absoluteEpisode": 601
+            "absoluteEpisode": 601,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739420.jpg",
+            "duration": "25m",
+            "overview": "At the lab, the G-5 Marine soldiers are banging on the door, demanding entry. Meanwhile, the children were returned to the Lab where Caesar ordered his subordinates to make sure they don't escape again. However, Mocha begins to regain her senses, seeing Caesar's subordinates as monsters."
           },
           {
             "episode": 602,
             "title": "The Deadliest Weapon of Mass Destruction in History! Shinokuni!",
-            "absoluteEpisode": 602
+            "absoluteEpisode": 602,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739421.jpg",
+            "duration": "25m",
+            "overview": "After Smiley swallows the over-sized candy, the candy coat dissolves revealing a special drug designed to convert the entire content of Smiley's body into a \"perfect\" weapon of destruction, Shinokuni."
           },
           {
             "episode": 603,
             "title": "Launching the Counter Attack! Luffy and Law's Great Escape!",
-            "absoluteEpisode": 603
+            "absoluteEpisode": 603,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739422.jpg",
+            "duration": "25m",
+            "overview": "As the Underworld Brokers watched the video feed of the captive Straw Hats and Marines, Eustass Kid and Killer decided to ignore it for more important matters, such as forming an alliance between the Kid Pirates, On Air Pirates and the Hawkins Pirates."
           },
           {
             "episode": 604,
             "title": "Get to Building R! The Pirate Alliance's Great Advance!",
-            "absoluteEpisode": 604
+            "absoluteEpisode": 604,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739423.jpg",
+            "duration": "25m",
+            "overview": "Though the Straw Hats and Brownbeard managed to escape into the lab, they left behind a gaping hole. But they soon realise that Shinokuni can now enter the lab."
           },
           {
             "episode": 605,
             "title": "Tashigi's Tears! G-5's Desperate Breakthrough Plan!",
-            "absoluteEpisode": 605
+            "absoluteEpisode": 605,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739424.jpg",
+            "duration": "25m",
+            "overview": "Caesar Clown, incensed with the humiliation that his prisoners escaped and are inside his lab, orders the passage between building A and B to be closed and Shinokuni to be let in to kill the intruders. Vergo, however decided to take care of them himself."
           },
           {
             "episode": 606,
             "title": "The Treacherous Vice Admiral! Demon Bamboo Vergo!",
-            "absoluteEpisode": 606
+            "absoluteEpisode": 606,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739425.jpg",
+            "duration": "25m",
+            "overview": "Luffy races toward Caesar in the hopes of delivering a beating, Sanji saves a damsel in distress, and Chopper tries to prevent the children from eating the drugged candy!"
           },
           {
             "episode": 607,
             "title": "A Fierce Battle Gets Heated! Luffy vs. Caesar!",
-            "absoluteEpisode": 607
+            "absoluteEpisode": 607,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739426.jpg",
+            "duration": "25m",
+            "overview": "Sanji and Vergo slug it out in a cloud of toxic gas, Law finds the room that could ruin the New World, and Luffy hopes to bring Caesar`s reign of terror to a brutal end!"
           },
           {
             "episode": 608,
             "title": "A Mastermind Underground! Doflamingo Makes His Move!",
-            "absoluteEpisode": 608
+            "absoluteEpisode": 608,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739427.jpg",
+            "duration": "25m",
+            "overview": "Doflamingo orders Vergo to stop Law in his tracks, Luffy battles a deadly snowbird, and the rest of the Straw Hats attempt to survive the fiery breath of an angry dragon!"
           },
           {
             "episode": 609,
             "title": "Luffy Dies from Exposure?! The Spine-chilling Snow Woman Monet!",
-            "absoluteEpisode": 609
+            "absoluteEpisode": 609,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739428.jpg",
+            "duration": "25m",
+            "overview": "Luffy goes down fast after Monet puts a chill into him, and Trafalgar Law makes a desperate attempt to reclaim his heart during an electric battle with Vergo!"
           },
           {
             "episode": 610,
             "title": "Fists Collide! A Battle of the Two Vice Admirals!",
-            "absoluteEpisode": 610
+            "absoluteEpisode": 610,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739429.jpg",
+            "duration": "25m",
+            "overview": "Smoker attacks Vergo for assaulting his men, Luffy meets something strange in the trash heap, and a flashback reveals the true depths of Caesar`s madness!"
           },
           {
             "episode": 611,
             "title": "A Small Dragon! Momonosuke Appears!",
-            "absoluteEpisode": 611
+            "absoluteEpisode": 611,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739430.jpg",
+            "duration": "25m",
+            "overview": "Luffy befriends a dragon that used to be a human boy, and Captain Smoker continues his brutal battle with the villainous Vergo!"
           },
           {
             "episode": 612,
             "title": "A Deadly Fight in a Blizzard! The Straw Hats vs. the Snow Woman!",
-            "absoluteEpisode": 612
+            "absoluteEpisode": 612,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739431.jpg",
+            "duration": "25m",
+            "overview": "Luffy hitches a ride on a dragon, Mocha tries to keep the Master`s candy away from her friends, and Zoro pits his steel against snow in a battle with Monet!"
           },
           {
             "episode": 613,
             "title": "Showing Off His Techniques! Zoro's Formidable One-Sword Style!",
-            "absoluteEpisode": 613
+            "absoluteEpisode": 613,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739432.jpg",
+            "duration": "25m",
+            "overview": "To survive his battle with Monet, Zoro must overcome his unwillingness to cut a woman. Elsewhere, Luffy puts a hungry dragon on his back and tries to punch his way out of the basement!"
           },
           {
             "episode": 614,
             "title": "To Save Her Friends! Mocha Runs at the Risk of Her Life!",
-            "absoluteEpisode": 614
+            "absoluteEpisode": 614,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739433.jpg",
+            "duration": "25m",
+            "overview": "Chopper, Nami, and Robin watch in horror as Mocha makes a heartbreaking sacrifice in a courageous attempt to save the lives of her friends!"
           },
           {
             "episode": 615,
             "title": "Brownbeard in Grief! Luffy Lands a Furious Blow!",
-            "absoluteEpisode": 615
+            "absoluteEpisode": 615,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739440.jpg",
+            "duration": "25m",
+            "overview": "Brownbeard heroically attempts to expose Caesar as a villain, the horrific truth about Punk Hazard is finally revealed, and Luffy puts the hurt on his gaseous enemy!"
           },
           {
             "episode": 616,
             "title": "A Surprising Outcome! White Chase vs. Vergo!",
-            "absoluteEpisode": 616
+            "absoluteEpisode": 616,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739441.jpg",
+            "duration": "25m",
+            "overview": "Luffy makes Caesar pay for his crimes against the children, and Smoker risks his life for a chance to see Vergo fall in battle!"
           },
           {
             "episode": 617,
             "title": "Caesar's Defeat! The Powerful Grizzly Magnum!",
-            "absoluteEpisode": 617
+            "absoluteEpisode": 617,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739442.jpg",
+            "duration": "25m",
+            "overview": "Law reaches the end of his epic battle with Vergo, and Luffy looks to land a devastating final blow on the murderous gasbag Caesar!"
           },
           {
             "episode": 618,
             "title": "Raid! An Assassin from Dressrosa!",
-            "absoluteEpisode": 618
+            "absoluteEpisode": 618,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739443.jpg",
+            "duration": "25m",
+            "overview": "Word of Luffy and Law`s alliance spreads throughout the world, Chopper and Brook race to stay ahead of the deadly gas, and Joker sends a team to rescue Caesar!"
           },
           {
             "episode": 619,
             "title": "Running Wild! Invincible General Franky!",
-            "absoluteEpisode": 619
+            "absoluteEpisode": 619,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739444.jpg",
+            "duration": "25m",
+            "overview": "Franky battles a lethal beauty, Caesar tries to strike a final blow against Smoker, and Monet detonates an explosive surprise that could spell doom for the Straw Hats!"
           },
           {
             "episode": 620,
             "title": "A Critical Situation! Punk Hazard Explodes!",
-            "absoluteEpisode": 620
+            "absoluteEpisode": 620,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739445.jpg",
+            "duration": "25m",
+            "overview": "As the Straw Hats and company flee the crumbling laboratory, Caesar`s desperate act of vengeance thwarts Joker`s plan to forever silence his enemies!"
           },
           {
             "episode": 621,
             "title": "Capture Caesar! General Cannon Blast!",
-            "absoluteEpisode": 621
+            "absoluteEpisode": 621,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739446.jpg",
+            "duration": "25m",
+            "overview": "Franky continues his battle with Buffalo and Baby 5, Nami uses a mighty gust of wind to save the children from a deadly cloud of gas, and Usopp takes a shot at capturing Caesar!"
           },
           {
             "episode": 622,
             "title": "A Touching Reunion! Momonosuke and Kin'emon!",
-            "absoluteEpisode": 622
+            "absoluteEpisode": 622,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739447.jpg",
+            "duration": "25m",
+            "overview": "A dragon regains his boyish form, a noble warrior once feared dead makes a shocking resurrection, and bitter enemies set aside their differences to enjoy a well-deserved feast!"
           },
           {
             "episode": 623,
             "title": "It's Time to Say Goodbye! Leaving Punk Hazard!",
-            "absoluteEpisode": 623
+            "absoluteEpisode": 623,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739448.jpg",
+            "duration": "25m",
+            "overview": "The weary marines and the rescued children get teary-eyed as they say goodbye to the Straw Hats. Meanwhile, Law enters into treacherous negotiations with Joker!"
           },
           {
             "episode": 624,
             "title": "The G-5 Wiped Out! Doflamingo's Sudden Attack!",
-            "absoluteEpisode": 624
+            "absoluteEpisode": 624,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739449.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats set a course for Dressrosa, Law explains his alliance with Luffy, and Smoker`s refusal to reveal a secret earns him a serious beating from Doflamingo!"
           },
           {
             "episode": 625,
             "title": "Intense! Aokiji vs. Doflamingo!",
-            "absoluteEpisode": 625
+            "absoluteEpisode": 625,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739450.jpg",
+            "duration": "25m",
+            "overview": "Smoker`s life is spared by the arrival of an old friend. Law reveals some shocking news about Caesar`s partnership with Doflamingo, and Momonosuke uses his youth to get cozy with Robin and Nami!"
           },
           {
             "episode": 626,
             "title": "Caesar Goes Missing! The Pirate Alliance Makes a Sortie!",
-            "absoluteEpisode": 626
+            "absoluteEpisode": 626,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739451.jpg",
+            "duration": "25m",
+            "overview": "Smooth seas stretch out before the Straw Hats as they leave Punk Hazard far behind. While they fear Donflamingo`s return and prepare to face him, another powerful foe lies in wait - one whose power could be their downfall!"
           },
           {
             "episode": 627,
             "title": "Luffy Dies at Sea?! The Pirate Alliance Comes Apart!",
-            "absoluteEpisode": 627
+            "absoluteEpisode": 627,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739452.jpg",
+            "duration": "25m",
+            "overview": "Breed uses his evil abilities to turn Chopper into a pet - and force Luffy and Law to fight to the death."
           },
           {
             "episode": 628,
             "title": "A Major Turnaround! Luffy's Angry Iron Fist Strikes!",
-            "absoluteEpisode": 628
+            "absoluteEpisode": 628,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739453.jpg",
+            "duration": "25m",
+            "overview": "After Law discovers the secret to Breed`s power, Luffy and his old friend the Kung Fu Dugong give the animal-abusing madman a beasty beat down!"
           },
           {
             "episode": 629,
             "title": "Startling! The Big News Shakes Up the New World!",
-            "absoluteEpisode": 629
+            "absoluteEpisode": 629,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739454.jpg",
+            "duration": "25m",
+            "overview": "As the world reacts to Doflamingo`s shocking announcement, Law and the Straw Hats plot the next move in their daring alliance, and a face from the past returns!"
           },
           {
             "episode": 630,
             "title": "Explore! A Kingdom of Love and Passion: Dressrosa!",
-            "absoluteEpisode": 630
+            "absoluteEpisode": 630,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739455.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats and their friends set out to explore Dressrosa, a land full of beautiful women, delicious food, and live toys that walk amongst the living."
           },
           {
             "episode": 631,
             "title": "Full of Enthusiasm! The Corrida Colosseum!",
-            "absoluteEpisode": 631
+            "absoluteEpisode": 631,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739456.jpg",
+            "duration": "25m",
+            "overview": "A blind warrior lays a beat down on a gang of masked thugs, Zorro chases the thief who stole his sword, and Luffy finds himself tempted by the promise of a fiery fruit!"
           },
           {
             "episode": 632,
             "title": "A Dangerous Love! The Dancer Girl: Violet!",
-            "absoluteEpisode": 632
+            "absoluteEpisode": 632,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739457.jpg",
+            "duration": "25m",
+            "overview": "Zoro continues his hunt for the fairy who stole his sword, Sanji is smitten by a beautiful dancer, and Luffy prepares to fight for the Devil Fruit that belonged to his brother!"
           },
           {
             "episode": 633,
             "title": "A Formidable, Unknown Warrior! Here Comes Lucy!",
-            "absoluteEpisode": 633
+            "absoluteEpisode": 633,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739458.jpg",
+            "duration": "25m",
+            "overview": "Sanji falls further under the spell of his new lady friend, and Luffy makes quite an impression as he gets to know the fighters competing for Ace`s Devil Fruit."
           },
           {
             "episode": 634,
             "title": "A Pirate Noble! Cavendish!",
-            "absoluteEpisode": 634
+            "absoluteEpisode": 634,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/295/739459.jpg",
+            "duration": "25m",
+            "overview": "A gorgeous gladiator tells Luffy the story of the world`s greatest warrior, a masked mauler literally destroys the competition, and the Navy makes its presence felt!"
           },
           {
             "episode": 635,
             "title": "The Fateful Reunion! Bellamy the Hyena!",
-            "absoluteEpisode": 635
+            "absoluteEpisode": 635,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740736.jpg",
+            "duration": "25m",
+            "overview": "An old nemesis sees through Luffy`s disguise, Zoro finally catches up to the sword-stealing fairy, and Sanji`s skill at sniffing out snipers impresses his new lady friend!"
           },
           {
             "episode": 636,
             "title": "A Super Rookie! Bartolomeo the Cannibal!",
-            "absoluteEpisode": 636
+            "absoluteEpisode": 636,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740737.jpg",
+            "duration": "25m",
+            "overview": "Bartolomeo and Bellamy take center stage in the latest round of the battle royal, but a slugger with a serious punch threatens to steal their thunder. Meanwhile, Luffy is targeted by an angry behemoth!"
           },
           {
             "episode": 637,
             "title": "Big Names Duke It Out! The Heated Block B Battle!",
-            "absoluteEpisode": 637
+            "absoluteEpisode": 637,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740738.jpg",
+            "duration": "25m",
+            "overview": "An old enemy of Garp`s reveals Luffy`s true identity, landing the Straw Hat captain in hot water with one of his fellow competitors. Meanwhile, the battle in Block B gets supremely brutal!"
           },
           {
             "episode": 638,
             "title": "A Deadly Blow! The Astonishing King Punch!",
-            "absoluteEpisode": 638
+            "absoluteEpisode": 638,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740739.jpg",
+            "duration": "25m",
+            "overview": "Franky`s new robot friend promises to reveal the tragic secrets of Dressrosa, and a regal brawler prepares to throw a powerful punch that could destroy the entire colosseum!"
           },
           {
             "episode": 639,
             "title": "The Fishing Fish Strike! Across the Deadly Iron Bridge!",
-            "absoluteEpisode": 639
+            "absoluteEpisode": 639,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740740.jpg",
+            "duration": "25m",
+            "overview": "While Law, Robin, Usopp, and Caesar attempt to survive a Fighting Fish attack, Sanji learns the heartbreaking truth about the beautiful woman who stole his heart!"
           },
           {
             "episode": 640,
             "title": "Explore! Fairies' Island - Green Bit!",
-            "absoluteEpisode": 640
+            "absoluteEpisode": 640,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740741.jpg",
+            "duration": "25m",
+            "overview": "Luffy`s turn to fight in the epic colosseum battle draws near, Zoro has an interesting encounter with a surprisingly strong fairy, and the thoughts in Sanji`s head shock his lady captor!"
           },
           {
             "episode": 641,
             "title": "The Unknown World! The Tontatta Kingdom!",
-            "absoluteEpisode": 641
+            "absoluteEpisode": 641,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740742.jpg",
+            "duration": "25m",
+            "overview": "Sanji learns some disturbing news that could mean trouble for his friends, Luffy prepares for a fight, and Robin is captured by a village full of little people!"
           },
           {
             "episode": 642,
             "title": "The Stratagem of the Century! Doflamingo Makes His Move!",
-            "absoluteEpisode": 642
+            "absoluteEpisode": 642,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740743.jpg",
+            "duration": "25m",
+            "overview": "Despite Sanji`s attempt to warn him, Law finds his life in danger after being ambushed by Doflamingo. Meanwhile, Luffy is unable to hide his true identity once the fists start flying!"
           }
         ]
       },
@@ -3447,252 +5372,402 @@ window._ANIME_DATA = [
           {
             "episode": 643,
             "title": "Shaking Heaven and Earth! Admiral Fujitora's Power!",
-            "absoluteEpisode": 643
+            "absoluteEpisode": 643,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740744.jpg",
+            "duration": "25m",
+            "overview": "After his plan falls apart, Law must fight for his life against two powerful opponents. Elsewhere, Sanji bids a touching goodbye to his special lady friend, and Luffy tangles with Brutal Bull!"
           },
           {
             "episode": 644,
             "title": "A Blow of Anger! A Giant vs. Lucy!",
-            "absoluteEpisode": 644
+            "absoluteEpisode": 644,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740745.jpg",
+            "duration": "25m",
+            "overview": "Nami, Chopper, and Brook are grotesquely transformed by a hideous woman who fancies herself an artist. Back at the colosseum, Luffy gets serious when his new friend falls victim to a giant attack!"
           },
           {
             "episode": 645,
             "title": "Destruction Cannon Blasts! Lucy in Trouble!",
-            "absoluteEpisode": 645
+            "absoluteEpisode": 645,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740746.jpg",
+            "duration": "25m",
+            "overview": "Zoro and his fairy friend argue over directions, Trafalgar Law finds himself outnumbered in his battle with Doflamingo, and Luffy`s latest opponent packs an explosive punch!"
           },
           {
             "episode": 646,
             "title": "The Legendary Pirate! Don Chinjao!",
-            "absoluteEpisode": 646
+            "absoluteEpisode": 646,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740747.jpg",
+            "duration": "25m",
+            "overview": "While Nami, Chopper, and Brook attempt to take back the Sunny, Luffy and the monstrous mauler Don Chinjao take their brutal grudge match to a legendary level!"
           },
           {
             "episode": 647,
             "title": "Light and Shadow! Darkness behind Dressrosa!",
-            "absoluteEpisode": 647
+            "absoluteEpisode": 647,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740748.jpg",
+            "duration": "25m",
+            "overview": "Luffy`s battle with Don Chinjao heats up, Franky learns the tragic truth behind Dressrosa`s mysterious toy population, and Robin and Usopp prepare to join their little friends in battle!"
           },
           {
             "episode": 648,
             "title": "Making a Sortie! The Legendary Hero Usoland!",
-            "absoluteEpisode": 648
+            "absoluteEpisode": 648,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740749.jpg",
+            "duration": "25m",
+            "overview": "Luffy continues his battle with Don Chinjao, Franky and Zoro are reunited in the land of the little people, and Law is wounded in a revealing, face-to-face showdown with Doflamingo!"
           },
           {
             "episode": 649,
             "title": "The Fierce Battle Coming to the End! Lucy vs. Chinjao!",
-            "absoluteEpisode": 649
+            "absoluteEpisode": 649,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/451/1127933.jpg",
+            "duration": "25m",
+            "overview": "A flashback reveals the story of how Garp changed Chinjao`s world forever. Back in the present, Luffy and his opponent trade ferocious blows that literally rock the colosseum!"
           },
           {
             "episode": 650,
             "title": "Luffy and the Gladiator of Fate - Rebecca!",
-            "absoluteEpisode": 650
+            "absoluteEpisode": 650,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740751.jpg",
+            "duration": "25m",
+            "overview": "During a break between battles, Luffy is attacked by an angry rival, but a beautiful gladiator with mysterious motives offers him food - and a place to rest."
           },
           {
             "episode": 651,
             "title": "Protect You to the End! Rebecca and the Toy Soldier!",
-            "absoluteEpisode": 651
+            "absoluteEpisode": 651,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740752.jpg",
+            "duration": "25m",
+            "overview": "In the moments before battle, the beautiful gladiator Rebecca flashes back to the tragic events of her childhood and the toy soldier who became her constant companion."
           },
           {
             "episode": 652,
             "title": "The Last - and Bloodiest - Block! Block D Battle Begins!",
-            "absoluteEpisode": 652
+            "absoluteEpisode": 652,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740753.jpg",
+            "duration": "25m",
+            "overview": "The bloodthirsty crowd hurls insults at Rebecca as the battle of Block D begins. On the other side of the island, Law finds himself on the losing end of his battle with Doflamingo!"
           },
           {
             "episode": 653,
             "title": "A Decisive Battle! Giolla vs. the Straw Hats!",
-            "absoluteEpisode": 653
+            "absoluteEpisode": 653,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740754.jpg",
+            "duration": "25m",
+            "overview": "Brook`s trickery springs the Straw Hats from their artistic prison, but their failure to cuff the culprit means they`ll need help from a cola-powered cannon to emerge victorious!"
           },
           {
             "episode": 654,
             "title": "Beautiful Sword! Cavendish of the White Horse!",
-            "absoluteEpisode": 654
+            "absoluteEpisode": 654,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740755.jpg",
+            "duration": "25m",
+            "overview": "Cavendish wins over the female fans during the Block D battle, Luffy keeps an eye on Rebecca, and Sanji heads toward a heated collision with Doflamingo!"
           },
           {
             "episode": 655,
             "title": "The Great Clash! Sanji vs. Doflamingo!",
-            "absoluteEpisode": 655
+            "absoluteEpisode": 655,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740756.jpg",
+            "duration": "25m",
+            "overview": "Sanji`s battle with Doflamingo is interrupted by Law`s sudden arrival, and Rebecca continues her impressive showing in the battle of Block D!"
           },
           {
             "episode": 656,
             "title": "Rebeccca�s Sword of Death! Backwater Sword Dance!",
-            "absoluteEpisode": 656
+            "absoluteEpisode": 656,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740757.jpg",
+            "duration": "25m",
+            "overview": "Law begins a deadly, face-to-face battle with Doflamingo, Zoro enlists the aid of a star struck gladiator, and Rebecca continues to impresses Luffy with her unique fighting style!"
           },
           {
             "episode": 657,
             "title": "The Most Violent Fighter! Logan vs. Rebecca!",
-            "absoluteEpisode": 657
+            "absoluteEpisode": 657,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740758.jpg",
+            "duration": "25m",
+            "overview": "Luffy learns the truth about life in Dressrosa under Doflamingo`s reign. Meanwhile, Rebecca needs help from a friend to survive her bone-crushing battle with Logan!"
           },
           {
             "episode": 658,
             "title": "A Big Surprise! A True Identity of the Toy Soldier!",
-            "absoluteEpisode": 658
+            "absoluteEpisode": 658,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740759.jpg",
+            "duration": "25m",
+            "overview": "Rebecca`s battle continues, a madman turns a gladiator into a play thing, and the brave little toy soldier reveals his painful past – and the tragic truth behind King Riku`s fall from power!"
           },
           {
             "episode": 659,
             "title": "A Horrible Past! The Secret of Dressrosa!",
-            "absoluteEpisode": 659
+            "absoluteEpisode": 659,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740760.jpg",
+            "duration": "25m",
+            "overview": "Luffy learns the truth about life in Dressrosa under Doflamingo`s reign. Meanwhile, Rebecca needs help from a friend to survive her bone-crushing battle with Logan!"
           },
           {
             "episode": 660,
             "title": "A Nightmare! The Tragic Night of Dressrosa!",
-            "absoluteEpisode": 660
+            "absoluteEpisode": 660,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740761.jpg",
+            "duration": "25m",
+            "overview": "Rebecca continues her valiant stand in the arena of battle, Luffy is reunited with Zoro, and the heartbreaking story of how Doflamingo conquered Dressrosa continues!"
           },
           {
             "episode": 661,
             "title": "A Showdown Between the Warlords! Law vs. Doflamingo!",
-            "absoluteEpisode": 661
+            "absoluteEpisode": 661,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740762.jpg",
+            "duration": "25m",
+            "overview": "Law`s power begins to fade, making him an easy target for Doflamingo`s vicious attacks. Meanwhile, Franky begs Luffy to let him fight alongside Soldier and the little people!"
           },
           {
             "episode": 662,
             "title": "Two Great Rivals Meet Each Other! Straw Hat and Heavenly Demon!",
-            "absoluteEpisode": 662
+            "absoluteEpisode": 662,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740763.jpg",
+            "duration": "25m",
+            "overview": "Luffy sets his sights on a showdown with Doflamingo in a desperate attempt to save Law`s life. Sanji, Nami, Chopper, and Brook are attacked by a very deadly foe!"
           },
           {
             "episode": 663,
             "title": "Luffy Astonished! The Man Who Inherits Ace's Will!",
-            "absoluteEpisode": 663
+            "absoluteEpisode": 663,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740764.jpg",
+            "duration": "25m",
+            "overview": "Soldier reveals his daring plan to return all the toys to their human forms, and Luffy has an emotional encounter with someone from his very distant past!"
           },
           {
             "episode": 664,
             "title": "Operation SOP Starts! Usoland Charges Forth!",
-            "absoluteEpisode": 664
+            "absoluteEpisode": 664,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740765.jpg",
+            "duration": "25m",
+            "overview": "Usopp and Robin join the little people on their mission to turn the toys back into humans, Franky wreaks havoc at the toy house, and Rebecca continues her gladiator battle!"
           },
           {
             "episode": 665,
             "title": "A Burning Passion! Rebecca vs. Suleiman!",
-            "absoluteEpisode": 665
+            "absoluteEpisode": 665,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740766.jpg",
+            "duration": "25m",
+            "overview": "Zoro attracts unwanted attention by upsetting a child, Soldier risks his life to lead the attack on Doflamingo, and Rebecca struggles to survive the brutal battle of Block D!"
           },
           {
             "episode": 666,
             "title": "The End of the Match?! A Surprising Result of Block D!",
-            "absoluteEpisode": 666
+            "absoluteEpisode": 666,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740767.jpg",
+            "duration": "25m",
+            "overview": "Rebecca survives an encounter with an opponent`s deadly alter ego, Franky continues his battle with a man who dresses like a baby, and Violet offers to sneak Luffy into the palace!"
           },
           {
             "episode": 667,
             "title": "The Admiral's Decision! Fujitora vs. Doflamingo!",
-            "absoluteEpisode": 667
+            "absoluteEpisode": 667,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740768.jpg",
+            "duration": "25m",
+            "overview": "Franky has his hands full battling a host of enemies at the Toy House, Violet leads Luffy to a secret entrance into the palace, and Fujitora issues Doflamingo a grave warning!"
           },
           {
             "episode": 668,
             "title": "The Final Round Starts! Diamante The Hero Shows Up!",
-            "absoluteEpisode": 668
+            "absoluteEpisode": 668,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740769.jpg",
+            "duration": "25m",
+            "overview": "Diamante`s unique abilities and the presence of special Fighting Fish add a deadly wrinkle to the tournament`s final round. Elsewhere, Luffy spoils any chance of sneaking up on Doflamingo!"
           },
           {
             "episode": 669,
             "title": "A Moving Castle! The Top Executive Pica Rises up!",
-            "absoluteEpisode": 669
+            "absoluteEpisode": 669,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740770.jpg",
+            "duration": "25m",
+            "overview": "Luffy tangles with a monster made of stone, Franky bursts into flames after getting shot by a cannon, and the courageous little people hatch a plan to turn the toys back into humans!"
           },
           {
             "episode": 670,
             "title": "Dragon Claw Strikes! Lucy's Intimidating Attack!",
-            "absoluteEpisode": 670
+            "absoluteEpisode": 670,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740771.jpg",
+            "duration": "25m",
+            "overview": "Soldier takes a beating from a Doflamingo Family Executive, Lucy shows off a powerful new fighting style, and Zoro pushes his blades to the breaking point in a showdown with a man made of stone!"
           },
           {
             "episode": 671,
             "title": "Defeat Sugar! The Army of the Little People Charges!",
-            "absoluteEpisode": 671
+            "absoluteEpisode": 671,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740772.jpg",
+            "duration": "25m",
+            "overview": "Zoro repeatedly slices his stone opponent into pieces, but he can`t find a way to make the bad guy stay down. Meanwhile, the bravery of the little people could get them turned into toys!"
           },
           {
             "episode": 672,
             "title": "The Last Light of Hope! The Secret of Our Commander!",
-            "absoluteEpisode": 672
+            "absoluteEpisode": 672,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740773.jpg",
+            "duration": "25m",
+            "overview": "The Tontattas are devastated by Trebol's furious attack, but as Usopp tries to convince Leo to abort the operation, Leo tells him about their commander Toy Soldier's stunning true identity! Meanwhile, with the help of another Tontatta group, the Toy Soldier finally shakes off Lao G and gets moving again!"
           },
           {
             "episode": 673,
             "title": "The Rupture Human! Gladius Blows Up Big Time!",
-            "absoluteEpisode": 673
+            "absoluteEpisode": 673,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740774.jpg",
+            "duration": "25m",
+            "overview": "Zoro continues his deadly duel with the nearly-indestructible Pica! While the Toy Soldier narrowly escapes Lao G only to come face to face with Gladius! Luffy continues his mad dash to the top of the palace to face Doflamingo!"
           },
           {
             "episode": 674,
             "title": "A Liar! Usoland on the Run!",
-            "absoluteEpisode": 674
+            "absoluteEpisode": 674,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/740775.jpg",
+            "duration": "25m",
+            "overview": "With the Tontattas beaten, Robin turned into a toy, and Luffy, Franky, and the others all busy elsewhere, Usopp is the last hope for Operation SOP! But will he be able to muster the confidence and courage to face the terrible Trebol? Among the cries of the Tontattas, Usopp has a difficult decision to make - run and fight another day or face his own doom and challenge Trebol!"
           },
           {
             "episode": 675,
             "title": "A Fateful Encounter! Kyros and King Riku!",
-            "absoluteEpisode": 675
+            "absoluteEpisode": 675,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741023.jpg",
+            "duration": "25m",
+            "overview": "The deep and tragic story of Kyros is revealed! The legend of this invincible gladiator is tied up with the royal family of Dressrosa! Meanwhile, Trebol`s defeat at the hands of Usopp is not a sure thing yet!"
           },
           {
             "episode": 676,
             "title": "Operation Failed! Usoland the Hero Dies!?",
-            "absoluteEpisode": 676
+            "absoluteEpisode": 676,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741024.jpg",
+            "duration": "25m",
+            "overview": "In the Royal Palace, Viola, Luffy, and the Toy Soldier have hidden themselves outside Doflamingo`s chamber, only to have more enemies approach from behind, leaving them surrounded! Meanwhile, Franky is knocked out cold by the Navy, and all hopes rest on Usopp to provide the miracle everyone needs!"
           },
           {
             "episode": 677,
             "title": "The Legend is Back! Kyros' All-Out Attack!",
-            "absoluteEpisode": 677
+            "absoluteEpisode": 677,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741026.jpg",
+            "duration": "25m",
+            "overview": "Usopp manages to knock Sugar out and Operation SOP is accomplished! The toys in Dressrosa start turning back to their original forms and the people are slowly realizing who Doflamingo really is! In the meantime, the legendary hero Kyros reverts to his true form - and this mighty champion of the Colosseum has a score to settle!"
           },
           {
             "episode": 678,
             "title": "The Fire Fist Strikes! The Flare-Flare Fruit Power Returns!",
-            "absoluteEpisode": 678
+            "absoluteEpisode": 678,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741027.jpg",
+            "duration": "25m",
+            "overview": "Kyros finally taking down Doflamingo leaves Doflamingo's clan shocked! Meanwhile at the Colosseum, Rebecca gets her memories of her loving father Kyros back, and Sabo makes a move to end the championship battle by blowing up the whole ring! Will he be able to snag the Flare-Flare Fruit?"
           },
           {
             "episode": 679,
             "title": "Dashing onto the Scene! The Chief of Staff of the Revolutionary Army - Sabo!",
-            "absoluteEpisode": 679
+            "absoluteEpisode": 679,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741028.jpg",
+            "duration": "25m",
+            "overview": "Luffy hurries to free Law, but with their pirate alliance dissolved, will Law still see Luffy as an ally? Meanwhile, Usopp has convinced his new-found followers to destroy the factory! Doflamingo`s defeat has thrown Dressrosa into chaos, but the Young Master may have a trick left up his sleeve..."
           },
           {
             "episode": 680,
             "title": "The Devil's Trap! A Dressrosa Extermination Plan!",
-            "absoluteEpisode": 680
+            "absoluteEpisode": 680,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741029.jpg",
+            "duration": "25m",
+            "overview": "The mystery of Doflamingo`s return from the dead is revealed! But there isn`t much time to ponder how it happened, as his plan to silence the country of Dressrosa unfolds, spelling doom for the Straw Hats!"
           },
           {
             "episode": 681,
             "title": "The 500 Million Berry Man! Target: Usoland!",
-            "absoluteEpisode": 681
+            "absoluteEpisode": 681,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741030.jpg",
+            "duration": "25m",
+            "overview": "As the people of Dressrosa see their friends and loved ones slaughter each other under the manipulation of Doflamingo, memories of 10 years ago rush back, and the truth of that event becomes clear. Doflamingo announces the rules for his deadly game - targeting Luffy, King Riku, and Law, but with the highest bounty reserved for Usopp!"
           },
           {
             "episode": 682,
             "title": "Breaking through Enemy Lines! Luffy and Zoro Launch the Counter-Attack!",
-            "absoluteEpisode": 682
+            "absoluteEpisode": 682,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741031.jpg",
+            "duration": "25m",
+            "overview": "Doflamingo and Fujitora`s agreement to not engage each other lasts for the moment - meaning all eyes are turned towards taking down the Straw Hats and claiming the rewards! And as Luffy starts heading to the Royal Palace along with Zoro and Law, Fujitora stands in his way!"
           },
           {
             "episode": 683,
             "title": "With a Rumbling of the Ground! The God of Destruction - Giant Pica Descends!",
-            "absoluteEpisode": 683
+            "absoluteEpisode": 683,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741032.jpg",
+            "duration": "25m",
+            "overview": "Robin, Usopp, the Tontatta`s and the others make moves to rejoin Luffy as Doflamingo`s deadly game rages on! Meanwhile, Kin`emon makes it to the trash heap in his search for his friend Kanjuro - just as Pica emerges in the town and changes the stakes of the game!"
           },
           {
             "episode": 684,
             "title": "Gathering into a Powerful Front! Luffy and a Group of Brutal Warriors!",
-            "absoluteEpisode": 684
+            "absoluteEpisode": 684,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741033.jpg",
+            "duration": "25m",
+            "overview": "With Luffy and the others recovering from Pica`s attack, the game is afoot! Luffy has just enough time to regroup and set out to find Doflamingo, only to find that the dastardly Warlord has more enemies than he might realize! A strange argument breaks out - to decide who gets to take down Doflamingo once and for all!"
           },
           {
             "episode": 685,
             "title": "Steady Progress! Luffy's Army vs. Pica!",
-            "absoluteEpisode": 685
+            "absoluteEpisode": 685,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741034.jpg",
+            "duration": "25m",
+            "overview": "Don Chin Jao and Elizabello successfully break Pica's giant arm but the rock giant is unfazed and starts throwing even more destructive punches at Luffy and his band of unwanted collaborators! Meanwhile, Navy Admiral Fujitora moves into action, summoning all the Navy soldiers on the island!"
           },
           {
             "episode": 686,
             "title": "A Shocking Confession! Law's Soulful Vow!",
-            "absoluteEpisode": 686
+            "absoluteEpisode": 686,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741035.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Moocy fast approach the showdown with Doflamingo - while the others with a beef against him continue to tag along. Meanwhile, Violet finds the key to Law`s handcuffs, and Rebecca pledges to deliver it to him. Finally, Law`s reason for despising Doflamingo is revealed!"
           },
           {
             "episode": 687,
             "title": "A Big Collision! Chief of Staff - Sabo vs. Admiral Fujitora!",
-            "absoluteEpisode": 687
+            "absoluteEpisode": 687,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741036.jpg",
+            "duration": "25m",
+            "overview": "Luffy makes headway toward Doflamingo`s refuge, making his way through Doflamingo`s guards, while down below Admiral Fujitora faces off against Sabo, who has the power of the Fire Fist from eating the Flare-Flare Fruit! But with Fujitora`s ability to call down a meteor, will Sabo have to power to save himself?"
           },
           {
             "episode": 688,
             "title": "A Desperate Situation! Luffy Gets Caught in a Trap!",
-            "absoluteEpisode": 688
+            "absoluteEpisode": 688,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741037.jpg",
+            "duration": "25m",
+            "overview": "Luffy cuts a lucky break as Kelly Funk shows him a shortcut to the Palace! But all may not be as it seems... Meanwhile, Franky and Zoro are locked in one-on-one duels, while Robin, Rebecca, and Bartolomeo enlist the help of the Tontattas to catch up with Luffy and Law!"
           },
           {
             "episode": 689,
             "title": "A Great Escape! Luffy's Tide-turning Elephant Gun!",
-            "absoluteEpisode": 689
+            "absoluteEpisode": 689,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741038.jpg",
+            "duration": "25m",
+            "overview": "Penned in at the bottom of a well, Luffy and Law are caught in a trap! But someone has come to save them who they least expect! Meanwhile, the Tontattas help Franky break in to the SMILE factory, and Bartolomeo resorts to tactics he used in the Colosseum to defend himself and protect Robin and Rebecca!"
           },
           {
             "episode": 690,
             "title": "A United Front - Luffy's Breakthrough Towards Victory!",
-            "absoluteEpisode": 690
+            "absoluteEpisode": 690,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741039.jpg",
+            "duration": "25m",
+            "overview": "The Tontattas locate their captive comrades and seem to be able to get the message to them - the prison break is on! Meanwhile, heavy-hitters from the Colosseum turn from wringing each other`s necks towards a unified plan, which might just be enough to get Luffy the chance to make it to a final showdown with Doflamingo!"
           },
           {
             "episode": 691,
             "title": "The Second Samurai - Evening Shower Kanjuro Appears",
-            "absoluteEpisode": 691
+            "absoluteEpisode": 691,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741040.jpg",
+            "duration": "25m",
+            "overview": "Hidden far underground, Kin`emon finds his old friend Kanjuro, whose powers allow the two to, quickly, but not elegantly, escape to the surface! Meanwhile, Cavendish shares his fears that the \"Birdcage\" game Doflamingo is playing has been rigged all along - and that the only way to win is to take the Warlord down!"
           },
           {
             "episode": 692,
             "title": "A Hard-Fought Battle Against Pica! Zoro's Deadly Attack!",
-            "absoluteEpisode": 692
+            "absoluteEpisode": 692,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741042.jpg",
+            "duration": "25m",
+            "overview": "The Tontattas are in full revolt! But can they keep their wits about them long enough to make it out? Meanwhile, Zoro finally gains the upper hand against Pica, and Franky finds a way to deal with Señor Pink."
           }
         ]
       },
@@ -3702,282 +5777,450 @@ window._ANIME_DATA = [
           {
             "episode": 693,
             "title": "The Little People's Princess! Captive Mansherry!",
-            "absoluteEpisode": 693
+            "absoluteEpisode": 693,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741043.jpg",
+            "duration": "25m",
+            "overview": "Franky finally makes it into the factory and the Tontattas are reunited with their captive friends! But Princess Mansherry is nowhere to be found. Factory manager Kuween becomes irate when ignored and launches an attack on Franky while Señor Pink, wise to Frankie`s deception, arrives on the scene ready for a manly showdown!"
           },
           {
             "episode": 694,
             "title": "Invincible! A Gruesome Army of Headcracker Dolls!",
-            "absoluteEpisode": 694
+            "absoluteEpisode": 694,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741044.jpg",
+            "duration": "25m",
+            "overview": "Robin, Rebecca, and Bartolomeo draw closer to the Flower Field on the fourth level of the Royal Palace plateau, but a sudden attack by Gladius exploding spheres sends Robin and Bartolomeo hurtling towards the level below - and directly into Luffy and the others` battle with the creepy Headcracker Dolls!"
           },
           {
             "episode": 695,
             "title": "Risking Their Lives! Luffy is the Trump Card for Victory!",
-            "absoluteEpisode": 695
+            "absoluteEpisode": 695,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741045.jpg",
+            "duration": "25m",
+            "overview": "Rebecca makes it to the Flower Field alone, but unfortunately finds company there that is less than friendly! Meanwhile, Bartolomeo pushes himself to the limit in order to help Luffy advance, but does he leave himself vulnerable in the process? Meanwhile, Sabo tastes Fujitora`s full might!"
           },
           {
             "episode": 696,
             "title": "A Tearful Reunion! Rebecca and Kyros!",
-            "absoluteEpisode": 696
+            "absoluteEpisode": 696,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741046.jpg",
+            "duration": "25m",
+            "overview": "Diamante has Rebecca pinned and completely overpowered. If only the Soldier-san of her youth were able to protect her! Meanwhile, Luffy and Law finally surmount incredible odds to land themselves in striking distance of Doflamingo -- but Sugar stands in their way!"
           },
           {
             "episode": 697,
             "title": "One Shot One Kill! The Man Who Will Save Dressrosa!",
-            "absoluteEpisode": 697
+            "absoluteEpisode": 697,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741047.jpg",
+            "duration": "25m",
+            "overview": "Usopp uses Viola`s Clairvoyance to prepare his ammunition to take Sugar out! But the slightest hesitation now will spell disaster -- and the end of Luffy! Luckily for the Straw Hats, Usopp`s ammunition has been specially designed for this specific situation!"
           },
           {
             "episode": 698,
             "title": "Anger Erupts! Luffy and Law's Ultimate Stratagem!",
-            "absoluteEpisode": 698
+            "absoluteEpisode": 698,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741048.jpg",
+            "duration": "25m",
+            "overview": "The final showdown with Doflamingo begins, but the Warlord still has several tricks up his sleeve - including turning one of Luffy`s own friends against him! Meanwhile Franky and Señor Pink are in a standoff to find out who is the coolest."
           },
           {
             "episode": 699,
             "title": "A Noble Family! The True Identity of Doflamingo!",
-            "absoluteEpisode": 699
+            "absoluteEpisode": 699,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741050.jpg",
+            "duration": "25m",
+            "overview": "All hopes rest on Luffy and Law being able to take down Doflamingo; but the Warlord has other plans in mind as he gives the two the fight of their lives, and reveals his true, shocking history! Meanwhile, Sabo finds out Fujitora's true intention…"
           },
           {
             "episode": 700,
             "title": "The Ultimate Power! The Secret of the Op-Op Fruit!",
-            "absoluteEpisode": 700
+            "absoluteEpisode": 700,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741051.jpg",
+            "duration": "25m",
+            "overview": "With Fujitora`s stalemate arousing suspicion in the Navy ranks, Law and Luffy stand seconds away from execution at the hand of Doflamingo! But before he dispatches them both, he shares the secret of his sway over the Celestial Dragons!"
           },
           {
             "episode": 701,
             "title": "Sad Memories! Law the Boy from the White Town!",
-            "absoluteEpisode": 701
+            "absoluteEpisode": 701,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741053.jpg",
+            "duration": "25m",
+            "overview": "The horrible secret of Flevance, the White Town, is revealed, giving clues to Law`s traumatic past! A rage born from the lies of the World Government created a child who had the will to kill Corazon!"
           },
           {
             "episode": 702,
             "title": "A Celestial Dragon! Doffy's Stormy Past",
-            "absoluteEpisode": 702
+            "absoluteEpisode": 702,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741055.jpg",
+            "duration": "25m",
+            "overview": "Law`s attack on Corazon looks less successful than he thought! And after he`s accepted into the Doflamingo Family, Corazon`s mysterious silence hides a fact that may save Law`s life - and a hidden danger Law must face in Doflamingo himself!"
           },
           {
             "episode": 703,
             "title": "A Rocky Road! Law and Corazon's Journey of Life!",
-            "absoluteEpisode": 703
+            "absoluteEpisode": 703,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741056.jpg",
+            "duration": "25m",
+            "overview": "Things grow stranger for Law as he learns the secret behind why Corazon feigns being mute! But the mysterious Corazon`s actions are only beginning to baffle Law as he takes him on a journey to cure his White Lead Disease."
           },
           {
             "episode": 704,
             "title": "The Time is Ticking Down! Seize the Op-Op Fruit!",
-            "absoluteEpisode": 704
+            "absoluteEpisode": 704,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741057.jpg",
+            "duration": "25m",
+            "overview": "Corazon`s double-dealing with the Navy raises suspicions both with Doflamingo and Law. But all that is secondary as Corazon finally has a chance to grab the Op-Op Fruit during a staged handoff arranged by the Government."
           },
           {
             "episode": 705,
             "title": "The Moment of Resolution! Corazon's Farewell Smile!",
-            "absoluteEpisode": 705
+            "absoluteEpisode": 705,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741174.jpg",
+            "duration": "25m",
+            "overview": "The Op-Op Fruit is in Corazon`s hands! But the price he paid to get it might be too high... When Law goes for help, unfortunate coincidences intervene and leave the two vulnerable! Meanwhile, Doflamingo and his clan finally land at Minion Island; the location of Corazon and Law!"
           },
           {
             "episode": 706,
             "title": "Advance, Law! The Kindhearted Man's Final Fight!",
-            "absoluteEpisode": 706
+            "absoluteEpisode": 706,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741175.jpg",
+            "duration": "25m",
+            "overview": "Doflamingo and his Family begin to zero in on Corazon and Law`s whereabouts, but Corazon has a plan to hide Law long enough to let him escape - even if that means sacrificing his own life. However, when things turn sour, it`s a chain of lucky coincidences that allows the plan to be set into motion - almost as though someone or something is keeping Law alive!"
           },
           {
             "episode": 707,
             "title": "To Be Free! Law's Injection Shot Blasts!",
-            "absoluteEpisode": 707
+            "absoluteEpisode": 707,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741176.jpg",
+            "duration": "25m",
+            "overview": "Violet runs down the status of the open battles raging in Dressrosa - the Straw Hats, the Tontattas, the executives of the Doflamingo Family - all of them clash around the island, but it`s Law`s revelation to Doflamingo that moves the action forward!"
           },
           {
             "episode": 708,
             "title": "An Intense Battle! Law vs. Doflamingo!",
-            "absoluteEpisode": 708
+            "absoluteEpisode": 708,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741177.jpg",
+            "duration": "25m",
+            "overview": "Luffy continues to battle Fake-mingo, but keeps accidentally battling Bellamy instead. Meanwhile the tide of battle turns against Law as painful scars from the past resurface. And Zoro gets unexpected help in his battle with Pica."
           },
           {
             "episode": 709,
             "title": "A Decisive Battle Against the Executives! Proud Hajrudin!",
-            "absoluteEpisode": 709
+            "absoluteEpisode": 709,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741178.jpg",
+            "duration": "25m",
+            "overview": "Bellamy escapes Doflamingo`s control, but it might be too late. His long history with Doflamingo unfolds and leads to an inglorious end. Meanwhile, Hajrudin has been beaten down, but a fire still burns in him to pay back the favor he owes!"
           },
           {
             "episode": 710,
             "title": "The Battle of Love! The New Leader Sai vs. Baby 5!",
-            "absoluteEpisode": 710
+            "absoluteEpisode": 710,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741179.jpg",
+            "duration": "25m",
+            "overview": "Lao G and Don Chin Jao duke it out as each brings their most devastating attacks to the battle. But a misunderstanding caused by Baby 5 has Sai and Don Chin Jao distracted - are they distracted enough for Lao G to gain the upper hand?"
           },
           {
             "episode": 711,
             "title": "The Man's Pride! Bellamy's Last Charge!",
-            "absoluteEpisode": 711
+            "absoluteEpisode": 711,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741180.jpg",
+            "duration": "25m",
+            "overview": "Law is at the whim of Doflamingo and Trebol, while Luffy still has to deal with Bellamy, who fights to keep his honor even after being released by Doflamingo! Meanwhile, Gladius is about to detonate the ground around Cavendish and Bartolomeo!"
           },
           {
             "episode": 712,
             "title": "A Strong Wind and a Surge! Hakuba vs. Dellinger!",
-            "absoluteEpisode": 712
+            "absoluteEpisode": 712,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741181.jpg",
+            "duration": "25m",
+            "overview": "A mysterious force that resembles Cavendish menaces the battlefield - but while it appears to help Bartolomeo and the others at first, it sets its sights on Robin! Meanwhile, the deeply-wounded Ideo sees Dellinger's horrible true nature!"
           },
           {
             "episode": 713,
             "title": "Barrier-Barrier! Homage God Fist Strikes!",
-            "absoluteEpisode": 713
+            "absoluteEpisode": 713,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741182.jpg",
+            "duration": "25m",
+            "overview": "Bartolomeo is in a neck and neck battle against Gladius to save Robin, and is faced with an impossible dilemma. With all his options leading to their defeat, can his cunning ploy save the day? Meanwhile, Robin is face to face with Cavendish, but his evil aspect Hakuba keeps complicating the situation more!"
           },
           {
             "episode": 714,
             "title": "The Healing Princess! Save Mansherry!",
-            "absoluteEpisode": 714
+            "absoluteEpisode": 714,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741183.jpg",
+            "duration": "30m",
+            "overview": "Princess Mansherry`s amazing power - to heal living beings completely - is in the hands of the Donquixote executive. If she is able to heal all the executives who`ve gone down in battle - the Straw Hats and their allies stand no chance! It`s up to Leo to save the day!"
           },
           {
             "episode": 715,
             "title": "The Manly Duel! Se�or's Elegy of Love!",
-            "absoluteEpisode": 715
+            "absoluteEpisode": 715,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741184.jpg",
+            "duration": "30m",
+            "overview": "Señor Pink and Franky continue their knock-down, drag-out, manly fight. As both of them are pushed to their limits, we learn Señor`s tragic past! Meanwhile, Princess Mansherry`s rescue hits a snag as she stubbornly refuses to leave!"
           },
           {
             "episode": 716,
             "title": "Stardust of Death! Diamante's Storm of Vicious Attacks!",
-            "absoluteEpisode": 716
+            "absoluteEpisode": 716,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741185.jpg",
+            "duration": "30m",
+            "overview": "Franky and Señor Pink end their harrowing duel in a manly way - but victory knocks the wind out of even the winner`s sails! Meanwhile, Diamante and Kyros struggle desperately on the Sunflower Field, each demonstrating their extreme prowess even in near defeat!"
           },
           {
             "episode": 717,
             "title": "Trueno Bastardo! Kyros' Furious Strike!",
-            "absoluteEpisode": 717
+            "absoluteEpisode": 717,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741186.jpg",
+            "duration": "30m",
+            "overview": "Kyros, unbowed by Diamante`s vicious attacks, fights back with the anger and retribution of all of Dressrosa in order to fulfill his promise to protect Rebecca. If he is successful, only a few executives will remain, setting the stage for the Straw Hats` victory."
           },
           {
             "episode": 718,
             "title": "Moving Across the Ground! The Giant Statue Pica's Surprise Maneuver!",
-            "absoluteEpisode": 718
+            "absoluteEpisode": 718,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741187.jpg",
+            "duration": "30m",
+            "overview": "Pica loses his temper and turns his full wrath against King Riku, whom he hopes to destroy, ending the revolution against Doflamingo. Meanwhile, Zoro, who has been distracted by Pica and drawn far from the battle, has to hatch a plan to save the king!"
           },
           {
             "episode": 719,
             "title": "A Decisive Battle in Midair! Zoro's New Special Secret Technique Blasts!",
-            "absoluteEpisode": 719
+            "absoluteEpisode": 719,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741188.jpg",
+            "duration": "30m",
+            "overview": "With the lives of King Riku, Usopp, and the others on the old King`s Plateau in the balance, Zoro must dig deep and discover a powerful technique to counter Pica`s near-unstoppable onslaught. Meanwhile, King Riku ponders what it means to be a good king."
           },
           {
             "episode": 720,
             "title": "So Long! Bellamy's Farewell Blow!",
-            "absoluteEpisode": 720
+            "absoluteEpisode": 720,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741189.jpg",
+            "duration": "30m",
+            "overview": "Zoro finishes off Pica, and those below his crumbling body rush to find shelter. Meanwhile, the Tontattas finish up demolishing the SMILE Factory, and Luffy`s hand is forced in his duel with Bellamy!"
           },
           {
             "episode": 721,
             "title": "Law Dies! Luffy's Raging Onslaught!",
-            "absoluteEpisode": 721
+            "absoluteEpisode": 721,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741190.jpg",
+            "duration": "30m",
+            "overview": "Taking down Bellamy only enrages Luffy in his fight against Doflamingo, his anger multiplying when he finds Law`s lifeless body! Meanwhile, Doflamingo takes the next step to end the game he started, which will endanger everybody in Dressrosa!"
           },
           {
             "episode": 722,
             "title": "A Blade of Tenacity! The Gamma Knife Counterattack!",
-            "absoluteEpisode": 722
+            "absoluteEpisode": 722,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741191.jpg",
+            "duration": "30m",
+            "overview": "The Birdcage draws tighter and tighter around Dressrosa, threatening to destroy all life on the island kingdom! Meanwhile, Doflamingo stands down Luffy for a final confrontation, but a surprising twist shocks everyone on the top of the Royal Palace!"
           },
           {
             "episode": 723,
             "title": "A Collision of Haki! Luffy vs. Doflamingo!",
-            "absoluteEpisode": 723
+            "absoluteEpisode": 723,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741192.jpg",
+            "duration": "30m",
+            "overview": "Law`s attack proves powerful - but Doflamingo`s power has depths which he and Luffy haven`t bargained for. When Doflamingo makes his counterattack, Luffy stares him down with an amazing power."
           },
           {
             "episode": 724,
             "title": "Unassailable! The Stunning Secret of Trebol!",
-            "absoluteEpisode": 724
+            "absoluteEpisode": 724,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741193.jpg",
+            "duration": "30m",
+            "overview": "Trebol`s wrath is fully inflamed as Law summons enough energy to speak, denouncing the Doflamingo Family executives as pawns in Doflamingo`s game. But Law gathers enough energy to do more than just speak out."
           },
           {
             "episode": 725,
             "title": "Anger Erupts - I'm Going to Take it All on!",
-            "absoluteEpisode": 725
+            "absoluteEpisode": 725,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741194.jpg",
+            "duration": "30m",
+            "overview": "Cavendish has to make a difficult decision when the severely wounded Law begs him to be left behind. Meanwhile, seeing even his Second Gear or Third Gear attacks aren`t working against Doflamingo, Luffy decides to use his ultimate technique!"
           },
           {
             "episode": 726,
             "title": "Fourth Gear! The Phenomenal Bounce-man!",
-            "absoluteEpisode": 726
+            "absoluteEpisode": 726,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741195.jpg",
+            "duration": "30m",
+            "overview": "Luffy and Doflamingo duke it out while the Birdcage tightens its grip on Dressrosa! Zoro sets off with a plan to stop it from slicing apart the country, while Luffy`s Fourth Gear proves quite potent against Doflamingo!"
           },
           {
             "episode": 727,
             "title": "A Massive Counterattack! Doflamingo's Awakening!",
-            "absoluteEpisode": 727
+            "absoluteEpisode": 727,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741196.jpg",
+            "duration": "30m",
+            "overview": "The Birdcage continues its merciless constriction, sending the residents of Dressrosa fleeing towards the center of the island, while King Riku calls out to his people; survive long enough for Luffy to vanquish the last of the royal family - Doflamingo himself!"
           },
           {
             "episode": 728,
             "title": "Luffy! An All-Out Leo Bazooka!",
-            "absoluteEpisode": 728
+            "absoluteEpisode": 728,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741197.jpg",
+            "duration": "30m",
+            "overview": "Fourth Gear gives Luffy the power he needs to head off Doflamingo at every strike! But the energy required to keep Fourth Gear going starts to take a toll on Luffy. Will he have enough left to finish the job?"
           },
           {
             "episode": 729,
             "title": "Flame Dragon King! Protect Luffy's Life!",
-            "absoluteEpisode": 729
+            "absoluteEpisode": 729,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741198.jpg",
+            "duration": "30m",
+            "overview": "Bounce-man`s power has drained Luffy, leaving him in need of a rest before he can reuse his Haki, but luckily the gladiators from the Colosseum have come around and are focusing on taking down Doflamingo! Sabo steps in at a crucial moment to defend his brother, Luffy!"
           },
           {
             "episode": 730,
             "title": "Tears of Miracles! Mansherry's Fight!",
-            "absoluteEpisode": 730
+            "absoluteEpisode": 730,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741199.jpg",
+            "duration": "30m",
+            "overview": "With Luffy and so many of the Straw Hats` allies incapacitated, victory seems inevitable for Doflamingo - but the compassion of Mansherry may be enough to turn the tide and renew their hope - to stop the Birdcage!"
           },
           {
             "episode": 731,
             "title": "As Long as We Breathe! Stop the Deadly Birdcage!",
-            "absoluteEpisode": 731
+            "absoluteEpisode": 731,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741200.jpg",
+            "duration": "30m",
+            "overview": "With just over a minute to spare, everyone in Dressrosa turns their efforts towards slowing down the Birdcage as it squeezes the life out of the country! Meanwhile, Viola seeks Doflamingo out herself, for a shocking confrontation!"
           },
           {
             "episode": 732,
             "title": "Dead or Alive! A Fateful Countdown!",
-            "absoluteEpisode": 732
+            "absoluteEpisode": 732,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741201.jpg",
+            "duration": "30m",
+            "overview": "Only a bit more time remains before Luffy returns to the scene! But as time slips by, those who had been roused by Princess Mansherry`s powers begin to falter! Meanwhile, Rebecca, under the control of Doflamingo, is about to attack Viola!"
           },
           {
             "episode": 733,
             "title": "Attack on a Celestial! Luffy's King Kong Gun of Anger!",
-            "absoluteEpisode": 733
+            "absoluteEpisode": 733,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741202.jpg",
+            "duration": "30m",
+            "overview": "Luffy regains enough Haki to face off against Doflamingo, but his health is still poor. With the Birdcage closing in, is there a technique left in his repertoire that is strong enough to take down Doflamingo?"
           },
           {
             "episode": 734,
             "title": "To Be Free! Dressrosa's Delight!",
-            "absoluteEpisode": 734
+            "absoluteEpisode": 734,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741203.jpg",
+            "duration": "30m",
+            "overview": "With Doflamingo thoroughly quashed and the Birdcage collapsing, the people of Dressrosa shed tears of joy remembering the hardships they`ve endured, and the actions taken by Luffy and the others to free them."
           },
           {
             "episode": 735,
             "title": "The Unheard-of! Admiral Fujitora's Surprising Decision!",
-            "absoluteEpisode": 735
+            "absoluteEpisode": 735,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741204.jpg",
+            "duration": "30m",
+            "overview": "Jesus Burgess of the Blackbeard Pirates tries to agitate Sabo, mocking Ace`s final words in order to unsettle him enough that he can try to steal the Flare-Flare Fruit! Meanwhile, people of Dressrosa beg King Riku to resume the crown when Navy Admiral Fujitora steps in and takes a stunning action!"
           },
           {
             "episode": 736,
             "title": "Sending a Shock Wave! The Worst Generation Goes Into Action!",
-            "absoluteEpisode": 736
+            "absoluteEpisode": 736,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741205.jpg",
+            "duration": "30m",
+            "overview": "Repercussions of Doflamingo`s defeat reverberate around the world! Fujitora`s actions put the Navy in a tight spot, and the \"Worst Generation\" beings to stir into action!"
           },
           {
             "episode": 737,
             "title": "The Birth of the Legend! The Adventures of the Revolutionary Warrior Sabo!",
-            "absoluteEpisode": 737
+            "absoluteEpisode": 737,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741206.jpg",
+            "duration": "30m",
+            "overview": "The combatants in the battle for Dressrosa can finally begin to recoup, but those who stay awake are treated to the story of how Sabo joined the Revolutionary Army!"
           },
           {
             "episode": 738,
             "title": "The Brothers' Bond! The Untold Story Behind Luffy and Sabo's Reunion!",
-            "absoluteEpisode": 738
+            "absoluteEpisode": 738,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741207.jpg",
+            "duration": "30m",
+            "overview": "Sabo recounts his surprising reunion with Luffy at the Colosseum as the Straw Hats and the others continue to recoup. Meanwhile, Fujitora gambles on how to make his next move - and the odds are in Luffy`s favor!"
           },
           {
             "episode": 739,
             "title": "The Strongest Creature! One of the Four Emperors - Kaido, King of the Beasts!",
-            "absoluteEpisode": 739
+            "absoluteEpisode": 739,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741208.jpg",
+            "duration": "30m",
+            "overview": "As Sabo departs, our attention shifts to the other Straw Hats waging a fierce battle on a mysterious island. And a new drama is set into motion as ill portents fall from the sky!"
           },
           {
             "episode": 740,
             "title": "Fujitora Takes Action! The Complete Siege of the Straw Hats!",
-            "absoluteEpisode": 740
+            "absoluteEpisode": 740,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741209.jpg",
+            "duration": "30m",
+            "overview": "As Luffy and the others begin to come to their senses, major players in the Navy arrive to search Dressrosa for the Straw Hats! Also, Rebecca`s history is whitewashed with a fake cover story - but why?"
           },
           {
             "episode": 741,
             "title": "A State of Emergency! Rebecca Is Kidnapped!",
-            "absoluteEpisode": 741
+            "absoluteEpisode": 741,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741210.jpg",
+            "duration": "30m",
+            "overview": "Fujitora`s flirting with chance has turned out poorly for the Straw Hats as the full Navy force bears down on Dressrosa searching for the pirates! Luffy and the others make a mad dash for the east port to get off the island, but not without finishing up a piece of business..."
           },
           {
             "episode": 742,
             "title": "The Bond Between Father and Daughter! Kyros and Rebecca!",
-            "absoluteEpisode": 742
+            "absoluteEpisode": 742,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741211.jpg",
+            "duration": "30m",
+            "overview": "Rebecca has precious little time to follow Luffy`s lead and make it to Kyros. Can she make it in time? Meanwhile, Fujitora is closing in on Bartolomeo and the other Colosseum warriors while Trafalgar Law faces the shadows of his past!"
           },
           {
             "episode": 743,
             "title": "Men's Pride! Luffy vs. Fujitora, Head-to-Head!",
-            "absoluteEpisode": 743
+            "absoluteEpisode": 743,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741212.jpg",
+            "duration": "30m",
+            "overview": "Law and Sengoku share memories of Corazon, and the secret of Trafalgar Law`s name. Meanwhile, Fujitora uses the destruction caused by the battle in Dressrosa as a weapon, and squares off one-on-one with Luffy!"
           },
           {
             "episode": 744,
             "title": "No Way Out! Admiral Fujitora's Ruthless Pursuit!",
-            "absoluteEpisode": 744
+            "absoluteEpisode": 744,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741213.jpg",
+            "duration": "30m",
+            "overview": "The people of Dressrosa show their appreciation to the Straw Hats one last time by foiling Fujitora`s strategy. As Luffy and the others are able to finally make their break from the island, however, an unbelievable new chapter opens in the story of the Straw Hat Pirates!"
           },
           {
             "episode": 745,
             "title": "Sons' Cups! Straw Hat Fleet is Formed!",
-            "absoluteEpisode": 745
+            "absoluteEpisode": 745,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741214.jpg",
+            "duration": "30m",
+            "overview": "With newfound allies won in the battle at Dressrosa, and as the Navy watches, Luffy and the Straw Hats depart Dressrosa for open water. But will Luffy accept the oath of allegiance given by his new fleet?"
           },
           {
             "episode": 746,
             "title": "The Numerous Rivals Struggle Amongst Themselves! The Raging Monsters of the New World",
-            "absoluteEpisode": 746
+            "absoluteEpisode": 746,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741215.jpg",
+            "duration": "30m",
+            "overview": "While the Straw Hats are underway, Doflamingo has serious predictions for the upset of the world order! Meanwhile, the recent actions in Dressrosa have led to surprising results!"
           },
           {
             "episode": 747,
             "title": "The Silver Fortress � The Great Adventures of Luffy and Bart",
-            "absoluteEpisode": 747
+            "absoluteEpisode": 747,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741273.jpg",
+            "duration": "30m",
+            "overview": "While heading to the next island, Zou, Luffy's appetite causes them trouble and he and Bartolomeo find themselves entangled in the scheme of a pirate lord who can manipulate silver."
           },
           {
             "episode": 748,
             "title": "An Underground Labyrinth � Luffy vs. Mine Cart Man",
-            "absoluteEpisode": 748
+            "absoluteEpisode": 748,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741275.jpg",
+            "duration": "30m",
+            "overview": "The Tram-Man arrives! And has Luffy, Bartolomeo and Desire on the run! The deeper the three fall into the pit, however, the more clear it becomes that Bill`s group hides a terrible secret!"
           }
         ]
       },
@@ -3987,277 +6230,442 @@ window._ANIME_DATA = [
           {
             "episode": 749,
             "title": "The Sword Technique Heats Up! Law and Zoro Finally Appear!",
-            "absoluteEpisode": 749
+            "absoluteEpisode": 749,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741276.jpg",
+            "duration": "30m",
+            "overview": "Luffy, Bartolomeo, and Desire make their way up the mineshaft, but Bill`s assassin, Peseta, has other plans! Just when the going gets tough, help arrives, and Zoro battles the assassin head on!"
           },
           {
             "episode": 750,
             "title": "A Desperate Situation - Luffy Fights a Battle in Extreme Heat",
-            "absoluteEpisode": 750
+            "absoluteEpisode": 750,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741277.jpg",
+            "duration": "30m",
+            "overview": "Luffy, Desire, and Bartolomeo go up against Bill! But the mad, Smelt-Smelt man becomes deranged and lets his true power unfurl! Do Luffy and the others have any hope of exposing Bill`s self-serving aims and turning his gang against him?"
           },
           {
             "episode": 751,
             "title": "The Start of a New Adventure - Arrival at the Mysterious Island, 'Zou'!",
-            "absoluteEpisode": 751
+            "absoluteEpisode": 751,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741279.jpg",
+            "duration": "30m",
+            "overview": "Bartolomeo recounts the formation of the Straw Hats, sharing their moving story with the rest of his crew! Meanwhile, the mysterious island of Zou approaches in the distance, obscured by fog. But when the haze clears, no one is expecting what they see!"
           },
           {
             "episode": 752,
             "title": "The New Shichibukai - Son of the Legendary Whitebeard Arrives",
-            "absoluteEpisode": 752
+            "absoluteEpisode": 752,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741280.jpg",
+            "duration": "30m",
+            "overview": "Luffy and the others arrive at the mysterious land of Zou, and find the Sunny. But when they board, they find the other Straw Hats have already disembarked. Thus, Luffy, Zoro, Robin and the others take on the challenge of climbing the monstrous elephant!"
           },
           {
             "episode": 753,
             "title": "A Deadly Elephant Climb - A Great Adventure on the Back of the Giant Elephant!",
-            "absoluteEpisode": 753
+            "absoluteEpisode": 753,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741281.jpg",
+            "duration": "30m",
+            "overview": "Finally scaling the elephant`s back, the Straw Hats continue their search for the other half of their crew! But the mysterious \"island\" on the back of the elephant may hold more danger than they bargained for, as they learn they are not alone!"
           },
           {
             "episode": 754,
             "title": "Battle Starts! Luffy vs. the Mink Tribe!",
-            "absoluteEpisode": 754
+            "absoluteEpisode": 754,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741282.jpg",
+            "duration": "30m",
+            "overview": "Luffy pushes deeper into the mysterious forest on the elephant's back, but he`s treading in territory where is not welcome! Meanwhile, Usopp and the others make a startling discovery in a ruined city!"
           },
           {
             "episode": 755,
             "title": "Garchu! The Straw Hat Crew Reunites",
-            "absoluteEpisode": 755
+            "absoluteEpisode": 755,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741283.jpg",
+            "duration": "30m",
+            "overview": "Luffy and the others survive the Rain-Ruption and learn of its vital role in maintaining life on Zou. They continue on towards the fortress learning more about the mysterious Mink Tribe, and are finally reunited with the others - but is that the whole story?"
           },
           {
             "episode": 756,
             "title": "The Counterattack Begins! The Curly Hat Pirates Move Out!",
-            "absoluteEpisode": 756
+            "absoluteEpisode": 756,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741284.jpg",
+            "duration": "30m",
+            "overview": "Luffy and the others are unexpectedly welcomed at the fortress and treated well by the Minks, although they have to navigate some cultural differences… And Nami starts sharing what happened to them after they left Dressrosa."
           },
           {
             "episode": 757,
             "title": "An Incoming Threat - Jack of the Beasts Pirates!",
-            "absoluteEpisode": 757
+            "absoluteEpisode": 757,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741285.jpg",
+            "duration": "30m",
+            "overview": "Luffy and the others learn about the dangerous intruders who have come to Zou, and why the island is wrecked! Afterwards, Luffy`s loose lips get them into trouble!"
           },
           {
             "episode": 758,
             "title": "The King of the Day! Duke Dogstorm Appears!",
-            "absoluteEpisode": 758
+            "absoluteEpisode": 758,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741286.jpg",
+            "duration": "30m",
+            "overview": "Duke Dogstorm - the Straw Hats finally meet the ruler of this strange land, and learn more about the battle that took place here; and the mysterious system by which the island is ruled!"
           },
           {
             "episode": 759,
             "title": "The King of the Night! Master Cat Viper Emerges!",
-            "absoluteEpisode": 759
+            "absoluteEpisode": 759,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741287.jpg",
+            "duration": "30m",
+            "overview": "Day turns to night as the Minks keep up their onslaught against the invading Beast Pirates! But Jack`s amazing Devil Fruit power may end the elephant island once and for all!"
           },
           {
             "episode": 760,
             "title": "Destruction of the Capital - Curly Hat Pirates Arrive on Land!",
-            "absoluteEpisode": 760
+            "absoluteEpisode": 760,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741288.jpg",
+            "duration": "30m",
+            "overview": "Night and day, Jack faces the fury of the two sworn defenders of Zou, but while they put up a good fight, the Minks aren`t able to subdue Jack, especially after he brings out his secret weapon..."
           },
           {
             "episode": 761,
             "title": "Race Against Time - The Bond of the Minks and the Crew!",
-            "absoluteEpisode": 761
+            "absoluteEpisode": 761,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741289.jpg",
+            "duration": "30m",
+            "overview": "In the aftermath of Jack`s deadly attack on the island of Zou, Chopper and Sanji rush in to save the fallen Mink Tribe - but they will need the help of Caesar to overcome the poisonous effects of the gas!"
           },
           {
             "episode": 762,
             "title": "The Rascal Returns Home - Yonko Big Mom's Assassin",
-            "absoluteEpisode": 762
+            "absoluteEpisode": 762,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741290.jpg",
+            "duration": "30m",
+            "overview": "More of the dramatic happenings on Zou are revealed as we learn that Jack`s pirate band were not the only visitors to the elephant island! And what about the mysterious fate of Sanji?"
           },
           {
             "episode": 763,
             "title": "The Truth Behind His Disappearance - Sanji's Shocking Invitation",
-            "absoluteEpisode": 763
+            "absoluteEpisode": 763,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741291.jpg",
+            "duration": "30m",
+            "overview": "The mystery of Sanji`s disappearance deepens as Luffy learns that Big Mom`s lackeys have caught up with him and the rest - and carry with them an invitation from Big Mom that simply can`t be refused!"
           },
           {
             "episode": 764,
             "title": "To My Buds! Sanji's Farewell Note!",
-            "absoluteEpisode": 764
+            "absoluteEpisode": 764,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741292.jpg",
+            "duration": "30m",
+            "overview": "Sanji`s dire situation has become clear, but instead of rallying against Big Mom`s crew, he submits to go along with them to bring an end to this situation. But being separated from one of his crew is more than Luffy is willing to tolerate!"
           },
           {
             "episode": 765,
             "title": "Let's Go See Master Nekomamushi",
-            "absoluteEpisode": 765
+            "absoluteEpisode": 765,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741293.jpg",
+            "duration": "30m",
+            "overview": "There`s only one key to finding out what happened to Sanji - and Luffy and the others make their way towards finding out more about their friend`s disappearance, but on their way the indigenous fauna give them trouble!"
           },
           {
             "episode": 766,
             "title": "Luffy's Decision - Sanji on the Brink of Quitting!",
-            "absoluteEpisode": 766
+            "absoluteEpisode": 766,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741294.jpg",
+            "duration": "30m",
+            "overview": "Luffy hatches a plan to help Sanji, but he`ll have to go alone to avoid an all-out war with Big Mom. Meanwhile, Kin`emon and Kanjuro finally arrive at Zou, unwittingly setting the stage for the Minks` thirst for revenge!"
           },
           {
             "episode": 767,
             "title": "A Volatile Situation! The Dog and the Cat and the Samurai!",
-            "absoluteEpisode": 767
+            "absoluteEpisode": 767,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741295.jpg",
+            "duration": "30m",
+            "overview": "The samurai have landed! And they make their way into the country of Zou unaware of the welcome they will receive by the Minks! The Straw Hats try their best to stop the fight - but as day meets night and Cat Viper and Dogstorm face each other, tensions run high in the elephant country!"
           },
           {
             "episode": 768,
             "title": "The Third One! Raizo of the Mist, the Ninja, Appears",
-            "absoluteEpisode": 768
+            "absoluteEpisode": 768,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741296.jpg",
+            "duration": "30m",
+            "overview": "Revelations abound as the true nature of the Wano clan and their relationship with the Minks is revealed! Momonosuke`s role is greater than any had imagined! But even more shocking - the visage of Raizo the Ninja!"
           },
           {
             "episode": 769,
             "title": "A Red Stone! A Guide to the One Piece",
-            "absoluteEpisode": 769
+            "absoluteEpisode": 769,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741297.jpg",
+            "duration": "30m",
+            "overview": "The mysteries of ninjutsu enthrall the Straw Hats as Raizo, the implausible ninja, makes his true powers known! Meanwhile, a mysterious artifact points the way towards the end of the Grand Line!"
           },
           {
             "episode": 770,
             "title": "The Secret of the Wano Country - The Kozuki Family and the Poneglyphs",
-            "absoluteEpisode": 770
+            "absoluteEpisode": 770,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741298.jpg",
+            "duration": "30m",
+            "overview": "The mystery of the Ponegliffs is revealed - their true significance, and the story of their creation, leads closer to the Straw Hats than they might have imagined!"
           },
           {
             "episode": 771,
             "title": "A Vow Between Two Men - Luffy and Kozuki Momonosuke",
-            "absoluteEpisode": 771
+            "absoluteEpisode": 771,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741299.jpg",
+            "duration": "30m",
+            "overview": "More mysteries of the Kozuki Clan are revealed - and the samurai propose an alliance to help topple Kaido! But Luffy`s response will shock the crew... and force the young daimyo to take responsibility!"
           },
           {
             "episode": 772,
             "title": "The Legendary Journey - The Dog and the Cat and the Pirate King!",
-            "absoluteEpisode": 772
+            "absoluteEpisode": 772,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741300.jpg",
+            "duration": "30m",
+            "overview": "Dogstorm and Cat Viper share their story of being on the journey with Oden and Roger but are interrupted by Nami who is concerned about the sea route. Meanwhile, Jack is plotting to bring down the Mokomo Dukedom again!"
           },
           {
             "episode": 773,
             "title": "The Nightmare Returns - The Invincible Jack's Fierce Attack",
-            "absoluteEpisode": 773
+            "absoluteEpisode": 773,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741301.jpg",
+            "duration": "30m",
+            "overview": "The plans are set! The Straw Hats divide and conquer, one group heading to save Sanji, the others to the Land of Wano! But in the final moments before their departure, the tremendous elephant island begins to quake!"
           },
           {
             "episode": 774,
             "title": "A Battle to Defend Zou - Luffy and Zunisha!",
-            "absoluteEpisode": 774
+            "absoluteEpisode": 774,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741302.jpg",
+            "duration": "30m",
+            "overview": "After being aggressively attacked by Jack`s fleet, the monstrous Zunesha comes to life and beckons to those on its back! But can the Straw Hats understand its cry? And realize in time what the elephant island needs from them?"
           },
           {
             "episode": 775,
             "title": "Save Zunisha - The Straw Hat's Rescue Operation!",
-            "absoluteEpisode": 775
+            "absoluteEpisode": 775,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741303.jpg",
+            "duration": "30m",
+            "overview": "With the skirmish with Jack now over, the Straw Hats move on to trying to bandage the great elephant`s wounds! But just as the whole island puts the plan into action, unseen danger lurks on horizon!"
           },
           {
             "episode": 776,
             "title": "Saying Goodbye and Descending from the Elephant - Setting Out to Take Back Sanji!",
-            "absoluteEpisode": 776
+            "absoluteEpisode": 776,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741304.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats and the others split up into four teams, each on different missions! Some from the Mink Tribe insist on leaving with Luffy's team! Meanwhile, Usopp makes a weapon for Nami that seems to work like magic!"
           },
           {
             "episode": 777,
             "title": "To the Reverie - Princess Vivi and Princess Shirahoshi",
-            "absoluteEpisode": 777
+            "absoluteEpisode": 777,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741703.jpg",
+            "duration": "30m",
+            "overview": "Luffy`s team sets out from Zou on their way to win back Sanji! But they didn`t realize there is one more crewmember than they have bargained for! Meanwhile, the leading families and leaders of the world make their way to Mariejois for the pivotal world meeting!"
           },
           {
             "episode": 778,
             "title": "To the Reverie - Rebecca and the Sakura Kingdom",
-            "absoluteEpisode": 778
+            "absoluteEpisode": 778,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741705.jpg",
+            "duration": "30m",
+            "overview": "Carrot stows away! And settles in with the Straw Hats as they make their way to rescue Sanji! Meanwhile, in the Sakura Kingdom - formerly the Drum Kingdom, Dalton and Kureha are getting ready for the Reverie so as their former enemy in his newly-built kingdom…"
           },
           {
             "episode": 779,
             "title": "Kaido Returns - An Imminent Threat to the Worst Generation!",
-            "absoluteEpisode": 779
+            "absoluteEpisode": 779,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741706.jpg",
+            "duration": "30m",
+            "overview": "News of the raid on the Revolutionary Army reaches Luffy! But that`s the least of their worries as they face a storm and a sudden lack of provisions! Meanwhile, Emperor Kaido, furious at the loss of Joker, fumes with anger at the reckless generation of upstarts!"
           },
           {
             "episode": 780,
             "title": "A Hungry Front - Luffy and the Marine Rookies!",
-            "absoluteEpisode": 780
+            "absoluteEpisode": 780,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741707.jpg",
+            "duration": "30m",
+            "overview": "Sneaking in to the Navy island facility to replenish their food supply, Luffy and the others risk being caught out in the open! Will their infamy make them easy to spot by the hotheaded Navy recruits around them?"
           },
           {
             "episode": 781,
             "title": "The Implacable Three - A Big Chase After the Straw Hats!",
-            "absoluteEpisode": 781
+            "absoluteEpisode": 781,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741708.jpg",
+            "duration": "30m",
+            "overview": "The jig is up as Luffy and the others make a daring dash to avoid the furious Navy! Can they escape without having to turn to fight - and after they`ve had a chance to raid the cabinets for food?"
           },
           {
             "episode": 782,
             "title": "The Devil's Fist - A Show Down! Luffy vs. Grount",
-            "absoluteEpisode": 782
+            "absoluteEpisode": 782,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741709.jpg",
+            "duration": "30m",
+            "overview": "Making a mad dash for the Submerge with the food they stole, Luffy and the others have to get through some of the Navy`s upstart soldiers! Grount, whose arm holds incredible power, summons his training to challenge Luffy!"
           },
           {
             "episode": 783,
             "title": "Sanji's Homecoming! Into Big Mom's Territory!",
-            "absoluteEpisode": 783
+            "absoluteEpisode": 783,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741710.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats continue to suffer from blazing heat and a perilous food crisis! As the seas finally calm, fishing is their only hope! Meanwhile, Sanji arrives in Big Mom`s territory and keeps his cool - until he sees his bride-to-be!"
           },
           {
             "episode": 784,
             "title": "Zero and Four! Encountering Germa 66!",
-            "absoluteEpisode": 784
+            "absoluteEpisode": 784,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741711.jpg",
+            "duration": "30m",
+            "overview": "Luffy is in danger as the venomous fish poison courses through his body! With no antidotes on board, the Straw Hats must rely on a mysterious ship for help - a ship that bears a truly surprising crew!"
           },
           {
             "episode": 785,
             "title": "A Deadly Poison Crisis! Luffy and Reiju!",
-            "absoluteEpisode": 785
+            "absoluteEpisode": 785,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741712.jpg",
+            "duration": "30m",
+            "overview": "On the edge of life and death, Luffy`s only hope rests with Sanji`s siblings! But even though they refuse to share an antidote, they may be able to save Luffy`s life yet, giving him enough energy to plunge right back into trouble..."
           },
           {
             "episode": 786,
             "title": "Totto Land! Emperor Big Mom Appears!",
-            "absoluteEpisode": 786
+            "absoluteEpisode": 786,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741713.jpg",
+            "duration": "30m",
+            "overview": "Arriving on Cacao Island, Luffy and Chopper are in heaven as everything before their eyes is edible! But in this most heavenly of places, there are rules to be obeyed - and consequences for breaking them! Luckily someone is on the lookout for the Straw Hats!"
           },
           {
             "episode": 787,
             "title": "The Emperor's Daughter! Sanji's Fianc�e - Pudding!",
-            "absoluteEpisode": 787
+            "absoluteEpisode": 787,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741714.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats confront Pudding - the fiancée of Sanji! But when they challenge her for Sanji`s heart, her answer shocks them! Meanwhile an ominous and mysterious message may spell doom for the Straw Hats..."
           },
           {
             "episode": 788,
             "title": "A Massive Attack! Mom's Hunger Pangs!",
-            "absoluteEpisode": 788
+            "absoluteEpisode": 788,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741715.jpg",
+            "duration": "30m",
+            "overview": "The dangerous waters around the Whole Cake Island harbor terrifying creatures that pose a challenge for the Straw Hats! Meanwhile, Mama slips into a bout of her sickness and ravages her own land in search a specific pastry!"
           },
           {
             "episode": 789,
             "title": "The Capital City Falls?! Big Mom and Jimbei!",
-            "absoluteEpisode": 789
+            "absoluteEpisode": 789,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741716.jpg",
+            "duration": "24m",
+            "overview": "Big Mom rampages through the Whole Cake Island in search for sweets - but when the kitchen can`t prepare them fast enough her own son steps in to curb the carnage, with deadly results. Only an old face coming across the waters brings Mom what she needs, even though he also brings ill tidings."
           },
           {
             "episode": 790,
             "title": "The Emperor's Castle! Arriving at the Whole Cake Island!",
-            "absoluteEpisode": 790
+            "absoluteEpisode": 790,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741717.jpg",
+            "duration": "24m",
+            "overview": "As the Straw Hats draw closer to the Whole Cake Island, Pedro shares his sordid past in Big Mom's territory - and hatches a plan to win back Sanji and take an item of great worth from the Emperor!"
           },
           {
             "episode": 791,
             "title": "A Mysterious Forest Full of Candies! Luffy vs. Luffy?!",
-            "absoluteEpisode": 791
+            "absoluteEpisode": 791,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741718.jpg",
+            "duration": "30m",
+            "overview": "Brook and Pedro head out in a submersible to infiltrate Big Mom`s stronghold! Meanwhile Luffy, Nami, Chopper and Carrot head into the island chasing the image of Sanji, only to be distracted by the endless supply of sweets and a second Luffy!"
           },
           {
             "episode": 792,
             "title": "Mom's Assassin! Luffy and the Seducing Woods!",
-            "absoluteEpisode": 792
+            "absoluteEpisode": 792,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741719.jpg",
+            "duration": "30m",
+            "overview": "Lost in the bewildering woods and chasing after Sanji, Nami and the others find there`s more than meets the eye in this upside down part of the Whole Cake Island! Meanwhile, Sanji confronts his brother!"
           },
           {
             "episode": 793,
             "title": "A Seafaring Kingdom! Germa's King Judge!",
-            "absoluteEpisode": 793
+            "absoluteEpisode": 793,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741720.jpg",
+            "duration": "30m",
+            "overview": "Luffy continues to move through the mysterious and dangerous woods, unaware of the danger that lurks in the trees! Meanwhile, Sanji confronts his father as the wounds of his childhood are laid bare!"
           },
           {
             "episode": 794,
             "title": "A Battle Between Father and Son! Judge vs. Sanji!",
-            "absoluteEpisode": 794
+            "absoluteEpisode": 794,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741721.jpg",
+            "duration": "30m",
+            "overview": "Sanji faces off against his father in a duel! His powerful kicks aim at protecting his hands, but the Germa Family has more in store for him yet! Meanwhile Luffy goes deeper into the Seducing Woods and falls for their powerful illusions!"
           },
           {
             "episode": 795,
             "title": "A Giant Ambition! Big Mom and Caesar!",
-            "absoluteEpisode": 795
+            "absoluteEpisode": 795,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741722.jpg",
+            "duration": "30m",
+            "overview": "Big Mom has Caesar Clown at her whims - and despite his bilking her out of countless amounts of money - she is ready to continue her pursuit of maniacal world control! Meanwhile, Big Mom`s forces are on to the Straw Hats, and Pekoms faces a dire situation!"
           },
           {
             "episode": 796,
             "title": "The Land of Souls! Mom's Fatal Ability!",
-            "absoluteEpisode": 796
+            "absoluteEpisode": 796,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741723.jpg",
+            "duration": "30m",
+            "overview": "Finally Nami finds Luffy and recounts her harrowing tale of battling Brulee! Meanwhile the mysterious half-buried man comes clean about his true identity! But this must all be put aside when one of Mom`s most powerful generals comes calling!"
           },
           {
             "episode": 797,
             "title": "A Top Officer! The Sweet 3 General Cracker Appears!",
-            "absoluteEpisode": 797
+            "absoluteEpisode": 797,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741724.jpg",
+            "duration": "30m",
+            "overview": "The identity of the enigmatic Pound, the man half-buried in the woods, is revealed, but his deep connection to Big Mom might not be enough to save him! Nami`s past exploits, however, hold the key to keeping Mom`s minions at bay!"
           },
           {
             "episode": 798,
             "title": "An Enemy Worth 800 Million! Luffy vs. Thousand Armed Cracker!",
-            "absoluteEpisode": 798
+            "absoluteEpisode": 798,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741725.jpg",
+            "duration": "30m",
+            "overview": "Luffy squares off against Cracker, one of the Sweet 3 Generals, as Nami learns the truth about others in the Worst Generation who have come before to challenge Big Mom!"
           },
           {
             "episode": 799,
             "title": "An All-out Duel! Gear Four vs. the Bis-Bis Ability",
-            "absoluteEpisode": 799
+            "absoluteEpisode": 799,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741726.jpg",
+            "duration": "30m",
+            "overview": "Luffy continues to fight against Cracker, whose powers to manipulate his surroundings may prove more troublesome than he had thought! Meanwhile, Brook and Pedro infiltrate the Whole Cake Island - and must hatch a plan to avoid getting caught!"
           },
           {
             "episode": 800,
             "title": "The First and the Second Join! The Vinsmoke Family!",
-            "absoluteEpisode": 800
+            "absoluteEpisode": 800,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741727.jpg",
+            "duration": "30m",
+            "overview": "The wind starts to go out of Luffy`s sails as he fights an endless army of Biscuit Warriors! Meanwhile, the oldest two Vinsmoke brothers come home from a war to see their long-missing young brother Sanji."
           },
           {
             "episode": 801,
             "title": "The Benefactor's Life! Sanji and Owner Zeff!",
-            "absoluteEpisode": 801
+            "absoluteEpisode": 801,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741728.jpg",
+            "duration": "30m",
+            "overview": "Luffy starts to run out of steam as the Biscuit Warriors keep multiplying! If he can buy himself 10 minutes to recharge... Meanwhile, Sanji squares off against his family, but realizes they have some vital insurance to make sure he follows their scheme to marry Pudding."
           },
           {
             "episode": 802,
             "title": "An Angry Sanji! The Secret of Germa 66!",
-            "absoluteEpisode": 802
+            "absoluteEpisode": 802,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741729.jpg",
+            "duration": "30m",
+            "overview": "Luffy needs just 10 minutes to recharge! Nami comes to rescue with the help of the Homies! Meanwhile, Sanji learns the terrible truth of Germa`s power - and his father`s dark history!"
           },
           {
             "episode": 803,
             "title": "The Past that He Let Go of! Vinsmoke Sanji!",
-            "absoluteEpisode": 803
+            "absoluteEpisode": 803,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741730.jpg",
+            "duration": "30m",
+            "overview": "Nami challenges Cracker on her own! During the all-out fight, she loses her advantage and is close to defeat. Can Luffy bounce back in time? Meanwhile, Sanji`s tragic childhood is made clear."
           }
         ]
       },
@@ -4267,372 +6675,594 @@ window._ANIME_DATA = [
           {
             "episode": 804,
             "title": "To the East Blue! Sanji's Resolute Departure!",
-            "absoluteEpisode": 804
+            "absoluteEpisode": 804,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/126/315692.jpg",
+            "duration": "30m",
+            "overview": "The terrible history of Sanji`s family continue to unfold. From a rare moment of compassion he is able to escape, only to face his father`s cruelty before setting out on his own."
           },
           {
             "episode": 805,
             "title": "A Battle of Limits! Luffy and the Infinite Biscuits!",
-            "absoluteEpisode": 805
+            "absoluteEpisode": 805,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/127/319838.jpg",
+            "duration": "30m",
+            "overview": "Luffy is in an all-out, all-you-can-eat battle! As Cracker`s endless stream of Biscuit Warriors marches on, Luffy`s endless appetite is put to the test. Meanwhile, Reiju helps Sanji to straighten himself out before he meets his fiancée."
           },
           {
             "episode": 806,
             "title": "The Power of Satiety! A New Gear Four Form - Tank Man!",
-            "absoluteEpisode": 806
+            "absoluteEpisode": 806,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/128/321895.jpg",
+            "duration": "30m",
+            "overview": "Luffy needs to think fast in order to turn the battle in his favor - filled with biscuits he debuts a new Gear Four attack that has lasting repercussions! Meanwhile, Chopper and Carrot find Sanji`s reflection, but can they get a message to him in time?"
           },
           {
             "episode": 807,
             "title": "A Heartbreaking Duel! Luffy vs Sanji! (1)",
-            "absoluteEpisode": 807
+            "absoluteEpisode": 807,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/129/323824.jpg",
+            "duration": "60m",
+            "overview": "Sanji has memories of his escape from the Germa Kingdom, meeting Zeff, and later joining the Straw Hats as his family heads to the Whole Cake Chateau. Luffy and Nami ride King Baum out of the Seducing Woods, and they contact Chopper and Carrot, who reveal where Sanji is headed as they are pursued by Brûlée. They manage to hide again, but Brûlée brings Randolph, his crane, and the Noble Croc into the world to help her hunt the duo down, and Chopper gets the idea to gain control of Brûlée's power. Back in the real world, Luffy and Nami reach Sanji, and Luffy reunites with his crewmate. However, Sanji kicks Luffy out of the carriage, claiming to have accepted his royal heritage and disowning Luffy."
           },
           {
             "episode": 808,
             "title": "A Heartbreaking Duel! Luffy vs Sanji! (2)",
-            "absoluteEpisode": 808
+            "absoluteEpisode": 808,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/457/1143223.jpg",
+            "duration": "30m",
+            "overview": "Luffy refuses to back down from the hostile Sanji, causing Sanji to confront him and attack him with Diable Jambe. Despite Sanji's vicious attacks, Luffy refuses to fight back or retreat, and Nami pleads Sanji to stop to no avail. Finally, Sanji knocks Luffy out with a spinning midair kick, and returns to his family. Luffy yells out to Sanji as he leaves, saying that he will stay at this spot and not eat until Sanji returns, as he cannot become the Pirate King without Sanji. This causes Sanji to break down in tears as he is taken to Big Mom."
           },
           {
             "episode": 809,
             "title": "A Storm of Revenge! An Enraged Army Comes to Attack!",
-            "absoluteEpisode": 809
+            "absoluteEpisode": 809,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/131/328757.jpg",
+            "duration": "30m",
+            "overview": "Luffy makes a solemn promise to not move from his spot until Sanji returns to him. But as Mama`s army advances, that promise may prove a costly one. Meanwhile, Sanji and the Vinsmokes come face to face with Big Mom and his bride-to-be Pudding!"
           },
           {
             "episode": 810,
             "title": "The End of the Adventure! Sanji's Resolute Proposal!",
-            "absoluteEpisode": 810
+            "absoluteEpisode": 810,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/132/330293.jpg",
+            "duration": "30m",
+            "overview": "Luffy stands his ground and waits for his friend to return! But the vengeful army washes over him - only a true friend can step in to turn the tide of battle! Meanwhile, Sanji and Pudding discuss their marriage - and come to a startling conclusion!"
           },
           {
             "episode": 811,
             "title": "I'll Wait Here! Luffy vs. the Enraged Army!",
-            "absoluteEpisode": 811
+            "absoluteEpisode": 811,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/133/332607.jpg",
+            "duration": "30m",
+            "overview": "Luffy puts his all into battling Big Mom`s vengeful army, however, their skills combined prove too formidable. Meanwhile, Sanji goes to Big Mom herself to bargain for the Straw Hats lives - with shocking results!"
           },
           {
             "episode": 812,
             "title": "Invading the Chateau! Reach the Road Ponegliff!",
-            "absoluteEpisode": 812
+            "absoluteEpisode": 812,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/133/334899.jpg",
+            "duration": "30m",
+            "overview": "Chopper and Carrot are captured by Brulee and strung up for dinner! But Chopper sees a chance to free himself! Meanwhile, Brook and Pedro launch a plan to reach the Ponegliffs - a daring game of chance!"
           },
           {
             "episode": 813,
             "title": "A Fateful Confrontation! Luffy and Big Mom!",
-            "absoluteEpisode": 813
+            "absoluteEpisode": 813,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/134/337197.jpg",
+            "duration": "30m",
+            "overview": "Pekoms creates a diversion for Brook to set his plan into action. Meanwhile Luffy continues to goad Big Mom into a fight, and Pudding begins to have stirrings of rebellion herself!"
           },
           {
             "episode": 814,
             "title": "Shout of the Soul! Brook and Pedro's Lightning Operation!",
-            "absoluteEpisode": 814
+            "absoluteEpisode": 814,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/135/339041.jpg",
+            "duration": "30m",
+            "overview": "Just when Luffy and Nami are in Big Mom`s grasp, Pudding arrives, but with news that they aren`t expecting - meanwhile Brook and Chopper both make headway getting out of their own jams!"
           },
           {
             "episode": 815,
             "title": "Goodbye! Pudding's Tearful Determination!",
-            "absoluteEpisode": 815
+            "absoluteEpisode": 815,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/136/341487.jpg",
+            "duration": "30m",
+            "overview": "Sanji hopes his wedding with Pudding will solve the Straw Hat`s predicament - but Pudding secretly plans to to avoid the marriage, sharing a secret with Luffy. Meanwhile Brook comes face to face with Big Mom herself!"
           },
           {
             "episode": 816,
             "title": "The History of the Left Eye! Pedro vs. Baron Tamago!",
-            "absoluteEpisode": 816
+            "absoluteEpisode": 816,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741702.jpg",
+            "duration": "30m",
+            "overview": "Luffy tries desperately to free himself as the risk of his own well-being! Meanwhile, Chopper and Carrot continue to search the mirror universe, Brook squares off against Big Mom, and Pedro's past is revealed!"
           },
           {
             "episode": 817,
             "title": "Moist Cigarette! The Night Before Sanji's Wedding!",
-            "absoluteEpisode": 817
+            "absoluteEpisode": 817,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741819.jpg",
+            "duration": "30m",
+            "overview": "Luffy struggles to break himself free as Sanji falls deeper in love with the idea of marrying Pudding... But the mask falls off and the deadly charade of Big Mom is revealed as the depths of her treachery come to light!"
           },
           {
             "episode": 818,
             "title": "The Undaunted Soul! Brook vs. Big Mom!",
-            "absoluteEpisode": 818
+            "absoluteEpisode": 818,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741820.jpg",
+            "duration": "30m",
+            "overview": "Brook continues his all-out struggle against Big Mom, but his secret weapon might not be enough to save him! Meanwhile an unexpected ally from the past comes to the rescue!"
           },
           {
             "episode": 819,
             "title": "Sora's Wish! Germa's Failure - Sanji!",
-            "absoluteEpisode": 819
+            "absoluteEpisode": 819,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741821.jpg",
+            "duration": "30m",
+            "overview": "Jimbei arrives on the scene and works to free Luffy and Nami! Meanwhile Sanji confronts his sister with the awful truth of Pudding, and she confides in him the powerful secret of their mother`s undying love!"
           },
           {
             "episode": 820,
             "title": "To Reach Sanji! Luffy's Vengeful Hell-bent Dash!",
-            "absoluteEpisode": 820
+            "absoluteEpisode": 820,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741822.jpg",
+            "duration": "30m",
+            "overview": "Brook finds himself totally at the whim of Big Mom, and comes face to face with her brutal love! Meanwhile, Pedro reveals his explosive plan to create a distraction!"
           },
           {
             "episode": 821,
             "title": "The Chateau in Turmoil! Luffy, to the Rendezvous!",
-            "absoluteEpisode": 821
+            "absoluteEpisode": 821,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741823.jpg",
+            "duration": "30m",
+            "overview": "Chopper and Carrot use the mirror dimension to get in touch with Nami and Jimbei! Luffy makes it through more obstacles to learn that he just missed Sanji! Meanwhile, Sanji wonders alone about the best course of action."
           },
           {
             "episode": 822,
             "title": "Deciding to Say Goodbye! Sanji and his Straw-Hat Bento!",
-            "absoluteEpisode": 822
+            "absoluteEpisode": 822,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741824.jpg",
+            "duration": "30m",
+            "overview": "Brook hears Big Mom`s plan firsthand as she shares her intentions with Pudding in front of him! Meanwhile Big Mom`s agents believe most of the Straw Hats to be under control, but doubt besets Montd`Or."
           },
           {
             "episode": 823,
             "title": "The Emperor Rolls Over! Rescue Brook Mission!",
-            "absoluteEpisode": 823
+            "absoluteEpisode": 823,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741825.jpg",
+            "duration": "30m",
+            "overview": "Nami and the others finally find Brook in the mirror dimension - but he`s in the most inopportune of places! Can they challenge the sleeping Mama and rescue their friend? Meanwhile, Luffy is waylaid on his way back to the rendezvous!"
           },
           {
             "episode": 824,
             "title": "The Rendezvous! Luffy, a One-on-One at His Limit!",
-            "absoluteEpisode": 824
+            "absoluteEpisode": 824,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741826.jpg",
+            "duration": "30m",
+            "overview": "Luffy puts up a valiant fight in order to keep his word to Sanji! But will he be able to last until Sanji arrives at the rendezvous? Meanwhile, Jimbei shares the awful truth about the wedding with the other Straw Hats."
           },
           {
             "episode": 825,
             "title": "A Liar! Luffy and Sanji!",
-            "absoluteEpisode": 825
+            "absoluteEpisode": 825,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741827.jpg",
+            "duration": "30m",
+            "overview": "Sanji and Luffy meet finally - and while he is happy to feed Luffy to replenish his energy, Sanji`s explanation of what actions he must take baffles Luffy! The crucial decision, to turn his back on his friends or his family, tears Sanji apart!"
           },
           {
             "episode": 826,
             "title": "Sanji Comes Back! Crash! The Tea Party from Hell!",
-            "absoluteEpisode": 826
+            "absoluteEpisode": 826,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741828.jpg",
+            "duration": "30m",
+            "overview": "The newly reunited Luffy and Sanji hear from the rest of the Straw Hats in the mirror dimension! Then, Jimbei starts telling them about Capone \"Gang\" Bege and proposes a shocking plan to take down Big Mom!"
           },
           {
             "episode": 827,
             "title": "A Secret Meeting! Luffy vs. the Fire Tank Pirates!",
-            "absoluteEpisode": 827
+            "absoluteEpisode": 827,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741829.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats put Jimbei`s plan into action and approach Bege with the possibility of an alliance. But before they are granted an audience, they must make themselves presentable! At the same time, Nami learns about the terror of Big Mom from Lola`s twin sister!"
           },
           {
             "episode": 828,
             "title": "The Deadly Pact! Luffy & Bege's Allied Forces!",
-            "absoluteEpisode": 828
+            "absoluteEpisode": 828,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741830.jpg",
+            "duration": "30m",
+            "overview": "The proposed alliance between the Straw Hats and Bege unfolds! A gaseous blast from the past, Gastino, a member of Bege`s team, reveals the secret weapon that the team plans to use against the Emperor! But Gastino is not who he seems, and the bait in this trap is none other than Luffy himself!"
           },
           {
             "episode": 829,
             "title": "Luffy Engages in a Secret Maneuver! The Wedding Full of Conspiracies Starts Soon!",
-            "absoluteEpisode": 829
+            "absoluteEpisode": 829,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741831.jpg",
+            "duration": "30m",
+            "overview": "Now, the assassination plan of Big Mom is all set and everyone starts preparing for the Tea Party. Montd`Or finds one of his crewmates, Bobbin the Disposer, dead, and suspects Sanji and Luffy of the crime. He goes to check if Sanji is in his room, just as Sanji is running to get back so as not to arouse suspicion."
           },
           {
             "episode": 830,
             "title": "The Family Gets Together! The Hellish Tea Party Starts!",
-            "absoluteEpisode": 830
+            "absoluteEpisode": 830,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741832.jpg",
+            "duration": "30m",
+            "overview": "The day has arrived! Guests from the criminal underground pour in in droves, but some have their own agendas to settle! Big Mom's sons, however, stand in their way and show them what they've got! Meanwhile, Luffy is preparing for his own plan!"
           },
           {
             "episode": 831,
             "title": "The Broken Couple! Sanji and Pudding Enter!",
-            "absoluteEpisode": 831
+            "absoluteEpisode": 831,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741833.jpg",
+            "duration": "30m",
+            "overview": "Final preparations abound on all sides and multiple plots start to come together! But can Sanji keep his nerve and go through with the plan? Or will Pudding`s beauty prove too enchanting?"
           },
           {
             "episode": 832,
             "title": "A Deadly Kiss! The Mission to Assassinate the Emperor Kicks Off!",
-            "absoluteEpisode": 832
+            "absoluteEpisode": 832,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741834.jpg",
+            "duration": "30m",
+            "overview": "All plans go into action as the moment of the wedding arrives - but as the veil is lifted on Pudding`s grotesque face, all hell breaks loose and unexpected circumstances mean chaos breaks out at the altar! Meanwhile, Luffy charges in, adding to the mayhem!"
           },
           {
             "episode": 833,
             "title": "Returning the Sake Cup! The Manly Jimbei Pays His Debt!",
-            "absoluteEpisode": 833
+            "absoluteEpisode": 833,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741835.jpg",
+            "duration": "30m",
+            "overview": "The plan is launched! Big Mom falls to pieces as the wedding - and the wedding cake - are destroyed and a slew of Luffys are wreaking havoc around the site. But just when Luffy gets in trouble, Jimbei confronts Big Mom bravely!"
           },
           {
             "episode": 834,
             "title": "The Mission Failed?! The Big Mom Pirates Strike Back!",
-            "absoluteEpisode": 834
+            "absoluteEpisode": 834,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741836.jpg",
+            "duration": "30m",
+            "overview": "The plan is in full swing however - Big Mom is pushed past the edge of sanity and can`t even bring herself to act. Meanwhile, her children make a move against Germa and Pudding takes up her original aim of killing Sanji!"
           },
           {
             "episode": 835,
             "title": "Run, Sanji! SOS! Germa 66!",
-            "absoluteEpisode": 835
+            "absoluteEpisode": 835,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741837.jpg",
+            "duration": "30m",
+            "overview": "The plot is in full swing as Luffy dashes towards Big Mom to show her the broken portrait again! Sanji makes an effort to free his family and wins the respect of his sister and Big Mom loses her wits!"
           },
           {
             "episode": 836,
             "title": "Mom's Secret! The Giant's Island Elbaph and a Little Monster!",
-            "absoluteEpisode": 836
+            "absoluteEpisode": 836,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741838.jpg",
+            "duration": "30m",
+            "overview": "The tragic and sad history of Big Mom is revealed! From abandonment, rescue, and again to ruin, Big Mom`s voracious hunger has brought her into conflict with others from the very beginning!"
           },
           {
             "episode": 837,
             "title": "The Birth of Mom! The Day That Carmel Vanished!",
-            "absoluteEpisode": 837
+            "absoluteEpisode": 837,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741839.jpg",
+            "duration": "30m",
+            "overview": "Linlin enrages the Giants as she slays their respected warrior - but Mother throws herself on their mercy and begs for clemency for her beloved Linlin, forcing the troupe to leave Elbaph for good. But the kindness Mother shows belies a dark and twisted secret..."
           },
           {
             "episode": 838,
             "title": "The Launcher Blasts! The Moment of Big Mom's Assassination!",
-            "absoluteEpisode": 838
+            "absoluteEpisode": 838,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741840.jpg",
+            "duration": "30m",
+            "overview": "Linlin, destroyed at the disappearance of Mother, falls in with a new cohort and finds a reason to go on living, proving herself a mighty force to be reckoned with! The Straw Hats' plan goes awry and all hope looks to be lost!"
           },
           {
             "episode": 839,
             "title": "The Evil Army! Transform! Germa 66!",
-            "absoluteEpisode": 839
+            "absoluteEpisode": 839,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741841.jpg",
+            "duration": "30m",
+            "overview": "Bege and the Straw Hats are on the defensive as the full force of Mom`s troops are brought down on them! As they retreat into a fortress, Germa 66 springs in to action! However, Bege has bad news for his allied forces."
           },
           {
             "episode": 840,
             "title": "Cutting the Father-Son Relationship! Sanji and Judge!",
-            "absoluteEpisode": 840
+            "absoluteEpisode": 840,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741842.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats and Germa 66 are cornered in Bege`s stronghold - with the full force of the Big Mom Pirates pinning them down, it`s only a matter of time before their defenses crack. The only way out seems to be to make a break for it."
           },
           {
             "episode": 841,
             "title": "Escape From the Tea Party! Luffy vs. Big Mom!",
-            "absoluteEpisode": 841
+            "absoluteEpisode": 841,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741843.jpg",
+            "duration": "30m",
+            "overview": "The plan is executed to sneak the Straw Hats out of Big Mom`s castle while hidden inside Bege! But the irascible Luffy can`t resist getting in at least one punch against his foe! Meanwhile the Tamate Box slips into the hands of some surprising agent!"
           },
           {
             "episode": 842,
             "title": "The Execution Begins! Luffy's Allied Forces Are Annihilated?!",
-            "absoluteEpisode": 842
+            "absoluteEpisode": 842,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741844.jpg",
+            "duration": "30m",
+            "overview": "The full might of the Big Mom Pirates proves too much for the Straw Hats and Germa 66. With no other options, they decide to turn and fight, even though it means their total annihilation! But the mysterious Tamate Box comes in to play and shakes up the playing field - literally!"
           },
           {
             "episode": 843,
             "title": "The Castle Collapses! The Straw Hat�s Great Escape Begins!",
-            "absoluteEpisode": 843
+            "absoluteEpisode": 843,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741845.jpg",
+            "duration": "30m",
+            "overview": "The Whole Cake Chateau starts crumbling while everyone is trying to escape for their lives! Luffy and the others get away and move on to the next stage of their escape which involves some parting of ways. Meanwhile, Big Mom's children notice their mother's change of behavior at the worst possible moment."
           },
           {
             "episode": 844,
             "title": "The Spear of Elbaph! Onslaught! The Flying Big Mom!",
-            "absoluteEpisode": 844
+            "absoluteEpisode": 844,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741846.jpg",
+            "duration": "30m",
+            "overview": "The Straw Hats continue their mad dash to the Sunny! As Big Mom rages, her underlings decide to turn her Hunger Pang attacks against the Straw Hats! The Whole Cake Island scrambles to remake the cake to calm down Big Mom!"
           },
           {
             "episode": 845,
             "title": "Pudding's Determination! Ablaze! The Seducing Woods!",
-            "absoluteEpisode": 845
+            "absoluteEpisode": 845,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741847.jpg",
+            "duration": "30m",
+            "overview": "Kingbaum puts his life on the line ferrying the Straw Hats towards the Seducing Woods! But Big Mom`s word trumps him in this terrifying forest, and soon enough she catches up! Meanwhile, Pudding puts her plan to rebuild the cake into action - and reveals her surprising motivations!"
           },
           {
             "episode": 846,
             "title": "A Lightning Counterattack! Nami and Zeus the Thundercloud!",
-            "absoluteEpisode": 846
+            "absoluteEpisode": 846,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741848.jpg",
+            "duration": "30m",
+            "overview": "Zeus pursues the Straw Hats as Nami keeps him occupied. She has a shocking surprise in store for him, however, that might stop Big Mom in her tracks! Meanwhile, Brook and Chopper find the Shark Submerge in a strange situation."
           },
           {
             "episode": 847,
             "title": "A Coincidental Reunion! Sanji and the Lovestruck Evil Pudding!",
-            "absoluteEpisode": 847
+            "absoluteEpisode": 847,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741950.jpg",
+            "duration": "30m",
+            "overview": "Big Mom is relentless in her pursuit of the Straw Hats! Even being buried alive doesn`t stop her! The plan to recreate the cake to stop her onslaught progresses and Pudding's changeable heart confuses all those looking on!"
           },
           {
             "episode": 848,
             "title": "Save the Sunny! Fighting Bravely! Chopper and Brook!",
-            "absoluteEpisode": 848
+            "absoluteEpisode": 848,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741951.jpg",
+            "duration": "30m",
+            "overview": "Mama`s onslaught continues as Pudding keeps battling the contradictory urges in her head - to kill or kiss Sanji! Meanwhile, Brook and Chopper are at Perospero`s mercy - and are being reduced to sweetened versions of themselves!"
           },
           {
             "episode": 849,
             "title": "Before the Dawn! Pedro, the Captain of the Guardians!",
-            "absoluteEpisode": 849
+            "absoluteEpisode": 849,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741952.jpg",
+            "duration": "30m",
+            "overview": "Sandwiched between Big Mom and her advancing fleet, the only hope is the Sunny`s Coup-de-Burst! But can the Straw Hats prepare it in time? Meanwhile, Pedro comes face to face with his past, and embraces a dramatic end to be sure that the tides of time continue to flow!"
           },
           {
             "episode": 850,
             "title": "I'll Be Back! Luffy, Deadly Departure",
-            "absoluteEpisode": 850
+            "absoluteEpisode": 850,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741953.jpg",
+            "duration": "30m",
+            "overview": "The last chance the Straw Hats have is the Coup de Burst! Pedro has made the ultimate sacrifice to give them this one chance to escape, but Big Mom`s naval forces are closing in and poised to knock them out! Luffy has to put himself on the line again to save his crew!"
           },
           {
             "episode": 851,
             "title": "The Man with a Bounty of Billion! The Strongest Sweet General, Katakuri!",
-            "absoluteEpisode": 851
+            "absoluteEpisode": 851,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741954.jpg",
+            "duration": "30m",
+            "overview": "Nami and the others who escaped the Whole Cake Island by Pedro's sacrifice mourn over his death. Jimbei, however, keeps his calm which makes Brook lose his temper. Meanwhile, Luffy confronts the formidable Sweet General Katakuri in the Mirroworld."
           },
           {
             "episode": 852,
             "title": "A Hard Battle Starts! Luffy vs. Katakuri!",
-            "absoluteEpisode": 852
+            "absoluteEpisode": 852,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741955.jpg",
+            "duration": "30m",
+            "overview": "Pudding and Sanji arrive at Cacao Island and begin to remake the only cake that will calm Big Mom! But their fake nuptials get in the way as they bicker like a married couple! Meanwhile, Luffy has lost the battle of his life - and the flame goes out of him... until the Sunny becomes the target of a new threat!"
           },
           {
             "episode": 853,
             "title": "The Green Room! An Invincible Helmsman, Jimbei!",
-            "absoluteEpisode": 853
+            "absoluteEpisode": 853,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741956.jpg",
+            "duration": "30m",
+            "overview": "Luffy keeps the forces out to destroy the Straw Hats at bay, however the crew needs to destroy all the mirrors - the final link that secure his safe return - on the ship in order to save themselves! At the same time, the ship is on a course for disaster, with Jimbei at the helm!"
           },
           {
             "episode": 854,
             "title": "The Threat of the Mole! Luffy�s Silent Fight!",
-            "absoluteEpisode": 854
+            "absoluteEpisode": 854,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/168/421742.jpg",
+            "duration": "30m",
+            "overview": "Nami and the others start breaking all the mirrors on the Sunny in order to keep their enemies out while she and Luffy discuss where to rendezvous – but little do they know the plan is overheard! Meanwhile, Luffy's grueling battle against Katakuri intensifies!"
           },
           {
             "episode": 855,
             "title": "The End of the Deadly Battle?! Katakuri's Awakening in Anger!",
-            "absoluteEpisode": 855
+            "absoluteEpisode": 855,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/169/423815.jpg",
+            "duration": "30m",
+            "overview": "Both powerful combatants and strong users of Haki, Luffy and Katakuri are a dead match for each other. Every move is matched by their opponent! Elsewhere, the Big Mom Pirates square off against Germa! With so much at stake, Luffy falls to Katakuri, spelling his doom!"
           },
           {
             "episode": 856,
             "title": "The Forbidden Secret! Katakuri�s Merienda!",
-            "absoluteEpisode": 856
+            "absoluteEpisode": 856,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/170/425937.jpg",
+            "duration": "30m",
+            "overview": "Katakuri retires to his sanctuary to enjoy the merienda - a chance for him to savor the sweetness of his crew of chefs and replenish his Haki! But he`s not the only one who`s doing eating, as Straw Hat uses his mouth to get out from under the mochi mountain crushing him!"
           },
           {
             "episode": 857,
             "title": "Luffy Fights Back! The Invincible Katakuri's Weak Point!",
-            "absoluteEpisode": 857
+            "absoluteEpisode": 857,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/171/429034.jpg",
+            "duration": "30m",
+            "overview": "Luffy discovers the secret to Katakuri`s unearthly fighting ability, and just might have a solution for how to stop him! Meanwhile at the Sweets Factory, Pudding receives a call from Brulee who has bad news for the Straw Hats!"
           },
           {
             "episode": 858,
             "title": "Another Crisis! Gear Four vs. Unstoppable Donuts!",
-            "absoluteEpisode": 858
+            "absoluteEpisode": 858,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/172/430955.jpg",
+            "duration": "30m",
+            "overview": "Luffy runs out of his Haki and has to buy some time - in the most peculiar way! Meanwhile the Big Mom Pirates mobilize their entire fleet to squelch the pirate threat, and the replacement cake nears completion!"
           },
           {
             "episode": 859,
             "title": "The Rebellious Daughter, Chiffon! Sanji's Big Plan for Transporting the Cake!",
-            "absoluteEpisode": 859
+            "absoluteEpisode": 859,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741957.jpg",
+            "duration": "30m",
+            "overview": "When Chiffon comes under attack, Sanji must choose between defending her or revealing himself to his enemies! Meanwhile, Luffy uses Brulee as a human shield to avoid the wrath of Big Mom!"
           },
           {
             "episode": 860,
             "title": "A Man's Way of Life! Bege and Luffy's Determination as Captains!",
-            "absoluteEpisode": 860
+            "absoluteEpisode": 860,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741958.jpg",
+            "duration": "30m",
+            "overview": "Bege arrives on the scene, seemingly willing to risk it all to bring down the Big Mom Pirates in a blaze of glory, but of course he has a trick up his sleeve! Meanwhile Luffy keeps on the move to regain his Haki, but begins to ponder just how far his limits can be pushed!"
           },
           {
             "episode": 861,
             "title": "The Cake Sank?! Sanji and Bege's Getaway Battle!",
-            "absoluteEpisode": 861
+            "absoluteEpisode": 861,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741960.jpg",
+            "duration": "30m",
+            "overview": "Sanji and Bege get together and get off of Cacao Island successfully but their plan is in jeopardy as Oven begins to boil the sea itself! As Chiffon and the others who are on the ship are cornered, a surprising savior comes in to fight Oven!"
           },
           {
             "episode": 862,
             "title": "Sulong! Carrot's Big Mystic Transformation!",
-            "absoluteEpisode": 862
+            "absoluteEpisode": 862,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741961.jpg",
+            "duration": "30m",
+            "overview": "A vicious pincer attack bears down on the Straw Hats! Three fleets converge and try to squeeze the life from them! Daifuku himself take the lead! But Carrot draws on a deep power within and springs in to action under the light of the moon!"
           },
           {
             "episode": 863,
             "title": "Break Through! The Straw Hat's Mighty Sea Battle!",
-            "absoluteEpisode": 863
+            "absoluteEpisode": 863,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741962.jpg",
+            "duration": "30m",
+            "overview": "The much anticipated wedding cake is on its way, but there is a debate at the last minute! Shouldn`t this opportunity be used to slip poison into Big Mom`s meal to topple the Emperor of the Sea? Meanwhile, Carrot`s unearthly ability based on the power of the moon saves the day!"
           },
           {
             "episode": 864,
             "title": "Finally, They Clash! The Emperor of the Sea vs. the Straw Hats!",
-            "absoluteEpisode": 864
+            "absoluteEpisode": 864,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741964.jpg",
+            "duration": "30m",
+            "overview": "Luffy, through sheer force of will, can almost use his Haki to battle Katakuri! Meanwhile, the Sunny catches fire while the Straw Hats try to kick out Big Mom but that's when Jimbei steps up to the plate and takes a swing at her!"
           },
           {
             "episode": 865,
             "title": "Dark King's Direct Precepts! The Battle Against Katakuri Turns Around!",
-            "absoluteEpisode": 865
+            "absoluteEpisode": 865,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741965.jpg",
+            "duration": "30m",
+            "overview": "Luffy tries to enhance his Haki to foresee Katakuri's next move but Katakuri's attacks keep pulling him down! However, when he summons every bit of wisdom from his training with Rayleigh, he remembers something important that could turn the tables for him!"
           },
           {
             "episode": 866,
             "title": "Finally He Returns! Sanji, the Man Who'll Stop the Emperor of the Sea!",
-            "absoluteEpisode": 866
+            "absoluteEpisode": 866,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741967.jpg",
+            "duration": "30m",
+            "overview": "The cake is finally prepared and brought before Big Mom! With the end of her vicious rampage in sight, there is a chance for the Straw Hats to flee! Big Mom`s crew is forced to decide who to attack! Meanwhile, Luffy grows ever closer to using his Haki!"
           },
           {
             "episode": 867,
             "title": "Lurking in the Darkness! An Assassin Targeting Luffy!",
-            "absoluteEpisode": 867
+            "absoluteEpisode": 867,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741968.jpg",
+            "duration": "30m",
+            "overview": "Hiding her presence, Flampe shoots her blowgun at Luffy to support her dear brother Katakuri. Meanwhile, Oven launches a dastardly plan to fence Luffy in - by destroying every mirror on the island! And Smoothie is on the tail of the Sunny as it makes its way towards Cacao Island!"
           },
           {
             "episode": 868,
             "title": "One Man's Determination! Katakuri's Deadly Big Fight!",
-            "absoluteEpisode": 868
+            "absoluteEpisode": 868,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741969.jpg",
+            "duration": "30m",
+            "overview": "Katakuri notices his sister Flampe is sneakily providing poison needle back up in the shadows. Becoming enraged, he takes unexpected action that surprises everyone. Meanwhile, Smoothie increases her size and closes in on the Sunny."
           },
           {
             "episode": 869,
             "title": "Wake Up! The Power of Observation Able to Top the Strongest!",
-            "absoluteEpisode": 869
+            "absoluteEpisode": 869,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741970.jpg",
+            "duration": "30m",
+            "overview": "Luffy leans on his training to bring out the power of his Haki! Meanwhile the children of Big Mom gather as a massive force ready to smash Luffy and the Straw Hats. Their resentment at being embarrassed fuels their desire to get revenge!"
           },
           {
             "episode": 870,
             "title": "A Fist of Divine Speed! Another Fourth Gear Application Activated!",
-            "absoluteEpisode": 870
+            "absoluteEpisode": 870,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741971.jpg",
+            "duration": "30m",
+            "overview": "Luffy and Katakuri are locked in a duel to end all duels! Their powers ensure that each blow could be the last! Luffy must rely on his training, let all his thoughts out, and keep pushing on! Meanwhile, Sanji is about to land at Cacao Island!"
           },
           {
             "episode": 871,
             "title": "Finally, It's Over! The Climax of the Intense Fight against Katakuri!",
-            "absoluteEpisode": 871
+            "absoluteEpisode": 871,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741972.jpg",
+            "duration": "30m",
+            "overview": "Luffy`s dramatic battle finally draws to a close! But even if he is able to pull out victory in the last moment, can he remember the key to escaping the Mirrorworld?! Meanwhile, the whole host of the Big Mom Pirates watch the lonely mirror to see who will come through!"
           },
           {
             "episode": 872,
             "title": "A Desperate Situation! The Iron-Tight Entrapment of Luffy!",
-            "absoluteEpisode": 872
+            "absoluteEpisode": 872,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741973.jpg",
+            "duration": "30m",
+            "overview": "Luffy emerges safely! And Pekoms` bravery ensures he and the Straw Hats have a fighting chance! But can they withstand the full force of the Big Mom Pirates? At the last moment - a surprise explodes onto the scene!"
           },
           {
             "episode": 873,
             "title": "Pulling Back from the Brink! The Formidable Reinforcements � Germa!",
-            "absoluteEpisode": 873
+            "absoluteEpisode": 873,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741974.jpg",
+            "duration": "30m",
+            "overview": "Sanji tries his best to save himself and his captain, Luffy! But the arrival of Germa has complicated matters. Whose side do these powerful superhumans fight on? In the end, sisterly love will see Sanji saved!"
           },
           {
             "episode": 874,
             "title": "The Last Hope! The Sun Pirates Emerge!",
-            "absoluteEpisode": 874
+            "absoluteEpisode": 874,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741975.jpg",
+            "duration": "30m",
+            "overview": "Luffy and Sanji are safe! But the critical moment approaches - the fate of Totto Land rests on the taste of the wedding cake! Will it be sweet release or bitter defeat? Meanwhile, a cunning pincer attack leaves the Straw Hats hopelessly trapped. Only old, reliable comrades can save the day!"
           },
           {
             "episode": 875,
             "title": "A Captivating Flavor! Sanji's Cake of Happiness!",
-            "absoluteEpisode": 875
+            "absoluteEpisode": 875,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741976.jpg",
+            "duration": "30m",
+            "overview": "With the help of the Sun Pirates, the Straw Hats see their chance to escape! And the Sun Pirates bid farewell to their former captain. Mama finally tastes the Wedding Cake and the results are positively scrumptious!"
           },
           {
             "episode": 876,
             "title": "The Man of Humanity and Justice! Jimbei, a Desperate Massive Ocean Current!",
-            "absoluteEpisode": 876
+            "absoluteEpisode": 876,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741977.jpg",
+            "duration": "30m",
+            "overview": "The Big Mom Pirates fooled! The Straw Hats have eluded their would-be tormentors with the help of the Sun Pirates! However, as the fleet of the Big Mom Pirates is still coming after them, Jimbei makes a crucial decision to help the Sunny to get away."
           },
           {
             "episode": 877,
             "title": "The Parting Time! Pudding's Last Wish!",
-            "absoluteEpisode": 877
+            "absoluteEpisode": 877,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741978.jpg",
+            "duration": "30m",
+            "overview": "At a great cost of energy and life, the Straw Hats make it out of Totto Land. Left behind in their wake are allies and friends, and would-be lovers. As the sea opens before them, what price has been paid for their escape?"
           }
         ]
       },
@@ -4642,72 +7272,114 @@ window._ANIME_DATA = [
           {
             "episode": 878,
             "title": "The World is Stunned! The Fifth Emperor of the Sea Emerges!",
-            "absoluteEpisode": 878
+            "absoluteEpisode": 878,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741979.jpg",
+            "duration": "30m",
+            "overview": "Luffy`s recent exploits make their way around the world! The reputation of this mighty pirate begins to grow as all eyes look towards the Straw Hats` next move! Also - German 66 leaves an artifact behind which excites the crew!"
           },
           {
             "episode": 879,
             "title": "To the Reverie! The Straw Hats' Sworn Allies Come Together!",
-            "absoluteEpisode": 879
+            "absoluteEpisode": 879,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741980.jpg",
+            "duration": "30m",
+            "overview": "As the royals make their way to the Reverie, the mighty Navy takes all precautions to make sure they don`t fall prey to kidnappings! At the vanguard is Koby, who glimpses Luffy`s exploits and remembers their shared past. Meanwhile, Luffy is confronted with a staggering change to his bounty!"
           },
           {
             "episode": 880,
             "title": "Sabo Goes into Action! All the Captains of the Revolutionary Army Appear!",
-            "absoluteEpisode": 880
+            "absoluteEpisode": 880,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741981.jpg",
+            "duration": "30m",
+            "overview": "A vicious pirate group led by Pinkbeard who describes himself as one of Blackbeard's affiliates attacks a town in the Kingdom of Lulucia while their king and able-bodied soldiers have gone to the Reverie. And four bizarre individuals come to help. They're the captains of the Revolutionary Army."
           },
           {
             "episode": 881,
             "title": "Going into Action! The Implacable New Admiral of the Fleet - Sakazuki!",
-            "absoluteEpisode": 881
+            "absoluteEpisode": 881,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741982.jpg",
+            "duration": "30m",
+            "overview": "At New Marineford, Sakazuki, the new Admiral of the Fleet, hears the news about Luffy and recalls the tumultuous Paramount War that haunts the Navy! That game-changing war has repercussions that last into the present!"
           },
           {
             "episode": 882,
             "title": "The War of the Best! The Inherited Will of the King of the Pirates!",
-            "absoluteEpisode": 882
+            "absoluteEpisode": 882,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741983.jpg",
+            "duration": "30m",
+            "overview": "Nobles from around the world gather for the Reverie as the echoes of the Paramount War resound! Among them are Shirahoshi and her family from the Ryugu Kingdom under the sea. Meanwhile, Admiral Fujitora has a conversation with his new colleague, Admiral Ryokugyu."
           },
           {
             "episode": 883,
             "title": "One Step Forward for Her Dream! Shirahoshi Goes Out in the Sun!",
-            "absoluteEpisode": 883
+            "absoluteEpisode": 883,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741984.jpg",
+            "duration": "30m",
+            "overview": "Stelly, Sabo's adopted brother and now the king of the Goa Kingdom, walks up to Garp who is escorting the royal family of the Fish-Man Island, with an air of importance and something up his sleeve. Meanwhile, Shirahoshi sees the surface world for the first time."
           },
           {
             "episode": 884,
             "title": "I Miss Him! Vivi and Rebecca's Sentiments!",
-            "absoluteEpisode": 884
+            "absoluteEpisode": 884,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741985.jpg",
+            "duration": "30m",
+            "overview": "Shirahoshi and her family finally reach the Holyland of Mariejois! But all the unexpected attention confuses her. Meanwhile, Vivi from Alabasta meets Leo and Rebecca from Dressrosa, and tells them the story of her journey with the Straw Hats."
           },
           {
             "episode": 885,
             "title": "In the Dark Recesses of the Holyland! A Mysterious Giant Straw Hat!",
-            "absoluteEpisode": 885
+            "absoluteEpisode": 885,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741986.jpg",
+            "duration": "30m",
+            "overview": "Vivi reunites with Dalton and Dr. Kureha from the Sakura Kingdom and they share their memories of the Straw Hats with Shirahoshi and Rebecca. Meanwhile, a shadowy figure descends a long staircase at the castle in the Holyland and opens a mysterious door."
           },
           {
             "episode": 886,
             "title": "The Holyland in Tumult! The Targeted Princess Shirahoshi!",
-            "absoluteEpisode": 886
+            "absoluteEpisode": 886,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741987.jpg",
+            "duration": "30m",
+            "overview": "Shirahoshi crosses the fancy of a Celestial Dragon, and those living gods are not open to having their whims disobeyed! As she is dragged away, King Neptune comes to her rescue, risking life and limb by defying the Celestial Dragon, but luckily an old friend of the Ryugu Kingdom is on hand and tries to defuse the situation!"
           },
           {
             "episode": 887,
             "title": "An Explosive Situation! Two Emperors of the Sea Going After Luffy!",
-            "absoluteEpisode": 887
+            "absoluteEpisode": 887,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741989.jpg",
+            "duration": "30m",
+            "overview": "The Emperors of the Sea, Big Mom and Kaido decide to team up against Luffy! Meanwhile, Garp hears about the wild exploits of his grandson, all while a mysterious outsider visits the highest authority in the world!"
           },
           {
             "episode": 888,
             "title": "Sabo Enraged! The Tragedy of the Revolutionary Army Officer Kuma!",
-            "absoluteEpisode": 888
+            "absoluteEpisode": 888,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741990.jpg",
+            "duration": "30m",
+            "overview": "After sneaking into the Land of the Gods, Sabo sees the shocking figure of his friend – Kuma! Abused by the World Government as a pawn in their games, Kuma, who was made an example of what happens when you disobey the gods!"
           },
           {
             "episode": 889,
             "title": "Finally, It Starts! The Conspiracy-filled Reverie!",
-            "absoluteEpisode": 889
+            "absoluteEpisode": 889,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/290/727184.jpg",
+            "duration": "30m",
+            "overview": "The Reverie has begun! The representative kings and queens first discuss what to do with Straw Hat Luffy. Meanwhile the Revolutionary Army confirms its desire to save Kuma! All while they recount how the Straw Hats have grown from upstarts into world players!"
           },
           {
             "episode": 890,
             "title": "Marco! The Keeper of Whitebeard's Last Memento!",
-            "absoluteEpisode": 890
+            "absoluteEpisode": 890,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/290/727186.jpg",
+            "duration": "30m",
+            "overview": "Nekomamushi and the Guardians reach Whitebeard's home island. Nekomamushi finds Marco in a hidden village where he works as a doctor. During the meeting, Marco tells Nekomamushi about Whitebeard's childhood and the reason he cannot leave the island."
           },
           {
             "episode": 891,
             "title": "Climbing Up a Waterfall! A Great Journey Through the Land of Wano's Sea Zone!",
-            "absoluteEpisode": 891
+            "absoluteEpisode": 891,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741994.jpg",
+            "duration": "30m",
+            "overview": "Luffy and the others become excited as they see familiar faces in a newspaper article about the Reverie while they close in on the Land of Wano. But this dangerous and foreboding land is as inaccessible as it is mysterious! The sea itself is a barrier!"
           }
         ]
       },
@@ -4717,987 +7389,1578 @@ window._ANIME_DATA = [
           {
             "episode": 892,
             "title": "The Land of Wano! To the Samurai Country where Cherry Blossoms Flutter!",
-            "absoluteEpisode": 892
+            "absoluteEpisode": 892,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741995.jpg",
+            "duration": "30m",
+            "overview": "A mysterious country, a rampaging slasher, ancient samurai rituals of seppuku - and Zoro in the crosshairs! When a street assault occurs, all signs point to Zoro! Meanwhile, Luffy finally arrives at the Land of Wano but all his friends are nowhere to be found."
           },
           {
             "episode": 893,
             "title": "Otama Appears! Luffy vs. Kaido's Army!",
-            "absoluteEpisode": 893
+            "absoluteEpisode": 893,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741996.jpg",
+            "duration": "30m",
+            "overview": "Stranded alone on the beach, Luffy tries to gather his bearings only to be confronted by some mysterious, and dangerous, local fauna! And then, he meets a little girl named Otama! Meanwhile, Zoro makes trouble for the others who are trying to blend in!"
           },
           {
             "episode": 894,
             "title": "He'll Come! The Legend of Ace in the Land of Wano!",
-            "absoluteEpisode": 894
+            "absoluteEpisode": 894,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741997.jpg",
+            "duration": "30m",
+            "overview": "Otama`s gratitude towards Luffy knows no bounds! But the feast she cooks him exhausts her food stores completely! As she suffers from poor drinking water, her companion tells the story of the mysterious outsider she waits for - Ace!"
           },
           {
             "episode": 895,
             "title": "Side Story! The World's Greatest Bounty Hunter, Cidre!",
-            "absoluteEpisode": 895
+            "absoluteEpisode": 895,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741998.jpg",
+            "duration": "30m",
+            "overview": "Ambushed and outgunned by a skilled bounty hunter Cidre's group, the Straw Hats rely on the Sunny`s Coup de Burst to escape! But they end up stranded without cola! A nearby soda island offers a solution - but Luffy is quickly in over his head! Luckily a vivacious old friend is nearby!"
           },
           {
             "episode": 896,
             "title": "Side Story! Clash! Luffy vs. the King of Carbonation!",
-            "absoluteEpisode": 896
+            "absoluteEpisode": 896,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/741999.jpg",
+            "duration": "30m",
+            "overview": "Luffy and Boa Hancock square off against the Cidre Guild! These unscrupulous bounty hunters have one thing in mind - profit at any cost! When the battle looks won, Cidre gears up in a menacing power suit!"
           },
           {
             "episode": 897,
             "title": "Save Otama! Straw Hat, Bounding through the Wasteland!",
-            "absoluteEpisode": 897
+            "absoluteEpisode": 897,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742000.jpg",
+            "duration": "30m",
+            "overview": "Otama recounts her promise to Ace while Luffy rushes her to medical attention. But just as they reach the wasteland, a familiar face comes into view! But Kaido`s underlings show up too!"
           },
           {
             "episode": 898,
             "title": "The Headliner! Hawkins the Magician Appears!",
-            "absoluteEpisode": 898
+            "absoluteEpisode": 898,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742001.jpg",
+            "duration": "30m",
+            "overview": "Otama's temperature is going up and Luffy has no time to waste! However, Hawkins, one of Kaido's Headliners, blocks their way by showing his unique powers and skills which can harm his own men."
           },
           {
             "episode": 899,
             "title": "Defeat is Inevitable! The Strawman's Fierce Attack!",
-            "absoluteEpisode": 899
+            "absoluteEpisode": 899,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742002.jpg",
+            "duration": "30m",
+            "overview": "Luffy and Zoro have been stalled by Hawkins but their fortune looks bright as they are guided by a woman who Zoro had saved. She leads them to a teahouse and to an herbal remedy for the river poison. All the while, old acquaintances look on from a distance!"
           },
           {
             "episode": 900,
             "title": "The Greatest Day of My Life! Otama and Her Sweet Red-bean Soup!",
-            "absoluteEpisode": 900
+            "absoluteEpisode": 900,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742003.jpg",
+            "duration": "30m",
+            "overview": "Otama`s life is saved by Otsuru at her teahouse. The proud Otama finds it hard to take more kindness. The group learns of the Okobore Town - living on the cast-offs of the officials! Then, suddenly, they were attacked by the Shogun's men!"
           },
           {
             "episode": 901,
             "title": "Charging into the Enemy's Territory! Bakura Town - Where Officials Thrive!",
-            "absoluteEpisode": 901
+            "absoluteEpisode": 901,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742004.jpg",
+            "duration": "30m",
+            "overview": "Otama has been kidnapped by the Gifters! She is taken to a flourishing town called Bakura Town where a creepy-looking Headliner was expecting her. Luffy and Zoro rush to rescue her along with a samurai, Okiku!"
           },
           {
             "episode": 902,
             "title": "The Yokozuna Appears! The Invincible Urashima Goes After Okiku!",
-            "absoluteEpisode": 902
+            "absoluteEpisode": 902,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742005.jpg",
+            "duration": "30m",
+            "overview": "As Luffy, Zoro, and Okiku bounce through Bakura Town on Komachiyo's back, looking for the kidnapped Otama, a sumo wrestler comes flying towards them! Interested, they go down to watch sumo but the undefeated yokozuna Urashima has been expecting Okiku there and shows his brutal nature!"
           },
           {
             "episode": 903,
             "title": "A Climactic Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!",
-            "absoluteEpisode": 903
+            "absoluteEpisode": 903,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742006.jpg",
+            "duration": "30m",
+            "overview": "Luffy challenges Urashima, the strongest yokozuna in the Land of Wano, to a sumo match! Urashima even uses illegal moves to beat Luffy at any cost! Meanwhile, Holdem tells Otama that he knows she committed a crime and he has to punish her for it."
           },
           {
             "episode": 904,
             "title": "Luffy Rages! Rescue Otama from Danger!",
-            "absoluteEpisode": 904
+            "absoluteEpisode": 904,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742007.jpg",
+            "duration": "30m",
+            "overview": "After sending the yokozuna Urashima flying, Luffy and his clan continue their search for Bakura Town's boss to save Otama! They finally find the boss, Holdem, one of the Beast Pirates' Headliners, and Otama who is hanging in the mouth of a lion in Holdem's stomach."
           },
           {
             "episode": 905,
             "title": "Taking Back Otama! A Fierce Fight Against Holdem!",
-            "absoluteEpisode": 905
+            "absoluteEpisode": 905,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742008.jpg",
+            "duration": "30m",
+            "overview": "Facing Holdem who is holding Otama as hostage, Luffy prepares for a fight but Okiku tries to stop him by sharing who is really ruling the region. Meanwhile, Basil Hawkins who is also working for Kaido and chasing after Luffy, is confronted by a mysterious figure."
           },
           {
             "episode": 906,
             "title": "Duel! The Magician and the Surgeon of Death!",
-            "absoluteEpisode": 906
+            "absoluteEpisode": 906,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742009.jpg",
+            "duration": "30m",
+            "overview": "Taking down Holdem, Luffy rescues Otama and tries to catch up to Zoro and Okiku who stole the food treasure ship and started a mad dash to get out of the town! Meanwhile, Trafalgar Law's attempt to silence Basil Hawkins fails when he hears bad news about his alliance."
           },
           {
             "episode": 907,
             "title": "Romance Dawn",
-            "absoluteEpisode": 907
+            "absoluteEpisode": 907,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742010.jpg",
+            "duration": "30m",
+            "overview": "This is a story of Luffy in an alternate reality. While sailing on the sea by himself, a strange bird crashes into his small boat. He looks up to find a giant ship where a girl named Ann has been captured. It seems like the bird belongs to her."
           },
           {
             "episode": 908,
             "title": "The Coming of the Treasure Ship! Luffytaro Returns the Favor!",
-            "absoluteEpisode": 908
+            "absoluteEpisode": 908,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742011.jpg",
+            "duration": "30m",
+            "overview": "Zoro and the others dash out of BakuraTown on the treasure ship filled with food! Luffy catches up to them bringing ahuge bucket of fresh water! Then, they distribute the food and the water to thepeople of Okobore Town who were thirsty and hungry."
           },
           {
             "episode": 909,
             "title": "Mysterious Grave Markers! A Reunion at the Ruins of Oden Castle!",
-            "absoluteEpisode": 909
+            "absoluteEpisode": 909,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742012.jpg",
+            "duration": "30m",
+            "overview": "Luffy arrives at the ruins of Oden Castle following Law and finds the graves of his friends, Kin'emon and the others. As Law starts telling the already-stunned Luffy about the creepy story of Kin'emon's ghost, Luffy sees it coming towards him!"
           },
           {
             "episode": 910,
             "title": "A Legendary Samurai! The Man Who Roger Admired!",
-            "absoluteEpisode": 910
+            "absoluteEpisode": 910,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742015.jpg",
+            "duration": "30m",
+            "overview": "Kin'emon tells Luffy and the others about how Kozuki Oden made Kuri into a peaceful region and became its Daimyo. However, he was set up by Kaido and Kurozumi Orochi and executed. Kin'emon and his fellow vassals ran to Oden Castle in flames to save Oden's wife Toki and children but Toki told him a shocking truth."
           },
           {
             "episode": 911,
             "title": "Bringing Down the Emperor of the Sea! A Secret Raid Operation Begins!",
-            "absoluteEpisode": 911
+            "absoluteEpisode": 911,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742016.jpg",
+            "duration": "30m",
+            "overview": "Kin'emon and the others crossed through time by the power of Kozuki Toki, Momonosuke's mother, and arrived at the Land of Wano 20 years later, a totally different country before their eyes. However, discovering that there were still their allies there, they started preparing to take down Kaido and Orochi who ruined the country."
           },
           {
             "episode": 912,
             "title": "The Strongest Man in the World! Shutenmaru, the Thieves Brigade Chief!",
-            "absoluteEpisode": 912
+            "absoluteEpisode": 912,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742017.jpg",
+            "duration": "30m",
+            "overview": "Ashura Doji, one of the allies Kin'emon wants to search for, has become the head of a thieves brigade and they now raid Okobore Town taking away the food that Luffy gave to the people. Ashura Doji, under the name Shutenmaru, then faces Kaido's right-hand man and gets into a fierce fight!"
           },
           {
             "episode": 913,
             "title": "Everyone is Annihilated! Kaido's Furious Blast Breath!",
-            "absoluteEpisode": 913
+            "absoluteEpisode": 913,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742018.jpg",
+            "duration": "30m",
+            "overview": "The drunken Kaido flies above Okobore Town in his dragon form and threatens Shutenmaru and all the people in the town. Luffy, Law, Kin'emon, and Okiku start running towards the town to rescue them. However, Kaido heads towards the ruins of Oden Castle where they left their crew behind."
           },
           {
             "episode": 914,
             "title": "Finally Clashing! The Ferocious Luffy vs. Kaido!",
-            "absoluteEpisode": 914
+            "absoluteEpisode": 914,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742019.jpg",
+            "duration": "30m",
+            "overview": "After Luffy sees Kaido shattering the ruins of Oden Castle where he left his friends, he becomes enraged and attacks Kaido! Soon after, he finds out Kaido even assaulted Otama who was riding on Speed's back to her home. Furious, Luffy reveals himself to Kaido and starts to retaliate!"
           },
           {
             "episode": 915,
             "title": "Destructive! One Shot, One Kill � Thunder Bagua!",
-            "absoluteEpisode": 915
+            "absoluteEpisode": 915,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742021.jpg",
+            "duration": "30m",
+            "overview": "An infuriated Luffy strikes blow after blow on the drunken Kaido. When he activates Gear Four Bounce-Man and launches even more powerful attacks, Kaido fights back and knocks him out with just one blow. Law tries to rescue Luffy but is interrupted by Hawkins and now Kaido approaches Luffy, unconscious on the ground."
           },
           {
             "episode": 916,
             "title": "A Living Hell! Luffy, Humiliated in the Great Mine!",
-            "absoluteEpisode": 916
+            "absoluteEpisode": 916,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742022.jpg",
+            "duration": "30m",
+            "overview": "Luffy gets beaten by Kaido and is sent to a great mine where prisoners are made to work in forced labor. There, he finds an unexpected reunion. Meanwhile, Okiku is rushing to the ruins of Oden Castle in order to confirm the safety of the Straw Hats and the others."
           },
           {
             "episode": 917,
             "title": "The Holyland in Tumult! Emperor of the Sea Blackbeard Cackles!",
-            "absoluteEpisode": 917
+            "absoluteEpisode": 917,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742023.jpg",
+            "duration": "30m",
+            "overview": "On Gloom Island in the Grand Line, Perona finds out that her captain, Gecko Moria, is alive and she is about to leave Dracule Mihawk who let her stay there for the last two years. Meanwhile, Moria raids the Pirate Island of Fullalead with his zombie army to take back his friend from Blackbeard."
           },
           {
             "episode": 918,
             "title": "It's On! The Special Operation to Bring Down Kaido!",
-            "absoluteEpisode": 918
+            "absoluteEpisode": 918,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742024.jpg",
+            "duration": "30m",
+            "overview": "Dogstorm fights against Shutenmaru to ally with him for their operation but Shutenmaru still rejects their call. Meanwhile, Sanji and the others are on their mission to recruit like-minded people who become skeptical as they receive the secret message from the Kozuki Clan."
           },
           {
             "episode": 919,
             "title": "Rampage! The Prisoners � Luffy and Kid!",
-            "absoluteEpisode": 919
+            "absoluteEpisode": 919,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742025.jpg",
+            "duration": "30m",
+            "overview": "In the Excavation Labor Camp, Luffy competes against Kid by hauling stones for food and they both get tons of it. However, Dobon, a vice warden, becomes furious when he finds out all their provisions are gone, and gives Luffy and Kid a new sentence: death."
           },
           {
             "episode": 920,
             "title": "A Great Sensation! Sanji's Special Soba!",
-            "absoluteEpisode": 920
+            "absoluteEpisode": 920,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742026.jpg",
+            "duration": "30m",
+            "overview": "Sanji's Special Soba becomes very popular but some gang members come to disturb his business and knock over a customer's bowl. Infuriated, Sanji takes them down and gives the customer, a little girl named Toko, another serving. Later, Sanji and his friends find out that Toko is an attendant to an important figure in the Land of Wano."
           },
           {
             "episode": 921,
             "title": "Luxurious and Gorgeous! Wano's Most Beautiful Woman � Komurasaki!",
-            "absoluteEpisode": 921
+            "absoluteEpisode": 921,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742027.jpg",
+            "duration": "30m",
+            "overview": "Wano's top courtesan Komurasaki is in procession and slowly makes her way to Orochi Palace. There is a crowd of people on the street as well as Sanji and the others. While everyone is fascinated by her, some seeking vengeance get in the Oiran's way."
           },
           {
             "episode": 922,
             "title": "A Tale of Chivalry! Zoro and Tonoyasu's Little Trip!",
-            "absoluteEpisode": 922
+            "absoluteEpisode": 922,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742028.jpg",
+            "duration": "30m",
+            "overview": "Zoro who has been wandering around the Land of Wano since he got separated from his friends meets a sycophant named Tonoyasu. Tonoyasu paid for Zoro's sushi and to pay him back, Zoro gambles at dice. However, he realizes that the dealer and the others are cheating."
           },
           {
             "episode": 923,
             "title": "A State of Emergency! Big Mom Closes in!",
-            "absoluteEpisode": 923
+            "absoluteEpisode": 923,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/243/608035.jpg",
+            "duration": "30m",
+            "overview": "The banquet at Orochi's palace begins and Robin begins her mission. Shinobu, Nami, and Brook sneak into the palace as well. Meanwhile, in Udon prison, Kid explains to Luffy and Caribou about how he lost his arm. Back at the Flower Capital, two of the Flying Six, Page One and X Drake arrive to hunt down Sanji. In the seas surrounding Wano Country, the Big Mom Pirates draw closer."
           },
           {
             "episode": 924,
             "title": "The Capital in an Uproar! Another Assassin Targets Sanji!",
-            "absoluteEpisode": 924
+            "absoluteEpisode": 924,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/463/1157674.jpg",
+            "duration": "30m",
+            "overview": "As the Big Mom Pirates approach the Land of Wano, Kaido's subordinates led by King and Queen try to get rid of them. Meanwhile, in the Flower Capital, another member of the Animal Kingdom Pirates, Page One, attacks every soba restaurant in the city, in search of Sanji"
           },
           {
             "episode": 925,
             "title": "Dashing! The Righteous Soba Mask!",
-            "absoluteEpisode": 925
+            "absoluteEpisode": 925,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/463/1157829.jpg",
+            "duration": "30m",
+            "overview": "Sanji faces Page One, a Headliner of the Animal Kingdom Pirates, who questions the soba cook's true identity. Sanji uses Germa's device for the first time and transforms himself into Stealth Black while dubbing himself Soba Mask."
           },
           {
             "episode": 926,
             "title": "A Desperate Situation! Orochi's Menacing Oniwabanshu!",
-            "absoluteEpisode": 926
+            "absoluteEpisode": 926,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742029.jpg",
+            "duration": "30m",
+            "overview": "While the banquet grows livelier at Orochi's Castle, Robin is confronted by his ninja force called Oniwabanshu. In the meanwhile in Kuri, Chopper, Tama, and Momonosuke train themselves preparing for the incoming battle but are interrupted when they find someone washed up on the beach."
           },
           {
             "episode": 927,
             "title": "Pandemonium! The Monster Snake, Shogun Orochi!",
-            "absoluteEpisode": 927
+            "absoluteEpisode": 927,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742030.jpg",
+            "duration": "30m",
+            "overview": "At the banquet, the Shogun Orochi starts to talk about his late old enemy which bores the attendees. Suddenly, the Oiran's child attendant Toko bursts with laughter and won't stop. Orochi becomes furious and attacks her, but an unexpected person stands in his way."
           },
           {
             "episode": 928,
             "title": "The Flower Falls! The Final Moment of the Most Beautiful Woman in the Land of Wano!",
-            "absoluteEpisode": 928
+            "absoluteEpisode": 928,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742031.jpg",
+            "duration": "30m",
+            "overview": "In order to save her child attendant Toko, the top Oiran Komurasaki stands up to the Shogun Orochi, but the yakuza boss Kyoshiro interrupts and does something that no one expected. Meanwhile, Robin is trying to get out of Orochi's Castle with the help of Nami and Brook."
           },
           {
             "episode": 929,
             "title": "The Bond Between Prisoners! Luffy and Old Man Hyo!",
-            "absoluteEpisode": 929
+            "absoluteEpisode": 929,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742032.jpg",
+            "duration": "30m",
+            "overview": "Nami, Robin, and the others got away from Oden's Castle and now discuss what they have found out about the enemy so far. Meanwhile, Chopper's group sets off to rescue Luffy from the Excavation Labor Camp where, at the same time, Luffy is in big trouble."
           },
           {
             "episode": 930,
             "title": "A Lead Performer! Queen the Plague Emerges!",
-            "absoluteEpisode": 930
+            "absoluteEpisode": 930,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046817.jpg",
+            "duration": "30m",
+            "overview": "At the Excavation Labor Camp in Udon, Luffy tries to save Old Man Hyo and stands up to Vice Warden Daifuku and Warden Babanuki with his physical strength weakened by the Sea Prism Stone cuffs. Then when a Lead Performer of the Animal Kingdom Pirates, Queen the Plague, comes to the camp, Luffy makes an escape!"
           },
           {
             "episode": 931,
             "title": "Climb Up! Luffy's Desperate Escape!",
-            "absoluteEpisode": 931
+            "absoluteEpisode": 931,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742034.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Old Man Hyo try to climb up the wall and break out of the Excavation Labor Camp, but Queen the Plague stands in their way and gives them a hard time! Meanwhile, Nami and Robin experience a public bathhouse along with Shinobu and come to know about the Land of Wano's great yakuza boss."
           },
           {
             "episode": 932,
             "title": "Dead or Alive! Queen's Sumo Inferno!",
-            "absoluteEpisode": 932
+            "absoluteEpisode": 932,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742035.jpg",
+            "duration": "25m",
+            "overview": "Luffy fights quite a few Queen's men at once in the deadly sumo match while protecting Old Man Hyo! Meanwhile, Nami, Robin, and Shinobu are cornered as Hawkins comes to raid the bathhouse. However, someone who they don't expect to be there pops up from nowhere to save them."
           },
           {
             "episode": 933,
             "title": "Gyukimaru! Zoro Fights a Duel on Bandit's Bridge!",
-            "absoluteEpisode": 933
+            "absoluteEpisode": 933,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742036.jpg",
+            "duration": "25m",
+            "overview": "Luffy deals with the endless supply of opponents trying to figure out the way to use Haki that Rayleigh taught him a while ago. Meanwhile, Zoro faces Gyukimaru who is accusing him of stealing Shusui, however, their duel is interrupted by a woman's scream."
           },
           {
             "episode": 934,
             "title": "A Big Turnover! The Three-Sword Style Overcomes Danger!",
-            "absoluteEpisode": 934
+            "absoluteEpisode": 934,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742037.jpg",
+            "duration": "25m",
+            "overview": "The duel between Zoro and Gyukimaru is interrupted by Kamazo, Orochi's assassin who came after a little girl Toko. Without Shusui, Zoro has a hard time fighting the two at the same time, but he finds an unlikely third sword to take down the enemies."
           },
           {
             "episode": 935,
             "title": "Zoro, Stunned! The Shocking Identity of the Mysterious Woman!",
-            "absoluteEpisode": 935
+            "absoluteEpisode": 935,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742038.jpg",
+            "duration": "25m",
+            "overview": "Luffy's next enemies in the deadly sumo match in the Excavation Labor Camp are two tough Gifters. Much to Old Man Hyo's surprise, Luffy keeps practicing using Haki properly at the same time as he fights them. Meanwhile, the wounded Zoro wakes up to find out the stunning identity of the mysterious woman he saved."
           },
           {
             "episode": 936,
             "title": "Get the Hang of It! The Land of Wano's Haki - Ryuo!",
-            "absoluteEpisode": 936
+            "absoluteEpisode": 936,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742039.jpg",
+            "duration": "25m",
+            "overview": "Hiyori tells Zoro a stunning story of escaping the incident 20 years ago and surviving until the present day. Meanwhile, Luffy stills struggles to master the Haki of the Color of Arms, but a surprising person steps up and gives an example."
           },
           {
             "episode": 937,
             "title": "Tonoyasu! Ebisu Town's Most Loved!",
-            "absoluteEpisode": 937
+            "absoluteEpisode": 937,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742040.jpg",
+            "duration": "25m",
+            "overview": "Luffy continues training himself to use Haki with Old Man Hyo's help, but the battle is suddenly suspended and shortly thereafter Raizo appears in front of them. Meanwhile, Nami, Usopp, and the others are wondering who Tonoyasu, Ebisu Town's hero, really is."
           },
           {
             "episode": 938,
             "title": "Shaking the Nation! The Identity of Ushimitsu Kozo The Chivalrous Thief!",
-            "absoluteEpisode": 938
+            "absoluteEpisode": 938,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742041.jpg",
+            "duration": "25m",
+            "overview": "Ushimitsu Kozo the great thief who robbed from the rich and gave to the poor gets caught and his true identity stuns Orochi and the others. When Toko hears the news, she gets very upset and so is Zoro when he hears the reason."
           },
           {
             "episode": 939,
             "title": "The Straw Hats Run! Save the Captive Tonoyasu!",
-            "absoluteEpisode": 939
+            "absoluteEpisode": 939,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742042.jpg",
+            "duration": "25m",
+            "overview": "Tonoyasu has been strung up and is soon-to-be executed. The people of the Land of Wano recognize who he really is and start raising their voice while the Straw Hats rush to save him. Then, Tonoyasu starts addressing the nation and the corrupt Shogun Orochi."
           },
           {
             "episode": 940,
             "title": "Zoro's Fury! The Truth About the Smile!",
-            "absoluteEpisode": 940
+            "absoluteEpisode": 940,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742043.jpg",
+            "duration": "25m",
+            "overview": "By the time Kin'emon and the others notice that Yasuie is trying to sacrifice his life to save their raid plan, it was all too late. Ebisu Town`s people laughing out loud annoys Zoro, but when Hiyori tells him the reason behind it, he is in for a shock!"
           },
           {
             "episode": 941,
             "title": "Toko's Tears! Orochi's Pitiless Bullets!",
-            "absoluteEpisode": 941
+            "absoluteEpisode": 941,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742045.jpg",
+            "duration": "25m",
+            "overview": "Hiyori and Shinobu tearfully tell the Straw Hats the truth behind Ebisu Town residents` cheerfulness and smiles, which infuriates them. When Yasuie's daughter, Toko, runs to her father's body, Orochi recognizes who she is and takes a shot at her!"
           },
           {
             "episode": 942,
             "title": "The Straw Hats Step In! An Uproarious Deadly Battle at the Execution Ground!",
-            "absoluteEpisode": 942
+            "absoluteEpisode": 942,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742048.jpg",
+            "duration": "25m",
+            "overview": "Zoro and Sanji start fighting against Orochi's clan. Nami and the rest of the Straw Hats join them. Meanwhile, at the Excavation Labor Camp, a new criminal, Hitokiri Kamazo, has arrived. And someone else who is brought to the site reveals the shocking truth about Kamazo."
           },
           {
             "episode": 943,
             "title": "Luffy's Determination! Win Through the Sumo Inferno!",
-            "absoluteEpisode": 943
+            "absoluteEpisode": 943,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742050.jpg",
+            "duration": "25m",
+            "overview": "Zoro keeps fighting Kyoshiro, but Orochi's Oniwabanshu comes to back Kyoshiro up. Meanwhile, at the Excavation Labor Camp, Queen announces the restart of the Sumo Inferno with a new cruel rule which is painful not only to Luffy, but also to Drake and Killer."
           },
           {
             "episode": 944,
             "title": "The Storm Has Come! A Raging Big Mom!",
-            "absoluteEpisode": 944
+            "absoluteEpisode": 944,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742051.jpg",
+            "duration": "25m",
+            "overview": "Kin'emon apologizes Ashura Doji AKA Shutenmaru for goading Holdem to attack Atamayama where Ashura's hideout was located, and asks him to join the fight against Kaido. Meanwhile, Chopper and his group finally arrived at the Excavation Labor Camp and Big Mom forces her way in to find her favorite soup!"
           },
           {
             "episode": 945,
             "title": "A Grudge Over Red-bean Soup! Luffy Gets into a Desperate Situation!",
-            "absoluteEpisode": 945
+            "absoluteEpisode": 945,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742052.jpg",
+            "duration": "25m",
+            "overview": "Craving red-bean soup, Big Mom attacks Queen, the Animal Kingdom Pirates' Lead Performer who reins over Udon. However, when she finds out that the pot is empty, she turns her wrath against the one who ate it all: Luffy."
           },
           {
             "episode": 946,
             "title": "Stop the Emperor of the Sea! Queen's Secret Plan!",
-            "absoluteEpisode": 946
+            "absoluteEpisode": 946,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742053.jpg",
+            "duration": "25m",
+            "overview": "After finding out that Luffy ate the whole pot ofthe red-bean soup that she was looking for, Big Mom becomes infuriated and goesafter him. Meanwhile, Queen, the Lead Performer, comes up with a plan to stopthe rampaging Big Mom."
           },
           {
             "episode": 947,
             "title": "Brutal Ammunition! The Plague Rounds Aim at Luffy!",
-            "absoluteEpisode": 947
+            "absoluteEpisode": 947,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742054.jpg",
+            "duration": "25m",
+            "overview": "Queen hastily ties up the sleeping Big Mom and carries her to Onigashima leaving Udon to Babanuki. Babanuki uses a weapon that Queen made to threaten inmates and make them catch Luffy, but a mysterious figure emerges from the forbidden cell to save Luffy."
           },
           {
             "episode": 948,
             "title": "Start Fighting Back! Luffy and the Akazaya Samurai!",
-            "absoluteEpisode": 948
+            "absoluteEpisode": 948,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742055.jpg",
+            "duration": "25m",
+            "overview": "Kawamatsu the Kappa is freed and stands up against Babanuki and his underlings! Listening to Old Man Hyo's suggestion, Raizo and Kiku reveal their true identities which give the desperate prisoners not only a shock but also some hope."
           },
           {
             "episode": 949,
             "title": "We�re Here to Win! Luffy's Desperate Scream!",
-            "absoluteEpisode": 949
+            "absoluteEpisode": 949,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742056.jpg",
+            "duration": "25m",
+            "overview": "Luffy faces those who are infected by the Plague Rounds and the non-infected prisoners who submit to the authority of Udon. To open their eyes, Luffy takes a measure that will risk his life. However, the Chief Warden Babanuki has something up his sleeve."
           },
           {
             "episode": 950,
             "title": "Warriors' Dream! Luffy's Conquer of Udon!",
-            "absoluteEpisode": 950
+            "absoluteEpisode": 950,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742057.jpg",
+            "duration": "25m",
+            "overview": "The freed prisoners in Udon refuse to fight alongside Luffy because he is a pirate. Raizo and Old Man Hyo try their best to convince them, but an unexpected person stands up to bring the prisoners hope after taking down Kaido!"
           },
           {
             "episode": 951,
             "title": "Orochi's Hunting Party! The Ninja Group vs. Zoro!",
-            "absoluteEpisode": 951
+            "absoluteEpisode": 951,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742058.jpg",
+            "duration": "25m",
+            "overview": "After standing against Orochi, Zoro and Hiyori are chased by Orochi's ninja group. Meanwhile, Orochi is told that they captured Trafalgar Law as the people of the Flower Capital prepare for the upcoming Fire Festival."
           },
           {
             "episode": 952,
             "title": "Tension Rises in Onigashima! Two Emperors of the Sea Meet?!",
-            "absoluteEpisode": 952
+            "absoluteEpisode": 952,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742059.jpg",
+            "duration": "25m",
+            "overview": "Nami and Franky join Kanjuro who has taken Yasuie's dead body to bury him with Oden, and together they hit the road. Robin, Usopp, and Brook are at the dock trying to figure out a way to pass through a check point. Meanwhile, Big Mom and Kaido finally clash at Onigashima."
           },
           {
             "episode": 953,
             "title": "Hiyori's Confession! A Reunion at Bandit's Bridge!",
-            "absoluteEpisode": 953
+            "absoluteEpisode": 953,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/290/727180.jpg",
+            "duration": "25m",
+            "overview": "As the clash between Kaido and Big Mom continues, Queen looks for a way to get out of Onigashima. Meanwhile in Udon, Old Man Hyo finds his former allies, four bosses from each region. At Bandit's Bridge, Hiyori and Kawamatsu finally see each other after a long time."
           },
           {
             "episode": 954,
             "title": "Its Name is Enma! Oden's Great Swords!",
-            "absoluteEpisode": 954
+            "absoluteEpisode": 954,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742060.jpg",
+            "duration": "25m",
+            "overview": "Zoro runs after the warrior-monk who took his Shusui and Kawamatsu shares with Hiyori his memory of a fox that was guarding the graves in Ringo. As they catch up to Zoro, they find a room filled with swords. And Hiyori tells Zoro to give Shusui back to the Land of Wano."
           },
           {
             "episode": 955,
             "title": "A New Alliance?! Kaido�s Army Gathers!",
-            "absoluteEpisode": 955
+            "absoluteEpisode": 955,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/290/727179.jpg",
+            "duration": "25m",
+            "overview": "As the day of the raid approaches, Law finds someone who might help him escape the prison and Kin'emon gathers up most of his main allies to discuss the raid plan. Meanwhile, at Onigashima, Kaido and Big Mom make a stunning declaration!"
           },
           {
             "episode": 956,
             "title": "Ticking Down to the Great Battle! The Straw Hats Go into Combat Mode!",
-            "absoluteEpisode": 956
+            "absoluteEpisode": 956,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742061.jpg",
+            "duration": "25m",
+            "overview": "Kin'emon, Momonosuke, and the others can't fight back tears when they hear that Hiyori is alive. Zoro is stunned by Enma's demonic power and its ties to him. And as the day of the Fire Festival is finally in sight, Kin'emon and the others head out for the rendezvous point."
           },
           {
             "episode": 957,
             "title": "Big News! An Incident That Will Affect the Seven Warlords!",
-            "absoluteEpisode": 957
+            "absoluteEpisode": 957,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742062.jpg",
+            "duration": "25m",
+            "overview": "The resolution that passed the Reverie and the incidents surrounding the conference stun people all over the world and corner the Seven Warlords of the Sea. Meanwhile, a Navy captain Koby secretly contacts someone who is currently in the Land of Wano."
           },
           {
             "episode": 958,
             "title": "A Legendary Battle! Garp and Roger!",
-            "absoluteEpisode": 958
+            "absoluteEpisode": 958,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742063.jpg",
+            "duration": "25m",
+            "overview": "Admiral Issho and Fleet Admiral Sakazuki argue over the abolition of the Seven Warlord system and the alliance of the two Emperors of the Sea. Meanwhile, ex-Fleet Admiral Sengoku teaches the young Navy soldiers about the legendary Rocks Pirates that Kaido and Big Mom once belonged to along with all the other big names."
           },
           {
             "episode": 959,
             "title": "The Rendezvous Port! The Land of Wano Act Three Begins!",
-            "absoluteEpisode": 959
+            "absoluteEpisode": 959,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742064.jpg",
+            "duration": "25m",
+            "overview": "On the day of the Fire Festival, Orochi leaves the mainland of the Land of Wano heading for Onigashima where a big banquet will take place. Meanwhile, at Tokage Port, the rendezvous point for the rebel group, Kin'emon and the others are stunned by the fact that none of their allies are there."
           },
           {
             "episode": 960,
             "title": "The Number-One Samurai in the Land of Wano! Here comes Kozuki Oden!",
-            "absoluteEpisode": 960
+            "absoluteEpisode": 960,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742065.jpg",
+            "duration": "25m",
+            "overview": "The night before the great battle, Orochi orders the destruction of the Sunny along with some bridges across the country to block Akazaya samurai's allies from their rendezvous. Disappointed, the group of samurai still sets out for Onigashima with the memory of their beloved lord, Oden, in their hearts. However, 41 years ago, Oden was not respected by everyone."
           },
           {
             "episode": 961,
             "title": "Tearfully Swearing Allegiance! Oden and Kin'emon!",
-            "absoluteEpisode": 961
+            "absoluteEpisode": 961,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742066.jpg",
+            "duration": "25m",
+            "overview": "When the angry mountain god, the giant boar, almost kills Kin'emon, Oden steps in. Kin'emon is impressed when he sees Oden's strength and pledges his life to serve him. Disavowed by his father, Oden decides to go on a journey around the country and gathers more followers along the way."
           },
           {
             "episode": 962,
             "title": "Changing Destiny! The Whitebeard Pirates Cast Ashore!",
-            "absoluteEpisode": 962
+            "absoluteEpisode": 962,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/296/742067.jpg",
+            "duration": "25m",
+            "overview": "Oden transforms the wild land of Kuri into a habitable region and is made Daimyo over it. Then he meets Kawamatsu the Kappa and the two Minks, Dogstorm and Cat Viper, who become his followers like the others. Kin'emon and the other vassals are scolded by Yasuie when they try to steal money from him, and they begin reforming themselves for their lord Oden."
           },
           {
             "episode": 963,
             "title": "Oden's Determination! Whitebeard's Test!",
-            "absoluteEpisode": 963
+            "absoluteEpisode": 963,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047640.jpg",
+            "duration": "25m",
+            "overview": "Whitebeard and his crew dock at one of the ports in the Land of Wano with their broken ship and the news excites Oden. He runs to the port and asks Whitebeard to let him get on board the ship but the request is rejected. When the ship's repairs are complete, Whitebeard tries to sneak out of the country, but he finds Oden tagging along."
           },
           {
             "episode": 964,
             "title": "Whitebeard's Little Brother! Oden's Great Adventure!",
-            "absoluteEpisode": 964
+            "absoluteEpisode": 964,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047641.jpg",
+            "duration": "25m",
+            "overview": "Oden rescues Toki from the slavers and befriends her. She wants to travel to Wano, which unfortunately displeases him. With the appearance of Whitebeard on the coast, the course of their journey changes."
           },
           {
             "episode": 965,
             "title": "Crossing Swords! Roger and Whitebeard!",
-            "absoluteEpisode": 965
+            "absoluteEpisode": 965,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047657.jpg",
+            "duration": "25m",
+            "overview": "While Oden is still traveling the world with Whitebeard, his father's health is increasingly deteriorating. Orochi is to fill in as shogun until Oden's return."
           },
           {
             "episode": 966,
             "title": "Roger's Wish! A New Journey!",
-            "absoluteEpisode": 966
+            "absoluteEpisode": 966,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047658.jpg",
+            "duration": "25m",
+            "overview": "The Roger Pirates against the Whitebeard Pirates! Their battle extends over three days and nights. Which crew will emerge victorious?"
           },
           {
             "episode": 967,
             "title": "Devoting His Life! Roger's Adventure!",
-            "absoluteEpisode": 967
+            "absoluteEpisode": 967,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047669.jpg",
+            "duration": "25m",
+            "overview": "Roger's joint adventure with Oden continues. They travel to Sky Island, Water 7 and also Fish Man Island in search of the Porneglyph."
           },
           {
             "episode": 968,
             "title": "The King of the Pirates is Born! Arriving at the Last Island!",
-            "absoluteEpisode": 968
+            "absoluteEpisode": 968,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047714.jpg",
+            "duration": "25m",
+            "overview": "After Roger and his crew have inspected all the Road Poneglyphs, they set off for the last island. What awaits them there leaves them speechless."
           },
           {
             "episode": 969,
             "title": "To the Land of Wano! The Roger Pirates Disband!",
-            "absoluteEpisode": 969
+            "absoluteEpisode": 969,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047716.jpg",
+            "duration": "25m",
+            "overview": "After the Roger Pirates have been on Laugh Tale, they decide to disband. Captain Roger is the first man to disembark. After that, his remaining crew takes Oden back to Wano."
           },
           {
             "episode": 970,
             "title": "Sad News! The Opening of the Great Pirate Era!",
-            "absoluteEpisode": 970
+            "absoluteEpisode": 970,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047836.jpg",
+            "duration": "25m",
+            "overview": "Oden learns that Orochi is tyrannizing Wano as the new shogun. When he hears that Toki has been injured in an attack on Momonosuke, he rushes to the capital to attack Orochi."
           },
           {
             "episode": 971,
             "title": "Raid! Oden and the Akazaya Nine!",
-            "absoluteEpisode": 971
+            "absoluteEpisode": 971,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047838.jpg",
+            "duration": "25m",
+            "overview": "Oden keeps dancing naked in the Flower Capital and losing all the trust of the people. His vassals wonder why he is doing this. One day, Orochi comes to Kuri and reveals his evil plan for the Land of Wano."
           },
           {
             "episode": 972,
             "title": "The End of the Battle! Oden vs. Kaido!",
-            "absoluteEpisode": 972
+            "absoluteEpisode": 972,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047841.jpg",
+            "duration": "25m",
+            "overview": "It comes to the decisive battle between Kaido's army and Oden and his samurais. How will the battle end? What card does Kaido have up his sleeve against Oden?"
           },
           {
             "episode": 973,
             "title": "Boiled to Death! Oden's One-hour Struggle!",
-            "absoluteEpisode": 973
+            "absoluteEpisode": 973,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047856.jpg",
+            "duration": "25m",
+            "overview": "Oden proposes a bet to Kaido and Orochi. If he and his vassals manage to survive in the cauldron for a certain amount of time, they must release them. Kaido and Orochi accept his proposal."
           },
           {
             "episode": 974,
             "title": "Oden Wouldn't Be Oden If It Wasn't Boiled!",
-            "absoluteEpisode": 974
+            "absoluteEpisode": 974,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047857.jpg",
+            "duration": "25m",
+            "overview": "Oden and his vassals must endure one hour in the cauldron of boiling oil. If they succeed, they will be free. However, Orochi is already forging the next devious plan."
           },
           {
             "episode": 975,
             "title": "The Castle on Fire! The Fate of the Kozuki Clan!",
-            "absoluteEpisode": 975
+            "absoluteEpisode": 975,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047859.jpg",
+            "duration": "25m",
+            "overview": "Oden Kozuki was executed but thanks to him his vassals were able to escape. They run to Oden Castle to help Toki and her children who are attacked by Kaido."
           },
           {
             "episode": 976,
             "title": "Back to the Present Day! 20 Years Later!",
-            "absoluteEpisode": 976
+            "absoluteEpisode": 976,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047868.jpg",
+            "duration": "25m",
+            "overview": "Momonosuke, Raizo, Kanjuro and Kinemon were sent 20 years into the future by Toki. In the meantime, their remaining comrades wait for them and disguise themselves among the people of Wano."
           },
           {
             "episode": 977,
             "title": "The Sea Is For Pirates! Raid! To Onigashima!",
-            "absoluteEpisode": 977
+            "absoluteEpisode": 977,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047869.jpg",
+            "duration": "25m",
+            "overview": "Kinemon and the other Akazayas want to cross to Onigashima by boat! However, they are stopped by Kaido's fleet on the way. The spy who revealed their plan finally reveals himself."
           },
           {
             "episode": 978,
             "title": "The Worst Generation Charges in! The Battle of the Stormy Sea!",
-            "absoluteEpisode": 978
+            "absoluteEpisode": 978,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047877.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Law and Kid have come to the aid of Kinemon and the Akazayas. Before they can continue sailing towards Onigashima, they have to sink Kaido's battleships."
           },
           {
             "episode": 979,
             "title": "Good Luck?! Leader Kin�emon�s Plot!",
-            "absoluteEpisode": 979
+            "absoluteEpisode": 979,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047885.jpg",
+            "duration": "25m",
+            "overview": "Kyoshiro has come with his clan for support. But to everyone's surprise, he does not attack the Straw Hats or the Akazayas, but targets Kaido's fleet instead. How will the course of the battle develop?"
           },
           {
             "episode": 980,
             "title": "A Tearful Promise! The Kidnapped Momonosuke!",
-            "absoluteEpisode": 980
+            "absoluteEpisode": 980,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047895.jpg",
+            "duration": "25m",
+            "overview": "Kanjuro grabbed Momonsuke and is now on his way to Onigashima. Luffy and the others start heading there, but Kaido's army gets in their way again."
           },
           {
             "episode": 981,
             "title": "A New Member! 'First Son of the Sea' Jimbei!",
-            "absoluteEpisode": 981
+            "absoluteEpisode": 981,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047900.jpg",
+            "duration": "25m",
+            "overview": "Jimbei has joined the Straw Hat Pirates and arrived in time to raid Onigashima. Now Kinemon is planning the invasion of the island."
           },
           {
             "episode": 982,
             "title": "Kaido�s Trump Card! The Tobi Roppo Appear!",
-            "absoluteEpisode": 982
+            "absoluteEpisode": 982,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047912.jpg",
+            "duration": "25m",
+            "overview": "While Luffy, Kinemon and all the other comrades are still on their way to Onigashima there's a big banquet on the island and Queen gives an unforgetable concert."
           },
           {
             "episode": 983,
             "title": "The Samurai Warriors� Earnestness! The Straw Hats Land at Onigashima!",
-            "absoluteEpisode": 983
+            "absoluteEpisode": 983,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047914.jpg",
+            "duration": "25m",
+            "overview": "As the alliance reaches Onigashima, Kinemon uses his sorcery to change everyone's clothes to blend in with the Beasts Pirates. He then gives a speech to the samurai to take advantage of their disguises and reach the castle for the final battle."
           },
           {
             "episode": 984,
             "title": "Luffy Goes Out of Control?! Sneaking into Kaido�s Banquet!",
-            "absoluteEpisode": 984
+            "absoluteEpisode": 984,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047916.jpg",
+            "duration": "25m",
+            "overview": "As Kinemon and Denjiro's forces advance across the mountain paths, Luffy and his men charge through the main entrance. Luffy and Zoro get lost in the hustle and bustle of the banquet and strike up a conversation with Kaido's men."
           },
           {
             "episode": 985,
             "title": "Thinking of Otama! Luffy�s Furious Strike!",
-            "absoluteEpisode": 985
+            "absoluteEpisode": 985,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047919.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Zoro pick a fight with the Beast Pirates for intentionally wasting food. Luffy's Elephant Gun causes even more chaos."
           },
           {
             "episode": 986,
             "title": "Fighting Music! An Ability That Harms Luffy!",
-            "absoluteEpisode": 986
+            "absoluteEpisode": 986,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047923.jpg",
+            "duration": "25m",
+            "overview": "As the Kid Pirates head towards Kaidou, Luffy and Zoro are attacked by Scratchmen Apoo with his Tone-Tone abilities. Kid gets blinded by revenge and attacks Apoo for betraying him."
           },
           {
             "episode": 987,
             "title": "His Dream Broken?! The Trap That Lures Sanji!",
-            "absoluteEpisode": 987
+            "absoluteEpisode": 987,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047924.jpg",
+            "duration": "25m",
+            "overview": "The Kid Pirates abandon their mission to join the fight against Apoo and the Beast Pirates to allow Luffy, Zoro, Kid and Killer continue searching for Kaido. Due to the commotion of the fight, the compound is emptying out, allowing Kinemon's forces to pass undetected."
           },
           {
             "episode": 988,
             "title": "Reinforcements Arrive! The Commander of the Whitebeard Pirates!",
-            "absoluteEpisode": 988
+            "absoluteEpisode": 988,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047939.jpg",
+            "duration": "25m",
+            "overview": "The Big Mom Pirates are climbing up the waterfall of Wano again. However, this time it is not King who hinders them, but an unexpected opponent stands in their way."
           },
           {
             "episode": 989,
             "title": "The Pact Between Men! The Fierce Fighting of Brachio Tank!",
-            "absoluteEpisode": 989
+            "absoluteEpisode": 989,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047949.jpg",
+            "duration": "25m",
+            "overview": "Big Mom chases the Brachio Tank V driven by Chopper and Usopp. Meanwhile, Kanjuro takes Momonosuke to Kaido and Orochi and informs them about Oden's vassals."
           },
           {
             "episode": 990,
             "title": "Thunder Bagua! Here Comes Kaido�s Son!",
-            "absoluteEpisode": 990
+            "absoluteEpisode": 990,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047984.jpg",
+            "duration": "25m",
+            "overview": "Luffy runs into two members of the Tobi Roppo: Ulti and Page The brother and sister duo use their Devil Fruit powers and turn themselves into massive beasts. When Luffy is driven into a corner, someone wearing a demon mask appears and whisks him away."
           },
           {
             "episode": 991,
             "title": "Enemy or Ally? Luffy and Yamato!",
-            "absoluteEpisode": 991
+            "absoluteEpisode": 991,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047986.jpg",
+            "duration": "25m",
+            "overview": "Luffy is kidnapped by the ominous Yamato, who claims to be Kaido's son. How will their encounter unfold? Meanwhile, Chopper and Usopp are still on the run from Big Mom."
           },
           {
             "episode": 992,
             "title": "Desire to be Oden! Yamato�s Dream!",
-            "absoluteEpisode": 992
+            "absoluteEpisode": 992,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047987.jpg",
+            "duration": "25m",
+            "overview": "Orochi announces the execution of Momonosuke and Kaido also has an important announcement to make. Meanwhile, Yamato tells Luffy a story."
           },
           {
             "episode": 993,
             "title": "Explosive?! The Handcuffs that Shackle Yamato�s Freedom!",
-            "absoluteEpisode": 993
+            "absoluteEpisode": 993,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047990.jpg",
+            "duration": "25m",
+            "overview": "The Akazaya have reached the back entrance of Onigashima and try to get through the gate, but they are stopped by the traitor Kanjuro. Meanwhile, Kaido reveals his grand plan."
           },
           {
             "episode": 994,
             "title": "The Akazaya Face-off! Kikunojo vs. Kanjuro!",
-            "absoluteEpisode": 994
+            "absoluteEpisode": 994,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047991.jpg",
+            "duration": "25m",
+            "overview": "While Kaido and Big Mom proclaim their goal, Kikunojo faces Kanjuro at the back entrance of Onigashima and gets into an emotional fight with her former colleague."
           },
           {
             "episode": 995,
             "title": "Raid! Inheriting Oden's Will!",
-            "absoluteEpisode": 995
+            "absoluteEpisode": 995,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048156.jpg",
+            "duration": "25m",
+            "overview": "The Akazaya charge at Kaido from the back entrance of Onigashima and open the fierce battle."
           },
           {
             "episode": 996,
             "title": "Onigashima in Tumult! Luffy�s All-Out War Begins!",
-            "absoluteEpisode": 996
+            "absoluteEpisode": 996,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048157.jpg",
+            "duration": "25m",
+            "overview": "The Akazayas deliver a devastating blow to Kaido. Luffy and Yamato try to support them, but Ulti and Big Mom get in their way. Meanwhile, Nami and Carrot set out to retrieve Zeus."
           },
           {
             "episode": 997,
             "title": "The Battle Under the Moon! The Berserker, Sulong the Moon Lion!",
-            "absoluteEpisode": 997
+            "absoluteEpisode": 997,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048158.jpg",
+            "duration": "25m",
+            "overview": "Kaido's men are amazed when they see thousands of samurai warriors storming into the castle. Kaido goes outside to fight the Akazayas in his dragon form."
           },
           {
             "episode": 998,
             "title": "Zeus� Treason?! The Cornered Nami!",
-            "absoluteEpisode": 998
+            "absoluteEpisode": 998,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048159.jpg",
+            "duration": "25m",
+            "overview": "Shinobu tries to rescue Momonosuke but is discovered and attacked by King. Meanwhile, Nami is chased by Zeus who is ordered by Big Mom to kill her."
           },
           {
             "episode": 999,
             "title": "I�ll Protect You! Yamato Meets Momonosuke!",
-            "absoluteEpisode": 999
+            "absoluteEpisode": 999,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048166.jpg",
+            "duration": "25m",
+            "overview": "Franky, Robin and Jimbei face Big Mom but the Numbers interrupt their fight. One of them holds the Brachio Tank containing Usopp and Chopper in his hand. Meanwhile, Yamato finally meets Momonosuke."
           },
           {
             "episode": 1000,
             "title": "Overwhelming Strength! The Straw Hats Come Together!",
-            "absoluteEpisode": 1000
+            "absoluteEpisode": 1000,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048178.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Zoro try to get to the rooftop to help the Akazayas but Queen and King get in their way. The rest of the Straw Hats arrive, the whole crew assembles and Luffy vows to take down Kaido."
           },
           {
             "episode": 1001,
             "title": "A Risky Invitation! A Plot to Eliminate Queen!",
-            "absoluteEpisode": 1001
+            "absoluteEpisode": 1001,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048250.jpg",
+            "duration": "25m",
+            "overview": "Who's-Who tries to bring Drake and Hawkins on board to kill Queen. Meanwhile, the Straw Hats are facing two large monsters that remind them of the Giant who they once struggled to take down."
           },
           {
             "episode": 1002,
             "title": "A New Rivalry! Nami and Ulti!",
-            "absoluteEpisode": 1002
+            "absoluteEpisode": 1002,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048275.jpg",
+            "duration": "25m",
+            "overview": "Drake vows to fight alongside Luffy's side, but Zoro becomes skeptical and challenges him to a fight. Meanwhile, Nami confronts Ulti, who is angered since her brother was attacked."
           },
           {
             "episode": 1003,
             "title": "A Heroic Blade! Akazaya vs. Kaido, Again Once More!",
-            "absoluteEpisode": 1003
+            "absoluteEpisode": 1003,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048294.jpg",
+            "duration": "25m",
+            "overview": "Queen uses a new version of the Plague Bullets which will turn the samurai into monsters. Meanwhile, the Minks keep pushing the fight against the Gifters and drive Jack into a corner."
           },
           {
             "episode": 1004,
             "title": "An Inherited Technique! Unleashing Oden�s Secret Swordplay!",
-            "absoluteEpisode": 1004
+            "absoluteEpisode": 1004,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048306.jpg",
+            "duration": "25m",
+            "overview": "While Luffy rushes to the roof and Yamato tries to catch up with Momonosuke to protect him, the Akazayas finally confront Kaido. Hearing Kaido taunt them for their weakness, the samurais attack him relentlessly."
           },
           {
             "episode": 1005,
             "title": "The Power of Ice Oni! A New Version of the Plague Rounds!",
-            "absoluteEpisode": 1005
+            "absoluteEpisode": 1005,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048309.jpg",
+            "duration": "25m",
+            "overview": "Queen blazes away at Zoro and Drake with a special version of the Plague Rounds. Meanwhile, Luffy and Sanji run into another Headliner with a special ability on their way to the rooftop."
           },
           {
             "episode": 1006,
             "title": "I Won�t Forgive Him! Chopper�s Determination!",
-            "absoluteEpisode": 1006
+            "absoluteEpisode": 1006,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048318.jpg",
+            "duration": "25m",
+            "overview": "King orders his subordinates to go after Momonosuke. Meanwhile, seeing people suffering from Queen's Plague Rounds, Chopper is determined to save everyone."
           },
           {
             "episode": 1007,
             "title": "Zoro�s Pursuit! Ice Oni Tag!",
-            "absoluteEpisode": 1007
+            "absoluteEpisode": 1007,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048326.jpg",
+            "duration": "25m",
+            "overview": "Yamato fights Sasaki to protect Momonosuke. In the meantime, Zoro tries to get rid of the Gifters who have turned into Ice Oni, but Queen starts a horrible game that involves the antibody for the virus."
           },
           {
             "episode": 1008,
             "title": "Nami Surrenders?! Ulti�s Fierce Headbutt!",
-            "absoluteEpisode": 1008
+            "absoluteEpisode": 1008,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048560.jpg",
+            "duration": "25m",
+            "overview": "Ulti and Page One  chase Nami and Usopp. Cornered, Nami gives in and Ulti pushes her to say the unthinkable."
           },
           {
             "episode": 1009,
             "title": "Sasaki�s Onslaught! Armored Division vs. Yamato!",
-            "absoluteEpisode": 1009
+            "absoluteEpisode": 1009,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048561.jpg",
+            "duration": "25m",
+            "overview": "Carrot and Wanda help Marco, who is cornered by Big Mom and Perospero. In the meantime, Yamato fights against Sasaki in order to protect Shinobu and Momonosuke."
           },
           {
             "episode": 1010,
             "title": "Eliminate the Ice Oni! Chopper�s Fire Trick!",
-            "absoluteEpisode": 1010
+            "absoluteEpisode": 1010,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048566.jpg",
+            "duration": "25m",
+            "overview": "Zoro and Drake continue to chase Apoo to get the antibody against Ice Oni. In the castle, Luffy, Jimbei and Sanji are climbing up the stairs to reach the rooftop."
           },
           {
             "episode": 1011,
             "title": "It�s Not Okay! The Spider Lures Sanji!",
-            "absoluteEpisode": 1011
+            "absoluteEpisode": 1011,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048571.jpg",
+            "duration": "25m",
+            "overview": "Sanji hears a woman's scream for help and rushes into the room the scream can be heard from. However, it's a trap set up by Black Maria of the Tobi Roppo. How will Sanji get out of this sticky situation?"
           },
           {
             "episode": 1012,
             "title": "A Turnaround Move! The Flames of Marco the Phoenix!",
-            "absoluteEpisode": 1012
+            "absoluteEpisode": 1012,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048581.jpg",
+            "duration": "25m",
+            "overview": "While Kaido begins the New Onigashima Project and makes the island float, Marco appears in front of Chopper and the others, who are struggling with Ice Oni."
           },
           {
             "episode": 1013,
             "title": "Yamato�s Past! The Man Who Came for an Emperor of the Sea!",
-            "absoluteEpisode": 1013
+            "absoluteEpisode": 1013,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048582.jpg",
+            "duration": "25m",
+            "overview": "Yamato tells Momonosuke and Shinobu that he once met Ace, who came to Onigashima looking to get Kaido's head. Yamato and Ace engaged in a fierce battle that eventually turned into an important friendship."
           },
           {
             "episode": 1014,
             "title": "Marco�s Tears! The Bond of the Whitebeard Pirates!",
-            "absoluteEpisode": 1014
+            "absoluteEpisode": 1014,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048583.jpg",
+            "duration": "25m",
+            "overview": "Marco helps Zoro get to the rooftop where Kaido and Big Mom are waiting for their opponents."
           },
           {
             "episode": 1015,
             "title": "Straw Hat Luffy! The Man Who Will Become the King of the Pirates!",
-            "absoluteEpisode": 1015
+            "absoluteEpisode": 1015,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048585.jpg",
+            "duration": "25m",
+            "overview": "Yamato tells Momonosuke about how Ace gave him hope for the future. Meanwhile, Luffy and the other allied pirates from the Worst Generation make it to the rooftop to finally face off against Kaido and Big Mom."
           },
           {
             "episode": 1016,
             "title": "The Battle of the Monsters! The Three Stubborn Captains!",
-            "absoluteEpisode": 1016
+            "absoluteEpisode": 1016,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048637.jpg",
+            "duration": "25m",
+            "overview": "Luffy's strong attack reminds Kaido of all the strong opponents he has faced. Meanwhile, Sanji is caught and interrogated by Black Maria."
           },
           {
             "episode": 1017,
             "title": "Barrage of Powerful Techniques! The Fierce Attacks of the Worst Generation!",
-            "absoluteEpisode": 1017
+            "absoluteEpisode": 1017,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048646.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Law, Kid, Zoro and Killer keep landing hard blows against Kaido in tandem despite the arguing. However, when Big Mom steps in and unleashes powerful lightning strikes, the tide turns for all except one of the rookies."
           },
           {
             "episode": 1018,
             "title": "Kaido Laughs! The Emperors of the Sea vs. the New Generation!",
-            "absoluteEpisode": 1018
+            "absoluteEpisode": 1018,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048657.jpg",
+            "duration": "25m",
+            "overview": "Luffy batters Kaido with his Kong Gatling and delivers a final blow using all his strength. Big Mom tries to fight back, but Law gets in her way."
           },
           {
             "episode": 1019,
             "title": "Otama�s Secret Plan! Operation Kibi Dango!",
-            "absoluteEpisode": 1019
+            "absoluteEpisode": 1019,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048678.jpg",
+            "duration": "25m",
+            "overview": "Tama wondered if there was anything she could do to help the Straw Hats and the samurai. Now that she's here on Onigashima, it's time to execute her powerful plan – Operation Kibi Dango!"
           },
           {
             "episode": 1020,
             "title": "Sanji�s Scream! An SOS Echoes Over the Island!",
-            "absoluteEpisode": 1020
+            "absoluteEpisode": 1020,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048688.jpg",
+            "duration": "25m",
+            "overview": "Sanji is captured and tortured by the Black Maria. She wants him to hand over Robin to her. Meanwhile, Carrot and Wanda continue their fight against Perospero."
           },
           {
             "episode": 1021,
             "title": "Spank Strikes! Sanji's Woman-trouble!",
-            "absoluteEpisode": 1021
+            "absoluteEpisode": 1021,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048691.jpg",
+            "duration": "25m",
+            "overview": "Robin bursts in to rescue Sanji from the fangs of Black Maria. In the meantime, Yamato, Momonosuke and Shinobu are spotted hiding by the enemy and are forced to fight their pursuers."
           },
           {
             "episode": 1022,
             "title": "No Regrets! Luffy and Boss, a Master-Disciple Bond!",
-            "absoluteEpisode": 1022
+            "absoluteEpisode": 1022,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048695.jpg",
+            "duration": "25m",
+            "overview": "Chopper creates and tries the antidote for Ice Oni while Law, Kid, Zoro and Killer continue their battle against Big Mom and Kaido on the roof of the Skull Dome."
           },
           {
             "episode": 1023,
             "title": "All Set! Chopperphage Nebulizer!",
-            "absoluteEpisode": 1023
+            "absoluteEpisode": 1023,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048697.jpg",
+            "duration": "25m",
+            "overview": "While the captains of the Worst Generation still struggle against Kaido and Big Mom, Chopper finally manages to cure the samurai and Beast Pirates infected by Ice Oni."
           },
           {
             "episode": 1024,
             "title": "Oden Appears! The Confused Hearts of the Akazaya Members!",
-            "absoluteEpisode": 1024
+            "absoluteEpisode": 1024,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048699.jpg",
+            "duration": "25m",
+            "overview": "The wounded Akazaya members are surprised to see Kozuki Oden alive. They were disappointed by their failure to take down Kaido, but now with their lord, they are filled with hope to face their sworn enemy again."
           },
           {
             "episode": 1025,
             "title": "The Worst Generation Gets Wiped Out?! The Emperors� Deadly Attack!",
-            "absoluteEpisode": 1025
+            "absoluteEpisode": 1025,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048700.jpg",
+            "duration": "25m",
+            "overview": "The Akazaya try to save Momonosuke but Jack stands in their way. Meanwhile, Chopper and Marco team up to take down Queen and the fierce battle on the rooftop rages on."
           },
           {
             "episode": 1026,
             "title": "The Supernovas Strike Back! The Mission to Tear Apart the Emperors!",
-            "absoluteEpisode": 1026
+            "absoluteEpisode": 1026,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048701.jpg",
+            "duration": "25m",
+            "overview": "While the Akazaya take on Orochi, the members of the Worst Generation continue to fight against the Emperors. They try to separate Kaido and Big Mom to increase their chances of victory."
           },
           {
             "episode": 1027,
             "title": "Defend Luffy! Zoro and Law�s Sword Technique!",
-            "absoluteEpisode": 1027
+            "absoluteEpisode": 1027,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048705.jpg",
+            "duration": "25m",
+            "overview": "After Big Mom was pushed off of the island the furious battle against Kaido continues. When Kaido tries to beat up the unconscious Luffy, Zoro launches an all-out attack to protect his captain."
           },
           {
             "episode": 1028,
             "title": "Surpass the Emperor of the Sea! Luffy Strikes Back with an Iron Fist!",
-            "absoluteEpisode": 1028
+            "absoluteEpisode": 1028,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048711.jpg",
+            "duration": "25m",
+            "overview": "The Worst Generation and Emperors scatter across Onigashima, preparing for new fights. Kid prepares to battle Big Mom, Killer fights Hawkins, and Luffy decides to take on Kaido all by himself. Meanwhile, Nami, Tama, and Usopp return to the Live Floor, chased by Page One."
           },
           {
             "episode": 1029,
             "title": "A Faint Memory! Luffy and Red-Haired�s Daughter Uta!",
-            "absoluteEpisode": 1029
+            "absoluteEpisode": 1029,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048836.jpg",
+            "duration": "25m",
+            "overview": "Luffy meets Shanks and his daughter Uta for the first time and the two children begin developing their friendship."
           },
           {
             "episode": 1030,
             "title": "A Pledge for the New Genesis! Luffy and Uta!",
-            "absoluteEpisode": 1030
+            "absoluteEpisode": 1030,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/419/1048838.jpg",
+            "duration": "25m",
+            "overview": "After Uta travels with Shanks, she is not aboard when Shanks returns to Foosha Village. This shocks Luffy and he wonders what happened to her. At the same time, news spread that the island Elegia has been mysteriously destroyed."
           },
           {
             "episode": 1031,
             "title": "Nami Screams - A Deadly Death Race!",
-            "absoluteEpisode": 1031
+            "absoluteEpisode": 1031,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/421/1052622.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Kaido, who are both using Conqueror's Haki, keep clashing! In the meantime, Usopp, Nami and Tama are being chased by Page One on their way to the Performance Floor."
           },
           {
             "episode": 1032,
             "title": "The Dawn of the Land of Wano! The All-Out Battle Heats Up!",
-            "absoluteEpisode": 1032
+            "absoluteEpisode": 1032,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/421/1054539.jpg",
+            "duration": "25m",
+            "overview": "The Akazaya are rushing to Momonosuke while Yamato tries to lure away the enemies. At the same time, Luffy lands a few punches on Kaido, Chopper struggles against Queen and Ulti faces off against Big Mom."
           },
           {
             "episode": 1033,
             "title": "The Conclusion! Luffy, Accelerating Fist of the Supreme King",
-            "absoluteEpisode": 1033
+            "absoluteEpisode": 1033,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/422/1056671.jpg",
+            "duration": "25m",
+            "overview": "Sanji is forced to carry Zoro to the Live Floor, while Nami, Usopp and Big Mom face off against Ulti. On the rooftop, the intense battle between Luffy and Kaido continues."
           },
           {
             "episode": 1034,
             "title": "Luffy, Defeated! The Straw Hats in Jeopardy?!",
-            "absoluteEpisode": 1034
+            "absoluteEpisode": 1034,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/423/1058349.jpg",
+            "duration": "25m",
+            "overview": "Luffy falls into the sea after being pushed off the rooftop by Kaido. Meanwhile, Zeus intervenes in the fight between Big Mom and Nami's group and Chopper continues to stall Queen on the Live Floor."
           },
           {
             "episode": 1035,
             "title": "The Animal Kingdom Pirates Trample Down! The End of the Kozuki Clan!",
-            "absoluteEpisode": 1035
+            "absoluteEpisode": 1035,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/424/1061185.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats and their allies receive the news that Luffy lost his battle against Kaido. Meanwhile, Kanjuro disguises himself as Oden again and approaches Momonosuke to destroy the Kozuki lineage. However, Kin'emon amd Kiku stand in his way."
           },
           {
             "episode": 1036,
             "title": "Fight Against the Dark Night! The Commander-in-chief of the Land of Wano Sounds Off!",
-            "absoluteEpisode": 1036
+            "absoluteEpisode": 1036,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/426/1066469.jpg",
+            "duration": "25m",
+            "overview": "Chopper is discouraged by the news of Luffy's loss and Queen doesn't miss the chance and tries to finish him off. However, Sanji comes to Choppers rescue. Meanwhile, Kin'emon fights for his life to save Momonosuke who makes a big anouncement after escaping!"
           },
           {
             "episode": 1037,
             "title": "Believe in Luffy! The Alliance�s Counterattack Begins!",
-            "absoluteEpisode": 1037
+            "absoluteEpisode": 1037,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/427/1069060.jpg",
+            "duration": "25m",
+            "overview": "Momonosuke and Shinobu run from Kaido while Law and Kid team up against Big Mom. Meanwhile, Nami and Usopp encounter an enemy they thought they had already defeated."
           },
           {
             "episode": 1038,
             "title": "Nami�s Lethal Attack! Otama�s Desperate Challenge!",
-            "absoluteEpisode": 1038
+            "absoluteEpisode": 1038,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/428/1071568.jpg",
+            "duration": "25m",
+            "overview": "Nami strikes a thunder blast against Ulti to clear their way to the Live Floor. After that Usopp catches one of the Marys and Otama stands up to give a command to the Gifters."
           },
           {
             "episode": 1039,
             "title": "A Dramatic Increase of Allies! Straw Hats Fight Back!",
-            "absoluteEpisode": 1039
+            "absoluteEpisode": 1039,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/429/1074195.jpg",
+            "duration": "25m",
+            "overview": "Hearing Otama's command, the Gifters side with the samurai. Chopper starts to take care of Zoro and Jinbe gets stunned by Who's-Who's story."
           },
           {
             "episode": 1040,
             "title": "The Pride of a Helmsman! The Enraged Jimbei!",
-            "absoluteEpisode": 1040
+            "absoluteEpisode": 1040,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/430/1076948.jpg",
+            "duration": "25m",
+            "overview": "When Who's-Who asks Jimbei a question, he tramples on the dignity of the Fish-Men, causing Jimbei's outrage."
           },
           {
             "episode": 1041,
             "title": "Showdown Battles of the Monsters! Yamato and Franky",
-            "absoluteEpisode": 1041
+            "absoluteEpisode": 1041,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/431/1078630.jpg",
+            "duration": "25m",
+            "overview": "Yamato unleashes his true power, Queen bombards Sanji with his cyborg-powers and Sasaki launches tricky attacks against Franky."
           },
           {
             "episode": 1042,
             "title": "The Predator�s Trap - Black Maria�s Temptation!",
-            "absoluteEpisode": 1042
+            "absoluteEpisode": 1042,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/432/1080565.jpg",
+            "duration": "25m",
+            "overview": "Suddenly Nico Olvia, Professor Clover and the giant Jaguar D. Saul appear in front of Robin."
           },
           {
             "episode": 1043,
             "title": "Slash the Nightmare! Brook Draws His Freezing Sword!",
-            "absoluteEpisode": 1043
+            "absoluteEpisode": 1043,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/433/1082888.jpg",
+            "duration": "25m",
+            "overview": "In the dense mist, Brook is surprised to see his old friends, the Rumbar Pirates and Laboon. They reminisce about the old days and play music together, however, they suddenly attack Brook."
           },
           {
             "episode": 1044,
             "title": "Clutch! A Demon Incarnate, Robin!",
-            "absoluteEpisode": 1044
+            "absoluteEpisode": 1044,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/434/1086015.jpg",
+            "duration": "25m",
+            "overview": "After enduring Black Maria's physical and mental torture, Robin shows what she is truly capable of as a Demon Child."
           },
           {
             "episode": 1045,
             "title": "A Spell! Kid and Zoro Facing Threats!",
-            "absoluteEpisode": 1045
+            "absoluteEpisode": 1045,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/435/1089930.jpg",
+            "duration": "25m",
+            "overview": "While Kid and Law take on Big Mom, Killer battles Hawkins and Sanji stuggles against both King and Queen, who try to go after Zoro while he is still incapacitated."
           },
           {
             "episode": 1046,
             "title": "Taking a Chance! The Two Arms Go into Battle!",
-            "absoluteEpisode": 1046
+            "absoluteEpisode": 1046,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/440/1101417.jpg",
+            "duration": "25m",
+            "overview": "Zoro gets back on his feet after taking the instant recovery drug from Zou and confronts King and Queen along with Sanji."
           },
           {
             "episode": 1047,
             "title": "Ascend to the Dawn! A Pink Dragon Gets Agitated",
-            "absoluteEpisode": 1047
+            "absoluteEpisode": 1047,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/442/1105200.jpg",
+            "duration": "25m",
+            "overview": "Zoro and Sanji continue their clash against King and Queen. Meanwhile Inuarashi confronts his nemesis Jack, who destroyed his country and Nekomamushi confronts Perospero, who is responsible for Pedro's death."
           },
           {
             "episode": 1048,
             "title": "For the Future! Yamato and the Great Swordsmen�s Pledge",
-            "absoluteEpisode": 1048
+            "absoluteEpisode": 1048,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/443/1108203.jpg",
+            "duration": "25m",
+            "overview": "Yamato remembers three great samurai who he met as a child. Their stunning choice for the future of Wano encourages Yamato to keep fighting."
           },
           {
             "episode": 1049,
             "title": "Luffy Soars! Revenge Against the King of the Beasts",
-            "absoluteEpisode": 1049
+            "absoluteEpisode": 1049,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/444/1112029.jpg",
+            "duration": "25m",
+            "overview": "Luffy flies on Momonosuke in his giant pink dragon form to get to Onigashima with him. Meanwhile, Yamato vows to survive until Luffy returns."
           },
           {
             "episode": 1050,
             "title": "Two Dragons Face Off! Momonosuke�s Determination!",
-            "absoluteEpisode": 1050
+            "absoluteEpisode": 1050,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113992.jpg",
+            "duration": "25m",
+            "overview": "With Luffy's encouragement, Momonosuke bravely steps forward and faces Kaido in his dragon form."
           },
           {
             "episode": 1051,
             "title": "A Legend All Over Again! Luffy�s Fist Roars in the Sky",
-            "absoluteEpisode": 1051
+            "absoluteEpisode": 1051,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/446/1117452.jpg",
+            "duration": "25m",
+            "overview": "Yamato and Momonosuke take on the important task of saving Onigashima. Meanwhile, Luffy and Kaido's clash shakes up the sky."
           },
           {
             "episode": 1052,
             "title": "The Situation Has Grown Tense! The End of Onigashima!",
-            "absoluteEpisode": 1052
+            "absoluteEpisode": 1052,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/448/1121062.jpg",
+            "duration": "25m",
+            "overview": "While Zoro and Sanji are in a battle against King a Queen, Yamato and Momonosuke launch a secret operation."
           },
           {
             "episode": 1053,
             "title": "Sanji's Mutation - The Two Arms in Crisis!",
-            "absoluteEpisode": 1053
+            "absoluteEpisode": 1053,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218754.jpg",
+            "duration": "25m",
+            "overview": "Queen uses a special technique which can break every bone in Sanji's body. On the verge of a crisis, Sanji feels something strange once more."
           },
           {
             "episode": 1054,
             "title": "Death to Your Partner! Killer's Deadly Gamble!",
-            "absoluteEpisode": 1054
+            "absoluteEpisode": 1054,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218758.jpg",
+            "duration": "25m",
+            "overview": "As Kid is dying not knowing where his damage is coming from, Killer takes a gamble in his fight with Hawkins."
           },
           {
             "episode": 1055,
             "title": "A Shadowy Figure Pulls the Strings! Onigashima in Flames",
-            "absoluteEpisode": 1055
+            "absoluteEpisode": 1055,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218759.jpg",
+            "duration": "25m",
+            "overview": "Kinemon hears an unexpected voice calling for Kanjuro. Orochi tries to stir up Kanjuro to make him perform one last time."
           },
           {
             "episode": 1056,
             "title": "Strike Back! Law and Kid's Counterattack Alliance",
-            "absoluteEpisode": 1056
+            "absoluteEpisode": 1056,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218760.jpg",
+            "duration": "25m",
+            "overview": "Law and Child are facing a formidable opponent in Big Mom. But they see a chance to defeat her when they cooperate and make use of their awakened Devil Fruit powers."
           },
           {
             "episode": 1057,
             "title": "For Luffy - Sanji and Zoro's Oath",
-            "absoluteEpisode": 1057
+            "absoluteEpisode": 1057,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218761.jpg",
+            "duration": "25m",
+            "overview": "Sanji is plagued by the thought of turning into a vicious Germa warrior like his siblings. When he makes up his mind, he asks Zoro the ultimate favor."
           },
           {
             "episode": 1058,
             "title": "The Onslaught of Kazenbo - Orochi's Evil Clutches Close in",
-            "absoluteEpisode": 1058
+            "absoluteEpisode": 1058,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218762.jpg",
+            "duration": "25m",
+            "overview": "Kanjuro's creation, Kazenbo, is wreaking havoc all throughout the Skull Dome, causing panic among Beasts Pirates and samurai, alike."
           },
           {
             "episode": 1059,
             "title": "Zoro's Hardship - A Monster! King the Wildfire",
-            "absoluteEpisode": 1059
+            "absoluteEpisode": 1059,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218763.jpg",
+            "duration": "25m",
+            "overview": "Zoro is up against an seemingly unbeatable opponent in King. Not even one of Zoro's most lethal attacks manages to injure him."
           },
           {
             "episode": 1060,
             "title": "Secrets of Enma! The Cursed Sword Entrusted to Zoro",
-            "absoluteEpisode": 1060
+            "absoluteEpisode": 1060,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218764.jpg",
+            "duration": "25m",
+            "overview": "As Zoro recalls his past, the clues from his memory help him realize the secret necessary to truly master Enma."
           },
           {
             "episode": 1061,
             "title": "The Strike of an Ifrit! Sanji vs. Queen",
-            "absoluteEpisode": 1061
+            "absoluteEpisode": 1061,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218765.jpg",
+            "duration": "25m",
+            "overview": "Taking advantage of his scientific enhancements, Sanji discovers a new ability that could prove decisive in his fight with Queen."
           },
           {
             "episode": 1062,
             "title": "The Three-Sword Style of the Supreme King! Zoro vs. King",
-            "absoluteEpisode": 1062
+            "absoluteEpisode": 1062,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218766.jpg",
+            "duration": "25m",
+            "overview": "King recalls his first meeting with his captain and declares that Kaido is the one to become the King of the Pirates, which leads Zoro to set his swords alight with hellfire."
           },
           {
             "episode": 1063,
             "title": "Luffy is on the Move! A Turning Point of a New Era!",
-            "absoluteEpisode": 1063
+            "absoluteEpisode": 1063,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218767.jpg",
+            "duration": "25m",
+            "overview": "Usopp discovers the severely injured Kiku and the upper body of Kinemon. However, they are unable to escape, because they are surrounded by Gifters."
           },
           {
             "episode": 1064,
             "title": "Drunken Dragon Bagua! The Lawless Dragon Closing in on Luffy",
-            "absoluteEpisode": 1064
+            "absoluteEpisode": 1064,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218768.jpg",
+            "duration": "25m",
+            "overview": "The battle between Luffy and Kaido is becoming increasingly fierce. However, Kaido who is thrilled to have a strong opponent starts drinking too much."
           },
           {
             "episode": 1065,
             "title": "The Destruction of the Alliance?! Fire up, the Will of the New Generation!",
-            "absoluteEpisode": 1065
+            "absoluteEpisode": 1065,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218769.jpg",
+            "duration": "25m",
+            "overview": "With Law and the Kid  worn out and deeply injured, Big Mom tries to get to the rooftop."
           },
           {
             "episode": 1066,
             "title": "Here Comes the Main Act! Powerful Techniques of Shockwave and Magnetism!",
-            "absoluteEpisode": 1066
+            "absoluteEpisode": 1066,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218770.jpg",
+            "duration": "25m",
+            "overview": "After Big Mom recovers from Kid's previous onslaught, she unleashes a potent counterattack that endangers both Law and Kid. Even though they are exhausted, the two rivals start their own desperate attempt to get Big Mom out of Onigashima."
           },
           {
             "episode": 1067,
             "title": "To the New Era! Settled! The Determination of the Brats",
-            "absoluteEpisode": 1067
+            "absoluteEpisode": 1067,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218771.jpg",
+            "duration": "25m",
+            "overview": "Big Mom is defeated by Law and Kid, whereupon she falls into the exposed magma chamber below."
           },
           {
             "episode": 1068,
             "title": "Moon Princess Echoes! The Final Phase of the Land of Wano!",
-            "absoluteEpisode": 1068
+            "absoluteEpisode": 1068,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218772.jpg",
+            "duration": "25m",
+            "overview": "Kaido mourns Big Mom's defeat and remembers the day he first met her. Meanwhile, Orochi sees the true nature of Komurasaki, the woman he loves, and trembles with fear."
           },
           {
             "episode": 1069,
             "title": "There is Only One Winner - Luffy vs. Kaido",
-            "absoluteEpisode": 1069
+            "absoluteEpisode": 1069,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218773.jpg",
+            "duration": "25m",
+            "overview": "A CP0 agent tries to get to Luffy, but Drake gets in the way. Meanwhile, Luffy, who is running dangerously low on energy, uses his final Gear Four to free the people of Wano from Kaido."
           },
           {
             "episode": 1070,
             "title": "Luffy Is Defeated?! The Determination of Those Left Behind",
-            "absoluteEpisode": 1070
+            "absoluteEpisode": 1070,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218774.jpg",
+            "duration": "25m",
+            "overview": "The battle between Luffy and Kaido comes to an unexpected end. After Kaido descends, he informs everyone that Luffy has lost."
           },
           {
             "episode": 1071,
             "title": "Luffy's Peak - Attained! Gear Five",
-            "absoluteEpisode": 1071
+            "absoluteEpisode": 1071,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218775.jpg",
+            "duration": "25m",
+            "overview": "As Luffy's heart pounds in a funny way, the Five Elders reveal the secret behind the Gum-Gum Fruit. Meanwhile, Orochi tries to convince Komurasaki to escape with him, but when he sees Kanjuro, he makes a malicious decision."
           },
           {
             "episode": 1072,
             "title": "The Ridiculous Power! Gear Five in Full Play",
-            "absoluteEpisode": 1072
+            "absoluteEpisode": 1072,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218776.jpg",
+            "duration": "25m",
+            "overview": "While Luffy enjoys his new, bizarre power, Kaido is perplexed and can't make sense of it. As they wait for Luffy to win, Kid, Law, and the other allies carry on with the battle below."
           },
           {
             "episode": 1073,
             "title": "No Way Out! A Hellish Scene on Onigashima",
-            "absoluteEpisode": 1073
+            "absoluteEpisode": 1073,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218777.jpg",
+            "duration": "25m",
+            "overview": "Raizo and Jimbei work together to put out the fire that has spread throughout Onigashima."
           },
           {
             "episode": 1074,
             "title": "I Trust Momo - Luffy's Final Powerful Technique!",
-            "absoluteEpisode": 1074
+            "absoluteEpisode": 1074,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218778.jpg",
+            "duration": "25m",
+            "overview": "Momonosuke struggles to create flame clouds to sustain Onigashima. To fulfill his promise tothe people of Wano, Luffy inflates his fist to strike Kaido."
           },
           {
             "episode": 1075,
             "title": "20 Years' Worth of Prayers! Take Back the Land of Wano!",
-            "absoluteEpisode": 1075
+            "absoluteEpisode": 1075,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218779.jpg",
+            "duration": "25m",
+            "overview": "As Luffy and Kaido prepare their final attack, Momonosuke is tasked with moving Onigashima out of the way of Luffy's attack."
           },
           {
             "episode": 1076,
             "title": "The World That Luffy Wants!",
-            "absoluteEpisode": 1076
+            "absoluteEpisode": 1076,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218780.jpg",
+            "duration": "25m",
+            "overview": "Kaido recalls being treated unfairly in the past and his vision of the ideal world. While his friends fight to survive on Onigashima, Luffy is asked by Kaido to imagine his ideal world."
           },
           {
             "episode": 1077,
             "title": "The Curtain Falls! The Winner, Straw Hat Luffy!",
-            "absoluteEpisode": 1077
+            "absoluteEpisode": 1077,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218781.jpg",
+            "duration": "25m",
+            "overview": "The samurai and the Straw Hats shout for joy as they hear that Luffy defeated Kaido."
           },
           {
             "episode": 1078,
             "title": "He Returns! The Shogun of the Land of Wano, Kozuki Momonosuke",
-            "absoluteEpisode": 1078
+            "absoluteEpisode": 1078,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218782.jpg",
+            "duration": "25m",
+            "overview": "When Kinemon and the other samurai who were thought to be dead emerge from the smoke, the residents of the Flower Capital become baffled. Momonosuke then announces to their victory and the return of the Kozuki Family to the citizens."
           },
           {
             "episode": 1079,
             "title": "The Morning Comes! Luffy and the Others Rest!",
-            "absoluteEpisode": 1079
+            "absoluteEpisode": 1079,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218783.jpg",
+            "duration": "25m",
+            "overview": "As the Five Elders learn of Wano's status, a festival is held to celebrate the alliance's victory. Meanwhile, an Admiral heads to Wano."
           },
           {
             "episode": 1080,
             "title": "A Celebration Banquet! The New Emperors of the Sea!",
-            "absoluteEpisode": 1080
+            "absoluteEpisode": 1080,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218784.jpg",
+            "duration": "25m",
+            "overview": "The news of the defeat of the Emperors of the Sea spreads across the world. Luffy enjoys the banquet but just as he is about to make a toast, an enraged Kid comes in to strike him."
           },
           {
             "episode": 1081,
             "title": "The World Will Burn! The Onslaught of a Navy Admiral!",
-            "absoluteEpisode": 1081
+            "absoluteEpisode": 1081,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218785.jpg",
+            "duration": "25m",
+            "overview": "The Akazaya attempt to stop Admiral Ryokugyu as he approaches the Flower Capital, but he outclasses them with his Devil Fruit power."
           },
           {
             "episode": 1082,
             "title": "The Coming of the New Era! The Red-Haired's Imperial Rage",
-            "absoluteEpisode": 1082
+            "absoluteEpisode": 1082,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/487/1218786.jpg",
+            "duration": "25m",
+            "overview": "Momonosuke and the Akazaya try to defend the Land of Wano against Admiral Ryokugyu, but they get driven into a corner."
           },
           {
             "episode": 1083,
             "title": "The World That Moves On! A New Organization, Cross Guild",
-            "absoluteEpisode": 1083
+            "absoluteEpisode": 1083,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/488/1222393.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats are surprised when Robin tells them about the Ancient Weapon Pluton. Kid reveals that a new criminal organization, the Cross Guild, has emerged."
           },
           {
             "episode": 1084,
             "title": "Time to Depart - The Land of Wano and the Straw Hats",
-            "absoluteEpisode": 1084
+            "absoluteEpisode": 1084,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/488/1222394.jpg",
+            "duration": "25m",
+            "overview": "Zoro visits Yasuie's grave, where he encounters Hiyori, while Luffy visits the ruins of Oden Castle. Later, Luffy and Tama eat red-bean soup together for the last time"
           },
           {
             "episode": 1085,
             "title": "The Last Curtain! Luffy and Momonosuke's Vow",
-            "absoluteEpisode": 1085
+            "absoluteEpisode": 1085,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/488/1222433.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates say their final goodbyes to Momonosuke, Kinemon, and Yamato, and formally declare Wano Country as one of their territories."
           },
           {
             "episode": 1086,
             "title": "A New Emperor! Buggy the Genius Jester!",
-            "absoluteEpisode": 1086
+            "absoluteEpisode": 1086,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/509/1273573.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hat Pirates' new bounties are revealed. Meanwhile, Crocodile and  Mihawk, visit Buggy to discuss their newly-established organization, Cross Guild."
           },
           {
             "episode": 1087,
             "title": "The War on the Island of Women! A Case Involving Koby the Hero",
-            "absoluteEpisode": 1087
+            "absoluteEpisode": 1087,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/509/1273574.jpg",
+            "duration": "25m",
+            "overview": "With the aid of their new Seraphim Pacifista, the Marines invade Amazon Lily with the intention of apprehending Pirate Empress Boa Hancock. But the Blackbeard Pirates make an appearance on Amazon Lily as well."
           },
           {
             "episode": 1088,
             "title": "Luffy's Dream",
-            "absoluteEpisode": 1088
+            "absoluteEpisode": 1088,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/509/1273575.jpg",
+            "duration": "25m",
+            "overview": "The three-way struggle between the Navy, the Blackbeard Pirates, and the Kuja Pirates comes to an end when an unexpected figure shows up. On the Sunny, the Straw Hats talk about the recent incidents around the world and Luffy's words surprise everyone."
           }
         ]
       },
@@ -5707,337 +8970,538 @@ window._ANIME_DATA = [
           {
             "episode": 1089,
             "title": "Entering a New Chapter! Luffy and Sabo's Paths!",
-            "absoluteEpisode": 1089
+            "absoluteEpisode": 1089,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/512/1281341.jpg",
+            "duration": "25m",
+            "overview": "Sabo, the Chief of Staff of the Revolutionary Army, contacts Koala and everyone in Kamabakka Queendom. He explains to them about the things that he is accused of, but someone who was eavesdropping on the call takes a stunning action."
           },
           {
             "episode": 1090,
             "title": "A New Island! Future Island Egghead",
-            "absoluteEpisode": 1090
+            "absoluteEpisode": 1090,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438859.jpg",
+            "duration": "25m",
+            "overview": "Luffy and Chopper fall into the rough cold sea along with the mysterious girl. Jimbei tries to help them but another attack comes from the unknown creature. Meanwhile, the Sunny is hit by torpedoes and the rest of the Straw Hats are thrown into the sea, too."
           },
           {
             "episode": 1091,
             "title": "Brimming with the Future! An Adventure on the Island of Science!",
-            "absoluteEpisode": 1091
+            "absoluteEpisode": 1091,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438860.jpg",
+            "duration": "25m",
+            "overview": "A young girl who came out of the big robot names herself Dr. Vegapunk and it surprises Franky and the rest of the Straw Hats. Meanwhile, Luffy's group gets to the surface of the island where futuristic buildings stand and unknown giant creatures wander about."
           },
           {
             "episode": 1092,
             "title": "Bonney's Lamentation! Darkness Lurking on the Future Island",
-            "absoluteEpisode": 1092
+            "absoluteEpisode": 1092,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438861.jpg",
+            "duration": "25m",
+            "overview": "While Luffy and the others are enjoying the futuristic machines of Egghead, someone who resembles Bartholomew Kuma comes after them. When Luffy tries to fight back, Bonney stops him and reveals her shocking relationship with Kuma."
           },
           {
             "episode": 1093,
             "title": "The Winner Takes All! Law vs. Blackbeard!",
-            "absoluteEpisode": 1093
+            "absoluteEpisode": 1093,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438863.jpg",
+            "duration": "25m",
+            "overview": "The Blackbeard Pirates ambushed the Heart Pirates led by Law. The Blackbeard Pirates' top officers use a variety of formidable Devil Fruit powers and keep pushing the Heart Pirates in order to obtain the copies of the Road Ponegliffs."
           },
           {
             "episode": 1094,
             "title": "The Mystery Deepens! Egghead Labophase",
-            "absoluteEpisode": 1094
+            "absoluteEpisode": 1094,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438864.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats without Luffy, Chopper, and Jimbei are taken to the laboratory on the clouds far above the ground by Lilith. They get excited about the things they've never seen before. However, inside the laboratory, a new threat is waiting for them."
           },
           {
             "episode": 1095,
             "title": "The Brain of a Genius - Six Vegapunks!",
-            "absoluteEpisode": 1095
+            "absoluteEpisode": 1095,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438865.jpg",
+            "duration": "25m",
+            "overview": "Nami and the others are attacked by a Pacifista who resembles Jimbei and while they're in battle, some of Vegapunk's Satellites look on with excitement. Meanwhile, Luffy and the others find something extraordinary at the scrap heap."
           },
           {
             "episode": 1096,
             "title": "A Forbidden Piece of History! A Theory Concerning a Kingdom",
-            "absoluteEpisode": 1096
+            "absoluteEpisode": 1096,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438866.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk Shaka shares with Robin and the others his theory about an ancient kingdom and the 100-Year Void. He even says that he visited Ohara after its destruction. Meanwhile, Luffy and Chopper try to activate the giant robot and something surprising happens."
           },
           {
             "episode": 1097,
             "title": "The Will of Ohara! The Inherited Research",
-            "absoluteEpisode": 1097
+            "absoluteEpisode": 1097,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438868.jpg",
+            "duration": "25m",
+            "overview": "Shaka reveals the secret behind the foundation of the Revolutionary Army and how the relationship between Vegapunk and Dragon affected it. Meanwhile, Vegapunk explains to Luffy and the others about his special power and how his clones work."
           },
           {
             "episode": 1098,
             "title": "The Eccentric Dream of a Genius!",
-            "absoluteEpisode": 1098
+            "absoluteEpisode": 1098,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438869.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk reveals the shocking history of the ancient giant robot and asks Luffy to take him off Egghead. Rob Lucci and his fellow Cipher Pol agents arrive at the island and ask for permission to enter the port."
           },
           {
             "episode": 1099,
             "title": "Preparations for Interception! Rob Lucci Strikes!",
-            "absoluteEpisode": 1099
+            "absoluteEpisode": 1099,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438870.jpg",
+            "duration": "25m",
+            "overview": "CP-0 led by Rob Lucci makes a forced landing at Egghead and people on the Fabriophase are plunged into confusion while Shaka and the others prepare to fight back on the Labophase. The enraged Atlas stands up to defend the peace of the island."
           },
           {
             "episode": 1100,
             "title": "Powers on a Different Level! Luffy vs. Lucci!",
-            "absoluteEpisode": 1100
+            "absoluteEpisode": 1100,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/512/1281667.jpg",
+            "duration": "25m",
+            "overview": "Lucci is instructed not to confront Luffy until Kizaru arrives with reinforcements, but the two attack each other with their newly awakened Devil Fruit forms. Meanwhile, Vegapunk reveals the shocking truth about the Gum-Gum Fruit."
           },
           {
             "episode": 1101,
             "title": "The Strongest Form of Humanity! The Seraphim's Powers!",
-            "absoluteEpisode": 1101
+            "absoluteEpisode": 1101,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/515/1289087.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk explains how he managed to grant the Seraphim Devil Fruit powers. Meanwhile, Luffy is still facing Lucci in his awakened form, as the rocket to the Labophase is about to leave."
           },
           {
             "episode": 1102,
             "title": "Sinister Schemes! The Operation to Escape Egghead",
-            "absoluteEpisode": 1102
+            "absoluteEpisode": 1102,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/517/1292895.jpg",
+            "duration": "25m",
+            "overview": "Lucci orders his troops to block off all Vegapunk's escape routes and looks to invade the Labophase. Elsewhere, at the Red Line, Kuma crashes into the Red Port."
           },
           {
             "episode": 1103,
             "title": "Turn Back My Father! Bonney's Futile Wish!",
-            "absoluteEpisode": 1103
+            "absoluteEpisode": 1103,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/517/1294437.jpg",
+            "duration": "25m",
+            "overview": "Rob Lucci, Stussy and Kaku start attacking the Thousand Sunny. Luffy reunites with Nami and the others. Meanwhile, Bonney is pressing Vegapunk to change back her father Kuma."
           },
           {
             "episode": 1104,
             "title": "A Desperate Situation! The Seraphim's All-out Attack!",
-            "absoluteEpisode": 1104
+            "absoluteEpisode": 1104,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/519/1298836.jpg",
+            "duration": "25m",
+            "overview": "After the Seraphim appear, Zoro and Brook now face seven powerful opponents. Sanji, Franky, Lilith and Edison head out to regain control of the Seraphim, while Lucci orders them to destroy the lab."
           },
           {
             "episode": 1105,
             "title": "A Beautiful Act of Treason! The Spy, Stussy",
-            "absoluteEpisode": 1105
+            "absoluteEpisode": 1105,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/520/1300621.jpg",
+            "duration": "25m",
+            "overview": "Stussy suddenly knocked out Lucci to the Straw Hats' surprise, and when Shaka reveals her true identity, they're stunned again. Meanwhile, a major incident occurs on an island called Sphinx where Whitebeard came from."
           },
           {
             "episode": 1106,
             "title": "Trouble Occurs! Seek Dr. Vegapunk!",
-            "absoluteEpisode": 1106
+            "absoluteEpisode": 1106,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302960.jpg",
+            "duration": "25m",
+            "overview": "The Straw Hats and Dr. Vegapunk's Satellites find out that Vegapunk has disappeared and begin searching for him. Meanwhile, Bonney begins exploring her father's memories."
           },
           {
             "episode": 1107,
             "title": "A Shudder! The Evil Hand Creeping Up on the Laboratory",
-            "absoluteEpisode": 1107
+            "absoluteEpisode": 1107,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/522/1305358.jpg",
+            "duration": "25m",
+            "overview": "The search for Dr. Vegapunk continues and gets more complicated when the communications and surveillance goes down, causing Shaka to suspect an intruder."
           },
           {
             "episode": 1108,
             "title": "Incomprehensible! The Seraphim's Rebellion!",
-            "absoluteEpisode": 1108
+            "absoluteEpisode": 1108,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/523/1307953.jpg",
+            "duration": "25m",
+            "overview": "The Seraphim suddenly start attacking the Straw Hats and the Vegapunk Satellites. They are not stopping even when the Satellites order them to. When Luffy and Zoro are cornered, Lucci and Kaku wake up and make them a surprising offer."
           },
           {
             "episode": 1109,
             "title": "A Tough Decision! An Unusual United Front!",
-            "absoluteEpisode": 1109
+            "absoluteEpisode": 1109,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/524/1311783.jpg",
+            "duration": "25m",
+            "overview": "Rob Lucci and Kaku ask Luffy and Zoro to uncuff them so they can fight alongside them against the Seraphim, but the two pirates are reluctant to do so."
           },
           {
             "episode": 1110,
             "title": "Survive! Deadly Combat with the Strongest Form of Humanity!",
-            "absoluteEpisode": 1110
+            "absoluteEpisode": 1110,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/526/1316486.jpg",
+            "duration": "25m",
+            "overview": "Luffy, Zoro, Rob Lucci and Kaku relentlessly attack the Seraphim, but the they keep getting back up. Meanwhile, Shaka goes to check one place where he thinks Vegapunk might be."
           },
           {
             "episode": 1111,
             "title": "The Second Ohara! The Mastermind's Ambition!",
-            "absoluteEpisode": 1111
+            "absoluteEpisode": 1111,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/527/1317564.jpg",
+            "duration": "25m",
+            "overview": "Stussy and Sentomaru discuss how big the threat that closes in on Egghead is as Luffy and the others keep fighting the uncontrollable Seraphim. Meanwhile, in an underground lab, someone approaches Vegapunk, who is being held captive."
           },
           {
             "episode": 1112,
             "title": "Clash! Shanks vs. Eustass Kid",
-            "absoluteEpisode": 1112
+            "absoluteEpisode": 1112,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/528/1320610.jpg",
+            "duration": "25m",
+            "overview": "Kid gives his crew a pep talk before the battle with Shanks. And Shanks also prepares for the battle but learns how his own subordinates do as they like to protect their beloved boss. Finally, Kid has his Damned Punk ready to shoot."
           },
           {
             "episode": 1113,
             "title": "Run, Koby! A Desperate Escape Strategy!",
-            "absoluteEpisode": 1113
+            "absoluteEpisode": 1113,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/530/1326039.jpg",
+            "duration": "25m",
+            "overview": "Koby, who is being held captive on the pirate island of Beehive, has the chance to escape but decides to become a decoy to free slaves. Soon pirates from all over the island are after him, as there is a large bounty on his head."
           },
           {
             "episode": 1114,
             "title": "For the Beloved Pupil - The Fist of Vice Admiral Garp!",
-            "absoluteEpisode": 1114
+            "absoluteEpisode": 1114,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/530/1326040.jpg",
+            "duration": "25m",
+            "overview": "A massive warship comes flying towards the Pirate Island of Beehive and Vice Admiral Garp launches a crushing attack to save his pupil Koby."
           },
           {
             "episode": 1115,
             "title": "The Navy Surprised! The Navy Headquarters' Former Admiral, Kuzan",
-            "absoluteEpisode": 1115
+            "absoluteEpisode": 1115,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/532/1330195.jpg",
+            "duration": "25m",
+            "overview": "Kuzan stands in the way of Garp who came to rescue Koby. He was once Garp's pupil, but has now sided with Blackbeard."
           },
           {
             "episode": 1116,
             "title": "Let's Go Get It! Buggy's Big Declaration",
-            "absoluteEpisode": 1116
+            "absoluteEpisode": 1116,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/532/1330214.jpg",
+            "duration": "25m",
+            "overview": "While the Marines deal with the problems caused by the Cross Guild, Buggy gives a passionate speech to Crocodile, Mihawk, and his crew."
           },
           {
             "episode": 1117,
             "title": "Sabo Returns - The Shocking Truth to Be Told!",
-            "absoluteEpisode": 1117
+            "absoluteEpisode": 1117,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345546.jpg",
+            "duration": "25m",
+            "overview": "Sabo starts recounting what happened at Mary Geoise. During the Reverie he witnessed Kuma being the Celestial Dragons' slave."
           },
           {
             "episode": 1118,
             "title": "The Holy Land in Tumult! Sai and Leo's Full-Power Blow!",
-            "absoluteEpisode": 1118
+            "absoluteEpisode": 1118,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345547.jpg",
+            "duration": "25m",
+            "overview": "Sabo runs into Kuma's daughter Bonney. Meanwhile, King Cobra of the Kingdom of Alabasta begins asking the Five Elders questions that trouble them."
           },
           {
             "episode": 1119,
             "title": "The Entrusted Message! King Cobra�s Resolve",
-            "absoluteEpisode": 1119
+            "absoluteEpisode": 1119,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345548.jpg",
+            "duration": "25m",
+            "overview": "King Cobra is surprised by seeing someone sitting on the Empty Throne. When he is subject to a deadly attack, Sabo cuts in to save him."
           },
           {
             "episode": 1120,
             "title": "The World Is Shaken! The Ruler's Judgment and the Five Elders' Actions!",
-            "absoluteEpisode": 1120
+            "absoluteEpisode": 1120,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345549.jpg",
+            "duration": "25m",
+            "overview": "Vivi and Wapol try to escape Mary Geoise while Sabo also looks for a way to leave to deliver King Cobra's message to Luffy and Vivi. Meanwhile, Imu orders the Five Elders to test a horrendous weapon."
           },
           {
             "episode": 1121,
             "title": "Garp and Kuzan - A Master and a Pupil's Beliefs Clash",
-            "absoluteEpisode": 1121
+            "absoluteEpisode": 1121,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349375.jpg",
+            "duration": "25m",
+            "overview": "At the Pirate Island of Beehive, Vice Admiral Garp deals with an overwhelming number of pirates alone. As he and his fellow Navy soldiers try to escape the island, the former Navy admiral Kuzan stands in their way."
           },
           {
             "episode": 1122,
             "title": "The Last Lesson! Impact Inherited",
-            "absoluteEpisode": 1122
+            "absoluteEpisode": 1122,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349376.jpg",
+            "duration": "25m",
+            "overview": "Avalo Pizarro, who merged with the Pirate Island, reaches his giant hand to crush the Navy ship with many soldiers and civilians on board. The wounded Garp gives orders to Koby, Helmeppo, and Prince Grus, and delivers a powerful blow to save the ship."
           },
           {
             "episode": 1123,
             "title": "The World Shakes! The Straw Hats' Hostage Situation",
-            "absoluteEpisode": 1123
+            "absoluteEpisode": 1123,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438844.jpg",
+            "duration": "25m",
+            "overview": "As the news about Garp's disappearance and Luffy's hostage situation spreads, a mysterious earthquake suddenly shakes the entire world. Meanwhile, a huge Navy fleet led by Admiral Kizaru surrounds Egghead and listens in as York contacts Mary Geoise to negotiate a deal."
           },
           {
             "episode": 1124,
             "title": "Completely Surrounded! The Operation to Escape Egghead",
-            "absoluteEpisode": 1124
+            "absoluteEpisode": 1124,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438845.jpg",
+            "duration": "25m",
+            "overview": "In the Labophase on Egghead, which is completely surrounded by the Navy, Luffy and the others devise a plan to escape the island. However, the Frontier Dome, the laser defense system, cannot be deactivated without York's secret passcode."
           },
           {
             "episode": 1125,
             "title": "A Clash of Two Men's Determination! Kizaru and Sentomaru",
-            "absoluteEpisode": 1125
+            "absoluteEpisode": 1125,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438846.jpg",
+            "duration": "25m",
+            "overview": "Navy Admiral Kizaru finally makes landfall on Egghead and Sentomaru, Vegapunk's bodyguard, stands in his way. The two men who were once close now clash violently. Meanwhile, Luffy and the others try their best to move the Sunny to the back side of the island to escape."
           },
           {
             "episode": 1126,
             "title": "Looming Despair! Admiral Kizaru's Depressing Mission",
-            "absoluteEpisode": 1126
+            "absoluteEpisode": 1126,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438847.jpg",
+            "duration": "25m",
+            "overview": "Kuma finally reaches Mary Geoise and keeps advancing even without free will or mind. But Fleet Admiral Akainu stands in his way. On Egghead, Kizaru enters the Labophase and delivers a powerful kick to Luffy who tries to stop him."
           },
           {
             "episode": 1127,
             "title": "Luffy vs. Kizaru!  A Fierce Kaleidoscopic Battle",
-            "absoluteEpisode": 1127
+            "absoluteEpisode": 1127,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438848.jpg",
+            "duration": "25m",
+            "overview": "A bizarre battle between Luffy and Kizaru heats up. Meanwhile, in the Fabiriophase, Bonney is all alone and being chased by the Navy soldiers. Dr. Vegapunk sees this and can't help but leave the Labophase to rescue her, risking his life."
           },
           {
             "episode": 1128,
             "title": "The Nightmare Strikes - Godhead of Science & Defense, St. Saturn",
-            "absoluteEpisode": 1128
+            "absoluteEpisode": 1128,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438849.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk successfully wrests back the Pacifistas from the Navy, but another party soon gains control of them. At the same time, Luffy, Zoro, and the others sense an unearthly presence just as a pentagram suddenly appears on Egghead."
           },
           {
             "episode": 1129,
             "title": "Kuma's Past - Better Off Dead in This World",
-            "absoluteEpisode": 1129
+            "absoluteEpisode": 1129,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438850.jpg",
+            "duration": "25m",
+            "overview": "Bonney gets captured by St. Saturn, whose enigmatic power keeps Sanji and Franky from saving her. In St. Saturn's clenched fist, she recalls the memories of her father, Kuma. 47 years ago, Kuma was born to a father of a race on the verge of extinction."
           },
           {
             "episode": 1130,
             "title": "A History Erased! God Valley of Despair",
-            "absoluteEpisode": 1130
+            "absoluteEpisode": 1130,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438853.jpg",
+            "duration": "25m",
+            "overview": "The human hunt begins and the Celestial Dragons start chasing locals of God Valley and slaves for prizes. Ivankov and Ginny share with Kuma and the others their surprising plan to survive the game. Meanwhile, ships full of infamous pirates start arriving on the island one after another."
           },
           {
             "episode": 1131,
             "title": "A Fleeting Moment of Happiness - Kumachi and Ginny",
-            "absoluteEpisode": 1131
+            "absoluteEpisode": 1131,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438855.jpg",
+            "duration": "25m",
+            "overview": "Kuma and Ginny live peacefully in the Sorbet Kingdom eight years after the God Valley Incident. However, their new king initiates a policy of enslaving the poor. Kuma tries to free those who were captured but ends up being imprisoned himself. But a familiar face comes to rescue him."
           },
           {
             "episode": 1132,
             "title": "A Pledge to Ginny - Kuma Becomes a Father",
-            "absoluteEpisode": 1132
+            "absoluteEpisode": 1132,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438857.jpg",
+            "duration": "25m",
+            "overview": "Two years after Ginny's abduction, the Revolutionary Army suddenly receives a call from her."
           },
           {
             "episode": 1133,
             "title": "To Save His Daughter - Kuma the Timid Pacifist",
-            "absoluteEpisode": 1133
+            "absoluteEpisode": 1133,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/575/1438843.jpg",
+            "duration": "25m",
+            "overview": "By fighting off King Bekori who is supported by the World Government, Kuma is put on the wanted list and decides to travel around the world in search of a cure for Bonney's disease. He reunites with Dragon and learns about the Government's eccentric scientist who might be able to cure Bonney."
           },
           {
             "episode": 1134,
             "title": "Cruel Fate - Kuma's Decision as a Father",
-            "absoluteEpisode": 1134
+            "absoluteEpisode": 1134,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/576/1441294.jpg",
+            "duration": "25m",
+            "overview": "Taking advantage of Kuma's love for his daughter Bonney, the World Government imposes three harsh conditions on him in exchange for her treatment. Kuma agrees to them and Bonney's treatment starts at Laboratory 8 in tandem with the clone development with which Kuma agrees to cooperate."
           },
           {
             "episode": 1135,
             "title": "To the Sea Where My Father Is! The Future Bonney Chooses",
-            "absoluteEpisode": 1135
+            "absoluteEpisode": 1135,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/577/1443372.jpg",
+            "duration": "25m",
+            "overview": "Bonney has been waiting for a letter from her father Kuma who promised to write to her. But with no letters in sight, she turns nine and one day realizes her disease is cured. She then decides to go out to sea to search for her father."
           },
           {
             "episode": 1136,
             "title": "Kuma's Life",
-            "absoluteEpisode": 1136
+            "absoluteEpisode": 1136,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/578/1446516.jpg",
+            "duration": "25m",
+            "overview": "Bonney sails out to sea in search of her father and rises to prominence. At the same time, Luffy makes his name by defeating the Arlong Pirates and declaring war against the World Government. Watching his actions, Kuma begins to hold a certain belief."
           },
           {
             "episode": 1137,
             "title": "I'm Sorry, Dad - Bonney's Tears and Kuma's Fist",
-            "absoluteEpisode": 1137
+            "absoluteEpisode": 1137,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/580/1450315.jpg",
+            "duration": "25m",
+            "overview": "The present day on Egghead, Bonney is caught in St. Saturn's grasp, knowing he is responsible for her father's transformation into a cyborg. However, Saturn reveals an even more shocking truth that throws Bonney into despair."
           },
           {
             "episode": 1138,
             "title": "Thank You, Dad - Bonney and Kuma's Warm Embrace",
-            "absoluteEpisode": 1138
+            "absoluteEpisode": 1138,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/581/1452775.jpg",
+            "duration": "25m",
+            "overview": "Kuma, battered and without free will, approaches Bonney. Overcome with emotion, she tells him she saw all his memories and learned everything that he did for her. Watching the scene, Vegapunk wonders what compelled Kuma to come to Egghead."
           },
           {
             "episode": 1139,
             "title": "Destroy Egghead - The Buster Call Is Invoked",
-            "absoluteEpisode": 1139
+            "absoluteEpisode": 1139,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/582/1455392.jpg",
+            "duration": "25m",
+            "overview": "As an order comes down to evacuate the island in preparation for bombardment, Navy soldiers rush to their ships. Meanwhile, Vegapunk pleads with Saturn to halt the attack, arguing how vital the island is for the future of humanity, but Saturn refuses to listen."
           },
           {
             "episode": 1140,
             "title": "An Admired Hero - The Warrior of Liberation Who Saves Bonney",
-            "absoluteEpisode": 1140
+            "absoluteEpisode": 1140,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/644/1611898.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk reveals the secret he alone has been keeping regarding the Pacifistas. Meanwhile, Bonney, her back against the wall, hears a familiar rhythm. It's the rhythm that her father taught her along with the legend of the hero he admired."
           },
           {
             "episode": 1141,
             "title": "Reliable Reinforcements! Dorry and Brogy Arrive!",
-            "absoluteEpisode": 1141
+            "absoluteEpisode": 1141,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/644/1611899.jpg",
+            "duration": "25m",
+            "overview": "The Giant Pirate Crew led by Dorry and Brogy arrive at Egghead, which deeply moves Usopp and the others. Zoro keeps fighting Rob Lucci and the Pacifistas continues to torment the Navy while Luffy shows Bonney how to throw a real punch."
           },
           {
             "episode": 1142,
             "title": "Come In, World - Vegapunk's Message",
-            "absoluteEpisode": 1142
+            "absoluteEpisode": 1142,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474443.jpg",
+            "duration": "25m",
+            "overview": "Caribou begs Augur and Devon to let him meet Blackbeard. An order is given to the Navy vice admirals to kill Jewelry Bonney at all costs in order to take back control over the Pacifistas. Sanji flees with the injured Vegapunk while Luffy holds St. Saturn back."
           },
           {
             "episode": 1143,
             "title": "Vegapunk's Secret Plan - A Tense Worldwide Broadcast",
-            "absoluteEpisode": 1143
+            "absoluteEpisode": 1143,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/644/1611900.jpg",
+            "duration": "25m",
+            "overview": "Suddenly, Vegapunk's broadcast begins and the whole world is taken by surprise. As everyone rushes to set up Video Transponder Snails and screens to watch it, the Five Elders grow concerned and discuss countermeasures."
           },
           {
             "episode": 1144,
             "title": "The Worst Nightmare - The Five Elders Come Together",
-            "absoluteEpisode": 1144
+            "absoluteEpisode": 1144,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474442.jpg",
+            "duration": "25m",
+            "overview": "Just like when St. Saturn emerged on Egghead, black lightning strikes and pentagrams appear again. The Pacifistas are rendered immobile by an unknown shadow. Meanwhile, as the time for the Straw Hats to evacuate the island is drawing near, the fight between Zoro and Lucci intensifies."
           },
           {
             "episode": 1145,
             "title": "Friends Fight Together! Luffy and the Warriors of Elbaph",
-            "absoluteEpisode": 1145
+            "absoluteEpisode": 1145,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474440.jpg",
+            "duration": "25m",
+            "overview": "Dorry and Brogy finally reunite with Luffy. However, they are still facing St. Saturn and St. Warcury in their alternate forms. Dorry blows a horn to alert his people to prepare to escape, but St. Warcury unleashes a deafening roar."
           },
           {
             "episode": 1146,
             "title": "An Imminent Threat - Stussy and Edison's Resolve",
-            "absoluteEpisode": 1146
+            "absoluteEpisode": 1146,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/593/1483952.jpg",
+            "duration": "25m",
+            "overview": "Franky and Bonney clash with Navy vice admirals in front of the Elbaph ship. St. Mars tries to find the room from Vegapunk's broadcast. The heavily injured Stussy tells Kaku the reason she chose to stay behind while Edison takes desperate action to help the Straw Hats escape."
           },
           {
             "episode": 1147,
             "title": "A Stunning Conclusion - Vegapunk's Great Prediction",
-            "absoluteEpisode": 1147
+            "absoluteEpisode": 1147,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486725.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk's broadcast resumes as people in various locations all over the world listen closely. St. Mars rushes to find the Transponder Snail that is the source of the broadcast while the Straw Hats and their allies clash with the other members of the Five Elders."
           },
           {
             "episode": 1148,
             "title": "The Lost History - Joyboy, the First Pirate",
-            "absoluteEpisode": 1148
+            "absoluteEpisode": 1148,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489811.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk's revelation sends shockwaves around the world. St. Saturn abandons his fight with Nami and the others and rushes to stop the broadcast at all costs. Vegapunk goes on to expose another stunning truth, this time about Joyboy, the first pirate."
           },
           {
             "episode": 1149,
             "title": "The Void Century - A Revelation About a Sinking World",
-            "absoluteEpisode": 1149
+            "absoluteEpisode": 1149,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/597/1493185.jpg",
+            "duration": "25m",
+            "overview": "The severely injured Edison begs Stussy to escape, but she makes a stunning request in exchange. Meanwhile, Vegapunk presents another astonishing disclosure about a past cataclysm and the Ancient Weapons that will fundamentally challenge the beliefs of people everywhere."
           },
           {
             "episode": 1150,
             "title": "Get the Ship Moving! The Iron Giant Activates",
-            "absoluteEpisode": 1150
+            "absoluteEpisode": 1150,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/598/1496481.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk's revelation shocks even Koby and his fellow SWORD members, leading them to discuss what to do next."
           },
           {
             "episode": 1151,
             "title": "Her and Her Father's Dream! Bonney's Free Future",
-            "absoluteEpisode": 1151
+            "absoluteEpisode": 1151,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/601/1502618.jpg",
+            "duration": "25m",
+            "overview": "Luffy finally hops on the Elbaph ship along with Dorry and Brogy, but the Five Elders catch up to them and begin their assault. Aboard the burning ship, Bonney hears a familiar sound and then finds a new strength in her memories of her father."
           },
           {
             "episode": 1152,
             "title": "Her Father and Mother's Legacy! Bonney's Nika Punch",
-            "absoluteEpisode": 1152
+            "absoluteEpisode": 1152,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/602/1506040.jpg",
+            "duration": "25m",
+            "overview": "Zoro and the others who are on the Sunny in the Labophase finally attempt to escape, but at the cost of an unexpected sacrifice. Meanwhile, as Vegapunk concludes his speech, Bonney once again faces St. Saturn, the object of her great hatred."
           },
           {
             "episode": 1153,
             "title": "The Upheaval of an Era! The Color of the Supreme King That Leads Luffy",
-            "absoluteEpisode": 1153
+            "absoluteEpisode": 1153,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/603/1508856.jpg",
+            "duration": "25m",
+            "overview": "Vegapunk's speech raises the spirits of the pirates across the world, infuriating the Navy and the civilians. However, the broadcast is suddenly cut off while Vegapunk is still speaking. Meanwhile, off the coast of Egghead, the Five Elders are about to deliver the Straw Hats and the Giants a deadly strike"
           },
           {
             "episode": 1154,
             "title": "The Truth Behind the Secret Plan - Vegapunk Claims Victory",
-            "absoluteEpisode": 1154
+            "absoluteEpisode": 1154,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/604/1511490.jpg",
+            "duration": "25m",
+            "overview": "Two weeks before the battle erupted on Egghead, Vegapunk found out someone stole a portion of the Mother Flame. Along with Pythagoras and Shaka, he launched an investigation and identified the culprit, also learning their shocking motivation. Then, for the future of humanity, he resolved himself to make a bold decision."
           },
           {
             "episode": 1155,
             "title": "The Promised Horizon - Off to the Long-Awaited Elbaph!",
-            "absoluteEpisode": 1155
+            "absoluteEpisode": 1155,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/605/1513991.jpg",
+            "duration": "25m",
+            "overview": "York wakes up to see Island Clouds rising, and to her surprise, something is about to be taken away. Meanwhile, at Mary Geoise, the Celestial Dragons realize their food stock is dwindling and become belligerent. Another one of Vegapunk's Satellites, Lilith wakes up and receives astonishing news."
           }
         ]
       },
@@ -6047,131 +9511,207 @@ window._ANIME_DATA = [
           {
             "episode": 1156,
             "title": "The Long-sought Elbaph! The Big Reunion Banquet!",
-            "absoluteEpisode": 1156
+            "absoluteEpisode": 1156,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/620/1551484.jpg",
+            "duration": "25m",
+            "overview": "After leaving Egghead, the Straw Hats and the Giant Pirate Crew celebrate their reunion with a big banquet."
           },
           {
             "episode": 1157,
             "title": "Nami in a Fix! An Adventure in Block Kingdom",
-            "absoluteEpisode": 1157
+            "absoluteEpisode": 1157,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/620/1551755.jpg",
+            "duration": "25m",
+            "overview": "Nami awakens to find herself in a completely unfamiliar place. Giant creatures attack one after another, driving her into a corner. At that moment, she hears a voice calling her name."
           },
           {
             "episode": 1158,
             "title": "A Quest in the Land of Mystery! The Secret of the Sun God",
-            "absoluteEpisode": 1158
+            "absoluteEpisode": 1158,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/622/1555260.jpg",
+            "duration": "25m",
+            "overview": "Luffy and the others come across a warrior riding a grasshopper."
           },
           {
             "episode": 1159,
             "title": "Destroy the Miniature Garden - Escape Block Kingdom!",
-            "absoluteEpisode": 1159
+            "absoluteEpisode": 1159,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/622/1555306.jpg",
+            "duration": "25m",
+            "overview": "Pursued by the Sun God, the Straw Hats flee across Block Kingdom at full speed. Amidst the chaos, the Sun God's true objective begins to surface. But as they run, another wall blocks their path. Their breakthrough rests on Luffy's fists."
           },
           {
             "episode": 1160,
             "title": "An Encounter on a Snowfield - Loki, the Accursed Prince",
-            "absoluteEpisode": 1160
+            "absoluteEpisode": 1160,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566063.jpg",
+            "duration": "25m",
+            "overview": "Leaving the Block Kingdom behind, Luffy and the others find themselves facing a vast snowy landscape and a massive suspension bridge. They resolve to move forward, only to be halted by approaching figures and a mysterious roar."
           },
           {
             "episode": 1161,
             "title": "A Dangerous Deal! Loki of the Underworld and Luffy",
-            "absoluteEpisode": 1161
+            "absoluteEpisode": 1161,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566061.jpg",
+            "duration": "25m",
+            "overview": "Luffy encounters Loki, the Accursed Prince, who offers him a deal. He hints at a connection to Shanks, all while savage beasts crowd around, staring Luffy down. Meanwhile, Zoro and the others on the suspension bridge realize someone is following them."
           },
           {
             "episode": 1162,
             "title": "A Gargantuan Wave of Emotion - The Dreamlike Scenery of Elbaph",
-            "absoluteEpisode": 1162
+            "absoluteEpisode": 1162,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566060.jpg",
+            "duration": "25m",
+            "overview": "As the Great Erik, carrying Robin and the others, reaches the island of Elbaph, a breathtaking rainbow stretches out before them. Yet even greater astonishment awaits them in the direction the ship is traveling."
           },
           {
             "episode": 1163,
             "title": "I Want You to Praise Me - The Reunion of Robin and Saul",
-            "absoluteEpisode": 1163
+            "absoluteEpisode": 1163,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566059.jpg",
+            "duration": "25m",
+            "overview": "Robin and the others finally arrive at the port of the Western Village in Elbaph."
           },
           {
             "episode": 1164,
             "title": "Saul's Resolve - The Inherited Will of Ohara",
-            "absoluteEpisode": 1164
+            "absoluteEpisode": 1164,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580532.jpg",
+            "duration": "25m",
+            "overview": "Robin formally introduces Luffy and the others to Saul. Then his assistant, Ange, shows them around the school, where Usopp is shocked by the education being provided there. Meanwhile, Robin is taken to the library by Saul, where she is met with an incredible sight."
           },
           {
             "episode": 1165,
             "title": "A Welcome with Friends' Cups and Intruders Seeking Loki",
-            "absoluteEpisode": 1165
+            "absoluteEpisode": 1165,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580531.jpg",
+            "duration": "25m",
+            "overview": "Robin, Chopper, Bonney, and Lilith enjoy the Owl Library."
           },
           {
             "episode": 1166,
             "title": "Encountering Loki - Gunko of the Knights of God",
-            "absoluteEpisode": 1166
+            "absoluteEpisode": 1166,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580530.jpg",
+            "duration": "25m",
+            "overview": "Amidst the roaring banquet with the Giants, Luffy hears the legend of the Sun God passed down in Elbaph and learns why Loki is being held captive. In the Underworld, two mysterious guests appear before Loki, expressing their desire to recruit him into their order of knights."
           },
           {
             "episode": 1167,
             "title": "Shamrock Appears - Commander of the Knights of God",
-            "absoluteEpisode": 1167
+            "absoluteEpisode": 1167,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580529.jpg",
+            "duration": "25m",
+            "overview": "Luffy and some of his companions snuck out of the banquet to explore the deceased king's castle."
           },
           {
             "episode": 1168,
             "title": "Ancient History - The Harley Passed Down by Elbaph",
-            "absoluteEpisode": 1168
+            "absoluteEpisode": 1168,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580528.jpg",
+            "duration": "25m",
+            "overview": "Leaving behind a brutal parting gift, Shamrock and Gunko of the Knights of God abandon Loki and move on to their next strategy. Meanwhile, Franky is shown old wall paintings, and Robin reads an important religious text passed down since ancient times in Elbaph."
           },
           {
             "episode": 1169,
             "title": "The Legend Lurking in Elbaph - The Identity of the Mountain-Eater",
-            "absoluteEpisode": 1169
+            "absoluteEpisode": 1169,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580527.jpg",
+            "duration": "25m",
+            "overview": "While exploring the abandoned castle, Luffy and the others find a strange mark on the floor of the throne room and hear a mysterious voice out of nowhere. At the banquet, Oimo tells Usopp the tale of a legendary man linked to the Pirate King."
           },
           {
             "episode": 1170,
             "title": "Get the Key! Luffy vs. Scopper Gaban",
-            "absoluteEpisode": 1170
+            "absoluteEpisode": 1170,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/633/1582926.jpg",
+            "duration": "25m",
+            "overview": "Gaban challenges Luffy to try to take the key from him. Luffy goes for it, only to be overpowered by Gaban's sheer force. Meanwhile, Shamrock and Gunko summon reinforcements and plot a detailed strategy to disorient the Giants."
           },
           {
             "episode": 1171,
             "title": "The Heinous Sinner - Loki of the Underworld Freed?!",
-            "absoluteEpisode": 1171
+            "absoluteEpisode": 1171,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/634/1585271.jpg",
+            "duration": "25m",
+            "overview": "While observing the Jewel Tree Adam along with Ripley, Franky learns of Elbaph's weak points. Meanwhile, in the Underworld, Luffy and Zoro find a heavily injured Loki. As they argue over whether to unchain him, an unexpected turn of events blindsides them."
           },
           {
             "episode": 1172,
             "title": "Monsters Appear in Elbaph - \"What I Fear Most\"",
-            "absoluteEpisode": 1172
+            "absoluteEpisode": 1172,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/635/1587795.jpg",
+            "duration": "25m",
+            "overview": "A massive snake suddenly attacks the Walrus School. Saul and the other teachers stand their ground to protect the children, but just then, another mystery strikes, plunging the school into pure panic."
           },
           {
             "episode": 1173,
             "title": "A Nightmarish Game - The Dark Plot of the Knights of God",
-            "absoluteEpisode": 1173
+            "absoluteEpisode": 1173,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/636/1590155.jpg",
+            "duration": "25m",
+            "overview": "Saul tries to stop the marching children, but as he reaches out to them, some unknown force gets in his way. Meanwhile, hearing the school's emergency call throws Dorry and the others at the Western Village into disarray, just as a monster appears before them as well."
           },
           {
             "episode": 1174,
             "title": "Save the Children! The Elbaph Warriors Rise Up",
-            "absoluteEpisode": 1174
+            "absoluteEpisode": 1174,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/637/1592950.jpg",
+            "duration": "25m",
+            "overview": "As monsters assault villages throughout Elbaph, the Giants scramble to hold them back. Meanwhile, as the sleeping children get closer to the fire, Saul tries everything to stop them, but suddenly, he finds his efforts stymied."
           },
           {
             "episode": 1175,
             "title": "Elbaph in Flames! Jinbe's Shoulder Throw Explodes!",
-            "absoluteEpisode": 1175
+            "absoluteEpisode": 1175,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/637/1594892.jpg",
+            "duration": "25m",
+            "overview": "In the Underworld, Loki talks about a pirate he idolized when he was young. Meanwhile, in the Sun World, the marching children get closer to the fire. The Elbaph Fire Brigade tries to extinguish the flames, while others beg the children to stop. When all hope seems lost, a lone savior arrives to turn the tide."
           },
           {
             "episode": 1176,
             "title": "The Threat of the Arrow-Arrow Fruit - Gunko vs. the Straw Hats",
-            "absoluteEpisode": 1176
+            "absoluteEpisode": 1176,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/639/1597833.jpg",
+            "duration": "25m",
+            "overview": "Gunko from the Knights of God shows up right in front of Nami and the others and reveals to them that their plan is to take the children to Mary Geoise. Enraged, the Straw Hats launch an attack, only to be completely overwhelmed by Gunko's extraordinary power."
           },
           {
             "episode": 22,
             "title": "Episode 1177",
-            "absoluteEpisode": 1177
+            "absoluteEpisode": 1177,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603339.jpg",
+            "duration": "25m",
+            "overview": "Nami and the others are now captured by Gunko, and Brook receives a demand he never saw coming. Meanwhile, Sommers from the Knights of God begins speaking to all of Elbaph and reveals their true objective."
           },
           {
             "episode": 23,
             "title": "Episode 1178",
-            "absoluteEpisode": 1178
+            "absoluteEpisode": 1178,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603338.jpg",
+            "duration": "25m",
+            "overview": "One of the marching children, Ronja, is suddenly separated from the group, and Sommers presses Jarul to make an impossible choice. As the Giants bicker over what to do, Robin launches into a reckless move."
           },
           {
             "episode": 24,
             "title": "Episode 1179",
-            "absoluteEpisode": 1179
+            "absoluteEpisode": 1179,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/642/1605731.jpg",
+            "duration": "25m",
+            "overview": "Scopper Gaban, the Pirate King's Left Arm, appears before the captured and immobilized Straw Hats, launching a counteroffensive against the Knights of God. Gunko, however, uncovers his weakness."
           },
           {
             "episode": 25,
             "title": "Episode 1180",
-            "absoluteEpisode": 1180
+            "absoluteEpisode": 1180,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608282.jpg",
+            "duration": "25m",
+            "overview": "Filled with rage, Dorry, Brogy, and their fellow Giants charge at the Knights of God. However, blocked by their dark powers, the Giants are unable to go rescue the children. Nami and the others remain captive, while Luffy and his group are completely unaware in the Underworld. Elbaph is plunged into an absolute crisis."
           }
         ]
       }
-    ]
+    ],
+    "id": "one-piece-1999"
   },
   {
     "title": "Dragon Ball Z",
@@ -7711,7 +11251,6 @@ window._ANIME_DATA = [
       }
     ]
   },
-  
   {
     "title": "Dragon Ball Daima",
     "type": "TV Show",
@@ -28343,8 +31882,7 @@ window._ANIME_DATA = [
       }
     ]
   },
-
-{
+  {
     "title": "Black Clover",
     "type": "TV Show",
     "isAnime": true,
@@ -29251,10 +32789,5 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  },
-
-
-
-
-
+  }
 ];
