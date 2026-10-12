@@ -7036,10 +7036,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
     subParam = `&subtitles=${encodeURIComponent(kuApi)}&subtitleLabel=Kurdish`;
     if (!subtitleUrl) {
-      subtitleUrl = isAnime ? enApi : kuApi;
+      subtitleUrl = kuApi;
       window._cwSubtitleTracks = [
-        { label: 'English', file: enApi, srclang: 'en', default: isAnime },
-        { label: 'Kurdish (Sorani)', file: kuApi, srclang: 'ku', default: !isAnime }
+        { label: 'Kurdish (Sorani)', file: kuApi, srclang: 'ku', default: true },
+        { label: 'English', file: enApi, srclang: 'en', default: false }
       ];
     }
   }
@@ -7084,6 +7084,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               }
             });
           }
+          if (window.location.protocol === 'https:') {
+            srcData.tracks.forEach(t => {
+              if (t.file && (t.file.startsWith('http://localhost:3000') || t.file.startsWith('http://127.0.0.1:3000'))) {
+                t.file = t.file.replace(/^http:\/\/(localhost|127\.0\.0\.1):3000/, 'https://cinewatch-maaa.onrender.com');
+              }
+            });
+          }
           const baseTrack = srcData.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || srcData.tracks[0];
           if (baseTrack && baseTrack.file) {
             let kuUrl = baseTrack.file;
@@ -7094,25 +7101,31 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               srcData.tracks.push({
                 label: 'Kurdish (Sorani)',
                 file: kuUrl,
-                srclang: 'ku'
+                srclang: 'ku',
+                default: true
               });
             }
           }
           window._cwSubtitleTracks = srcData.tracks;
-          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-          if (enTrack && enTrack.file) {
-            subtitleUrl = enTrack.file;
+          const kuTrack = srcData.tracks.find(t => t.srclang === 'ku' || (t.label || '').toLowerCase().includes('kurd'));
+          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
+          const defaultTrack = kuTrack || enTrack || srcData.tracks[0];
+          if (defaultTrack && defaultTrack.file) {
+            subtitleUrl = defaultTrack.file;
           }
+          srcData.tracks.forEach(t => {
+            t.default = Boolean(defaultTrack && t.file === defaultTrack.file);
+          });
         } else if (cleanName) {
           const subBase = (window.location.origin && window.location.origin.includes(':3000')) ? window.location.origin : 'https://cinewatch-maaa.onrender.com';
           const kuSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=ckb`;
           const enSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=en`;
           srcData.tracks = [
-            { label: 'English', file: enSub, srclang: 'en', default: true },
-            { label: 'Kurdish (Sorani)', file: kuSub, srclang: 'ku', default: false }
+            { label: 'Kurdish (Sorani)', file: kuSub, srclang: 'ku', default: true },
+            { label: 'English', file: enSub, srclang: 'en', default: false }
           ];
           window._cwSubtitleTracks = srcData.tracks;
-          subtitleUrl = enSub;
+          subtitleUrl = kuSub;
         } else {
           window._cwSubtitleTracks = [];
         }
