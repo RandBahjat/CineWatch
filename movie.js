@@ -3345,6 +3345,82 @@ function openDetailsModal(movieId) {
         return "";
       }
 
+      async function enrichSeriesEpisodesAsync(m, currentSeason, onUpdated) {
+        if (!m || !m.seasons || !m.seasons.length) return;
+        const sNum = parseInt(currentSeason, 10);
+        const targetSeason = m.seasons.find(s => s.season === sNum);
+        if (targetSeason && targetSeason.episodes && targetSeason.episodes.length > 0) {
+          if (targetSeason.episodes.some(e => Boolean(e.thumbnail))) return;
+        }
+
+        const cacheKey = `cw_ep_cache_${encodeURIComponent(m.title || '')}`;
+        try {
+          const cached = sessionStorage.getItem(cacheKey);
+          if (cached) {
+            const parsed = JSON.parse(cached);
+            if (applyEpisodesData(m, parsed)) {
+              if (typeof onUpdated === 'function') onUpdated();
+              return;
+            }
+          }
+        } catch(e) {}
+
+        try {
+          const cleanTitle = (m.title || '').split(' - ')[0].split(' (')[0].trim();
+          if (!cleanTitle) return;
+          const url = `https://api.tvmaze.com/singlesearch/shows?q=${encodeURIComponent(cleanTitle)}&embed=episodes`;
+          const res = await fetch(url);
+          if (!res.ok) return;
+          const data = await res.json();
+          const eps = data._embedded?.episodes || [];
+          if (!eps.length) return;
+
+          const leanList = eps.map(e => ({
+            season: e.season,
+            number: e.number,
+            thumb: e.image ? (e.image.original || e.image.medium) : '',
+            runtime: e.runtime ? `${e.runtime} min` : '',
+            summary: e.summary ? e.summary.replace(/<[^>]*>/g, '').trim() : ''
+          }));
+
+          try {
+            sessionStorage.setItem(cacheKey, JSON.stringify(leanList));
+          } catch(e) {}
+
+          if (applyEpisodesData(m, leanList)) {
+            if (typeof onUpdated === 'function') onUpdated();
+          }
+        } catch(err) {
+          console.debug('Dynamic episode enrich failed:', err);
+        }
+      }
+
+      function applyEpisodesData(m, epsList) {
+        if (!m || !m.seasons || !Array.isArray(epsList)) return false;
+        let updatedAny = false;
+        epsList.forEach(item => {
+          const s = m.seasons.find(sec => sec.season === item.season);
+          if (s && s.episodes) {
+            const ep = s.episodes.find(e => e.episode === item.number);
+            if (ep) {
+              if (item.thumb && !ep.thumbnail) {
+                ep.thumbnail = item.thumb;
+                updatedAny = true;
+              }
+              if (item.runtime && !ep.duration) {
+                ep.duration = item.runtime;
+                updatedAny = true;
+              }
+              if (item.summary && !ep.overview) {
+                ep.overview = item.summary;
+                updatedAny = true;
+              }
+            }
+          }
+        });
+        return updatedAny;
+      }
+
       function renderEpisodes(seasonNum, filter = "") {
         const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
         if (!seasonData) return;
@@ -3364,6 +3440,7 @@ function openDetailsModal(movieId) {
           const overview = ep.overview || "";
           const airDate = formatEpisodeAirDate(ep.airDate || ep.releaseDate);
           const ratingVal = (ep.rating !== undefined && ep.rating !== null && !isNaN(ep.rating)) ? Number(ep.rating).toFixed(1) : "";
+          const fallbackImg = movie.backdrop || movie.poster || "";
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
@@ -3372,7 +3449,7 @@ function openDetailsModal(movieId) {
              data-abs-episode="${ep.absoluteEpisode || ''}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
           <div class="episode-row-thumb">
-            ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
+            ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img" onerror="if(this.src!=='${fallbackImg}'){this.src='${fallbackImg}';}">` : `<img src="${fallbackImg}" alt="${ep.title}" class="ep-thumb-img">`}
             <div class="ep-thumb-overlay">
               <span class="ep-num-badge">${ep.episode}</span>
               ${resolvedUrl ? '<div class="ep-play-circle">▶</div>' : ""}
@@ -3381,9 +3458,9 @@ function openDetailsModal(movieId) {
           <div class="episode-row-info">
             <h4 class="ep-row-title notranslate" translate="no">${ep.title}</h4>
             <div class="ep-row-meta">
-              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
-              ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+              ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
+              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
             </div>
             ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
           </div>
@@ -3409,6 +3486,10 @@ function openDetailsModal(movieId) {
       }
 
       renderEpisodes(seasonSelect.value);
+      enrichSeriesEpisodesAsync(movie, seasonSelect.value, () => {
+        const currentEpSearch = document.getElementById("episodeSearch");
+        renderEpisodes(seasonSelect.value, currentEpSearch ? currentEpSearch.value : "");
+      });
 
       // Handle custom option click
       seasonSelectOptions.querySelectorAll(".custom-option").forEach((opt) => {
@@ -3423,6 +3504,10 @@ function openDetailsModal(movieId) {
 
           customSeasonSelect.classList.remove("open");
           renderEpisodes(val);
+          enrichSeriesEpisodesAsync(movie, val, () => {
+            const currentEpSearch = document.getElementById("episodeSearch");
+            renderEpisodes(val, currentEpSearch ? currentEpSearch.value : "");
+          });
 
           const epSearch = document.getElementById("episodeSearch");
           if (epSearch && epSearch.value) {
