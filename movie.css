@@ -3379,6 +3379,27 @@ body.rtl-layout .details-back-btn svg {
   background: rgba(255,255,255,0.2);
 }
 
+/* Download Offline Modal & Button Styling */
+#detailsDownloadBtn svg {
+  transition: transform 0.22s ease, stroke 0.22s ease;
+}
+
+#detailsDownloadBtn:hover svg {
+  transform: translateY(2px);
+  stroke: #ff3b44;
+}
+
+.dl-option-card {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dl-option-card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
 /* Actors Section */
 .details-actors-section {
   margin-top: 2rem;
