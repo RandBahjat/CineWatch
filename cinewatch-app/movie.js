@@ -3639,6 +3639,20 @@ function openDetailsModal(movieId) {
       };
     }
 
+    // Download Offline Button
+    const downloadBtn = document.getElementById("detailsDownloadBtn");
+    const downloadText = document.getElementById("detailsDownloadText");
+    if (downloadText) {
+      const isCkb = document.cookie.includes("googtrans=/en/ckb");
+      const isAr = document.cookie.includes("googtrans=/en/ar");
+      downloadText.textContent = isCkb ? "داگرتن" : (isAr ? "تحميل" : "Download");
+    }
+    if (downloadBtn) {
+      downloadBtn.onclick = () => {
+        openDownloadModal(movie);
+      };
+    }
+
     // Switch to details page view
     switchView("details");
 
