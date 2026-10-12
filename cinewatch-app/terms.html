@@ -58,31 +58,42 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .nav-logo:hover {
+      transform: translateY(-1px);
     }
 
     .nav-logo-icon {
-      width: 34px;
-      height: 34px;
-      background: linear-gradient(135deg, #e50914, #b00710);
-      border-radius: 9px;
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #ff3b44 0%, #e50914 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 14px rgba(229,9,20,0.35);
+      font-size: 1.35rem;
+      box-shadow: 0 4px 18px rgba(229, 9, 20, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      flex-shrink: 0;
+    }
+
+    .nav-logo:hover .nav-logo-icon {
+      transform: scale(1.08) rotate(-4deg);
     }
 
     .nav-logo-text {
-      font-size: 1.35rem;
+      font-size: 1.55rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
-      color: var(--white);
+      letter-spacing: 0.5px;
+      color: #ffffff;
     }
 
-    .nav-logo-text span { color: var(--red); }
+    .nav-logo-text span { color: #ff3b44; }
 
     .nav-back {
       display: inline-flex;
@@ -674,9 +685,9 @@
       <div class="loader-brand">
         <div class="loader-icon-glow"></div>
         <div class="loader-icon">
-          <ion-icon name="document-text-outline"></ion-icon>
+          <ion-icon name="ticket"></ion-icon>
         </div>
-        <div class="loader-text">Cine<span>Watch</span></div>
+        <div class="loader-text notranslate" translate="no">Cine<span>Watch</span></div>
       </div>
       <div class="loader-badge">
         <ion-icon name="shield-checkmark"></ion-icon>
@@ -690,9 +701,9 @@
 
   <!-- Navbar -->
   <header class="nav">
-    <a href="index.html" class="nav-logo">
+    <a href="index.html" class="nav-logo notranslate" translate="no" title="CineWatch Home">
       <div class="nav-logo-icon">
-        <ion-icon name="play"></ion-icon>
+        <ion-icon name="ticket"></ion-icon>
       </div>
       <span class="nav-logo-text">Cine<span>Watch</span></span>
     </a>
