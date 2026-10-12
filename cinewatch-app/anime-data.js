@@ -21,7 +21,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
-    "backdrop": "",
+    "backdrop": "dragon-ball-super-5120x2880-27248.jpg",
     "videoUrl": "63367",
     "malId": 63367,
     "anilistId": 63367,
