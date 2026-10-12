@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CineWatch</title>
+  <meta name="description" content="CineWatch Privacy Policy — Learn how we collect, use, and protect your personal information." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
+  <link rel="stylesheet" href="cookie-consent.css?v=20260918_1" />
+  <script src="cookie-consent.js?v=20260918_1" defer></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #e50914;
+      --red-dim: rgba(229, 9, 20, 0.12);
+      --bg: #0a0a0a;
+      --surface: #111113;
+      --border: rgba(255,255,255,0.07);
+      --text: #e0e0e0;
+      --muted: #888;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    /* ── Navbar ──────────────────────────────────────────── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, #e50914, #b00710);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 14px rgba(229,9,20,0.35);
+    }
+
+    .nav-logo-text {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--white);
+    }
+
+    .nav-logo-text span { color: var(--red); }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-back:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* ── Hero ────────────────────────────────────────────── */
+    .hero {
+      padding: 80px 32px 64px;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--red-dim);
+      border: 1px solid rgba(229,9,20,0.25);
+      color: var(--red);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #555;
+      font-size: 0.82rem;
+    }
+
+    /* ── Content ─────────────────────────────────────────── */
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px 100px;
+    }
+
+    /* Table of contents */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+
+    .toc-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-list li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      padding: 6px 0;
+      transition: color 0.2s;
+    }
+
+    .toc-list li a::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    .toc-list li a:hover { color: var(--white); }
+
+    /* Sections */
+    .policy-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 88px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--red-dim);
+      border: 1px solid rgba(229,9,20,0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--red);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .policy-section p {
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      line-height: 1.8;
+    }
+
+    .policy-section ul {
+      list-style: none;
+      margin: 8px 0 16px 0;
+    }
+
+    .policy-section ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text);
+      font-size: 0.93rem;
+      padding: 6px 0;
+      line-height: 1.6;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .policy-section ul li:last-child { border-bottom: none; }
+
+    .policy-section ul li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 8px;
+      opacity: 0.7;
+    }
+
+    /* Info cards */
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-card.highlight {
+      border-color: rgba(229,9,20,0.2);
+      background: var(--red-dim);
+    }
+
+    .info-card.success {
+      border-color: rgba(16,185,129,0.2);
+      background: rgba(16,185,129,0.06);
+    }
+
+    .info-card-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .info-card-icon.red { color: var(--red); }
+    .info-card-icon.green { color: #10b981; }
+    .info-card-icon.blue { color: #60a5fa; }
+
+    .info-card p {
+      margin: 0 !important;
+      font-size: 0.9rem !important;
+    }
+
+    .info-card strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Divider */
+    .section-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 48px 0;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 20px rgba(229,9,20,0.3);
+    }
+
+    .contact-btn:hover {
+      background: #c5060f;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(229,9,20,0.4);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px;
+      text-align: center;
+      color: #444;
+      font-size: 0.82rem;
+    }
+
+    .footer a { color: #666; text-decoration: none; }
+    .footer a:hover { color: var(--red); }
+
+    /* ── Page Loader Screen ─────────────────────────────── */
+    .page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  visibility 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  filter 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .page-loader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.02);
+      filter: blur(4px);
+      pointer-events: none;
+    }
+
+    .loader-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .loader-brand {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .loader-icon-glow {
+      position: absolute;
+      left: -8px;
+      top: -8px;
+      width: 58px;
+      height: 58px;
+      background: radial-gradient(circle, rgba(229, 9, 20, 0.45) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: loaderPulse 1.8s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    .loader-icon {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #e50914, #b00710);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.35rem;
+      box-shadow: 0 8px 24px rgba(229, 9, 20, 0.45);
+      animation: loaderIconFloat 2s ease-in-out infinite alternate;
+    }
+
+    .loader-text {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+    }
+
+    .loader-text span {
+      color: var(--red);
+    }
+
+    .loader-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .loader-badge ion-icon {
+      color: var(--red);
+      font-size: 0.9rem;
+    }
+
+    .loader-bar-wrap {
+      width: 190px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 99px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .loader-bar {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #e50914, #ff5e62, #e50914);
+      border-radius: 99px;
+      transform: translateX(-100%);
+      animation: loaderProgress 1.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    }
+
+    @keyframes loaderProgress {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(0%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes loaderPulse {
+      0% { transform: scale(0.85); opacity: 0.3; }
+      100% { transform: scale(1.2); opacity: 0.7; }
+    }
+
+    @keyframes loaderIconFloat {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-4px); }
+    }
+
+    /* ── Reading Progress Bar ────────────────────────────── */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, #e50914, #ff5252);
+      z-index: 9999;
+      transition: width 0.1s linear;
+      box-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+    }
+
+    /* ── Content Entrance Animations ────────────────────── */
+    .hero, .toc, .policy-section, .contact-card {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    body.page-ready .hero {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.08s;
+    }
+
+    body.page-ready .toc {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.16s;
+    }
+
+    body.page-ready .policy-section,
+    body.page-ready .contact-card,
+    body.page-ready .privacy-contact-box {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Privacy Contact Form ────────────────────────────── */
+    .privacy-contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 38px;
+      margin-top: 40px;
+      position: relative;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .privacy-contact-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.5), transparent);
+    }
+
+    .contact-form-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .contact-form-header h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-header p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group-full {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #aaa;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--white);
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      outline: none;
+    }
+
+    .form-select option {
+      background: #18181c;
+      color: #fff;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--red);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 110px;
+      line-height: 1.5;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--red);
+      color: #ffffff;
+      border: none;
+      padding: 13px 24px;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(229, 9, 20, 0.35);
+    }
+
+    .form-submit-btn:hover {
+      background: #c5060f;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+    }
+
+    .form-submit-btn:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .form-status {
+      display: none;
+      padding: 14px 18px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .form-status.success {
+      display: flex;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+
+    .form-status.error {
+      display: flex;
+      background: rgba(229, 9, 20, 0.1);
+      border: 1px solid rgba(229, 9, 20, 0.3);
+      color: #f87171;
+    }
+
+    .contact-alternatives {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .contact-alternatives span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 12px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .nav { padding: 0 20px; }
+      .hero, .content-wrap { padding-left: 20px; padding-right: 20px; }
+      .hero { padding-top: 48px; padding-bottom: 40px; }
+      .toc { padding: 20px; }
+      .toc-list { grid-template-columns: 1fr; }
+      .contact-card, .privacy-contact-box { padding: 24px 18px; }
+      .contact-form { grid-template-columns: 1fr; }
+      .info-card { flex-direction: column; gap: 10px; }
+    }
+  </style>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgress" class="reading-progress-bar"></div>
+
+  <!-- Smooth Page Loader Screen -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-brand">
+        <div class="loader-icon-glow"></div>
+        <div class="loader-icon"><ion-icon name="ticket"></ion-icon></div>
+        <div class="loader-text">Cine<span>Watch</span></div>
+      </div>
+      <div class="loader-badge">
+        <ion-icon name="shield-checkmark"></ion-icon>
+        <span>Privacy &amp; Policy</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><ion-icon name="ticket"></ion-icon></div>
+      <span class="nav-logo-text">Cine<span>Watch</span></span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back to CineWatch
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-badge">
+      <ion-icon name="shield-checkmark-outline"></ion-icon>
+      Legal
+    </div>
+    <h1>Privacy &amp; Policy</h1>
+    <p>We take your privacy seriously. This page explains what data we collect, how we use it, and how we keep it safe.</p>
+    <div class="hero-meta">
+      <ion-icon name="calendar-outline"></ion-icon>
+      Last updated: October 13, 2026 &nbsp;·&nbsp; Version 2.4 &nbsp;·&nbsp; Effective Immediately
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content-wrap">
+
+    <!-- Table of contents -->
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#overview">1. Overview</a></li>
+        <li><a href="#data-collected">2. Data We Collect</a></li>
+        <li><a href="#how-we-use">3. How We Use Your Data</a></li>
+        <li><a href="#account-security">4. Account &amp; Security</a></li>
+        <li><a href="#subtitles-privacy">5. Subtitle Engine &amp; Kurdish Tools</a></li>
+        <li><a href="#download-privacy">6. Offline Downloads &amp; Referrals</a></li>
+        <li><a href="#vip-privacy">7. VIP &amp; Payment Privacy</a></li>
+        <li><a href="#third-party">8. Third-Party Services</a></li>
+        <li><a href="#cookies">9. Cookies &amp; Preferences Center</a></li>
+        <li><a href="#social-privacy">10. Official Social Channels</a></li>
+        <li><a href="#your-rights">11. Your Rights</a></li>
+        <li><a href="#children">12. Children's Privacy</a></li>
+        <li><a href="#changes">13. Changes to This Policy</a></li>
+        <li><a href="#contact">14. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- 1. Overview -->
+    <div class="policy-section" id="overview">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="information-circle-outline"></ion-icon></div>
+        <h2>1. Overview</h2>
+      </div>
+      <p>Welcome to <strong style="color:#fff">CineWatch</strong> ("we", "us", or "our"). CineWatch is a free movie and TV show browsing, rating, and tracking platform available at <strong style="color:#fff">cinewatch.watch</strong>.</p>
+      <p>This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website and services. By using CineWatch, you agree to the practices described in this policy.</p>
+      <div class="info-card success">
+        <div class="info-card-icon green"><ion-icon name="shield-checkmark"></ion-icon></div>
+        <div>
+          <strong>Our commitment to you</strong>
+          <p>We only collect the minimum data necessary to provide our service. We do not sell your personal information to anyone, ever.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 2. Data We Collect -->
+    <div class="policy-section" id="data-collected">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="server-outline"></ion-icon></div>
+        <h2>2. Data We Collect</h2>
+      </div>
+      <p>We collect only what is strictly required to provide a seamless streaming and tracking experience. Here is an exhaustive breakdown of what we store:</p>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="person-circle-outline"></ion-icon></div>
+        <div>
+          <strong>Account Information (Optional Registration)</strong>
+          <p>Name, email address, username, and profile avatar. This is required if you create a CineWatch account to synchronize your preferences across devices.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="heart-outline"></ion-icon></div>
+        <div>
+          <strong>Viewing &amp; Playback State</strong>
+          <p>Your watchlist, favorites, rated titles, playback timestamps ("Continue Watching"), audio preference (Sub vs. Dub), and volume levels. When not logged in, this state is maintained solely in your device's browser LocalStorage.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="document-text-outline"></ion-icon></div>
+        <div>
+          <strong>Custom Subtitle Files (.srt / .vtt) — 100% Client-Side</strong>
+          <p>When you use the subtitle synchronization tools or upload a custom subtitle file (e.g. from KurdSubtitle), the file is read and rendered entirely within your browser's local memory. It is never uploaded to, transmitted across, or stored on our servers.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="chatbubble-outline"></ion-icon></div>
+        <div>
+          <strong>Community Comments</strong>
+          <p>If you post a review or comment on a title, your comment body, chosen username, and avatar are stored and publicly visible to the community.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="analytics-outline"></ion-icon></div>
+        <div>
+          <strong>Privacy-Preserving Analytics (Umami)</strong>
+          <p>We use cookieless, GDPR-compliant analytics via Umami to monitor server uptime, stream performance, and popular titles without tracking individual identities or collecting personal IP addresses.</p>
+        </div>
+      </div>
+
+      <p>We do <strong style="color:#fff">NOT</strong> collect credit card numbers, banking details, physical addresses, or government identification.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. How We Use -->
+    <div class="policy-section" id="how-we-use">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="construct-outline"></ion-icon></div>
+        <h2>3. How We Use Your Data</h2>
+      </div>
+      <p>Your data is used exclusively to operate, maintain, and enhance CineWatch:</p>
+      <ul>
+        <li>Providing personalized watchlists, favorites, and automatic resume playback</li>
+        <li>Remembering your subtitle offsets, Kurdish dialogue sync markers, and audio tracks</li>
+        <li>Verifying VIP entitlement tokens to suppress advertisements and grant access to VIP 4K server routes</li>
+        <li>Displaying your profile, username, and community contributions</li>
+        <li>Protecting platform availability against bots, DDoS attacks, and abusive scrapers (via Cloudflare)</li>
+      </ul>
+      <div class="info-card highlight">
+        <div class="info-card-icon red"><ion-icon name="close-circle-outline"></ion-icon></div>
+        <div>
+          <strong>We never sell your data</strong>
+          <p>Your personal information is never sold, rented, or traded to third parties or advertising brokers under any circumstances.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 4. Account & Security -->
+    <div class="policy-section" id="account-security">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="lock-closed-outline"></ion-icon></div>
+        <h2>4. Account &amp; Security</h2>
+      </div>
+      <p>Account authentication and cloud data storage are handled through <strong style="color:#fff">Supabase</strong>, an enterprise-grade backend infrastructure provider:</p>
+      <ul>
+        <li>Passwords are secured with high-entropy <strong style="color:#fff">bcrypt hashing</strong> — plain-text passwords cannot be accessed by anyone, including platform administrators.</li>
+        <li>Active user sessions are authenticated using time-limited <strong style="color:#fff">JWT tokens</strong>.</li>
+        <li>User data is shielded by strict <strong style="color:#fff">Row Level Security (RLS)</strong> policies ensuring each user can only read and write their own data.</li>
+        <li>All browser-to-server communication is strictly enforced with <strong style="color:#fff">HTTPS / TLS 1.3 encryption</strong>.</li>
+      </ul>
+      <div class="info-card success">
+        <div class="info-card-icon green"><ion-icon name="checkmark-circle-outline"></ion-icon></div>
+        <div>
+          <strong>Isolated User Data</strong>
+          <p>Your account records, custom lists, and profile settings are strictly isolated and inaccessible to other users or external third parties.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 5. Subtitle Engine & Kurdish Tools -->
+    <div class="policy-section" id="subtitles-privacy">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="language-outline"></ion-icon></div>
+        <h2>5. Subtitle Engine &amp; Kurdish Tools</h2>
+      </div>
+      <p>CineWatch features an integrated multi-track subtitle engine with advanced Kurdish subtitle synchronization tools, live dialogue explorer (دێڕەکان), timecode offset adjusters, and KurdSubtitle integration:</p>
+      <ul>
+        <li><strong>Local Processing:</strong> All subtitle file parsing (.srt and .vtt formats) takes place inside your browser’s JavaScript engine. No subtitle texts, dialogue snippets, or user uploads are transferred to or logged on CineWatch servers.</li>
+        <li><strong>Public Community Catalogs:</strong> When fetching community Kurdish subtitles via KurdSubtitle or public repositories, requests are routed to public CDN endpoints. No personal identifier is passed with these requests.</li>
+        <li><strong>Offset Preferences:</strong> Your customized subtitle timing offsets (e.g., ±1s, ±3s) are remembered in your browser’s local storage solely for playback convenience during your viewing session.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 6. Offline Downloads & Referrals -->
+    <div class="policy-section" id="download-privacy">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="download-outline"></ion-icon></div>
+        <h2>6. Offline Downloads &amp; Referrals</h2>
+      </div>
+      <p>CineWatch provides a dedicated Download Hub (<strong style="color:#fff">download.html</strong>) and stream referral tools for users seeking offline playback:</p>
+      <ul>
+        <li><strong>External Endpoint Routing:</strong> CineWatch does not host video files on its servers. When you click download or copy a direct media link, you are connected directly to independent third-party file distributors or video hosts.</li>
+        <li><strong>No Transfer Telemetry:</strong> We do not log what files you download, how many megabytes you transfer, or your destination IP address when communicating with third-party download servers.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 7. VIP & Payment Privacy -->
+    <div class="policy-section" id="vip-privacy">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="star-outline"></ion-icon></div>
+        <h2>7. VIP &amp; Payment Privacy</h2>
+      </div>
+      <p>Users who choose to upgrade to CineWatch VIP (FastPass) enjoy ad-free viewing, priority 4K streaming server routes, and fast-track download slots:</p>
+      <ul>
+        <li><strong>Zero Financial Storage:</strong> All subscription transactions, crypto payments, card authorizations, and local payment methods (such as Qi Card, Telegram bots) are handled entirely by specialized third-party payment gateways. CineWatch never sees, collects, or stores your credit card numbers, CVVs, or wallet private keys.</li>
+        <li><strong>Entitlement Tokens:</strong> Upon verified payment, your account or browser is issued a secure cryptographic entitlement token (or activation code) that grants ad-free status and 4K server access.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 8. Third-Party Services -->
+    <div class="policy-section" id="third-party">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="globe-outline"></ion-icon></div>
+        <h2>8. Third-Party Services</h2>
+      </div>
+      <p>CineWatch collaborates with reputable third-party infrastructure and content indexing partners:</p>
+      <ul>
+        <li><strong style="color:#fff">Third-Party Video Streaming Hosts</strong> — Video playback is provided by independent third-party embed servers (VidLink, AutoEmbed, 2Embed, Vidsrc, etc.). These hosts operate independently and have their own privacy practices.</li>
+        <li><strong style="color:#fff">Supabase</strong> — Cloud database, user authentication, and profile sync (privacy policy: supabase.com/privacy).</li>
+        <li><strong style="color:#fff">Cloudflare</strong> — Content delivery network, DDoS defense, and bot prevention via Cloudflare Turnstile (privacy policy: cloudflare.com/privacypolicy).</li>
+        <li><strong style="color:#fff">Umami Analytics</strong> — Cookieless, GDPR-compliant privacy analytics that measures general traffic trends without profiling users.</li>
+        <li><strong style="color:#fff">Monetization &amp; Ad Networks</strong> — For free tier users, non-intrusive sponsor ads may be delivered by external networks (e.g. Adsterra). These networks may use contextual cookies. VIP members bypass all ad network scripts.</li>
+        <li><strong style="color:#fff">The Movie Database (TMDB)</strong> — Movie posters, backdrop art, and metadata are served via TMDB public APIs. No user viewing data is shared with TMDB.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 9. Cookies & Preferences Center -->
+    <div class="policy-section" id="cookies">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="browsers-outline"></ion-icon></div>
+        <h2>9. Cookies &amp; Preferences Center</h2>
+      </div>
+      <p>CineWatch utilizes browser storage (LocalStorage) and lightweight cookies to optimize your playback environment. You have granular control over these categories:</p>
+      <ul>
+        <li><strong style="color:#fff">Strictly Necessary</strong> — Essential session tokens, security verification, and fundamental player controls.</li>
+        <li><strong style="color:#fff">Functional &amp; Playback</strong> — Video timestamps, volume level, Sub/Dub selection, subtitle sync offsets, and watchlist data.</li>
+        <li><strong style="color:#fff">Performance Analytics</strong> — Anonymous, cookieless stream quality and page performance metrics via Umami.</li>
+        <li><strong style="color:#fff">Advertising (Free Tier Only)</strong> — Contextual ad delivery to support free streaming servers. Completely deactivated for VIP subscribers.</li>
+      </ul>
+      <p>You can customize or revoke your consent preferences at any time by clicking the button below or using the "Cookie Preferences" link in the website footer:</p>
+      <div style="margin-top: 16px;">
+        <button type="button" class="form-submit-btn" style="display: inline-flex; width: auto; padding: 10px 20px; font-size: 0.9rem;" data-open-cookie-settings id="openCookieSettingsPolicyBtn">
+          <ion-icon name="options-outline" style="font-size: 1.1rem;"></ion-icon>
+          Customize Cookie Preferences
+        </button>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 10. Official Social Channels -->
+    <div class="policy-section" id="social-privacy">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+        <h2>10. Official Social Channels</h2>
+      </div>
+      <p>CineWatch maintains an official community presence on Instagram (<strong style="color:#fff">@cinewatch.official</strong>) and other social platforms to share movie trailers, new episode announcements, and platform updates:</p>
+      <ul>
+        <li><strong>Third-Party Platform Policies:</strong> When you view our reels, follow our page, comment on posts, or send direct messages on Instagram, your activity is governed by Meta’s Privacy Policy and Terms of Service.</li>
+        <li><strong>No Data Linkage:</strong> CineWatch does not automatically connect your social media identity to your CineWatch website streaming account unless you voluntarily provide your email or username to resolve a customer support ticket.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 11. Your Rights -->
+    <div class="policy-section" id="your-rights">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="hand-right-outline"></ion-icon></div>
+        <h2>11. Your Rights</h2>
+      </div>
+      <p>You have full autonomy over your personal data under global privacy standards (including GDPR and CCPA):</p>
+      <ul>
+        <li><strong style="color:#fff">Access:</strong> Review all personal information linked to your profile from your account settings.</li>
+        <li><strong style="color:#fff">Rectification:</strong> Update your username, email, or avatar at any time.</li>
+        <li><strong style="color:#fff">Erasure:</strong> Request permanent deletion of your account and associated history within 30 days via our contact form.</li>
+        <li><strong style="color:#fff">Client Data Clearing:</strong> Clear your local watchlist, resume points, and subtitle offsets instantly by clearing your browser cache or site data.</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 12. Children's Privacy -->
+    <div class="policy-section" id="children">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="people-outline"></ion-icon></div>
+        <h2>12. Children's Privacy</h2>
+      </div>
+      <p>CineWatch is not intended for individuals under the age of <strong style="color:#fff">13</strong>. We do not knowingly solicit or collect personal information from children under 13.</p>
+      <p>If you believe a minor under 13 has provided personal data on CineWatch, please submit an inquiry through our contact form below so we can immediately purge the data.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 13. Changes to This Policy -->
+    <div class="policy-section" id="changes">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="refresh-outline"></ion-icon></div>
+        <h2>13. Changes to This Policy</h2>
+      </div>
+      <p>As we roll out new features, server capabilities, or legal enhancements, this Privacy Policy will be revised accordingly. Significant modifications will be highlighted by updating the effective date at the top of this document.</p>
+      <p>Your continued use of CineWatch after changes are posted constitutes acceptance of the updated policy terms.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 14. Contact Us -->
+    <div class="policy-section" id="contact">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="mail-outline"></ion-icon></div>
+        <h2>14. Contact Us</h2>
+      </div>
+      <p>If you have any questions, suggestions, or privacy requests regarding your personal information, reach out to our team using the direct form below.</p>
+    </div>
+
+    <!-- Interactive Privacy Contact Form -->
+    <div class="privacy-contact-box" id="privacyContactContainer">
+      <div class="contact-form-header">
+        <div class="hero-badge" style="margin-bottom: 12px;">
+          <ion-icon name="shield-checkmark"></ion-icon>
+          Direct Privacy Inquiry
+        </div>
+        <h3>Send us a direct message</h3>
+        <p>Have a question regarding your data, account privacy, or want to submit a data deletion request? Fill out the form below and we will respond directly to your email.</p>
+      </div>
+
+      <div class="form-status" id="contactFormStatus"></div>
+
+      <form id="privacyContactForm" class="contact-form">
+        <div>
+          <label class="form-label" for="contactName">Your Name</label>
+          <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Smith" required autocomplete="name" />
+        </div>
+
+        <div>
+          <label class="form-label" for="contactEmail">Your Email Address</label>
+          <input type="email" id="contactEmail" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email" />
+        </div>
+
+        <div class="form-group-full">
+          <label class="form-label" for="contactSubject">Inquiry Topic</label>
+          <select id="contactSubject" class="form-select">
+            <option value="Account Question">Account Question</option>
+            <option value="Data Request">Data Request</option>
+            <option value="Privacy Concern">Privacy Concern</option>
+            <option value="Technical Issue">Technical Issue</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group-full">
+          <label class="form-label" for="contactMessage">Your Message</label>
+          <textarea id="contactMessage" class="form-textarea" placeholder="Describe your inquiry or request in detail..." required></textarea>
+        </div>
+
+        <div class="form-group-full">
+          <button type="submit" id="contactSubmitBtn" class="form-submit-btn">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+            Send Privacy Request
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 CineWatch. All rights reserved. &nbsp;·&nbsp;
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="https://www.instagram.com/cinewatch.official" target="_blank" rel="noopener noreferrer">Instagram</a> &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="#" id="openCookieSettingsBtn">Cookie Preferences</a>
+    </p>
+  </footer>
+
+  <script>
+    // Smooth Page Loader & Reading Progress
+    (function() {
+      function dismissLoader() {
+        var loader = document.getElementById('pageLoader');
+        if (!loader || loader.classList.contains('loaded')) return;
+        loader.classList.add('loaded');
+        document.body.classList.add('page-ready');
+        setTimeout(function() {
+          if (loader && loader.parentNode) {
+            loader.parentNode.removeChild(loader);
+          }
+        }, 600);
+      }
+
+      var minTimePassed = false;
+      var pageLoaded = false;
+
+      setTimeout(function() {
+        minTimePassed = true;
+        if (pageLoaded) dismissLoader();
+      }, 420);
+
+      window.addEventListener('load', function() {
+        pageLoaded = true;
+        if (minTimePassed) dismissLoader();
+      });
+
+      // Safety fallback
+      setTimeout(dismissLoader, 1400);
+
+      // Realtime reading progress bar
+      window.addEventListener('scroll', function() {
+        var bar = document.getElementById('readingProgress');
+        if (!bar) return;
+        var top = window.pageYOffset || document.documentElement.scrollTop;
+        var max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = max > 0 ? (top / max) * 100 : 0;
+        bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+      }, { passive: true });
+
+      // Privacy Contact Form Submission
+      var form = document.getElementById('privacyContactForm');
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          var btn = document.getElementById('contactSubmitBtn');
+          var status = document.getElementById('contactFormStatus');
+          var name = document.getElementById('contactName').value.trim();
+          var email = document.getElementById('contactEmail').value.trim();
+          var subject = document.getElementById('contactSubject').value;
+          var message = document.getElementById('contactMessage').value.trim();
+
+          if (!name || !email || !message) return;
+
+          btn.disabled = true;
+          btn.innerHTML = '<ion-icon name="sync-outline" style="animation: spin 0.8s linear infinite;"></ion-icon> Delivering Message...';
+          status.className = 'form-status';
+          status.style.display = 'none';
+
+          try {
+            var res = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify({
+                access_key: '965583ff-4601-49f3-8adf-bf0a881b0686',
+                from_name: name + ' (CineWatch Privacy)',
+                subject: '[CineWatch Privacy] ' + subject + ' from ' + name,
+                email: email,
+                replyto: email,
+                message: 'Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + subject + '\n\nMessage:\n' + message
+              })
+            });
+
+            var data = await res.json();
+            if (res.status === 200 && data.success) {
+              status.className = 'form-status success';
+              status.innerHTML = '<ion-icon name="checkmark-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Inquiry Sent Successfully!</strong><br>Thank you, ' + name + '. Your privacy request has been delivered directly to our team. We will review it and reply to <u>' + email + '</u> as soon as possible.</div>';
+              status.style.display = 'flex';
+              form.reset();
+              status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              throw new Error(data.message || 'Submission failed');
+            }
+          } catch(err) {
+            status.className = 'form-status error';
+            status.innerHTML = '<ion-icon name="alert-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Message could not be sent.</strong><br>Please email us directly at <a href="mailto:cinewatch.contact@gmail.com" style="color:#fff; font-weight:600; text-decoration:underline;">cinewatch.contact@gmail.com</a>.</div>';
+            status.style.display = 'flex';
+          } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<ion-icon name="paper-plane-outline"></ion-icon> Send Privacy Request';
+          }
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
