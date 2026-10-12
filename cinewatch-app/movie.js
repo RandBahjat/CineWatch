@@ -5978,6 +5978,16 @@ function bindEventListeners() {
     };
   }
 
+  // Offline Download Modal Handlers
+  const closeDlBtn = document.getElementById("closeDownloadModalBtn");
+  const dlModal = document.getElementById("downloadModal");
+  if (closeDlBtn) closeDlBtn.onclick = () => closeDownloadModal();
+  if (dlModal) {
+    dlModal.onclick = (e) => {
+      if (e.target.id === "downloadModal") closeDownloadModal();
+    };
+  }
+
   if (reportForm) {
     reportForm.onsubmit = async (e) => {
       e.preventDefault();
