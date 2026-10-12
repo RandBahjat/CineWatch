@@ -617,7 +617,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/yHMJbIEBHnKYWh20XtxV16emwXT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/768ysyQL9v0Q45pn2pf78qIeVt8.jpg",
     videoUrl: "969681",
     hdVideoUrl: "969681",
     fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4",
