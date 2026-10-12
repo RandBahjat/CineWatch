@@ -2106,8 +2106,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         window.artPlayerInstance.subtitle.show = true;
         if (subtitleUrl && subtitleUrl.trim().length > 0) {
           const isSrt = subtitleUrl.includes('.srt');
+          const isKu = subtitleUrl.includes('lang=ckb') || subtitleUrl.includes('ckb') || (window._cwSubtitleTracks && window._cwSubtitleTracks.some(t => t.file === subtitleUrl && (t.srclang === 'ku' || (t.label||'').toLowerCase().includes('kurd'))));
           window.artPlayerInstance.subtitle.switch(subtitleUrl, {
-            name: 'Subtitles',
+            name: isKu ? 'Kurdish (Sorani)' : 'Subtitles',
             type: isSrt ? 'srt' : 'vtt'
           }).then(() => {
             if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
