@@ -3528,6 +3528,8 @@ body.rtl-layout .details-back-btn svg {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
   display: inline-block !important;
   margin: 3px 0 !important;
+  direction: auto !important;
+  unicode-bidi: plaintext !important;
 }
 
 .cw-server-opt {
