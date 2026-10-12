@@ -4355,6 +4355,8 @@ function closeDownloadModal() {
   const modal = document.getElementById("downloadModal");
   if (modal) modal.classList.add("hidden");
 }
+window.openDownloadModal = openDownloadModal;
+window.closeDownloadModal = closeDownloadModal;
 
 // ==========================================
 // VIP MEMBERSHIP & LOCAL WALLET CHECKOUT
