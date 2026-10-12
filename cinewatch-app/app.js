@@ -1657,9 +1657,8 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               sData.streamUrl = h264Qualities[0].url;
             }
           } else {
-            // ONLY H.265 IS AVAILABLE - Must fallback to iframe because Artplayer cannot play H.265
-            window._cwQualities = [];
-            sData.streamUrl = '';
+            // Only H.265/HEVC is available: Keep all qualities and streamUrl so Artplayer attempts playback!
+            window._cwQualities = sData.qualities;
           }
         }
         cleanUrl = sData.streamUrl;
