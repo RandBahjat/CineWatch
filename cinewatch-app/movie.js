@@ -4225,6 +4225,123 @@ function closeReportModal() {
   if (modal) modal.classList.add("hidden");
 }
 
+function openDownloadModal(movie) {
+  if (!movie) return;
+  const modal = document.getElementById("downloadModal");
+  if (!modal) return;
+
+  const headerTitle = document.getElementById("dlModalHeaderTitle");
+  const subtitle = document.getElementById("dlModalSubtitle");
+  const tvWrap = document.getElementById("dlTvEpisodeSelectorWrap");
+  const seasonSelect = document.getElementById("dlSeasonSelect");
+  const episodeSelect = document.getElementById("dlEpisodeSelect");
+  const opt4kBtn = document.getElementById("dlOpt4kBtn");
+  const opt1080Btn = document.getElementById("dlOpt1080Btn");
+  const opt720Btn = document.getElementById("dlOpt720Btn");
+  const optSubBtn = document.getElementById("dlOptSubBtn");
+
+  if (headerTitle) {
+    headerTitle.textContent = `Download "${movie.title}"`;
+  }
+  if (subtitle) {
+    const isTv = !!(movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0);
+    subtitle.textContent = `${movie.year || ''} · ${isTv ? (movie.seasons.length + ' Seasons') : (movie.duration || 'Full HD Movie')}`;
+  }
+
+  // Check 4K Direct Availability
+  const hasDirect4k = !!(movie.is4k && movie.videoUrl && (movie.videoUrl.startsWith('http') && movie.videoUrl.includes('.mp4')));
+  if (opt4kBtn) {
+    if (hasDirect4k) {
+      opt4kBtn.classList.remove("hidden");
+      opt4kBtn.href = movie.videoUrl;
+      opt4kBtn.setAttribute("download", `${movie.title.replace(/[^a-zA-Z0-9_-]/g, '_')}_4K.mp4`);
+      opt4kBtn.onclick = null;
+    } else {
+      opt4kBtn.classList.add("hidden");
+    }
+  }
+
+  function updateDownloadLinks(seasonNum, epNum) {
+    const isTv = !!(movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0);
+    const tmdbId = movie.cinesrcId || movie.videoUrl || movie.id;
+
+    if (isTv) {
+      if (opt1080Btn) {
+        opt1080Btn.href = `https://dl.vidsrc.vip/tv/${tmdbId}/${seasonNum}/${epNum}`;
+        opt1080Btn.onclick = (e) => {
+          window.open(`https://dl.vidsrc.vip/tv/${tmdbId}/${seasonNum}/${epNum}`, '_blank');
+          e.preventDefault();
+        };
+      }
+      if (opt720Btn) {
+        opt720Btn.href = `https://vidsrc.to/embed/tv/${tmdbId}/${seasonNum}/${epNum}`;
+        opt720Btn.onclick = (e) => {
+          window.open(`https://vidsrc.to/embed/tv/${tmdbId}/${seasonNum}/${epNum}`, '_blank');
+          e.preventDefault();
+        };
+      }
+      if (optSubBtn) {
+        optSubBtn.href = `https://kurdsubtitle.net/?s=${encodeURIComponent(movie.title)}`;
+      }
+    } else {
+      if (opt1080Btn) {
+        opt1080Btn.href = hasDirect4k ? movie.videoUrl : `https://dl.vidsrc.vip/movie/${tmdbId}`;
+        opt1080Btn.onclick = (e) => {
+          if (hasDirect4k) return;
+          window.open(`https://dl.vidsrc.vip/movie/${tmdbId}`, '_blank');
+          e.preventDefault();
+        };
+      }
+      if (opt720Btn) {
+        opt720Btn.href = `https://vidsrc.to/embed/movie/${tmdbId}`;
+        opt720Btn.onclick = (e) => {
+          window.open(`https://vidsrc.to/embed/movie/${tmdbId}`, '_blank');
+          e.preventDefault();
+        };
+      }
+      if (optSubBtn) {
+        optSubBtn.href = `https://kurdsubtitle.net/?s=${encodeURIComponent(movie.title)}`;
+      }
+    }
+  }
+
+  if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
+    if (tvWrap) tvWrap.classList.remove("hidden");
+    if (seasonSelect && episodeSelect) {
+      seasonSelect.innerHTML = movie.seasons.map(s => `<option value="${s.season}">Season ${s.season}</option>`).join('');
+
+      function populateEpisodes(sNum) {
+        const season = movie.seasons.find(s => s.season === parseInt(sNum)) || movie.seasons[0];
+        if (season && season.episodes) {
+          episodeSelect.innerHTML = season.episodes.map(ep => `<option value="${ep.episode}">Episode ${ep.episode}: ${ep.title || ''}</option>`).join('');
+        }
+      }
+
+      seasonSelect.onchange = () => {
+        populateEpisodes(seasonSelect.value);
+        updateDownloadLinks(seasonSelect.value, episodeSelect.value || 1);
+      };
+
+      episodeSelect.onchange = () => {
+        updateDownloadLinks(seasonSelect.value, episodeSelect.value || 1);
+      };
+
+      populateEpisodes(movie.seasons[0].season);
+      updateDownloadLinks(movie.seasons[0].season, movie.seasons[0].episodes[0]?.episode || 1);
+    }
+  } else {
+    if (tvWrap) tvWrap.classList.add("hidden");
+    updateDownloadLinks(1, 1);
+  }
+
+  modal.classList.remove("hidden");
+}
+
+function closeDownloadModal() {
+  const modal = document.getElementById("downloadModal");
+  if (modal) modal.classList.add("hidden");
+}
+
 // ==========================================
 // VIP MEMBERSHIP & LOCAL WALLET CHECKOUT
 // ==========================================
