@@ -7263,8 +7263,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             { html: 'Off', url: '', default: !subtitleUrl }
           ];
           const tracks = window._cwSubtitleTracks || [];
+          let hasFoundDef = false;
           tracks.forEach((t, i) => {
-            const isDef = Boolean(t.file && subtitleUrl && (t.file === subtitleUrl || i === 0));
+            const isDef = Boolean(t.file && subtitleUrl && t.file === subtitleUrl);
+            if (isDef) hasFoundDef = true;
             items.push({
               html: t.label || `Track ${i + 1}`,
               url: t.file || '',
@@ -7278,11 +7280,21 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               if (!kuUrl.includes('lang=ckb')) {
                 kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
               }
+              const isDef = Boolean(subtitleUrl && subtitleUrl === kuUrl);
+              if (isDef) hasFoundDef = true;
               items.push({
                 html: 'Kurdish (Sorani)',
                 url: kuUrl,
-                default: false
+                default: isDef
               });
+            }
+          }
+          if (!hasFoundDef && items.length > 2) {
+            const kuItem = items.find(it => (it.html || '').toLowerCase().includes('kurdish'));
+            if (kuItem) {
+              kuItem.default = true;
+            } else if (items[2]) {
+              items[2].default = true;
             }
           }
           return items;
@@ -7352,7 +7364,40 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     window.artPlayerInstance.switchUrl(d.source);
                   }
                   if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
+                    const isLocal3000 = (window.location.origin === 'http://localhost:3000' || window.location.origin === 'http://127.0.0.1:3000');
+                    if (isLocal3000) {
+                      d.tracks.forEach(t => {
+                        if (t.file && t.file.includes('cinewatch-maaa.onrender.com')) {
+                          t.file = t.file.replace('https://cinewatch-maaa.onrender.com', window.location.origin);
+                        }
+                      });
+                    }
+                    if (window.location.protocol === 'https:') {
+                      d.tracks.forEach(t => {
+                        if (t.file && (t.file.startsWith('http://localhost:3000') || t.file.startsWith('http://127.0.0.1:3000'))) {
+                          t.file = t.file.replace(/^http:\/\/(localhost|127\.0\.0\.1):3000/, 'https://cinewatch-maaa.onrender.com');
+                        }
+                      });
+                    }
+                    const baseTrack = d.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || d.tracks[0];
+                    let kuUrl = '';
+                    if (baseTrack && baseTrack.file) {
+                      kuUrl = baseTrack.file;
+                      if (!kuUrl.includes('lang=ckb')) {
+                        kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+                      }
+                      if (!d.tracks.some(t => t.srclang === 'ku' || (t.label||'').toLowerCase().includes('kurdish'))) {
+                        d.tracks.push({
+                          label: 'Kurdish (Sorani)',
+                          file: kuUrl,
+                          srclang: 'ku'
+                        });
+                      }
+                    }
+                    const kuTrack = d.tracks.find(t => t.srclang === 'ku' || (t.label||'').toLowerCase().includes('kurd'));
+                    const activeTrack = kuTrack || baseTrack || d.tracks[0];
                     window._cwSubtitleTracks = d.tracks;
+
                     const items = [
                       {
                         html: 'Display',
@@ -7373,26 +7418,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       items.push({
                         html: t.label || `Track ${i + 1}`,
                         url: t.file || '',
-                        default: i === 0
+                        default: Boolean(activeTrack && t.file === activeTrack.file)
                       });
                     });
-                    const baseTrack = d.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || d.tracks[0];
-                    if (baseTrack && baseTrack.file) {
-                      let kuUrl = baseTrack.file;
-                      kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
-                      items.push({
-                        html: 'Kurdish (Sorani)',
-                        url: kuUrl,
-                        default: false
-                      });
-                    }
                     const subSetting = window.artPlayerInstance.setting.find('Subtitle');
                     if (subSetting) {
                       subSetting.selector = items;
                     }
 
-                    if (baseTrack && baseTrack.file) {
-                      window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label, type: 'vtt' });
+                    if (activeTrack && activeTrack.file) {
+                      const isSrt = activeTrack.file.includes('.srt');
+                      window.artPlayerInstance.subtitle.switch(activeTrack.file, { name: activeTrack.label || 'Kurdish (Sorani)', type: isSrt ? 'srt' : 'vtt' });
                       window.artPlayerInstance.subtitle.show = true;
                     }
                   } else if (window.artPlayerInstance.subtitle && isDub) {
