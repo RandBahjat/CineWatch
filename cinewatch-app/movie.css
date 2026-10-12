@@ -5845,6 +5845,32 @@ body.rtl-layout .details-back-btn svg {
   color: #fff;
 }
 
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #8b8b9e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+  flex-shrink: 0;
+  stroke: #8b8b9e;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover {
+  color: #fff !important;
+}
+
+.footer-social-link:hover .footer-social-icon {
+  stroke: #e1306c;
+  transform: translateY(-2px) scale(1.15);
+  filter: drop-shadow(0 2px 8px rgba(225, 48, 108, 0.45));
+}
+
 .footer-bottom {
   max-width: 1200px;
   margin: 3rem auto 0;
