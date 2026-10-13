@@ -120,7 +120,7 @@ window._SERIES_DATA = [
     "title": "East of Eden",
     "type": "TV Show",
     "year": 2026,
-    "rating": "7.7",
+    "rating": "8.1",
     "age": "TV-MA",
     "duration": "50m",
     "genres": [
@@ -148,7 +148,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Timshel",
             "airDate": "2026-10-1",
-            "rating": 8.6,
+            "rating": 7.7,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609930.jpg",
             "duration": "51 min",
             "overview": "Torn apart by a domineering father, brothers Adam and Charles Trask are forced into opposing paths to adulthood — one far away, one close to home."
@@ -161,7 +161,7 @@ window._SERIES_DATA = [
     "title": "Monster: The Lizzie Borden Story",
     "type": "TV Show",
     "year": 2026,
-    "rating": "7.5",
+    "rating": "4.6",
     "age": "TV-MA",
     "duration": "50m",
     "genres": [
@@ -189,7 +189,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Bloodbath",
             "airDate": "2026-09-17",
-            "rating": 7.5,
+            "rating": 4.2,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604460.jpg",
             "duration": "54 min",
             "overview": "Tormented by her sharp-tongued stepmother, Lizzie Borden sees her world open up when an unorthodox and provocative new maid joins her household"
@@ -198,7 +198,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Strong Kitty",
             "airDate": "2026-09-17",
-            "rating": 7.5,
+            "rating": 6.3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604461.jpg",
             "duration": "53 min",
             "overview": "As she grows more intimate with Lizzie, Maggie is burdened with a painful reality. A gruesome act of cruelty by Abby pushes Lizzie over the edge."
@@ -207,7 +207,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Whack Job!",
             "airDate": "2026-09-17",
-            "rating": 7.5,
+            "rating": 6,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604462.jpg",
             "duration": "48 min",
             "overview": "A long-lost family member returns to pressure Andrew for a favor. Maggie endures a sadistic punishment as she and Lizzie revise their revenge plans."
@@ -216,7 +216,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "R.I.P (Rest in Pestilence) Abby Borden",
             "airDate": "2026-09-17",
-            "rating": 7.5,
+            "rating": 6.3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604463.jpg",
             "duration": "43 min",
             "overview": "Abby searches for the remedy to her deep-seated dissatisfaction. Lizzie unleashes decades of frustration as a brutal plan swings into action."
@@ -225,7 +225,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "41",
             "airDate": "2026-09-17",
-            "rating": 7.5,
+            "rating": 5,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604464.jpg",
             "duration": "39 min",
             "overview": "Andrew revisits the past as he grapples with marital issues in the present — and after a night of debauchery, encounters a new kind of female rage."
@@ -358,7 +358,7 @@ window._SERIES_DATA = [
     "title": "Star Trek: Strange New Worlds",
     "type": "TV Show",
     "year": 2022,
-    "rating": "8.1",
+    "rating": "8.2",
     "age": "TV-14",
     "genres": [
       "Sci-Fi",
@@ -765,7 +765,7 @@ window._SERIES_DATA = [
     "title": "Slow Horses",
     "type": "TV Show",
     "year": 2022,
-    "rating": "8.3",
+    "rating": "8.4",
     "age": "TV-MA",
     "genres": [
       "Drama",
@@ -889,7 +889,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Boardroom Politics",
             "airDate": "2022-12-23",
-            "rating": 8.6,
+            "rating": 8.5,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/436/1091304.jpg",
             "duration": "41 min",
             "overview": "Lamb orders his Slow Horses to walk into traps. River believes something alarming is heading toward London."
@@ -1089,7 +1089,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Circle of Life",
             "airDate": "2026-09-16",
-            "rating": 8.5,
+            "rating": 8.3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609087.jpg",
             "duration": "48 min",
             "overview": "River braces for his grandfather's funeral. Lamb looks into the death of an ex–Slow Horse."
@@ -1100,7 +1100,8 @@ window._SERIES_DATA = [
             "airDate": "2026-09-23",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609086.jpg",
             "duration": "47 min",
-            "overview": "The reemergence of Frank Harkness and a suspicious string of murders put Lamb and team on high alert."
+            "overview": "The reemergence of Frank Harkness and a suspicious string of murders put Lamb and team on high alert.",
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -1108,7 +1109,8 @@ window._SERIES_DATA = [
             "airDate": "2026-09-30",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609085.jpg",
             "duration": "49 min",
-            "overview": "Ex–Slow Horses return to the fold as assassins close in. Taverner faces the fallout of her TV interview."
+            "overview": "Ex–Slow Horses return to the fold as assassins close in. Taverner faces the fallout of her TV interview.",
+            "rating": 8.3
           },
           {
             "episode": 4,
@@ -1116,7 +1118,8 @@ window._SERIES_DATA = [
             "airDate": "2026-10-07",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609084.jpg",
             "duration": "50 min",
-            "overview": "Lamb tries figuring out who Frank is working for. Sid, River, and Coe do everything to evade the hit squad."
+            "overview": "Lamb tries figuring out who Frank is working for. Sid, River, and Coe do everything to evade the hit squad.",
+            "rating": 8.5
           },
           {
             "episode": 5,
@@ -1261,7 +1264,7 @@ window._SERIES_DATA = [
     "title": "Neagley",
     "type": "TV Show",
     "year": 2026,
-    "rating": "7.8",
+    "rating": "7.7",
     "age": "TV-MA",
     "genres": [
       "Action",
@@ -1290,7 +1293,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "L Train",
             "airDate": "2026-09-16",
-            "rating": 8,
+            "rating": 7.9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604133.jpg",
             "duration": "57 min",
             "overview": "When Neagley's childhood friend, Tommy, dies after walking into an oncoming train, the police are ready to label this as an apparent accident. But after receiving a mysterious message from the deceased, Neagley knows something is amiss."
@@ -1299,7 +1302,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Team Building Exercises",
             "airDate": "2026-09-16",
-            "rating": 7.9,
+            "rating": 7.8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604134.jpg",
             "duration": "47 min",
             "overview": "With Neagley's investigation into the suspicious death of her childhood friend, Tommy Crane, hitting countless roadblocks, a long-buried secret from Neagley's past threatens to upend everything she once knew of her childhood."
@@ -1308,7 +1311,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Hammer Time",
             "airDate": "2026-09-16",
-            "rating": 8,
+            "rating": 7.8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604135.jpg",
             "duration": "53 min",
             "overview": "After an ambush turns up her best break in the case thus far, Neagley is blindsided by local law enforcement's attempts to sideline her."
@@ -1317,7 +1320,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Breaking & Entering",
             "airDate": "2026-09-16",
-            "rating": 8.1,
+            "rating": 7.9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604136.jpg",
             "duration": "52 min",
             "overview": "Neagley's investigation into Tommy's death has drawn the focus of powerful enemies - putting herself and her team in danger."
@@ -1326,7 +1329,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Trip",
             "airDate": "2026-09-16",
-            "rating": 8.2,
+            "rating": 8.1,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604137.jpg",
             "duration": "41 min",
             "overview": "Hidden truths from Neagley's past come rushing to the forefront, forcing her to rely on her newfound team more than ever."
@@ -1335,7 +1338,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Rocked",
             "airDate": "2026-09-16",
-            "rating": 8.2,
+            "rating": 7.9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604138.jpg",
             "duration": "46 min",
             "overview": "With new evidence coming to light, Neagley realizes she is not only responsible for solving Tommy's murder, but countless others as well."
@@ -1344,7 +1347,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Lebron's No Jordan",
             "airDate": "2026-09-16",
-            "rating": 8.3,
+            "rating": 8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604139.jpg",
             "duration": "46 min",
             "overview": "As clues dry up, Hudson is forced to make a devil's bargain to keep the case from going cold."
@@ -1450,7 +1453,7 @@ window._SERIES_DATA = [
     "title": "Mousetrap",
     "type": "TV Show",
     "year": 2026,
-    "rating": 7.6,
+    "rating": "7.0",
     "age": "TV-MA",
     "duration": "1h",
     "genres": [
@@ -1555,7 +1558,7 @@ window._SERIES_DATA = [
     "title": "Lanterns",
     "type": "TV Show",
     "year": 2026,
-    "rating": 8.6,
+    "rating": "7.8",
     "age": "TV-MA",
     "duration": "1h",
     "genres": [
@@ -5574,7 +5577,7 @@ window._SERIES_DATA = [
     "title": "The Boys",
     "type": "TV Show",
     "year": 2019,
-    "rating": 8.7,
+    "rating": "8.5",
     "age": "TV-MA",
     "duration": "1h",
     "genres": [
@@ -6084,7 +6087,7 @@ window._SERIES_DATA = [
     "title": "Lioness",
     "type": "TV Show",
     "year": 2023,
-    "rating": 6.7,
+    "rating": "7.8",
     "age": "TV-MA",
     "duration": "42m",
     "genres": [
@@ -7373,7 +7376,7 @@ window._SERIES_DATA = [
     "title": "Daredevil: Born Again",
     "type": "TV Show",
     "year": 2025,
-    "rating": 7.9,
+    "rating": "8.1",
     "age": "TV-MA",
     "duration": "1h",
     "genres": [
@@ -7894,7 +7897,7 @@ window._SERIES_DATA = [
     "title": "Ben 10",
     "type": "TV Show",
     "year": 2005,
-    "rating": 7.5,
+    "rating": "7.6",
     "age": "TV-Y7-FV",
     "duration": "30m",
     "genres": [
@@ -23581,7 +23584,7 @@ window._SERIES_DATA = [
     "title": "Off Campus",
     "type": "TV Show",
     "year": 2026,
-    "rating": 7.9,
+    "rating": "7.8",
     "age": "TV-MA",
     "duration": "1 Season",
     "genres": [
@@ -40963,7 +40966,7 @@ window._SERIES_DATA = [
     "title": "Spider Noir",
     "type": "TV Show",
     "year": 2026,
-    "rating": 7.7,
+    "rating": "7.6",
     "age": "TV-14",
     "duration": "45m",
     "genres": [

@@ -1,5 +1,5 @@
 {
-  "lastRun": 1791908174756,
+  "lastRun": 1791909347582,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -3642,6 +3642,248 @@
       "lastChecked": 1791905671577,
       "title": "Mean Girls 2",
       "year": 2011
+    },
+    "series:avatar: seven havens": {
+      "imdbId": "tt35854736",
+      "rating": "N/A",
+      "lastChecked": 1791909347582,
+      "title": "Avatar: Seven Havens",
+      "year": 2026
+    },
+    "series:east of eden": {
+      "imdbId": "tt21097264",
+      "rating": "8.1",
+      "lastChecked": 1791909347582,
+      "title": "East of Eden",
+      "year": 2026
+    },
+    "series:monster: the lizzie borden story": {
+      "imdbId": "tt39673631",
+      "rating": "4.6",
+      "lastChecked": 1791909347582,
+      "title": "Monster: The Lizzie Borden Story",
+      "year": 2026
+    },
+    "series:stranger things: tales from '85": {
+      "imdbId": "tt27486290",
+      "rating": "5.9",
+      "lastChecked": 1791909347582,
+      "title": "Stranger Things: Tales from '85",
+      "year": 2026
+    },
+    "series:neagley": {
+      "imdbId": "tt33539520",
+      "rating": "7.7",
+      "lastChecked": 1791909347582,
+      "title": "Neagley",
+      "year": 2026
+    },
+    "series:last seen": {
+      "imdbId": "tt6037988",
+      "rating": "N/A",
+      "lastChecked": 1791909347582,
+      "title": "Last Seen",
+      "year": 2026
+    },
+    "series:mousetrap": {
+      "imdbId": "tt36996011",
+      "rating": "7.0",
+      "lastChecked": 1791909347582,
+      "title": "Mousetrap",
+      "year": 2026
+    },
+    "series:lanterns": {
+      "imdbId": "tt26545992",
+      "rating": "7.8",
+      "lastChecked": 1791909347582,
+      "title": "Lanterns",
+      "year": 2026
+    },
+    "series:lucky": {
+      "imdbId": "tt34866681",
+      "rating": "6.7",
+      "lastChecked": 1791909347582,
+      "title": "Lucky",
+      "year": 2026
+    },
+    "series:daredevil: born again": {
+      "imdbId": "tt18923754",
+      "rating": "8.1",
+      "lastChecked": 1791909347582,
+      "title": "Daredevil: Born Again",
+      "year": 2025
+    },
+    "series:off campus": {
+      "imdbId": "tt33546863",
+      "rating": "7.8",
+      "lastChecked": 1791909347582,
+      "title": "Off Campus",
+      "year": 2026
+    },
+    "series:spider noir": {
+      "imdbId": "tt30460310",
+      "rating": "7.6",
+      "lastChecked": 1791909347582,
+      "title": "Spider Noir",
+      "year": 2026
+    },
+    "series:your friendly neighborhood spider-man": {
+      "imdbId": "tt16027074",
+      "rating": "7.5",
+      "lastChecked": 1791909347582,
+      "title": "Your Friendly Neighborhood Spider-Man",
+      "year": 2025
+    },
+    "series:the wonderfully weird world of gumball": {
+      "imdbId": "tt36985473",
+      "rating": "8.5",
+      "lastChecked": 1791909347582,
+      "title": "The Wonderfully Weird World of Gumball",
+      "year": 2025
+    },
+    "series:dutton ranch": {
+      "imdbId": "tt34991493",
+      "rating": "8.2",
+      "lastChecked": 1791909347582,
+      "title": "Dutton Ranch",
+      "year": 2026
+    },
+    "anime:dragon ball super: beerus": {
+      "imdbId": "tt39395275",
+      "rating": "N/A",
+      "lastChecked": 1791909347582,
+      "title": "Dragon Ball Super: Beerus",
+      "year": 2026
+    },
+    "series:star trek: strange new worlds": {
+      "imdbId": "tt12327578",
+      "rating": "8.2",
+      "lastChecked": 1791909347582,
+      "title": "Star Trek: Strange New Worlds",
+      "year": 2022
+    },
+    "series:slow horses": {
+      "imdbId": "tt5875444",
+      "rating": "8.4",
+      "lastChecked": 1791909347582,
+      "title": "Slow Horses",
+      "year": 2022
+    },
+    "series:batman: caped crusader": {
+      "imdbId": "tt14681596",
+      "rating": "7.2",
+      "lastChecked": 1791909347582,
+      "title": "Batman: Caped Crusader",
+      "year": 2024
+    },
+    "series:reacher": {
+      "imdbId": "tt9288030",
+      "rating": "8.0",
+      "lastChecked": 1791909347582,
+      "title": "Reacher",
+      "year": 2022
+    },
+    "series:batman: the animated series": {
+      "imdbId": "tt0103359",
+      "rating": "9.0",
+      "lastChecked": 1791909347582,
+      "title": "Batman: The Animated Series",
+      "year": 1992
+    },
+    "series:the new batman adventure": {
+      "lastChecked": 1791909347582,
+      "notFound": true
+    },
+    "series:from": {
+      "imdbId": "tt9813792",
+      "rating": "7.8",
+      "lastChecked": 1791909347582,
+      "title": "From",
+      "year": 2022
+    },
+    "series:transformers: prime": {
+      "imdbId": "tt1659175",
+      "rating": "8.1",
+      "lastChecked": 1791909347582,
+      "title": "Transformers: Prime",
+      "year": 2010
+    },
+    "series:spider-man: the animated series": {
+      "imdbId": "tt0112175",
+      "rating": "8.4",
+      "lastChecked": 1791909347582,
+      "title": "Spider-Man: The Animated Series",
+      "year": 1994
+    },
+    "series:the spectacular spider-man": {
+      "imdbId": "tt0976192",
+      "rating": "8.4",
+      "lastChecked": 1791909347582,
+      "title": "The Spectacular Spider-Man",
+      "year": 2008
+    },
+    "series:breaking bad": {
+      "imdbId": "tt0903747",
+      "rating": "9.5",
+      "lastChecked": 1791909347582,
+      "title": "Breaking Bad",
+      "year": 2008
+    },
+    "series:the boys": {
+      "imdbId": "tt1190634",
+      "rating": "8.5",
+      "lastChecked": 1791909347582,
+      "title": "The Boys",
+      "year": 2019
+    },
+    "series:lioness": {
+      "imdbId": "tt13111078",
+      "rating": "7.8",
+      "lastChecked": 1791909347582,
+      "title": "Lioness",
+      "year": 2023
+    },
+    "series:the batman": {
+      "imdbId": "tt0398417",
+      "rating": "7.4",
+      "lastChecked": 1791909347582,
+      "title": "The Batman",
+      "year": 2004
+    },
+    "series:daredevil": {
+      "imdbId": "tt3322312",
+      "rating": "8.6",
+      "lastChecked": 1791909347582,
+      "title": "Daredevil",
+      "year": 2015
+    },
+    "series:invincible": {
+      "imdbId": "tt6741278",
+      "rating": "8.7",
+      "lastChecked": 1791909347582,
+      "title": "Invincible",
+      "year": 2021
+    },
+    "series:ben 10": {
+      "imdbId": "tt0760437",
+      "rating": "7.6",
+      "lastChecked": 1791909347582,
+      "title": "Ben 10",
+      "year": 2005
+    },
+    "series:ben 10: alien force": {
+      "imdbId": "tt1192169",
+      "rating": "7.6",
+      "lastChecked": 1791909347582,
+      "title": "Ben 10: Alien Force",
+      "year": 2008
+    },
+    "series:ben 10: ultimate alien": {
+      "imdbId": "tt1622696",
+      "rating": "7.8",
+      "lastChecked": 1791909347582,
+      "title": "Ben 10: Ultimate Alien",
+      "year": 2010
     }
   }
 }
