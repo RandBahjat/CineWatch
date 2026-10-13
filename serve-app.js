@@ -319,12 +319,13 @@ const server = http.createServer((req, res) => {
 
   let filePath = path.join(baseDir, pathname);
 
-  // Seamless Sync: If requesting core shared files, serve directly from the root workspace
-  // so whatever is edited in VS Code / IDE is instantly live in the CineWatch app!
+  // Seamless Bidirectional Sync: If requesting core shared files, compare root and cinewatch-app
+  // and automatically serve & sync whichever is newer so edits in VS Code/IDE are instantly live!
   const sharedFiles = [
     '/movies-data.js',
     '/series-data.js',
     '/anime-data.js',
+    '/fourk-data.js',
     '/movie.js',
     '/movie.css',
     '/browse-fix.css',
@@ -333,8 +334,33 @@ const server = http.createServer((req, res) => {
   ];
   if (sharedFiles.includes(pathname)) {
     const parentPath = path.join(WEBSITE_DIR, pathname);
-    if (fs.existsSync(parentPath)) {
+    const appPath = path.join(ROOT_DIR, pathname);
+
+    if (fs.existsSync(parentPath) && fs.existsSync(appPath)) {
+      try {
+        const parentStat = fs.statSync(parentPath);
+        const appStat = fs.statSync(appPath);
+
+        if (appStat.mtimeMs > parentStat.mtimeMs) {
+          // cinewatch-app has newer edits -> sync to root
+          fs.copyFileSync(appPath, parentPath);
+          fs.utimesSync(parentPath, appStat.atime, appStat.mtime);
+          filePath = parentPath;
+        } else if (parentStat.mtimeMs > appStat.mtimeMs) {
+          // root has newer edits -> sync to cinewatch-app
+          fs.copyFileSync(parentPath, appPath);
+          fs.utimesSync(appPath, parentStat.atime, parentStat.mtime);
+          filePath = parentPath;
+        } else {
+          filePath = parentPath;
+        }
+      } catch (e) {
+        filePath = parentPath;
+      }
+    } else if (fs.existsSync(parentPath)) {
       filePath = parentPath;
+    } else if (fs.existsSync(appPath)) {
+      filePath = appPath;
     }
   }
 
