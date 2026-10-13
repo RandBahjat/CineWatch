@@ -387,10 +387,10 @@ async function loadMediaFromAPI() {
     MOVIES = allMedia;
     window.MOVIES = MOVIES;
 
-    // Apply featured / trending flags
+    // Apply featured / trending flags strictly according to active code lists
     for (let i = 0; i < MOVIES.length; i++) {
       const m = MOVIES[i];
-      m.featured = Boolean(m.featured) || FEATURED_TITLES.some(t => matchMediaTitle(m, t));
+      m.featured = FEATURED_TITLES.some(t => matchMediaTitle(m, t));
       m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
     }
 
