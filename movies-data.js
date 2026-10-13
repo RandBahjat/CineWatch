@@ -96,7 +96,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
-    overview: "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime from Jeremy Crawford, the husband of bestselling author Verity Crawford. After a mysterious accident leaves Verity unable to finish her successful book series, Lowen arrives at the Crawford home to sort through notes and manuscripts. While digging through the office, she discovers an unpublished autobiography containing horrifying admissions about the family's tragedies, drawing Lowen into an intoxicating, dangerous web of obsession and deceit.",
+    overview: "Based on Capcom's legendary arcade fighting game franchise, martial artists from across the globe gather to compete in the brutal World Warrior Tournament. Beneath the spectacle of fierce arena clashes, the fighters must uncover and dismantle the sinister underworld syndicate Shadaloo and its power-hungry dictator, M. Bison.",
     overviewKurdish: "لوین ئاشلی، نووسەرێکی کەم‌دەرامەت کە لە لێواری مایەپووچبووندایە، گرێبەستێکی گەورە لە جێریمی کرۆفۆرد وەردەگرێت، کە هاوسەری نووسەری بەناوبانگ ڤێریتی کرۆفۆردە. دوای ئەوەی ڕووداوێکی نادیار دەبێتە هۆی پەککەوتنی ڤێریتی لە تەواوکردنی زنجیرە کتێبە بەناوبانگەکەی، لوین دەچێتە ماڵەکەیان بۆ ڕێکخستنی دەستنووسەکانی. لە کاتی پشکنیندا، ژیاننامەیەکی بڵاونەکراوەی ڤێریتی دەدۆزێتەوە کە نهێنی و دانپێدانانی تۆقێنەری تێدایە سەبارەت بە کارەساتە تاریکەکانی خێزانەکەی، بەمەش دەکەوێتە ناو تەڵەیەکی پڕ لە مەترسی، گومان و فریودان.",
     director: "Michael Showalter",
     cast: ["Anne Hathaway, Dakota Johnson, Josh Hartnett"],
