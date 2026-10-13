@@ -24,7 +24,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://cdn.myanimelist.net/images/anime/1928/146063l.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+    "backdrop": "https://m.media-amazon.com/images/S/pv-target-images/c0001e2a0293fc489a574f8942d1fe519dffbfcb26c37720e47a458d9acb738c.jpg",
     "videoUrl": "60108",
     "malId": 60108,
     "anilistId": 182608,
