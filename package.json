@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "sync": "node auto_sync.js",
+    "serve": "node serve-app.js",
+    "server": "node server.js"
+  },
   "dependencies": {
     "libsodium-wrappers": "^0.8.4",
     "puppeteer": "^25.12.0",
