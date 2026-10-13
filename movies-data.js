@@ -838,7 +838,7 @@ window._MOVIES_DATA = [
       "Animation",
       "Sci-Fi"
     ],
-    poster: "https://image.tmdb.org/t/p/original/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
     videoUrl: "1003596",
     trailerUrl: "https://youtu.be/irVNGjRFZGk?si=l5r7wEgaXgw_gpYp",
