@@ -99,7 +99,7 @@ window._MOVIES_DATA = [
     overview: "Based on Capcom's legendary arcade fighting game franchise, martial artists from across the globe gather to compete in the brutal World Warrior Tournament. Beneath the spectacle of fierce arena clashes, the fighters must uncover and dismantle the sinister underworld syndicate Shadaloo and its power-hungry dictator, M. Bison.",
     overviewKurdish: "لەسەر بنەمای زنجیرە یارییە شەڕانگێزییە بەناوبانگەکەی کۆمپانیای کاپکۆم دروستکراوە، جەنگاوەران و شارەزایانی هونەری جەنگی لە هەموو گۆشەیەکی جیهانەوە کۆدەبنەوە بۆ بەشداریکردن لە پاڵەوانێتییەکی توند و خوێناویدا. لە پشت ئەم شەڕ و ڕکابەرییە گەورەیەوە، دەبێت ئەم جەنگاوەرانە پیلانی ڕێکخراوی تاوانکاریی تاریکی «شادالوو» و سەرکردە ستەمکارەکەیان، ئێم. بایکۆن، ئاشکرا بکەن و لەناوی بەرن پێش ئەوەی دەست بەسەر جیهاندا بگرێت.",
     director: "Kitao Sakurai",
-    cast: ["Noah Centineo, David DastmalchianJason Momoa"],
+    cast: ["Noah Centineo, David Dastmalchian , Jason Momoa"],
     trending: true,
     featured: true,
     is4k: false,
