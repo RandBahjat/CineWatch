@@ -9715,12 +9715,12 @@ window._ANIME_DATA = [
     ],
     "id": "one-piece-1999"
   },
-  {
-    "title": "One Piece Log: Fish-Man Island Saga",
+    {
+    "title": "One Piece: Gyojin Tou-hen",
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
-    "rating": 7.8,
+    "rating": 8.5,
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -9768,113 +9768,177 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The New Beginning! The Straw Hats Reunite!",
-            "absoluteEpisode": 1
+            "title": "The New Beginning! The Straw Hats Reunite",
+            "absoluteEpisode": 1,
+            "thumbnail": "https://media.kitsu.app/episode/373955/thumbnail/2d28822876218dd71d1057af4fd15301.jpg",
+            "duration": "24m",
+            "overview": "Two years after the Paramount War, each member of the Straw Hats returns to Sabaody Archipelago. However, a group calling itself the Straw Hats is having everything their way and is recruiting new members."
           },
           {
             "episode": 2,
-            "title": "Setting Sail! The Dawn of Adventure to the New World",
-            "absoluteEpisode": 2
+            "title": "Setting Sail! The Dawn of the Adventure to the New World",
+            "absoluteEpisode": 2,
+            "thumbnail": "https://media.kitsu.app/episode/373956/thumbnail/8ae2f488f9cc2acf166f6ce2eb7ba59a.jpg",
+            "duration": "24m",
+            "overview": "The Straw Hats finally set up a plan to leave Sabaody Archipelago, while the fake Luffy tries to punish those who insulted him. Things get even more chaotic when the Navy raids both Brook's concert and the gathering of the fake Straw Hats."
           },
           {
             "episode": 3,
             "title": "A Shocking Revelation - A Great Benefactor, Kuma",
-            "absoluteEpisode": 3
+            "absoluteEpisode": 3,
+            "thumbnail": "https://media.kitsu.app/episode/373957/thumbnail/4974750f1b83a8a2f763a9a64e6f9943.jpg",
+            "duration": "24m",
+            "overview": "The Straw Hats finally reunite after two years. With the help of all their supporters, they set sail for Fish-Man Island. While admiring the underwater scenery, Franky begins to tell the story of a man who protected the Sunny all this time."
           },
           {
             "episode": 4,
             "title": "A Deep Sea Adventure! A Looming Undersea Threat",
-            "absoluteEpisode": 4
+            "absoluteEpisode": 4,
+            "thumbnail": "https://media.kitsu.app/episode/373958/thumbnail/2394fbf8c9ae76bb43bdb0077c028f6b.jpg",
+            "duration": "24m",
+            "overview": "With Caribou and his crew hot on their tail, the Straw Hats descend to the depths of the sea to get to Fish-Man Island. And as they’re about to ride the downwelling current that will take them further into the depths, a legendary giant creature rears its ugly head!"
           },
           {
             "episode": 5,
             "title": "Undersea Volcanic Eruption! The Straw Hats in Turmoil",
-            "absoluteEpisode": 5
+            "absoluteEpisode": 5,
+            "thumbnail": "https://media.kitsu.app/episode/373959/thumbnail/2bb4de7c7a5436f9fb5e97e875d920ff.jpg",
+            "duration": "24m",
+            "overview": "As the crew plumb the depths of the sea in search of Luffy, Sanji and Zoro, they encounter the terrifying and mysterious secrets of the deep, including an undersea volcano, whose eruption almost spells \"the end\" for the Straw Hats as they continue on their way to Fish-Man Island."
           },
           {
             "episode": 6,
             "title": "Mermaids' Paradise! Landing at Fish-Man Island",
-            "absoluteEpisode": 6
+            "absoluteEpisode": 6,
+            "thumbnail": "https://media.kitsu.app/episode/373960/thumbnail/8edaccd866ea995f54916419123d1fb9.jpg",
+            "duration": "24m",
+            "overview": "The Straw Hats finally land on Fish-Man Island, but they get separated. Luffy, Usopp, Sanji, and Chopper reunite with Camie and she leads them to the Mermaid Inlet where Sanji's \"enthusiasm\" gets them into trouble!"
           },
           {
             "episode": 7,
             "title": "A Terror in the Deep Sea! Hody's Ambition",
-            "absoluteEpisode": 7
+            "absoluteEpisode": 7,
+            "thumbnail": "https://media.kitsu.app/episode/373961/thumbnail/c3f1273b55934412292fa1b5611c219f.jpg",
+            "duration": "24m",
+            "overview": "Madame Sharley, Fish-Man Island’s popular prophet, has a devastating premonition that may spell the end of the fantastic undersea kingdom! Meanwhile, the true power and intentions of the New Fish-Man Pirates are made clear in all its shocking horror!"
           },
           {
             "episode": 8,
             "title": "A Coward Crybaby! Shirahoshi, the Mermaid Princess",
-            "absoluteEpisode": 8
+            "absoluteEpisode": 8,
+            "thumbnail": "https://media.kitsu.app/episode/373962/thumbnail/253e4233dc0d4f7eadcb85b2e30acd4d.jpg",
+            "duration": "24m",
+            "overview": "Shirahoshi the Mermaid Princess screams for help when she finds a little human, which is Luffy, in her room. He soothes the princess, but then suddenly a giant axe comes flying towards her. Meanwhile, Nami, Usopp, and Brook are surrounded by the Neptune Army who try to arrest them for a crime they haven’t even committed yet."
           },
           {
             "episode": 9,
             "title": "Kidnapping?! Luffy and Shirahoshi",
-            "absoluteEpisode": 9
+            "absoluteEpisode": 9,
+            "thumbnail": "https://media.kitsu.app/episode/373963/thumbnail/27490f04678de9e206c478f2d0c9f7cc.jpg",
+            "duration": "24m",
+            "overview": "Zoro, Nami, Usopp, and Brook accidentally occupy Ryugu Castle and take King Neptune and the others hostage. And while Hody Jones and Vander Decken's ingenious plan to infiltrate the castle is put into action, Luffy takes the Mermaid Princess for a walk!"
           },
           {
             "episode": 10,
             "title": "A Raid Begins! Hody and Decken",
-            "absoluteEpisode": 10
+            "absoluteEpisode": 10,
+            "thumbnail": "https://media.kitsu.app/episode/373964/thumbnail/ef6af3363a66721b4bbc6440eef8b6d7.jpg",
+            "duration": "24m",
+            "overview": "The New Fish-Man Pirates launch their raid on Ryugu Castle, only to find that the Straw Hats have beaten them to the punch. Meanwhile at Coral Hill, greater confusion ensues when the people of Fish-Man Island confuse Luffy with the Mermaid kidnapper!"
           },
           {
             "episode": 11,
             "title": "Jinbe's Confession - A Shocking History of the Fish-Men",
-            "absoluteEpisode": 11
+            "absoluteEpisode": 11,
+            "thumbnail": "https://media.kitsu.app/episode/373965/thumbnail/9c9b2ad3e00fdd9861940bd88fbcb6c0.jpg",
+            "duration": "24m",
+            "overview": "Most of the Neptune Army, as well as Nami and Camie, manage to escape Ryugu Castle which was raided by Hody Jones and his clan, but Zoro, Usopp, Brook, and King Neptune are left behind. Meanwhile at the Forest of the Sea, Luffy reunites with Jinbe who has a startling secret to share!"
           },
           {
             "episode": 12,
-            "title": "Fish-Man Island Past! Otohime and Tiger",
-            "absoluteEpisode": 12
+            "title": "Fish-Man Island's Past! Otohime and Tiger",
+            "absoluteEpisode": 12,
+            "thumbnail": "https://media.kitsu.app/episode/373966/thumbnail/19ad726c694bb993d1c17328637e3e6c.jpg",
+            "duration": "24m",
+            "overview": "Jinbe relates the intriguing history of Queen Otohime and Fisher Tiger. 16 years ago, Queen Otohime, Shirahoshi’s mother, was trying to teach her people the importance of living in peace with humans. Meanwhile, Fisher Tiger attacked Mary Geoise to free the slaves."
           },
           {
             "episode": 13,
-            "title": "Tiger's Regret - The Future Otohime Envisions",
-            "absoluteEpisode": 13
+            "title": "Tiger's Regret - The Future That Otohime Envisions!",
+            "absoluteEpisode": 13,
+            "thumbnail": "https://media.kitsu.app/episode/373967/thumbnail/409720732f52c69ec50717c92fa07076.jpg",
+            "duration": "24m",
+            "overview": "Jinbe shares how Fisher Tiger and his crew journeyed to Foolshout Island to take the former slave girl Koala home, and how it led to Fisher Tiger's tragic death. After his death, Queen Otohime's passion to see her vision come true was renewed and that was when an ill-natured Celestial Dragon arrived at Fish-Man Island."
           },
           {
             "episode": 14,
-            "title": "Otohime's Tragedy - Hody's Declaration of War",
-            "absoluteEpisode": 14
+            "title": "The Tragedy of Otohime - Hody Declares War",
+            "absoluteEpisode": 14,
+            "thumbnail": "https://media.kitsu.app/episode/373968/thumbnail/7a7c4a6ce9f98b3187d52573398dc5f9.jpg",
+            "duration": "24m",
+            "overview": "10 years ago, Queen Otohime returned from her visit to the surface with a promise that seemed almost too good to be true, but when unrest erupted on Fish-Man Island, Queen Otohime's dreams as well as the queen herself were put in grave peril! In the present day, Hody makes his terrifying announcement to all citizens of the Kingdom of Ryugu and the Straw Hats."
           },
           {
             "episode": 15,
-            "title": "Hody's Transformation! The Princes Fight Back",
-            "absoluteEpisode": 15
+            "title": "Hody's Accident! The Princes Strike Back",
+            "absoluteEpisode": 15,
+            "thumbnail": "https://media.kitsu.app/episode/373969/thumbnail/9b91654e4227004037986f5d00872dc0.jpg",
+            "duration": "24m",
+            "overview": "The clock ticks closer to King Neptune's execution as the princes move towards a confrontation with Hody at Conchorde Plaza, but as Hody takes more and more Energy Steroids to kill the pain from Zoro's attack, an overdose has unexpected consequences!"
           },
           {
             "episode": 16,
             "title": "Shirahoshi's Desperate Cry - Luffy Begins His Attack!",
-            "absoluteEpisode": 16
+            "absoluteEpisode": 16,
+            "thumbnail": "https://media.kitsu.app/episode/373970/thumbnail/b422ef0ea2273628ed163eedf5ca5b08.jpg",
+            "duration": "24m",
+            "overview": "As King Neptune’s execution draws near, Jinbe and Shirahoshi are also captured. The king and the princes hear a shocking new detail regarding the assassination of Queen Otohime 10 years ago. When Hody is about to land a finishing blow on the king, the unexpected happens!"
           },
           {
             "episode": 17,
-            "title": "Battle Royal! The Straw Hats vs. 100,000 Opponents",
-            "absoluteEpisode": 17
+            "title": "Battle Royal! The Straw Hats vs. 100,000 opponents",
+            "absoluteEpisode": 17,
+            "thumbnail": "https://media.kitsu.app/episode/373971/thumbnail/0d2777d419532f0e2f7d0b43199956cf.jpg",
+            "duration": "24m",
+            "overview": "The showdown between the Straw Hats and Hody's massive army! Though hopelessly outnumbered, the members of the Straw Hats are not the same fighters they were two years ago. Will their new skills and Franky’s new weapons be enough to save Fish-Man Island?"
           },
           {
             "episode": 18,
             "title": "Fish-Man Island Faces Destruction! Noah, the Ancient Ark",
-            "absoluteEpisode": 18
+            "absoluteEpisode": 18,
+            "thumbnail": "https://media.kitsu.app/episode/373972/thumbnail/2eda104ade3944d9d9a87385524e234d.jpg",
+            "duration": "24m",
+            "overview": "As the battle between the Straw Hats and the New Fish-Man Pirates continues to unfold, an ancient ship called Noah is seen falling onto Fish-Man Island. The island's minutes seem numbered, but Shirahoshi makes a desperate break to save the island, potentially sacrificing her own life in the process."
           },
           {
             "episode": 19,
             "title": "Luffy vs. Hody! All-Out Red Hawk",
-            "absoluteEpisode": 19
+            "absoluteEpisode": 19,
+            "thumbnail": "https://media.kitsu.app/episode/373973/thumbnail/da2afec435b459ea7404573d6c72f898.jpg",
+            "duration": "24m",
+            "overview": "Decken faints and Noah begins falling back toward Fish-Man Island. An evacuation order is issued, and the entire island falls into chaos. Fukaboshi reveals the terrible truth about Hody and the New Fish-Man Pirates while Luffy launches an all-out attack on Hody."
           },
           {
             "episode": 20,
             "title": "The Promise of the Future - The Road Toward the Sun",
-            "absoluteEpisode": 20
+            "absoluteEpisode": 20,
+            "thumbnail": "https://media.kitsu.app/episode/373974/thumbnail/9c32b63563b47d557dba9d0951954ce1.jpg",
+            "duration": "24m",
+            "overview": "With the threat of Hody and the New Fish-Man Pirates behind them, Luffy and the Straw Hats have one more promise to keep - stop Noah from crushing the island! Luffy tries his best to destroy Noah, but at the last minute, the fate of the island depends on some unexpected help."
           },
           {
             "episode": 21,
             "title": "Goodbye, Fish-Man Island! To the New World, the Mightiest Sea in the World",
-            "absoluteEpisode": 21
+            "absoluteEpisode": 21,
+            "thumbnail": "https://media.kitsu.app/episode/373975/thumbnail/2d86d27e3d686190fcd9b4d94cb4e891.jpg",
+            "duration": "24m",
+            "overview": "While the rest of the Straw Hats enjoy the banquet, Robin asks Neptune about Joyboy, the name written on the Ponegliff in the Forest of the Sea. When they are preparing to leave Fish-Man Island, the crew goes looking for stolen treasure, and Luffy makes a promise with Shirahoshi. Then, they set out for the New World."
           }
         ]
       }
     ]
   },
+
   {
     "title": "Dragon Ball Z",
     "type": "TV Show",
