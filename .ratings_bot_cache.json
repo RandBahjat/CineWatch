@@ -1,5 +1,5 @@
 {
-  "lastRun": 1791909347582,
+  "lastRun": 1791916532576,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -3884,6 +3884,233 @@
       "lastChecked": 1791909347582,
       "title": "Ben 10: Ultimate Alien",
       "year": 2010
+    },
+    "series:ben 10: omniverse": {
+      "imdbId": "tt2293002",
+      "rating": "6.7",
+      "lastChecked": 1791916532576,
+      "title": "Ben 10: Omniverse",
+      "year": 2012
+    },
+    "series:miraculous: tales of ladybug & cat noir": {
+      "imdbId": "tt2580046",
+      "rating": "7.5",
+      "lastChecked": 1791916532576,
+      "title": "Miraculous: Tales of Ladybug & Cat Noir",
+      "year": 2015
+    },
+    "series:the last of us": {
+      "imdbId": "tt3581920",
+      "rating": "8.4",
+      "lastChecked": 1791916532576,
+      "title": "The Last of Us",
+      "year": 2023
+    },
+    "series:the gentlemen": {
+      "imdbId": "tt13210838",
+      "rating": "8.1",
+      "lastChecked": 1791916532576,
+      "title": "The Gentlemen",
+      "year": 2024
+    },
+    "series:loki": {
+      "imdbId": "tt9140554",
+      "rating": "8.2",
+      "lastChecked": 1791916532576,
+      "title": "Loki",
+      "year": 2021
+    },
+    "series:stranger things": {
+      "imdbId": "tt4574334",
+      "rating": "8.6",
+      "lastChecked": 1791916532576,
+      "title": "Stranger Things",
+      "year": 2016
+    },
+    "series:money heist": {
+      "imdbId": "tt6468322",
+      "rating": "8.2",
+      "lastChecked": 1791916532576,
+      "title": "Money Heist",
+      "year": 2017
+    },
+    "series:wandavision": {
+      "imdbId": "tt9140560",
+      "rating": "7.9",
+      "lastChecked": 1791916532576,
+      "title": "WandaVision",
+      "year": 2021
+    },
+    "series:arrow": {
+      "imdbId": "tt2193021",
+      "rating": "7.5",
+      "lastChecked": 1791916532576,
+      "title": "Arrow",
+      "year": 2012
+    },
+    "series:the flash": {
+      "imdbId": "tt3107288",
+      "rating": "7.4",
+      "lastChecked": 1791916532576,
+      "title": "The Flash",
+      "year": 2014
+    },
+    "series:supergirl": {
+      "imdbId": "tt4016454",
+      "rating": "6.2",
+      "lastChecked": 1791916532576,
+      "title": "Supergirl",
+      "year": 2015
+    },
+    "series:superman & lois": {
+      "imdbId": "tt11192306",
+      "rating": "7.8",
+      "lastChecked": 1791916532576,
+      "title": "Superman & Lois",
+      "year": 2021
+    },
+    "series:peaky blinders": {
+      "imdbId": "tt2442560",
+      "rating": "8.7",
+      "lastChecked": 1791916532576,
+      "title": "Peaky Blinders",
+      "year": 2013
+    },
+    "series:outer banks": {
+      "imdbId": "tt10293938",
+      "rating": "7.5",
+      "lastChecked": 1791916532576,
+      "title": "Outer Banks",
+      "year": 2020
+    },
+    "series:the queen's gambit": {
+      "imdbId": "tt10048342",
+      "rating": "8.5",
+      "lastChecked": 1791916532576,
+      "title": "The Queen's Gambit",
+      "year": 2020
+    },
+    "series:the good doctor": {
+      "imdbId": "tt6470478",
+      "rating": "8.0",
+      "lastChecked": 1791916532576,
+      "title": "The Good Doctor",
+      "year": 2017
+    },
+    "series:the big bang theory": {
+      "imdbId": "tt0898266",
+      "rating": "8.1",
+      "lastChecked": 1791916532576,
+      "title": "The Big Bang Theory",
+      "year": 2007
+    },
+    "series:game of thrones": {
+      "imdbId": "tt0944947",
+      "rating": "9.2",
+      "lastChecked": 1791916532576,
+      "title": "Game of Thrones",
+      "year": 2011
+    },
+    "series:the witcher": {
+      "imdbId": "tt5180504",
+      "rating": "7.8",
+      "lastChecked": 1791916532576,
+      "title": "The Witcher",
+      "year": 2019
+    },
+    "series:house m.d.": {
+      "lastChecked": 1791916532576,
+      "notFound": true
+    },
+    "series:how i met your mother": {
+      "imdbId": "tt0460649",
+      "rating": "8.3",
+      "lastChecked": 1791916532576,
+      "title": "How I Met Your Mother",
+      "year": 2005
+    },
+    "series:friends": {
+      "imdbId": "tt0108778",
+      "rating": "8.8",
+      "lastChecked": 1791916532576,
+      "title": "Friends",
+      "year": 1994
+    },
+    "series:yellowstone": {
+      "imdbId": "tt4236770",
+      "rating": "8.6",
+      "lastChecked": 1791916532576,
+      "title": "Yellowstone",
+      "year": 2018
+    },
+    "series:the walking dead": {
+      "imdbId": "tt1520211",
+      "rating": "8.1",
+      "lastChecked": 1791916532576,
+      "title": "The Walking Dead",
+      "year": 2010
+    },
+    "series:squid game": {
+      "imdbId": "tt10919420",
+      "rating": "7.9",
+      "lastChecked": 1791916532576,
+      "title": "Squid Game",
+      "year": 2021
+    },
+    "series:prison break": {
+      "imdbId": "tt0455275",
+      "rating": "8.3",
+      "lastChecked": 1791916532576,
+      "title": "Prison Break",
+      "year": 2005
+    },
+    "series:dexter": {
+      "imdbId": "tt0773262",
+      "rating": "8.6",
+      "lastChecked": 1791916532576,
+      "title": "Dexter",
+      "year": 2006
+    },
+    "series:smallville": {
+      "imdbId": "tt0279600",
+      "rating": "7.5",
+      "lastChecked": 1791916532576,
+      "title": "Smallville",
+      "year": 2001
+    },
+    "series:gotham": {
+      "imdbId": "tt3749900",
+      "rating": "7.8",
+      "lastChecked": 1791916532576,
+      "title": "Gotham",
+      "year": 2014
+    },
+    "series:peacemaker": {
+      "imdbId": "tt13146488",
+      "rating": "8.2",
+      "lastChecked": 1791916532576,
+      "title": "Peacemaker",
+      "year": 2022
+    },
+    "series:young sheldon": {
+      "lastChecked": 1791916532576,
+      "notFound": true
+    },
+    "series:she-hulk: attorney at law": {
+      "lastChecked": 1791916532576,
+      "notFound": true
+    },
+    "series:danny phantom": {
+      "lastChecked": 1791916532576,
+      "notFound": true
+    },
+    "series:adventure time": {
+      "lastChecked": 1791916532576,
+      "notFound": true
+    },
+    "series:lucifer": {
+      "lastChecked": 1791916532576,
+      "notFound": true
     }
   }
 }

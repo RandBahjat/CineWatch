@@ -11494,7 +11494,7 @@ window._SERIES_DATA = [
     "title": "The Gentlemen",
     "type": "TV Show",
     "year": 2024,
-    "rating": 8,
+    "rating": "8.1",
     "age": "TV-MA",
     "duration": "50m",
     "genres": [
@@ -11586,7 +11586,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Gospel According to Bobby Glass",
             "airDate": "2024-03-07",
-            "rating": 7.9,
+            "rating": 8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/507/1268791.jpg",
             "duration": "43 min",
             "overview": "A familiar face returns to settle a score with Freddy. Bobby decides it's time to retire and wants Eddie and Susie to make the necessary arrangements."
@@ -11609,7 +11609,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "There's a Rat in the Kitchen",
             "airDate": "2026-09-03",
-            "rating": 7.8,
+            "rating": 7.7,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599380.jpg",
             "duration": "56 min",
             "overview": "Eddie makes a deal with the Mafia in Milan, while Jack preps for a high-stakes night on the town. But will either be able to deliver on their promise?"
@@ -11618,7 +11618,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Do You Reject Satan?",
             "airDate": "2026-09-03",
-            "rating": 7.9,
+            "rating": 7.8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599407.jpg",
             "duration": "52 min",
             "overview": "The cost of restoring the Halstead estate to its former glory continues to spiral — while the farm staff's demand for more pay comes at an impossible price."
@@ -11627,7 +11627,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Bigger Picture",
             "airDate": "2026-09-03",
-            "rating": 8.5,
+            "rating": 8.4,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599409.jpg",
             "duration": "54 min",
             "overview": "The House of Lords is split down the middle, so Eddie looks to the church for help. But to get the bishops on side, he needs to ruffle a few feathers."
@@ -11654,7 +11654,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": " This Mad Circus",
             "airDate": "2026-09-03",
-            "rating": 9.3,
+            "rating": 9.4,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599589.jpg",
             "duration": "43 min",
             "overview": "When Halstead Manor gets overrun with vermin, it's up to Geoff to stamp them out and save his employers. Susie accuses Bobby of tinkering with the plane."
@@ -12690,7 +12690,7 @@ window._SERIES_DATA = [
     "title": "Arrow",
     "type": "TV Show",
     "year": 2012,
-    "rating": 7.4,
+    "rating": "7.5",
     "age": "TV-14",
     "duration": "60m",
     "genres": [
@@ -14294,7 +14294,7 @@ window._SERIES_DATA = [
     "title": "The Flash",
     "type": "TV Show",
     "year": 2014,
-    "rating": 7.5,
+    "rating": "7.4",
     "age": "TV-PG",
     "duration": "43m",
     "genres": [
