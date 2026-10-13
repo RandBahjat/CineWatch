@@ -20,6 +20,32 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    /* Premium card hover & micro-interactions */
+    .tier-card {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+      position: relative;
+      will-change: transform, box-shadow;
+    }
+    .tier-card:hover {
+      transform: translateY(-8px);
+    }
+    .tier-card-basic:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 24px 48px -12px rgba(255, 255, 255, 0.08);
+    }
+    .tier-card-advanced:hover {
+      border-color: rgba(52, 211, 153, 0.8);
+      box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.35), 0 0 25px rgba(16, 185, 129, 0.15);
+    }
+    .tier-card-pro:hover {
+      border-color: #38bdf8;
+      box-shadow: 0 30px 60px -12px rgba(99, 102, 241, 0.55), 0 0 35px rgba(56, 189, 248, 0.3);
+    }
+    .tier-card-ultimate:hover {
+      border-color: #fb7185;
+      box-shadow: 0 25px 50px -12px rgba(244, 63, 94, 0.4), 0 0 30px rgba(251, 191, 36, 0.2);
+    }
   </style>
 </head>
 <body class="min-h-screen bg-[#060709] text-zinc-100 font-sans selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
@@ -34,7 +60,7 @@
 
     <!-- Top Exit Button -->
     <div class="flex justify-end mb-4 lg:mb-2">
-      <button onclick="if (history.length > 1) { history.back(); } else { window.location.href = 'index.html'; }" class="p-2.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-600 transition" aria-label="Close">
+      <button onclick="if (history.length > 1) { history.back(); } else { window.location.href = 'index.html'; }" class="p-2.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-600 hover:scale-105 transition" aria-label="Close">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
     </div>
@@ -62,12 +88,12 @@
           
           <button id="btn-quarterly" onclick="setBilling('quarterly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5">
             3 Months
-            <span class="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded-md font-bold">Save 25%</span>
+            <span class="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded-md font-bold">-15%</span>
           </button>
           
           <button id="btn-yearly" onclick="setBilling('yearly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5">
             Yearly
-            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-md font-bold">Best Value</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-md font-bold">-30%</span>
           </button>
         </div>
       </div>
@@ -80,16 +106,19 @@
     >
 
       <!-- TIER 1: BASIC (Titanium Graphite) -->
-      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-zinc-800/80 bg-gradient-to-b from-zinc-800/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-zinc-700">
+      <div class="tier-card tier-card-basic flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-zinc-800/80 bg-gradient-to-b from-zinc-800/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center">
         <div>
           <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold text-white">Basic</h3>
           </div>
           <p class="text-xs text-zinc-400 min-h-[32px]">Ad-supported standard access</p>
 
-          <div class="my-5 pb-5 border-b border-zinc-800/80 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-basic">$0</span>
-            <span class="text-xs text-zinc-500 font-medium">/ mo</span>
+          <div class="my-5 pb-5 border-b border-zinc-800/80">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white" id="price-basic">$0</span>
+              <span class="text-xs text-zinc-500 font-medium" id="period-basic">/ forever</span>
+            </div>
+            <p class="text-[11px] text-zinc-500 mt-1.5 min-h-[16px]" id="sub-basic">Always free with ads</p>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -130,16 +159,19 @@
       </div>
 
       <!-- TIER 2: ADVANCED (Emerald Aurora) -->
-      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-emerald-500/35 bg-gradient-to-b from-emerald-950/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-emerald-400/60">
+      <div class="tier-card tier-card-advanced flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-emerald-500/35 bg-gradient-to-b from-emerald-950/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center">
         <div>
           <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold text-white">Advanced</h3>
           </div>
           <p class="text-xs text-emerald-300/80 min-h-[32px]">Crisp ad-free HD & personalization</p>
 
-          <div class="my-5 pb-5 border-b border-emerald-950/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-advanced">$7.99</span>
-            <span class="text-xs text-emerald-400 font-medium" id="period-advanced">/ mo</span>
+          <div class="my-5 pb-5 border-b border-emerald-950/60">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white" id="price-advanced">$7.99</span>
+              <span class="text-xs text-emerald-400 font-medium" id="period-advanced">/ mo</span>
+            </div>
+            <p class="text-[11px] text-emerald-400/80 mt-1.5 min-h-[16px]" id="sub-advanced">Billed monthly • Cancel anytime</p>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -174,25 +206,28 @@
           </div>
         </div>
 
-        <button onclick="handleUpgrade('bronze')" class="w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-600/25 hover:brightness-110 active:scale-95 transition">
+        <button onclick="handleUpgrade('bronze')" class="w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-600/25 hover:brightness-110 hover:scale-[1.02] active:scale-95 transition">
           Upgrade to Advanced
         </button>
       </div>
 
       <!-- TIER 3: PRO (Electric Indigo & Cyber Cyan - Flagship) -->
-      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border-2 border-indigo-500 bg-gradient-to-b from-indigo-950/60 via-zinc-900/80 to-zinc-950 shadow-2xl shadow-indigo-950/50 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center lg:-translate-y-2 relative transition duration-300">
+      <div class="tier-card tier-card-pro flex flex-col justify-between rounded-3xl p-6 sm:p-7 border-2 border-indigo-500 bg-gradient-to-b from-indigo-950/60 via-zinc-900/80 to-zinc-950 shadow-2xl shadow-indigo-950/50 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center relative">
         <div>
           <div class="flex justify-between items-center mb-2">
             <h3 class="text-2xl font-black text-white">Pro</h3>
-            <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-extrabold uppercase tracking-widest">
+            <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-extrabold uppercase tracking-widest shadow-md shadow-indigo-600/40">
               Most Popular
             </span>
           </div>
           <p class="text-xs text-indigo-200 min-h-[32px]">Master 4K cinema + offline download</p>
 
-          <div class="my-5 pb-5 border-b border-indigo-900/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-pro">$14.99</span>
-            <span class="text-xs text-cyan-400 font-medium" id="period-pro">/ mo</span>
+          <div class="my-5 pb-5 border-b border-indigo-900/60">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white" id="price-pro">$14.99</span>
+              <span class="text-xs text-cyan-400 font-medium" id="period-pro">/ mo</span>
+            </div>
+            <p class="text-[11px] text-cyan-400/80 mt-1.5 min-h-[16px]" id="sub-pro">Billed monthly • Cancel anytime</p>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -227,25 +262,28 @@
           </div>
         </div>
 
-        <button onclick="handleUpgrade('gold')" class="w-full py-4 rounded-xl font-extrabold text-xs sm:text-sm bg-gradient-to-r from-indigo-500 via-cyan-500 to-blue-600 text-white shadow-xl shadow-indigo-500/30 hover:opacity-95 active:scale-95 transition">
+        <button onclick="handleUpgrade('gold')" class="w-full py-4 rounded-xl font-extrabold text-xs sm:text-sm bg-gradient-to-r from-indigo-500 via-cyan-500 to-blue-600 text-white shadow-xl shadow-indigo-500/30 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition">
           Upgrade to Pro
         </button>
       </div>
 
       <!-- TIER 4: ULTIMATE (Sunset Rose & 24K Gold) -->
-      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-rose-500/40 bg-gradient-to-b from-rose-950/35 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-rose-400/60">
+      <div class="tier-card tier-card-ultimate flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-rose-500/40 bg-gradient-to-b from-rose-950/35 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center">
         <div>
           <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold text-white">Ultimate</h3>
-            <span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[10px] font-black uppercase tracking-widest">
+            <span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[10px] font-black uppercase tracking-widest shadow-md shadow-rose-500/30">
               Best Value
             </span>
           </div>
           <p class="text-xs text-rose-300/80 min-h-[32px]">Collector's cut with concierge speed</p>
 
-          <div class="my-5 pb-5 border-b border-rose-950/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-ultimate">$19.99</span>
-            <span class="text-xs text-rose-400 font-medium" id="period-ultimate">/ mo</span>
+          <div class="my-5 pb-5 border-b border-rose-950/60">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white" id="price-ultimate">$19.99</span>
+              <span class="text-xs text-rose-400 font-medium" id="period-ultimate">/ mo</span>
+            </div>
+            <p class="text-[11px] text-rose-400/80 mt-1.5 min-h-[16px]" id="sub-ultimate">Billed monthly • Cancel anytime</p>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -280,7 +318,7 @@
           </div>
         </div>
 
-        <button onclick="handleUpgrade('diamond')" class="w-full py-3.5 rounded-xl font-black text-xs sm:text-sm bg-gradient-to-r from-rose-500 via-rose-400 to-amber-500 text-white shadow-lg shadow-rose-500/25 hover:brightness-110 active:scale-95 transition">
+        <button onclick="handleUpgrade('diamond')" class="w-full py-3.5 rounded-xl font-black text-xs sm:text-sm bg-gradient-to-r from-rose-500 via-rose-400 to-amber-500 text-white shadow-lg shadow-rose-500/25 hover:brightness-110 hover:scale-[1.02] active:scale-95 transition">
           Get Ultimate Access
         </button>
       </div>
@@ -318,11 +356,26 @@
     // Initialize icons
     lucide.createIcons();
 
-    // Price matrices matching CineWatch VIP
+    // Price matrices matching CineWatch VIP with dynamic billing notes
     const pricing = {
-      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99', period: '/ mo' },
-      quarterly: { basic: '$0', advanced: '$17.99', pro: '$49.99', ultimate: '$99.99', period: '/ 3 mo' },
-      yearly:    { basic: '$0', advanced: '$99.99', pro: '$149.99', ultimate: '$199.99', period: '/ year' }
+      monthly: {
+        basic:    { price: '$0',     period: '/ forever', sub: 'Always free with ads' },
+        advanced: { price: '$7.99',  period: '/ mo',      sub: 'Billed monthly • Cancel anytime' },
+        pro:      { price: '$14.99', period: '/ mo',      sub: 'Billed monthly • Cancel anytime' },
+        ultimate: { price: '$19.99', period: '/ mo',      sub: 'Billed monthly • Cancel anytime' }
+      },
+      quarterly: {
+        basic:    { price: '$0',     period: '/ forever', sub: 'Always free with ads' },
+        advanced: { price: '$6.79',  period: '/ mo',      sub: 'Billed $20.37 every 3 months (-15%)' },
+        pro:      { price: '$12.74', period: '/ mo',      sub: 'Billed $38.22 every 3 months (-15%)' },
+        ultimate: { price: '$16.99', period: '/ mo',      sub: 'Billed $50.97 every 3 months (-15%)' }
+      },
+      yearly: {
+        basic:    { price: '$0',     period: '/ forever', sub: 'Always free with ads' },
+        advanced: { price: '$5.59',  period: '/ mo',      sub: 'Billed $67.08 annually (-30%)' },
+        pro:      { price: '$10.49', period: '/ mo',      sub: 'Billed $125.88 annually (-30%)' },
+        ultimate: { price: '$13.99', period: '/ mo',      sub: 'Billed $167.88 annually (-30%)' }
+      }
     };
 
     let activeBilling = 'monthly';
@@ -339,16 +392,17 @@
         }
       });
 
-      // Update text values
-      document.getElementById('price-basic').innerText = pricing[cycle].basic;
-      document.getElementById('price-advanced').innerText = pricing[cycle].advanced;
-      document.getElementById('price-pro').innerText = pricing[cycle].pro;
-      document.getElementById('price-ultimate').innerText = pricing[cycle].ultimate;
-
-      const period = pricing[cycle].period;
-      if (document.getElementById('period-advanced')) document.getElementById('period-advanced').innerText = period;
-      if (document.getElementById('period-pro')) document.getElementById('period-pro').innerText = period;
-      if (document.getElementById('period-ultimate')) document.getElementById('period-ultimate').innerText = period;
+      // Update text values & subtext
+      ['basic', 'advanced', 'pro', 'ultimate'].forEach(tier => {
+        const data = pricing[cycle][tier];
+        const priceEl = document.getElementById(`price-${tier}`);
+        const periodEl = document.getElementById(`period-${tier}`);
+        const subEl = document.getElementById(`sub-${tier}`);
+        
+        if (priceEl) priceEl.innerText = data.price;
+        if (periodEl) periodEl.innerText = data.period;
+        if (subEl) subEl.innerText = data.sub;
+      });
     }
 
     function handleUpgrade(tier) {
