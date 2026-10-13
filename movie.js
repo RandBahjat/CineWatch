@@ -174,53 +174,47 @@ function setOverviewElement(el, info) {
   }
 }
 
-function matchMediaTitle(item, query) {
-  if (!item || !query) return false;
+// High-speed title query memoization cache
+const _titleQueryCache = new Map();
+function parseTitleQuery(query) {
+  if (!query) return null;
   const q = String(query).trim().toLowerCase();
-  const rawTitle = String(item.title || '').trim().toLowerCase();
-  const itemYear = item.year ? String(item.year).trim() : '';
-  const itemId = item.id ? String(item.id).trim().toLowerCase() : '';
+  let cached = _titleQueryCache.get(q);
+  if (cached) return cached;
 
-  // 1. Direct ID match: "moana-2026"
-  if (itemId && itemId === q) return true;
-
-  // 2. Extract 4-digit year from query if specified (e.g. 19xx or 20xx)
-  // Supports formats like: "Moana(2026)", "Moana (2026)", "Moana 2026", "Moana [2026]", "Moana-2026"
   const yearMatch = q.match(/(?:^|[^\d])(19\d\d|20\d\d)(?:[^\d]|$)/);
   const queryYear = yearMatch ? yearMatch[1] : null;
-
-  // Clean query title by stripping year and punctuation
   const cleanQueryTitle = q
     .replace(/\s*[\(\[\{]?\s*(19\d\d|20\d\d)\s*[\)\]\}]?\s*/g, ' ')
     .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
+    .trim()
+    .replace(/whispher/g, 'whisper');
 
-  // Clean item title
-  const cleanItemTitle = rawTitle
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
+  cached = { q, queryYear, normQuery: cleanQueryTitle };
+  _titleQueryCache.set(q, cached);
+  return cached;
+}
 
-  // Clean item base title (stripping parenthesized subtitles like "(The Donovans)")
-  const cleanItemBase = rawTitle
-    .replace(/\s*\([^)]*\)/g, ' ')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
+function matchMediaTitle(item, query) {
+  if (!item || !query) return false;
+  const parsed = typeof query === 'object' && query.normQuery !== undefined ? query : parseTitleQuery(query);
+  if (!parsed) return false;
+  const { q, queryYear, normQuery } = parsed;
 
-  // Normalization for common typos (e.g. whisper vs whispher)
-  const normQuery = cleanQueryTitle.replace(/whispher/g, 'whisper');
-  const normItem = cleanItemTitle.replace(/whispher/g, 'whisper');
-  const normItemBase = cleanItemBase.replace(/whispher/g, 'whisper');
+  const itemId = item._normId || (item.id ? String(item.id).trim().toLowerCase() : '');
+  if (itemId && itemId === q) return true;
 
-  // If query specifies a year: BOTH title and year must match!
+  const itemYear = item._yearStr || (item.year ? String(item.year).trim() : '');
+  const normItem = item._normTitle || String(item.title || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().replace(/whispher/g, 'whisper');
+  const normItemBase = item._normBase || String(item.title || '').trim().toLowerCase().replace(/\s*\([^)]*\)/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/whispher/g, 'whisper');
+
   if (queryYear) {
     if ((normQuery === normItem || (normItemBase && normQuery === normItemBase)) && itemYear === queryYear) return true;
-    if (itemId && itemId === (cleanQueryTitle.replace(/\s+/g, '-') + '-' + queryYear)) return true;
+    if (itemId && itemId === (normQuery.replace(/\s+/g, '-') + '-' + queryYear)) return true;
     return false;
   }
 
-  // If query does NOT specify a year, match title cleanly
-  if (normQuery === normItem || (normItemBase && normQuery === normItemBase) || rawTitle === q) return true;
-
+  if (normQuery === normItem || (normItemBase && normQuery === normItemBase) || (item.title && item.title.toLowerCase() === q)) return true;
   return false;
 }
 
@@ -232,44 +226,69 @@ function getMediaListIndex(item, list) {
   return 999;
 }
 
+// O(1) Fast Media Lookup Indexes
+const MOVIE_ID_MAP = new Map();
+const MOVIE_SLUG_MAP = new Map();
+
+function buildMovieLookupMaps() {
+  MOVIE_ID_MAP.clear();
+  MOVIE_SLUG_MAP.clear();
+  if (!Array.isArray(MOVIES)) return;
+  for (let i = 0; i < MOVIES.length; i++) {
+    const m = MOVIES[i];
+    if (m.id) {
+      const lowerId = String(m.id).toLowerCase();
+      MOVIE_ID_MAP.set(lowerId, m);
+      MOVIE_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), m);
+    }
+    if (m.title) {
+      const lowerTitle = String(m.title).toLowerCase();
+      if (!MOVIE_ID_MAP.has(lowerTitle)) MOVIE_ID_MAP.set(lowerTitle, m);
+      const titleSlug = lowerTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      if (!MOVIE_SLUG_MAP.has(titleSlug)) MOVIE_SLUG_MAP.set(titleSlug, m);
+    }
+    if (m.videoUrl) MOVIE_ID_MAP.set(String(m.videoUrl), m);
+    if (m.cinesrcId) MOVIE_ID_MAP.set(String(m.cinesrcId), m);
+  }
+}
+
 function findMovieByIdOrTitle(identifier) {
   if (!identifier || identifier === 'undefined' || identifier === 'null') return null;
   const raw = String(identifier).trim();
   const lower = raw.toLowerCase();
+
+  // 1. Direct O(1) exact match
+  if (MOVIE_ID_MAP.has(raw)) return MOVIE_ID_MAP.get(raw);
+  if (MOVIE_ID_MAP.has(lower)) return MOVIE_ID_MAP.get(lower);
+
+  // 2. Direct O(1) slug match
   const slug = lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  // 1. Exact ID match (case-sensitive or insensitive)
-  const matchById = MOVIES.find(m => m.id === raw || (m.id && m.id.toLowerCase() === lower));
-  if (matchById) return matchById;
-  // 2. ID slug match
-  const matchBySlugId = MOVIES.find(m => m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug);
-  if (matchBySlugId) return matchBySlugId;
-  // 3. Video / Cinesrc ID match
-  const matchByVideo = MOVIES.find(m => (m.videoUrl && String(m.videoUrl) === raw) || (m.cinesrcId && String(m.cinesrcId) === raw));
-  if (matchByVideo) return matchByVideo;
-  // 4. Exact Title match
-  const matchByTitle = MOVIES.find(m => m.title && m.title.toLowerCase() === lower);
-  if (matchByTitle) return matchByTitle;
-  // 5. Title slug match
-  return MOVIES.find(m => m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) || null;
+  if (MOVIE_SLUG_MAP.has(slug)) return MOVIE_SLUG_MAP.get(slug);
+
+  // 3. Fallback linear scan if map not populated yet
+  return (Array.isArray(MOVIES) && MOVIES.find(m => (m.id && m.id.toLowerCase() === lower) || (m.title && m.title.toLowerCase() === lower))) || null;
 }
 
 function getMoviesFromList(list, filterFn) {
-  if (!Array.isArray(list)) return [];
+  if (!Array.isArray(list) || !Array.isArray(MOVIES)) return [];
   const results = [];
   const seenIds = new Set();
 
-  list.forEach(query => {
+  for (let i = 0; i < list.length; i++) {
+    const query = list[i];
+    const parsed = parseTitleQuery(query);
     const match = MOVIES.find(m => {
       const id = m.id || (m.title + '-' + (m.year || ''));
       if (seenIds.has(id)) return false;
       if (filterFn && !filterFn(m)) return false;
-      return matchMediaTitle(m, query);
+      return matchMediaTitle(m, parsed);
     });
     if (match) {
-      seenIds.add(match.id || (match.title + '-' + (match.year || '')));
+      const id = match.id || (match.title + '-' + (match.year || ''));
+      seenIds.add(id);
       results.push(match);
     }
-  });
+  }
 
   return results;
 }
