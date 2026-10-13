@@ -903,7 +903,7 @@ window._MOVIES_DATA = [
     "title": "Batman: Knightfall Part 1: Knightfall",
     "type": "Movie",
     "year": 2026,
-    "rating": 8,
+    "rating": "7.8",
     "age": "R",
     "duration": "1h 19m",
     "genres": [
@@ -1014,7 +1014,7 @@ window._MOVIES_DATA = [
     "title": "Master of the Universe",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.9,
+    "rating": "2.8",
     "age": "PG-13",
     "duration": "2h 21m",
     "genres": [
@@ -1068,7 +1068,7 @@ window._MOVIES_DATA = [
     "title": "Camp Rock 3",
     "type": "Movie",
     "year": 2026,
-    "rating": 5.3,
+    "rating": "5.1",
     "age": "TV-G",
     "duration": "1h 32m",
     "genres": [
@@ -1122,7 +1122,7 @@ window._MOVIES_DATA = [
     "title": "Evil Dead Burn",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.4,
+    "rating": "6.3",
     "age": "R",
     "duration": "1h 50m",
     "genres": [
@@ -1148,7 +1148,7 @@ window._MOVIES_DATA = [
     "title": "Motor City",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.1,
+    "rating": "5.7",
     "age": "R",
     "duration": "1h 43m",
     "genres": [
@@ -1494,7 +1494,7 @@ window._MOVIES_DATA = [
     "title": "Minions & Monsters",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.4,
+    "rating": "6.3",
     "age": "PG",
     "duration": "1h 30m",
     "genres": [
@@ -1523,7 +1523,7 @@ window._MOVIES_DATA = [
     "title": "Young Washington",
     "type": "Movie",
     "year": 2026,
-    "rating": 7.3,
+    "rating": "6.9",
     "age": "PG-13",
     "duration": "2h 1m",
     "genres": [
@@ -1795,7 +1795,7 @@ window._MOVIES_DATA = [
     "title": "The Amazing Spider-Man",
     "type": "Movie",
     "year": 2012,
-    "rating": 7.4,
+    "rating": "7.0",
     "age": "PG-13",
     "duration": "2h 16m",
     "genres": [
@@ -1827,7 +1827,7 @@ window._MOVIES_DATA = [
     "title": "The Amazing Spider-Man 2",
     "type": "Movie",
     "year": 2014,
-    "rating": 6.8,
+    "rating": "6.6",
     "age": "PG-13",
     "duration": "2h 22m",
     "genres": [
@@ -1859,7 +1859,7 @@ window._MOVIES_DATA = [
     "title": "Iron Man 3",
     "type": "Movie",
     "year": 2010,
-    "rating": 6.9,
+    "rating": "7.1",
     "age": "PG-13",
     "duration": "2h 4m",
     "genres": [
@@ -1941,7 +1941,7 @@ window._MOVIES_DATA = [
     "title": "Harry Potter and the Sorcerer's Stone ",
     "type": "Movie",
     "year": 2001,
-    "rating": 7.6,
+    "rating": "7.7",
     "age": "PG",
     "duration": "2h 32m",
     "genres": [
@@ -1968,7 +1968,7 @@ window._MOVIES_DATA = [
     "title": "Aquaman: The Lost Kingdom",
     "type": "Movie",
     "year": 2023,
-    "rating": 6,
+    "rating": "5.6",
     "age": "PG-13",
     "duration": "2h 4m",
     "genres": [
@@ -2267,7 +2267,7 @@ window._MOVIES_DATA = [
     "title": "Thor: Love and Thunder ",
     "type": "Movie",
     "year": 2017,
-    "rating": 7.9,
+    "rating": "6.1",
     "age": "PG-13",
     "duration": "1h 59m",
     "genres": [
@@ -2376,7 +2376,7 @@ window._MOVIES_DATA = [
     "title": "X-Men Origin: Wolverine ",
     "type": "Movie",
     "year": 2009,
-    "rating": 6,
+    "rating": "6.5",
     "age": "PG-13",
     "duration": "1h 47m",
     "genres": [
@@ -2759,7 +2759,7 @@ window._MOVIES_DATA = [
     "title": "X-Men: Apocalypse",
     "type": "Movie",
     "year": 2016,
-    "rating": 6.9,
+    "rating": "6.8",
     "age": "PG-13",
     "duration": "2h 24m",
     "genres": [
@@ -2813,7 +2813,7 @@ window._MOVIES_DATA = [
     "title": "X-Men: The Last Stand",
     "type": "Movie",
     "year": 2006,
-    "rating": 6.7,
+    "rating": "6.6",
     "age": "PG-13",
     "duration": "1h 44m",
     "genres": [
@@ -2867,7 +2867,7 @@ window._MOVIES_DATA = [
     "title": "X-Men ",
     "type": "Movie",
     "year": 2000,
-    "rating": 7.4,
+    "rating": "7.3",
     "age": "PG-13",
     "duration": "1h 44m",
     "genres": [
@@ -2920,7 +2920,7 @@ window._MOVIES_DATA = [
     "title": "Ted 2",
     "type": "Movie",
     "year": 2015,
-    "rating": 5.9,
+    "rating": "6.3",
     "age": "R",
     "duration": "1h 55m",
     "genres": [
@@ -3114,7 +3114,7 @@ window._MOVIES_DATA = [
     "title": "John Wick: Chapter 4",
     "type": "Movie",
     "year": 2023,
-    "rating": 7.7,
+    "rating": "7.6",
     "age": "R",
     "duration": "2h 49m",
     "genres": [
@@ -3168,7 +3168,7 @@ window._MOVIES_DATA = [
     "title": "Ghost Rider: Spirit of Vengeance",
     "type": "Movie",
     "year": 2011,
-    "rating": 4.3,
+    "rating": "4.4",
     "age": "PG-13",
     "duration": "1h 36m",
     "genres": [
@@ -3250,7 +3250,7 @@ window._MOVIES_DATA = [
     "title": "Thunderbolts ",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.3,
+    "rating": "7.1",
     "age": "PG-13",
     "duration": "2h 7m",
     "genres": [
@@ -3499,7 +3499,7 @@ window._MOVIES_DATA = [
     "title": "Black Panther: Wakanda Forever",
     "type": "Movie",
     "year": 2022,
-    "rating": 6.7,
+    "rating": "6.6",
     "age": "PG-13",
     "duration": "2h 41m",
     "genres": [
@@ -3527,7 +3527,7 @@ window._MOVIES_DATA = [
     "title": "The Flash",
     "type": "Movie",
     "year": 2023,
-    "rating": 6.7,
+    "rating": "6.6",
     "age": "PG-13",
     "duration": "2h 24m",
     "genres": [
@@ -3826,7 +3826,7 @@ window._MOVIES_DATA = [
     "title": "Mission: Impossible",
     "type": "Movie",
     "year": 1996,
-    "rating": 7.1,
+    "rating": "7.2",
     "age": "PG-13",
     "duration": "1h 50m",
     "genres": [
@@ -3907,7 +3907,7 @@ window._MOVIES_DATA = [
     "title": "Venom: The Last Dance",
     "type": "Movie",
     "year": 2024,
-    "rating": 5.6,
+    "rating": "6.0",
     "age": "PG-13",
     "duration": "1h 49m",
     "genres": [
@@ -4066,7 +4066,7 @@ window._MOVIES_DATA = [
     "title": "Doctor Strange",
     "type": "Movie",
     "year": 2016,
-    "rating": 7,
+    "rating": "7.5",
     "age": "PG-13",
     "duration": "1h55m",
     "genres": [
@@ -4237,7 +4237,7 @@ window._MOVIES_DATA = [
     "title": "Shrek Forever After",
     "type": "Movie",
     "year": 2010,
-    "rating": 6.3,
+    "rating": "6.4",
     "age": "PG",
     "duration": "1h 33m",
     "genres": [
@@ -4267,7 +4267,7 @@ window._MOVIES_DATA = [
     "title": "Tom and Jerry: Forbidden Compass",
     "type": "Movie",
     "year": 2025,
-    "rating": 5,
+    "rating": "3.3",
     "age": "PG",
     "duration": "1h 44m",
     "genres": [
@@ -4297,7 +4297,7 @@ window._MOVIES_DATA = [
     "title": "Tom and Jerry Cowboy Up! ",
     "type": "Movie",
     "year": 2022,
-    "rating": 6,
+    "rating": "5.2",
     "age": "G",
     "duration": "1h 15m",
     "genres": [
@@ -4357,7 +4357,7 @@ window._MOVIES_DATA = [
     "title": "Batman: Hush",
     "type": "Movie",
     "year": 2019,
-    "rating": 6.8,
+    "rating": "6.9",
     "age": "PG-13",
     "duration": "1h 21m",
     "genres": [
@@ -4417,7 +4417,7 @@ window._MOVIES_DATA = [
     "title": "Batman: The Killing Joke",
     "type": "Movie",
     "year": 2016,
-    "rating": 7.1,
+    "rating": "6.4",
     "age": "R",
     "duration": "1h 16m",
     "genres": [
@@ -4652,7 +4652,7 @@ window._MOVIES_DATA = [
     "title": "Mission: Impossible - The Final Reckoning ",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.5,
+    "rating": "7.1",
     "age": "PG-13",
     "duration": "2h 49m",
     "genres": [
@@ -4679,7 +4679,7 @@ window._MOVIES_DATA = [
     "title": "Shrek 2",
     "type": "Movie",
     "year": 2004,
-    "rating": 7.3,
+    "rating": "7.4",
     "age": "PG",
     "duration": "1h 33m",
     "genres": [
@@ -4793,7 +4793,7 @@ window._MOVIES_DATA = [
     "title": "Mission: Impossible - Dead Reckoning Part One ",
     "type": "Movie",
     "year": 2023,
-    "rating": 7.7,
+    "rating": "7.6",
     "age": "PG-13",
     "duration": "2h 43m",
     "genres": [
@@ -4905,7 +4905,7 @@ window._MOVIES_DATA = [
     "title": "Kung Fu Panda 2",
     "type": "Movie",
     "year": 2011,
-    "rating": 7.6,
+    "rating": "7.3",
     "age": "PG",
     "duration": "1h 31m",
     "genres": [
@@ -5137,7 +5137,7 @@ window._MOVIES_DATA = [
     "title": "Ballerina",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.1,
+    "rating": "6.8",
     "age": "R",
     "duration": "2h 5m",
     "genres": [
@@ -5675,7 +5675,7 @@ window._MOVIES_DATA = [
     "title": "Back to the Future II",
     "type": "Movie",
     "year": 1989,
-    "rating": 7.8,
+    "rating": "6.7",
     "age": "PG",
     "duration": "1h 48m",
     "genres": [
@@ -5702,7 +5702,7 @@ window._MOVIES_DATA = [
     "title": "Back to the Future III",
     "type": "Movie",
     "year": 1990,
-    "rating": 7.4,
+    "rating": "7.2",
     "age": "PG",
     "duration": "1h 58m",
     "genres": [
@@ -5820,7 +5820,7 @@ window._MOVIES_DATA = [
     "title": "Toy Story 4",
     "type": "Movie",
     "year": 2019,
-    "rating": 7.7,
+    "rating": "7.6",
     "age": "G",
     "duration": "1h 40m",
     "genres": [
@@ -5880,7 +5880,7 @@ window._MOVIES_DATA = [
     "title": "Days of Thunder",
     "type": "Movie",
     "year": 1990,
-    "rating": 6.1,
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 47m",
     "genres": [
@@ -6017,7 +6017,7 @@ window._MOVIES_DATA = [
     "title": "The Wolf of Wall Street ",
     "type": "Movie",
     "year": 2013,
-    "rating": 7.8,
+    "rating": "8.2",
     "age": "R",
     "duration": "3h",
     "genres": [
@@ -6072,7 +6072,7 @@ window._MOVIES_DATA = [
     "title": "Black Widow ",
     "type": "Movie",
     "year": 2021,
-    "rating": 6.7,
+    "rating": "6.6",
     "age": "PG-13",
     "duration": "2h 14m",
     "genres": [
@@ -6258,7 +6258,7 @@ window._MOVIES_DATA = [
     "title": "After Ever Happy",
     "type": "Movie",
     "year": 2022,
-    "rating": 4.6,
+    "rating": "4.8",
     "age": "R",
     "duration": "1h 35m",
     "genres": [
@@ -6366,7 +6366,7 @@ window._MOVIES_DATA = [
     "title": "How to Train Your Dragon",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.9,
+    "rating": "7.7",
     "age": "PG",
     "duration": "2h 5m",
     "genres": [
@@ -6393,7 +6393,7 @@ window._MOVIES_DATA = [
     "title": "The Fantastic Four: First Steps",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.3,
+    "rating": "6.8",
     "age": "PG-13",
     "duration": "2h 5m",
     "genres": [
@@ -6473,7 +6473,7 @@ window._MOVIES_DATA = [
     "title": "Jack Reacher: Never Go Back",
     "type": "Movie",
     "year": 2016,
-    "rating": 6.1,
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 58m",
     "genres": [
@@ -6582,7 +6582,7 @@ window._MOVIES_DATA = [
     "title": "Sinners",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.8,
+    "rating": "7.5",
     "age": "R",
     "duration": "2h 17m",
     "genres": [
@@ -6640,7 +6640,7 @@ window._MOVIES_DATA = [
     "title": "War Machine",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.8,
+    "rating": "6.3",
     "age": "R",
     "duration": "1h 48m",
     "genres": [
@@ -6696,7 +6696,7 @@ window._MOVIES_DATA = [
     "title": "Justice League: Crisis on Infinite Earths – Part Two",
     "type": "Movie",
     "year": 2024,
-    "rating": 6.2,
+    "rating": "5.6",
     "age": "PG-13",
     "duration": "1h 35m",
     "genres": [
@@ -6866,7 +6866,7 @@ window._MOVIES_DATA = [
     "title": "Avatar: Fire and Ash",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.8,
+    "rating": "7.2",
     "age": "PG-13",
     "duration": "3h 15m",
     "genres": [
@@ -6894,7 +6894,7 @@ window._MOVIES_DATA = [
     "title": "Captain America: Brave New World",
     "type": "Movie",
     "year": 2025,
-    "rating": 7.8,
+    "rating": "5.6",
     "age": "PG-13",
     "duration": "1h 58m",
     "genres": [
@@ -7140,7 +7140,7 @@ window._MOVIES_DATA = [
     "title": "Oppenheimer",
     "type": "Movie",
     "year": 2023,
-    "rating": 8.3,
+    "rating": "8.2",
     "age": "R",
     "duration": "3h ",
     "genres": [
@@ -7767,7 +7767,7 @@ window._MOVIES_DATA = [
     "title": "Interstellar",
     "type": "Movie",
     "year": 2014,
-    "rating": 8,
+    "rating": "8.7",
     "age": "PG-13",
     "duration": "2h 24m ",
     "genres": [
@@ -9641,7 +9641,7 @@ window._MOVIES_DATA = [
     "title": "Taken ",
     "type": "Movie",
     "year": 2008,
-    "rating": 7.7,
+    "rating": "8.4",
     "age": "PG-13",
     "duration": "1h 30m",
     "genres": [
@@ -9830,7 +9830,7 @@ window._MOVIES_DATA = [
     "title": "Batman: Year One",
     "type": "Movie",
     "year": 2011,
-    "rating": 7.3,
+    "rating": "7.4",
     "age": "PG-13",
     "duration": "1h 4m",
     "genres": [
@@ -9915,7 +9915,7 @@ window._MOVIES_DATA = [
     "title": "Batman: Mystery of the Batwoman",
     "type": "Movie",
     "year": 2003,
-    "rating": 6.6,
+    "rating": "6.7",
     "age": "PG-13",
     "duration": "1h 15m",
     "genres": [
@@ -10164,7 +10164,7 @@ window._MOVIES_DATA = [
     "title": "Green Lantern: Beware My Power",
     "type": "Movie",
     "year": 2022,
-    "rating": 7,
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 28m",
     "genres": [
@@ -10220,7 +10220,7 @@ window._MOVIES_DATA = [
     "title": "Batman & Mr. Freeze: SubZero",
     "type": "Movie",
     "year": 1998,
-    "rating": 7.1,
+    "rating": "7.2",
     "age": "PG",
     "duration": "1h 10m",
     "genres": [
@@ -10493,7 +10493,7 @@ window._MOVIES_DATA = [
     "title": "Scary Movie",
     "type": "Movie",
     "year": 2013,
-    "rating": 4.9,
+    "rating": "3.6",
     "age": "R",
     "duration": "1h 40m",
     "genres": [
@@ -11192,7 +11192,7 @@ window._MOVIES_DATA = [
     "title": "Ride Along",
     "type": "Movie",
     "year": 2014,
-    "rating": 6.1,
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 39m",
     "genres": [
@@ -11978,7 +11978,7 @@ window._MOVIES_DATA = [
     "title": "Mr. Nice Guy",
     "type": "Movie",
     "year": 1997,
-    "rating": 6.3,
+    "rating": "7.8",
     "age": "PG-13",
     "duration": "1h 28m",
     "genres": [
@@ -12220,7 +12220,7 @@ window._MOVIES_DATA = [
     "title": "All Star Superman",
     "type": "Movie",
     "year": 2011,
-    "rating": 6.8,
+    "rating": "6.9",
     "age": "PG",
     "duration": "1h 16m",
     "genres": [
@@ -12247,7 +12247,7 @@ window._MOVIES_DATA = [
     "title": "The Death of Superman",
     "type": "Movie",
     "year": 2018,
-    "rating": 7.3,
+    "rating": "7.4",
     "age": "PG-13",
     "duration": "1h 21m",
     "genres": [
@@ -12441,7 +12441,7 @@ window._MOVIES_DATA = [
     "title": "One Piece Film: Strong World",
     "type": "Movie",
     "year": 2009,
-    "rating": 7.4,
+    "rating": "8.0",
     "age": "TV-14",
     "duration": "1h 53m",
     "genres": [
@@ -12833,7 +12833,7 @@ window._MOVIES_DATA = [
     "title": "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
     "type": "Movie",
     "year": 2015,
-    "rating": 7.3,
+    "rating": "7.6",
     "age": "TV-PG",
     "duration": "1h 47m",
     "genres": [
@@ -12945,7 +12945,7 @@ window._MOVIES_DATA = [
     "title": "Naruto Shippuden the Movie",
     "type": "Movie",
     "year": 2007,
-    "rating": 6.7,
+    "rating": "7.1",
     "age": "PG-13",
     "duration": "1h 34m",
     "genres": [
@@ -13057,7 +13057,7 @@ window._MOVIES_DATA = [
     "title": "Naruto Shippuden the Movie: The Will of Fire",
     "type": "Movie",
     "year": 2009,
-    "rating": 7,
+    "rating": "6.7",
     "age": "PG-13",
     "duration": "1h 35m",
     "genres": [
