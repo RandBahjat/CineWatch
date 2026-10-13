@@ -2261,6 +2261,7 @@ function _performSwitchView(viewName) {
     hideAll();
     moviesSection.classList.remove("hidden");
     // Reset filter & page on fresh nav; keep state if already there
+    updateBrowseViewToggles();
     renderMoviesSection();
     updateSectionSEO('movies');
     setTimeout(() => {
@@ -2270,6 +2271,7 @@ function _performSwitchView(viewName) {
   } else if (viewName === "series") {
     hideAll();
     seriesSection.classList.remove("hidden");
+    updateBrowseViewToggles();
     renderSeriesSection();
     updateSectionSEO('series');
     setTimeout(() => {
@@ -2280,6 +2282,7 @@ function _performSwitchView(viewName) {
     hideAll();
     const fourkSection = document.getElementById("fourkSection");
     if (fourkSection) fourkSection.classList.remove("hidden");
+    updateBrowseViewToggles();
     render4kSection();
     updateSectionSEO('4k');
     setTimeout(() => {
@@ -2289,6 +2292,7 @@ function _performSwitchView(viewName) {
   } else if (viewName === "anime") {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
+    updateBrowseViewToggles();
     renderAnimeSection();
     updateSectionSEO('anime');
     setTimeout(() => {
