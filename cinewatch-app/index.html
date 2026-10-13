@@ -3191,6 +3191,8 @@
                 });
                 document.querySelectorAll('.download-text').forEach(el => el.textContent = 'داگرتن');
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ریپۆرت');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'پاشبنەما');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'پۆستەر');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'ریپۆرت';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
@@ -3263,6 +3265,8 @@
                 });
                 document.querySelectorAll('.download-text').forEach(el => el.textContent = 'تحميل');
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'إبلاغ');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'خلفية');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'بوستر');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
                 if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
@@ -3332,6 +3336,8 @@
                     if (genreMapEnglish[g]) btn.textContent = genreMapEnglish[g];
                 });
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Report');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'Backdrop');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'Poster');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
                 const submitReportText = document.getElementById('submitReportText');
