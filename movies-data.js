@@ -46,7 +46,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/mlBfQJ8oxB0?si=9jiHFHqp3t7QORSK",
     overview: "A wealthy mayoral candidate and his glamorous wife find their privileged lives shattered when their son is kidnapped by a ruthless criminal syndicate. Refusing to yield to exorbitant ransom demands and sensing police corruption, the couple is pushed to their absolute moral limits as they take matters into their own hands, blurring the line between civilized humans and desperate, predatory animals.",
     overviewKurdish: "کاندیدێکی دەوڵەمەندی پۆستی شارەوانی و هاوسەرەکەی، ژیانی ئارام و پڕ لە دەستەڵاتیان تێکدەچێت کاتێک کوڕەکەیان لەلایەن باندێکی مەترسیداری تاوانکارییەوە دەڕفێندرێت. لە بەرامبەر داواکردنی بڕە پارەیەکی خەیاڵی بۆ ئازادکردنی و گومانیان لە گەندەڵیی پۆلیس، ئەم ژن و مێردە بڕیار دەدەن یاسا بخەنە ژێر پێیان و خۆیان بەدوای ڕزگارکردنی کوڕەکەیاندا بچن، بەمەش سنووری نێوان مرۆڤی شارستانی و گیانداری دڕندە بە تەواوی کاڵ دەبێتەوە.",
-    director: "Sam Hargrave",
+    director: "Ben Affleck",
     cast: ["John Cena, Jessica Biel, Arturo Castro"],
     trending: true,
     featured: true,
