@@ -64,7 +64,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Fantasy",
-      ""
+      "Martial Arts"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
