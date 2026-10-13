@@ -277,9 +277,9 @@ function getMoviesFromList(list, filterFn) {
 async function loadMediaFromAPI() {
   try {
     // 1. Load media from local JS files instead of Supabase per user preference
-    const localMovies = window._MOVIES_DATA || [];
-    const localSeries = window._SERIES_DATA || [];
-    const localAnime = window._ANIME_DATA || [];
+    const localMovies = (window._MOVIES_DATA || []).map(m => ({ ...m, type: m.type || 'Movie' }));
+    const localSeries = (window._SERIES_DATA || []).map(s => ({ ...s, type: s.type || 'TV Show' }));
+    const localAnime = (window._ANIME_DATA || []).map(a => ({ ...a, isAnime: true, type: a.type || 'Anime' }));
     const localFourK = (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
 
     // Merge media sources, ensuring items in fourk-data are marked is4k: true
@@ -308,19 +308,38 @@ async function loadMediaFromAPI() {
       console.warn('CineWatch: No media data found in local files.');
     }
 
-    // Apply post-processing
+    // Apply post-processing and robust field normalization
     MOVIES.forEach(m => {
-      // Auto-generate a stable id from the title if none exists
-      if (!m.id) {
-        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
+      // 1. Image normalization & cross-fallbacks
+      if (!m.poster && m.image) m.poster = m.image;
+      if (!m.backdrop && m.banner) m.backdrop = m.banner;
+      if (!m.poster && m.backdrop) m.poster = m.backdrop;
+      if (!m.backdrop && m.poster) m.backdrop = m.poster;
+
+      // 2. Year normalization from releaseDate
+      if (!m.year && m.releaseDate) {
+        const y = parseInt(String(m.releaseDate).slice(0, 4), 10);
+        if (!isNaN(y)) m.year = y;
       }
 
-      // Apply featured/trending from title lists OR preserve explicit property set in data files
+      // 3. Genres normalization
+      if (!m.genres && m.genre) {
+        m.genres = typeof m.genre === 'string' ? m.genre.split(',').map(g => g.trim()) : [m.genre];
+      }
+      if (!Array.isArray(m.genres)) m.genres = [];
+
+      // 4. Stable ID auto-generation
+      if (!m.id) {
+        m.id = (m.title || 'untitled').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
+      }
+
+      // 5. Apply featured/trending from title lists OR preserve explicit property set in data files
       m.featured = Boolean(m.featured) || FEATURED_TITLES.some(t => matchMediaTitle(m, t));
       m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
 
-      // Set duration label for series
-      if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
+      // 6. Set duration label for series
+      const isTv = String(m.type || '').toLowerCase() === 'tv show' || String(m.type || '').toLowerCase() === 'series';
+      if (isTv && m.seasons && m.seasons.length) {
         m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
       }
     });
