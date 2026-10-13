@@ -62,7 +62,7 @@ window._MOVIES_DATA = [
     duration: "1h 37m",
     genres: [
       "Action",
-      "",
+      "Adventure",
       "Thriller",
       "Psychological"
     ],
