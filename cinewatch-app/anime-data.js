@@ -28,7 +28,7 @@ window._ANIME_DATA = [
     "videoUrl": "60108",
     "malId": 60108,
     "anilistId": 182608,
-    "trailerUrl": "https://youtu.be/36eQp1x3Jt8",
+    "trailerUrl": "https://youtu.be/cMOCZ40-OsQ?si=PggX3c2REqocAYcT",
     "animeSlug": "one-piece-gyojin-tou-hen",
     "id": "one-piece-gyojin-tou-hen-2024",
     "overview": "Two years after the Summit War, Monkey D. Luffy plans to reunite with the Straw Hat Pirates in the Sabaody Archipelago. However, the Marines obstruct Luffy's path with overwhelming force. Meanwhile, the Straw Hats must also foil the schemes of a group of impersonators acting in their likenesses. With two years of intensive training with allies old and new, Luffy regroups with his friends aboard the Thousand Sunny to set sail for the New World. As the Straw Hat Crew departs for Fish-Man Island, new threats creep up from the abyss. But more determined than ever to become the King of the Pirates, Luffy is prepared to defeat any enemy that may stand between him and his dream.",
