@@ -1140,18 +1140,49 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 }
 
 async function renderCarousels() {
-  const explicitTrendingMovies = MOVIES.filter(m => m.trending && m.type !== "TV Show" && m.type !== "Series");
-  const listTrendingMovies = getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => m.type !== "TV Show");
-  const mergedTrendingMovies = [...explicitTrendingMovies, ...listTrendingMovies.filter(m => !explicitTrendingMovies.some(e => e.id === m.id))];
+  // 1. Trending Movies: Frontload newly added movies from _MOVIES_DATA, then explicit trending, then curated list
+  const recentMovies = (window._MOVIES_DATA || []).slice(0, 10);
+  const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type).toLowerCase() !== "tv show" && String(m.type).toLowerCase() !== "series");
+  const listTrendingMovies = getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => String(m.type).toLowerCase() !== "tv show");
+  const mergedTrendingMovies = [];
+  const seenMovieIds = new Set();
+  [...recentMovies, ...explicitTrendingMovies, ...listTrendingMovies].forEach(m => {
+    if (m && m.id && !seenMovieIds.has(m.id)) {
+      seenMovieIds.add(m.id);
+      mergedTrendingMovies.push(m);
+    }
+  });
 
-  const explicitTrendingSeries = MOVIES.filter(m => m.trending && (m.type === "TV Show" || m.type === "Series"));
-  const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => m.type === "TV Show" || m.type === "Series");
-  const mergedTrendingSeries = [...explicitTrendingSeries, ...listTrendingSeries.filter(m => !explicitTrendingSeries.some(e => e.id === m.id))];
+  // 2. Trending Series: Frontload newly added series from _SERIES_DATA, then explicit trending, then curated list
+  const recentSeries = (window._SERIES_DATA || []).slice(0, 10);
+  const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series"));
+  const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series");
+  const mergedTrendingSeries = [];
+  const seenSeriesIds = new Set();
+  [...recentSeries, ...explicitTrendingSeries, ...listTrendingSeries].forEach(s => {
+    if (s && s.id && !seenSeriesIds.has(s.id)) {
+      seenSeriesIds.add(s.id);
+      mergedTrendingSeries.push(s);
+    }
+  });
+
+  // 3. Trending Anime: Frontload newly added anime from _ANIME_DATA, then explicit trending anime
+  const recentAnime = (window._ANIME_DATA || []).slice(0, 15);
+  const explicitTrendingAnime = MOVIES.filter(m => m.isAnime && m.trending);
+  const mergedTrendingAnime = [];
+  const seenAnimeIds = new Set();
+  [...recentAnime, ...explicitTrendingAnime].forEach(a => {
+    if (a && a.id && !seenAnimeIds.has(a.id)) {
+      seenAnimeIds.add(a.id);
+      mergedTrendingAnime.push(a);
+    }
+  });
 
   const shelfMap = {
     top10Track: getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10),
     trendingMoviesTrack: mergedTrendingMovies,
     trendingSeriesTrack: mergedTrendingSeries,
+    trendingAnimeTrack: mergedTrendingAnime,
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
     popularSeriesTrack: getMoviesFromList(POPULAR_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
     upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show"),
@@ -1895,17 +1926,17 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
 /** Get filtered list for movies section */
 function getMoviesList() {
   return MOVIES.filter((m) => {
-    const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
-    const isSeries = Boolean(m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
-    return !isAnime && !isSeries && (m.type === "Movie" || !m.type);
+    const isAnime = Boolean(m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime")));
+    const isSeries = Boolean(String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+    return !isAnime && !isSeries && (String(m.type || '').toLowerCase() === "movie" || !m.type);
   });
 }
 
 /** Get filtered list for series section */
 function getSeriesList() {
   return MOVIES.filter((m) => {
-    const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
-    return !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+    const isAnime = Boolean(m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime")));
+    return !isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
   });
 }
 
@@ -1920,7 +1951,7 @@ function get4kList() {
 }
 
 function getAnimeList() {
-  return MOVIES.filter((m) => m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
+  return MOVIES.filter((m) => m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime")));
 }
 
 /** Apply the active genre filter to a list */
