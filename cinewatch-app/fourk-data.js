@@ -4,6 +4,7 @@
 
 window._FOURK_DATA = [
   {
+    id: "spider-man-brand-new-day-2026",
     title: "Spider-Man: Brand New Day",
     type: "Movie",
     year: 2026,

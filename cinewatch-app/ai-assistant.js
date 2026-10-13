@@ -438,6 +438,8 @@ ${catalogData}
     const clearBtn = document.getElementById("aiClearHistoryBtn");
     const promptCards = document.querySelectorAll(".ai-prompt-card, .ai-chip");
 
+    const browseCardAi = document.getElementById("browseCardAi");
+    if (browseCardAi) browseCardAi.onclick = openAiModal;
     if (navAiBtn) navAiBtn.onclick = openAiModal;
     if (mobileAiBtn) {
       mobileAiBtn.onclick = (e) => {

@@ -315,9 +315,9 @@ async function loadMediaFromAPI() {
         m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
       }
 
-      // Apply featured/trending from title lists (supports "Title", "Title (Year)", and ID)
-      m.featured = FEATURED_TITLES.some(t => matchMediaTitle(m, t));
-      m.trending = TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
+      // Apply featured/trending from title lists OR preserve explicit property set in data files
+      m.featured = Boolean(m.featured) || FEATURED_TITLES.some(t => matchMediaTitle(m, t));
+      m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
 
       // Set duration label for series
       if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
@@ -717,6 +717,22 @@ async function initApp() {
     isNavigated = !!(targetSection && targetSection !== 'home') || !!sessionStorage.getItem('cw_navigated');
   } catch (e) {}
 
+  // Unregister any legacy Service Worker or stale caches that could trap users on an old cached version
+  try {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        for (const reg of regs) reg.unregister().catch(() => {});
+      }).catch(() => {});
+    }
+    if ('caches' in window) {
+      caches.keys().then(keys => {
+        keys.forEach(k => {
+          if (k.toLowerCase().includes('cinewatch')) caches.delete(k).catch(() => {});
+        });
+      }).catch(() => {});
+    }
+  } catch(e) {}
+
   // If navigating/refreshing sections, kill the splash screen and logo immediately
   if (isNavigated) {
     const loader = document.getElementById("appLoader");
@@ -832,7 +848,9 @@ setTimeout(() => {
 }, 3000);
 
 function getFeaturedMovies() {
-  return getMoviesFromList(FEATURED_TITLES);
+  const fromList = getMoviesFromList(FEATURED_TITLES);
+  const explicitFeatured = MOVIES.filter(m => m.featured && !fromList.some(f => f.id === m.id));
+  return [...explicitFeatured, ...fromList];
 }
 
 function setupHeroBanner() {
@@ -1103,10 +1121,18 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 }
 
 async function renderCarousels() {
+  const explicitTrendingMovies = MOVIES.filter(m => m.trending && m.type !== "TV Show" && m.type !== "Series");
+  const listTrendingMovies = getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => m.type !== "TV Show");
+  const mergedTrendingMovies = [...explicitTrendingMovies, ...listTrendingMovies.filter(m => !explicitTrendingMovies.some(e => e.id === m.id))];
+
+  const explicitTrendingSeries = MOVIES.filter(m => m.trending && (m.type === "TV Show" || m.type === "Series"));
+  const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => m.type === "TV Show" || m.type === "Series");
+  const mergedTrendingSeries = [...explicitTrendingSeries, ...listTrendingSeries.filter(m => !explicitTrendingSeries.some(e => e.id === m.id))];
+
   const shelfMap = {
     top10Track: getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10),
-    trendingMoviesTrack: getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => m.type !== "TV Show"),
-    trendingSeriesTrack: getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
+    trendingMoviesTrack: mergedTrendingMovies,
+    trendingSeriesTrack: mergedTrendingSeries,
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
     popularSeriesTrack: getMoviesFromList(POPULAR_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
     upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show"),
