@@ -54,7 +54,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Verity",
+    title: "The Florist",
     type: "Movie",
     year: 2026,
     rating: "6.1",
