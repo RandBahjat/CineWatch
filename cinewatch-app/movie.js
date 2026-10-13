@@ -5456,6 +5456,16 @@ function bindEventListeners() {
     }
   });
 
+  // Browse View Mode Toggle Buttons (Backdrop vs Poster view)
+  document.addEventListener("click", (e) => {
+    const toggleBtn = e.target.closest(".view-toggle-btn");
+    if (!toggleBtn) return;
+    const mode = toggleBtn.dataset.mode;
+    if (mode) {
+      setBrowseViewMode(mode);
+    }
+  });
+
   // Sliding Filter Bar Navigation Arrows (like Home Poster Carousel Nav)
   document.addEventListener("click", (e) => {
     const scrollBtn = e.target.closest(".filter-scroll-btn");
