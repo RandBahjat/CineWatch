@@ -93,7 +93,7 @@ window._MOVIES_DATA = [
       "Martial Arts"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
     overview: "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime from Jeremy Crawford, the husband of bestselling author Verity Crawford. After a mysterious accident leaves Verity unable to finish her successful book series, Lowen arrives at the Crawford home to sort through notes and manuscripts. While digging through the office, she discovers an unpublished autobiography containing horrifying admissions about the family's tragedies, drawing Lowen into an intoxicating, dangerous web of obsession and deceit.",
