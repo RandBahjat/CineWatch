@@ -337,7 +337,7 @@ async function runRatingsBotCycle(options = {}) {
       const parsedRating = parseFloat(rawRating);
       const existingRating = parseFloat(item.rating);
 
-      if (isNaN(existingRating) || Math.abs(existingRating - parsedRating) >= 0.1) {
+      if (isNaN(existingRating) || Math.abs(existingRating - parsedRating) > 0.04) {
         const oldVal = item.rating;
         // Keep type consistency with file conventions
         item.rating = category === 'fourk' ? parsedRating : String(rawRating);
