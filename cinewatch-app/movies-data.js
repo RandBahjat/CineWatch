@@ -34,7 +34,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: "5.7",
     age: "R",
-    duration: "2h 6m",
+    duration: "1h 6m",
     genres: [
       "Action",
       "Adventure",
