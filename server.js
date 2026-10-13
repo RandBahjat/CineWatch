@@ -1127,6 +1127,24 @@ const server = http.createServer((req, res) => {
           } catch(e) {
             console.error('Failed to fetch sub tracks for dub override:', e);
           }
+        } else if (mode === 'sub' && data && data.source) {
+          try {
+            const testSub = await fetch(data.source, {
+              method: 'HEAD',
+              headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+              signal: AbortSignal.timeout(2500)
+            });
+            if (!testSub.ok && testSub.status >= 500) {
+              console.warn(`[server] Sub source is down (${testSub.status}), falling back to dub source...`);
+              const dubTarget = `https://megavid.buzz/mal/${malId}/${ep}/dub/source`;
+              const dubR = await fetch(dubTarget, { headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } });
+              const dubData = await dubR.json();
+              if (dubData && dubData.source) {
+                data.source = dubData.source;
+                data.type = dubData.type || data.type;
+              }
+            }
+          } catch(e) {}
         }
 
         if (data && data.source) {

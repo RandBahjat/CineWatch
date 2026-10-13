@@ -7534,6 +7534,35 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
 
       if (srcData && srcData.source) {
+        // Verify that the retrieved stream is reachable
+        let isReachable = true;
+        try {
+          const testFetch = await fetch(srcData.source, { method: 'HEAD', signal: AbortSignal.timeout(2500) });
+          if (!testFetch.ok && testFetch.status >= 500) {
+            isReachable = false;
+          }
+        } catch (e) {}
+
+        if (!isReachable) {
+          console.warn(`[CineWatch] Stream ${srcData.source} is unavailable. Trying alternative dub stream...`);
+          const dubEndpoints = uniqueAnimeEndpoints.map(u => u.replace(/mode=[a-z]+/i, 'mode=dub'));
+          for (const dUrl of dubEndpoints) {
+            try {
+              const dRes = await fetch(dUrl, { signal: AbortSignal.timeout(4000) });
+              if (!dRes.ok) continue;
+              const dData = await dRes.json();
+              if (dData && dData.source) {
+                if (srcData.tracks && srcData.tracks.length > 0) {
+                  dData.tracks = srcData.tracks;
+                }
+                srcData = dData;
+                isReachable = true;
+                break;
+              }
+            } catch(err) {}
+          }
+        }
+
         cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
@@ -8134,17 +8163,34 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 video.play().catch(function() {});
               });
             });
+            let hlsNetErrorCount = 0;
             hls.on(Hls.Events.ERROR, function (event, data) {
               if (data.fatal) {
                 switch (data.type) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
-                    hls.startLoad();
+                    hlsNetErrorCount++;
+                    if (hlsNetErrorCount >= 2) {
+                      console.warn('[CineWatch] Fatal HLS network error limit reached. Falling back to iframe...');
+                      if (iframe) {
+                        try { art.destroy(); } catch(e) {}
+                        if (artContainer) artContainer.classList.add('hidden');
+                        iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+                        iframe.classList.remove('hidden');
+                      }
+                    } else {
+                      hls.startLoad();
+                    }
                     break;
                   case Hls.ErrorTypes.MEDIA_ERROR:
                     hls.recoverMediaError();
                     break;
                   default:
-                    try { hls.recoverMediaError(); } catch(e) {}
+                    if (iframe) {
+                      try { art.destroy(); } catch(e) {}
+                      if (artContainer) artContainer.classList.add('hidden');
+                      iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+                      iframe.classList.remove('hidden');
+                    }
                     break;
                 }
               }

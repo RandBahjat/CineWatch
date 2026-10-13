@@ -172,12 +172,29 @@ const server = http.createServer((req, res) => {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
       }
     })
-      .then(r => r.json())
-      .then(data => {
+      .then(async r => {
+        const data = await r.json();
+        if (mode === 'sub' && data && data.source) {
+          try {
+            const testSub = await fetch(data.source, {
+              method: 'HEAD',
+              headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+              signal: AbortSignal.timeout(2500)
+            });
+            if (!testSub.ok && testSub.status >= 500) {
+              const dubTarget = `https://megavid.buzz/mal/${malId}/${ep}/dub/source`;
+              const dubR = await fetch(dubTarget, { headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } });
+              const dubData = await dubR.json();
+              if (dubData && dubData.source) {
+                data.source = dubData.source;
+              }
+            }
+          } catch(e) {}
+        }
         if (data && data.source) {
           data.rawSource = data.source;
           data.embedUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}`;
-          if (data.source.includes('.m3u8') || data.source.includes('cp.megavid.buzz')) {
+          if (data.source.includes('.m3u8') || data.source.includes('cp.megavid.buzz') || data.source.includes('vid/')) {
             data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
           }
         }
