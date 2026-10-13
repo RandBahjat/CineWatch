@@ -4,6 +4,7 @@
     "serve": "node serve-app.js",
     "server": "node server.js",
     "bot:ratings": "node ratings_bot.js",
+    "bot:ratings:movies": "node ratings_bot.js --type=movie --all --force",
     "bot:ratings:all": "node ratings_bot.js --all",
     "bot:ratings:daemon": "node ratings_bot.js --daemon",
     "bot:ratings:recent": "node ratings_bot.js --recent",
