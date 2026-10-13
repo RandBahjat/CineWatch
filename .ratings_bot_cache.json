@@ -1,5 +1,5 @@
 {
-  "lastRun": 1791904939100,
+  "lastRun": 1791905017799,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -248,6 +248,13 @@
       "rating": "8.4",
       "lastChecked": 1791904939100,
       "title": "The Odyssey",
+      "year": 2026
+    },
+    "series:visionquest": {
+      "imdbId": "tt23112594",
+      "rating": "N/A",
+      "lastChecked": 1791905017799,
+      "title": "VisionQuest",
       "year": 2026
     }
   }
