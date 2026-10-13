@@ -318,14 +318,14 @@
     // Initialize icons
     lucide.createIcons();
 
-    // Price matrices
+    // Price matrices matching CineWatch VIP
     const pricing = {
-      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99' },
-      quarterly: { basic: '$0', advanced: '$6.79', pro: '$12.74', ultimate: '$16.99' },
-      yearly:    { basic: '$0', advanced: '$5.59', pro: '$10.49', ultimate: '$13.99' }
+      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99', period: '/ mo' },
+      quarterly: { basic: '$0', advanced: '$17.99', pro: '$49.99', ultimate: '$99.99', period: '/ 3 mo' },
+      yearly:    { basic: '$0', advanced: '$99.99', pro: '$149.99', ultimate: '$199.99', period: '/ year' }
     };
 
-    let activeBilling = 'yearly';
+    let activeBilling = 'monthly';
 
     function setBilling(cycle) {
       activeBilling = cycle;
@@ -344,6 +344,11 @@
       document.getElementById('price-advanced').innerText = pricing[cycle].advanced;
       document.getElementById('price-pro').innerText = pricing[cycle].pro;
       document.getElementById('price-ultimate').innerText = pricing[cycle].ultimate;
+
+      const period = pricing[cycle].period;
+      if (document.getElementById('period-advanced')) document.getElementById('period-advanced').innerText = period;
+      if (document.getElementById('period-pro')) document.getElementById('period-pro').innerText = period;
+      if (document.getElementById('period-ultimate')) document.getElementById('period-ultimate').innerText = period;
     }
 
     function handleUpgrade(tier) {
