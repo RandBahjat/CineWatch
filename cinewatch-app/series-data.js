@@ -69,7 +69,7 @@ window._SERIES_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
     "backdrop": "",
     "videoUrl": "284833",
     "trailerUrl": "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
