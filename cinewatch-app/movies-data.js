@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Family",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
     overview: "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime from Jeremy Crawford, the husband of bestselling author Verity Crawford. After a mysterious accident leaves Verity unable to finish her successful book series, Lowen arrives at the Crawford home to sort through notes and manuscripts. While digging through the office, she discovers an unpublished autobiography containing horrifying admissions about the family's tragedies, drawing Lowen into an intoxicating, dangerous web of obsession and deceit.",
