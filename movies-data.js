@@ -94,7 +94,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-    videoUrl: "1283515",
+    videoUrl: "115",
     trailerUrl: "https://youtu.be/U6sbm1OaJb8?si=h9iie6CnJU3dDObj",
     overview: "Based on Capcom's legendary arcade fighting game franchise, martial artists from across the globe gather to compete in the brutal World Warrior Tournament. Beneath the spectacle of fierce arena clashes, the fighters must uncover and dismantle the sinister underworld syndicate Shadaloo and its power-hungry dictator, M. Bison.",
     overviewKurdish: "لەسەر بنەمای زنجیرە یارییە شەڕانگێزییە بەناوبانگەکەی کۆمپانیای کاپکۆم دروستکراوە، جەنگاوەران و شارەزایانی هونەری جەنگی لە هەموو گۆشەیەکی جیهانەوە کۆدەبنەوە بۆ بەشداریکردن لە پاڵەوانێتییەکی توند و خوێناویدا. لە پشت ئەم شەڕ و ڕکابەرییە گەورەیەوە، دەبێت ئەم جەنگاوەرانە پیلانی ڕێکخراوی تاوانکاریی تاریکی «شادالوو» و سەرکردە ستەمکارەکەیان، ئێم. بایکۆن، ئاشکرا بکەن و لەناوی بەرن پێش ئەوەی دەست بەسەر جیهاندا بگرێت.",
