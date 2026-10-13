@@ -2,7 +2,12 @@
   "scripts": {
     "sync": "node auto_sync.js",
     "serve": "node serve-app.js",
-    "server": "node server.js"
+    "server": "node server.js",
+    "bot:ratings": "node ratings_bot.js",
+    "bot:ratings:daemon": "node ratings_bot.js --daemon",
+    "bot:ratings:recent": "node ratings_bot.js --recent",
+    "bot:ratings:force": "node ratings_bot.js --force",
+    "update-ratings": "node update-ratings.js"
   },
   "dependencies": {
     "libsodium-wrappers": "^0.8.4",
