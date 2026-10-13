@@ -51,7 +51,6 @@ window._SERIES_DATA = [
             "duration": "45 min",
             "overview": ""
           }
-
         ]
       }
     ]
@@ -108,7 +107,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Order",
             "airDate": "2026-10-9",
-            "rating": 8.0,
+            "rating": 8,
             "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWE0NzU5MzctZDY5Zi00MDI5LWI3Y2MtNjRiM2MzMTY2ODZhXkEyXkFqcGc@._V1_.jpg",
             "duration": "51 min",
             "overview": "Being the Avatar brings immense responsibility. Pavi feels overwhelmed and misses her friends. Jae discovers a secret organization and faces a life-altering decision."
@@ -111844,7 +111843,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Beggars Banquet",
             "airDate": "2025-05-25",
-            "rating": 8.3,
+            "rating": 8.2,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/569/1424949.jpg",
             "duration": "47 min",
             "overview": "Bella, trying to salvage her plan with Antoine, does a runner down to London. Tattersall gets Alice's tootsies tapping. Conrad clears the air at The Falkland Arms. Kevin confronts his past. The Harrigans sit down for a normal family dinner."
@@ -111869,7 +111868,8 @@ window._SERIES_DATA = [
             "airDate": "2026-09-18",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604707.jpg",
             "duration": "49 min",
-            "overview": "Maeve and Conrad go to the dogs, leaving Harry to deal with the messy fallout. Jan makes a startling confession. Kevin and Seraphina both look to the future. Tattersall puts his cards on the table."
+            "overview": "Maeve and Conrad go to the dogs, leaving Harry to deal with the messy fallout. Jan makes a startling confession. Kevin and Seraphina both look to the future. Tattersall puts his cards on the table.",
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -111877,7 +111877,8 @@ window._SERIES_DATA = [
             "airDate": "2026-09-25",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/642/1607370.jpg",
             "duration": "46 min",
-            "overview": "With Conrad's self-control slipping, Maeve make plans of her own while Jan hits Harry with a hard truth. Smelling blood, Frankie and Tattersall circle like sharks."
+            "overview": "With Conrad's self-control slipping, Maeve make plans of her own while Jan hits Harry with a hard truth. Smelling blood, Frankie and Tattersall circle like sharks.",
+            "rating": 8.4
           },
           {
             "episode": 3,
@@ -111885,7 +111886,8 @@ window._SERIES_DATA = [
             "airDate": "2026-10-02",
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609824.jpg",
             "duration": "44 min",
-            "overview": "Maeve probes Conrad for secrets, positioning herself against threats old and new. As Frankie forces a high-stakes sit-down, Kevin and Harry game out their strategy."
+            "overview": "Maeve probes Conrad for secrets, positioning herself against threats old and new. As Frankie forces a high-stakes sit-down, Kevin and Harry game out their strategy.",
+            "rating": 8.3
           },
           {
             "episode": 4,
