@@ -4,7 +4,7 @@
 
 window._SERIES_DATA = [
   {
-    "title": "East of Eden",
+    "title": "Avatar: Seven Havens",
     "type": "TV Show",
     "year": 2026,
     "rating": "7.7",
