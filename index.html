@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_891_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_938_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2233">
+    <link rel="stylesheet" href="movie.css?v=20261003_892_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_939_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2234">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -134,12 +134,12 @@
     <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="api.js?v=20261009_316_auth_vip" defer></script>
-    <script src="movies-data.js?v=20261003_943_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_943_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_9399" defer></script>
-    <script src="fourk-data.js?v=20261009_445_hd_and_4k" defer></script>
-    <script src="movie.js?v=20261012_208_kurdish_sub_fix_1" defer></script>
+    <script src="api.js?v=20261009_317_auth_vip" defer></script>
+    <script src="movies-data.js?v=20261003_944_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_944_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_9400" defer></script>
+    <script src="fourk-data.js?v=20261009_446_hd_and_4k" defer></script>
+    <script src="movie.js?v=20261012_209_kurdish_sub_fix_1" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -3191,6 +3191,8 @@
                 });
                 document.querySelectorAll('.download-text').forEach(el => el.textContent = 'داگرتن');
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ریپۆرت');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'پاشبنەما');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'پۆستەر');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'ریپۆرت';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
@@ -3263,6 +3265,8 @@
                 });
                 document.querySelectorAll('.download-text').forEach(el => el.textContent = 'تحميل');
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'إبلاغ');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'خلفية');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'بوستر');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
                 if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
@@ -3332,6 +3336,8 @@
                     if (genreMapEnglish[g]) btn.textContent = genreMapEnglish[g];
                 });
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Report');
+                document.querySelectorAll('.view-toggle-btn[data-mode="backdrop"] .toggle-text').forEach(el => el.textContent = 'Backdrop');
+                document.querySelectorAll('.view-toggle-btn[data-mode="poster"] .toggle-text').forEach(el => el.textContent = 'Poster');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
                 const submitReportText = document.getElementById('submitReportText');
@@ -3440,7 +3446,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_2233"></script>
+    <script src="welcome-disclaimer.js?v=20260918_2234"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
