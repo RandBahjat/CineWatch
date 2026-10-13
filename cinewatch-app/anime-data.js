@@ -2,7 +2,7 @@
 
 window._ANIME_DATA = [
   
-  {
+    {
     "title": "Dragon Ball Super: Beerus",
     "type": "TV Show",
     "isAnime": true,
@@ -24,9 +24,9 @@ window._ANIME_DATA = [
     ],
     "poster": "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/Y7spHx4ckxwYNppq3Qlvvtf5Qd.jpg",
-    "videoUrl": "63367",
-    "malId": 63367,
-    "anilistId": 63367,
+    "videoUrl": "62715",
+    "malId": 30694,
+    "anilistId": 21175,
     "trailerUrl": "https://youtu.be/W9W5CLUGjbU?si=0ljmntCslpiU679B",
     "animeSlug": "dragon-ball-super-beerus",
     "id": "dragon-ball-super-beerus-2026",
@@ -50,76 +50,120 @@ window._ANIME_DATA = [
           {
             "episode": 1,
             "title": "A Peacetime Reward: Who Gets the 100 Million Zeni?!",
-            "absoluteEpisode": 1
+            "absoluteEpisode": 1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302593.jpg",
+            "duration": "24m",
+            "overview": "After defeating Majin Buu, peace has returned to Earth. Chi-Chi wants Goku to get a job, so Goku works as a radish farmer! Meanwhile, Goten and Trunks search for a wedding present for Videl."
           },
           {
             "episode": 2,
             "title": "To the Promised Resort! Vegeta's Family Vacation?!",
-            "absoluteEpisode": 2
+            "absoluteEpisode": 2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302594.jpg",
+            "duration": "24m",
+            "overview": "Vegeta takes Bulma and Trunks on a family vacation to a luxury resort, keeping a promise he made to Trunks. Meanwhile, Beerus destroys a planet after tasting their cuisine."
           },
           {
             "episode": 3,
             "title": "Where's the Rest of My Dream?! Search for the Super Saiyan God!",
-            "absoluteEpisode": 3
+            "absoluteEpisode": 3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302595.jpg",
+            "duration": "24m",
+            "overview": "Beerus and Whis continue their search for the Super Saiyan God. Back on Earth, everyone gathers aboard a luxury cruise liner to celebrate Bulma's birthday."
           },
           {
             "episode": 4,
             "title": "Aim for the Dragon Balls! The Pilaf Gang's Grand Plan!",
-            "absoluteEpisode": 4
+            "absoluteEpisode": 4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302596.jpg",
+            "duration": "24m",
+            "overview": "The Pilaf Gang infiltrates Bulma's cruise ship to steal the Dragon Balls, but their plans go awry when they encounter Goten and Trunks."
           },
           {
             "episode": 5,
             "title": "Battle on King Kai's Planet! Goku vs God of Destruction Beerus",
-            "absoluteEpisode": 5
+            "absoluteEpisode": 5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302614.jpg",
+            "duration": "24m",
+            "overview": "Beerus and Whis arrive on King Kai's planet. Despite King Kai's warnings, Goku challenges the God of Destruction to a sparring match, testing Super Saiyan 3 against divine power."
           },
           {
             "episode": 6,
             "title": "Don't Anger the God of Destruction! A Tense Birthday Party",
-            "absoluteEpisode": 6
+            "absoluteEpisode": 6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302597.jpg",
+            "duration": "24m",
+            "overview": "Beerus and Whis arrive on Earth at Bulma's birthday party. Vegeta recognizes Lord Beerus and desperately tries to keep him happy and entertained to prevent the destruction of Earth."
           },
           {
             "episode": 7,
             "title": "How Dare You Touch My Bulma! Vegeta's Furious Mutation?!",
-            "absoluteEpisode": 7
+            "absoluteEpisode": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302598.jpg",
+            "duration": "24m",
+            "overview": "Beerus becomes enraged when Majin Buu refuses to share pudding. The Z-Fighters try to fight Beerus, but are easily swept aside until Beerus strikes Bulma, unleashing Vegeta's rage."
           },
           {
             "episode": 8,
             "title": "Goku Arrives! A Last Chance from Lord Beerus?!",
-            "absoluteEpisode": 8
+            "absoluteEpisode": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302599.jpg",
+            "duration": "24m",
+            "overview": "Vegeta's rage-fueled assault isn't enough to defeat Beerus. Oolong is challenged to a rock-paper-scissors match for Earth's fate, but Goku arrives just in time with an idea."
           },
           {
             "episode": 9,
             "title": "Thanks for Waiting, Lord Beerus! A Super Saiyan God is Born!",
-            "absoluteEpisode": 9
+            "absoluteEpisode": 9,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302600.jpg",
+            "duration": "24m",
+            "overview": "Goku summons Shenron to ask about the Super Saiyan God. Learning the ancient ritual requiring five righteous Saiyans, the group performs the ritual with Videl to transform Goku."
           },
           {
             "episode": 10,
             "title": "Show Us, Goku! The Power of a Super Saiyan God!",
-            "absoluteEpisode": 10
+            "absoluteEpisode": 10,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302601.jpg",
+            "duration": "24m",
+            "overview": "With his hair and aura blazing with divine red ki, Goku achieves the Super Saiyan God transformation and begins his battle against Lord Beerus high above Earth."
           },
           {
             "episode": 11,
             "title": "Let's Keep Going, Lord Beerus! The Battle of the Gods!",
-            "absoluteEpisode": 11
+            "absoluteEpisode": 11,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302602.jpg",
+            "duration": "24m",
+            "overview": "Goku and Beerus continue their clash, pushing each other to greater heights as Goku acclimates to the strange new feeling of divine deity ki."
           },
           {
             "episode": 12,
             "title": "The Universe Crumbles?! Clash! God of Destruction vs Super Saiyan God!",
-            "absoluteEpisode": 12
+            "absoluteEpisode": 12,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302603.jpg",
+            "duration": "24m",
+            "overview": "The clash between Goku and Beerus generates shockwaves that ripple across the entire universe, threatening to shatter reality itself unless Goku learns to nullify the clashes."
           },
           {
             "episode": 13,
             "title": "Goku, Surpass the Super Saiyan God!",
-            "absoluteEpisode": 13
+            "absoluteEpisode": 13,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302604.jpg",
+            "duration": "24m",
+            "overview": "Even as Goku's Super Saiyan God time limit expires, his body absorbs the godly energy into his normal Super Saiyan form, continuing to trade blows with Beerus."
           },
           {
             "episode": 14,
             "title": "This Is All My Power! The Conclusion of the Battle of Gods!",
-            "absoluteEpisode": 14
+            "absoluteEpisode": 14,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302615.jpg",
+            "duration": "24m",
+            "overview": "Goku pours every remaining ounce of energy into one final Kamehameha against Beerus's sphere of destruction, deciding the ultimate outcome of the battle for Earth."
           }
         ]
       }
-    ]
+    ],
+    "tmdbId": 62715,
+    "cinesrcId": "62715"
   },
   {
     "title": "One Piece",
