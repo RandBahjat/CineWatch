@@ -7,25 +7,28 @@ window._SERIES_DATA = [
     "title": "Avatar: Seven Havens",
     "type": "TV Show",
     "year": 2026,
-    "rating": "8.2",
-    "age": "TV-MA",
-    "duration": "50m",
+    "rating": "8.8",
+    "age": "TV-Y7",
+    "duration": "25m",
     "genres": [
-      "Drama",
-      "History"
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
-    "videoUrl": "258165",
-    "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
-    "overview": "Set against the rich backdrop of California's Salinas Valley in the early 20th century, a multi-generational epic unfolds exploring the deep-seated rivalries, secrets, and moral struggles of two families. As two estranged brothers desperately vie for the affection and approval of their deeply religious father, the dark shadow and buried truths of their long-lost mother threaten to fracture the family forever.",
-    "overviewKurdish": "لە دۆڵی سالیناسی کالیفۆرنیا لە سەرەتاکانی سەدەی بیستەمدا، زنجیرەیەکی درامیی مەزن باس لە ڕکابەری و ململانێی نێوان دوو خێزان دەکات لە ڕێگەی نەوە جیاوازەکانەوە. لە کاتێکدا دوو برا بە بەردەوامی لە هەوڵی بەدەستهێنانی سۆز و ڕەزامەندیی باوکیانن کە پیاوێکی باوەڕدارە، دەرکەوتنی نهێنییە تاریکەکان و ڕابردووی شاردراوەی دایکیان هەڕەشە لە لەبەریەکهەڵوەشاندنەوەی تەواوەتیی خێزانەکە دەکات.",
-    "director": "Garth Davis",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+    "videoUrl": "284833",
+    "trailerUrl": "https://www.youtube.com/watch?v=nhdh962_ee0",
+    "overview": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
+    "overviewKurdish": "لە جیهانێکدا کە بەهۆی کارەساتێکی وێرانکەرەوە پارچە پارچە بووە، ملکەچپێکەرێکی لاوی زەوی (ئێرس‌بێندەر) بۆی دەردەکەوێت کە ئاڤاتاری نوێیە لە دوای کۆرا. بەڵام لەم سەردەمە پڕ لە مەترسییەدا، ئەم نازناوە وەک وێرانکەری مرۆڤایەتی دەیناسێنێت نەک ڕزگارکەری. لە کاتێکدا لەلایەن دوژمنانی مرۆڤ و ڕۆحەکانەوە ڕاو دەندرێت، خۆی و خوشکە دووانە ونبووەکەی دەبێت نهێنیی سەرچاوەی خۆیان ئاشکرا بکەن و حەوت پەناگەکە ڕزگار بکەن پێش ئەوەی دوایین قەڵاکانی شارستانیەت بڕوخێن.",
+    "director": "Michael Dante DiMartino, Bryan Konietzko",
     "cast": [
-      "Florence Pugh, Christopher Abbott, Mike Faist, Hoon Lee, Tracy Letts, Martha Plimpton"
+      "Saheli Khan, Aishu Devan, Akshay Khanna, Major Curda, Sakina Jaffrey, Darren Barnet, Dianne Doan, Dee Bradley Baker"
     ],
     "trending": true,
-    "featured": false,
+    "featured": true,
     "is4k": false,
     "seasons": [
       {
@@ -33,12 +36,39 @@ window._SERIES_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Timshel",
-            "airDate": "2026-10-1",
-            "rating": 8.6,
-            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609930.jpg",
-            "duration": "51 min",
-            "overview": "Torn apart by a domineering father, brothers Adam and Charles Trask are forced into opposing paths to adulthood — one far away, one close to home."
+            "title": "Chapter 1: On the Horizon",
+            "airDate": "2026-10-09",
+            "rating": 8.8,
+            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+            "duration": "25 min",
+            "overview": "In the aftermath of the great cataclysm, young Earthbender Pavi awakens mysterious powers that change the fate of the Haven forever."
+          },
+          {
+            "episode": 2,
+            "title": "Chapter 2: Into the Storm",
+            "airDate": "2026-10-09",
+            "rating": 8.9,
+            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+            "duration": "24 min",
+            "overview": "Hunted by spirit forces and human pursuers, Pavi crosses paths with Nisha as past secrets begin to surface."
+          },
+          {
+            "episode": 3,
+            "title": "Chapter 3: The Order",
+            "airDate": "2026-10-09",
+            "rating": 8.8,
+            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+            "duration": "26 min",
+            "overview": "Facing hostile guardians of the old world, the twins must learn to bend together to survive."
+          },
+          {
+            "episode": 4,
+            "title": "Chapter 4: The Faceless",
+            "airDate": "2026-10-16",
+            "rating": 8.7,
+            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+            "duration": "25 min",
+            "overview": "An ancient spirit with no face tests Pavi's resolve and reveals the true danger threatening the Seven Havens."
           }
         ]
       }
