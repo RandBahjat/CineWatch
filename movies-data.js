@@ -92,7 +92,7 @@ window._MOVIES_DATA = [
       "Fantasy",
       "Martial Arts"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
