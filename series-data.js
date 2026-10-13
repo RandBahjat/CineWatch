@@ -265,7 +265,7 @@ window._SERIES_DATA = [
     "title": "Brothers",
     "type": "TV Show",
     "year": 2026,
-    "rating": "TBR",
+    "rating": "6.2",
     "age": "TV-MA",
     "genres": [
       "Comedy"
