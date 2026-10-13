@@ -13,10 +13,9 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "",
-      "Psychological"
+      "Family",
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
