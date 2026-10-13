@@ -632,10 +632,10 @@
     gap: 1rem 0.75rem !important;
   }
 
-  #moviesGrid .card-poster-wrap,
-  #seriesGrid .card-poster-wrap,
-  #animeGrid .card-poster-wrap,
-  .browse-grid .card-poster-wrap {
+  #moviesGrid:not(.backdrop-view) .card-poster-wrap,
+  #seriesGrid:not(.backdrop-view) .card-poster-wrap,
+  #animeGrid:not(.backdrop-view) .card-poster-wrap,
+  .browse-grid:not(.backdrop-view) .card-poster-wrap {
     aspect-ratio: 2 / 3 !important;
   }
 
