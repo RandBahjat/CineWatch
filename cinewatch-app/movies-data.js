@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
     overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
     director: "Sam Hargrave",
-    cast: ["John Cena, Jessica Biel"],
+    cast: ["John Cena, Jessica Biel, Arturo Castro"],
     trending: true,
     featured: true,
     is4k: false,
