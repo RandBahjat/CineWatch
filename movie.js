@@ -1295,7 +1295,6 @@ function renderRemainingCarousels() {
     renderTrack(tracks[i], remainingShelfMap[tracks[i]]);
   }
 }
-}
 
 function renderContinueWatchingShelf() {
   const shelf = document.getElementById("continueWatchingShelf");
