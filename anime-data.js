@@ -1,4 +1,5 @@
 // CineWatch - Anime Data
+
 window._ANIME_DATA = [
   {
     "title": "Dragon Ball Super: Beerus",
@@ -26245,103 +26246,128 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "To You, in 2000 Years - The Fall of Shiganshina (1)"
+            "title": "To You, in 2000 Years - The Fall of Shiganshina (1)",
+            "rating": 9.2
           },
           {
             "episode": 2,
-            "title": "That Day - The Fall of Shiganshina (2)"
+            "title": "That Day - The Fall of Shiganshina (2)",
+            "rating": 8.5
           },
           {
             "episode": 3,
-            "title": "A Dim Light Amid Despair - Humanity's Comeback (1)"
+            "title": "A Dim Light Amid Despair - Humanity's Comeback (1)",
+            "rating": 8.1
           },
           {
             "episode": 4,
-            "title": "The Night of the Closing Ceremony - Humanity's Comeback (2)"
+            "title": "The Night of the Closing Ceremony - Humanity's Comeback (2)",
+            "rating": 8.5
           },
           {
             "episode": 5,
-            "title": "First Battle - The Struggle for Trost (1)"
+            "title": "First Battle - The Struggle for Trost (1)",
+            "rating": 9.2
           },
           {
             "episode": 6,
-            "title": "The World the Girl Saw - The Struggle for Trost (2)"
+            "title": "The World the Girl Saw - The Struggle for Trost (2)",
+            "rating": 8.9
           },
           {
             "episode": 7,
-            "title": "Small Blade - The Struggle for Trost (3)"
+            "title": "Small Blade - The Struggle for Trost (3)",
+            "rating": 8.9
           },
           {
             "episode": 8,
-            "title": "I Can Hear His Heartbeat - The Struggle for Trost (4)"
+            "title": "I Can Hear His Heartbeat - The Struggle for Trost (4)",
+            "rating": 9.1
           },
           {
             "episode": 9,
-            "title": "Whereabouts of His Left Arm - The Struggle for Trost (5)"
+            "title": "Whereabouts of His Left Arm - The Struggle for Trost (5)",
+            "rating": 8.8
           },
           {
             "episode": 10,
-            "title": "Response - The Struggle for Trost (6)"
+            "title": "Response - The Struggle for Trost (6)",
+            "rating": 8.3
           },
           {
             "episode": 11,
-            "title": "Idol - The Struggle for Trost (7)"
+            "title": "Idol - The Struggle for Trost (7)",
+            "rating": 8.3
           },
           {
             "episode": 12,
-            "title": "Wound - The Struggle for Trost (8)"
+            "title": "Wound - The Struggle for Trost (8)",
+            "rating": 8.3
           },
           {
             "episode": 13,
-            "title": "Primal Desire - The Struggle for Trost (9)"
+            "title": "Primal Desire - The Struggle for Trost (9)",
+            "rating": 8.9
           },
           {
             "episode": 14,
-            "title": "Can't Look Into His Eyes - Eve of the Counterattack (1)"
+            "title": "Can't Look Into His Eyes - Eve of the Counterattack (1)",
+            "rating": 8.4
           },
           {
             "episode": 15,
-            "title": "Special Operations Squad - Eve of the Counterattack (2)"
+            "title": "Special Operations Squad - Eve of the Counterattack (2)",
+            "rating": 8.1
           },
           {
             "episode": 16,
-            "title": "What Needs to Be Done Now - Eve of the Counterattack (3)"
+            "title": "What Needs to Be Done Now - Eve of the Counterattack (3)",
+            "rating": 8.2
           },
           {
             "episode": 17,
-            "title": "Female Titan - The 57th Exterior Scouting Mission (1)"
+            "title": "Female Titan - The 57th Exterior Scouting Mission (1)",
+            "rating": 9.1
           },
           {
             "episode": 18,
-            "title": "Forest of Giant Trees - The 57th Exterior Scouting Mission (2)"
+            "title": "Forest of Giant Trees - The 57th Exterior Scouting Mission (2)",
+            "rating": 8.8
           },
           {
             "episode": 19,
-            "title": "Bite - The 57th Exterior Scouting Mission (3)"
+            "title": "Bite - The 57th Exterior Scouting Mission (3)",
+            "rating": 8.9
           },
           {
             "episode": 20,
-            "title": "Erwin Smith - The 57th Exterior Scouting Mission (4)"
+            "title": "Erwin Smith - The 57th Exterior Scouting Mission (4)",
+            "rating": 9.1
           },
           {
             "episode": 21,
-            "title": "Crushing Blow - The 57th Exterior Scouting Mission (5)"
+            "title": "Crushing Blow - The 57th Exterior Scouting Mission (5)",
+            "rating": 9.5
           },
           {
             "episode": 22,
-            "title": "The Defeated - The 57th Exterior Scouting Mission (6)"
+            "title": "The Defeated - The 57th Exterior Scouting Mission (6)",
+            "rating": 9
           },
           {
             "episode": 23,
-            "title": "Smile - Assault on Stohess (1)"
+            "title": "Smile - Assault on Stohess (1)",
+            "rating": 9
           },
           {
             "episode": 24,
-            "title": "Mercy - Assault on Stohess (2)"
+            "title": "Mercy - Assault on Stohess (2)",
+            "rating": 9.1
           },
           {
             "episode": 25,
-            "title": "Wall: Raid on Stohess District (3)"
+            "title": "Wall: Raid on Stohess District (3)",
+            "rating": 9.4
           }
         ]
       },
@@ -26350,51 +26376,63 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Beast Titan"
+            "title": "Beast Titan",
+            "rating": 9.2
           },
           {
             "episode": 2,
-            "title": "I'm Home"
+            "title": "I'm Home",
+            "rating": 8.5
           },
           {
             "episode": 3,
-            "title": "Southwestward"
+            "title": "Southwestward",
+            "rating": 8.6
           },
           {
             "episode": 4,
-            "title": "Soldier"
+            "title": "Soldier",
+            "rating": 9.1
           },
           {
             "episode": 5,
-            "title": "Historia"
+            "title": "Historia",
+            "rating": 9.1
           },
           {
             "episode": 6,
-            "title": "Warrior"
+            "title": "Warrior",
+            "rating": 9.7
           },
           {
             "episode": 7,
-            "title": "Close Combat"
+            "title": "Close Combat",
+            "rating": 9.6
           },
           {
             "episode": 8,
-            "title": "The Hunters"
+            "title": "The Hunters",
+            "rating": 8.4
           },
           {
             "episode": 9,
-            "title": "Opening"
+            "title": "Opening",
+            "rating": 8.5
           },
           {
             "episode": 10,
-            "title": "Children"
+            "title": "Children",
+            "rating": 9
           },
           {
             "episode": 11,
-            "title": "Charge"
+            "title": "Charge",
+            "rating": 9.5
           },
           {
             "episode": 12,
-            "title": "Scream"
+            "title": "Scream",
+            "rating": 9.7
           }
         ]
       },
@@ -26403,23 +26441,28 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Smoke Signal"
+            "title": "Smoke Signal",
+            "rating": 8.8
           },
           {
             "episode": 2,
-            "title": "Pain"
+            "title": "Pain",
+            "rating": 9.2
           },
           {
             "episode": 3,
-            "title": "Old Story"
+            "title": "Old Story",
+            "rating": 8.7
           },
           {
             "episode": 4,
-            "title": "Trust"
+            "title": "Trust",
+            "rating": 8.5
           },
           {
             "episode": 5,
-            "title": "Reply"
+            "title": "Reply",
+            "rating": 9
           },
           {
             "episode": 6,
@@ -26427,67 +26470,83 @@ window._ANIME_DATA = [
           },
           {
             "episode": 7,
-            "title": "Wish"
+            "title": "Wish",
+            "rating": 9.5
           },
           {
             "episode": 8,
-            "title": "Outside the Walls of Orvud District"
+            "title": "Outside the Walls of Orvud District",
+            "rating": 8.9
           },
           {
             "episode": 9,
-            "title": "Ruler of the Walls"
+            "title": "Ruler of the Walls",
+            "rating": 9.3
           },
           {
             "episode": 10,
-            "title": "Friends"
+            "title": "Friends",
+            "rating": 9.2
           },
           {
             "episode": 11,
-            "title": "Bystander"
+            "title": "Bystander",
+            "rating": 9.1
           },
           {
             "episode": 12,
-            "title": "Night of the Battle to Retake the Wall"
+            "title": "Night of the Battle to Retake the Wall",
+            "rating": 8.9
           },
           {
             "episode": 13,
-            "title": "The Town Where Everything Began"
+            "title": "The Town Where Everything Began",
+            "rating": 9.5
           },
           {
             "episode": 14,
-            "title": "Thunder Spears"
+            "title": "Thunder Spears",
+            "rating": 9.5
           },
           {
             "episode": 15,
-            "title": "Descent"
+            "title": "Descent",
+            "rating": 9.5
           },
           {
             "episode": 16,
-            "title": "Perfect Game"
+            "title": "Perfect Game",
+            "rating": 9.8
           },
           {
             "episode": 17,
-            "title": "Hero"
+            "title": "Hero",
+            "rating": 9.7
           },
           {
             "episode": 18,
-            "title": "Midnight Sun"
+            "title": "Midnight Sun",
+            "rating": 9.8
           },
           {
             "episode": 19,
-            "title": "The Basement"
+            "title": "The Basement",
+            "rating": 9.2
           },
           {
             "episode": 20,
-            "title": "That Day"
+            "title": "That Day",
+            "rating": 9.7
           },
           {
             "episode": 21,
-            "title": "The Attack Titan"
+            "title": "The Attack Titan",
+            "rating": 9.6
           },
           {
             "episode": 22,
-            "title": "Beyond the Wall"
+            "title": "Beyond the Wall",
+            "rating": 9.5
           }
         ]
       },
@@ -26496,123 +26555,153 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Other Side of the Sea"
+            "title": "Other Side of the Sea",
+            "rating": 9.2
           },
           {
             "episode": 2,
-            "title": "Midnight Train"
+            "title": "Midnight Train",
+            "rating": 8.6
           },
           {
             "episode": 3,
-            "title": "The Door of Hope"
+            "title": "The Door of Hope",
+            "rating": 9.2
           },
           {
             "episode": 4,
-            "title": "From One Hand to Another"
+            "title": "From One Hand to Another",
+            "rating": 8.9
           },
           {
             "episode": 5,
-            "title": "Declaration of War"
+            "title": "Declaration of War",
+            "rating": 9.7
           },
           {
             "episode": 6,
-            "title": "The War Hammer Titan"
+            "title": "The War Hammer Titan",
+            "rating": 9.7
           },
           {
             "episode": 7,
-            "title": "Assault"
+            "title": "Assault",
+            "rating": 9.7
           },
           {
             "episode": 8,
-            "title": "Assassin's Bullet"
+            "title": "Assassin's Bullet",
+            "rating": 9.4
           },
           {
             "episode": 9,
-            "title": "Brave Volunteers"
+            "title": "Brave Volunteers",
+            "rating": 8.9
           },
           {
             "episode": 10,
-            "title": "A Sound Argument"
+            "title": "A Sound Argument",
+            "rating": 8.5
           },
           {
             "episode": 11,
-            "title": "Impostors"
+            "title": "Impostors",
+            "rating": 8.8
           },
           {
             "episode": 12,
-            "title": "Guides"
+            "title": "Guides",
+            "rating": 8.9
           },
           {
             "episode": 13,
-            "title": "Children of the Forest"
+            "title": "Children of the Forest",
+            "rating": 9.5
           },
           {
             "episode": 14,
-            "title": "Violence"
+            "title": "Violence",
+            "rating": 9.7
           },
           {
             "episode": 15,
-            "title": "Sole Salvation"
+            "title": "Sole Salvation",
+            "rating": 9.5
           },
           {
             "episode": 16,
-            "title": "Heaven and Earth"
+            "title": "Heaven and Earth",
+            "rating": 9.4
           },
           {
             "episode": 17,
-            "title": "Judgement"
+            "title": "Judgement",
+            "rating": 9
           },
           {
             "episode": 18,
-            "title": "Sneak Attack"
+            "title": "Sneak Attack",
+            "rating": 9.3
           },
           {
             "episode": 19,
-            "title": "Two Brothers"
+            "title": "Two Brothers",
+            "rating": 9.7
           },
           {
             "episode": 20,
-            "title": "Memories of the Future"
+            "title": "Memories of the Future",
+            "rating": 9.8
           },
           {
             "episode": 21,
-            "title": "From You, 2,000 Years Ago"
+            "title": "From You, 2,000 Years Ago",
+            "rating": 9.8
           },
           {
             "episode": 22,
-            "title": "Thaw"
+            "title": "Thaw",
+            "rating": 9
           },
           {
             "episode": 23,
-            "title": "Sunset"
+            "title": "Sunset",
+            "rating": 8.5
           },
           {
             "episode": 24,
-            "title": "Pride"
+            "title": "Pride",
+            "rating": 8.4
           },
           {
             "episode": 25,
-            "title": "Night of the End"
+            "title": "Night of the End",
+            "rating": 8.6
           },
           {
             "episode": 26,
-            "title": "Traitor"
+            "title": "Traitor",
+            "rating": 9.2
           },
           {
             "episode": 27,
-            "title": "Retrospective"
+            "title": "Retrospective",
+            "rating": 9.5
           },
           {
             "episode": 28,
-            "title": "The Dawn of Humanity"
+            "title": "The Dawn of Humanity",
+            "rating": 9.6
           },
           {
             "episode": 29,
-            "title": "Attack on Titan: The Final Chapters (Part One)"
+            "title": "Attack on Titan: The Final Chapters (Part One)",
+            "rating": 9.5
           },
           {
             "episode": 30,
-            "title": "Attack on Titan: The Final Chapters (Part Two)"
+            "title": "Attack on Titan: The Final Chapters (Part Two)",
+            "rating": 8.8
           }
         ]
       }

@@ -1,5 +1,5 @@
 {
-  "lastRun": 1791905017799,
+  "lastRun": 1791905025751,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -256,6 +256,13 @@
       "lastChecked": 1791905017799,
       "title": "VisionQuest",
       "year": 2026
+    },
+    "anime:attack on titan": {
+      "imdbId": "tt2560140",
+      "rating": "9.1",
+      "lastChecked": 1791905025751,
+      "title": "Attack on Titan",
+      "year": 2013
     }
   }
 }
