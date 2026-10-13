@@ -56,18 +56,18 @@
       <!-- 3-Segment Billing Switcher -->
       <div class="pt-4 flex justify-center">
         <div class="inline-flex p-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 backdrop-blur-xl">
-          <button id="btn-monthly" onclick="setBilling('monthly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white">
+          <button id="btn-monthly" onclick="setBilling('monthly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-zinc-800 text-white shadow flex items-center gap-1.5">
             Monthly
           </button>
           
           <button id="btn-quarterly" onclick="setBilling('quarterly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5">
             3 Months
-            <span class="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded-md font-bold">-15%</span>
+            <span class="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded-md font-bold">Save 25%</span>
           </button>
           
-          <button id="btn-yearly" onclick="setBilling('yearly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-zinc-800 text-white shadow flex items-center gap-1.5">
+          <button id="btn-yearly" onclick="setBilling('yearly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5">
             Yearly
-            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-md font-bold">-30%</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-md font-bold">Best Value</span>
           </button>
         </div>
       </div>
@@ -138,8 +138,8 @@
           <p class="text-xs text-emerald-300/80 min-h-[32px]">Crisp ad-free HD & personalization</p>
 
           <div class="my-5 pb-5 border-b border-emerald-950/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-advanced">$5.59</span>
-            <span class="text-xs text-emerald-400 font-medium">/ mo</span>
+            <span class="text-4xl font-extrabold text-white" id="price-advanced">$7.99</span>
+            <span class="text-xs text-emerald-400 font-medium" id="period-advanced">/ mo</span>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -191,8 +191,8 @@
           <p class="text-xs text-indigo-200 min-h-[32px]">Master 4K cinema + offline download</p>
 
           <div class="my-5 pb-5 border-b border-indigo-900/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-pro">$10.49</span>
-            <span class="text-xs text-cyan-400 font-medium">/ mo</span>
+            <span class="text-4xl font-extrabold text-white" id="price-pro">$14.99</span>
+            <span class="text-xs text-cyan-400 font-medium" id="period-pro">/ mo</span>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -244,8 +244,8 @@
           <p class="text-xs text-rose-300/80 min-h-[32px]">Collector's cut with concierge speed</p>
 
           <div class="my-5 pb-5 border-b border-rose-950/60 flex items-baseline gap-1">
-            <span class="text-4xl font-extrabold text-white" id="price-ultimate">$13.99</span>
-            <span class="text-xs text-rose-400 font-medium">/ mo</span>
+            <span class="text-4xl font-extrabold text-white" id="price-ultimate">$19.99</span>
+            <span class="text-xs text-rose-400 font-medium" id="period-ultimate">/ mo</span>
           </div>
 
           <div class="space-y-3 mb-8 text-xs">
@@ -318,14 +318,14 @@
     // Initialize icons
     lucide.createIcons();
 
-    // Price matrices
+    // Price matrices matching CineWatch VIP
     const pricing = {
-      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99' },
-      quarterly: { basic: '$0', advanced: '$6.79', pro: '$12.74', ultimate: '$16.99' },
-      yearly:    { basic: '$0', advanced: '$5.59', pro: '$10.49', ultimate: '$13.99' }
+      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99', period: '/ mo' },
+      quarterly: { basic: '$0', advanced: '$17.99', pro: '$49.99', ultimate: '$99.99', period: '/ 3 mo' },
+      yearly:    { basic: '$0', advanced: '$99.99', pro: '$149.99', ultimate: '$199.99', period: '/ year' }
     };
 
-    let activeBilling = 'yearly';
+    let activeBilling = 'monthly';
 
     function setBilling(cycle) {
       activeBilling = cycle;
@@ -344,6 +344,11 @@
       document.getElementById('price-advanced').innerText = pricing[cycle].advanced;
       document.getElementById('price-pro').innerText = pricing[cycle].pro;
       document.getElementById('price-ultimate').innerText = pricing[cycle].ultimate;
+
+      const period = pricing[cycle].period;
+      if (document.getElementById('period-advanced')) document.getElementById('period-advanced').innerText = period;
+      if (document.getElementById('period-pro')) document.getElementById('period-pro').innerText = period;
+      if (document.getElementById('period-ultimate')) document.getElementById('period-ultimate').innerText = period;
     }
 
     function handleUpgrade(tier) {
