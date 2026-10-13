@@ -9716,7 +9716,7 @@ window._ANIME_DATA = [
     "id": "one-piece-1999"
   },
   {
-    "title": "One Piece: Gyojin Tou-hen",
+    "title": "One Piece Log: Fish-Man Island Saga",
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
