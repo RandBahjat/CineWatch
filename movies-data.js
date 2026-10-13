@@ -85,7 +85,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: "TBR",
     age: "PG-13",
-    duration: "1h 57m",
+    duration: "1h 59m",
     genres: [
       "Drama",
       "Mystery",
