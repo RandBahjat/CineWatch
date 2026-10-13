@@ -1181,7 +1181,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         <picture>
           <source media="(max-width: 768px)" srcset="${mobileImg}">
           <source media="(min-width: 769px)" srcset="${desktopImg}">
-          <img src="${desktopImg}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy" onerror="if(this.src!=='${forcePoster ? posterImg : backdropImg}')this.src='${forcePoster ? posterImg : backdropImg}'">
+          <img src="${desktopImg}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy" decoding="async" onerror="if(this.src!=='${forcePoster ? posterImg : backdropImg}')this.src='${forcePoster ? posterImg : backdropImg}'">
         </picture>
         <div class="card-gradient"></div>
         <div class="card-overlay">
@@ -1202,7 +1202,28 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   `;
 }
 
-async function renderCarousels() {
+function attachTrackClickDelegate(track) {
+  if (track && !track._hasDelegate) {
+    track.addEventListener('click', (e) => {
+      const card = e.target.closest('.movie-card');
+      if (card && card.dataset.id) openDetailsModal(card.dataset.id);
+    });
+    track._hasDelegate = true;
+  }
+}
+
+function renderTrack(trackId, movieList) {
+  const track = document.getElementById(trackId);
+  if (!track || !movieList) return;
+  if (trackId === "top10Track") {
+    track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
+  } else {
+    track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
+  }
+  attachTrackClickDelegate(track);
+}
+
+async function renderCarousels(priorityOnly = false) {
   // 1. Trending Movies: Frontload newly added movies from MOVIES, then explicit trending, then curated list
   const recentMovies = MOVIES.filter(m => !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length)).slice(0, 10);
   const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length));
@@ -1216,7 +1237,27 @@ async function renderCarousels() {
     }
   });
 
-  // 2. Trending Series: Frontload newly added series from MOVIES, then explicit trending, then curated list
+  const top10List = getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10);
+  if (top10List.length < 10) {
+    for (const item of mergedTrendingMovies) {
+      if (top10List.length >= 10) break;
+      if (!top10List.some(t => t.id === item.id)) {
+        top10List.push(item);
+      }
+    }
+  }
+
+  // Render above-the-fold tracks immediately
+  renderTrack("top10Track", top10List);
+  renderTrack("trendingMoviesTrack", mergedTrendingMovies);
+
+  if (priorityOnly) return;
+
+  renderRemainingCarousels();
+}
+
+function renderRemainingCarousels() {
+  // 2. Trending Series
   const recentSeries = MOVIES.filter(m => !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0))).slice(0, 10);
   const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0)));
   const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
@@ -1229,7 +1270,7 @@ async function renderCarousels() {
     }
   });
 
-  // 3. Trending Anime: Frontload newly added anime from MOVIES, then explicit trending anime
+  // 3. Trending Anime
   const recentAnime = MOVIES.filter(m => m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))).slice(0, 15);
   const explicitTrendingAnime = MOVIES.filter(m => (m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))) && m.trending);
   const mergedTrendingAnime = [];
@@ -1241,20 +1282,7 @@ async function renderCarousels() {
     }
   });
 
-  const top10List = getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10);
-  if (top10List.length < 10) {
-    const backupTrending = [...mergedTrendingMovies, ...mergedTrendingSeries];
-    for (const item of backupTrending) {
-      if (top10List.length >= 10) break;
-      if (!top10List.some(t => t.id === item.id)) {
-        top10List.push(item);
-      }
-    }
-  }
-
-  const shelfMap = {
-    top10Track: top10List,
-    trendingMoviesTrack: mergedTrendingMovies,
+  const remainingShelfMap = {
     trendingSeriesTrack: mergedTrendingSeries,
     trendingAnimeTrack: mergedTrendingAnime,
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
@@ -1262,33 +1290,11 @@ async function renderCarousels() {
     upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show"),
   };
 
-  const tracks = Object.keys(shelfMap);
-  let chunkStartTime = performance.now();
-
+  const tracks = Object.keys(remainingShelfMap);
   for (let i = 0; i < tracks.length; i++) {
-    const trackId = tracks[i];
-    const track = document.getElementById(trackId);
-    if (!track) continue;
-
-    // Time-slicing: Only yield if we've blocked the thread for > 40ms.
-    // This makes Desktop lightning fast (no yielding) while saving Mobile from TBT penalties!
-    if (performance.now() - chunkStartTime > 40) {
-      await new Promise(resolve => setTimeout(resolve, 0));
-      chunkStartTime = performance.now();
-    }
-
-    const movieList = shelfMap[trackId];
-    if (trackId === "top10Track") {
-      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
-    } else {
-      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
-    }
-
-    // Click opens details modal
-    track.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => openDetailsModal(card.dataset.id);
-    });
+    renderTrack(tracks[i], remainingShelfMap[tracks[i]]);
   }
+}
 }
 
 function renderContinueWatchingShelf() {
