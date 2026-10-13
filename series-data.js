@@ -7,7 +7,7 @@ window._SERIES_DATA = [
     "title": "Avatar: Seven Havens",
     "type": "TV Show",
     "year": 2026,
-    "rating": "7.7",
+    "rating": "8.2",
     "age": "TV-MA",
     "duration": "50m",
     "genres": [
