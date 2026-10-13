@@ -70,7 +70,7 @@ window._SERIES_DATA = [
       "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
-    "backdrop": "",
+    "backdrop": "https://image.tmdb.org/t/p/original/f4F9rmkR7I3HB2a1uw2pE7wK3V9.jpg",
     "videoUrl": "284833",
     "trailerUrl": "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
     "overview": "Set in the rich fantasy universe of bending disciplines, a new generation must restore balance after catastrophic spiritual upheavals fracture the world into seven fortified sanctuary realms known as the Havens. As dangerous rogue factions threaten to seize ancient elemental nexuses, young benders from across divided lands must unite to preserve the delicate boundary between mortals and spirits.",
