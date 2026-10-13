@@ -45,6 +45,47 @@ window._SERIES_DATA = [
     ]
   },
   {
+    "title": "East of Eden",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": "7.7",
+    "age": "TV-MA",
+    "duration": "50m",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
+    "videoUrl": "258165",
+    "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
+    "overview": "Set against the rich backdrop of California's Salinas Valley in the early 20th century, a multi-generational epic unfolds exploring the deep-seated rivalries, secrets, and moral struggles of two families. As two estranged brothers desperately vie for the affection and approval of their deeply religious father, the dark shadow and buried truths of their long-lost mother threaten to fracture the family forever.",
+    "overviewKurdish": "لە دۆڵی سالیناسی کالیفۆرنیا لە سەرەتاکانی سەدەی بیستەمدا، زنجیرەیەکی درامیی مەزن باس لە ڕکابەری و ململانێی نێوان دوو خێزان دەکات لە ڕێگەی نەوە جیاوازەکانەوە. لە کاتێکدا دوو برا بە بەردەوامی لە هەوڵی بەدەستهێنانی سۆز و ڕەزامەندیی باوکیانن کە پیاوێکی باوەڕدارە، دەرکەوتنی نهێنییە تاریکەکان و ڕابردووی شاردراوەی دایکیان هەڕەشە لە لەبەریەکهەڵوەشاندنەوەی تەواوەتیی خێزانەکە دەکات.",
+    "director": "Garth Davis",
+    "cast": [
+      "Florence Pugh, Christopher Abbott, Mike Faist, Hoon Lee, Tracy Letts, Martha Plimpton"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Timshel",
+            "airDate": "2026-10-1",
+            "rating": 8.6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609930.jpg",
+            "duration": "51 min",
+            "overview": "Torn apart by a domineering father, brothers Adam and Charles Trask are forced into opposing paths to adulthood — one far away, one close to home."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "Monster: The Lizzie Borden Story",
     "type": "TV Show",
     "year": 2026,
