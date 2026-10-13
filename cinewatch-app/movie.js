@@ -276,9 +276,28 @@ function getMoviesFromList(list, filterFn) {
 
 async function loadMediaFromAPI() {
   try {
+    // Guarantee raw data items carry stable IDs so external references never fail
+    [window._MOVIES_DATA, window._SERIES_DATA, window._ANIME_DATA, window._FOURK_DATA].forEach(list => {
+      if (Array.isArray(list)) {
+        list.forEach(item => {
+          if (item && !item.id) {
+            item.id = (item.title || 'untitled').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (item.year ? '-' + item.year : '');
+          }
+        });
+      }
+    });
+
     // 1. Load media from local JS files instead of Supabase per user preference
-    const localMovies = (window._MOVIES_DATA || []).map(m => ({ ...m, type: m.type || 'Movie' }));
-    const localSeries = (window._SERIES_DATA || []).map(s => ({ ...s, type: s.type || 'TV Show' }));
+    const localMovies = (window._MOVIES_DATA || []).map(m => {
+      let t = m.type ? String(m.type).trim() : 'Movie';
+      if (/^(movie|film)$/i.test(t)) t = 'Movie';
+      return { ...m, type: t };
+    });
+    const localSeries = (window._SERIES_DATA || []).map(s => {
+      let t = s.type ? String(s.type).trim() : 'TV Show';
+      if (/^(tv|tv show|series|show)$/i.test(t)) t = 'TV Show';
+      return { ...s, type: t };
+    });
     const localAnime = (window._ANIME_DATA || []).map(a => ({ ...a, isAnime: true, type: a.type || 'Anime' }));
     const localFourK = (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
 
@@ -338,7 +357,7 @@ async function loadMediaFromAPI() {
       m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
 
       // 6. Set duration label for series
-      const isTv = String(m.type || '').toLowerCase() === 'tv show' || String(m.type || '').toLowerCase() === 'series';
+      const isTv = String(m.type || '').toLowerCase() === 'tv show' || String(m.type || '').toLowerCase() === 'series' || (Array.isArray(m.seasons) && m.seasons.length > 0);
       if (isTv && m.seasons && m.seasons.length) {
         m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
       }
