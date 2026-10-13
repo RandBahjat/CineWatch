@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     videoUrl: "1148365",
     trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
     overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
-    overviewKurdish: "لوین ئاشلی، نووسەرێکی کەم‌دەرامەت کە لە لێواری مایەپووچبووندایە، گرێبەستێکی گەورە لە جێریمی کرۆفۆرد وەردەگرێت، کە هاوسەری نووسەری بەناوبانگ ڤێریتی کرۆفۆردە. دوای ئەوەی ڕووداوێکی نادیار دەبێتە هۆی پەککەوتنی ڤێریتی لە تەواوکردنی زنجیرە کتێبە بەناوبانگەکەی، لوین دەچێتە ماڵەکەیان بۆ ڕێکخستنی دەستنووسەکانی. لە کاتی پشکنیندا، ژیاننامەیەکی بڵاونەکراوەی ڤێریتی دەدۆزێتەوە کە نهێنی و دانپێدانانی تۆقێنەری تێدایە سەبارەت بە کارەساتە تاریکەکانی خێزانەکەی، بەمەش دەکەوێتە ناو تەڵەیەکی پڕ لە مەترسی، گومان و فریودان.",
+    overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
     director: "Michael Showalter",
     cast: ["Anne Hathaway, Dakota Johnson, Josh Hartnett"],
     trending: true,
