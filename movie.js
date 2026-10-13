@@ -1159,9 +1159,9 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 }
 
 async function renderCarousels() {
-  // 1. Trending Movies: Frontload newly added movies from _MOVIES_DATA, then explicit trending, then curated list
-  const recentMovies = (window._MOVIES_DATA || []).slice(0, 10);
-  const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type).toLowerCase() !== "tv show" && String(m.type).toLowerCase() !== "series");
+  // 1. Trending Movies: Frontload newly added movies from MOVIES, then explicit trending, then curated list
+  const recentMovies = MOVIES.filter(m => !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length)).slice(0, 10);
+  const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length));
   const listTrendingMovies = getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => String(m.type).toLowerCase() !== "tv show");
   const mergedTrendingMovies = [];
   const seenMovieIds = new Set();
@@ -1172,10 +1172,10 @@ async function renderCarousels() {
     }
   });
 
-  // 2. Trending Series: Frontload newly added series from _SERIES_DATA, then explicit trending, then curated list
-  const recentSeries = (window._SERIES_DATA || []).slice(0, 10);
-  const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series"));
-  const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series");
+  // 2. Trending Series: Frontload newly added series from MOVIES, then explicit trending, then curated list
+  const recentSeries = MOVIES.filter(m => !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0))).slice(0, 10);
+  const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0)));
+  const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
   const mergedTrendingSeries = [];
   const seenSeriesIds = new Set();
   [...recentSeries, ...explicitTrendingSeries, ...listTrendingSeries].forEach(s => {
@@ -1185,9 +1185,9 @@ async function renderCarousels() {
     }
   });
 
-  // 3. Trending Anime: Frontload newly added anime from _ANIME_DATA, then explicit trending anime
-  const recentAnime = (window._ANIME_DATA || []).slice(0, 15);
-  const explicitTrendingAnime = MOVIES.filter(m => m.isAnime && m.trending);
+  // 3. Trending Anime: Frontload newly added anime from MOVIES, then explicit trending anime
+  const recentAnime = MOVIES.filter(m => m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))).slice(0, 15);
+  const explicitTrendingAnime = MOVIES.filter(m => (m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))) && m.trending);
   const mergedTrendingAnime = [];
   const seenAnimeIds = new Set();
   [...recentAnime, ...explicitTrendingAnime].forEach(a => {
@@ -1197,8 +1197,19 @@ async function renderCarousels() {
     }
   });
 
+  const top10List = getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10);
+  if (top10List.length < 10) {
+    const backupTrending = [...mergedTrendingMovies, ...mergedTrendingSeries];
+    for (const item of backupTrending) {
+      if (top10List.length >= 10) break;
+      if (!top10List.some(t => t.id === item.id)) {
+        top10List.push(item);
+      }
+    }
+  }
+
   const shelfMap = {
-    top10Track: getMoviesFromList(TOP_10_TRENDING_TODAY).slice(0, 10),
+    top10Track: top10List,
     trendingMoviesTrack: mergedTrendingMovies,
     trendingSeriesTrack: mergedTrendingSeries,
     trendingAnimeTrack: mergedTrendingAnime,
