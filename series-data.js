@@ -4,31 +4,30 @@
 
 window._SERIES_DATA = [
   {
-    "title": "Avatar: Seven Havens",
+    "title": "VisionQuest",
     "type": "TV Show",
     "year": 2026,
     "rating": "8.8",
-    "age": "TV-Y7",
-    "duration": "25m",
+    "age": "TV-14",
+    "duration": "23m",
     "genres": [
-      "Animation",
       "Action",
       "Adventure",
-      "Fantasy",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
     "videoUrl": "284833",
-    "trailerUrl": "https://www.youtube.com/watch?v=nhdh962_ee0",
-    "overview": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
-    "overviewKurdish": "لە جیهانێکدا کە بەهۆی کارەساتێکی وێرانکەرەوە پارچە پارچە بووە، ملکەچپێکەرێکی لاوی زەوی (ئێرس‌بێندەر) بۆی دەردەکەوێت کە ئاڤاتاری نوێیە لە دوای کۆرا. بەڵام لەم سەردەمە پڕ لە مەترسییەدا، ئەم نازناوە وەک وێرانکەری مرۆڤایەتی دەیناسێنێت نەک ڕزگارکەری. لە کاتێکدا لەلایەن دوژمنانی مرۆڤ و ڕۆحەکانەوە ڕاو دەندرێت، خۆی و خوشکە دووانە ونبووەکەی دەبێت نهێنیی سەرچاوەی خۆیان ئاشکرا بکەن و حەوت پەناگەکە ڕزگار بکەن پێش ئەوەی دوایین قەڵاکانی شارستانیەت بڕوخێن.",
-    "director": "Michael Dante DiMartino, Bryan Konietzko",
+    "trailerUrl": "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
+    "overview": "Following the catastrophic events of Westview, the newly reconstructed White Vision embarks on a solitary, soul-searching odyssey across the globe to rediscover his stolen identity, understand human consciousness, and reclaim the emotional memories of the hero he once was.",
+    "overviewKurdish": "دوای ڕووداوە وێرانکەرەکانی وێست‌ڤیو، کەسایەتیی دووبارە دروستکراوەی «ڤیژنی سپی» دەست بە گەشتێکی تایبەت و قووڵ دەکات لە سەرتاسەری جیهاندا، بە ئامانجی دووبارە دۆزینەوەی ناسنامە ونبووەکەی، تێگەیشتن لە هەست و بیرکردنەوەی مرۆڤ، و گەڕاندنەوەی ئەو یادەوەرییانەی کە لە ڕابردوودا وەک پاڵەوانێک هەیبوون.",
+    "director": "Terry Matalas",
     "cast": [
-      "Saheli Khan, Aishu Devan, Akshay Khanna, Major Curda, Sakina Jaffrey, Darren Barnet, Dianne Doan, Dee Bradley Baker"
+      "Paul Bettany, James Spader, Fionn O'Shea, Todd Stashwick"
     ],
     "trending": true,
-    "featured": true,
+    "featured": false,
     "is4k": false,
     "seasons": [
       {
@@ -36,39 +35,83 @@ window._SERIES_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Chapter 1: On the Horizon",
-            "airDate": "2026-10-09",
+            "title": "No Strings",
+            "airDate": "2026-10-14",
             "rating": 8.8,
-            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
-            "duration": "25 min",
-            "overview": "In the aftermath of the great cataclysm, young Earthbender Pavi awakens mysterious powers that change the fate of the Haven forever."
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWEyNjlhZDgtOTNhZC00ZTkzLTg1ZGYtMjcyMDJhYzU1ZGE3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "45 min",
+            "overview": "Vision, rebooted and hiding, consults F.R.I.D.A.Y., E.D.I.T.H., J.A.R.V.I.S., and Ultron. A bounty forces him on the run with Thomas Shepard, possibly his reincarnated son. He must resist Ultron's influence and solve the mystery."
           },
           {
             "episode": 2,
-            "title": "Chapter 2: Into the Storm",
-            "airDate": "2026-10-09",
-            "rating": 8.9,
-            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
-            "duration": "24 min",
-            "overview": "Hunted by spirit forces and human pursuers, Pavi crosses paths with Nisha as past secrets begin to surface."
+            "title": "Theseus",
+            "airDate": "2026-10-14",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmM5NzM1YzEtZGQ0OC00Y2Q0LTgzM2QtMDM4MWUyZWI4NWFlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "45 min",
+            "overview": ""
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Avatar: Seven Havens",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": "8.2",
+    "age": "TV-PG",
+    "duration": "23m",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "poster": "",
+    "backdrop": "",
+    "videoUrl": "284833",
+    "trailerUrl": "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
+    "overview": "Set in the rich fantasy universe of bending disciplines, a new generation must restore balance after catastrophic spiritual upheavals fracture the world into seven fortified sanctuary realms known as the Havens. As dangerous rogue factions threaten to seize ancient elemental nexuses, young benders from across divided lands must unite to preserve the delicate boundary between mortals and spirits.",
+    "overviewKurdish": "لە جیهانە پڕ لە جادوو و توخمە دەستەمۆکراوەکانی ئاڤاتاردا، نەوەیەکی نوێ هەوڵی گەڕاندنەوەی هاوسەنگی دەدەن دوای ئەوەی گۆڕانکاری و پشێوییە ڕۆحییەکان دەبنە هۆی دابەشبوونی جیهان بۆ حەوت پەناگەی قەڵابەند و پارێزراو. لە کاتێکدا گرووپە دڕندە و یاخییەکان هەڕەشەی دەستبەسەرداگرتنی هێزە کۆنە سروشتییەکان دەکەن، جەنگاوەرە لاوەکانی کۆنترۆڵکەری توخمەکان لە سەرانسەری زەوییە دابەشکراوەکانەوە یەکدەگرن بۆ پاراستنی سنووری نێوان مرۆڤەکان و جیهانی ڕۆحەکان.",
+    "director": "Garth Davis",
+    "cast": [
+      "Major Curda, Saheli Khan, Akshay Khanna"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "On the Horizon",
+            "airDate": "2026-10-9",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWEyNjlhZDgtOTNhZC00ZTkzLTg1ZGYtMjcyMDJhYzU1ZGE3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "51 min",
+            "overview": "During a festival celebrating the Avatar's demise, an orphan girl struggles to stay hidden until she meets a dutiful airbender."
+          },
+          {
+            "episode": 2,
+            "title": "Into the Storm",
+            "airDate": "2026-10-9",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmM5NzM1YzEtZGQ0OC00Y2Q0LTgzM2QtMDM4MWUyZWI4NWFlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "51 min",
+            "overview": "When a massive storm strikes Ellora, Team Avatar unites to save their home and encounters a strange entity."
           },
           {
             "episode": 3,
-            "title": "Chapter 3: The Order",
-            "airDate": "2026-10-09",
-            "rating": 8.8,
-            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
-            "duration": "26 min",
-            "overview": "Facing hostile guardians of the old world, the twins must learn to bend together to survive."
-          },
-          {
-            "episode": 4,
-            "title": "Chapter 4: The Faceless",
-            "airDate": "2026-10-16",
-            "rating": 8.7,
-            "thumbnail": "https://image.tmdb.org/t/p/original/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
-            "duration": "25 min",
-            "overview": "An ancient spirit with no face tests Pavi's resolve and reveals the true danger threatening the Seven Havens."
+            "title": "The Order",
+            "airDate": "2026-10-9",
+            "rating": 8.0,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWE0NzU5MzctZDY5Zi00MDI5LWI3Y2MtNjRiM2MzMTY2ODZhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "51 min",
+            "overview": "Being the Avatar brings immense responsibility. Pavi feels overwhelmed and misses her friends. Jae discovers a secret organization and faces a life-altering decision."
           }
         ]
       }
