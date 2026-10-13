@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_889_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_936_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2231">
+    <link rel="stylesheet" href="movie.css?v=20261003_890_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_937_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2232">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -134,12 +134,12 @@
     <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="api.js?v=20261009_314_auth_vip" defer></script>
-    <script src="movies-data.js?v=20261003_941_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_941_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_9397" defer></script>
-    <script src="fourk-data.js?v=20261009_443_hd_and_4k" defer></script>
-    <script src="movie.js?v=20261012_206_kurdish_sub_fix_1" defer></script>
+    <script src="api.js?v=20261009_315_auth_vip" defer></script>
+    <script src="movies-data.js?v=20261003_942_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_942_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_9398" defer></script>
+    <script src="fourk-data.js?v=20261009_444_hd_and_4k" defer></script>
+    <script src="movie.js?v=20261012_207_kurdish_sub_fix_1" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1079,6 +1079,16 @@
                 <div class="browse-title-row">
                     <h1 class="browse-title"><ion-icon name="film-outline"></ion-icon> Movies</h1>
                     <span class="browse-count" id="moviesCount">0 titles</span>
+                    <div class="browse-view-toggle" data-section="movies">
+                        <button type="button" class="view-toggle-btn active" data-mode="backdrop" title="Backdrop View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Backdrop</span>
+                        </button>
+                        <button type="button" class="view-toggle-btn" data-mode="poster" title="Poster View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="7" x2="19" y2="7"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Poster</span>
+                        </button>
+                    </div>
                 </div>
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-wrapper">
@@ -1125,6 +1135,16 @@
                 <div class="browse-title-row">
                     <h1 class="browse-title"><ion-icon name="tv-outline"></ion-icon> Series</h1>
                     <span class="browse-count" id="seriesCount">0 titles</span>
+                    <div class="browse-view-toggle" data-section="series">
+                        <button type="button" class="view-toggle-btn active" data-mode="backdrop" title="Backdrop View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Backdrop</span>
+                        </button>
+                        <button type="button" class="view-toggle-btn" data-mode="poster" title="Poster View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="7" x2="19" y2="7"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Poster</span>
+                        </button>
+                    </div>
                 </div>
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-wrapper">
@@ -1176,6 +1196,16 @@
                       </svg> Anime
                     </h1>
                     <span class="browse-count" id="animeCount">0 titles</span>
+                    <div class="browse-view-toggle" data-section="anime">
+                        <button type="button" class="view-toggle-btn active" data-mode="backdrop" title="Backdrop View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Backdrop</span>
+                        </button>
+                        <button type="button" class="view-toggle-btn" data-mode="poster" title="Poster View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="7" x2="19" y2="7"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Poster</span>
+                        </button>
+                    </div>
                 </div>
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-wrapper">
@@ -1217,6 +1247,16 @@
                 <div class="browse-title-row">
                     <h1 class="browse-title"><ion-icon name="videocam-outline"></ion-icon> 4K Ultra HD</h1>
                     <span class="browse-count" id="fourkCount">0 titles</span>
+                    <div class="browse-view-toggle" data-section="fourk">
+                        <button type="button" class="view-toggle-btn active" data-mode="backdrop" title="Backdrop View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Backdrop</span>
+                        </button>
+                        <button type="button" class="view-toggle-btn" data-mode="poster" title="Poster View">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="7" x2="19" y2="7"></line></svg>
+                            <span class="toggle-text notranslate" translate="no">Poster</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="browse-filter-wrapper" style="display: none;">
                     <div class="browse-filter-bar" id="fourkFilterBar">
@@ -3400,7 +3440,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_2231"></script>
+    <script src="welcome-disclaimer.js?v=20260918_2232"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
