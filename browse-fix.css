@@ -333,15 +333,149 @@
   transition: box-shadow 0.3s ease !important;
 }
 
-/* Mobile Screen (max-width: 768px): Show vertical posters with 2:3 ratio instead of 16:9 backdrops */
+/* Mobile Screen (max-width: 768px): Show vertical posters with 2:3 ratio if no explicit view is chosen */
 @media (max-width: 768px) {
-  #moviesGrid .card-poster-wrap,
-  #seriesGrid .card-poster-wrap,
-  #animeGrid .card-poster-wrap,
-  .browse-grid .card-poster-wrap {
+  #moviesGrid:not(.backdrop-view) .card-poster-wrap,
+  #seriesGrid:not(.backdrop-view) .card-poster-wrap,
+  #animeGrid:not(.backdrop-view) .card-poster-wrap,
+  .browse-grid:not(.backdrop-view) .card-poster-wrap {
     aspect-ratio: 2 / 3 !important;
     border-radius: 10px !important;
   }
+}
+
+/* ============================================================
+   POSTER VIEW (PORTRAIT 2:3 - 6 COLUMNS DESKTOP)
+   ============================================================ */
+#moviesGrid.poster-view,
+#seriesGrid.poster-view,
+#animeGrid.poster-view,
+#fourkGrid.poster-view,
+.browse-grid.poster-view {
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 1.5rem 1rem !important;
+}
+
+@media (max-width: 1400px) and (min-width: 1101px) {
+  #moviesGrid.poster-view,
+  #seriesGrid.poster-view,
+  #animeGrid.poster-view,
+  #fourkGrid.poster-view,
+  .browse-grid.poster-view {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  #moviesGrid.poster-view,
+  #seriesGrid.poster-view,
+  #animeGrid.poster-view,
+  #fourkGrid.poster-view,
+  .browse-grid.poster-view {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  #moviesGrid.poster-view,
+  #seriesGrid.poster-view,
+  #animeGrid.poster-view,
+  #fourkGrid.poster-view,
+  .browse-grid.poster-view {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.1rem 0.8rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #moviesGrid.poster-view,
+  #seriesGrid.poster-view,
+  #animeGrid.poster-view,
+  #fourkGrid.poster-view,
+  .browse-grid.poster-view {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.9rem 0.65rem !important;
+  }
+}
+
+#moviesGrid.poster-view .card-poster-wrap,
+#seriesGrid.poster-view .card-poster-wrap,
+#animeGrid.poster-view .card-poster-wrap,
+#fourkGrid.poster-view .card-poster-wrap,
+.browse-grid.poster-view .card-poster-wrap {
+  aspect-ratio: 2 / 3 !important;
+  border-radius: 10px !important;
+}
+
+#moviesGrid.poster-view .card-poster,
+#seriesGrid.poster-view .card-poster,
+#animeGrid.poster-view .card-poster,
+#fourkGrid.poster-view .card-poster,
+.browse-grid.poster-view .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* ============================================================
+   BACKDROP VIEW (LANDSCAPE 16:9 - 4 COLUMNS DESKTOP)
+   ============================================================ */
+#moviesGrid.backdrop-view,
+#seriesGrid.backdrop-view,
+#animeGrid.backdrop-view,
+#fourkGrid.backdrop-view,
+.browse-grid.backdrop-view {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.6rem 1.15rem !important;
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  #moviesGrid.backdrop-view,
+  #seriesGrid.backdrop-view,
+  #animeGrid.backdrop-view,
+  #fourkGrid.backdrop-view,
+  .browse-grid.backdrop-view {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  #moviesGrid.backdrop-view,
+  #seriesGrid.backdrop-view,
+  #animeGrid.backdrop-view,
+  #fourkGrid.backdrop-view,
+  .browse-grid.backdrop-view {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #moviesGrid.backdrop-view,
+  #seriesGrid.backdrop-view,
+  #animeGrid.backdrop-view,
+  #fourkGrid.backdrop-view,
+  .browse-grid.backdrop-view {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#moviesGrid.backdrop-view .card-poster-wrap,
+#seriesGrid.backdrop-view .card-poster-wrap,
+#animeGrid.backdrop-view .card-poster-wrap,
+#fourkGrid.backdrop-view .card-poster-wrap,
+.browse-grid.backdrop-view .card-poster-wrap {
+  aspect-ratio: 16 / 9 !important;
+  border-radius: 8px !important;
+}
+
+#moviesGrid.backdrop-view .card-poster,
+#seriesGrid.backdrop-view .card-poster,
+#animeGrid.backdrop-view .card-poster,
+#fourkGrid.backdrop-view .card-poster,
+.browse-grid.backdrop-view .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 #moviesGrid .movie-card:hover .card-poster-wrap,
