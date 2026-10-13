@@ -25,7 +25,7 @@ const RAND_BAHJAT_ACCOUNT = {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Dragon Ball Super: Beerus","Spider-Man: Brand New Day","Runner","Lanterns","The Love Hypothesis","Unabomber","Resident Evil","Neagley","Reacher","The End of Oak Street","Verity"];
+let FEATURED_TITLES = ["Dragon Ball Super: Beerus","Spider-Man: Brand New Day","Animals","Lanterns","The Love Hypothesis","Unabomber","Resident Evil","Neagley","Reacher","The End of Oak Street","Verity"];
 let TOP_10_TRENDING_TODAY = ["Dragon Ball Super: Beerus","Spider-Man: Brand New Day", "Digger","Lanterns","East of Eden", "Runner",  "Resident Evil", "The Uprising", "One Piece(1999)",  "Verity"];
 let TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","Animals","Matchbox the Movie","Insidious: Out of the Further", "Digger",  "Fall 2: Deadpoint", "Resident Evil", "Verity"];
 let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
