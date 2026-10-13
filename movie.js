@@ -931,8 +931,10 @@ setTimeout(() => {
 
 function getFeaturedMovies() {
   const fromList = getMoviesFromList(FEATURED_TITLES);
-  const explicitFeatured = MOVIES.filter(m => m.featured && !fromList.some(f => f.id === m.id));
-  return [...explicitFeatured, ...fromList];
+  if (fromList && fromList.length > 0) {
+    return fromList;
+  }
+  return MOVIES.filter(m => m.featured).slice(0, 10);
 }
 
 function setupHeroBanner() {
