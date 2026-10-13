@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineWatch VIP - Membership Plans</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Hide scrollbars while keeping snap-scroll functional */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#060709] text-zinc-100 font-sans selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Ambient Dynamic Glows -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[850px] h-[500px] bg-gradient-to-b from-indigo-600/20 via-cyan-600/10 to-transparent blur-[120px] opacity-75"></div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+
+    <!-- Top Exit Button -->
+    <div class="flex justify-end mb-4 lg:mb-2">
+      <button onclick="if (history.length > 1) { history.back(); } else { window.location.href = 'index.html'; }" class="p-2.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-600 transition" aria-label="Close">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Header Section -->
+    <div class="text-center max-w-3xl mx-auto space-y-3 lg:space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-bold uppercase tracking-widest">
+        <i data-lucide="crown" class="w-3.5 h-3.5 text-indigo-400"></i> CineWatch VIP Pass
+      </div>
+      
+      <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
+        Choose Your Theater Experience
+      </h1>
+      
+      <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto">
+        Zero commercial interruptions. Uncompressed master audio. Unlimited 4K downloads.
+      </p>
+
+      <!-- 3-Segment Billing Switcher -->
+      <div class="pt-4 flex justify-center">
+        <div class="inline-flex p-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 backdrop-blur-xl">
+          <button id="btn-monthly" onclick="setBilling('monthly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white">
+            Monthly
+          </button>
+          
+          <button id="btn-quarterly" onclick="setBilling('quarterly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5">
+            3 Months
+            <span class="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded-md font-bold">-15%</span>
+          </button>
+          
+          <button id="btn-yearly" onclick="setBilling('yearly')" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-zinc-800 text-white shadow flex items-center gap-1.5">
+            Yearly
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-md font-bold">-30%</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Cards Container (Desktop 4-Cols | Mobile Snap Carousel) -->
+    <div 
+      id="cards-carousel"
+      class="mt-10 lg:mt-14 flex lg:grid lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 -mx-6 lg:mx-0 lg:px-0 items-stretch"
+    >
+
+      <!-- TIER 1: BASIC (Titanium Graphite) -->
+      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-zinc-800/80 bg-gradient-to-b from-zinc-800/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-zinc-700">
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-bold text-white">Basic</h3>
+          </div>
+          <p class="text-xs text-zinc-400 min-h-[32px]">Ad-supported standard access</p>
+
+          <div class="my-5 pb-5 border-b border-zinc-800/80 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-white" id="price-basic">$0</span>
+            <span class="text-xs text-zinc-500 font-medium">/ mo</span>
+          </div>
+
+          <div class="space-y-3 mb-8 text-xs">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-zinc-300 shrink-0"></i>
+              <span class="text-zinc-200">720p / 1080p Standard bitrate</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Ad-free player experience</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>VIP member profile badge</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Custom theme accents</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>4K Ultra HD Remux vault</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Offline download sync</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Priority missing title requests</span>
+            </div>
+          </div>
+        </div>
+
+        <button disabled class="w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-zinc-900 border border-zinc-800 text-zinc-500 cursor-default">
+          Current Plan
+        </button>
+      </div>
+
+      <!-- TIER 2: ADVANCED (Emerald Aurora) -->
+      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-emerald-500/35 bg-gradient-to-b from-emerald-950/30 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-emerald-400/60">
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-bold text-white">Advanced</h3>
+          </div>
+          <p class="text-xs text-emerald-300/80 min-h-[32px]">Crisp ad-free HD & personalization</p>
+
+          <div class="my-5 pb-5 border-b border-emerald-950/60 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-white" id="price-advanced">$5.59</span>
+            <span class="text-xs text-emerald-400 font-medium">/ mo</span>
+          </div>
+
+          <div class="space-y-3 mb-8 text-xs">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span class="text-zinc-200">1080p High-Bitrate streams</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span class="text-zinc-200">Ad-free streaming site-wide</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span class="text-zinc-200">VIP Emerald profile badge</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span class="text-zinc-200">Custom accent themes</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>4K Ultra HD Remux vault</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Offline download sync</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Priority missing title requests</span>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="handleUpgrade('bronze')" class="w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-600/25 hover:brightness-110 active:scale-95 transition">
+          Upgrade to Advanced
+        </button>
+      </div>
+
+      <!-- TIER 3: PRO (Electric Indigo & Cyber Cyan - Flagship) -->
+      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border-2 border-indigo-500 bg-gradient-to-b from-indigo-950/60 via-zinc-900/80 to-zinc-950 shadow-2xl shadow-indigo-950/50 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center lg:-translate-y-2 relative transition duration-300">
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-2xl font-black text-white">Pro</h3>
+            <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-extrabold uppercase tracking-widest">
+              Most Popular
+            </span>
+          </div>
+          <p class="text-xs text-indigo-200 min-h-[32px]">Master 4K cinema + offline download</p>
+
+          <div class="my-5 pb-5 border-b border-indigo-900/60 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-white" id="price-pro">$10.49</span>
+            <span class="text-xs text-cyan-400 font-medium">/ mo</span>
+          </div>
+
+          <div class="space-y-3 mb-8 text-xs">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-white font-semibold">4K Ultra HD & Remux streams</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-zinc-200">Zero ads across web & mobile</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-zinc-200">Indigo Neon VIP profile badge</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-zinc-200">Full custom themes & accents</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-zinc-200">HDR10+ & Dolby Atmos audio</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span class="text-zinc-200">Unlimited offline download sync</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-zinc-500 line-through">
+              <i data-lucide="x" class="w-4 h-4 text-zinc-700 shrink-0"></i>
+              <span>Priority missing title requests</span>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="handleUpgrade('gold')" class="w-full py-4 rounded-xl font-extrabold text-xs sm:text-sm bg-gradient-to-r from-indigo-500 via-cyan-500 to-blue-600 text-white shadow-xl shadow-indigo-500/30 hover:opacity-95 active:scale-95 transition">
+          Upgrade to Pro
+        </button>
+      </div>
+
+      <!-- TIER 4: ULTIMATE (Sunset Rose & 24K Gold) -->
+      <div class="flex flex-col justify-between rounded-3xl p-6 sm:p-7 border border-rose-500/40 bg-gradient-to-b from-rose-950/35 via-zinc-900/60 to-zinc-950 backdrop-blur-xl shrink-0 w-[84vw] max-w-[320px] lg:w-auto lg:max-w-none snap-center transition duration-300 hover:border-rose-400/60">
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-bold text-white">Ultimate</h3>
+            <span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[10px] font-black uppercase tracking-widest">
+              Best Value
+            </span>
+          </div>
+          <p class="text-xs text-rose-300/80 min-h-[32px]">Collector's cut with concierge speed</p>
+
+          <div class="my-5 pb-5 border-b border-rose-950/60 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-white" id="price-ultimate">$13.99</span>
+            <span class="text-xs text-rose-400 font-medium">/ mo</span>
+          </div>
+
+          <div class="space-y-3 mb-8 text-xs">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-100">4K Remux + Dolby Vision I/O</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-200">Zero ads on all connected devices</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-200">Golden Crest VIP status</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-200">Custom themes & personal CSS</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-200">Lossless Atmos & DTS-HD Master</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-200">Unlimited offline downloads</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span class="text-zinc-100 font-bold">Direct title requests (&lt; 24h)</span>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="handleUpgrade('diamond')" class="w-full py-3.5 rounded-xl font-black text-xs sm:text-sm bg-gradient-to-r from-rose-500 via-rose-400 to-amber-500 text-white shadow-lg shadow-rose-500/25 hover:brightness-110 active:scale-95 transition">
+          Get Ultimate Access
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Indicator Dots -->
+    <div class="flex justify-center items-center gap-1.5 mt-6 lg:hidden" id="mobile-dots">
+      <div class="h-1.5 w-1.5 rounded-full bg-zinc-700 transition-all" data-index="0"></div>
+      <div class="h-1.5 w-1.5 rounded-full bg-zinc-700 transition-all" data-index="1"></div>
+      <div class="h-1.5 w-5 rounded-full bg-indigo-500 transition-all" data-index="2"></div>
+      <div class="h-1.5 w-1.5 rounded-full bg-zinc-700 transition-all" data-index="3"></div>
+    </div>
+
+    <!-- Trust Footer -->
+    <div class="mt-14 border-t border-zinc-800/80 pt-8 flex flex-wrap items-center justify-center gap-6 text-zinc-500 text-xs">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>256-Bit Encrypted Checkout</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i>
+        <span>Instant Cross-Device Sync</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i>
+        <span>Switch or Cancel Anytime</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Price matrices
+    const pricing = {
+      monthly:   { basic: '$0', advanced: '$7.99', pro: '$14.99', ultimate: '$19.99' },
+      quarterly: { basic: '$0', advanced: '$6.79', pro: '$12.74', ultimate: '$16.99' },
+      yearly:    { basic: '$0', advanced: '$5.59', pro: '$10.49', ultimate: '$13.99' }
+    };
+
+    let activeBilling = 'yearly';
+
+    function setBilling(cycle) {
+      activeBilling = cycle;
+      // Toggle button active states
+      ['monthly', 'quarterly', 'yearly'].forEach(c => {
+        const btn = document.getElementById(`btn-${c}`);
+        if (c === cycle) {
+          btn.className = 'px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-zinc-800 text-white shadow flex items-center gap-1.5';
+        } else {
+          btn.className = 'px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition text-zinc-400 hover:text-white flex items-center gap-1.5';
+        }
+      });
+
+      // Update text values
+      document.getElementById('price-basic').innerText = pricing[cycle].basic;
+      document.getElementById('price-advanced').innerText = pricing[cycle].advanced;
+      document.getElementById('price-pro').innerText = pricing[cycle].pro;
+      document.getElementById('price-ultimate').innerText = pricing[cycle].ultimate;
+    }
+
+    function handleUpgrade(tier) {
+      // Direct integration with CineWatch payment flow
+      window.location.href = `index.html?vipTier=${tier}&vipCycle=${activeBilling}`;
+    }
+
+    // Mobile Snap Carousel Pagination Dot Tracker
+    const carousel = document.getElementById('cards-carousel');
+    const dots = document.querySelectorAll('#mobile-dots div');
+
+    if (carousel) {
+      carousel.addEventListener('scroll', () => {
+        const cardWidth = carousel.firstElementChild.getBoundingClientRect().width;
+        const scrollIndex = Math.round(carousel.scrollLeft / cardWidth);
+
+        dots.forEach((dot, index) => {
+          if (index === scrollIndex) {
+            dot.className = 'h-1.5 w-5 rounded-full bg-indigo-500 transition-all';
+          } else {
+            dot.className = 'h-1.5 w-1.5 rounded-full bg-zinc-700 transition-all';
+          }
+        });
+      });
+    }
+
+    // Auto-scroll mobile carousel to default focus on Pro tier
+    window.addEventListener('load', () => {
+      if (carousel && window.innerWidth < 1024) {
+        const cardWidth = carousel.firstElementChild.getBoundingClientRect().width;
+        carousel.scrollLeft = cardWidth * 2; // Jump straight to 'Pro'
+      }
+    });
+  </script>
+</body>
+</html>
