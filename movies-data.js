@@ -97,7 +97,7 @@ window._MOVIES_DATA = [
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
     overview: "Based on Capcom's legendary arcade fighting game franchise, martial artists from across the globe gather to compete in the brutal World Warrior Tournament. Beneath the spectacle of fierce arena clashes, the fighters must uncover and dismantle the sinister underworld syndicate Shadaloo and its power-hungry dictator, M. Bison.",
-    overviewKurdish: "لوین ئاشلی، نووسەرێکی کەم‌دەرامەت کە لە لێواری مایەپووچبووندایە، گرێبەستێکی گەورە لە جێریمی کرۆفۆرد وەردەگرێت، کە هاوسەری نووسەری بەناوبانگ ڤێریتی کرۆفۆردە. دوای ئەوەی ڕووداوێکی نادیار دەبێتە هۆی پەککەوتنی ڤێریتی لە تەواوکردنی زنجیرە کتێبە بەناوبانگەکەی، لوین دەچێتە ماڵەکەیان بۆ ڕێکخستنی دەستنووسەکانی. لە کاتی پشکنیندا، ژیاننامەیەکی بڵاونەکراوەی ڤێریتی دەدۆزێتەوە کە نهێنی و دانپێدانانی تۆقێنەری تێدایە سەبارەت بە کارەساتە تاریکەکانی خێزانەکەی، بەمەش دەکەوێتە ناو تەڵەیەکی پڕ لە مەترسی، گومان و فریودان.",
+    overviewKurdish: "لەسەر بنەمای زنجیرە یارییە شەڕانگێزییە بەناوبانگەکەی کۆمپانیای کاپکۆم دروستکراوە، جەنگاوەران و شارەزایانی هونەری جەنگی لە هەموو گۆشەیەکی جیهانەوە کۆدەبنەوە بۆ بەشداریکردن لە پاڵەوانێتییەکی توند و خوێناویدا. لە پشت ئەم شەڕ و ڕکابەرییە گەورەیەوە، دەبێت ئەم جەنگاوەرانە پیلانی ڕێکخراوی تاوانکاریی تاریکی «شادالوو» و سەرکردە ستەمکارەکەیان، ئێم. بایکۆن، ئاشکرا بکەن و لەناوی بەرن پێش ئەوەی دەست بەسەر جیهاندا بگرێت.",
     director: "Michael Showalter",
     cast: ["Anne Hathaway, Dakota Johnson, Josh Hartnett"],
     trending: true,
