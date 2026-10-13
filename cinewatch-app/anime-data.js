@@ -1,8 +1,6 @@
-// CineWatch - Anime Data
-
+// CineWatch — Anime Data
 window._ANIME_DATA = [
-  
-    {
+  {
     "title": "Dragon Ball Super: Beerus",
     "type": "TV Show",
     "isAnime": true,
@@ -9655,7 +9653,7 @@ window._ANIME_DATA = [
     ],
     "id": "one-piece-1999"
   },
-    {
+  {
     "title": "One Piece: Gyojin Tou-hen",
     "type": "TV Show",
     "isAnime": true,
@@ -9878,7 +9876,6 @@ window._ANIME_DATA = [
       }
     ]
   },
-
   {
     "title": "Dragon Ball Z",
     "type": "TV Show",
@@ -29804,199 +29801,346 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Heart of the Cards"
+            "title": "The Heart of the Cards",
+            "absoluteEpisode": 1,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/uYXbZEtcQikL2Gh9uCErlmHw77f.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "The Gauntlet is Thrown"
+            "title": "The Gauntlet is Thrown",
+            "absoluteEpisode": 2,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7m9cnAnOY4XH9J01zAuvRUoPBl9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "Journey to the Duelist Kingdom"
+            "title": "Journey to the Duelist Kingdom",
+            "absoluteEpisode": 3,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/UubsfHqrSEQlMM2u8q7kUfp1CI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "Into The Hornet's Nest (Part 1 of 2)"
+            "title": "Into The Hornet's Nest (Part 1 of 2)",
+            "absoluteEpisode": 4,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oqecd6H4KLjTYSlUNm8dYWApwVt.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "The Ultimate Great Moth (Part 2 of 2)"
+            "title": "The Ultimate Great Moth (Part 2 of 2)",
+            "absoluteEpisode": 5,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2FTdkdm9Dlte3WJWYDsQub2mtGc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "First Duel"
+            "title": "First Duel",
+            "absoluteEpisode": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/iCCkYyEoaVHYr1ZeRRcG7cxEP5K.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "Attack From the Deep"
+            "title": "Attack From the Deep",
+            "absoluteEpisode": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/A0aTWkC1h5BbqFcUPSVFlmBVrnS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "Everything's Relative (Part 1 of 3)"
+            "title": "Everything's Relative (Part 1 of 3)",
+            "absoluteEpisode": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5o03K7NE4G2GUxIk9Jmj72ypCLb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "Duel With A Ghoul (Part 2 of 3)"
+            "title": "Duel With A Ghoul (Part 2 of 3)",
+            "absoluteEpisode": 9,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fPUwI57ufGh7By49wx4eEWLulTG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "Give Up The Ghost (Part 3 of 3)"
+            "title": "Give Up The Ghost (Part 3 of 3)",
+            "absoluteEpisode": 10,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zsYl08HAAcM8V9IIQ734vHRBavZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "The Dueling Monkey (Part 1 of 2)"
+            "title": "The Dueling Monkey (Part 1 of 2)",
+            "absoluteEpisode": 11,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mDM3101AOvA2Ev1X8HGUaiOzO3i.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "Trial By Red Eyes (Part 2 of 2)"
+            "title": "Trial By Red Eyes (Part 2 of 2)",
+            "absoluteEpisode": 12,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kb9q11SG77E3K7UJNNwu7Lvpot6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "Evil Spirit of the Ring"
+            "title": "Evil Spirit of the Ring",
+            "absoluteEpisode": 13,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qxUwqliEhJ9lLd3BIHXUWRnZ6vB.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "The Light at the End of the Tunnel (Part 1 of 2)"
+            "title": "The Light at the End of the Tunnel (Part 1 of 2)",
+            "absoluteEpisode": 14,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/w9zWeSd5E9gtzSLH2hcJyCyYNxY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Winning Through Intimidation (Part 2 of 2)"
+            "title": "Winning Through Intimidation (Part 2 of 2)",
+            "absoluteEpisode": 15,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qlVHLRUd1QNiqj969Rwht1tUEbh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "The Scars of Defeat"
+            "title": "The Scars of Defeat",
+            "absoluteEpisode": 16,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kgUUQgJ6avbNe5q7MizL7PRUeS3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Arena of Lost Souls (Part 1 of 2)"
+            "title": "Arena of Lost Souls (Part 1 of 2)",
+            "absoluteEpisode": 17,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aBF7WYzDD3J153Z9hNDfOCcQKzT.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "Arena of Lost Souls (Part 2 of 2)"
+            "title": "Arena of Lost Souls (Part 2 of 2)",
+            "absoluteEpisode": 18,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jlzF4966UIBCfJ4rwEU2JgBs9j8.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "Double Trouble Duel (Part 1 of 3)"
+            "title": "Double Trouble Duel (Part 1 of 3)",
+            "absoluteEpisode": 19,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/4W74gxVS8MuF6Y710ZyWfqjwwlU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Double Trouble Duel (Part 2 of 3)"
+            "title": "Double Trouble Duel (Part 2 of 3)",
+            "absoluteEpisode": 20,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/a1OJoIz2DVdwKagp0zBevBJ2zWH.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Double Trouble Duel (Part 3 of 3)"
+            "title": "Double Trouble Duel (Part 3 of 3)",
+            "absoluteEpisode": 21,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cjiwVdgkGXk0JxeUqLgLeqeqK3v.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "Face Off (Part 1 of 3)"
+            "title": "Face Off (Part 1 of 3)",
+            "absoluteEpisode": 22,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/n2LoU4Pobz5eqKGBZU1PVBe9yD2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "Face Off (Part 2 of 3)"
+            "title": "Face Off (Part 2 of 3)",
+            "absoluteEpisode": 23,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nTrdrfhNtwmA6V66WPWFIySue09.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "Face Off (Part 3 of 3)"
+            "title": "Face Off (Part 3 of 3)",
+            "absoluteEpisode": 24,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rLrHOBDbynVixyCoeCWbXOQs9mZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "Shining Friendship"
+            "title": "Shining Friendship",
+            "absoluteEpisode": 25,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lythv9eDdqJpXsJUzCfguAc2O8e.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "Champion versus Creator (Part 1 of 2)"
+            "title": "Champion versus Creator (Part 1 of 2)",
+            "absoluteEpisode": 26,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gGg9vaDWBz9aIXOnRrOXtSqBsr3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Champion versus Creator (Part 2 of 2)"
+            "title": "Champion versus Creator (Part 2 of 2)",
+            "absoluteEpisode": 27,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oe50xbukPYRCBZzFDgfgJFSAVd9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "The Night Before"
+            "title": "The Night Before",
+            "absoluteEpisode": 28,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ynYpdD4cXuPloEwaUQF4yaX71kJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Duel Identity (Part 1 of 2)"
+            "title": "Duel Identity (Part 1 of 2)",
+            "absoluteEpisode": 29,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3kxwewZKcPcfgWkHLtcRo8lOzEe.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Duel Identity (Part 2 of 2)"
+            "title": "Duel Identity (Part 2 of 2)",
+            "absoluteEpisode": 30,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zenORP3rH5kFMUIFNi5Z4oHzu97.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "Keith's Machinations (Part 1 of 2)"
+            "title": "Keith's Machinations (Part 1 of 2)",
+            "absoluteEpisode": 31,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fjHYyqdlqsXMXk6fHkMTa0LbYgW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Keith's Machinations (Part 2 of 2)"
+            "title": "Keith's Machinations (Part 2 of 2)",
+            "absoluteEpisode": 32,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6tIN97PxZysvHYLBFYu5f0lSbyD.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "Best of Friends, Best of Duelists (Part 1 of 2)"
+            "title": "Best of Friends, Best of Duelists (Part 1 of 2)",
+            "absoluteEpisode": 33,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wt06DqwF0QHLYfVtopC5bwkcHt7.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "Best of Friends, Best of Duelists (Part 2 of 2)"
+            "title": "Best of Friends, Best of Duelists (Part 2 of 2)",
+            "absoluteEpisode": 34,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/343TIemPDrgDXs5UGHA6TWxhJoI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 1 of 5)"
+            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 1 of 5)",
+            "absoluteEpisode": 35,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lnQFpo2tw4Yk9Ip0ckQBmFqHg7Z.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 2 of 5)"
+            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 2 of 5)",
+            "absoluteEpisode": 36,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1oXEVsu7RtnrjAnzohHBniU9ac.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 3 of 5)"
+            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 3 of 5)",
+            "absoluteEpisode": 37,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pDlXsEss3rNUHvAXAycMvx06K9f.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 4 of 5)"
+            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 4 of 5)",
+            "absoluteEpisode": 38,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/t0WrXWF9LnJOqAi3c1Il87IfKC9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 5 of 5)"
+            "title": "Yugi versus Pegasus: Match Of The Millennium (Part 5 of 5)",
+            "absoluteEpisode": 39,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/a7itsv6z9vZc2orDxD3HuKdz4n3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "Aftermath"
+            "title": "Aftermath",
+            "absoluteEpisode": 40,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kv0mjcPDalf3HXvjIJydSN2t10B.jpg",
+            "duration": "24m"
           },
           {
             "episode": 41,
-            "title": "The Wrath of Rebecca (Part 1 of 2)"
+            "title": "The Wrath of Rebecca (Part 1 of 2)",
+            "absoluteEpisode": 41,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dACL52o8jvrUghxiMdMliIXes27.jpg",
+            "duration": "24m"
           },
           {
             "episode": 42,
-            "title": "The Ties of Friendship (Part 2 of 2)"
+            "title": "The Ties of Friendship (Part 2 of 2)",
+            "absoluteEpisode": 42,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tkYjSxFUB1QMd2tqTskdapOKnGT.jpg",
+            "duration": "24m"
           },
           {
             "episode": 43,
-            "title": "Legendary Heroes (Part 1 of 3)"
+            "title": "Legendary Heroes (Part 1 of 3)",
+            "absoluteEpisode": 43,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lGngbpMd0qN0evPEY5P7QTkAH1V.jpg",
+            "duration": "24m"
           },
           {
             "episode": 44,
-            "title": "Legendary Heroes (Part 2 of 3)"
+            "title": "Legendary Heroes (Part 2 of 3)",
+            "absoluteEpisode": 44,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lxUipf6bXIv30yBQwBl6jxjHKrD.jpg",
+            "duration": "24m"
           },
           {
             "episode": 45,
-            "title": "Legendary Heroes (Part 3 of 3)"
+            "title": "Legendary Heroes (Part 3 of 3)",
+            "absoluteEpisode": 45,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dT4HpEvhnIzus4F9fS4F3pVzVLd.jpg",
+            "duration": "24m"
           },
           {
             "episode": 46,
-            "title": "Dungeon Dice Monsters (Part 1 of 4)"
+            "title": "Dungeon Dice Monsters (Part 1 of 4)",
+            "absoluteEpisode": 46,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/djqhdsOyfNjpcC09utN9euUArHX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 47,
-            "title": "Dungeon Dice Monsters (Part 2 of 4)"
+            "title": "Dungeon Dice Monsters (Part 2 of 4)",
+            "absoluteEpisode": 47,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/z8Ek90LtZDdkb9MJYRYYz4Voz5i.jpg",
+            "duration": "24m"
           },
           {
             "episode": 48,
-            "title": "Dungeon Dice Monsters (Part 3 of 4)"
+            "title": "Dungeon Dice Monsters (Part 3 of 4)",
+            "absoluteEpisode": 48,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/exF1XrzQkHCdCTwyv0mUzvnJPRD.jpg",
+            "duration": "24m"
           },
           {
             "episode": 49,
-            "title": "Dungeon Dice Monsters (Part 4 of 4)"
+            "title": "Dungeon Dice Monsters (Part 4 of 4)",
+            "absoluteEpisode": 49,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rN1qms7KHbaKILW9areaumzoyUD.jpg",
+            "duration": "24m"
           }
         ]
       },
@@ -30005,195 +30149,339 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Mystery Duelist (Part 1 of 2)"
+            "title": "The Mystery Duelist (Part 1 of 2)",
+            "absoluteEpisode": 50,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nkufFYlOkcwNMeKyLXb0quRBSNG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "The Mystery Duelist (Part 2 of 2)"
+            "title": "The Mystery Duelist (Part 2 of 2)",
+            "absoluteEpisode": 51,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fxksVspNyDrsZM4SK8thJmFgVyc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "The Past is Prologue"
+            "title": "The Past is Prologue",
+            "absoluteEpisode": 52,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gFPBXzoc75rlizRA6rrWWuSZixW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "Steppin' Out"
+            "title": "Steppin' Out",
+            "absoluteEpisode": 53,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mtw1kB9os5PSC2xIVmXNCh5cbNq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "Obelisk the Tormentor"
+            "title": "Obelisk the Tormentor",
+            "absoluteEpisode": 54,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yp0CGKms8IDylEIaER4US70sHkZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "Stalked by the Rare Hunters"
+            "title": "Stalked by the Rare Hunters",
+            "absoluteEpisode": 55,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8Tynxc7hpatJDpyr9vNTTWIBm5J.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "Yugi Versus The Rare Hunter (Part 1 of 2)"
+            "title": "Yugi Versus The Rare Hunter (Part 1 of 2)",
+            "absoluteEpisode": 56,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/okVH3x283cGQnl1kdNzLisxRwLn.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "Yugi Versus The Rare Hunter (Part 2 of 2)"
+            "title": "Yugi Versus The Rare Hunter (Part 2 of 2)",
+            "absoluteEpisode": 57,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fEsSCTuoIOBXz0HLMeH0TrPxfjs.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "The ESP Duelist (Part 1 of 2)"
+            "title": "The ESP Duelist (Part 1 of 2)",
+            "absoluteEpisode": 58,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/uzqD6k61udqmEWrF1tRysxWnnml.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "The ESP Duelist (Part 2 of 2)"
+            "title": "The ESP Duelist (Part 2 of 2)",
+            "absoluteEpisode": 59,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8lugBQGVQuZBFxagZ5l87LuSwx0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "The Master Of Magicians (Part 1 of 3)"
+            "title": "The Master Of Magicians (Part 1 of 3)",
+            "absoluteEpisode": 60,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3bs3gkeogIFeYwVNYICV0UycTjO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "The Master of Magicians (Part 2 of 3)"
+            "title": "The Master of Magicians (Part 2 of 3)",
+            "absoluteEpisode": 61,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zQFcNVmzGscNLmk1nzvSxdIDwOz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "The Master Of Magicians (Part 3 of 3)"
+            "title": "The Master Of Magicians (Part 3 of 3)",
+            "absoluteEpisode": 62,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gK3zzmSDU90uUZbJkPfz4bhzvP3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "Playing With A Parasite (Part 1 of 2)"
+            "title": "Playing With A Parasite (Part 1 of 2)",
+            "absoluteEpisode": 63,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/h9iFwq1VEPnOjNGdsy9PRpYQzC9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Playing With a Parasite (Part 2 of 2)"
+            "title": "Playing With a Parasite (Part 2 of 2)",
+            "absoluteEpisode": 64,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xIW9shEyNIzJadqYWGimGyMUSyL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "Mime Control (Part 1 of 3)"
+            "title": "Mime Control (Part 1 of 3)",
+            "absoluteEpisode": 65,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/j6RxwuCzPT0goE1KnK0rxFb5XG4.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Mime Control (Part 2 of 3)"
+            "title": "Mime Control (Part 2 of 3)",
+            "absoluteEpisode": 66,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qGFlCBLm8hb59RV5ziCHLVSMQLY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "Mime Control (Part 3 of 3)"
+            "title": "Mime Control (Part 3 of 3)",
+            "absoluteEpisode": 67,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mztba5nVV6SnosbmK89rGuv96dN.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "Legendary Fisherman (Part 1 of 2)"
+            "title": "Legendary Fisherman (Part 1 of 2)",
+            "absoluteEpisode": 68,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/A4tRteuxYeogPvbCAfwMaNVX3o9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Legendary Fisherman (Part 2 of 2)"
+            "title": "Legendary Fisherman (Part 2 of 2)",
+            "absoluteEpisode": 69,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/13sim3V5PMUIqFHcy0mtJvzX7df.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Double Duel (Part 1 of 4)"
+            "title": "Double Duel (Part 1 of 4)",
+            "absoluteEpisode": 70,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rpWT5OQGDwG5V9oFfNHHRkIqJ9W.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "Double Duel (Part 2 of 4)"
+            "title": "Double Duel (Part 2 of 4)",
+            "absoluteEpisode": 71,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/bSVq6vPb0Te4k52SLQQmoThzwZA.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "Double Duel (Part 3 of 4)"
+            "title": "Double Duel (Part 3 of 4)",
+            "absoluteEpisode": 72,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xrCNUqkvPAso2Px5YsEzQQykzcc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "Double Duel (Part 4 of 4)"
+            "title": "Double Duel (Part 4 of 4)",
+            "absoluteEpisode": 73,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zQ7PZv0izrsjmDRWecljQ5idGjA.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "The Rescue"
+            "title": "The Rescue",
+            "absoluteEpisode": 74,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eQ4nFUAvU1ypP1BW5skCxj3o34z.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "Friends 'Til the End (Part 1 of 4)"
+            "title": "Friends 'Til the End (Part 1 of 4)",
+            "absoluteEpisode": 75,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/byieS5TAjEcp9HFMWo4p2SfhWVh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Friends 'Til the End (Part 2 of 4)"
+            "title": "Friends 'Til the End (Part 2 of 4)",
+            "absoluteEpisode": 76,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/29uNOCIqt2iZZt17XbEBf8BOicK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "Friends 'Til the End (Part 3 of 4)"
+            "title": "Friends 'Til the End (Part 3 of 4)",
+            "absoluteEpisode": 77,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/y0ahbMYt1srr0sbTn8LDbLvF3kE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Friends 'Til the End (Part 4 of 4)"
+            "title": "Friends 'Til the End (Part 4 of 4)",
+            "absoluteEpisode": 78,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qGHi1uUfw0QP2v2qABxEkKNdVuC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Shadow Of A Duel"
+            "title": "Shadow Of A Duel",
+            "absoluteEpisode": 79,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/l1rnOfVDqJ6mSQjYXgu151gLSo8.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "Lights, Camera, Duel"
+            "title": "Lights, Camera, Duel",
+            "absoluteEpisode": 80,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qOqlEsbJC3WNfIip8pw72AGxP11.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Let the Finals Begin!"
+            "title": "Let the Finals Begin!",
+            "absoluteEpisode": 81,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dFOXKktel9dpZloKt92Meya4UWh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "The Dark Spirit Revealed (Part 1 of 3)"
+            "title": "The Dark Spirit Revealed (Part 1 of 3)",
+            "absoluteEpisode": 82,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/27dgWjArgHvMqog4qV1PBxe8Kxp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "The Dark Spirit Revealed (Part 2 of 3)"
+            "title": "The Dark Spirit Revealed (Part 2 of 3)",
+            "absoluteEpisode": 83,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ieanKPgzSKXGg8p6SJBJWQANVd2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "The Dark Spirit Revealed (Part 3 of 3)"
+            "title": "The Dark Spirit Revealed (Part 3 of 3)",
+            "absoluteEpisode": 84,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qeDjb5GoUoYPDpguixuQQBVOMzG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "Rage Of The Egyptian Gods"
+            "title": "Rage Of The Egyptian Gods",
+            "absoluteEpisode": 85,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2hsnuH8BHgvdFEc1qrVhFljBQC6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "Awakening of Evil (Part 1 of 4)"
+            "title": "Awakening of Evil (Part 1 of 4)",
+            "absoluteEpisode": 86,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ezxLa9OpJLSQdprmd2LRFQDfBJl.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "Awakening of Evil (Part 2 of 4)"
+            "title": "Awakening of Evil (Part 2 of 4)",
+            "absoluteEpisode": 87,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/duPN1dHV2lPCIdgkS0hFpP4E0eU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "Awakening of Evil (Part 3 of 4)"
+            "title": "Awakening of Evil (Part 3 of 4)",
+            "absoluteEpisode": 88,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/d71vzq1v5toMFYKWP7NaWmiktWC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "Awakening of Evil (Part 4 of 4)"
+            "title": "Awakening of Evil (Part 4 of 4)",
+            "absoluteEpisode": 89,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gmNcKtHFdEl3nn0v2lMwCRmG2iS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 41,
-            "title": "Mind Game (Part 1 of 3)"
+            "title": "Mind Game (Part 1 of 3)",
+            "absoluteEpisode": 90,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aUpFL601zVOmzf7adycPdnE3U0G.jpg",
+            "duration": "24m"
           },
           {
             "episode": 42,
-            "title": "Mind Game (Part 2 of 3)"
+            "title": "Mind Game (Part 2 of 3)",
+            "absoluteEpisode": 91,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oUNKiqch2GECa9VzmEULjj5cEUM.jpg",
+            "duration": "24m"
           },
           {
             "episode": 43,
-            "title": "Mind Game (Part 3 of 3)"
+            "title": "Mind Game (Part 3 of 3)",
+            "absoluteEpisode": 92,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pNQZcsmcPbscyV9I68m75nJjJ4Y.jpg",
+            "duration": "24m"
           },
           {
             "episode": 44,
-            "title": "A Duel With Destiny (Part 1 of 2)"
+            "title": "A Duel With Destiny (Part 1 of 2)",
+            "absoluteEpisode": 93,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wJjHs4dsdSEli5PYHIUDutDU473.jpg",
+            "duration": "24m"
           },
           {
             "episode": 45,
-            "title": "A Duel With Destiny (Part 2 of 2)"
+            "title": "A Duel With Destiny (Part 2 of 2)",
+            "absoluteEpisode": 94,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/73At2BetrXo2I02wF0SI2dQySJO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 46,
-            "title": "The Tomb-Keeper's Secret"
+            "title": "The Tomb-Keeper's Secret",
+            "absoluteEpisode": 95,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/hKfgAZDVe0WwFwdlicH17O0zW5m.jpg",
+            "duration": "24m"
           },
           {
             "episode": 47,
-            "title": "Showdown In The Shadows (Part 1 of 2)"
+            "title": "Showdown In The Shadows (Part 1 of 2)",
+            "absoluteEpisode": 96,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eQE6T9KbwDC68YOlYWGCxIPFIPc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 48,
-            "title": "Showdown In The Shadows (Part 2 of 2)"
+            "title": "Showdown In The Shadows (Part 2 of 2)",
+            "absoluteEpisode": 97,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/b6U1wPg35EuuErUmhmRMkiXM7Cj.jpg",
+            "duration": "24m"
           }
         ]
       },
@@ -30202,191 +30490,332 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "A Virtual Nightmare"
+            "title": "A Virtual Nightmare",
+            "absoluteEpisode": 98,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tvIs3E0Mi9f8IYc6zX22oxH8lZg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "Isolated in Cyber Space (Part 1 of 3)"
+            "title": "Isolated in Cyber Space (Part 1 of 3)",
+            "absoluteEpisode": 99,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kByYLluSzNqHWLXutW6uHDyTirq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "Isolated in Cyber Space (Part 2 of 3)"
+            "title": "Isolated in Cyber Space (Part 2 of 3)",
+            "absoluteEpisode": 100,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gYdgRWaocHs4HRRlkhvkdY93VDD.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "Isolated in Cyber Space (Part 3 of 3)"
+            "title": "Isolated in Cyber Space (Part 3 of 3)",
+            "absoluteEpisode": 101,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pS5yOBy5lormdRWuJu95VUcgjQp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "Freeze Play (Part 1 of 2)"
+            "title": "Freeze Play (Part 1 of 2)",
+            "absoluteEpisode": 102,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jNTd6EHJrHhJEIm4tgfL5fFcT9i.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "Freeze Play (Part 2 of 2)"
+            "title": "Freeze Play (Part 2 of 2)",
+            "absoluteEpisode": 103,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/trMOYqqBDF0anoxiWcWGVKpnsol.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "Courtroom Chaos (Part 1 of 2)"
+            "title": "Courtroom Chaos (Part 1 of 2)",
+            "absoluteEpisode": 104,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/88dbDqIsMSQIi2iaeCANycgV0Xn.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "Courtroom Chaos (Part 2 of 2)"
+            "title": "Courtroom Chaos (Part 2 of 2)",
+            "absoluteEpisode": 105,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rtzAkqBPMzSwY5Q8j3JrLVCo1Yu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "Mechanical Mayhem (Part 1 of 2)"
+            "title": "Mechanical Mayhem (Part 1 of 2)",
+            "absoluteEpisode": 106,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2kyoutykHi2VvjhbRq6Tsh6bZ8P.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "Mechanical Mayhem (Part 2 of 2)"
+            "title": "Mechanical Mayhem (Part 2 of 2)",
+            "absoluteEpisode": 107,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mGCiATyQ8Hi2NMDxp3ZjhBtRQqp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "Settling the Score (Part 1 of 2)"
+            "title": "Settling the Score (Part 1 of 2)",
+            "absoluteEpisode": 108,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/clmmnWYtSGuMrX4HZqMMOmqyoex.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "Settling the Score (Part 2 of 2)"
+            "title": "Settling the Score (Part 2 of 2)",
+            "absoluteEpisode": 109,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7B2w8bhqepjyGJnKEqhZMjsyXZ3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "Noah's Secret"
+            "title": "Noah's Secret",
+            "absoluteEpisode": 110,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vCAkExTIajNHDfsJ3kkTnPW1hIL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "Merger Of The Big Five (Part 1 of 3)"
+            "title": "Merger Of The Big Five (Part 1 of 3)",
+            "absoluteEpisode": 111,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rmoz2BSgEcCp9Rulxxn6opoQnxI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Merger Of The Big Five (Part 2 of 3)"
+            "title": "Merger Of The Big Five (Part 2 of 3)",
+            "absoluteEpisode": 112,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kxz3X4wKWvENe2zwJaucGU3KziC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "Merger Of The Big Five (Part 3 of 3)"
+            "title": "Merger Of The Big Five (Part 3 of 3)",
+            "absoluteEpisode": 113,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1ZLHHU3kUMEiTLMVO3FutiUl9QO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Brothers In Arms (Part 1 of 3)"
+            "title": "Brothers In Arms (Part 1 of 3)",
+            "absoluteEpisode": 114,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xPH2AxCC6lLT2BtXE96lbeGRIr2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "Brothers In Arms (Part 2 of 3)"
+            "title": "Brothers In Arms (Part 2 of 3)",
+            "absoluteEpisode": 115,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/uJQUMIqvF6FkFxq4ukdxtUPjVVS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "Brothers In Arms (Part 3 of 3)"
+            "title": "Brothers In Arms (Part 3 of 3)",
+            "absoluteEpisode": 116,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7OYLFxcdEapgpVUWkNpoaz0fMmu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Noah's Final Threat (Part 1 of 2)"
+            "title": "Noah's Final Threat (Part 1 of 2)",
+            "absoluteEpisode": 117,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/v6pehLUxRmZISdDWtJd8XKZPeMV.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Noah's Final Threat (Part 2 of 2)"
+            "title": "Noah's Final Threat (Part 2 of 2)",
+            "absoluteEpisode": 118,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1zvTrnF4f9rdg5V2dmz2xuiTO1F.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "So Close Yet So Far"
+            "title": "So Close Yet So Far",
+            "absoluteEpisode": 119,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fEErBlqdLOxr1BkrYN5cFwue1C6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "Burying The Past (Part 1 of 2)"
+            "title": "Burying The Past (Part 1 of 2)",
+            "absoluteEpisode": 120,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rE5crMtuUMVg4QW0L0iH1FhAbxk.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "Burying The Past (Part 2 of 2)"
+            "title": "Burying The Past (Part 2 of 2)",
+            "absoluteEpisode": 121,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oeuKGl1xTAalinOZMKZKdWcMnAN.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "Back To Battle City (Part 1 of 3)"
+            "title": "Back To Battle City (Part 1 of 3)",
+            "absoluteEpisode": 122,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aLNhSbh21E26jAMgZgcxGpuUs0I.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "Back To Battle City (Part 2 of 3)"
+            "title": "Back To Battle City (Part 2 of 3)",
+            "absoluteEpisode": 123,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/23kJoLaHsC54LpCq7s5npAYECi3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Back To Battle City (Part 3 of 3)"
+            "title": "Back To Battle City (Part 3 of 3)",
+            "absoluteEpisode": 124,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cjIsWktTpr1FL0RyNXZaMOx7JoP.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "The Darkness Returns (Part 1 of 4)"
+            "title": "The Darkness Returns (Part 1 of 4)",
+            "absoluteEpisode": 125,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yPnsUB2mEAQTneSlszvucET8g5H.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "The Darkness Returns (Part 2 of 4)"
+            "title": "The Darkness Returns (Part 2 of 4)",
+            "absoluteEpisode": 126,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/9gXqTpKXouRGQ49q1Od377RqrUG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "The Darkness Returns (Part 3 of 4)"
+            "title": "The Darkness Returns (Part 3 of 4)",
+            "absoluteEpisode": 127,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7HG6F5f5941JNYL0h4JnOpVUwdP.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "The Darkness Returns (Part 4 of 4)"
+            "title": "The Darkness Returns (Part 4 of 4)",
+            "absoluteEpisode": 128,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/p6iP8BO38hiGsrqM0pBfQiWvCw9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Clash In The Coliseum (Part 1 of 6)"
+            "title": "Clash In The Coliseum (Part 1 of 6)",
+            "absoluteEpisode": 129,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xRwaYERCuLFXS3ouYG7kqAy4hPZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "Clash In The Coliseum (Part 2 of 6)"
+            "title": "Clash In The Coliseum (Part 2 of 6)",
+            "absoluteEpisode": 130,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xaEcDt37unBFfYVGe0phhsRBzLb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "Clash In The Coliseum (Part 3 of 6)"
+            "title": "Clash In The Coliseum (Part 3 of 6)",
+            "absoluteEpisode": 131,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8BU32mpEFh2Ztqh2BveoEDj5dHk.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "Clash In The Coliseum (Part 4 of 6)"
+            "title": "Clash In The Coliseum (Part 4 of 6)",
+            "absoluteEpisode": 132,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yfwnLXAqN2u4SYJmqp3EJVir44I.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "Clash In The Coliseum (Part 5 of 6)"
+            "title": "Clash In The Coliseum (Part 5 of 6)",
+            "absoluteEpisode": 133,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aLPXauEPaofZy5uDlw6zU0zvMlS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "Clash In The Coliseum (Part 6 of 6)"
+            "title": "Clash In The Coliseum (Part 6 of 6)",
+            "absoluteEpisode": 134,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/16439U3DfXIKNEE0CBKdbD28oEv.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "Battle For The Bronze (Part 1 of 3)"
+            "title": "Battle For The Bronze (Part 1 of 3)",
+            "absoluteEpisode": 135,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cPkOvkhb2FPcdNZ8ZgfebmjrYBl.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "Battle For The Bronze (Part 2 of 3)"
+            "title": "Battle For The Bronze (Part 2 of 3)",
+            "absoluteEpisode": 136,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/g7LhnBXBOd63WeFVlHVwMj3V1Mr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "Battle For The Bronze (Part 3 of 3)"
+            "title": "Battle For The Bronze (Part 3 of 3)",
+            "absoluteEpisode": 137,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/9LBLP4LgIvfZ7BKTKfC1Ajzs31s.jpg",
+            "duration": "24m"
           },
           {
             "episode": 41,
-            "title": "The Final Face Off (Part 1 of 5)"
+            "title": "The Final Face Off (Part 1 of 5)",
+            "absoluteEpisode": 138,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/A3AXfKDhjChgAuNE98H9AIcE3Ib.jpg",
+            "duration": "24m"
           },
           {
             "episode": 42,
-            "title": "The Final Face Off (Part 2 of 5)"
+            "title": "The Final Face Off (Part 2 of 5)",
+            "absoluteEpisode": 139,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sbso7OFIuZc4PylySoMxK7SyCUO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 43,
-            "title": "The Final Face Off (Part 3 of 5)"
+            "title": "The Final Face Off (Part 3 of 5)",
+            "absoluteEpisode": 140,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sjJu40hl0wD9wnYcX4eFVEHyOJR.jpg",
+            "duration": "24m"
           },
           {
             "episode": 44,
-            "title": "The Final Face Off (Part 4 of 5)"
+            "title": "The Final Face Off (Part 4 of 5)",
+            "absoluteEpisode": 141,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/11yTyTjIxbtmcS2a2rybSJIIE6E.jpg",
+            "duration": "24m"
           },
           {
             "episode": 45,
-            "title": "The Final Face Off (Part 5 of 5)"
+            "title": "The Final Face Off (Part 5 of 5)",
+            "absoluteEpisode": 142,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gIn7ZLanHzwR4NEn9uCjEergWJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 46,
-            "title": "One For The Road"
+            "title": "One For The Road",
+            "absoluteEpisode": 143,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ygEUE4zqU23Mx4UK4LwPYRCw24R.jpg",
+            "duration": "24m"
           },
           {
             "episode": 47,
-            "title": "Looking Back And Moving Ahead"
+            "title": "Looking Back And Moving Ahead",
+            "absoluteEpisode": 144,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/x2XMM5akKvOZYm4yPYc02CsTXZY.jpg",
+            "duration": "24m"
           }
         ]
       },
@@ -30395,163 +30824,283 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "A New Evil (Part 1 of 2)"
+            "title": "A New Evil (Part 1 of 2)",
+            "absoluteEpisode": 145,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2UyKht2rs17btWgkgexcPwB5qPY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "A New Evil (Part 2 of 2)"
+            "title": "A New Evil (Part 2 of 2)",
+            "absoluteEpisode": 146,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kLLomRJoqdU6g7swCAPPhYdk8lR.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "Legend Of The Dragons"
+            "title": "Legend Of The Dragons",
+            "absoluteEpisode": 147,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zf7p2cJmgU9vz3rMWMVSgUTJaBB.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "The Creator Returns"
+            "title": "The Creator Returns",
+            "absoluteEpisode": 148,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pXySAXKbK6DUgZ5CIGwuw9sPMs.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "Deja Duel! (Part 1 of 2)"
+            "title": "Deja Duel! (Part 1 of 2)",
+            "absoluteEpisode": 149,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5dWZBZtcULlaDms3Nb3hJmuZFR0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "Deja Duel! (Part 2 of 2)"
+            "title": "Deja Duel! (Part 2 of 2)",
+            "absoluteEpisode": 150,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rGApvv0AJ8MT0mojRQoiams6ziu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "An Unexpected Enemy"
+            "title": "An Unexpected Enemy",
+            "absoluteEpisode": 151,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2KVH02g2FsNDXdrn7FX4c8xd7zI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "My Freaky Valentine (Part 1 of 3)"
+            "title": "My Freaky Valentine (Part 1 of 3)",
+            "absoluteEpisode": 152,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/A8vCvdyK0xApPKAspj7Mgyq4hZu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "My Freaky Valentine (Part 2 of 3)"
+            "title": "My Freaky Valentine (Part 2 of 3)",
+            "absoluteEpisode": 153,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fEaZFjtUoTtupjO0WeU4oxsOSY8.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "My Freaky Valentine (Part 3 of 3)"
+            "title": "My Freaky Valentine (Part 3 of 3)",
+            "absoluteEpisode": 154,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/h3EMVaqsT2sh4f1o9jNVteXspco.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "The Challenge"
+            "title": "The Challenge",
+            "absoluteEpisode": 155,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dGgkHOzlQTVD6zxKhTpaIoKMIty.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "Fate Of The Pharaoh (Part 1 of 3)"
+            "title": "Fate Of The Pharaoh (Part 1 of 3)",
+            "absoluteEpisode": 156,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tvdU2G2gjjZ2GGHwkMGPPnhfu1H.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "Fate Of The Pharaoh (Part 2 of 3)"
+            "title": "Fate Of The Pharaoh (Part 2 of 3)",
+            "absoluteEpisode": 157,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/umQeTxE4nXrNu3iU1bN2IOKYgSC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "Fate Of The Pharaoh (Part 3 of 3)"
+            "title": "Fate Of The Pharaoh (Part 3 of 3)",
+            "absoluteEpisode": 158,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kZFmG0QqhJ5s98XonEne1pyPahp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Trial By Stone"
+            "title": "Trial By Stone",
+            "absoluteEpisode": 159,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/llDqswNxRkFR1FDWa7DvW8BtFku.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "On The Wrong Track (Part 1 of 3)"
+            "title": "On The Wrong Track (Part 1 of 3)",
+            "absoluteEpisode": 160,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ujKcdLbijSoUeM1cbBbz4OFHIFE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "On The Wrong Track (Part 2 of 3)"
+            "title": "On The Wrong Track (Part 2 of 3)",
+            "absoluteEpisode": 161,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ofime2tySSBg0c4P4lzdSM5jMe9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "On The Wrong Track (Part 3 of 3)"
+            "title": "On The Wrong Track (Part 3 of 3)",
+            "absoluteEpisode": 162,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/s9JQ7PoYUbDZVEuGQ07sfvGWqej.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "Self Destruction"
+            "title": "Self Destruction",
+            "absoluteEpisode": 163,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aEGtVUJgJ1QQHeBff3DsUBvfYC2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Reliving the Past"
+            "title": "Reliving the Past",
+            "absoluteEpisode": 164,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8Z4IwDnQLVRsDauBvyE4qcQ1kUh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Deck of Armor"
+            "title": "Deck of Armor",
+            "absoluteEpisode": 165,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/axiuHfcCIBUe4Kzew34XxSviwHb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "Flight Of Fear (Part 1 of 2)"
+            "title": "Flight Of Fear (Part 1 of 2)",
+            "absoluteEpisode": 166,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8vRm6vDLYSmfx5zWTPVtewVGkO8.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "Flight Of Fear (Part 2 of 2)"
+            "title": "Flight Of Fear (Part 2 of 2)",
+            "absoluteEpisode": 167,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cCeyYLHHKpHiMmwDLIPR8RPRAu7.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "Paradise Found"
+            "title": "Paradise Found",
+            "absoluteEpisode": 168,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rRjaSPtoPor0OzX9r5JWp0Z8CEc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "Fighting For A Friend (Part 1 of 5)"
+            "title": "Fighting For A Friend (Part 1 of 5)",
+            "absoluteEpisode": 169,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eybUD82A2jFCgZVCbkTy5Zf6ymz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "Fighting For A Friend (Part 2 of 5)"
+            "title": "Fighting For A Friend (Part 2 of 5)",
+            "absoluteEpisode": 170,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/47DEfqQPR23oROytoQJDBzZJ36p.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Fighting For A Friend (Part 3 of 5)"
+            "title": "Fighting For A Friend (Part 3 of 5)",
+            "absoluteEpisode": 171,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1TnOIuetDIWYvoUvbtes7opoCNr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "Fighting For A Friend (Part 4 of 5)"
+            "title": "Fighting For A Friend (Part 4 of 5)",
+            "absoluteEpisode": 172,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tQa2wiWYwDamEzSavcqHd5WPU5Z.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Fighting For A Friend (Part 5 of 5)"
+            "title": "Fighting For A Friend (Part 5 of 5)",
+            "absoluteEpisode": 173,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kf1Wy8fK55qJflDOXnumHkSfw7g.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Grappling With A Guardian (Part 1 of 3)"
+            "title": "Grappling With A Guardian (Part 1 of 3)",
+            "absoluteEpisode": 174,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eGstQGXarvPr7JEXlkicf7YW9cX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "Grappling With A Guardian (Part 2 of 3)"
+            "title": "Grappling With A Guardian (Part 2 of 3)",
+            "absoluteEpisode": 175,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ho7A7kGVd3ooO7Wo0Fc7RR1a4oW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Grappling With A Guardian (Part 3 of 3)"
+            "title": "Grappling With A Guardian (Part 3 of 3)",
+            "absoluteEpisode": 176,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kPKv6oJeqbWGSjQE5FgYSxE3g9U.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "A Duel With Dartz (Part 1 of 6)"
+            "title": "A Duel With Dartz (Part 1 of 6)",
+            "absoluteEpisode": 177,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sUe7yJTROwxGrb8030R9bztjzp6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "A Duel With Dartz (Part 2 of 6)"
+            "title": "A Duel With Dartz (Part 2 of 6)",
+            "absoluteEpisode": 178,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/f138NJiFVTOgHoeGYrcBaVWMqsg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "A Duel With Dartz (Part 3 of 6)"
+            "title": "A Duel With Dartz (Part 3 of 6)",
+            "absoluteEpisode": 179,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mu80KLmJAYQNmFJPK8xbhipZR2A.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "A Duel With Dartz (Part 4 of 6)"
+            "title": "A Duel With Dartz (Part 4 of 6)",
+            "absoluteEpisode": 180,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/t86O40b70GxCjFM9bMcv63hE7O0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "A Duel With Dartz (Part 5 of 6)"
+            "title": "A Duel With Dartz (Part 5 of 6)",
+            "absoluteEpisode": 181,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sQLz13hJHM8Bi7p3eewP5sSfhfE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "A Duel With Dartz (Part 6 of 6)"
+            "title": "A Duel With Dartz (Part 6 of 6)",
+            "absoluteEpisode": 182,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/friKacHwkpEWXJTKqYRy13YCqUN.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "Rise Of The Great Beast (Part 1 of 2)"
+            "title": "Rise Of The Great Beast (Part 1 of 2)",
+            "absoluteEpisode": 183,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/telSDq9uw8rKIJbObgDhFyRHiTU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "Rise Of The Great Beast (Part 2 of 2)"
+            "title": "Rise Of The Great Beast (Part 2 of 2)",
+            "absoluteEpisode": 184,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dmkIkOJqFF2wXq8StFXyVrKsqdV.jpg",
+            "duration": "24m"
           }
         ]
       },
@@ -30560,163 +31109,283 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Unwanted Guest (Part 1 of 2)"
+            "title": "Unwanted Guest (Part 1 of 2)",
+            "absoluteEpisode": 185,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wyyQoUifsc0LtUUKyDTsIjHkv1p.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "Unwanted Guest (Part 2 of 2)"
+            "title": "Unwanted Guest (Part 2 of 2)",
+            "absoluteEpisode": 186,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oxBbBqeFvyK22Q1uXafptOB23Jo.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "Let the Games Begin! (Part 1 of 2)"
+            "title": "Let the Games Begin! (Part 1 of 2)",
+            "absoluteEpisode": 187,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/u3Hl2Zo2kqSauWbcp9dg0RXTCS3.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "Let the Games Begin! (Part 2 of 2)"
+            "title": "Let the Games Begin! (Part 2 of 2)",
+            "absoluteEpisode": 188,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mhrJc4EOFe5Au8pLTCgmVhznXNC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "Child's Play"
+            "title": "Child's Play",
+            "absoluteEpisode": 189,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wbJ86IjiVtXRRObuZZTxKfUTAWJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "Down in Flames (Part 1 of 2)"
+            "title": "Down in Flames (Part 1 of 2)",
+            "absoluteEpisode": 190,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/k6N1Gl1Z17XoQ2CYE0ff6tRShyh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "Down in Flames (Part 2 of 2)"
+            "title": "Down in Flames (Part 2 of 2)",
+            "absoluteEpisode": 191,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6bWOkMFoAxFtK8m1cnLOFXvo8Hp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "A Brawl in a Small Town (Part 1 of 2)"
+            "title": "A Brawl in a Small Town (Part 1 of 2)",
+            "absoluteEpisode": 192,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/4iLUtl63VjNEVCCCAhLTVpUhw22.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "A Brawl in a Small Town (Part 2 of 2)"
+            "title": "A Brawl in a Small Town (Part 2 of 2)",
+            "absoluteEpisode": 193,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wRFHkSMWzoA1jrUZZgbLX2N97OX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "One Step Ahead (Part 1 of 2)"
+            "title": "One Step Ahead (Part 1 of 2)",
+            "absoluteEpisode": 194,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zWXVOfGz5WpDNe2m9cum4LgHYrE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "One Step Ahead (Part 2 of 2)"
+            "title": "One Step Ahead (Part 2 of 2)",
+            "absoluteEpisode": 195,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1ZQJneXI4ijPtO34EatdJIrMHKg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "Sinister Secrets (Part 1 of 3)"
+            "title": "Sinister Secrets (Part 1 of 3)",
+            "absoluteEpisode": 196,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jUBozTvFQn3QOo5ARnJd7nB5NVG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "Sinister Secrets (Part 2 of 3)"
+            "title": "Sinister Secrets (Part 2 of 3)",
+            "absoluteEpisode": 197,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sNroxYJVHo0xyjXAPXhm6mzkxZk.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "Sinister Secrets (Part 3 of 3)"
+            "title": "Sinister Secrets (Part 3 of 3)",
+            "absoluteEpisode": 198,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/l6ubCh08J9QJffxGl5IElA4820J.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Tomb of the Nameless Pharaoh"
+            "title": "Tomb of the Nameless Pharaoh",
+            "absoluteEpisode": 199,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5SNANXwRyS6itMqTxCJiWLmiNAa.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "Spiritual Awakening"
+            "title": "Spiritual Awakening",
+            "absoluteEpisode": 200,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nSb3Y0SHElDvB4dkIlaFZudnT7C.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Memoirs of a Pharaoh"
+            "title": "Memoirs of a Pharaoh",
+            "absoluteEpisode": 201,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3YWbcWnlNj4W3tstZmMhWHK2xMV.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "The Intruder (1)"
+            "title": "The Intruder (1)",
+            "absoluteEpisode": 202,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zZKO6OcHwL6vBZF1Pfz7oU2xRZn.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "The Intruder (2)"
+            "title": "The Intruder (2)",
+            "absoluteEpisode": 203,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ffrzKb03A01WlMFfNsHaRQMoZV5.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Makings of a Magician"
+            "title": "Makings of a Magician",
+            "absoluteEpisode": 204,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qIorrBBXF4OD0BRDoiPWW6wiQGX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Birth of the Blue-Eyes"
+            "title": "Birth of the Blue-Eyes",
+            "absoluteEpisode": 205,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8xInEJF8WktwJqjBnZOWbc8NH8W.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "Village of Lost Souls"
+            "title": "Village of Lost Souls",
+            "absoluteEpisode": 206,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nP4PmoqLFkqJ2TmWL0iHnIRxAWG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "A Reversal of Fortune"
+            "title": "A Reversal of Fortune",
+            "absoluteEpisode": 207,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pS9wLzG8nDDFpW9eJffnUdnfSs7.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "In Search of a King"
+            "title": "In Search of a King",
+            "absoluteEpisode": 208,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vTNc9WrsRCXJDCH5g2QloDH6qjM.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "Village of Vengeance (1)"
+            "title": "Village of Vengeance (1)",
+            "absoluteEpisode": 209,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1icHgI2XHOlWR9s3GmaTpjD6cKB.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "Village of Vengeance (2)"
+            "title": "Village of Vengeance (2)",
+            "absoluteEpisode": 210,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wsBBz36hk0KWtryJvmL9EsMc9Wr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Village of Vengeance (3)"
+            "title": "Village of Vengeance (3)",
+            "absoluteEpisode": 211,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/bneBSSJzoN5kWbAYpi6HPBeFRHy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "Village of Vengeance (4)"
+            "title": "Village of Vengeance (4)",
+            "absoluteEpisode": 212,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/leC2ytQ5AM07OOUCkS69NEYFN1W.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Village of Vengeance (5)"
+            "title": "Village of Vengeance (5)",
+            "absoluteEpisode": 213,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xNPmT5K2ZuIOpY5GRsn21QdE27V.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Name of the Game"
+            "title": "Name of the Game",
+            "absoluteEpisode": 214,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/beszP5VeuNUN3DJq3hYA5PDXAvK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "The Dark One Cometh (1)"
+            "title": "The Dark One Cometh (1)",
+            "absoluteEpisode": 215,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qOVJSgw291doMaprE8mJfCgAjGJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "The Dark One Cometh (2)"
+            "title": "The Dark One Cometh (2)",
+            "absoluteEpisode": 216,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6icX2PeyNhMxwQVmqEVuvVCV86D.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "The Dark One Cometh (3)"
+            "title": "The Dark One Cometh (3)",
+            "absoluteEpisode": 217,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/z6zuYpksqcT0dKxpNXiG9EYvoPK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "The Dark One Cometh (4)"
+            "title": "The Dark One Cometh (4)",
+            "absoluteEpisode": 218,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7VNt4w5J3z6bkrTvyq7Bgdo0wW1.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "In the Name of the Pharaoh!"
+            "title": "In the Name of the Pharaoh!",
+            "absoluteEpisode": 219,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pJ56arkJFlA85fWPcjSYRRsC9sd.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "The Final Journey"
+            "title": "The Final Journey",
+            "absoluteEpisode": 220,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cTNOHcdfeLPexsP9wfwUiAvxJL6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "The Final Duel (1)"
+            "title": "The Final Duel (1)",
+            "absoluteEpisode": 221,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vOQnyLyqgEYOsvkXFbpraswWyyx.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "The Final Duel (2)"
+            "title": "The Final Duel (2)",
+            "absoluteEpisode": 222,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dfA4z0QSYog2hsZRgb9p7Kmyl6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "The Final Duel (3)"
+            "title": "The Final Duel (3)",
+            "absoluteEpisode": 223,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gDpaw5r0xZNBZWGXPqg6diBGSBY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "The Final Duel (4)"
+            "title": "The Final Duel (4)",
+            "absoluteEpisode": 224,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5Y5gPZTWLQWYINh4jBFzIZe34j7.jpg",
+            "duration": "24m"
           }
         ]
       }
@@ -30759,723 +31428,1263 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Next King of Games"
+            "title": "The Next King of Games",
+            "absoluteEpisode": 1,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eMtfPu3cDfrYklJxeb96YGncwxK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "Welcome to Duel Academy"
+            "title": "Welcome to Duel Academy",
+            "absoluteEpisode": 2,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kMRIiF5PrWSSHYkMbAdhdMe0UBs.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "A Duel in Love"
+            "title": "A Duel in Love",
+            "absoluteEpisode": 3,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/87FlU1LTwUxrE83H97jwBpYuoix.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "Raring to Go"
+            "title": "Raring to Go",
+            "absoluteEpisode": 4,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ydbZ00Z6tSZbTy2PuGvf4AJSKZM.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "The Shadow Duelist (1)"
+            "title": "The Shadow Duelist (1)",
+            "absoluteEpisode": 5,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/r7DjfWYD1t8LFzbYzgEXdfud5DJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "The Shadow Duelist (2)"
+            "title": "The Shadow Duelist (2)",
+            "absoluteEpisode": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7M01JMFrYHSrsd15xMD8fVH2dQf.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "Duel and Unusual Punishment"
+            "title": "Duel and Unusual Punishment",
+            "absoluteEpisode": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/64ndYJhY9eBf8qhxYjmp3eSclqU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "For the Sake of Syrus"
+            "title": "For the Sake of Syrus",
+            "absoluteEpisode": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cEG3rWyqZ2mNs1Y9k6cpfu41GUb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "Family Business"
+            "title": "Family Business",
+            "absoluteEpisode": 9,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/hmohs2zKGIhGWIlx3jCEPEYGpWG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "Tag Team Trial (1)"
+            "title": "Tag Team Trial (1)",
+            "absoluteEpisode": 10,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/s7G7HzGkpxxar7h3S2SXycHWMMV.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "Tag Team Trial (2)"
+            "title": "Tag Team Trial (2)",
+            "absoluteEpisode": 11,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yxnPGhg9bsmW5sgd8VRCXxPoOOq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "Formula for Success"
+            "title": "Formula for Success",
+            "absoluteEpisode": 12,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/KUUpxC1kQwfbMauxhoOFB7RqVc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "Monkey See, Monkey Duel"
+            "title": "Monkey See, Monkey Duel",
+            "absoluteEpisode": 13,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wJoxR6rOqIhd5Iau9R8qYndiRm5.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "A Spirit Summoned"
+            "title": "A Spirit Summoned",
+            "absoluteEpisode": 14,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vi5wfzl7xFE0TVtp4QXFaVahgZm.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Courting Alexis"
+            "title": "Courting Alexis",
+            "absoluteEpisode": 15,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zd4xb4kDjVQtHJvnUfWf1kq2V7I.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "The Duel Giant"
+            "title": "The Duel Giant",
+            "absoluteEpisode": 16,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/9qY6VThinBxbNs7JCwZKz2vrjGX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Nature of the Draw"
+            "title": "Nature of the Draw",
+            "absoluteEpisode": 17,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lckWr2uHDfpxMrgG4foxi7Wa7w5.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "The King of Copycats (1)"
+            "title": "The King of Copycats (1)",
+            "absoluteEpisode": 18,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kTcmn9OUZzfi6Q3PgBiplC1spop.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "The King of Copycats (2)"
+            "title": "The King of Copycats (2)",
+            "absoluteEpisode": 19,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/smuY4AFDgJaQA3fvTJGJyR8iegd.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "The Maiden In Love"
+            "title": "The Maiden In Love",
+            "absoluteEpisode": 20,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7MszogEDWOQhLnfHF5thSZAxzWZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "The Duel Off (1)"
+            "title": "The Duel Off (1)",
+            "absoluteEpisode": 21,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fEA4FR7qg9Of3mBykobJdmcOrPJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "The Duel Off (2)"
+            "title": "The Duel Off (2)",
+            "absoluteEpisode": 22,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vn1pq6jFDWKoVaQHbXv3ttoAmQW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "The Little Belowski"
+            "title": "The Little Belowski",
+            "absoluteEpisode": 23,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nuDFXfhFNmioxYtf4R6KDqihWZm.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "The New Chazz"
+            "title": "The New Chazz",
+            "absoluteEpisode": 24,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vFCmEZiddyoNmioN1UXQvoMIiA9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "The School Duel (1)"
+            "title": "The School Duel (1)",
+            "absoluteEpisode": 25,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ihyHeQGXKr683UxLyGAzIpozGn7.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "The School Duel (2)"
+            "title": "The School Duel (2)",
+            "absoluteEpisode": 26,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jgVj4o4XLju5SV7B7o7WEowcmKe.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "Grave Risk (1)"
+            "title": "Grave Risk (1)",
+            "absoluteEpisode": 27,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vZOMp9ZlvgtAMbF8PhvcqsSJ494.jpg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "Grave Risk (2)"
+            "title": "Grave Risk (2)",
+            "absoluteEpisode": 28,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/i5AH8HjUr4YMp82qewRPT431XA9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Doomsday Day (1)"
+            "title": "Doomsday Day (1)",
+            "absoluteEpisode": 29,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/h6p9NtMZALFfml7gkfqbSe4AWCb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Doomsday Day (2)"
+            "title": "Doomsday Day (2)",
+            "absoluteEpisode": 30,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nhci5gCc1zt3XABtM9siz0MVpEq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "Field of Screams (1)"
+            "title": "Field of Screams (1)",
+            "absoluteEpisode": 31,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/uzE93gtsV7YJ27RosSlxR3EMCDf.jpg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Field of Screams (2)"
+            "title": "Field of Screams (2)",
+            "absoluteEpisode": 32,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gcjQrS8Gcvo6KbbBXfhrxVKyHpJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "Field of Screams (3)"
+            "title": "Field of Screams (3)",
+            "absoluteEpisode": 33,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rLd1sBZqr7Oc0exIPTYCvDQf7ZR.jpg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "The Fear Factor"
+            "title": "The Fear Factor",
+            "absoluteEpisode": 34,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qjjVwsHsbDtYEEoe459smeleeMb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "Sibling Rivalry"
+            "title": "Sibling Rivalry",
+            "absoluteEpisode": 35,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fBu2zKd3XFEsZfbJvQtcOSpvG2k.jpg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "Duel Distractions (1)"
+            "title": "Duel Distractions (1)",
+            "absoluteEpisode": 36,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/emyHqM5TlSaTT1VlSSsbZrpv9EW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "Duel Distractions (2)"
+            "title": "Duel Distractions (2)",
+            "absoluteEpisode": 37,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6oPS7WwNsYY4rw5e4nn22uW51rU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "Get Yarr Game On!"
+            "title": "Get Yarr Game On!",
+            "absoluteEpisode": 38,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nqMTX39FMva4sJSAx0fI7L4YH1m.jpg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "The Dark Scorpions"
+            "title": "The Dark Scorpions",
+            "absoluteEpisode": 39,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/x9mzuWdyKP4bQBv5VNFJhlfwRkr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "A Lying Legend"
+            "title": "A Lying Legend",
+            "absoluteEpisode": 40,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zh1s4UXTr9AQ4yV7oOTlfSIN7z4.jpg",
+            "duration": "24m"
           },
           {
             "episode": 41,
-            "title": "A Reason to Win"
+            "title": "A Reason to Win",
+            "absoluteEpisode": 41,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8m9OlHY02Mxq8yo61QNxa2ghpKA.jpg",
+            "duration": "24m"
           },
           {
             "episode": 42,
-            "title": "Duel Monsters Spirit Day"
+            "title": "Duel Monsters Spirit Day",
+            "absoluteEpisode": 42,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nYHcpqAAAmuSXZL6sE3fN6bGmqi.jpg",
+            "duration": "24m"
           },
           {
             "episode": 43,
-            "title": "Hearts Are Wild"
+            "title": "Hearts Are Wild",
+            "absoluteEpisode": 43,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gujJ5x33SfmfCwCCFAtKiuUSjTH.jpg",
+            "duration": "24m"
           },
           {
             "episode": 44,
-            "title": "The Seventh Shadow Rider"
+            "title": "The Seventh Shadow Rider",
+            "absoluteEpisode": 44,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/G5GZkQcHXYAyqWK6EKiqOp0CtN.jpg",
+            "duration": "24m"
           },
           {
             "episode": 45,
-            "title": "Amnael's Endgame (1)"
+            "title": "Amnael's Endgame (1)",
+            "absoluteEpisode": 45,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6IqERbooaArX0Ni4joB4aZHRz78.jpg",
+            "duration": "24m"
           },
           {
             "episode": 46,
-            "title": "Amnael's Endgame (2)"
+            "title": "Amnael's Endgame (2)",
+            "absoluteEpisode": 46,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2J2C3cm0EPn4E05Px1XFZgzvEvz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 47,
-            "title": "Chazz-anova"
+            "title": "Chazz-anova",
+            "absoluteEpisode": 47,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2uFZSJ7x0qGeEdpZtZRkdE5aGqW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 48,
-            "title": "Rise of the Sacred Beasts (1)"
+            "title": "Rise of the Sacred Beasts (1)",
+            "absoluteEpisode": 48,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cFTC4Y26cDyDHOH2ScwO5GnWa7r.jpg",
+            "duration": "24m"
           },
           {
             "episode": 49,
-            "title": "Rise of the Sacred Beasts (2)"
+            "title": "Rise of the Sacred Beasts (2)",
+            "absoluteEpisode": 49,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/edJSv9Vpjy6fZikfIzCgEQEwdnZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 50,
-            "title": "Magna Chum Laude"
+            "title": "Magna Chum Laude",
+            "absoluteEpisode": 50,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/36WnDthUBXtCPPO69lMLsW8VJEm.jpg",
+            "duration": "24m"
           },
           {
             "episode": 51,
-            "title": "The Graduation Match (1)"
+            "title": "The Graduation Match (1)",
+            "absoluteEpisode": 51,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tBObOLApV71dELZj8CdosFCTHSY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 52,
-            "title": "The Graduation Match (2)"
+            "title": "The Graduation Match (2)",
+            "absoluteEpisode": 52,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fYO1M1i22M3AZeu0lJT9JKxtiuE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 53,
-            "title": "Back to Duel"
+            "title": "Back to Duel",
+            "absoluteEpisode": 53,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jVXe2Xc3MLeWYwvxHxJNA7R6YpY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 54,
-            "title": "Champion or Chazz-been"
+            "title": "Champion or Chazz-been",
+            "absoluteEpisode": 54,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cdrAOkn3eQeuvzTgDSzl7lRwxUt.jpg",
+            "duration": "24m"
           },
           {
             "episode": 55,
-            "title": "A Hassleberry Hounding"
+            "title": "A Hassleberry Hounding",
+            "absoluteEpisode": 55,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ps7KEUNwqExPstnCWJ0YvxoonBf.jpg",
+            "duration": "24m"
           },
           {
             "episode": 56,
-            "title": "Sad But Truesdale"
+            "title": "Sad But Truesdale",
+            "absoluteEpisode": 56,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jlqeZsvgGXW6yrEzc0VFZ1Nnr4r.jpg",
+            "duration": "24m"
           },
           {
             "episode": 57,
-            "title": "The Demon"
+            "title": "The Demon",
+            "absoluteEpisode": 57,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/msdwmWOmhOs5RhtfP6837Pgvvgj.jpg",
+            "duration": "24m"
           },
           {
             "episode": 58,
-            "title": "A New Breed of Hero (1)"
+            "title": "A New Breed of Hero (1)",
+            "absoluteEpisode": 58,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8UTBk5OJ8wJHCf89SSNaSAPCfJz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 59,
-            "title": "A New Breed of Hero (2)"
+            "title": "A New Breed of Hero (2)",
+            "absoluteEpisode": 59,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sOy929wnp9zjPI8IF9J2hus01Bi.jpg",
+            "duration": "24m"
           },
           {
             "episode": 60,
-            "title": "Pop Goes the Duel"
+            "title": "Pop Goes the Duel",
+            "absoluteEpisode": 60,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vomTcCdZKUzmfQzbPEiUKN892k4.jpg",
+            "duration": "24m"
           },
           {
             "episode": 61,
-            "title": "I've Seen the Light"
+            "title": "I've Seen the Light",
+            "absoluteEpisode": 61,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/b6ZzW53UlFNB1zlgGYK0a00Uv2B.jpg",
+            "duration": "24m"
           },
           {
             "episode": 62,
-            "title": "A Greater Porpoise"
+            "title": "A Greater Porpoise",
+            "absoluteEpisode": 62,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oSN6N6SRjGRh5hUVXK2irVFh29V.jpg",
+            "duration": "24m"
           },
           {
             "episode": 63,
-            "title": "Curry Worries"
+            "title": "Curry Worries",
+            "absoluteEpisode": 63,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/4AY6ZWNNNqdqpEe5hPNRhQEuzUx.jpg",
+            "duration": "24m"
           },
           {
             "episode": 64,
-            "title": "Camaraderie Contest"
+            "title": "Camaraderie Contest",
+            "absoluteEpisode": 64,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3PsJnHmmlNwptloMZIoIPua2gWL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 65,
-            "title": "No Pain, No Game"
+            "title": "No Pain, No Game",
+            "absoluteEpisode": 65,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tamarhZnNZBm9bOHTZ5lSxCeEg6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 66,
-            "title": "Going Bananas"
+            "title": "Going Bananas",
+            "absoluteEpisode": 66,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/w95qOWQo84wAp7Wpz29uBD8e1PZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 67,
-            "title": "Homecoming Duel (1)"
+            "title": "Homecoming Duel (1)",
+            "absoluteEpisode": 67,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zb33vuqsPu3nebGRyOU9fIR7sw4.jpg",
+            "duration": "24m"
           },
           {
             "episode": 68,
-            "title": "Homecoming Duel (2)"
+            "title": "Homecoming Duel (2)",
+            "absoluteEpisode": 68,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/l9NtgSBuAiLAaElLH9TDn0tRiV5.jpg",
+            "duration": "24m"
           },
           {
             "episode": 69,
-            "title": "Dormitory Demolition"
+            "title": "Dormitory Demolition",
+            "absoluteEpisode": 69,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kUSkIyQjMet5yH0ai4zvbT8vttO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 70,
-            "title": "Obelisk White?"
+            "title": "Obelisk White?",
+            "absoluteEpisode": 70,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oBtADdr8rHazryJuqjsyrw1C6uk.jpg",
+            "duration": "24m"
           },
           {
             "episode": 71,
-            "title": "Duel Fellas"
+            "title": "Duel Fellas",
+            "absoluteEpisode": 71,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/e0ACgrbeoJJqeeFWLovQXhQYGwU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 72,
-            "title": "Not Playing with a Full Deck"
+            "title": "Not Playing with a Full Deck",
+            "absoluteEpisode": 72,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/8UD3Hn4EiURkbz6EyOh6M37BKeC.jpg",
+            "duration": "24m"
           },
           {
             "episode": 73,
-            "title": "Source of Strength"
+            "title": "Source of Strength",
+            "absoluteEpisode": 73,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xpfR8DTySApT8ADlyWcoqSnyY1E.jpg",
+            "duration": "24m"
           },
           {
             "episode": 74,
-            "title": "Happily Never After"
+            "title": "Happily Never After",
+            "absoluteEpisode": 74,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xpfR8DTySApT8ADlyWcoqSnyY1E.jpg",
+            "duration": "24m"
           },
           {
             "episode": 75,
-            "title": "Taken by Storm (1)"
+            "title": "Taken by Storm (1)",
+            "absoluteEpisode": 75,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/avD6TQYHkmZWMqLRJ05GBH3pBcU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 76,
-            "title": "Taken by Storm (2)"
+            "title": "Taken by Storm (2)",
+            "absoluteEpisode": 76,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sXaxxkjEle30k6YcDdFNsrmqulL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 77,
-            "title": "J-Dawg and T-Bone"
+            "title": "J-Dawg and T-Bone",
+            "absoluteEpisode": 77,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eMZCAdO9ouFwXbwY2ax6Fuh3x0Q.jpg",
+            "duration": "24m"
           },
           {
             "episode": 78,
-            "title": "Mirror, Mirror (1)"
+            "title": "Mirror, Mirror (1)",
+            "absoluteEpisode": 78,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gWsHJ3kfOfo6IJjJv8LIpP38oEE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 79,
-            "title": "Mirror, Mirror (2)"
+            "title": "Mirror, Mirror (2)",
+            "absoluteEpisode": 79,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/58bIGmaXNDyzA3bdA80v6SHkFzR.jpg",
+            "duration": "24m"
           },
           {
             "episode": 80,
-            "title": "What a Doll!"
+            "title": "What a Doll!",
+            "absoluteEpisode": 80,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/58lt2h7BQoClhmx92t4ddu4mOe9.jpg",
+            "duration": "24m"
           },
           {
             "episode": 81,
-            "title": "Let's Make a Duel"
+            "title": "Let's Make a Duel",
+            "absoluteEpisode": 81,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vi0G3J5m4lVEhATvgvgS7goSQxT.jpg",
+            "duration": "24m"
           },
           {
             "episode": 82,
-            "title": "Magnetic Personality"
+            "title": "Magnetic Personality",
+            "absoluteEpisode": 82,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/81CUE1GYYuacwz2goLzXWfS5V8j.jpg",
+            "duration": "24m"
           },
           {
             "episode": 83,
-            "title": "Schooling the Master"
+            "title": "Schooling the Master",
+            "absoluteEpisode": 83,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qnNqZlMfVFGn6pIImc0P2sXA04E.jpg",
+            "duration": "24m"
           },
           {
             "episode": 84,
-            "title": "Generation neXt"
+            "title": "Generation neXt",
+            "absoluteEpisode": 84,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/iWKuNRz5iOOoUfwnpHzKn10pXTy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 85,
-            "title": "Rah, Rah Ra!"
+            "title": "Rah, Rah Ra!",
+            "absoluteEpisode": 85,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gwUHd3uOPLEeRmmAY1s3PnFBrAK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 86,
-            "title": "The Art of the Duel"
+            "title": "The Art of the Duel",
+            "absoluteEpisode": 86,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jVZ8BJfMt2vnjBw3bwzmOrCeAKw.jpg",
+            "duration": "24m"
           },
           {
             "episode": 87,
-            "title": "Blinded by the Light (1)"
+            "title": "Blinded by the Light (1)",
+            "absoluteEpisode": 87,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/w5HlGgZeBPI5M1QiNphncqI33XJ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 88,
-            "title": "Blinded by the Light (2)"
+            "title": "Blinded by the Light (2)",
+            "absoluteEpisode": 88,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/fLrtYNORQcPysPaBVNXEaEn6hG6.jpg",
+            "duration": "24m"
           },
           {
             "episode": 89,
-            "title": "The Darkness Within"
+            "title": "The Darkness Within",
+            "absoluteEpisode": 89,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gpbuNlWgSVssu2cnVzbMrUxuEGz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 90,
-            "title": "Pro-Dueling"
+            "title": "Pro-Dueling",
+            "absoluteEpisode": 90,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6rkctuvgYW7SyUqN6QWgB5tESFG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 91,
-            "title": "Don't Fear the Reaper"
+            "title": "Don't Fear the Reaper",
+            "absoluteEpisode": 91,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/498fphEigQkR0N7CupRKkgEk7Tz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 92,
-            "title": "Duel for Hire"
+            "title": "Duel for Hire",
+            "absoluteEpisode": 92,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/27QSPFRxliebEisJn6gYf1L5ixI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 93,
-            "title": "Heart of Ice (1)"
+            "title": "Heart of Ice (1)",
+            "absoluteEpisode": 93,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jrllnugehGOQNQeeVWDIXE4X2Dg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 94,
-            "title": "Heart of Ice (2)"
+            "title": "Heart of Ice (2)",
+            "absoluteEpisode": 94,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zdsOFJ9VyB5IwAyOXjHIXXLg5x5.jpg",
+            "duration": "24m"
           },
           {
             "episode": 95,
-            "title": "Tough Love"
+            "title": "Tough Love",
+            "absoluteEpisode": 95,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1kb8Z9Iio2p1EldB8SaQD0Gw8nD.jpg",
+            "duration": "24m"
           },
           {
             "episode": 96,
-            "title": "It's All Relative"
+            "title": "It's All Relative",
+            "absoluteEpisode": 96,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/87PdvHEA49OmYaRAGiMwGq0Gdn1.jpg",
+            "duration": "24m"
           },
           {
             "episode": 97,
-            "title": "The Dark Light"
+            "title": "The Dark Light",
+            "absoluteEpisode": 97,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/es78Iijwc2Dt1DuEKAopAjDdK3y.jpg",
+            "duration": "24m"
           },
           {
             "episode": 98,
-            "title": "Ultimate Destiny"
+            "title": "Ultimate Destiny",
+            "absoluteEpisode": 98,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6TPhClYH2S1q2rk7nwTyGke2CKy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 99,
-            "title": "The Key Factor"
+            "title": "The Key Factor",
+            "absoluteEpisode": 99,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eS7gESnP4e4hnNnmvZoz1KLfRAp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 100,
-            "title": "The Phoenix Has Landed (1)"
+            "title": "The Phoenix Has Landed (1)",
+            "absoluteEpisode": 100,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kFzHsXP7fpR7bfwyfxE6Yd8xemw.jpg",
+            "duration": "24m"
           },
           {
             "episode": 101,
-            "title": "The Phoenix Has Landed (2)"
+            "title": "The Phoenix Has Landed (2)",
+            "absoluteEpisode": 101,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/sc89kaKQeDegcUehy4RXpPPNe38.jpg",
+            "duration": "24m"
           },
           {
             "episode": 102,
-            "title": "The Hands of Justice (1)"
+            "title": "The Hands of Justice (1)",
+            "absoluteEpisode": 102,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2GHBSrCvBwX3wJ6K2alV5MR5ZGZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 103,
-            "title": "The Hands of Justice (2)"
+            "title": "The Hands of Justice (2)",
+            "absoluteEpisode": 103,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tk4CYowicai6YtEyWTmkSVFKuks.jpg",
+            "duration": "24m"
           },
           {
             "episode": 104,
-            "title": "Future Changes"
+            "title": "Future Changes",
+            "absoluteEpisode": 104,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/tO49BrwQh0SZPRovy07WAdUtDsG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 105,
-            "title": "Third Time's a Charm"
+            "title": "Third Time's a Charm",
+            "absoluteEpisode": 105,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vEhsFlPyDRPXveTUXqskwmdy86h.jpg",
+            "duration": "24m"
           },
           {
             "episode": 106,
-            "title": "Jewel of a Duel (1)"
+            "title": "Jewel of a Duel (1)",
+            "absoluteEpisode": 106,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/moDoDwoRgZTmrOen02WKxqiZeHU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 107,
-            "title": "Jewel of a Duel (2)"
+            "title": "Jewel of a Duel (2)",
+            "absoluteEpisode": 107,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rg9tlMpCyFLT6xvhYwWZD0pNaGY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 108,
-            "title": "Hanging with Axel (1)"
+            "title": "Hanging with Axel (1)",
+            "absoluteEpisode": 108,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/z8j1RYQWgJQ1OM6HFP4P2iFgzGh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 109,
-            "title": "Hanging with Axel (2)"
+            "title": "Hanging with Axel (2)",
+            "absoluteEpisode": 109,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zXLzVuq5HIekysbKT8wge9q8olb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 110,
-            "title": "Primal Instinct"
+            "title": "Primal Instinct",
+            "absoluteEpisode": 110,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xDuAsI8F4lckrKTW71XsdGC7Ktg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 111,
-            "title": "Head in the Clouds (1)"
+            "title": "Head in the Clouds (1)",
+            "absoluteEpisode": 111,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/c8UMltQ3UZaCU1i9GT1QEESio03.jpg",
+            "duration": "24m"
           },
           {
             "episode": 112,
-            "title": "Head in the Clouds (2)"
+            "title": "Head in the Clouds (2)",
+            "absoluteEpisode": 112,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vmz6aX4LiyiUZcZlUxzW1VuG7Yr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 113,
-            "title": "Win Mr. Stein's Duel (1)"
+            "title": "Win Mr. Stein's Duel (1)",
+            "absoluteEpisode": 113,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/95njQDLQ1DOuST7wz11Q2UacWFK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 114,
-            "title": "Win Mr. Stein's Duel (2)"
+            "title": "Win Mr. Stein's Duel (2)",
+            "absoluteEpisode": 114,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2zhMSWlmrSWdic4BQKTKV5LKFfb.jpg",
+            "duration": "24m"
           },
           {
             "episode": 115,
-            "title": "Trapper Keeper (1)"
+            "title": "Trapper Keeper (1)",
+            "absoluteEpisode": 115,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/q62MaR3p1AdSAbuWLqTART8nY9v.jpg",
+            "duration": "24m"
           },
           {
             "episode": 116,
-            "title": "Trapper Keeper (2)"
+            "title": "Trapper Keeper (2)",
+            "absoluteEpisode": 116,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lyH2DUzFKhuEB5cBJBZ9wdbDfzI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 117,
-            "title": "Snake in the Grass (1)"
+            "title": "Snake in the Grass (1)",
+            "absoluteEpisode": 117,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gjCJX4at7HPDTbixyMwFLU8G83o.jpg",
+            "duration": "24m"
           },
           {
             "episode": 118,
-            "title": "Snake in the Grass (2)"
+            "title": "Snake in the Grass (2)",
+            "absoluteEpisode": 118,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ePp965yDAxmwL7eQ2zgjvGoOlHZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 119,
-            "title": "Snake in the Grass (3)"
+            "title": "Snake in the Grass (3)",
+            "absoluteEpisode": 119,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2EBwdb4Wkcj8ZpdyuJKpSLl02E.jpg",
+            "duration": "24m"
           },
           {
             "episode": 120,
-            "title": "Inter-Dimensional Detention"
+            "title": "Inter-Dimensional Detention",
+            "absoluteEpisode": 120,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1qcPwfrAAYiUzvCewUAi55JDjg0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 121,
-            "title": "Sub-Desert Duel"
+            "title": "Sub-Desert Duel",
+            "absoluteEpisode": 121,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/RFypcyiThbAix25HeySYZJ7631.jpg",
+            "duration": "24m"
           },
           {
             "episode": 122,
-            "title": "Night of the Living Duelists"
+            "title": "Night of the Living Duelists",
+            "absoluteEpisode": 122,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/bnhfDpWGeuS2Ov4uOG3RgywLgdv.jpg",
+            "duration": "24m"
           },
           {
             "episode": 123,
-            "title": "School Ghoul Duels"
+            "title": "School Ghoul Duels",
+            "absoluteEpisode": 123,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/trSbV3Yi31Yjg6eDoqVPXssscdy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 124,
-            "title": "Triple Play (1)"
+            "title": "Triple Play (1)",
+            "absoluteEpisode": 124,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/bAWAronAXE2iZndcZw0EbAhd2rn.jpg",
+            "duration": "24m"
           },
           {
             "episode": 125,
-            "title": "Triple Play (2)"
+            "title": "Triple Play (2)",
+            "absoluteEpisode": 125,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5b8AiWIvkSMRPn9ESGJTNPPi1Mm.jpg",
+            "duration": "24m"
           },
           {
             "episode": 126,
-            "title": "Return of the Sacred Beasts"
+            "title": "Return of the Sacred Beasts",
+            "absoluteEpisode": 126,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/2/29/Series126.jpg/revision/latest/scale-to-width-down/500?cb=20121026011635",
+            "duration": "24m"
           },
           {
             "episode": 127,
-            "title": "Breaking the Sacred Seal"
+            "title": "Breaking the Sacred Seal",
+            "absoluteEpisode": 127,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2B8aa5XXRlBR952DMuq4urHDDiX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 128,
-            "title": "A Dimension Deal"
+            "title": "A Dimension Deal",
+            "absoluteEpisode": 128,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zGBnAq65i74OyvVuz7YBiiDl73K.jpg",
+            "duration": "24m"
           },
           {
             "episode": 129,
-            "title": "Unleash the Dragon (1)"
+            "title": "Unleash the Dragon (1)",
+            "absoluteEpisode": 129,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yo1pEwbNPm4shF8Lkr9HXb3Ugo2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 130,
-            "title": "Unleash the Dragon (2)"
+            "title": "Unleash the Dragon (2)",
+            "absoluteEpisode": 130,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/btO8ZFeGr6SAxhbZmc1AcLuZBRy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 131,
-            "title": "All for One"
+            "title": "All for One",
+            "absoluteEpisode": 131,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zOqlvcIVR49rbkif0hc0ixmL3TV.jpg",
+            "duration": "24m"
           },
           {
             "episode": 132,
-            "title": "A New World Order"
+            "title": "A New World Order",
+            "absoluteEpisode": 132,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/x2xbtBMjsu4Dxvb2E7Kq4o347qO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 133,
-            "title": "Friend or Fiend"
+            "title": "Friend or Fiend",
+            "absoluteEpisode": 133,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ovkEh6R1IOwxT45B1HRoReeQ3gA.jpg",
+            "duration": "24m"
           },
           {
             "episode": 134,
-            "title": "Dueling with a Dark Army"
+            "title": "Dueling with a Dark Army",
+            "absoluteEpisode": 134,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/9lVHSnwz0NRUUvQPpqV03CTkTs0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 135,
-            "title": "Turning the Page (1)"
+            "title": "Turning the Page (1)",
+            "absoluteEpisode": 135,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/g9QAIbWUDlZk0xkrUcM9MCa80EE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 136,
-            "title": "Turning the Page (2)"
+            "title": "Turning the Page (2)",
+            "absoluteEpisode": 136,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cQlilaFZVOPzZ2kRyHP1oFF6Sqc.jpg",
+            "duration": "24m"
           },
           {
             "episode": 137,
-            "title": "The State of Syrus"
+            "title": "The State of Syrus",
+            "absoluteEpisode": 137,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/kQ2dMrbyeGUQY3g0NYnJEy3NFq2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 138,
-            "title": "The Darkness Revealed"
+            "title": "The Darkness Revealed",
+            "absoluteEpisode": 138,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lsfSJk8JAMifHqUkgFMXTQQ0Pvy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 139,
-            "title": "A Sight Unseen (1)"
+            "title": "A Sight Unseen (1)",
+            "absoluteEpisode": 139,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/86ee3SgasRWaxpFLmN201R03tL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 140,
-            "title": "A Sight Unseen (2)"
+            "title": "A Sight Unseen (2)",
+            "absoluteEpisode": 140,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/A97AXpcQcCEAf9PmZZ7ki6AIcaI.jpg",
+            "duration": "24m"
           },
           {
             "episode": 141,
-            "title": "What Lies Beneath (1)"
+            "title": "What Lies Beneath (1)",
+            "absoluteEpisode": 141,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aEUqp9cJkId8ATYWfjPxFyLo43k.jpg",
+            "duration": "24m"
           },
           {
             "episode": 142,
-            "title": "What Lies Beneath (2)"
+            "title": "What Lies Beneath (2)",
+            "absoluteEpisode": 142,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rA3rHH4wPZ5KwjQHaawYLy6Ju7O.jpg",
+            "duration": "24m"
           },
           {
             "episode": 143,
-            "title": "What Lies Beneath (3)"
+            "title": "What Lies Beneath (3)",
+            "absoluteEpisode": 143,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/yTj95fk1Fmj0trgtBjTX8MyHO4K.jpg",
+            "duration": "24m"
           },
           {
             "episode": 144,
-            "title": "The Forbidden Ritual (1)"
+            "title": "The Forbidden Ritual (1)",
+            "absoluteEpisode": 144,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5SR4knlTkPk1TYVFoEK5OBVIFxQ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 145,
-            "title": "The Forbidden Ritual (2)"
+            "title": "The Forbidden Ritual (2)",
+            "absoluteEpisode": 145,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2HpuTpErMAPq8MRFMV9glSrpxRE.jpg",
+            "duration": "24m"
           },
           {
             "episode": 146,
-            "title": "Conquering the Past (1)"
+            "title": "Conquering the Past (1)",
+            "absoluteEpisode": 146,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/96Yf1ulK7h0lWg1Aj9tHBqB1AmH.jpg",
+            "duration": "24m"
           },
           {
             "episode": 147,
-            "title": "Conquering the Past (2)"
+            "title": "Conquering the Past (2)",
+            "absoluteEpisode": 147,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mfJnKSJfcBWhWkGiOw5Or6K3f9N.jpg",
+            "duration": "24m"
           },
           {
             "episode": 148,
-            "title": "Conquering the Past (3)"
+            "title": "Conquering the Past (3)",
+            "absoluteEpisode": 148,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5LieVuYIiNpRL9og5jSstuLxdEy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 149,
-            "title": "The Ultimate Face-Off (1)"
+            "title": "The Ultimate Face-Off (1)",
+            "absoluteEpisode": 149,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/9LuZg4yuNfsDLPHO0wV1RnTqskr.jpg",
+            "duration": "24m"
           },
           {
             "episode": 150,
-            "title": "The Ultimate Face-Off (2)"
+            "title": "The Ultimate Face-Off (2)",
+            "absoluteEpisode": 150,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/z2crujqOVjhAYZkCuIKuMPl6kP2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 151,
-            "title": "The Power Within (1)"
+            "title": "The Power Within (1)",
+            "absoluteEpisode": 151,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qVpkYlIdINLskFcKkfST1xIKoq0.jpg",
+            "duration": "24m"
           },
           {
             "episode": 152,
-            "title": "The Power Within (2)"
+            "title": "The Power Within (2)",
+            "absoluteEpisode": 152,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cfzelcmM0RCy4gr60tQomGYZrmo.jpg",
+            "duration": "24m"
           },
           {
             "episode": 153,
-            "title": "Return of the Supreme King (1)"
+            "title": "Return of the Supreme King (1)",
+            "absoluteEpisode": 153,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/k9bXFUMi0r6CTIgqCIJkOUrhSvu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 154,
-            "title": "Return of the Supreme King (2)"
+            "title": "Return of the Supreme King (2)",
+            "absoluteEpisode": 154,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gj726hT5ByyouIfmLXoFtwM2mba.jpg",
+            "duration": "24m"
           },
           {
             "episode": 155,
-            "title": "Return of the Supreme King (3)"
+            "title": "Return of the Supreme King (3)",
+            "absoluteEpisode": 155,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vQmWPIRQgi31gGxmfmxB35FFFsl.jpg",
+            "duration": "24m"
           },
           {
             "episode": 156,
-            "title": "Judai Revived!? A Brand NEW Journey"
+            "title": "Judai Revived!? A Brand NEW Journey",
+            "absoluteEpisode": 156,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ni9LdqMFF5AQfntlJjIeVvRqfbW.jpg",
+            "duration": "24m"
           },
           {
             "episode": 157,
-            "title": "A Looming Threat! The Mysterious Visitor"
+            "title": "A Looming Threat! The Mysterious Visitor",
+            "absoluteEpisode": 157,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/38BLTIcrrrldWVwV0pjFtxH97Ml.jpg",
+            "duration": "24m"
           },
           {
             "episode": 158,
-            "title": "Farewell, Duel Academia! The Path Judai Chooses!"
+            "title": "Farewell, Duel Academia! The Path Judai Chooses!",
+            "absoluteEpisode": 158,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/oN7qDLtYl861DeYTm2PMhuFmzfg.jpg",
+            "duration": "24m"
           },
           {
             "episode": 159,
-            "title": "The Truth Behind Darkness! Judai vs. Fubuki"
+            "title": "The Truth Behind Darkness! Judai vs. Fubuki",
+            "absoluteEpisode": 159,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/iRPCmVuYEbHfDalbO6yQSgU1nYp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 160,
-            "title": "Fusing Souls! Neos vs. Five God Dragon"
+            "title": "Fusing Souls! Neos vs. Five God Dragon",
+            "absoluteEpisode": 160,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/vgQceeX2r0GK7zXSgOD7zV1NNoS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 161,
-            "title": "Shall We Duel? Invitation to a Pair Duel"
+            "title": "Shall We Duel? Invitation to a Pair Duel",
+            "absoluteEpisode": 161,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/mpvkly8NNunfE22tHdvDXuPOpeh.jpg",
+            "duration": "24m"
           },
           {
             "episode": 162,
-            "title": "Judai vs. Asuka! Face-down Card of Hidden Emotions"
+            "title": "Judai vs. Asuka! Face-down Card of Hidden Emotions",
+            "absoluteEpisode": 162,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/hQwFRhZosMMwQQInDTrq9AJPUdu.jpg",
+            "duration": "24m"
           },
           {
             "episode": 163,
-            "title": "Challenge from Psycho Shocker"
+            "title": "Challenge from Psycho Shocker",
+            "absoluteEpisode": 163,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/6Ik5KRiXVTiaE19SlL1VrWZ3bzK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 164,
-            "title": "The Inherited Cyber-Dark Dragon"
+            "title": "The Inherited Cyber-Dark Dragon",
+            "absoluteEpisode": 164,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aQpRSbFB8DgRtlyjEiF3W80iP79.jpg",
+            "duration": "24m"
           },
           {
             "episode": 165,
-            "title": "Shoot for It! Manjyome, the Path to a Pro Duelist!"
+            "title": "Shoot for It! Manjyome, the Path to a Pro Duelist!",
+            "absoluteEpisode": 165,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5uRmS4s4o3NUpUwkYFYXDnuaHt1.jpg",
+            "duration": "24m"
           },
           {
             "episode": 166,
-            "title": "Armed Dragon vs. Dragoon D End"
+            "title": "Armed Dragon vs. Dragoon D End",
+            "absoluteEpisode": 166,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3nqtUI4VtYt3OZCM3cQItNPcHQy.jpg",
+            "duration": "24m"
           },
           {
             "episode": 167,
-            "title": "Graduation Duel! Chronos vs. the Original Dropout Boy"
+            "title": "Graduation Duel! Chronos vs. the Original Dropout Boy",
+            "absoluteEpisode": 167,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/pnttGt9nNrBaCYSRucIWTZUfshz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 168,
-            "title": "Graduation Duel Starts! Neos vs. Horus the Black Flame Dragon"
+            "title": "Graduation Duel Starts! Neos vs. Horus the Black Flame Dragon",
+            "absoluteEpisode": 168,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/nqThJ4g3btvbAAaVzkzE6j6VrnG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 169,
-            "title": "The Price of Decision! O'Brien, Darkness in Fire"
+            "title": "The Price of Decision! O'Brien, Darkness in Fire",
+            "absoluteEpisode": 169,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7GC2ibwcXqUs3LutoWtlIKVZjWG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 170,
-            "title": "Saiou Returns! Activate!"
+            "title": "Saiou Returns! Activate!",
+            "absoluteEpisode": 170,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cWnZb7woJ86OpuQGW6kk57GNItw.jpg",
+            "duration": "24m"
           },
           {
             "episode": 171,
-            "title": "The End of Destiny! Magma Neos vs. The Dark Ruler"
+            "title": "The End of Destiny! Magma Neos vs. The Dark Ruler",
+            "absoluteEpisode": 171,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/r8stfWchNBdNDbOORbn92Ef05zU.jpg",
+            "duration": "24m"
           },
           {
             "episode": 172,
-            "title": "Duel Academia Crisis! The Jewel Beasts Blocking the Way"
+            "title": "Duel Academia Crisis! The Jewel Beasts Blocking the Way",
+            "absoluteEpisode": 172,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/hSpeRe2FwSpjyn6dG4Zx07h2UKq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 173,
-            "title": "Darkness Invasion, the Stolen Memories"
+            "title": "Darkness Invasion, the Stolen Memories",
+            "absoluteEpisode": 173,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/w1AS4oMRm82387qaZVZxFU2MOAH.jpg",
+            "duration": "24m"
           },
           {
             "episode": 174,
-            "title": "Activate, Clear World! Ferocious Negative Effect"
+            "title": "Activate, Clear World! Ferocious Negative Effect",
+            "absoluteEpisode": 174,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zy3gshDKVlFE1TYdqzhvoJTM3f1.jpg",
+            "duration": "24m"
           },
           {
             "episode": 175,
-            "title": "Battle Royale! Judai vs. Johan vs. Fujiwara"
+            "title": "Battle Royale! Judai vs. Johan vs. Fujiwara",
+            "absoluteEpisode": 175,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/BceGjNfUY60zvJseqRHfnvvfm2.jpg",
+            "duration": "24m"
           },
           {
             "episode": 176,
-            "title": "Rainbown Neos, Protector of Bonds vs. Clear Vicious Knight"
+            "title": "Rainbown Neos, Protector of Bonds vs. Clear Vicious Knight",
+            "absoluteEpisode": 176,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2QZv69LQQwBG8JbELj2kDMzGYBF.jpg",
+            "duration": "24m"
           },
           {
             "episode": 177,
-            "title": "Combo of Terror! \"Nihility and Infinity\""
+            "title": "Combo of Terror! \"Nihility and Infinity\"",
+            "absoluteEpisode": 177,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/s70vSJi1w8JpaTwLd8ifxBSDi6O.jpg",
+            "duration": "24m"
           },
           {
             "episode": 178,
-            "title": "Final Hope! Yuki Judai"
+            "title": "Final Hope! Yuki Judai",
+            "absoluteEpisode": 178,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jC35K3Mx8VVPbGbgz5K1jgTWVju.jpg",
+            "duration": "24m"
           },
           {
             "episode": 179,
-            "title": "Goodbye Judai! Tears of Graduation"
+            "title": "Goodbye Judai! Tears of Graduation",
+            "absoluteEpisode": 179,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3HEXL3C4YYwS8V6sjgDAkB8KkRG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 180,
-            "title": "The True Graduation Duel! Judai vs. Legendary Duelist"
+            "title": "The True Graduation Duel! Judai vs. Legendary Duelist",
+            "absoluteEpisode": 180,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cfS8Q6Li6Ttv3HyXyICgMfbtiSW.jpg",
+            "duration": "24m"
           }
         ]
       }
@@ -31518,619 +32727,1081 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "On Your Mark, Get Set, Duel!"
+            "title": "On Your Mark, Get Set, Duel!",
+            "absoluteEpisode": 1,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/b45HwGWP9oeIvKauFKKQIArmaAp.jpg",
+            "duration": "24m"
           },
           {
             "episode": 2,
-            "title": "Creepy Crawlies"
+            "title": "Creepy Crawlies",
+            "absoluteEpisode": 2,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xZvtXJwIxNkInZyzvFWxcc4TqCe.jpg",
+            "duration": "24m"
           },
           {
             "episode": 3,
-            "title": "Pipe Dreams"
+            "title": "Pipe Dreams",
+            "absoluteEpisode": 3,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lh5haqaKTPrrUaUyROwGbJropXY.jpg",
+            "duration": "24m"
           },
           {
             "episode": 4,
-            "title": "A Blast from the Past (1)"
+            "title": "A Blast from the Past (1)",
+            "absoluteEpisode": 4,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/xeI7mXEyZ76K6GckRRqzTs1cBxZ.jpg",
+            "duration": "24m"
           },
           {
             "episode": 5,
-            "title": "A Blast from the Past (2)"
+            "title": "A Blast from the Past (2)",
+            "absoluteEpisode": 5,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/qv6NbL8faK05zoOH9EQhY8kC18v.jpg",
+            "duration": "24m"
           },
           {
             "episode": 6,
-            "title": "The Facility (1)"
+            "title": "The Facility (1)",
+            "absoluteEpisode": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/zJlA0CpmTmQ8wAdNwqda5eVZBei.jpg",
+            "duration": "24m"
           },
           {
             "episode": 7,
-            "title": "The Facility (2)"
+            "title": "The Facility (2)",
+            "absoluteEpisode": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/7r5GmGyXvuLhmMvuk19xhaeHaav.jpg",
+            "duration": "24m"
           },
           {
             "episode": 8,
-            "title": "Fire It Up!"
+            "title": "Fire It Up!",
+            "absoluteEpisode": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/4mXznLwr9WWmFIRU765OlCYDCvL.jpg",
+            "duration": "24m"
           },
           {
             "episode": 9,
-            "title": "The Lockdown Duel (1)"
+            "title": "The Lockdown Duel (1)",
+            "absoluteEpisode": 9,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/1Uuyi5QPdwbXBfwqALtxpxosnrq.jpg",
+            "duration": "24m"
           },
           {
             "episode": 10,
-            "title": "The Lockdown Duel (2)"
+            "title": "The Lockdown Duel (2)",
+            "absoluteEpisode": 10,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5QawuKsL8WKWVGhhesbNyXXPZ8L.jpg",
+            "duration": "24m"
           },
           {
             "episode": 11,
-            "title": "The Take Back (1)"
+            "title": "The Take Back (1)",
+            "absoluteEpisode": 11,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5i1FuItkg2eDtyYia9zURWQs4ox.jpg",
+            "duration": "24m"
           },
           {
             "episode": 12,
-            "title": "The Take Back (2)"
+            "title": "The Take Back (2)",
+            "absoluteEpisode": 12,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gpeDfxQHsT2gxUMPL5NLsHyS1D4.jpg",
+            "duration": "24m"
           },
           {
             "episode": 13,
-            "title": "A Duel to Remember"
+            "title": "A Duel to Remember",
+            "absoluteEpisode": 13,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/lbOug6sORXSL6uv3shV2C7i535R.jpg",
+            "duration": "24m"
           },
           {
             "episode": 14,
-            "title": "Bloom of the Black Rose"
+            "title": "Bloom of the Black Rose",
+            "absoluteEpisode": 14,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/m1PaOk6U5sYW23xf1AyftTmkxMX.jpg",
+            "duration": "24m"
           },
           {
             "episode": 15,
-            "title": "Welcome to the Fortune Cup"
+            "title": "Welcome to the Fortune Cup",
+            "absoluteEpisode": 15,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/5FClYi5plm6BVSk69jFq77MvT8x.jpg",
+            "duration": "24m"
           },
           {
             "episode": 16,
-            "title": "Battle with the Black Rose"
+            "title": "Battle with the Black Rose",
+            "absoluteEpisode": 16,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/iC34DmPVGkQanrWQeVlvp39RgyK.jpg",
+            "duration": "24m"
           },
           {
             "episode": 17,
-            "title": "Surprise, Surprise"
+            "title": "Surprise, Surprise",
+            "absoluteEpisode": 17,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/jqLpdZcZYIJvV9Zj8rV1eGdznxd.jpg",
+            "duration": "24m"
           },
           {
             "episode": 18,
-            "title": "Return to the Spirit World (1)"
+            "title": "Return to the Spirit World (1)",
+            "absoluteEpisode": 18,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/hoHKanPGJnvhb8q6PYUFdZV8IHB.jpg",
+            "duration": "24m"
           },
           {
             "episode": 19,
-            "title": "Return to the Spirit World (2)"
+            "title": "Return to the Spirit World (2)",
+            "absoluteEpisode": 19,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/95YRd6RiCF0Kn1EPmqa82yxDCJS.jpg",
+            "duration": "24m"
           },
           {
             "episode": 20,
-            "title": "Second Round Showdown (1)"
+            "title": "Second Round Showdown (1)",
+            "absoluteEpisode": 20,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rlfCuk7Dur0ST4beM2vL4vuik9b.jpg",
+            "duration": "24m"
           },
           {
             "episode": 21,
-            "title": "Second Round Showdown (2)"
+            "title": "Second Round Showdown (2)",
+            "absoluteEpisode": 21,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/3Nmzzjaq0QNWh6gfiUXDbObsGFz.jpg",
+            "duration": "24m"
           },
           {
             "episode": 22,
-            "title": "The Profiler"
+            "title": "The Profiler",
+            "absoluteEpisode": 22,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/20r3QrtOZ06GIqTyncJ8OuTNkMG.jpg",
+            "duration": "24m"
           },
           {
             "episode": 23,
-            "title": "Duel of the Dragons (1)"
+            "title": "Duel of the Dragons (1)",
+            "absoluteEpisode": 23,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/dPpTR5Ts3nXwTHCOU74zOou3AEm.jpg",
+            "duration": "24m"
           },
           {
             "episode": 24,
-            "title": "Duel of the Dragons (2)"
+            "title": "Duel of the Dragons (2)",
+            "absoluteEpisode": 24,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/idUtVusXIfhDI6oVeDK6jN4sGfT.jpg",
+            "duration": "24m"
           },
           {
             "episode": 25,
-            "title": "The Fortune Cup Finale (1)"
+            "title": "The Fortune Cup Finale (1)",
+            "absoluteEpisode": 25,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/cpt5z5SDqux32TNpPLsYoL6Fdx8.jpg",
+            "duration": "24m"
           },
           {
             "episode": 26,
-            "title": "The Fortune Cup Finale (2)"
+            "title": "The Fortune Cup Finale (2)",
+            "absoluteEpisode": 26,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/gYHkI32H3CX5g2NzilxOGvnbZRO.jpg",
+            "duration": "24m"
           },
           {
             "episode": 27,
-            "title": "A Web of Deceit (1)"
+            "title": "A Web of Deceit (1)",
+            "absoluteEpisode": 27,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172270/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 28,
-            "title": "A Web of Deceit (2)"
+            "title": "A Web of Deceit (2)",
+            "absoluteEpisode": 28,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172271/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 29,
-            "title": "Good Cop, Bad Cop"
+            "title": "Good Cop, Bad Cop",
+            "absoluteEpisode": 29,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172272/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 30,
-            "title": "Fight or Flight"
+            "title": "Fight or Flight",
+            "absoluteEpisode": 30,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172273/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 31,
-            "title": "The Reunion Duel"
+            "title": "The Reunion Duel",
+            "absoluteEpisode": 31,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172274/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 32,
-            "title": "Dark Signs (1)"
+            "title": "Dark Signs (1)",
+            "absoluteEpisode": 32,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172275/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 33,
-            "title": "Dark Signs (2)"
+            "title": "Dark Signs (2)",
+            "absoluteEpisode": 33,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172276/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 34,
-            "title": "Dark Signs (3)"
+            "title": "Dark Signs (3)",
+            "absoluteEpisode": 34,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172277/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 35,
-            "title": "Dark Signs (4)"
+            "title": "Dark Signs (4)",
+            "absoluteEpisode": 35,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172278/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 36,
-            "title": "Supersensory Shakedown"
+            "title": "Supersensory Shakedown",
+            "absoluteEpisode": 36,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172279/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 37,
-            "title": "Digging Deeper (1)"
+            "title": "Digging Deeper (1)",
+            "absoluteEpisode": 37,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172280/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 38,
-            "title": "Digging Deeper (2)"
+            "title": "Digging Deeper (2)",
+            "absoluteEpisode": 38,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172281/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 39,
-            "title": "Digging Deeper (3)"
+            "title": "Digging Deeper (3)",
+            "absoluteEpisode": 39,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172282/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 40,
-            "title": "Clash of the Dragons (1)"
+            "title": "Clash of the Dragons (1)",
+            "absoluteEpisode": 40,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172283/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 41,
-            "title": "Clash of the Dragons (2)"
+            "title": "Clash of the Dragons (2)",
+            "absoluteEpisode": 41,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172284/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 42,
-            "title": "The Signs of Time"
+            "title": "The Signs of Time",
+            "absoluteEpisode": 42,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172285/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 43,
-            "title": "Surely, You Jest (1)"
+            "title": "Surely, You Jest (1)",
+            "absoluteEpisode": 43,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172286/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 44,
-            "title": "Surely, You Jest (2)"
+            "title": "Surely, You Jest (2)",
+            "absoluteEpisode": 44,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172287/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 45,
-            "title": "Mark of the Spider (1)"
+            "title": "Mark of the Spider (1)",
+            "absoluteEpisode": 45,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172288/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 46,
-            "title": "Mark of the Spider (2)"
+            "title": "Mark of the Spider (2)",
+            "absoluteEpisode": 46,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172289/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 47,
-            "title": "Mark of the Monkey (1)"
+            "title": "Mark of the Monkey (1)",
+            "absoluteEpisode": 47,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172290/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 48,
-            "title": "Mark of the Monkey (2)"
+            "title": "Mark of the Monkey (2)",
+            "absoluteEpisode": 48,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172291/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 49,
-            "title": "Mark of the Monkey (3)"
+            "title": "Mark of the Monkey (3)",
+            "absoluteEpisode": 49,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172292/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 50,
-            "title": "Mark of the Monkey (4)"
+            "title": "Mark of the Monkey (4)",
+            "absoluteEpisode": 50,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172293/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 51,
-            "title": "A Whale of a Ride (1)"
+            "title": "A Whale of a Ride (1)",
+            "absoluteEpisode": 51,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172294/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 52,
-            "title": "A Whale of a Ride (2)"
+            "title": "A Whale of a Ride (2)",
+            "absoluteEpisode": 52,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172295/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 53,
-            "title": "A Whale of a Ride (3)"
+            "title": "A Whale of a Ride (3)",
+            "absoluteEpisode": 53,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172296/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 54,
-            "title": "A Score to Settle (1)"
+            "title": "A Score to Settle (1)",
+            "absoluteEpisode": 54,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172297/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 55,
-            "title": "A Score to Settle (2)"
+            "title": "A Score to Settle (2)",
+            "absoluteEpisode": 55,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172298/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 56,
-            "title": "Destiny's Will (1)"
+            "title": "Destiny's Will (1)",
+            "absoluteEpisode": 56,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172299/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 57,
-            "title": "Destiny's Will (2)"
+            "title": "Destiny's Will (2)",
+            "absoluteEpisode": 57,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172300/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 58,
-            "title": "Shadows of Doubt (1)"
+            "title": "Shadows of Doubt (1)",
+            "absoluteEpisode": 58,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172301/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 59,
-            "title": "Shadows of Doubt (2)"
+            "title": "Shadows of Doubt (2)",
+            "absoluteEpisode": 59,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172302/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 60,
-            "title": "Truth and Consequences (1)"
+            "title": "Truth and Consequences (1)",
+            "absoluteEpisode": 60,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172303/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 61,
-            "title": "Truth and Consequences (2)"
+            "title": "Truth and Consequences (2)",
+            "absoluteEpisode": 61,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172304/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 62,
-            "title": "Signs of Doom (1)"
+            "title": "Signs of Doom (1)",
+            "absoluteEpisode": 62,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/172305/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 63,
-            "title": "Signs of Doom (2)"
+            "title": "Signs of Doom (2)",
+            "absoluteEpisode": 63,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/57033/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 64,
-            "title": "Signs of Doom (3)"
+            "title": "Signs of Doom (3)",
+            "absoluteEpisode": 64,
+            "thumbnail": "https://media.kitsu.app/episodes/thumbnails/57034/original.jpeg",
+            "duration": "24m"
           },
           {
             "episode": 65,
-            "title": "A New Threat (1)"
+            "title": "A New Threat (1)",
+            "absoluteEpisode": 65,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/5/54/5Dx065_Yusei_vs_Infinity.png/revision/latest/scale-to-width-down/500?cb=20100928213845",
+            "duration": "24m"
           },
           {
             "episode": 66,
-            "title": "A New Threat (2)"
+            "title": "A New Threat (2)",
+            "absoluteEpisode": 66,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/2/24/Wiselsword.jpg/revision/latest/scale-to-width-down/500?cb=20090708155353",
+            "duration": "24m"
           },
           {
             "episode": 67,
-            "title": "Lessons Learned"
+            "title": "Lessons Learned",
+            "absoluteEpisode": 67,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/d/dc/YuseivsHeitmann.jpg/revision/latest/scale-to-width-down/500?cb=20121209205432",
+            "duration": "24m"
           },
           {
             "episode": 68,
-            "title": "Trash Talk"
+            "title": "Trash Talk",
+            "absoluteEpisode": 68,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/8/82/YGO5D068.jpg/revision/latest/scale-to-width-down/500?cb=20090729141307",
+            "duration": "24m"
           },
           {
             "episode": 69,
-            "title": "A Duel With Interest"
+            "title": "A Duel With Interest",
+            "absoluteEpisode": 69,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/2/26/YGO5D069.jpg/revision/latest/scale-to-width-down/500?cb=20100206150959",
+            "duration": "24m"
           },
           {
             "episode": 70,
-            "title": "The Wicked Spirit"
+            "title": "The Wicked Spirit",
+            "absoluteEpisode": 70,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/ab/5Dx070_Michel_faces_Rua.png/revision/latest?cb=20090825224051",
+            "duration": "24m"
           },
           {
             "episode": 71,
-            "title": "French Twist (1)"
+            "title": "French Twist (1)",
+            "absoluteEpisode": 71,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/7/75/YGO5D071.jpg/revision/latest/scale-to-width-down/500?cb=20090812111424",
+            "duration": "24m"
           },
           {
             "episode": 72,
-            "title": "French Twist (2)"
+            "title": "French Twist (2)",
+            "absoluteEpisode": 72,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/ba/YGO5D072.jpg/revision/latest/scale-to-width-down/500?cb=20090819094526",
+            "duration": "24m"
           },
           {
             "episode": 73,
-            "title": "Synchro Straits"
+            "title": "Synchro Straits",
+            "absoluteEpisode": 73,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/6/6f/YGO5D073.jpg/revision/latest/scale-to-width-down/500?cb=20090826105642",
+            "duration": "24m"
           },
           {
             "episode": 74,
-            "title": "Synchro Solution"
+            "title": "Synchro Solution",
+            "absoluteEpisode": 74,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/f4/YGO5D074.jpg/revision/latest/scale-to-width-down/500?cb=20090902141821",
+            "duration": "24m"
           },
           {
             "episode": 75,
-            "title": "Acceleration"
+            "title": "Acceleration",
+            "absoluteEpisode": 75,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/fe/5Dx075_Ushio_VS_Aki.jpg/revision/latest/scale-to-width-down/500?cb=20090909094201",
+            "duration": "24m"
           },
           {
             "episode": 76,
-            "title": "Syd Is Vicious"
+            "title": "Syd Is Vicious",
+            "absoluteEpisode": 76,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/0/09/YGO5D076.jpg/revision/latest/scale-to-width-down/500?cb=20090916094531",
+            "duration": "24m"
           },
           {
             "episode": 77,
-            "title": "Dawn of the Duel Board (1)"
+            "title": "Dawn of the Duel Board (1)",
+            "absoluteEpisode": 77,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/2/2a/YGO5D077.jpg/revision/latest/scale-to-width-down/500?cb=20090923093046",
+            "duration": "24m"
           },
           {
             "episode": 78,
-            "title": "Dawn of the Duel Board (2)"
+            "title": "Dawn of the Duel Board (2)",
+            "absoluteEpisode": 78,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/fc/YGO5D078.jpg/revision/latest/scale-to-width-down/500?cb=20090930093923",
+            "duration": "24m"
           },
           {
             "episode": 79,
-            "title": "Putting It All Together"
+            "title": "Putting It All Together",
+            "absoluteEpisode": 79,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/ba/YGO5D079.jpg/revision/latest/scale-to-width-down/500?cb=20091007093100",
+            "duration": "24m"
           },
           {
             "episode": 80,
-            "title": "The Super Genius"
+            "title": "The Super Genius",
+            "absoluteEpisode": 80,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/b5/YGO5D080.jpg/revision/latest/scale-to-width-down/500?cb=20091014101146",
+            "duration": "24m"
           },
           {
             "episode": 81,
-            "title": "Get With the Program (1)"
+            "title": "Get With the Program (1)",
+            "absoluteEpisode": 81,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/e/ee/YGO5D081.jpg/revision/latest/scale-to-width-down/500?cb=20091021093152",
+            "duration": "24m"
           },
           {
             "episode": 82,
-            "title": "Get With the Program (2)"
+            "title": "Get With the Program (2)",
+            "absoluteEpisode": 82,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/91/YGO5D082.jpg/revision/latest/scale-to-width-down/500?cb=20091028094653",
+            "duration": "24m"
           },
           {
             "episode": 83,
-            "title": "Will the Real Jack Atlas, Please Stand Up (1)"
+            "title": "Will the Real Jack Atlas, Please Stand Up (1)",
+            "absoluteEpisode": 83,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/fe/YGO5D083.jpg/revision/latest/scale-to-width-down/500?cb=20091104095035",
+            "duration": "24m"
           },
           {
             "episode": 84,
-            "title": "Will the Real Jack Atlas, Please Stand Up (2)"
+            "title": "Will the Real Jack Atlas, Please Stand Up (2)",
+            "absoluteEpisode": 84,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/0/04/YGO5D084.jpg/revision/latest/scale-to-width-down/500?cb=20091111111653",
+            "duration": "24m"
           },
           {
             "episode": 85,
-            "title": "Mother Knows Best"
+            "title": "Mother Knows Best",
+            "absoluteEpisode": 85,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/1/10/YGO5D085.jpg/revision/latest/scale-to-width-down/500?cb=20091118125134",
+            "duration": "24m"
           },
           {
             "episode": 86,
-            "title": "Duelist for Hire"
+            "title": "Duelist for Hire",
+            "absoluteEpisode": 86,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/94/YGO5D086.jpg/revision/latest/scale-to-width-down/500?cb=20091125093306",
+            "duration": "24m"
           },
           {
             "episode": 87,
-            "title": "Showdown at Sundown (1)"
+            "title": "Showdown at Sundown (1)",
+            "absoluteEpisode": 87,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/d/dd/YGO5D087.jpg/revision/latest/scale-to-width-down/500?cb=20091202104559",
+            "duration": "24m"
           },
           {
             "episode": 88,
-            "title": "Showdown at Sundown (2)"
+            "title": "Showdown at Sundown (2)",
+            "absoluteEpisode": 88,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/d/df/YGO5D088.jpg/revision/latest/scale-to-width-down/500?cb=20091209145506",
+            "duration": "24m"
           },
           {
             "episode": 89,
-            "title": "The Race to Escape (1)"
+            "title": "The Race to Escape (1)",
+            "absoluteEpisode": 89,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/8/84/YGO5D089.jpg/revision/latest/scale-to-width-down/500?cb=20091216094353",
+            "duration": "24m"
           },
           {
             "episode": 90,
-            "title": "The Race to Escape (2)"
+            "title": "The Race to Escape (2)",
+            "absoluteEpisode": 90,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/31/YGO5D090.jpg/revision/latest/scale-to-width-down/500?cb=20091223154833",
+            "duration": "24m"
           },
           {
             "episode": 91,
-            "title": "Clash at Crash Town (1)"
+            "title": "Clash at Crash Town (1)",
+            "absoluteEpisode": 91,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/ad/YGO5D091.jpg/revision/latest/scale-to-width-down/500?cb=20100106101511",
+            "duration": "24m"
           },
           {
             "episode": 92,
-            "title": "Clash at Crash Town (2)"
+            "title": "Clash at Crash Town (2)",
+            "absoluteEpisode": 92,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/7/7f/YGO5D092.jpg/revision/latest/scale-to-width-down/500?cb=20101218171339",
+            "duration": "24m"
           },
           {
             "episode": 93,
-            "title": "The Question of the Card"
+            "title": "The Question of the Card",
+            "absoluteEpisode": 93,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/fe/YGO5D093.jpg/revision/latest/scale-to-width-down/500?cb=20100120103742",
+            "duration": "24m"
           },
           {
             "episode": 94,
-            "title": "Keeping a Promise (1)"
+            "title": "Keeping a Promise (1)",
+            "absoluteEpisode": 94,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/a2/YGO5D094.jpg/revision/latest/scale-to-width-down/500?cb=20100127103500",
+            "duration": "24m"
           },
           {
             "episode": 95,
-            "title": "Keeping a Promise (2)"
+            "title": "Keeping a Promise (2)",
+            "absoluteEpisode": 95,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/9d/5Dx095_Soar_Black-Feather_Dragon.jpg/revision/latest/scale-to-width-down/500?cb=20100203103812",
+            "duration": "24m"
           },
           {
             "episode": 96,
-            "title": "Natural Instincts (1)"
+            "title": "Natural Instincts (1)",
+            "absoluteEpisode": 96,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/91/YGO5D096.jpg/revision/latest/scale-to-width-down/500?cb=20100213103734",
+            "duration": "24m"
           },
           {
             "episode": 97,
-            "title": "Natural Instincts (2)"
+            "title": "Natural Instincts (2)",
+            "absoluteEpisode": 97,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/4/4d/YGO5D097.jpg/revision/latest/scale-to-width-down/500?cb=20100217093907",
+            "duration": "24m"
           },
           {
             "episode": 98,
-            "title": "Power Plays"
+            "title": "Power Plays",
+            "absoluteEpisode": 98,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/7/78/YGO5D098.jpg/revision/latest/scale-to-width-down/500?cb=20100224102715",
+            "duration": "24m"
           },
           {
             "episode": 99,
-            "title": "Trouble for Team 5D's"
+            "title": "Trouble for Team 5D's",
+            "absoluteEpisode": 99,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/94/YGO5D099.jpg/revision/latest/scale-to-width-down/500?cb=20100303110723",
+            "duration": "24m"
           },
           {
             "episode": 100,
-            "title": "The Edge of Elimination (1)"
+            "title": "The Edge of Elimination (1)",
+            "absoluteEpisode": 100,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/4/42/YGO5D100.jpg/revision/latest/scale-to-width-down/500?cb=20130705115907",
+            "duration": "24m"
           },
           {
             "episode": 101,
-            "title": "The Edge of Elimination (2)"
+            "title": "The Edge of Elimination (2)",
+            "absoluteEpisode": 101,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/c/c9/YGO5D101.jpg/revision/latest/scale-to-width-down/500?cb=20130705010340",
+            "duration": "24m"
           },
           {
             "episode": 102,
-            "title": "The Edge of Elimination (3)"
+            "title": "The Edge of Elimination (3)",
+            "absoluteEpisode": 102,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/1/1b/YGO5D102.jpg/revision/latest/scale-to-width-down/500?cb=20130705113942",
+            "duration": "24m"
           },
           {
             "episode": 103,
-            "title": "Party Crashers"
+            "title": "Party Crashers",
+            "absoluteEpisode": 103,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/5/5d/YGO5D103.png/revision/latest/scale-to-width-down/500?cb=20130705114645",
+            "duration": "24m"
           },
           {
             "episode": 104,
-            "title": "Knight Takes Pawn"
+            "title": "Knight Takes Pawn",
+            "absoluteEpisode": 104,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/f9/YGO5D104.png/revision/latest/scale-to-width-down/500?cb=20130705115159",
+            "duration": "24m"
           },
           {
             "episode": 105,
-            "title": "Rook Takes Knight"
+            "title": "Rook Takes Knight",
+            "absoluteEpisode": 105,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/7/7e/YGO5D105.jpg/revision/latest/scale-to-width-down/500?cb=20100414103206",
+            "duration": "24m"
           },
           {
             "episode": 106,
-            "title": "Primo’s Plan (1)"
+            "title": "Primo’s Plan (1)",
+            "absoluteEpisode": 106,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/31/YGO5D106.jpg/revision/latest/scale-to-width-down/500?cb=20100421105405",
+            "duration": "24m"
           },
           {
             "episode": 107,
-            "title": "Primo's Plan (2)"
+            "title": "Primo's Plan (2)",
+            "absoluteEpisode": 107,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/5/59/YGO5D107.jpg/revision/latest/scale-to-width-down/500?cb=20100428135408",
+            "duration": "24m"
           },
           {
             "episode": 108,
-            "title": "Primo's Plan (3)"
+            "title": "Primo's Plan (3)",
+            "absoluteEpisode": 108,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/30/YGO5D108.jpg/revision/latest/scale-to-width-down/500?cb=20100505111548",
+            "duration": "24m"
           },
           {
             "episode": 109,
-            "title": "Primo's Plan (4)"
+            "title": "Primo's Plan (4)",
+            "absoluteEpisode": 109,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/e/e7/YGO5D109.jpg/revision/latest/scale-to-width-down/500?cb=20100513032125",
+            "duration": "24m"
           },
           {
             "episode": 110,
-            "title": "Primo's Plan (5)"
+            "title": "Primo's Plan (5)",
+            "absoluteEpisode": 110,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/bc/YGO5D110.jpg/revision/latest/scale-to-width-down/500?cb=20100519104307",
+            "duration": "24m"
           },
           {
             "episode": 111,
-            "title": "The Ancient Land - To Nazca!"
+            "title": "The Ancient Land - To Nazca!",
+            "absoluteEpisode": 111,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/c/c0/YGO5D111.jpg/revision/latest/scale-to-width-down/500?cb=20100526104253",
+            "duration": "24m"
           },
           {
             "episode": 112,
-            "title": "The Crimson Devil"
+            "title": "The Crimson Devil",
+            "absoluteEpisode": 112,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/35/YGO5D112.jpg/revision/latest/scale-to-width-down/500?cb=20100602110445",
+            "duration": "24m"
           },
           {
             "episode": 113,
-            "title": "Burning Seething Soul! Scarlet Nova Dragon"
+            "title": "Burning Seething Soul! Scarlet Nova Dragon",
+            "absoluteEpisode": 113,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/94/5Dx113_Scar-Red_Nova_breaking_through.jpg/revision/latest/scale-to-width-down/500?cb=20100609105505",
+            "duration": "24m"
           },
           {
             "episode": 114,
-            "title": "Operation Capture Jaeger II"
+            "title": "Operation Capture Jaeger II",
+            "absoluteEpisode": 114,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/b3/5Dx114_Red_Demon%27s_Noodle_promotion.jpg/revision/latest/scale-to-width-down/500?cb=20100616104354",
+            "duration": "24m"
           },
           {
             "episode": 115,
-            "title": "Press Him About The Mystery! The Endgame Riding Duel!!"
+            "title": "Press Him About The Mystery! The Endgame Riding Duel!!",
+            "absoluteEpisode": 115,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/6/69/5Dx115_Accel_Simulator.jpg/revision/latest/scale-to-width-down/500?cb=20100623104928",
+            "duration": "24m"
           },
           {
             "episode": 116,
-            "title": "Momentum Express Development Agency"
+            "title": "Momentum Express Development Agency",
+            "absoluteEpisode": 116,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/96/YGO5D116.jpg/revision/latest/scale-to-width-down/500?cb=20100630112519",
+            "duration": "24m"
           },
           {
             "episode": 117,
-            "title": "The Distorted Past"
+            "title": "The Distorted Past",
+            "absoluteEpisode": 117,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/34/5Dx117_Distorted_dimension.png/revision/latest/scale-to-width-down/500?cb=20100710004349",
+            "duration": "24m"
           },
           {
             "episode": 118,
-            "title": "The New Rivals"
+            "title": "The New Rivals",
+            "absoluteEpisode": 118,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/ba/YGO5D118.jpg/revision/latest/scale-to-width-down/500?cb=20100714100400",
+            "duration": "24m"
           },
           {
             "episode": 119,
-            "title": "The Invincible Scrum! Smash The Unbreakable Defense!"
+            "title": "The Invincible Scrum! Smash The Unbreakable Defense!",
+            "absoluteEpisode": 119,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/8/8f/YGO5D119.jpg/revision/latest/scale-to-width-down/500?cb=20100721111743",
+            "duration": "24m"
           },
           {
             "episode": 120,
-            "title": "Tie those Feelings! The Hand Tied to the Majin!"
+            "title": "Tie those Feelings! The Hand Tied to the Majin!",
+            "absoluteEpisode": 120,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/8/86/YGO5D120.jpg/revision/latest/scale-to-width-down/500?cb=20100728114007",
+            "duration": "24m"
           },
           {
             "episode": 121,
-            "title": "The Miraculous Trump Card - Sleeping Giant Zushin!"
+            "title": "The Miraculous Trump Card - Sleeping Giant Zushin!",
+            "absoluteEpisode": 121,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/b2/YGO5D121.jpg/revision/latest/scale-to-width-down/500?cb=20100804134017",
+            "duration": "24m"
           },
           {
             "episode": 122,
-            "title": "Believe in the Power! The Strongest Giant Zushin vs Shooting Star Dragon"
+            "title": "Believe in the Power! The Strongest Giant Zushin vs Shooting Star Dragon",
+            "absoluteEpisode": 122,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/ab/YGO5D122.jpg/revision/latest/scale-to-width-down/500?cb=20100811095901",
+            "duration": "24m"
           },
           {
             "episode": 123,
-            "title": "Eyes on the Prize"
+            "title": "Eyes on the Prize",
+            "absoluteEpisode": 123,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/4/45/YGO5D123.png/revision/latest/scale-to-width-down/500?cb=20100819151208",
+            "duration": "24m"
           },
           {
             "episode": 124,
-            "title": "Duel For Redemption"
+            "title": "Duel For Redemption",
+            "absoluteEpisode": 124,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/35/YGO5D124.jpg/revision/latest/scale-to-width-down/500?cb=20100825111147",
+            "duration": "24m"
           },
           {
             "episode": 125,
-            "title": "Soul Solution"
+            "title": "Soul Solution",
+            "absoluteEpisode": 125,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/d/d4/YGO5D125.jpg/revision/latest/scale-to-width-down/500?cb=20100901104111",
+            "duration": "24m"
           },
           {
             "episode": 126,
-            "title": "When Nordic Gods Attack"
+            "title": "When Nordic Gods Attack",
+            "absoluteEpisode": 126,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/c/c8/YGO5D126.jpg/revision/latest/scale-to-width-down/500?cb=20100908105747",
+            "duration": "24m"
           },
           {
             "episode": 127,
-            "title": "Tricking The Trickster"
+            "title": "Tricking The Trickster",
+            "absoluteEpisode": 127,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/6/64/YGO5D127.jpg/revision/latest/scale-to-width-down/500?cb=20100915105142",
+            "duration": "24m"
           },
           {
             "episode": 128,
-            "title": "Yusei's Last Stand"
+            "title": "Yusei's Last Stand",
+            "absoluteEpisode": 128,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/0/02/YGO5D128.png/revision/latest/scale-to-width-down/500?cb=20150503214648",
+            "duration": "24m"
           },
           {
             "episode": 129,
-            "title": "Fight to the Finish Line"
+            "title": "Fight to the Finish Line",
+            "absoluteEpisode": 129,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/3e/YGO5D129.jpg/revision/latest/scale-to-width-down/500?cb=20100929094637",
+            "duration": "24m"
           },
           {
             "episode": 130,
-            "title": "Bound To The Future, Bonds To Our Companions"
+            "title": "Bound To The Future, Bonds To Our Companions",
+            "absoluteEpisode": 130,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/94/YGO5D130.jpg/revision/latest/scale-to-width-down/500?cb=20101006093629",
+            "duration": "24m"
           },
           {
             "episode": 131,
-            "title": "The Beginning of the End"
+            "title": "The Beginning of the End",
+            "absoluteEpisode": 131,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/1/1e/YGO5D131.jpg/revision/latest/scale-to-width-down/500?cb=20101013095329",
+            "duration": "24m"
           },
           {
             "episode": 132,
-            "title": "Dawn of the Machines"
+            "title": "Dawn of the Machines",
+            "absoluteEpisode": 132,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/5/53/YGO5D132.jpg/revision/latest/scale-to-width-down/500?cb=20101024084958",
+            "duration": "24m"
           },
           {
             "episode": 133,
-            "title": "Against All Odds"
+            "title": "Against All Odds",
+            "absoluteEpisode": 133,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/6/65/YGO5D133.jpg/revision/latest/scale-to-width-down/500?cb=20101027102648",
+            "duration": "24m"
           },
           {
             "episode": 134,
-            "title": "For Synchro's Sake"
+            "title": "For Synchro's Sake",
+            "absoluteEpisode": 134,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/9/9e/YGO5D134.jpg/revision/latest/scale-to-width-down/500?cb=20101110093922",
+            "duration": "24m"
           },
           {
             "episode": 135,
-            "title": "Flight for the Future (1)"
+            "title": "Flight for the Future (1)",
+            "absoluteEpisode": 135,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/b1/YGO5D135.jpg/revision/latest/scale-to-width-down/500?cb=20101117103422",
+            "duration": "24m"
           },
           {
             "episode": 136,
-            "title": "Flight for the Future (2)"
+            "title": "Flight for the Future (2)",
+            "absoluteEpisode": 136,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/3c/YGO5D136.jpg/revision/latest/scale-to-width-down/500?cb=20101124094801",
+            "duration": "24m"
           },
           {
             "episode": 137,
-            "title": "An Approaching Terror - The Citadel of God"
+            "title": "An Approaching Terror - The Citadel of God",
+            "absoluteEpisode": 137,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/fa/5Dx137_Ark_Cradle_descends.jpg/revision/latest/scale-to-width-down/500?cb=20101208103240",
+            "duration": "24m"
           },
           {
             "episode": 138,
-            "title": "The Path to the Future - The Rainbow Bridge Bifrost!"
+            "title": "The Path to the Future - The Rainbow Bridge Bifrost!",
+            "absoluteEpisode": 138,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/2/27/YGO5D138.jpg/revision/latest/scale-to-width-down/500?cb=20101208100228",
+            "duration": "24m"
           },
           {
             "episode": 139,
-            "title": "The Enchanting Field! École de Zone"
+            "title": "The Enchanting Field! École de Zone",
+            "absoluteEpisode": 139,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/ae/YGO5D139.jpg/revision/latest/scale-to-width-down/500?cb=20101215095028",
+            "duration": "24m"
           },
           {
             "episode": 140,
-            "title": "The Soul-Binding Gate! The Forbidden Future!"
+            "title": "The Soul-Binding Gate! The Forbidden Future!",
+            "absoluteEpisode": 140,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/4/41/YGO5D140.jpg/revision/latest/scale-to-width-down/500?cb=20101222100257",
+            "duration": "24m"
           },
           {
             "episode": 141,
-            "title": "The Duel of Despair! Fortissimo the Moving Fortress!"
+            "title": "The Duel of Despair! Fortissimo the Moving Fortress!",
+            "absoluteEpisode": 141,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/aa/YGO5D141.jpg/revision/latest/scale-to-width-down/500?cb=20101228111506",
+            "duration": "24m"
           },
           {
             "episode": 142,
-            "title": "A Life-or-Death Battle! Machine Divine Emperor Dragon Asterisk"
+            "title": "A Life-or-Death Battle! Machine Divine Emperor Dragon Asterisk",
+            "absoluteEpisode": 142,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/7/7a/YGO5D142.jpg/revision/latest/scale-to-width-down/500?cb=20110105100056",
+            "duration": "24m"
           },
           {
             "episode": 143,
-            "title": "The Miracle of Life"
+            "title": "The Miracle of Life",
+            "absoluteEpisode": 143,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/31/YGO5D143.jpg/revision/latest/scale-to-width-down/500?cb=20110112101059",
+            "duration": "24m"
           },
           {
             "episode": 144,
-            "title": "Death Battle for the Future! The Beginning of the End"
+            "title": "Death Battle for the Future! The Beginning of the End",
+            "absoluteEpisode": 144,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/4/48/YGO5D144.jpg/revision/latest/scale-to-width-down/500?cb=20110119095654",
+            "duration": "24m"
           },
           {
             "episode": 145,
-            "title": "Faster Than Light!!"
+            "title": "Faster Than Light!!",
+            "absoluteEpisode": 145,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/8/85/YGO5D145.jpg/revision/latest/scale-to-width-down/500?cb=20110126092836",
+            "duration": "24m"
           },
           {
             "episode": 146,
-            "title": "The Last Human , Z-One"
+            "title": "The Last Human , Z-One",
+            "absoluteEpisode": 146,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/f/f9/YGO5D146.jpg/revision/latest/scale-to-width-down/500?cb=20110202094839",
+            "duration": "24m"
           },
           {
             "episode": 147,
-            "title": "A Hope for the Future!"
+            "title": "A Hope for the Future!",
+            "absoluteEpisode": 147,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/a/a2/YGO5D147.jpg/revision/latest/scale-to-width-down/500?cb=20110209125653",
+            "duration": "24m"
           },
           {
             "episode": 148,
-            "title": "Just One Chance to Turn It All Around"
+            "title": "Just One Chance to Turn It All Around",
+            "absoluteEpisode": 148,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/b/b7/YGO5D148.jpg/revision/latest/scale-to-width-down/500?cb=20110216100500",
+            "duration": "24m"
           },
           {
             "episode": 149,
-            "title": "The Revived Hero"
+            "title": "The Revived Hero",
+            "absoluteEpisode": 149,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/c/c8/5Dx149_Transformation_work.jpg/revision/latest/scale-to-width-down/500?cb=20110304094240",
+            "duration": "24m"
           },
           {
             "episode": 150,
-            "title": "Feelings Entrusted from my Father"
+            "title": "Feelings Entrusted from my Father",
+            "absoluteEpisode": 150,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/d/d4/YGO5D150.jpg/revision/latest/scale-to-width-down/500?cb=20110302113956",
+            "duration": "24m"
           },
           {
             "episode": 151,
-            "title": "Clustering Wishes"
+            "title": "Clustering Wishes",
+            "absoluteEpisode": 151,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/3/3a/YGO5D151.jpg/revision/latest/scale-to-width-down/500?cb=20110309101215",
+            "duration": "24m"
           },
           {
             "episode": 152,
-            "title": "Moving Towards the Future"
+            "title": "Moving Towards the Future",
+            "absoluteEpisode": 152,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/c/c8/5Dx152_Jack_watching.jpg/revision/latest/scale-to-width-down/500?cb=20110325235015",
+            "duration": "24m"
           },
           {
             "episode": 153,
-            "title": "Clashing Souls!"
+            "title": "Clashing Souls!",
+            "absoluteEpisode": 153,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/1/14/5Dx153_Yusei_faces_Red_Nova_Dragon.jpg/revision/latest/scale-to-width-down/500?cb=20110330114107",
+            "duration": "24m"
           },
           {
             "episode": 154,
-            "title": "Shining Forth to the Future"
+            "title": "Shining Forth to the Future",
+            "absoluteEpisode": 154,
+            "thumbnail": "https://static.wikia.nocookie.net/yugioh/images/5/52/5Dx154_The_ending_scene.jpg/revision/latest/scale-to-width-down/500?cb=20110330095512",
+            "duration": "24m"
           }
         ]
       }
