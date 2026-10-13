@@ -4,10 +4,10 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Verity",
+    title: "Matchbox the Movie",
     type: "Movie",
     year: 2026,
-    rating: "6.1",
+    rating: "5.7",
     age: "R",
     duration: "1h 57m",
     genres: [
