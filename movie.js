@@ -816,19 +816,13 @@ async function initApp() {
   }
 
   const initStartTime = Date.now();
-  const MIN_INITIAL_LOAD_TIME = isNavigated ? 0 : 350;
+  const MIN_INITIAL_LOAD_TIME = 0; // Instant load: no forced artificial delays
 
   const dismissLoader = async () => {
-    const elapsed = Date.now() - initStartTime;
-    const remaining = Math.max(0, MIN_INITIAL_LOAD_TIME - elapsed);
-    if (remaining > 0) {
-      await new Promise((r) => setTimeout(r, remaining));
-    }
-
     // Complete top loading bar to 100%
     const bar = document.getElementById("cwTopLoadingBar");
     if (bar) {
-      bar.style.transition = "width 0.18s ease-out";
+      bar.style.transition = "width 0.15s ease-out";
       bar.style.width = "100%";
       setTimeout(() => {
         bar.style.opacity = "0";
@@ -836,13 +830,17 @@ async function initApp() {
           bar.classList.remove("active");
           bar.style.width = "0%";
           bar.style.transition = "";
-        }, 200);
-      }, 150);
+        }, 150);
+      }, 100);
     }
 
     const loader = document.getElementById("appLoader");
-    if (loader && loader.parentNode) {
-      loader.remove();
+    if (loader) {
+      loader.style.transition = "opacity 0.25s ease-out, visibility 0.25s ease-out";
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        if (loader.parentNode) loader.remove();
+      }, 250);
     }
   };
 
@@ -854,7 +852,7 @@ async function initApp() {
       console.warn("Event listeners binding warning:", e);
     }
 
-    // Load all movies & series from local data
+    // Load all movies & series from local data with fast pre-indexed structures
     await loadMediaFromAPI();
 
     loadState();
@@ -863,26 +861,34 @@ async function initApp() {
     updateWatchlistBadge();
     if (typeof initThemeAccent === 'function') initThemeAccent();
 
-    // Render default catalog carousels
-    renderCarousels();
-
-    // ALWAYS initialize hero banner so it is populated and ready for Home view
-    setupHeroBanner();
-    updateBrowseViewToggles();
-
     // Check for target section parameter from full-page reload
     const params = new URLSearchParams(window.location.search);
     const targetSection = params.get('section') || params.get('view');
+
+    // ALWAYS initialize hero banner FIRST so the top fold is instantly visible
+    setupHeroBanner();
+    updateBrowseViewToggles();
+
     if (targetSection && targetSection !== 'home' && SECTION_VIEWS.includes(targetSection)) {
       state.activeView = targetSection;
       _performSwitchView(targetSection);
+      await dismissLoader();
     } else {
       state.activeView = 'home';
-      // Render Home Shelves
-      renderContinueWatchingShelf();
-      if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
-      if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
-      updateSectionSEO('home');
+      // 1. Render above-the-fold priority carousels (Top 10 and Trending Movies)
+      await renderCarousels(true);
+
+      // 2. Dismiss loader IMMEDIATELY so user perceives zero lag!
+      await dismissLoader();
+
+      // 3. Render below-the-fold tracks asynchronously without blocking main thread
+      setTimeout(() => {
+        renderRemainingCarousels();
+        renderContinueWatchingShelf();
+        if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
+        if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+        updateSectionSEO('home');
+      }, 10);
     }
 
     // Start hero auto slide (managed by startHeroAutoplay)
