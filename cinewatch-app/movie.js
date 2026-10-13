@@ -776,6 +776,7 @@ async function initApp() {
 
     // ALWAYS initialize hero banner so it is populated and ready for Home view
     setupHeroBanner();
+    updateBrowseViewToggles();
 
     // Check for target section parameter from full-page reload
     const params = new URLSearchParams(window.location.search);
