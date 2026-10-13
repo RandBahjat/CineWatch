@@ -41,7 +41,7 @@ window._MOVIES_DATA = [
       "Drama",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/swcmyUx5lbtPB2Qd8S2VuPK901i.jpg",
     videoUrl: "1148365",
     trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
     overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
