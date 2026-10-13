@@ -292,7 +292,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Comedy",
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lNBxToxHWrzmkqeFnf1XADUTxQq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vCSLkuWMboVtEsBsRzZgx9pzPfG.jpg",
     videoUrl: "1477712",
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
