@@ -458,12 +458,13 @@ async function main() {
   const isDaemon = args.includes('--daemon');
   const isForce = args.includes('--force');
   const isRecent = args.includes('--recent');
+  const isAll = args.includes('--all');
 
   const titleArg = args.find(a => a.startsWith('--title='));
   const titleFilter = titleArg ? titleArg.split('=')[1].replace(/^["']|["']$/g, '').trim() : null;
 
   const batchArg = args.find(a => a.startsWith('--batch='));
-  const batchSize = batchArg ? parseInt(batchArg.split('=')[1], 10) : 40;
+  const batchSize = isAll ? 99999 : (batchArg ? parseInt(batchArg.split('=')[1], 10) : 40);
 
   const intervalArg = args.find(a => a.startsWith('--interval='));
   const intervalMinutes = intervalArg ? parseInt(intervalArg.split('=')[1], 10) : 120; // 2 hours default
