@@ -379,7 +379,7 @@ async function runRatingsBotCycle(options = {}) {
             const epRating = parseFloat(omdbEp.imdbRating);
             const oldRating = typeof localEp.rating === 'number' ? localEp.rating : parseFloat(localEp.rating);
 
-            if (isNaN(oldRating) || Math.abs(oldRating - epRating) >= 0.1) {
+            if (isNaN(oldRating) || Math.abs(oldRating - epRating) > 0.04) {
               localEp.rating = epRating;
               totalEpisodesUpdated++;
               titleUpdated = true;
