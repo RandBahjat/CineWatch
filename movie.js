@@ -1687,6 +1687,47 @@ function renderFilteredGrid(movieList, titleText) {
 // ==========================================
 
 
+/** Browse View Mode (Backdrop vs Poster) */
+function getBrowseViewMode() {
+  const saved = localStorage.getItem("cw_browse_view_mode");
+  if (saved === "poster" || saved === "backdrop") {
+    return saved;
+  }
+  // Default: on laptops / bigger screens, it's backdrop. On mobile (<= 768px), default to poster.
+  return (typeof window !== "undefined" && window.innerWidth <= 768) ? "poster" : "backdrop";
+}
+
+function updateBrowseViewToggles() {
+  const currentMode = getBrowseViewMode();
+  document.querySelectorAll(".browse-view-toggle").forEach((wrap) => {
+    wrap.querySelectorAll(".view-toggle-btn").forEach((btn) => {
+      const isMatch = btn.dataset.mode === currentMode;
+      btn.classList.toggle("active", isMatch);
+      btn.setAttribute("aria-pressed", isMatch ? "true" : "false");
+    });
+  });
+}
+
+function setBrowseViewMode(mode) {
+  if (mode !== "poster" && mode !== "backdrop") return;
+  localStorage.setItem("cw_browse_view_mode", mode);
+  updateBrowseViewToggles();
+
+  // Re-render currently active view
+  if (state.activeView === "movies") {
+    renderMoviesSection();
+  } else if (state.activeView === "series") {
+    renderSeriesSection();
+  } else if (state.activeView === "anime") {
+    renderAnimeSection();
+  } else if (state.activeView === "4k") {
+    render4kSection();
+  }
+}
+window.getBrowseViewMode = getBrowseViewMode;
+window.setBrowseViewMode = setBrowseViewMode;
+window.updateBrowseViewToggles = updateBrowseViewToggles;
+
 /** Render paginated cards into a grid container */
 function renderBrowseGrid(items, gridId, page) {
   const grid = document.getElementById(gridId);
@@ -1701,8 +1742,18 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join("");
+    const viewMode = getBrowseViewMode();
+    const isPoster = viewMode === "poster";
+    
+    if (isPoster) {
+      grid.classList.add("poster-view");
+      grid.classList.remove("backdrop-view");
+    } else {
+      grid.classList.add("backdrop-view");
+      grid.classList.remove("poster-view");
+    }
+
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isPoster)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
