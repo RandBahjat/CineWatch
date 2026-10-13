@@ -6,7 +6,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
-    "rating": 8.5,
+    "rating": 7.8,
     "age": "TV-14",
     "duration": "24m",
     "genres": [
