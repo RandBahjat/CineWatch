@@ -29,7 +29,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Matchbox the Movie",
+    title: "Animals",
     type: "Movie",
     year: 2026,
     rating: "5.7",
