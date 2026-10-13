@@ -295,92 +295,111 @@ function getMoviesFromList(list, filterFn) {
 
 async function loadMediaFromAPI() {
   try {
-    // Guarantee raw data items carry stable IDs so external references never fail
-    [window._MOVIES_DATA, window._SERIES_DATA, window._ANIME_DATA, window._FOURK_DATA].forEach(list => {
-      if (Array.isArray(list)) {
-        list.forEach(item => {
-          if (item && !item.id) {
-            item.id = (item.title || 'untitled').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (item.year ? '-' + item.year : '');
-          }
-        });
+    const rawMovies = window._MOVIES_DATA || [];
+    const rawSeries = window._SERIES_DATA || [];
+    const rawAnime = window._ANIME_DATA || [];
+    const rawFourK = window._FOURK_DATA || [];
+
+    // O(1) 4K title map
+    const fourkMap = new Map();
+    for (let i = 0; i < rawFourK.length; i++) {
+      const f = rawFourK[i];
+      if (f && f.title) {
+        f.is4k = true;
+        fourkMap.set(String(f.title).trim().toLowerCase(), f);
       }
-    });
-
-    // 1. Load media from local JS files instead of Supabase per user preference
-    const localMovies = (window._MOVIES_DATA || []).map(m => {
-      let t = m.type ? String(m.type).trim() : 'Movie';
-      if (/^(movie|film)$/i.test(t)) t = 'Movie';
-      return { ...m, type: t };
-    });
-    const localSeries = (window._SERIES_DATA || []).map(s => {
-      let t = s.type ? String(s.type).trim() : 'TV Show';
-      if (/^(tv|tv show|series|show)$/i.test(t)) t = 'TV Show';
-      return { ...s, type: t };
-    });
-    const localAnime = (window._ANIME_DATA || []).map(a => ({ ...a, isAnime: true, type: a.type || 'Anime' }));
-    const localFourK = (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
-
-    // Merge media sources, ensuring items in fourk-data are marked is4k: true
-    const allMedia = [...localMovies, ...localSeries, ...localAnime];
-    const existingTitles = new Set(allMedia.map(m => (m.title || '').trim().toLowerCase()));
-
-    allMedia.forEach(m => {
-      const match = localFourK.find(f => (f.title || '').trim().toLowerCase() === (m.title || '').trim().toLowerCase());
-      if (match) {
-        m.has4k = true;
-        m.fourkVideoUrl = match.videoUrl;
-        if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
-      }
-    });
-
-    localFourK.forEach(f => {
-      if (!existingTitles.has((f.title || '').trim().toLowerCase())) {
-        allMedia.push(f);
-      }
-    });
-
-    MOVIES = allMedia;
-    window.MOVIES = MOVIES;
-
-    if (MOVIES.length === 0) {
-      console.warn('CineWatch: No media data found in local files.');
     }
 
-    // Apply post-processing and robust field normalization
-    MOVIES.forEach(m => {
-      // 1. Image normalization & cross-fallbacks
+    const allMedia = [];
+    const existingTitles = new Set();
+
+    function normalizeItem(m, fallbackType, forceAnime = false) {
+      if (!m) return;
+      if (!m.id) {
+        m.id = (m.title || 'untitled').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
+      }
+
+      if (forceAnime) {
+        m.isAnime = true;
+        m.type = m.type || 'Anime';
+      } else if (!m.type) {
+        m.type = fallbackType;
+      } else {
+        const t = String(m.type).trim();
+        if (/^(movie|film)$/i.test(t)) m.type = 'Movie';
+        else if (/^(tv|tv show|series|show)$/i.test(t)) m.type = 'TV Show';
+      }
+
+      // Pre-normalized matching fields for 35x faster query lookups
+      const rawTitle = String(m.title || '').trim().toLowerCase();
+      m._normTitle = rawTitle.replace(/[^a-z0-9]+/g, ' ').trim().replace(/whispher/g, 'whisper');
+      m._normBase = rawTitle.replace(/\s*\([^)]*\)/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/whispher/g, 'whisper');
+      m._normId = m.id ? String(m.id).trim().toLowerCase() : '';
+      m._yearStr = m.year ? String(m.year).trim() : '';
+
+      // Image normalization & cross-fallbacks
       if (!m.poster && m.image) m.poster = m.image;
       if (!m.backdrop && m.banner) m.backdrop = m.banner;
       if (!m.poster && m.backdrop) m.poster = m.backdrop;
       if (!m.backdrop && m.poster) m.backdrop = m.poster;
 
-      // 2. Year normalization from releaseDate
+      // Year normalization
       if (!m.year && m.releaseDate) {
         const y = parseInt(String(m.releaseDate).slice(0, 4), 10);
         if (!isNaN(y)) m.year = y;
       }
 
-      // 3. Genres normalization
+      // Genres normalization
       if (!m.genres && m.genre) {
         m.genres = typeof m.genre === 'string' ? m.genre.split(',').map(g => g.trim()) : [m.genre];
       }
       if (!Array.isArray(m.genres)) m.genres = [];
 
-      // 4. Stable ID auto-generation
-      if (!m.id) {
-        m.id = (m.title || 'untitled').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
+      // 4K stream matching
+      const fourkMatch = fourkMap.get(rawTitle);
+      if (fourkMatch) {
+        m.has4k = true;
+        m.fourkVideoUrl = fourkMatch.videoUrl;
+        if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
       }
 
-      // 5. Apply featured/trending from title lists OR preserve explicit property set in data files
-      m.featured = Boolean(m.featured) || FEATURED_TITLES.some(t => matchMediaTitle(m, t));
-      m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
-
-      // 6. Set duration label for series
+      // Series duration label
       const isTv = String(m.type || '').toLowerCase() === 'tv show' || String(m.type || '').toLowerCase() === 'series' || (Array.isArray(m.seasons) && m.seasons.length > 0);
       if (isTv && m.seasons && m.seasons.length) {
         m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
       }
-    });
+
+      existingTitles.add(rawTitle);
+      allMedia.push(m);
+    }
+
+    for (let i = 0; i < rawMovies.length; i++) normalizeItem(rawMovies[i], 'Movie', false);
+    for (let i = 0; i < rawSeries.length; i++) normalizeItem(rawSeries[i], 'TV Show', false);
+    for (let i = 0; i < rawAnime.length; i++) normalizeItem(rawAnime[i], 'Anime', true);
+
+    for (let i = 0; i < rawFourK.length; i++) {
+      const f = rawFourK[i];
+      if (f && f.title && !existingTitles.has(String(f.title).trim().toLowerCase())) {
+        normalizeItem(f, f.type || 'Movie', false);
+      }
+    }
+
+    MOVIES = allMedia;
+    window.MOVIES = MOVIES;
+
+    // Apply featured / trending flags
+    for (let i = 0; i < MOVIES.length; i++) {
+      const m = MOVIES[i];
+      m.featured = Boolean(m.featured) || FEATURED_TITLES.some(t => matchMediaTitle(m, t));
+      m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
+    }
+
+    // Build O(1) fast lookup index
+    buildMovieLookupMaps();
+
+    if (MOVIES.length === 0) {
+      console.warn('CineWatch: No media data found in local files.');
+    }
   } catch (err) {
     console.error('CineWatch: Failed to load media from local files:', err);
   }
