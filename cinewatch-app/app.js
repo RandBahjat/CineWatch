@@ -1450,7 +1450,7 @@ const ANIME_MAL_MAP = {
   '60863': 20583,    // Haikyu!!
   '61374': 22319,    // Tokyo Ghoul
   '902': 481,        // Yu-Gi-Oh! Duel Monsters
-  '63367': 30694,    // Dragon Ball Super: Beerus
+  '63367': 63367,    // Dragon Ball Super: Beerus
 };
 
 function getAnimeMalId(refMovie, dataId) {
@@ -1459,7 +1459,7 @@ function getAnimeMalId(refMovie, dataId) {
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
-    if (t.includes('beerus')) return 30694;
+    if (t.includes('beerus')) return 63367;
     if (t.includes('one piece')) return 21;
     if (t.includes('bleach')) return 269;
     if (t.includes('shippuden')) return 1735;

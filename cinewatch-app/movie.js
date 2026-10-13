@@ -7272,7 +7272,7 @@ const ANIME_MAL_MAP = {
   '12536': 482,      // Yu-Gi-Oh! GX
   '20695': 3972,     // Yu-Gi-Oh! 5D's
   '73223': 34572,    // Black Clover
-  '63367': 30694,    // Dragon Ball Super: Beerus
+  '63367': 63367,    // Dragon Ball Super: Beerus
 };
 
 const ANIME_ANILIST_MAP = {
@@ -7280,7 +7280,7 @@ const ANIME_ANILIST_MAP = {
   '12971': 813,      // Dragon Ball Z
   '236994': 170083,  // Dragon Ball DAIMA
   '62715': 21175,    // Dragon Ball Super
-  '63367': 21175,    // Dragon Ball Super: Beerus
+  '63367': 206814,   // Dragon Ball Super: Beerus
   '12697': 225,      // Dragon Ball GT
   '61709': 6033,     // Dragon Ball Z Kai
   '46260': 20,       // Naruto
@@ -7312,7 +7312,7 @@ function getAnimeAniListId(refMovie, dataId) {
   if (ANIME_ANILIST_MAP[key]) return ANIME_ANILIST_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
-    if (t.includes('beerus')) return 21175;
+    if (t.includes('beerus')) return 206814;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
     if (t.includes('daima')) return 170083;
@@ -7346,7 +7346,7 @@ function getAnimeMalId(refMovie, dataId) {
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
-    if (t.includes('beerus')) return 30694;
+    if (t.includes('beerus')) return 63367;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
     if (t.includes('daima')) return 56894;
@@ -7661,9 +7661,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  const streamUrl = cleanUrl || (isAnime && malId
-    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-    : '');
+  const streamUrl = cleanUrl || '';
 
   let driveIframeUrl = '';
   const rawVidString = String(videoUrl || ref?.videoUrl || '');
@@ -7676,7 +7674,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
   if ((!streamUrl && iframe) || driveIframeUrl) {
-    iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+    iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.classList.add("hidden");
@@ -7975,7 +7973,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       mutex: true,
       backdrop: false,
       playsInline: true,
-      autoPlayback: true,
+      autoPlayback: false,
       airplay: true,
       theme: '#e50914',
       lang: navigator.language ? navigator.language.toLowerCase() : 'en',
