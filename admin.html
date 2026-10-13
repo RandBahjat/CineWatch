@@ -215,6 +215,7 @@
           <select id="mediaType">
             <option value="movie">Movie</option>
             <option value="tv">TV Show / Series</option>
+            <option value="anime">Anime</option>
           </select>
         </div>
       </div>
@@ -455,21 +456,22 @@
 
         const payload = {
           title: data.title || data.name,
-          category: type === 'movie' ? 'Movies' : 'Series',
-          genre: data.genres ? data.genres.map(g => g.name).join(", ") : "Unknown",
+          type: type === 'movie' ? 'Movie' : (type === 'anime' ? 'Anime' : 'TV Show'),
+          year: parseInt((data.release_date || data.first_air_date || '').slice(0, 4), 10) || new Date().getFullYear(),
           rating: data.vote_average ? data.vote_average.toFixed(1) : "N/A",
-          image: data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : "",
-          banner: data.backdrop_path ? `https://image.tmdb.org/t/p/original${data.backdrop_path}` : "",
-          duration: type === 'movie' ? `${data.runtime || 0} min` : `${data.number_of_seasons || 1} Season`,
-          releaseDate: data.release_date || data.first_air_date || "Unknown",
-          videoUrl: id,
+          duration: type === 'movie' ? `${Math.floor((data.runtime || 0) / 60)}h ${(data.runtime || 0) % 60}m` : `${data.number_of_seasons || 1} Season`,
+          genres: data.genres ? data.genres.map(g => g.name) : ["Action"],
+          poster: data.poster_path ? `https://image.tmdb.org/t/p/w600_and_h900_face${data.poster_path}` : "",
+          backdrop: data.backdrop_path ? `https://image.tmdb.org/t/p/original${data.backdrop_path}` : "",
+          videoUrl: String(id),
+          trailerUrl: "",
           overview: data.overview || "",
           director: "Unknown",
-          cast: credData.cast.slice(0, 3).map(c => c.name),
-          trending: false,
+          cast: credData.cast.slice(0, 4).map(c => c.name),
+          trending: true,
           featured: false,
           is4k: false,
-          seasons: type === 'tv' && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Ep 1" }] }] : []
+          seasons: (type === 'tv' || type === 'anime') && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Episode 1" }] }] : []
         };
 
         const jsonStr = JSON.stringify(payload, null, 2);
