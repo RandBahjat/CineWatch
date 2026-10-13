@@ -11448,7 +11448,7 @@ window._ANIME_DATA = [
     ],
     "trending": true,
     "featured": false,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,

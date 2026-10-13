@@ -368,6 +368,10 @@ async function loadMediaFromAPI() {
       if (isTv && m.seasons && m.seasons.length) {
         m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
       }
+      if (isTv || forceAnime || m.isAnime) {
+        m.is4k = false;
+        m.has4k = false;
+      }
 
       existingTitles.add(rawTitle);
       allMedia.push(m);
@@ -1164,6 +1168,8 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
   const displayType = movie.isAnime ? "Anime" : (movie.type || (movie.seasons ? "TV Show" : "Movie"));
+  const isSeriesOrAnime = movie.isAnime || displayType === 'Anime' || displayType === 'Series' || displayType === 'TV Show' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime';
+  const show4KBadge = !isSeriesOrAnime && (state.activeView === '4k' || (movie.is4k && state.activeView === '4k'));
   const rankHtml = rank !== null ? `
     <div class="top10-rank-badge">
       <span class="top10-rank-text">TOP</span>
@@ -1195,7 +1201,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         <div class="card-meta">
           <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">&#9733;</span>${formatRating(movie.rating)}</span>
           ${movie.age ? `<span class="card-age badge-age notranslate" translate="no">${movie.age}</span>` : ''}
-          <span class="card-quality badge-quality notranslate" translate="no" ${state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies') ? 'style="border-color: rgba(229,9,20,0.45); color: #ff5252;"' : ''}>${state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies') ? '4K' : 'HD'}</span>
+          <span class="card-quality badge-quality notranslate" translate="no" ${show4KBadge ? 'style="border-color: rgba(229,9,20,0.45); color: #ff5252;"' : ''}>${show4KBadge ? '4K' : 'HD'}</span>
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
@@ -3361,8 +3367,9 @@ function openDetailsModal(movieId) {
       durationEl.parentNode.insertBefore(qualityBadge, sep.nextSibling);
     }
     if (qualityBadge) {
-      const isFrom4k = state.activeView === '4k' || state.previousView === '4k' || new URLSearchParams(window.location.search).get('section') === '4k';
-      const is4kActive = isFrom4k ? Boolean(movie.has4k || movie.is4k) : Boolean(movie.is4k && state.previousView !== 'movies');
+      const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
+      const isFrom4k = (state.activeView === '4k' || state.previousView === '4k' || new URLSearchParams(window.location.search).get('section') === '4k') && !isSeriesOrAnime;
+      const is4kActive = !isSeriesOrAnime && (isFrom4k ? Boolean(movie.has4k || movie.is4k) : Boolean(movie.is4k && state.previousView === '4k'));
       qualityBadge.textContent = is4kActive ? "4K UHD" : "HD";
       qualityBadge.style.cssText = is4kActive
         ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"

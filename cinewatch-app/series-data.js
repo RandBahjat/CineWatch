@@ -282,7 +282,7 @@ window._SERIES_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -378,7 +378,7 @@ window._SERIES_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -785,7 +785,7 @@ window._SERIES_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -29516,7 +29516,7 @@ window._SERIES_DATA = [
     ],
     "trending": false,
     "featured": false,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -109775,7 +109775,7 @@ window._SERIES_DATA = [
     ],
     "trending": false,
     "featured": false,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -109889,7 +109889,7 @@ window._SERIES_DATA = [
     ],
     "trending": false,
     "featured": false,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
@@ -111765,7 +111765,7 @@ window._SERIES_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": true,
+    "is4k": false,
     "seasons": [
       {
         "season": 1,
