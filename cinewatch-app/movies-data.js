@@ -88,8 +88,8 @@ window._MOVIES_DATA = [
     duration: "1h 59m",
     genres: [
       "Action",
-      "Mystery",
-      "Thriller",
+      "Adventure",
+      "Fantasy",
       "Psychological"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
