@@ -44,7 +44,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/swcmyUx5lbtPB2Qd8S2VuPK901i.jpg",
     videoUrl: "1236045",
     trailerUrl: "https://youtu.be/mlBfQJ8oxB0?si=9jiHFHqp3t7QORSK",
-    overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
+    overview: "A wealthy mayoral candidate and his glamorous wife find their privileged lives shattered when their son is kidnapped by a ruthless criminal syndicate. Refusing to yield to exorbitant ransom demands and sensing police corruption, the couple is pushed to their absolute moral limits as they take matters into their own hands, blurring the line between civilized humans and desperate, predatory animals.",
     overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
     director: "Sam Hargrave",
     cast: ["John Cena, Jessica Biel, Arturo Castro"],
