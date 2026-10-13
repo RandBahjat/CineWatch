@@ -5294,6 +5294,33 @@ function setupVipEventListeners() {
       showToast("Transaction reference submitted! Admin notified.");
     };
   }
+
+  // Handle direct VIP link / redirect from membership.html
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const targetTier = urlParams.get('vipTier') || urlParams.get('tier');
+    const targetCycle = urlParams.get('vipCycle') || urlParams.get('billing');
+    if (targetTier || urlParams.has('openVip') || urlParams.has('membership')) {
+      if (targetCycle && typeof setVipBillingCycle === 'function') {
+        setVipBillingCycle(targetCycle);
+      }
+      setTimeout(() => {
+        if (typeof openVipModal === 'function') openVipModal();
+        if (targetTier && VIP_TIER_CONFIG[targetTier]) {
+          const cycle = targetCycle || currentVipBillingCycle || 'yearly';
+          const tierData = VIP_TIER_CONFIG[targetTier][cycle] || VIP_TIER_CONFIG[targetTier].monthly;
+          if (typeof selectVipTier === 'function') {
+            selectVipTier({
+              tier: targetTier,
+              name: `${VIP_TIER_CONFIG[targetTier].name} (${cycle === 'yearly' ? 'Annual' : cycle === 'quarterly' ? '3 Months' : 'Monthly'})`,
+              price: tierData.price,
+              iqd: tierData.iqd || ""
+            });
+          }
+        }
+      }, 400);
+    }
+  } catch(e) {}
 }
 
 // ==========================================
