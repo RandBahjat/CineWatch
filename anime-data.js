@@ -27239,11 +27239,13 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Strongest Man"
+            "title": "The Strongest Man",
+            "rating": 8.3
           },
           {
             "episode": 2,
-            "title": "The Lone Cyborg"
+            "title": "The Lone Cyborg",
+            "rating": 8.6
           },
           {
             "episode": 3,
@@ -27251,11 +27253,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 4,
-            "title": "The Modern Ninja"
+            "title": "The Modern Ninja",
+            "rating": 8.4
           },
           {
             "episode": 5,
-            "title": "The Ultimate Master"
+            "title": "The Ultimate Master",
+            "rating": 8.8
           },
           {
             "episode": 6,
@@ -27263,7 +27267,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 7,
-            "title": "The Ultimate Disciple"
+            "title": "The Ultimate Disciple",
+            "rating": 8.7
           },
           {
             "episode": 8,
@@ -27271,7 +27276,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "Unyielding Justice"
+            "title": "Unyielding Justice",
+            "rating": 9.2
           },
           {
             "episode": 10,
@@ -27283,7 +27289,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 12,
-            "title": "The Strongest Hero"
+            "title": "The Strongest Hero",
+            "rating": 9.5
           }
         ]
       },
@@ -27292,47 +27299,58 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Return of the Hero"
+            "title": "Return of the Hero",
+            "rating": 7.9
           },
           {
             "episode": 2,
-            "title": "Human Monster"
+            "title": "Human Monster",
+            "rating": 8.3
           },
           {
             "episode": 3,
-            "title": "The Hunt Begins"
+            "title": "The Hunt Begins",
+            "rating": 8.8
           },
           {
             "episode": 4,
-            "title": "Metal Bat"
+            "title": "Metal Bat",
+            "rating": 7.6
           },
           {
             "episode": 5,
-            "title": "Martial Arts Tournament"
+            "title": "Martial Arts Tournament",
+            "rating": 7.3
           },
           {
             "episode": 6,
-            "title": "The Uprising of the Monsters"
+            "title": "The Uprising of the Monsters",
+            "rating": 7.5
           },
           {
             "episode": 7,
-            "title": "The Class S Heroes"
+            "title": "The Class S Heroes",
+            "rating": 8.7
           },
           {
             "episode": 8,
-            "title": "The Resistance of the Strong"
+            "title": "The Resistance of the Strong",
+            "rating": 8.5
           },
           {
             "episode": 9,
-            "title": "The Troubles of the Strongest"
+            "title": "The Troubles of the Strongest",
+            "rating": 7.9
           },
           {
             "episode": 10,
-            "title": "Justice Under Siege"
+            "title": "Justice Under Siege",
+            "rating": 7.7
           },
           {
             "episode": 11,
-            "title": "The Varieties of Pride"
+            "title": "The Varieties of Pride",
+            "rating": 8.9
           },
           {
             "episode": 12,
@@ -27345,47 +27363,58 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Strategy Meeting"
+            "title": "The Strategy Meeting",
+            "rating": 5.7
           },
           {
             "episode": 2,
-            "title": "Monster Traits"
+            "title": "Monster Traits",
+            "rating": 3.5
           },
           {
             "episode": 3,
-            "title": "Organism Limits"
+            "title": "Organism Limits",
+            "rating": 3.5
           },
           {
             "episode": 4,
-            "title": "Counterattack Signal"
+            "title": "Counterattack Signal",
+            "rating": 3.2
           },
           {
             "episode": 5,
-            "title": "Monster King"
+            "title": "Monster King",
+            "rating": 3.7
           },
           {
             "episode": 6,
-            "title": "Motley Heroes"
+            "title": "Motley Heroes",
+            "rating": 1.5
           },
           {
             "episode": 7,
-            "title": "Counterstrike"
+            "title": "Counterstrike",
+            "rating": 2.5
           },
           {
             "episode": 8,
-            "title": "Ninja Tale"
+            "title": "Ninja Tale",
+            "rating": 6.3
           },
           {
             "episode": 9,
-            "title": "Brave Child"
+            "title": "Brave Child",
+            "rating": 5.2
           },
           {
             "episode": 10,
-            "title": "Immortal Bloodbath"
+            "title": "Immortal Bloodbath",
+            "rating": 2.4
           },
           {
             "episode": 11,
-            "title": "Top Dragons"
+            "title": "Top Dragons",
+            "rating": 4.1
           },
           {
             "episode": 12,
@@ -27400,7 +27429,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
-    "rating": 8.9,
+    "rating": "8.5",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -27431,7 +27460,8 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "I'm Used to It"
+            "title": "I'm Used to It",
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -27439,23 +27469,28 @@ window._ANIME_DATA = [
           },
           {
             "episode": 3,
-            "title": "It's Like a Game"
+            "title": "It's Like a Game",
+            "rating": 8
           },
           {
             "episode": 4,
-            "title": "I've Gotta Get Stronger"
+            "title": "I've Gotta Get Stronger",
+            "rating": 8.6
           },
           {
             "episode": 5,
-            "title": "A Pretty Good Deal"
+            "title": "A Pretty Good Deal",
+            "rating": 8
           },
           {
             "episode": 6,
-            "title": "The Real Hunt Begins"
+            "title": "The Real Hunt Begins",
+            "rating": 9.2
           },
           {
             "episode": 7,
-            "title": "Let's See How Far I Can Go"
+            "title": "Let's See How Far I Can Go",
+            "rating": 8.5
           },
           {
             "episode": 8,
@@ -27463,19 +27498,23 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "You've Been Hiding Your Skills"
+            "title": "You've Been Hiding Your Skills",
+            "rating": 7.9
           },
           {
             "episode": 10,
-            "title": "What Is This, a Picnic?"
+            "title": "What Is This, a Picnic?",
+            "rating": 8.7
           },
           {
             "episode": 11,
-            "title": "A Knight Who Defends an Empty Throne"
+            "title": "A Knight Who Defends an Empty Throne",
+            "rating": 8.8
           },
           {
             "episode": 12,
-            "title": "Arise"
+            "title": "Arise",
+            "rating": 9.1
           }
         ]
       },
@@ -27484,7 +27523,8 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "You aren't E-rank, are You"
+            "title": "You aren't E-rank, are You",
+            "rating": 9
           },
           {
             "episode": 2,
@@ -27492,11 +27532,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 3,
-            "title": "Still a Long Way to Go"
+            "title": "Still a Long Way to Go",
+            "rating": 8.5
           },
           {
             "episode": 4,
-            "title": "I Need to Stop Faking"
+            "title": "I Need to Stop Faking",
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -27504,35 +27546,43 @@ window._ANIME_DATA = [
           },
           {
             "episode": 6,
-            "title": "Don't Look Down on My Guys"
+            "title": "Don't Look Down on My Guys",
+            "rating": 9.5
           },
           {
             "episode": 7,
-            "title": "The 10th S-rank Hunter"
+            "title": "The 10th S-rank Hunter",
+            "rating": 8.5
           },
           {
             "episode": 8,
-            "title": "Looking Up Was Tiring Me Out"
+            "title": "Looking Up Was Tiring Me Out",
+            "rating": 9.4
           },
           {
             "episode": 9,
-            "title": "It Was All Worth It"
+            "title": "It Was All Worth It",
+            "rating": 8.7
           },
           {
             "episode": 10,
-            "title": "We Need a Hero"
+            "title": "We Need a Hero",
+            "rating": 8.6
           },
           {
             "episode": 11,
-            "title": "It's Going to Get Even More Intense"
+            "title": "It's Going to Get Even More Intense",
+            "rating": 9.6
           },
           {
             "episode": 12,
-            "title": "Are You the King of Humans"
+            "title": "Are You the King of Humans",
+            "rating": 9.7
           },
           {
             "episode": 13,
-            "title": "On to the Next Target"
+            "title": "On to the Next Target",
+            "rating": 9
           }
         ]
       }
@@ -27575,55 +27625,68 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Ryomen Sukuna"
+            "title": "Ryomen Sukuna",
+            "rating": 8.1
           },
           {
             "episode": 2,
-            "title": "For Myself"
+            "title": "For Myself",
+            "rating": 7.9
           },
           {
             "episode": 3,
-            "title": "Girl of Steel"
+            "title": "Girl of Steel",
+            "rating": 7.6
           },
           {
             "episode": 4,
-            "title": "Curse Womb Must Die"
+            "title": "Curse Womb Must Die",
+            "rating": 8.8
           },
           {
             "episode": 5,
-            "title": "Curse Womb Must Die -II-"
+            "title": "Curse Womb Must Die -II-",
+            "rating": 8.3
           },
           {
             "episode": 6,
-            "title": "After Rain"
+            "title": "After Rain",
+            "rating": 8.1
           },
           {
             "episode": 7,
-            "title": "Assault"
+            "title": "Assault",
+            "rating": 9.3
           },
           {
             "episode": 8,
-            "title": "Boredom"
+            "title": "Boredom",
+            "rating": 7.5
           },
           {
             "episode": 9,
-            "title": "Small Fry and Reverse Retribution"
+            "title": "Small Fry and Reverse Retribution",
+            "rating": 7.9
           },
           {
             "episode": 10,
-            "title": "Idle Transfiguration"
+            "title": "Idle Transfiguration",
+            "rating": 8.2
           },
           {
             "episode": 11,
-            "title": "Narrow-minded"
+            "title": "Narrow-minded",
+            "rating": 8.4
           },
           {
             "episode": 12,
-            "title": "To You, Someday"
+            "title": "To You, Someday",
+            "rating": 9.4
           },
           {
             "episode": 13,
-            "title": "Tomorrow"
+            "title": "Tomorrow",
+            "rating": 9.3
           },
           {
             "episode": 14,
@@ -27635,39 +27698,48 @@ window._ANIME_DATA = [
           },
           {
             "episode": 16,
-            "title": "Kyoto Sister School Exchange Event - Group Battle 2 -"
+            "title": "Kyoto Sister School Exchange Event - Group Battle 2 -",
+            "rating": 8.5
           },
           {
             "episode": 17,
-            "title": "Kyoto Sister School Exchange Event - Group Battle 3 -"
+            "title": "Kyoto Sister School Exchange Event - Group Battle 3 -",
+            "rating": 8.7
           },
           {
             "episode": 18,
-            "title": "Sage"
+            "title": "Sage",
+            "rating": 8.8
           },
           {
             "episode": 19,
-            "title": "Black Flash"
+            "title": "Black Flash",
+            "rating": 9.4
           },
           {
             "episode": 20,
-            "title": "Nonstandard"
+            "title": "Nonstandard",
+            "rating": 9.6
           },
           {
             "episode": 21,
-            "title": "Jujutsu Koshien"
+            "title": "Jujutsu Koshien",
+            "rating": 7.5
           },
           {
             "episode": 22,
-            "title": "The Origin of Blind Obedience"
+            "title": "The Origin of Blind Obedience",
+            "rating": 7.7
           },
           {
             "episode": 23,
-            "title": "The Origin of Blind Obedience - 2 -"
+            "title": "The Origin of Blind Obedience - 2 -",
+            "rating": 9
           },
           {
             "episode": 24,
-            "title": "Accomplices"
+            "title": "Accomplices",
+            "rating": 9.3
           },
           {
             "episode": 25,
@@ -27818,7 +27890,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2022,
-    "rating": 8.7,
+    "rating": "8.3",
     "age": "TV-MA",
     "duration": "24m",
     "genres": [
@@ -27849,31 +27921,38 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Dog & Chainsaw"
+            "title": "Dog & Chainsaw",
+            "rating": 8.7
           },
           {
             "episode": 2,
-            "title": "Arrival in Tokyo"
+            "title": "Arrival in Tokyo",
+            "rating": 8
           },
           {
             "episode": 3,
-            "title": "Meowy's Whereabouts"
+            "title": "Meowy's Whereabouts",
+            "rating": 8.6
           },
           {
             "episode": 4,
-            "title": "Rescue"
+            "title": "Rescue",
+            "rating": 8.4
           },
           {
             "episode": 5,
-            "title": "Gun Devil"
+            "title": "Gun Devil",
+            "rating": 8.3
           },
           {
             "episode": 6,
-            "title": "Kill Denji"
+            "title": "Kill Denji",
+            "rating": 8.4
           },
           {
             "episode": 7,
-            "title": "The Taste of a Kiss"
+            "title": "The Taste of a Kiss",
+            "rating": 8
           },
           {
             "episode": 8,
@@ -27881,19 +27960,23 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "From Kyoto"
+            "title": "From Kyoto",
+            "rating": 9.2
           },
           {
             "episode": 10,
-            "title": "Bruised & Battered"
+            "title": "Bruised & Battered",
+            "rating": 8.1
           },
           {
             "episode": 11,
-            "title": "Mission Start"
+            "title": "Mission Start",
+            "rating": 8.4
           },
           {
             "episode": 12,
-            "title": "Katana vs. Chainsaw"
+            "title": "Katana vs. Chainsaw",
+            "rating": 8.8
           }
         ]
       }
@@ -27935,103 +28018,128 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Rebirth"
+            "title": "Rebirth",
+            "rating": 8.4
           },
           {
             "episode": 2,
-            "title": "Confrontation"
+            "title": "Confrontation",
+            "rating": 9
           },
           {
             "episode": 3,
-            "title": "Dealings"
+            "title": "Dealings",
+            "rating": 8.4
           },
           {
             "episode": 4,
-            "title": "Pursuit"
+            "title": "Pursuit",
+            "rating": 8.7
           },
           {
             "episode": 5,
-            "title": "Tactics"
+            "title": "Tactics",
+            "rating": 8.5
           },
           {
             "episode": 6,
-            "title": "Unraveling"
+            "title": "Unraveling",
+            "rating": 8.2
           },
           {
             "episode": 7,
-            "title": "Overcast"
+            "title": "Overcast",
+            "rating": 9.1
           },
           {
             "episode": 8,
-            "title": "Glare"
+            "title": "Glare",
+            "rating": 8.4
           },
           {
             "episode": 9,
-            "title": "Encounter"
+            "title": "Encounter",
+            "rating": 8.5
           },
           {
             "episode": 10,
-            "title": "Doubt"
+            "title": "Doubt",
+            "rating": 8.1
           },
           {
             "episode": 11,
-            "title": "Assault"
+            "title": "Assault",
+            "rating": 8.7
           },
           {
             "episode": 12,
-            "title": "Love"
+            "title": "Love",
+            "rating": 8.2
           },
           {
             "episode": 13,
-            "title": "Confession"
+            "title": "Confession",
+            "rating": 8.3
           },
           {
             "episode": 14,
-            "title": "Friend"
+            "title": "Friend",
+            "rating": 8.2
           },
           {
             "episode": 15,
-            "title": "Wager"
+            "title": "Wager",
+            "rating": 8.9
           },
           {
             "episode": 16,
-            "title": "Decision"
+            "title": "Decision",
+            "rating": 8.3
           },
           {
             "episode": 17,
-            "title": "Execution"
+            "title": "Execution",
+            "rating": 8
           },
           {
             "episode": 18,
-            "title": "Ally"
+            "title": "Ally",
+            "rating": 7.3
           },
           {
             "episode": 19,
-            "title": "Matsuda"
+            "title": "Matsuda",
+            "rating": 7.6
           },
           {
             "episode": 20,
-            "title": "Makeshift"
+            "title": "Makeshift",
+            "rating": 7.3
           },
           {
             "episode": 21,
-            "title": "Performance"
+            "title": "Performance",
+            "rating": 7.7
           },
           {
             "episode": 22,
-            "title": "Guidance"
+            "title": "Guidance",
+            "rating": 8.1
           },
           {
             "episode": 23,
-            "title": "Frenzy"
+            "title": "Frenzy",
+            "rating": 8.8
           },
           {
             "episode": 24,
-            "title": "Revival"
+            "title": "Revival",
+            "rating": 9.3
           },
           {
             "episode": 25,
-            "title": "Silence"
+            "title": "Silence",
+            "rating": 9.5
           },
           {
             "episode": 26,
@@ -28051,11 +28159,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 30,
-            "title": "Justice"
+            "title": "Justice",
+            "rating": 7.6
           },
           {
             "episode": 31,
-            "title": "Transfer"
+            "title": "Transfer",
+            "rating": 7.6
           },
           {
             "episode": 32,
@@ -28071,15 +28181,18 @@ window._ANIME_DATA = [
           },
           {
             "episode": 35,
-            "title": "Malice"
+            "title": "Malice",
+            "rating": 7.9
           },
           {
             "episode": 36,
-            "title": "1.28"
+            "title": "1.28",
+            "rating": 8.9
           },
           {
             "episode": 37,
-            "title": "New World"
+            "title": "New World",
+            "rating": 8.6
           }
         ]
       }
@@ -28121,7 +28234,8 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Departure × and × Friends"
+            "title": "Departure × and × Friends",
+            "rating": 7.5
           },
           {
             "episode": 2,
@@ -28141,7 +28255,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 6,
-            "title": "A × Surprising × Challenge"
+            "title": "A × Surprising × Challenge",
+            "rating": 7.2
           },
           {
             "episode": 7,
@@ -28153,15 +28268,18 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "Beware × of × Prisoners"
+            "title": "Beware × of × Prisoners",
+            "rating": 8.1
           },
           {
             "episode": 10,
-            "title": "Trick × to × The Trick"
+            "title": "Trick × to × The Trick",
+            "rating": 7.7
           },
           {
             "episode": 11,
-            "title": "Trouble × with × The Gamble"
+            "title": "Trouble × with × The Gamble",
+            "rating": 8.4
           },
           {
             "episode": 12,
@@ -28169,7 +28287,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 13,
-            "title": "Letter × from × Gon"
+            "title": "Letter × from × Gon",
+            "rating": 4.1
           },
           {
             "episode": 14,
@@ -28181,7 +28300,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 16,
-            "title": "Defeat × and × Disgrace"
+            "title": "Defeat × and × Disgrace",
+            "rating": 8.7
           },
           {
             "episode": 17,
@@ -28197,7 +28317,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 20,
-            "title": "フカカイ×ナ×テンカイ"
+            "title": "フカカイ×ナ×テンカイ",
+            "rating": 8.9
           },
           {
             "episode": 21,
@@ -28213,7 +28334,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 24,
-            "title": "ゾルディック×ノ×カゾク"
+            "title": "ゾルディック×ノ×カゾク",
+            "rating": 8.1
           },
           {
             "episode": 25,
@@ -28221,7 +28343,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 26,
-            "title": "アレカラ×ト×ソレカラ"
+            "title": "アレカラ×ト×ソレカラ",
+            "rating": 4.1
           },
           {
             "episode": 27,
@@ -28245,7 +28368,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 32,
-            "title": "ドッキリ×ナ×ショウリ"
+            "title": "ドッキリ×ナ×ショウリ",
+            "rating": 8.7
           },
           {
             "episode": 33,
@@ -28257,7 +28381,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 35,
-            "title": "セイカク×ナ×ゴウカク"
+            "title": "セイカク×ナ×ゴウカク",
+            "rating": 9.2
           },
           {
             "episode": 36,
@@ -28265,7 +28390,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 37,
-            "title": "ジン×ト×ゴン"
+            "title": "ジン×ト×ゴン",
+            "rating": 7.9
           },
           {
             "episode": 38,
@@ -28289,11 +28415,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 43,
-            "title": "ショウゲキ×ノ×サンゲキ"
+            "title": "ショウゲキ×ノ×サンゲキ",
+            "rating": 8.5
           },
           {
             "episode": 44,
-            "title": "ゲキセン×ノ×フクセン"
+            "title": "ゲキセン×ノ×フクセン",
+            "rating": 9.1
           },
           {
             "episode": 45,
@@ -28305,7 +28433,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 47,
-            "title": "セイヤク×ト×セイヤク"
+            "title": "セイヤク×ト×セイヤク",
+            "rating": 9.6
           },
           {
             "episode": 48,
@@ -28317,19 +28446,23 @@ window._ANIME_DATA = [
           },
           {
             "episode": 50,
-            "title": "ナカマ×ト×カタナ"
+            "title": "ナカマ×ト×カタナ",
+            "rating": 8.4
           },
           {
             "episode": 51,
-            "title": "ヒジョウ×ノ×センジョウ"
+            "title": "ヒジョウ×ノ×センジョウ",
+            "rating": 9.3
           },
           {
             "episode": 52,
-            "title": "シュウゲキ×ト×ショウゲキ"
+            "title": "シュウゲキ×ト×ショウゲキ",
+            "rating": 9.3
           },
           {
             "episode": 53,
-            "title": "フェイク×デ×サイク"
+            "title": "フェイク×デ×サイク",
+            "rating": 8.3
           },
           {
             "episode": 54,
@@ -28349,7 +28482,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 58,
-            "title": "ヒキギワ×ノ×ヒキガネ"
+            "title": "ヒキギワ×ノ×ヒキガネ",
+            "rating": 9.1
           },
           {
             "episode": 59,
@@ -28762,39 +28896,48 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Somewhere Not Here"
+            "title": "Somewhere Not Here",
+            "rating": 8.2
           },
           {
             "episode": 2,
-            "title": "Sword"
+            "title": "Sword",
+            "rating": 8.2
           },
           {
             "episode": 3,
-            "title": "Troll"
+            "title": "Troll",
+            "rating": 8.6
           },
           {
             "episode": 4,
-            "title": "A True Warrior"
+            "title": "A True Warrior",
+            "rating": 9.6
           },
           {
             "episode": 5,
-            "title": "The Troll's Son"
+            "title": "The Troll's Son",
+            "rating": 8.5
           },
           {
             "episode": 6,
-            "title": "The Journey Begins"
+            "title": "The Journey Begins",
+            "rating": 9.4
           },
           {
             "episode": 7,
-            "title": "Normanni"
+            "title": "Normanni",
+            "rating": 8.7
           },
           {
             "episode": 8,
-            "title": "Beyond the Edge of the Sea"
+            "title": "Beyond the Edge of the Sea",
+            "rating": 8.4
           },
           {
             "episode": 9,
-            "title": "The Battle of London Bridge"
+            "title": "The Battle of London Bridge",
+            "rating": 9.1
           },
           {
             "episode": 10,
@@ -28814,11 +28957,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 14,
-            "title": "The Light of Dawn"
+            "title": "The Light of Dawn",
+            "rating": 9
           },
           {
             "episode": 15,
-            "title": "After Yule"
+            "title": "After Yule",
+            "rating": 8.6
           },
           {
             "episode": 16,
@@ -28826,35 +28971,43 @@ window._ANIME_DATA = [
           },
           {
             "episode": 17,
-            "title": "Servant"
+            "title": "Servant",
+            "rating": 9.4
           },
           {
             "episode": 18,
-            "title": "Out of the Cradle"
+            "title": "Out of the Cradle",
+            "rating": 9.2
           },
           {
             "episode": 19,
-            "title": "United Front"
+            "title": "United Front",
+            "rating": 9.5
           },
           {
             "episode": 20,
-            "title": "Crown"
+            "title": "Crown",
+            "rating": 8.8
           },
           {
             "episode": 21,
-            "title": "Reunion"
+            "title": "Reunion",
+            "rating": 9.3
           },
           {
             "episode": 22,
-            "title": "Lone Wolf"
+            "title": "Lone Wolf",
+            "rating": 9.5
           },
           {
             "episode": 23,
-            "title": "Miscalculation"
+            "title": "Miscalculation",
+            "rating": 8.7
           },
           {
             "episode": 24,
-            "title": "End of the Prologue"
+            "title": "End of the Prologue",
+            "rating": 9.9
           }
         ]
       },
@@ -28863,99 +29016,123 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Slave"
+            "title": "Slave",
+            "rating": 8.7
           },
           {
             "episode": 2,
-            "title": "Ketil's Farm"
+            "title": "Ketil's Farm",
+            "rating": 7.8
           },
           {
             "episode": 3,
-            "title": "Snake"
+            "title": "Snake",
+            "rating": 8.5
           },
           {
             "episode": 4,
-            "title": "Awakening"
+            "title": "Awakening",
+            "rating": 8.8
           },
           {
             "episode": 5,
-            "title": "Path of Blood"
+            "title": "Path of Blood",
+            "rating": 8.5
           },
           {
             "episode": 6,
-            "title": "We Need a Horse"
+            "title": "We Need a Horse",
+            "rating": 7.9
           },
           {
             "episode": 7,
-            "title": "Iron Fist Ketil"
+            "title": "Iron Fist Ketil",
+            "rating": 8.1
           },
           {
             "episode": 8,
-            "title": "An Empty Man"
+            "title": "An Empty Man",
+            "rating": 9
           },
           {
             "episode": 9,
-            "title": "Oath"
+            "title": "Oath",
+            "rating": 9.6
           },
           {
             "episode": 10,
-            "title": "Cursed Head"
+            "title": "Cursed Head",
+            "rating": 8.6
           },
           {
             "episode": 11,
-            "title": "King and Sword"
+            "title": "King and Sword",
+            "rating": 7.8
           },
           {
             "episode": 12,
-            "title": "For Lost Love"
+            "title": "For Lost Love",
+            "rating": 9.2
           },
           {
             "episode": 13,
-            "title": "Dark Clouds"
+            "title": "Dark Clouds",
+            "rating": 8.3
           },
           {
             "episode": 14,
-            "title": "Freedom"
+            "title": "Freedom",
+            "rating": 8.5
           },
           {
             "episode": 15,
-            "title": "Storm"
+            "title": "Storm",
+            "rating": 8.8
           },
           {
             "episode": 16,
-            "title": "Cause"
+            "title": "Cause",
+            "rating": 9.1
           },
           {
             "episode": 17,
-            "title": "The Road Home"
+            "title": "The Road Home",
+            "rating": 9.5
           },
           {
             "episode": 18,
-            "title": "The First Method"
+            "title": "The First Method",
+            "rating": 9
           },
           {
             "episode": 19,
-            "title": "The Battle of Ketil's Farm"
+            "title": "The Battle of Ketil's Farm",
+            "rating": 8.7
           },
           {
             "episode": 20,
-            "title": "Pain"
+            "title": "Pain",
+            "rating": 9.6
           },
           {
             "episode": 21,
-            "title": "Courage"
+            "title": "Courage",
+            "rating": 8.8
           },
           {
             "episode": 22,
-            "title": "The King of Rebellion"
+            "title": "The King of Rebellion",
+            "rating": 9.7
           },
           {
             "episode": 23,
-            "title": "Two Paths"
+            "title": "Two Paths",
+            "rating": 9.7
           },
           {
             "episode": 24,
-            "title": "Home"
+            "title": "Home",
+            "rating": 9.2
           }
         ]
       }
@@ -28966,7 +29143,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2022,
-    "rating": 8.2,
+    "rating": "8.1",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -28997,7 +29174,8 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Dream"
+            "title": "Dream",
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -29156,7 +29334,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2014,
-    "rating": 8.6,
+    "rating": "7.8",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -29552,7 +29730,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2014,
-    "rating": 7.8,
+    "rating": "7.7",
     "age": "TV-MA",
     "duration": "24m",
     "genres": [
@@ -29583,27 +29761,33 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Tragedy"
+            "title": "Tragedy",
+            "rating": 8.2
           },
           {
             "episode": 2,
-            "title": "Incubation"
+            "title": "Incubation",
+            "rating": 7.8
           },
           {
             "episode": 3,
-            "title": "Dove"
+            "title": "Dove",
+            "rating": 7.4
           },
           {
             "episode": 4,
-            "title": "Supper"
+            "title": "Supper",
+            "rating": 7.4
           },
           {
             "episode": 5,
-            "title": "Scars"
+            "title": "Scars",
+            "rating": 8.1
           },
           {
             "episode": 6,
-            "title": "Cloudburst"
+            "title": "Cloudburst",
+            "rating": 8
           },
           {
             "episode": 7,
@@ -29623,11 +29807,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 11,
-            "title": "High Spirits"
+            "title": "High Spirits",
+            "rating": 8.2
           },
           {
             "episode": 12,
-            "title": "Ghoul"
+            "title": "Ghoul",
+            "rating": 9.3
           }
         ]
       },
@@ -29797,7 +29983,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2000,
-    "rating": 7.7,
+    "rating": "8.2",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -29841,7 +30027,8 @@ window._ANIME_DATA = [
             "title": "The Gauntlet is Thrown",
             "absoluteEpisode": 2,
             "thumbnail": "https://image.tmdb.org/t/p/w500/7m9cnAnOY4XH9J01zAuvRUoPBl9.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 7.6
           },
           {
             "episode": 3,
@@ -29904,7 +30091,8 @@ window._ANIME_DATA = [
             "title": "The Dueling Monkey (Part 1 of 2)",
             "absoluteEpisode": 11,
             "thumbnail": "https://image.tmdb.org/t/p/w500/mDM3101AOvA2Ev1X8HGUaiOzO3i.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 8
           },
           {
             "episode": 12,
@@ -29981,7 +30169,8 @@ window._ANIME_DATA = [
             "title": "Face Off (Part 1 of 3)",
             "absoluteEpisode": 22,
             "thumbnail": "https://image.tmdb.org/t/p/w500/n2LoU4Pobz5eqKGBZU1PVBe9yD2.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 8.7
           },
           {
             "episode": 23,
@@ -30030,14 +30219,16 @@ window._ANIME_DATA = [
             "title": "Duel Identity (Part 1 of 2)",
             "absoluteEpisode": 29,
             "thumbnail": "https://image.tmdb.org/t/p/w500/3kxwewZKcPcfgWkHLtcRo8lOzEe.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 8.2
           },
           {
             "episode": 30,
             "title": "Duel Identity (Part 2 of 2)",
             "absoluteEpisode": 30,
             "thumbnail": "https://image.tmdb.org/t/p/w500/zenORP3rH5kFMUIFNi5Z4oHzu97.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 8.4
           },
           {
             "episode": 31,
@@ -31503,14 +31694,16 @@ window._ANIME_DATA = [
             "title": "Duel and Unusual Punishment",
             "absoluteEpisode": 7,
             "thumbnail": "https://image.tmdb.org/t/p/w500/64ndYJhY9eBf8qhxYjmp3eSclqU.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 7.6
           },
           {
             "episode": 8,
             "title": "For the Sake of Syrus",
             "absoluteEpisode": 8,
             "thumbnail": "https://image.tmdb.org/t/p/w500/cEG3rWyqZ2mNs1Y9k6cpfu41GUb.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 7.8
           },
           {
             "episode": 9,
@@ -31524,7 +31717,8 @@ window._ANIME_DATA = [
             "title": "Tag Team Trial (1)",
             "absoluteEpisode": 10,
             "thumbnail": "https://image.tmdb.org/t/p/w500/s7G7HzGkpxxar7h3S2SXycHWMMV.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 7.6
           },
           {
             "episode": 11,
@@ -31580,7 +31774,8 @@ window._ANIME_DATA = [
             "title": "The King of Copycats (1)",
             "absoluteEpisode": 18,
             "thumbnail": "https://image.tmdb.org/t/p/w500/kTcmn9OUZzfi6Q3PgBiplC1spop.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 8
           },
           {
             "episode": 19,
@@ -32725,7 +32920,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2008,
-    "rating": 8.1,
+    "rating": "7.1",
     "age": "TV-Y7",
     "duration": "24m",
     "genres": [
@@ -32788,7 +32983,8 @@ window._ANIME_DATA = [
             "title": "A Blast from the Past (2)",
             "absoluteEpisode": 5,
             "thumbnail": "https://image.tmdb.org/t/p/w500/qv6NbL8faK05zoOH9EQhY8kC18v.jpg",
-            "duration": "24m"
+            "duration": "24m",
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -33842,7 +34038,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2017,
-    "rating": 8.3,
+    "rating": "8.2",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -33879,7 +34075,8 @@ window._ANIME_DATA = [
           {
             "episode": 1,
             "title": "Asta and Yuno",
-            "absoluteEpisode": 1
+            "absoluteEpisode": 1,
+            "rating": 7.6
           },
           {
             "episode": 2,
@@ -34004,7 +34201,8 @@ window._ANIME_DATA = [
           {
             "episode": 26,
             "title": "Wounded Beasts",
-            "absoluteEpisode": 26
+            "absoluteEpisode": 26,
+            "rating": 8.6
           },
           {
             "episode": 27,
@@ -34044,12 +34242,14 @@ window._ANIME_DATA = [
           {
             "episode": 34,
             "title": "Light Magic vs. Dark Magic",
-            "absoluteEpisode": 34
+            "absoluteEpisode": 34,
+            "rating": 9.1
           },
           {
             "episode": 35,
             "title": "The Light of Judgment",
-            "absoluteEpisode": 35
+            "absoluteEpisode": 35,
+            "rating": 9.2
           },
           {
             "episode": 36,
@@ -34059,7 +34259,8 @@ window._ANIME_DATA = [
           {
             "episode": 37,
             "title": "The One With No Magic",
-            "absoluteEpisode": 37
+            "absoluteEpisode": 37,
+            "rating": 9
           },
           {
             "episode": 38,
@@ -34194,7 +34395,8 @@ window._ANIME_DATA = [
           {
             "episode": 12,
             "title": "Not in the Slightest",
-            "absoluteEpisode": 63
+            "absoluteEpisode": 63,
+            "rating": 9
           },
           {
             "episode": 13,
@@ -34279,12 +34481,14 @@ window._ANIME_DATA = [
           {
             "episode": 29,
             "title": "Special Little Brother vs. Failed Big Brother",
-            "absoluteEpisode": 80
+            "absoluteEpisode": 80,
+            "rating": 9.5
           },
           {
             "episode": 30,
             "title": "The Life of a Certain Man",
-            "absoluteEpisode": 81
+            "absoluteEpisode": 81,
+            "rating": 8.5
           },
           {
             "episode": 31,
@@ -34299,7 +34503,8 @@ window._ANIME_DATA = [
           {
             "episode": 33,
             "title": "The Victors",
-            "absoluteEpisode": 84
+            "absoluteEpisode": 84,
+            "rating": 9.2
           },
           {
             "episode": 34,
@@ -34334,22 +34539,26 @@ window._ANIME_DATA = [
           {
             "episode": 40,
             "title": "Mereoleona vs. Raia the Disloyal",
-            "absoluteEpisode": 91
+            "absoluteEpisode": 91,
+            "rating": 9.2
           },
           {
             "episode": 41,
             "title": "The Wizard King vs. the Leader of the Eye of the Midnight Sun",
-            "absoluteEpisode": 92
+            "absoluteEpisode": 92,
+            "rating": 9.4
           },
           {
             "episode": 42,
             "title": "Julius Novachrono",
-            "absoluteEpisode": 93
+            "absoluteEpisode": 93,
+            "rating": 9.6
           },
           {
             "episode": 43,
             "title": "New Future",
-            "absoluteEpisode": 94
+            "absoluteEpisode": 94,
+            "rating": 9.2
           },
           {
             "episode": 44,
@@ -34379,17 +34588,20 @@ window._ANIME_DATA = [
           {
             "episode": 49,
             "title": "We Won't Lose to You",
-            "absoluteEpisode": 100
+            "absoluteEpisode": 100,
+            "rating": 9.6
           },
           {
             "episode": 50,
             "title": "The Lives of the Village in the Sticks",
-            "absoluteEpisode": 101
+            "absoluteEpisode": 101,
+            "rating": 8.1
           },
           {
             "episode": 51,
             "title": "Two Miracles",
-            "absoluteEpisode": 102
+            "absoluteEpisode": 102,
+            "rating": 6.7
           }
         ]
       },
@@ -34444,7 +34656,8 @@ window._ANIME_DATA = [
           {
             "episode": 10,
             "title": "Humans Who Can Be Trusted",
-            "absoluteEpisode": 112
+            "absoluteEpisode": 112,
+            "rating": 8.5
           },
           {
             "episode": 11,
@@ -34474,12 +34687,14 @@ window._ANIME_DATA = [
           {
             "episode": 16,
             "title": "A Reunion Across Time and Space",
-            "absoluteEpisode": 118
+            "absoluteEpisode": 118,
+            "rating": 9.5
           },
           {
             "episode": 17,
             "title": "The Final Attack",
-            "absoluteEpisode": 119
+            "absoluteEpisode": 119,
+            "rating": 9.6
           },
           {
             "episode": 18,
@@ -34504,7 +34719,8 @@ window._ANIME_DATA = [
           {
             "episode": 22,
             "title": "Nero Reminisces... Part Two",
-            "absoluteEpisode": 124
+            "absoluteEpisode": 124,
+            "rating": 4.6
           },
           {
             "episode": 23,
@@ -34519,7 +34735,8 @@ window._ANIME_DATA = [
           {
             "episode": 25,
             "title": "Clues",
-            "absoluteEpisode": 127
+            "absoluteEpisode": 127,
+            "rating": 7.7
           },
           {
             "episode": 26,
@@ -34539,7 +34756,8 @@ window._ANIME_DATA = [
           {
             "episode": 29,
             "title": "A New Resolve",
-            "absoluteEpisode": 131
+            "absoluteEpisode": 131,
+            "rating": 7.3
           },
           {
             "episode": 30,
@@ -34559,7 +34777,8 @@ window._ANIME_DATA = [
           {
             "episode": 33,
             "title": "The One Who Has My Heart, My Mind, and Soul",
-            "absoluteEpisode": 135
+            "absoluteEpisode": 135,
+            "rating": 7.1
           },
           {
             "episode": 34,
@@ -34579,7 +34798,8 @@ window._ANIME_DATA = [
           {
             "episode": 37,
             "title": "A Witch's Homecoming",
-            "absoluteEpisode": 139
+            "absoluteEpisode": 139,
+            "rating": 6.5
           },
           {
             "episode": 38,
@@ -34604,17 +34824,20 @@ window._ANIME_DATA = [
           {
             "episode": 42,
             "title": "Those Who Wish for the Devil's Demise",
-            "absoluteEpisode": 144
+            "absoluteEpisode": 144,
+            "rating": 6.8
           },
           {
             "episode": 43,
             "title": "Rescue",
-            "absoluteEpisode": 145
+            "absoluteEpisode": 145,
+            "rating": 7.4
           },
           {
             "episode": 44,
             "title": "Those Who Worship the Devil",
-            "absoluteEpisode": 146
+            "absoluteEpisode": 146,
+            "rating": 6.6
           },
           {
             "episode": 45,
@@ -34624,12 +34847,14 @@ window._ANIME_DATA = [
           {
             "episode": 46,
             "title": "Becoming the Light That Shines Through the Darkness",
-            "absoluteEpisode": 148
+            "absoluteEpisode": 148,
+            "rating": 7.3
           },
           {
             "episode": 47,
             "title": "Two Things We Need to Find",
-            "absoluteEpisode": 149
+            "absoluteEpisode": 149,
+            "rating": 6.3
           },
           {
             "episode": 48,
@@ -34639,12 +34864,14 @@ window._ANIME_DATA = [
           {
             "episode": 49,
             "title": "Clash! The Battle of the Magic Knights Squad Captains",
-            "absoluteEpisode": 151
+            "absoluteEpisode": 151,
+            "rating": 9.1
           },
           {
             "episode": 50,
             "title": "To Tomorrow!",
-            "absoluteEpisode": 152
+            "absoluteEpisode": 152,
+            "rating": 6.7
           },
           {
             "episode": 51,
@@ -34669,77 +34896,92 @@ window._ANIME_DATA = [
           {
             "episode": 2,
             "title": "Awakening Powers",
-            "absoluteEpisode": 156
+            "absoluteEpisode": 156,
+            "rating": 8.5
           },
           {
             "episode": 3,
             "title": "Five-Leaf Clover",
-            "absoluteEpisode": 157
+            "absoluteEpisode": 157,
+            "rating": 7.2
           },
           {
             "episode": 4,
             "title": "The Beginning of Hope and Despair",
-            "absoluteEpisode": 158
+            "absoluteEpisode": 158,
+            "rating": 9.1
           },
           {
             "episode": 5,
             "title": "Quiet Lakes and Forest Shadows",
-            "absoluteEpisode": 159
+            "absoluteEpisode": 159,
+            "rating": 7.3
           },
           {
             "episode": 6,
             "title": "The Messenger from the Spade Kingdom",
-            "absoluteEpisode": 160
+            "absoluteEpisode": 160,
+            "rating": 9.1
           },
           {
             "episode": 7,
             "title": "Zenon's Power",
-            "absoluteEpisode": 161
+            "absoluteEpisode": 161,
+            "rating": 9.4
           },
           {
             "episode": 8,
             "title": "The Great War Breaks Out",
-            "absoluteEpisode": 162
+            "absoluteEpisode": 162,
+            "rating": 9.5
           },
           {
             "episode": 9,
             "title": "Dante vs. the Captain of the Black Bulls",
-            "absoluteEpisode": 163
+            "absoluteEpisode": 163,
+            "rating": 9.4
           },
           {
             "episode": 10,
             "title": "Battlefield: Heart Kingdom",
-            "absoluteEpisode": 164
+            "absoluteEpisode": 164,
+            "rating": 8.4
           },
           {
             "episode": 11,
             "title": "Water Crusade",
-            "absoluteEpisode": 165
+            "absoluteEpisode": 165,
+            "rating": 8.9
           },
           {
             "episode": 12,
             "title": "Captain: Yami Sukehiro",
-            "absoluteEpisode": 166
+            "absoluteEpisode": 166,
+            "rating": 9.6
           },
           {
             "episode": 13,
             "title": "Black Oath",
-            "absoluteEpisode": 167
+            "absoluteEpisode": 167,
+            "rating": 9.7
           },
           {
             "episode": 14,
             "title": "Stirrings of the Strongest",
-            "absoluteEpisode": 168
+            "absoluteEpisode": 168,
+            "rating": 9.1
           },
           {
             "episode": 15,
             "title": "The Devil-Binding Ritual",
-            "absoluteEpisode": 169
+            "absoluteEpisode": 169,
+            "rating": 9.1
           },
           {
             "episode": 16,
             "title": "The Faraway Future",
-            "absoluteEpisode": 170
+            "absoluteEpisode": 170,
+            "rating": 9.6
           }
         ]
       }
