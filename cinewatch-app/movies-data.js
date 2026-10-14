@@ -758,7 +758,7 @@ window._MOVIES_DATA = [
     "title": "Spider-Man: Brand New Day",
     "type": "Movie",
     "year": 2026,
-    "rating": 7.9,
+    "rating": "8.0",
     "age": "PG-13",
     "duration": "2h 25m",
     "genres": [
@@ -872,7 +872,7 @@ window._MOVIES_DATA = [
     "title": "The Odyssey",
     "type": "Movie",
     "year": 2026,
-    "rating": 8.5,
+    "rating": "8.4",
     "age": "PG-13",
     "duration": "2h 52m",
     "genres": [
