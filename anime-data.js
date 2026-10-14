@@ -1,4 +1,5 @@
-// CineWatch — Anime Data
+// CineWatch - Anime Data
+
 window._ANIME_DATA = [
   {
     "title": "Dragon Ball Super: Beerus",
@@ -104,7 +105,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 1,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734143.jpg",
             "duration": "25m",
-            "overview": "A band of pirates led by Alvida plundered a ship, only to find a barrel which contains a strange boy named Luffy. Luffy is on a quest to find the legendary treasure \"One Piece\" and he befriends the ship's cabin-boy, Koby, who actually wants to become a marine officer. Luffy defeats Alvida and the two journey on in search of crewmates."
+            "overview": "A band of pirates led by Alvida plundered a ship, only to find a barrel which contains a strange boy named Luffy. Luffy is on a quest to find the legendary treasure \"One Piece\" and he befriends the ship's cabin-boy, Koby, who actually wants to become a marine officer. Luffy defeats Alvida and the two journey on in search of crewmates.",
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -112,7 +114,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 2,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734144.jpg",
             "duration": "25m",
-            "overview": "Luffy and Koby arrive at Shell Island, a Marine base. They meet the bounty hunter Roronoa Zoro, held under arrest by the infamous marine, Captain Morgan, and his son Helmeppo."
+            "overview": "Luffy and Koby arrive at Shell Island, a Marine base. They meet the bounty hunter Roronoa Zoro, held under arrest by the infamous marine, Captain Morgan, and his son Helmeppo.",
+            "rating": 8.4
           },
           {
             "episode": 3,
@@ -120,7 +123,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734145.jpg",
             "duration": "25m",
-            "overview": "Luffy convinces Zoro to join his crew, but they must first defeat Captain Morgan. After freeing the island from Morgan's oppressive rule, Koby is accepted as a marine while the other two continue on their journey."
+            "overview": "Luffy convinces Zoro to join his crew, but they must first defeat Captain Morgan. After freeing the island from Morgan's oppressive rule, Koby is accepted as a marine while the other two continue on their journey.",
+            "rating": 8
           },
           {
             "episode": 4,
@@ -128,7 +132,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 4,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734146.jpg",
             "duration": "25m",
-            "overview": "Out on the sea, Luffy almost loses his hat and reflects on his past, and how a pirate named Shanks influenced him. Afterwards, Luffy meets Nami, and Buggy the Clown's men."
+            "overview": "Out on the sea, Luffy almost loses his hat and reflects on his past, and how a pirate named Shanks influenced him. Afterwards, Luffy meets Nami, and Buggy the Clown's men.",
+            "rating": 8.3
           },
           {
             "episode": 5,
@@ -136,7 +141,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 5,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734147.jpg",
             "duration": "25m",
-            "overview": "In order to save herself and steal a map to the Grand Line, Nami tricks Luffy into allowing her to turn him over to Buggy."
+            "overview": "In order to save herself and steal a map to the Grand Line, Nami tricks Luffy into allowing her to turn him over to Buggy.",
+            "rating": 7.4
           },
           {
             "episode": 6,
@@ -144,7 +150,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 6,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734148.jpg",
             "duration": "25m",
-            "overview": "Mohji and Richie show up for revenge after Buggy's humiliating defeat in the previous episode, and Luffy meets a small dog guarding his master's store, even though he knows that he is long dead."
+            "overview": "Mohji and Richie show up for revenge after Buggy's humiliating defeat in the previous episode, and Luffy meets a small dog guarding his master's store, even though he knows that he is long dead.",
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -152,7 +159,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 7,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734149.jpg",
             "duration": "25m",
-            "overview": "Enraged by the actions of Buggy's crew, the city's mayor rushes to fight Buggy himself, but the Straw Hat Pirates come to his rescue. Zoro fights Cabaji, despite still being wounded from his previous encounter with Buggy, while Luffy faces the clown pirate himself and Nami searches for the map to the Grand Line."
+            "overview": "Enraged by the actions of Buggy's crew, the city's mayor rushes to fight Buggy himself, but the Straw Hat Pirates come to his rescue. Zoro fights Cabaji, despite still being wounded from his previous encounter with Buggy, while Luffy faces the clown pirate himself and Nami searches for the map to the Grand Line.",
+            "rating": 7.5
           },
           {
             "episode": 8,
@@ -160,7 +168,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 8,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734150.jpg",
             "duration": "25m",
-            "overview": "Buggy's link to Shanks is revealed, and when he rips the straw hat Shanks gave Luffy, his rage knows no bounds. Who will win in this clash between Devil Fruit users?"
+            "overview": "Buggy's link to Shanks is revealed, and when he rips the straw hat Shanks gave Luffy, his rage knows no bounds. Who will win in this clash between Devil Fruit users?",
+            "rating": 7.7
           },
           {
             "episode": 9,
@@ -168,7 +177,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734151.jpg",
             "duration": "25m",
-            "overview": "With Nami forming an alliance with the crew as their navigator (though not as an actual member), the crew arrives at the Syrup Village in search of a proper ship, where they meet the town liar, Usopp, who too has ties to Shanks."
+            "overview": "With Nami forming an alliance with the crew as their navigator (though not as an actual member), the crew arrives at the Syrup Village in search of a proper ship, where they meet the town liar, Usopp, who too has ties to Shanks.",
+            "rating": 7.1
           },
           {
             "episode": 10,
@@ -176,7 +186,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 10,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734152.jpg",
             "duration": "25m",
-            "overview": "When trying to convince his rich friend, Kaya, to give the Straw Hats a ship, Usopp is told to stay away from her by her caretaker, Klahadore. However, when Usopp and Luffy later see him conversing with a strange man, they learn of a plot to kill Kaya."
+            "overview": "When trying to convince his rich friend, Kaya, to give the Straw Hats a ship, Usopp is told to stay away from her by her caretaker, Klahadore. However, when Usopp and Luffy later see him conversing with a strange man, they learn of a plot to kill Kaya.",
+            "rating": 7.3
           },
           {
             "episode": 11,
@@ -208,7 +219,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 14,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734156.jpg",
             "duration": "25m",
-            "overview": "Captain Kuro himself arrives at the scene, and with Zoro too injured to fight, Luffy being incapacitated, and the other two being too weak to handle him, things seem hopeless. However, Kaya herself appears to bargain with Kuro."
+            "overview": "Captain Kuro himself arrives at the scene, and with Zoro too injured to fight, Luffy being incapacitated, and the other two being too weak to handle him, things seem hopeless. However, Kaya herself appears to bargain with Kuro.",
+            "rating": 7.6
           },
           {
             "episode": 15,
@@ -224,7 +236,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 16,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734158.jpg",
             "duration": "25m",
-            "overview": "As the fight between Luffy and Kuro is close to an end, the Usopp Pirates do their best to avoid Jango."
+            "overview": "As the fight between Luffy and Kuro is close to an end, the Usopp Pirates do their best to avoid Jango.",
+            "rating": 7.6
           },
           {
             "episode": 17,
@@ -232,7 +245,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 17,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734159.jpg",
             "duration": "25m",
-            "overview": "Kuro's ultimate attack, \"Shakushi\", attacks everything in the area, whether friend or foe, and Luffy becomes enraged by his lack of regard for his crew. Will Luffy's determination overcome Kuro's sheer speed?"
+            "overview": "Kuro's ultimate attack, \"Shakushi\", attacks everything in the area, whether friend or foe, and Luffy becomes enraged by his lack of regard for his crew. Will Luffy's determination overcome Kuro's sheer speed?",
+            "rating": 8
           },
           {
             "episode": 18,
@@ -240,7 +254,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 18,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734160.jpg",
             "duration": "25m",
-            "overview": "With Usopp now in the crew and a new ship, the Going Merry, under their command, the Straw Hats head to an island said to hold a fabled treasure, only to encounter a strange man stuck in a treasure box that has also been looking for this treasure."
+            "overview": "With Usopp now in the crew and a new ship, the Going Merry, under their command, the Straw Hats head to an island said to hold a fabled treasure, only to encounter a strange man stuck in a treasure box that has also been looking for this treasure.",
+            "rating": 6.8
           },
           {
             "episode": 19,
@@ -248,7 +263,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 19,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734161.jpg",
             "duration": "25m",
-            "overview": "While Usopp &amp; Luffy fool around with the ship's cannon one day, Zoro dreams about his childhood and the promise he made to Kuina."
+            "overview": "While Usopp &amp; Luffy fool around with the ship's cannon one day, Zoro dreams about his childhood and the promise he made to Kuina.",
+            "rating": 8.9
           },
           {
             "episode": 20,
@@ -256,7 +272,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 20,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734162.jpg",
             "duration": "25m",
-            "overview": "The crew meets Johnny and Yosaku, Zoro's former companions, and they set sail for the Baratie restaurant in search of a cook."
+            "overview": "The crew meets Johnny and Yosaku, Zoro's former companions, and they set sail for the Baratie restaurant in search of a cook.",
+            "rating": 7.6
           },
           {
             "episode": 21,
@@ -288,7 +305,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 24,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734166.jpg",
             "duration": "25m",
-            "overview": "As Nami steals the Going Merry, Mihawk has returned to finish the job, but Zoro challenges him to a duel in order to achieve his dream."
+            "overview": "As Nami steals the Going Merry, Mihawk has returned to finish the job, but Zoro challenges him to a duel in order to achieve his dream.",
+            "rating": 9.2
           },
           {
             "episode": 25,
@@ -304,7 +322,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 26,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734168.jpg",
             "duration": "25m",
-            "overview": "With Zeff held captive by Gin, Sanji has no choice but to take Pearl's hits, and he reflects on why Zeff means so much to him."
+            "overview": "With Zeff held captive by Gin, Sanji has no choice but to take Pearl's hits, and he reflects on why Zeff means so much to him.",
+            "rating": 8.7
           },
           {
             "episode": 27,
@@ -328,7 +347,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 29,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734172.jpg",
             "duration": "25m",
-            "overview": "Even after taking several hits from the Battle Spear, Luffy refuses to give up."
+            "overview": "Even after taking several hits from the Battle Spear, Luffy refuses to give up.",
+            "rating": 7.9
           },
           {
             "episode": 30,
@@ -344,7 +364,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 31,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734389.jpg",
             "duration": "25m",
-            "overview": "The crew chases after Nami, who stole their ship, and Yosaku takes time during the trip to explain about Arlong and his Fishmen to Luffy and Sanji. Meanwhile, Usopp, Johnny, and Zoro arrive at the island Nami docked at."
+            "overview": "The crew chases after Nami, who stole their ship, and Yosaku takes time during the trip to explain about Arlong and his Fishmen to Luffy and Sanji. Meanwhile, Usopp, Johnny, and Zoro arrive at the island Nami docked at.",
+            "rating": 7.6
           },
           {
             "episode": 32,
@@ -376,7 +397,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 35,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734394.jpg",
             "duration": "25m",
-            "overview": "Nojiko starts her story about Nami's childhood and their adopted mother, Bellemere. Despite being poor and none of them being related by blood, they had a happy life."
+            "overview": "Nojiko starts her story about Nami's childhood and their adopted mother, Bellemere. Despite being poor and none of them being related by blood, they had a happy life.",
+            "rating": 8.1
           },
           {
             "episode": 36,
@@ -384,7 +406,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 36,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734395.jpg",
             "duration": "25m",
-            "overview": "Nojiko continues her story, explaining how their life was ruined when the Arlong Pirates first took over the village."
+            "overview": "Nojiko continues her story, explaining how their life was ruined when the Arlong Pirates first took over the village.",
+            "rating": 8.9
           },
           {
             "episode": 37,
@@ -392,7 +415,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 37,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734396.jpg",
             "duration": "25m",
-            "overview": "When a marine officer under Arlong's pay confiscates all the money Nami stole over the years, in order to one day buy the village from Arlong, the villagers decide that enough is enough and fight back, despite Nami's pleads that they do not and that they'd all be killed. Upon seeing Nami's sorrow, the Straw Hats head for Arlong Park."
+            "overview": "When a marine officer under Arlong's pay confiscates all the money Nami stole over the years, in order to one day buy the village from Arlong, the villagers decide that enough is enough and fight back, despite Nami's pleads that they do not and that they'd all be killed. Upon seeing Nami's sorrow, the Straw Hats head for Arlong Park.",
+            "rating": 9.2
           },
           {
             "episode": 38,
@@ -408,7 +432,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 39,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734398.jpg",
             "duration": "25m",
-            "overview": "Arlong has trapped Luffy in the ocean and Zoro faces the six-sword wielding octopus Hatchan."
+            "overview": "Arlong has trapped Luffy in the ocean and Zoro faces the six-sword wielding octopus Hatchan.",
+            "rating": 8
           },
           {
             "episode": 40,
@@ -440,7 +465,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 43,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734402.jpg",
             "duration": "25m",
-            "overview": "The battle spreads into Arlong Park itself and Arlong is no longer holding back."
+            "overview": "The battle spreads into Arlong Park itself and Arlong is no longer holding back.",
+            "rating": 8.6
           },
           {
             "episode": 44,
@@ -520,7 +546,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 53,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734412.jpg",
             "duration": "25m",
-            "overview": "Miraculously saved from death by an unnatural green gust and a lightning bolt to Buggy, the Straw Hats rush out of Loguetown, only for Zoro to be stopped by Tashigi and Luffy to be stopped by Captain Smoker."
+            "overview": "Miraculously saved from death by an unnatural green gust and a lightning bolt to Buggy, the Straw Hats rush out of Loguetown, only for Zoro to be stopped by Tashigi and Luffy to be stopped by Captain Smoker.",
+            "rating": 8.4
           },
           {
             "episode": 54,
@@ -584,7 +611,8 @@ window._ANIME_DATA = [
             "absoluteEpisode": 61,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/293/734426.jpg",
             "duration": "25m",
-            "overview": "After leaving Warship Island the Going Merry is now towards the Grand Line, and the crew now returns to the Great Adventure."
+            "overview": "After leaving Warship Island the Going Merry is now towards the Grand Line, and the crew now returns to the Great Adventure.",
+            "rating": 7.5
           }
         ]
       },
@@ -9658,7 +9686,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
-    "rating": 8.5,
+    "rating": "9.2",
     "age": "TV-14",
     "duration": "24m",
     "genres": [
@@ -9918,7 +9946,8 @@ window._ANIME_DATA = [
           {
             "episode": 1,
             "title": "The New Threat",
-            "absoluteEpisode": 1
+            "absoluteEpisode": 1,
+            "rating": 7.3
           },
           {
             "episode": 2,
@@ -9968,7 +9997,8 @@ window._ANIME_DATA = [
           {
             "episode": 11,
             "title": "Terror on Arlia",
-            "absoluteEpisode": 11
+            "absoluteEpisode": 11,
+            "rating": 7.1
           },
           {
             "episode": 12,

@@ -83522,7 +83522,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Meet the New Boss",
             "airDate": "2011-09-23",
-            "rating": 9,
+            "rating": 8.9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/5/12826.jpg",
             "duration": "60 min",
             "overview": "Castiel doesn't kill Sam, Dean and Bobby but warns them not to interfere in his business. Assuming his new role as God, Castiel sets out to right some of the wrongs in the world. Dean decides they should bind Death and order him to stop Castiel, but the former angel is one step ahead of them, leaving Dean to face a very angry Death. Meanwhile, Sam struggles to deal with the broken wall in his head."
@@ -93589,7 +93589,7 @@ window._SERIES_DATA = [
     "title": "Uncle Grandpa",
     "type": "TV Show",
     "year": 2013,
-    "rating": 4.7,
+    "rating": "4.5",
     "age": "TV-PG",
     "duration": "15m",
     "genres": [
@@ -98802,7 +98802,7 @@ window._SERIES_DATA = [
     "title": "Sherlock",
     "type": "TV Show",
     "year": 2010,
-    "rating": 9.1,
+    "rating": "9.0",
     "age": "TV-14",
     "duration": "1h 28m",
     "genres": [
@@ -100012,7 +100012,7 @@ window._SERIES_DATA = [
     "title": "The Simpsons",
     "type": "TV Show",
     "year": 1989,
-    "rating": 8,
+    "rating": "8.6",
     "age": "TV-14",
     "duration": "30m",
     "genres": [
@@ -107448,7 +107448,7 @@ window._SERIES_DATA = [
     "title": "You",
     "type": "TV Show",
     "year": 2018,
-    "rating": 8,
+    "rating": "7.6",
     "age": "TV-MA",
     "duration": "45m",
     "genres": [
@@ -107950,7 +107950,7 @@ window._SERIES_DATA = [
     "title": "Marvel's Agents of S.H.I.E.L.D.",
     "type": "TV Show",
     "year": 2013,
-    "rating": 7.5,
+    "rating": "6.7",
     "age": "TV-14",
     "duration": "45m",
     "genres": [
@@ -111344,7 +111344,7 @@ window._SERIES_DATA = [
     "title": "Beauty in Black",
     "type": "TV Show",
     "year": 2024,
-    "rating": 7.2,
+    "rating": "6.0",
     "age": "TV-MA",
     "duration": "45m",
     "genres": [
@@ -111612,7 +111612,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Fed Up",
             "airDate": "2026-03-19",
-            "rating": 8.5,
+            "rating": 8.6,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/618/1546125.jpg",
             "duration": "52 min",
             "overview": "Roy spirals out in public. Unwanted guests hammer home a warning to Olivia. Kimmie tries to keep her cards close as Jules runs game."
@@ -111947,7 +111947,7 @@ window._SERIES_DATA = [
     "title": "Green Lantern: The Animated Series",
     "type": "TV Show",
     "year": 2011,
-    "rating": "8.1",
+    "rating": "8.0",
     "age": "TV-PG",
     "duration": "22m",
     "genres": [

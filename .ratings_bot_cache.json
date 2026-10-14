@@ -1,5 +1,5 @@
 {
-  "lastRun": 1791923732395,
+  "lastRun": 1791972845739,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4251,6 +4251,239 @@
     "series:marvel's luke cage": {
       "lastChecked": 1791923732395,
       "notFound": true
+    },
+    "series:marvel's the defenders": {
+      "lastChecked": 1791972845739,
+      "notFound": true
+    },
+    "series:sex education": {
+      "imdbId": "tt7767422",
+      "rating": "8.2",
+      "lastChecked": 1791972845739,
+      "title": "Sex Education",
+      "year": 2019
+    },
+    "series:s.w.a.t.": {
+      "imdbId": "tt6111130",
+      "rating": "7.2",
+      "lastChecked": 1791972845739,
+      "title": "S.W.A.T.",
+      "year": 2017
+    },
+    "series:marvel's iron fist": {
+      "lastChecked": 1791972845739,
+      "notFound": true
+    },
+    "series:rick and morty": {
+      "imdbId": "tt2861424",
+      "rating": "9.0",
+      "lastChecked": 1791972845739,
+      "title": "Rick and Morty",
+      "year": 2013
+    },
+    "series:doctor who": {
+      "imdbId": "tt0436992",
+      "rating": "8.5",
+      "lastChecked": 1791972845739,
+      "title": "Doctor Who",
+      "year": 2005
+    },
+    "series:modern family": {
+      "imdbId": "tt1442437",
+      "rating": "8.5",
+      "lastChecked": 1791972845739,
+      "title": "Modern Family",
+      "year": 2009
+    },
+    "series:moon knight": {
+      "imdbId": "tt10234724",
+      "rating": "7.3",
+      "lastChecked": 1791972845739,
+      "title": "Moon Knight",
+      "year": 2022
+    },
+    "series:the rookie": {
+      "imdbId": "tt7587890",
+      "rating": "8.0",
+      "lastChecked": 1791972845739,
+      "title": "The Rookie",
+      "year": 2018
+    },
+    "series:supernatural": {
+      "imdbId": "tt0460681",
+      "rating": "8.4",
+      "lastChecked": 1791972845739,
+      "title": "Supernatural",
+      "year": 2005
+    },
+    "series:the vampire diaries": {
+      "imdbId": "tt1405406",
+      "rating": "7.7",
+      "lastChecked": 1791972845739,
+      "title": "The Vampire Diaries",
+      "year": 2009
+    },
+    "series:law & order: special victims unit": {
+      "imdbId": "tt0203259",
+      "rating": "8.1",
+      "lastChecked": 1791972845739,
+      "title": "Law & Order: Special Victims Unit",
+      "year": 1999
+    },
+    "series:hawkeye": {
+      "imdbId": "tt10160804",
+      "rating": "7.4",
+      "lastChecked": 1791972845739,
+      "title": "Hawkeye",
+      "year": 2021
+    },
+    "series:clarence": {
+      "imdbId": "tt3061050",
+      "rating": "6.9",
+      "lastChecked": 1791972845739,
+      "title": "Clarence",
+      "year": 2014
+    },
+    "series:uncle grandpa": {
+      "imdbId": "tt3042608",
+      "rating": "4.5",
+      "lastChecked": 1791972845739,
+      "title": "Uncle Grandpa",
+      "year": 2013
+    },
+    "series:steven universe": {
+      "imdbId": "tt3061046",
+      "rating": "8.1",
+      "lastChecked": 1791972845739,
+      "title": "Steven Universe",
+      "year": 2013
+    },
+    "series:steven universe future": {
+      "imdbId": "tt13714610",
+      "rating": "7.7",
+      "lastChecked": 1791972845739,
+      "title": "Steven Universe Future",
+      "year": 2019
+    },
+    "series:ok k.o.! let's be heroes": {
+      "imdbId": "tt6965802",
+      "rating": "6.9",
+      "lastChecked": 1791972845739,
+      "title": "OK K.O.! Let's Be Heroes",
+      "year": 2017
+    },
+    "series:marvel's jessica jones": {
+      "lastChecked": 1791972845739,
+      "notFound": true
+    },
+    "series:the 100": {
+      "imdbId": "tt2661044",
+      "rating": "7.5",
+      "lastChecked": 1791972845739,
+      "title": "The 100",
+      "year": 2014
+    },
+    "series:sherlock": {
+      "imdbId": "tt1475582",
+      "rating": "9.0",
+      "lastChecked": 1791972845739,
+      "title": "Sherlock",
+      "year": 2010
+    },
+    "series:marvel's ultimate spider-man": {
+      "lastChecked": 1791972845739,
+      "notFound": true
+    },
+    "series:resident evil: infinite darkness": {
+      "imdbId": "tt13173144",
+      "rating": "5.8",
+      "lastChecked": 1791972845739,
+      "title": "Resident Evil: Infinite Darkness",
+      "year": 2021
+    },
+    "series:the simpsons": {
+      "imdbId": "tt0096697",
+      "rating": "8.6",
+      "lastChecked": 1791972845739,
+      "title": "The Simpsons",
+      "year": 1989
+    },
+    "series:you": {
+      "imdbId": "tt7335184",
+      "rating": "7.6",
+      "lastChecked": 1791972845739,
+      "title": "You",
+      "year": 2018
+    },
+    "series:marvel's agents of s.h.i.e.l.d.": {
+      "imdbId": "tt6243582",
+      "rating": "6.7",
+      "lastChecked": 1791972845739,
+      "title": "Marvel's Agents of S.H.I.E.L.D.",
+      "year": 2013
+    },
+    "series:silo": {
+      "imdbId": "tt14688458",
+      "rating": "8.1",
+      "lastChecked": 1791972845739,
+      "title": "Silo",
+      "year": 2023
+    },
+    "series:x-men '97": {
+      "imdbId": "tt16026746",
+      "rating": "8.7",
+      "lastChecked": 1791972845739,
+      "title": "X-Men '97",
+      "year": 2024
+    },
+    "series:one piece": {
+      "imdbId": "tt11737520",
+      "rating": "8.3",
+      "lastChecked": 1791972845739,
+      "title": "ONE PIECE",
+      "year": 2023
+    },
+    "series:shameless": {
+      "imdbId": "tt1586680",
+      "rating": "8.5",
+      "lastChecked": 1791972845739,
+      "title": "Shameless",
+      "year": 2011
+    },
+    "series:beauty in black": {
+      "imdbId": "tt31260386",
+      "rating": "6.0",
+      "lastChecked": 1791972845739,
+      "title": "Beauty in Black",
+      "year": 2024
+    },
+    "series:green lantern: the animated series": {
+      "imdbId": "tt1724587",
+      "rating": "8.0",
+      "lastChecked": 1791972845739,
+      "title": "Green Lantern: The Animated Series",
+      "year": 2011
+    },
+    "anime:one piece": {
+      "imdbId": "tt0388629",
+      "rating": "9.0",
+      "lastChecked": 1791972845739,
+      "title": "One Piece",
+      "year": 1999
+    },
+    "anime:one piece: gyojin tou-hen": {
+      "imdbId": "tt33998607",
+      "rating": "9.2",
+      "lastChecked": 1791972845739,
+      "title": "One Piece: Gyojin Tou-hen",
+      "year": 2024
+    },
+    "anime:dragon ball z": {
+      "imdbId": "tt0121220",
+      "rating": "8.8",
+      "lastChecked": 1791972845739,
+      "title": "Dragon Ball Z",
+      "year": 1989
     }
   }
 }
