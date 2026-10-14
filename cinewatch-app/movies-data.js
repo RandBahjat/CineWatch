@@ -1096,7 +1096,7 @@ window._MOVIES_DATA = [
     "title": "One Night Only",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.2,
+    "rating": "6.3",
     "age": "R",
     "duration": "1h 42m",
     "genres": [
@@ -1235,7 +1235,7 @@ window._MOVIES_DATA = [
     "title": "The End of Oak Street",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.6,
+    "rating": "6.5",
     "age": "PG-13",
     "duration": "1h 39m",
     "genres": [
@@ -1354,7 +1354,7 @@ window._MOVIES_DATA = [
     "title": "Backrooms",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.8,
+    "rating": "6.7",
     "age": "R",
     "duration": "1h 50m",
     "genres": [
@@ -1440,7 +1440,7 @@ window._MOVIES_DATA = [
     "title": "Insidious: Out of the Further",
     "type": "Movie",
     "year": 2026,
-    "rating": 6.3,
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 46m",
     "genres": [
@@ -5850,7 +5850,7 @@ window._MOVIES_DATA = [
     "title": "Toy Story 5",
     "type": "Movie",
     "year": 2026,
-    "rating": 7.5,
+    "rating": "7.4",
     "age": "PG",
     "duration": "1h 42m",
     "genres": [
@@ -6366,7 +6366,7 @@ window._MOVIES_DATA = [
     "title": "How to Train Your Dragon",
     "type": "Movie",
     "year": 2025,
-    "rating": "7.7",
+    "rating": "8.1",
     "age": "PG",
     "duration": "2h 5m",
     "genres": [
