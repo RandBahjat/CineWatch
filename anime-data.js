@@ -26904,7 +26904,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 2019,
-    "rating": 8.7,
+    "rating": "8.5",
     "age": "TV-MA",
     "duration": "24m",
     "genres": [
@@ -26935,31 +26935,38 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Cruelty"
+            "title": "Cruelty",
+            "rating": 8.3
           },
           {
             "episode": 2,
-            "title": "Trainer Sakonji Urokodaki"
+            "title": "Trainer Sakonji Urokodaki",
+            "rating": 7.8
           },
           {
             "episode": 3,
-            "title": "Sabito and Makomo"
+            "title": "Sabito and Makomo",
+            "rating": 8.1
           },
           {
             "episode": 4,
-            "title": "Final Selection"
+            "title": "Final Selection",
+            "rating": 8.8
           },
           {
             "episode": 5,
-            "title": "My Own Steel"
+            "title": "My Own Steel",
+            "rating": 8
           },
           {
             "episode": 6,
-            "title": "Swordsman Accompanying a Demon"
+            "title": "Swordsman Accompanying a Demon",
+            "rating": 7.9
           },
           {
             "episode": 7,
-            "title": "Muzan Kibutsuji"
+            "title": "Muzan Kibutsuji",
+            "rating": 8.6
           },
           {
             "episode": 8,
@@ -26967,59 +26974,73 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "Temari Demon and Arrow Demon"
+            "title": "Temari Demon and Arrow Demon",
+            "rating": 8.3
           },
           {
             "episode": 10,
-            "title": "Together Forever"
+            "title": "Together Forever",
+            "rating": 8.4
           },
           {
             "episode": 11,
-            "title": "Tsuzumi Mansion"
+            "title": "Tsuzumi Mansion",
+            "rating": 7.2
           },
           {
             "episode": 12,
-            "title": "The Boar Bares Its Fangs, Zenitsu Sleeps"
+            "title": "The Boar Bares Its Fangs, Zenitsu Sleeps",
+            "rating": 7.9
           },
           {
             "episode": 13,
-            "title": "Something More Important Than Life"
+            "title": "Something More Important Than Life",
+            "rating": 8.2
           },
           {
             "episode": 14,
-            "title": "The House With the Wisteria Family Crest"
+            "title": "The House With the Wisteria Family Crest",
+            "rating": 7.6
           },
           {
             "episode": 15,
-            "title": "Mount Natagumo"
+            "title": "Mount Natagumo",
+            "rating": 7.9
           },
           {
             "episode": 16,
-            "title": "Letting Someone Else Go First"
+            "title": "Letting Someone Else Go First",
+            "rating": 8.7
           },
           {
             "episode": 17,
-            "title": "You Must Master a Single Thing"
+            "title": "You Must Master a Single Thing",
+            "rating": 9
           },
           {
             "episode": 18,
-            "title": "A Forged Bond"
+            "title": "A Forged Bond",
+            "rating": 9
           },
           {
             "episode": 19,
-            "title": "The Fire God"
+            "title": "The Fire God",
+            "rating": 9.7
           },
           {
             "episode": 20,
-            "title": "Pretend Family"
+            "title": "Pretend Family",
+            "rating": 8.8
           },
           {
             "episode": 21,
-            "title": "Against Corps Rules"
+            "title": "Against Corps Rules",
+            "rating": 8.6
           },
           {
             "episode": 22,
-            "title": "Master of the Mansion"
+            "title": "Master of the Mansion",
+            "rating": 8.4
           },
           {
             "episode": 23,
@@ -27031,11 +27052,13 @@ window._ANIME_DATA = [
           },
           {
             "episode": 25,
-            "title": "Tsuguko, Kanao Tsuyuri"
+            "title": "Tsuguko, Kanao Tsuyuri",
+            "rating": 7.8
           },
           {
             "episode": 26,
-            "title": "New Mission"
+            "title": "New Mission",
+            "rating": 8.7
           }
         ]
       },
@@ -27044,11 +27067,13 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Flame Hashira Kyojuro Rengoku"
+            "title": "Flame Hashira Kyojuro Rengoku",
+            "rating": 8.5
           },
           {
             "episode": 2,
-            "title": "Deep Sleep"
+            "title": "Deep Sleep",
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -27056,7 +27081,8 @@ window._ANIME_DATA = [
           },
           {
             "episode": 4,
-            "title": "Insult"
+            "title": "Insult",
+            "rating": 8.3
           },
           {
             "episode": 5,
@@ -27064,55 +27090,68 @@ window._ANIME_DATA = [
           },
           {
             "episode": 6,
-            "title": "Akaza"
+            "title": "Akaza",
+            "rating": 9.5
           },
           {
             "episode": 7,
-            "title": "Set Your Heart Ablaze"
+            "title": "Set Your Heart Ablaze",
+            "rating": 9.7
           },
           {
             "episode": 8,
-            "title": "Sound Hashira Tengen Uzui"
+            "title": "Sound Hashira Tengen Uzui",
+            "rating": 7.9
           },
           {
             "episode": 9,
-            "title": "Infiltrating the Entertainment District"
+            "title": "Infiltrating the Entertainment District",
+            "rating": 7.4
           },
           {
             "episode": 10,
-            "title": "What Are You?"
+            "title": "What Are You?",
+            "rating": 7.8
           },
           {
             "episode": 11,
-            "title": "Tonight"
+            "title": "Tonight",
+            "rating": 8.2
           },
           {
             "episode": 12,
-            "title": "Things Are Gonna Get Real Flashy!!"
+            "title": "Things Are Gonna Get Real Flashy!!",
+            "rating": 8.7
           },
           {
             "episode": 13,
-            "title": "Layered Memories"
+            "title": "Layered Memories",
+            "rating": 9.5
           },
           {
             "episode": 14,
-            "title": "Transformation"
+            "title": "Transformation",
+            "rating": 9.4
           },
           {
             "episode": 15,
-            "title": "Gathering"
+            "title": "Gathering",
+            "rating": 9.4
           },
           {
             "episode": 16,
-            "title": "Defeating an Upper Moon Demon"
+            "title": "Defeating an Upper Moon Demon",
+            "rating": 9.6
           },
           {
             "episode": 17,
-            "title": "Never Give Up"
+            "title": "Never Give Up",
+            "rating": 9.7
           },
           {
             "episode": 18,
-            "title": "No Matter How Many Lives"
+            "title": "No Matter How Many Lives",
+            "rating": 8.8
           }
         ]
       },
@@ -27121,27 +27160,33 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Someone's Dream"
+            "title": "Someone's Dream",
+            "rating": 8.6
           },
           {
             "episode": 2,
-            "title": "Yoriichi Type Zero"
+            "title": "Yoriichi Type Zero",
+            "rating": 7.3
           },
           {
             "episode": 3,
-            "title": "A Sword from Over 300 Years Ago"
+            "title": "A Sword from Over 300 Years Ago",
+            "rating": 8.4
           },
           {
             "episode": 4,
-            "title": "Thank You, Tokito"
+            "title": "Thank You, Tokito",
+            "rating": 8.2
           },
           {
             "episode": 5,
-            "title": "Bright Red Sword"
+            "title": "Bright Red Sword",
+            "rating": 9.2
           },
           {
             "episode": 6,
-            "title": "Aren't You Going to Become a Hashira?"
+            "title": "Aren't You Going to Become a Hashira?",
+            "rating": 8.7
           },
           {
             "episode": 7,
@@ -27149,19 +27194,23 @@ window._ANIME_DATA = [
           },
           {
             "episode": 8,
-            "title": "The Mu in Muichiro"
+            "title": "The Mu in Muichiro",
+            "rating": 8.7
           },
           {
             "episode": 9,
-            "title": "Mist Hashira Muichiro Tokito"
+            "title": "Mist Hashira Muichiro Tokito",
+            "rating": 8.6
           },
           {
             "episode": 10,
-            "title": "Love Hashira Mitsuri Kanroji"
+            "title": "Love Hashira Mitsuri Kanroji",
+            "rating": 8.3
           },
           {
             "episode": 11,
-            "title": "A Connected Bond: Daybreak and First Light"
+            "title": "A Connected Bond: Daybreak and First Light",
+            "rating": 9.4
           }
         ]
       },
@@ -27170,35 +27219,43 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "To Defeat Muzan Kibutsuji"
+            "title": "To Defeat Muzan Kibutsuji",
+            "rating": 7.9
           },
           {
             "episode": 2,
-            "title": "Water Hashira Giyu Tomioka's Pain"
+            "title": "Water Hashira Giyu Tomioka's Pain",
+            "rating": 7.5
           },
           {
             "episode": 3,
-            "title": "Fully Recovered Tanjiro Joins the Hashira Training!!"
+            "title": "Fully Recovered Tanjiro Joins the Hashira Training!!",
+            "rating": 7.2
           },
           {
             "episode": 4,
-            "title": "To Bring a Smile to One's Face"
+            "title": "To Bring a Smile to One's Face",
+            "rating": 7.1
           },
           {
             "episode": 5,
-            "title": "I Even Ate Demons..."
+            "title": "I Even Ate Demons...",
+            "rating": 7.4
           },
           {
             "episode": 6,
-            "title": "The Strongest of the Demon Slayer Corps"
+            "title": "The Strongest of the Demon Slayer Corps",
+            "rating": 7.3
           },
           {
             "episode": 7,
-            "title": "Stone Hashira Gyomei Himejima"
+            "title": "Stone Hashira Gyomei Himejima",
+            "rating": 8.6
           },
           {
             "episode": 8,
-            "title": "The Hashira Unite"
+            "title": "The Hashira Unite",
+            "rating": 9.8
           }
         ]
       }
