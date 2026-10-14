@@ -7255,7 +7255,7 @@ window._MOVIES_DATA = [
     "title": "Moana ",
     "type": "Movie",
     "year": 2026,
-    "rating": 5.8,
+    "rating": "7.6",
     "age": "PG",
     "duration": "1h 55m ",
     "genres": [
