@@ -43,7 +43,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Survival"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
     "videoUrl": "1302904",
     "trailerUrl": "https://youtu.be/Ho10_4IX1jE?si=FUdMzOye8Udim8u4",
