@@ -34,7 +34,7 @@ window._MOVIES_DATA = [
     "title": "Whalefall",
     "type": "Movie",
     "year": 2026,
-    "rating": "6.2",
+    "rating": "6.5",
     "age": "PG-13",
     "duration": "2h 10m",
     "genres": [
