@@ -51,7 +51,7 @@ window._MOVIES_DATA = [
     "overviewKurdish": "لە هەوڵێکدا بۆ کۆتاییهێنان بە ئازارە دەروونییەکانی دوای مردنی باوکی، مەلەوانێکی لاوی ژێرئاو دەچێتە قووڵاییە مەترسیدارەکانی زەریای هێمن بۆ گەڕان بەدوای پاشماوەی تەرمەکەیدا. بەڵام ئەرکەکەی دەگۆڕێت بۆ ململانێیەکی سەخت لەپێناو مانەوەدا کاتێک بە ڕێکەوت لەلایەن نەهەنگێکی زەبەلاحی شەست تۆنییەوە بە ساغی قووت دەدرێت، و تەنها یەک کاتژمێر ئۆکسجینی لەبەردەستدا دەمێنێتەوە بۆ ئەوەی ڕێگەیەک بدۆزێتەوە و لەناو سکی ئەو بوونەوەرە دەریاییە ڕزگاری بێت پێش ئەوەی هەناسەی تەواو ببێت.",
     "director": "Brian Duffield",
     "cast": [
-      "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams, Lee Pace, Xolo Maridueña, Solly McLeod, Stockard Channing, Dianne Wiest"
+      "Austin Abrams, Josh Brolin"
     ],
     "trending": true,
     "featured": true,
