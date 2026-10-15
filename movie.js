@@ -10132,4 +10132,5 @@ window.addEventListener('message', (event) => {
             subClock.sync(currentTime);
             updateSubtitleOverlay(subClock.currentTime);
         }
-    } catch(e
+    } catch(e) {}
+});
