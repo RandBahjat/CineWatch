@@ -40,7 +40,7 @@ window._MOVIES_DATA = [
     "genres": [
       "Thriller",
       "Drama",
-      "Fantasy",
+      "Adventure",
       "Romance"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
