@@ -31,7 +31,7 @@ window._MOVIES_DATA = [
     "seasons": []
   },
   {
-    "title": "Matchbox the Movie",
+    "title": "Practical Magic 2",
     "type": "Movie",
     "year": 2026,
     "rating": "5.7",
