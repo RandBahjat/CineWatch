@@ -49,7 +49,7 @@ window._MOVIES_DATA = [
     "trailerUrl": "https://youtu.be/Dw-5ZGapGTQ?si=gy4apB2Zbjb0vP2Q",
     "overview": "Attempting to find closure after the death of his estranged father, a young scuba diver ventures into the treacherous depths of the Pacific Ocean to search for his remains. His mission turns into a desperate fight for survival when he is accidentally swallowed whole by an eighty-foot, sixty-ton sperm whale, leaving him with just one hour of oxygen to escape the creature's belly before his air runs out.",
     "overviewKurdish": "لە هەوڵێکدا بۆ کۆتاییهێنان بە ئازارە دەروونییەکانی دوای مردنی باوکی، مەلەوانێکی لاوی ژێرئاو دەچێتە قووڵاییە مەترسیدارەکانی زەریای هێمن بۆ گەڕان بەدوای پاشماوەی تەرمەکەیدا. بەڵام ئەرکەکەی دەگۆڕێت بۆ ململانێیەکی سەخت لەپێناو مانەوەدا کاتێک بە ڕێکەوت لەلایەن نەهەنگێکی زەبەلاحی شەست تۆنییەوە بە ساغی قووت دەدرێت، و تەنها یەک کاتژمێر ئۆکسجینی لەبەردەستدا دەمێنێتەوە بۆ ئەوەی ڕێگەیەک بدۆزێتەوە و لەناو سکی ئەو بوونەوەرە دەریاییە ڕزگاری بێت پێش ئەوەی هەناسەی تەواو ببێت.",
-    "director": "Susanne Bier",
+    "director": "Brian Duffield",
     "cast": [
       "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams, Lee Pace, Xolo Maridueña, Solly McLeod, Stockard Channing, Dianne Wiest"
     ],
