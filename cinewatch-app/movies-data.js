@@ -41,7 +41,7 @@ window._MOVIES_DATA = [
       "Thriller",
       "Drama",
       "Adventure",
-      "s"
+      "Survival"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
