@@ -26,7 +26,7 @@ const RAND_BAHJAT_ACCOUNT = {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = ["Dragon Ball Super: Beerus","VisionQuest","Spider-Man: Brand New Day","Animals","Lanterns","Digger","Unabomber","Resident Evil","Neagley","Reacher","Verity"];
-let TOP_10_TRENDING_TODAY = ["Dragon Ball Super: Beerus","VisionQuest","Spider-Man: Brand New Day","Whalefall",, "Digger","Street Fighter", "Animals",  "Resident Evil",   "Verity","Lanterns"];
+let TOP_10_TRENDING_TODAY = ["Dragon Ball Super: Beerus","VisionQuest","Spider-Man: Brand New Day","Whalefall", "Digger","Street Fighter", "Animals",  "Resident Evil",   "Verity","Lanterns"];
 let TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","Animals","Matchbox the Movie","Insidious: Out of the Further", "Digger",  "Fall 2: Deadpoint", "Resident Evil", "Verity"];
 let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day","Resident Evil","The End of Oak Street","Coyote vs. Acme","The Odysessey","Mutiny", "Moana(2026)", "The Runner","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
