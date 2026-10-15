@@ -38,7 +38,7 @@ window._MOVIES_DATA = [
     "age": "PG-13",
     "duration": "1h 46m",
     "genres": [
-      "Comedy",
+      "Thriller",
       "Drama",
       "Fantasy",
       "Romance"
