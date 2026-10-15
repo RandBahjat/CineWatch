@@ -36,7 +36,7 @@ window._MOVIES_DATA = [
     "year": 2026,
     "rating": "6.5",
     "age": "PG-13",
-    "duration": "1h 10m",
+    "duration": "1h 46m",
     "genres": [
       "Comedy",
       "Drama",
