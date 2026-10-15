@@ -4,6 +4,112 @@
 
 window._SERIES_DATA = [
   {
+    "title": "Carrie",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": "8.4",
+    "age": "TV-MA",
+    "duration": "52m",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Sci-Fi & Fantasy"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+    "videoUrl": "288673",
+    "trailerUrl": "https://www.youtube.com/watch?v=jkUw2nh6fT0",
+    "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social-media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
+    "overviewKurdish": "دوای ئەوەی مردنی لەناکاو و پێشوەختەی باوکی دەیکاتە ناو ژینگەی بێبەزەییانەی ئامادەییەکی گشتی، کێری ناچار دەبێت بەرەوڕووی ئابڕووچوونێکی بەربڵاوی تۆڕە کۆمەڵایەتییەکان ببێتەوە کە تەواوی شارۆچکەکەی دەهەژێنێت. لەژێر پەستانی بێبەزەییانە و گاڵتەپێکردنی سەردەمی سۆشیاڵ میدیادا، هێزێکی نهێنی و سەرسوڕهێنەری تێلیکینیسیس (جووڵاندنی شتەکان بە هێزی مێشک) هاوشانی تەمەنی هەرزەکاری لە ناخیدا بەخەبەر دێت.",
+    "director": "Mike Flanagan",
+    "cast": [
+      "Summer H. Howell, Samantha Sloyan, Siena Agudong, Alison Thornton, Joel Oulette, Josie Totah, Arthur Conti, Amber Midthunder"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "FIRST PERIOD",
+            "airDate": "2026-10-07",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/q6K86iDYMr8G0xQC5OxDHi34OWo.jpg",
+            "duration": "56m",
+            "overview": "The start of a brand new day."
+          },
+          {
+            "episode": 2,
+            "title": "FOREIGN LANGUAGE",
+            "airDate": "2026-10-07",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/2BAJUukstdRp5JdJL4KgB1oFXEj.jpg",
+            "duration": "52m",
+            "overview": "New communication skills from an unfamiliar culture."
+          },
+          {
+            "episode": 3,
+            "title": "SOCIAL STUDIES",
+            "airDate": "2026-10-07",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/rCayKt9PSctLY3Oo85nBvm1ibnq.jpg",
+            "duration": "50m",
+            "overview": "How people, communities, and societies interact."
+          },
+          {
+            "episode": 4,
+            "title": "DRAMATIC ARTS",
+            "airDate": "2026-10-07",
+            "rating": 8.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/br1jADm12G7gdN9rSlj3dn0VB4i.jpg",
+            "duration": "53m",
+            "overview": "Voice, movement, and improvisation."
+          },
+          {
+            "episode": 5,
+            "title": "PHYSICAL EDUCATION",
+            "airDate": "2026-10-07",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/aosEmangiVoqjUIgCcTz8pEUFuS.jpg",
+            "duration": "49m",
+            "overview": "Health, fitness, and exercise."
+          },
+          {
+            "episode": 6,
+            "title": "HOME ECONOMICS",
+            "airDate": "2026-10-07",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/ggtBh6ZtP3LQL6iHAt3FpT2y0j2.jpg",
+            "duration": "1h",
+            "overview": "Practical life skills for independent living."
+          },
+          {
+            "episode": 7,
+            "title": "ROMANTIC LITERATURE",
+            "airDate": "2026-10-07",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/eQRCwK89aL7C0qEfEGrpkqfB2as.jpg",
+            "duration": "54m",
+            "overview": "The power of emotion and individual experience."
+          },
+          {
+            "episode": 8,
+            "title": "AP PHYSICS",
+            "airDate": "2026-10-07",
+            "rating": 8.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w500/wcCBQrz9zvQkaxlfFyClGGJGFEO.jpg",
+            "duration": "49m",
+            "overview": "For every action, there is an equal and opposite reaction."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "VisionQuest",
     "type": "TV Show",
     "year": 2026,
