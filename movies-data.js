@@ -47,7 +47,7 @@ window._MOVIES_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/original/dUzzwJpX4Fiet2QJy5P1TxpW1Qa.jpg",
     "videoUrl": "1255833",
     "trailerUrl": "https://youtu.be/Dw-5ZGapGTQ?si=gy4apB2Zbjb0vP2Q",
-    "overview": "Returning to a world of moonlit mischief and powerful ancestral magic, the Owens sisters—Sally and Gillian—reunite alongside the next generation of witches in their multi-generational family. Together, they must confront dark family secrets and make ultimate sacrifices for one another to finally break the centuries-old curse that threatens to unravel their family and doom them to a loveless existence once and for all.",
+    "overview": "Attempting to find closure after the death of his estranged father, a young scuba diver ventures into the treacherous depths of the Pacific Ocean to search for his remains. His mission turns into a desperate fight for survival when he is accidentally swallowed whole by an eighty-foot, sixty-ton sperm whale, leaving him with just one hour of oxygen to escape the creature's belly before his air runs out.",
     "overviewKurdish": "لە گەڕانەوەیەکدا بۆ جیهانی پڕ لە جادووی باوباپیران، دوو خوشکەکەی خێزانی ئۆوێنز، سالی و جیلیان، شانبەشانی نەوەی نوێی جادووگەرەکانی خێزانەکەیان یەکدەگرنەوە. پێکەوە دەبێت ڕووبەڕووی نهێنییە تاریکەکان ببنەوە و قوربانی لەپێناو یەکتردا بدەن، بە ئامانجی شکاندنی ئەو نەفرەتە دێرینەی کە بۆ چەندین سەدەیە خۆشەویستیی لە ژنانی خێزانەکەیان تاڵ کردووە و هەڕەشەی لەناوبردنی خێزانەکەیان دەکات.",
     "director": "Susanne Bier",
     "cast": [
