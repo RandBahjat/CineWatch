@@ -47,7 +47,7 @@ window._MOVIES_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/original/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
     "videoUrl": "1302904",
     "trailerUrl": "https://youtu.be/Ho10_4IX1jE?si=FUdMzOye8Udim8u4",
-    "overview": "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
+    "overview": "Returning to a world of moonlit mischief and powerful ancestral magic, the Owens sisters—Sally and Gillian—reunite alongside the next generation of witches in their multi-generational family. Together, they must confront dark family secrets and make ultimate sacrifices for one another to finally break the centuries-old curse that threatens to unravel their family and doom them to a loveless existence once and for all.",
     "overviewKurdish": "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
     "director": "Sam Hargrave",
     "cast": [
