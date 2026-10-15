@@ -7,7 +7,7 @@ window._SERIES_DATA = [
     "title": "Carrie",
     "type": "TV Show",
     "year": 2026,
-    "rating": "8.4",
+    "rating": "7.8",
     "age": "TV-MA",
     "duration": "52m",
     "genres": [
@@ -37,7 +37,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "FIRST PERIOD",
             "airDate": "2026-10-07",
-            "rating": 8.4,
+            "rating": 8.1,
             "thumbnail": "https://image.tmdb.org/t/p/w500/q6K86iDYMr8G0xQC5OxDHi34OWo.jpg",
             "duration": "56m",
             "overview": "The start of a brand new day."
@@ -46,7 +46,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "FOREIGN LANGUAGE",
             "airDate": "2026-10-07",
-            "rating": 8.3,
+            "rating": 7.9,
             "thumbnail": "https://image.tmdb.org/t/p/w500/2BAJUukstdRp5JdJL4KgB1oFXEj.jpg",
             "duration": "52m",
             "overview": "New communication skills from an unfamiliar culture."
@@ -55,7 +55,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "SOCIAL STUDIES",
             "airDate": "2026-10-07",
-            "rating": 8.2,
+            "rating": 7.9,
             "thumbnail": "https://image.tmdb.org/t/p/w500/rCayKt9PSctLY3Oo85nBvm1ibnq.jpg",
             "duration": "50m",
             "overview": "How people, communities, and societies interact."
@@ -64,7 +64,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "DRAMATIC ARTS",
             "airDate": "2026-10-07",
-            "rating": 8.5,
+            "rating": 8.1,
             "thumbnail": "https://image.tmdb.org/t/p/w500/br1jADm12G7gdN9rSlj3dn0VB4i.jpg",
             "duration": "53m",
             "overview": "Voice, movement, and improvisation."
@@ -82,7 +82,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "HOME ECONOMICS",
             "airDate": "2026-10-07",
-            "rating": 8.4,
+            "rating": 8.5,
             "thumbnail": "https://image.tmdb.org/t/p/w500/ggtBh6ZtP3LQL6iHAt3FpT2y0j2.jpg",
             "duration": "1h",
             "overview": "Practical life skills for independent living."
@@ -91,7 +91,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "ROMANTIC LITERATURE",
             "airDate": "2026-10-07",
-            "rating": 8.6,
+            "rating": 8.4,
             "thumbnail": "https://image.tmdb.org/t/p/w500/eQRCwK89aL7C0qEfEGrpkqfB2as.jpg",
             "duration": "54m",
             "overview": "The power of emotion and individual experience."
@@ -100,7 +100,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "AP PHYSICS",
             "airDate": "2026-10-07",
-            "rating": 8.8,
+            "rating": 8,
             "thumbnail": "https://image.tmdb.org/t/p/w500/wcCBQrz9zvQkaxlfFyClGGJGFEO.jpg",
             "duration": "49m",
             "overview": "For every action, there is an equal and opposite reaction."
