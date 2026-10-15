@@ -51,7 +51,7 @@ window._MOVIES_DATA = [
     "overviewKurdish": "لە گەڕانەوەیەکدا بۆ جیهانی پڕ لە جادووی باوباپیران، دوو خوشکەکەی خێزانی ئۆوێنز، سالی و جیلیان، شانبەشانی نەوەی نوێی جادووگەرەکانی خێزانەکەیان یەکدەگرنەوە. پێکەوە دەبێت ڕووبەڕووی نهێنییە تاریکەکان ببنەوە و قوربانی لەپێناو یەکتردا بدەن، بە ئامانجی شکاندنی ئەو نەفرەتە دێرینەی کە بۆ چەندین سەدەیە خۆشەویستیی لە ژنانی خێزانەکەیان تاڵ کردووە و هەڕەشەی لەناوبردنی خێزانەکەیان دەکات.",
     "director": "Susanne Bier",
     "cast": [
-      "John Cena, Jessica Biel, Arturo Castro"
+      "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams, Lee Pace, Xolo Maridueña, Solly McLeod, Stockard Channing, Dianne Wiest"
     ],
     "trending": true,
     "featured": true,
