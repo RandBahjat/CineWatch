@@ -31,7 +31,7 @@ window._MOVIES_DATA = [
     "seasons": []
   },
   {
-    "title": "Practical Magic 2",
+    "title": "Whalefall",
     "type": "Movie",
     "year": 2026,
     "rating": "6.2",
