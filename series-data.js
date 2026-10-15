@@ -111747,7 +111747,7 @@ window._SERIES_DATA = [
     "title": "MobLand",
     "type": "TV Show",
     "year": 2025,
-    "rating": "8.4",
+    "rating": "8.3",
     "age": "TV-MA",
     "genres": [
       "Crime",
@@ -111801,7 +111801,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Rat Trap",
             "airDate": "2025-04-20",
-            "rating": 8,
+            "rating": 7.9,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/564/1411759.jpg",
             "duration": "42 min",
             "overview": "Harry pays a visit to Antoine at the urging of Bella; Fisk and Mukasa trade theories; suspecting a rat, Conrad comes to Jan for a favor; Kevin makes a startling confession; Richie calls a midnight meeting at the Sinful Monkey with shocking results."
@@ -111837,7 +111837,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Helter Skelter",
             "airDate": "2025-05-18",
-            "rating": 8.4,
+            "rating": 8.3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/568/1421500.jpg",
             "duration": "44 min",
             "overview": "Maeve extends an olive branch. Kevin questions the wisdom of a sit down with Jaime. Tattersall offers Fisk and Mukasa a new point of entry. Harry comes to Kat for a favor as Richie, at the Sinful Monkey, contemplates a new affiliation."
