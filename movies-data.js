@@ -44,7 +44,7 @@ window._MOVIES_DATA = [
       "Survival"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/dUzzwJpX4Fiet2QJy5P1TxpW1Qa.jpg",
     "videoUrl": "1302904",
     "trailerUrl": "https://youtu.be/Ho10_4IX1jE?si=FUdMzOye8Udim8u4",
     "overview": "Returning to a world of moonlit mischief and powerful ancestral magic, the Owens sisters—Sally and Gillian—reunite alongside the next generation of witches in their multi-generational family. Together, they must confront dark family secrets and make ultimate sacrifices for one another to finally break the centuries-old curse that threatens to unravel their family and doom them to a loveless existence once and for all.",
