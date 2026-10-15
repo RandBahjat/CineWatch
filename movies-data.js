@@ -59,6 +59,34 @@ window._MOVIES_DATA = [
     "seasons": []
   },
   {
+    "title": "Practical Magic 2",
+    "type": "Movie",
+    "year": 2026,
+    "rating": "6.2",
+    "age": "PG-13",
+    "duration": "2h 10m",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
+    "videoUrl": "1302904",
+    "trailerUrl": "https://youtu.be/Ho10_4IX1jE?si=FUdMzOye8Udim8u4",
+    "overview": "Returning to a world of moonlit mischief and powerful ancestral magic, the Owens sisters—Sally and Gillian—reunite alongside the next generation of witches in their multi-generational family. Together, they must confront dark family secrets and make ultimate sacrifices for one another to finally break the centuries-old curse that threatens to unravel their family and doom them to a loveless existence once and for all.",
+    "overviewKurdish": "لە گەڕانەوەیەکدا بۆ جیهانی پڕ لە جادووی باوباپیران، دوو خوشکەکەی خێزانی ئۆوێنز، سالی و جیلیان، شانبەشانی نەوەی نوێی جادووگەرەکانی خێزانەکەیان یەکدەگرنەوە. پێکەوە دەبێت ڕووبەڕووی نهێنییە تاریکەکان ببنەوە و قوربانی لەپێناو یەکتردا بدەن، بە ئامانجی شکاندنی ئەو نەفرەتە دێرینەی کە بۆ چەندین سەدەیە خۆشەویستیی لە ژنانی خێزانەکەیان تاڵ کردووە و هەڕەشەی لەناوبردنی خێزانەکەیان دەکات.",
+    "director": "Susanne Bier",
+    "cast": [
+      "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams, Lee Pace, Xolo Maridueña, Solly McLeod, Stockard Channing, Dianne Wiest"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": false,
+    "seasons": []
+  },
+  {
     "title": "Animals",
     "type": "Movie",
     "year": 2026,
