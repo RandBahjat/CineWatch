@@ -1950,9 +1950,10 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
   const cookies = document.cookie || '';
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
-  const prevText = isCkb ? '&lsaquo; \\u067e\\u06ce\\u0634\\u0648\\u0648' : (isAr ? '&lsaquo; \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642' : '&lsaquo; Prev');
-  const nextText = isCkb ? '\\u062f\\u0648\\u0627\\u062a\\u0631 &rsaquo;' : (isAr ? '\\u0627\\u0644\\u062a\\u0627\\u0644\\u064a &rsaquo;' : 'Next &rsaquo;');
-  const goText = isCkb ? '\\u0628\\u0695\\u06c6' : (isAr ? '\\u0627\\u0646\\u062a\\u0642\\u0627\\u0644' : 'Go');
+  const prevText = isCkb ? '&lsaquo; پێشوو' : (isAr ? '&lsaquo; السابق' : '&lsaquo; Prev');
+  const nextText = isCkb ? 'دواتر &rsaquo;' : (isAr ? 'التالي &rsaquo;' : 'Next &rsaquo;');
+  const goText = isCkb ? 'بڕۆ' : (isAr ? 'انتقال' : 'Go');
+  const jumpTitle = isCkb ? 'بڕۆ بۆ پەڕە' : (isAr ? 'الانتقال إلى صفحة' : 'Jump to page');
 
   let html = `<button class="page-btn prev-btn notranslate" translate="no" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">${prevText}</button>`;
   pages.forEach((p) => {
@@ -1967,7 +1968,7 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
   // Add jump to page input
   html += `
     <div class="page-jump">
-      <input type="number" class="page-jump-input notranslate" translate="no" id="${paginationId}-jump-input" min="1" max="${totalPages}" placeholder="${goText}" title="Jump to page">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" class="page-jump-input notranslate" translate="no" id="${paginationId}-jump-input" placeholder="${goText}" title="${jumpTitle}">
       <button class="page-btn page-jump-btn notranslate" translate="no" id="${paginationId}-jump-btn">${goText}</button>
     </div>
   `;
@@ -1993,7 +1994,9 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
 
   if (jumpInput && jumpBtn) {
     const jumpToPage = () => {
-      const p = parseInt(jumpInput.value, 10);
+      let rawVal = String(jumpInput.value || '').trim();
+      rawVal = rawVal.replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
+      const p = parseInt(rawVal, 10);
       if (!isNaN(p) && p >= 1 && p <= totalPages) {
         if (typeof window.handlePaginationWithAd === 'function') {
           window.handlePaginationWithAd(p, onPageChange);
