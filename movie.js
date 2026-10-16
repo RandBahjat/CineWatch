@@ -1591,10 +1591,22 @@ function renderBecauseYouWatchedShelf() {
     headingText.classList.add("notranslate");
     headingText.setAttribute("translate", "no");
     if (isCkb) {
-      headingText.innerHTML = `چونکە سەیری <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>ـت کردووە`;
+      headingText.style.display = "inline-flex";
+      headingText.style.alignItems = "center";
+      headingText.style.gap = "0.45rem";
+      headingText.style.flexWrap = "wrap";
+      headingText.innerHTML = `<span>چونکە سەیری ئەمەت کردووە:</span> <span class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</span>`;
     } else if (isAr) {
-      headingText.innerHTML = `لأنك شاهدت <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
+      headingText.style.display = "inline-flex";
+      headingText.style.alignItems = "center";
+      headingText.style.gap = "0.45rem";
+      headingText.style.flexWrap = "wrap";
+      headingText.innerHTML = `<span>لأنك شاهدت:</span> <span class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</span>`;
     } else {
+      headingText.style.display = "";
+      headingText.style.alignItems = "";
+      headingText.style.gap = "";
+      headingText.style.flexWrap = "";
       headingText.innerHTML = `Because you watched <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
     }
   }
