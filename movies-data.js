@@ -2362,7 +2362,7 @@ window._MOVIES_DATA = [
     "poster": "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     "videoUrl": "557",
-    "trailerUrl": "",
+    "trailerUrl": "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
     "overview": "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     "overviewKurdish": "",
     "director": "Sam Raimi",
