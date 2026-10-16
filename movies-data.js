@@ -173,7 +173,7 @@ window._MOVIES_DATA = [
     "title": "Street Fighter",
     "type": "Movie",
     "year": 2026,
-    "rating": "TBR",
+    "rating": "6.2",
     "age": "PG-13",
     "duration": "1h 59m",
     "genres": [
@@ -712,7 +712,7 @@ window._MOVIES_DATA = [
     "title": "Grand Theft Auto VI: An Extended Look",
     "type": "Movie",
     "year": 2026,
-    "rating": 8.4,
+    "rating": "8.2",
     "age": "R",
     "duration": "30m",
     "genres": [
