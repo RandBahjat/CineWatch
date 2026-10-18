@@ -8328,6 +8328,51 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
 
 
+    // Dual-stream audio sync for browser-incompatible video audio (e.g., AC-3 Dolby on 4K files)
+    const targetAudioUrl = ref?.audioUrl || (window._FOURK_DATA && window._FOURK_DATA.find(f => f.videoUrl === cleanUrl || (ref && (f.id === ref.id || f.title === ref.title)))?.audioUrl);
+    if (targetAudioUrl) {
+      try {
+        if (window._cwSyncAudio) {
+          window._cwSyncAudio.pause();
+          window._cwSyncAudio.src = '';
+          window._cwSyncAudio = null;
+        }
+        const syncAudio = new Audio(targetAudioUrl);
+        syncAudio.preload = 'auto';
+        window._cwSyncAudio = syncAudio;
+
+        if (window.artPlayerInstance && window.artPlayerInstance.video) {
+          window.artPlayerInstance.video.muted = true;
+        }
+
+        window.artPlayerInstance.on('play', () => {
+          syncAudio.play().catch(() => {});
+        });
+        window.artPlayerInstance.on('pause', () => {
+          syncAudio.pause();
+        });
+        window.artPlayerInstance.on('seek', (time) => {
+          syncAudio.currentTime = time;
+        });
+        window.artPlayerInstance.on('video:timeupdate', () => {
+          if (Math.abs(syncAudio.currentTime - window.artPlayerInstance.currentTime) > 0.25) {
+            syncAudio.currentTime = window.artPlayerInstance.currentTime;
+          }
+        });
+        window.artPlayerInstance.on('video:volumechange', () => {
+          syncAudio.volume = window.artPlayerInstance.volume;
+          syncAudio.muted = window.artPlayerInstance.muted;
+        });
+        window.artPlayerInstance.on('destroy', () => {
+          syncAudio.pause();
+          syncAudio.src = '';
+          window._cwSyncAudio = null;
+        });
+      } catch (audioErr) {
+        console.warn("Could not attach synced audio track:", audioErr);
+      }
+    }
+
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
       window.artPlayerInstance.subtitle.show = true;
     }
