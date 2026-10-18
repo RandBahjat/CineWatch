@@ -822,7 +822,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Sci-Fi"
     ],
-    "poster": "https://pub-8831c11f477044598f386d280daece6c.r2.dev/spiderman_brand_new_day_kurdish.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     "videoUrl": "969681",
     "hdVideoUrl": "969681",
