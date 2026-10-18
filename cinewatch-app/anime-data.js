@@ -53,6 +53,14 @@ window._ANIME_DATA = [
             "thumbnail": "https://media.kitsu.app/episode/393369/thumbnail/6564e0c3506571ff3ece5982b6552323.jpg",
             "duration": "24m",
             "overview": "Beerus, the God of Destruction, awakens from his decades-long slumber after having a prophetic dream of a powerful warrior known as the Super Saiyan God. Accompanied by Whis, Beerus sets off across the cosmos in search of the legendary fighter."
+          },
+          {
+            "episode": 2,
+            "title": "The God of Destruction Heads to the Planet of the Kai",
+            "absoluteEpisode": 2,
+            "thumbnail": "https://media.kitsu.app/episode/393370/thumbnail/2c60fab1312fb743fd4374eeab24abf7.jpg",
+            "duration": "24m",
+            "overview": "Elder Supreme Kai and Supreme Kai Kibito learn of the awakening of the almighty Beerus. Meanwhile, the God of Destruction heads to the Planet of the Kai to find out about the \"Super Saiyan God\" he saw in a prophetic dream and...?!"
           }
         ]
       }
