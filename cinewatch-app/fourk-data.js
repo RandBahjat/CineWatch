@@ -8,7 +8,7 @@ window._FOURK_DATA = [
     "title": "The Amazing Spider-Man",
     "type": "Movie",
     "year": 2012,
-    "rating": 7.5,
+    "rating": 7,
     "age": "PG-13",
     "duration": "2h 16m",
     "genres": [
