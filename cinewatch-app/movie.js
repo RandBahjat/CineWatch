@@ -360,6 +360,7 @@ async function loadMediaFromAPI() {
       if (fourkMatch) {
         m.has4k = true;
         m.fourkVideoUrl = fourkMatch.videoUrl;
+        if (fourkMatch.audioUrl) m.audioUrl = fourkMatch.audioUrl;
         if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
       }
 
