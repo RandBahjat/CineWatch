@@ -8331,6 +8331,56 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
 
 
+    // Dual-stream audio sync for browser-incompatible video audio (e.g., AC-3 Dolby on 4K files)
+    const targetAudioUrl = ref?.audioUrl || (window._FOURK_DATA && window._FOURK_DATA.find(f => f.videoUrl === cleanUrl || (ref && (f.id === ref.id || f.title === ref.title)))?.audioUrl);
+    if (targetAudioUrl) {
+      try {
+        console.log("[CineWatch 4K] Initializing dual-stream AAC audio:", targetAudioUrl);
+        let syncAudio = document.getElementById("cwSyncAudio");
+        if (!syncAudio) {
+          syncAudio = document.createElement("audio");
+          syncAudio.id = "cwSyncAudio";
+          syncAudio.style.display = "none";
+          document.body.appendChild(syncAudio);
+        }
+        syncAudio.src = targetAudioUrl;
+        syncAudio.preload = "auto";
+        window._cwSyncAudio = syncAudio;
+
+        const art = window.artPlayerInstance;
+        if (art && art.video) {
+          art.video.muted = true; // Mute silent AC3 track to avoid any hardware decode conflicts
+        }
+
+        art.on('play', () => {
+          syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
+        });
+        art.on('pause', () => {
+          syncAudio.pause();
+        });
+        art.on('seek', (time) => {
+          syncAudio.currentTime = time;
+        });
+        art.on('video:timeupdate', () => {
+          const diff = Math.abs(syncAudio.currentTime - art.currentTime);
+          if (diff > 0.25) {
+            syncAudio.currentTime = art.currentTime;
+          }
+        });
+        art.on('video:volumechange', () => {
+          syncAudio.volume = art.volume;
+          syncAudio.muted = art.muted;
+        });
+        art.on('destroy', () => {
+          syncAudio.pause();
+          syncAudio.src = '';
+          window._cwSyncAudio = null;
+        });
+      } catch (audioErr) {
+        console.warn("[CineWatch 4K Audio] Could not attach synced audio track:", audioErr);
+      }
+    }
+
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
       window.artPlayerInstance.subtitle.show = true;
     }
