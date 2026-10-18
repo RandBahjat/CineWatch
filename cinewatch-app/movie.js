@@ -8376,6 +8376,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           syncAudio.src = '';
           window._cwSyncAudio = null;
         });
+
+        if (art.video && !art.video.paused) {
+          syncAudio.play().catch(() => {});
+        }
+        document.addEventListener('click', function unlockAudio() {
+          if (window._cwSyncAudio && window.artPlayerInstance && !window.artPlayerInstance.video.paused) {
+            window._cwSyncAudio.play().catch(() => {});
+          }
+        }, { once: true });
       } catch (audioErr) {
         console.warn("[CineWatch 4K Audio] Could not attach synced audio track:", audioErr);
       }
