@@ -50,7 +50,7 @@ window._FOURK_DATA = [
       "Adventure",
       "Sci-Fi"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+    "poster": "https://pub-8831c11f477044598f386d280daece6c.r2.dev/spiderman_brand_new_day_kurdish.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/dqhG3aCdBZxXikAQH9M8AUiIceQ.jpg",
     "videoUrl": "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4",
     "trailerUrl": "https://www.youtube.com/watch?v=daXaTug8rL4",
