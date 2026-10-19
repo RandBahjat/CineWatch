@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792421036393,
+  "lastRun": 1792438913734,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4632,21 +4632,21 @@
     "movie:whalefall": {
       "imdbId": "tt28535715",
       "rating": "N/A",
-      "lastChecked": 1792351625065,
+      "lastChecked": 1792438913734,
       "title": "Whalefall",
       "year": 2026
     },
     "movie:practical magic 2": {
       "imdbId": "tt32588798",
       "rating": "N/A",
-      "lastChecked": 1792351625065,
+      "lastChecked": 1792438913734,
       "title": "Practical Magic 2",
       "year": 2026
     },
     "series:carrie": {
       "imdbId": "tt11540908",
       "rating": "7.8",
-      "lastChecked": 1792351625065,
+      "lastChecked": 1792438913734,
       "title": "Carrie",
       "year": 2026
     },
@@ -4656,6 +4656,13 @@
       "lastChecked": 1792351625065,
       "title": "The Amazing Spider-Man",
       "year": 2012
+    },
+    "fourk:the amazing spider-man 2": {
+      "imdbId": "tt1872181",
+      "rating": "6.6",
+      "lastChecked": 1792438913734,
+      "title": "The Amazing Spider-Man 2",
+      "year": 2014
     }
   }
 }

@@ -76,7 +76,7 @@ window._FOURK_DATA = [
     "title": "The Amazing Spider-Man 2",
     "type": "Movie",
     "year": 2014,
-    "rating": 6.5,
+    "rating": 6.6,
     "age": "PG-13",
     "duration": "2h 21m",
     "genres": [
@@ -108,5 +108,3 @@ window._FOURK_DATA = [
     "seasons": []
   }
 ];
-
-
