@@ -450,12 +450,22 @@ function renderHome() {
   const top10List = (typeof window.TOP_10_TRENDING_TODAY !== 'undefined' && window.TOP_10_TRENDING_TODAY.length > 0)
     ? window.TOP_10_TRENDING_TODAY
     : APP_TOP_10;
-  const top10 = top10List.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
+  const findMediaByTitle = (title, typeFilter) => {
+    if (!title || !Array.isArray(MOVIES)) return null;
+    const lower = String(title).trim().toLowerCase();
+    let match = MOVIES.find(m => m.title && m.title.trim().toLowerCase() === lower && (!typeFilter || typeFilter(m)));
+    if (!match && typeFilter) {
+      match = MOVIES.find(m => m.title && m.title.trim().toLowerCase() === lower);
+    }
+    return match || null;
+  };
+
+  const top10 = top10List.map(title => findMediaByTitle(title)).filter(Boolean);
 
   let trendingMovies;
   if (window.TRENDING_THIS_WEEK_MOVIES && window.TRENDING_THIS_WEEK_MOVIES.length > 0) {
     trendingMovies = window.TRENDING_THIS_WEEK_MOVIES
-      .map(title => MOVIES.find(m => m.title === title && (!m.type || m.type === 'Movie')))
+      .map(title => findMediaByTitle(title, m => !m.type || m.type === 'Movie'))
       .filter(Boolean);
   } else {
     trendingMovies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime).slice(0, 15);
@@ -464,7 +474,7 @@ function renderHome() {
   let trendingSeries;
   if (window.TRENDING_THIS_WEEK_SERIES && window.TRENDING_THIS_WEEK_SERIES.length > 0) {
     trendingSeries = window.TRENDING_THIS_WEEK_SERIES
-      .map(title => MOVIES.find(m => m.title === title && (m.type === 'TV Show' || m.type === 'Series')))
+      .map(title => findMediaByTitle(title, m => m.type === 'TV Show' || m.type === 'Series' || (Array.isArray(m.seasons) && m.seasons.length > 0)))
       .filter(Boolean);
   } else {
     trendingSeries = MOVIES.filter(m => (m.type === 'TV Show' || m.type === 'Series') && !m.isAnime).slice(0, 15);
