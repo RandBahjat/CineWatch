@@ -3,7 +3,6 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
- 
   {
     "title": "Carrie",
     "type": "TV Show",
@@ -112246,11 +112245,11 @@ window._SERIES_DATA = [
       }
     ]
   },
-   {
+  {
     "title": "Cyberpunk: Edgerunners",
     "type": "TV Show",
     "year": 2022,
-    "rating": "8.5",
+    "rating": "8.3",
     "age": "TV-MA",
     "duration": "25m",
     "genres": [
@@ -112316,7 +112315,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "All Eyez On Me",
             "airDate": "2022-09-13",
-            "rating": 8.0,
+            "rating": 8,
             "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2VlMzdmMGYtMmJlNi00NDFmLThkOWItNmEwM2IzMGJlZWQyXkEyXkFqcGc@._V1_SX300.jpg",
             "duration": "25m",
             "overview": "David makes a clever suggestion when the team strategizes for their next mission. However, he soon learns that their target can't be underestimated."
@@ -112334,7 +112333,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Stronger",
             "airDate": "2022-09-13",
-            "rating": 8.0,
+            "rating": 8,
             "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTJlZjkxNWItNTI2MS00N2VhLWEzMjUtYmU0MjdhY2Q2OGJlXkEyXkFqcGc@._V1_SX300.jpg",
             "duration": "25m",
             "overview": "Now an all-star edgerunner enhanced with more cybernetics, David leads his team into a new mission. An old contact reaches out to him for a big job."
@@ -112369,5 +112368,5 @@ window._SERIES_DATA = [
         ]
       }
     ]
-  },
+  }
 ];
