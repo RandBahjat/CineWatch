@@ -21,7 +21,7 @@ window._ANIME_DATA = [
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
     tags: ["Animation", "Action", "Adventure", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/Y7spHx4ckxwYNppq3Qlvvtf5Qd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
     videoUrl: "63367",
     trailerUrl: "https://youtu.be/W9W5CLUGjbU?si=0ljmntCslpiU679B",
     animeSlug: "dragon-ball-super-beerus",
