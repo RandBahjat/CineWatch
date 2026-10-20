@@ -3,7 +3,6 @@
 // Set is4k: true on every entry.
 
 window._FOURK_DATA = [
- 
   {
     "id": "spider-man-brand-new-day-2026",
     "title": "Spider-Man: Brand New Day",
@@ -36,10 +35,10 @@ window._FOURK_DATA = [
     ],
     "trending": true,
     "featured": true,
+    "is4k": true,
     "seasons": []
   },
-
- {
+  {
     "id": "the-amazing-spider-man-2012",
     "title": "The Amazing Spider-Man",
     "type": "Movie",
@@ -73,7 +72,6 @@ window._FOURK_DATA = [
     "is4k": true,
     "seasons": []
   },
-
   {
     "id": "the-amazing-spider-man-2",
     "title": "The Amazing Spider-Man 2",
