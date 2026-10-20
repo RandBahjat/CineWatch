@@ -366,12 +366,20 @@ function getMoviesFromList(list, filterFn) {
   for (let i = 0; i < list.length; i++) {
     const query = list[i];
     const parsed = parseTitleQuery(query);
-    const match = MOVIES.find(m => {
+    let match = MOVIES.find(m => {
       const id = m.id || (m.title + '-' + (m.year || ''));
       if (seenIds.has(id)) return false;
       if (filterFn && !filterFn(m)) return false;
       return matchMediaTitle(m, parsed);
     });
+    // Fallback: if not found with type filter, search without filter so curated titles in code are never discarded
+    if (!match && filterFn) {
+      match = MOVIES.find(m => {
+        const id = m.id || (m.title + '-' + (m.year || ''));
+        if (seenIds.has(id)) return false;
+        return matchMediaTitle(m, parsed);
+      });
+    }
     if (match) {
       const id = match.id || (match.title + '-' + (match.year || ''));
       seenIds.add(id);
@@ -486,7 +494,7 @@ async function loadMediaFromAPI() {
     for (let i = 0; i < MOVIES.length; i++) {
       const m = MOVIES[i];
       m.featured = FEATURED_TITLES.some(t => matchMediaTitle(m, t));
-      m.trending = Boolean(m.trending) || TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
+      m.trending = TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t)) || TOP_10_TRENDING_TODAY.some(t => matchMediaTitle(m, t));
     }
 
     // Build O(1) fast lookup index
@@ -1348,7 +1356,7 @@ async function renderCarousels(priorityOnly = false) {
 
   // Render above-the-fold tracks immediately
   renderTrack("top10Track", top10List);
-  renderTrack("trendingMoviesTrack", mergedTrendingMovies);
+  renderTrack("trendingMoviesTrack", listTrendingMovies.length > 0 ? listTrendingMovies : mergedTrendingMovies);
 
   if (priorityOnly) return;
 
@@ -1382,7 +1390,7 @@ function renderRemainingCarousels() {
   });
 
   const remainingShelfMap = {
-    trendingSeriesTrack: mergedTrendingSeries,
+    trendingSeriesTrack: listTrendingSeries.length > 0 ? listTrendingSeries : mergedTrendingSeries,
     trendingAnimeTrack: mergedTrendingAnime,
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
     popularSeriesTrack: getMoviesFromList(POPULAR_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
