@@ -6,6 +6,31 @@
 
 window._MOVIES_DATA = [
 
+  // ============================================================
+  // Fall 2: Deadpoint (2026)
+  // ============================================================
+  {
+    title: "Fall 2: Deadpoint",
+    type: "Movie",
+    year: 2026,
+    rating: "6.4",
+    age: "PG-13",
+    duration: "1h 40m",
+    genres: ["Action", "Adventure", "Thriller"],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/ccBIyg1ITvuCDr4eMeEH0ZgNh4t.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    videoUrl: "1101412",
+    trailerUrl: "https://youtu.be/0h5G5gYmZ5Q",
+    overview: "Following the tragic death of Shiloh Hunter, her grieving sister Jax joins Shiloh's daredevil friend Luce on an extreme cliffside climb on Mount Kwan in Thailand. When a sudden rockslide destroys their path, the two women find themselves stranded thousands of feet in the air, forced into a harrowing battle for survival.",
+    overviewKurdish: "دوای مردنی دڵتەزێنی شایلۆ هانتەر، جاکسی خوشکی لەگەڵ لوسی هاوڕێی سەرکێشی شایلۆ دەچنە تایلەند بۆ سەرکەوتن بەسەر شاخی کوان. بەڵام کاتێک بەردێکی گەورە ڕێگاکەیان دەبڕێت، لە بەرزایی هەزاران پێ لە هەوادا گیر دەخۆن و دەبێت بۆ مانەوە لە ژیان بجەنگن.",
+    director: "Peter Spierig, Michael Spierig",
+    cast: ["Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+
  {
     title: "By Any Means",
     type: "Movie",
