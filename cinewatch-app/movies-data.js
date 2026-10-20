@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
     genres: ["Crime", "Drama", "History","Thriller"],
     poster: "https://image.tmdb.org/t/p/original/xsGwX8J7ynn4IK2KpKfSaTigkoX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/m34Uq5AwIy4GsGrxkUjokMprdf6.jpg",
-    videoUrl: "1148365",
+    videoUrl: "",
     trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
     overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
     overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
