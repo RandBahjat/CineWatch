@@ -1,8 +1,134 @@
-// CineWatch — Series Data
-// Edit this file to add, remove, or reorder TV shows and series.
-// Push to GitHub (or save — auto-sync will handle it) for changes to go live.
-
 window._SERIES_DATA = [
+  {
+    "title": "Cyberpunk: Edgerunners",
+    "type": "TV Show",
+    "year": 2022,
+    "rating": "8.5",
+    "age": "TV-MA",
+    "duration": "25m",
+    "genres": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Crime"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+    "videoUrl": "105248",
+    "trailerUrl": "https://www.youtube.com/watch?v=JtqIas3bYhg",
+    "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner. Having lost everything in a drive-by shooting, he chooses to survive on the wrong side of the law in the neon-drenched Night City.",
+    "overviewKurdish": "لە شارێکی داهاتووی وێران و پڕ لە گەندەڵی و دەستکارییە ئەلیکترۆنییەکانی جەستەدا، هەرزەکارێکی سەرشەقام بەناوی دەیڤد مارتینێز دوای لەدەستدانی هەموو شتێک لە ڕووداوێکی تەقەکردندا، هەوڵ دەدات لە ڕێگەی بوون بە چەکدارێکی بەکرێگیراوی یاساشکێن کە بە «ئێج‌ڕەنەر» ناسراوە، لەناو شەقامە پڕ لە نیۆنەکانی شاری نایت سیتی لەسەر پێیەکانی خۆی بمێنێتەوە و لە ژیاندا بێت.",
+    "director": "Hiroyuki Imaishi",
+    "cast": [
+      "KENN",
+      "Aoi Yuki",
+      "Hiroki Touchi",
+      "Michiko Kaiden",
+      "Takako Honda",
+      "Wataru Takagi",
+      "Tomoyo Kurosawa"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Let You Down",
+            "airDate": "2022-09-13",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQ5NGUxZjEtOTgzNy00YTQ4LTk1ZDMtYTdkYjhhODE1ZmY2XkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "After a night of streaming illegal braindance, David wakes up to reality: a rundown apartment with a broken washing machine and an overworked mother."
+          },
+          {
+            "episode": 2,
+            "title": "Like A Boy",
+            "airDate": "2022-09-13",
+            "rating": 8.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTdkOWJkOTctM2MzOS00YzEyLWIzZjgtNzdlZjJlYjliYjRhXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "With his newly enhanced body, David heads to the Academy seeking revenge on his bully. Later, he meets a mysterious woman who wants to recruit him."
+          },
+          {
+            "episode": 3,
+            "title": "Smooth Criminal",
+            "airDate": "2022-09-13",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGNjNTdiZjYtZjAwYi00MmFkLWFjMDQtYTg4NDQwOGM5MzMyXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "Surrounded by a group of rowdy edgerunners, David makes a plea to join their team. Meanwhile, sinister forces plot to lure him back to Arasaka Academy."
+          },
+          {
+            "episode": 4,
+            "title": "Lucky You",
+            "airDate": "2022-09-13",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODRmMDkxMjQtZWQ3MC00MmI1LWFiZTgtMjg3YzZmMzI3ODAxXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "Eager to learn the edgerunner ropes, David pesters Maine for another mission. Instead, Maine tasks Lucy with training him."
+          },
+          {
+            "episode": 5,
+            "title": "All Eyez On Me",
+            "airDate": "2022-09-13",
+            "rating": 8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2VlMzdmMGYtMmJlNi00NDFmLThkOWItNmEwM2IzMGJlZWQyXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "David makes a clever suggestion when the team strategizes for their next mission. However, he soon learns that their target can't be underestimated."
+          },
+          {
+            "episode": 6,
+            "title": "Girl on Fire",
+            "airDate": "2022-09-13",
+            "rating": 9.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYWI3Njk4MGYtOTY1Yy00Zjg3LTgzNGQtODRmZDc5ZTZhODVmXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "26m",
+            "overview": "Maine doesn't seem to be himself. But the team has bigger fish to fry: They must race against time to extract vital information from their prisoner."
+          },
+          {
+            "episode": 7,
+            "title": "Stronger",
+            "airDate": "2022-09-13",
+            "rating": 8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTJlZjkxNWItNTI2MS00N2VhLWEzMjUtYmU0MjdhY2Q2OGJlXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "Now an all-star edgerunner enhanced with more cybernetics, David leads his team into a new mission. An old contact reaches out to him for a big job."
+          },
+          {
+            "episode": 8,
+            "title": "Stay",
+            "airDate": "2022-09-13",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGQ5Y2UzYmItMjZlMC00YzcyLTgzYTQtYjY1ZGVhZWJlODg0XkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "25m",
+            "overview": "Faraday finds himself stuck between Arasaka and Militech. Lucy and Rebecca confront David about his change in behavior, but he refuses to listen."
+          },
+          {
+            "episode": 9,
+            "title": "Humanity",
+            "airDate": "2022-09-13",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmZjM2E5NTAtNDYzYy00ODg1LWJhODAtMmJjOTFjYjA1MTJlXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "26m",
+            "overview": "Lucy's captors learn about her secret mission and dark past. David and his team head out to complete Faraday's job but realize that something is off."
+          },
+          {
+            "episode": 10,
+            "title": "My Moon My Man",
+            "airDate": "2022-09-13",
+            "rating": 9.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTZkM2ZhMjEtNWQ0NS00ZGIxLTlmOTMtNjUxMmNjNGVjZWJiXkEyXkFqcGc@._V1_SX300.jpg",
+            "duration": "26m",
+            "overview": "On the edge of cyberpsychosis but determined to save Lucy, David storms into Night City as Arasaka plots to deploy their ultimate lethal weapon."
+          }
+        ]
+      }
+    ]
+  },
   {
     "title": "Carrie",
     "type": "TV Show",
@@ -112240,130 +112366,6 @@ window._SERIES_DATA = [
             "title": "Dark Matter",
             "airDate": "2013-03-16",
             "rating": 7.7
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Cyberpunk: Edgerunners",
-    "type": "TV Show",
-    "year": 2022,
-    "rating": "8.3",
-    "age": "TV-MA",
-    "duration": "25m",
-    "genres": [
-      "Animation",
-      "Action",
-      "Sci-Fi",
-      "Crime"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-    "videoUrl": "105248",
-    "trailerUrl": "https://www.youtube.com/watch?v=JtqIas3bYhg",
-    "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner. Having lost everything in a drive-by shooting, he chooses to survive on the wrong side of the law in the neon-drenched Night City.",
-    "overviewKurdish": "لە شارێکی داهاتووی وێران و پڕ لە گەندەڵی و دەستکارییە ئەلیکترۆنییەکانی جەستەدا، هەرزەکارێکی سەرشەقام بەناوی دەیڤد مارتینێز دوای لەدەستدانی هەموو شتێک لە ڕووداوێکی تەقەکردندا، هەوڵ دەدات لە ڕێگەی بوون بە چەکدارێکی بەکرێگیراوی یاساشکێن کە بە «ئێج‌ڕەنەر» ناسراوە، لەناو شەقامە پڕ لە نیۆنەکانی شاری نایت سیتی لەسەر پێیەکانی خۆی بمێنێتەوە و لە ژیاندا بێت.",
-    "director": "Hiroyuki Imaishi",
-    "cast": [
-      "KENN, Aoi Yuki, Hiroki Touchi, Michiko Kaiden, Takako Honda, Wataru Takagi, Tomoyo Kurosawa"
-    ],
-    "trending": true,
-    "featured": true,
-    "is4k": false,
-    "seasons": [
-      {
-        "season": 1,
-        "episodes": [
-          {
-            "episode": 1,
-            "title": "Let You Down",
-            "airDate": "2022-09-13",
-            "rating": 7.8,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQ5NGUxZjEtOTgzNy00YTQ4LTk1ZDMtYTdkYjhhODE1ZmY2XkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "After a night of streaming illegal braindance, David wakes up to reality: a rundown apartment with a broken washing machine and an overworked mother."
-          },
-          {
-            "episode": 2,
-            "title": "Like A Boy",
-            "airDate": "2022-09-13",
-            "rating": 8.1,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTdkOWJkOTctM2MzOS00YzEyLWIzZjgtNzdlZjJlYjliYjRhXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "With his newly enhanced body, David heads to the Academy seeking revenge on his bully. Later, he meets a mysterious woman who wants to recruit him."
-          },
-          {
-            "episode": 3,
-            "title": "Smooth Criminal",
-            "airDate": "2022-09-13",
-            "rating": 7.8,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGNjNTdiZjYtZjAwYi00MmFkLWFjMDQtYTg4NDQwOGM5MzMyXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "Surrounded by a group of rowdy edgerunners, David makes a plea to join their team. Meanwhile, sinister forces plot to lure him back to Arasaka Academy."
-          },
-          {
-            "episode": 4,
-            "title": "Lucky You",
-            "airDate": "2022-09-13",
-            "rating": 8.6,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODRmMDkxMjQtZWQ3MC00MmI1LWFiZTgtMjg3YzZmMzI3ODAxXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "Eager to learn the edgerunner ropes, David pesters Maine for another mission. Instead, Maine tasks Lucy with training him."
-          },
-          {
-            "episode": 5,
-            "title": "All Eyez On Me",
-            "airDate": "2022-09-13",
-            "rating": 8,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2VlMzdmMGYtMmJlNi00NDFmLThkOWItNmEwM2IzMGJlZWQyXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "David makes a clever suggestion when the team strategizes for their next mission. However, he soon learns that their target can't be underestimated."
-          },
-          {
-            "episode": 6,
-            "title": "Girl on Fire",
-            "airDate": "2022-09-13",
-            "rating": 9.1,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYWI3Njk4MGYtOTY1Yy00Zjg3LTgzNGQtODRmZDc5ZTZhODVmXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "26m",
-            "overview": "Maine doesn't seem to be himself. But the team has bigger fish to fry: They must race against time to extract vital information from their prisoner."
-          },
-          {
-            "episode": 7,
-            "title": "Stronger",
-            "airDate": "2022-09-13",
-            "rating": 8,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTJlZjkxNWItNTI2MS00N2VhLWEzMjUtYmU0MjdhY2Q2OGJlXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "Now an all-star edgerunner enhanced with more cybernetics, David leads his team into a new mission. An old contact reaches out to him for a big job."
-          },
-          {
-            "episode": 8,
-            "title": "Stay",
-            "airDate": "2022-09-13",
-            "rating": 8.2,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGQ5Y2UzYmItMjZlMC00YzcyLTgzYTQtYjY1ZGVhZWJlODg0XkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "25m",
-            "overview": "Faraday finds himself stuck between Arasaka and Militech. Lucy and Rebecca confront David about his change in behavior, but he refuses to listen."
-          },
-          {
-            "episode": 9,
-            "title": "Humanity",
-            "airDate": "2022-09-13",
-            "rating": 8.5,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmZjM2E5NTAtNDYzYy00ODg1LWJhODAtMmJjOTFjYjA1MTJlXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "26m",
-            "overview": "Lucy's captors learn about her secret mission and dark past. David and his team head out to complete Faraday's job but realize that something is off."
-          },
-          {
-            "episode": 10,
-            "title": "My Moon My Man",
-            "airDate": "2022-09-13",
-            "rating": 9.3,
-            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTZkM2ZhMjEtNWQ0NS00ZGIxLTlmOTMtNjUxMmNjNGVjZWJiXkEyXkFqcGc@._V1_SX300.jpg",
-            "duration": "26m",
-            "overview": "On the edge of cyberpsychosis but determined to save Lucy, David storms into Night City as Arasaka plots to deploy their ultimate lethal weapon."
           }
         ]
       }
