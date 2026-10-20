@@ -32,7 +32,6 @@ let FEATURED_TITLES = [
   "Animals",
   "Lanterns",
   "Digger",
-  "Unabomber",
   "Resident Evil",
   "Neagley",
   "Reacher",
