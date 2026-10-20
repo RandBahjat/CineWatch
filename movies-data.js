@@ -2025,7 +2025,7 @@ window._MOVIES_DATA = [
     "title": "Harry Potter and the Chamber of Secrets  ",
     "type": "Movie",
     "year": 2002,
-    "rating": 7.4,
+    "rating": "7.5",
     "age": "PG",
     "duration": "2h 41m",
     "genres": [
