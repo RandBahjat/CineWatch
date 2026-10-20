@@ -25,12 +25,109 @@ const RAND_BAHJAT_ACCOUNT = {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["The Amazing Spider-Man 2","The Amazing Spider-Man","Dragon Ball Super: Beerus","VisionQuest","Spider-Man: Brand New Day","Animals","Lanterns","Digger","Unabomber","Resident Evil","Neagley","Reacher","Verity"];
-let TOP_10_TRENDING_TODAY = ["The Amazing Spider-Man 2","The Amazing Spider-Man","Dragon Ball Super: Beerus","VisionQuest","Spider-Man: Brand New Day","Whalefall", "Digger","Street Fighter", "Animals",  "Resident Evil",   "Verity","Lanterns"];
-let TRENDING_THIS_WEEK_MOVIES = ["The Amazing Spider-Man 2","The Amazing Spider-Man","Spider-Man: Brand New Day","Animals","Matchbox the Movie","Insidious: Out of the Further", "Digger",  "Fall 2: Deadpoint", "Resident Evil", "Verity"];
-let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
-const POPULAR_MOVIES = ["The Amazing Spider-Man 2","The Amazing Spider-Man","Spider-Man: Brand New Day","Resident Evil","The End of Oak Street","Coyote vs. Acme","The Odysessey","Mutiny", "Moana(2026)", "The Runner","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
-const POPULAR_SERIES = ["MobLand (The Donovans)", "Star Trek: Strange New Worlds", "Slow Horses", "Reacher","The Mentalist","The Gentlemen", "Breaking Bad","Law & Order: Special Victims Unit", "Ted Lasso","House", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys","The Rookie","The Good Doctor","Dexter","From","S.W.A.T.","The Walking Dead","Stranger Things"];
+let FEATURED_TITLES = [
+  "The Amazing Spider-Man 2",
+  "The Amazing Spider-Man",
+  "Dragon Ball Super: Beerus",
+  "VisionQuest",
+  "Spider-Man: Brand New Day",
+  "Animals",
+  "Lanterns",
+  "Digger",
+  "Unabomber",
+  "Resident Evil",
+  "Neagley",
+  "Reacher",
+  "Verity"
+];
+let TOP_10_TRENDING_TODAY = [
+  "The Amazing Spider-Man 2",
+  "The Amazing Spider-Man",
+  "Dragon Ball Super: Beerus",
+  "VisionQuest",
+  "Spider-Man: Brand New Day",
+  "Whalefall",
+  "Digger",
+  "Street Fighter",
+  "Animals",
+  "Resident Evil",
+  "Verity",
+  "Lanterns"
+];
+let TRENDING_THIS_WEEK_MOVIES = [
+  "The Amazing Spider-Man 2",
+  "The Amazing Spider-Man",
+  "Spider-Man: Brand New Day",
+  "Animals",
+  "Matchbox the Movie",
+  "Insidious: Out of the Further",
+  "Digger",
+  "Fall 2: Deadpoint",
+  "Resident Evil",
+  "Verity"
+];
+let TRENDING_THIS_WEEK_SERIES = [
+  "Monster: The Lizzie Borden Story",
+  "MobLand",
+  "Neagley",
+  "Reacher",
+  "Lioness",
+  "Lanterns",
+  "Slow Horses",
+  "One Piece",
+  "Ted Lasso",
+  "City of Blood",
+  "Stranger Things: Tales from '85",
+  "Silo"
+];
+const POPULAR_MOVIES = [
+  "The Amazing Spider-Man 2",
+  "The Amazing Spider-Man",
+  "Spider-Man: Brand New Day",
+  "Resident Evil",
+  "The End of Oak Street",
+  "Coyote vs. Acme",
+  "The Odysessey",
+  "Mutiny",
+  "Moana(2026)",
+  "The Runner",
+  "Obsession",
+  "Spider-Man: No Way Home",
+  "Backrooms",
+  "Disclosure Day",
+  "The Death of Robin Hood",
+  "The Last House",
+  "Drawn Together",
+  "Michael",
+  "Project Hail Mary",
+  "Avatar Aang: The Last Airbender",
+  "The Shawshank Redemption"
+];
+const POPULAR_SERIES = [
+  "MobLand (The Donovans)",
+  "Star Trek: Strange New Worlds",
+  "Slow Horses",
+  "Reacher",
+  "The Mentalist",
+  "The Gentlemen",
+  "Breaking Bad",
+  "Law & Order: Special Victims Unit",
+  "Ted Lasso",
+  "House",
+  "Lucky",
+  "Off Campus",
+  "Silo",
+  "Game of Thrones",
+  "The Sopranos",
+  "Stranger Things",
+  "The Boys",
+  "The Rookie",
+  "The Good Doctor",
+  "Dexter",
+  "From",
+  "S.W.A.T.",
+  "The Walking Dead"
+];
 let UPCOMING_MOVIES = ["Avengers: Doomsday"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
