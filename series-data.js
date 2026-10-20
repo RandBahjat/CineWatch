@@ -23488,11 +23488,12 @@ window._SERIES_DATA = [
       "Fantasy",
       "Drama"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/AoGsDM02UVt0npBA8OvpDcZbaMi.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/AoGsDM02UVt0npBA8OvpDcZbaMi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/6WIe91OEkZhmgMSL7GnX3WuPG1R.jpg",
-    "videoUrl": 71912,
-    
+    "videoUrl": "71912",
+    "trailerUrl": "https://www.youtube.com/watch?v=ndl1W4LTcmg",
     "overview": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. As destiny weaves the paths of a mutated monster hunter, a powerful sorceress, and a young princess together across a turbulent, war-torn continent, their fates become inextricably intertwined.",
+    "overviewKurdish": "گێڕاڵتی ڕیڤیا، ڕاوکەرێکی دێوی تەنیایە کە لە جیهانێکدا خەبات دەکات تا شوێنی خۆی بدۆزێتەوە، ئەو شوێنەی کە زۆرجار مرۆڤەکان تێیدا لە دڕندەکان بەدکارترن. لە کاتێکدا چارەنووس ڕێگای ئەم ڕاوکەرە گۆڕاوە، جادووگەرێکی بەهێز، و شازادەیەکی گەنج لە سەرتاسەری کیشوەرێکی پڕ لە ئاژاوە و جەنگدا پێکەوە گرێ دەدات، چارەنووسیان بە شێوەیەکی دانەبڕاو بەیەکەوە دەبەسترێتەوە.",
     "director": "Lauren Schmidt Hissrich",
     "cast": [
       "Henry Cavill, Anya Chalotra, Freya Allan, Eamon Farren, Joey Batey, MyAnna Buring, Liam Hemsworth"
@@ -23592,7 +23593,7 @@ window._SERIES_DATA = [
           },
           {
             "episode": 2,
-            "title": " Kaer Morhen",
+            "title": "Kaer Morhen",
             "airDate": "2021-12-17",
             "rating": 7.6,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/384/960692.jpg",
@@ -23764,7 +23765,7 @@ window._SERIES_DATA = [
           },
           {
             "episode": 4,
-            "title": " A Sermon of Survival",
+            "title": "A Sermon of Survival",
             "airDate": "2025-10-30",
             "rating": 4.3,
             "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/595/1488337.jpg",
