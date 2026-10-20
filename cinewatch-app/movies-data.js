@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
     duration: "1h 47m",
     genres: ["Crime", "Drama", "History","Thriller"],
     poster: "https://image.tmdb.org/t/p/original/xsGwX8J7ynn4IK2KpKfSaTigkoX.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/nw9Q3idNO8EsTPnvr8vBJTpkWGA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/m34Uq5AwIy4GsGrxkUjokMprdf6.jpg",
     videoUrl: "1148365",
     trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
     overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
