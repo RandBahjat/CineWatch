@@ -359,6 +359,7 @@ async function loadMediaFromAPI() {
       const fourkMatch = fourkMap.get(rawTitle);
       if (fourkMatch) {
         m.has4k = true;
+        m.is4k = true;
         m.fourkVideoUrl = fourkMatch.videoUrl;
         if (fourkMatch.audioUrl) m.audioUrl = fourkMatch.audioUrl;
         if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
