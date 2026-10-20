@@ -1324,13 +1324,13 @@ function renderTrack(trackId, movieList) {
 }
 
 async function renderCarousels(priorityOnly = false) {
-  // 1. Trending Movies: Frontload newly added movies from MOVIES, then explicit trending, then curated list
-  const recentMovies = MOVIES.filter(m => !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length)).slice(0, 10);
-  const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length));
+  // 1. Trending Movies: Curated list first in exact order, then fill with explicit trending and recent movies
   const listTrendingMovies = getMoviesFromList(TRENDING_THIS_WEEK_MOVIES, (m) => String(m.type).toLowerCase() !== "tv show");
+  const explicitTrendingMovies = MOVIES.filter(m => m.trending && !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length));
+  const recentMovies = MOVIES.filter(m => !m.isAnime && String(m.type || '').toLowerCase() !== "tv show" && String(m.type || '').toLowerCase() !== "series" && (!m.seasons || !m.seasons.length)).slice(0, 10);
   const mergedTrendingMovies = [];
   const seenMovieIds = new Set();
-  [...recentMovies, ...explicitTrendingMovies, ...listTrendingMovies].forEach(m => {
+  [...listTrendingMovies, ...explicitTrendingMovies, ...recentMovies].forEach(m => {
     if (m && m.id && !seenMovieIds.has(m.id)) {
       seenMovieIds.add(m.id);
       mergedTrendingMovies.push(m);
@@ -1357,13 +1357,13 @@ async function renderCarousels(priorityOnly = false) {
 }
 
 function renderRemainingCarousels() {
-  // 2. Trending Series
-  const recentSeries = MOVIES.filter(m => !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0))).slice(0, 10);
-  const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0)));
+  // 2. Trending Series: Curated list first in exact order, then fill with explicit trending and recent series
   const listTrendingSeries = getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => String(m.type).toLowerCase() === "tv show" || String(m.type).toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+  const explicitTrendingSeries = MOVIES.filter(m => m.trending && !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0)));
+  const recentSeries = MOVIES.filter(m => !m.isAnime && (String(m.type || '').toLowerCase() === "tv show" || String(m.type || '').toLowerCase() === "series" || (Array.isArray(m.seasons) && m.seasons.length > 0))).slice(0, 10);
   const mergedTrendingSeries = [];
   const seenSeriesIds = new Set();
-  [...recentSeries, ...explicitTrendingSeries, ...listTrendingSeries].forEach(s => {
+  [...listTrendingSeries, ...explicitTrendingSeries, ...recentSeries].forEach(s => {
     if (s && s.id && !seenSeriesIds.has(s.id)) {
       seenSeriesIds.add(s.id);
       mergedTrendingSeries.push(s);
