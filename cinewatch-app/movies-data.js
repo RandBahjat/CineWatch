@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 47m",
     genres: ["Crime", "Drama", "History","Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hxTjCfEmZJFAPW8h5S3tDQNaBi8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
     videoUrl: "1148365",
     trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
