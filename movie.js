@@ -52,7 +52,6 @@ let TOP_10_TRENDING_TODAY = [
   "Lanterns"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
- 
   "Spider-Man: Brand New Day",
   "Animals",
   "Matchbox the Movie",
