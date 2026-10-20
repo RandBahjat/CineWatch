@@ -13,7 +13,7 @@ window._MOVIES_DATA = [
     rating: "6.7",
     age: "R",
     duration: "1h 47m",
-    genres: ["Crime", "Drama", ""],
+    genres: ["Crime", "Drama", "History",""],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
     videoUrl: "1148365",
