@@ -17,7 +17,7 @@ window._SERIES_DATA = [
       "Crime"
     ],
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/aQJW88GolybGrVqzIC2hI6coUr.jpg",
     "videoUrl": "105248",
     "trailerUrl": "https://www.youtube.com/watch?v=JtqIas3bYhg",
     "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner. Having lost everything in a drive-by shooting, he chooses to survive on the wrong side of the law in the neon-drenched Night City.",
