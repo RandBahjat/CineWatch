@@ -11,7 +11,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2026,
     rating: "6.7",
-    age: "PG-13",
+    age: "R",
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Family"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
