@@ -1896,7 +1896,7 @@ window._MOVIES_DATA = [
     "videoUrl": "102382",
     "trailerUrl": "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     "overview": "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
-    "overviewKurdish": "",
+    "overviewKurdish": "بۆ پیتەر پارکەر، ژیان سەرقاڵکەر و ئاڵۆزە. لە نێوان لەناوبردنی خراپەکاران وەکو سپایدەرمان و بەسەربردنی کات لەگەڵ ئەو کەسەی کە خۆشی دەوێت، گوێن ستەیسی، دەرچوونی لە قۆناغی ئامادەیی ناتوانێت ئەوەندە بە خێرایی بێت. پیتەر ئەو بەڵێنەی لەبیر نەکردووە کە بە باوکی گوێنی دابوو بۆ پاراستنی بە دوورکەوتنەوە لێی — بەڵام ئەوە بەڵێنێکە کە ناتوانێت پێیەوە پابەند بێت. شتەکان دەگۆڕێن کاتێک دوژمنێکی نوێ، ئێلێکترۆ، پەیدا دەبێت، و هاوڕێیەکی کۆنی، هاری ئۆزبۆرن، دەگەڕێتەوە، و پیتەر سەرەداوی نوێ سەبارەت بە ڕابردووی خۆی ئاشکرا دەکات.",
     "director": "Marc Webb",
     "cast": [
       "Andrew Garfield",
@@ -1906,9 +1906,9 @@ window._MOVIES_DATA = [
       "Colm Feore",
       "Sally Field"
     ],
-    "trending": false,
-    "featured": false,
-    "is4k": false,
+    "trending": true,
+    "featured": true,
+    "is4k": true,
     "seasons": []
   },
   {
