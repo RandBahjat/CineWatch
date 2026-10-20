@@ -30,27 +30,6 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  {
-    title: "Matchbox the Movie",
-    type: "Movie",
-    year: 2026,
-    rating: "5.7",
-    age: "PG-13",
-    duration: "2h 6m",
-    genres: ["Action", "Adventure", "Family"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
-    videoUrl: "1148365",
-    trailerUrl: "https://youtu.be/7xfqITrMDcI?si=Cu6SUkh3MHc8ij6E",
-    overview: "Inspired by the iconic die-cast toy car franchise, the high-octane action adventure follows an extraordinary automotive world where custom-built, ultra-fast miniature vehicles are pushed to their absolute limits in perilous, high-stakes global competitions against ruthless racing syndicates.",
-    overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
-    director: "Sam Hargrave",
-    cast: ["John Cena, Jessica Biel, Arturo Castro"],
-    trending: true,
-    featured: true,
-    is4k: false,
-    seasons: []
-  },
 
   // ============================================================
   // 2. Whalefall (2026)
