@@ -7727,7 +7727,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
   if ((!streamUrl && iframe) || driveIframeUrl) {
-    iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+    iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`)));
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.classList.add("hidden");
@@ -8198,7 +8198,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       if (iframe) {
                         try { art.destroy(); } catch(e) {}
                         if (artContainer) artContainer.classList.add('hidden');
-                        iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+                        iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
                         iframe.classList.remove('hidden');
                       }
                     } else {
@@ -8212,7 +8212,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     if (iframe) {
                       try { art.destroy(); } catch(e) {}
                       if (artContainer) artContainer.classList.add('hidden');
-                      iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+                      iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
                       iframe.classList.remove('hidden');
                     }
                     break;
@@ -8321,7 +8321,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         console.warn("ArtPlayer stream notice/error:", err);
         if (iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
           console.info("Falling back to external server iframe due to player error");
-          iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+          iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
           iframe.classList.remove("hidden");
           if (artContainer) artContainer.classList.add("hidden");
         }
