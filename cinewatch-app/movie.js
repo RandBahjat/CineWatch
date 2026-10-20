@@ -62,7 +62,7 @@ let TRENDING_THIS_WEEK_MOVIES = [
   "Verity"
 ];
 let TRENDING_THIS_WEEK_SERIES = [
-  "Monster: The Lizzie Borden Story",
+  "Vision",
   "MobLand",
   "Neagley",
   "Reacher",
