@@ -7726,7 +7726,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
   if ((!streamUrl && iframe) || driveIframeUrl) {
     iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`)));
-    console.log("[CW FALLBACK IFRAME]", iframe.src);
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.classList.add("hidden");
