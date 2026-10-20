@@ -1279,7 +1279,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const posterImg = movie.poster || movie.backdrop || "";
   const backdropImg = movie.backdrop || movie.poster || "";
   const desktopImg = forcePoster ? posterImg : backdropImg;
-  const mobileImg = forcePoster ? posterImg : (backdropImg || posterImg);
+  const mobileImg = posterImg;
 
   return `
     <div class="movie-card ${forcePoster ? 'card-poster-mode' : ''}" data-id="${movie.id}">
@@ -1288,7 +1288,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         <picture>
           <source media="(max-width: 768px)" srcset="${mobileImg}">
           <source media="(min-width: 769px)" srcset="${desktopImg}">
-          <img src="${desktopImg}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy" decoding="async" onerror="if(this.src!=='${forcePoster ? posterImg : backdropImg}')this.src='${forcePoster ? posterImg : backdropImg}'">
+          <img src="${desktopImg}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy" decoding="async" onerror="if(this.src!=='${posterImg}'&&this.src!=='${backdropImg}')this.src='${posterImg || backdropImg}'">
         </picture>
         <div class="card-gradient"></div>
         <div class="card-overlay">
