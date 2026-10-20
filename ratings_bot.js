@@ -82,9 +82,99 @@ function loadDataFile(filename, varName) {
   }
 }
 
-// 4. Save Data Files (Safely Syncs Root + cinewatch-app)
+// 4. Save Data Files (Safely Syncs Root + cinewatch-app with clean movie.js-style formatting)
+function formatItemForSave(item, index) {
+  const preferredOrder = [
+    'id', 'title', 'type', 'isAnime', 'year', 'rating', 'age', 'duration',
+    'genres', 'tags', 'poster', 'backdrop', 'videoUrl', 'audioUrl',
+    'hdVideoUrl', 'fourkVideoUrl', 'trailerUrl', 'animeSlug', 'malId',
+    'anilistId', 'tmdbId', 'cinesrcId', 'overview', 'overviewKurdish',
+    'director', 'cast', 'trending', 'featured', 'is4k', 'has4k', 'seasons'
+  ];
+
+  const keys = Object.keys(item);
+  keys.sort((a, b) => {
+    let ia = preferredOrder.indexOf(a);
+    let ib = preferredOrder.indexOf(b);
+    if (ia === -1) ia = 999;
+    if (ib === -1) ib = 999;
+    return ia - ib;
+  });
+
+  const lines = [];
+  lines.push('  // ============================================================');
+  lines.push('  // ' + index + '. ' + (item.title || 'Untitled') + (item.year ? ' (' + item.year + ')' : ''));
+  lines.push('  // ============================================================');
+  lines.push('  {');
+
+  keys.forEach((key, kIdx) => {
+    const val = item[key];
+    const isLast = kIdx === keys.length - 1;
+    const comma = isLast ? '' : ',';
+    const keyStr = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key) ? key : JSON.stringify(key);
+
+    if (key === 'genres' || key === 'tags' || key === 'cast') {
+      if (Array.isArray(val)) {
+        lines.push('    ' + keyStr + ': [' + val.map(v => JSON.stringify(v)).join(', ') + ']' + comma);
+      } else {
+        lines.push('    ' + keyStr + ': ' + JSON.stringify(val) + comma);
+      }
+    } else if (key === 'seasons') {
+      if (!Array.isArray(val) || val.length === 0) {
+        lines.push('    ' + keyStr + ': []' + comma);
+      } else {
+        lines.push('    ' + keyStr + ': [');
+        val.forEach((s, sIdx) => {
+          const sLast = sIdx === val.length - 1;
+          const sComma = sLast ? '' : ',';
+          lines.push('      {');
+          lines.push('        season: ' + s.season + ',');
+          lines.push('        episodes: [');
+          (s.episodes || []).forEach((ep, epIdx) => {
+            const epLast = epIdx === s.episodes.length - 1;
+            const epComma = epLast ? '' : ',';
+            lines.push('          {');
+            const epKeys = Object.keys(ep);
+            const epPrefOrder = ['episode', 'title', 'absoluteEpisode', 'airDate', 'rating', 'thumbnail', 'duration', 'videoUrl', 'trailerUrl', 'overview', 'overviewKurdish'];
+            epKeys.sort((a, b) => {
+              let ia = epPrefOrder.indexOf(a);
+              let ib = epPrefOrder.indexOf(b);
+              if (ia === -1) ia = 999;
+              if (ib === -1) ib = 999;
+              return ia - ib;
+            });
+            epKeys.forEach((ek, eIdx) => {
+              const ekLast = eIdx === epKeys.length - 1;
+              const ekComma = ekLast ? '' : ',';
+              const ekStr = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(ek) ? ek : JSON.stringify(ek);
+              lines.push('            ' + ekStr + ': ' + JSON.stringify(ep[ek]) + ekComma);
+            });
+            lines.push('          }' + epComma);
+          });
+          lines.push('        ]');
+          lines.push('      }' + sComma);
+        });
+        lines.push('    ]' + comma);
+      }
+    } else {
+      lines.push('    ' + keyStr + ': ' + JSON.stringify(val) + comma);
+    }
+  });
+
+  lines.push('  }');
+  return lines.join('\n');
+}
+
 function saveDataFile(filename, headerComment, varName, data) {
-  const content = `${headerComment}\n\nwindow.${varName} = ${JSON.stringify(data, null, 2)};\n`;
+  const parts = [];
+  if (headerComment) parts.push(headerComment);
+  parts.push('');
+  parts.push(`window.${varName} = [`);
+  parts.push('');
+  parts.push(data.map((item, idx) => formatItemForSave(item, idx + 1)).join(',\n\n'));
+  parts.push('');
+  parts.push('];\n');
+  const content = parts.join('\n');
 
   // Write to root
   const rootPath = path.join(ROOT_DIR, filename);
