@@ -8420,12 +8420,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           iframe.classList.remove("hidden");
           if (artContainer) artContainer.classList.add("hidden");
         }
-      } catch (e) {}
     });
-
-
-
-
 
     // Dual-stream audio sync for browser-incompatible video audio (e.g., AC-3 Dolby on 4K files)
     const targetAudioUrl = ref?.audioUrl || (window._FOURK_DATA && window._FOURK_DATA.find(f => f.videoUrl === cleanUrl || (ref && (f.id === ref.id || f.title === ref.title)))?.audioUrl);
