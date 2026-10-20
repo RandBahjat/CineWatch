@@ -2623,7 +2623,7 @@ window._MOVIES_DATA = [
     "title": "Spider-Man 2",
     "type": "Movie",
     "year": 2004,
-    "rating": 7.4,
+    "rating": "7.5",
     "age": "PG-13",
     "duration": "2h 7m",
     "genres": [
@@ -3057,7 +3057,7 @@ window._MOVIES_DATA = [
     "title": "Cars",
     "type": "Movie",
     "year": 2006,
-    "rating": 7.2,
+    "rating": "7.3",
     "age": "G",
     "duration": "1h 57m",
     "genres": [
@@ -3144,7 +3144,7 @@ window._MOVIES_DATA = [
     "title": "John Wick",
     "type": "Movie",
     "year": 2014,
-    "rating": 7.4,
+    "rating": "7.5",
     "age": "R",
     "duration": "1h 41m",
     "genres": [
@@ -3252,7 +3252,7 @@ window._MOVIES_DATA = [
     "title": "Ghost Rider",
     "type": "Movie",
     "year": 2007,
-    "rating": 5.2,
+    "rating": "5.3",
     "age": "PG-13",
     "duration": "1h 54m",
     "genres": [
@@ -3334,7 +3334,7 @@ window._MOVIES_DATA = [
     "title": "Man of Steel",
     "type": "Movie",
     "year": 2013,
-    "rating": 7,
+    "rating": "7.1",
     "age": "PG-13",
     "duration": "2h 23m",
     "genres": [
@@ -3471,7 +3471,7 @@ window._MOVIES_DATA = [
     "title": "Guardians of the Galaxy: Vol.3 ",
     "type": "Movie",
     "year": 2023,
-    "rating": 8,
+    "rating": "7.9",
     "age": "PG-13",
     "duration": "2h 30m",
     "genres": [
@@ -3499,7 +3499,7 @@ window._MOVIES_DATA = [
     "title": "Ant-Man ",
     "type": "Movie",
     "year": 2015,
-    "rating": 7.3,
+    "rating": "7.2",
     "age": "PG-13",
     "duration": "1h 57m",
     "genres": [
