@@ -76,8 +76,6 @@ let TRENDING_THIS_WEEK_SERIES = [
   "Silo"
 ];
 const POPULAR_MOVIES = [
-  "The Amazing Spider-Man 2",
-  "The Amazing Spider-Man",
   "Spider-Man: Brand New Day",
   "Resident Evil",
   "The End of Oak Street",
