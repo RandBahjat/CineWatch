@@ -7652,14 +7652,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
     const endpoints = [
-      `${curOrigin}/api/stream?${cleanQuery}`,
-      `http://${curHost}:3000/api/stream?${cleanQuery}`,
-      `http://localhost:3000/api/stream?${cleanQuery}`,
-      `http://127.0.0.1:3000/api/stream?${cleanQuery}`,
       `/api/stream?${cleanQuery}`,
       `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`
     ];
-    
+    if (curOrigin && !curOrigin.includes('cinewatch-maaa')) {
+      endpoints.unshift(`${curOrigin}/api/stream?${cleanQuery}`);
+    }
     const uniqueEndpoints = [...new Set(endpoints)];
 
     try {
