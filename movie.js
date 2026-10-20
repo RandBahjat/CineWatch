@@ -39,8 +39,7 @@ let FEATURED_TITLES = [
   "Verity"
 ];
 let TOP_10_TRENDING_TODAY = [
-  "The Amazing Spider-Man 2",
-  "The Amazing Spider-Man",
+
   "Dragon Ball Super: Beerus",
   "VisionQuest",
   "Spider-Man: Brand New Day",
