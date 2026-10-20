@@ -21,7 +21,7 @@ window._ANIME_DATA = [
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
     tags: ["Animation", "Action", "Adventure", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
-    backdrop: "https://catwithmonocle.com/wp-content/uploads/2026/01/dbs-beerus-art-01-3840x2160-1.jpg",
+    backdrop: "dbs-beerus-art-01-3840x2160-1.jpg",
     videoUrl: "63367",
     trailerUrl: "https://youtu.be/W9W5CLUGjbU?si=0ljmntCslpiU679B",
     animeSlug: "dragon-ball-super-beerus",
