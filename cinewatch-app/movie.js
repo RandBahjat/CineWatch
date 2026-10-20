@@ -26,7 +26,6 @@ const RAND_BAHJAT_ACCOUNT = {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
-  
   "Dragon Ball Super: Beerus",
   "VisionQuest",
   "Spider-Man: Brand New Day",
