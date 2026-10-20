@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     videoUrl: "1380417",
     trailerUrl: "https://youtu.be/ej8pjisr0Pc?si=lF5d5td2MHlXXzXp",
     overview: "Set in 1966 Mississippi, the FBI secretly recruits a notorious Mafia hitman and partners him with a young Black federal agent to track down the Ku Klux Klan members responsible for the brutal murders of prominent civil rights leaders. Operating outside the bounds of standard law enforcement, the unlikely duo uses ruthless, unconventional underworld tactics to dismantle a deeply entrenched network of racial terror.",
-    overviewKurdish: "لەسەر بنەمای زنجیرە یارییە ئۆتۆمبێلە کانزاییە بەناوبانگەکانی مێژوو دروستکراوە، ئەم فیلمە سەرکێشییە پڕ لە ئاکشن و خێراییە چیرۆکی جیهانێکی سەرنجڕاکێشی پێشبڕکێ دەگێڕێتەوە، کە تێیدا ئۆتۆمبێلە تایبەت و خێراکان لە تاقیکردنەوە و کێبڕکێی مەترسیداری جیهانیدا دەخرێنە کار بۆ ڕووبەڕووبوونەوەی باندە دڕندەکانی پێشبڕکێ.",
+    overviewKurdish: "لە ساڵی ١٩٦٦ لە ویلایەتی میسیسیپی، دەزگای لێکۆڵینەوەی فیدراڵی (FBI) بە نهێنی پیاوکوژێکی بەناوبانگی مافیا ڕادەسپێرێت و لەگەڵ بریکارێکی لاوی ڕەشپێستی فیدراڵیدا دەیانکاتە هاوبەش، بە ئامانجی دۆزینەوەی ئەو ئەندامانەی گرووپی ڕەگەزپەرستی «کوو کلۆکس کلان» کە بەرپرسن لە تیرۆرکردنی سەرکردەکانی بزووتنەوەی مافە مەدەنییەکان. بە بەکارهێنانی شێوازی توند و نائاسایی لە دەرەوەی یاسا، ئەم دوو هاوبەشە جیاوازە ڕووبەڕووی تۆڕێکی مەترسیدار و ڕیشەداکوتاوی تاوان و ڕەگەزپەرستی دەبنەوە.",
     director: "Sam Hargrave",
     cast: ["John Cena, Jessica Biel, Arturo Castro"],
     trending: true,
