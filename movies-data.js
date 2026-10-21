@@ -13241,7 +13241,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/bwsSUHRQKRLkD32IdnKiNOcbDKt.jpg",
     videoUrl: "500",
     trailerUrl: "https://youtu.be/2KLZ4fSXtgI?si=RHPvf8nJoYkAhY4m",
-    overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
+    overview: "Six criminals, hired by a crime boss to carry out a diamond heist and given color-coded aliases so they remain complete strangers to one another, are unexpectedly ambushed by the police during the robbery. As the surviving thieves regroup in a blood-soaked warehouse rendezvous, paranoia and brutal violence erupt as they desperately try to uncover which one of them is an undercover cop.",
     overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
     director: "Melanie Mayron",
     cast: ["Meaghan Martin, Maiara Walsh, Jennifer Stone, Nicole Anderson, Claire Holt, Diego Boneta, Tim Meadows"],
