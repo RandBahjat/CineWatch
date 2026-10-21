@@ -1537,6 +1537,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     try { window.artPlayerInstance.destroy(); } catch (e) {}
     window.artPlayerInstance = null;
   }
+  window._cwQualities = null;
 
   const malId = isAnime ? getAnimeMalId(movie, movie.videoUrl || movie.id) : null;
   const poster = movie.backdrop || movie.poster || '';
@@ -1549,6 +1550,17 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   }
   if (!cleanUrl && movie.fourkVideoUrl && typeof movie.fourkVideoUrl === 'string' && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.includes('.mp4'))) {
     cleanUrl = movie.fourkVideoUrl;
+  }
+
+  const is4kStream = movie.is4k || (movie.fourkVideoUrl && cleanUrl === movie.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_');
+  if (is4kStream && cleanUrl) {
+    const qList = [
+      { quality: '4K Ultra HD (2160p)', url: cleanUrl, default: true }
+    ];
+    if (movie.hdVideoUrl && movie.hdVideoUrl !== cleanUrl && typeof movie.hdVideoUrl === 'string' && movie.hdVideoUrl.startsWith('http')) {
+      qList.push({ quality: '1080p Full HD', url: movie.hdVideoUrl, default: false });
+    }
+    window._cwQualities = qList;
   }
 
   const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
@@ -1924,6 +1936,23 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           })();
           return item.html;
         },
+      });
+    if (window._cwQualities && window._cwQualities.length > 0) {
+      artSettings.push({
+        html: 'Quality',
+        icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+        tooltip: window._cwQualities[0].quality,
+        selector: window._cwQualities.map((q, idx) => ({
+          default: idx === 0,
+          html: q.quality,
+          url: q.url
+        })),
+        onSelect(item) {
+          if (window.artPlayerInstance && item.url) {
+            window.artPlayerInstance.switchUrl(item.url);
+          }
+          return item.html;
+        }
       });
     }
 
