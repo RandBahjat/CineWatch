@@ -13228,7 +13228,7 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     seasons: []
-  }
+  },
   {
     title: "Reservoir Dogs",
     type: "Movie",
