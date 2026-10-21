@@ -7985,6 +7985,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
                 window.artPlayerInstance.subtitle.show = true;
               }
+              if (window.artPlayerInstance && window.artPlayerInstance.template && window.artPlayerInstance.template.$subtitle) {
+                window.artPlayerInstance.template.$subtitle.classList.add('notranslate');
+                window.artPlayerInstance.template.$subtitle.setAttribute('translate', 'no');
+              }
             }).catch(e => console.warn('ArtPlayer subtitle switch notice:', e));
             window.artPlayerInstance.subtitle.show = true;
           }
