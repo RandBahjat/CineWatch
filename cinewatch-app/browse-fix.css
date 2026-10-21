@@ -1132,4 +1132,79 @@ body.rtl-layout .hero-slide-counter {
   }
 }
 
+/* ==========================================================================
+   Continue Watching Selection Mode - Premium Modern UI
+   ========================================================================== */
+.movie-card.continue-card {
+  position: relative !important;
+  cursor: pointer !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, border-color 0.22s ease !important;
+}
 
+.movie-card.continue-card.cw-selected {
+  transform: scale(0.96) !important;
+  box-shadow: 0 0 0 2.5px #ef4444, 0 10px 28px rgba(239, 68, 68, 0.35) !important;
+  border-radius: 12px !important;
+}
+
+.cw-selection-badge {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: rgba(15, 20, 32, 0.85) !important;
+  border: 2px solid rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 15 !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  pointer-events: none !important;
+}
+
+.cw-selection-badge .cw-check-icon {
+  width: 17px !important;
+  height: 17px !important;
+  color: #ffffff !important;
+  opacity: 0 !important;
+  transform: scale(0.4) !important;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.cw-selection-badge.selected {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.65) !important;
+  transform: scale(1.05) !important;
+}
+
+.cw-selection-badge.selected .cw-check-icon {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.movie-card.continue-card:hover .cw-selection-badge:not(.selected) {
+  border-color: #ffffff !important;
+  background: rgba(30, 40, 60, 0.95) !important;
+  transform: scale(1.1) !important;
+}
+
+.cw-selection-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  opacity: 0 !important;
+  z-index: 8 !important;
+  pointer-events: none !important;
+  transition: opacity 0.22s ease !important;
+  border-radius: inherit !important;
+}
+
+.cw-selection-overlay.active {
+  opacity: 1 !important;
+}
