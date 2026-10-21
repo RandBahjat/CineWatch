@@ -63,6 +63,7 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
+  "By Any Means",
   "Dragon Ball Super: Beerus",
   "VisionQuest",
   "Spider-Man: Brand New Day",
@@ -70,7 +71,6 @@ let FEATURED_TITLES = [
   "Lanterns",
   "Digger",
   "Resident Evil",
-  "By Any Means",
   "Reacher",
   "Verity"
 ];
