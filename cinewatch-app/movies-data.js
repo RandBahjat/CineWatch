@@ -13244,7 +13244,7 @@ window._MOVIES_DATA = [
     overview: "Six criminals, hired by a crime boss to carry out a diamond heist and given color-coded aliases so they remain complete strangers to one another, are unexpectedly ambushed by the police during the robbery. As the surviving thieves regroup in a blood-soaked warehouse rendezvous, paranoia and brutal violence erupt as they desperately try to uncover which one of them is an undercover cop.",
     overviewKurdish: "شەش تاوانباری نەناسراو، کە بە ناوی خوازراوی ڕەنگەکانەوە بانگ دەکرێن بۆ ئەوەی ناسنامەی ڕاستەقینەی یەکتر نەزانن، لەلایەن سەرۆک باندێکەوە بەکرێ دەگیرێن بۆ ئەنجامدانی دزییەکی گەورەی ئەڵماس. بەڵام کاتێک لە کاتی دزییەکەدا لەناکاو دەکەونە بۆسەی پۆلیسەوە و پلانەکەیان تێکدەچێت، ڕزگاربووەکان لە کۆگایەکی چۆڵدا کۆدەبنەوە. لەوێدا ترس، گومان و توندوتیژییەکی خوێناوی سەرهەڵدەدات لە کاتێکدا هەوڵ دەدەن بزانن کامیان سیخوڕ و پۆلیسی نهێنییە لەناویاندا.",
     director: "Quentin Tarantino",
-    cast: ["Meaghan Martin, Maiara Walsh, Jennifer Stone, Nicole Anderson, Claire Holt, Diego Boneta, Tim Meadows"],
+    cast: ["Harvey Keitel, Tim Roth, Michael Madsen, Chris Penn, Steve Buscemi, Lawrence Tierney, Quentin Tarantino"],
     trending: false,
     featured: false,
     is4k: false,
