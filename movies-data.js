@@ -13234,7 +13234,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1992,
     rating: 8.2,
-    age: "PG-13",
+    age: "R",
     duration: "1h 36m",
     genres: ["Comedy"],
     poster: "https://image.tmdb.org/t/p/original/ukwObNzEyDAiuTrzbWAVs1dp5NN.jpg",
