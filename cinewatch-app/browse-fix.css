@@ -953,8 +953,190 @@
 
 
 /* ==========================================================================
-   Hero Slide Counter & Slide Indicator (Big Slide) - Modern Premium Redesign
+   Hero Navigation — Modern Pill+Dots Design (matching reference)
    ========================================================================== */
+
+/* Outer container: transparent, just a flex row */
+.hero-slide-counter {
+  position: absolute !important;
+  right: 2.5rem !important;
+  bottom: 2rem !important;
+  z-index: 25 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  user-select: none !important;
+  transition: none !important;
+  overflow: visible !important;
+}
+
+.hero-slide-counter:hover {
+  background: transparent !important;
+  border-color: transparent !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ── Arrow buttons ── */
+.hero-counter-btn {
+  flex-shrink: 0 !important;
+  background: rgba(30, 33, 42, 0.88) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  transition: background 0.22s ease, transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  outline: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Prev: dark circle */
+.hero-counter-btn.prev {
+  background: rgba(30, 33, 42, 0.88) !important;
+}
+
+/* Next: vibrant red/coral circle */
+.hero-counter-btn.next {
+  background: #e8392a !important;
+  border-color: rgba(255, 80, 60, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(232, 57, 42, 0.55), 0 0 0 3px rgba(232, 57, 42, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+.hero-counter-btn:hover {
+  transform: scale(1.1) !important;
+}
+
+.hero-counter-btn.prev:hover {
+  background: rgba(50, 55, 68, 0.96) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.55) !important;
+}
+
+.hero-counter-btn.next:hover {
+  background: #f04030 !important;
+  box-shadow: 0 6px 28px rgba(232, 57, 42, 0.72), 0 0 0 4px rgba(232, 57, 42, 0.22) !important;
+}
+
+.hero-counter-btn:active {
+  transform: scale(0.93) !important;
+  transition-duration: 0.08s !important;
+}
+
+.hero-counter-btn svg {
+  display: block !important;
+  pointer-events: none !important;
+  flex-shrink: 0 !important;
+}
+
+/* ── Dot track ── */
+.hero-dot-track {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 0 4px !important;
+}
+
+/* Individual dot */
+.hero-dot-track .hdot {
+  display: block !important;
+  height: 8px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.35) !important;
+  cursor: pointer !important;
+  transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.35s ease, opacity 0.3s ease !important;
+  width: 8px !important;
+  opacity: 0.6 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Active dot: elongated pill, bright white */
+.hero-dot-track .hdot.active {
+  width: 28px !important;
+  background: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Hover dot: brighten */
+.hero-dot-track .hdot:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.65) !important;
+  opacity: 0.9 !important;
+}
+
+/* ── Legacy elements (hidden) ── */
+.hero-counter-display,
+.hero-current-slide,
+.hero-counter-sep,
+.hero-total-slides,
+.hero-counter-progress,
+.hero-counter-progress-bar,
+.hero-slide-badge {
+  display: none !important;
+}
+
+/* RTL Layout */
+body.rtl-layout .hero-slide-counter {
+  right: auto !important;
+  left: 2.5rem !important;
+  direction: ltr !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-slide-counter {
+    right: 1.2rem !important;
+    bottom: 1.5rem !important;
+    gap: 9px !important;
+  }
+  .hero-counter-btn {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .hero-counter-btn svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .hero-dot-track .hdot {
+    height: 7px !important;
+    width: 7px !important;
+    gap: 5px !important;
+  }
+  .hero-dot-track .hdot.active {
+    width: 22px !important;
+  }
+  body.rtl-layout .hero-slide-counter {
+    left: 1.2rem !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slide-counter {
+    right: 0.8rem !important;
+    bottom: 1.1rem !important;
+    gap: 8px !important;
+  }
+  .hero-counter-btn {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  body.rtl-layout .hero-slide-counter {
+    left: 0.8rem !important;
+    right: auto !important;
+  }
+}
+
 .hero-slide-counter {
   position: absolute !important;
   right: 2.75rem !important;
