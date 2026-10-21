@@ -56,6 +56,10 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: true },
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: false }
+    ],
     seasons: []
   },
 
@@ -83,6 +87,10 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: true },
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: false }
+    ],
     seasons: []
   },
 
