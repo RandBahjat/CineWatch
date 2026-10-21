@@ -1545,14 +1545,53 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   let subtitleUrl = '';
 
   const rawVideoStr = String(movie.videoUrl || '');
-  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
+  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm') || rawVideoStr.includes('.mkv'))) {
     cleanUrl = rawVideoStr;
   }
-  if (!cleanUrl && movie.fourkVideoUrl && typeof movie.fourkVideoUrl === 'string' && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.includes('.mp4'))) {
-    cleanUrl = movie.fourkVideoUrl;
+
+  const fourkAppMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (movie && (f.id === movie.id || (f.title && movie.title && f.title.toLowerCase() === movie.title.toLowerCase()))))
+    : null;
+
+  const isFrom4kApp = !isAnime && !isTv && Boolean(
+    movie.is4k ||
+    movie.has4k ||
+    movie.fourkVideoUrl ||
+    fourkAppMatch
+  );
+
+  if (isFrom4kApp) {
+    const target4kUrl = movie.fourkVideoUrl || fourkAppMatch?.videoUrl || (movie.is4k && rawVideoStr.startsWith('http') ? rawVideoStr : null);
+    if (target4kUrl && typeof target4kUrl === 'string') {
+      cleanUrl = target4kUrl;
+    }
+    window._cwQualities = null;
+    movie.is4k = true;
+    movie.has4k = true;
+    movie.fourkVideoUrl = cleanUrl;
+    delete movie.hdVideoUrl;
+    if (fourkAppMatch) {
+      if (fourkAppMatch.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
+        movie.subtitles = fourkAppMatch.subtitles;
+      }
+      if (fourkAppMatch.audioUrl && !movie.audioUrl) {
+        movie.audioUrl = fourkAppMatch.audioUrl;
+      }
+    }
   }
 
-  const is4kStream = Boolean(movie.is4k || (movie.fourkVideoUrl && cleanUrl === movie.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_'));
+  const is4kStream = Boolean(
+    isFrom4kApp ||
+    movie.is4k ||
+    movie.has4k ||
+    (movie.fourkVideoUrl && cleanUrl === movie.fourkVideoUrl) ||
+    cleanUrl.includes('4K') ||
+    cleanUrl.includes('2160p') ||
+    cleanUrl.includes('_4K_') ||
+    cleanUrl.includes('Spider-Man_4K') ||
+    cleanUrl.includes('Spider_Man_2002_4K') ||
+    cleanUrl.includes('The_Amazing_Spider_Man')
+  );
   if (is4kStream) {
     window._cwQualities = null;
   }
@@ -1666,7 +1705,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 
   // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
   const tmdb = movie.videoUrl || movie.tmdbId || movie.cinesrcId || movie.id;
-  if (!isAnime && !cleanUrl && tmdb) {
+  if (!isAnime && !cleanUrl && tmdb && !is4kStream && !isFrom4kApp) {
     const tvQuery = isTv ? `&season=${sNum}&episode=${epNum}` : '';
     const endpoints = [
       `${curOrigin}/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
@@ -1733,7 +1772,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   const streamUrl = cleanUrl || '';
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
-  if (!streamUrl) {
+  if (!is4kStream && !isFrom4kApp && !streamUrl) {
     if (iframeEl) {
       iframeEl.src = `https://vidsrc.to/embed/tv/${tmdb}/${sNum}/${epNum}`;
       iframeEl.classList.remove('hidden');
@@ -1932,7 +1971,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         },
       });
 
-    if (!is4kStream && window._cwQualities && window._cwQualities.length > 0) {
+    if (!is4kStream && !isFrom4kApp && window._cwQualities && window._cwQualities.length > 0) {
       artSettings.push({
         html: 'Quality',
         icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
@@ -2211,11 +2250,36 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 function playMovieDirect(movieId) {
   let movie = _movieMap.get(String(movieId)) || state.currentDetail;
   if (!movie && movieId) {
-    movie = (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId) : null)
+    movie = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA) ? window._FOURK_DATA.find(f => String(f.id) === String(movieId) || f.title === movieId) : null)
+      || (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId) : null)
       || (typeof SERIES !== 'undefined' ? SERIES.find(s => String(s.id) === String(movieId) || s.title === movieId) : null)
       || (typeof ANIME !== 'undefined' ? ANIME.find(a => String(a.id) === String(movieId) || a.title === movieId) : null);
   }
   if (!movie) return;
+
+  const fourkDirectMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (movie && (f.id === movie.id || (f.title && movie.title && f.title.toLowerCase() === movie.title.toLowerCase()))))
+    : null;
+
+  if (fourkDirectMatch || movie.is4k || movie.fourkVideoUrl) {
+    movie.is4k = true;
+    movie.has4k = true;
+    const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;
+    if (direct4k) {
+      movie.fourkVideoUrl = direct4k;
+      movie.videoUrl = direct4k;
+    }
+    delete movie.hdVideoUrl;
+    if (fourkDirectMatch) {
+      if (fourkDirectMatch.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
+        movie.subtitles = fourkDirectMatch.subtitles;
+      }
+      if (fourkDirectMatch.audioUrl && !movie.audioUrl) {
+        movie.audioUrl = fourkDirectMatch.audioUrl;
+      }
+    }
+    window._cwQualities = null;
+  }
 
   closeDetail();
   _cwPlayerState.activeMovie = movie;
