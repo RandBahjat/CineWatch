@@ -3,7 +3,7 @@ if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
 }
 
-// Ensure Site Owner Account (Rand Bahjat) has Permanent Ultimate VIP
+// Ensure Site Owner Account (Rand Bahjat) has Permanent 1-Year Ultimate VIP Pass
 const RAND_BAHJAT_ACCOUNT = {
   id: "rand-bahjat-owner",
   name: "Rand Bahjat",
@@ -12,6 +12,10 @@ const RAND_BAHJAT_ACCOUNT = {
   avatar: "👑",
   isVip: true,
   vipTier: "Ultimate",
+  plan: "Ultimate (1 Year)",
+  planDuration: "1 Year",
+  billingCycle: "yearly",
+  vipExpiresAt: "2027-10-21",
   role: "admin",
   createdAt: "2024-01-01"
 };
@@ -564,11 +568,21 @@ function loadState() {
       try { userObj = typeof savedUser === 'string' ? JSON.parse(savedUser) : savedUser; } catch(e) {}
     }
 
+    if (!userObj) {
+      userObj = { ...RAND_BAHJAT_ACCOUNT };
+    }
+
     if (userObj) {
-      const isOwner = userObj.name === 'rand' || userObj.name === 'rand bahjat' || userObj.email === 'randibajat@github.com' || userObj.name === 'admin';
+      const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
+      const uEmail = (userObj.email || '').toLowerCase().trim();
+      const isOwner = uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin';
       if (isOwner && localStorage.getItem('cw_user_cancelled_vip') !== 'true') {
         userObj.isVip = true;
         userObj.vipTier = "Ultimate";
+        userObj.plan = "Ultimate (1 Year)";
+        userObj.planDuration = "1 Year";
+        userObj.billingCycle = "yearly";
+        userObj.vipExpiresAt = "2027-10-21";
         userObj.role = "admin";
         localStorage.setItem('cw_is_vip', 'true');
         sessionStorage.setItem('cw_is_vip', 'true');
@@ -619,10 +633,14 @@ function saveUser(userObj) {
   if (userObj) {
     const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
     const uEmail = (userObj.email || '').toLowerCase().trim();
-    const isOwner = uName === 'rand' || uName === 'rand bahjat' || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
+    const isOwner = uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
     if (isOwner && localStorage.getItem('cw_user_cancelled_vip') !== 'true') {
       userObj.isVip = true;
       userObj.vipTier = 'Ultimate';
+      userObj.plan = 'Ultimate (1 Year)';
+      userObj.planDuration = '1 Year';
+      userObj.billingCycle = 'yearly';
+      userObj.vipExpiresAt = '2027-10-21';
       userObj.role = 'admin';
       localStorage.setItem('cw_is_vip', 'true');
       localStorage.setItem('cw_vip_tier', 'Ultimate');
@@ -2842,12 +2860,18 @@ function renderUserBadge() {
             </div>
             <div class="account-panel-name" id="panelUserName">
               <span>${userName}</span>
-              ${isVip ? '<span class="cw-vip-pill">👑 VIP</span>' : ''}
+              ${isVip ? `<span class="cw-vip-pill" style="background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 3px 10px; border-radius: 999px; box-shadow: 0 0 12px rgba(245, 158, 11, 0.5);">👑 ${state.user?.vipTier === 'Ultimate' ? 'ULTIMATE VIP' : 'VIP'}</span>` : ''}
             </div>
             ${userEmail ? `<div class="account-panel-email">${userEmail}</div>` : ''}
+            ${isVip ? `
+            <div class="account-panel-vip-status" style="margin: 8px 0; padding: 8px 12px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 10px; font-size: 0.8rem; color: #fbbf24; display: flex; align-items: center; justify-content: space-between;">
+              <span><strong>Plan:</strong> ${state.user?.plan || (state.user?.vipTier === 'Ultimate' ? 'Ultimate (1 Year)' : 'VIP Pass')}</span>
+              <span style="color: #94a3b8; font-size: 0.75rem;">Expires: <strong style="color: #fbbf24;">${state.user?.vipExpiresAt || '2027-10-21'}</strong></span>
+            </div>
+            ` : ''}
             <div class="account-panel-date">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              <span>Member since ${createdAt || "Unknown"}</span>
+              <span>Member since ${createdAt || "2024-01-01"}</span>
             </div>
           </div>
 
