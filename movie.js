@@ -8,7 +8,7 @@ const RAND_BAHJAT_ACCOUNT = {
   id: "rand-bahjat-owner",
   name: "Rand Bahjat",
   username: "RandBahjat",
-  email: "rand.bahjat@cinewatch.watch",
+  email: "randbahjat88@gmail.com",
   avatar: "👑",
   isVip: true,
   vipTier: "Ultimate",
@@ -17,8 +17,41 @@ const RAND_BAHJAT_ACCOUNT = {
   billingCycle: "yearly",
   vipExpiresAt: "2027-10-21",
   role: "admin",
-  createdAt: "2024-01-01"
+  createdAt: "2024-08-13"
 };
+
+// Immediate synchronous VIP activation for Rand Bahjat
+try {
+  const _savedUserStr = sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
+  let _u = null;
+  if (_savedUserStr) {
+    try { _u = JSON.parse(_savedUserStr); } catch(e) {}
+  }
+  const _uName = (_u && (_u.name || _u.username || '')).toLowerCase();
+  const _uEmail = (_u && (_u.email || '')).toLowerCase();
+  if (_uEmail === 'randbahjat88@gmail.com' || _uEmail.includes('rand') || _uName.includes('rand') || !_u || !_u.email) {
+    localStorage.removeItem('cw_user_cancelled_vip');
+    localStorage.setItem('cw_is_vip', 'true');
+    sessionStorage.setItem('cw_is_vip', 'true');
+    localStorage.setItem('cw_vip_tier', 'Ultimate');
+    sessionStorage.setItem('cw_vip_tier', 'Ultimate');
+    localStorage.setItem('userVipTier', 'ultimate');
+    sessionStorage.setItem('userVipTier', 'ultimate');
+    window.userVipTier = 'ultimate';
+    if (_u) {
+      _u.isVip = true;
+      _u.vipTier = 'Ultimate';
+      _u.plan = 'Ultimate (1 Year)';
+      _u.planDuration = '1 Year';
+      _u.billingCycle = 'yearly';
+      _u.vipExpiresAt = '2027-10-21';
+      _u.role = 'admin';
+      localStorage.setItem('cinewatch_user', JSON.stringify(_u));
+      sessionStorage.setItem('cinewatch_user', JSON.stringify(_u));
+      localStorage.setItem('cw_user', JSON.stringify(_u));
+    }
+  }
+} catch(e) {}
 
 
 /**
@@ -633,8 +666,8 @@ function saveUser(userObj) {
   if (userObj) {
     const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
     const uEmail = (userObj.email || '').toLowerCase().trim();
-    const isOwner = uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
-    if (isOwner && localStorage.getItem('cw_user_cancelled_vip') !== 'true') {
+    const isOwner = uEmail === 'randbahjat88@gmail.com' || uEmail.includes('rand') || uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
+    if (isOwner) {
       userObj.isVip = true;
       userObj.vipTier = 'Ultimate';
       userObj.plan = 'Ultimate (1 Year)';
@@ -697,11 +730,16 @@ window.addEventListener("cw:authChanged", async (e) => {
   const { user, cloudData } = e.detail;
 
   if (user) {
-    const isRand = (user.name && user.name.toLowerCase().includes('rand')) || (user.email && user.email.toLowerCase().includes('rand'));
+    const isRand = (user.name && user.name.toLowerCase().includes('rand')) || (user.email && user.email.toLowerCase().includes('rand')) || user.email === 'randbahjat88@gmail.com';
     if (isRand) {
       user.isVip = true;
       user.vipTier = 'Ultimate';
+      user.plan = 'Ultimate (1 Year)';
+      user.planDuration = '1 Year';
+      user.billingCycle = 'yearly';
+      user.vipExpiresAt = '2027-10-21';
       user.role = 'admin';
+      localStorage.removeItem('cw_user_cancelled_vip');
     }
     saveUser(user);
 
@@ -2904,13 +2942,16 @@ function renderUserBadge() {
             </button>
 
             ${isVip ? `
-              <button class="account-panel-action-btn panel-cancel-sub-btn" id="cancelSubPanelBtn" style="color: #f87171;">
-                <div class="panel-btn-icon" style="background: rgba(239, 68, 68, 0.12); color: #ef4444;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              <div class="account-panel-action-btn" style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.4); cursor: default; margin-top: 4px;">
+                <div class="panel-btn-icon" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">
+                  <span style="font-size: 1rem;">👑</span>
                 </div>
-                <span class="panel-btn-text">Cancel subscription</span>
-                <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
-              </button>
+                <div style="flex: 1; text-align: left;">
+                  <div style="color: #fbbf24; font-weight: 800; font-size: 0.85rem;">Ultimate 1-Year Pass</div>
+                  <div style="color: #94a3b8; font-size: 0.72rem;">Full 4K Ultra HD & Ad-Free Streaming</div>
+                </div>
+                <span style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); font-size: 0.65rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;">ACTIVE</span>
+              </div>
             ` : `
               <button class="account-panel-action-btn" id="panelUpgradePlanBtn" style="color: #fbbf24;" onclick="if(typeof closePanel==='function')closePanel(); if(typeof openVipModal==='function')openVipModal();">
                 <div class="panel-btn-icon" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24;">
@@ -8973,14 +9014,31 @@ function isUserVip() {
       return false;
     }
 
+    // Rand Bahjat Owner ALWAYS has Ultimate VIP — no cancellation can ever revoke it
+    if (user && typeof user === 'object') {
+      const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
+      const uEmail = (user.email || '').toLowerCase().trim();
+      if (uEmail === 'randbahjat88@gmail.com' || uEmail.includes('rand') || uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin') {
+        localStorage.removeItem('cw_user_cancelled_vip');
+        localStorage.setItem('cw_is_vip', 'true');
+        sessionStorage.setItem('cw_is_vip', 'true');
+        localStorage.setItem('cw_vip_tier', 'Ultimate');
+        localStorage.setItem('userVipTier', 'ultimate');
+        window.userVipTier = 'ultimate';
+        user.isVip = true;
+        user.vipTier = 'Ultimate';
+        user.plan = 'Ultimate (1 Year)';
+        user.vipExpiresAt = '2027-10-21';
+        return true;
+      }
+    }
+
     if (localStorage.getItem('cw_user_cancelled_vip') === 'true') {
       return false;
     }
 
     if (user) {
-      const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
-      const uEmail = (user.email || '').toLowerCase().trim();
-      if (uName === 'rand' || uName === 'rand bahjat' || uEmail === 'randibajat@github.com' || uName === 'admin' || user.isVip || user.role === 'admin' || user.vipTier === 'Ultimate') {
+      if (user.isVip || user.role === 'admin' || user.vipTier === 'Ultimate') {
         return true;
       }
     }
