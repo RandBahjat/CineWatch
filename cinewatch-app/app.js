@@ -1554,6 +1554,8 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     : null;
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
+    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k')) ||
+    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
     movie.is4k ||
     movie.has4k ||
     movie.fourkVideoUrl ||
