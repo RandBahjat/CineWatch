@@ -13242,7 +13242,7 @@ window._MOVIES_DATA = [
     videoUrl: "500",
     trailerUrl: "https://youtu.be/2KLZ4fSXtgI?si=RHPvf8nJoYkAhY4m",
     overview: "Six criminals, hired by a crime boss to carry out a diamond heist and given color-coded aliases so they remain complete strangers to one another, are unexpectedly ambushed by the police during the robbery. As the surviving thieves regroup in a blood-soaked warehouse rendezvous, paranoia and brutal violence erupt as they desperately try to uncover which one of them is an undercover cop.",
-    overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
+    overviewKurdish: "شەش تاوانباری نەناسراو، کە بە ناوی خوازراوی ڕەنگەکانەوە بانگ دەکرێن بۆ ئەوەی ناسنامەی ڕاستەقینەی یەکتر نەزانن، لەلایەن سەرۆک باندێکەوە بەکرێ دەگیرێن بۆ ئەنجامدانی دزییەکی گەورەی ئەڵماس. بەڵام کاتێک لە کاتی دزییەکەدا لەناکاو دەکەونە بۆسەی پۆلیسەوە و پلانەکەیان تێکدەچێت، ڕزگاربووەکان لە کۆگایەکی چۆڵدا کۆدەبنەوە. لەوێدا ترس، گومان و توندوتیژییەکی خوێناوی سەرهەڵدەدات لە کاتێکدا هەوڵ دەدەن بزانن کامیان سیخوڕ و پۆلیسی نهێنییە لەناویاندا.",
     director: "Melanie Mayron",
     cast: ["Meaghan Martin, Maiara Walsh, Jennifer Stone, Nicole Anderson, Claire Holt, Diego Boneta, Tim Meadows"],
     trending: false,
