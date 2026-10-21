@@ -1557,7 +1557,13 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 
   let subParam = '';
   const cleanName = movie.title || '';
-  if (cleanName) {
+  if (movie.subtitles && Array.isArray(movie.subtitles) && movie.subtitles.length > 0) {
+    window._cwSubtitleTracks = movie.subtitles;
+    const defaultSub = movie.subtitles.find(s => s.default) || movie.subtitles[0];
+    if (defaultSub && defaultSub.file) {
+      subtitleUrl = defaultSub.file;
+    }
+  } else if (cleanName) {
     const subBase = (curOrigin && curOrigin.includes(':3000')) ? curOrigin : 'https://cinewatch-maaa.onrender.com';
     let kuApi = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}&lang=ckb`;
     let enApi = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}&lang=en`;
