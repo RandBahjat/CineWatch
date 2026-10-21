@@ -1003,30 +1003,19 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
-/* Prev: dark circle */
-.hero-counter-btn.prev {
-  background: rgba(30, 33, 42, 0.88) !important;
-}
-
-/* Next: vibrant red/coral circle */
+/* Prev & Next: matching sleek dark glassmorphism circles */
+.hero-counter-btn.prev,
 .hero-counter-btn.next {
-  background: #e8392a !important;
-  border-color: rgba(255, 80, 60, 0.3) !important;
-  box-shadow: 0 4px 20px rgba(232, 57, 42, 0.55), 0 0 0 3px rgba(232, 57, 42, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+  background: rgba(30, 33, 42, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 .hero-counter-btn:hover {
   transform: scale(1.1) !important;
-}
-
-.hero-counter-btn.prev:hover {
   background: rgba(50, 55, 68, 0.96) !important;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.55) !important;
-}
-
-.hero-counter-btn.next:hover {
-  background: #f04030 !important;
-  box-shadow: 0 6px 28px rgba(232, 57, 42, 0.72), 0 0 0 4px rgba(232, 57, 42, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
 }
 
 .hero-counter-btn:active {
