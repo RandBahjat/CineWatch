@@ -7666,15 +7666,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     cleanUrl = ref.fourkVideoUrl;
   }
 
-  const is4kStream = isFrom4kSession || ref?.is4k || (ref?.fourkVideoUrl && cleanUrl === ref.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_');
-  if (is4kStream && cleanUrl) {
-    const qList = [
-      { quality: '4K Ultra HD (2160p)', url: cleanUrl, default: true }
-    ];
-    if (ref?.hdVideoUrl && ref.hdVideoUrl !== cleanUrl && typeof ref.hdVideoUrl === 'string' && ref.hdVideoUrl.startsWith('http')) {
-      qList.push({ quality: '1080p Full HD', url: ref.hdVideoUrl, default: false });
-    }
-    window._cwQualities = qList;
+  const is4kStream = Boolean(isFrom4kSession || ref?.is4k || (ref?.fourkVideoUrl && cleanUrl === ref.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_'));
+  if (is4kStream) {
+    // 4K section and 4K titles stream exclusively in native 4K UHD with no quality selector
+    window._cwQualities = null;
   }
 
   // Subtitle parameters
@@ -8138,7 +8133,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       });
     }
 
-    if (window._cwQualities && window._cwQualities.length > 0) {
+    if (!is4kStream && window._cwQualities && window._cwQualities.length > 0) {
       artSettings.push({
         html: 'Quality',
         icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
@@ -8323,7 +8318,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.loadSource(url);
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-              if (art.setting) {
+              if (!is4kStream && art.setting) {
                 const qualities = [
                   { html: 'Auto', height: 'auto', default: true },
                   { html: '1080p', height: 1080, default: false },
