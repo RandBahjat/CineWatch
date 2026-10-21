@@ -496,6 +496,7 @@ async function loadMediaFromAPI() {
         m.is4k = true;
         m.fourkVideoUrl = fourkMatch.videoUrl;
         if (fourkMatch.audioUrl) m.audioUrl = fourkMatch.audioUrl;
+        if (fourkMatch.subtitles && (!m.subtitles || m.subtitles.length === 0)) m.subtitles = fourkMatch.subtitles;
         if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
       }
 
