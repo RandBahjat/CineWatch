@@ -127,6 +127,37 @@ window._FOURK_DATA = [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
+  },
+
+  // ============================================================
+  // 5. Spider-Man 2 (2004)
+  // ============================================================
+  {
+    id: "spider-man-2-2004",
+    title: "Spider-Man 2",
+    type: "Movie",
+    year: 2004,
+    rating: 7.5,
+    age: "PG-13",
+    duration: "2h 7m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_audio.m4a",
+    trailerUrl: "https://youtu.be/kficMW9vu8M?si=mL2PTzXLk1kvTsuY",
+    overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
+    overviewKurdish: "دوو ساڵ دوای بوونی بە سپایدەرمان، ژیانی پیتەر پارکەر تێکدەچێت، پەیوەندییەکانی لەگەڵ هاوڕێکانی بەرەو خراپبوون دەچن و ناتوانێت هاوسەنگی لە نێوان ژیانی ئاسایی و سپایدەرمان ڕابگرێت. لە هەمان کاتدا زانایەکی بلیمەت دەبێتە دوژمنێکی مەترسیدار بە ناوی دکتۆر ئۆکتۆپۆس.",
+    director: "Sam Raimi",
+    cast: ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Alfred Molina", "Rosemary Harris", "J.K. Simmons"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt", srclang: "en", default: false }
+    ],
+    seasons: []
   }
 
 ];
