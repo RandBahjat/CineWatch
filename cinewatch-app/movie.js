@@ -6173,14 +6173,8 @@ function bindEventListeners() {
     if (card) {
       const movieId = card.dataset.id;
 
-      // Intercept click if in Continue Watching selection mode
-      if (state.isCwSelectionMode && card.classList.contains("continue-card") && state.activeView === "continue") {
-        if (state.cwSelectedItems.has(movieId)) {
-          state.cwSelectedItems.delete(movieId);
-        } else {
-          state.cwSelectedItems.add(movieId);
-        }
-        renderContinueWatchingPage();
+      // In Continue Watching selection mode, let card.onclick handle selection exclusively
+      if (state.isCwSelectionMode && card.classList.contains("continue-card")) {
         return;
       }
 
