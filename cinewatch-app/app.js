@@ -1970,6 +1970,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           return item.html;
         },
       });
+    }
 
     if (!is4kStream && !isFrom4kApp && window._cwQualities && window._cwQualities.length > 0) {
       artSettings.push({
