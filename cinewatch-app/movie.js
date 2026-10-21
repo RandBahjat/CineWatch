@@ -1337,20 +1337,30 @@ function updateHeroBanner() {
   const featured = getFeaturedMovies();
   const dotTrack = document.getElementById("heroDotTrack");
   if (dotTrack) {
-    // Build dots if count changed
     const existing = dotTrack.querySelectorAll(".hdot");
     if (existing.length !== featured.length) {
+      // Only rebuild when the slide count genuinely changes (first load or data reload)
+      // Use requestAnimationFrame to allow the browser to paint before toggling active,
+      // which ensures the CSS transition fires rather than skipping.
       dotTrack.innerHTML = featured.map((_, i) =>
-        `<span class="hdot${i === state.currentHeroIndex ? ' active' : ''}" data-idx="${i}" role="button" tabindex="0" aria-label="Go to slide ${i + 1}"></span>`
+        `<span class="hdot" data-idx="${i}" role="button" tabindex="0" aria-label="Go to slide ${i + 1}"></span>`
       ).join('');
+      const allDots = dotTrack.querySelectorAll(".hdot");
+      // rAF: set active on the next paint so CSS picks up the transition from the initial (inactive) state
+      requestAnimationFrame(() => {
+        if (allDots[state.currentHeroIndex]) {
+          allDots[state.currentHeroIndex].classList.add("active");
+        }
+      });
       dotTrack.addEventListener("click", (e) => {
         const dot = e.target.closest(".hdot");
         if (!dot) return;
         state.currentHeroIndex = parseInt(dot.dataset.idx, 10);
         updateHeroBanner();
         startHeroAutoplay();
-      }, { once: false });
+      });
     } else {
+      // Just toggle the class — let the CSS transition do all the work
       existing.forEach((dot, i) => dot.classList.toggle("active", i === state.currentHeroIndex));
     }
   }
