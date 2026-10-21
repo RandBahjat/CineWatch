@@ -13230,7 +13230,7 @@ window._MOVIES_DATA = [
     seasons: []
   }
   {
-    title: "Mean Girls 2",
+    title: "",
     type: "Movie",
     year: 2011,
     rating: 4.1,
