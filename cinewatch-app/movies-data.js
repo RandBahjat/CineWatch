@@ -1736,8 +1736,8 @@ window._MOVIES_DATA = [
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
     fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   },
@@ -1759,8 +1759,8 @@ window._MOVIES_DATA = [
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_audio.m4a",
     fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mkv",
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: false }
     ],
     trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
@@ -2199,8 +2199,8 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: true,
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   },
