@@ -1119,6 +1119,26 @@ function setupHeroBanner() {
   });
 
   // Slide Counter interactive navigation
+  const counterContainer = document.getElementById("heroSlideCounter");
+  if (counterContainer && (!document.getElementById("heroCurrentSlide") || !document.getElementById("heroTotalSlides") || !document.getElementById("heroProgressBar"))) {
+    counterContainer.innerHTML = `
+      <button class="hero-counter-btn prev" id="heroPrevBtn" aria-label="Previous Slide">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="hero-counter-display notranslate" translate="no">
+        <span class="hero-current-slide" id="heroCurrentSlide">${formatNumber((state.currentHeroIndex + 1).toString().padStart(2, '0'))}</span>
+        <span class="hero-counter-sep">/</span>
+        <span class="hero-total-slides" id="heroTotalSlides">${formatNumber(featured.length.toString().padStart(2, '0'))}</span>
+      </div>
+      <button class="hero-counter-btn next" id="heroNextBtn" aria-label="Next Slide">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="hero-counter-progress">
+        <div class="hero-counter-progress-bar" id="heroProgressBar" style="width: ${((state.currentHeroIndex + 1) / featured.length) * 100}%;"></div>
+      </div>
+    `;
+  }
+
   const prevBtn = document.getElementById("heroPrevBtn");
   const nextBtn = document.getElementById("heroNextBtn");
   if (prevBtn) {
