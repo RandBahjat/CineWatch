@@ -1,5 +1,17 @@
 {
   "liveServer.settings.host": "0.0.0.0",
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    ".git/**",
+    "scratch/**",
+    "**/*.json",
+    "**/*.mkv",
+    "**/*.mp4",
+    "**/*.m4a",
+    "**/*.log",
+    "**/*.txt",
+    "**/*.bak"
+  ],
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
