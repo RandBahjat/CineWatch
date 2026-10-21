@@ -3548,10 +3548,12 @@ function openDetailsModal(movieId) {
     }
     if (qualityBadge) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
-      const isFrom4k = (state.activeView === '4k' || state.previousView === '4k' || new URLSearchParams(window.location.search).get('section') === '4k') && !isSeriesOrAnime;
-      const is4kActive = !isSeriesOrAnime && (isFrom4k ? Boolean(movie.has4k || movie.is4k) : Boolean(movie.is4k && state.previousView === '4k'));
-      qualityBadge.textContent = is4kActive ? "4K UHD" : "HD";
-      qualityBadge.style.cssText = is4kActive
+      const fourkMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+        ? window._FOURK_DATA.find(f => (f.id && f.id === movie.id) || (f.title && f.title.toLowerCase() === (movie.title || '').toLowerCase()))
+        : null;
+      const isFrom4k = (state.activeView === '4k' || state.previousView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') || movie.is4k || movie.has4k || movie.fourkVideoUrl || !!fourkMatch) && !isSeriesOrAnime;
+      qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
+      qualityBadge.style.cssText = isFrom4k
         ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"
         : "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: #fff;";
     }
@@ -4187,6 +4189,42 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   if (!parentMovie && displayTitle) {
     parentMovie = MOVIES.find(m => displayTitle.toLowerCase().includes((m.title || '').toLowerCase()));
   }
+
+  const fourkMeta = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (parentId && (f.id === parentId || f.videoUrl === videoUrl)) || (displayTitle && f.title && displayTitle.toLowerCase().includes(f.title.toLowerCase())) || (parentMovie && ((f.id && f.id === parentMovie.id) || (f.title && f.title.toLowerCase() === (parentMovie.title || '').toLowerCase()))))
+    : null;
+
+  const is4kPlayback = Boolean(
+    state.activeView === '4k' ||
+    state.previousView === '4k' ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
+    parentMovie?.is4k ||
+    parentMovie?.has4k ||
+    parentMovie?.fourkVideoUrl ||
+    fourkMeta
+  );
+
+  if (is4kPlayback) {
+    if (!parentMovie && fourkMeta) {
+      parentMovie = { ...fourkMeta };
+    }
+    if (parentMovie) {
+      parentMovie.is4k = true;
+      parentMovie.has4k = true;
+      delete parentMovie.hdVideoUrl;
+      if (fourkMeta?.subtitles && (!parentMovie.subtitles || parentMovie.subtitles.length === 0)) {
+        parentMovie.subtitles = fourkMeta.subtitles;
+      }
+      if (fourkMeta?.audioUrl && !parentMovie.audioUrl) {
+        parentMovie.audioUrl = fourkMeta.audioUrl;
+      }
+    }
+    const direct4k = parentMovie?.fourkVideoUrl || fourkMeta?.videoUrl || (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv')) ? videoUrl : null);
+    if (direct4k) {
+      videoUrl = direct4k;
+    }
+    window._cwQualities = null;
+  }
   renderPlayerDetailsPanel(parentMovie, epData);
   const posterEl = document.getElementById("playerShowPoster");
   const metaEl = document.getElementById("playerMeta");
@@ -4313,12 +4351,43 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   // Single Movies / Standalone Titles
   const mediaId = movie.id || movie.videoUrl || movie.cinesrcId || movie.title;
   let targetUrl = movie.videoUrl || movie.id;
-  const isFrom4k = state.activeView === '4k' || state.previousView === '4k';
-  if (isFrom4k && movie.fourkVideoUrl) {
-    targetUrl = movie.fourkVideoUrl;
-  } else if (!isFrom4k && movie.hdVideoUrl) {
+
+  const fourkEntry = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (f.id && f.id === movie.id) || (f.title && f.title.toLowerCase() === (movie.title || '').toLowerCase()))
+    : null;
+
+  const isFrom4k = Boolean(
+    state.activeView === '4k' ||
+    state.previousView === '4k' ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
+    movie.is4k ||
+    movie.has4k ||
+    movie.fourkVideoUrl ||
+    fourkEntry
+  );
+
+  if (isFrom4k) {
+    const direct4k = movie.fourkVideoUrl || fourkEntry?.videoUrl || (movie.is4k && typeof movie.videoUrl === 'string' && (movie.videoUrl.startsWith('http') || movie.videoUrl.includes('.mp4') || movie.videoUrl.includes('.mkv')) ? movie.videoUrl : null);
+    if (direct4k && typeof direct4k === 'string' && (direct4k.startsWith('http') || direct4k.includes('.mp4') || direct4k.includes('.mkv'))) {
+      targetUrl = direct4k;
+      movie.is4k = true;
+      movie.has4k = true;
+      movie.fourkVideoUrl = direct4k;
+      movie.videoUrl = direct4k;
+    }
+    delete movie.hdVideoUrl;
+    if (fourkEntry) {
+      if (fourkEntry.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
+        movie.subtitles = fourkEntry.subtitles;
+      }
+      if (fourkEntry.audioUrl && !movie.audioUrl) {
+        movie.audioUrl = fourkEntry.audioUrl;
+      }
+    }
+    window._cwQualities = null;
+  } else if (movie.hdVideoUrl) {
     targetUrl = movie.hdVideoUrl;
-  } else if (!isFrom4k && movie.videoUrl) {
+  } else if (movie.videoUrl) {
     targetUrl = movie.videoUrl;
   } else if (movie.fourkVideoUrl) {
     targetUrl = movie.fourkVideoUrl;
@@ -7600,11 +7669,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const epNum = epData?.episode || parsedEp || rawEp;
   const malId = isAnime ? getAnimeMalId(ref, epData?.id) : null;
 
-  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : '');
-  if (typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
+  const fourkMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
+    : null;
+
+  const isFrom4kSession = !isAnime && !isTv && Boolean(
+    state.activeView === '4k' ||
+    state.previousView === '4k' ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
+    ref?.is4k ||
+    ref?.has4k ||
+    ref?.fourkVideoUrl ||
+    fourkMatch
+  );
+
+  let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
+  if (!isFrom4kSession && typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
     tmdbId = tmdbId.split(':')[1];
   }
-  if (isNaN(Number(tmdbId)) && ref) {
+  if (!isFrom4kSession && isNaN(Number(tmdbId)) && ref) {
     if (ref.videoUrl && !isNaN(Number(ref.videoUrl))) tmdbId = ref.videoUrl;
     else if (ref.tmdbId) tmdbId = ref.tmdbId;
     else if (ref.cinesrcId) tmdbId = ref.cinesrcId;
@@ -7661,12 +7744,43 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm') || rawVideoStr.includes('.mkv') || rawVideoStr.includes('stream-local') || rawVideoStr.includes('stream-media')) {
     cleanUrl = rawVideoStr;
   }
-  const isFrom4kSession = state.activeView === '4k' || state.previousView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k');
-  if (!cleanUrl && (isFrom4kSession || !tmdbId) && ref?.fourkVideoUrl && typeof ref.fourkVideoUrl === 'string' && (ref.fourkVideoUrl.startsWith('http') || ref.fourkVideoUrl.includes('.mp4'))) {
-    cleanUrl = ref.fourkVideoUrl;
+
+  if (isFrom4kSession) {
+    const target4kUrl = ref?.fourkVideoUrl || fourkMatch?.videoUrl || (ref?.is4k && typeof ref?.videoUrl === 'string' && (ref.videoUrl.startsWith('http') || ref.videoUrl.includes('.mp4') || ref.videoUrl.includes('.mkv')) ? ref.videoUrl : null) || (cleanUrl && (cleanUrl.startsWith('http') || cleanUrl.includes('.mp4') || cleanUrl.includes('.mkv')) ? cleanUrl : null);
+    if (target4kUrl) {
+      cleanUrl = target4kUrl;
+    }
+    // 4K section and 4K titles stream exclusively in native 4K UHD with no quality selector
+    window._cwQualities = null;
+    tmdbId = null;
+    if (ref) {
+      ref.is4k = true;
+      ref.has4k = true;
+      ref.fourkVideoUrl = cleanUrl;
+      delete ref.hdVideoUrl;
+    }
+    if (fourkMatch) {
+      if (fourkMatch.subtitles && (!ref?.subtitles || ref.subtitles.length === 0)) {
+        if (ref) ref.subtitles = fourkMatch.subtitles;
+      }
+      if (fourkMatch.audioUrl && !ref?.audioUrl) {
+        if (ref) ref.audioUrl = fourkMatch.audioUrl;
+      }
+    }
   }
 
-  const is4kStream = Boolean(isFrom4kSession || ref?.is4k || (ref?.fourkVideoUrl && cleanUrl === ref.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_'));
+  const is4kStream = Boolean(
+    isFrom4kSession ||
+    ref?.is4k ||
+    ref?.has4k ||
+    (ref?.fourkVideoUrl && cleanUrl === ref.fourkVideoUrl) ||
+    cleanUrl.includes('4K') ||
+    cleanUrl.includes('2160p') ||
+    cleanUrl.includes('_4K_') ||
+    cleanUrl.includes('Spider-Man_4K') ||
+    cleanUrl.includes('Spider_Man_2002_4K') ||
+    cleanUrl.includes('The_Amazing_Spider_Man')
+  );
   if (is4kStream) {
     // 4K section and 4K titles stream exclusively in native 4K UHD with no quality selector
     window._cwQualities = null;
@@ -7818,7 +7932,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
-  if (!isAnime && !cleanUrl && tmdbId) {
+  if (!isAnime && !cleanUrl && tmdbId && !is4kStream && !isFrom4kSession) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
     const endpoints = [
@@ -7894,7 +8008,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
-  if ((!streamUrl && iframe) || driveIframeUrl) {
+  if (!is4kStream && !isFrom4kSession && ((!streamUrl && iframe) || driveIframeUrl)) {
     iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`)));
     iframe.classList.remove("hidden");
     if (artContainer) {
@@ -8133,7 +8247,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       });
     }
 
-    if (!is4kStream && window._cwQualities && window._cwQualities.length > 0) {
+    if (!is4kStream && !isFrom4kSession && window._cwQualities && window._cwQualities.length > 0) {
       artSettings.push({
         html: 'Quality',
         icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
@@ -8318,7 +8432,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.loadSource(url);
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-              if (!is4kStream && art.setting) {
+              if (!is4kStream && !isFrom4kSession && art.setting) {
                 const qualities = [
                   { html: 'Auto', height: 'auto', default: true },
                   { html: '1080p', height: 1080, default: false },
@@ -8502,7 +8616,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        if (iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
+        if (!is4kStream && !isFrom4kSession && iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
           console.info("Falling back to external server iframe due to player error");
           iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
           iframe.classList.remove("hidden");
