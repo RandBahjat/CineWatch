@@ -13236,7 +13236,7 @@ window._MOVIES_DATA = [
     rating: 8.2,
     age: "R",
     duration: "1h 39m",
-    genres: ["Crime"],
+    genres: ["Crime",""],
     poster: "https://image.tmdb.org/t/p/original/ukwObNzEyDAiuTrzbWAVs1dp5NN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ynQUQE3pQVYsLtrhc3lUtr2maE4.jpg",
     videoUrl: "51481",
