@@ -7571,6 +7571,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
     window.artPlayerInstance = null;
   }
+  window._cwQualities = null;
 
   let ref = movie || parentMovie;
 
@@ -7663,6 +7664,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const isFrom4kSession = state.activeView === '4k' || state.previousView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k');
   if (!cleanUrl && (isFrom4kSession || !tmdbId) && ref?.fourkVideoUrl && typeof ref.fourkVideoUrl === 'string' && (ref.fourkVideoUrl.startsWith('http') || ref.fourkVideoUrl.includes('.mp4'))) {
     cleanUrl = ref.fourkVideoUrl;
+  }
+
+  const is4kStream = isFrom4kSession || ref?.is4k || (ref?.fourkVideoUrl && cleanUrl === ref.fourkVideoUrl) || cleanUrl.includes('4K') || cleanUrl.includes('2160p') || cleanUrl.includes('_4K_');
+  if (is4kStream && cleanUrl) {
+    const qList = [
+      { quality: '4K Ultra HD (2160p)', url: cleanUrl, default: true }
+    ];
+    if (ref?.hdVideoUrl && ref.hdVideoUrl !== cleanUrl && typeof ref.hdVideoUrl === 'string' && ref.hdVideoUrl.startsWith('http')) {
+      qList.push({ quality: '1080p Full HD', url: ref.hdVideoUrl, default: false });
+    }
+    window._cwQualities = qList;
   }
 
   // Subtitle parameters
