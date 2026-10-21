@@ -2122,17 +2122,28 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         }
       } catch (e) {}
       
+      if (window.artPlayerInstance && window.artPlayerInstance.template && window.artPlayerInstance.template.$subtitle) {
+        window.artPlayerInstance.template.$subtitle.classList.add('notranslate');
+        window.artPlayerInstance.template.$subtitle.setAttribute('translate', 'no');
+      }
+
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
         if (subtitleUrl && subtitleUrl.trim().length > 0) {
           const isSrt = subtitleUrl.includes('.srt');
           const isKu = subtitleUrl.includes('lang=ckb') || subtitleUrl.includes('ckb') || (window._cwSubtitleTracks && window._cwSubtitleTracks.some(t => t.file === subtitleUrl && (t.srclang === 'ku' || (t.label||'').toLowerCase().includes('kurd'))));
+          const subTrackMatch = window._cwSubtitleTracks && window._cwSubtitleTracks.find(t => t.file === subtitleUrl);
+          const trackLabel = subTrackMatch ? (subTrackMatch.label || 'Subtitles') : (isKu ? 'Kurdish (Sorani)' : 'English');
           window.artPlayerInstance.subtitle.switch(subtitleUrl, {
-            name: isKu ? 'Kurdish (Sorani)' : 'Subtitles',
+            name: trackLabel,
             type: isSrt ? 'srt' : 'vtt'
           }).then(() => {
             if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
               window.artPlayerInstance.subtitle.show = true;
+            }
+            if (window.artPlayerInstance && window.artPlayerInstance.template && window.artPlayerInstance.template.$subtitle) {
+              window.artPlayerInstance.template.$subtitle.classList.add('notranslate');
+              window.artPlayerInstance.template.$subtitle.setAttribute('translate', 'no');
             }
           }).catch(() => {});
         }
