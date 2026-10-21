@@ -1328,26 +1328,26 @@ function updateHeroBanner() {
     dot.classList.toggle("active", i === state.currentHeroIndex);
   });
 
-  // Update slide counter indicator
+  // Update slide counter indicator — dot pill style
   const featured = getFeaturedMovies();
-  const currentSlideEl = document.getElementById("heroCurrentSlide");
-  if (currentSlideEl) {
-    const nextVal = formatNumber((state.currentHeroIndex + 1).toString().padStart(2, '0'));
-    if (currentSlideEl.textContent !== nextVal) {
-      currentSlideEl.classList.remove("slide-num-anim");
-      void currentSlideEl.offsetWidth; // Force reflow for pop micro-animation
-      currentSlideEl.textContent = nextVal;
-      currentSlideEl.classList.add("slide-num-anim");
+  const dotTrack = document.getElementById("heroDotTrack");
+  if (dotTrack) {
+    // Build dots if count changed
+    const existing = dotTrack.querySelectorAll(".hdot");
+    if (existing.length !== featured.length) {
+      dotTrack.innerHTML = featured.map((_, i) =>
+        `<span class="hdot${i === state.currentHeroIndex ? ' active' : ''}" data-idx="${i}" role="button" tabindex="0" aria-label="Go to slide ${i + 1}"></span>`
+      ).join('');
+      dotTrack.addEventListener("click", (e) => {
+        const dot = e.target.closest(".hdot");
+        if (!dot) return;
+        state.currentHeroIndex = parseInt(dot.dataset.idx, 10);
+        updateHeroBanner();
+        startHeroAutoplay();
+      }, { once: false });
+    } else {
+      existing.forEach((dot, i) => dot.classList.toggle("active", i === state.currentHeroIndex));
     }
-  }
-  const totalSlidesEl = document.getElementById("heroTotalSlides");
-  if (totalSlidesEl && featured.length > 0) {
-    totalSlidesEl.textContent = formatNumber(featured.length.toString().padStart(2, '0'));
-  }
-  const progressBar = document.getElementById("heroProgressBar");
-  if (progressBar && featured.length > 0) {
-    const percent = Math.min(100, Math.max(0, ((state.currentHeroIndex + 1) / featured.length) * 100));
-    progressBar.style.width = `${percent}%`;
   }
 }
 
