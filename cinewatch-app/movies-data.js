@@ -13238,7 +13238,7 @@ window._MOVIES_DATA = [
     duration: "1h 39m",
     genres: ["Crime","Thriller"],
     poster: "https://image.tmdb.org/t/p/original/vHpRo9aWD26v2jOhZjpbgqAbO69.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/ynQUQE3pQVYsLtrhc3lUtr2maE4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bwsSUHRQKRLkD32IdnKiNOcbDKt.jpg",
     videoUrl: "51481",
     trailerUrl: "https://youtu.be/lIxWxU2FeeA?si=5S0DvRXCIztIzYsQ",
     overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
