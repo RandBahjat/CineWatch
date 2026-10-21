@@ -2161,6 +2161,7 @@ window._MOVIES_DATA = [
   // 87. Spider-Man (2002)
   // ============================================================
   {
+    id: "spider-man-2002",
     title: "Spider-Man",
     type: "Movie",
     year: 2002,
@@ -2171,6 +2172,8 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     videoUrl: "557",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_audio.m4a",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mkv",
     trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     overviewKurdish: "",
@@ -2178,7 +2181,7 @@ window._MOVIES_DATA = [
     cast: ["Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco, Rosemary Harris, Cliff Robertson"],
     trending: false,
     featured: false,
-    is4k: false,
+    is4k: true,
     seasons: []
   },
 
