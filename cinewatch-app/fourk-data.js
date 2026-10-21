@@ -30,8 +30,8 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   },
@@ -61,8 +61,8 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   },
@@ -92,8 +92,8 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   },
@@ -123,8 +123,8 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: true },
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: false }
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
   }
