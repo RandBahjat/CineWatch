@@ -70,7 +70,7 @@ let FEATURED_TITLES = [
   "Lanterns",
   "Digger",
   "Resident Evil",
-  "Neagley",
+  "By Any Means",
   "Reacher",
   "Verity"
 ];
