@@ -13248,6 +13248,10 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_English.vtt", srclang: "en", default: false }
+    ],
     seasons: []
   }
 
