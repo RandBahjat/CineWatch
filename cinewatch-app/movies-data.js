@@ -829,11 +829,8 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     has4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -1725,6 +1722,8 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     videoUrl: "1930",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     overviewKurdish: "",
@@ -1733,13 +1732,8 @@ window._MOVIES_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -1758,10 +1752,6 @@ window._MOVIES_DATA = [
     videoUrl: "102382",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_audio.m4a",
     fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mkv",
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: false }
-    ],
     trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
     overviewKurdish: "بۆ پیتەر پارکەر، ژیان سەرقاڵکەر و ئاڵۆزە. لە نێوان لەناوبردنی خراپەکاران وەکو سپایدەرمان و بەسەربردنی کات لەگەڵ ئەو کەسەی کە خۆشی دەوێت، گوێن ستەیسی، دەرچوونی لە قۆناغی ئامادەیی ناتوانێت ئەوەندە بە خێرایی بێت. پیتەر ئەو بەڵێنەی لەبیر نەکردووە کە بە باوکی گوێنی دابوو بۆ پاراستنی بە دوورکەوتنەوە لێی — بەڵام ئەوە بەڵێنێکە کە ناتوانێت پێیەوە پابەند بێت. شتەکان دەگۆڕێن کاتێک دوژمنێکی نوێ، ئێلێکترۆ، پەیدا دەبێت، و هاوڕێیەکی کۆنی، هاری ئۆزبۆرن، دەگەڕێتەوە، و پیتەر سەرەداوی نوێ سەبارەت بە ڕابردووی خۆی ئاشکرا دەکات.",
@@ -1770,7 +1760,8 @@ window._MOVIES_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -2198,11 +2189,8 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -8962,7 +8950,7 @@ window._MOVIES_DATA = [
     title: "Batman Beyond: Return of the Joker",
     type: "Movie",
     year: 2000,
-    rating: 7.7,
+    rating: "7.8",
     age: "PG-13",
     duration: "1h 16m",
     genres: ["Animation", "Action", "Adventure", "Kids"],
@@ -8987,7 +8975,7 @@ window._MOVIES_DATA = [
     title: "Batman: Under the Red Hood",
     type: "Movie",
     year: 2010,
-    rating: 8,
+    rating: "8.1",
     age: "PG-13",
     duration: "1h 15m",
     genres: ["Animation", "Action", "Crime", "Kids"],
@@ -9062,7 +9050,7 @@ window._MOVIES_DATA = [
     title: "Batman: Bad Blood",
     type: "Movie",
     year: 2016,
-    rating: 6.7,
+    rating: "6.8",
     age: "PG-13",
     duration: "1h 12m",
     genres: ["Animation", "Action", "Crime", "Kids"],
@@ -9112,7 +9100,7 @@ window._MOVIES_DATA = [
     title: "Batman: Assault on Arkham",
     type: "Movie",
     year: 2014,
-    rating: 7.4,
+    rating: "7.5",
     age: "PG-13",
     duration: "1h 16m",
     genres: ["Animation", "Action", "Crime", "Kids"],
@@ -9162,7 +9150,7 @@ window._MOVIES_DATA = [
     title: "Justice League: Doom",
     type: "Movie",
     year: 2012,
-    rating: 7.4,
+    rating: "7.5",
     age: "PG-13",
     duration: "1h 15m",
     genres: ["Animation", "Action", "Adventure", "Kids"],
@@ -9187,7 +9175,7 @@ window._MOVIES_DATA = [
     title: "Green Lantern: First Flight ",
     type: "Movie",
     year: 2009,
-    rating: 7,
+    rating: "7.1",
     age: "PG-13",
     duration: "1h 17m",
     genres: ["Animation", "Action", "Adventure", "Kids"],
@@ -9512,7 +9500,7 @@ window._MOVIES_DATA = [
     title: "Scary Movie",
     type: "Movie",
     year: 2000,
-    rating: 6.3,
+    rating: "3.6",
     age: "R",
     duration: "1h 28m",
     genres: ["Comedy", "Horror"],
@@ -13229,6 +13217,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 529. Reservoir Dogs (1992)
+  // ============================================================
   {
     title: "Reservoir Dogs",
     type: "Movie",
@@ -13236,7 +13228,7 @@ window._MOVIES_DATA = [
     rating: 8.2,
     age: "R",
     duration: "1h 39m",
-    genres: ["Crime","Thriller"],
+    genres: ["Crime", "Thriller"],
     poster: "https://image.tmdb.org/t/p/original/vHpRo9aWD26v2jOhZjpbgqAbO69.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bwsSUHRQKRLkD32IdnKiNOcbDKt.jpg",
     videoUrl: "500",
@@ -13248,11 +13240,8 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_English.vtt","srclang":"en","default":false}]
   }
 
 ];
