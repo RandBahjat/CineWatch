@@ -13232,7 +13232,7 @@ window._MOVIES_DATA = [
   {
     title: "Reservoir Dogs",
     type: "Movie",
-    year: 2011,
+    year: 1992,
     rating: 4.1,
     age: "PG-13",
     duration: "1h 36m",
