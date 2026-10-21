@@ -13229,5 +13229,26 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   }
+  {
+    title: "Mean Girls 2",
+    type: "Movie",
+    year: 2011,
+    rating: 4.1,
+    age: "PG-13",
+    duration: "1h 36m",
+    genres: ["Comedy"],
+    poster: "https://image.tmdb.org/t/p/original/ukwObNzEyDAiuTrzbWAVs1dp5NN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ynQUQE3pQVYsLtrhc3lUtr2maE4.jpg",
+    videoUrl: "51481",
+    trailerUrl: "https://youtu.be/lIxWxU2FeeA?si=5S0DvRXCIztIzYsQ",
+    overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
+    overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
+    director: "Melanie Mayron",
+    cast: ["Meaghan Martin, Maiara Walsh, Jennifer Stone, Nicole Anderson, Claire Holt, Diego Boneta, Tim Meadows"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  }
 
 ];
