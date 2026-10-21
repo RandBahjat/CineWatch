@@ -1896,28 +1896,37 @@ function renderContinueWatchingPage() {
       selectBtn.classList.add("hidden");
       removeBtn.classList.remove("hidden");
       cancelBtn.classList.remove("hidden");
-      removeBtn.textContent = `Remove Selected (${state.cwSelectedItems.size})`;
+      const count = state.cwSelectedItems.size;
+      removeBtn.textContent = `Remove Selected (${count})`;
+      removeBtn.style.opacity = count > 0 ? "1" : "0.55";
+      removeBtn.style.cursor = count > 0 ? "pointer" : "not-allowed";
     } else {
       selectBtn.classList.remove("hidden");
       removeBtn.classList.add("hidden");
       cancelBtn.classList.add("hidden");
     }
 
-    selectBtn.onclick = () => {
+    selectBtn.onclick = (e) => {
+      e.stopPropagation();
       state.isCwSelectionMode = true;
       state.cwSelectedItems.clear();
       renderContinueWatchingPage();
     };
 
-    cancelBtn.onclick = () => {
+    cancelBtn.onclick = (e) => {
+      e.stopPropagation();
       state.isCwSelectionMode = false;
       state.cwSelectedItems.clear();
       renderContinueWatchingPage();
     };
 
-    removeBtn.onclick = () => {
+    removeBtn.onclick = (e) => {
+      e.stopPropagation();
+      if (state.cwSelectedItems.size === 0) return;
       state.cwSelectedItems.forEach((id) => {
         delete state.continueWatching[id];
+        delete state.continueWatching[String(id)];
+        delete state.continueWatching[Number(id)];
       });
       localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
       if (window.CW_API && state.user) {
@@ -1927,13 +1936,13 @@ function renderContinueWatchingPage() {
       state.cwSelectedItems.clear();
       renderContinueWatchingShelf();
       renderContinueWatchingPage();
-      showToast("Removed selected items");
+      showToast("Removed selected items from Continue Watching");
     };
   }
 
   grid.innerHTML = items
     .map((item) => {
-      const movie = MOVIES.find((m) => m.id === item.movieId);
+      const movie = MOVIES.find((m) => String(m.id) === String(item.movieId));
       if (!movie) return "";
 
       const isIframe = item.isIframe;
@@ -1947,12 +1956,15 @@ function renderContinueWatchingPage() {
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
 
-      const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
+      const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(String(movie.id));
       const selectedClass = isSelected ? "cw-selected" : "";
       const selectionOverlay = state.isCwSelectionMode
-        ? `<div class="cw-selection-overlay ${isSelected ? "active" : ""}">
-             <ion-icon name="checkmark-circle"></ion-icon>
-           </div>`
+        ? `<div class="cw-selection-badge ${isSelected ? "selected" : ""}" aria-label="${isSelected ? "Selected" : "Select"}">
+             <svg class="cw-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+               <polyline points="20 6 9 17 4 12"></polyline>
+             </svg>
+           </div>
+           <div class="cw-selection-overlay ${isSelected ? "active" : ""}"></div>`
         : "";
 
       return `
@@ -1981,8 +1993,9 @@ function renderContinueWatchingPage() {
     .join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
-    card.onclick = () => {
-      const movieId = card.dataset.id;
+    card.onclick = (e) => {
+      e.stopPropagation();
+      const movieId = String(card.dataset.id);
       if (state.isCwSelectionMode) {
         if (state.cwSelectedItems.has(movieId)) {
           state.cwSelectedItems.delete(movieId);
@@ -1991,7 +2004,7 @@ function renderContinueWatchingPage() {
         }
         renderContinueWatchingPage();
       } else {
-        const item = state.continueWatching[movieId];
+        const item = state.continueWatching[movieId] || state.continueWatching[Number(movieId)];
         if (item && item.currentTime) {
           openVideoPlayer(movieId, item.currentTime);
         } else {
