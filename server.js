@@ -807,6 +807,103 @@ const server = http.createServer((req, res) => {
           return;
         }
 
+        // 2. Fetch official English subtitles from SubDL
+        if (targetLang === 'en' || targetLang === 'eng') {
+          try {
+            const cleanTitle = searchTitles[1] || rawTitle;
+            let candidateUrls = [];
+            candidateUrls.push(`https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=EN&film_name=${encodeURIComponent(cleanTitle)}&unpack=1`);
+            if (imdbId) {
+              candidateUrls.push(`https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=EN&imdb_id=${imdbId}&unpack=1`);
+            }
+
+            let allMatchingTracks = [];
+            for (const queryUrl of candidateUrls) {
+              try {
+                const subdlRes = await fetch(queryUrl);
+                const subdlData = await subdlRes.json();
+                if (subdlData.status && subdlData.subtitles && subdlData.subtitles.length > 0) {
+                  for (const subItem of subdlData.subtitles) {
+                    if (!subItem.unpack_files || subItem.unpack_files.length === 0) continue;
+
+                    if (cinemetaType === 'series') {
+                      const reqSeason = parseInt(season, 10);
+                      const reqEp = parseInt(ep, 10);
+                      for (const upFile of subItem.unpack_files) {
+                        const fileSeason = upFile.season !== undefined ? parseInt(upFile.season, 10) : parseInt(subItem.season, 10);
+                        const fileEp = upFile.episode !== undefined ? parseInt(upFile.episode, 10) : parseInt(subItem.episode, 10);
+                        const fileName = (upFile.name || '').toLowerCase();
+                        const sPattern = `s${String(reqSeason).padStart(2,'0')}e${String(reqEp).padStart(2,'0')}`;
+                        if ((fileSeason === reqSeason && fileEp === reqEp) || fileName.includes(sPattern)) {
+                          allMatchingTracks.push({
+                            release_name: subItem.release_name || upFile.name || cleanTitle,
+                            author: subItem.author || '',
+                            url: upFile.url
+                          });
+                        }
+                      }
+                    } else {
+                      const upFile = subItem.unpack_files[0];
+                      if (upFile && upFile.url) {
+                        allMatchingTracks.push({
+                          release_name: subItem.release_name || subItem.name || cleanTitle,
+                          author: subItem.author || '',
+                          url: upFile.url
+                        });
+                      }
+                    }
+                  }
+                }
+              } catch (e) {}
+              if (allMatchingTracks.length > 0) break;
+            }
+
+            if (allMatchingTracks.length > 0) {
+              const totalTracks = allMatchingTracks.length;
+              const chosen = (allMatchingTracks.length > trackIndex ? allMatchingTracks[trackIndex] : allMatchingTracks[0]);
+              const srtDlUrl = 'https://dl.subdl.com' + chosen.url;
+              const fileRes = await fetch(srtDlUrl);
+              if (fileRes.ok) {
+                let nativeSrt = await fileRes.text();
+                if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
+                  nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+                }
+                nativeSrt = nativeSrt.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+
+                const trackName = (chosen.author ? `${chosen.author} - ` : '') + (chosen.release_name || `Track ${trackIndex + 1}`);
+
+                movieSubCache.set(cacheKey, nativeSrt);
+
+                res.writeHead(200, {
+                  'Content-Type': 'text/vtt; charset=utf-8',
+                  'Access-Control-Allow-Origin': '*',
+                  'Access-Control-Allow-Private-Network': 'true',
+                  'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source, X-Subtitle-Track-Name',
+                  'X-Subtitle-Total-Tracks': String(totalTracks),
+                  'X-Subtitle-Source': 'subdl-native',
+                  'X-Subtitle-Track-Name': encodeURIComponent(trackName),
+                  'Cache-Control': 'public, max-age=86400'
+                });
+                res.end(nativeSrt);
+                return;
+              }
+            }
+          } catch (subdlErr) {
+            console.warn('[SubDL] English lookup error:', subdlErr.message);
+          }
+
+          res.writeHead(404, {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Private-Network': 'true'
+          });
+          res.end(JSON.stringify({
+            error: 'No English subtitle found on SubDL',
+            title: rawTitle
+          }));
+          return;
+        }
+
         res.writeHead(404, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
         res.end(JSON.stringify({ error: 'Unsupported language' }));
       } catch (err) {
