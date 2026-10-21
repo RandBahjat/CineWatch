@@ -13239,7 +13239,7 @@ window._MOVIES_DATA = [
     genres: ["Crime","Thriller"],
     poster: "https://image.tmdb.org/t/p/original/vHpRo9aWD26v2jOhZjpbgqAbO69.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bwsSUHRQKRLkD32IdnKiNOcbDKt.jpg",
-    videoUrl: "51481",
+    videoUrl: "500",
     trailerUrl: "https://youtu.be/lIxWxU2FeeA?si=5S0DvRXCIztIzYsQ",
     overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
     overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
