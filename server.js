@@ -707,11 +707,43 @@ const server = http.createServer((req, res) => {
 
             if (allMatchingTracks.length > 0) {
               const totalTracks = allMatchingTracks.length;
-              const chosen = (allMatchingTracks.length > trackIndex ? allMatchingTracks[trackIndex] : allMatchingTracks[0]);
-              const srtDlUrl = 'https://dl.subdl.com' + chosen.url;
-              const fileRes = await fetch(srtDlUrl);
-              if (fileRes.ok) {
-                let nativeSrt = await fileRes.text();
+              let chosen = null;
+              let chosenText = null;
+              let validKuCount = 0;
+
+              // Check candidates and filter out Latin-only Kurmanji or non-Arabic tracks
+              for (let i = 0; i < allMatchingTracks.length; i++) {
+                const candidate = allMatchingTracks[i];
+                try {
+                  const srtDlUrl = 'https://dl.subdl.com' + candidate.url;
+                  const fileRes = await fetch(srtDlUrl, { signal: AbortSignal.timeout(7000) });
+                  if (!fileRes.ok) continue;
+                  const rawText = await fileRes.text();
+
+                  const arCount = (rawText.match(/[\u0600-\u06FF]/g) || []).length;
+                  const enCount = (rawText.match(/[a-zA-Z]/g) || []).length;
+
+                  // CineWatch users require Kurdish Sorani (Arabic script).
+                  // Reject Latin-only Kurmanji or mislabeled tracks (arCount < 20 or mostly Latin)
+                  if (arCount < 20 || (enCount > 500 && arCount < enCount * 0.15)) {
+                    continue;
+                  }
+
+                  if (validKuCount === trackIndex) {
+                    chosen = candidate;
+                    chosenText = rawText;
+                    break;
+                  }
+                  if (!chosen) {
+                    chosen = candidate;
+                    chosenText = rawText;
+                  }
+                  validKuCount++;
+                } catch (e) {}
+              }
+
+              if (chosen && chosenText) {
+                let nativeSrt = chosenText;
                 if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
                   nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
                 }
