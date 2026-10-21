@@ -2236,6 +2236,57 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       } catch (e) {}
     });
 
+    // Dual-stream audio sync for browser-incompatible video audio (e.g., AC-3 Dolby on 4K files)
+    const targetAudioUrl = movie?.audioUrl || (window._FOURK_DATA && window._FOURK_DATA.find(f => f.videoUrl === cleanUrl || (movie && (f.id === movie.id || f.title === movie.title)))?.audioUrl);
+    if (targetAudioUrl) {
+      try {
+        console.log("[CineWatch 4K App] Initializing dual-stream AAC audio:", targetAudioUrl);
+        let syncAudio = document.getElementById("cwSyncAudio");
+        if (!syncAudio) {
+          syncAudio = document.createElement("audio");
+          syncAudio.id = "cwSyncAudio";
+          syncAudio.style.display = "none";
+          document.body.appendChild(syncAudio);
+        }
+        syncAudio.src = targetAudioUrl;
+        syncAudio.preload = "auto";
+        window._cwSyncAudio = syncAudio;
+
+        const art = window.artPlayerInstance;
+        if (art && art.video) {
+          art.video.muted = true;
+        }
+
+        art.on('play', () => {
+          syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
+        });
+        art.on('pause', () => {
+          syncAudio.pause();
+        });
+        art.on('seek', (time) => {
+          syncAudio.currentTime = time;
+        });
+        art.on('video:timeupdate', () => {
+          const diff = Math.abs(syncAudio.currentTime - art.currentTime);
+          if (diff > 0.25) {
+            syncAudio.currentTime = art.currentTime;
+          }
+        });
+        art.on('video:volumechange', () => {
+          syncAudio.volume = art.volume;
+          syncAudio.muted = art.muted;
+        });
+        art.on('destroy', () => {
+          syncAudio.pause();
+          syncAudio.src = '';
+          if (syncAudio.parentNode) syncAudio.parentNode.removeChild(syncAudio);
+          window._cwSyncAudio = null;
+        });
+      } catch (e) {
+        console.warn("[CineWatch 4K Audio] Error syncing audio:", e);
+      }
+    }
+
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
       window.artPlayerInstance.subtitle.show = true;
     }
