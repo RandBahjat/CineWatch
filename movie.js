@@ -7515,33 +7515,7 @@ function showToast(msg) {
 // Initialize on DOM ready — loads data from API then starts app
 
 function setupCwSelectionListeners() {
-  document.addEventListener("click", (e) => {
-    if (e.target.closest("#cwSelectBtn")) {
-      state.isCwSelectionMode = true;
-      state.cwSelectedItems.clear();
-      renderContinueWatchingPage();
-    }
-    else if (e.target.closest("#cwCancelSelectBtn")) {
-      state.isCwSelectionMode = false;
-      state.cwSelectedItems.clear();
-      renderContinueWatchingPage();
-    }
-    else if (e.target.closest("#cwRemoveSelectedBtn")) {
-      if (state.cwSelectedItems.size > 0) {
-        state.cwSelectedItems.forEach(id => {
-          delete state.continueWatching[id];
-        });
-        localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
-        if (state.user && window.CW_API) {
-          window.CW_API.syncData(state.favorites, state.continueWatching);
-        }
-      }
-      state.isCwSelectionMode = false;
-      state.cwSelectedItems.clear();
-      renderContinueWatchingShelf();
-      renderContinueWatchingPage();
-    }
-  });
+  // Handlers are dynamically managed inside renderContinueWatchingPage
 }
 
 function safeInitMovieApp() {
