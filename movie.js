@@ -1329,14 +1329,25 @@ function updateHeroBanner() {
   });
 
   // Update slide counter indicator
+  const featured = getFeaturedMovies();
   const currentSlideEl = document.getElementById("heroCurrentSlide");
   if (currentSlideEl) {
-    currentSlideEl.textContent = formatNumber((state.currentHeroIndex + 1).toString().padStart(2, '0'));
+    const nextVal = formatNumber((state.currentHeroIndex + 1).toString().padStart(2, '0'));
+    if (currentSlideEl.textContent !== nextVal) {
+      currentSlideEl.classList.remove("slide-num-anim");
+      void currentSlideEl.offsetWidth; // Force reflow for pop micro-animation
+      currentSlideEl.textContent = nextVal;
+      currentSlideEl.classList.add("slide-num-anim");
+    }
   }
   const totalSlidesEl = document.getElementById("heroTotalSlides");
-  const featured = getFeaturedMovies();
   if (totalSlidesEl && featured.length > 0) {
     totalSlidesEl.textContent = formatNumber(featured.length.toString().padStart(2, '0'));
+  }
+  const progressBar = document.getElementById("heroProgressBar");
+  if (progressBar && featured.length > 0) {
+    const percent = Math.min(100, Math.max(0, ((state.currentHeroIndex + 1) / featured.length) * 100));
+    progressBar.style.width = `${percent}%`;
   }
 }
 
