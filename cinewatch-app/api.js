@@ -143,6 +143,14 @@ window.CW_API = {
         }
       } catch (e) {}
 
+      // Permanent Site Owner 1-Year Ultimate Pass for Rand Bahjat
+      const uName = (profile.name || profile.username || '').toLowerCase();
+      const uEmail = (user.email || '').toLowerCase();
+      if (uEmail === 'randbahjat88@gmail.com' || uEmail.includes('rand') || uName.includes('rand') || uName === 'admin') {
+        isVip = true;
+        vipTier = 'Ultimate';
+      }
+
       return {
         id: profile.id,
         name: profile.name,
@@ -153,7 +161,11 @@ window.CW_API = {
         favorites: profile.favorites,
         continueWatching: profile.continue_watching,
         isVip: isVip,
-        vipTier: vipTier
+        vipTier: vipTier,
+        plan: "Ultimate (1 Year)",
+        planDuration: "1 Year",
+        billingCycle: "yearly",
+        vipExpiresAt: "2027-10-21"
       };
     } catch (e) {
       console.error("Error in getCurrentUser:", e);
