@@ -1126,7 +1126,7 @@ function setupHeroBanner() {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
       </button>
       <div class="hero-dot-track" id="heroDotTrack" aria-hidden="true">
-        ${featured.map((_, i) => `<span class="hdot${i === state.currentHeroIndex ? ' active' : ''}" data-idx="${i}" role="button" tabindex="0" aria-label="Go to slide ${i + 1}"></span>`).join('')}
+        ${featured.map((_, i) => `<span class="hdot" data-idx="${i}" role="button" tabindex="0" aria-label="Go to slide ${i + 1}"></span>`).join('')}
       </div>
       <button class="hero-counter-btn next" id="heroNextBtn" aria-label="Next Slide">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
@@ -1134,6 +1134,13 @@ function setupHeroBanner() {
     `;
     const dotTrack = document.getElementById("heroDotTrack");
     if (dotTrack) {
+      // Set active on next paint so the CSS keyframe @hdotActivate fires from the inactive state
+      requestAnimationFrame(() => {
+        const allDots = dotTrack.querySelectorAll(".hdot");
+        if (allDots[state.currentHeroIndex]) {
+          allDots[state.currentHeroIndex].classList.add("active");
+        }
+      });
       dotTrack.addEventListener("click", (e) => {
         const dot = e.target.closest(".hdot");
         if (!dot) return;
