@@ -84,6 +84,34 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: []
+  },
+
+  // ============================================================
+  // 4. Spider-Man (2002)
+  // ============================================================
+  {
+    id: "spider-man-2002",
+    title: "Spider-Man",
+    type: "Movie",
+    year: 2002,
+    rating: 7.4,
+    age: "PG-13",
+    duration: "2h 1m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mkv",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_audio.m4a",
+    trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
+    overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
+    overviewKurdish: "پیتەر پارکەر هەمیشە هەستی بە نامۆیی دەکرد — سەرلێشێواو، فەرامۆشکراو، و بە نهێنی عاشقی مێری جەینی هاوڕێی مناڵییەتی. هەموو شتێک دەگۆڕێت کاتێک پێوەدانی جاڵجاڵۆکەیەک هێز و چالاکی و توانایەکی لەڕادەبەدەری پێدەبەخشێت. لەکاتێکدا پیتەر هەوڵ دەدات لەگەڵ ئەو بەرپرسیارێتییە گەورەیەدا بژی کە لەگەڵ هێزە نوێیەکانیدا دێت، گۆڕانی تراژیدییانەی زانایەکی بلیمەت بۆ گرین گۆبلینی خراپەکار وا لە پیتەر دەکات بە تەواوی ڕۆڵی سپایدەرمان وەربگرێت.",
+    director: "Sam Raimi",
+    cast: ["Tobey Maguire", "Kirsten Dunst", "Willem Dafoe", "James Franco", "Rosemary Harris", "Cliff Robertson"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: []
   }
 
 ];
+
