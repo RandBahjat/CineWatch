@@ -829,6 +829,10 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     has4k: true,
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt", srclang: "en", default: true },
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt", srclang: "ku", default: false }
+    ],
     seasons: []
   },
 
