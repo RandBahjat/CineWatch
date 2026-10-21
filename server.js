@@ -761,11 +761,20 @@ const server = http.createServer((req, res) => {
               const enSubdlRes = await fetch(enSearchUrl, { signal: AbortSignal.timeout(5000) });
               const enSubdlData = await enSubdlRes.json();
               if (enSubdlData.status && enSubdlData.subtitles && enSubdlData.subtitles.length > 0) {
-                const enItem = enSubdlData.subtitles[0];
-                if (enItem.unpack_files && enItem.unpack_files.length > 0) {
-                  const enFileRes = await fetch('https://dl.subdl.com' + enItem.unpack_files[0].url, { signal: AbortSignal.timeout(5000) });
-                  if (enFileRes.ok) {
-                    baseEnglishSrt = await enFileRes.text();
+                for (const enItem of enSubdlData.subtitles) {
+                  if (enItem.unpack_files && enItem.unpack_files.length > 0) {
+                    try {
+                      const enFileRes = await fetch('https://dl.subdl.com' + enItem.unpack_files[0].url, { signal: AbortSignal.timeout(5000) });
+                      if (enFileRes.ok) {
+                        const txt = await enFileRes.text();
+                        const arCount = (txt.match(/[\u0600-\u06FF]/g) || []).length;
+                        const enCount = (txt.match(/[a-zA-Z]/g) || []).length;
+                        // Skip if mislabeled Persian or Arabic text
+                        if (arCount > 10 && arCount > enCount * 0.1) continue;
+                        baseEnglishSrt = txt;
+                        break;
+                      }
+                    } catch (e) {}
                   }
                 }
               }
@@ -860,11 +869,41 @@ const server = http.createServer((req, res) => {
 
             if (allMatchingTracks.length > 0) {
               const totalTracks = allMatchingTracks.length;
-              const chosen = (allMatchingTracks.length > trackIndex ? allMatchingTracks[trackIndex] : allMatchingTracks[0]);
-              const srtDlUrl = 'https://dl.subdl.com' + chosen.url;
-              const fileRes = await fetch(srtDlUrl);
-              if (fileRes.ok) {
-                let nativeSrt = await fileRes.text();
+              let chosen = null;
+              let chosenText = null;
+              let validEnglishCount = 0;
+
+              // Check candidates and filter out mislabeled tracks (e.g. Persian/Arabic tagged as EN)
+              for (let i = 0; i < allMatchingTracks.length; i++) {
+                const candidate = allMatchingTracks[i];
+                try {
+                  const srtDlUrl = 'https://dl.subdl.com' + candidate.url;
+                  const fileRes = await fetch(srtDlUrl, { signal: AbortSignal.timeout(7000) });
+                  if (!fileRes.ok) continue;
+                  const rawText = await fileRes.text();
+
+                  const arCount = (rawText.match(/[\u0600-\u06FF]/g) || []).length;
+                  const enCount = (rawText.match(/[a-zA-Z]/g) || []).length;
+                  // If heavily Arabic/Persian script, this is mislabeled on SubDL
+                  if (arCount > 10 && arCount > enCount * 0.1) {
+                    continue;
+                  }
+
+                  if (validEnglishCount === trackIndex) {
+                    chosen = candidate;
+                    chosenText = rawText;
+                    break;
+                  }
+                  if (!chosen) {
+                    chosen = candidate;
+                    chosenText = rawText;
+                  }
+                  validEnglishCount++;
+                } catch (e) {}
+              }
+
+              if (chosen && chosenText) {
+                let nativeSrt = chosenText;
                 if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
                   nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
                 }
