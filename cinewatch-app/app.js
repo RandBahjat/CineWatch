@@ -2016,11 +2016,20 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     const isM3u8Stream = isAnime || (streamUrl && streamUrl.includes('m3u8')) || (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8')));
     const playerType = isM3u8Stream ? 'm3u8' : (streamUrl && (streamUrl.includes('stream-media') || streamUrl.includes('.mp4')) ? 'mp4' : 'auto');
 
+    const artQualityList = (!is4kStream && !isFrom4kApp && window._cwQualities && window._cwQualities.length > 0)
+      ? window._cwQualities.map((q, idx) => ({
+          default: idx === 0,
+          html: q.quality || q.label || 'Auto',
+          url: q.url
+        }))
+      : [];
+
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
       type: playerType,
       poster: poster,
+      quality: artQualityList,
       volume: 0.8,
       isLive: false,
       muted: false,
