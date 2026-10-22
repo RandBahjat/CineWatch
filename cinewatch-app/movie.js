@@ -8562,8 +8562,64 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       settings: artSettings,
       contextmenu: [
         {
-          html: 'CineWatch Custom Player',
+          name: 'cwHeader',
+          index: 0,
+          html: `<div class="cw-context-header">
+            <div class="cw-context-brand">
+              <span class="cw-brand-dot"></span>
+              <span class="cw-brand-title">CINEWATCH <span>PRO</span></span>
+            </div>
+            <span class="cw-context-badge">${is4kStream || isFrom4kSession ? '4K ULTRA HD' : 'HD PRO'}</span>
+          </div>`,
           click(contextmenu) {
+            contextmenu.show = false;
+          },
+        },
+        {
+          name: 'hdrBoost',
+          index: 35,
+          html: `<div class="cw-context-row cw-context-action">
+            <div class="cw-context-row-left">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <span>VLC Brightness (HDR Boost)</span>
+            </div>
+            <span class="cw-hdr-toggle-pill ${window._cwHdrBoostActive ? 'active' : ''}">${window._cwHdrBoostActive ? 'ON' : 'OFF'}</span>
+          </div>`,
+          click(contextmenu) {
+            const vid = window.artPlayerInstance && window.artPlayerInstance.video;
+            if (vid) {
+              window._cwHdrBoostActive = !window._cwHdrBoostActive;
+              if (window._cwHdrBoostActive) {
+                vid.style.filter = 'brightness(1.18) contrast(1.08) saturate(1.12)';
+                const pills = document.querySelectorAll('.cw-hdr-toggle-pill');
+                pills.forEach(p => { p.textContent = 'ON'; p.classList.add('active'); });
+                if (window.artPlayerInstance.notice) window.artPlayerInstance.notice.show = 'HDR Boost: Enabled (Matching VLC)';
+              } else {
+                vid.style.filter = 'none';
+                const pills = document.querySelectorAll('.cw-hdr-toggle-pill');
+                pills.forEach(p => { p.textContent = 'OFF'; p.classList.remove('active'); });
+                if (window.artPlayerInstance.notice) window.artPlayerInstance.notice.show = 'HDR Boost: Disabled';
+              }
+            }
+          },
+        },
+        {
+          name: 'copyLink',
+          index: 45,
+          html: `<div class="cw-context-row cw-context-action">
+            <div class="cw-context-row-left">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              <span>Copy Stream Link</span>
+            </div>
+          </div>`,
+          click(contextmenu) {
+            const src = window.artPlayerInstance?.url || streamUrl;
+            if (src && navigator.clipboard) {
+              navigator.clipboard.writeText(src);
+              if (window.artPlayerInstance?.notice) {
+                window.artPlayerInstance.notice.show = 'Stream URL copied to clipboard!';
+              }
+            }
             contextmenu.show = false;
           },
         },
@@ -8596,6 +8652,79 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance = new Artplayer(artOptions);
 
     window.artPlayerInstance.on('ready', () => {
+      // 1. Remove ArtPlayer promo link
+      try {
+        if (window.artPlayerInstance && window.artPlayerInstance.contextmenu) {
+          window.artPlayerInstance.contextmenu.remove('version');
+        }
+      } catch (e) {}
+
+      // 2. Video Info Modal Enhancements & Reliable Close Handler
+      try {
+        const art = window.artPlayerInstance;
+        const infoEl = art.template && art.template.$info;
+        const infoCloseEl = art.template && art.template.$infoClose;
+        const playerEl = art.template && art.template.$player;
+
+        if (infoCloseEl) {
+          infoCloseEl.innerHTML = `
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          `;
+          infoCloseEl.setAttribute('aria-label', 'Close Video Info');
+          infoCloseEl.title = 'Close Diagnostics (Esc)';
+
+          // Robust click handler that stops propagation and immediately closes
+          infoCloseEl.onclick = (e) => {
+            if (e) {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+            if (art.info) art.info.show = false;
+          };
+          infoCloseEl.onmousedown = (e) => {
+            if (e) e.stopPropagation();
+          };
+        }
+
+        if (infoEl) {
+          // Stop propagation inside the panel so clicks don't toggle video pause/play
+          infoEl.onclick = (e) => {
+            if (e) e.stopPropagation();
+          };
+          infoEl.onmousedown = (e) => {
+            if (e) e.stopPropagation();
+          };
+        }
+
+        // Close on clicking player outside info panel
+        if (playerEl) {
+          playerEl.addEventListener('click', (e) => {
+            if (art.info && art.info.show) {
+              if (!e.target.closest('.art-info-panel') && !e.target.closest('.art-contextmenu')) {
+                art.info.show = false;
+              }
+            }
+          });
+        }
+
+        // Close on Escape key press
+        const onEscKey = (e) => {
+          if (e.key === 'Escape' || e.keyCode === 27) {
+            if (art.info && art.info.show) {
+              art.info.show = false;
+            }
+          }
+        };
+        document.addEventListener('keydown', onEscKey);
+        art.on('destroy', () => {
+          document.removeEventListener('keydown', onEscKey);
+        });
+      } catch (e) {
+        console.warn('Error setting up ArtPlayer info close handlers:', e);
+      }
       try {
         if (window.artPlayerInstance && window.artPlayerInstance.notice) {
           window.artPlayerInstance.notice.show = function() {};
