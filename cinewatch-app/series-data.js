@@ -1,8 +1,6 @@
-/**
- * CineWatch — TV Series Database
- * Edit this file to add, remove, or reorder TV shows and series.
- * Push to GitHub (or save — auto-sync will handle it) for changes to go live.
- */
+// CineWatch — Series Data
+// Edit this file to add, remove, or reorder TV shows and series.
+// Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
 
@@ -2010,7 +2008,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "The Devil's Due",
             airDate: "2026-07-31",
-            rating: 7.4,
+            rating: 7.3,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/634/1587027.jpg",
             duration: "24 min",
             overview: "A murder scene with a bloody bat symbol spells trouble for the Batman. Thanks to Hattie Tetch's smear campaign, the Dark Knight detective faces more public scrutiny than ever before. Determined to clear his name, the Batman discovers a fanatical bat cult led by a charismatic prophet, the Mad Monk."
@@ -2064,7 +2062,7 @@ window._SERIES_DATA = [
             episode: 10,
             title: "The Laughing Death",
             airDate: "2026-07-31",
-            rating: 8.3,
+            rating: 8.2,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/634/1587033.jpg",
             duration: "27 min",
             overview: "It's Judgement Day in Gotham when a contagion spreads across the city, turning citizens into homicidal maniacs. As survivors cower in fear, the Batman's allies mobilize to save whoever is left while the Dark Knight Detective finally faces his ultimate foe, The Joker!"
