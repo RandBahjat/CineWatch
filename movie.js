@@ -7704,9 +7704,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const isFrom4kSession = !isAnime && !isTv && Boolean(
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
     (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    ref?.from4kSection === true
+    (ref?.from4kSection === true && state.activeView === '4k')
   );
 
   let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
