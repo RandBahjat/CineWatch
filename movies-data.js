@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/yBjKCiDCGn6eqpzLvr13Hn61a8I.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
     videoUrl: "1400940",
-    trailerUrl: "https://youtu.be/0h5G5gYmZ5Q",
+    trailerUrl: "https://youtu.be/OGO4Mqvo3jI?si=ULxr64geAFnTqnb9",
     overview: "Following the tragic death of Shiloh Hunter, her grieving sister Jax joins Shiloh's daredevil friend Luce on an extreme cliffside climb on Mount Kwan in Thailand. When a sudden rockslide destroys their path, the two women find themselves stranded thousands of feet in the air, forced into a harrowing battle for survival.",
     overviewKurdish: "دوای مردنی دڵتەزێنی شایلۆ هانتەر، جاکسی خوشکی لەگەڵ لوسی هاوڕێی سەرکێشی شایلۆ دەچنە تایلەند بۆ سەرکەوتن بەسەر شاخی کوان. بەڵام کاتێک بەردێکی گەورە ڕێگاکەیان دەبڕێت، لە بەرزایی هەزاران پێ لە هەوادا گیر دەخۆن و دەبێت بۆ مانەوە لە ژیان بجەنگن.",
     director: "Peter Spierig, Michael Spierig",
