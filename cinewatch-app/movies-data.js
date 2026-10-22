@@ -1731,7 +1731,8 @@ window._MOVIES_DATA = [
     cast: ["Andrew Garfield", "Emma Stone", "Rhys Ifans", "Denis Leary", "Martin Sheen", "Sally Field"],
     trending: true,
     featured: true,
-    is4k: true,
+    is4k: false,
+    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt","srclang":"en","default":false}]
   },
@@ -1759,7 +1760,8 @@ window._MOVIES_DATA = [
     cast: ["Andrew Garfield", "Emma Stone", "Jamie Foxx", "Dane DeHaan", "Colm Feore", "Sally Field"],
     trending: true,
     featured: true,
-    is4k: true,
+    is4k: false,
+    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt","srclang":"en","default":false}]
   },
@@ -2188,7 +2190,8 @@ window._MOVIES_DATA = [
     cast: ["Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco, Rosemary Harris, Cliff Robertson"],
     trending: false,
     featured: false,
-    is4k: true,
+    is4k: false,
+    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt","srclang":"en","default":false}]
   },
@@ -2390,6 +2393,8 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
+    has4k: true,
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
     seasons: []
   },
 
