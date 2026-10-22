@@ -4,6 +4,31 @@
 
 window._MOVIES_DATA = [
 
+{
+    title: "Clayface",
+    type: "Movie",
+    year: 2026,
+    rating: "7.5",
+    age: "R",
+    duration: "1h 48m",
+    genres: ["Horror", "Thriller","Drama","Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/ccBIyg1ITvuCDr4eMeEH0ZgNh4t.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
+    videoUrl: "1101412",
+    trailerUrl: "https://youtu.be/0h5G5gYmZ5Q",
+    overview: "Following the tragic death of Shiloh Hunter, her grieving sister Jax joins Shiloh's daredevil friend Luce on an extreme cliffside climb on Mount Kwan in Thailand. When a sudden rockslide destroys their path, the two women find themselves stranded thousands of feet in the air, forced into a harrowing battle for survival.",
+    overviewKurdish: "دوای مردنی دڵتەزێنی شایلۆ هانتەر، جاکسی خوشکی لەگەڵ لوسی هاوڕێی سەرکێشی شایلۆ دەچنە تایلەند بۆ سەرکەوتن بەسەر شاخی کوان. بەڵام کاتێک بەردێکی گەورە ڕێگاکەیان دەبڕێت، لە بەرزایی هەزاران پێ لە هەوادا گیر دەخۆن و دەبێت بۆ مانەوە لە ژیان بجەنگن.",
+    director: "Peter Spierig, Michael Spierig",
+    cast: ["Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+
+
+
+
   // ============================================================
   // 1. Fall 2: Deadpoint (2026)
   // ============================================================
