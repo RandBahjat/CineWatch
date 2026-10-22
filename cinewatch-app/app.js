@@ -1554,10 +1554,27 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     : null;
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
-    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k')) ||
+    (typeof state !== 'undefined' && state.activeView === '4k') ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    movie.from4kSection === true
+    (movie.from4kSection === true && typeof state !== 'undefined' && state.activeView === '4k')
   );
+
+  if (!isFrom4kApp) {
+    if (movie) {
+      movie.is4k = false;
+      movie.from4kSection = false;
+    }
+    if (movie?.qualities && Array.isArray(movie.qualities) && movie.qualities.length > 0) {
+      window._cwQualities = movie.qualities.map(q => ({
+        quality: q.label || q.quality || q.html,
+        url: q.url
+      }));
+      const def = movie.qualities.find(q => q.default) || movie.qualities[0];
+      if (def && def.url) {
+        cleanUrl = def.url;
+      }
+    }
+  }
 
   if (isFrom4kApp) {
     const target4kUrl = movie.fourkVideoUrl || fourkAppMatch?.videoUrl || (movie.is4k && rawVideoStr.startsWith('http') ? rawVideoStr : null);
@@ -1565,10 +1582,6 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       cleanUrl = target4kUrl;
     }
     window._cwQualities = null;
-    movie.is4k = true;
-    movie.has4k = true;
-    movie.fourkVideoUrl = cleanUrl;
-    delete movie.hdVideoUrl;
     if (fourkAppMatch) {
       if (fourkAppMatch.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
         movie.subtitles = fourkAppMatch.subtitles;
