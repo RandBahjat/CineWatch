@@ -59354,7 +59354,7 @@ window._SERIES_DATA = [
     title: "What If...?",
     type: "TV Show",
     year: 2021,
-    rating: 7.2,
+    rating: "7.3",
     age: "TV-14",
     duration: "31m",
     genres: ["Action", "Adventure", "Science-Fiction", "Kids"],
@@ -76456,7 +76456,7 @@ window._SERIES_DATA = [
             episode: 5,
             title: "Get Schwifty",
             airDate: "2015-08-23",
-            rating: 8.2,
+            rating: 8.1,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/15/39536.jpg",
             duration: "30 min",
             overview: "Rick and Morty must step up and save things; a new religion starts up."
@@ -76569,7 +76569,7 @@ window._SERIES_DATA = [
             episode: 7,
             title: "The Ricklantis Mixup",
             airDate: "2017-09-10",
-            rating: 9.8,
+            rating: 9.7,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/127/318431.jpg",
             duration: "30 min",
             overview: "Rick and Morty encounter a visiting Rick and Morty from the Citadel of Ricks before heading off on an amazing adventure to Atlantis."
@@ -76637,7 +76637,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "Claw and Hoarder: Special Ricktim's Morty",
             airDate: "2019-12-08",
-            rating: 7.3,
+            rating: 7.2,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/230/576337.jpg",
             duration: "30 min",
             overview: "Rick reluctantly gives in to Morty's wishes to get a pet dragon, then things get weird. Jerry befriends a talking cat and they go to Florida."
@@ -77094,7 +77094,7 @@ window._SERIES_DATA = [
             episode: 2,
             title: "Ricks Days, Seven Nights",
             airDate: "2026-05-31",
-            rating: 8.8,
+            rating: 8.7,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/627/1568324.jpg",
             duration: "30 min",
             overview: "You try being Rick all the time, broh."
@@ -77112,7 +77112,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "A Ricker Runs Through It",
             airDate: "2026-06-14",
-            rating: 7.6,
+            rating: 7.5,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/628/1572327.jpg",
             duration: "30 min",
             overview: "Remembering passwords is hard, broh. Special characters, broh."
@@ -77130,7 +77130,7 @@ window._SERIES_DATA = [
             episode: 6,
             title: "Erickerhead",
             airDate: "2026-06-28",
-            rating: 8.1,
+            rating: 8,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1576147.jpg",
             duration: "30 min",
             overview: "Rick's stomach is mad, broh. But it's all-you-can-eat-and-drink here, broh!"

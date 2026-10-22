@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792691497043,
+  "lastRun": 1792698696504,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4275,184 +4275,238 @@
       "year": 1999
     },
     "series:teen wolf": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1567432",
+      "rating": "7.7",
+      "lastChecked": 1792698696504,
+      "title": "Teen Wolf",
+      "year": 2011
     },
     "series:what if...?": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt10168312",
+      "rating": "7.3",
+      "lastChecked": 1792698696504,
+      "title": "What If...?",
+      "year": 2021
     },
     "series:the mentalist": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1196946",
+      "rating": "8.2",
+      "lastChecked": 1792698696504,
+      "title": "The Mentalist",
+      "year": 2008
     },
     "series:t.u.f.f. puppy": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1710310",
+      "rating": "5.6",
+      "lastChecked": 1792698696504,
+      "title": "T.U.F.F. Puppy",
+      "year": 2010
     },
     "series:sonic x": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0367413",
+      "rating": "6.4",
+      "lastChecked": 1792698696504,
+      "title": "Sonic X",
+      "year": 2003
     },
     "series:iron man: armored adventures": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0837143",
+      "rating": "6.5",
+      "lastChecked": 1792698696504,
+      "title": "Iron Man: Armored Adventures",
+      "year": 2009
     },
     "series:superman: the animated series": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0115378",
+      "rating": "8.1",
+      "lastChecked": 1792698696504,
+      "title": "Superman: The Animated Series",
+      "year": 1996
     },
     "series:tom and jerry tales": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0780438",
+      "rating": "7.4",
+      "lastChecked": 1792698696504,
+      "title": "Tom and Jerry Tales",
+      "year": 2006
     },
     "series:teenage mutant ninja turtles": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1877889",
+      "rating": "7.9",
+      "lastChecked": 1792698696504,
+      "title": "Teenage Mutant Ninja Turtles",
+      "year": 2012
     },
     "series:the tom and jerry show": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt3559124",
+      "rating": "7.3",
+      "lastChecked": 1792698696504,
+      "title": "The Tom and Jerry Show",
+      "year": 2014
     },
     "series:blaze and the monster machines": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt4458594",
+      "rating": "5.7",
+      "lastChecked": 1792698696504,
+      "title": "Blaze and the Monster Machines",
+      "year": 2014
     },
     "series:kung fu panda: legends of awesomeness": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1545214",
+      "rating": "7.0",
+      "lastChecked": 1792698696504,
+      "title": "Kung Fu Panda: Legends of Awesomeness",
+      "year": 2011
     },
     "series:kung fu panda: the dragon knight": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt18783984",
+      "rating": "6.1",
+      "lastChecked": 1792698696504,
+      "title": "Kung Fu Panda: The Dragon Knight",
+      "year": 2022
     },
     "series:justice league action": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt5419200",
+      "rating": "7.5",
+      "lastChecked": 1792698696504,
+      "title": "Justice League Action",
+      "year": 2016
     },
     "series:sonic prime": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt13961348",
+      "rating": "7.2",
+      "lastChecked": 1792698696504,
+      "title": "Sonic Prime",
+      "year": 2022
     },
     "series:generator rex": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1636691",
+      "rating": "7.7",
+      "lastChecked": 1792698696504,
+      "title": "Generator Rex",
+      "year": 2010
     },
     "series:we bare bears": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt4839610",
+      "rating": "7.8",
+      "lastChecked": 1792698696504,
+      "title": "We Bare Bears",
+      "year": 2015
     },
     "series:the amazing world of gumball": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1942683",
+      "rating": "8.4",
+      "lastChecked": 1792698696504,
+      "title": "The Amazing World of Gumball",
+      "year": 2011
     },
     "series:marvel's luke cage": {
-      "lastChecked": 1791923732395,
+      "lastChecked": 1792698696504,
       "notFound": true
     },
     "series:marvel's the defenders": {
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "notFound": true
     },
     "series:sex education": {
       "imdbId": "tt7767422",
       "rating": "8.2",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Sex Education",
       "year": 2019
     },
     "series:s.w.a.t.": {
       "imdbId": "tt6111130",
       "rating": "7.2",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "S.W.A.T.",
       "year": 2017
     },
     "series:marvel's iron fist": {
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "notFound": true
     },
     "series:rick and morty": {
       "imdbId": "tt2861424",
       "rating": "9.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Rick and Morty",
       "year": 2013
     },
     "series:doctor who": {
       "imdbId": "tt0436992",
       "rating": "8.5",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Doctor Who",
       "year": 2005
     },
     "series:modern family": {
       "imdbId": "tt1442437",
       "rating": "8.5",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Modern Family",
       "year": 2009
     },
     "series:moon knight": {
       "imdbId": "tt10234724",
       "rating": "7.3",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Moon Knight",
       "year": 2022
     },
     "series:the rookie": {
       "imdbId": "tt7587890",
       "rating": "8.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "The Rookie",
       "year": 2018
     },
     "series:supernatural": {
       "imdbId": "tt0460681",
       "rating": "8.4",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Supernatural",
       "year": 2005
     },
     "series:the vampire diaries": {
       "imdbId": "tt1405406",
       "rating": "7.7",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "The Vampire Diaries",
       "year": 2009
     },
     "series:law & order: special victims unit": {
       "imdbId": "tt0203259",
       "rating": "8.1",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Law & Order: Special Victims Unit",
       "year": 1999
     },
     "series:hawkeye": {
       "imdbId": "tt10160804",
       "rating": "7.4",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Hawkeye",
       "year": 2021
     },
     "series:clarence": {
       "imdbId": "tt3061050",
       "rating": "6.9",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Clarence",
       "year": 2014
     },
     "series:uncle grandpa": {
       "imdbId": "tt3042608",
       "rating": "4.5",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Uncle Grandpa",
       "year": 2013
     },
     "series:steven universe": {
       "imdbId": "tt3061046",
       "rating": "8.1",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792698696504,
       "title": "Steven Universe",
       "year": 2013
     },
