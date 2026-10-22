@@ -1556,10 +1556,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   const isFrom4kApp = !isAnime && !isTv && Boolean(
     (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k')) ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    movie.is4k ||
-    movie.has4k ||
-    movie.fourkVideoUrl ||
-    fourkAppMatch
+    movie.from4kSection === true
   );
 
   if (isFrom4kApp) {
@@ -1582,18 +1579,10 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     }
   }
 
-  const is4kStream = Boolean(
-    isFrom4kApp ||
-    movie.is4k ||
-    movie.has4k ||
-    (movie.fourkVideoUrl && cleanUrl === movie.fourkVideoUrl) ||
-    cleanUrl.includes('4K') ||
-    cleanUrl.includes('2160p') ||
-    cleanUrl.includes('_4K_') ||
-    cleanUrl.includes('Spider-Man_4K') ||
-    cleanUrl.includes('Spider_Man_2002_4K') ||
-    cleanUrl.includes('The_Amazing_Spider_Man')
-  );
+  const is4kStream = isFrom4kApp;
+  if (is4kStream) {
+    window._cwQualities = null;
+  }
   if (is4kStream) {
     window._cwQualities = null;
   }
@@ -2315,9 +2304,16 @@ function playMovieDirect(movieId) {
     ? window._FOURK_DATA.find(f => (movie && (f.id === movie.id || (f.title && movie.title && f.title.toLowerCase() === movie.title.toLowerCase()))))
     : null;
 
-  if (fourkDirectMatch || movie.is4k || movie.fourkVideoUrl) {
+  const isFrom4kApp = Boolean(
+    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k')) ||
+    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
+    movie.from4kSection === true
+  );
+
+  if (isFrom4kApp) {
     movie.is4k = true;
     movie.has4k = true;
+    movie.from4kSection = true;
     const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;
     if (direct4k) {
       movie.fourkVideoUrl = direct4k;
@@ -2333,6 +2329,11 @@ function playMovieDirect(movieId) {
       }
     }
     window._cwQualities = null;
+  } else {
+    movie.is4k = false;
+    movie.from4kSection = false;
+    if (movie.hdVideoUrl) movie.videoUrl = movie.hdVideoUrl;
+  }
   }
 
   closeDetail();
