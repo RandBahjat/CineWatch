@@ -1,8 +1,4 @@
-/**
- * CineWatch — Anime Database
- * Edit this file to add, remove, or reorder anime series.
- * Push to GitHub (or save — auto-sync will handle it) for changes to go live.
- */
+// CineWatch - Anime Data
 
 window._ANIME_DATA = [
 
@@ -11419,7 +11415,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2024,
-    rating: 8.5,
+    rating: "7.7",
     age: "TV-14",
     duration: "30m",
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
@@ -11443,12 +11439,14 @@ window._ANIME_DATA = [
           {
             episode: 1,
             title: "Conspiracy",
-            absoluteEpisode: 1
+            absoluteEpisode: 1,
+            rating: 8.2
           },
           {
             episode: 2,
             title: "Glorio",
-            absoluteEpisode: 2
+            absoluteEpisode: 2,
+            rating: 7.7
           },
           {
             episode: 3,
@@ -11483,7 +11481,8 @@ window._ANIME_DATA = [
           {
             episode: 9,
             title: "Thieves",
-            absoluteEpisode: 9
+            absoluteEpisode: 9,
+            rating: 7.7
           },
           {
             episode: 10,
@@ -11498,17 +11497,20 @@ window._ANIME_DATA = [
           {
             episode: 12,
             title: "True Strength",
-            absoluteEpisode: 12
+            absoluteEpisode: 12,
+            rating: 9.1
           },
           {
             episode: 13,
             title: "Surprise",
-            absoluteEpisode: 13
+            absoluteEpisode: 13,
+            rating: 7.1
           },
           {
             episode: 14,
             title: "Taboo",
-            absoluteEpisode: 14
+            absoluteEpisode: 14,
+            rating: 7.5
           },
           {
             episode: 15,
@@ -11523,22 +11525,26 @@ window._ANIME_DATA = [
           {
             episode: 17,
             title: "Gomah",
-            absoluteEpisode: 17
+            absoluteEpisode: 17,
+            rating: 8.9
           },
           {
             episode: 18,
             title: "Awakening",
-            absoluteEpisode: 18
+            absoluteEpisode: 18,
+            rating: 9.4
           },
           {
             episode: 19,
             title: "Betrayal",
-            absoluteEpisode: 19
+            absoluteEpisode: 19,
+            rating: 9.5
           },
           {
             episode: 20,
             title: "Maximum",
-            absoluteEpisode: 20
+            absoluteEpisode: 20,
+            rating: 8.7
           }
         ]
       }
@@ -11553,7 +11559,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2015,
-    rating: 7.8,
+    rating: "8.3",
     age: "TV-14",
     duration: "24m",
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
@@ -11574,6 +11580,7 @@ window._ANIME_DATA = [
           {
             episode: 1,
             title: "The Peace Prize. Who'll Get the 100 Million Zeny!",
+            rating: 7.3,
             duration: "23m"
           },
           {
@@ -11589,11 +11596,13 @@ window._ANIME_DATA = [
           {
             episode: 4,
             title: "Aim for the Dragon Balls! The Pilaf Gang's Master Plan!",
+            rating: 6.4,
             duration: "23m"
           },
           {
             episode: 5,
             title: "A Battle on Kaio's Planet! Goku vs God of Destruction Beerus",
+            rating: 7,
             duration: "23m"
           },
           {
@@ -11629,11 +11638,13 @@ window._ANIME_DATA = [
           {
             episode: 12,
             title: "The Universe Crumbles?! Clash! The God of Destruction vs. Super Saiyan God!",
+            rating: 7.5,
             duration: "23m"
           },
           {
             episode: 13,
             title: "Goku, Go Surpass Super Saiyan God!",
+            rating: 7.5,
             duration: "23m"
           },
           {
@@ -11644,11 +11655,13 @@ window._ANIME_DATA = [
           {
             episode: 15,
             title: "Heroic Satan, Cause a Miracle! A Challenge From Outer Space!!",
+            rating: 6.3,
             duration: "23m"
           },
           {
             episode: 16,
             title: "Vegeta Becomes a Pupil?! Take Down Whis!",
+            rating: 7.1,
             duration: "23m"
           },
           {
@@ -11674,6 +11687,7 @@ window._ANIME_DATA = [
           {
             episode: 21,
             title: "The Revenge Begins! The Freeza Army's Malice Strikes Gohan!",
+            rating: 7.6,
             duration: "23m"
           },
           {
@@ -11694,6 +11708,7 @@ window._ANIME_DATA = [
           {
             episode: 25,
             title: "An All-Out Battle! The Vengeful Golden Freeza",
+            rating: 7.6,
             duration: "23m"
           },
           {
@@ -11709,26 +11724,31 @@ window._ANIME_DATA = [
           {
             episode: 28,
             title: "The 6th Universe's God of Destruction � His Name's Champa",
+            rating: 7.5,
             duration: "23m"
           },
           {
             episode: 29,
             title: "It's Settled: We're Holding a Martial Arts Match! The Team Captain's Even Stronger Than Goku",
+            rating: 7.2,
             duration: "23m"
           },
           {
             episode: 30,
             title: "Rehearsing for the \\\"Martial Arts Tournament\\\" Who Are the Two Remaining Members?!",
+            rating: 6.1,
             duration: "23m"
           },
           {
             episode: 31,
             title: "To Lord Zuno! Ask About the Location of the Super Dragon Balls!",
+            rating: 6.5,
             duration: "23m"
           },
           {
             episode: 32,
             title: "The Match Begins! Everyone Head to the \\\"Nameless Planet\\\"!",
+            rating: 7.5,
             duration: "23m"
           },
           {
@@ -11744,6 +11764,7 @@ window._ANIME_DATA = [
           {
             episode: 35,
             title: "Turn Anger into Power! Vegeta's All-Out Battle",
+            rating: 7.5,
             duration: "23m"
           },
           {
@@ -11754,86 +11775,103 @@ window._ANIME_DATA = [
           {
             episode: 37,
             title: "Don't Forget your Saiyan Pride! Vegeta vs the Saiyan of Universe 6",
+            rating: 8.3,
             duration: "23m"
           },
           {
             episode: 38,
             title: "The Last of Universe 6's Warriors! Meet the Strongest Man, Hit!",
+            rating: 8.2,
             duration: "23m"
           },
           {
             episode: 39,
             title: "A Fully-Developed 'Time-Skip' Counterattack?! Is It Coming?! Goku's New Technique!",
+            rating: 9.1,
             duration: "23m"
           },
           {
             episode: 40,
             title: "Conclusion at Last! Is Beerus the Winner? Or is it Champa?",
+            rating: 8,
             duration: "23m"
           },
           {
             episode: 41,
             title: "Come Forth, Dragon of the Gods, and Grant My Wish Pretty Peas!",
+            rating: 7.5,
             duration: "23m"
           },
           {
             episode: 42,
             title: "The Tumultuous Victory Feast! A Showdown At Last?! Monaka vs Son Goku",
+            rating: 7.1,
             duration: "23m"
           },
           {
             episode: 43,
             title: "Struggling to Take Care of Pan",
+            rating: 6.1,
             duration: "23m"
           },
           {
             episode: 44,
             title: "Secret of the Unleashed Superhuman Water",
+            rating: 6.5,
             duration: "23m"
           },
           {
             episode: 45,
             title: "The Amazing Copy-Vegeta!",
+            rating: 6.7,
             duration: "23m"
           },
           {
             episode: 46,
             title: "Goku vs. Copy-Vegeta! Who will Prevail!?",
+            rating: 7.1,
             duration: "23m"
           },
           {
             episode: 47,
             title: "An SOS from the Future! A Dark New Enemy Emerges!!",
+            rating: 8.4,
             duration: "23m"
           },
           {
             episode: 48,
             title: "Hope Again!! Trunks Wakes Up in the Present!",
+            rating: 8,
             duration: "23m"
           },
           {
             episode: 49,
             title: "A Message from the Future Goku Black Invades!",
+            rating: 8,
             duration: "23m"
           },
           {
             episode: 50,
             title: "Goku VS Black! The Road Towards The Sealed Future",
+            rating: 8.1,
             duration: "23m"
           },
           {
             episode: 51,
             title: "The Feelings that Surpass Time Trunks and Mai",
+            rating: 7,
             duration: "23m"
           },
           {
             episode: 52,
             title: "Master and Student Reunited Son Gohan and \\\"Future\\\" Trunks",
+            rating: 6.6,
             duration: "23m"
           },
           {
             episode: 53,
             title: "Expose Black's True Identity! To the Kaioshin Realm of Universe 10",
+            rating: 7.6,
             duration: "23m"
           },
           {
@@ -11849,26 +11887,31 @@ window._ANIME_DATA = [
           {
             episode: 56,
             title: "Goku Black Rematch! The Appearance of Super Saiyan Rose!!",
+            rating: 8.5,
             duration: "23m"
           },
           {
             episode: 57,
             title: "God with Invulnerable Body Zamasu's Advent",
+            rating: 8.3,
             duration: "23m"
           },
           {
             episode: 58,
             title: "Zamasu and Black The Mystery of the Two Deepens",
+            rating: 7.4,
             duration: "23m"
           },
           {
             episode: 59,
             title: "Protect the Kaioshin Gowasu Destroy Zamasu!",
+            rating: 7.8,
             duration: "23m"
           },
           {
             episode: 60,
             title: "To The Future Once Again Goku Black's Identity Revealed",
+            rating: 7.3,
             duration: "23m"
           },
           {
@@ -11879,46 +11922,55 @@ window._ANIME_DATA = [
           {
             episode: 62,
             title: "I Will Protect The World! Trunks Angry Super Power Explosion!!",
+            rating: 7.7,
             duration: "23m"
           },
           {
             episode: 63,
             title: "Don't Defile the Saiyan Cells! The Curtain Rises on Vegeta's Battle!!",
+            rating: 8.3,
             duration: "23m"
           },
           {
             episode: 64,
             title: "Praise and Adore Him! The Explosive Birth of Merged Zamasu!!",
+            rating: 8,
             duration: "23m"
           },
           {
             episode: 65,
             title: "Final Judgment?! The Supreme God's Ultimate Power",
+            rating: 8.3,
             duration: "23m"
           },
           {
             episode: 66,
             title: "One Last, Great Comeback! Here's Vegetto!",
+            rating: 8.9,
             duration: "23m"
           },
           {
             episode: 67,
             title: "A Visit from the Omni-King! Bye-Bye Zamasu!",
+            rating: 7.7,
             duration: "23m"
           },
           {
             episode: 68,
             title: "Come Forth, Shenlong! Whose Wish Shall Be Granted?!",
+            rating: 6.2,
             duration: "23m"
           },
           {
             episode: 69,
             title: "Goku vs Arale! The Earth Comes to an End Due to their Battle?",
+            rating: 5,
             duration: "23m"
           },
           {
             episode: 70,
             title: "Challenge from Champa! Let's Fight in Baseball!",
+            rating: 7.1,
             duration: "23m"
           },
           {
@@ -11929,6 +11981,7 @@ window._ANIME_DATA = [
           {
             episode: 72,
             title: "\\\"Will There Be a Counterattack?! The Invisible Killing Strike!!\\\"",
+            rating: 7.5,
             duration: "23m"
           },
           {
@@ -11944,6 +11997,7 @@ window._ANIME_DATA = [
           {
             episode: 75,
             title: "Goku And Krillin Back To The Old Training Grounds",
+            rating: 7,
             duration: "23m"
           },
           {
@@ -11999,6 +12053,7 @@ window._ANIME_DATA = [
           {
             episode: 86,
             title: "Trading Blows for the First Time! Android N.17 vs Son Goku!",
+            rating: 7.3,
             duration: "23m"
           },
           {
@@ -12014,6 +12069,7 @@ window._ANIME_DATA = [
           {
             episode: 89,
             title: "A Mysterious Beauty Appears! Mistery of the Tenshin-Style Dojo?!",
+            rating: 6.4,
             duration: "23m"
           },
           {
@@ -12029,6 +12085,7 @@ window._ANIME_DATA = [
           {
             episode: 92,
             title: "Emergency Development! The Incomplete Ten Members!!",
+            rating: 7,
             duration: "23m"
           },
           {
@@ -12044,11 +12101,13 @@ window._ANIME_DATA = [
           {
             episode: 95,
             title: "The Worst! The Most Evil! Frieza's Rampage!!",
+            rating: 8.3,
             duration: "23m"
           },
           {
             episode: 96,
             title: "The Time Is Here! To The World Of Void For The Fate Of The Universe!!",
+            rating: 7.9,
             duration: "23m"
           },
           {
@@ -12239,7 +12298,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 1996,
-    rating: 7.5,
+    rating: "6.8",
     age: "TV-14",
     duration: "24m",
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
@@ -12259,6 +12318,7 @@ window._ANIME_DATA = [
           {
             episode: 1,
             title: "A Devastating Wish",
+            rating: 6.7,
             duration: "24m"
           },
           {
@@ -12379,6 +12439,7 @@ window._ANIME_DATA = [
           {
             episode: 25,
             title: "Baby's Arrival",
+            rating: 7.1,
             duration: "24m"
           },
           {
@@ -12613,107 +12674,133 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "Episode 1"
+            title: "Episode 1",
+            rating: 7.6
           },
           {
             episode: 2,
-            title: "Episode 2"
+            title: "Episode 2",
+            rating: 7.5
           },
           {
             episode: 3,
-            title: "Episode 3"
+            title: "Episode 3",
+            rating: 7.9
           },
           {
             episode: 4,
-            title: "Episode 4"
+            title: "Episode 4",
+            rating: 7.4
           },
           {
             episode: 5,
-            title: "Episode 5"
+            title: "Episode 5",
+            rating: 7.3
           },
           {
             episode: 6,
-            title: "Episode 6"
+            title: "Episode 6",
+            rating: 7.4
           },
           {
             episode: 7,
-            title: "Episode 7"
+            title: "Episode 7",
+            rating: 7.4
           },
           {
             episode: 8,
-            title: "Episode 8"
+            title: "Episode 8",
+            rating: 7.5
           },
           {
             episode: 9,
-            title: "Episode 9"
+            title: "Episode 9",
+            rating: 7.9
           },
           {
             episode: 10,
-            title: "Episode 10"
+            title: "Episode 10",
+            rating: 8
           },
           {
             episode: 11,
-            title: "Episode 11"
+            title: "Episode 11",
+            rating: 7.9
           },
           {
             episode: 12,
-            title: "Episode 12"
+            title: "Episode 12",
+            rating: 8.2
           },
           {
             episode: 13,
-            title: "Episode 13"
+            title: "Episode 13",
+            rating: 8
           },
           {
             episode: 14,
-            title: "Episode 14"
+            title: "Episode 14",
+            rating: 8
           },
           {
             episode: 15,
-            title: "Episode 15"
+            title: "Episode 15",
+            rating: 7.8
           },
           {
             episode: 16,
-            title: "Episode 16"
+            title: "Episode 16",
+            rating: 8.1
           },
           {
             episode: 17,
-            title: "Episode 17"
+            title: "Episode 17",
+            rating: 7.5
           },
           {
             episode: 18,
-            title: "Episode 18"
+            title: "Episode 18",
+            rating: 7.2
           },
           {
             episode: 19,
-            title: "Episode 19"
+            title: "Episode 19",
+            rating: 7.7
           },
           {
             episode: 20,
-            title: "Episode 20"
+            title: "Episode 20",
+            rating: 7.9
           },
           {
             episode: 21,
-            title: "Episode 21"
+            title: "Episode 21",
+            rating: 7.7
           },
           {
             episode: 22,
-            title: "Episode 22"
+            title: "Episode 22",
+            rating: 7.9
           },
           {
             episode: 23,
-            title: "Episode 23"
+            title: "Episode 23",
+            rating: 7.8
           },
           {
             episode: 24,
-            title: "Episode 24"
+            title: "Episode 24",
+            rating: 7.2
           },
           {
             episode: 25,
-            title: "Episode 25"
+            title: "Episode 25",
+            rating: 7.8
           },
           {
             episode: 26,
-            title: "Episode 26"
+            title: "Episode 26",
+            rating: 7.8
           }
         ]
       },
@@ -12722,107 +12809,133 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "Episode 1"
+            title: "Episode 1",
+            rating: 6.9
           },
           {
             episode: 2,
-            title: "Episode 2"
+            title: "Episode 2",
+            rating: 6.9
           },
           {
             episode: 3,
-            title: "Episode 3"
+            title: "Episode 3",
+            rating: 6.8
           },
           {
             episode: 4,
-            title: "Episode 4"
+            title: "Episode 4",
+            rating: 6.7
           },
           {
             episode: 5,
-            title: "Episode 5"
+            title: "Episode 5",
+            rating: 7.2
           },
           {
             episode: 6,
-            title: "Episode 6"
+            title: "Episode 6",
+            rating: 7.2
           },
           {
             episode: 7,
-            title: "Episode 7"
+            title: "Episode 7",
+            rating: 7.4
           },
           {
             episode: 8,
-            title: "Episode 8"
+            title: "Episode 8",
+            rating: 7.3
           },
           {
             episode: 9,
-            title: "Episode 9"
+            title: "Episode 9",
+            rating: 7
           },
           {
             episode: 10,
-            title: "Episode 10"
+            title: "Episode 10",
+            rating: 7.2
           },
           {
             episode: 11,
-            title: "Episode 11"
+            title: "Episode 11",
+            rating: 7.3
           },
           {
             episode: 12,
-            title: "Episode 12"
+            title: "Episode 12",
+            rating: 7.2
           },
           {
             episode: 13,
-            title: "Episode 13"
+            title: "Episode 13",
+            rating: 7.2
           },
           {
             episode: 14,
-            title: "Episode 14"
+            title: "Episode 14",
+            rating: 7.4
           },
           {
             episode: 15,
-            title: "Episode 15"
+            title: "Episode 15",
+            rating: 7.2
           },
           {
             episode: 16,
-            title: "Episode 16"
+            title: "Episode 16",
+            rating: 7.4
           },
           {
             episode: 17,
-            title: "Episode 17"
+            title: "Episode 17",
+            rating: 7.1
           },
           {
             episode: 18,
-            title: "Episode 18"
+            title: "Episode 18",
+            rating: 7.4
           },
           {
             episode: 19,
-            title: "Episode 19"
+            title: "Episode 19",
+            rating: 7
           },
           {
             episode: 20,
-            title: "Episode 20"
+            title: "Episode 20",
+            rating: 7.1
           },
           {
             episode: 21,
-            title: "Episode 21"
+            title: "Episode 21",
+            rating: 7.4
           },
           {
             episode: 22,
-            title: "Episode 22"
+            title: "Episode 22",
+            rating: 7.6
           },
           {
             episode: 23,
-            title: "Episode 23"
+            title: "Episode 23",
+            rating: 7.8
           },
           {
             episode: 24,
-            title: "Episode 24"
+            title: "Episode 24",
+            rating: 7.6
           },
           {
             episode: 25,
-            title: "Episode 25"
+            title: "Episode 25",
+            rating: 7.2
           },
           {
             episode: 26,
-            title: "Episode 26"
+            title: "Episode 26",
+            rating: 7.3
           }
         ]
       },
@@ -13622,6 +13735,7 @@ window._ANIME_DATA = [
             episode: 1,
             title: "Enter: Naruto Uzumaki!",
             absoluteEpisode: 1,
+            rating: 7.9,
             duration: "30m"
           },
           {
@@ -13730,6 +13844,7 @@ window._ANIME_DATA = [
             episode: 19,
             title: "The Demon in the Snow",
             absoluteEpisode: 19,
+            rating: 9,
             duration: "30m"
           },
           {
@@ -13772,6 +13887,7 @@ window._ANIME_DATA = [
             episode: 26,
             title: "Special Report: Live from the Forest of Death!",
             absoluteEpisode: 26,
+            rating: 4.5,
             duration: "30m"
           },
           {
@@ -13886,12 +14002,14 @@ window._ANIME_DATA = [
             episode: 45,
             title: "Surprise Attack! Naruto's Secret Weapon!",
             absoluteEpisode: 45,
+            rating: 7.9,
             duration: "30m"
           },
           {
             episode: 46,
             title: "Byakugan Battle: Hinata Grows Bold!",
             absoluteEpisode: 46,
+            rating: 7.7,
             duration: "30m"
           },
           {
@@ -13904,6 +14022,7 @@ window._ANIME_DATA = [
             episode: 48,
             title: "Gaara vs. Rock Lee: The Power of Youth Explodes!",
             absoluteEpisode: 48,
+            rating: 9.2,
             duration: "30m"
           },
           {
@@ -15004,6 +15123,7 @@ window._ANIME_DATA = [
             episode: 3,
             title: "The Results of Training",
             absoluteEpisode: 3,
+            rating: 7.9,
             duration: "30m"
           },
           {
@@ -15064,6 +15184,7 @@ window._ANIME_DATA = [
             episode: 13,
             title: "A Meeting With Destiny",
             absoluteEpisode: 13,
+            rating: 8,
             duration: "30m"
           },
           {
@@ -15112,6 +15233,7 @@ window._ANIME_DATA = [
             episode: 21,
             title: "Sasori's Real Face",
             absoluteEpisode: 21,
+            rating: 7.9,
             duration: "30m"
           },
           {
@@ -15148,6 +15270,7 @@ window._ANIME_DATA = [
             episode: 27,
             title: "Impossible Dream",
             absoluteEpisode: 27,
+            rating: 8.5,
             duration: "30m"
           },
           {
@@ -15166,6 +15289,7 @@ window._ANIME_DATA = [
             episode: 30,
             title: "Aesthetics of an Instant!",
             absoluteEpisode: 30,
+            rating: 8.3,
             duration: "30m"
           },
           {

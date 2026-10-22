@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792698696504,
+  "lastRun": 1792705896578,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -263,9 +263,10 @@
     "anime:attack on titan": {
       "imdbId": "tt2560140",
       "rating": "9.1",
-      "lastChecked": 1791905025751,
+      "lastChecked": 1792705896578,
       "title": "Attack on Titan",
-      "year": 2013
+      "year": 2013,
+      "notFound": true
     },
     "movie:batman: knightfall part 1: knightfall": {
       "imdbId": "tt32333324",
@@ -4513,186 +4514,207 @@
     "series:steven universe future": {
       "imdbId": "tt13714610",
       "rating": "7.7",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Steven Universe Future",
       "year": 2019
     },
     "series:ok k.o.! let's be heroes": {
       "imdbId": "tt6965802",
       "rating": "6.9",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "OK K.O.! Let's Be Heroes",
       "year": 2017
     },
     "series:marvel's jessica jones": {
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "notFound": true
     },
     "series:the 100": {
       "imdbId": "tt2661044",
       "rating": "7.5",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "The 100",
       "year": 2014
     },
     "series:sherlock": {
       "imdbId": "tt1475582",
       "rating": "9.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Sherlock",
       "year": 2010
     },
     "series:marvel's ultimate spider-man": {
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "notFound": true
     },
     "series:resident evil: infinite darkness": {
       "imdbId": "tt13173144",
       "rating": "5.8",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Resident Evil: Infinite Darkness",
       "year": 2021
     },
     "series:the simpsons": {
       "imdbId": "tt0096697",
       "rating": "8.6",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "The Simpsons",
       "year": 1989
     },
     "series:you": {
       "imdbId": "tt7335184",
       "rating": "7.6",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "You",
       "year": 2018
     },
     "series:marvel's agents of s.h.i.e.l.d.": {
       "imdbId": "tt6243582",
       "rating": "6.7",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Marvel's Agents of S.H.I.E.L.D.",
       "year": 2013
     },
     "series:silo": {
       "imdbId": "tt14688458",
       "rating": "8.1",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Silo",
       "year": 2023
     },
     "series:x-men '97": {
       "imdbId": "tt16026746",
       "rating": "8.7",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "X-Men '97",
       "year": 2024
     },
     "series:one piece": {
       "imdbId": "tt11737520",
       "rating": "8.3",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "ONE PIECE",
       "year": 2023
     },
     "series:shameless": {
       "imdbId": "tt1586680",
       "rating": "8.5",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Shameless",
       "year": 2011
     },
     "series:beauty in black": {
       "imdbId": "tt31260386",
       "rating": "6.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Beauty in Black",
       "year": 2024
     },
     "series:green lantern: the animated series": {
       "imdbId": "tt1724587",
       "rating": "8.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Green Lantern: The Animated Series",
       "year": 2011
     },
     "anime:one piece": {
       "imdbId": "tt0388629",
       "rating": "9.0",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "One Piece",
       "year": 1999
     },
     "anime:one piece: gyojin tou-hen": {
       "imdbId": "tt33998607",
       "rating": "9.2",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "One Piece: Gyojin Tou-hen",
       "year": 2024
     },
     "anime:dragon ball z": {
       "imdbId": "tt0121220",
       "rating": "8.8",
-      "lastChecked": 1791972857366,
+      "lastChecked": 1792705896578,
       "title": "Dragon Ball Z",
       "year": 1989
     },
     "anime:dragon ball daima": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt29485149",
+      "rating": "7.7",
+      "lastChecked": 1792705896578,
+      "title": "Dragon Ball Daima",
+      "year": 2024
     },
     "anime:dragon ball super": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt4644488",
+      "rating": "8.3",
+      "lastChecked": 1792705896578,
+      "title": "Dragon Ball Super",
+      "year": 2015
     },
     "anime:dragon ball gt": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt0139774",
+      "rating": "6.8",
+      "lastChecked": 1792705896578,
+      "title": "Dragon Ball GT",
+      "year": 1996
     },
     "anime:dragon ball z kai": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt1409055",
+      "rating": "8.3",
+      "lastChecked": 1792705896578,
+      "title": "Dragon Ball Z Kai",
+      "year": 2009
     },
     "anime:naruto": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt0409591",
+      "rating": "8.4",
+      "lastChecked": 1792705896578,
+      "title": "Naruto",
+      "year": 2002
     },
     "anime:naruto shippuden": {
-      "lastChecked": 1791988524502,
-      "notFound": true
+      "imdbId": "tt0988824",
+      "rating": "8.7",
+      "lastChecked": 1792705896578,
+      "title": "Naruto Shippuden",
+      "year": 2007
     },
     "anime:boruto: naruto next generations": {
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "notFound": true
     },
     "anime:bleach": {
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "notFound": true
     },
     "anime:my hero academia": {
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "notFound": true
     },
     "anime:demon slayer: kimetsu no yaiba": {
       "imdbId": "tt9335498",
       "rating": "8.5",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "title": "Demon Slayer: Kimetsu no Yaiba",
-      "year": 2019
+      "year": 2019,
+      "notFound": true
     },
     "anime:one punch man": {
       "imdbId": "tt4508902",
       "rating": "8.6",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "title": "One Punch Man",
-      "year": 2015
+      "year": 2015,
+      "notFound": true
     },
     "anime:solo leveling": {
       "imdbId": "tt21209876",
       "rating": "8.5",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792705896578,
       "title": "Solo Leveling",
-      "year": 2024
+      "year": 2024,
+      "notFound": true
     },
     "anime:jujutsu kaisen": {
       "imdbId": "tt12343534",
@@ -4781,21 +4803,21 @@
     "movie:whalefall": {
       "imdbId": "tt28535715",
       "rating": "N/A",
-      "lastChecked": 1792615701848,
+      "lastChecked": 1792705896578,
       "title": "Whalefall",
       "year": 2026
     },
     "movie:practical magic 2": {
       "imdbId": "tt32588798",
       "rating": "N/A",
-      "lastChecked": 1792615701848,
+      "lastChecked": 1792705896578,
       "title": "Practical Magic 2",
       "year": 2026
     },
     "series:carrie": {
       "imdbId": "tt11540908",
       "rating": "7.8",
-      "lastChecked": 1792615701848,
+      "lastChecked": 1792705896578,
       "title": "Carrie",
       "year": 2026
     },
