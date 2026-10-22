@@ -3618,9 +3618,8 @@ function openDetailsModal(movieId) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
       const isFrom4k = !isSeriesOrAnime && Boolean(
         state.activeView === '4k' ||
-        state.previousView === '4k' ||
         (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-        movie.from4kSection === true
+        (movie.from4kSection === true && state.activeView === '4k')
       );
       qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
       qualityBadge.style.cssText = isFrom4k
