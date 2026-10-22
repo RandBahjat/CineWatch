@@ -72,7 +72,7 @@ let FEATURED_TITLES = [
   "Digger",
   "Resident Evil",
   "Reacher",
-  "Verity"
+  "
 ];
 let TOP_10_TRENDING_TODAY = [
 
