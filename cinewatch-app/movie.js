@@ -4265,26 +4265,13 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 
   const is4kPlayback = Boolean(
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
     (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    parentMovie?.from4kSection === true
+    (parentMovie?.from4kSection === true && state.activeView === '4k')
   );
 
   if (is4kPlayback) {
     if (!parentMovie && fourkMeta) {
       parentMovie = { ...fourkMeta, from4kSection: true };
-    }
-    if (parentMovie) {
-      parentMovie.is4k = true;
-      parentMovie.has4k = true;
-      parentMovie.from4kSection = true;
-      delete parentMovie.hdVideoUrl;
-      if (fourkMeta?.subtitles && (!parentMovie.subtitles || parentMovie.subtitles.length === 0)) {
-        parentMovie.subtitles = fourkMeta.subtitles;
-      }
-      if (fourkMeta?.audioUrl && !parentMovie.audioUrl) {
-        parentMovie.audioUrl = fourkMeta.audioUrl;
-      }
     }
     const direct4k = parentMovie?.fourkVideoUrl || fourkMeta?.videoUrl || (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv')) ? videoUrl : null);
     if (direct4k) {
@@ -4292,11 +4279,20 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
     window._cwQualities = null;
   } else {
-    // Normal movies view: preserve multi-quality HD stream
+    // Normal movies view: preserve multi-quality HD stream (480p, 720p, 1080p)
     if (parentMovie) {
       parentMovie.is4k = false;
       parentMovie.from4kSection = false;
-      if (parentMovie.hdVideoUrl) videoUrl = parentMovie.hdVideoUrl;
+      if (parentMovie.qualities && parentMovie.qualities.length > 0) {
+        window._cwQualities = parentMovie.qualities.map(q => ({
+          quality: q.label || q.quality || q.html,
+          url: q.url
+        }));
+        const def = parentMovie.qualities.find(q => q.default) || parentMovie.qualities[0];
+        videoUrl = def?.url || parentMovie.qualities[0].url;
+      } else if (parentMovie.hdVideoUrl) {
+        videoUrl = parentMovie.hdVideoUrl;
+      }
     }
   }
   renderPlayerDetailsPanel(parentMovie, epData);
