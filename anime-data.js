@@ -11559,7 +11559,7 @@ window._ANIME_DATA = [
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
     tags: ["Animation", "Action", "Adventure", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nLVizU56fMrn9HsWPugSxqsnqU8.jpg",
     videoUrl: "62715",
     trailerUrl: "https://youtu.be/QinoGlZP_V4?si=Ob-Tr0BnRIKiYkUq",
     malId: 30694,
