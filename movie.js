@@ -4428,39 +4428,30 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   const isFrom4k = Boolean(
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
     (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    movie.from4kSection === true
+    (movie.from4kSection === true && state.activeView === '4k')
   );
 
   if (isFrom4k) {
-    const fourkEntry = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
-      ? window._FOURK_DATA.find(f => (f.id && f.id === movie.id) || (f.title && f.title.toLowerCase() === (movie.title || '').toLowerCase()))
-      : null;
     const direct4k = movie.fourkVideoUrl || fourkEntry?.videoUrl || (movie.is4k && typeof movie.videoUrl === 'string' && (movie.videoUrl.startsWith('http') || movie.videoUrl.includes('.mp4') || movie.videoUrl.includes('.mkv')) ? movie.videoUrl : null);
     if (direct4k && typeof direct4k === 'string' && (direct4k.startsWith('http') || direct4k.includes('.mp4') || direct4k.includes('.mkv'))) {
       targetUrl = direct4k;
-      movie.is4k = true;
-      movie.has4k = true;
-      movie.from4kSection = true;
-      movie.fourkVideoUrl = direct4k;
-      movie.videoUrl = direct4k;
-    }
-    delete movie.hdVideoUrl;
-    if (fourkEntry) {
-      if (fourkEntry.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
-        movie.subtitles = fourkEntry.subtitles;
-      }
-      if (fourkEntry.audioUrl && !movie.audioUrl) {
-        movie.audioUrl = fourkEntry.audioUrl;
-      }
     }
     window._cwQualities = null;
   } else {
     // Normal movies view: standard multi-quality stream (480p, 720p, 1080p)
     movie.is4k = false;
     movie.from4kSection = false;
-    targetUrl = movie.hdVideoUrl || movie.videoUrl;
+    if (movie.qualities && movie.qualities.length > 0) {
+      window._cwQualities = movie.qualities.map(q => ({
+        quality: q.label || q.quality || q.html,
+        url: q.url
+      }));
+      const def = movie.qualities.find(q => q.default) || movie.qualities[0];
+      targetUrl = def?.url || movie.qualities[0].url;
+    } else {
+      targetUrl = movie.hdVideoUrl || movie.videoUrl;
+    }
   }
   openVideoPlayerWithUrl(targetUrl, movie.title, mediaId, null);
 }
