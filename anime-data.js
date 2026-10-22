@@ -11424,7 +11424,7 @@ window._ANIME_DATA = [
     duration: "30m",
     genres: ["Animation", "Action", "Adventure", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/oUmWLyeko3kYdUr8DBLIsxwcugl.jpg",
+    backdrop: "https://4kwallpapers.com/images/walls/thumbs_3t/20486.jpg",
     videoUrl: "236994",
     trailerUrl: "",
     animeSlug: "dragon-ball-daima",
