@@ -2403,7 +2403,7 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     has4k: true,
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_480p.mp4",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
     seasons: []
   },
 
