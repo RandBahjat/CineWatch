@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     overview: "Desperate to save his fading career and preserve his appearance, a struggling B-movie actor turns to an experimental, black-market substance to stay relevant. When the treatment goes horribly wrong, his flesh mutates into malleable, shifting clay—granting him the terrifying ability to reshape his face and body into anyone, while slowly eroding his sanity and humanity in a tragic descent into body horror.",
     overviewKurdish: "لە هەوڵێکی بێهیوایانەدا بۆ ڕزگارکردنی پیشە هونەرییەکەی کە بەرەو کاڵبوونەوە دەچێت و پاراستنی ڕووخساری، ئەکتەرێکی سینەمایی پەنا دەباتە بەر بەکارهێنانی ماددەیەکی تاقیکاریی مەترسیدار. بەڵام کاتێک چارەسەرەکە بە شێوەیەکی ترسناک تێکدەچێت، جەستەی دەگۆڕێت بۆ قوڕێکی نەرم و گۆڕاو؛ ئەمەش توانایەکی تۆقێنەری پێ دەبەخشێت کە بتوانێت شێوە و ڕووخساری بۆ هەر کەسێک بگۆڕێت کە دەیەوێت، لە کاتێکدا وردە وردە مرۆڤبوون و ژیریی خۆی لەناو کارەساتێکی جەستەییدا لەدەست دەدات.",
     director: "James Watkins",
-    cast: ["Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner"],
+    cast: ["Tom Rhys Harries, Naomi Ackie"],
     trending: true,
     featured: false,
     is4k: false,
