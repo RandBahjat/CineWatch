@@ -65,6 +65,7 @@ try {
 let FEATURED_TITLES = [
   "By Any Means",
   "Dragon Ball Super: Beerus",
+  "Clayface",
   "VisionQuest",
   "Spider-Man: Brand New Day",
   "Animals",
