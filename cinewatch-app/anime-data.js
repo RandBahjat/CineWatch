@@ -75,7 +75,7 @@ window._ANIME_DATA = [
     duration: "24m",
     genres: ["Animation", "Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-    backdrop: "https://netflixjunkie-media.b-cdn.net/media/image/image_1742647488887.jpeg",
+    backdrop: "https://image.tmdb.org/t/p/original/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
     videoUrl: "37854",
     trailerUrl: "https://youtu.be/ZcsbhQxhFqU?si=GLtHLrEtroQsBfpN",
     animeSlug: "one-piece",
