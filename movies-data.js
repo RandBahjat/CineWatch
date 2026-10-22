@@ -2384,7 +2384,16 @@ window._MOVIES_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
-    videoUrl: "558",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_1080p.mp4",
+    qualities: [
+      { label: "1080p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_1080p.mp4", default: true },
+      { label: "720p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_720p.mp4", default: false },
+      { label: "480p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_480p.mp4", default: false }
+    ],
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt", srclang: "en", default: false }
+    ],
     trailerUrl: "https://youtu.be/kficMW9vu8M?si=mL2PTzXLk1kvTsuY",
     overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
     overviewKurdish: "",
@@ -2394,7 +2403,7 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     has4k: true,
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_480p.mp4",
     seasons: []
   },
 
