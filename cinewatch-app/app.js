@@ -2327,21 +2327,16 @@ function playMovieDirect(movieId) {
     : null;
 
   const isFrom4kApp = Boolean(
-    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k')) ||
+    (typeof state !== 'undefined' && state.activeView === '4k') ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    movie.from4kSection === true
+    (movie.from4kSection === true && typeof state !== 'undefined' && state.activeView === '4k')
   );
 
   if (isFrom4kApp) {
-    movie.is4k = true;
-    movie.has4k = true;
-    movie.from4kSection = true;
     const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;
     if (direct4k) {
-      movie.fourkVideoUrl = direct4k;
       movie.videoUrl = direct4k;
     }
-    delete movie.hdVideoUrl;
     if (fourkDirectMatch) {
       if (fourkDirectMatch.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
         movie.subtitles = fourkDirectMatch.subtitles;
@@ -2354,7 +2349,16 @@ function playMovieDirect(movieId) {
   } else {
     movie.is4k = false;
     movie.from4kSection = false;
-    if (movie.hdVideoUrl) movie.videoUrl = movie.hdVideoUrl;
+    if (movie.qualities && movie.qualities.length > 0) {
+      window._cwQualities = movie.qualities.map(q => ({
+        quality: q.label || q.quality || q.html,
+        url: q.url
+      }));
+      const def = movie.qualities.find(q => q.default) || movie.qualities[0];
+      movie.videoUrl = def?.url || movie.qualities[0].url;
+    } else if (movie.hdVideoUrl) {
+      movie.videoUrl = movie.hdVideoUrl;
+    }
   }
   }
 
