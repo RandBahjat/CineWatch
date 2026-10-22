@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 48m",
     genres: ["Horror", "Thriller","Drama","Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/ccBIyg1ITvuCDr4eMeEH0ZgNh4t.jpg",
+    poster: "https://image.tmdb.org/t/p/original/yBjKCiDCGn6eqpzLvr13Hn61a8I.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
     videoUrl: "1101412",
     trailerUrl: "https://youtu.be/0h5G5gYmZ5Q",
