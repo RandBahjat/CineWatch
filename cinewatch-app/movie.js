@@ -7785,6 +7785,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     cleanUrl = rawVideoStr;
   }
 
+  if (!isFrom4kSession && ref?.qualities && Array.isArray(ref.qualities) && ref.qualities.length > 0) {
+    window._cwQualities = ref.qualities.map(q => ({
+      quality: q.label || q.quality || q.html,
+      url: q.url
+    }));
+    const def = ref.qualities.find(q => q.default) || ref.qualities[0];
+    if (def && def.url) {
+      cleanUrl = def.url;
+    }
+  }
+
   if (isFrom4kSession) {
     const target4kUrl = ref?.fourkVideoUrl || fourkMatch?.videoUrl || (ref?.is4k && typeof ref?.videoUrl === 'string' && (ref.videoUrl.startsWith('http') || ref.videoUrl.includes('.mp4') || ref.videoUrl.includes('.mkv')) ? ref.videoUrl : null) || (cleanUrl && (cleanUrl.startsWith('http') || cleanUrl.includes('.mp4') || cleanUrl.includes('.mkv')) ? cleanUrl : null);
     if (target4kUrl) {
