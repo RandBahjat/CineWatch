@@ -1,10 +1,10 @@
 {
-  "lastRun": 1792683786437,
+  "lastRun": 1792691497043,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
       "rating": "8.3",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "MobLand",
       "year": 2025
     },
@@ -697,7 +697,7 @@
     "fourk:spider-man: brand new day": {
       "imdbId": "tt22084616",
       "rating": "8.0",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "Spider-Man: Brand New Day",
       "year": 2026
     },
@@ -3775,21 +3775,21 @@
     "series:the wonderfully weird world of gumball": {
       "imdbId": "tt36985473",
       "rating": "8.5",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "The Wonderfully Weird World of Gumball",
       "year": 2025
     },
     "series:dutton ranch": {
       "imdbId": "tt34991493",
       "rating": "8.2",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "Dutton Ranch",
       "year": 2026
     },
     "anime:dragon ball super: beerus": {
       "imdbId": "tt39395275",
       "rating": "N/A",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "Dragon Ball Super: Beerus",
       "year": 2026
     },
@@ -4084,135 +4084,195 @@
     "series:the walking dead": {
       "imdbId": "tt1520211",
       "rating": "8.1",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "The Walking Dead",
       "year": 2010
     },
     "series:squid game": {
       "imdbId": "tt10919420",
       "rating": "7.9",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Squid Game",
       "year": 2021
     },
     "series:prison break": {
       "imdbId": "tt0455275",
       "rating": "8.3",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Prison Break",
       "year": 2005
     },
     "series:dexter": {
       "imdbId": "tt0773262",
       "rating": "8.6",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Dexter",
       "year": 2006
     },
     "series:smallville": {
       "imdbId": "tt0279600",
       "rating": "7.5",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Smallville",
       "year": 2001
     },
     "series:gotham": {
       "imdbId": "tt3749900",
       "rating": "7.8",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Gotham",
       "year": 2014
     },
     "series:peacemaker": {
       "imdbId": "tt13146488",
       "rating": "8.2",
-      "lastChecked": 1791916532576,
+      "lastChecked": 1792691497043,
       "title": "Peacemaker",
       "year": 2022
     },
     "series:young sheldon": {
-      "lastChecked": 1791916532576,
-      "notFound": true
+      "imdbId": "tt6226232",
+      "rating": "7.8",
+      "lastChecked": 1792691497043,
+      "title": "Young Sheldon",
+      "year": 2017
     },
     "series:she-hulk: attorney at law": {
-      "lastChecked": 1791916532576,
-      "notFound": true
+      "imdbId": "tt10857160",
+      "rating": "5.2",
+      "lastChecked": 1792691497043,
+      "title": "She-Hulk: Attorney at Law",
+      "year": 2022
     },
     "series:danny phantom": {
-      "lastChecked": 1791916532576,
-      "notFound": true
+      "imdbId": "tt0366005",
+      "rating": "7.2",
+      "lastChecked": 1792691497043,
+      "title": "Danny Phantom",
+      "year": 2004
     },
     "series:adventure time": {
-      "lastChecked": 1791916532576,
-      "notFound": true
+      "imdbId": "tt1305826",
+      "rating": "8.7",
+      "lastChecked": 1792691497043,
+      "title": "Adventure Time",
+      "year": 2008
     },
     "series:lucifer": {
-      "lastChecked": 1791916532576,
-      "notFound": true
+      "imdbId": "tt4052886",
+      "rating": "8.0",
+      "lastChecked": 1792691497043,
+      "title": "Lucifer",
+      "year": 2016
     },
     "series:house of the dragon": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt11198330",
+      "rating": "8.2",
+      "lastChecked": 1792691497043,
+      "title": "House of the Dragon",
+      "year": 2022
     },
     "series:ted lasso": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt10986410",
+      "rating": "8.7",
+      "lastChecked": 1792691497043,
+      "title": "Ted Lasso",
+      "year": 2020
     },
     "series:euphoria": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt8772296",
+      "rating": "8.1",
+      "lastChecked": 1792691497043,
+      "title": "Euphoria",
+      "year": 2019
     },
     "series:marvel's spider-man": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt19371346",
+      "rating": "N/A",
+      "lastChecked": 1792691497043,
+      "title": "Marvel's Spider-Man",
+      "year": 2017
     },
     "series:wednesday": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt13443470",
+      "rating": "8.0",
+      "lastChecked": 1792691497043,
+      "title": "Wednesday",
+      "year": 2022
     },
     "series:the sopranos": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0141842",
+      "rating": "9.2",
+      "lastChecked": 1792691497043,
+      "title": "The Sopranos",
+      "year": 1999
     },
     "series:lazytown": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0396991",
+      "rating": "6.1",
+      "lastChecked": 1792691497043,
+      "title": "LazyTown",
+      "year": 2004
     },
     "series:justice league": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0275137",
+      "rating": "8.5",
+      "lastChecked": 1792691497043,
+      "title": "Justice League",
+      "year": 2001
     },
     "series:static shock": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0247729",
+      "rating": "7.3",
+      "lastChecked": 1792691497043,
+      "title": "Static Shock",
+      "year": 2000
     },
     "series:ninjago: masters of spinjitzu": {
-      "lastChecked": 1791923732395,
+      "lastChecked": 1792691497043,
       "notFound": true
     },
     "series:ninjago: dragons rising": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt27502465",
+      "rating": "7.9",
+      "lastChecked": 1792691497043,
+      "title": "Ninjago: Dragons Rising",
+      "year": 2023
     },
     "series:justice league unlimited": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt6025022",
+      "rating": "8.7",
+      "lastChecked": 1792691497043,
+      "title": "Justice League Unlimited",
+      "year": 2004
     },
     "series:the fairly oddparents": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0235918",
+      "rating": "7.2",
+      "lastChecked": 1792691497043,
+      "title": "The Fairly OddParents",
+      "year": 2001
     },
     "series:regular show": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1710308",
+      "rating": "8.6",
+      "lastChecked": 1792691497043,
+      "title": "Regular Show",
+      "year": 2010
     },
     "series:suits": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt1632701",
+      "rating": "8.4",
+      "lastChecked": 1792691497043,
+      "title": "Suits",
+      "year": 2011
     },
     "series:family guy": {
-      "lastChecked": 1791923732395,
-      "notFound": true
+      "imdbId": "tt0182576",
+      "rating": "8.1",
+      "lastChecked": 1792691497043,
+      "title": "Family Guy",
+      "year": 1999
     },
     "series:teen wolf": {
       "lastChecked": 1791923732395,
@@ -4709,14 +4769,14 @@
     "movie:fall 2: deadpoint": {
       "imdbId": "tt31192372",
       "rating": "5.7",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "Fall 2: Deadpoint",
       "year": 2026
     },
     "movie:by any means": {
       "imdbId": "tt34379051",
       "rating": "N/A",
-      "lastChecked": 1792599405183,
+      "lastChecked": 1792691497043,
       "title": "By Any Means",
       "year": 2026
     },
