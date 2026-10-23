@@ -169,6 +169,37 @@ window._FOURK_DATA = [
     is4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_English.vtt","srclang":"en","default":false}]
+  },
+
+  // ============================================================
+  // 7. Spider-Man: Homecoming (2017)
+  // ============================================================
+  {
+    id: "spider-man-homecoming-2017",
+    title: "Spider-Man: Homecoming",
+    type: "Movie",
+    year: 2017,
+    rating: 7.4,
+    age: "PG-13",
+    duration: "2h 13m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tM894a4r8QIpo9mNtneV0IVphBh.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_4K_UHD.mkv",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_audio.m4a",
+    trailerUrl: "https://www.youtube.com/watch?v=n9DwoQ7HWvI",
+    overview: "Following the events of Captain America: Civil War, Peter Parker attempts to balance his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, all under the watchful eye of his mentor Tony Stark. But when a ruthless new villain known as the Vulture emerges with advanced alien weaponry, Peter is thrust into a dangerous battle to protect everything he cares about.",
+    overviewKurdish: "دوای ڕووداوەکانی جەنگی نێوخۆ، پیتەر پارکەر هەوڵ دەدات هاوسەنگی لە نێوان ژیانی ئاسایی خۆی وەکو خوێندکارێکی ئامادەیی و بوونی بە سپایدەرمان ڕابگرێت لەژێر چاودێریی تۆنی ستارکدا. بەڵام کاتێک دوژمنێکی دڕندە بە ناوی ڤوڵچەر بە چەکی پێشکەوتووی بیانییەوە پەیدا دەبێت، پیتەر تووشی تاقیکردنەوەیەکی گەورە دەبێت بۆ پاراستنی هەموو ئەو شتانەی کە گرنگن بۆی.",
+    director: "Jon Watts",
+    cast: ["Tom Holland", "Michael Keaton", "Robert Downey Jr.", "Marisa Tomei", "Jon Favreau", "Zendaya", "Jacob Batalon"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_English.vtt", srclang: "en", default: false }
+    ]
   }
 
 ];
