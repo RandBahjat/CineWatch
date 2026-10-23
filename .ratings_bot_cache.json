@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792705896578,
+  "lastRun": 1792736249560,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4719,84 +4719,84 @@
     "anime:jujutsu kaisen": {
       "imdbId": "tt12343534",
       "rating": "8.5",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "JUJUTSU KAISEN",
       "year": 2020
     },
     "anime:chainsaw man": {
       "imdbId": "tt13616990",
       "rating": "8.3",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Chainsaw Man",
       "year": 2022
     },
     "anime:death note": {
       "imdbId": "tt0877057",
       "rating": "8.9",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Death Note",
       "year": 2006
     },
     "anime:hunter x hunter": {
       "imdbId": "tt2098220",
       "rating": "9.0",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Hunter x Hunter",
       "year": 2011
     },
     "anime:vinland saga": {
       "imdbId": "tt10233448",
       "rating": "8.9",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Vinland Saga",
       "year": 2019
     },
     "anime:blue lock": {
       "imdbId": "tt15222080",
       "rating": "8.1",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Blue Lock",
       "year": 2022
     },
     "anime:haikyu!!": {
       "imdbId": "tt30476486",
       "rating": "7.8",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Haikyu!!",
       "year": 2014
     },
     "anime:tokyo ghoul": {
       "imdbId": "tt3741634",
       "rating": "7.7",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Tokyo Ghoul",
       "year": 2014
     },
     "anime:yu-gi-oh! duel monsters": {
       "imdbId": "tt0247902",
       "rating": "8.2",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Yu-Gi-Oh! Duel Monsters",
       "year": 2000
     },
     "anime:yu-gi-oh! gx": {
       "imdbId": "tt0493334",
       "rating": "6.9",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Yu-Gi-Oh! GX",
       "year": 2004
     },
     "anime:yu-gi-oh! 5d's": {
       "imdbId": "tt1196094",
       "rating": "7.1",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Yu-Gi-Oh! 5D's",
       "year": 2008
     },
     "anime:black clover": {
       "imdbId": "tt7441658",
       "rating": "8.2",
-      "lastChecked": 1791988524502,
+      "lastChecked": 1792736249560,
       "title": "Black Clover",
       "year": 2017
     },
@@ -4876,6 +4876,13 @@
       "lastChecked": 1792643583862,
       "title": "Spider-Man 2",
       "year": 2004
+    },
+    "movie:clayface": {
+      "imdbId": "tt34890576",
+      "rating": "N/A",
+      "lastChecked": 1792736249560,
+      "title": "Clayface",
+      "year": 2026
     }
   }
 }
