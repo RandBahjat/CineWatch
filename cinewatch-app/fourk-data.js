@@ -172,7 +172,7 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 19m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/2q0e8oM5Fp18qH04Z1B7U3gT27.jpg",
+    poster: "https://image.tmdb.org/t/p/original/vbTuNzKcE0KX0dJMtgDPHhFfThV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6xmTfc2wUqFqGZqVd2Xb2bNnCqF.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_audio.m4a",
