@@ -4,14 +4,15 @@
 
 window._MOVIES_DATA = [
 
-{
+  {
+    id: "clayface-2026",
     title: "Clayface",
     type: "Movie",
     year: 2026,
-    rating: "7.5",
+    rating: 7.5,
     age: "R",
     duration: "1h 48m",
-    genres: ["Horror", "Thriller","Drama","Sci-Fi"],
+    genres: ["Horror", "Thriller", "Drama", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/original/yBjKCiDCGn6eqpzLvr13Hn61a8I.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
     videoUrl: "1400940",
@@ -19,7 +20,7 @@ window._MOVIES_DATA = [
     overview: "Desperate to save his fading career and preserve his appearance, a struggling B-movie actor turns to an experimental, black-market substance to stay relevant. When the treatment goes horribly wrong, his flesh mutates into malleable, shifting clay—granting him the terrifying ability to reshape his face and body into anyone, while slowly eroding his sanity and humanity in a tragic descent into body horror.",
     overviewKurdish: "لە هەوڵێکی بێهیوایانەدا بۆ ڕزگارکردنی پیشە هونەرییەکەی کە بەرەو کاڵبوونەوە دەچێت و پاراستنی ڕووخساری، ئەکتەرێکی سینەمایی پەنا دەباتە بەر بەکارهێنانی ماددەیەکی تاقیکاریی مەترسیدار. بەڵام کاتێک چارەسەرەکە بە شێوەیەکی ترسناک تێکدەچێت، جەستەی دەگۆڕێت بۆ قوڕێکی نەرم و گۆڕاو؛ ئەمەش توانایەکی تۆقێنەری پێ دەبەخشێت کە بتوانێت شێوە و ڕووخساری بۆ هەر کەسێک بگۆڕێت کە دەیەوێت، لە کاتێکدا وردە وردە مرۆڤبوون و ژیریی خۆی لەناو کارەساتێکی جەستەییدا لەدەست دەدات.",
     director: "James Watkins",
-    cast: ["Tom Rhys Harries, Naomi Ackie"],
+    cast: ["Tom Rhys Harries", "Naomi Ackie"],
     trending: true,
     featured: false,
     is4k: false,
