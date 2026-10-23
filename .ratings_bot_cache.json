@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792736249560,
+  "lastRun": 1792743434543,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4883,6 +4883,13 @@
       "lastChecked": 1792736249560,
       "title": "Clayface",
       "year": 2026
+    },
+    "fourk:spider-man 3": {
+      "imdbId": "tt0413300",
+      "rating": "6.3",
+      "lastChecked": 1792743434543,
+      "title": "Spider-Man 3",
+      "year": 2007
     }
   }
 }

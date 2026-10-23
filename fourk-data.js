@@ -1,8 +1,6 @@
-/**
- * CineWatch — 4K Ultra HD Database
- * High-bitrate 4K UHD streaming titles with native HDR and synchronized audio.
- * Push to GitHub (or save — auto-sync will handle it) for changes to go live.
- */
+// CineWatch — 4K Ultra HD Movies & Series Data
+// Edit this file to add, remove, or edit 4K titles.
+// Set is4k: true on every entry.
 
 window._FOURK_DATA = [
 
@@ -29,11 +27,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -60,11 +55,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -91,11 +83,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -122,11 +111,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -153,11 +139,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
@@ -168,7 +151,7 @@ window._FOURK_DATA = [
     title: "Spider-Man 3",
     type: "Movie",
     year: 2007,
-    rating: 6.4,
+    rating: 6.3,
     age: "PG-13",
     duration: "2h 19m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -184,12 +167,8 @@ window._FOURK_DATA = [
     trending: true,
     featured: true,
     is4k: true,
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_English.vtt", srclang: "en", default: false }
-    ],
-    seasons: []
+    seasons: [],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_English.vtt","srclang":"en","default":false}]
   }
 
 ];
-
