@@ -158,6 +158,37 @@ window._FOURK_DATA = [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt", srclang: "en", default: false }
     ],
     seasons: []
+  },
+
+  // ============================================================
+  // 6. Spider-Man 3 (2007)
+  // ============================================================
+  {
+    id: "spider-man-3-2007",
+    title: "Spider-Man 3",
+    type: "Movie",
+    year: 2007,
+    rating: 6.4,
+    age: "PG-13",
+    duration: "2h 19m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/2q0e8oM5Fp18qH04Z1B7U3gT27.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6xmTfc2wUqFqGZqVd2Xb2bNnCqF.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_4K_UHD.mkv",
+    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_audio.m4a",
+    trailerUrl: "https://www.youtube.com/watch?v=wPosLg6543A",
+    overview: "The seemingly invincible Spider-Man goes up against a new crop of villains — including the shape-shifting Sandman. While Peter Parker's superpowers are altered by an alien organism, his alter ego, Peter, is dealing with nemesis Eddie Brock and also getting caught up in a love triangle.",
+    overviewKurdish: "پیتەر پارکەر لە لوتکەی سەرکەوتنەکانیەتی وەک سپایدەرمان، بەڵام ماددەیەکی ڕەشی نامۆی گەردوونی کە جەستەی داگیر دەکات هێزەکانی زیاد دەکات و لایەنە تاریک و تۆڵەسێنەرەکەی دەردەخات. لە هەمان کاتدا دەبێت بەرەنگاری ساند مان و ڤینۆم و هاری ئۆزبۆرن ببێتەوە.",
+    director: "Sam Raimi",
+    cast: ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Thomas Haden Church", "Topher Grace", "Bryce Dallas Howard"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_English.vtt", srclang: "en", default: false }
+    ],
+    seasons: []
   }
 
 ];
