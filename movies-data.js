@@ -5,7 +5,6 @@
 window._MOVIES_DATA = [
 
   {
-    id: "clayface-2026",
     title: "Clayface",
     type: "Movie",
     year: 2026,
@@ -21,6 +20,28 @@ window._MOVIES_DATA = [
     overviewKurdish: "لە هەوڵێکی بێهیوایانەدا بۆ ڕزگارکردنی پیشە هونەرییەکەی کە بەرەو کاڵبوونەوە دەچێت و پاراستنی ڕووخساری، ئەکتەرێکی سینەمایی پەنا دەباتە بەر بەکارهێنانی ماددەیەکی تاقیکاریی مەترسیدار. بەڵام کاتێک چارەسەرەکە بە شێوەیەکی ترسناک تێکدەچێت، جەستەی دەگۆڕێت بۆ قوڕێکی نەرم و گۆڕاو؛ ئەمەش توانایەکی تۆقێنەری پێ دەبەخشێت کە بتوانێت شێوە و ڕووخساری بۆ هەر کەسێک بگۆڕێت کە دەیەوێت، لە کاتێکدا وردە وردە مرۆڤبوون و ژیریی خۆی لەناو کارەساتێکی جەستەییدا لەدەست دەدات.",
     director: "James Watkins",
     cast: ["Tom Rhys Harries", "Naomi Ackie"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
+    
+    title: "The Cycle",
+    type: "Movie",
+    year: 2026,
+    rating: 6.7,
+    age: "R",
+    duration: "1h 51m",
+    genres: ["Mystery", "Thriller", "Horror", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n5gSNf55KWfDc9hqP4H1KCCSutE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lryq0R1untzuXUVRp6qKUyLCNqe.jpg",
+    videoUrl: "1290418",
+    trailerUrl: "https://youtu.be/eU_wsEoG488?si=w2oyZL4KpW2r81mv",
+    overview: "Haunted by the unexplained disappearance of her family decades ago, a forensic psychologist returns to her isolated hometown when a new string of eerie vanishings mirrors the exact pattern of the past. As she digs into the town's buried history, she uncovers a sinister generational conspiracy and must race against time to break the deadly cycle before she becomes its final victim.",
+    overviewKurdish: "دوای ئەوەی بۆ ماوەی دەیان ساڵ بەدەست دیارنەمانی تەمومژاویی خێزانەکەیەوە دەناڵێنێت، پسپۆڕێکی دەروونیی تاوانکاری دەگەڕێتەوە بۆ شارۆچکە دوورەدەستەکەی خۆی، کاتێک زنجیرەیەک ڕووداوی نوێی بێسەروشوێنبوون بە هەمان شێوازی ڕابردوو دووبارە دەبنەوە. لە کاتێکدا بەناو مێژووە شاردراوەکەی شارۆچکەکەدا دەگەڕێت، پەردە لەسەر پیلانێکی تاریک و مەترسیداری نەوەکان لادەدات و دەبێت پێشبڕکێ لەگەڵ کاتدا بکات بۆ شکاندنی ئەم بازنە مەرگهێنەرە پێش ئەوەی خۆی ببێتە دوایین قوربانی.",
+    director: "Jordan Graham",
+    cast: ["Maika Monroe, Rory Culkin, Marin Ireland, Bill Camp"],
     trending: true,
     featured: false,
     is4k: false,

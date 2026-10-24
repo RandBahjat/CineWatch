@@ -77,16 +77,15 @@ let FEATURED_TITLES = [
 ];
 let TOP_10_TRENDING_TODAY = [
 
-  "Dragon Ball Super: Beerus",
-  "VisionQuest",
+  "Clayface",
   "Spider-Man: Brand New Day",
   "Whalefall",
-  "Digger",
+  "Spider-Man: Brand New Day",
   "Street Fighter",
   "Animals",
   "Resident Evil",
   "Verity",
-  "Lanterns"
+  "VisionQuest"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
   "Spider-Man: Brand New Day",
