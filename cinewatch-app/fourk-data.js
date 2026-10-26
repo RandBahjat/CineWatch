@@ -200,6 +200,66 @@ window._FOURK_DATA = [
       { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_Kurdish.vtt", srclang: "ku", default: true },
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_English.vtt", srclang: "en", default: false }
     ]
+  },
+
+  // ============================================================
+  // 8. Spider-Man: Far From Home (2019)
+  // ============================================================
+  {
+    id: "spider-man-far-from-home-2019",
+    title: "Spider-Man: Far From Home",
+    type: "Movie",
+    year: 2019,
+    rating: 7.5,
+    age: "PG-13",
+    duration: "2h 9m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/lcq8dVxeeOqHvvgcte707K0KVx5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/34jW8LvjRplM8Pv06cBFDpLlenR.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=Nt9L1jCKGnE",
+    overview: "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury recruits him for a dangerous mission to uncover the mystery of elemental creature attacks across the continent, leading Peter to step up as the next hero the world needs.",
+    overviewKurdish: "پشووی هاوینەی پیتەر پارکەر لە ئەوروپا بە شێوەیەکی چاوەڕواننەکراو دەگۆڕێت کاتێک نیک فیوری داوای لێدەکات یارمەتی بدات لە ئاشکراکردنی نهێنی هێرشی بوونەوەرە نادیارەکان لەسەرانسەری کیشوەرەکەدا.",
+    director: "Jon Watts",
+    cast: ["Tom Holland", "Samuel L. Jackson", "Jake Gyllenhaal", "Zendaya", "Cobie Smulders", "Jon Favreau", "Jacob Batalon", "Marisa Tomei"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_English.vtt", srclang: "en", default: false }
+    ]
+  },
+
+  // ============================================================
+  // 9. Spider-Man: No Way Home (2021)
+  // ============================================================
+  {
+    id: "spider-man-no-way-home-2021",
+    title: "Spider-Man: No Way Home",
+    type: "Movie",
+    year: 2021,
+    rating: 8.1,
+    age: "PG-13",
+    duration: "2h 28m",
+    genres: ["Action", "Adventure", "Sci-Fi", "Fantasy"],
+    poster: "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uyrOU4BDm2kbVxFsMiDFIHDhc4d.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+    overview: "Peter Parker's life is turned upside down the moment his secret identity is exposed to the world. Desperate to reclaim his normal life, he turns to Doctor Strange for a spell to make everyone forget — but when the spell goes catastrophically wrong, it tears open the fabric of the multiverse, bringing dangerous villains from other realities crashing into Peter's world.",
+    overviewKurdish: "ژیانی پیتەر پارکەر سەرەوژێر دەبێت ئەو کاتەی ناسنامە نهێنییەکەی بۆ تەواوی جیهان ئاشکرا دەبێت. لە هەوڵێکدا بۆ گەڕاندنەوەی ژیانی ئاسایی خۆی، پەنا بۆ دکتۆر سترەینج دەبات بۆ دروستکردنی سیحرێک کە وا لە هەموان بکات لەبیری بکەن — بەڵام کاتێک سیحرەکە تێکدەچێت، دەرگای فرەجیهان دەکرێتەوە و دوژمنە ترسناکەکانی جیهانەکانی تر پەیدا دەبن.",
+    director: "Jon Watts",
+    cast: ["Tom Holland", "Zendaya", "Benedict Cumberbatch", "Jacob Batalon", "Jon Favreau", "Jamie Foxx", "Willem Dafoe", "Alfred Molina", "Andrew Garfield", "Tobey Maguire", "Marisa Tomei"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_Kurdish.vtt", srclang: "ku", default: true },
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_English.vtt", srclang: "en", default: false }
+    ]
   }
 
 ];

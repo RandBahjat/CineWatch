@@ -10840,7 +10840,7 @@ min-width: 0;
     min-height: 0 !important;
     max-height: none !important;
     aspect-ratio: 2 / 3 !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
     overflow: hidden !important;
   }
 
@@ -10861,7 +10861,7 @@ min-width: 0;
     object-fit: cover !important;
     object-position: center center !important;
     display: block !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
   }
 
   .carousel-track .card-details,
@@ -10881,10 +10881,10 @@ min-width: 0;
   #becauseYouWatchedTrack .movie-card,
   #continueTrack .movie-card,
   .movie-card:not(.continue-card) {
-    flex: 0 0 142px !important;
-    width: 142px !important;
-    min-width: 130px !important;
-    max-width: 155px !important;
+    flex: 0 0 186px !important;
+    width: 186px !important;
+    min-width: 186px !important;
+    max-width: 186px !important;
   }
 }
 
@@ -13515,7 +13515,9 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
 }
 
 @media (max-width: 480px) {
+  .carousel-track .movie-card,
   .carousel-track:not(.top10-track) .movie-card,
+  .top10-track .movie-card,
   #trendingMoviesTrack .movie-card,
   #trendingSeriesTrack .movie-card,
   #popularMoviesTrack .movie-card,
@@ -13523,25 +13525,19 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   #upcomingMoviesTrack .movie-card,
   #becauseYouWatchedTrack .movie-card,
   #watchlistHomeTrack .movie-card {
-    flex: 0 0 172px !important;
-    width: 172px !important;
-    min-width: 162px !important;
-    max-width: 185px !important;
-  }
-
-  .top10-track .movie-card {
-    flex: 0 0 165px !important;
-    width: 165px !important;
-    min-width: 155px !important;
+    flex: 0 0 186px !important;
+    width: 186px !important;
+    min-width: 186px !important;
+    max-width: 186px !important;
   }
 
   .card-title {
-    font-size: 0.92rem !important;
+    font-size: 0.95rem !important;
     font-weight: 600 !important;
   }
 
   .card-meta {
-    font-size: 0.78rem !important;
+    font-size: 0.75rem !important;
   }
 
   .top10-rank-num {

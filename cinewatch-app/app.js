@@ -1554,9 +1554,11 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     : null;
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
-    (typeof state !== 'undefined' && state.activeView === '4k') ||
+    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true)) ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    (movie.from4kSection === true && typeof state !== 'undefined' && state.activeView === '4k')
+    movie.from4kSection === true ||
+    (movie.is4k && !movie.hdVideoUrl) ||
+    (fourkAppMatch && !movie.hdVideoUrl)
   );
 
   if (!isFrom4kApp) {
@@ -2271,21 +2273,67 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           art.video.muted = true;
         }
 
-        art.on('play', () => {
-          syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
-        });
-        art.on('pause', () => {
-          syncAudio.pause();
-        });
+        const isVideoActive = () => {
+          return art && art.video && !art.video.paused && !art.video.seeking && art.video.readyState >= 3;
+        };
+
+        const onVideoPauseOrWait = () => {
+          if (syncAudio && !syncAudio.paused) {
+            syncAudio.pause();
+          }
+        };
+
+        const onVideoResume = () => {
+          if (!syncAudio || !art || !art.video) return;
+          if (isVideoActive()) {
+            syncAudio.currentTime = art.video.currentTime;
+            syncAudio.playbackRate = art.playbackRate || 1;
+            syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
+          } else {
+            syncAudio.pause();
+          }
+        };
+
         art.on('seek', (time) => {
+          onVideoPauseOrWait();
           syncAudio.currentTime = time;
         });
+        if (art.video) {
+          art.video.addEventListener('seeking', onVideoPauseOrWait);
+          art.video.addEventListener('waiting', onVideoPauseOrWait);
+          art.video.addEventListener('stalled', onVideoPauseOrWait);
+          art.video.addEventListener('playing', onVideoResume);
+          art.video.addEventListener('pause', onVideoPauseOrWait);
+        }
+
+        art.on('play', onVideoResume);
+        art.on('pause', onVideoPauseOrWait);
+
+        art.on('playbackRate', (rate) => {
+          if (syncAudio) syncAudio.playbackRate = rate;
+        });
+
         art.on('video:timeupdate', () => {
-          const diff = Math.abs(syncAudio.currentTime - art.currentTime);
-          if (diff > 0.25) {
-            syncAudio.currentTime = art.currentTime;
+          if (!syncAudio || !art || !art.video) return;
+          if (art.video.paused || art.video.seeking || art.video.readyState < 3) {
+            if (!syncAudio.paused) syncAudio.pause();
+            return;
+          }
+          if (syncAudio.paused && isVideoActive()) {
+            syncAudio.currentTime = art.video.currentTime;
+            syncAudio.play().catch(() => {});
+            return;
+          }
+          const diff = syncAudio.currentTime - art.video.currentTime;
+          if (Math.abs(diff) > 0.5) {
+            syncAudio.currentTime = art.video.currentTime;
+          } else if (Math.abs(diff) > 0.08) {
+            syncAudio.playbackRate = (diff > 0 ? 0.95 : 1.05) * (art.playbackRate || 1);
+          } else {
+            syncAudio.playbackRate = art.playbackRate || 1;
           }
         });
+
         art.on('video:volumechange', () => {
           syncAudio.volume = art.volume;
           syncAudio.muted = art.muted;
@@ -2327,9 +2375,11 @@ function playMovieDirect(movieId) {
     : null;
 
   const isFrom4kApp = Boolean(
-    (typeof state !== 'undefined' && state.activeView === '4k') ||
+    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true)) ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    (movie.from4kSection === true && typeof state !== 'undefined' && state.activeView === '4k')
+    movie.from4kSection === true ||
+    (movie.is4k && !movie.hdVideoUrl) ||
+    (fourkDirectMatch && !movie.hdVideoUrl)
   );
 
   if (isFrom4kApp) {

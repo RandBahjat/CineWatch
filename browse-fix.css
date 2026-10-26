@@ -11,6 +11,18 @@
   width: 100% !important;
 }
 
+@media (max-width: 600px) {
+  .browse-section {
+    padding-top: 5.25rem !important;
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+  .main-content {
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+}
+
 .browse-section-header {
   margin-bottom: 1.5rem !important;
 }
@@ -80,15 +92,12 @@
   stroke: #ffffff !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .browse-view-toggle {
+    display: none !important;
+  }
   .browse-title-row {
     gap: 0.75rem !important;
-  }
-  .view-toggle-btn {
-    padding: 6px 10px !important;
-  }
-  .view-toggle-btn .toggle-text {
-    display: none !important;
   }
 }
 
@@ -307,6 +316,7 @@
 #moviesGrid .movie-card,
 #seriesGrid .movie-card,
 #animeGrid .movie-card,
+#fourkGrid .movie-card,
 .browse-grid .movie-card {
   flex: none !important;
   width: 100% !important;
@@ -376,25 +386,67 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 501px) {
+@media (max-width: 768px) and (min-width: 601px) {
   #moviesGrid.poster-view,
   #seriesGrid.poster-view,
   #animeGrid.poster-view,
   #fourkGrid.poster-view,
   .browse-grid.poster-view {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.1rem 0.8rem !important;
+    gap: 1.25rem 0.85rem !important;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #moviesGrid.poster-view,
   #seriesGrid.poster-view,
   #animeGrid.poster-view,
   #fourkGrid.poster-view,
   .browse-grid.poster-view {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.9rem 0.65rem !important;
+    gap: 1.25rem 0.85rem !important;
+  }
+
+  #moviesGrid.poster-view .movie-card,
+  #seriesGrid.poster-view .movie-card,
+  #animeGrid.poster-view .movie-card,
+  #fourkGrid.poster-view .movie-card,
+  .browse-grid.poster-view .movie-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #moviesGrid.poster-view .card-poster-wrap,
+  #seriesGrid.poster-view .card-poster-wrap,
+  #animeGrid.poster-view .card-poster-wrap,
+  #fourkGrid.poster-view .card-poster-wrap,
+  .browse-grid.poster-view .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  #moviesGrid.poster-view .card-title,
+  #seriesGrid.poster-view .card-title,
+  #animeGrid.poster-view .card-title,
+  #fourkGrid.poster-view .card-title,
+  .browse-grid.poster-view .card-title {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    margin-top: 7px !important;
+    margin-bottom: 3px !important;
+  }
+
+  #moviesGrid.poster-view .card-meta,
+  #seriesGrid.poster-view .card-meta,
+  #animeGrid.poster-view .card-meta,
+  #fourkGrid.poster-view .card-meta,
+  .browse-grid.poster-view .card-meta {
+    font-size: 0.75rem !important;
+    gap: 5px !important;
+    margin-top: 4px !important;
   }
 }
 
@@ -439,7 +491,7 @@
   }
 }
 
-/* Tablet & Mobile Screens (<= 768px): 2-Column Grid for Backdrop View */
+/* Mobile Screens (<= 768px): Backdrop view is removed/disabled on mobile — strictly Poster view only */
 @media (max-width: 768px) {
   #moviesGrid.backdrop-view,
   #seriesGrid.backdrop-view,
@@ -447,7 +499,16 @@
   #fourkGrid.backdrop-view,
   .browse-grid.backdrop-view {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.15rem 0.75rem !important;
+    gap: 1.25rem 0.85rem !important;
+  }
+
+  #moviesGrid.backdrop-view .movie-card,
+  #seriesGrid.backdrop-view .movie-card,
+  #animeGrid.backdrop-view .movie-card,
+  #fourkGrid.backdrop-view .movie-card,
+  .browse-grid.backdrop-view .movie-card {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   #moviesGrid.backdrop-view .card-poster-wrap,
@@ -455,8 +516,20 @@
   #animeGrid.backdrop-view .card-poster-wrap,
   #fourkGrid.backdrop-view .card-poster-wrap,
   .browse-grid.backdrop-view .card-poster-wrap {
-    aspect-ratio: 16 / 9 !important;
-    border-radius: 8px !important;
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  #moviesGrid.backdrop-view .card-poster,
+  #seriesGrid.backdrop-view .card-poster,
+  #animeGrid.backdrop-view .card-poster,
+  #fourkGrid.backdrop-view .card-poster,
+  .browse-grid.backdrop-view .card-poster {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
 
   #moviesGrid.backdrop-view .card-title,
@@ -464,10 +537,11 @@
   #animeGrid.backdrop-view .card-title,
   #fourkGrid.backdrop-view .card-title,
   .browse-grid.backdrop-view .card-title {
-    font-size: 0.82rem !important;
-    line-height: 1.25 !important;
-    margin-top: 4px !important;
-    margin-bottom: 2px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    margin-top: 7px !important;
+    margin-bottom: 3px !important;
   }
 
   #moviesGrid.backdrop-view .card-meta,
@@ -475,28 +549,9 @@
   #animeGrid.backdrop-view .card-meta,
   #fourkGrid.backdrop-view .card-meta,
   .browse-grid.backdrop-view .card-meta {
-    font-size: 0.68rem !important;
-    gap: 4px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  #moviesGrid.backdrop-view,
-  #seriesGrid.backdrop-view,
-  #animeGrid.backdrop-view,
-  #fourkGrid.backdrop-view,
-  .browse-grid.backdrop-view {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.95rem 0.6rem !important;
-  }
-
-  #moviesGrid.backdrop-view .card-poster-wrap,
-  #seriesGrid.backdrop-view .card-poster-wrap,
-  #animeGrid.backdrop-view .card-poster-wrap,
-  #fourkGrid.backdrop-view .card-poster-wrap,
-  .browse-grid.backdrop-view .card-poster-wrap {
-    aspect-ratio: 16 / 9 !important;
-    border-radius: 7px !important;
+    font-size: 0.75rem !important;
+    gap: 5px !important;
+    margin-top: 4px !important;
   }
 }
 
@@ -622,21 +677,24 @@
   }
 }
 
-/* Mobile: 2 columns */
+/* Mobile: 2 columns for default/poster views */
 @media (max-width: 640px) {
-  #moviesGrid,
-  #seriesGrid,
-  #animeGrid,
-  .browse-grid {
+  #moviesGrid:not(.backdrop-view),
+  #seriesGrid:not(.backdrop-view),
+  #animeGrid:not(.backdrop-view),
+  #fourkGrid:not(.backdrop-view),
+  .browse-grid:not(.backdrop-view) {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem 0.75rem !important;
+    gap: 1.25rem 0.85rem !important;
   }
 
   #moviesGrid:not(.backdrop-view) .card-poster-wrap,
   #seriesGrid:not(.backdrop-view) .card-poster-wrap,
   #animeGrid:not(.backdrop-view) .card-poster-wrap,
+  #fourkGrid:not(.backdrop-view) .card-poster-wrap,
   .browse-grid:not(.backdrop-view) .card-poster-wrap {
     aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
   }
 
   .browse-title {
@@ -1500,3 +1558,85 @@ body.rtl-layout .hero-slide-counter {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
 }
+
+/* ============================================================
+   HOME CAROUSEL POSTERS MATCH MOVIES & SERIES SECTIONS
+   ============================================================ */
+@media (min-width: 769px) {
+  .top10-track .movie-card {
+    flex: 0 0 210px !important;
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+  }
+  .top10-track .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .carousel-track .movie-card,
+  .top10-track .movie-card,
+  .shelf-section .movie-card {
+    flex: 0 0 195px !important;
+    width: 195px !important;
+    min-width: 195px !important;
+    max-width: 195px !important;
+  }
+  .carousel-track .card-poster-wrap,
+  .top10-track .card-poster-wrap,
+  .shelf-section .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-track .movie-card,
+  .top10-track .movie-card,
+  .shelf-section .movie-card {
+    flex: 0 0 186px !important;
+    width: 186px !important;
+    min-width: 186px !important;
+    max-width: 186px !important;
+  }
+
+  .carousel-track .card-poster-wrap,
+  .top10-track .card-poster-wrap,
+  .shelf-section .card-poster-wrap {
+    width: 100% !important;
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .carousel-track .card-poster,
+  .top10-track .card-poster,
+  .shelf-section .card-poster {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+  }
+
+  .carousel-track .card-title,
+  .top10-track .card-title,
+  .shelf-section .card-title {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    margin-top: 7px !important;
+    margin-bottom: 3px !important;
+  }
+
+  .carousel-track .card-meta,
+  .top10-track .card-meta,
+  .shelf-section .card-meta {
+    font-size: 0.75rem !important;
+    gap: 5px !important;
+    margin-top: 4px !important;
+  }
+}
+

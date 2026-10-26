@@ -51,6 +51,14 @@ window._ANIME_DATA = [
             thumbnail: "https://media.kitsu.app/episode/393370/thumbnail/2c60fab1312fb743fd4374eeab24abf7.jpg",
             duration: "24m",
             overview: "Elder Supreme Kai and Supreme Kai Kibito learn of the awakening of the almighty Beerus. Meanwhile, the God of Destruction heads to the Planet of the Kai to find out about the \"Super Saiyan God\" he saw in a prophetic dream and...?!"
+          },
+          {
+            episode: 3,
+            title: "Earth, Here Comes the God of Destruction!",
+            absoluteEpisode: 3,
+            thumbnail: "https://media.kitsu.app/episode/393371/thumbnail/64d2eb53b704fc4ef9174175fdcec8ce.jpg",
+            duration: "24m",
+            overview: "After Lord Beerus and Whis conclude their search on King Kai's planet, the God of Destruction sets his sights directly on Earth to seek out the remaining Saiyans and unravel the mystery of the Super Saiyan God. Meanwhile, the Z-Fighters are gathered on a luxury cruise ship celebrating Bulma's birthday, completely unaware that a universe-threatening deity is about to crash the party."
           }
         ]
       }

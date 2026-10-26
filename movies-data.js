@@ -47,6 +47,28 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    
+    title: "Tenzing",
+    type: "Movie",
+    year: 2026,
+    rating: 7.5,
+    age: "PG",
+    duration: "2h 5m",
+    genres: ["Adventure", "Biography", "Drama", "History"],
+    poster: "https://image.tmdb.org/t/p/original/a3G0yDUDoEJwzmHeIIrZmUCx8bW.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9MdxBPjI58xkzA7RtKX9xRKvlZp.jpg",
+    videoUrl: "1288069",
+    trailerUrl: "https://youtu.be/KkYCY5YR12U?si=MGLSMZoS7aQ-LwGf",
+    overview: "Tibetan-born Sherpa Tenzing Norgay, alongside New Zealand mountaineer Edmund Hillary, overcomes insurmountable odds, treacherous blizzards, and deadly altitudes to achieve what was once thought impossible: reaching the summit of Mount Everest in 1953. Beyond the grueling physical ascent, the story explores Norgay's deep spiritual reverence for the mountain, the cultural complexities of the British expedition, and the unbreakable bond forged at the top of the world.",
+    overviewKurdish: "تێنزینگ نۆرگەی، شاخەوانی بەڕەچەڵەک تیبێتی، شانبەشانی شاخەوانی نیوزلەندی ئێدمۆند هیلاری، ڕووبەڕووی سەختترین بەربەست، زریانی بەفرینی کوشندە و بەرزاییە مەترسیدارەکان دەبێتەوە بۆ بەدیهێنانی کارێک کە پێشتر بە مەحاڵ دادەنرا: گەیشتن بە لووتکەی چیای ئێڤرێست لە ساڵی ١٩٥٣دا. لە سەرووی سەرکەوتنە جەستەییە تاقەتپڕووکێنەکەوە، چیرۆکەکە تیشک دەخاتە سەر ڕێز و پەیوەندیی قووڵی ڕۆحیی نۆرگەی بۆ چیاکە، ئاڵۆزییە کولتوورییەکانی ناو گەشتە بەریتانییەکە، و ئەو هاوڕێیەتییە بەهێزەی کە لەسەر لووتکەی جیهان دروست دەبێت.",
+    director: "Jennifer Peedom",
+    cast: ["Tom Hiddleston, Willem Dafoe, Caitríona Balfe"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
@@ -1606,12 +1628,12 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 63. Spider-Man: No Way Home (2011)
+  // 63. Spider-Man: No Way Home (2021)
   // ============================================================
   {
     title: "Spider-Man: No Way Home",
     type: "Movie",
-    year: 2011,
+    year: 2021,
     rating: 8.1,
     age: "PG-13",
     duration: "2h 28m",

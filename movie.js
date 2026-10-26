@@ -88,11 +88,11 @@ let TOP_10_TRENDING_TODAY = [
   "VisionQuest"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
+  "Clayface",
   "Spider-Man: Brand New Day",
-  "Animals",
   "Matchbox the Movie",
   "Insidious: Out of the Further",
-  "Digger",
+  "Tenzing",
   "Fall 2: Deadpoint",
   "Resident Evil",
   "Verity"
@@ -108,8 +108,6 @@ let TRENDING_THIS_WEEK_SERIES = [
   "One Piece",
   "Ted Lasso",
   "City of Blood",
-  "Stranger Things: Tales from '85",
-  "Silo"
 ];
 const POPULAR_MOVIES = [
   "Spider-Man: Brand New Day",
@@ -1390,7 +1388,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const posterImg = movie.poster || movie.backdrop || "";
   const backdropImg = movie.backdrop || movie.poster || "";
   const desktopImg = forcePoster ? posterImg : backdropImg;
-  const mobileImg = posterImg;
+  const mobileImg = posterImg; // Mobile screens are strictly poster view only
 
   return `
     <div class="movie-card ${forcePoster ? 'card-poster-mode' : ''}" data-id="${movie.id}">
@@ -1488,7 +1486,7 @@ function renderRemainingCarousels() {
     }
   });
 
-  // 3. Trending Anime
+  // 3. Popular Anime
   const recentAnime = MOVIES.filter(m => m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))).slice(0, 15);
   const explicitTrendingAnime = MOVIES.filter(m => (m.isAnime || String(m.type || '').toLowerCase() === "anime" || (m.genres && m.genres.some(g => String(g).toLowerCase() === "anime"))) && m.trending);
   const mergedTrendingAnime = [];
@@ -2088,12 +2086,15 @@ function renderFilteredGrid(movieList, titleText) {
 
 /** Browse View Mode (Backdrop vs Poster) */
 function getBrowseViewMode() {
+  // Mobile screens (<= 768px) are strictly poster view only
+  if (typeof window !== "undefined" && window.innerWidth <= 768) {
+    return "poster";
+  }
   const saved = localStorage.getItem("cw_browse_view_mode");
   if (saved === "poster" || saved === "backdrop") {
     return saved;
   }
-  // Default: on laptops / bigger screens, it's backdrop. On mobile (<= 768px), default to poster.
-  return (typeof window !== "undefined" && window.innerWidth <= 768) ? "poster" : "backdrop";
+  return "backdrop";
 }
 
 function updateBrowseViewToggles() {
@@ -2154,7 +2155,16 @@ function renderBrowseGrid(items, gridId, page) {
 
     grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isPoster)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => openDetailsModal(card.dataset.id);
+      card.onclick = () => {
+        if (gridId === "fourkGrid") {
+          const m = findMovieByIdOrTitle(card.dataset.id);
+          if (m) m.from4kSection = true;
+          state.currentDetailsFrom4k = true;
+        } else {
+          state.currentDetailsFrom4k = false;
+        }
+        openDetailsModal(card.dataset.id);
+      };
     });
   }
 }
@@ -2516,6 +2526,9 @@ function _performSwitchView(viewName) {
       if (typeof openVipModal === 'function') openVipModal();
       return;
     }
+    state.currentDetailsFrom4k = true;
+  } else if (viewName !== 'details') {
+    state.currentDetailsFrom4k = false;
   }
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
@@ -3427,6 +3440,15 @@ function openDetailsModal(movieId) {
     state.previousView = state.activeView;
   }
 
+  const fourkEntry = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+    ? window._FOURK_DATA.find(f => (f.id && f.id === movie.id) || (f.title && f.title.toLowerCase() === (movie.title || '').toLowerCase()))
+    : null;
+
+  if (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true || movie.from4kSection === true || (fourkEntry && !movie.hdVideoUrl)) {
+    movie.from4kSection = true;
+    state.currentDetailsFrom4k = true;
+  }
+
   const currentUrl = new URL(window.location.href);
   currentUrl.searchParams.set('v', movie.id);
   const existingV = new URLSearchParams(window.location.search).get('v');
@@ -3618,8 +3640,12 @@ function openDetailsModal(movieId) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
       const isFrom4k = !isSeriesOrAnime && Boolean(
         state.activeView === '4k' ||
-        (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-        (movie.from4kSection === true && state.activeView === '4k')
+        state.previousView === '4k' ||
+        state.currentDetailsFrom4k === true ||
+        movie.from4kSection === true ||
+        (movie.is4k && !movie.hdVideoUrl) ||
+        (fourkEntry && !movie.hdVideoUrl) ||
+        (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
       );
       qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
       qualityBadge.style.cssText = isFrom4k
@@ -4265,11 +4291,17 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 
   const is4kPlayback = Boolean(
     state.activeView === '4k' ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    (parentMovie?.from4kSection === true && state.activeView === '4k')
+    state.previousView === '4k' ||
+    state.currentDetailsFrom4k === true ||
+    parentMovie?.from4kSection === true ||
+    (parentMovie?.is4k && !parentMovie?.hdVideoUrl) ||
+    (fourkMeta && !parentMovie?.hdVideoUrl) ||
+    (typeof videoUrl === 'string' && (videoUrl.includes('4K') || videoUrl.includes('fourk') || (fourkMeta && fourkMeta.videoUrl === videoUrl))) ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
   );
 
   if (is4kPlayback) {
+    if (parentMovie) parentMovie.from4kSection = true;
     if (!parentMovie && fourkMeta) {
       parentMovie = { ...fourkMeta, from4kSection: true };
     }
@@ -4428,11 +4460,16 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   const isFrom4k = Boolean(
     state.activeView === '4k' ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    (movie.from4kSection === true && state.activeView === '4k')
+    state.previousView === '4k' ||
+    state.currentDetailsFrom4k === true ||
+    movie.from4kSection === true ||
+    (movie.is4k && !movie.hdVideoUrl) ||
+    (fourkEntry && !movie.hdVideoUrl) ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
   );
 
   if (isFrom4k) {
+    movie.from4kSection = true;
     const direct4k = movie.fourkVideoUrl || fourkEntry?.videoUrl || (movie.is4k && typeof movie.videoUrl === 'string' && (movie.videoUrl.startsWith('http') || movie.videoUrl.includes('.mp4') || movie.videoUrl.includes('.mkv')) ? movie.videoUrl : null);
     if (direct4k && typeof direct4k === 'string' && (direct4k.startsWith('http') || direct4k.includes('.mp4') || direct4k.includes('.mkv'))) {
       targetUrl = direct4k;
@@ -4552,6 +4589,15 @@ function closeVideoPlayer() {
       window.artPlayerInstance.destroy();
     } catch (e) {}
     window.artPlayerInstance = null;
+  }
+  const syncAudio = document.getElementById("cwSyncAudio");
+  if (syncAudio) {
+    try {
+      syncAudio.pause();
+      syncAudio.removeAttribute("src");
+      syncAudio.load();
+    } catch (e) {}
+    window._cwSyncAudio = null;
   }
   const artApp = document.getElementById("artplayerApp");
   if (artApp) {
@@ -7704,8 +7750,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const isFrom4kSession = !isAnime && !isTv && Boolean(
     state.activeView === '4k' ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k') ||
-    (ref?.from4kSection === true && state.activeView === '4k')
+    state.previousView === '4k' ||
+    state.currentDetailsFrom4k === true ||
+    ref?.from4kSection === true ||
+    (ref?.is4k && !ref?.hdVideoUrl) ||
+    (fourkMatch && !ref?.hdVideoUrl) ||
+    (typeof videoUrl === 'string' && (videoUrl.includes('4K') || videoUrl.includes('fourk') || (fourkMatch && fourkMatch.videoUrl === videoUrl))) ||
+    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
   );
 
   let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
@@ -8310,7 +8361,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         );
 
     const isM3u8Stream = isAnime || (streamUrl && streamUrl.includes('m3u8')) || (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8')));
-    const playerType = isM3u8Stream ? 'm3u8' : (streamUrl && (streamUrl.includes('stream-media') || streamUrl.includes('.mp4')) ? 'mp4' : 'auto');
+    const playerType = isM3u8Stream ? 'm3u8' : (streamUrl && (streamUrl.includes('stream-media') || streamUrl.includes('.mp4')) ? 'mp4' : (streamUrl && streamUrl.includes('.mkv') ? 'mkv' : 'auto'));
 
     const artQualityList = (!is4kStream && !isFrom4kSession && window._cwQualities && window._cwQualities.length > 0)
       ? window._cwQualities.map((q, idx) => ({
@@ -8451,6 +8502,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       ],
       moreVideoAttr: {
         crossOrigin: 'anonymous',
+        preload: 'auto',
+        playsinline: 'true',
+        'webkit-playsinline': 'true'
       },
       customType: {
         m3u8: function (video, url, art) {
@@ -8557,6 +8611,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           if (art.customType && typeof art.customType.m3u8 === 'function') {
             return art.customType.m3u8(video, url, art);
           }
+        },
+        mkv: function (video, url, art) {
+          video.src = url;
+          video.play().catch(function(e) {
+            video.muted = true;
+            video.play().catch(function() {});
+          });
         },
       },
       settings: artSettings,
@@ -8809,42 +8870,106 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           art.video.muted = true; // Mute silent AC3 track to avoid any hardware decode conflicts
         }
 
-        art.on('play', () => {
-          syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
-        });
-        art.on('pause', () => {
-          syncAudio.pause();
-        });
+        const isVideoActive = () => {
+          return art && art.video && !art.video.paused && !art.video.seeking && art.video.readyState >= 3;
+        };
+
+        const onVideoPauseOrWait = () => {
+          if (syncAudio && !syncAudio.paused) {
+            syncAudio.pause();
+          }
+        };
+
+        const onVideoResume = () => {
+          if (!syncAudio || !art || !art.video) return;
+          if (isVideoActive()) {
+            syncAudio.currentTime = art.video.currentTime;
+            syncAudio.playbackRate = art.playbackRate || 1;
+            syncAudio.play().catch(e => console.warn("[CineWatch 4K Audio] Play blocked:", e));
+          } else {
+            syncAudio.pause();
+          }
+        };
+
+        // Pause audio immediately during seeking or waiting/buffering to prevent repeat loops
         art.on('seek', (time) => {
+          onVideoPauseOrWait();
           syncAudio.currentTime = time;
         });
+        if (art.video) {
+          art.video.addEventListener('seeking', onVideoPauseOrWait);
+          art.video.addEventListener('waiting', onVideoPauseOrWait);
+          art.video.addEventListener('stalled', onVideoPauseOrWait);
+          art.video.addEventListener('playing', onVideoResume);
+          art.video.addEventListener('pause', onVideoPauseOrWait);
+        }
+
+        art.on('play', onVideoResume);
+        art.on('pause', onVideoPauseOrWait);
+
+        art.on('playbackRate', (rate) => {
+          if (syncAudio) syncAudio.playbackRate = rate;
+        });
+
+        // Timeupdate: only adjust sync when video is actively rendering frames
         art.on('video:timeupdate', () => {
-          const diff = Math.abs(syncAudio.currentTime - art.currentTime);
-          if (diff > 0.25) {
-            syncAudio.currentTime = art.currentTime;
+          if (!syncAudio || !art || !art.video) return;
+
+          // If video is seeking, paused, or buffering, NEVER let audio run ahead or loop
+          if (art.video.paused || art.video.seeking || art.video.readyState < 3) {
+            if (!syncAudio.paused) syncAudio.pause();
+            return;
+          }
+
+          if (syncAudio.paused && isVideoActive()) {
+            syncAudio.currentTime = art.video.currentTime;
+            syncAudio.play().catch(() => {});
+            return;
+          }
+
+          const diff = syncAudio.currentTime - art.video.currentTime;
+          // Clean seek if drift exceeds half a second
+          if (Math.abs(diff) > 0.5) {
+            syncAudio.currentTime = art.video.currentTime;
+          } else if (Math.abs(diff) > 0.08) {
+            // Smooth micro-alignment without jarring audio stutter or repeats
+            syncAudio.playbackRate = (diff > 0 ? 0.95 : 1.05) * (art.playbackRate || 1);
+          } else {
+            syncAudio.playbackRate = art.playbackRate || 1;
           }
         });
+
         art.on('video:volumechange', () => {
           syncAudio.volume = art.volume;
           syncAudio.muted = art.muted;
         });
+
         art.on('destroy', () => {
           syncAudio.pause();
           syncAudio.src = '';
           window._cwSyncAudio = null;
         });
 
-        if (art.video && !art.video.paused) {
+        if (isVideoActive()) {
+          syncAudio.currentTime = art.video.currentTime;
           syncAudio.play().catch(() => {});
         }
         document.addEventListener('click', function unlockAudio() {
-          if (window._cwSyncAudio && window.artPlayerInstance && !window.artPlayerInstance.video.paused) {
+          if (window._cwSyncAudio && window.artPlayerInstance && isVideoActive()) {
             window._cwSyncAudio.play().catch(() => {});
           }
         }, { once: true });
       } catch (audioErr) {
         console.warn("[CineWatch 4K Audio] Could not attach synced audio track:", audioErr);
       }
+    } else {
+      const existingSyncAudio = document.getElementById("cwSyncAudio");
+      if (existingSyncAudio) {
+        existingSyncAudio.pause();
+        existingSyncAudio.removeAttribute("src");
+        existingSyncAudio.load();
+      }
+      window._cwSyncAudio = null;
     }
 
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {

@@ -919,7 +919,7 @@ const MOVIES = [
   {
     title: "Spider-Man: No Way Home",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2011,
+    year: 2021,
     rating: 8.1,
     age: "PG-13",
     duration: "2h 28m",
