@@ -6,20 +6,35 @@
 /* Section Spacing — Clear the 80px navbar with elegant breathing room */
 .browse-section {
   padding-top: 6.25rem !important;
+  padding-bottom: 7rem !important;
   max-width: 1440px !important;
   margin: 0 auto !important;
   width: 100% !important;
 }
 
-@media (max-width: 600px) {
-  .browse-section {
+@media (max-width: 768px) {
+  .browse-section,
+  #moviesSection,
+  #seriesSection,
+  #animeSection,
+  #fourkSection {
     padding-top: 5.25rem !important;
     padding-left: 0.85rem !important;
     padding-right: 0.85rem !important;
+    padding-bottom: 9rem !important; /* 144px breathing room so the last cards easily scroll above the floating bottom dock */
   }
   .main-content {
     padding-left: 0.85rem !important;
     padding-right: 0.85rem !important;
+  }
+  .browse-grid .movie-card {
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  .browse-grid .movie-card .card-overlay,
+  .browse-grid .movie-card .card-gradient {
+    pointer-events: none !important;
   }
 }
 
