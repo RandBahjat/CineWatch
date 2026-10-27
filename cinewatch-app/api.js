@@ -87,6 +87,22 @@ window.CW_API = {
     }
   },
 
+  async signInWithOAuth(provider) {
+    try {
+      if (!supabaseClient) throw new Error("Authentication service is unavailable.");
+      const { data, error } = await supabaseClient.auth.signInWithOAuth({
+        provider: provider,
+        options: {
+          redirectTo: window.location.origin
+        }
+      });
+      if (error) throw error;
+      return { data, error: null };
+    } catch (error) {
+      return { data: null, error: error.message };
+    }
+  },
+
   async updateAvatar(dataUrl) {
     const { data: { user } } = await supabaseClient.auth.getUser();
     if (!user) return { error: 'Not logged in' };

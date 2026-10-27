@@ -4855,6 +4855,10 @@ function openAuthModal() {
   if (loginAlert) { loginAlert.classList.add("hidden"); loginAlert.textContent = ""; }
   const signupAlert = document.getElementById("signupAlert");
   if (signupAlert) { signupAlert.classList.add("hidden"); signupAlert.textContent = ""; }
+
+  // Ensure top brand header is in view
+  const splitForm = document.querySelector(".auth-split-form");
+  if (splitForm) splitForm.scrollTop = 0;
 }
 window.openAuthModal = openAuthModal;
 
@@ -4873,6 +4877,22 @@ function closeAuthModal() {
   document.body.style.overflow = "";
 }
 window.closeAuthModal = closeAuthModal;
+
+window.handleSocialAuth = async function(provider) {
+  if (provider === 'guest') {
+    closeAuthModal();
+    if (typeof showToast === 'function') showToast("Browsing as Guest. You can sign in anytime!");
+    return;
+  }
+  if (!window.CW_API || typeof window.CW_API.signInWithOAuth !== 'function') {
+    if (typeof showToast === 'function') showToast(provider.toUpperCase() + " sign-in is not configured yet. Please use email & password.");
+    return;
+  }
+  const { error } = await window.CW_API.signInWithOAuth(provider);
+  if (error) {
+    if (typeof showToast === 'function') showToast(provider.toUpperCase() + " error: " + error);
+  }
+};
 
 function openReportModal(defaultSubject = "") {
   const modal = document.getElementById("reportModal");
@@ -8524,7 +8544,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       url: streamUrl,
       type: playerType,
       poster: poster,
-      quality: artQualityList,
+      quality: [],
       volume: 0.8,
       isLive: false,
       muted: false,
@@ -8705,22 +8725,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   return item.html;
                 };
 
-                // Add or update Quality button on bottom control bar
-                if (art.controls && typeof art.controls.add === 'function') {
+                // Remove any quality button from bottom control bar (settings menu only)
+                if (art.controls && art.controls['quality']) {
                   try {
-                    if (art.controls['quality']) {
-                      art.controls.remove('quality');
-                    }
+                    art.controls.remove('quality');
                   } catch (e) {}
-                  art.controls.add({
-                    name: 'quality',
-                    position: 'right',
-                    index: 10,
-                    html: 'Auto',
-                    tooltip: 'Quality',
-                    selector: qualityItems,
-                    onSelect: onQualitySelect
-                  });
                 }
 
                 // Add or update Quality option in settings gear menu cleanly so sub-panel cache is built
@@ -8898,25 +8907,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           style: { position: 'static' },
           html: centerTitleHtml,
           tooltip: isAnime ? `${ref?.title || 'Anime'} - Episode ${rawEp}` : (isTv ? `${ref?.title || 'Series'} - S${season} E${epNum}` : `${ref?.title || 'Movie'}`),
-        },
-        ...((artQualityList.length === 0 && !is4kStream && !isFrom4kSession && (isAnime || isM3u8Stream)) ? [{
-          name: 'quality',
-          position: 'right',
-          index: 10,
-          html: 'Auto',
-          tooltip: 'Quality',
-          selector: [
-            { default: true, html: 'Auto', level: -1, height: 'auto' },
-            { default: false, html: '1080p', level: 0, height: 1080 },
-            { default: false, html: '720p', level: 1, height: 720 },
-            { default: false, html: '480p', level: 2, height: 480 },
-            { default: false, html: '360p', level: 3, height: 360 }
-          ],
-          onSelect(item) {
-            setHlsQualityLevel(window.artPlayerInstance, item);
-            return item.html;
-          }
-        }] : [])
+        }
       ],
     };
 
