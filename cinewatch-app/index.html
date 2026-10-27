@@ -15,7 +15,7 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261027_auth_recraft">
+    <link rel="stylesheet" href="movie.css?v=20261027_auth_fullscreen">
     <link rel="stylesheet" href="browse-fix.css?v=20261026_mobilefix">
     <link rel="stylesheet" href="welcome-disclaimer.css?v=20261023_76088">
     <style id="cwSecurityGateInlineCss">
@@ -1701,14 +1701,22 @@
         </div>
     </div>
 
-    <!-- Authentication (Login / Signup) Modal - Recraft Studio Inspired Split Design -->
+    <!-- Authentication (Login / Signup) Modal - Full-Screen Split Design -->
     <div class="modal-overlay hidden" id="authModal" onclick="closeAuthModal()">
         <div class="modal-card auth-modal-card auth-split-layout" onclick="event.stopPropagation()">
-            <!-- Close Button -->
-            <button class="modal-close-btn auth-close-pill" id="closeAuthBtn" aria-label="Close dialog" onclick="closeAuthModal()">&times;</button>
+            <!-- Floating Close Button -->
+            <button class="modal-close-btn auth-close-pill" id="closeAuthBtn" aria-label="Close dialog" onclick="closeAuthModal()">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
 
             <!-- LEFT PANEL: Form Column -->
             <div class="auth-split-form">
+                <div class="auth-fullscreen-header">
+                    <button type="button" class="auth-back-link" onclick="closeAuthModal()" aria-label="Back to CineWatch">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        <span>Back to CineWatch</span>
+                    </button>
+                </div>
                 <div class="auth-form-inner">
                     <!-- Brand Icon & Welcome Header -->
                     <div class="auth-brand-head">
@@ -1964,14 +1972,19 @@
                 </div>
             </div>
 
-            <!-- RIGHT PANEL: Recraft-Style Cinematic Showcase Column -->
+            <!-- RIGHT PANEL: Cinematic Movie Showcase Column -->
             <div class="auth-split-showcase">
-                <div class="auth-showcase-bg" style="background-image: url('auth-showcase.jpg');"></div>
+                <div class="auth-showcase-bg" style="background-image: url('auth-movie-showcase.jpg');"></div>
                 <div class="auth-showcase-overlay"></div>
                 <div class="auth-showcase-content">
-                    <div class="auth-showcase-badge">NEW / 4K ULTRA HD</div>
-                    <h3 class="auth-showcase-title">CINEWATCH PRO</h3>
-                    <p class="auth-showcase-subtitle">The fastest cinema streaming on the web</p>
+                    <div class="auth-showcase-badge"><ion-icon name="sparkles"></ion-icon> FEATURED PREMIERE &bull; 4K UHD</div>
+                    <h3 class="auth-showcase-title">SPIDER-MAN: BRAND NEW DAY</h3>
+                    <p class="auth-showcase-subtitle">Stream unlimited blockbusters, exclusive premieres, and series in Ultra 4K UHD with CineWatch.</p>
+                    <div class="auth-showcase-meta">
+                        <span class="auth-meta-pill">IMDb 9.2</span>
+                        <span class="auth-meta-pill">Dolby Vision</span>
+                        <span class="auth-meta-pill">2026 Premiere</span>
+                    </div>
                     <div class="auth-showcase-dots">
                         <span class="auth-dot active"></span>
                         <span class="auth-dot"></span>
