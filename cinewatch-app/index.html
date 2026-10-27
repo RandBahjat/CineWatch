@@ -15,7 +15,7 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261027_auth_fullscreen">
+    <link rel="stylesheet" href="movie.css?v=20261027_auth_centered">
     <link rel="stylesheet" href="browse-fix.css?v=20261026_mobilefix">
     <link rel="stylesheet" href="welcome-disclaimer.css?v=20261023_76088">
     <style id="cwSecurityGateInlineCss">
@@ -1701,31 +1701,29 @@
         </div>
     </div>
 
-    <!-- Authentication (Login / Signup) Modal - Full-Screen Split Design -->
+    <!-- Authentication (Login / Signup) Modal - Full-Screen Centered with Movie Backdrop -->
     <div class="modal-overlay hidden" id="authModal" onclick="closeAuthModal()">
-        <div class="modal-card auth-modal-card auth-split-layout" onclick="event.stopPropagation()">
-            <!-- Floating Close Button -->
-            <button class="modal-close-btn auth-close-pill" id="closeAuthBtn" aria-label="Close dialog" onclick="closeAuthModal()">
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
+        <!-- Full-Screen Movie Background -->
+        <div class="auth-fullscreen-bg" style="background-image: url('auth-movie-showcase.jpg');"></div>
+        <div class="auth-fullscreen-overlay"></div>
 
-            <!-- LEFT PANEL: Form Column -->
-            <div class="auth-split-form">
-                <div class="auth-fullscreen-header">
-                    <button type="button" class="auth-back-link" onclick="closeAuthModal()" aria-label="Back to CineWatch">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                        <span>Back to CineWatch</span>
-                    </button>
-                </div>
-                <div class="auth-form-inner">
-                    <!-- Brand Icon & Welcome Header -->
-                    <div class="auth-brand-head">
-                        <div class="auth-brand-icon">
-                            <ion-icon name="ticket"></ion-icon>
-                        </div>
-                        <h2 class="auth-title">Welcome to CineWatch</h2>
-                        <p class="auth-subtitle">Sign in or create your account</p>
+        <!-- Top Left "Back to Home" Button -->
+        <button type="button" class="auth-back-home-btn" onclick="closeAuthModal()" aria-label="Back to Home">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Home</span>
+        </button>
+
+        <!-- Centered Auth Card -->
+        <div class="modal-card auth-modal-card auth-centered-card" onclick="event.stopPropagation()">
+            <div class="auth-form-inner">
+                <!-- Brand Icon & Welcome Header -->
+                <div class="auth-brand-head">
+                    <div class="auth-brand-icon">
+                        <ion-icon name="ticket"></ion-icon>
                     </div>
+                    <h2 class="auth-title">Welcome to CineWatch</h2>
+                    <p class="auth-subtitle">Sign in or create your account</p>
+                </div>
 
                     <!-- Auth Tabs / Mode Switcher -->
                     <div class="auth-tabs auth-segmented-tabs">
@@ -1969,28 +1967,6 @@
 
                         <button type="submit" class="btn btn-primary btn-block auth-btn-recraft"><ion-icon name="checkmark-outline"></ion-icon> Confirm Password</button>
                     </form>
-                </div>
-            </div>
-
-            <!-- RIGHT PANEL: Cinematic Movie Showcase Column -->
-            <div class="auth-split-showcase">
-                <div class="auth-showcase-bg" style="background-image: url('auth-movie-showcase.jpg');"></div>
-                <div class="auth-showcase-overlay"></div>
-                <div class="auth-showcase-content">
-                    <div class="auth-showcase-badge"><ion-icon name="sparkles"></ion-icon> FEATURED PREMIERE &bull; 4K UHD</div>
-                    <h3 class="auth-showcase-title">SPIDER-MAN: BRAND NEW DAY</h3>
-                    <p class="auth-showcase-subtitle">Stream unlimited blockbusters, exclusive premieres, and series in Ultra 4K UHD with CineWatch.</p>
-                    <div class="auth-showcase-meta">
-                        <span class="auth-meta-pill">IMDb 9.2</span>
-                        <span class="auth-meta-pill">Dolby Vision</span>
-                        <span class="auth-meta-pill">2026 Premiere</span>
-                    </div>
-                    <div class="auth-showcase-dots">
-                        <span class="auth-dot active"></span>
-                        <span class="auth-dot"></span>
-                        <span class="auth-dot"></span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
