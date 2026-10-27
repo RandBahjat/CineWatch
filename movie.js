@@ -4825,9 +4825,56 @@ function setupVideoControls(video) {
   };
 }
 
+// Auth Modal 5-Movie Background Slideshow Controller
+let cwAuthSlideshowTimer = null;
+let cwAuthCurrentSlide = 0;
+
+function startAuthSlideshow() {
+  const container = document.getElementById("authFullscreenBgContainer");
+  if (!container) return;
+  const slides = container.querySelectorAll(".auth-fullscreen-bg");
+  if (slides.length <= 1) return;
+
+  if (cwAuthSlideshowTimer) {
+    clearInterval(cwAuthSlideshowTimer);
+    cwAuthSlideshowTimer = null;
+  }
+
+  // Preload slides for seamless crossfading
+  if (!container._preloaded) {
+    container._preloaded = true;
+    slides.forEach(slide => {
+      const match = slide.style.backgroundImage.match(/url\(['"]?(https?:\/\/[^'"]+)['"]?\)/);
+      if (match && match[1]) {
+        const img = new Image();
+        img.src = match[1];
+      }
+    });
+  }
+
+  cwAuthSlideshowTimer = setInterval(() => {
+    const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
+    if (!modal || modal.classList.contains("hidden") || modal.style.display === "none") {
+      stopAuthSlideshow();
+      return;
+    }
+    slides[cwAuthCurrentSlide].classList.remove("is-active");
+    cwAuthCurrentSlide = (cwAuthCurrentSlide + 1) % slides.length;
+    slides[cwAuthCurrentSlide].classList.add("is-active");
+  }, 4000);
+}
+
+function stopAuthSlideshow() {
+  if (cwAuthSlideshowTimer) {
+    clearInterval(cwAuthSlideshowTimer);
+    cwAuthSlideshowTimer = null;
+  }
+}
+
 function openAuthModal() {
   if (typeof window.showAuth === 'function') {
     window.showAuth();
+    startAuthSlideshow();
     return;
   }
   const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
@@ -4859,10 +4906,14 @@ function openAuthModal() {
   // Ensure top brand header is in view
   const splitForm = document.querySelector(".auth-split-form");
   if (splitForm) splitForm.scrollTop = 0;
+
+  // Start continuous 5-movie backdrop slideshow
+  startAuthSlideshow();
 }
 window.openAuthModal = openAuthModal;
 
 function closeAuthModal() {
+  stopAuthSlideshow();
   if (typeof window.hideAuth === 'function') {
     window.hideAuth();
     return;

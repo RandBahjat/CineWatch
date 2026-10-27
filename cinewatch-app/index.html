@@ -15,7 +15,7 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261027_auth_redhover">
+    <link rel="stylesheet" href="movie.css?v=20261027_auth_slideshow">
     <link rel="stylesheet" href="browse-fix.css?v=20261026_mobilefix">
     <link rel="stylesheet" href="welcome-disclaimer.css?v=20261023_76088">
     <style id="cwSecurityGateInlineCss">
@@ -147,7 +147,7 @@
     <script src="series-data.js?v=20261027_cyberpunk_s2_clean" defer></script>
     <script src="anime-data.js?v=20261023_76088" defer></script>
     <script src="fourk-data.js?v=20261027_hp4k" defer></script>
-    <script src="movie.js?v=20261027_settings_luxury" defer></script>
+    <script src="movie.js?v=20261027_auth_slideshow" defer></script>
     <script src="ai-assistant.js?v=20261023_76088" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1703,8 +1703,14 @@
 
     <!-- Authentication (Login / Signup) Modal - Full-Screen Centered with Movie Backdrop -->
     <div class="modal-overlay hidden" id="authModal" onclick="closeAuthModal()">
-        <!-- Full-Screen Movie Background -->
-        <div class="auth-fullscreen-bg" style="background-image: url('auth-movie-showcase.jpg?v=yysovt88f'), url('https://image.tmdb.org/t/p/original/yysovt88fJLlaYtA3YFjibZzcb8.jpg');"></div>
+        <!-- Full-Screen Movie Background Slideshow (5 rotating movie backdrops) -->
+        <div class="auth-fullscreen-bg-container" id="authFullscreenBgContainer">
+            <div class="auth-fullscreen-bg is-active" style="background-image: url('auth-movie-showcase.jpg?v=yysovt88f'), url('https://image.tmdb.org/t/p/original/yysovt88fJLlaYtA3YFjibZzcb8.jpg');"></div>
+            <div class="auth-fullscreen-bg" style="background-image: url('https://image.tmdb.org/t/p/original/87IVlclAfWL6mdicU1DDuxdwXwe.jpg');"></div>
+            <div class="auth-fullscreen-bg" style="background-image: url('https://image.tmdb.org/t/p/original/o6D4dIH8i9qrftUNKfyJehWTOpW.jpg');"></div>
+            <div class="auth-fullscreen-bg" style="background-image: url('https://image.tmdb.org/t/p/original/ycnO0cjsAROSGJKuMODgRtWsHQw.jpg');"></div>
+            <div class="auth-fullscreen-bg" style="background-image: url('https://image.tmdb.org/t/p/original/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg');"></div>
+        </div>
         <div class="auth-fullscreen-overlay"></div>
 
         <!-- Top Left "Back to Home" Button -->
