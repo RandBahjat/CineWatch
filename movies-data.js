@@ -1956,7 +1956,8 @@ window._MOVIES_DATA = [
   // 74. Harry Potter and the Sorcerer's Stone  (2001)
   // ============================================================
   {
-    title: "Harry Potter and the Sorcerer's Stone ",
+    id: "harry-potter-and-the-sorcerer-s-stone-2001",
+    title: "Harry Potter and the Sorcerer's Stone",
     type: "Movie",
     year: 2001,
     rating: "7.7",

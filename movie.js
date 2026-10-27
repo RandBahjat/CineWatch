@@ -356,22 +356,63 @@ const MOVIE_SLUG_MAP = new Map();
 function buildMovieLookupMaps() {
   MOVIE_ID_MAP.clear();
   MOVIE_SLUG_MAP.clear();
-  if (!Array.isArray(MOVIES)) return;
-  for (let i = 0; i < MOVIES.length; i++) {
-    const m = MOVIES[i];
-    if (m.id) {
-      const lowerId = String(m.id).toLowerCase();
-      MOVIE_ID_MAP.set(lowerId, m);
-      MOVIE_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), m);
+  if (Array.isArray(MOVIES)) {
+    for (let i = 0; i < MOVIES.length; i++) {
+      const m = MOVIES[i];
+      if (m.id) {
+        const lowerId = String(m.id).toLowerCase();
+        MOVIE_ID_MAP.set(lowerId, m);
+        MOVIE_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), m);
+        MOVIE_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]/g, ''), m);
+      }
+      if (m.title) {
+        const lowerTitle = String(m.title).toLowerCase().trim();
+        if (!MOVIE_ID_MAP.has(lowerTitle)) MOVIE_ID_MAP.set(lowerTitle, m);
+        const titleSlug = lowerTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        if (!MOVIE_SLUG_MAP.has(titleSlug)) MOVIE_SLUG_MAP.set(titleSlug, m);
+        MOVIE_SLUG_MAP.set(lowerTitle.replace(/[^a-z0-9]/g, ''), m);
+      }
+      if (m.videoUrl) MOVIE_ID_MAP.set(String(m.videoUrl), m);
+      if (m.cinesrcId) MOVIE_ID_MAP.set(String(m.cinesrcId), m);
     }
-    if (m.title) {
-      const lowerTitle = String(m.title).toLowerCase();
-      if (!MOVIE_ID_MAP.has(lowerTitle)) MOVIE_ID_MAP.set(lowerTitle, m);
-      const titleSlug = lowerTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      if (!MOVIE_SLUG_MAP.has(titleSlug)) MOVIE_SLUG_MAP.set(titleSlug, m);
+  }
+
+  // Also ensure all 4K titles in _FOURK_DATA are registered and linked in lookup maps
+  if (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA)) {
+    for (let i = 0; i < window._FOURK_DATA.length; i++) {
+      const f = window._FOURK_DATA[i];
+      if (!f) continue;
+      const fId = f.id ? String(f.id).toLowerCase().trim() : '';
+      const fTitle = f.title ? String(f.title).toLowerCase().trim() : '';
+      const fSlug = (fId || fTitle).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const fStripped = (fId || fTitle).replace(/[^a-z0-9]/g, '');
+
+      // Check if already in MOVIES
+      let existing = (fId && MOVIE_ID_MAP.get(fId)) || (fSlug && MOVIE_SLUG_MAP.get(fSlug)) || (fStripped && MOVIE_SLUG_MAP.get(fStripped)) || (fTitle && MOVIE_ID_MAP.get(fTitle));
+      if (existing) {
+        existing.has4k = true;
+        if (f.videoUrl) existing.fourkVideoUrl = f.videoUrl;
+        if (f.audioUrl) existing.fourkAudioUrl = f.audioUrl;
+        if (f.subtitles && (!existing.subtitles || existing.subtitles.length === 0)) existing.fourkSubtitles = f.subtitles;
+        if (fId) {
+          MOVIE_ID_MAP.set(fId, existing);
+          MOVIE_SLUG_MAP.set(fSlug, existing);
+          MOVIE_SLUG_MAP.set(fStripped, existing);
+        }
+      } else {
+        if (fId) {
+          MOVIE_ID_MAP.set(fId, f);
+          MOVIE_SLUG_MAP.set(fSlug, f);
+          MOVIE_SLUG_MAP.set(fStripped, f);
+        }
+        if (fTitle) {
+          if (!MOVIE_ID_MAP.has(fTitle)) MOVIE_ID_MAP.set(fTitle, f);
+          const tSlug = fTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          if (!MOVIE_SLUG_MAP.has(tSlug)) MOVIE_SLUG_MAP.set(tSlug, f);
+          MOVIE_SLUG_MAP.set(fTitle.replace(/[^a-z0-9]/g, ''), f);
+        }
+      }
     }
-    if (m.videoUrl) MOVIE_ID_MAP.set(String(m.videoUrl), m);
-    if (m.cinesrcId) MOVIE_ID_MAP.set(String(m.cinesrcId), m);
   }
 }
 
@@ -388,8 +429,31 @@ function findMovieByIdOrTitle(identifier) {
   const slug = lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   if (MOVIE_SLUG_MAP.has(slug)) return MOVIE_SLUG_MAP.get(slug);
 
-  // 3. Fallback linear scan if map not populated yet
-  return (Array.isArray(MOVIES) && MOVIES.find(m => (m.id && m.id.toLowerCase() === lower) || (m.title && m.title.toLowerCase() === lower))) || null;
+  // 2b. Direct alphanumeric match (handles apostrophes like sorcerer-s vs sorcerers)
+  const stripped = lower.replace(/[^a-z0-9]/g, '');
+  if (MOVIE_SLUG_MAP.has(stripped)) return MOVIE_SLUG_MAP.get(stripped);
+
+  // 3. Fallback linear scan in MOVIES
+  const found = (Array.isArray(MOVIES) && MOVIES.find(m => 
+    (m.id && m.id.toLowerCase() === lower) || 
+    (m.title && m.title.toLowerCase().trim() === lower) ||
+    (m.id && m.id.toLowerCase().replace(/[^a-z0-9]/g, '') === stripped) ||
+    (m.title && m.title.toLowerCase().replace(/[^a-z0-9]/g, '') === stripped)
+  )) || null;
+  if (found) return found;
+
+  // 4. Fallback search directly in window._FOURK_DATA
+  if (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA)) {
+    const fMatch = window._FOURK_DATA.find(f => 
+      (f.id && f.id.toLowerCase() === lower) ||
+      (f.title && f.title.toLowerCase().trim() === lower) ||
+      (f.id && f.id.toLowerCase().replace(/[^a-z0-9]/g, '') === stripped) ||
+      (f.title && f.title.toLowerCase().replace(/[^a-z0-9]/g, '') === stripped)
+    );
+    if (fMatch) return fMatch;
+  }
+
+  return null;
 }
 
 function getMoviesFromList(list, filterFn) {

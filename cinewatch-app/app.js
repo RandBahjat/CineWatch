@@ -2363,10 +2363,17 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 function playMovieDirect(movieId) {
   let movie = _movieMap.get(String(movieId)) || state.currentDetail;
   if (!movie && movieId) {
-    movie = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA) ? window._FOURK_DATA.find(f => String(f.id) === String(movieId) || f.title === movieId) : null)
-      || (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId) : null)
-      || (typeof SERIES !== 'undefined' ? SERIES.find(s => String(s.id) === String(movieId) || s.title === movieId) : null)
-      || (typeof ANIME !== 'undefined' ? ANIME.find(a => String(a.id) === String(movieId) || a.title === movieId) : null);
+    const rawId = String(movieId).toLowerCase().trim();
+    const strippedId = rawId.replace(/[^a-z0-9]/g, '');
+    movie = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA) ? window._FOURK_DATA.find(f => 
+      String(f.id).toLowerCase() === rawId || 
+      String(f.id).toLowerCase().replace(/[^a-z0-9]/g, '') === strippedId || 
+      (f.title && f.title.toLowerCase().trim() === rawId) ||
+      (f.title && f.title.toLowerCase().replace(/[^a-z0-9]/g, '') === strippedId)
+    ) : null)
+      || (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id).toLowerCase() === rawId || String(m.id).toLowerCase().replace(/[^a-z0-9]/g, '') === strippedId || (m.title && m.title.toLowerCase().trim() === rawId)) : null)
+      || (typeof SERIES !== 'undefined' ? SERIES.find(s => String(s.id).toLowerCase() === rawId || (s.title && s.title.toLowerCase().trim() === rawId)) : null)
+      || (typeof ANIME !== 'undefined' ? ANIME.find(a => String(a.id).toLowerCase() === rawId || (a.title && a.title.toLowerCase().trim() === rawId)) : null);
   }
   if (!movie) return;
 
