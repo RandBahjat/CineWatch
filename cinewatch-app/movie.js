@@ -63,16 +63,16 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
-  "By Any Means",
-  "Dragon Ball Super: Beerus",
+  "Sense and Sensibility",
   "Clayface",
+  "The Dog Stars",
+  "By Any Means",
+  "Verity",
+  "Dragon Ball Super: Beerus",
+  "Cyberpunk: Edgerunners",
   "VisionQuest",
   "Spider-Man: Brand New Day",
-  "Animals",
-  "Lanterns",
-  "Digger",
   "Resident Evil",
-  "Reacher"
   
 ];
 let TOP_10_TRENDING_TODAY = [
@@ -8446,7 +8446,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         const settingItem = art.setting && (art.setting.find('quality') || art.setting.find('Quality'));
         if (settingItem) {
           settingItem.tooltip = item.html;
-          if (typeof art.setting.update === 'function') art.setting.update();
         }
       } catch (e) {}
     };
@@ -8670,41 +8669,34 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
               if (!is4kStream && !isFrom4kSession) {
+                const qualityItems = [
+                  { default: true, html: 'Auto', level: -1, height: 'auto' },
+                  { default: false, html: '1080p', level: 0, height: 1080 },
+                  { default: false, html: '720p', level: 1, height: 720 },
+                  { default: false, html: '480p', level: 2, height: 480 },
+                  { default: false, html: '360p', level: 3, height: 360 }
+                ];
+
                 const rawLevels = (hls.levels && hls.levels.length > 0) ? hls.levels : ((data && data.levels) ? data.levels : []);
-                const qualityItems = [{ default: true, html: 'Auto', level: -1, height: 'auto' }];
-                const seenHeights = new Set();
-                const parsedLevels = [];
-
-                rawLevels.forEach((lvl, originalIdx) => {
-                  const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
-                  if (h > 0) {
-                    parsedLevels.push({ height: h, level: originalIdx, bitrate: lvl.bitrate || 0 });
-                  }
-                });
-
-                parsedLevels.sort((a, b) => b.height - a.height || b.bitrate - a.bitrate);
-
-                parsedLevels.forEach(lvl => {
-                  const label = `${lvl.height}p`;
-                  if (!seenHeights.has(label)) {
-                    seenHeights.add(label);
-                    qualityItems.push({
-                      default: false,
-                      html: label,
-                      level: lvl.level,
-                      height: lvl.height
-                    });
-                  }
-                });
-
-                if (qualityItems.length === 1) {
-                  [
-                    { html: '1080p', height: 1080 },
-                    { html: '720p', height: 720 },
-                    { html: '480p', height: 480 },
-                    { html: '360p', height: 360 }
-                  ].forEach((q, idx) => {
-                    qualityItems.push({ default: false, html: q.html, height: q.height, level: idx });
+                if (rawLevels && rawLevels.length > 0) {
+                  qualityItems.forEach(item => {
+                    if (typeof item.height === 'number') {
+                      let bestIdx = -1;
+                      let minDiff = Infinity;
+                      rawLevels.forEach((lvl, idx) => {
+                        const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
+                        if (h > 0) {
+                          const diff = Math.abs(h - item.height);
+                          if (diff < minDiff) {
+                            minDiff = diff;
+                            bestIdx = idx;
+                          }
+                        }
+                      });
+                      if (bestIdx !== -1) {
+                        item.level = bestIdx;
+                      }
+                    }
                   });
                 }
 
@@ -8731,26 +8723,27 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   });
                 }
 
-                // Add or update Quality option in settings gear menu
+                // Add or update Quality option in settings gear menu cleanly so sub-panel cache is built
                 if (art.setting && typeof art.setting.add === 'function') {
                   try {
-                    const existingSetting = art.setting.find('quality') || art.setting.find('Quality');
-                    if (existingSetting) {
-                      existingSetting.selector = qualityItems;
-                      existingSetting.tooltip = 'Auto';
-                      existingSetting.onSelect = onQualitySelect;
-                      if (typeof art.setting.update === 'function') art.setting.update();
-                    } else {
-                      art.setting.add({
-                        name: 'quality',
-                        html: 'Quality',
-                        icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
-                        tooltip: 'Auto',
-                        selector: qualityItems,
-                        onSelect: onQualitySelect
-                      });
+                    if (typeof art.setting.remove === 'function') {
+                      const exist = art.setting.find('quality') || art.setting.find('Quality');
+                      if (exist) {
+                        art.setting.remove(exist.name || 'quality');
+                      }
                     }
-                  } catch (e) {}
+                    art.setting.add({
+                      name: 'quality',
+                      html: 'Quality',
+                      icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+                      width: 200,
+                      tooltip: 'Auto',
+                      selector: qualityItems,
+                      onSelect: onQualitySelect
+                    });
+                  } catch (e) {
+                    console.warn('[CineWatch] Error configuring quality setting:', e);
+                  }
                 }
 
                 // Track automatic adaptive quality changes

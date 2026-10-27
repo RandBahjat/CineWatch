@@ -344,7 +344,7 @@ window._MOVIES_DATA = [
     duration: "1h 57m",
     genres: ["Drama", "Mystery", "Thriller", "Psychological"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/u9y56d8ZjxV5axSN4GMRb1sKa2U.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
     overview: "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime from Jeremy Crawford, the husband of bestselling author Verity Crawford. After a mysterious accident leaves Verity unable to finish her successful book series, Lowen arrives at the Crawford home to sort through notes and manuscripts. While digging through the office, she discovers an unpublished autobiography containing horrifying admissions about the family's tragedies, drawing Lowen into an intoxicating, dangerous web of obsession and deceit.",

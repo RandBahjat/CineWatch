@@ -13667,6 +13667,32 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   opacity: 0.85 !important;
 }
 
+/* ── Quality Control Bar Button & Mobile Visibility ── */
+.artplayer-app .art-control-quality,
+.art-video-player .art-control-quality {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  padding: 0 8px !important;
+  cursor: pointer !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  min-width: 44px !important;
+}
+
+@media (max-width: 768px) {
+  .artplayer-app .art-control-screenshot,
+  .artplayer-app .art-control-pip,
+  .artplayer-app .art-control-fullscreenWeb {
+    display: none !important;
+  }
+  .artplayer-app .art-control-quality,
+  .art-video-player .art-control-quality {
+    display: flex !important;
+  }
+}
+
 /* ── Center Play/Pause State Icon — Hidden (minimal style) ── */
 .artplayer-app .art-state,
 .art-video-player .art-state {
