@@ -1554,12 +1554,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     : null;
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
-    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true)) ||
-    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    movie.from4kSection === true ||
-    (movie.is4k && !movie.hdVideoUrl) ||
-    (fourkAppMatch && !movie.hdVideoUrl)
-  );
+    (typeof state !== 'undefined' && (state.currentDetailsFrom4k === true || state.activeView === '4k')) ||
+    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k')))
+  ) && (typeof state === 'undefined' || (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime'));
 
   if (!isFrom4kApp) {
     if (movie) {
@@ -2382,12 +2379,9 @@ function playMovieDirect(movieId) {
     : null;
 
   const isFrom4kApp = Boolean(
-    (typeof state !== 'undefined' && (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true)) ||
-    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
-    movie.from4kSection === true ||
-    (movie.is4k && !movie.hdVideoUrl) ||
-    (fourkDirectMatch && !movie.hdVideoUrl)
-  );
+    (typeof state !== 'undefined' && (state.currentDetailsFrom4k === true || state.activeView === '4k')) ||
+    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k')))
+  ) && (typeof state === 'undefined' || (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime'));
 
   if (isFrom4kApp) {
     const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;

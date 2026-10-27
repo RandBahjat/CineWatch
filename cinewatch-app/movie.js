@@ -391,6 +391,8 @@ function buildMovieLookupMaps() {
       let existing = (fId && MOVIE_ID_MAP.get(fId)) || (fSlug && MOVIE_SLUG_MAP.get(fSlug)) || (fStripped && MOVIE_SLUG_MAP.get(fStripped)) || (fTitle && MOVIE_ID_MAP.get(fTitle));
       if (existing) {
         existing.has4k = true;
+        existing.is4k = false;
+        if (!existing.hdVideoUrl && existing.videoUrl) existing.hdVideoUrl = existing.videoUrl;
         if (f.videoUrl) existing.fourkVideoUrl = f.videoUrl;
         if (f.audioUrl) existing.fourkAudioUrl = f.audioUrl;
         if (f.subtitles && (!existing.subtitles || existing.subtitles.length === 0)) existing.fourkSubtitles = f.subtitles;
@@ -551,7 +553,7 @@ async function loadMediaFromAPI() {
       if (!Array.isArray(m.genres)) m.genres = [];
 
       // 4K stream matching - stores 4K metadata for when played in 4K section
-      const fourkMatch = fourkMap.get(rawTitle);
+      const fourkMatch = fourkMap.get(rawTitle) || fourkMap.get(rawTitle.replace(/[^a-z0-9]/g, '')) || (m.id && fourkMap.get(m.id));
       if (fourkMatch) {
         m.has4k = true;
         // Keep m.is4k = false for normal movies catalog so Movies view plays multi-quality HD/480/720/1080p!
@@ -2219,11 +2221,18 @@ function renderBrowseGrid(items, gridId, page) {
     grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isPoster)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => {
+        const m = findMovieByIdOrTitle(card.dataset.id);
         if (gridId === "fourkGrid") {
-          const m = findMovieByIdOrTitle(card.dataset.id);
-          if (m) m.from4kSection = true;
+          if (m) {
+            m.from4kSection = true;
+            m.is4k = true;
+          }
           state.currentDetailsFrom4k = true;
         } else {
+          if (m) {
+            m.from4kSection = false;
+            m.is4k = false;
+          }
           state.currentDetailsFrom4k = false;
         }
         openDetailsModal(card.dataset.id);
@@ -3507,9 +3516,15 @@ function openDetailsModal(movieId) {
     ? window._FOURK_DATA.find(f => (f.id && f.id === movie.id) || (f.title && f.title.toLowerCase() === (movie.title || '').toLowerCase()))
     : null;
 
-  if (state.activeView === '4k' || state.previousView === '4k' || state.currentDetailsFrom4k === true || movie.from4kSection === true || (fourkEntry && !movie.hdVideoUrl)) {
+  const is4kContext = (state.currentDetailsFrom4k === true || state.activeView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')) && state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime';
+
+  if (is4kContext) {
     movie.from4kSection = true;
     state.currentDetailsFrom4k = true;
+  } else {
+    movie.from4kSection = false;
+    movie.is4k = false;
+    state.currentDetailsFrom4k = false;
   }
 
   const currentUrl = new URL(window.location.href);
@@ -3702,13 +3717,10 @@ function openDetailsModal(movieId) {
     if (qualityBadge) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
       const isFrom4k = !isSeriesOrAnime && Boolean(
-        state.activeView === '4k' ||
-        state.previousView === '4k' ||
-        state.currentDetailsFrom4k === true ||
-        movie.from4kSection === true ||
-        (movie.is4k && !movie.hdVideoUrl) ||
-        (fourkEntry && !movie.hdVideoUrl) ||
-        (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
+        (state.currentDetailsFrom4k === true || state.activeView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')) &&
+        state.activeView !== 'movies' &&
+        state.activeView !== 'series' &&
+        state.activeView !== 'anime'
       );
       qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
       qualityBadge.style.cssText = isFrom4k
@@ -4522,13 +4534,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     : null;
 
   const isFrom4k = Boolean(
-    state.activeView === '4k' ||
-    state.previousView === '4k' ||
-    state.currentDetailsFrom4k === true ||
-    movie.from4kSection === true ||
-    (movie.is4k && !movie.hdVideoUrl) ||
-    (fourkEntry && !movie.hdVideoUrl) ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
+    (state.currentDetailsFrom4k === true || state.activeView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')) &&
+    state.activeView !== 'movies' &&
+    state.activeView !== 'series' &&
+    state.activeView !== 'anime'
   );
 
   if (isFrom4k) {
