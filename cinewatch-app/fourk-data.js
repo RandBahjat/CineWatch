@@ -16,8 +16,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 25m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/dqhG3aCdBZxXikAQH9M8AUiIceQ.jpg",
+    poster: "https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sisW6kdHuYaeR6F7BmqAb2nwD6R.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     overview: "Peter Parker fights crime full-time as Spider-Man in a world that no longer remembers him. The pressure of watching old friends move on without him sparks changes he is not sure he can control. This transformation might be the only thing that can stop a shocking new threat to the city — a powerful villain no one can even see.",
@@ -43,8 +43,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 16m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
+    poster: "https://image.tmdb.org/t/p/original/3zbb5XD0hEA8IpAcUmv1J9Rej3B.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/d2J9TL7r639S2jddfymeSEwXgmN.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
     trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
@@ -71,8 +71,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 21m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/k0hlAzTryCYX1O1LyC6P8tAa8s0.jpg",
+    poster: "https://image.tmdb.org/t/p/original/j4fHQQVlmdSLKdceMnLcrkr7VpX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/kpwZav5jaxuGT2dBYQntkgExDEN.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_audio.m4a",
     trailerUrl: "https://www.youtube.com/watch?v=nbp3Ra3Yp74",
@@ -99,8 +99,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 1m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
+    poster: "https://image.tmdb.org/t/p/original/kjdJntyBeEvqm9w97QGBdxPptzj.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oAX0snutoordC5Gtb3MmVgGiNqI.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_audio.m4a",
     trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
@@ -127,8 +127,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 7m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
+    poster: "https://image.tmdb.org/t/p/original/uDKv0TVmK8zbptAqgG5Rtz5qHlQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gkINAPOuwUFo2Qphs3OUUbjUKUZ.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_audio.m4a",
     trailerUrl: "https://youtu.be/kficMW9vu8M?si=mL2PTzXLk1kvTsuY",
@@ -156,7 +156,7 @@ window._FOURK_DATA = [
     duration: "2h 19m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/original/vbTuNzKcE0KX0dJMtgDPHhFfThV.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/6xmTfc2wUqFqGZqVd2Xb2bNnCqF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6MQmtWk4cFwSDyNvIgoJRBIHUT3.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_audio.m4a",
     trailerUrl: "https://www.youtube.com/watch?v=wPosLg6543A",
@@ -183,8 +183,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 13m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tM894a4r8QIpo9mNtneV0IVphBh.jpg",
+    poster: "https://image.tmdb.org/t/p/original/kY2c7wKgOfQjvbqe7yVzLTYkxJO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/v5gz9WPzMID0LWMHteLlIrb2Jq8.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_4K_UHD.mkv",
     audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_audio.m4a",
     trailerUrl: "https://www.youtube.com/watch?v=n9DwoQ7HWvI",
@@ -260,6 +260,36 @@ window._FOURK_DATA = [
       { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_Kurdish.vtt", srclang: "ku", default: true },
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_English.vtt", srclang: "en", default: false }
     ]
+  },
+
+  // ============================================================
+  // 10. Harry Potter and the Sorcerer's Stone (2001)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-sorcerers-stone-2001",
+    title: "Harry Potter and the Sorcerer's Stone",
+    type: "Movie",
+    year: 2001,
+    rating: 7.9,
+    age: "PG",
+    duration: "2h 32m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Sorcerers_Stone_2001_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
+    overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
+    overviewKurdish: "هاری پۆتەر لە تەمەنی یازدە ساڵیدا بۆی دەردەکەوێت کە کوڕی دوو جادووگەری بەهێزە و خاوەنی هێزی جادوویی تایبەت بە خۆیەتی. کاتێک بانگهێشت دەکرێت بۆ خوێندنگەی هۆگوارتس بۆ فێربوونی جادوو، ژیانێکی پڕ لە سەرکێشی دەست پێدەکات و دەست دەکات بە ئاشکراکردنی ڕاستییەکانی دەربارەی مردنی دایک و باوکی.",
+    director: "Chris Columbus",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Richard Harris", "Maggie Smith", "Alan Rickman", "Robbie Coltrane", "Ian Hart"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_1_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];
+

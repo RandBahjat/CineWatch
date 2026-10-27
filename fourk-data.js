@@ -260,6 +260,36 @@ window._FOURK_DATA = [
       { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_Kurdish.vtt", srclang: "ku", default: true },
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_English.vtt", srclang: "en", default: false }
     ]
+  },
+
+  // ============================================================
+  // 10. Harry Potter and the Sorcerer's Stone (2001)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-sorcerers-stone-2001",
+    title: "Harry Potter and the Sorcerer's Stone",
+    type: "Movie",
+    year: 2001,
+    rating: 7.9,
+    age: "PG",
+    duration: "2h 32m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Sorcerers_Stone_2001_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
+    overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
+    overviewKurdish: "هاری پۆتەر لە تەمەنی یازدە ساڵیدا بۆی دەردەکەوێت کە کوڕی دوو جادووگەری بەهێزە و خاوەنی هێزی جادوویی تایبەت بە خۆیەتی. کاتێک بانگهێشت دەکرێت بۆ خوێندنگەی هۆگوارتس بۆ فێربوونی جادوو، ژیانێکی پڕ لە سەرکێشی دەست پێدەکات و دەست دەکات بە ئاشکراکردنی ڕاستییەکانی دەربارەی مردنی دایک و باوکی.",
+    director: "Chris Columbus",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Richard Harris", "Maggie Smith", "Alan Rickman", "Robbie Coltrane", "Ian Hart"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_1_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];
+

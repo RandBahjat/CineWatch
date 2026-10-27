@@ -76,11 +76,10 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-
+  "The Dog Stars ",
   "Clayface",
   "Spider-Man: Brand New Day",
   "Whalefall",
-  "Spider-Man: Brand New Day",
   "Street Fighter",
   "Animals",
   "Resident Evil",
