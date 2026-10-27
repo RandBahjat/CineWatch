@@ -76,14 +76,14 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-  "The Dog Stars ",
+  "The Dog Stars",
   "Verity",
   "Clayface",
-  "Whalefall",
-  "Street Fighter",
-  "Animals",
+  "Sense and Sensibility",
+  "Cyberpunk: Edgerunners",
+  "MobLand",
   "The Odyssey",
-  "You Can See Everythingy",
+  "You Can See Everything",
   "Obsession",
   "VisionQuest"
 ];
@@ -155,7 +155,7 @@ const POPULAR_SERIES = [
   "S.W.A.T.",
   "The Walking Dead"
 ];
-let UPCOMING_MOVIES = ["Avengers: Doomsday"];
+let UPCOMING_MOVIES = ["Avengers: Doomsday","Dune: Part Three"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
 window.FEATURED_TITLES = FEATURED_TITLES;

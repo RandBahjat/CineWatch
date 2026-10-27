@@ -76,14 +76,14 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-  "The Dog Stars ",
+  "The Dog Stars",
   "Verity",
   "Clayface",
   "Sense and Sensibility",
-  "Street Fighter",
-  "Animals",
+  "Cyberpunk: Edgerunners",
+  "MobLand",
   "The Odyssey",
-  "You Can See Everythingy",
+  "You Can See Everything",
   "Obsession",
   "VisionQuest"
 ];

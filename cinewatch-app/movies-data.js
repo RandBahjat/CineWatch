@@ -5,7 +5,7 @@
 window._MOVIES_DATA = [
 
   {
-    title: "The Dog Stars ",
+    title: "The Dog Stars",
     type: "Movie",
     year: 2026,
     rating: 6.4,
@@ -1111,9 +1111,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  // ============================================================
-  // 39. Avengers: Doomsday (2026)
-  // ============================================================
+
   {
     title: "Dune: Part Three",
     type: "Movie",
