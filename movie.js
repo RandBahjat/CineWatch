@@ -77,13 +77,14 @@ let FEATURED_TITLES = [
 ];
 let TOP_10_TRENDING_TODAY = [
   "The Dog Stars ",
+  "Verity",
   "Clayface",
-  "Spider-Man: Brand New Day",
-  "Whalefall",
+  "Sense and Sensibility",
   "Street Fighter",
   "Animals",
-  "Resident Evil",
-  "Verity",
+  "The Odyssey",
+  "You Can See Everythingy",
+  "Obsession",
   "VisionQuest"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
@@ -154,7 +155,7 @@ const POPULAR_SERIES = [
   "S.W.A.T.",
   "The Walking Dead"
 ];
-let UPCOMING_MOVIES = ["Avengers: Doomsday"];
+let UPCOMING_MOVIES = ["Avengers: Doomsday","Dune: Part Three"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
 window.FEATURED_TITLES = FEATURED_TITLES;
@@ -8395,23 +8396,99 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       });
     }
 
-    if (!is4kStream && !isFrom4kSession && window._cwQualities && window._cwQualities.length > 0) {
-      artSettings.push({
-        html: 'Quality',
-        icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
-        tooltip: window._cwQualities[0].quality,
-        selector: window._cwQualities.map((q, idx) => ({
-          default: idx === 0,
-          html: q.quality,
-          url: q.url
-        })),
-        onSelect(item) {
-          if (window.artPlayerInstance && item.url) {
-            window.artPlayerInstance.switchUrl(item.url);
+    const setHlsQualityLevel = (art, item) => {
+      if (!art) return;
+      const hls = art.hls;
+      if (!hls) return;
+
+      const isAuto = (item.level === -1 || item.height === 'auto' || item.html === 'Auto');
+      if (isAuto) {
+        hls.currentLevel = -1;
+        if (art.notice) art.notice.show = 'Quality: Auto';
+      } else if (typeof item.level === 'number' && item.level >= 0 && hls.levels && hls.levels[item.level]) {
+        hls.currentLevel = item.level;
+        if (art.notice) art.notice.show = `Quality: ${item.html}`;
+      } else if (item.height && hls.levels && hls.levels.length > 0) {
+        let bestLevel = -1;
+        let minDiff = Infinity;
+        hls.levels.forEach((lvl, idx) => {
+          const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
+          if (h > 0) {
+            const diff = Math.abs(h - item.height);
+            if (diff < minDiff) {
+              minDiff = diff;
+              bestLevel = idx;
+            }
           }
-          return item.html;
+        });
+        if (bestLevel === -1) bestLevel = 0;
+        hls.currentLevel = bestLevel;
+        if (art.notice) art.notice.show = `Quality: ${item.html}`;
+      } else {
+        hls.currentLevel = -1;
+        if (art.notice) art.notice.show = `Quality: ${item.html}`;
+      }
+
+      // Update control bar button text
+      try {
+        const ctrl = art.controls && art.controls['quality'];
+        if (ctrl) {
+          if (ctrl.$html) {
+            ctrl.$html.textContent = item.html;
+          } else if (typeof ctrl === 'object' && ctrl.innerHTML !== undefined) {
+            ctrl.innerHTML = item.html;
+          }
         }
-      });
+      } catch (e) {}
+
+      // Synchronize settings menu tooltip
+      try {
+        const settingItem = art.setting && (art.setting.find('quality') || art.setting.find('Quality'));
+        if (settingItem) {
+          settingItem.tooltip = item.html;
+          if (typeof art.setting.update === 'function') art.setting.update();
+        }
+      } catch (e) {}
+    };
+
+    if (!is4kStream && !isFrom4kSession) {
+      if (window._cwQualities && window._cwQualities.length > 0) {
+        artSettings.push({
+          name: 'quality',
+          html: 'Quality',
+          icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: window._cwQualities[0].quality,
+          selector: window._cwQualities.map((q, idx) => ({
+            default: idx === 0,
+            html: q.quality,
+            url: q.url
+          })),
+          onSelect(item) {
+            if (window.artPlayerInstance && item.url) {
+              window.artPlayerInstance.switchUrl(item.url);
+            }
+            return item.html;
+          }
+        });
+      } else if (isAnime || (cleanUrl && cleanUrl.includes('m3u8'))) {
+        artSettings.push({
+          name: 'quality',
+          html: 'Quality',
+          icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: 'Auto',
+          selector: [
+            { default: true, html: 'Auto', level: -1, height: 'auto' },
+            { default: false, html: '1080p', level: 0, height: 1080 },
+            { default: false, html: '720p', level: 1, height: 720 },
+            { default: false, html: '480p', level: 2, height: 480 },
+            { default: false, html: '360p', level: 3, height: 360 }
+          ],
+          onSelect(item) {
+            setHlsQualityLevel(window.artPlayerInstance, item);
+            return item.html;
+          }
+        });
+      }
     }
 
     artSettings.push({
@@ -8592,39 +8669,103 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.loadSource(url);
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-              if (!is4kStream && !isFrom4kSession && art.setting) {
-                const qualities = [
-                  { html: 'Auto', height: 'auto', default: true },
-                  { html: '1080p', height: 1080, default: false },
-                  { html: '720p', height: 720, default: false },
-                  { html: '480p', height: 480, default: false },
-                  { html: '360p', height: 360, default: false }
-                ];
-                art.setting.add({
-                  html: 'Quality',
-                  icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
-                  tooltip: 'Auto',
-                  selector: qualities,
-                  onSelect: function (item) {
-                    if (item.height === 'auto') {
-                      hls.currentLevel = -1;
-                      return item.html;
-                    }
-                    let bestLevel = -1;
-                    let minDiff = Infinity;
-                    data.levels.forEach((lvl, idx) => {
-                      const h = lvl.height || 0;
-                      if (h > 0) {
-                        const diff = Math.abs(h - item.height);
-                        if (diff < minDiff) {
-                          minDiff = diff;
-                          bestLevel = idx;
-                        }
-                      }
+              if (!is4kStream && !isFrom4kSession) {
+                const rawLevels = (hls.levels && hls.levels.length > 0) ? hls.levels : ((data && data.levels) ? data.levels : []);
+                const qualityItems = [{ default: true, html: 'Auto', level: -1, height: 'auto' }];
+                const seenHeights = new Set();
+                const parsedLevels = [];
+
+                rawLevels.forEach((lvl, originalIdx) => {
+                  const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
+                  if (h > 0) {
+                    parsedLevels.push({ height: h, level: originalIdx, bitrate: lvl.bitrate || 0 });
+                  }
+                });
+
+                parsedLevels.sort((a, b) => b.height - a.height || b.bitrate - a.bitrate);
+
+                parsedLevels.forEach(lvl => {
+                  const label = `${lvl.height}p`;
+                  if (!seenHeights.has(label)) {
+                    seenHeights.add(label);
+                    qualityItems.push({
+                      default: false,
+                      html: label,
+                      level: lvl.level,
+                      height: lvl.height
                     });
-                    if (bestLevel === -1) bestLevel = 0;
-                    hls.currentLevel = bestLevel;
-                    return item.html;
+                  }
+                });
+
+                if (qualityItems.length === 1) {
+                  [
+                    { html: '1080p', height: 1080 },
+                    { html: '720p', height: 720 },
+                    { html: '480p', height: 480 },
+                    { html: '360p', height: 360 }
+                  ].forEach((q, idx) => {
+                    qualityItems.push({ default: false, html: q.html, height: q.height, level: idx });
+                  });
+                }
+
+                const onQualitySelect = function (item) {
+                  setHlsQualityLevel(art, item);
+                  return item.html;
+                };
+
+                // Add or update Quality button on bottom control bar
+                if (art.controls && typeof art.controls.add === 'function') {
+                  try {
+                    if (art.controls['quality']) {
+                      art.controls.remove('quality');
+                    }
+                  } catch (e) {}
+                  art.controls.add({
+                    name: 'quality',
+                    position: 'right',
+                    index: 10,
+                    html: 'Auto',
+                    tooltip: 'Quality',
+                    selector: qualityItems,
+                    onSelect: onQualitySelect
+                  });
+                }
+
+                // Add or update Quality option in settings gear menu
+                if (art.setting && typeof art.setting.add === 'function') {
+                  try {
+                    const existingSetting = art.setting.find('quality') || art.setting.find('Quality');
+                    if (existingSetting) {
+                      existingSetting.selector = qualityItems;
+                      existingSetting.tooltip = 'Auto';
+                      existingSetting.onSelect = onQualitySelect;
+                      if (typeof art.setting.update === 'function') art.setting.update();
+                    } else {
+                      art.setting.add({
+                        name: 'quality',
+                        html: 'Quality',
+                        icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+                        tooltip: 'Auto',
+                        selector: qualityItems,
+                        onSelect: onQualitySelect
+                      });
+                    }
+                  } catch (e) {}
+                }
+
+                // Track automatic adaptive quality changes
+                hls.on(Hls.Events.LEVEL_SWITCHED, function (evt, lvlData) {
+                  if (hls.currentLevel === -1 && hls.levels && hls.levels[lvlData.level]) {
+                    const activeLvl = hls.levels[lvlData.level];
+                    const activeH = activeLvl.height || Math.round((activeLvl.width || 0) * 9 / 16) || 0;
+                    if (activeH > 0) {
+                      try {
+                        const ctrl = art.controls && art.controls['quality'];
+                        if (ctrl) {
+                          ctrl.title = `Auto (${activeH}p)`;
+                        }
+                      } catch (e) {}
+                    }
                   }
                 });
               }
@@ -8764,7 +8905,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           style: { position: 'static' },
           html: centerTitleHtml,
           tooltip: isAnime ? `${ref?.title || 'Anime'} - Episode ${rawEp}` : (isTv ? `${ref?.title || 'Series'} - S${season} E${epNum}` : `${ref?.title || 'Movie'}`),
-        }
+        },
+        ...((artQualityList.length === 0 && !is4kStream && !isFrom4kSession && (isAnime || isM3u8Stream)) ? [{
+          name: 'quality',
+          position: 'right',
+          index: 10,
+          html: 'Auto',
+          tooltip: 'Quality',
+          selector: [
+            { default: true, html: 'Auto', level: -1, height: 'auto' },
+            { default: false, html: '1080p', level: 0, height: 1080 },
+            { default: false, html: '720p', level: 1, height: 720 },
+            { default: false, html: '480p', level: 2, height: 480 },
+            { default: false, html: '360p', level: 3, height: 360 }
+          ],
+          onSelect(item) {
+            setHlsQualityLevel(window.artPlayerInstance, item);
+            return item.html;
+          }
+        }] : [])
       ],
     };
 

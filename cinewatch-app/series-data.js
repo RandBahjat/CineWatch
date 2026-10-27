@@ -121,6 +121,101 @@ window._SERIES_DATA = [
             overview: "On the edge of cyberpsychosis but determined to save Lucy, David storms into Night City as Arasaka plots to deploy their ultimate lethal weapon."
           }
         ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Last Chance for a Slow Dance",
+            airDate: "2026-10-20",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "25m",
+            overview: "In 2078 Night City, aspiring filmmaker Roman Carax attempts to document the violent underbelly of the city, crossing paths with desperate mercenaries and fixers."
+          },
+          {
+            episode: 2,
+            title: "Give Me Another Day",
+            airDate: "2026-10-20",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "25m",
+            overview: "Talia faces a ticking clock regarding her condition while the crew accepts a high-risk gig that exposes them to Night City's brutal corporate hierarchy."
+          },
+          {
+            episode: 3,
+            title: "0 + 2 = 1",
+            airDate: "2026-10-20",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "24m",
+            overview: "Partnerships are tested under fire when Roman's camera lens captures a critical mistake during an op, painting a massive target on the crew's backs."
+          },
+          {
+            episode: 4,
+            title: "Someone that I Used to Know",
+            airDate: "2026-10-20",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "26m",
+            overview: "Ghostly remnants of the past resurface as veteran edgerunner Weak 'King' Kingsley's history catches up with him, forcing the crew to confront old traumas."
+          },
+          {
+            episode: 5,
+            title: "Fades (Pass the Distance)",
+            airDate: "2026-10-20",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "25m",
+            overview: "The lines blur between Roman documenting the crew's lives and actively participating in their violent survival as a powerful megacorp takes notice."
+          },
+          {
+            episode: 6,
+            title: "Everything Hate",
+            airDate: "2026-10-20",
+            rating: 8.8,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "26m",
+            overview: "Trapped by corporate hounds and rival gangers, internal resentment boils over as the brutal psychological toll of living on the edge fractures the team."
+          },
+          {
+            episode: 7,
+            title: "To the Depths with You",
+            airDate: "2026-10-20",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "25m",
+            overview: "Seeking leverage, the team plunges into Night City's subterranean sub-grid to plot a desperate counter-strike against overwhelming odds."
+          },
+          {
+            episode: 8,
+            title: "Serce",
+            airDate: "2026-10-20",
+            rating: 9.0,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "27m",
+            overview: "Personal sacrifices and moral boundaries are pushed to their limit as the overarching drive for vengeance and redemption reaches a critical boiling point."
+          },
+          {
+            episode: 9,
+            title: "Strictly Reserved for You",
+            airDate: "2026-10-20",
+            rating: 8.9,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "26m",
+            overview: "The pieces fall into place for a strike against a prime corporate target, knowing all too well that walking away clean is an impossible dream in Night City."
+          },
+          {
+            episode: 10,
+            title: "Then Everyone Went Home",
+            airDate: "2026-10-20",
+            rating: 9.4,
+            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            duration: "28m",
+            overview: "In an explosive and devastating finale, the confrontation takes an unforgettable toll on the crew, leaving a haunting legacy in the City of Dreams."
+          }
+        ]
       }
     ]
   },
