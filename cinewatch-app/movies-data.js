@@ -55,13 +55,13 @@ window._MOVIES_DATA = [
     duration: "2h 12m",
     genres: ["Drama","Romance",],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/sWzNxNDHOTSmSOeahCEmEvbBVgI.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tIcONOFK9D3F89ETK8DBS1hIwVF.jpg",
     videoUrl: "1503762",
     trailerUrl: "https://youtu.be/mcrwcvad84U?si=R3WUz9Uv87eLRXzF",
     overview: "A fresh adaptation of Jane Austen's beloved classic, the story follows the Dashwood sisters—composed, practical Elinor and fiercely romantic, impulsive Marianne—after the sudden death of their father leaves their family financially destitute and forced to relocate to a modest cottage in Devonshire. As they navigate the rigid social expectations of Regency-era England, both sisters experience profound love, secret heartbreak, and personal awakening while searching for stability and happiness.",
     overviewKurdish: "لە دووبارە داڕشتنەوەیەکی نوێی ڕۆمانە کلاسیکییە بەناوبانگەکەی جەین ئۆستندا، چیرۆکەکە باس لە دوو خوشکی خێزانی داشوود دەکات؛ ئێلینۆری ژیر و واقیعبین، و ماریانی پڕ لە هەست و ڕۆمانسی. دوای ئەوەی مردنی لەناکاوی باوکیان خێزانەکەیان تووشی تەنگژەی دارایی دەکات و ناچار دەبن ماڵە گەورەکەیان جێبهێڵن و بگوێزنەوە بۆ خانوویەکی سادە لە گوندەکانی دێڤۆنشایر، هەردوو خوشکەکە لەناو نەریت و کۆت و بەندە توندەکانی کۆمەڵگەی ئینگلتەرای ئەو سەردەمەدا، بەناو ئەزموونی قووڵی خۆشەویستی، دڵشکان و خۆناسیندا تێدەپەڕن لەپێناو دۆزینەوەی سەقامگیری و بەختەوەریدا.",
     director: "Georgia Oakley",
-    cast: ["Amanda Seyfried, Christopher Abbott, Nathan Fielder, Elizabeth Holmes"],
+    cast: ["Daisy Edgar-Jones, Esme Creed-Miles, George MacKay, Caitríona Balfe, Frank Dillane, Herbert Nordrum, Fiona Shaw"],
     trending: true,
     featured: false,
     is4k: false,
@@ -1114,6 +1114,27 @@ window._MOVIES_DATA = [
   // ============================================================
   // 39. Avengers: Doomsday (2026)
   // ============================================================
+  {
+    title: "Dune: Part Three",
+    type: "Movie",
+    year: 2026,
+    rating: "TBR",
+    age: "TBR",
+    duration: "2h 20m",
+    genres: ["Action","Adventure", "Drama", "Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/g9NhPUTF0rq3M7Ulr9bJNij34kg.jpg",
+    videoUrl: "1170608",
+    trailerUrl: "https://youtu.be/NdvqHc56lE0?si=ldQQm8z0sDgbu6Vu",
+    overview: "Adapted from Frank Herbert's Dune Messiah, the concluding chapter of Denis Villeneuve's trilogy picks up twelve years after Paul Atreides ascended the Imperial throne as Muad'Dib. Having unleashed a devastating holy war across the cosmos in his name that has claimed billions of lives, a weary Paul must navigate a treacherous web of political and religious conspiracies formed by the Bene Gesserit, the Spacing Guild, and the Tleilaxu—all while confronting the terrifying burden of his own prescient visions to save his family and humanity's future.",
+    overviewKurdish: "لەسەر بنەمای ڕۆمانی «مەسیحای دوون»ی فرانک هێربێرت، بەشی کۆتایی سێینەکەی دێنیس ڤیلنۆڤ دوانزە ساڵ دوای سەرکەوتنی پۆڵ ئەترێیدس بۆ سەر تەختی ئیمپراتۆری وەک «موعەدیب» دەست پێدەکات. دوای هەڵگیرسانی جەنگێکی پیرۆزی وێرانکەر لە سەرانسەری گەردووندا بە ناوی ئەوەوە کە بووەتە هۆی کوژرانی ملیۆنان کەس، پۆڵ دەکەوێتە ناو تۆڕێکی مەترسیداری پیلانگێڕیی سیاسی و ئایینی لەلایەن گرووپە نەیارەکانییەوە، لە هەمان کاتدا دەبێت ڕووبەڕووی بارگرانییە ترسناکەکانی بینینە پێشوەختەکانی داهاتووی ببێتەوە بۆ پاراستنی خێزانەکەی و چارەنووسی مرۆڤایەتی.",
+    director: "Denis Villeneuve",
+    cast: ["Timothée Chalamet, Zendaya, Florence Pugh, Anya Taylor-Joy, Jason Momoa, Javier Bardem, Rebecca Ferguson, Robert Pattinson"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
   {
     title: "Avengers: Doomsday",
     type: "Movie",

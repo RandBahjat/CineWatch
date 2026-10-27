@@ -35,7 +35,7 @@ window._SERIES_DATA = [
             title: "Let You Down",
             airDate: "2022-09-13",
             rating: 7.8,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ5NGUxZjEtOTgzNy00YTQ4LTk1ZDMtYTdkYjhhODE1ZmY2XkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054910.jpg",
             duration: "25m",
             overview: "After a night of streaming illegal braindance, David wakes up to reality: a rundown apartment with a broken washing machine and an overworked mother."
           },
@@ -44,7 +44,7 @@ window._SERIES_DATA = [
             title: "Like A Boy",
             airDate: "2022-09-13",
             rating: 8.1,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTdkOWJkOTctM2MzOS00YzEyLWIzZjgtNzdlZjJlYjliYjRhXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054911.jpg",
             duration: "25m",
             overview: "With his newly enhanced body, David heads to the Academy seeking revenge on his bully. Later, he meets a mysterious woman who wants to recruit him."
           },
@@ -53,7 +53,7 @@ window._SERIES_DATA = [
             title: "Smooth Criminal",
             airDate: "2022-09-13",
             rating: 7.8,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BMGNjNTdiZjYtZjAwYi00MmFkLWFjMDQtYTg4NDQwOGM5MzMyXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054912.jpg",
             duration: "25m",
             overview: "Surrounded by a group of rowdy edgerunners, David makes a plea to join their team. Meanwhile, sinister forces plot to lure him back to Arasaka Academy."
           },
@@ -62,7 +62,7 @@ window._SERIES_DATA = [
             title: "Lucky You",
             airDate: "2022-09-13",
             rating: 8.6,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BODRmMDkxMjQtZWQ3MC00MmI1LWFiZTgtMjg3YzZmMzI3ODAxXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054913.jpg",
             duration: "25m",
             overview: "Eager to learn the edgerunner ropes, David pesters Maine for another mission. Instead, Maine tasks Lucy with training him."
           },
@@ -71,7 +71,7 @@ window._SERIES_DATA = [
             title: "All Eyez On Me",
             airDate: "2022-09-13",
             rating: 8,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BY2VlMzdmMGYtMmJlNi00NDFmLThkOWItNmEwM2IzMGJlZWQyXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054914.jpg",
             duration: "25m",
             overview: "David makes a clever suggestion when the team strategizes for their next mission. However, he soon learns that their target can't be underestimated."
           },
@@ -80,7 +80,7 @@ window._SERIES_DATA = [
             title: "Girl on Fire",
             airDate: "2022-09-13",
             rating: 9.1,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BYWI3Njk4MGYtOTY1Yy00Zjg3LTgzNGQtODRmZDc5ZTZhODVmXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054915.jpg",
             duration: "26m",
             overview: "Maine doesn't seem to be himself. But the team has bigger fish to fry: They must race against time to extract vital information from their prisoner."
           },
@@ -89,7 +89,7 @@ window._SERIES_DATA = [
             title: "Stronger",
             airDate: "2022-09-13",
             rating: 8,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTJlZjkxNWItNTI2MS00N2VhLWEzMjUtYmU0MjdhY2Q2OGJlXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054916.jpg",
             duration: "25m",
             overview: "Now an all-star edgerunner enhanced with more cybernetics, David leads his team into a new mission. An old contact reaches out to him for a big job."
           },
@@ -98,7 +98,7 @@ window._SERIES_DATA = [
             title: "Stay",
             airDate: "2022-09-13",
             rating: 8.2,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGQ5Y2UzYmItMjZlMC00YzcyLTgzYTQtYjY1ZGVhZWJlODg0XkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054917.jpg",
             duration: "25m",
             overview: "Faraday finds himself stuck between Arasaka and Militech. Lucy and Rebecca confront David about his change in behavior, but he refuses to listen."
           },
@@ -107,7 +107,7 @@ window._SERIES_DATA = [
             title: "Humanity",
             airDate: "2022-09-13",
             rating: 8.5,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmZjM2E5NTAtNDYzYy00ODg1LWJhODAtMmJjOTFjYjA1MTJlXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054918.jpg",
             duration: "26m",
             overview: "Lucy's captors learn about her secret mission and dark past. David and his team head out to complete Faraday's job but realize that something is off."
           },
@@ -116,7 +116,7 @@ window._SERIES_DATA = [
             title: "My Moon My Man",
             airDate: "2022-09-13",
             rating: 9.3,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTZkM2ZhMjEtNWQ0NS00ZGIxLTlmOTMtNjUxMmNjNGVjZWJiXkEyXkFqcGc@._V1_SX300.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/421/1054919.jpg",
             duration: "26m",
             overview: "On the edge of cyberpsychosis but determined to save Lucy, David storms into Night City as Arasaka plots to deploy their ultimate lethal weapon."
           }
@@ -130,185 +130,90 @@ window._SERIES_DATA = [
             title: "Last Chance for a Slow Dance",
             airDate: "2026-10-20",
             rating: 8.5,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "In 2078 Night City, aspiring filmmaker Roman Carax attempts to document the violent underbelly of the city, crossing paths with desperate mercenaries and fixers."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618391.jpg",
+            duration: "28m",
+            overview: "A former edgerunner slipping into cyberpsychosis and a lonely survivor with a fractured past start their stories at opposite ends of Night City."
           },
           {
             episode: 2,
             title: "Give Me Another Day",
             airDate: "2026-10-20",
             rating: 8.3,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "Talia faces a ticking clock regarding her condition while the crew accepts a high-risk gig that exposes them to Night City's brutal corporate hierarchy."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618392.jpg",
+            duration: "27m",
+            overview: "A desperate call drags Weak back into danger to save a rebellious teen. As D bonds with a young cinephile, painful flashbacks fuel his thirst for revenge."
           },
           {
             episode: 3,
             title: "0 + 2 = 1",
             airDate: "2026-10-20",
             rating: 8.2,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "24m",
-            overview: "Partnerships are tested under fire when Roman's camera lens captures a critical mistake during an op, painting a massive target on the crew's backs."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618393.jpg",
+            duration: "28m",
+            overview: "Weak tries to rescue Talia from a dangerous surgery, but the confrontation ends in disaster. D and Roman discover a chaotic chip that sparks mayhem."
           },
           {
             episode: 4,
             title: "Someone that I Used to Know",
             airDate: "2026-10-20",
             rating: 8.7,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "Ghostly remnants of the past resurface as veteran edgerunner Weak 'King' Kingsley's history catches up with him, forcing the crew to confront old traumas."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618394.jpg",
+            duration: "28m",
+            overview: "Armed with abilities he doesn't fully understand, D uses Capri's power to infiltrate an Arasaka research facility. Talia and Weak find common ground."
           },
           {
             episode: 5,
             title: "Fades (Pass the Distance)",
             airDate: "2026-10-20",
             rating: 8.6,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "The lines blur between Roman documenting the crew's lives and actively participating in their violent survival as a powerful megacorp takes notice."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618395.jpg",
+            duration: "26m",
+            overview: "An impulsive act sends Talia into a terrifying spiral. D's obsession with revenge reaches an unsettling new level of violence."
           },
           {
             episode: 6,
             title: "Everything Hate",
             airDate: "2026-10-20",
             rating: 8.8,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "Trapped by corporate hounds and rival gangers, internal resentment boils over as the brutal psychological toll of living on the edge fractures the team."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618396.jpg",
+            duration: "28m",
+            overview: "D becomes an anti-corporate vigilante and asks Roman to film his every move. Weak looks into rumors of tech that can transfer digitized consciousness."
           },
           {
             episode: 7,
             title: "To the Depths with You",
             airDate: "2026-10-20",
-            rating: 8.4,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "Seeking leverage, the team plunges into Night City's subterranean sub-grid to plot a desperate counter-strike against overwhelming odds."
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618397.jpg",
+            duration: "28m",
+            overview: "Talia's condition takes a startling turn under Capri's watch. D reconnects with an old friend. Weak and Avida chase a miracle cure."
           },
           {
             episode: 8,
             title: "Serce",
             airDate: "2026-10-20",
-            rating: 9.0,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618398.jpg",
             duration: "27m",
-            overview: "Personal sacrifices and moral boundaries are pushed to their limit as the overarching drive for vengeance and redemption reaches a critical boiling point."
+            overview: "A riot ignites on the streets as D digs deeper into Project Capricorn's dark past. With time running out, Avida and Weak fight for Talia's future."
           },
           {
             episode: 9,
             title: "Strictly Reserved for You",
             airDate: "2026-10-20",
-            rating: 8.9,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "The pieces fall into place for a strike against a prime corporate target, knowing all too well that walking away clean is an impossible dream in Night City."
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618399.jpg",
+            duration: "29m",
+            overview: "Omi and D go off the grid, and Kiril takes Talia into custody. Kyoko pushes Project Capricorn forward with frightening results."
           },
           {
             episode: 10,
             title: "Then Everyone Went Home",
             airDate: "2026-10-20",
             rating: 9.4,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "28m",
-            overview: "In an explosive and devastating finale, the confrontation takes an unforgettable toll on the crew, leaving a haunting legacy in the City of Dreams."
-          }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
-          {
-            episode: 1,
-            title: "Last Chance for a Slow Dance",
-            airDate: "2026-10-20",
-            rating: 8.5,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "In 2078 Night City, aspiring filmmaker Roman Carax attempts to document the violent underbelly of the city, crossing paths with desperate mercenaries and fixers."
-          },
-          {
-            episode: 2,
-            title: "Give Me Another Day",
-            airDate: "2026-10-20",
-            rating: 8.3,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "Talia faces a ticking clock regarding her condition while the crew accepts a high-risk gig that exposes them to Night City's brutal corporate hierarchy."
-          },
-          {
-            episode: 3,
-            title: "0 + 2 = 1",
-            airDate: "2026-10-20",
-            rating: 8.2,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "24m",
-            overview: "Partnerships are tested under fire when Roman's camera lens captures a critical mistake during an op, painting a massive target on the crew's backs."
-          },
-          {
-            episode: 4,
-            title: "Someone that I Used to Know",
-            airDate: "2026-10-20",
-            rating: 8.7,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "Ghostly remnants of the past resurface as veteran edgerunner Weak 'King' Kingsley's history catches up with him, forcing the crew to confront old traumas."
-          },
-          {
-            episode: 5,
-            title: "Fades (Pass the Distance)",
-            airDate: "2026-10-20",
-            rating: 8.6,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "The lines blur between Roman documenting the crew's lives and actively participating in their violent survival as a powerful megacorp takes notice."
-          },
-          {
-            episode: 6,
-            title: "Everything Hate",
-            airDate: "2026-10-20",
-            rating: 8.8,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "Trapped by corporate hounds and rival gangers, internal resentment boils over as the brutal psychological toll of living on the edge fractures the team."
-          },
-          {
-            episode: 7,
-            title: "To the Depths with You",
-            airDate: "2026-10-20",
-            rating: 8.4,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "25m",
-            overview: "Seeking leverage, the team plunges into Night City's subterranean sub-grid to plot a desperate counter-strike against overwhelming odds."
-          },
-          {
-            episode: 8,
-            title: "Serce",
-            airDate: "2026-10-20",
-            rating: 9.0,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "27m",
-            overview: "Personal sacrifices and moral boundaries are pushed to their limit as the overarching drive for vengeance and redemption reaches a critical boiling point."
-          },
-          {
-            episode: 9,
-            title: "Strictly Reserved for You",
-            airDate: "2026-10-20",
-            rating: 8.9,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "26m",
-            overview: "The pieces fall into place for a strike against a prime corporate target, knowing all too well that walking away clean is an impossible dream in Night City."
-          },
-          {
-            episode: 10,
-            title: "Then Everyone Went Home",
-            airDate: "2026-10-20",
-            rating: 9.4,
-            thumbnail: "https://image.tmdb.org/t/p/w500/aQJW88GolybGrVqzIC2hI6coUr.jpg",
-            duration: "28m",
-            overview: "In an explosive and devastating finale, the confrontation takes an unforgettable toll on the crew, leaving a haunting legacy in the City of Dreams."
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/647/1618400.jpg",
+            duration: "30m",
+            overview: "A chilling transformation turns the city into a war zone, erupting in an explosive confrontation."
           }
         ]
       }
