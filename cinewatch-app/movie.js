@@ -1127,6 +1127,8 @@ async function initApp() {
     const deepLinkMovie = params.get('v');
     if (deepLinkMovie) {
       setTimeout(() => openDetailsModal(deepLinkMovie), 300); // slight delay for smooth UI
+    } else {
+      checkAutoAuthPrompt();
     }
   }
 }
@@ -4912,8 +4914,54 @@ function openAuthModal() {
 }
 window.openAuthModal = openAuthModal;
 
+function checkAutoAuthPrompt() {
+  try {
+    // 1. If user is already authenticated, do not prompt
+    const savedUser = localStorage.getItem("cinewatch_user") || sessionStorage.getItem("cinewatch_user");
+    if (savedUser) {
+      try {
+        const u = JSON.parse(savedUser);
+        if (u && (u.id || u.email)) return;
+      } catch (e) {}
+    }
+    if (typeof state !== 'undefined' && state && state.user) return;
+
+    // 2. 3-Hour cooldown check (reset every 3 hours)
+    const STORAGE_KEY = "cw_auth_prompt_last_shown";
+    const lastShownStr = localStorage.getItem(STORAGE_KEY);
+    const THREE_HOURS_MS = 3 * 60 * 60 * 1000;
+    const now = Date.now();
+
+    if (lastShownStr) {
+      const lastShown = parseInt(lastShownStr, 10);
+      if (!isNaN(lastShown) && (now - lastShown < THREE_HOURS_MS)) {
+        return; // Already shown or dismissed within the last 3 hours
+      }
+    }
+
+    // 3. Update timestamp
+    localStorage.setItem(STORAGE_KEY, now.toString());
+
+    // 4. Smoothly show auth modal after page load
+    setTimeout(() => {
+      const modal = document.getElementById("authModal");
+      if (!modal || !modal.classList.contains("hidden")) return;
+      if (typeof state !== 'undefined' && state && state.user) return;
+      openAuthModal();
+    }, 1200);
+  } catch (err) {
+    console.warn("[CineWatch] Error checking auto auth prompt:", err);
+  }
+}
+window.checkAutoAuthPrompt = checkAutoAuthPrompt;
+
 function closeAuthModal() {
   stopAuthSlideshow();
+  // Mark dismiss timestamp so closing starts/refreshes the 3-hour cooldown
+  try {
+    localStorage.setItem("cw_auth_prompt_last_shown", Date.now().toString());
+  } catch (e) {}
+
   if (typeof window.hideAuth === 'function') {
     window.hideAuth();
     return;
@@ -4924,7 +4972,7 @@ function closeAuthModal() {
   modal.style.opacity = "0";
   modal.style.visibility = "hidden";
   modal.style.pointerEvents = "none";
-  modal.style.display = "";
+  modal.style.display = "none";
   document.body.style.overflow = "";
 }
 window.closeAuthModal = closeAuthModal;
@@ -6802,9 +6850,8 @@ function bindEventListeners() {
     if (e.target.id === "detailsModal")
       document.getElementById("detailsModal").classList.add("hidden");
   };
-  if (document.getElementById("authModal")) document.getElementById("authModal").onclick = (e) => {
-    if (e.target.id === "authModal") closeAuthModal();
-  };
+  // Auth modal only closes via explicit 'Back to Home' button to prevent accidental dismissals on surrounding click
+  // (Backdrop click closing intentionally disabled per user specification)
 
   // Password Visibility Toggle
   const togglePasswordVisibility = (toggleId, inputId) => {

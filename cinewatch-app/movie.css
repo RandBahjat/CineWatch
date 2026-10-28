@@ -4280,7 +4280,14 @@ body.rtl-layout .details-back-btn svg {
 /* ==========================================================================
    AUTHENTICATION MODAL — FULL-SCREEN CENTERED WITH MOVIE BACKDROP
    ========================================================================== */
-#authModal.modal-overlay {
+#authModal.hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+#authModal.modal-overlay:not(.hidden) {
   position: fixed !important;
   inset: 0 !important;
   width: 100vw !important;
@@ -4706,7 +4713,7 @@ body.rtl-layout .details-back-btn svg {
 
 /* Responsive Rules */
 @media (max-width: 600px) {
-  #authModal.modal-overlay {
+  #authModal.modal-overlay:not(.hidden) {
     padding: 1rem !important;
     align-items: flex-start !important;
   }
