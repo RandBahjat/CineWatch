@@ -289,6 +289,35 @@ window._FOURK_DATA = [
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_1_English.vtt", srclang: "en", default: true }
     ]
+  },
+
+  // ============================================================
+  // 11. Harry Potter and the Chamber of Secrets (2002)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-chamber-of-secrets-2002",
+    title: "Harry Potter and the Chamber of Secrets",
+    type: "Movie",
+    year: 2002,
+    rating: 7.4,
+    age: "PG",
+    duration: "2h 41m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/sdEOH0992YZ02iovi7afqlZvvdT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1stUIsjawROZxjiCMtqqXqOiW2h.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Chamber_Of_Secrets_2002_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=1bq0qff4iF8",
+    overview: "Harry Potter returns to Hogwarts for his second year, only to find the ancient Chamber of Secrets has been opened, releasing a deadly monster that threatens every student. As whispers point to Harry himself as the culprit, he and his friends must uncover the truth behind an ancient legend before the creature claims a life.",
+    overviewKurdish: "هاری پۆتەر دەگەڕێتەوە بۆ ساڵی دووەمی خوێندنی لە هۆگوارتس، بەڵام دەبینێت کە خوێندنگەکە کەوتووەتە ژێر مەترسییەوە دوای ئەوەی ژووری نهێنییەکان دەکرێتەوە و بوونەوەرێکی مەترسیدار خوێندکاران بە بەرد دەکات. هاری و هاوڕێکانی دەبێت نهێنی ئەم ژوورە ئاشکرا بکەن پێش ئەوەی کارەسات ڕووبدات.",
+    director: "Chris Columbus",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Kenneth Branagh", "Richard Harris", "Maggie Smith", "Alan Rickman", "Jason Isaacs"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];

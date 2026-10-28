@@ -1992,25 +1992,29 @@ window._MOVIES_DATA = [
   // 73. Harry Potter and the Chamber of Secrets   (2002)
   // ============================================================
   {
-    title: "Harry Potter and the Chamber of Secrets  ",
+    id: "harry-potter-and-the-chamber-of-secrets-2002",
+    title: "Harry Potter and the Chamber of Secrets",
     type: "Movie",
     year: 2002,
     rating: "7.5",
     age: "PG",
     duration: "2h 41m",
     genres: ["Adventure", "Family", "Fantasy"],
-    poster: "https://www.themoviedb.org/t/p/w1280/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/7tbeoSTWW2cWPecjQo9fcdf0Hzv.jpg",
-    videoUrl: "672",
-    trailerUrl: "",
+    poster: "https://image.tmdb.org/t/p/original/sdEOH0992YZ02iovi7afqlZvvdT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1stUIsjawROZxjiCMtqqXqOiW2h.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Chamber_Of_Secrets_2002_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=1bq0qff4iF8",
     overview: "Back at Hogwarts for his second year, Harry finds the school gripped by fear when students start turning up mysteriously petrified, and cryptic warnings reveal that the legendary Chamber of Secrets has been reopened. As whispers point to Harry himself as the culprit, he and his friends must uncover the truth behind an ancient legend before the creature lurking within the chamber claims a life.",
-    overviewKurdish: "",
+    overviewKurdish: "هاری پۆتەر دەگەڕێتەوە بۆ ساڵی دووەمی خوێندنی لە هۆگوارتس، بەڵام دەبینێت کە خوێندنگەکە کەوتووەتە ژێر مەترسییەوە دوای ئەوەی ژووری نهێنییەکان دەکرێتەوە و بوونەوەرێکی مەترسیدار خوێندکاران بە بەرد دەکات. هاری و هاوڕێکانی دەبێت نهێنی ئەم ژوورە ئاشکرا بکەن پێش ئەوەی کارەسات ڕووبدات.",
     director: "Chris Columbus",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Kenneth Branagh, Jason Isaacs, Maggie Smith"],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt", srclang: "en", default: true }
+    ]
   },
 
   // ============================================================
