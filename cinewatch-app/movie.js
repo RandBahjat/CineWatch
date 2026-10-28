@@ -8470,33 +8470,36 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const setHlsQualityLevel = (art, item) => {
       if (!art) return;
       const hls = art.hls;
-      if (!hls) return;
-
       const isAuto = (item.level === -1 || item.height === 'auto' || item.html === 'Auto');
-      if (isAuto) {
-        hls.currentLevel = -1;
-        if (art.notice) art.notice.show = 'Quality: Auto';
-      } else if (typeof item.level === 'number' && item.level >= 0 && hls.levels && hls.levels[item.level]) {
-        hls.currentLevel = item.level;
-        if (art.notice) art.notice.show = `Quality: ${item.html}`;
-      } else if (item.height && hls.levels && hls.levels.length > 0) {
-        let bestLevel = -1;
-        let minDiff = Infinity;
-        hls.levels.forEach((lvl, idx) => {
-          const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
-          if (h > 0) {
-            const diff = Math.abs(h - item.height);
-            if (diff < minDiff) {
-              minDiff = diff;
-              bestLevel = idx;
+
+      if (hls) {
+        if (isAuto) {
+          hls.currentLevel = -1;
+          if (art.notice) art.notice.show = 'Quality: Auto';
+        } else if (typeof item.level === 'number' && item.level >= 0 && hls.levels && hls.levels[item.level]) {
+          hls.currentLevel = item.level;
+          if (art.notice) art.notice.show = `Quality: ${item.html}`;
+        } else if (item.height && hls.levels && hls.levels.length > 0) {
+          let bestLevel = -1;
+          let minDiff = Infinity;
+          hls.levels.forEach((lvl, idx) => {
+            const h = lvl.height || Math.round((lvl.width || 0) * 9 / 16) || 0;
+            if (h > 0) {
+              const diff = Math.abs(h - item.height);
+              if (diff < minDiff) {
+                minDiff = diff;
+                bestLevel = idx;
+              }
             }
-          }
-        });
-        if (bestLevel === -1) bestLevel = 0;
-        hls.currentLevel = bestLevel;
-        if (art.notice) art.notice.show = `Quality: ${item.html}`;
+          });
+          if (bestLevel === -1) bestLevel = 0;
+          hls.currentLevel = bestLevel;
+          if (art.notice) art.notice.show = `Quality: ${item.html}`;
+        } else {
+          hls.currentLevel = -1;
+          if (art.notice) art.notice.show = `Quality: ${item.html}`;
+        }
       } else {
-        hls.currentLevel = -1;
         if (art.notice) art.notice.show = `Quality: ${item.html}`;
       }
 
@@ -8528,6 +8531,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           html: 'Quality',
           icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
           tooltip: window._cwQualities[0].quality,
+          width: 200,
           selector: window._cwQualities.map((q, idx) => ({
             default: idx === 0,
             html: q.quality,
@@ -8540,12 +8544,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             return item.html;
           }
         });
-      } else if (isAnime || (cleanUrl && cleanUrl.includes('m3u8'))) {
+      } else {
         artSettings.push({
           name: 'quality',
           html: 'Quality',
           icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
           tooltip: 'Auto',
+          width: 200,
           selector: [
             { default: true, html: 'Auto', level: -1, height: 'auto' },
             { default: false, html: '1080p', level: 0, height: 1080 },
@@ -8783,27 +8788,34 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   } catch (e) {}
                 }
 
-                // Add or update Quality option in settings gear menu cleanly so sub-panel cache is built
-                if (art.setting && typeof art.setting.add === 'function') {
-                  try {
-                    if (typeof art.setting.remove === 'function') {
-                      const exist = art.setting.find('quality') || art.setting.find('Quality');
-                      if (exist) {
-                        art.setting.remove(exist.name || 'quality');
-                      }
-                    }
+                // Synchronize quality selector with detected HLS levels via Artplayer's update API
+                try {
+                  if (art.setting && typeof art.setting.update === 'function') {
+                    art.setting.update({
+                      name: 'quality',
+                      html: 'Quality',
+                      icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+                      tooltip: 'Auto',
+                      width: 200,
+                      selector: qualityItems,
+                      onSelect: onQualitySelect
+                    });
+                  } else if (art.setting && typeof art.setting.add === 'function') {
+                    try {
+                      if (typeof art.setting.remove === 'function') art.setting.remove('quality');
+                    } catch (err) {}
                     art.setting.add({
                       name: 'quality',
                       html: 'Quality',
                       icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
-                      width: 200,
                       tooltip: 'Auto',
+                      width: 200,
                       selector: qualityItems,
                       onSelect: onQualitySelect
                     });
-                  } catch (e) {
-                    console.warn('[CineWatch] Error configuring quality setting:', e);
                   }
+                } catch (e) {
+                  console.warn('[CineWatch] Error synchronizing quality setting:', e);
                 }
 
                 // Track automatic adaptive quality changes
@@ -9052,6 +9064,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       } catch (e) {
         console.warn('Error setting up ArtPlayer info close handlers:', e);
       }
+
+      // Stop wheel propagation in settings menu so scrolling through long settings lists is effortless
+      try {
+        const art = window.artPlayerInstance;
+        const settingEl = art.template && art.template.$setting;
+        if (settingEl) {
+          settingEl.addEventListener('wheel', (e) => {
+            e.stopPropagation();
+          }, { passive: true });
+        }
+      } catch (e) {}
+
       try {
         if (window.artPlayerInstance && window.artPlayerInstance.notice) {
           window.artPlayerInstance.notice.show = function() {};
