@@ -8194,30 +8194,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
   }
 
-  // 2b. External Embed Handler (e.g. Miraculous Season 6 where upstream Vidlink misroutes to Season 4)
-  const isMiraculousS6 = (String(tmdbId) === '65334' || (ref?.title || '').toLowerCase().includes('miraculous')) && parseInt(season, 10) >= 6;
-  const isExternalEmbed = typeof videoUrl === 'string' && (videoUrl.includes('vidsrc') || videoUrl.includes('/embed/') || videoUrl.includes('multiembed'));
-
-  if (isMiraculousS6 || (isExternalEmbed && !cleanUrl)) {
-    const embedSrc = (typeof videoUrl === 'string' && videoUrl.startsWith('http') && (videoUrl.includes('vidsrc') || videoUrl.includes('/embed/')))
-      ? videoUrl
-      : `https://vidsrc.to/embed/tv/${tmdbId || '65334'}/${season}/${epNum}`;
-
-    if (iframe) {
-      iframe.src = embedSrc;
-      iframe.classList.remove("hidden");
-    }
-    if (artContainer) {
-      artContainer.classList.add("hidden");
-    }
-    if (isMiraculousS6 && typeof showToast === "function") {
-      showToast("Playing Miraculous Season 6 (English Dub)");
-    }
-    return; // Do not initialize ArtPlayer
-  }
-
-  // 2c. If Movies or TV Series: fetch direct stream from custom server endpoints
-  if (!isAnime && !cleanUrl && tmdbId && !is4kStream && !isFrom4kSession && !isMiraculousS6) {
+  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
+  if (!isAnime && !cleanUrl && tmdbId && !is4kStream && !isFrom4kSession) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
     const endpoints = [

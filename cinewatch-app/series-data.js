@@ -11367,7 +11367,6 @@ window._SERIES_DATA = [
             rating: 8.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/1",
             overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers."
           },
           {
@@ -11377,7 +11376,6 @@ window._SERIES_DATA = [
             rating: 8.1,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/2",
             overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris."
           },
           {
@@ -11387,7 +11385,6 @@ window._SERIES_DATA = [
             rating: 8.3,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/3",
             overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger."
           },
           {
@@ -11397,7 +11394,6 @@ window._SERIES_DATA = [
             rating: 8.5,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/4",
             overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets."
           },
           {
@@ -11407,7 +11403,6 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/5",
             overview: "A truth-seeking akumatized villain threatens to force everyone in Paris to reveal their deepest secrets, putting the secret identities of Ladybug and Cat Noir in jeopardy."
           },
           {
@@ -11417,7 +11412,6 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/6",
             overview: "Aurore Beauréal returns more dangerous than ever as Climatiqueen, unleashing catastrophic meteorological storms that freeze the city."
           },
           {
@@ -11427,7 +11421,6 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/7",
             overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm."
           },
           {
@@ -11437,7 +11430,6 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/8",
             overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens."
           },
           {
@@ -11447,7 +11439,6 @@ window._SERIES_DATA = [
             rating: 9.2,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/9",
             overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy."
           },
           {
@@ -11457,7 +11448,6 @@ window._SERIES_DATA = [
             rating: 8.5,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/10",
             overview: "A mysterious fortress rises over Paris, trapping the heroes in an intricate labyrinth filled with dark shadows and riddles."
           },
           {
@@ -11467,7 +11457,6 @@ window._SERIES_DATA = [
             rating: 8.9,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/11",
             overview: "The suspense reaches fever pitch as Ladybug must outsmart Revelator before Paris uncovers the truth behind the superhero duo."
           },
           {
@@ -11477,7 +11466,6 @@ window._SERIES_DATA = [
             rating: 8.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/12",
             overview: "A high-speed vehicular menace transforms the avenues of Paris into a wild obstacle course, forcing Cat Noir to take high-stakes risks."
           },
           {
@@ -11487,7 +11475,6 @@ window._SERIES_DATA = [
             rating: 9.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/13",
             overview: "Ancient martial discipline and enchanted artifacts collide when the formidable Yaksi Gozen challenges Ladybug to a battle of honor."
           },
           {
@@ -11497,7 +11484,6 @@ window._SERIES_DATA = [
             rating: 8.3,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/14",
             overview: "A mythical deluge of illusions and magical surges threatens to submerge Paris, pushing the Kwamis to safeguard their miraculous boxes."
           },
           {
@@ -11507,7 +11493,6 @@ window._SERIES_DATA = [
             rating: 8.2,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/15",
             overview: "Babysitting duties go delightfully wrong when a toddler with giant superpowers wreaks hilarious and unpredictable havoc across the city."
           },
           {
@@ -11517,7 +11502,6 @@ window._SERIES_DATA = [
             rating: 8.8,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/16",
             overview: "Paper origami bats and twilight illusions sweep through Paris, requiring Ladybug and Cat Noir to coordinate seamlessly in the dark."
           },
           {
@@ -11527,7 +11511,6 @@ window._SERIES_DATA = [
             rating: 8.5,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/17",
             overview: "A dream-weaving akuma puts the citizens of Paris into a mesmerizing, enchanted slumber that Ladybug and Cat Noir must awaken."
           },
           {
@@ -11537,7 +11520,6 @@ window._SERIES_DATA = [
             rating: 9.1,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/18",
             overview: "A romantic misunderstanding between friends triggers an emotional surge, testing Marinette and Adrien's growing bond."
           },
           {
@@ -11547,7 +11529,6 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/19",
             overview: "Anarchic anomalies throw the laws of physics out the window as Lady Chaos turns Parisian landmarks upside down."
           },
           {
@@ -11557,7 +11538,6 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/20",
             overview: "Entangling webs of sorrow trap Parisians in melancholy, prompting Cat Noir and Ladybug to deliver a spark of hope and triumph."
           },
           {
@@ -11567,7 +11547,6 @@ window._SERIES_DATA = [
             rating: 9,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/21",
             overview: "An adversary with rapid cellular regeneration continuously counters every blow, forcing our heroes to find a creative non-violent solution."
           },
           {
@@ -11577,7 +11556,6 @@ window._SERIES_DATA = [
             rating: 9.3,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/22",
             overview: "Colossal mythical warriors break free and clash across Paris in an earth-shattering confrontation that demands the full miraculous team."
           },
           {
@@ -11587,7 +11565,6 @@ window._SERIES_DATA = [
             rating: 8.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/23",
             overview: "A toxic polluter coats Parisian monuments in muck, inspiring Ladybug to devise an ingenious eco-friendly restoration plan."
           },
           {
@@ -11597,7 +11574,6 @@ window._SERIES_DATA = [
             rating: 8.8,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/24",
             overview: "Deafening soundwaves and sonic shockwaves blast through Paris under the reign of the acoustic villain, Queen of the Dreadzone."
           },
           {
@@ -11607,7 +11583,6 @@ window._SERIES_DATA = [
             rating: 9.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/25",
             overview: "The penultimate showdown of Season 6 commences as the mastermind activates the sinister Secret Protocol, putting all miraculous heroes in danger."
           },
           {
@@ -11617,7 +11592,6 @@ window._SERIES_DATA = [
             rating: 9.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            videoUrl: "https://vidsrc.to/embed/tv/65334/6/26",
             overview: "The explosive season finale! Ladybug and Cat Noir assemble every miraculous holder for an unforgettable climax against their ultimate nemesis."
           }
         ]

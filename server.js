@@ -278,6 +278,132 @@ async function resolveVidlinkStream(id, season, episode) {
   }
 }
 
+// ==========================================
+// MIRACULOUS SEASON 6 CACHE & DYNAMIC EXTRACTOR
+// ==========================================
+let puppeteer = null;
+try {
+  puppeteer = require('puppeteer');
+} catch (e) {
+  console.warn('Puppeteer not available, relying on pre-extracted cache for Miraculous S6.');
+}
+
+let miraculousS6Cache = {};
+const miraculousCachePath = path.join(__dirname, 'miraculous_s6_cache.json');
+try {
+  if (fs.existsSync(miraculousCachePath)) {
+    miraculousS6Cache = JSON.parse(fs.readFileSync(miraculousCachePath, 'utf8'));
+  }
+} catch (e) {
+  console.error('Error loading miraculous_s6_cache.json:', e.message);
+}
+
+function isM3u8TokenValid(streamUrl) {
+  try {
+    const urlObj = new URL(streamUrl);
+    const token = urlObj.searchParams.get('token');
+    if (!token) return true;
+    const parts = token.split('.');
+    if (parts.length < 2) return true;
+    const payload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf8'));
+    if (!payload.exp) return true;
+    const nowSec = Math.floor(Date.now() / 1000);
+    // Valid if at least 2 minutes remaining before expiration
+    return (payload.exp - nowSec) > 120;
+  } catch (e) {
+    return false;
+  }
+}
+
+let puppeteerBrowser = null;
+async function getPuppeteerBrowser() {
+  if (!puppeteer) return null;
+  if (!puppeteerBrowser || !puppeteerBrowser.isConnected()) {
+    puppeteerBrowser = await puppeteer.launch({
+      headless: 'new',
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-accelerated-2d-canvas',
+        '--disable-gpu',
+        '--mute-audio'
+      ]
+    });
+  }
+  return puppeteerBrowser;
+}
+
+async function extractVidsrcTvStream(tmdbId, season, ep) {
+  if (!puppeteer) return null;
+  const browser = await getPuppeteerBrowser();
+  if (!browser) return null;
+  const page = await browser.newPage();
+  
+  await page.setRequestInterception(true);
+  
+  let resolvedM3u8 = null;
+  let resolvePromise;
+  const streamPromise = new Promise(resolve => {
+    resolvePromise = resolve;
+  });
+
+  page.on('request', req => {
+    const u = req.url();
+    const type = req.resourceType();
+    
+    if (u.includes('disable-devtool') || u.includes('histats') || u.includes('llvpn') || u.includes('google-analytics')) {
+      req.abort();
+      return;
+    }
+
+    if (type === 'image' || type === 'font' || type === 'stylesheet') {
+      req.abort();
+      return;
+    }
+
+    if (u.includes('master.m3u8') || (u.includes('.m3u8') && !u.includes('secret/m3u8'))) {
+      if (!resolvedM3u8) {
+        resolvedM3u8 = u;
+        resolvePromise(u);
+      }
+    }
+    req.continue();
+  });
+
+  let clickInterval = null;
+  try {
+    const embedUrl = `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${ep}`;
+    await page.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
+
+    clickInterval = setInterval(async () => {
+      if (resolvedM3u8) {
+        clearInterval(clickInterval);
+        return;
+      }
+      for (const frame of page.frames()) {
+        try {
+          const btn = await frame.$('#bigPlay, .jw-bigplay, button');
+          if (btn) await btn.click().catch(() => {});
+        } catch(e) {}
+      }
+    }, 350);
+
+    const m3u8 = await Promise.race([
+      streamPromise,
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout extracting stream')), 12000))
+    ]);
+
+    if (clickInterval) clearInterval(clickInterval);
+    return m3u8;
+  } catch (err) {
+    console.error(`Dynamic extraction failed for ${tmdbId} S${season}E${ep}:`, err.message);
+    return null;
+  } finally {
+    if (clickInterval) clearInterval(clickInterval);
+    await page.close().catch(() => {});
+  }
+}
 
 const server = http.createServer((req, res) => {
   // Enable CORS
@@ -1010,11 +1136,107 @@ const server = http.createServer((req, res) => {
           return;
         }
 
+        // Special handling for Miraculous Season 6 (TMDB ID 65334)
         if (String(tmdbId) === '65334' && parseInt(season, 10) >= 6) {
-          res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+          const epNum = parseInt(episode, 10) || 1;
+          let m3u8Url = '';
+          const cached = miraculousS6Cache[String(epNum)];
+
+          if (cached && cached.streamUrl && isM3u8TokenValid(cached.streamUrl)) {
+            m3u8Url = cached.streamUrl;
+          } else {
+            console.log(`[Miraculous S6] Token expired or missing for Ep ${epNum}, extracting fresh stream...`);
+            try {
+              const freshUrl = await extractVidsrcTvStream(tmdbId, season, epNum);
+              if (freshUrl) {
+                m3u8Url = freshUrl;
+                miraculousS6Cache[String(epNum)] = {
+                  streamUrl: freshUrl,
+                  timestamp: Date.now()
+                };
+                try {
+                  fs.writeFileSync(miraculousCachePath, JSON.stringify(miraculousS6Cache, null, 2));
+                  const appCachePath = path.join(__dirname, 'cinewatch-app', 'miraculous_s6_cache.json');
+                  if (fs.existsSync(path.dirname(appCachePath))) {
+                    fs.writeFileSync(appCachePath, JSON.stringify(miraculousS6Cache, null, 2));
+                  }
+                } catch (fsErr) {
+                  console.error('Failed to persist miraculous_s6_cache:', fsErr.message);
+                }
+              }
+            } catch (extErr) {
+              console.error('Error during dynamic stream extraction:', extErr.message);
+            }
+
+            // Fallback to cached if dynamic extraction didn't produce a URL
+            if (!m3u8Url && cached && cached.streamUrl) {
+              m3u8Url = cached.streamUrl;
+            }
+          }
+
+          if (!m3u8Url) {
+            res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+            res.end(JSON.stringify({ success: false, error: 'Could not obtain stream for Miraculous Season 6 Episode ' + epNum }));
+            return;
+          }
+
+          // Fetch subtitles from VidSrc API
+          let tracks = [];
+          let enSubUrl = '';
+          try {
+            const subRes = await fetch(`https://data.vidsrc.sh/api.php?type=tv&tmdb=65334&season=6&episode=${epNum}`, {
+              signal: AbortSignal.timeout(4000)
+            });
+            if (subRes.ok) {
+              const subJson = await subRes.json();
+              const defaultSubs = subJson?.default_subs || [];
+              const enSub = defaultSubs.find(s => (s.code === 'en' || (s.lang || '').toLowerCase().includes('english')));
+              if (enSub && enSub.url) {
+                enSubUrl = enSub.url;
+              }
+
+              // Kurdish Sorani track
+              tracks.push({
+                label: 'Kurdish (Sorani)',
+                file: `${baseUrl}/api/movie-sub?title=${encodeURIComponent('Miraculous: Tales of Ladybug & Cat Noir')}&type=series&season=6&ep=${epNum}${enSubUrl ? `&enUrl=${encodeURIComponent(enSubUrl)}` : ''}`,
+                srclang: 'ku',
+                default: true
+              });
+
+              // Add all available subtitles through the subtitle proxy
+              for (const sub of defaultSubs) {
+                if (sub.url) {
+                  tracks.push({
+                    label: sub.lang || sub.code || 'English',
+                    file: `${baseUrl}/api/sub-proxy?url=${encodeURIComponent(sub.url)}`,
+                    srclang: (sub.code || 'en').toLowerCase()
+                  });
+                }
+              }
+            }
+          } catch (subErr) {
+            console.warn('[Miraculous S6] Subtitle lookup failed:', subErr.message);
+            tracks.push({
+              label: 'Kurdish (Sorani)',
+              file: `${baseUrl}/api/movie-sub?title=${encodeURIComponent('Miraculous: Tales of Ladybug & Cat Noir')}&type=series&season=6&ep=${epNum}`,
+              srclang: 'ku',
+              default: true
+            });
+          }
+
+          const qualities = [
+            { quality: 'Auto', url: m3u8Url }
+          ];
+
+          res.writeHead(200, {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
           res.end(JSON.stringify({
-            success: false,
-            error: 'Vidlink upstream misroutes Miraculous Season 6 to Season 4. External embed with English dub required.'
+            success: true,
+            streamUrl: m3u8Url,
+            qualities: qualities,
+            tracks: tracks
           }));
           return;
         }
