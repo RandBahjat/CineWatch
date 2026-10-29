@@ -318,6 +318,35 @@ window._FOURK_DATA = [
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt", srclang: "en", default: true }
     ]
+  },
+
+  // ============================================================
+  // 12. Harry Potter and the Prisoner of Azkaban (2004)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-prisoner-of-azkaban-2004",
+    title: "Harry Potter and the Prisoner of Azkaban",
+    type: "Movie",
+    year: 2004,
+    rating: 7.9,
+    age: "PG",
+    duration: "2h 21m",
+    genres: ["Adventure", "Fantasy", "Mystery", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Prisoner_Of_Azkaban_2004_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=lAxgztbYDbs",
+    overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends — and a mysterious new professor — to uncover the truth behind Black's true intentions before it's too late.",
+    overviewKurdish: "کاتێک هاری پۆتەر دەست بە ساڵی سێیەمی خوێندنی دەکات لە هاگوارتز، زانیاری ئەوەی پێدەگات کە سیریوس بلاک، زیندانییەکی هەڵاتووی بەناوبانگی ئەزکابان، بەدوای ئەودا دەگەڕێت. بە ئامادەبوونی دیمێنتۆرەکان و ئاشکرابوونی نهێنییە نوێیەکانی مردنی دایک و باوکی، هاری دەبێت ڕووبەڕووی ڕاستییەکان ببێتەوە پێش ئەوەی درەنگ بێت.",
+    director: "Alfonso Cuarón",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Gary Oldman", "David Thewlis", "Emma Thompson", "Michael Gambon", "Alan Rickman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];

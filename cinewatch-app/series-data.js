@@ -336,7 +336,7 @@ window._SERIES_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
-    videoUrl: "284833",
+    videoUrl: "213375",
     trailerUrl: "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
     overview: "Following the catastrophic events of Westview, the newly reconstructed White Vision embarks on a solitary, soul-searching odyssey across the globe to rediscover his stolen identity, understand human consciousness, and reclaim the emotional memories of the hero he once was.",
     overviewKurdish: "دوای ڕووداوە وێرانکەرەکانی وێست‌ڤیو، کەسایەتیی دووبارە دروستکراوەی «ڤیژنی سپی» دەست بە گەشتێکی تایبەت و قووڵ دەکات لە سەرتاسەری جیهاندا، بە ئامانجی دووبارە دۆزینەوەی ناسنامە ونبووەکەی، تێگەیشتن لە هەست و بیرکردنەوەی مرۆڤ، و گەڕاندنەوەی ئەو یادەوەرییانەی کە لە ڕابردوودا وەک پاڵەوانێک هەیبوون.",
@@ -365,7 +365,43 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://m.media-amazon.com/images/M/MV5BNmM5NzM1YzEtZGQ0OC00Y2Q0LTgzM2QtMDM4MWUyZWI4NWFlXkEyXkFqcGc@._V1_.jpg",
             duration: "45 min",
-            overview: ""
+            overview: "Delving into the classic Ship of Theseus paradox, Vision struggles to reconcile his restored memories with his rebuilt synthezoid hardware while forming a fragile alliance with Tommy and his embedded AI network."
+          },
+          {
+            episode: 3,
+            title: "Reboot",
+            airDate: "2026-10-20",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+            duration: "46 min",
+            overview: "Tommy risks everything to initiate a high-stakes hard reset on Vision's core systems, inadvertently opening a backdoor to a lethal digital entity known as the Butcherbird Killer."
+          },
+          {
+            episode: 4,
+            title: "Malware",
+            airDate: "2026-10-20",
+            rating: 8.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+            duration: "48 min",
+            overview: "When the Butcherbird breaches Vision's mindspace, a desperate Vision surrenders physical control of his synthezoid body to Ultron, unleashing devastating consequences as Ultron takes the wheel."
+          },
+          {
+            episode: 5,
+            title: "Firewall",
+            airDate: "2026-10-27",
+            rating: 9.0,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+            duration: "47 min",
+            overview: "Trapped in the digital attic of his own consciousness, Vision and his AI allies work frantically to decipher Ultron's sinister real-world scheme while facing a brutal ultimatum to drop the firewall."
+          },
+          {
+            episode: 6,
+            title: "Deadlock",
+            airDate: "2026-10-27",
+            rating: 9.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+            duration: "49 min",
+            overview: "As Ultron initiates a catastrophic hive-mind convergence and bounty hunters close in on Tommy, Vision makes an agonizing sacrifice to disable the internal firewalls and break the deadlock."
           }
         ]
       }
