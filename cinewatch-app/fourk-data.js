@@ -362,7 +362,7 @@ window._FOURK_DATA = [
     duration: "2h 37m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://image.tmdb.org/t/p/original/y8QaEgvkd1JSRx4IJ5b35j8CrGh.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/cClWTo3ftVXvV1sF8vlLuWfnlph.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qs4ZSuy8FgujvSC0f0GcC9mM2h0.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Goblet_Of_Fire_2005_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=3EGojp4Hh6I",
     overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play — one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
