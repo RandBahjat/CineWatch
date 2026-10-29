@@ -2130,7 +2130,10 @@ function renderFilteredGrid(movieList, titleText) {
     const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
     filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => openDetailsModal(card.dataset.id);
+      card.onclick = () => {
+        state.currentDetailsFrom4k = false;
+        openDetailsModal(card.dataset.id, false);
+      };
     });
   }
 }
@@ -2212,21 +2215,13 @@ function renderBrowseGrid(items, gridId, page) {
     grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isPoster)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => {
-        const m = findMovieByIdOrTitle(card.dataset.id);
         if (gridId === "fourkGrid") {
-          if (m) {
-            m.from4kSection = true;
-            m.is4k = true;
-          }
           state.currentDetailsFrom4k = true;
+          openDetailsModal(card.dataset.id, true);
         } else {
-          if (m) {
-            m.from4kSection = false;
-            m.is4k = false;
-          }
           state.currentDetailsFrom4k = false;
+          openDetailsModal(card.dataset.id, false);
         }
-        openDetailsModal(card.dataset.id);
       };
     });
   }
@@ -3502,11 +3497,15 @@ window.submitComment = async function (movieId) {
 };
 
 function openDetailsModal(movieId, from4k = null) {
-  const is4kContext = from4k === true || (from4k === null && (
-    state.currentDetailsFrom4k === true ||
-    state.activeView === '4k' ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
-  ) && state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime');
+  const is4kContext = from4k === true || (
+    from4k !== false &&
+    state.activeView === '4k' &&
+    state.activeView !== 'movies' &&
+    state.activeView !== 'series' &&
+    state.activeView !== 'anime' &&
+    state.activeView !== 'search' &&
+    state.activeView !== 'home'
+  );
 
   const movie = is4kContext
     ? (find4kByIdOrTitle(movieId) || findMovieByIdOrTitle(movieId))
@@ -3514,7 +3513,7 @@ function openDetailsModal(movieId, from4k = null) {
 
   if (!movie) return;
 
-  state.currentDetailsFrom4k = Boolean(is4kContext || movie.from4kSection);
+  state.currentDetailsFrom4k = Boolean(is4kContext);
 
   const currentUrl = new URL(window.location.href);
   currentUrl.searchParams.set('v', movie.id);
@@ -3705,12 +3704,7 @@ function openDetailsModal(movieId, from4k = null) {
     }
     if (qualityBadge) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
-      const isFrom4k = !isSeriesOrAnime && Boolean(
-        (state.currentDetailsFrom4k === true || state.activeView === '4k' || (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')) &&
-        state.activeView !== 'movies' &&
-        state.activeView !== 'series' &&
-        state.activeView !== 'anime'
-      );
+      const isFrom4k = !isSeriesOrAnime && Boolean(is4kContext);
       qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
       qualityBadge.style.cssText = isFrom4k
         ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"
@@ -4353,12 +4347,11 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     ? window._FOURK_DATA.find(f => (parentId && (f.id === parentId || f.videoUrl === videoUrl)) || (displayTitle && f.title && displayTitle.toLowerCase().includes(f.title.toLowerCase())) || (parentMovie && ((f.id && f.id === parentMovie.id) || (f.title && f.title.toLowerCase() === (parentMovie.title || '').toLowerCase()))))
     : null;
 
-  const is4kPlayback = (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime') && Boolean(
+  const is4kPlayback = (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime' && state.activeView !== 'search' && state.activeView !== 'home') && Boolean(
     state.activeView === '4k' ||
     state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
-    parentMovie?.from4kSection === true ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
+    parentMovie?.from4kSection === true
   );
 
   if (is4kPlayback) {
@@ -4487,11 +4480,15 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 }
 
 async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
-  const isFrom4k = is4k === true || (is4k === null && (
-    state.currentDetailsFrom4k === true ||
-    state.activeView === '4k' ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
-  ) && state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime');
+  const isFrom4k = is4k === true || (
+    is4k !== false &&
+    state.activeView === '4k' &&
+    state.activeView !== 'movies' &&
+    state.activeView !== 'series' &&
+    state.activeView !== 'anime' &&
+    state.activeView !== 'search' &&
+    state.activeView !== 'home'
+  );
 
   const movie = isFrom4k
     ? (find4kByIdOrTitle(movieId) || findMovieByIdOrTitle(movieId))
@@ -6389,7 +6386,8 @@ function bindEventListeners() {
         return;
       }
 
-      openDetailsModal(movieId);
+      const is4kCard = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null;
+      openDetailsModal(movieId, is4kCard);
     }
   });
 
@@ -6520,6 +6518,7 @@ function bindEventListeners() {
   }
 
   function openSearchModal() {
+    state.currentDetailsFrom4k = false;
     searchModal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
     if (searchInput) {
@@ -6674,7 +6673,8 @@ function bindEventListeners() {
         if (movie) saveRecentSearch(movie.title);
         searchDropdown.classList.add("hidden");
         closeSearchModal();
-        openDetailsModal(movieId);
+        state.currentDetailsFrom4k = false;
+        openDetailsModal(movieId, false);
       }
     };
   }
@@ -7919,11 +7919,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
     : null;
 
-  const isFrom4kSession = !isAnime && !isTv && (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime') && Boolean(
+  const isFrom4kSession = !isAnime && !isTv && (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime' && state.activeView !== 'search' && state.activeView !== 'home') && Boolean(
     state.activeView === '4k' ||
     state.currentDetailsFrom4k === true ||
-    ref?.from4kSection === true ||
-    (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
+    ref?.from4kSection === true
   );
 
   let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
