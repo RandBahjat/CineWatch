@@ -3127,18 +3127,7 @@ function renderUserBadge() {
               <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
             </button>
 
-            ${isVip ? `
-              <div class="account-panel-action-btn" style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.4); cursor: default; margin-top: 4px;">
-                <div class="panel-btn-icon" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">
-                  <span style="font-size: 1rem;">👑</span>
-                </div>
-                <div style="flex: 1; text-align: left;">
-                  <div style="color: #fbbf24; font-weight: 800; font-size: 0.85rem;">Ultimate 1-Year Pass</div>
-                  <div style="color: #94a3b8; font-size: 0.72rem;">Full 4K Ultra HD & Ad-Free Streaming</div>
-                </div>
-                <span style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); font-size: 0.65rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;">ACTIVE</span>
-              </div>
-            ` : `
+            ${!isVip ? `
               <button class="account-panel-action-btn" id="panelUpgradePlanBtn" style="color: #fbbf24;" onclick="if(typeof closePanel==='function')closePanel(); if(typeof openVipModal==='function')openVipModal();">
                 <div class="panel-btn-icon" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24;">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
@@ -3146,7 +3135,7 @@ function renderUserBadge() {
                 <span class="panel-btn-text">Upgrade plan</span>
                 <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
               </button>
-            `}
+            ` : ''}
           </div>
 
           ${renderThemeSelectorHTML()}
@@ -10056,16 +10045,7 @@ function renderVipBadges() {
     }
   }
 
-  // 3. Update Account Side Panel
-  const panelVipBtn = document.getElementById("panelVipUpgradeBtn");
-  if (panelVipBtn && isVip) {
-    panelVipBtn.style.cssText = "background: rgba(245, 158, 11, 0.15) !important; border: 1px solid #fbbf24 !important; color: #fbbf24 !important; font-weight: 800; margin-bottom: 8px; cursor: default;";
-    panelVipBtn.innerHTML = `
-      <span style="font-size: 1.1rem;">👑</span>
-      <span class="notranslate" translate="no" style="letter-spacing: 0.5px;">VIP SUBSCRIPTION ACTIVE</span>
-    `;
-    panelVipBtn.onclick = (e) => { e.preventDefault(); };
-  }
+  // Account panel VIP card removed as requested
 
   // ULTIMATE VIP badge on sidebar removed as requested
 }

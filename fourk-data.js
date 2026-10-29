@@ -361,7 +361,7 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 37m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
-    poster: "https://image.tmdb.org/t/p/original/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+    poster: "https://image.tmdb.org/t/p/original/y8QaEgvkd1JSRx4IJ5b35j8CrGh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cClWTo3ftVXvV1sF8vlLuWfnlph.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Goblet_Of_Fire_2005_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=3EGojp4Hh6I",
