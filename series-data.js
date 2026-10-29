@@ -3,6 +3,31 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
+  // ============================================================
+  // Harry Potter (2026 - HBO Series)
+  // ============================================================
+  {
+    title: "Harry Potter",
+    type: "TV Show",
+    year: 2026,
+    rating: "TBR",
+    age: "TV-PG",
+    duration: "60m",
+    genres: ["Adventure", "Fantasy", "Drama", "Family", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/AcVckVxfN169mGOgQGYe983KT1C.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/g0VmjKGMyipJSlPwlQvlLBvXTAQ.jpg",
+    videoUrl: "224377",
+    trailerUrl: "https://www.youtube.com/watch?v=RIu4sFKGi6E",
+    overview: "There is nothing special about Harry Potter - at least that's what his Aunt Petunia always says. On his 11th birthday, a letter of admittance to Hogwarts School of Witchcraft and Wizardry opens up a hidden world for Harry: one of fun, friendship and magic. But with this new adventure comes great risk as Harry is forced to face a dangerous enemy from his past.",
+    overviewKurdish: "هیچ شتێکی تایبەت لەبارەی هاری پۆتەرەوە نییە - بەلایەنی کەمەوە ئەوەیە کە خاڵۆژن پێتونیا هەمیشە دەیڵێت. بەڵام لە یازدەیەمین ساڵیادی لەدایکبوونیدا، نامەیەکی وەرگیران بۆ قوتابخانەی هاگوارتز بۆ جادووگەری، دەروازەی جیهانێکی شاراوە بۆ هاری دەکاتەوە: پڕ لە خۆشی، هاوڕێیەتی و سیحر. بەڵام لەگەڵ ئەم سەرکێشییە نوێیەدا مەترسییەکی گەورە دێت، کاتێک هاری ناچار دەبێت ڕووبەڕووی دوژمنێکی مەترسیداری ڕابردووی خۆی ببێتەوە.",
+    director: "Mark Mylod",
+    cast: ["Dominic McLaughlin", "Arabella Stanton", "Alastair Stout", "John Lithgow", "Janet McTeer", "Paapa Essiedu", "Nick Frost"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+
 
   // ============================================================
   // 1. Cyberpunk: Edgerunners (2022)

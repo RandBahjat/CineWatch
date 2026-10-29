@@ -155,7 +155,7 @@ const POPULAR_SERIES = [
   "S.W.A.T.",
   "The Walking Dead"
 ];
-let UPCOMING_MOVIES = ["Avengers: Doomsday","Dune: Part Three"];
+let UPCOMING_MOVIES = ["Avengers: Doomsday", "Dune: Part Three", "Harry Potter"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
 window.FEATURED_TITLES = FEATURED_TITLES;
@@ -1584,7 +1584,7 @@ function renderRemainingCarousels() {
     trendingAnimeTrack: mergedTrendingAnime,
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
     popularSeriesTrack: getMoviesFromList(POPULAR_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
-    upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show"),
+    upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES),
   };
 
   const tracks = Object.keys(remainingShelfMap);
