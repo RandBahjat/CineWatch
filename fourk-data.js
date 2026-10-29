@@ -275,7 +275,7 @@ window._FOURK_DATA = [
     duration: "2h 32m",
     genres: ["Adventure", "Fantasy", "Family"],
     poster: "https://image.tmdb.org/t/p/original/8CowcviEyo0fnXWLGXMWf67IXgI.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/gn42BXfA7IG6cXUmvzMEImowqYL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Sorcerers_Stone_2001_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
     overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
@@ -332,8 +332,8 @@ window._FOURK_DATA = [
     age: "PG",
     duration: "2h 21m",
     genres: ["Adventure", "Fantasy", "Mystery", "Family"],
-    poster: "https://image.tmdb.org/t/p/original/m8M7PUqvrZdtKEieh04QXOArVGG.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/rJFoaMjn2sYte0w74Pyur9CZg26.jpg",
+    poster: "https://image.tmdb.org/t/p/original/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Prisoner_Of_Azkaban_2004_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=lAxgztbYDbs",
     overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends — and a mysterious new professor — to uncover the truth behind Black's true intentions before it's too late.",
@@ -346,6 +346,35 @@ window._FOURK_DATA = [
     seasons: [],
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 13. Harry Potter and the Goblet of Fire (2005)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-goblet-of-fire-2005",
+    title: "Harry Potter and the Goblet of Fire",
+    type: "Movie",
+    year: 2005,
+    rating: 7.7,
+    age: "PG-13",
+    duration: "2h 37m",
+    genres: ["Adventure", "Family", "Fantasy", "Mystery"],
+    poster: "https://image.tmdb.org/t/p/original/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cClWTo3ftVXvV1sF8vlLuWfnlph.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Goblet_Of_Fire_2005_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=3EGojp4Hh6I",
+    overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play — one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
+    overviewKurdish: "کاتێک هاگوارتز میوانداری پاڵەوانێتی سێ جادووگەرەکە دەکات کە پێشبڕکێیەکی پڕ مەترسییە لە نێوان سێ قوتابخانەی جادووگەریدا، هاری شۆک دەبێت کاتێک دەبینێت ناوی لە جامی ئاگرینەوە دێتە دەرەوە سەرەڕای ئەوەی تەمەنی کەمە و مەرجەکانی بەشداریکردنی نییە. ناچار دەبێت لە زنجیرەیەک تاقیکردنەوەی مەترسیداردا بەشداری بکات، لە هەمان کاتدا هاری هەست بە گەڕانەوەی هێزێکی تاریک دەکات کە دەبێتە هۆی ڕووبەڕووبوونەوەیەکی گەورە لەگەڵ ئەو جادووگەرەی کە بەرپرس بووە لە مردنی دایک و باوکی.",
+    director: "Mike Newell",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Ralph Fiennes", "Brendan Gleeson", "Robert Pattinson", "Michael Gambon", "Maggie Smith", "Alan Rickman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Goblet_Of_Fire_2005_English.vtt", srclang: "en", default: true }
     ]
   }
 

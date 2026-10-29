@@ -347,6 +347,35 @@ window._FOURK_DATA = [
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt", srclang: "en", default: true }
     ]
+  },
+
+  // ============================================================
+  // 13. Harry Potter and the Goblet of Fire (2005)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-goblet-of-fire-2005",
+    title: "Harry Potter and the Goblet of Fire",
+    type: "Movie",
+    year: 2005,
+    rating: 7.7,
+    age: "PG-13",
+    duration: "2h 37m",
+    genres: ["Adventure", "Family", "Fantasy", "Mystery"],
+    poster: "https://image.tmdb.org/t/p/original/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cClWTo3ftVXvV1sF8vlLuWfnlph.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Goblet_Of_Fire_2005_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=3EGojp4Hh6I",
+    overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play — one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
+    overviewKurdish: "کاتێک هاگوارتز میوانداری پاڵەوانێتی سێ جادووگەرەکە دەکات کە پێشبڕکێیەکی پڕ مەترسییە لە نێوان سێ قوتابخانەی جادووگەریدا، هاری شۆک دەبێت کاتێک دەبینێت ناوی لە جامی ئاگرینەوە دێتە دەرەوە سەرەڕای ئەوەی تەمەنی کەمە و مەرجەکانی بەشداریکردنی نییە. ناچار دەبێت لە زنجیرەیەک تاقیکردنەوەی مەترسیداردا بەشداری بکات، لە هەمان کاتدا هاری هەست بە گەڕانەوەی هێزێکی تاریک دەکات کە دەبێتە هۆی ڕووبەڕووبوونەوەیەکی گەورە لەگەڵ ئەو جادووگەرەی کە بەرپرس بووە لە مردنی دایک و باوکی.",
+    director: "Mike Newell",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Ralph Fiennes", "Brendan Gleeson", "Robert Pattinson", "Michael Gambon", "Maggie Smith", "Alan Rickman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Goblet_Of_Fire_2005_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];
