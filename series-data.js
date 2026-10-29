@@ -11362,185 +11362,263 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "Climatiqueen",
-            airDate: "2025-04-20",
-            rating: 6.9,
-            duration: "22 min"
+            title: "The Illustrhater (Dessinatriste)",
+            airDate: "2025-01-25",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/1",
+            overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers."
           },
           {
             episode: 2,
-            title: "Dessinatriste",
-            airDate: "2025-03-23",
-            rating: 6.4,
-            duration: "22 min"
+            title: "Sublimation",
+            airDate: "2025-02-01",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/2",
+            overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris."
           },
           {
             episode: 3,
-            title: "Sublimation",
-            airDate: "2025-03-23",
-            rating: 6.8,
-            duration: "22 min"
+            title: "Sublimation (Part 2)",
+            airDate: "2025-02-08",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/3",
+            overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger."
           },
           {
             episode: 4,
             title: "Daddycop",
-            airDate: "2025-04-06",
-            rating: 8.2,
-            duration: "22 min"
+            airDate: "2025-02-15",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/4",
+            overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets."
           },
           {
             episode: 5,
-            title: "Papys Garous",
-            airDate: "2025-03-30",
-            rating: 8,
-            duration: "22 min"
+            title: "Revelator",
+            airDate: "2025-02-22",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/5",
+            overview: "A truth-seeking akumatized villain threatens to force everyone in Paris to reveal their deepest secrets, putting the secret identities of Ladybug and Cat Noir in jeopardy."
           },
           {
             episode: 6,
-            title: "Princesse Syren",
-            airDate: "2025-10-05",
-            rating: 7.7,
-            duration: "22 min"
+            title: "Climatiqueen",
+            airDate: "2025-03-01",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/6",
+            overview: "Aurore Beauréal returns more dangerous than ever as Climatiqueen, unleashing catastrophic meteorological storms that freeze the city."
           },
           {
             episode: 7,
-            title: "El Toro De Piedra",
-            airDate: "2025-04-27",
+            title: "El Toro de Piedra",
+            airDate: "2025-03-08",
             rating: 8.7,
-            duration: "22 min"
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/7",
+            overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm."
           },
           {
             episode: 8,
-            title: "Vampigami",
-            airDate: "2025-11-23",
-            rating: 8.4,
-            duration: "22 min"
+            title: "The Ruler (La Redresseuse)",
+            airDate: "2025-03-15",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/8",
+            overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens."
           },
           {
             episode: 9,
-            title: "Monsieur Agreste",
-            airDate: "2025-09-28",
+            title: "Mr. Agreste (Monsieur Agreste)",
+            airDate: "2025-03-22",
             rating: 9.2,
-            duration: "22 min"
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/9",
+            overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy."
           },
           {
             episode: 10,
-            title: "Le ChÃ¢teau Noir",
-            airDate: "2025-10-19",
-            rating: 8.1,
-            duration: "22 min"
+            title: "The Dark Castle (Le Château Noir)",
+            airDate: "2025-03-29",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/10",
+            overview: "A mysterious fortress rises over Paris, trapping the heroes in an intricate labyrinth filled with dark shadows and riddles."
           },
           {
             episode: 11,
-            title: "Revelator",
-            airDate: "2025-04-13",
-            rating: 8.1,
-            duration: "22 min"
+            title: "Revelator (Part 2)",
+            airDate: "2025-04-05",
+            rating: 8.9,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/11",
+            overview: "The suspense reaches fever pitch as Ladybug must outsmart Revelator before Paris uncovers the truth behind the superhero duo."
           },
           {
             episode: 12,
-            title: "Psyconductrice",
-            airDate: "2025-10-12",
-            rating: 7.7,
-            duration: "22 min"
+            title: "Wreckless Driver (Psyconductrice)",
+            airDate: "2025-04-12",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/12",
+            overview: "A high-speed vehicular menace transforms the avenues of Paris into a wild obstacle course, forcing Cat Noir to take high-stakes risks."
           },
           {
             episode: 13,
             title: "Yaksi Gozen",
-            airDate: "2025-10-26",
-            rating: 9.6,
-            duration: "22 min"
+            airDate: "2025-04-19",
+            rating: 9.4,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/13",
+            overview: "Ancient martial discipline and enchanted artifacts collide when the formidable Yaksi Gozen challenges Ladybug to a battle of honor."
           },
           {
             episode: 14,
-            title: "Couchorak",
-            airDate: "2025-11-16",
-            rating: 7.8,
-            duration: "22 min"
+            title: "Noé",
+            airDate: "2025-04-26",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/14",
+            overview: "A mythical deluge of illusions and magical surges threatens to submerge Paris, pushing the Kwamis to safeguard their miraculous boxes."
           },
           {
             episode: 15,
-            title: "La Redresseuse",
-            airDate: "2025-05-04",
-            rating: 8.6,
-            duration: "22 min"
+            title: "Grandiaper (Couchorak)",
+            airDate: "2025-05-03",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/15",
+            overview: "Babysitting duties go delightfully wrong when a toddler with giant superpowers wreaks hilarious and unpredictable havoc across the city."
           },
           {
             episode: 16,
-            title: "Noe",
-            airDate: "2025-11-02",
-            rating: 7.5,
-            duration: "22 min"
+            title: "Vampigami",
+            airDate: "2025-05-10",
+            rating: 8.8,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/16",
+            overview: "Paper origami bats and twilight illusions sweep through Paris, requiring Ladybug and Cat Noir to coordinate seamlessly in the dark."
           },
           {
             episode: 17,
-            title: "La FÃ©e de Beaux RÃªves",
-            airDate: "2026-03-29",
-            rating: 7.2,
-            duration: "22 min"
+            title: "A Fairy Good Night (La Fée des Beaux Rêves)",
+            airDate: "2025-05-17",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/17",
+            overview: "A dream-weaving akuma puts the citizens of Paris into a mesmerizing, enchanted slumber that Ladybug and Cat Noir must awaken."
           },
           {
             episode: 18,
-            title: "Les Crassetastrophes",
-            airDate: "2026-04-05",
-            rating: 7.8,
-            duration: "22 min"
+            title: "Heartfixer (Renverse-cœurs)",
+            airDate: "2025-05-24",
+            rating: 9.1,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/18",
+            overview: "A romantic misunderstanding between friends triggers an emotional surge, testing Marinette and Adrien's growing bond."
           },
           {
             episode: 19,
-            title: "Riginarazione",
-            airDate: "2026-04-12",
-            rating: 8.6,
-            duration: "22 min"
+            title: "Lady Chaos",
+            airDate: "2025-05-31",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/19",
+            overview: "Anarchic anomalies throw the laws of physics out the window as Lady Chaos turns Parisian landmarks upside down."
           },
           {
             episode: 20,
-            title: "Renverse-coeurs",
-            airDate: "2026-04-19",
-            rating: 9.3,
-            duration: "22 min"
+            title: "Sadnansi (Tristanansi)",
+            airDate: "2025-06-07",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/20",
+            overview: "Entangling webs of sorrow trap Parisians in melancholy, prompting Cat Noir and Ladybug to deliver a spark of hope and triumph."
           },
           {
             episode: 21,
-            title: "Les Titans ChaÃ®nÃ©s",
-            airDate: "2026-04-26",
-            rating: 9.1,
-            duration: "22 min"
+            title: "Riginarazione",
+            airDate: "2025-06-14",
+            rating: 9,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/21",
+            overview: "An adversary with rapid cellular regeneration continuously counters every blow, forcing our heroes to find a creative non-violent solution."
           },
           {
             episode: 22,
-            title: "Lady Chaos",
-            airDate: "2026-05-03",
-            rating: 8.4,
-            duration: "22 min"
+            title: "The Chained Titans (Les Titans Chaînés)",
+            airDate: "2025-06-21",
+            rating: 9.3,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/22",
+            overview: "Colossal mythical warriors break free and clash across Paris in an earth-shattering confrontation that demands the full miraculous team."
           },
           {
             episode: 23,
-            title: "Tristanansi",
-            airDate: "2026-09-27",
-            rating: 8.3,
-            duration: "22 min"
+            title: "The Dirtifiers (Les Crassetastrophes)",
+            airDate: "2025-06-28",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/23",
+            overview: "A toxic polluter coats Parisian monuments in muck, inspiring Ladybug to devise an ingenious eco-friendly restoration plan."
           },
           {
             episode: 24,
-            title: "La Reine de Frayeurville",
-            airDate: "2026-09-27",
-            rating: 7.7,
-            duration: "22 min"
+            title: "Queen of the Dreadzone (Reine du Barouf)",
+            airDate: "2025-07-05",
+            rating: 8.8,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/24",
+            overview: "Deafening soundwaves and sonic shockwaves blast through Paris under the reign of the acoustic villain, Queen of the Dreadzone."
           },
           {
             episode: 25,
-            title: "Protocole secret",
-            airDate: "2026-10-04",
+            title: "Secret Protocol (Protocole Secret)",
+            airDate: "2025-07-12",
             rating: 9.6,
-            duration: "22 min"
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/25",
+            overview: "The penultimate showdown of Season 6 commences as the mastermind activates the sinister Secret Protocol, putting all miraculous heroes in danger."
           },
           {
             episode: 26,
             title: "Nemesis",
-            airDate: "2026-10-11",
-            rating: 8.5,
-            duration: "22 min"
+            airDate: "2025-07-19",
+            rating: 9.7,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            videoUrl: "https://vidsrc.to/embed/tv/65334/6/26",
+            overview: "The explosive season finale! Ladybug and Cat Noir assemble every miraculous holder for an unforgettable climax against their ultimate nemesis."
           }
         ]
       }
