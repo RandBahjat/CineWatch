@@ -1110,8 +1110,10 @@
   padding: 0 4px !important;
 }
 
-/* Individual dot — base state (Cineby: 8px circle, 0.3s ease transition) */
+/* Individual dot — base state (8px circle, 0.3s ease transition) */
 .hero-dot-track .hdot {
+  position: relative !important;
+  overflow: hidden !important;
   display: block !important;
   width: 8px !important;
   height: 8px !important;
@@ -1125,16 +1127,47 @@
   flex-shrink: 0 !important;
   box-shadow: none !important;
   transform: none !important;
-  transition: width 0.3s ease, background-color 0.3s ease, opacity 0.3s ease !important;
+  -webkit-mask-image: -webkit-radial-gradient(white, black) !important;
+  mask-image: radial-gradient(white, black) !important;
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, opacity 0.3s ease !important;
 }
 
-/* Active dot (Cineby: 28px elongated pill, pure white) */
+/* Active dot: 28px elongated pill container with translucent track */
 .hero-dot-track .hdot.active {
   width: 28px !important;
-  background-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.35) !important;
   box-shadow: none !important;
   transform: none !important;
-  animation: none !important;
+}
+
+/* Filling progress indicator inside active dot (fills over slide duration) */
+.hero-dot-track .hdot::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 9999px !important;
+  background-color: #ffffff !important;
+  transform-origin: left center !important;
+  transform: scaleX(0);
+  opacity: 0;
+  pointer-events: none !important;
+}
+
+.hero-dot-track .hdot.active::after {
+  opacity: 1 !important;
+  animation: hdotProgress var(--hero-slide-duration, 10s) linear forwards !important;
+}
+
+@keyframes hdotProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 /* Hover dot */

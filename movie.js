@@ -1201,6 +1201,7 @@ function setupHeroBanner() {
     `;
     const dotTrack = document.getElementById("heroDotTrack");
     if (dotTrack) {
+      dotTrack.style.setProperty("--hero-slide-duration", `${HERO_ROTATE_INTERVAL_MS}ms`);
       // Set active on next paint so the CSS keyframe @hdotActivate fires from the inactive state
       requestAnimationFrame(() => {
         const allDots = dotTrack.querySelectorAll(".hdot");
@@ -1411,6 +1412,7 @@ function updateHeroBanner() {
   const featured = getFeaturedMovies();
   const dotTrack = document.getElementById("heroDotTrack");
   if (dotTrack) {
+    dotTrack.style.setProperty("--hero-slide-duration", `${HERO_ROTATE_INTERVAL_MS}ms`);
     const existing = dotTrack.querySelectorAll(".hdot");
     if (existing.length !== featured.length) {
       // Only rebuild when the slide count genuinely changes (first load or data reload)
@@ -1435,7 +1437,18 @@ function updateHeroBanner() {
       });
     } else {
       // Just toggle the class — let the CSS transition do all the work
-      existing.forEach((dot, i) => dot.classList.toggle("active", i === state.currentHeroIndex));
+      existing.forEach((dot, i) => {
+        const isActive = i === state.currentHeroIndex;
+        if (isActive) {
+          if (dot.classList.contains("active")) {
+            dot.classList.remove("active");
+            void dot.offsetWidth;
+          }
+          dot.classList.add("active");
+        } else {
+          dot.classList.remove("active");
+        }
+      });
     }
   }
 }
