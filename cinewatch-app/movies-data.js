@@ -1977,7 +1977,7 @@ window._MOVIES_DATA = [
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://image.tmdb.org/t/p/original/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
-    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Prisoner_Of_Azkaban_2004_4K_UHD.mp4",
+    videoUrl: "673",
     trailerUrl: "https://www.youtube.com/watch?v=lAxgztbYDbs",
     overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends — and a mysterious new professor — to uncover the truth behind Black's true intentions before it's too late.",
     overviewKurdish: "کاتێک هاری پۆتەر دەست بە ساڵی سێیەمی خوێندنی دەکات لە هاگوارتز، زانیاری ئەوەی پێدەگات کە سیریوس بلاک، زیندانییەکی هەڵاتووی بەناوبانگی ئەزکابان، بەدوای ئەودا دەگەڕێت. بە ئامادەبوونی دیمێنتۆرەکان و ئاشکرابوونی نهێنییە نوێیەکانی مردنی دایک و باوکی، هاری دەبێت ڕووبەڕووی ڕاستییەکان ببێتەوە پێش ئەوەی درەنگ بێت.",
@@ -1985,11 +1985,8 @@ window._MOVIES_DATA = [
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Gary Oldman, David Thewlis, Emma Thompson"],
     trending: true,
     featured: true,
-    is4k: true,
-    seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt", srclang: "en", default: true }
-    ]
+    is4k: false,
+    seasons: []
   },
 
   // ============================================================
@@ -2006,7 +2003,7 @@ window._MOVIES_DATA = [
     genres: ["Adventure", "Family", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/cBFdzuysqZ2sCjNOq1Ji2Kx7ZNh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yHzyPJrVqlTySQ9mc379yxrLBYQ.jpg",
-    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Chamber_Of_Secrets_2002_4K_UHD.mp4",
+    videoUrl: "672",
     trailerUrl: "https://www.youtube.com/watch?v=1bq0qff4iF8",
     overview: "Back at Hogwarts for his second year, Harry finds the school gripped by fear when students start turning up mysteriously petrified, and cryptic warnings reveal that the legendary Chamber of Secrets has been reopened. As whispers point to Harry himself as the culprit, he and his friends must uncover the truth behind an ancient legend before the creature lurking within the chamber claims a life.",
     overviewKurdish: "هاری پۆتەر دەگەڕێتەوە بۆ ساڵی دووەمی خوێندنی لە هۆگوارتس، بەڵام دەبینێت کە خوێندنگەکە کەوتووەتە ژێر مەترسییەوە دوای ئەوەی ژووری نهێنییەکان دەکرێتەوە و بوونەوەرێکی مەترسیدار خوێندکاران بە بەرد دەکات. هاری و هاوڕێکانی دەبێت نهێنی ئەم ژوورە ئاشکرا بکەن پێش ئەوەی کارەسات ڕووبدات.",
@@ -2014,11 +2011,8 @@ window._MOVIES_DATA = [
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Kenneth Branagh, Jason Isaacs, Maggie Smith"],
     trending: true,
     featured: true,
-    is4k: true,
-    seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt", srclang: "en", default: true }
-    ]
+    is4k: false,
+    seasons: []
   },
 
   // ============================================================

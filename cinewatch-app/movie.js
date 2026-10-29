@@ -7939,14 +7939,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
     : null;
 
-  const isFrom4kSession = !isAnime && !isTv && Boolean(
+  const isFrom4kSession = !isAnime && !isTv && (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime') && Boolean(
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
     ref?.from4kSection === true ||
-    (ref?.is4k && !ref?.hdVideoUrl) ||
-    (fourkMatch && !ref?.hdVideoUrl) ||
-    (typeof videoUrl === 'string' && (videoUrl.includes('4K') || videoUrl.includes('fourk') || (fourkMatch && fourkMatch.videoUrl === videoUrl))) ||
     (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('section') === '4k')
   );
 
