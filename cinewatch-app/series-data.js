@@ -15,7 +15,7 @@ window._SERIES_DATA = [
     duration: "60m",
     genres: ["Adventure", "Fantasy", "Drama", "Family", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/w600_and_h900_face/AcVckVxfN169mGOgQGYe983KT1C.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/g0VmjKGMyipJSlPwlQvlLBvXTAQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sYRC6gXSNHBeTkda5xTKHXBAVfp.jpg",
     videoUrl: "224377",
     trailerUrl: "https://www.youtube.com/watch?v=RIu4sFKGi6E",
     overview: "There is nothing special about Harry Potter - at least that's what his Aunt Petunia always says. On his 11th birthday, a letter of admittance to Hogwarts School of Witchcraft and Wizardry opens up a hidden world for Harry: one of fun, friendship and magic. But with this new adventure comes great risk as Harry is forced to face a dangerous enemy from his past.",
