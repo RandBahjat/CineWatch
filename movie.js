@@ -8105,7 +8105,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       let srcData = null;
       for (const epUrl of uniqueAnimeEndpoints) {
         try {
-          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(10000) });
           if (!res.ok) continue;
           const data = await res.json();
           if (data && data.source) {
@@ -8213,6 +8213,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
     const endpoints = [
       `/api/stream?${cleanQuery}`,
+      `http://localhost:3000/api/stream?${cleanQuery}`,
+      `http://127.0.0.1:3000/api/stream?${cleanQuery}`,
       `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`
     ];
     if (curOrigin && !curOrigin.includes('cinewatch-maaa')) {
@@ -8224,7 +8226,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       let sData = null;
       for (const epUrl of uniqueEndpoints) {
         try {
-          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(10000) });
           if (!res.ok) continue;
           const data = await res.json();
           if (data && data.success && data.streamUrl) {
@@ -8233,6 +8235,36 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           }
         } catch (e) {
           continue;
+        }
+      }
+
+      // Static cache fallback for Miraculous Season 6 if backend server is unreachable
+      if (!sData && String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
+        const cachePaths = ["miraculous_s6_cache.json", "/miraculous_s6_cache.json", "../miraculous_s6_cache.json"];
+        for (const cp of cachePaths) {
+          try {
+            const cacheRes = await fetch(cp);
+            if (cacheRes.ok) {
+              const cacheData = await cacheRes.json();
+              const epEntry = cacheData[String(epNum)] || cacheData[epNum];
+              if (epEntry && epEntry.streamUrl) {
+                sData = {
+                  success: true,
+                  streamUrl: epEntry.streamUrl,
+                  qualities: [{ quality: "Auto", url: epEntry.streamUrl }],
+                  tracks: [
+                    {
+                      label: "Kurdish (Sorani)",
+                      file: `https://cinewatch-maaa.onrender.com/api/movie-sub?title=Miraculous%3A%20Tales%20of%20Ladybug%20%26%20Cat%20Noir&type=series&season=6&ep=${epNum}`,
+                      srclang: "ku",
+                      default: true
+                    }
+                  ]
+                };
+                break;
+              }
+            }
+          } catch (e) {}
         }
       }
 
@@ -8902,6 +8934,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
                     hlsNetErrorCount++;
                     if (hlsNetErrorCount >= 2) {
+                      if (String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
+                        hls.startLoad();
+                        return;
+                      }
                       console.warn('[CineWatch] Fatal HLS network error limit reached. Falling back to iframe...');
                       if (iframe) {
                         try { art.destroy(); } catch(e) {}
@@ -9186,6 +9222,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
+        if (String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
+          return; // Never downgrade Miraculous Season 6 to external server iframe
+        }
         if (!is4kStream && !isFrom4kSession && iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
           console.info("Falling back to external server iframe due to player error");
           iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
