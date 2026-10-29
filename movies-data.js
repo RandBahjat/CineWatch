@@ -970,8 +970,6 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     videoUrl: "969681",
-    hdVideoUrl: "969681",
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     tmdbId: "969681",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
@@ -981,7 +979,6 @@ window._MOVIES_DATA = [
     trending: true,
     featured: true,
     is4k: false,
-    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
@@ -1751,7 +1748,7 @@ window._MOVIES_DATA = [
     cast: ["Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon, Willem Dafoe, Alfred Molina"],
     trending: false,
     featured: false,
-    is4k: true,
+    is4k: false,
     seasons: []
   },
 
@@ -1894,8 +1891,6 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     videoUrl: "1930",
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     overviewKurdish: "",
@@ -1904,7 +1899,6 @@ window._MOVIES_DATA = [
     trending: true,
     featured: true,
     is4k: false,
-    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt","srclang":"en","default":false}]
   },
@@ -1923,8 +1917,6 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
     videoUrl: "102382",
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_audio.m4a",
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mkv",
     trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
     overviewKurdish: "بۆ پیتەر پارکەر، ژیان سەرقاڵکەر و ئاڵۆزە. لە نێوان لەناوبردنی خراپەکاران وەکو سپایدەرمان و بەسەربردنی کات لەگەڵ ئەو کەسەی کە خۆشی دەوێت، گوێن ستەیسی، دەرچوونی لە قۆناغی ئامادەیی ناتوانێت ئەوەندە بە خێرایی بێت. پیتەر ئەو بەڵێنەی لەبیر نەکردووە کە بە باوکی گوێنی دابوو بۆ پاراستنی بە دوورکەوتنەوە لێی — بەڵام ئەوە بەڵێنێکە کە ناتوانێت پێیەوە پابەند بێت. شتەکان دەگۆڕێن کاتێک دوژمنێکی نوێ، ئێلێکترۆ، پەیدا دەبێت، و هاوڕێیەکی کۆنی، هاری ئۆزبۆرن، دەگەڕێتەوە، و پیتەر سەرەداوی نوێ سەبارەت بە ڕابردووی خۆی ئاشکرا دەکات.",
@@ -1933,7 +1925,6 @@ window._MOVIES_DATA = [
     trending: true,
     featured: true,
     is4k: false,
-    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt","srclang":"en","default":false}]
   },
@@ -2356,8 +2347,6 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     videoUrl: "557",
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_audio.m4a",
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mkv",
     trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     overviewKurdish: "",
@@ -2366,7 +2355,6 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
-    has4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt","srclang":"en","default":false}]
   },
@@ -2577,8 +2565,6 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
-    has4k: true,
-    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_4K_UHD.mkv",
     seasons: []
   },
 
