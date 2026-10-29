@@ -575,6 +575,100 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Universal HLS M3U8 & Segment Streaming Proxy (bypasses Cloudflare Vary: Origin & CORS blocks)
+  if (safePath === '/api/stream-m3u8') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const streamTarget = parsed.searchParams.get('url');
+    const customReferer = parsed.searchParams.get('referer');
+    if (!streamTarget) {
+      res.writeHead(400, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+      res.end('Missing url parameter');
+      return;
+    }
+
+    const host = req.headers.host || `localhost:${PORT}`;
+    const proto = req.headers['x-forwarded-proto'] || 'http';
+    const baseUrl = `${proto}://${host}`;
+
+    const fetchHeaders = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+    };
+    if (customReferer) {
+      fetchHeaders['Referer'] = customReferer;
+    }
+    if (req.headers.range) {
+      fetchHeaders['Range'] = req.headers.range;
+    }
+
+    fetch(streamTarget, { headers: fetchHeaders })
+      .then(async response => {
+        if (!response.ok && response.status !== 206) {
+          res.writeHead(response.status, { 'Access-Control-Allow-Origin': '*' });
+          res.end(`Upstream error: ${response.status}`);
+          return;
+        }
+
+        const arrayBuf = await response.arrayBuffer();
+        const buf = Buffer.from(arrayBuf);
+        const head = buf.subarray(0, 100).toString('utf8');
+        const isM3u8 = head.includes('#EXTM3U') || streamTarget.includes('.m3u8');
+
+        if (isM3u8) {
+          const text = buf.toString('utf8');
+          const rewritten = text.split('\n').map(line => {
+            const trimmed = line.trim();
+            if (!trimmed || trimmed.startsWith('#')) {
+              if (trimmed.startsWith('#EXT-X-KEY:') && trimmed.includes('URI="')) {
+                return trimmed.replace(/URI="([^"]+)"/, (m, uri) => {
+                  try {
+                    const fullKey = new URL(uri, streamTarget).href;
+                    return `URI="${baseUrl}/api/stream-m3u8?url=${encodeURIComponent(fullKey)}${customReferer ? `&referer=${encodeURIComponent(customReferer)}` : ''}"`;
+                  } catch (e) { return m; }
+                });
+              }
+              return line;
+            }
+            try {
+              const fullUrl = new URL(trimmed, streamTarget).href;
+              return `${baseUrl}/api/stream-m3u8?url=${encodeURIComponent(fullUrl)}${customReferer ? `&referer=${encodeURIComponent(customReferer)}` : ''}`;
+            } catch (e) {
+              return line;
+            }
+          }).join('\n');
+
+          res.writeHead(200, {
+            'Content-Type': 'application/vnd.apple.mpegurl',
+            'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'no-cache'
+          });
+          res.end(rewritten);
+        } else {
+          // Pass-through binary segment / chunk
+          const outHeaders = {
+            'Content-Type': 'video/MP2T',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': '*',
+            'Cache-Control': 'public, max-age=86400',
+            'Accept-Ranges': 'bytes'
+          };
+          const cl = response.headers.get('content-length') || String(buf.length);
+          if (cl) outHeaders['Content-Length'] = cl;
+          const cr = response.headers.get('content-range');
+          if (cr) outHeaders['Content-Range'] = cr;
+
+          res.writeHead(response.status === 206 ? 206 : 200, outHeaders);
+          res.end(buf);
+        }
+      })
+      .catch(err => {
+        if (!res.headersSent) {
+          res.writeHead(500, { 'Access-Control-Allow-Origin': '*' });
+        }
+        res.end(`Proxy error: ${err.message}`);
+      });
+    return;
+  }
+
   // Direct Anime Source Proxy (bypasses CORS restrictions)
   
   // WebVTT Subtitle Proxy (bypasses 403 & CORS on anime subtitle tracks)
@@ -1224,8 +1318,9 @@ const server = http.createServer((req, res) => {
             });
           }
 
+          const proxiedM3u8Url = `${baseUrl}/api/stream-m3u8?url=${encodeURIComponent(m3u8Url)}`;
           const qualities = [
-            { quality: 'Auto', url: m3u8Url }
+            { quality: 'Auto', url: proxiedM3u8Url }
           ];
 
           res.writeHead(200, {
@@ -1234,7 +1329,7 @@ const server = http.createServer((req, res) => {
           });
           res.end(JSON.stringify({
             success: true,
-            streamUrl: m3u8Url,
+            streamUrl: proxiedM3u8Url,
             qualities: qualities,
             tracks: tracks
           }));

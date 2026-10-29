@@ -8248,14 +8248,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               const cacheData = await cacheRes.json();
               const epEntry = cacheData[String(epNum)] || cacheData[epNum];
               if (epEntry && epEntry.streamUrl) {
+                const subBase = (window.location.origin && window.location.origin.includes(':3000')) ? window.location.origin : 'https://cinewatch-maaa.onrender.com';
+                const proxiedUrl = `${subBase}/api/stream-m3u8?url=${encodeURIComponent(epEntry.streamUrl)}`;
                 sData = {
                   success: true,
-                  streamUrl: epEntry.streamUrl,
-                  qualities: [{ quality: "Auto", url: epEntry.streamUrl }],
+                  streamUrl: proxiedUrl,
+                  qualities: [{ quality: "Auto", url: proxiedUrl }],
                   tracks: [
                     {
                       label: "Kurdish (Sorani)",
-                      file: `https://cinewatch-maaa.onrender.com/api/movie-sub?title=Miraculous%3A%20Tales%20of%20Ladybug%20%26%20Cat%20Noir&type=series&season=6&ep=${epNum}`,
+                      file: `${subBase}/api/movie-sub?title=Miraculous%3A%20Tales%20of%20Ladybug%20%26%20Cat%20Noir&type=series&season=6&ep=${epNum}`,
                       srclang: "ku",
                       default: true
                     }
