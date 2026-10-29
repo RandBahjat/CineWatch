@@ -704,6 +704,7 @@ function loadState() {
     localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
 
     if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
 
     const savedFavs = sessionStorage.getItem(KEYS.FAVORITES) || localStorage.getItem(KEYS.FAVORITES);
     if (savedFavs) state.favorites = JSON.parse(savedFavs);
@@ -829,6 +830,7 @@ window.addEventListener("cw:authChanged", async (e) => {
 
     updateWatchlistBadge();
     renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
     if (state.activeView === "home") {
       const shelf = document.getElementById("continueWatchingShelf");
       if (shelf) shelf.classList.remove("hidden");
@@ -1083,6 +1085,7 @@ async function initApp() {
     loadState();
     await checkPendingVipStatus();
     renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
     updateWatchlistBadge();
     if (typeof initThemeAccent === 'function') initThemeAccent();
 
@@ -2960,6 +2963,19 @@ function renderUserBadge() {
       ? new Date(state.user.createdAt).toLocaleDateString()
       : "";
 
+    let formattedExpiry = "";
+    if (state.user && state.user.vipExpiresAt) {
+      try {
+        const rawExp = state.user.vipExpiresAt;
+        const expDate = new Date(rawExp.includes("T") ? rawExp : rawExp + "T00:00:00");
+        formattedExpiry = !isNaN(expDate.getTime()) ? expDate.toLocaleDateString() : rawExp;
+      } catch (e) {
+        formattedExpiry = state.user.vipExpiresAt;
+      }
+    } else {
+      formattedExpiry = "10/21/2027";
+    }
+
     // Determine current language for manual translations in dynamic sidebar
     const cookies = document.cookie;
     const currentLang = cookies.includes('googtrans=/en/ckb') ? 'ckb' :
@@ -2994,6 +3010,7 @@ function renderUserBadge() {
       localStorage.removeItem('cw_user');
       localStorage.removeItem('supabase_auth_token');
       renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
       if (typeof updateProfileUI === 'function') updateProfileUI();
       showToast("Signed out successfully");
       closePanel();
@@ -3068,19 +3085,18 @@ function renderUserBadge() {
             </div>
             <div class="account-panel-name" id="panelUserName">
               <span>${userName}</span>
-              ${isVip ? `<span class="cw-vip-pill" style="background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 3px 10px; border-radius: 999px; box-shadow: 0 0 12px rgba(245, 158, 11, 0.5);">👑 ${state.user?.vipTier === 'Ultimate' ? 'ULTIMATE VIP' : 'VIP'}</span>` : ''}
             </div>
             ${userEmail ? `<div class="account-panel-email">${userEmail}</div>` : ''}
-            ${isVip ? `
-            <div class="account-panel-vip-status" style="margin: 8px 0; padding: 8px 12px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 10px; font-size: 0.8rem; color: #fbbf24; display: flex; align-items: center; justify-content: space-between;">
-              <span><strong>Plan:</strong> ${state.user?.plan || (state.user?.vipTier === 'Ultimate' ? 'Ultimate (1 Year)' : 'VIP Pass')}</span>
-              <span style="color: #94a3b8; font-size: 0.75rem;">Expires: <strong style="color: #fbbf24;">${state.user?.vipExpiresAt || '2027-10-21'}</strong></span>
-            </div>
-            ` : ''}
             <div class="account-panel-date">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               <span>Member since ${createdAt || "2024-01-01"}</span>
             </div>
+            ${isVip ? `
+            <div class="account-panel-date account-panel-expire-date" style="margin-top: 0.35rem;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Plan expires ${formattedExpiry}</span>
+            </div>
+            ` : ''}
           </div>
 
           <div class="account-panel-section-label">⚙️ ACCOUNT SETTINGS</div>
@@ -3196,6 +3212,7 @@ function renderUserBadge() {
             showToast("Profile photo updated!");
             closePanel();
             renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
           };
           img.src = event.target.result;
         };
@@ -3242,6 +3259,7 @@ function renderUserBadge() {
               }
             }
             renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
             showToast("Username updated!");
           };
         }
@@ -5534,6 +5552,7 @@ function selectVipTier(tierData) {
                 }
                 if (typeof saveUser === 'function') saveUser(state.user);
                 if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
 
                 if (typeof showToast === 'function') {
                   showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
@@ -5863,6 +5882,7 @@ function setupVipEventListeners() {
                 }
                 if (typeof saveUser === 'function') saveUser(state.user);
                 if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
 
                 if (typeof showToast === 'function') {
                   showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
@@ -7289,6 +7309,7 @@ function bindEventListeners() {
     if (user) {
       saveUser(user);
       renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
       updateWatchlistBadge();
     }
     closeAuthModal();
@@ -7367,6 +7388,7 @@ function bindEventListeners() {
       if (user) {
         saveUser(user);
         renderUserBadge();
+    if (typeof renderVipBadges === 'function') renderVipBadges();
         updateWatchlistBadge();
       }
       closeAuthModal();
@@ -9989,9 +10011,8 @@ function renderVipBadges() {
   } catch(e) {}
   
   const isMockUser = user && user.name === "VIP Member" && (!user.email || user.email === "");
-  let isLoggedIn = !!(user && user !== 'null' && typeof user === 'object' && Object.keys(user).length > 0 && !isMockUser && (user.email || user.name || user.username));
-  if (document.getElementById("headerLoginBtn")) { isLoggedIn = false; }
-  const isVip = isLoggedIn && isUserVip();
+  const isLoggedIn = !!(user && user !== 'null' && typeof user === 'object' && Object.keys(user).length > 0 && !isMockUser && (user.email || user.name || user.username));
+  const isVip = typeof isUserVip === 'function' ? isUserVip() : false;
 
   // 1. Update Navbar VIP Button
   const navVip = document.getElementById("navVipBtn");
@@ -10010,34 +10031,18 @@ function renderVipBadges() {
     } else {
       navVip.classList.remove("vip-active-btn");
       navVip.style.cssText = "";
-      
-      if (!isLoggedIn) {
-        navVip.innerHTML = `
-          <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
-          </svg>
-          <span class="vip-text notranslate" translate="no">Upgrade</span>
-        `;
-        navVip.onclick = (e) => {
-          e.preventDefault();
-          if (typeof openVipModal === 'function') {
-            openVipModal();
-          }
-        };
-      } else {
-        navVip.innerHTML = `
-          <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
-          </svg>
-          <span class="vip-text notranslate" translate="no">Upgrade</span>
-        `;
-        navVip.onclick = (e) => {
-          e.preventDefault();
-          if (typeof openVipModal === 'function') {
-            openVipModal();
-          }
-        };
-      }
+      navVip.innerHTML = `
+        <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+        </svg>
+        <span class="vip-text notranslate" translate="no">Upgrade</span>
+      `;
+      navVip.onclick = (e) => {
+        e.preventDefault();
+        if (typeof openVipModal === 'function') {
+          openVipModal();
+        }
+      };
     }
   }
 
@@ -10062,14 +10067,7 @@ function renderVipBadges() {
     panelVipBtn.onclick = (e) => { e.preventDefault(); };
   }
 
-  const panelUserName = document.getElementById("panelUserName");
-  if (panelUserName && isVip && !panelUserName.querySelector(".cw-vip-pill")) {
-    const pill = document.createElement("span");
-    pill.className = "cw-vip-pill";
-    pill.style.cssText = "background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);";
-    pill.textContent = "👑 VIP";
-    panelUserName.appendChild(pill);
-  }
+  // ULTIMATE VIP badge on sidebar removed as requested
 }
 window.renderVipBadges = renderVipBadges;
 

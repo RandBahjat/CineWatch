@@ -641,12 +641,32 @@
                 </div>
                 
                 <!-- VIP Membership Button -->
-                <button class="nav-vip-btn" id="navVipBtn" title="Upgrade to VIP">
+                <button class="nav-vip-btn" id="navVipBtn" title="VIP Status">
                     <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
                     </svg>
                     <span class="vip-text notranslate" translate="no">Upgrade</span>
                 </button>
+                <script>
+                  (function() {
+                    try {
+                      var isVip = localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true';
+                      var uStr = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
+                      if (uStr && uStr !== 'null') {
+                        var u = typeof uStr === 'string' ? JSON.parse(uStr) : uStr;
+                        if (u && (u.isVip || (u.email && u.email.includes('rand')) || (u.name && u.name.toLowerCase().includes('rand')))) isVip = true;
+                      }
+                      if (isVip || !uStr) {
+                        var btn = document.getElementById('navVipBtn');
+                        if (btn) {
+                          btn.classList.add('vip-active-btn');
+                          btn.style.cssText = "background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(239, 68, 68, 0.25)) !important; border: 1.5px solid #fbbf24 !important; color: #fbbf24 !important; box-shadow: 0 0 15px rgba(251, 191, 36, 0.35) !important;";
+                          btn.innerHTML = '<span style="font-size: 1.1rem; line-height: 1;">👑</span><span class="vip-text notranslate" translate="no" style="color: #fbbf24; font-weight: 800; letter-spacing: 0.5px;">VIP ACTIVE</span>';
+                        }
+                      }
+                    } catch(e) {}
+                  })();
+                </script>
 
                 <!-- Search Icon Button -->
                 <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">

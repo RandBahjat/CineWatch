@@ -8245,6 +8245,16 @@ body.rtl-layout .details-back-btn svg {
   flex-shrink: 0;
 }
 
+.account-panel-date.account-panel-expire-date {
+  color: rgba(251, 191, 36, 0.9);
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.account-panel-date.account-panel-expire-date svg {
+  color: #fbbf24 !important;
+}
+
 /* Settings label */
 .account-panel-section-label {
   padding: 1.15rem 1rem 0.45rem;
