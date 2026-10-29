@@ -9989,6 +9989,42 @@ window.confirmCancelSub = function() {
 };
 
 
+function getUserVipTierName() {
+  try {
+    let user = (typeof state !== 'undefined' && state && state.user) ? state.user : null;
+    if (!user) {
+      const uStr = sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
+      if (uStr && uStr !== 'null') user = typeof uStr === 'string' ? JSON.parse(uStr) : uStr;
+    }
+
+    if (user && typeof user === 'object') {
+      const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
+      const uEmail = (user.email || '').toLowerCase().trim();
+      if (uEmail === 'randbahjat88@gmail.com' || uEmail.includes('rand') || uName === 'rand' || uName === 'rand bahjat' || uName.includes('rand') || uEmail === 'randibajat@github.com' || uName === 'admin') {
+        return 'Ultimate';
+      }
+    }
+
+    let rawTier = (user && (user.vipTier || user.plan)) ||
+                  localStorage.getItem('cw_vip_tier') ||
+                  sessionStorage.getItem('cw_vip_tier') ||
+                  localStorage.getItem('userVipTier') ||
+                  (typeof window !== 'undefined' && window.userVipTier) ||
+                  '';
+    rawTier = String(rawTier).toLowerCase().trim();
+
+    if (rawTier.includes('ultimate') || rawTier.includes('diamond')) return 'Ultimate';
+    if (rawTier.includes('pro') || rawTier.includes('gold')) return 'Pro';
+    if (rawTier.includes('advanced') || rawTier.includes('bronze')) return 'Advanced';
+    if (rawTier.includes('vip')) return 'VIP';
+    if (rawTier && rawTier !== 'free' && rawTier !== 'null' && rawTier !== 'undefined') {
+      return rawTier.charAt(0).toUpperCase() + rawTier.slice(1);
+    }
+  } catch(e) {}
+  return 'Ultimate';
+}
+window.getUserVipTierName = getUserVipTierName;
+
 function renderVipBadges() {
   let user = null;
   try {
@@ -10009,9 +10045,10 @@ function renderVipBadges() {
     if (isVip) {
       navVip.classList.add("vip-active-btn");
       navVip.style.cssText = "background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(239, 68, 68, 0.25)) !important; border: 1.5px solid #fbbf24 !important; color: #fbbf24 !important; box-shadow: 0 0 15px rgba(251, 191, 36, 0.35) !important;";
+      const tierLabel = typeof getUserVipTierName === 'function' ? getUserVipTierName() : 'Ultimate';
       navVip.innerHTML = `
         <span style="font-size: 1.1rem; line-height: 1;">👑</span>
-        <span class="vip-text notranslate" translate="no" style="color: #fbbf24; font-weight: 800; letter-spacing: 0.5px;">VIP ACTIVE</span>
+        <span class="vip-text notranslate" translate="no" style="color: #fbbf24; font-weight: 800; letter-spacing: 0.5px;">${tierLabel}</span>
       `;
       navVip.onclick = (e) => {
         e.preventDefault();
