@@ -14009,6 +14009,9 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
 
 .artplayer-app .art-settings,
 .art-video-player .art-settings {
+  height: auto !important;
+  min-height: fit-content !important;
+  min-width: 200px !important;
   background: rgba(14, 14, 18, 0.92) !important;
   backdrop-filter: blur(28px) saturate(200%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
