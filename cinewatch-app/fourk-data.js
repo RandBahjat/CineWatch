@@ -46,7 +46,6 @@ window._FOURK_DATA = [
     poster: "https://image.tmdb.org/t/p/original/3zbb5XD0hEA8IpAcUmv1J9Rej3B.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/d2J9TL7r639S2jddfymeSEwXgmN.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_audio.m4a",
     trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     overviewKurdish: "پیتەر پارکەر هەمیشە هەستی بە نامۆیی دەکرد، و هێشتا بەدەست نادیارمانەوەی لەناکاوی دایک و باوکیەوە لە ساڵانی پێشتر دەناڵێنێت. بە مەبەستی دۆزینەوەی وەڵام، لێکۆڵینەوە لە توێژینەوە کۆنەکانی باوکی دەکات و لە ئۆسکۆرپ تووشی دکتۆر کێرت کۆنەرز دەبێت — دیداریك کە توانای لەڕادەبەدەر بە پیتەر دەبەخشێت. لەکاتێکدا هەوڵ دەدات لەگەڵ بەرپرسیارێتییە نوێیەکانی هێزەکەی خۆی ڕابێت، کارەساتێکی کەسی وای لێدەکات ببێتە پارێزەرێکی دەمامکدار، ڕێک لە کاتێکدا کە دوژمنێکی دڕندە هەڕەشە لەو شارە دەکات کە سوێندی خواردووە بیپارێزێت.",
