@@ -7886,6 +7886,117 @@ function getAnimeMalId(refMovie, dataId) {
   return refMovie?.anilistId || 21;
 }
 
+
+function getStreamUrlForServer(srv, info) {
+  const { isAnime, isTv, tmdbId, malId, season, epNum, rawEp, curPref } = info;
+  const s = season || 1;
+  const e = epNum || rawEp || 1;
+  const safePref = curPref === 'dub' ? 'dub' : 'sub';
+
+  switch (srv) {
+    case 'vidlink':
+      if (isAnime || isTv) {
+        return `https://vidlink.pro/tv/${tmdbId}/${s}/${e}`;
+      } else {
+        return `https://vidlink.pro/movie/${tmdbId}`;
+      }
+    case 'megavid':
+      if (isAnime && malId) {
+        return `https://megavid.buzz/mal/${malId}/${rawEp || e}/${safePref}`;
+      } else if (isTv) {
+        return `https://player.vidsrc.nl/embed/tv/${tmdbId}/${s}/${e}`;
+      } else {
+        return `https://player.vidsrc.nl/embed/movie/${tmdbId}`;
+      }
+    case 'vidsrc_nl':
+      if (isAnime || isTv) {
+        return `https://player.vidsrc.nl/embed/tv/${tmdbId}/${s}/${e}`;
+      } else {
+        return `https://player.vidsrc.nl/embed/movie/${tmdbId}`;
+      }
+    case 'vidsrc_net':
+      if (isAnime || isTv) {
+        return `https://vidsrc.net/embed/tv/${tmdbId}/${s}/${e}`;
+      } else {
+        return `https://vidsrc.net/embed/movie/${tmdbId}`;
+      }
+    case 'multiembed':
+      if (isAnime || isTv) {
+        return `https://multiembed.mov/?video_id=${tmdbId}&tmdb=1&s=${s}&e=${e}`;
+      } else {
+        return `https://multiembed.mov/?video_id=${tmdbId}&tmdb=1`;
+      }
+    default:
+      if (isAnime || isTv) {
+        return `https://vidlink.pro/tv/${tmdbId}/${s}/${e}`;
+      } else {
+        return `https://vidlink.pro/movie/${tmdbId}`;
+      }
+  }
+}
+
+function switchPlayerServer(serverKey) {
+  if (!serverKey) return;
+  try {
+    localStorage.setItem('cw_active_server', serverKey);
+  } catch(e) {}
+  
+  const pSelect = document.getElementById('playerServerSelect');
+  if (pSelect) pSelect.value = serverKey;
+  const dSelect = document.getElementById('detailsServerSelect');
+  if (dSelect) dSelect.value = serverKey;
+
+  const current = state.currentPlayingMovie;
+  if (!current) return;
+
+  const ref = current.ref || (typeof MOVIES !== 'undefined' ? MOVIES.find(m => m.id === current.id || String(m.videoUrl) === String(current.id) || m.title === current.title) : null) || current;
+  const epData = current.epData;
+  const isAnime = !!(ref?.isAnime || ref?.type === 'Anime');
+  const isTv = !!(ref?.type === 'TV Show' || ref?.type === 'Series' || (ref?.seasons && ref?.seasons.length > 0) || (epData && epData.season));
+  const tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id;
+  const malId = isAnime ? getAnimeMalId(ref, epData?.id, epData) : null;
+  const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
+
+  const s = epData?.season || 1;
+  const e = epData?.episode || 1;
+  const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
+
+  const newUrl = getStreamUrlForServer(serverKey, {
+    isAnime,
+    isTv,
+    tmdbId,
+    malId,
+    season: s,
+    epNum: e,
+    rawEp,
+    curPref
+  });
+
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.destroy(); } catch(e) {}
+    window.artPlayerInstance = null;
+  }
+  const artContainer = document.getElementById('artplayerApp');
+  if (artContainer) artContainer.classList.add('hidden');
+
+  const iframe = document.getElementById('iframeElement');
+  if (iframe) {
+    iframe.src = newUrl;
+    iframe.classList.remove('hidden');
+  }
+
+  if (typeof showToast === 'function') {
+    const labels = {
+      vidlink: 'Server 1 (VidLink HD)',
+      megavid: 'Server 2 (Mega Player)',
+      vidsrc_nl: 'Server 3 (VidSrc NL)',
+      vidsrc_net: 'Server 4 (VidSrc Net)',
+      multiembed: 'Server 5 (MultiEmbed)'
+    };
+    showToast(`Switched to ${labels[serverKey] || serverKey}`);
+  }
+}
+
 async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const artContainer = document.getElementById("artplayerApp");
   const video = document.getElementById("videoElement");
@@ -7910,6 +8021,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   window._cwQualities = null;
 
   let ref = movie || parentMovie;
+  state.currentPlayingMovie = { id: ref?.id || videoUrl, title: ref?.title || '', epData, ref, parentMovie };
+  const activeServer = (typeof localStorage !== 'undefined' ? localStorage.getItem("cw_active_server") : null) || "vidlink";
+  const pSelect = document.getElementById('playerServerSelect');
+  if (pSelect) pSelect.value = activeServer;
+  const dSelect = document.getElementById('detailsServerSelect');
+  if (dSelect) dSelect.value = activeServer;
+  const serverWrapEl = document.getElementById('playerServerSelectorWrap');
 
   let parsedTmdbId = '';
   let parsedSeason = epData?.season || 1;
@@ -8139,7 +8257,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           }
         }
 
-        cleanUrl = srcData.source;
+        if (isReachable) {
+          cleanUrl = srcData.source;
+        }
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
           const isLocal3000 = (window.location.origin === 'http://localhost:3000' || window.location.origin === 'http://127.0.0.1:3000');
@@ -8311,7 +8431,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
   if (!is4kStream && !isFrom4kSession && ((!streamUrl && iframe) || driveIframeUrl)) {
-    iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`)));
+    iframe.src = driveIframeUrl || getStreamUrlForServer(activeServer, { isAnime, isTv, tmdbId, malId, season, epNum, rawEp, curPref });
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.classList.add("hidden");
@@ -8936,7 +9056,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       if (iframe) {
                         try { art.destroy(); } catch(e) {}
                         if (artContainer) artContainer.classList.add('hidden');
-                        iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+                        iframe.src = driveIframeUrl || getStreamUrlForServer((typeof localStorage !== 'undefined' ? localStorage.getItem("cw_active_server") : null) || 'vidlink', { isAnime, isTv, tmdbId, malId, season, epNum, rawEp, curPref });
                         iframe.classList.remove('hidden');
                       }
                     } else {
@@ -8950,7 +9070,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     if (iframe) {
                       try { art.destroy(); } catch(e) {}
                       if (artContainer) artContainer.classList.add('hidden');
-                      iframe.src = (isAnime && malId) ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+                      iframe.src = driveIframeUrl || getStreamUrlForServer((typeof localStorage !== 'undefined' ? localStorage.getItem("cw_active_server") : null) || 'vidlink', { isAnime, isTv, tmdbId, malId, season, epNum, rawEp, curPref });
                       iframe.classList.remove('hidden');
                     }
                     break;
@@ -9221,7 +9341,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         }
         if (!is4kStream && !isFrom4kSession && iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
           console.info("Falling back to external server iframe due to player error");
-          iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+          iframe.src = driveIframeUrl || getStreamUrlForServer((typeof localStorage !== 'undefined' ? localStorage.getItem("cw_active_server") : null) || 'vidlink', { isAnime, isTv, tmdbId, malId, season, epNum, rawEp, curPref });
           iframe.classList.remove("hidden");
           if (artContainer) artContainer.classList.add("hidden");
         }
