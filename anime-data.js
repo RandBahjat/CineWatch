@@ -35497,8 +35497,8 @@ window._ANIME_DATA = [
     {
       "season": 2,
       "seasonTitle": "Metal Masters",
-      "malId": 8364,
-      "anilistId": 8364,
+      "malId": 8630,
+      "anilistId": 8630,
       "episodes": [
         {
           "episode": 1,
@@ -35913,8 +35913,8 @@ window._ANIME_DATA = [
     {
       "season": 3,
       "seasonTitle": "Metal Fury",
-      "malId": 10370,
-      "anilistId": 10370,
+      "malId": 10336,
+      "anilistId": 10336,
       "episodes": [
         {
           "episode": 1,
@@ -36337,8 +36337,8 @@ window._ANIME_DATA = [
     {
       "season": 4,
       "seasonTitle": "Shogun Steel",
-      "malId": 16766,
-      "anilistId": 16766,
+      "malId": 13231,
+      "anilistId": 13231,
       "episodes": [
         {
           "episode": 1,

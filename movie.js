@@ -7863,26 +7863,76 @@ function getAnimeAniListId(refMovie, dataId) {
   return refMovie?.malId || ANIME_MAL_MAP[key] || 21;
 }
 
-function getAnimeMalId(refMovie, dataId) {
+function getAnimeMalId(refMovie, dataId, epData) {
+  const seasonNum = epData?.season || 1;
+  if (refMovie?.seasons && Array.isArray(refMovie.seasons)) {
+    const sObj = refMovie.seasons.find(s => s.season === seasonNum);
+    if (sObj && sObj.malId) return sObj.malId;
+  }
+  const t = (refMovie?.title || '').toLowerCase();
+  if (t.includes('beyblade')) {
+    if (seasonNum === 2) return 8630;
+    if (seasonNum === 3) return 10336;
+    if (seasonNum === 4) return 13231;
+    return 5962;
+  }
+  if (t.includes('attack on titan') || t.includes('shingeki')) {
+    if (seasonNum === 2) return 35760;
+    if (seasonNum === 3) return 37779;
+    if (seasonNum === 4) return 40028;
+    return 16498;
+  }
+  if (t.includes('demon slayer') || t.includes('kimetsu')) {
+    if (seasonNum === 2) return 47778;
+    if (seasonNum === 3) return 51019;
+    if (seasonNum === 4) return 55701;
+    return 38000;
+  }
+  if (t.includes('hero academia') || t.includes('boku no hero')) {
+    if (seasonNum === 2) return 33486;
+    if (seasonNum === 3) return 36456;
+    if (seasonNum === 4) return 38408;
+    if (seasonNum === 5) return 41587;
+    if (seasonNum === 6) return 49918;
+    if (seasonNum === 7) return 54789;
+    return 31964;
+  }
+  if (t.includes('jujutsu')) {
+    if (seasonNum === 2) return 51009;
+    return 40748;
+  }
+  if (t.includes('one punch')) {
+    if (seasonNum === 2) return 34134;
+    return 30276;
+  }
+  if (t.includes('vinland')) {
+    if (seasonNum === 2) return 49387;
+    return 37521;
+  }
+  if (t.includes('blue lock')) {
+    if (seasonNum === 2) return 54865;
+    return 49596;
+  }
+  if (t.includes('tokyo ghoul')) {
+    if (seasonNum === 2) return 27899;
+    if (seasonNum === 3) return 36511;
+    return 22319;
+  }
+  if (t.includes('beerus')) return 63367;
+  if (t.includes('5d')) return 3972;
+  if (t.includes('gx')) return 482;
+  if (t.includes('daima')) return 56894;
+  if (t.includes('one piece')) return 21;
+  if (t.includes('bleach')) return 269;
+  if (t.includes('shippuden')) return 1735;
+  if (t.includes('naruto')) return 20;
+  if (t.includes('death note')) return 1535;
+  if (t.includes('hunter')) return 11061;
+  if (t.includes('black clover')) return 34572;
+
   if (refMovie?.malId) return refMovie.malId;
   const key = String(dataId || refMovie?.videoUrl || refMovie?.id || '');
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
-  if (refMovie?.title) {
-    const t = refMovie.title.toLowerCase();
-    if (t.includes('beerus')) return 63367;
-    if (t.includes('5d')) return 3972;
-    if (t.includes('gx')) return 482;
-    if (t.includes('daima')) return 56894;
-    if (t.includes('one piece')) return 21;
-    if (t.includes('bleach')) return 269;
-    if (t.includes('shippuden')) return 1735;
-    if (t.includes('naruto')) return 20;
-    if (t.includes('death note')) return 1535;
-    if (t.includes('hunter')) return 11061;
-    if (t.includes('attack on titan')) return 16498;
-    if (t.includes('demon slayer')) return 38000;
-    if (t.includes('black clover')) return 34572;
-  }
   return refMovie?.anilistId || 21;
 }
 
@@ -7940,10 +7990,22 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const isAnime = !!(ref?.isAnime || ref?.type === 'Anime');
   const isTv = !!(ref?.type === 'TV Show' || ref?.type === 'Series' || (ref?.seasons && ref?.seasons.length > 0) || (epData && epData.season) || (typeof videoUrl === 'string' && videoUrl.startsWith('tv_embed:')));
-  const rawEp = epData?.absoluteEpisode || epData?.episode || parsedEp || 1;
   const season = epData?.season || parsedSeason || 1;
-  const epNum = epData?.episode || parsedEp || rawEp;
   const malId = isAnime ? getAnimeMalId(ref, epData?.id, epData) : null;
+  // If the anime season has its own season-specific MAL ID, rawEp MUST be the relative season episode (epData.episode), not absoluteEpisode
+  const hasSeasonSpecificMal = Boolean(
+    (ref?.title && ref.title.toLowerCase().includes('beyblade')) ||
+    (ref?.title && ref.title.toLowerCase().includes('hero academia')) ||
+    (ref?.title && ref.title.toLowerCase().includes('demon slayer')) ||
+    (ref?.title && ref.title.toLowerCase().includes('attack on titan')) ||
+    (ref?.title && ref.title.toLowerCase().includes('blue lock')) ||
+    (ref?.title && ref.title.toLowerCase().includes('haikyu')) ||
+    (ref?.title && ref.title.toLowerCase().includes('tokyo ghoul')) ||
+    (ref?.title && ref.title.toLowerCase().includes('vinland')) ||
+    (epData && epData.season > 1 && malId !== ref?.malId)
+  );
+  const rawEp = hasSeasonSpecificMal ? (epData?.episode || parsedEp || 1) : (epData?.absoluteEpisode || epData?.episode || parsedEp || 1);
+  const epNum = epData?.episode || parsedEp || rawEp;
 
   const fourkMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
     ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
@@ -8096,10 +8158,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const endpoints = isLocal3000
       ? [
           `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
+          `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}&noax=1`,
+          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}&noax=1`
         ]
       : [
           `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}&noax=1`,
           (curOrigin && !curOrigin.includes('file:') ? `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}` : null)
         ].filter(Boolean);
 
@@ -8108,10 +8173,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       let srcData = null;
       for (const epUrl of uniqueAnimeEndpoints) {
         try {
-          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(12000) });
           if (!res.ok) continue;
           const data = await res.json();
-          if (data && data.source) {
+          if (data && data.source && !data.source.includes('s-90.megavid.se') && !data.source.includes('.se/')) {
             srcData = data;
             break;
           }
@@ -8120,26 +8185,41 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         }
       }
 
-      if (srcData && srcData.source) {
-        // If upstream source points to dead domain (s-90.megavid.se), try provider loli
-        if (srcData.source.includes('s-90.megavid.se') || srcData.rawSource?.includes('s-90.megavid.se')) {
-          for (const epUrl of uniqueAnimeEndpoints) {
-            try {
-              const altUrl = epUrl + (epUrl.includes('?') ? '&' : '?') + 'axsv=loli';
-              const altRes = await fetch(altUrl, { signal: AbortSignal.timeout(5000) });
-              if (!altRes.ok) continue;
-              const altData = await altRes.json();
-              if (altData && altData.source && !altData.source.includes('s-90.megavid.se')) {
-                srcData = altData;
-                break;
-              }
-            } catch(e) {}
-          }
+      // If dead domain or missing, explicitly fetch with noax=1
+      if (!srcData || !srcData.source || srcData.source.includes('s-90.megavid.se') || srcData.source.includes('.se/')) {
+        for (const epUrl of uniqueAnimeEndpoints) {
+          try {
+            const noaxUrl = epUrl + (epUrl.includes('?') ? '&' : '?') + 'noax=1';
+            const res = await fetch(noaxUrl, { signal: AbortSignal.timeout(10000) });
+            if (!res.ok) continue;
+            const data = await res.json();
+            if (data && data.source && !data.source.includes('s-90.megavid.se') && !data.source.includes('.se/')) {
+              srcData = data;
+              break;
+            }
+          } catch(e) {}
         }
+      }
 
-        // Only accept if not pointing to dead s-90 domain (so /api/stream fallback can take over if needed)
-        if (srcData && srcData.source && !srcData.source.includes('s-90.megavid.se')) {
-          cleanUrl = srcData.source;
+      // If still missing, try opposite audio mode with noax=1
+      if (!srcData || !srcData.source || srcData.source.includes('s-90.megavid.se') || srcData.source.includes('.se/')) {
+        const altMode = curPref === 'dub' ? 'sub' : 'dub';
+        for (const epUrl of uniqueAnimeEndpoints) {
+          try {
+            const altModeUrl = epUrl.replace(`mode=${curPref}`, `mode=${altMode}`) + '&noax=1';
+            const res = await fetch(altModeUrl, { signal: AbortSignal.timeout(10000) });
+            if (!res.ok) continue;
+            const data = await res.json();
+            if (data && data.source && !data.source.includes('s-90.megavid.se') && !data.source.includes('.se/')) {
+              srcData = data;
+              break;
+            }
+          } catch(e) {}
+        }
+      }
+
+      if (srcData && srcData.source && !srcData.source.includes('s-90.megavid.se') && !srcData.source.includes('.se/')) {
+        cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
           const isLocal3000 = (window.location.origin === 'http://localhost:3000' || window.location.origin === 'http://127.0.0.1:3000');
@@ -8184,8 +8264,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           });
         } else if (cleanName) {
           const subBase = (window.location.origin && window.location.origin.includes(':3000')) ? window.location.origin : 'https://cinewatch-maaa.onrender.com';
-          const kuSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=ckb`;
-          const enSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=en`;
+          const kuSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=${season}&ep=${rawEp}&lang=ckb`;
+          const enSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=${season}&ep=${rawEp}&lang=en`;
           srcData.tracks = [
             { label: 'Kurdish (Sorani)', file: kuSub, srclang: 'ku', default: true },
             { label: 'English', file: enSub, srclang: 'en', default: false }
@@ -8195,7 +8275,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         } else {
           window._cwSubtitleTracks = [];
         }
-        } // end valid source check
       }
     } catch (e) {}
   }
@@ -8314,7 +8393,20 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
   if (!is4kStream && !isFrom4kSession && ((!streamUrl && iframe) || driveIframeUrl)) {
-    iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+    if (isAnime) {
+      // For Anime: The user explicitly requires CineWatch Custom Server (ArtPlayer), never external iframe
+      if (artContainer) {
+        artContainer.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;gap:16px;padding:20px;text-align:center;"><div style="width:44px;height:44px;border:3px solid rgba(255,255,255,0.2);border-top-color:#e50914;border-radius:50%;animation:cwSpin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:#f1f5f9;">Connecting to CineWatch Custom Server...</div><div style="font-size:13px;color:#94a3b8;max-width:380px;">Stream is loading. If it takes longer than usual, click Retry below.</div><button id="cwAnimeRetryBtn" style="margin-top:8px;padding:9px 24px;background:#e50914;color:#fff;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:background 0.2s;">Retry Custom Stream</button></div><style>@keyframes cwSpin{to{transform:rotate(360deg)}}</style>';
+        const retryBtn = document.getElementById("cwAnimeRetryBtn");
+        if (retryBtn) {
+          retryBtn.onclick = () => {
+            initArtPlayerForAnime(videoUrl, movie, parentMovie, epData);
+          };
+        }
+      }
+      return;
+    }
+    iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.innerHTML = "";
@@ -8936,15 +9028,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
                     hlsNetErrorCount++;
                     if (hlsNetErrorCount >= 2) {
-                      if (String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
+                      if (isAnime || (String(tmdbId) === "65334" && parseInt(season, 10) >= 6)) {
+                        console.warn('[CineWatch] Retrying HLS stream load for custom player...');
                         hls.startLoad();
                         return;
                       }
-                      console.warn('[CineWatch] Fatal HLS network error limit reached. Falling back to iframe...');
-                      if (iframe) {
+                      if (!isAnime && iframe) {
                         try { art.destroy(); } catch(e) {}
                         if (artContainer) artContainer.classList.add('hidden');
-                        iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+                        iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
                         iframe.classList.remove('hidden');
                       }
                     } else {
@@ -8955,10 +9047,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     hls.recoverMediaError();
                     break;
                   default:
-                    if (iframe) {
+                    if (isAnime) {
+                      hls.startLoad();
+                    } else if (iframe) {
                       try { art.destroy(); } catch(e) {}
                       if (artContainer) artContainer.classList.add('hidden');
-                      iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
+                      iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
                       iframe.classList.remove('hidden');
                     }
                     break;
@@ -9224,8 +9318,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        if (String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
-          return; // Never downgrade Miraculous Season 6 to external server iframe
+        if (isAnime || (String(tmdbId) === "65334" && parseInt(season, 10) >= 6)) {
+          return; // Never downgrade Anime or Miraculous to external server iframe
         }
         if (!is4kStream && !isFrom4kSession && iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
           console.info("Falling back to external server iframe due to player error");

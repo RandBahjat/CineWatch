@@ -1600,20 +1600,24 @@ const server = http.createServer((req, res) => {
     const ep = parsed.searchParams.get('ep') || '1';
     const mode = parsed.searchParams.get('mode') || 'sub';
     const axsv = parsed.searchParams.get('axsv') || '';
+    const noax = parsed.searchParams.get('noax');
     const host = req.headers.host || `localhost:${PORT}`;
     const proto = req.headers['x-forwarded-proto'] || 'http';
     const baseUrl = `${proto}://${host}`;
 
-    async function fetchMegavidSource(mId, episode, mMode, provider) {
+    async function fetchMegavidSource(mId, episode, mMode, provider, extraParams = '') {
       let targetUrl = `https://megavid.buzz/mal/${mId}/${episode}/${mMode}/source`;
-      if (provider) targetUrl += `?axsv=${encodeURIComponent(provider)}`;
+      const q = [];
+      if (provider) q.push(`axsv=${encodeURIComponent(provider)}`);
+      if (extraParams) q.push(extraParams);
+      if (q.length > 0) targetUrl += `?${q.join('&')}`;
       try {
         const r = await fetch(targetUrl, {
           headers: {
             'Referer': 'https://megavid.buzz/',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
           },
-          signal: AbortSignal.timeout(6000)
+          signal: AbortSignal.timeout(8000)
         });
         if (!r.ok) return null;
         return await r.json();
@@ -1625,31 +1629,46 @@ const server = http.createServer((req, res) => {
     function isBadSource(d) {
       if (!d || !d.source) return true;
       if (typeof d.source !== 'string') return true;
-      if (d.source.includes('s-90.megavid.se')) return true;
+      if (d.source.includes('s-90.megavid.se') || d.source.includes('.se/')) return true;
       return false;
     }
 
     (async () => {
-      let data = await fetchMegavidSource(malId, ep, mode, axsv);
+      let data = null;
+      if (noax) {
+        data = await fetchMegavidSource(malId, ep, mode, axsv, 'noax=1');
+      } else {
+        data = await fetchMegavidSource(malId, ep, mode, axsv);
+      }
 
-      // If default source is dead (e.g. s-90.megavid.se offline domain), automatically failover to working providers
+      // If default source is dead (e.g. s-90.megavid.se offline domain), automatically failover:
+      // Priority 1: Bypass broken AnimeX cluster with noax=1 (guaranteed direct working Megavid stream)
       if (isBadSource(data)) {
-        const altProviders = ['loli', 'nero', 'yuki'];
-        for (const p of altProviders) {
-          if (p === axsv) continue;
-          const altData = await fetchMegavidSource(malId, ep, mode, p);
-          if (!isBadSource(altData)) {
-            data = altData;
-            break;
+        const noaxData = await fetchMegavidSource(malId, ep, mode, '', 'noax=1');
+        if (!isBadSource(noaxData)) {
+          data = noaxData;
+        } else {
+          // Priority 2: Alternative providers
+          const altProviders = ['loli', 'nero', 'yuki'];
+          for (const p of altProviders) {
+            if (p === axsv) continue;
+            const altData = await fetchMegavidSource(malId, ep, mode, p);
+            if (!isBadSource(altData)) {
+              data = altData;
+              break;
+            }
           }
         }
       }
 
-      // If sub was completely missing/dead, fallback to dub
-      if (isBadSource(data) && mode === 'sub') {
-        const dubData = await fetchMegavidSource(malId, ep, 'dub', 'loli') || await fetchMegavidSource(malId, ep, 'dub', '');
-        if (!isBadSource(dubData)) {
-          data = dubData;
+      // If chosen mode was completely missing/dead, fallback to the opposite audio mode
+      if (isBadSource(data)) {
+        const fallbackMode = mode === 'dub' ? 'sub' : 'dub';
+        const fbData = await fetchMegavidSource(malId, ep, fallbackMode, '', 'noax=1') ||
+                       await fetchMegavidSource(malId, ep, fallbackMode, 'loli') ||
+                       await fetchMegavidSource(malId, ep, fallbackMode, '');
+        if (!isBadSource(fbData)) {
+          data = fbData;
         }
       }
 
@@ -1659,14 +1678,16 @@ const server = http.createServer((req, res) => {
         return;
       }
 
-      if (mode === 'dub') {
+      if (mode === 'dub' || (!data.tracks || data.tracks.length === 0)) {
         try {
-          const subData = await fetchMegavidSource(malId, ep, 'sub', 'loli') || await fetchMegavidSource(malId, ep, 'sub', '');
+          const subData = await fetchMegavidSource(malId, ep, 'sub', '', 'noax=1') ||
+                          await fetchMegavidSource(malId, ep, 'sub', 'loli') ||
+                          await fetchMegavidSource(malId, ep, 'sub', '');
           if (subData && subData.tracks && subData.tracks.length > 0) {
             data.tracks = subData.tracks;
           }
         } catch(e) {
-          console.error('Failed to fetch sub tracks for dub override:', e);
+          console.error('Failed to fetch sub tracks for dub/missing tracks override:', e);
         }
       }
 
