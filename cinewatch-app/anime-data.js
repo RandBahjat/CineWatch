@@ -11437,7 +11437,7 @@ window._ANIME_DATA = [
     videoUrl: "236994",
     trailerUrl: "",
     animeSlug: "dragon-ball-daima",
-    malId: 56880,
+    malId: 56894,
     overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy When they discover that the reason for this may lie in a world known as the Demon Realm, a mysterious young Majin named Glorio appears before them.",
     overviewKurdish: "",
     director: "Akira Toriyama",

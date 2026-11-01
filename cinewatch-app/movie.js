@@ -7903,6 +7903,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (controlsBar) controlsBar.classList.add("hidden");
   if (centerOverlay) centerOverlay.style.display = "none";
 
+  if (artContainer) {
+    artContainer.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;gap:14px;"><div style="width:42px;height:42px;border:3px solid rgba(255,255,255,0.2);border-top-color:#e50914;border-radius:50%;animation:cwSpin 0.8s linear infinite;"></div><div style="font-size:14px;font-weight:600;color:#cbd5e1;letter-spacing:0.5px;">Loading Episode...</div></div><style>@keyframes cwSpin{to{transform:rotate(360deg)}}</style>';
+    artContainer.classList.remove("hidden");
+  }
+
   if (window.artPlayerInstance) {
     try {
       window.artPlayerInstance.destroy();
@@ -8085,23 +8090,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  // 2. If Anime: fetch direct stream from anime endpoints in parallel
+  // 2. If Anime: fetch direct stream from anime endpoints
   if (isAnime && !cleanUrl && malId) {
-    const endpoints = [
-      (window.location.port === '3000' ? `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}` : null),
-      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
-    ].filter(Boolean);
+    const isLocal3000 = (window.location.origin && window.location.origin.includes(':3000'));
+    const endpoints = isLocal3000
+      ? [
+          `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
+        ]
+      : [
+          `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+          (curOrigin && !curOrigin.includes('file:') ? `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}` : null)
+        ].filter(Boolean);
 
     const uniqueAnimeEndpoints = [...new Set(endpoints)];
     try {
       let srcData = null;
       for (const epUrl of uniqueAnimeEndpoints) {
         try {
-          const res = await fetch(epUrl, { signal: AbortSignal.timeout(10000) });
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
           if (!res.ok) continue;
           const data = await res.json();
           if (data && data.source) {
@@ -8114,7 +8121,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
 
       if (srcData && srcData.source) {
-        // If upstream source points to s-90.megavid.se (dead DNS), try provider loli
+        // If upstream source points to dead domain (s-90.megavid.se), try provider loli
         if (srcData.source.includes('s-90.megavid.se') || srcData.rawSource?.includes('s-90.megavid.se')) {
           for (const epUrl of uniqueAnimeEndpoints) {
             try {
@@ -8130,7 +8137,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           }
         }
 
-        cleanUrl = srcData.source;
+        // Only accept if not pointing to dead s-90 domain (so /api/stream fallback can take over if needed)
+        if (srcData && srcData.source && !srcData.source.includes('s-90.megavid.se')) {
+          cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
           const isLocal3000 = (window.location.origin === 'http://localhost:3000' || window.location.origin === 'http://127.0.0.1:3000');
@@ -8186,23 +8195,26 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         } else {
           window._cwSubtitleTracks = [];
         }
+        } // end valid source check
       }
     } catch (e) {}
   }
 
-  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
-  if (!isAnime && !cleanUrl && tmdbId && !is4kStream && !isFrom4kSession) {
-    const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
-    const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
-    const endpoints = [
-      `/api/stream?${cleanQuery}`,
-      `http://localhost:3000/api/stream?${cleanQuery}`,
-      `http://127.0.0.1:3000/api/stream?${cleanQuery}`,
-      `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`
-    ];
-    if (curOrigin && !curOrigin.includes('cinewatch-maaa')) {
-      endpoints.unshift(`${curOrigin}/api/stream?${cleanQuery}`);
-    }
+  // 2b. Direct stream from custom server endpoints (for Movies, TV Series, or Anime fallback)
+  if (!cleanUrl && tmdbId && !is4kStream && !isFrom4kSession) {
+    const isLocal3000 = (window.location.origin && window.location.origin.includes(':3000'));
+    const isTvOrAnime = isTv || isAnime;
+    const tvQuery = isTvOrAnime ? `&season=${season}&episode=${epNum}` : '';
+    const cleanQuery = `tmdbId=${tmdbId}&type=${isTvOrAnime ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
+    const endpoints = isLocal3000
+      ? [
+          `${curOrigin}/api/stream?${cleanQuery}`,
+          `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`
+        ]
+      : [
+          `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`,
+          (curOrigin && !curOrigin.includes('file:') ? `${curOrigin}/api/stream?${cleanQuery}` : null)
+        ].filter(Boolean);
     const uniqueEndpoints = [...new Set(endpoints)];
 
     try {
@@ -8305,6 +8317,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
     iframe.classList.remove("hidden");
     if (artContainer) {
+      artContainer.innerHTML = "";
       artContainer.classList.add("hidden");
     }
     return; // Do not initialize ArtPlayer
@@ -8657,7 +8670,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           : `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-name" style="font-weight:700;color:#fff;">${(ref?.title || 'Movie').replace(/"/g, '&quot;')}</span></div>`
         );
 
-    const isM3u8Stream = isAnime || (streamUrl && streamUrl.includes('m3u8')) || (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8')));
+    const isM3u8Stream = Boolean(
+      (streamUrl && (streamUrl.includes('m3u8') || streamUrl.includes('anime-m3u8') || streamUrl.includes('stream-m3u8'))) ||
+      (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8'))) ||
+      (isAnime && !streamUrl.includes('stream-media') && !streamUrl.includes('.mp4'))
+    );
     const playerType = isM3u8Stream ? 'm3u8' : (streamUrl && (streamUrl.includes('stream-media') || streamUrl.includes('.mp4')) ? 'mp4' : (streamUrl && streamUrl.includes('.mkv') ? 'mkv' : 'auto'));
 
     const artQualityList = (!is4kStream && !isFrom4kSession && window._cwQualities && window._cwQualities.length > 0)
