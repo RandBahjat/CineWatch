@@ -424,6 +424,14 @@ function build4kLookupMaps() {
       FOURK_ID_MAP.set(lowerId, f);
       FOURK_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), f);
       FOURK_SLUG_MAP.set(lowerId.replace(/[^a-z0-9]/g, ''), f);
+      if (f.year) {
+        const withoutYear = lowerId.replace(new RegExp(`-${f.year}$`), '');
+        FOURK_ID_MAP.set(withoutYear, f);
+        FOURK_SLUG_MAP.set(withoutYear, f);
+        const withYear = lowerId.endsWith(`-${f.year}`) ? lowerId : `${lowerId}-${f.year}`;
+        FOURK_ID_MAP.set(withYear, f);
+        FOURK_SLUG_MAP.set(withYear, f);
+      }
     }
     if (f.title) {
       const lowerTitle = String(f.title).toLowerCase().trim();
@@ -431,6 +439,11 @@ function build4kLookupMaps() {
       const titleSlug = lowerTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
       if (!FOURK_SLUG_MAP.has(titleSlug)) FOURK_SLUG_MAP.set(titleSlug, f);
       FOURK_SLUG_MAP.set(lowerTitle.replace(/[^a-z0-9]/g, ''), f);
+      if (f.year) {
+        const titleWithYear = `${titleSlug}-${f.year}`;
+        FOURK_ID_MAP.set(titleWithYear, f);
+        FOURK_SLUG_MAP.set(titleWithYear, f);
+      }
     }
     if (f.videoUrl) FOURK_ID_MAP.set(String(f.videoUrl), f);
   }
@@ -1135,8 +1148,10 @@ async function initApp() {
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
     const params = new URLSearchParams(window.location.search);
     const deepLinkMovie = params.get('v');
+    const deepLinkSection = params.get('section') || params.get('view');
     if (deepLinkMovie) {
-      setTimeout(() => openDetailsModal(deepLinkMovie), 300); // slight delay for smooth UI
+      const is4kDeepLink = deepLinkSection === '4k' || Boolean(find4kByIdOrTitle(deepLinkMovie));
+      setTimeout(() => openDetailsModal(deepLinkMovie, is4kDeepLink), 300); // slight delay for smooth UI
     } else {
       checkAutoAuthPrompt();
     }
@@ -4347,11 +4362,15 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     ? window._FOURK_DATA.find(f => (parentId && (f.id === parentId || f.videoUrl === videoUrl)) || (displayTitle && f.title && displayTitle.toLowerCase().includes(f.title.toLowerCase())) || (parentMovie && ((f.id && f.id === parentMovie.id) || (f.title && f.title.toLowerCase() === (parentMovie.title || '').toLowerCase()))))
     : null;
 
-  const is4kPlayback = (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime' && state.activeView !== 'search' && state.activeView !== 'home') && Boolean(
+  const is4kPlayback = Boolean(
     state.activeView === '4k' ||
     state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
-    parentMovie?.from4kSection === true
+    parentMovie?.from4kSection === true ||
+    parentMovie?.is4k === true ||
+    parentMovie?.fourkVideoUrl ||
+    fourkMeta !== null ||
+    (typeof videoUrl === 'string' && (videoUrl.includes('_4K_') || videoUrl.includes('_4K.') || videoUrl.includes('4K_UHD')))
   );
 
   if (is4kPlayback) {
@@ -7919,10 +7938,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
     : null;
 
-  const isFrom4kSession = !isAnime && !isTv && (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime' && state.activeView !== 'search' && state.activeView !== 'home') && Boolean(
+  const isFrom4kSession = !isAnime && !isTv && Boolean(
     state.activeView === '4k' ||
+    state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
-    ref?.from4kSection === true
+    ref?.from4kSection === true ||
+    ref?.is4k === true ||
+    ref?.fourkVideoUrl ||
+    fourkMatch !== null ||
+    (typeof videoUrl === 'string' && (videoUrl.includes('_4K_') || videoUrl.includes('_4K.') || videoUrl.includes('4K_UHD')))
   );
 
   let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
@@ -8022,7 +8046,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  const is4kStream = isFrom4kSession;
+  const is4kStream = isFrom4kSession || Boolean(ref?.is4k || ref?.fourkVideoUrl || fourkMatch || (cleanUrl && (cleanUrl.includes('_4K_') || cleanUrl.includes('_4K.') || cleanUrl.includes('4K_UHD'))));
   if (is4kStream) {
     // 4K section and 4K titles stream exclusively in native 4K UHD with no quality selector
     window._cwQualities = null;

@@ -1555,8 +1555,12 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
     (typeof state !== 'undefined' && (state.currentDetailsFrom4k === true || state.activeView === '4k')) ||
-    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k')))
-  ) && (typeof state === 'undefined' || (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime'));
+    (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
+    movie?.is4k === true ||
+    movie?.fourkVideoUrl ||
+    fourkAppMatch ||
+    rawVideoStr.includes('_4K_') || rawVideoStr.includes('_4K.') || rawVideoStr.includes('4K_UHD')
+  );
 
   if (!isFrom4kApp) {
     if (movie) {

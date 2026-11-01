@@ -1881,6 +1881,7 @@ window._MOVIES_DATA = [
   // 69. The Amazing Spider-Man (2012)
   // ============================================================
   {
+    id: "the-amazing-spider-man-2012",
     title: "The Amazing Spider-Man",
     type: "Movie",
     year: 2012,
@@ -1890,7 +1891,8 @@ window._MOVIES_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
-    videoUrl: "1930",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2012_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     overviewKurdish: "",
@@ -1898,7 +1900,7 @@ window._MOVIES_DATA = [
     cast: ["Andrew Garfield", "Emma Stone", "Rhys Ifans", "Denis Leary", "Martin Sheen", "Sally Field"],
     trending: true,
     featured: true,
-    is4k: false,
+    is4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_English.vtt","srclang":"en","default":false}]
   },
@@ -1907,6 +1909,7 @@ window._MOVIES_DATA = [
   // 70. The Amazing Spider-Man 2 (2014)
   // ============================================================
   {
+    id: "the-amazing-spider-man-2-2014",
     title: "The Amazing Spider-Man 2",
     type: "Movie",
     year: 2014,
@@ -1916,7 +1919,8 @@ window._MOVIES_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
-    videoUrl: "102382",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mp4",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_2014_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
     overviewKurdish: "بۆ پیتەر پارکەر، ژیان سەرقاڵکەر و ئاڵۆزە. لە نێوان لەناوبردنی خراپەکاران وەکو سپایدەرمان و بەسەربردنی کات لەگەڵ ئەو کەسەی کە خۆشی دەوێت، گوێن ستەیسی، دەرچوونی لە قۆناغی ئامادەیی ناتوانێت ئەوەندە بە خێرایی بێت. پیتەر ئەو بەڵێنەی لەبیر نەکردووە کە بە باوکی گوێنی دابوو بۆ پاراستنی بە دوورکەوتنەوە لێی — بەڵام ئەوە بەڵێنێکە کە ناتوانێت پێیەوە پابەند بێت. شتەکان دەگۆڕێن کاتێک دوژمنێکی نوێ، ئێلێکترۆ، پەیدا دەبێت، و هاوڕێیەکی کۆنی، هاری ئۆزبۆرن، دەگەڕێتەوە، و پیتەر سەرەداوی نوێ سەبارەت بە ڕابردووی خۆی ئاشکرا دەکات.",
@@ -1924,7 +1928,7 @@ window._MOVIES_DATA = [
     cast: ["Andrew Garfield", "Emma Stone", "Jamie Foxx", "Dane DeHaan", "Colm Feore", "Sally Field"],
     trending: true,
     featured: true,
-    is4k: false,
+    is4k: true,
     seasons: [],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Amazing_Spider_Man_2_English.vtt","srclang":"en","default":false}]
   },

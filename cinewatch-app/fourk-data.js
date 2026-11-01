@@ -62,7 +62,7 @@ window._FOURK_DATA = [
   // 3. The Amazing Spider-Man 2 (2014)
   // ============================================================
   {
-    id: "the-amazing-spider-man-2",
+    id: "the-amazing-spider-man-2-2014",
     title: "The Amazing Spider-Man 2",
     type: "Movie",
     year: 2014,
