@@ -1,6 +1,1626 @@
 // CineWatch - Anime Data
 
 window._ANIME_DATA = [
+  // ============================================================
+  // Beyblade: Metal Fusion (2009)
+  // ============================================================
+  {
+  "id": "beyblade-metal-fusion-2009",
+  "title": "Beyblade: Metal Fusion",
+  "type": "TV Show",
+  "isAnime": true,
+  "year": 2009,
+  "rating": 7,
+  "age": "TV-Y7",
+  "duration": "24m",
+  "genres": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Family"
+  ],
+  "tags": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Family"
+  ],
+  "poster": "https://image.tmdb.org/t/p/original/AvzR1LroQFPs8mtvW761BZX92qx.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/dHQ6u5nRMCHGHLCl220iCah6jX0.jpg",
+  "videoUrl": "37807",
+  "trailerUrl": "https://www.youtube.com/watch?v=kYJjZ8k5110",
+  "animeSlug": "beyblade-metal-fusion",
+  "malId": 5962,
+  "anilistId": 5962,
+  "tmdbId": 37807,
+  "cinesrcId": "37807",
+  "overview": "A new cast of characters take on the continued battle between good and evil. Gingka, our hero, and his group of loyal friends combine forces to take on a dangerous group called the Dark Nebula. The plot thickens as friends become enemies and enemies become allies, all in the pursuit of becoming the top Blader.",
+  "overviewKurdish": "دەستەیەکی نوێ لە کەسایەتییەکان درێژە بە شەڕی نێوان چاکە و خراپە دەدەن. گینکا، پاڵەوانی سەرەکی، لەگەڵ هاوڕێ دڵسۆزەکانی یەکدەگرن بۆ ڕووبەڕووبوونەوەی ڕێکخراوی مەترسیداری تارمایی تاریک (Dark Nebula). چیرۆکەکە بەرەو ئاڵۆزی دەچێت کاتێک هاوڕێیان دەبنە دوژمن و دوژمنان دەبنە هاوپەیمان لە پێناو بوون بە باشترین یاریزانی بەیلەید.",
+  "director": "Kunihisa Sugishima",
+  "cast": [
+    "Rob Tinkler",
+    "Barbara Mamabolo",
+    "Lisette St. Louis",
+    "Aki Kanada",
+    "Satoshi Hino"
+  ],
+  "trending": true,
+  "featured": false,
+  "is4k": false,
+  "seasons": [
+    {
+      "season": 1,
+      "seasonTitle": "Metal Fusion",
+      "malId": 5962,
+      "anilistId": 5962,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Pegasus has Landed",
+          "absoluteEpisode": 1,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/1/w780.jpg",
+          "overview": "When young blader Kenta runs into a rough gang of bladers, the Face Hunters, he is saved by mysterious blader Gingka Hagane and his bey Storm Pegasus. Kenta is determined for the two to become friends, but the next day Gingka is missing and the Face Hunters and their leader have regrouped at a construction site."
+        },
+        {
+          "episode": 2,
+          "title": "Leone's Roar!",
+          "absoluteEpisode": 2,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/2/w780.jpg",
+          "overview": "Kyoya, leader of the Face Hunters, has challenged Gingka. As Gingka and Kenta discuss this challenge a girl appears claiming Pegasus is in need of repair. The girl, named Madoka, treats Pegasus but before she can finish Ginga leaves. Kyoya has stolen Sagittario and unless Gingka wins it will be destroyed."
+        },
+        {
+          "episode": 3,
+          "title": "The Wolf's Ambition!",
+          "absoluteEpisode": 3,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/3/w780.jpg",
+          "overview": "Doji take Kyouya away from the city to make a deal. If Kyouya loses a battle against him then Kyouya must go with him. Meanwhile Kenta is worried Ginga is getting bored of having no strong opponents to battle and challenges him to prove his worth."
+        },
+        {
+          "episode": 4,
+          "title": "Charge! Bull Power!",
+          "absoluteEpisode": 4,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/4/w780.jpg",
+          "overview": "Doji gives Benkei a new bey, Dark Bull, with which he can defeat Gingka. Excited, Benkei sends Kenta off with a challenge for Gingka. Upon arriving, Gingka and co realised strange holes have been made a the battle location, and then a bey appears..."
+        },
+        {
+          "episode": 5,
+          "title": "Vengeful Gasher",
+          "absoluteEpisode": 5,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/5/w780.jpg",
+          "overview": "There is a new blader in town, Tetsuya, who is destroying the beys of the bladers he defeats. Angered by this, Madoka sets off ot find him with Ginga and Kenta in pursute. After splitting up, Kenta realises one fo his friends is a new victim of Tetsuya he battles him, thankfully saved by the arrival of Ginga. But Tetsuya has kidnapped Madoka, and unless Ginga defeats him she'll remain missing."
+        },
+        {
+          "episode": 6,
+          "title": "Aquario's Challenge",
+          "absoluteEpisode": 6,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/6/w780.jpg",
+          "overview": "Hikaru Hasama, a strong blader from afar arrives in town and is asked by Benkei to defeat Ginga. Meanwhile Kenta wonders whether Sagittario could have a special move, Madoka explaining it's possible. Hikaru accepts Benkei's offer, but Ginga is sick and so Kenta battles in his place, unbeknown to Hikaru."
+        },
+        {
+          "episode": 7,
+          "title": "It's Our Special Move! Sagittario",
+          "absoluteEpisode": 7,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/7/w780.jpg",
+          "overview": "Kenta is trained by Benkei to defeat Hikaru whilst Madoka gives Kenta a new bey part to help him with his special move. Meanwhile Hikaru has been told by Tetsuya who her real opponent was and is on the prowl for the real Ginga Hagane, though is interrupted by Kenta."
+        },
+        {
+          "episode": 8,
+          "title": "Merci's Dangerous Trap",
+          "absoluteEpisode": 8,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/8/w780.jpg",
+          "overview": "Kyouya is sent of Wolf Canyon by Doji to test is skills. Meanwhile Merci kidnaps Ginga and convinces him he's on a TV show whilst really he testing his skills."
+        },
+        {
+          "episode": 9,
+          "title": "Leone's Counterattack",
+          "absoluteEpisode": 9,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/9/w780.jpg",
+          "overview": "Kyouya has returned from Wolf Canyon and Benkei is excited to see his old friend again, with encouragement from Kenta. But Kyouya has changed, revealed in a battle, and even with Kenta at his side Benkei loses as Leone destroys the warehouse they're in."
+        },
+        {
+          "episode": 10,
+          "title": "Heated Battle! Gingka Versus Kyoya",
+          "absoluteEpisode": 10,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/10/w780.jpg",
+          "overview": "Kenta returns with an injured Benkei and tells Ginga what Kyouya did to them. Furious, Ginga challenges Kyouya who is now out of control. During the battle, a tornado rips through the city, involuntarily summoning his friends to cheer him on."
+        },
+        {
+          "episode": 11,
+          "title": "Chase The Wolf!",
+          "absoluteEpisode": 11,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/11/w780.jpg",
+          "overview": "Ginga returns and explains to his friends that Doji has a forbidden bey: Lightning L-Drago. Tipped off by Kyouya, they arrive at the Dark Nebula castle and are ambushed by many beys. With help once again from Kyouya, they break down the doors and head inside."
+        },
+        {
+          "episode": 12,
+          "title": "Infiltrate The Dark Nebula's Castle!",
+          "absoluteEpisode": 12,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/12/w780.jpg",
+          "overview": "After many challenges, Ginga is the only one to reach Doji. They battle which causes one of the walls to collapse. But their challenge isn't over yet..."
+        },
+        {
+          "episode": 13,
+          "title": "L-Drago Awakens!",
+          "absoluteEpisode": 13,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/13/w780.jpg",
+          "overview": "Ryouga, an old rival of Ginga's and the new owner of L-Drago. As he and Ginga battle, Ginga is determind to win L-Drago back, but his anger stops him from winning..."
+        },
+        {
+          "episode": 14,
+          "title": "Memories of Ryo",
+          "absoluteEpisode": 14,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/14/w780.jpg",
+          "overview": "Kenta loses his temper when Ginga starts acting strangely. Finally he gets Ginga to tell the story of his past. Ryo Hagane, Ginga's father and the owner of Pegasus, had tried to stop Ryouga taking L-Draco. After losing, Ryo gave Ginga Pegasus before disappearing, and Ginga took it upon himself to stop the Dark Nebula."
+        },
+        {
+          "episode": 15,
+          "title": "Mysterious Hyoma",
+          "absoluteEpisode": 15,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/15/w780.jpg",
+          "overview": "Ginga has run away, possibly to his home town. Kenta, Madoka, Kyouya and Benkei follow him but after many calamities part ways. Then a strange man appears and saved Kenta and Madoka."
+        },
+        {
+          "episode": 16,
+          "title": "The Magnificent Aries",
+          "absoluteEpisode": 16,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/16/w780.jpg",
+          "overview": "The man's name is Hyoma, whom Kyouya has his doubts about. Hyoma says he'll guide them to Koma Village, but Kyouya proves he's walking him in circles. Then Hyoma reveals a secret, and the fact he's an old friend of Ginga's. Meanwhile Ginga, en route to Koma Village, meets an old friend."
+        },
+        {
+          "episode": 17,
+          "title": "The Silver Pegasus",
+          "absoluteEpisode": 17,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/17/w780.jpg",
+          "overview": "The gang arrive in Koma Village and are greeted by a talking dog called Hokuto. Hokuto tells them Ginga is climbing Mt. Hagane, seeking a scroll written by an old barer of Pegasus. But then Ginga learns who the old barer was and learns a valuable lesson."
+        },
+        {
+          "episode": 18,
+          "title": "The Green Hades",
+          "absoluteEpisode": 18,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/18/w780.jpg",
+          "overview": "Ginga takes friends to the bey forest where they are immediately excited. Meanwhile Hyoma, who is already jealous of Ginga's friends, challenges Ginga at a stadium called the Green Hades and reveals that as Ginga's true rival has never lost to Ginga in all their childhood."
+        },
+        {
+          "episode": 19,
+          "title": "Conquer the Tag-Team Battle!",
+          "absoluteEpisode": 19,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/19/w780.jpg",
+          "overview": "Returning from Koma Village, Benkei and Kenta are furious with Madoka when she experiments with their beys without telling them. But then they learn how to switch parts, and that comes in handy at the Aquatic Tag-Team Tournament they've just entered."
+        },
+        {
+          "episode": 20,
+          "title": "Begin! The Survival Battle!",
+          "absoluteEpisode": 20,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/20/w780.jpg",
+          "overview": "The surival battle has begun, the winner being granted one wish. Everyone is entering, even Hyoma, Hikaru and Madoka. But despite everyone's enthusiasum there is a mysterious blader who has been defeating all his opponents..."
+        },
+        {
+          "episode": 21,
+          "title": "Warriors on a Deserted Island",
+          "absoluteEpisode": 21,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/21/w780.jpg",
+          "overview": "Kenta and Benkei are aided by a new battler, Yu Tendo and his bey Flame Libra. Kyouya, after not finishing his battle with Hikaru, challenges Hyoma, who has been watching everyone but not battling. Kyouya wins, but at a price. Meanwhile Yu is upset the tournament is drawing to an end, and is challenged by Kenta, Benkei and Hikaru all at once. But as the battle goes on, Yu reveals himself to be the one who has knocked many of the 1000 competitors out of the competition with ease, and refuses to be taken down."
+        },
+        {
+          "episode": 22,
+          "title": "The Fearsome Libra",
+          "absoluteEpisode": 22,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/22/w780.jpg",
+          "overview": "Ginga, Kyouya, Yu and Madoka are the final four left in the surival battle. Kyouya, after being aided by Madoka, drops out leaving Ginga and Yu left to battle. They both launch their special moves, but in the end Yu is victorious."
+        },
+        {
+          "episode": 23,
+          "title": "The Road to the Battle Bladers",
+          "absoluteEpisode": 23,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/23/w780.jpg",
+          "overview": "As winner of the surivial battle, Yu is granted his wish to hold a tournament to decide the storngest blader in the country. Then he reveals he's a member of the Dark Nebula, before leaving with Doji and Ryouga who showed up to taunt Ginga. After all agreeing to try and earn the 50000 points needed to qualify for Battle Bladers, Ginga and co meet up at a stadium outside town to battle one last time."
+        },
+        {
+          "episode": 24,
+          "title": "The Beautiful Eagle",
+          "absoluteEpisode": 24,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/24/w780.jpg",
+          "overview": "As Ginga travels the country with Pegasus, he is challenged by many point hunters. He is saved by a mysterious blader, Tsubasa Otori, and his bey Earth Aquila. As they are entering the same tournament, the two bladers hang out together, Tsubasa giving Ginga some beyblade tips along the way. But as the tournament progresses, Ginga learns Tsubasa is hiding more secrerts than he expected."
+        },
+        {
+          "episode": 25,
+          "title": "The Sniper Capricorn",
+          "absoluteEpisode": 25,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/25/w780.jpg",
+          "overview": "Kyouya is tired of the weak battles he is forced to battle in, until he learns of a strong blader nearby: Tobio, nicknamed Captain Capri, and his bey Storm Capricorn."
+        },
+        {
+          "episode": 26,
+          "title": "Tsubasa Flies Into The Dark",
+          "absoluteEpisode": 26,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/26/w780.jpg",
+          "overview": "The Dark Nebula get a shock as Tsubasa, who they have been watching, appears to their headquarters demanding to join. Doji agrees, but only if Tsubasa can pass a series of tests."
+        },
+        {
+          "episode": 27,
+          "title": "Intruders in the Challenge Match",
+          "absoluteEpisode": 27,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/27/w780.jpg",
+          "overview": "Kenta and Hyoma meet up at a dual tournament, Kenta battling in the forest stadium and Hyoma in the river stadium. But Hyoma is interrupted when Yu intrudes, demanding to battle. Then Kenta, who has already won his tournament, is challenged by Tsubasa."
+        },
+        {
+          "episode": 28,
+          "title": "Dark Gasher's Big, Crabby-Crabby Operation",
+          "absoluteEpisode": 28,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/28/w780.jpg",
+          "overview": "The fiendish Tetsuya follows Yu back to the Dark Nebula Headquarters. Doji though makes use of this and upgrades Tetsuya's bey as an expirement."
+        },
+        {
+          "episode": 29,
+          "title": "Kenta and Sora",
+          "absoluteEpisode": 29,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/29/w780.jpg",
+          "overview": "Kenta, whilst competing in a tournament, meets Sora, an impatient battler with amazing skills. Sora claims to be Ginga's apprentice with his bey Cyber and attempts to copy Pegasus's special move, but can not pull it off."
+        },
+        {
+          "episode": 30,
+          "title": "The Bewitching Pisces",
+          "absoluteEpisode": 30,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/30/w780.jpg",
+          "overview": "Ginga and the gang meet up at a tournament. But there is a mysterious atmosphere in one corner of the stadium as a mysterious blader Ryutaro tells fortunes..."
+        },
+        {
+          "episode": 31,
+          "title": "The Twin Gemios",
+          "absoluteEpisode": 31,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/31/w780.jpg",
+          "overview": "Four matches are going on in the tournament. As Hikaru and Kyouya's match begins, the others, who were busy congratulating Ginga, realise they're last and in their hast bump into Yu. Then Tsubasa turns up adn Yu explains they're both part of the Dark Nebula. Despite the others' shock, Tsubasa leaves barely saying a word, ordering Yu to follow him away. Kyouya wins his match against Hikaru as Tsubasa wins his against Benkei. Kenta takes on the twins: Dan and Reiki, that Kyouya faced at Dark Nebula's original base with their new bey Evil Gemios. They are on the verge of winning when the two start bickering and Kenta defeats them. Finally Yu wins his battle, but spends most of the time complaining about how only Tsubasa and Kenta appear to have good opponents."
+        },
+        {
+          "episode": 32,
+          "title": "The Stormy Battle Royal",
+          "absoluteEpisode": 32,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/32/w780.jpg",
+          "overview": "The final six bladers of the touranment are: Ginga, Kenta, Kyouya, Yu, Tsubasa and Hyoma. Doji suggests they all battle against each other in a battle royal, mainly to see how well Tsubasa and Yu will get on batting together. Unfortunatly, their hating of each other gets in the way and after taking out Hyoma, mainly by accident so they could get to Ginga, they start fighting each other. Pegasus plunders into the battle and all three loose. Finally Kyouya, who protected Saggitario whilst Yu and Tsubasa battled, defeats Kenta with a single hit and wins the tournament."
+        },
+        {
+          "episode": 33,
+          "title": "The Oath of the Phoenix",
+          "absoluteEpisode": 33,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/33/w780.jpg",
+          "overview": "After the tournament, all the friends part ways. The Dark Nebula memebrs head back to base, Yu though is still furious with Tsubasa. But without warning, the sneaky Tetsuya steals Ginga's point counter. It is rescued by a new and mysterious blader: Phoenix, who only agrees to give it back if Ginga can defeat him in a battle."
+        },
+        {
+          "episode": 34,
+          "title": "Shine, Virgo!",
+          "absoluteEpisode": 34,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/34/w780.jpg",
+          "overview": "Starting at square one, Ginga enters a tournament where he is challenged by a fan of his: Teru. Teru is a former dancer who suffered from an injury during one of his performances. When he was in hospital, he entertained himself by watching Ginga's battles. After a friend gave his Virgo, he has vowed to become a blader as strong as Ginga."
+        },
+        {
+          "episode": 35,
+          "title": "L-Drago, on the Move",
+          "absoluteEpisode": 35,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/35/w780.jpg",
+          "overview": "Ryouga has set out to obtain the 50000 points to gain entery to Battle Bladers. He takes part in a 100 eby battle Benkei is entering and wins with ease and also beats Tobio and Ryutaro in the fianls of a touranment he interrupted. Tsubasa and Yu, who have finally stopped bickering, are supposed to be guarding him, but Tsubasa gets fed up and leaves whilst Yu heads back to base to cause trouble for him. Falling into a trap set by Doji, Tsubasa sees his chance to swipe information from the Dark Nebula database. Though just as he is leaving, he is intercepted by Doji and many bladers Yu summoned upon to help out. Then Ryouga turns up..."
+        },
+        {
+          "episode": 36,
+          "title": "Broken Wings",
+          "absoluteEpisode": 36,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/36/w780.jpg",
+          "overview": "Tsubasa almost looses with Ryouga but Aquila is saved by the sudden arrival of Phoenix. Taking pity on the young blader, Phoenix grabs Tsubasa and the two escape. Yu is at first really annoyed, but the explains the Doji he has already sent a Dark nebula member to keep an eye on Ginga. Tobio interrupts a tournament where Ginga has entered where the stadium has moving walls. Tobio had an early advantage, but in the end Ginga triuphs with his special move."
+        },
+        {
+          "episode": 37,
+          "title": "Rock Scorpio's Deadly Poison",
+          "absoluteEpisode": 37,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/37/w780.jpg",
+          "overview": "Kenta arrives in a town where the kids are forbidden to battle in their stadium as it has been overun by Busujima and a gang of bladers. The Kenta's friend Sora turns up and they begin secret training to beat Busujima. Then one of their number vanishes and it's up to Sora to win her back."
+        },
+        {
+          "episode": 38,
+          "title": "Run, Gingka!",
+          "absoluteEpisode": 38,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/38/w780.jpg",
+          "overview": "Everyone has gained 50000 points apart from Ginga who is only 3000 off. After learning of a nearby tournament, they all head there but are intercepted by Tsubasa. The others send Ginga on ahead whilst they distract Tsubasa, but this turns out to be what he wants. After Phoenix saved him, Tsubasa vowed to defeat Ryouga, but he was told to get to know Ginga's friends first. Kenta is willing to sacrifice everything for Ginga, but then the latter turns up, claim he couldn't leave his friends behind. Tsuabsa becomes confused, but then Phoenix appears..."
+        },
+        {
+          "episode": 39,
+          "title": "Clash! The Fireblaze vs The Pegasus",
+          "absoluteEpisode": 39,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/39/w780.jpg",
+          "overview": "After Tsubasa is easily defeated by Phoenix, Ginga is also challenge. The rules are simple: if he wins he gets his lost points back, if he looses he is forced to quit beyblade. Everyone comes to show support for Ginga, even Kyouya. Fianlly Tsubasa understands what Phoenix had tried to tell him, and reveals his identity to the others."
+        },
+        {
+          "episode": 40,
+          "title": "GO! Battle Bladers!",
+          "absoluteEpisode": 40,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/40/w780.jpg",
+          "overview": "Battler Bladers has begun and everyone is winning their battles with ease. But Ginga's first opponent is Yu, the only person besides Ryouga who has ever defeated him."
+        },
+        {
+          "episode": 41,
+          "title": "The Serpent's Terror",
+          "absoluteEpisode": 41,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/41/w780.jpg",
+          "overview": "Hyoma's next opponent is Regi, a blader who belives in fear and sadness being an important matter in bey battling. Unable to help Hyoma much, the others become worried about Hikaru's match against Ryouga that puts her in a coma."
+        },
+        {
+          "episode": 42,
+          "title": "The Dragon's Punishment",
+          "absoluteEpisode": 42,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/42/w780.jpg",
+          "overview": "Yu and Ryutaro learn of the horrors of the Dark Nebula as Ryutaro watches as his defeated friends are taken down by Ryouga and Yu is forced to battle Regi. Meanwhile Tsubas considers taking Ryouga on himself in order to stop Kyouya from having to battle him, but Kyoya stops him."
+        },
+        {
+          "episode": 43,
+          "title": "The Deck is Stacked",
+          "absoluteEpisode": 43,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/43/w780.jpg",
+          "overview": "After a switch in the pairings Kyouya is now battling Benkei, much to Tsubasa's delight as he now is battling Ryouga. Kyouya wins his battle but Benkei is pleased to have shown his old master his true strength. Meanwhile Ginga battles Ryutaro who, after watching the other Dark Nebula members fall at the hands of Ryouga, knows he is battling for his life. Ryutaro predicts a dark future for the world at the mercy of L-Drago, but after Ginga wins his predition changes and he accepts his fait. After the battle, the others discuss the predition Ryutaro mentioned to Ginga when an injured Yu stumbles in looking for Kenta and Ginga."
+        },
+        {
+          "episode": 44,
+          "title": "Entrusted Emotions",
+          "absoluteEpisode": 44,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/44/w780.jpg",
+          "overview": "Yu explains what has been happening within the Dark Nebula Organisation, showing his broken Libra as proof. Ginga is furious, but not so much as Kenta who, after swapping performance tips, storms off to find and battle Regi."
+        },
+        {
+          "episode": 45,
+          "title": "Eagle Counterattacks",
+          "absoluteEpisode": 45,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/45/w780.jpg",
+          "overview": "After Kenta and Yu's battle of will, everyone is looking for Tsubasa who has gone missing. He eventually shows up for his battle after some backup from Kyouya. The odds are stacked against Tsubasa, but after battling Ryouga once before is there a chance he could win?"
+        },
+        {
+          "episode": 46,
+          "title": "Libra Disappears",
+          "absoluteEpisode": 46,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/46/w780.jpg",
+          "overview": "Ginga prepares to battle Reji who is stronger than in his first two battles. Meanwhile Yu is kidnapped and Kenta and Hyoma, who have both recovered from their battles with Reji, race into the Dark Nebula Organisation's HQ to get him back."
+        },
+        {
+          "episode": 47,
+          "title": "Bonds of Steel",
+          "absoluteEpisode": 47,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/47/w780.jpg",
+          "overview": "Ginga finally defeats Regi. Phoenix appears to protect Kenta and Hyoma, beating Doji. Madoka tells Ginga about Yu, Kenta and Hyoma and the two rush after them. All of them regroup as shards fall from the ceiling, trapping Doji and shattering Phoenix's mask."
+        },
+        {
+          "episode": 48,
+          "title": "The Truth About Light and Darkness",
+          "absoluteEpisode": 48,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/48/w780.jpg",
+          "overview": "Phoenix, who is really Ryo Hagane, helps to rescue Yu. Then he explains to everyone about the orgin of beys, starting with Pegasus and L-Drago. Meanwhile Doji comes across Ryouga who is anxious for more power and knows where to get it."
+        },
+        {
+          "episode": 49,
+          "title": "Fierce Battle! Lion VS Dragon",
+          "absoluteEpisode": 49,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/49/w780.jpg",
+          "overview": "Kyoya finally gets to battle Ryuga, determind to avenge Tsubasa who had become a close friend. After persuading Ryuga to not use his special move, it really looked like Kyoya could win. But in the end L-Drago triumphs and Kyoya suffers the same fait as Hikaru and Tsubasa."
+        },
+        {
+          "episode": 50,
+          "title": "The Furious Final Battle!",
+          "absoluteEpisode": 50,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/50/w780.jpg",
+          "overview": "Upset at the faith of his friends, Ginga goes alone to the final battle. Ryuga battles him on a stage in the air where the true power of L-Drago becomes clear."
+        },
+        {
+          "episode": 51,
+          "title": "Blader's Spirit",
+          "absoluteEpisode": 51,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/1/51/w780.jpg",
+          "overview": "With the help of the spirits of Hikaru, Tsubasa and Kyoya, Ginga manages to survive L-Drago's attacks with support from his friends. Finally he realizes he can win with his greatest special move - Galaxy Nova."
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonTitle": "Metal Masters",
+      "malId": 8364,
+      "anilistId": 8364,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Seeking a Legend",
+          "absoluteEpisode": 52,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/1/w780.jpg",
+          "overview": "Ryo, Gingka’s father, acts as Director of the new WBBA but the first tournament is disrupted by a blader named Masamune. Gingka meanwhile is on a quest to replace Storm Pegasus with a Legendary Bey sealed in the mountains near Koma Village."
+        },
+        {
+          "episode": 2,
+          "title": "The Persistent Challenger",
+          "absoluteEpisode": 53,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/2/w780.jpg",
+          "overview": "Gingka defeats Masamune but Masamune challenges Gingka again and again, losing each time. Masumune trains hard and eventually manages to defeat Gingka, but Gingka learns a valuable lesson about how to work with Galaxy Pegasus."
+        },
+        {
+          "episode": 3,
+          "title": "A New Challenge",
+          "absoluteEpisode": 54,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/3/w780.jpg",
+          "overview": "New blader Mei-Mei invites Gingka into battle where she is partnered with Chiyun and Gingka is partnered with Masamune. Gingka and Masamune must learn to work together to defeat their opponents, and they do in the nick of time."
+        },
+        {
+          "episode": 4,
+          "title": "Ticket to the World",
+          "absoluteEpisode": 55,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/4/w780.jpg",
+          "overview": "At a qualifying tournament to select representatives for the Beyblade World Championships, Gingka finds that he is already on the team and is not required to battle."
+        },
+        {
+          "episode": 5,
+          "title": "Final Battle! Leone VS Eagle",
+          "absoluteEpisode": 56,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/5/w780.jpg",
+          "overview": "At a qualifying match for the final spot on Team Japan for the Beyblade World Championships, Kyoya and Rock Leone face off against Tsubasa and Earth Eagle. The battle is hard fought, but Kyoya emerges the victor."
+        },
+        {
+          "episode": 6,
+          "title": "Soar Into the the World",
+          "absoluteEpisode": 57,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/6/w780.jpg",
+          "overview": "Since Kyoya has refused to join Team Japan for the Beyblade World Championships, a battle is arranged between Yu and Tsubasa to decide who will be the final Regular Member."
+        },
+        {
+          "episode": 7,
+          "title": "The Beylin Temple in the Sky",
+          "absoluteEpisode": 58,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/7/w780.jpg",
+          "overview": "Team Japan arrives in China and is invited to their opponents’ practice facility, the Beylin Temple to observe their training rituals."
+        },
+        {
+          "episode": 8,
+          "title": "The Third Man",
+          "absoluteEpisode": 59,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/8/w780.jpg",
+          "overview": "Madoka and Gingka visit the opposing team’s training camp to find out who the third blader is. Masamune stumbles on this third blader himself – “Chaoxin”, a flashy blader in it for the glory of his fans."
+        },
+        {
+          "episode": 9,
+          "title": "The World Championships Begin!",
+          "absoluteEpisode": 60,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/9/w780.jpg",
+          "overview": "After his loss to Chaoxin, Masamune begins hard bey training in the wilderness, where he meets a little old man. The mysterious old man repays a meal that Masamune gives him with some unique training that restores Masamune’s confidence."
+        },
+        {
+          "episode": 10,
+          "title": "Lacerta's Will",
+          "absoluteEpisode": 61,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/10/w780.jpg",
+          "overview": "In a heated battle, Chiyun taunts Tsubasa relentlessly about his rigid battling style."
+        },
+        {
+          "episode": 11,
+          "title": "The 4000 Year Old Secret",
+          "absoluteEpisode": 62,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/11/w780.jpg",
+          "overview": "The third and deciding battle of the first round of the Beyblade World Championships features Dashan against Gingka."
+        },
+        {
+          "episode": 12,
+          "title": "The Bey with a Hero's Name",
+          "absoluteEpisode": 63,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/12/w780.jpg",
+          "overview": "Gingka and the team travel abroad where they watch Team Desert Blaze do battle with Team Excalibur from the EU."
+        },
+        {
+          "episode": 13,
+          "title": "The Wintry Land of Russia",
+          "absoluteEpisode": 64,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/13/w780.jpg",
+          "overview": "Gingka and the rest of Team Gangan Galaxy travel by train to Russia to meet their next opponents in the Beyblade World Championships."
+        },
+        {
+          "episode": 14,
+          "title": "How Grand! The Cage Match",
+          "absoluteEpisode": 65,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/14/w780.jpg",
+          "overview": "Gingka and his team battle their next opponents in the Beyblade World Championships, the Russian Team, Lovushka. Masamune meanwhile is lost in the countryside, having been tricked into taking a different train than his teammates."
+        },
+        {
+          "episode": 15,
+          "title": "Libra Departs for the Front!",
+          "absoluteEpisode": 66,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/15/w780.jpg",
+          "overview": "With Masamune still missing, Yu must take his place in the next battle against Aleksey. Anton and Aleksey have rigged the stadium to emit sound waves that disable Flame Libra’s Special Move, but Yu outsmarts them and claims victory for Team Gangan Galaxy."
+        },
+        {
+          "episode": 16,
+          "title": "The Festival of Warriors",
+          "absoluteEpisode": 67,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/16/w780.jpg",
+          "overview": "The bladers find themselves in Greece where they must battle the European Union, aka Team Excalibur."
+        },
+        {
+          "episode": 17,
+          "title": "We Meet Again! Wang Hu Zhong",
+          "absoluteEpisode": 68,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/17/w780.jpg",
+          "overview": "Gingka, Masamune, Tsubasa and Yu try to work on their teamwork skills, but end up quarrelling even more than usual. This leads to Madoka threatening to disband Team Gangan Galaxy."
+        },
+        {
+          "episode": 18,
+          "title": "The Scorching Hot Lion",
+          "absoluteEpisode": 69,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/18/w780.jpg",
+          "overview": "Kyoya travels to a country named Savannah to take part in a tournament that will allow him to attend the Beyblade World Championships if he finishes in the top three."
+        },
+        {
+          "episode": 19,
+          "title": "The Shocking Wild Fang",
+          "absoluteEpisode": 70,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/19/w780.jpg",
+          "overview": "Gingka and the rest of Team Gangan Galaxy travel to India to watch India’s Team Chandora do battle with Africa’s Team Wild Fang. Wild Fang wins, but their leader, Kyoya, seems more interested in informing Gingka that his mission in life is to defeat him."
+        },
+        {
+          "episode": 20,
+          "title": "Horuseus VS Striker",
+          "absoluteEpisode": 71,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/20/w780.jpg",
+          "overview": "The Beyblade World Championships have returned to Japan, where everyone is excited to watch Gingka battle Kyoya. However, when a restless Masamune challenges Nile, he finds that bravado does not always work, as Nile sends him down to defeat."
+        },
+        {
+          "episode": 21,
+          "title": "Eternal Rivals",
+          "absoluteEpisode": 72,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/21/w780.jpg",
+          "overview": "The long awaited rematch between Gingka and Kyoya has finally arrived and their battle is of epic proportions. In the end, their skills are so evenly matched that the two rivals knock each other unconscious and both beys stop spinning simultaneously."
+        },
+        {
+          "episode": 22,
+          "title": "The Third Match: On The Edge",
+          "absoluteEpisode": 73,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/22/w780.jpg",
+          "overview": "The third and tie breaking match between Gangan Galaxy and Wild Fang takes the form of a team battle with Yu and Tsubasa facing Benkei and Damoure."
+        },
+        {
+          "episode": 23,
+          "title": "The End Of A Fierce Struggle!",
+          "absoluteEpisode": 74,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/23/w780.jpg",
+          "overview": "With Team Gangan Galaxy tied with Team Wild Fang, a fourth and final team battle is set to determine a winner."
+        },
+        {
+          "episode": 24,
+          "title": "The Creeping Darkness",
+          "absoluteEpisode": 75,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/24/w780.jpg",
+          "overview": "Team Gangan Galaxy are in shock as they learn that their teammate Tsubasa has been infected by a dark power. Meanwhile, the first battle for a spot in the finals between Excalibur and Wang Hu Zhong is won by Wales and Sophie of the EU team."
+        },
+        {
+          "episode": 25,
+          "title": "The Axe Of Destruction",
+          "absoluteEpisode": 76,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/25/w780.jpg",
+          "overview": "Chiyun battles Klaus in an elimination bout and despite his best efforts, Chiyun loses and Wang Hu Zhong are eliminated from the tournament. Meanwhile, Hyoma finds Ryuga."
+        },
+        {
+          "episode": 26,
+          "title": "The Dragon Emperor Returns",
+          "absoluteEpisode": 77,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/26/w780.jpg",
+          "overview": "Julian Konzern and Team Excalibur return to Italy, where Konzern is surprised to be challenged to a battle by Tsubasa. The battle is interrupted by the unexpected appearance of Ryuga and his new bey, Meteo L-Drago."
+        },
+        {
+          "episode": 27,
+          "title": "Exceed The Limit!",
+          "absoluteEpisode": 78,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/27/w780.jpg",
+          "overview": "Team Gangan Galaxy travels to Italy for the tournament finals, where Masamune loses his match to Klaus of Team Excalibur. Gingka meanwhile battles his oldest rival, Ryuga."
+        },
+        {
+          "episode": 28,
+          "title": "Dark Eagle",
+          "absoluteEpisode": 79,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/28/w780.jpg",
+          "overview": "Tsubasa and Yu battle Wales and Sophie in the finals, with Tsubasa defeating both his own dark side and the opponents to claim victory. Gingka meanwhile receives valuable advice from Ryuga."
+        },
+        {
+          "episode": 29,
+          "title": "Gravity Destroyer",
+          "absoluteEpisode": 80,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/29/w780.jpg",
+          "overview": "Julian Konzern and Gingka meet in the final and deciding battle for the A Block of the Beyblade World Championships. In a close match, Gingka’s Galaxy Pegasus defeats Konzern’s Gravity Destroyer."
+        },
+        {
+          "episode": 30,
+          "title": "The Midday Street Battle",
+          "absoluteEpisode": 81,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/30/w780.jpg",
+          "overview": "Team Gangan Galaxy arrives in Brazil for the Finals of The Beyblade World Championships. Trouble ensues when Yu ventures off on his own to gather information about their opponents."
+        },
+        {
+          "episode": 31,
+          "title": "Brazilian Trap",
+          "absoluteEpisode": 82,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/31/w780.jpg",
+          "overview": "Yu recovers from his injuries in time to battle Enso Garcia in the first match of the finals, but he and his damaged Libra lose. Masamune defeats Enso in the next match, but then loses to Enso’s sister, Selen."
+        },
+        {
+          "episode": 32,
+          "title": "The Explosive Cyclone Battle!",
+          "absoluteEpisode": 83,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/32/w780.jpg",
+          "overview": "Gingka battles Selen and she surprises him by conceding the battle after managing to drain much of Pegasus’s power in the process. In the next match, Gingka defeats Ian to give his team the lead, only to lose to Argo and the teams are tied again."
+        },
+        {
+          "episode": 33,
+          "title": "Charge! Ray Gil",
+          "absoluteEpisode": 84,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/33/w780.jpg",
+          "overview": "Tsubasa and Argo battle to see which of their teams will advance to the finals of the Beyblade World Championships. Argo starts strong but Tsubasa refuses to quit and he wins in the end."
+        },
+        {
+          "episode": 34,
+          "title": "My Friend's Name is Zeo",
+          "absoluteEpisode": 85,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/34/w780.jpg",
+          "overview": "Team Gangan Galaxy arrives in the USA to watch the next matches in the Beyblade World Championships. Masamune meets old friends, and battles one, but they call it a draw and vow to fight another day."
+        },
+        {
+          "episode": 35,
+          "title": "Our Slogan Is Number 1",
+          "absoluteEpisode": 86,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/35/w780.jpg",
+          "overview": "Masamune finds his old friend Toby and through flashback we learn that they made a pact long ago to become the number one bladers in the world."
+        },
+        {
+          "episode": 36,
+          "title": "The Plot Thickens",
+          "absoluteEpisode": 87,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/36/w780.jpg",
+          "overview": "As Gingka and the rest of Gangan Galaxy visit the Dungeon Gym, Zeo battles Ryuga at HD Academy. Ryuga wins and Dr. Ziggurat tells him his plan for world domination."
+        },
+        {
+          "episode": 37,
+          "title": "The Compass of Fate: Byxis",
+          "absoluteEpisode": 88,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/37/w780.jpg",
+          "overview": "Zeo undergoes the “Arrangement” process at Dr. Ziggurat’s lab, and then challenges Masamune to a battle. The battle ends when Damian arrives and he destroys Tsubasa and Yu’s blades and leaves the two bladers unconscious."
+        },
+        {
+          "episode": 38,
+          "title": "The Wicked Peacock: Befall",
+          "absoluteEpisode": 89,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/38/w780.jpg",
+          "overview": "With Tsubasa and Yu in the hospital, the rest of Gangan Galaxy attends a match between Team Excalibur and Team Star Breaker."
+        },
+        {
+          "episode": 39,
+          "title": "The Guard Dog of Hades: Kerbecs",
+          "absoluteEpisode": 90,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/39/w780.jpg",
+          "overview": "Julian Konzern of Team Excalibur battles Damian Heart of Team Star Breaker. Damian challenges Julian to a best two out of three match. Julian accepts but is defeated twice in a row."
+        },
+        {
+          "episode": 40,
+          "title": "The Furious DJ Battle!?",
+          "absoluteEpisode": 91,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/40/w780.jpg",
+          "overview": "Gangan Galaxy tries to pick a replacement member for the Final Battle, but Kenta, Team Wang Hu Zhong and Ryo are all disqualified. Blader DJ and the American DJ battle to see who will announce the final match, but their battle ends in a tie..."
+        },
+        {
+          "episode": 41,
+          "title": "The Final Countdown",
+          "absoluteEpisode": 92,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/41/w780.jpg",
+          "overview": "The final matches of the Beyblade World Championships begin and Zeo of Team Star Breaker battles Masamune of Team Gangan Galaxy. Dr. Ziggurat tells Zeo that if he loses, his friend Toby’s medical treatments will be discontinued."
+        },
+        {
+          "episode": 42,
+          "title": "The Dragon Emperor Descends",
+          "absoluteEpisode": 93,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/42/w780.jpg",
+          "overview": "Gingka is ready to face Jack in the second battle of the final round of the Beyblade World Championships but Ryuga suprises everyone when he shows up to take his place. Ryuga uses L-Drago to defeat Jack’s Befall to even the match between Team Gangan Galax.\r\n"
+        },
+        {
+          "episode": 43,
+          "title": "Last Battle of the Spirit",
+          "absoluteEpisode": 94,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/43/w780.jpg",
+          "overview": "Ryo tells Team Gangan Galaxy that the US team, Star Breaker, consists of members that have artificially enhanced by Dr. Ziggurat. Damian and Gingka begin the final battle of the World Championships."
+        },
+        {
+          "episode": 44,
+          "title": "Showdown! Gingka vs. Damian",
+          "absoluteEpisode": 95,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/44/w780.jpg",
+          "overview": "Gingka battles Damian in the final battle as the Beyblade World Championships continues. Damian’s Kerbecs starts strong, but Gingka’s Pegasus rallies and defeats them and Team Gangan Galaxy become champions."
+        },
+        {
+          "episode": 45,
+          "title": "A Milagrosa Força Espiral",
+          "absoluteEpisode": 96,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/45/w780.jpg",
+          "overview": "The victory party for Team Gangan Galaxy is crashed by Doctor Ziggurat and a group of disgraced bladers who corner Gingka and his friends. Ziggurat demonstrates the power of his bey-based weapon called Spiral Force, which destroys part of the countryside."
+        },
+        {
+          "episode": 46,
+          "title": "Charge! Hades City",
+          "absoluteEpisode": 97,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/46/w780.jpg",
+          "overview": "Gingka and his friends decide to go after Dr. Ziggurat, but they encounter Ziggurat’s minions who use their beys to try and stop their progress. Gingka and his friends prevail, and a small group actually makes it aboard Ziggurat’s Hades City..."
+        },
+        {
+          "episode": 47,
+          "title": "The Fallen Emperor",
+          "absoluteEpisode": 98,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/47/w780.jpg",
+          "overview": "Gingka and his friends try to rescue Toby from the clutches of Dr. Ziggurat but are blocked by Julian Konzern. Wales and Sophie clear the way by battling their former partner, Julian, but they lose. Dashan then battles and defeats Julian..."
+        },
+        {
+          "episode": 48,
+          "title": "Befall`s Trap",
+          "absoluteEpisode": 99,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/48/w780.jpg",
+          "overview": "While Gingka, Masamune and Kyoya try to find Toby in Hades City, Tsubasa is challenged to a battle by Jack. Tsubasa defeats Jack, and Yu destroys Jack’s Arrangement Chamber."
+        },
+        {
+          "episode": 49,
+          "title": "The Wild Beast Unleashed",
+          "absoluteEpisode": 100,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/49/w780.jpg",
+          "overview": "While Masamune and Gingka try to reach the Spiral Core and Toby, Kyoya battles Damian. Kyoya defeats Damian just as Dr. Ziggurat warns the world that he intends on selling his invention, Spiral Force, to the highest bidder."
+        },
+        {
+          "episode": 50,
+          "title": "Rampage! Tempo",
+          "absoluteEpisode": 101,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/50/w780.jpg",
+          "overview": "Gingka and Masamune battle Faust at the Spiral Core. Faust’s bey, Twisted Tempo, actually sends them to another time and space with a Special Move. Ryuga intervenes by launching L-Drago at Hades City, which damages the Spiral Core."
+        },
+        {
+          "episode": 51,
+          "title": "Galaxy Heart",
+          "absoluteEpisode": 102,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/2/51/w780.jpg",
+          "overview": "While Gingka tries to use Pegasus to absorb the excess energy at the Hades City reactor, Masamune finds he must battle Faust again. It is only when Masamune’s old friend Zeo arrives to join the battle..."
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "seasonTitle": "Metal Fury",
+      "malId": 10370,
+      "anilistId": 10370,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Fragment of the Star",
+          "absoluteEpisode": 103,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/1/w780.jpg",
+          "overview": "When a star falls from the sky, a young blader named Yuki is waiting for it. He immediately sets out to find Gingka, but this proves difficult as Gingka has been lured into a battle on an island against his old rival Kyoya."
+        },
+        {
+          "episode": 2,
+          "title": "Legendary Bladers",
+          "absoluteEpisode": 104,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/2/w780.jpg",
+          "overview": "Yuki battles with a dark character named Johannes, but Gingka arrives and sends Johannes packing. Yuki tells the gang the story of a recently fallen star that has chosen certain bladers to be known as Legendary Bladers.\r\n"
+        },
+        {
+          "episode": 3,
+          "title": "The Monster Cat, Lynx",
+          "absoluteEpisode": 105,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/3/w780.jpg",
+          "overview": "Gingka and his friends are about to start their quest to find the 8 Legendary Bladers, but they run into Johannes and a battle ensues. Things look bad for Gingka until Kyoya arrives and joins the battle, driving Johannes off."
+        },
+        {
+          "episode": 4,
+          "title": "L-Drago Destructor",
+          "absoluteEpisode": 106,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/4/w780.jpg",
+          "overview": "While Gingka and the gang try to make friends, Benkei and Kyoya meet Ryuga at the top of a volcano and Kyoya challenges Ryuga to a bey battle. Ryuga tells Kyoya that he should not be battling, that he doesn’t even know his bey yet."
+        },
+        {
+          "episode": 5,
+          "title": "Awaken, Anubis!",
+          "absoluteEpisode": 107,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/5/w780.jpg",
+          "overview": "After Ryuga defeats Kyoya, Gingka challenges him to a bey battle, but Ryuga quickly defeats him too. Yuki challenges him to yet another battle but his bey, Mercury Anubius, is battered again and again by Ryuga’s L-Drago Destructor."
+        },
+        {
+          "episode": 6,
+          "title": "Requirements of a Warrior",
+          "absoluteEpisode": 108,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/6/w780.jpg",
+          "overview": "When a volcano erupts, Gingka, Yuki and Kyoya change the course of the lava by using their beys and save the village. They leave the island but are shocked when Kenta announces that he is heading out on his own."
+        },
+        {
+          "episode": 7,
+          "title": "Kenta's Determination",
+          "absoluteEpisode": 109,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/7/w780.jpg",
+          "overview": "Kenta travels to a remote desert town where he competes against Ryuga in a tournament but loses. He then follows Ryuga on a difficult cross country trek, trying to convince Ryuga that he should lend his strength as a Legendary Blader to Gingka and the others."
+        },
+        {
+          "episode": 8,
+          "title": "The Crimson Flash",
+          "absoluteEpisode": 110,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/8/w780.jpg",
+          "overview": "Johannes breaks into Beylin Temple and is confronted by Gingka and his friends. Dashan engages the intruder in a bey battle but Johannes quits, claiming that Dashan is not a Legendary Blader and not worth his time."
+        },
+        {
+          "episode": 9,
+          "title": "The Greatest Tag-Team Tournament",
+          "absoluteEpisode": 111,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/9/w780.jpg",
+          "overview": "At the Tag Team Championship a series of battles occur in which Dashan and Chiyun are victorious as are Johannes and his new partner, Motty. When Yuki and Gingka challenge Mei-Mei and Chaoxin, Yuki suffers a serious lack of confidence and almost gives up."
+        },
+        {
+          "episode": 10,
+          "title": "A New Roar!",
+          "absoluteEpisode": 112,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/10/w780.jpg",
+          "overview": "The Tag Team Tournament continues and the final four teams are determined. The team of Dashan and Chiyun win their match quickly, but Kyoya and Benkei have a long battle with Motty and Johannes. In the end Kyoya defeats Johannes to move on."
+        },
+        {
+          "episode": 11,
+          "title": "Cosmic Tornado",
+          "absoluteEpisode": 113,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/11/w780.jpg",
+          "overview": "In the second Round of the Tag Team tournament, Gingka and Yuki face Dashan and Chiyun in a mountain top stadium. Gingka and Yuki win when Gingka creates a new special move, Cosmic Tornado. Next up, it’s Beylin Fist against Kyoya and Benkei.4"
+        },
+        {
+          "episode": 12,
+          "title": "The God of Saturn, Kronos",
+          "absoluteEpisode": 114,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/12/w780.jpg",
+          "overview": "Ginka and Yuki travel to an ancient Bey Temple to battle Bao and Aguma of Beylin Fist in the final of the Toryumon Tag Team Tournament. The Beylin Fist team starts strong and soon has Gingka and Yuki in a tough spot."
+        },
+        {
+          "episode": 13,
+          "title": "Showdown at the Tower of Babel!",
+          "absoluteEpisode": 115,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/13/w780.jpg",
+          "overview": "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
+        },
+        {
+          "episode": 14,
+          "title": "The New Team Dungeon!",
+          "absoluteEpisode": 116,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/14/w780.jpg",
+          "overview": "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
+        },
+        {
+          "episode": 15,
+          "title": "Destroyer Dome",
+          "absoluteEpisode": 117,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/15/w780.jpg",
+          "overview": "Masamune and his friends witness an argument amongst the Garcias before their match in the Destroyer Dome and it appears that the family is breaking apart."
+        },
+        {
+          "episode": 16,
+          "title": "The New Striker is Complete!",
+          "absoluteEpisode": 118,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/16/w780.jpg",
+          "overview": "Masamune and his new bey, Blitz Striker, battle against some old foes and new ones in the Destroyer Dome."
+        },
+        {
+          "episode": 17,
+          "title": "I Am The Champion!",
+          "absoluteEpisode": 119,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/17/w780.jpg",
+          "overview": "In the final of a battle royal in the Destroyer Dome, six bladers battle to see who will come out on top. The bladers, King, Jigsaw, Zeo, Toby, tsubasa and Masamune give it their all."
+        },
+        {
+          "episode": 18,
+          "title": "The Maze of Mist Mountain",
+          "absoluteEpisode": 120,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/18/w780.jpg",
+          "overview": "Gingka and his friends travel to Africa in search of a Legendary Blader that they believe lives in a mysterious place called Mist Mountain. With their guides Nile and Damoure they climb the mountain and come to a maze that was built by an ancient people."
+        },
+        {
+          "episode": 19,
+          "title": "The Lion`s Pride",
+          "absoluteEpisode": 121,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/19/w780.jpg",
+          "overview": "Ryuto leads Gingka and his friends into a temple on Mist Mountain in search of a Star Fragment. They are unaware that they are being followed by Johannes and the bladers from Beylin Fist, who are also seeking the Fragment."
+        },
+        {
+          "episode": 20,
+          "title": "The Guardian of the Temple, Dynamis",
+          "absoluteEpisode": 122,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/20/w780.jpg",
+          "overview": "Gingka and the others reach a temple where they believe a star fragment lies but they cannot open a door that blocks their entrance."
+        },
+        {
+          "episode": 21,
+          "title": "The Legend of Nemesis`s Revival",
+          "absoluteEpisode": 123,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/21/w780.jpg",
+          "overview": "Gingka battles Dynamis the Guardian of the temple. Gingka seems to have chosen the wrong strategy, but admits that he was too caught up in being a legendary Blader and says that he should have been paying more attention."
+        },
+        {
+          "episode": 22,
+          "title": "The Four Season Bladers",
+          "absoluteEpisode": 124,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/22/w780.jpg",
+          "overview": "Dynamis tries to explain to Johannes and his followers that no matter what they do, the heavens will decide what will happen with the resurrection of Hades and Nemesis, not them. A battle ensues and every blader from each side joins in."
+        },
+        {
+          "episode": 23,
+          "title": "The Battle of Beyster Island",
+          "absoluteEpisode": 125,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/23/w780.jpg",
+          "overview": "Gingka and his friends arrive at Beyster Island where they have entered a tournament that has attracted a huge number of strong Bladers."
+        },
+        {
+          "episode": 24,
+          "title": "Two Big, Fierce Battles!",
+          "absoluteEpisode": 126,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/24/w780.jpg",
+          "overview": "As the battle of Beyster Island continues, many more bladers are knocked out of the competition. Gingka catches up with Kenta only to find that he is his next opponent in the tournament."
+        },
+        {
+          "episode": 25,
+          "title": "The Unseen Opponent",
+          "absoluteEpisode": 127,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/25/w780.jpg",
+          "overview": "The Beyster Island Tournament continues as an unseen Blader defeats contestant after contestant through a series of ambushes. When the Blader defeats Zeo and Toby, Masamune swears he will avenge them in the final."
+        },
+        {
+          "episode": 26,
+          "title": "Orion`s Whereabouts",
+          "absoluteEpisode": 128,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/26/w780.jpg",
+          "overview": "Gingka asks Chris, the newest Legendary Blader, to join him in his fight against evil, but Chris says he will join whoever pays him the most. King is enraged by this and Chris’ mocking of Masamune so King challenges him to a battle."
+        },
+        {
+          "episode": 27,
+          "title": "The Lion in the Wilderness (1)",
+          "absoluteEpisode": 129,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/27/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 28,
+          "title": "The Lion in the Wilderness (2)",
+          "absoluteEpisode": 130,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/28/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 29,
+          "title": "The God of Venus, Quetzalcoatl (1)",
+          "absoluteEpisode": 131,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/29/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 30,
+          "title": "The God of Venus, Quetzalcoatl (2)",
+          "absoluteEpisode": 132,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/30/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 31,
+          "title": "The God of Destruction`s Revival!? (1)",
+          "absoluteEpisode": 133,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/31/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 32,
+          "title": "The God of Destruction`s Revival!? (2)",
+          "absoluteEpisode": 134,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/32/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 33,
+          "title": "The Child of Nemesis (1)",
+          "absoluteEpisode": 135,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/33/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 34,
+          "title": "The Child of Nemesis (2)",
+          "absoluteEpisode": 136,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/34/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 35,
+          "title": "Four Hearts (1)",
+          "absoluteEpisode": 137,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/35/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 36,
+          "title": "Four Hearts (2)",
+          "absoluteEpisode": 138,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/36/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 37,
+          "title": "Come Together, Legendary Bladers! (1)",
+          "absoluteEpisode": 139,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/37/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 38,
+          "title": "Come Together, Legendary Bladers! (2)",
+          "absoluteEpisode": 140,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/38/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 39,
+          "title": "Diablo Nemesis (1)",
+          "absoluteEpisode": 141,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/39/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 40,
+          "title": "Diablo Nemesis (2)",
+          "absoluteEpisode": 142,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/40/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 41,
+          "title": "To The Final Battle Ground (1)",
+          "absoluteEpisode": 143,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/41/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 42,
+          "title": "To The Final Battle Ground (2)",
+          "absoluteEpisode": 144,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/42/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 43,
+          "title": "The Lost Kingdom (1)",
+          "absoluteEpisode": 145,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/43/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 44,
+          "title": "The Lost Kingdom (2)",
+          "absoluteEpisode": 146,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/44/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 45,
+          "title": "The Missing Star of the Four Seasons (1)",
+          "absoluteEpisode": 147,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/45/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 46,
+          "title": "The Missing Star of the Four Seasons (2)",
+          "absoluteEpisode": 148,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/46/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 47,
+          "title": "Flash Sagittario (1)",
+          "absoluteEpisode": 149,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/47/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 48,
+          "title": "Flash Sagittario (2)",
+          "absoluteEpisode": 150,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/48/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 49,
+          "title": "Hades` Persistence",
+          "absoluteEpisode": 151,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/49/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 50,
+          "title": "Last Battle",
+          "absoluteEpisode": 152,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/50/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 51,
+          "title": "A Ray of Hope (1)",
+          "absoluteEpisode": 153,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/51/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 52,
+          "title": "A Ray of Hope (2)",
+          "absoluteEpisode": 154,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/3/52/w780.jpg",
+          "overview": ""
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "seasonTitle": "Shogun Steel",
+      "malId": 16766,
+      "anilistId": 16766,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "A New Age Arrives! (1)",
+          "absoluteEpisode": 155,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/1/w780.jpg",
+          "overview": "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
+        },
+        {
+          "episode": 2,
+          "title": "A New Age Arrives! (2)",
+          "absoluteEpisode": 156,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/2/w780.jpg",
+          "overview": "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
+        },
+        {
+          "episode": 3,
+          "title": "Defeat Pirate Orochi! (1)",
+          "absoluteEpisode": 157,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/3/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 4,
+          "title": "Defeat Pirate Orochi! (2)",
+          "absoluteEpisode": 158,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/4/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 5,
+          "title": "The Blazing Special Move! (1)",
+          "absoluteEpisode": 159,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/5/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 6,
+          "title": "The Blazing Special Move! (2)",
+          "absoluteEpisode": 160,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/6/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 7,
+          "title": "The Extraordinary Synchrome! (1)",
+          "absoluteEpisode": 161,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/7/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 8,
+          "title": "The Extraordinary Synchrome! (2)",
+          "absoluteEpisode": 162,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/8/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 9,
+          "title": "The Strength of a Bond (1)",
+          "absoluteEpisode": 163,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/9/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 10,
+          "title": "The Strength of a Bond (2)",
+          "absoluteEpisode": 164,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/10/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 11,
+          "title": "Explode: Phantom Fire Shot! (1)",
+          "absoluteEpisode": 165,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/11/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 12,
+          "title": "Explode: Phantom Fire Shot! (2)",
+          "absoluteEpisode": 166,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/12/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 13,
+          "title": "Kraken Attacks (1)",
+          "absoluteEpisode": 167,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/13/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 14,
+          "title": "Kraken Attacks (2)",
+          "absoluteEpisode": 168,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/14/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 15,
+          "title": "The Jet Black Dragon (1)",
+          "absoluteEpisode": 169,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/15/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 16,
+          "title": "The Jet Black Dragon (2)",
+          "absoluteEpisode": 170,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/16/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 17,
+          "title": "Clash! Zyro vs. Sakyo (1)",
+          "absoluteEpisode": 171,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/17/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 18,
+          "title": "Clash! Zyro vs. Sakyo (2)",
+          "absoluteEpisode": 172,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/18/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 19,
+          "title": "The Ironclad Golem (1)",
+          "absoluteEpisode": 173,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/19/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 20,
+          "title": "The Ironclad Golem (2)",
+          "absoluteEpisode": 174,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/20/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 21,
+          "title": "A Heated Battle of Friendship (1)",
+          "absoluteEpisode": 175,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/21/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 22,
+          "title": "A Heated Battle of Friendship (2)",
+          "absoluteEpisode": 176,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/22/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 23,
+          "title": "The Ruthless Behemoth (1)",
+          "absoluteEpisode": 177,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/23/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 24,
+          "title": "The Ruthless Behemoth (2)",
+          "absoluteEpisode": 178,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/24/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 25,
+          "title": "A Fierce Synchrome Battle (1)",
+          "absoluteEpisode": 179,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/25/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 26,
+          "title": "A Fierce Synchrome Battle (2)",
+          "absoluteEpisode": 180,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/26/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 27,
+          "title": "Neo Battle Bladers (1)",
+          "absoluteEpisode": 181,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/27/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 28,
+          "title": "Neo Battle Bladers (2)",
+          "absoluteEpisode": 182,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/28/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 29,
+          "title": "The Best 8 Decided! (1)",
+          "absoluteEpisode": 183,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/29/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 30,
+          "title": "The Best 8 Decided! (2)",
+          "absoluteEpisode": 184,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/30/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 31,
+          "title": "Get Pumped for the Finals! (1)",
+          "absoluteEpisode": 185,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/31/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 32,
+          "title": "Get Pumped for the Finals! (2)",
+          "absoluteEpisode": 186,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/32/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 33,
+          "title": "A Fated Showdown Between Rivals (1)",
+          "absoluteEpisode": 187,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/33/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 34,
+          "title": "A Fated Showdown Between Rivals (2)",
+          "absoluteEpisode": 188,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/34/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 35,
+          "title": "The Ultimate Emperor of Destruction: Bahamoote (1)",
+          "absoluteEpisode": 189,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/35/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 36,
+          "title": "The Ultimate Emperor of Destruction: Bahamoote (2)",
+          "absoluteEpisode": 190,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/36/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 37,
+          "title": "A Spirit-Filled Attack! (1)",
+          "absoluteEpisode": 191,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/37/w780.jpg",
+          "overview": ""
+        },
+        {
+          "episode": 38,
+          "title": "A Spirit-Filled Attack! (2)",
+          "absoluteEpisode": 192,
+          "duration": "24m",
+          "thumbnail": "https://episodes.metahub.space/tt1674928/4/38/w780.jpg",
+          "overview": ""
+        }
+      ]
+    }
+  ]
+},
+
 
   // ============================================================
   // 1. Dragon Ball Super: Beerus (2026)

@@ -64,6 +64,7 @@ try {
 // ==========================================
 let FEATURED_TITLES = [
   "Dexter: Resurrection",
+  "Apocalypse Z: New World",
   "Sense and Sensibility",
   "Clayface",
   "The Dog Stars",
@@ -7833,6 +7834,7 @@ function getAnimeAniListId(refMovie, dataId) {
   if (ANIME_ANILIST_MAP[key]) return ANIME_ANILIST_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
+    if (t.includes('beyblade')) return 5962;
     if (t.includes('beerus')) return 206814;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
@@ -7932,7 +7934,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const rawEp = epData?.absoluteEpisode || epData?.episode || parsedEp || 1;
   const season = epData?.season || parsedSeason || 1;
   const epNum = epData?.episode || parsedEp || rawEp;
-  const malId = isAnime ? getAnimeMalId(ref, epData?.id) : null;
+  const malId = isAnime ? getAnimeMalId(ref, epData?.id, epData) : null;
 
   const fourkMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
     ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))

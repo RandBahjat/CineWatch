@@ -5,6 +5,27 @@
 window._MOVIES_DATA = [
 
   {
+    title: "Apocalypse Z: New World",
+    type: "Movie",
+    year: 2026,
+    rating: 5.2,
+    age: "TV-MA",
+    duration: "1h 38m",
+    genres: ["Action","Horror", "Sci-Fi","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wXln4DUrwcyjcFPwgQxFPYTlG1Z.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/SeQojlDTCwnU2tgWWQi4UFXmr9.jpg",
+    videoUrl: "1507696",
+    trailerUrl: "https://youtu.be/EzDw6-q26Ig?si=PQZO9XtLSb5-L5Ca",
+    overview: "Following their harrowing escape from the zombie-ravaged Spanish mainland, Manel, Viktor, young Lucía, and the ever-loyal cat Lúculo arrive at the fortified Canary Islands—one of the last remaining sanctuaries on Earth. However, their fragile peace is quickly shattered when internal military corruption, dwindling supplies, and a terrifying new mutation of the TSJ rabies-like virus breach the island's defenses, forcing the survivors to embark on a desperate mission into the uncharted ruins of the new world.",
+    overviewKurdish: "دوای دەربازبوونێکی پڕمەترسی لە خاکە وێرانبووەکەی ئیسپانیا کە بەدەست زۆمبییەکانەوە گیرۆدە ببوو، مانێل، ڤیکتۆر، لوسیای بچووک و پشیلە بەوەفاکەیان دەگەنە دوورگە قەڵابەندکراوەکانی کەناری، کە وەک دوا پەناگەی مرۆڤایەتی لەسەر زەوی ماوەتەوە. بەڵام ئەم ئارامییە کاتییە بە خێرایی تێکدەچێت کاتێک گەندەڵیی سەربازی، کەمبوونەوەی خۆراک و پەرەسەندنێکی نوێ و ترسناکی ڤایرۆسەکە هێڵەکانی بەرگریی دوورگەکە دەبەزێنن، ئەمەش ڕزگاربووەکان ناچار دەکات بکەونە ناو ئەرکێکی مەرگهێنەرەوە لەناو داروپەردووی جیهانە نوێیەکەدا.",
+    director: "Carles Torrens",
+    cast: ["Francisco Ortiz, Jose María Yazpik, Berta Vázquez, Ирия дель Рио (Iria del Río), Marta Poveda"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Dog Stars",
     type: "Movie",
     year: 2026,
