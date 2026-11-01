@@ -77,16 +77,16 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
+  "Apocalypse Z: New World",
+  "Dexter: Resurrection",
   "The Dog Stars",
   "Verity",
   "Clayface",
   "Sense and Sensibility",
   "Cyberpunk: Edgerunners",
-  "MobLand",
   "The Odyssey",
   "You Can See Everything",
-  "Obsession",
-  "VisionQuest"
+  "Obsession"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
   "Clayface",
