@@ -4,6 +4,152 @@
 
 window._SERIES_DATA = [
   // ============================================================
+  // Dexter: Resurrection (2025 - Present)
+  // ============================================================
+  {
+    "title": "Dexter: Resurrection",
+    "type": "TV Show",
+    "year": 2025,
+    "rating": 9,
+    "age": "TV-MA",
+    "duration": "51m",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://images.metahub.space/background/medium/tt33043892/img",
+    "videoUrl": "259909",
+    "trailerUrl": "https://www.youtube.com/watch?v=nTOf1FIsBcs",
+    "overview": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.",
+    "overviewKurdish": "دێکستەر مۆرگان لە کۆما بەئاگا دێتەوە و بەرەو شاری نیویۆرک دەڕوات، بە بڕیارەوە بۆ دۆزینەوەی هاریسۆن و ڕاستکردنەوەی شتەکان. بەڵام کاتێک ئەنجێڵ باتیستا لە میامی میترۆوە دەگاتە ئەوێ بە پرسیارگەلێک، دێکستەر درک بەوە دەکات کە ڕابردووی زۆر بە خێرایی پێی دەگاتەوە.",
+    "director": "Marcos Siega",
+    "cast": [
+      "Michael C. Hall",
+      "Uma Thurman",
+      "Jack Alcott",
+      "David Zayas",
+      "Ntare Guma Mbaho Mwine"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Beating Heart...",
+            "airDate": "2025-07-14",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/1/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter Morgan awakens from a ten-week coma. As he begins a painful recovery and learns Harrison has fled to NYC, both father and son are drawn closer to confronting the darkness they’ve tried to escape."
+          },
+          {
+            "episode": 2,
+            "title": "Camera Shy",
+            "airDate": "2025-07-14",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/2/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter embeds himself in New York's ride-share community to track down a serial killer. Meanwhile, Harrison spirals from the guilt of a violent outburst."
+          },
+          {
+            "episode": 3,
+            "title": "Backseat Driver",
+            "airDate": "2025-07-21",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/3/w780.jpg",
+            "duration": "51 min",
+            "overview": "As Dexter sets his sights on tracking down a serial killer, he must carefully balance Blessing Kamara’s attempts to help get him acclimated to the ride-share driver lifestyle. Meanwhile, Harrison is drawn deeper into the police investigation."
+          },
+          {
+            "episode": 4,
+            "title": "Call Me Red",
+            "airDate": "2025-07-28",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/4/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter attends a mysterious gathering, hosted by a highly influential figure with macabre ambitions. Harrison continues to struggle with mounting guilt and pressure at work, just as Angel Batista arrives in New York City."
+          },
+          {
+            "episode": 5,
+            "title": "Murder Horny",
+            "airDate": "2025-08-04",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/5/w780.jpg",
+            "duration": "51 min",
+            "overview": "An encounter pushes Harrison further into his own darkness, escalating his fear of arrest. Meanwhile, as Batista closes in, Dexter pursues a dangerous connection with a seductive killer, believing they operate under a similar code."
+          },
+          {
+            "episode": 6,
+            "title": "Cats & Mouse",
+            "airDate": "2025-08-11",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/6/w780.jpg",
+            "duration": "51 min",
+            "overview": "As Dexter closes in on a narcissistic murderer, Harrison faces a crisis of identity while trying to find his place in the world. Meanwhile, Batista pursues the connection between the Bay Harbor Butcher and the recent killings in NYC."
+          },
+          {
+            "episode": 7,
+            "title": "Course Correction",
+            "airDate": "2025-08-18",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/7/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter, at a remote retreat, discovers unsettling information about Gareth. Meanwhile, Harrison contemplates his future."
+          },
+          {
+            "episode": 8,
+            "title": "The Kill Room Where It Happens",
+            "airDate": "2025-08-25",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/8/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter redirects his attention as a way to step up as a father. Meanwhile, Prater uncovers information that could put Harrison in serious danger."
+          },
+          {
+            "episode": 9,
+            "title": "Touched By An Ángel",
+            "airDate": "2025-09-01",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/9/w780.jpg",
+            "duration": "51 min",
+            "overview": "Prater and Charley reveal they know a critical piece of information, forcing Dexter to go to extreme lengths."
+          },
+          {
+            "episode": 10,
+            "title": "And Justice For All...",
+            "airDate": "2025-09-08",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/1/10/w780.jpg",
+            "duration": "51 min",
+            "overview": "Charley’s allegiance to Prater is pushed to its limit. Dexter and Harrison find themselves facing the consequences of their darkness."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Risky Business",
+            "airDate": "2026-11-02",
+            "rating": 9,
+            "thumbnail": "https://episodes.metahub.space/tt33043892/2/1/w780.jpg",
+            "duration": "51 min",
+            "overview": "Dexter manages to track down some of the remaining serial killers from Prater's vault but struggles to find purpose beyond the hunt. As Harrison begins his NYPD career, a media-savvy murderer emerges and puts the city on edge."
+          }
+        ]
+      }
+    ],
+    "id": "dexter-resurrection-2025"
+  },
+
+  // ============================================================
   // Harry Potter (2026 - HBO Series)
   // ============================================================
   {
