@@ -36649,6 +36649,1601 @@ window._ANIME_DATA = [
   ]
 },
 
-
+// ============================================================
+// Bakugan Battle Brawlers (2007)
+// ============================================================
+{
+  "id": "bakugan-battle-brawlers-2007",
+  "title": "Bakugan Battle Brawlers",
+  "type": "TV Show",
+  "isAnime": true,
+  "year": 2007,
+  "rating": 7.2,
+  "age": "TV-Y7",
+  "duration": "22m",
+  "genres": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Sci-Fi"
+  ],
+  "tags": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Sci-Fi"
+  ],
+  "poster": "https://image.tmdb.org/t/p/original/uW2xawK5brroGov2dyhuT0bUeva.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/fI3m5UjTMyigglkFeQWkPJgFLSC.jpg",
+  "videoUrl": "34109",
+  "trailerUrl": "https://www.youtube.com/watch?v=q6M0q5wK5lI",
+  "animeSlug": "bakugan-battle-brawlers",
+  "malId": 2156,
+  "anilistId": 2156,
+  "tmdbId": 34109,
+  "cinesrcId": "34109",
+  "overview": "One day, strange cards fall from the sky, and kids around the world use them to create a popular new battle game called Bakugan. Dan Kuso, a spirited young boy, and his friends form the 'Bakugan Battle Brawlers' team. However, they soon discover that Bakugan are not just toys, but living creatures from another dimension called Vestroia, which is now facing annihilation from a rogue Bakugan named Naga. Dan and his partner Drago must fight across dimensions to save both Earth and Vestroia.",
+  "overviewKurdish": "ڕۆژێک، کارتی سەیر و نادیار لە ئاسمانەوە دەبارێنە خوارەوە، و منداڵان لە سەرتاسەری جیهاندا بەکاریاندەهێنن بۆ دروستکردنی یارییەکی شەڕکردنی بەناوبانگ بە ناوی باکوگان. دان کوسۆ، کوڕێکی ورەبەرز و بوێر، لەگەڵ هاوڕێکانیدا تیمێک پێکدەهێنن بە ناوی 'جەنگاوەرانی باکوگان'. بەڵام بەم زووانە دەزانن کە باکوگانەکان تەنها یاری نین، بەڵکو بوونەوەری زیندووی ڕەهەندێکی ترن بە ناوی ڤێسترۆیا، کە ڕووبەڕووی لەناوچوون دەبێتەوە. دان و هاوبەشەکەی دراگۆ دەبێت شەڕ بکەن بۆ ڕزگارکردنی زەوی و ڤێسترۆیا.",
+  "director": "Mitsuo Hashimoto",
+  "cast": [
+    "Yu Kobayashi",
+    "Keiji Fujiwara",
+    "Chihiro Suzuki",
+    "Eri Sendai",
+    "Ryou Hirohashi",
+    "Scott McCord"
+  ],
+  "trending": true,
+  "featured": false,
+  "is4k": false,
+  "seasons": [
+    {
+      "season": 1,
+      "seasonTitle": "Battle Brawlers",
+      "malId": 2156,
+      "anilistId": 2156,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Bakugan: The Battle Begins",
+          "absoluteEpisode": 1,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/1/w780.jpg",
+          "overview": "The story begins with a young boy named Dan  who has never lost a Bakugan match. While in a match against a bully Dan sees a vision of two Bakugan brawling. Is there more to the game than what the players think?"
+        },
+        {
+          "episode": 2,
+          "title": "Masquerade Ball",
+          "absoluteEpisode": 2,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/2/w780.jpg",
+          "overview": "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
+        },
+        {
+          "episode": 3,
+          "title": "A Feud Between Friends",
+          "absoluteEpisode": 3,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/3/w780.jpg",
+          "overview": "Masquerade teams up with a player with Rikimaru, by giving him a very special Bakugan. When Rikimaru and Dan battle, Drago ends up using a dangerous move to save himself and win the battle. Dan gets angry, and throws Drago into a river, cursing the day they met."
+        },
+        {
+          "episode": 4,
+          "title": "Dan and Drago",
+          "absoluteEpisode": 4,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/4/w780.jpg",
+          "overview": "Dan has a hard time adjusting to life without Drago. He ends up causing a schoolmate named Ryo to drop his computer and runs away, hurting Ryo's feelings. Masquerade takes advantage of Ryo's hurt feelings, and Ryo beats Dan in a battle. Dan finds Drago, and tries to make up with Ryo."
+        },
+        {
+          "episode": 5,
+          "title": "Runo Rules",
+          "absoluteEpisode": 5,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/5/w780.jpg",
+          "overview": "Dan and Runo meet for the first time, outside of the Bakugan website, and realize that they live in the same town. Dan drops his BakuPod, and Runo picks it up, noticing that Dan has battled Masquerade. She goes in his place, but ends up battling a boy named Tatsuya."
+        },
+        {
+          "episode": 6,
+          "title": "A Combination Battle",
+          "absoluteEpisode": 6,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/6/w780.jpg",
+          "overview": "While at an amusement park, Dan and Runo are invited onstage to assist a magician act by two brothers. Dan picks a card, and realizes it's a Doom Card. The brothers are working for Masquerade, and Dan and Runo get tricked into a battle."
+        },
+        {
+          "episode": 7,
+          "title": "Bakugan Idol",
+          "absoluteEpisode": 7,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/7/w780.jpg",
+          "overview": "Marucho reveals that he secretly moved to Dan's neighborhood, and throws an elaborate welcome party. Masquerade makes a business offer with the famous pop band duo, Jenny and Jewels. The duo crash the welcome party, and challenge the Battle Brawlers."
+        },
+        {
+          "episode": 8,
+          "title": "Girls Just Wanna Have Fun",
+          "absoluteEpisode": 8,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/8/w780.jpg",
+          "overview": "Dan and Marucho fight against the pop star duo, Jenny & Jewels. After a narrow victory, Drago tells the Brawlers about how the Bakugan came to Earth, and how a human entered the Bakugan world of Vestroia."
+        },
+        {
+          "episode": 9,
+          "title": "Fight or Flight!",
+          "absoluteEpisode": 9,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/9/w780.jpg",
+          "overview": "Masquerade manipulates two boys, Kosuke and Takashi, into using his Doom Cards against the Bakugan Battle Brawlers. He promises that he'll reunite their friend Ai with her brother if they help him. Wanting to help their friend, they take the bait and soon run into Runo and Marucho, who are at the airport to pick up their website friend, Alice. Luckilly, Alice is skilled in the finer points of combination battle, and coaches her friends to victory. Alice has a secret, however, that might just ruin her friendship with the Brawlers."
+        },
+        {
+          "episode": 10,
+          "title": "A Perfect Match",
+          "absoluteEpisode": 10,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/10/w780.jpg",
+          "overview": "Julie and her childhood friend, Billy, go one-on-one in a Bakugan battle. Although Julie's defeated by Billy, she's impressed with his skills and his Bakugan, \"Cycloid.\" They make a great team, and Julie wishes she could befriend a talking Bakugan. Later, when Julie admits to herself how lonely she really is, the Bakugan Gorem appears. The two seem to be destined for each other."
+        },
+        {
+          "episode": 11,
+          "title": "Grandpa's Got A Brand New Bakugan",
+          "absoluteEpisode": 11,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/11/w780.jpg",
+          "overview": "Marucho and Runo realize that the combined powers of the Bakugan Brawlers are not enough to defeat Masquerade. Without Dan's knowledge, they visit Shun to try and get him to join. Shun's grandfather tries to get them to leave, but Shun makes a deal. If they win, he joins. If they lose, he'll walk away."
+        },
+        {
+          "episode": 12,
+          "title": "Bakugan Stall",
+          "absoluteEpisode": 12,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/12/w780.jpg",
+          "overview": "Alice realizes that she may have a connection with the mysterious Hal-G, but doesn't have the courage to tell the other Brawlers. Meanwhile, Dan recalls the last battle he had with Shun. Shun's mother gives Shun a Bakugan, \"Skyress\", to watch over him."
+        },
+        {
+          "episode": 13,
+          "title": "Just For The Shun Of It",
+          "absoluteEpisode": 13,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/13/w780.jpg",
+          "overview": "Masquerade has been destroying the Bakugans of kids all over the world, and the Brawlers have to put a stop to it. Reluctantly, Dan accompanies Runo and Marucho to Shun's house to recruit him one more, but find out he's joining Masquerade! Dan accepts the challenge of battle, and with Drago, fights against Shun and Masquerade."
+        },
+        {
+          "episode": 14,
+          "title": "The Story of Vestroia",
+          "absoluteEpisode": 14,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/14/w780.jpg",
+          "overview": "Lured by an invitation to celebrate their world class rankings, five of the top ten Bakugan players gather at a mysterious mansion. There they meet Masquerade & the evil Bakugan \"Naga\". They're put under a spell to take Dan & the other Battle Brawlers out of the picture. Meanwhile, Alice confesses that she believes that her grandfather Michael is responsible for the destruction of Vestroia. They decide to take a look around Michael's lab to find evidence of what happened to him."
+        },
+        {
+          "episode": 15,
+          "title": "A Duel in the Desert",
+          "absoluteEpisode": 15,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/15/w780.jpg",
+          "overview": "The Brawlers finally meet Julie up close and personal, but the mood goes from happy to sad when they see what's happening in Vestroia. Julie and Shun fight with Julie's friend Billy, the 9th ranked Bakugan player, and her neighbor Komba, the 5th ranked Bakugan player, knowing they were tricked by Masquerade to take out Dan and the rest of the Brawlers."
+        },
+        {
+          "episode": 16,
+          "title": "No Guts No Glory",
+          "absoluteEpisode": 16,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/16/w780.jpg",
+          "overview": "Julie is still upset about Billy's betrayal, but tries to put it behind her so she can support the other brawlers. Meanwhile, Shun tells them about a valley similar to Bakugan Valley. Everyone heads there but on the way it is revealed that Shun lied about it being similar, and it was all a ploy to try and see why Masquerade always knows where they are all the time. He tells them that there has to be someone spying on them. At the valley, the 3rd best Brawler Chan Lee appears and challenges Dan to a brawl."
+        },
+        {
+          "episode": 17,
+          "title": "BFF - Best Friends Forever",
+          "absoluteEpisode": 17,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/17/w780.jpg",
+          "overview": "The Brawlers are having trouble finding the Infinity Core. When they learn that their location might be being broadcasted, they shut off their signal."
+        },
+        {
+          "episode": 18,
+          "title": "Evolution Revolution",
+          "absoluteEpisode": 18,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/18/w780.jpg",
+          "overview": "When Marucho loses his Bakugan to Klaus, he and Runo give chase, and wind up in Masquerade's castle!"
+        },
+        {
+          "episode": 19,
+          "title": "Julie Plays Hard Brawl",
+          "absoluteEpisode": 19,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/19/w780.jpg",
+          "overview": "After a quarrel between the Brawlers, they all go separate ways. Julie decides to pursue her friend Billy and try to save him from Masquerade's evil ways."
+        },
+        {
+          "episode": 20,
+          "title": "A Little Help From My Friends",
+          "absoluteEpisode": 20,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/20/w780.jpg",
+          "overview": "When Shun leaves the group, Alice chases after him. Meanwhile Dan goes to take on Masquerade alone."
+        },
+        {
+          "episode": 21,
+          "title": "My Good Friend",
+          "absoluteEpisode": 21,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/21/w780.jpg",
+          "overview": "Klaus, Chan-Lee, and Julio return to finish off the Brawlers. Dan, Runo, and Marucho take them on, but what will happen when Klaus uses Marucho's stolen Bakugan?"
+        },
+        {
+          "episode": 22,
+          "title": "Drago's On Fire",
+          "absoluteEpisode": 22,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/22/w780.jpg",
+          "overview": "The Brawlers have been pushed back, but will the return of Preyas and the evolution of Drago be enough to bring them to victory?"
+        },
+        {
+          "episode": 23,
+          "title": "Say It Ain't So Joe",
+          "absoluteEpisode": 23,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/23/w780.jpg",
+          "overview": "Learning that Webmaster Joe is at the hospital, Dan and the other head there. However, while heading for Joe's room, Drago gets lost."
+        },
+        {
+          "episode": 24,
+          "title": "The Secrets of Success",
+          "absoluteEpisode": 24,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/24/w780.jpg",
+          "overview": "Alice helps a little boy defeat his biggest rival."
+        },
+        {
+          "episode": 25,
+          "title": "Trust Me",
+          "absoluteEpisode": 25,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/25/w780.jpg",
+          "overview": "Tensions form between the group of Brawlers when it is believed that one of them is a double agent."
+        },
+        {
+          "episode": 26,
+          "title": "Doom Dimension or Bust",
+          "absoluteEpisode": 26,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/26/w780.jpg",
+          "overview": "The Brawlers head to face Masquerade in one final battle."
+        },
+        {
+          "episode": 27,
+          "title": "Show Down",
+          "absoluteEpisode": 27,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/27/w780.jpg",
+          "overview": "The Battle Brawlers learn through Webmaster Joe (who was on a trip with his mother) that Masqerade has defeated the World's Top Bakugan players, so they try to come up with a strategy to beat him. The strategy seems to backfire when Masquerade visits Dan's house and gets him to accept a battle. Now the evolved Drago and the evolved Hydranoid will go head-to-head with the loser getting a one-way trip to the Doom Dimension, which is later revealed to be full of Bakugan turned into stone."
+        },
+        {
+          "episode": 28,
+          "title": "The Brawler's Last Stand",
+          "absoluteEpisode": 28,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/28/w780.jpg",
+          "overview": "The Brawlers mourn over the loss of Dan and Drago. Meanwhile, Shun gets a challenge from Masquerade and decides to join Dan in the Doom Dimension. When Skyress learns of this plan, she tries to gather the other Bakugan and try to save Vestroia without putting their human partners in risk. Soon, the other Brawlers catch onto his plan and decide to join him, but first Runo makes a promise to Dan's mom - he's safe and will be home soon."
+        },
+        {
+          "episode": 29,
+          "title": "Nightmare In Doomsville",
+          "absoluteEpisode": 29,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/29/w780.jpg",
+          "overview": "In the Doom Dimension, the Legendary Ancient Warriors of Vestroia prepare to test the powers of the Brawlers, seeing if they are worthy enough to save Vestroia. The Brawlers are separated and Julie is left with Gorem to face the Subterra Warrior, Clayf, and a shadow of her perfect sister, Daisy. With help from Gorem, Julie learns that she isn't her sister and she can only do the best she can do. Because of this, Gorem evolves into Subterra Hammer Gorem, and defeats Clayf."
+        },
+        {
+          "episode": 30,
+          "title": "I Am Marucho Hear Me Roar",
+          "absoluteEpisode": 30,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/30/w780.jpg",
+          "overview": "Marucho must battle the Aquos Elemental Warrior, Frosch, and he is forced to send in Preyus early when he learns he is battling a shadow of himself. Preyus isn't feeling well throughout the battle, but he is able to give Marucho guidance to accepting his past. Marucho knew that he only did what his parents told him to make them happy, but he didn't like to always be so obidient. This causes Marucho to hate his old self. By accepting the past him, Marucho was able to help Preyus' digestion problem. This allows Preyus to evolve by spitting out his brothers: Aquos Angelo/Aquos Diablo Preyus. Will the combined strength of these brothers prove to be enough to defeat the Aquos Warrior?"
+        },
+        {
+          "episode": 31,
+          "title": "A Place Far From Home",
+          "absoluteEpisode": 31,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/31/w780.jpg",
+          "overview": "Shun is stuck with the female Ventus Lord, Oberus, who has summoned a child that looks like Shun's mom to battle. The child convinces Shun to play with her while the sun is still setting, which it never does. Shun must battle himself as well when he is forced to choose between going back or staying in this world with his mother. In the battle with Oberus, Shun believes that he doesn't need his friends. His belief causes Skyress to die after a great impact with Oberus. When Shun realises his mistake, a tear drops down onto Skyress' ability card, changing it, and miraclesly reviving Skyress, which evolved into Storm Skyress. In the end, when Shun chooses to return to his world, Skyress evolves to Ventus Storm Skyress."
+        },
+        {
+          "episode": 32,
+          "title": "Play Nice Runo",
+          "absoluteEpisode": 32,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/32/w780.jpg",
+          "overview": "Runo and Tigrerra must battle a young boy from Runo's past (a smaller version of Dan) summoned by The Haos lord, Lars Lion. The test is for Runo to realize how much she truly treasures her and Dan's friendship/love. When Tigrerra is getting hit by Lars Lion's piercing arrows of light, Runo realises the friendship/love that she treasures and says \"We are Friends Forever Dan!\" in the English dub, while she says \"I love you Dan!\" in the Japanese Version. When Runo realizes this, Tigrerra evolves into Haos Blade Tigrerra."
+        },
+        {
+          "episode": 33,
+          "title": "You're Going Down Clown",
+          "absoluteEpisode": 33,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/33/w780.jpg",
+          "overview": "Dan must battle the Pyrus Lord, Apollonier, in order for him and his friends to return to their world. He and Drago soon find out that they're battling a clown. Dan manages to win the battle, but Drago doesn't evolve. When Dan rips off the clown's mask, it turns out to be Runo. In order for Drago to evolve and Dan to past his test, he must battle, and win, against each of the Brawlers."
+        },
+        {
+          "episode": 34,
+          "title": "Home Sweet Home",
+          "absoluteEpisode": 34,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/34/w780.jpg",
+          "overview": "Joe is determined to find out where his friends have gone, so he challenges Masquerade to a battle. At first Joe appears to be outmatched, but Wyvern returns to give Joe assistance. The Brawlers also return, and Masquerade realizes his battle is only beginning. Dan explains everything about the Bakugan to his mother, who believes him and asks Drago to take care of him. Naga is revealed as one of the most dangerous Bakugan in the world."
+        },
+        {
+          "episode": 35,
+          "title": "Dan's Last Stand",
+          "absoluteEpisode": 35,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/35/w780.jpg",
+          "overview": "Dan tells Shun, Julie, and Marucho that he has yet to pass the test in the Doom Dimension and the only way to have Drago evolve he has to defeat his friends one by one. Julie first battles Dan and Dan wins. Then, he battles Marucho and wins again. Shun says he will battle Dan the next morning. Masquerade is in the Doom Dimension and is about to start a battle with Alice."
+        },
+        {
+          "episode": 36,
+          "title": "Show Me What You've Got",
+          "absoluteEpisode": 36,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/36/w780.jpg",
+          "overview": "Dan's final test is to beat his friends so his Dragonoid can evolve to the next level and become the Ultimate Bakugan. Dan battles Runo and Shun while Masquerade goes to see the Darkus Lord, Exeedra, and he ends up fighting Alice as a mirage."
+        },
+        {
+          "episode": 37,
+          "title": "You Say You Want An Evolution",
+          "absoluteEpisode": 37,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/37/w780.jpg",
+          "overview": "Joe shows up after Dan defeats Julie, Marucho, and Runo for Wyvern to check out Drago's battling skills when Dan and Shun have their battle to finish Dan's test. Meanwhile, the Darkus Lord and Masquerade finish their battle. In the end Drago beats Skyress and becomes the Pyrus Ultimate Dragonoid, and Duel Hydranoid beats the Darkus Lord and evolves into the Darkus Alpha Hydranoid."
+        },
+        {
+          "episode": 38,
+          "title": "Behind The Mask Of Masquerade",
+          "absoluteEpisode": 38,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/38/w780.jpg",
+          "overview": "Alice appears to be disappearing all the time. Dan goes to talk with Marucho, Runo, Shun, and Julie and ends up finding Alice! Alice won't explain anything and leaves. Later, Joe receives a message from Masquerade, and Dan decides he'll take over to fight Masquerade with Drago to end it once and for all with Masquerade. Dan wins and offers Masquerade to join the Battle Brawlers to help defeat Naga. But Masquerade refuses and takes off his mask. It is revealed that Alice was Masquerade the whole time!"
+        },
+        {
+          "episode": 39,
+          "title": "Masquerade Unmasked",
+          "absoluteEpisode": 39,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/39/w780.jpg",
+          "overview": "Hal-G appears to explain the origin of Alice and Masquerade. Because she is unable to forgive herself, Alice then disappears. Meanwhile a huge hole opens up in the ocean and weird weather has been happening all throughout the earth. Through much convincing, the Brawlers convince their parents about the Bakugan. What will they find in the decaying Vestroia? Dan and the Brawlers decide to take a little road trip, to Vestroia!"
+        },
+        {
+          "episode": 40,
+          "title": "Alice Gets Schooled",
+          "absoluteEpisode": 40,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/40/w780.jpg",
+          "overview": "Alice tells Klaus about what she did as Masquerade, and gets pulled into a battle to punish her for sending his Bakugan to the Doom Dimension while she had been Masquerade. However, Klaus was just trying to teach her a lesson, that everyone, and everything must work together in order to create harmony."
+        },
+        {
+          "episode": 41,
+          "title": "A Fish Called Tayghen",
+          "absoluteEpisode": 41,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/41/w780.jpg",
+          "overview": "The Bakugan Battle Brawlers enter Vestroia and realize Vestroia has become a hybrid world where two elements are mixed together to make one element together. They enter the Ventus and Aquos world where they meet Tayghen and Hairadee: two Bakugan of both Ventus and Aquos elements. As they fight, they suddenly see the portal to the next hybrid world of Vestroia is closing and so they agree that Shun and Marucho are to stay in the Ventus and Aquos world to defeat the two Bakugan. The rest of the Bakugan team disappear through the portal into another dimension of Vestroia."
+        },
+        {
+          "episode": 42,
+          "title": "The Race To Vestroia",
+          "absoluteEpisode": 42,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/42/w780.jpg",
+          "overview": "As the remaining Brawlers enter the hybrid world of Subterra and Haos, a pair of Subterra/Haos Bakugan sisters named Rabeeder and Tricloid fall in love with Dan. The sisters say the only way out is if they beat them in a race. Dan and Drago win and leave to the next world."
+        },
+        {
+          "episode": 43,
+          "title": "Next Stop Naga-Ville",
+          "absoluteEpisode": 43,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/43/w780.jpg",
+          "overview": "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
+        },
+        {
+          "episode": 44,
+          "title": "It's a Long Shot",
+          "absoluteEpisode": 44,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/44/w780.jpg",
+          "overview": "Dan and Drago are left weak and beaten by their battle with Centorrior and Druman."
+        },
+        {
+          "episode": 45,
+          "title": "Ground Control to Major Dan!",
+          "absoluteEpisode": 45,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/45/w780.jpg",
+          "overview": "The Brawlers have finally made it to Vestroia where they hope to confront Naga and retrieve the Silent Core and save the Universe!"
+        },
+        {
+          "episode": 46,
+          "title": "The One Hit Wonders",
+          "absoluteEpisode": 46,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/46/w780.jpg",
+          "overview": "The human world is in complete chaos when the Brawlers finally return."
+        },
+        {
+          "episode": 47,
+          "title": "Here's Mud In Your Eye",
+          "absoluteEpisode": 47,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/47/w780.jpg",
+          "overview": "The entire world is in a state of chaos as Naga's evil Bakugan invade neighborhood after neighborhood."
+        },
+        {
+          "episode": 48,
+          "title": "R is for Revenge",
+          "absoluteEpisode": 48,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/48/w780.jpg",
+          "overview": "Alice and Christopher brawl with Rabeeder, who is on the hunt for the Infinity Core on Naga's behalf."
+        },
+        {
+          "episode": 49,
+          "title": "Showdown in Wardington",
+          "absoluteEpisode": 49,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/49/w780.jpg",
+          "overview": "The return of Naga's Ventus/Aquos servant hybrid Hairadee has brought new troubles for Komba and Shun. While Skyress is trapped in a barrier of ice, Shun reveals his ninja skills to free Skyress and defeat the hybrid. Julio crashes the party and helps the battle. Will the three of them be enough to take Naga's servant on?"
+        },
+        {
+          "episode": 50,
+          "title": "The Good, the Bad and the Bakugan",
+          "absoluteEpisode": 50,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/50/w780.jpg",
+          "overview": "The Brawlers are in trouble. Wavern and the Infinity Core are hiding at the top of Wardington Tower but Naga and his forces are nearby."
+        },
+        {
+          "episode": 51,
+          "title": "The Final Brawl",
+          "absoluteEpisode": 51,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/51/w780.jpg",
+          "overview": "With most of the Brawlers trapped fighting, Naga is free to go after Wavern and the Infinity Core."
+        },
+        {
+          "episode": 52,
+          "title": "Game Over",
+          "absoluteEpisode": 52,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/1/52/w780.jpg",
+          "overview": "The final battle has been set.  Naga is squaring off against Drago in pursuit of the Infinity Core and in turn, power over the universe!"
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonTitle": "New Vestroia",
+      "malId": 5337,
+      "anilistId": 5337,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Invasion of the Vestals",
+          "absoluteEpisode": 53,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/1/w780.jpg",
+          "overview": "The Bakugan are finally living in peace back on New Vestroia when the people of Vestal  invade, turning all the Bakugan into ball form and abducting them before terraforming their world."
+        },
+        {
+          "episode": 2,
+          "title": "Facing Ace",
+          "absoluteEpisode": 54,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/2/w780.jpg",
+          "overview": "On the way to her secret headquarters,  Mira tells the still-distrustful Dan, Marucho and Drago why she has chosen to fight her own people by forming the Bakugan Battle Brawler Resistance."
+        },
+        {
+          "episode": 3,
+          "title": "Get Psyched",
+          "absoluteEpisode": 55,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/3/w780.jpg",
+          "overview": "In preparation for the upcoming battles with the Vexos, Dan agrees to train Baron."
+        },
+        {
+          "episode": 4,
+          "title": "Marucho's Mission",
+          "absoluteEpisode": 56,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/4/w780.jpg",
+          "overview": "Without a Bakugan of his own, Marucho is on the outside looking in as Dan and the rest of the Bakugan Battle Brawlers Resistance become a tight-knit team."
+        },
+        {
+          "episode": 5,
+          "title": "A Taste of Defeat",
+          "absoluteEpisode": 57,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/5/w780.jpg",
+          "overview": "Mira gives Dan a Bakugan Trap of his own, though its abilities and mode of communication remain mysterious."
+        },
+        {
+          "episode": 6,
+          "title": "Return of a Friend",
+          "absoluteEpisode": 58,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/6/w780.jpg",
+          "overview": "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
+        },
+        {
+          "episode": 7,
+          "title": "Cyber Nightmare",
+          "absoluteEpisode": 59,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/7/w780.jpg",
+          "overview": "The Bakugan Battle Brawlers Resistance sneaks into Alpha City, New Vestroia to destroy its towering Dimension Controller."
+        },
+        {
+          "episode": 8,
+          "title": "What's The Plan?",
+          "absoluteEpisode": 60,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/8/w780.jpg",
+          "overview": "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
+        },
+        {
+          "episode": 9,
+          "title": "Freedom Run",
+          "absoluteEpisode": 61,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/9/w780.jpg",
+          "overview": "It's the finals of the Bakugan Battle Tournament and Shun and Ace try to buy time for the others."
+        },
+        {
+          "episode": 10,
+          "title": "Surprise Visitor",
+          "absoluteEpisode": 62,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/10/w780.jpg",
+          "overview": "Runo has had enough of waiting for Dan to return to Earth. She's determined to find a way to New Vestroia to join him in saving the Bakugan."
+        },
+        {
+          "episode": 11,
+          "title": "Gate Crashers",
+          "absoluteEpisode": 63,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/11/w780.jpg",
+          "overview": "Dan, Runo, Mira and Baron arrive on Earth safe and sound, but the Dimensional Transporter also drops off unwelcome visitors; Lync, Gus and Spectra."
+        },
+        {
+          "episode": 12,
+          "title": "Unmasked",
+          "absoluteEpisode": 64,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/12/w780.jpg",
+          "overview": "Realizing they must wait to return to New Vestroia, Dan and the Battle Brawlers decide to enjoy some R & R at an amusement park while they plan their next move."
+        },
+        {
+          "episode": 13,
+          "title": "Voices In The Night",
+          "absoluteEpisode": 65,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/13/w780.jpg",
+          "overview": "Dan and the Bakugan Brawlers try to chill out while they're trapped on Earth, unable to help their friends."
+        },
+        {
+          "episode": 14,
+          "title": "Duel in the Dunes",
+          "absoluteEpisode": 66,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/14/w780.jpg",
+          "overview": "Marucho finds himself in a desert with Elfin. After falling into quicksand, he is rescued by Volt who later engages him in a battle. Marucho seems to be doing well with his new trap, Tripod Epsilon but when Volt pulls out his trap, Dynamo, things get rough and Marucho is defeated. Back on Earth, Mira and Baron hang out at Dan's, who after waking up from a dream, is still eager to return to New Vestroia in order to help Shun and Marucho."
+        },
+        {
+          "episode": 15,
+          "title": "Last One Standing",
+          "absoluteEpisode": 67,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/15/w780.jpg",
+          "overview": "After Marucho and Ace are lured into a trap, Shun sets out to destroy the remaining Dimension Controllers single-handedly."
+        },
+        {
+          "episode": 16,
+          "title": "Show Me the Power!",
+          "absoluteEpisode": 68,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/16/w780.jpg",
+          "overview": "Feeling helpless as he waits for a chance to return to New Vestroia, Dan trains Baron to the breaking point."
+        },
+        {
+          "episode": 17,
+          "title": "Dude, Where's My Bakugan?",
+          "absoluteEpisode": 69,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/17/w780.jpg",
+          "overview": "Tormented by dreams of losing Drago, Dan wakes up from a feverish sleep, surrounded by his friends."
+        },
+        {
+          "episode": 18,
+          "title": "Gone, Gone Bakugan",
+          "absoluteEpisode": 70,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/18/w780.jpg",
+          "overview": "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
+        },
+        {
+          "episode": 19,
+          "title": "Family Ties",
+          "absoluteEpisode": 71,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/19/w780.jpg",
+          "overview": "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
+        },
+        {
+          "episode": 20,
+          "title": "Beta City Blues",
+          "absoluteEpisode": 72,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/20/w780.jpg",
+          "overview": "Spectra and his crew arrive in New Vestroia but Mira has second thoughts about her choices when Shadow Prove reveals Ace, Shun and Marucho are prisoners of the Vexos."
+        },
+        {
+          "episode": 21,
+          "title": "Brotherly Love",
+          "absoluteEpisode": 73,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/21/w780.jpg",
+          "overview": "As the Battle Brawler's Resistance reunite, Ace learns the terrible truth; Mira has joined the Vexos."
+        },
+        {
+          "episode": 22,
+          "title": "Underground Take Down",
+          "absoluteEpisode": 74,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/22/w780.jpg",
+          "overview": "Mira is caught in the middle as Prince Hydron and Spectra move to consolidate their power."
+        },
+        {
+          "episode": 23,
+          "title": "Wall to Wall Brawl",
+          "absoluteEpisode": 75,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/23/w780.jpg",
+          "overview": "Despite Prince Hydron's objections, Spectra sends Mira and Gus to challenge Dan and Ace with Hydron's new Mechanical Bakugan."
+        },
+        {
+          "episode": 24,
+          "title": "Ultimate Bakugan",
+          "absoluteEpisode": 76,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/24/w780.jpg",
+          "overview": "As the Resistance and their Bakugan fly up to Vespalace to free their friends from Prince Hydron, the Vestal monarch reveals another line of defense; a final Dimension Controller."
+        },
+        {
+          "episode": 25,
+          "title": "Final Countdown",
+          "absoluteEpisode": 77,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/25/w780.jpg",
+          "overview": "Now combined with the Vestal's six mechanical Bakugan, Drago squares off against Ultimate Helios."
+        },
+        {
+          "episode": 26,
+          "title": "Reunion",
+          "absoluteEpisode": 78,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/26/w780.jpg",
+          "overview": "With Vespalace crumbling around them, the Battle Brawlers have given up hope of freeing their friends, when the destruction of the final Dimension Controller releases the bronzed Bakugan to their original forms."
+        },
+        {
+          "episode": 27,
+          "title": "Six Degrees of Destruction",
+          "absoluteEpisode": 79,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/27/w780.jpg",
+          "overview": "Six months after New Vestroia has been freed--- Dan and the gang are back on Earth, enjoying a peaceful life with their Bakugan."
+        },
+        {
+          "episode": 28,
+          "title": "Revenge Of The Vexos",
+          "absoluteEpisode": 80,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/28/w780.jpg",
+          "overview": "After being tricked by the Six Ancient Soldiers, King Zenoheld is more determined than ever to get his hands on the Bakugan possessing the Six Attribute Energies. At Mylene's suggestion he dispatches Prince Hydron to Vestal to begin the retrieval."
+        },
+        {
+          "episode": 29,
+          "title": "Saved by the Siren",
+          "absoluteEpisode": 81,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/29/w780.jpg",
+          "overview": "While out apartment hunting for Baron, Ace and Percival are accosted by Mylene and her new Mechanical Bakugan, Macubass."
+        },
+        {
+          "episode": 30,
+          "title": "The Day New Vestroia Stood Still",
+          "absoluteEpisode": 82,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/30/w780.jpg",
+          "overview": "When Dan and the others are finally able to communicate with their comrades on Vestal they learn of the Vexos attacks on Baron and Ace."
+        },
+        {
+          "episode": 31,
+          "title": "Spectra Rises",
+          "absoluteEpisode": 83,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/31/w780.jpg",
+          "overview": "Dan and the gang land on Vestal expecting to run into a Vexos member or two."
+        },
+        {
+          "episode": 32,
+          "title": "Shadow Attack",
+          "absoluteEpisode": 84,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/32/w780.jpg",
+          "overview": "After Prince Hydron successfully captures the Haos Energy from Baron, King Zenohled is anxious for the Vexos to bring him the remaining five Attribute Energies from the Battle Brawlers."
+        },
+        {
+          "episode": 33,
+          "title": "Brontes' Betrayal",
+          "absoluteEpisode": 85,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/33/w780.jpg",
+          "overview": "King Zenoheld's plan to lure the Brawlers off of Vestal and back to Earth in order to battle them for the Attribute Energies seems to have worked."
+        },
+        {
+          "episode": 34,
+          "title": "Earth Invaders",
+          "absoluteEpisode": 86,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/34/w780.jpg",
+          "overview": "The Brawlers return to Earth after they learn of Alice being attacked; though they suspect they have been lured there by Zenoheld in a ploy to steal their remaining attribute energies."
+        },
+        {
+          "episode": 35,
+          "title": "Elfin on the Run!",
+          "absoluteEpisode": 87,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/35/w780.jpg",
+          "overview": "The Brawlers continue to hide out from the Vexos in Marucho's mansion, protected by the Barrier Shield. Elfin is restless, however, and begins talking a big game about facing off with the Vexos."
+        },
+        {
+          "episode": 36,
+          "title": "Samurai Showdown!",
+          "absoluteEpisode": 88,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/36/w780.jpg",
+          "overview": "The Brawlers continue to hide out from the Vexos in Marucho's mansion, when they are paid a surprise visit by Baron's sister Maron."
+        },
+        {
+          "episode": 37,
+          "title": "Virtual Insanity",
+          "absoluteEpisode": 89,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/37/w780.jpg",
+          "overview": "The Brawlers continue to hide from the Vexos in Marucho's mansion, when they are paid a surprise visit by their old pal, Billy."
+        },
+        {
+          "episode": 38,
+          "title": "All or Nothing",
+          "absoluteEpisode": 90,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/38/w780.jpg",
+          "overview": "With the Brawlers' hiding spot now exposed, the pressure is on more than ever."
+        },
+        {
+          "episode": 39,
+          "title": "Avenging Spectra",
+          "absoluteEpisode": 91,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/39/w780.jpg",
+          "overview": "Spectra makes good on his bet with Dan and takes the Brawlers to the Mother Palace."
+        },
+        {
+          "episode": 40,
+          "title": "Ambush",
+          "absoluteEpisode": 92,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/40/w780.jpg",
+          "overview": "As Dan and the Brawlers continue their search for the Bakugan Termination System, they run into an ambush by the Palace Guards."
+        },
+        {
+          "episode": 41,
+          "title": "BT The Final Battle",
+          "absoluteEpisode": 93,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/41/w780.jpg",
+          "overview": "Spectra offers Dr. Clay a place by his side and the secret to Bakugan DNA, however, Dr. Clay remains loyal to Zenoheld and declares that he and Spectra are no longer father and son. A battle soon begins between Hydron and Dan and Mira, just as Spectra arrives to fight alongside Dan!"
+        },
+        {
+          "episode": 42,
+          "title": "Exodus",
+          "absoluteEpisode": 94,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/42/w780.jpg",
+          "overview": "With the BT System fully armed, the Resistance and Spectra head to New Vestroia to initiate a mass evacuation. Many Bakugan are sent to Marucho's house on Earth including the Resistance's. However, Drago decides to remain behind to ensure that everyone has been rescued, remarking how many lives have been lost to protect New Vestroia such as Nobilion, Wavern dying, and also the six Ancient Warriors surrending their powers to six normal bakugan."
+        },
+        {
+          "episode": 43,
+          "title": "Phantom Data Attack",
+          "absoluteEpisode": 95,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/43/w780.jpg",
+          "overview": "With the Bakugan Termination System destroyed, the Brawlers head back to Earth, where Baron expresses interest in staying in order to further his studies."
+        },
+        {
+          "episode": 44,
+          "title": "Spectra's Last Stand",
+          "absoluteEpisode": 96,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/44/w780.jpg",
+          "overview": "The Bakugan Termination System fired up and seconds away from being fully operational, the Brawlers begin a large-scale evacuation of Bakugan from New Vestroia."
+        },
+        {
+          "episode": 45,
+          "title": "Fusion Confusion",
+          "absoluteEpisode": 97,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/45/w780.jpg",
+          "overview": "After Marucho demonstrates that the Brawlers' phantom data is the same as the data Keith received; the newest member of the Brawlers convinces them to let him outfit Drago with Battle Gear."
+        },
+        {
+          "episode": 46,
+          "title": "Volt's Revolt",
+          "absoluteEpisode": 98,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/46/w780.jpg",
+          "overview": "When Zenoheld declares that he is going to use Clay's \"Alternative\" Weapons System to destroy Earth and Vestal, Volt decides that he's had enough."
+        },
+        {
+          "episode": 47,
+          "title": "Payback",
+          "absoluteEpisode": 99,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/47/w780.jpg",
+          "overview": "Professor Clay reveals to Zenoheld that in order to finish the Alternative he will require the DNA Code and the Battle Gear Data from the Brawlers."
+        },
+        {
+          "episode": 48,
+          "title": "Mylene's Meltdown",
+          "absoluteEpisode": 100,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/48/w780.jpg",
+          "overview": "Mylene finds herself next in line to try and retrieve the data Zenoheld requires to complete the Alternative weapons system."
+        },
+        {
+          "episode": 49,
+          "title": "An Heir To Spare ",
+          "absoluteEpisode": 101,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/49/w780.jpg",
+          "overview": "Mylene's Death Ball causes the collapse of Bakugan Interspace."
+        },
+        {
+          "episode": 50,
+          "title": "Ultimate Weapon",
+          "absoluteEpisode": 102,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/50/w780.jpg",
+          "overview": "Hydron continues to cool his heels in his cell, when a mysterious voice from his past calls to him."
+        },
+        {
+          "episode": 51,
+          "title": "All For One",
+          "absoluteEpisode": 103,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/51/w780.jpg",
+          "overview": "The Brawlers enlist Alice and Dr. Michael's help in trying to find a way to the Mother Palace, where they believe Keith has gone to face-off with Zenoheld."
+        },
+        {
+          "episode": 52,
+          "title": "Final Fury",
+          "absoluteEpisode": 104,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/2/52/w780.jpg",
+          "overview": "The battle between the Brawlers and Zenoheld's \"Alternative\" continues to rage."
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "seasonTitle": "Gundalian Invaders",
+      "malId": 7334,
+      "anilistId": 7334,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "A New Beginning",
+          "absoluteEpisode": 105,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/1/w780.jpg",
+          "overview": "It's an all new adventure for the Bakugan Battle Brawlers when Dan's family moves to Bayview City and Marucho's Bakugan Interspace becomes fully operational to everyone, allowing kids all over the world to log on and display their battling skills. Dan has a vision of Bakugan at war each other, something which everyone, except Ren, brushes off as a hallucination."
+        },
+        {
+          "episode": 2,
+          "title": "Revelation",
+          "absoluteEpisode": 106,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/2/w780.jpg",
+          "overview": "Dan continues to be haunted by the visions he saw while unconscious after an explosion during battle. Meanwhile Marucho notices that Ren is also behaving strangely."
+        },
+        {
+          "episode": 3,
+          "title": "The Visitor",
+          "absoluteEpisode": 107,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/3/w780.jpg",
+          "overview": "As Ren identifies three more Neathian moles , Princess Fabia from Neathia arrives in Bakugan Interspace looking for the recipients of the message she sent. Dan, having slept in, rushes to Bakugan Interspace and runs into Fabia, literally. Fabia learns that he is the top brawler in Bakugan Interspace and suspects she may be a Neathian spy."
+        },
+        {
+          "episode": 4,
+          "title": "Brawler to Be",
+          "absoluteEpisode": 108,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/4/w780.jpg",
+          "overview": "Dan is in the midst of training Jake in the battle arena with hopes that he will soon be skilled enough to become a member of the Battle Brawlers."
+        },
+        {
+          "episode": 5,
+          "title": "Confrontation",
+          "absoluteEpisode": 109,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/5/w780.jpg",
+          "overview": "With the Neathian moles making themselves known, they begin kidnapping brawlers from Bakugan Interspace."
+        },
+        {
+          "episode": 6,
+          "title": "Exposed",
+          "absoluteEpisode": 110,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/6/w780.jpg",
+          "overview": "The other Brawlers get together with Ren, who reveals the identities of more of the Neathian sleeper agents."
+        },
+        {
+          "episode": 7,
+          "title": "True Colors",
+          "absoluteEpisode": 111,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/7/w780.jpg",
+          "overview": "When his search for Ren turns up empty, Marucho uses a secret distress call to lure him out of hiding."
+        },
+        {
+          "episode": 8,
+          "title": "Hostile Takeover",
+          "absoluteEpisode": 112,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/8/w780.jpg",
+          "overview": "When the Brawlers discover that the Gundalians are inside Bakugan Interspace \"recruiting\"/kidnapping more battlers to join their cause, they race to the scene to confront them."
+        },
+        {
+          "episode": 9,
+          "title": "Twin Attack",
+          "absoluteEpisode": 113,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/9/w780.jpg",
+          "overview": "Now that Ren has taken over control of Bakugan Interspace, the Brawlers discover that they can no longer enter the virtual realm via the usual access points."
+        },
+        {
+          "episode": 10,
+          "title": "Escape from Darkness",
+          "absoluteEpisode": 114,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/10/w780.jpg",
+          "overview": "With Ren and the Gundalians now in control of Bakugan Interspace, Marucho determines that the security system preventing the Brawlers from diving in is being run out of the secure \"Baku-Room\"."
+        },
+        {
+          "episode": 11,
+          "title": "The Secret Package",
+          "absoluteEpisode": 115,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/11/w780.jpg",
+          "overview": "When the invading Gundalians breakthrough the outer shield, Neathian Castle Guard Linus flees to Earth in search of Fabia."
+        },
+        {
+          "episode": 12,
+          "title": "The Element",
+          "absoluteEpisode": 116,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/12/w780.jpg",
+          "overview": "In an attempt to get Neo Zipzam back before the Gundalians realize he possesses the Element, the Brawlers infiltrate Bakugan Interspace and walk into the middle of a Gundalian power struggle."
+        },
+        {
+          "episode": 13,
+          "title": "Twin Evil",
+          "absoluteEpisode": 117,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/13/w780.jpg",
+          "overview": "Given a brief pardon by Barodius after his earlier failure, Ren hatches a plot with Zenet to regain possession of the Element."
+        },
+        {
+          "episode": 14,
+          "title": "The Sacred Orb",
+          "absoluteEpisode": 118,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/14/w780.jpg",
+          "overview": "The Brawlers arrive at Neathia and meet Fabia's sister Queen Serena. With her blessing, Fabia takes her new friends to see the Sacred Orb, a source of great power that is hidden deep inside a mountain."
+        },
+        {
+          "episode": 15,
+          "title": "Decoy Unit",
+          "absoluteEpisode": 119,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/15/w780.jpg",
+          "overview": "With only one remaining security shield protecting Neathia from the invading Gundalian forces, the Brawlers hatch a plan to reinstate a previously destroyed shield."
+        },
+        {
+          "episode": 16,
+          "title": "The Secret Switch",
+          "absoluteEpisode": 120,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/16/w780.jpg",
+          "overview": "Dan, Fabia and Shun continue to make their way through the jungle to the shield generator building, when Stoica and Jesse suddenly ambush them."
+        },
+        {
+          "episode": 17,
+          "title": "Battle for the Second Shield",
+          "absoluteEpisode": 121,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/17/w780.jpg",
+          "overview": "Having made it to the Generator Building, Shun and Drago find themselves up against an army of Gundalian Guards, as they attempt to restart the Second Shield."
+        },
+        {
+          "episode": 18,
+          "title": "Curtain Call",
+          "absoluteEpisode": 122,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/18/w780.jpg",
+          "overview": "With the Second Shield back up and running the Brawlers help the Neathians rebuild their strongholds. Frustrated that they are losing momentum, Jake strikes out on his own in search of more Gundalians to fight."
+        },
+        {
+          "episode": 19,
+          "title": "The Secret of the Orb",
+          "absoluteEpisode": 123,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/19/w780.jpg",
+          "overview": "When Mason flees his Gundalian ship, Nurzak and Ren are soon in pursuit as they attempt to apprehend him before the Emperor learns of the escape."
+        },
+        {
+          "episode": 20,
+          "title": "Partners Till the End",
+          "absoluteEpisode": 124,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/20/w780.jpg",
+          "overview": "Fearing that her life may be at risk, Zenet morphs into a doppelganger of Ren in order to accompany Gill on a mission to destroy the Second Shield."
+        },
+        {
+          "episode": 21,
+          "title": "Divide and Conquer",
+          "absoluteEpisode": 125,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/21/w780.jpg",
+          "overview": "On the eve of the revolt against Barodius, Nurzak sends a message to the Brawlers asking to meet and discuss a peace treaty."
+        },
+        {
+          "episode": 22,
+          "title": "Mobile Assault",
+          "absoluteEpisode": 126,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/22/w780.jpg",
+          "overview": "While Kazarina works on a secret weapon designed to take down the restored Second Shield, the Gundalians dispatch their army of hypnotized Earth kids to distract the Brawlers in battle."
+        },
+        {
+          "episode": 23,
+          "title": "Sid Returns",
+          "absoluteEpisode": 127,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/23/w780.jpg",
+          "overview": "As Ren prepares to launch an attack on the restored Second Shield, something strange is happening deep within the bowels of the Gundalian Palace."
+        },
+        {
+          "episode": 24,
+          "title": "Colossus Dharak",
+          "absoluteEpisode": 128,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/24/w780.jpg",
+          "overview": "Once Kazarina finally completes the upgrades on Exokor, the Twelve Orders descend on Neathia to take down the restored Second Shield."
+        },
+        {
+          "episode": 25,
+          "title": "Dragonoid Colossus",
+          "absoluteEpisode": 129,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/25/w780.jpg",
+          "overview": "Ren's conflicting loyalties finally come to a head when he decides to turn his back on Barodius."
+        },
+        {
+          "episode": 26,
+          "title": "Forgiveness",
+          "absoluteEpisode": 130,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/26/w780.jpg",
+          "overview": "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
+        },
+        {
+          "episode": 27,
+          "title": "Into the Storm",
+          "absoluteEpisode": 131,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/27/w780.jpg",
+          "overview": "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
+        },
+        {
+          "episode": 28,
+          "title": "Jake Returns",
+          "absoluteEpisode": 132,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/28/w780.jpg",
+          "overview": "Distraught over the loss of Jake to the Gundalians, Dan tries to mount a rescue operation to Gundalia."
+        },
+        {
+          "episode": 29,
+          "title": "Genesis",
+          "absoluteEpisode": 133,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/29/w780.jpg",
+          "overview": "Desperate to rescue the still hypnotized Jake from the clutches of the enemy, Dan rallies the Brawlers to go after their pal."
+        },
+        {
+          "episode": 30,
+          "title": "Infiltrated",
+          "absoluteEpisode": 134,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/30/w780.jpg",
+          "overview": "The Brawlers hitch a ride to Gundalia on Dragonoid Colossus. Once they arrive, Ren announces that in addition to Jake, he would also like to rescue his former teammates who are being held captive in Kazarina's lab."
+        },
+        {
+          "episode": 31,
+          "title": "True Evolution",
+          "absoluteEpisode": 135,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/31/w780.jpg",
+          "overview": "After getting separated from his teammates, Dan finds himself face to face with Barodius. Immediately they engage in a fearsome battle, which Drago quickly winds up on the losing end of."
+        },
+        {
+          "episode": 32,
+          "title": "Redemption",
+          "absoluteEpisode": 136,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/32/w780.jpg",
+          "overview": "After infiltrating Gundalian Castle, Nurzak and Fabia quickly square off with Kazarina and Stoica."
+        },
+        {
+          "episode": 33,
+          "title": "Jake's Last Stand",
+          "absoluteEpisode": 137,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/33/w780.jpg",
+          "overview": "Disguised as a Gundalian Soldier, Marucho and Akwimos infiltrate a troop briefing and are surprised to discover that it's being lead by Jake."
+        },
+        {
+          "episode": 34,
+          "title": "Final Strike",
+          "absoluteEpisode": 138,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/34/w780.jpg",
+          "overview": "As the Brawlers break into the Gundalian's lair, they run into all kinds of trouble. Jake seems to be regaining control as he does not destroy Dan when given the chance to. Will he save Dan and snap out of his trance?"
+        },
+        {
+          "episode": 35,
+          "title": "Dream Escape",
+          "absoluteEpisode": 139,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/35/w780.jpg",
+          "overview": "Just as Kazarina is about to finish Dan off, Jake breaks free of the hypnosis and stops her. Fabia arrives and holds off Lumagrowl while Jake and Coredem rescue Dan and Drago."
+        },
+        {
+          "episode": 36,
+          "title": "Gundalian Showdown",
+          "absoluteEpisode": 140,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/36/w780.jpg",
+          "overview": "The brawlers must head back to Neathia to defend it from Dharak's attack but Kazarina, Stoica, Gill and Airzel are determined to keep them on Gundalia. The brawlers manage to fight them off and escape, but Fabia remains behind to fight Kazarina, as she has a vendetta against her for the death of her fiance, Jin."
+        },
+        {
+          "episode": 37,
+          "title": "Broken Spell",
+          "absoluteEpisode": 141,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/37/w780.jpg",
+          "overview": "Just as the Brawlers return to Neathia, Fabia and Kazarina continue their battle. However, Lumagrowl begins disobeying Kazarina's orders and is determined to finish off Aranaut with or without her."
+        },
+        {
+          "episode": 38,
+          "title": "Code Eve",
+          "absoluteEpisode": 142,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/38/w780.jpg",
+          "overview": "Barodius confronts Serena, who refuses to back down. Barodius prepares to attack her, but Dan arrives in time to stop him. However, the Sacred Orb teleports them to an unknown area and reveals itself to be called \"Code Eve.\""
+        },
+        {
+          "episode": 39,
+          "title": "Destiny Revealed",
+          "absoluteEpisode": 143,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/3/39/w780.jpg",
+          "overview": "Drago struggles against Dharak, and is knocked out and reverts to a primal state, relying solely on instinct, but Dan manages to snap him out of it."
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "seasonTitle": "Mechtanium Surge",
+      "malId": 10330,
+      "anilistId": 10330,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Interspace Showdown",
+          "absoluteEpisode": 144,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/1/w780.jpg",
+          "overview": "The Brawlers have returned to Earth and are back battling inside the expanded and awesome Bakugan Interspace."
+        },
+        {
+          "episode": 2,
+          "title": "Mechtogan Mayhem",
+          "absoluteEpisode": 145,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/2/w780.jpg",
+          "overview": "Dan and Drago begin a rigorous training regimen as they attempt to get Drago's newly inherited powers under control."
+        },
+        {
+          "episode": 3,
+          "title": "Disconnect",
+          "absoluteEpisode": 146,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/3/w780.jpg",
+          "overview": "Dan and Drago continue to be evasive with their teammates as they try and figure out the link between Code Eve's powers and the birth of the Mechtogan, Zenthon."
+        },
+        {
+          "episode": 4,
+          "title": "Fall From Grace",
+          "absoluteEpisode": 147,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/4/w780.jpg",
+          "overview": "Marucho and Shun discover that Dan and Drago have been practicing in secret, which leads to the revelation that Zenthon was born of Drago's new powers."
+        },
+        {
+          "episode": 5,
+          "title": "Tri-Twister Take Down",
+          "absoluteEpisode": 148,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/5/w780.jpg",
+          "overview": "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
+        },
+        {
+          "episode": 6,
+          "title": "Agony of Defeat",
+          "absoluteEpisode": 149,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/6/w780.jpg",
+          "overview": "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
+        },
+        {
+          "episode": 7,
+          "title": "BakuNano Explosion",
+          "absoluteEpisode": 150,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/7/w780.jpg",
+          "overview": "After the epic battle with Anubias, Dan and Drago go AWOL. The fans are now clamouring for more intense battle action and the new BakuNano technology is introduced to cause maximum damage."
+        },
+        {
+          "episode": 8,
+          "title": "Return to New Vestroia",
+          "absoluteEpisode": 151,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/8/w780.jpg",
+          "overview": "Dan and Drago land in New Vestroia, to continue training. They are hit by another nightmarish vision, which leaves them with the terrifying realization that escape from the evil forces that haunt them may be impossible."
+        },
+        {
+          "episode": 9,
+          "title": "Chaos Control",
+          "absoluteEpisode": 152,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/9/w780.jpg",
+          "overview": "Mag Mel sends Anubias to New Vestroia to battle Dan and Drago and harness their power."
+        },
+        {
+          "episode": 10,
+          "title": "A Royale Pain",
+          "absoluteEpisode": 153,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/10/w780.jpg",
+          "overview": "With Dan gone, Shun assumes leadership of the Battle Brawlers.  When Shun joins a Battle Royale in an attempt to control the chaos, he is rescued by two mysterious battlers!"
+        },
+        {
+          "episode": 11,
+          "title": "Back in Sync",
+          "absoluteEpisode": 154,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/11/w780.jpg",
+          "overview": "Dan and Drago are paid a visit by their old friend Wyvern.  Marucho is confronted by his father and must decide how to save Bakugan Interspace from further destruction."
+        },
+        {
+          "episode": 12,
+          "title": "Mind Search",
+          "absoluteEpisode": 155,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/12/w780.jpg",
+          "overview": "Dan and Drago try to solve the identity of the mysterious masked entity haunting their dark visions.  Meanwhile, Marucho teaches Paige and Rafe a lesson about strategy."
+        },
+        {
+          "episode": 13,
+          "title": "Re-Connection",
+          "absoluteEpisode": 156,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/13/w780.jpg",
+          "overview": "Marucho and Shun square off in a championship match. As both divisions of the Brawlers fight their battles, Mag Mel uses his pawns Sellon and Anubias to unleash the latest stage of his sinister plan."
+        },
+        {
+          "episode": 14,
+          "title": "Triple Threat",
+          "absoluteEpisode": 157,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/14/w780.jpg",
+          "overview": "In a fierce battle against Sellon on Neathia; Dan and Drago summon Mechtogan Zenthon for help.  But they get more than they bargained for when a Mechtogan Titan appears!"
+        },
+        {
+          "episode": 15,
+          "title": "Interspace Under Siege",
+          "absoluteEpisode": 158,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/15/w780.jpg",
+          "overview": "Dan and Drago return from New Vestroia to help the Battle Brawlers defend Interspace from the rampaging Caos Bakugan."
+        },
+        {
+          "episode": 16,
+          "title": "A Hero Returns",
+          "absoluteEpisode": 159,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/16/w780.jpg",
+          "overview": "Under Marucho's leadership the Brawlers attempt to delete the Chaos Bakugan from Interspace."
+        },
+        {
+          "episode": 17,
+          "title": "Gundalia Under Fire",
+          "absoluteEpisode": 160,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/17/w780.jpg",
+          "overview": "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
+        },
+        {
+          "episode": 18,
+          "title": "Battle Lines",
+          "absoluteEpisode": 161,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/18/w780.jpg",
+          "overview": "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
+        },
+        {
+          "episode": 19,
+          "title": "Unlocking the Gate",
+          "absoluteEpisode": 162,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/19/w780.jpg",
+          "overview": "Dan and Drago are face to face with Mag Mel and Razenoid and the two sides square off in a fierce battle."
+        },
+        {
+          "episode": 20,
+          "title": "True Colours",
+          "absoluteEpisode": 163,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/20/w780.jpg",
+          "overview": "The Brawlers race back to Earth and discover the Chaos Bakugan are destroying Bakugan Interspace."
+        },
+        {
+          "episode": 21,
+          "title": "Dangerous Beauty",
+          "absoluteEpisode": 164,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/21/w780.jpg",
+          "overview": "A wave of Chaos Bakugan causes the Bawlers to split up to fend off the attack. Mid-battle Dan is summoned by Sellon who lures him with information about the link he shares with Mag Mel."
+        },
+        {
+          "episode": 22,
+          "title": "Unfinished Business",
+          "absoluteEpisode": 165,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/22/w780.jpg",
+          "overview": "Dan receives what appears to be a distress call from Noah."
+        },
+        {
+          "episode": 23,
+          "title": "Behind the Mask",
+          "absoluteEpisode": 166,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/23/w780.jpg",
+          "overview": "Dan attempts to link with Mag Mel again, but on a deeper level."
+        },
+        {
+          "episode": 24,
+          "title": "Interspace Armageddon",
+          "absoluteEpisode": 167,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/24/w780.jpg",
+          "overview": "Marucho reveals his plan to completely delete Bakugan Interspace while his father and Kato work on an escape plan."
+        },
+        {
+          "episode": 25,
+          "title": "Dark Moon",
+          "absoluteEpisode": 168,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/25/w780.jpg",
+          "overview": "Dan and the others have arrived safely on earth to find a mysterious dark moon in the sky."
+        },
+        {
+          "episode": 26,
+          "title": "The Final Takedown",
+          "absoluteEpisode": 169,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/26/w780.jpg",
+          "overview": "The final battle continues with Dan and Mag Mel, while the others are fighting the remaining Bakugan, Mechtogan, and Mechtogan Titans on Earth."
+        },
+        {
+          "episode": 27,
+          "title": "Evil Arrival",
+          "absoluteEpisode": 170,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/27/w780.jpg",
+          "overview": "After Mag Mel's defeat at the hands of the Brawlers, peace reigns once again in the universe."
+        },
+        {
+          "episode": 28,
+          "title": "Wiseman Cometh",
+          "absoluteEpisode": 171,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/28/w780.jpg",
+          "overview": "Peace appears to have returned to Bakugan City after the Brawlers made short work of the invading Mechtogan; however it doesn't last long."
+        },
+        {
+          "episode": 29,
+          "title": "Mysterious Bond",
+          "absoluteEpisode": 172,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/29/w780.jpg",
+          "overview": "Fearful of another attack by Wiseman and his Mechtogans, the Brawlers ask Reptak to join Dan and Drago as their additional partner Bakugan."
+        },
+        {
+          "episode": 30,
+          "title": "Prodigal Bakugan",
+          "absoluteEpisode": 173,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/30/w780.jpg",
+          "overview": "Jaakor is visited by his two former students: Skytruss and Orbeum."
+        },
+        {
+          "episode": 31,
+          "title": "Combination Impossible",
+          "absoluteEpisode": 174,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/31/w780.jpg",
+          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+        },
+        {
+          "episode": 32,
+          "title": "Enemy Allies",
+          "absoluteEpisode": 175,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/32/w780.jpg",
+          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+        },
+        {
+          "episode": 33,
+          "title": "Battle for Bakugan Land",
+          "absoluteEpisode": 176,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/33/w780.jpg",
+          "overview": "Wiseman reappears and attacks the amusement park that Bakugan helped create Bakugan Land. Julie decides to go and confront him as a reporter to see what his problem is, and the Battle Brawlers must try and find a way to contain the Nomads powers once again."
+        },
+        {
+          "episode": 34,
+          "title": "Gunz Blazing",
+          "absoluteEpisode": 177,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/34/w780.jpg",
+          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+        },
+        {
+          "episode": 35,
+          "title": "Battle Suit Bash",
+          "absoluteEpisode": 178,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/35/w780.jpg",
+          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+        },
+        {
+          "episode": 36,
+          "title": "Countdown to Doomsday",
+          "absoluteEpisode": 179,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/36/w780.jpg",
+          "overview": "The Brawlers go on the hunt for Wiseman's hideout in an effort to trap him there.  But Wiseman brings out the powerful Mechtogan Mechtavius Destroyer in a vicious battle against Dragonoid Destroyer."
+        },
+        {
+          "episode": 37,
+          "title": "The Eve of Extermination",
+          "absoluteEpisode": 180,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/37/w780.jpg",
+          "overview": "It's a race against time as the Brawlers once again Battle Mechtavius Destroyer but this time without the help of their own Mechtogan, Dragonoid Destroyer."
+        },
+        {
+          "episode": 38,
+          "title": "Jump to Victory",
+          "absoluteEpisode": 181,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/38/w780.jpg",
+          "overview": "Runo meets a new Bakugan named Aerogan who asks to be her partner."
+        },
+        {
+          "episode": 39,
+          "title": "Enemy Infiltration",
+          "absoluteEpisode": 182,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/39/w780.jpg",
+          "overview": "The Nonets begin to get curious about the true identity and motives of Wiseman."
+        },
+        {
+          "episode": 40,
+          "title": "Gunz Lives",
+          "absoluteEpisode": 183,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/40/w780.jpg",
+          "overview": "Gunz wakes up in his own worst nightmare and realizes that the evil ringleader Wiseman looks just like him!"
+        },
+        {
+          "episode": 41,
+          "title": "Evil Evolution",
+          "absoluteEpisode": 184,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/41/w780.jpg",
+          "overview": "The Brawlers learn the origin of Wiseman."
+        },
+        {
+          "episode": 42,
+          "title": "Evil vs. Evil",
+          "absoluteEpisode": 185,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/42/w780.jpg",
+          "overview": "The Brawlers are banished to the Doom Dimension."
+        },
+        {
+          "episode": 43,
+          "title": "Doom Dimension Throwdown",
+          "absoluteEpisode": 186,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/43/w780.jpg",
+          "overview": "Mechtavius Destroyer wreaks havoc in Bakugan City.  The Brawlers, still trapped in the Doom Dimension; battle Gunz and Betadron."
+        },
+        {
+          "episode": 44,
+          "title": "Blast from the Past",
+          "absoluteEpisode": 187,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/44/w780.jpg",
+          "overview": "After attacking Bakugan City, Mechtavius Destroyer invades New Vestroia.  The Bakugan put up a brave fight but are no match for his strength."
+        },
+        {
+          "episode": 45,
+          "title": "Beginning of the End",
+          "absoluteEpisode": 188,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/45/w780.jpg",
+          "overview": "The Brawlers travel back in time with the help of Professor Worton in an attempt to undo the destruction caused by Mechtavius Destroyer."
+        },
+        {
+          "episode": 46,
+          "title": "The End of the Line",
+          "absoluteEpisode": 189,
+          "duration": "22m",
+          "thumbnail": "https://episodes.metahub.space/tt1114855/4/46/w780.jpg",
+          "overview": "In the final battle against Mechtavius Destroyer, Dragonoid Destroyer uses the energy from the powerful bond between humans and Bakugan to defeat him."
+        }
+      ]
+    }
+  ]
+}
 
 ];

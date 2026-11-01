@@ -7835,6 +7835,13 @@ function getAnimeAniListId(refMovie, dataId) {
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
     if (t.includes('beyblade')) return 5962;
+    if (t.includes('bakugan')) {
+      const seasonNum = (typeof epData !== 'undefined' && epData?.season) ? epData.season : 1;
+      if (seasonNum === 2) return 5337;
+      if (seasonNum === 3) return 7334;
+      if (seasonNum === 4) return 10330;
+      return 2156;
+    }
     if (t.includes('beerus')) return 206814;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
@@ -7995,6 +8002,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // If the anime season has its own season-specific MAL ID, rawEp MUST be the relative season episode (epData.episode), not absoluteEpisode
   const hasSeasonSpecificMal = Boolean(
     (ref?.title && ref.title.toLowerCase().includes('beyblade')) ||
+    (ref?.title && ref.title.toLowerCase().includes('bakugan')) ||
     (ref?.title && ref.title.toLowerCase().includes('hero academia')) ||
     (ref?.title && ref.title.toLowerCase().includes('demon slayer')) ||
     (ref?.title && ref.title.toLowerCase().includes('attack on titan')) ||

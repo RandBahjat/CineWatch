@@ -261,11 +261,11 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 10. Harry Potter and the Sorcerer's Stone (2001)
+  // 10. Harry Potter and the Philosopher’s Stone (2001)
   // ============================================================
   {
-    id: "harry-potter-and-the-sorcerer-s-stone-2001",
-    title: "Harry Potter and the Sorcerer's Stone",
+    id: "Harry Potter and the Philosopher’s Stone",
+    title: "Harry Potter and the Philosopher’s Stone",
     type: "Movie",
     year: 2001,
     rating: 7.9,
