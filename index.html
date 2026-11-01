@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261101_03372">
-    <link rel="stylesheet" href="browse-fix.css?v=20261101_03372">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20261101_03372">
+    <link rel="stylesheet" href="movie.css?v=20261101_03530">
+    <link rel="stylesheet" href="browse-fix.css?v=20261101_03530">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20261101_03530">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -142,13 +142,13 @@
     <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js" defer></script>
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-    <script src="api.js?v=20261101_03372" defer></script>
-    <script src="movies-data.js?v=20261101_03372" defer></script>
-    <script src="series-data.js?v=20261101_03372" defer></script>
-    <script src="anime-data.js?v=20261101_03372" defer></script>
-    <script src="fourk-data.js?v=20261101_03372" defer></script>
-    <script src="movie.js?v=20261101_03372" defer></script>
-    <script src="ai-assistant.js?v=20261101_03372" defer></script>
+    <script src="api.js?v=20261101_03530" defer></script>
+    <script src="movies-data.js?v=20261101_03530" defer></script>
+    <script src="series-data.js?v=20261101_03530" defer></script>
+    <script src="anime-data.js?v=20261101_03530" defer></script>
+    <script src="fourk-data.js?v=20261101_03530" defer></script>
+    <script src="movie.js?v=20261101_03530" defer></script>
+    <script src="ai-assistant.js?v=20261101_03530" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -949,13 +949,6 @@
                         <!-- Dedicated Anime SUB / DUB Buttons -->
                         <div class="anime-audio-toggle hidden" id="animeAudioToggle">
                             <span class="anime-server-label">Server:</span>
-                            <select id="detailsServerSelect" class="season-select-pill" style="background: rgba(15, 23, 42, 0.85); color: #fff; border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; outline: none; margin-right: 4px;">
-                                <option value="vidlink">Server 1 (VidLink HD)</option>
-                                <option value="megavid">Server 2 (Mega Player)</option>
-                                <option value="vidsrc_nl">Server 3 (VidSrc NL)</option>
-                                <option value="vidsrc_net">Server 4 (VidSrc Net)</option>
-                                <option value="multiembed">Server 5 (MultiEmbed)</option>
-                            </select>
                             <button type="button" class="anime-audio-pill active" id="btnAudioSub" data-audio="sub" title="Mega Server (English Sub / Japanese)">
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="server-pill-icon"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M7 15h4M15 15h2M7 11h10"/></svg>
                                 <span>SUB</span>
@@ -1518,16 +1511,6 @@
                     </svg>
                 </button>
                 <div class="video-header-right-controls" id="videoHeaderRightControls" style="margin-left:auto; display: flex; align-items: center; gap: 8px;">
-                    <div class="player-server-selector-wrap" id="playerServerSelectorWrap" style="display: flex; align-items: center; gap: 6px;">
-                        <span style="font-size: 11px; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.5px;">Server:</span>
-                        <select id="playerServerSelect" style="background: rgba(15, 23, 42, 0.9); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; outline: none; backdrop-filter: blur(12px);">
-                            <option value="vidlink">Server 1 (VidLink HD)</option>
-                            <option value="megavid">Server 2 (Mega Player)</option>
-                            <option value="vidsrc_nl">Server 3 (VidSrc NL)</option>
-                            <option value="vidsrc_net">Server 4 (VidSrc Net)</option>
-                            <option value="multiembed">Server 5 (MultiEmbed)</option>
-                        </select>
-                    </div>
                     <button id="kurdishSubToggleBtn" title="Toggle Kurdish Subtitles" style="background: rgba(0,0,0,0.65); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; padding: 6px 14px; cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 13px; transition: all 0.2s; display: none;">CC: OFF (Kurdish)</button>
                     <div id="kurdishSubSyncWrap" style="display: none; align-items: center; gap: 4px; background: rgba(0,0,0,0.85); border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; padding: 2px 6px;">
                         <button id="kurdishSubPlayPauseBtn" title="Pause / Resume Kurdish Subtitles" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); color: #fff; cursor: pointer; font-size: 11px; border-radius: 4px; padding: 2px 5px;">⏸️</button>
@@ -3602,7 +3585,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20261101_03372"></script>
+    <script src="welcome-disclaimer.js?v=20261101_03530"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">

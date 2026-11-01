@@ -1599,85 +1599,110 @@ const server = http.createServer((req, res) => {
     const malId = parsed.searchParams.get('malId') || '21';
     const ep = parsed.searchParams.get('ep') || '1';
     const mode = parsed.searchParams.get('mode') || 'sub';
-    const targetUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}/source`;
+    const axsv = parsed.searchParams.get('axsv') || '';
     const host = req.headers.host || `localhost:${PORT}`;
     const proto = req.headers['x-forwarded-proto'] || 'http';
     const baseUrl = `${proto}://${host}`;
 
-    fetch(targetUrl, {
-      headers: {
-        'Referer': 'https://megavid.buzz/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+    async function fetchMegavidSource(mId, episode, mMode, provider) {
+      let targetUrl = `https://megavid.buzz/mal/${mId}/${episode}/${mMode}/source`;
+      if (provider) targetUrl += `?axsv=${encodeURIComponent(provider)}`;
+      try {
+        const r = await fetch(targetUrl, {
+          headers: {
+            'Referer': 'https://megavid.buzz/',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+          },
+          signal: AbortSignal.timeout(6000)
+        });
+        if (!r.ok) return null;
+        return await r.json();
+      } catch (e) {
+        return null;
       }
-    })
-      .then(async r => {
-        const data = await r.json();
-        
-        if (mode === 'dub') {
-          try {
-            const subUrl = `https://megavid.buzz/mal/${malId}/${ep}/sub/source`;
-            const subR = await fetch(subUrl, { headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } });
-            const subData = await subR.json();
-            if (subData && subData.tracks && subData.tracks.length > 0) {
-              data.tracks = subData.tracks;
-            }
-          } catch(e) {
-            console.error('Failed to fetch sub tracks for dub override:', e);
-          }
-        } else if (mode === 'sub' && data && data.source) {
-          try {
-            const testSub = await fetch(data.source, {
-              method: 'HEAD',
-              headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
-              signal: AbortSignal.timeout(2500)
-            });
-            if (!testSub.ok && testSub.status >= 500) {
-              console.warn(`[server] Sub source is down (${testSub.status}), falling back to dub source...`);
-              const dubTarget = `https://megavid.buzz/mal/${malId}/${ep}/dub/source`;
-              const dubR = await fetch(dubTarget, { headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } });
-              const dubData = await dubR.json();
-              if (dubData && dubData.source) {
-                data.source = dubData.source;
-                data.type = dubData.type || data.type;
-              }
-            }
-          } catch(e) {}
-        }
+    }
 
-        if (data && data.source) {
-          data.rawSource = data.source;
-          data.embedUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}`;
-          data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
-        }
-        if (data && data.tracks && data.tracks.length > 0) {
-          data.tracks = data.tracks.map(t => ({
-            ...t,
-            rawFile: t.file,
-            file: `${baseUrl}/api/anime-sub?url=${encodeURIComponent(t.file)}`
-          }));
-          const engTrack = data.tracks.find(t => (t.label || '').toLowerCase().includes('eng')) || data.tracks[0];
-          if (engTrack && !data.tracks.some(t => t.srclang === 'ku' || (t.label || '').includes('Kurdish'))) {
-            data.tracks.push({
-              label: 'Kurdish (Sorani)',
-              file: `${engTrack.file}&lang=ckb`,
-              rawFile: engTrack.rawFile,
-              srclang: 'ku'
-            });
+    function isBadSource(d) {
+      if (!d || !d.source) return true;
+      if (typeof d.source !== 'string') return true;
+      if (d.source.includes('s-90.megavid.se')) return true;
+      return false;
+    }
+
+    (async () => {
+      let data = await fetchMegavidSource(malId, ep, mode, axsv);
+
+      // If default source is dead (e.g. s-90.megavid.se offline domain), automatically failover to working providers
+      if (isBadSource(data)) {
+        const altProviders = ['loli', 'nero', 'yuki'];
+        for (const p of altProviders) {
+          if (p === axsv) continue;
+          const altData = await fetchMegavidSource(malId, ep, mode, p);
+          if (!isBadSource(altData)) {
+            data = altData;
+            break;
           }
         }
-        res.writeHead(200, {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        });
-        res.end(JSON.stringify(data));
-      })
-      .catch(err => {
-        res.writeHead(500, {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        });
-        res.end(JSON.stringify({ error: err.message }));
+      }
+
+      // If sub was completely missing/dead, fallback to dub
+      if (isBadSource(data) && mode === 'sub') {
+        const dubData = await fetchMegavidSource(malId, ep, 'dub', 'loli') || await fetchMegavidSource(malId, ep, 'dub', '');
+        if (!isBadSource(dubData)) {
+          data = dubData;
+        }
+      }
+
+      if (!data) {
+        res.writeHead(502, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ error: 'Failed to retrieve anime source' }));
+        return;
+      }
+
+      if (mode === 'dub') {
+        try {
+          const subData = await fetchMegavidSource(malId, ep, 'sub', 'loli') || await fetchMegavidSource(malId, ep, 'sub', '');
+          if (subData && subData.tracks && subData.tracks.length > 0) {
+            data.tracks = subData.tracks;
+          }
+        } catch(e) {
+          console.error('Failed to fetch sub tracks for dub override:', e);
+        }
+      }
+
+      if (data && data.source) {
+        data.rawSource = data.source;
+        data.embedUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}`;
+        data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
+      }
+      if (data && data.tracks && data.tracks.length > 0) {
+        data.tracks = data.tracks.map(t => ({
+          ...t,
+          rawFile: t.file,
+          file: `${baseUrl}/api/anime-sub?url=${encodeURIComponent(t.file)}`
+        }));
+        const engTrack = data.tracks.find(t => (t.label || '').toLowerCase().includes('eng')) || data.tracks[0];
+        if (engTrack && !data.tracks.some(t => t.srclang === 'ku' || (t.label || '').includes('Kurdish'))) {
+          data.tracks.push({
+            label: 'Kurdish (Sorani)',
+            file: `${engTrack.file}&lang=ckb`,
+            rawFile: engTrack.rawFile,
+            srclang: 'ku'
+          });
+        }
+      }
+      res.writeHead(200, {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       });
+      res.end(JSON.stringify(data));
+    })().catch(err => {
+      res.writeHead(500, {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      });
+      res.end(JSON.stringify({ error: err.message }));
+    });
     return;
   }
 
