@@ -1,12 +1,19 @@
 const fs = require('fs');
 const https = require('https');
-const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
-const { Upload } = require('@aws-sdk/lib-storage');
+const {
+  S3Client,
+  CreateMultipartUploadCommand,
+  UploadPartCommand,
+  ListMultipartUploadsCommand,
+  ListPartsCommand,
+  CompleteMultipartUploadCommand,
+  PutObjectCommand
+} = require('@aws-sdk/client-s3');
 const { NodeHttpHandler } = require('@smithy/node-http-handler');
 
 const httpsAgent = new https.Agent({
   keepAlive: true,
-  maxSockets: 10,
+  maxSockets: 20,
   timeout: 120000
 });
 
@@ -36,6 +43,8 @@ const VIDEO_FILE = 'E:\\HandBrake_Output\\Harry.Potter.And.The.Order.Of.The.Phoe
 const VIDEO_KEY = 'Harry_Potter_And_The_Order_Of_The_Phoenix_2007_4K_UHD.mp4';
 
 const LOG_FILE = 'E:\\harry_potter_5_upload.log';
+const PART_SIZE = 20 * 1024 * 1024; // 20MB parts
+const CONCURRENCY = 3; // 3 concurrent parts upload
 
 function logMsg(msg) {
   const timestamp = new Date().toLocaleTimeString();
@@ -46,130 +55,209 @@ function logMsg(msg) {
   } catch (e) {}
 }
 
-async function uploadSubtitle() {
-  if (!fs.existsSync(SUBTITLE_FILE)) {
-    logMsg(`[WARN] Subtitle file not found: ${SUBTITLE_FILE}, skipping subtitle upload.`);
-    return;
+async function uploadSubtitleIfNeeded() {
+  if (!fs.existsSync(SUBTITLE_FILE)) return;
+  try {
+    const content = fs.readFileSync(SUBTITLE_FILE);
+    await s3Client.send(new PutObjectCommand({
+      Bucket: BUCKET,
+      Key: SUBTITLE_KEY,
+      Body: content,
+      ContentType: 'text/vtt; charset=utf-8'
+    }));
+    logMsg(`[SUBTITLE] English subtitle verified on R2: https://pub-8831c11f477044598f386d280daece6c.r2.dev/${SUBTITLE_KEY}`);
+  } catch (err) {
+    logMsg(`[SUBTITLE WARN] ${err.message}`);
   }
-  logMsg(`Uploading Subtitle: ${SUBTITLE_KEY}...`);
-  const content = fs.readFileSync(SUBTITLE_FILE);
-  await s3Client.send(new PutObjectCommand({
-    Bucket: BUCKET,
-    Key: SUBTITLE_KEY,
-    Body: content,
-    ContentType: 'text/vtt; charset=utf-8'
-  }));
-  logMsg(`[SUCCESS] Subtitle uploaded: https://pub-8831c11f477044598f386d280daece6c.r2.dev/${SUBTITLE_KEY}`);
 }
 
-async function uploadVideo() {
-  logMsg('========================================================================');
-  logMsg(' LIVE CLOUDFLARE R2 UPLOAD: Harry Potter and the Order of the Phoenix (2007) 4K');
-  logMsg(` Target Key : ${VIDEO_KEY}`);
-  logMsg(` Destination: s3://${BUCKET}/${VIDEO_KEY}`);
-  logMsg(' Keep-Alive HTTPS & Auto-Retry enabled');
-  logMsg('========================================================================');
+async function getOrCreateUploadId() {
+  // Check active uploads first
+  const list = await s3Client.send(new ListMultipartUploadsCommand({ Bucket: BUCKET }));
+  const existing = (list.Uploads || []).find(u => u.Key === VIDEO_KEY);
+  if (existing) {
+    logMsg(`[RESUME] Found active upload session: ${existing.UploadId.slice(0, 25)}...`);
+    return existing.UploadId;
+  }
 
+  logMsg('[INIT] Creating new multipart upload session...');
+  const createRes = await s3Client.send(new CreateMultipartUploadCommand({
+    Bucket: BUCKET,
+    Key: VIDEO_KEY,
+    ContentType: 'video/mp4'
+  }));
+  logMsg(`[INIT] New upload session created: ${createRes.UploadId.slice(0, 25)}...`);
+  return createRes.UploadId;
+}
+
+async function getExistingParts(uploadId) {
+  const parts = new Map();
+  let partNumberMarker = undefined;
+
+  while (true) {
+    const res = await s3Client.send(new ListPartsCommand({
+      Bucket: BUCKET,
+      Key: VIDEO_KEY,
+      UploadId: uploadId,
+      PartNumberMarker: partNumberMarker
+    }));
+
+    if (res.Parts) {
+      for (const p of res.Parts) {
+        parts.set(p.PartNumber, { PartNumber: p.PartNumber, ETag: p.ETag, Size: p.Size });
+      }
+    }
+
+    if (res.IsTruncated && res.NextPartNumberMarker) {
+      partNumberMarker = res.NextPartNumberMarker;
+    } else {
+      break;
+    }
+  }
+
+  return parts;
+}
+
+async function uploadPartWithRetry(uploadId, partNumber, totalParts, fileFd, startOffset, length, maxRetries = 10) {
+  const buf = Buffer.alloc(length);
+  fs.readSync(fileFd, buf, 0, length, startOffset);
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const res = await s3Client.send(new UploadPartCommand({
+        Bucket: BUCKET,
+        Key: VIDEO_KEY,
+        UploadId: uploadId,
+        PartNumber: partNumber,
+        Body: buf
+      }));
+      return res.ETag;
+    } catch (err) {
+      if (attempt === maxRetries) {
+        throw new Error(`Part ${partNumber} failed after ${maxRetries} attempts: ${err.message}`);
+      }
+      const delay = Math.min(attempt * 2000, 10000);
+      logMsg(`[WARN] Part ${partNumber}/${totalParts} failed attempt ${attempt} (${err.message}). Retrying in ${delay / 1000}s...`);
+      await new Promise(r => setTimeout(r, delay));
+    }
+  }
+}
+
+async function startResumableUpload() {
   if (!fs.existsSync(VIDEO_FILE)) {
-    logMsg(`[ERROR] Source video file does not exist: ${VIDEO_FILE}`);
+    logMsg(`[FATAL] Video file not found at ${VIDEO_FILE}`);
     process.exit(1);
   }
 
   const stat = fs.statSync(VIDEO_FILE);
   const totalBytes = stat.size;
   const totalGB = (totalBytes / (1024 * 1024 * 1024)).toFixed(2);
-  logMsg(`Video File Size: ${totalGB} GB (${totalBytes.toLocaleString()} bytes)`);
+  const totalParts = Math.ceil(totalBytes / PART_SIZE);
 
-  const fileStream = fs.createReadStream(VIDEO_FILE, { highWaterMark: 10 * 1024 * 1024 });
-  const startTime = Date.now();
-  let lastLoggedTime = startTime;
-  let lastLoadedBytes = 0;
-  let lastPercent = -1;
-
-  const parallelUploads3 = new Upload({
-    client: s3Client,
-    params: {
-      Bucket: BUCKET,
-      Key: VIDEO_KEY,
-      Body: fileStream,
-      ContentType: 'video/mp4'
-    },
-    partSize: 20 * 1024 * 1024, // 20MB parts
-    queueSize: 3, // 3 parallel uploads
-    leavePartsOnError: false
-  });
-
-  parallelUploads3.on('httpUploadProgress', (progress) => {
-    const loaded = progress.loaded || 0;
-    const total = progress.total || totalBytes;
-    const percent = Math.floor((loaded / total) * 100);
-
-    const now = Date.now();
-    const timeDelta = (now - lastLoggedTime) / 1000;
-
-    // Log progress every 1% or every 4 seconds
-    if (percent > lastPercent || percent === 100 || (timeDelta >= 4 && loaded !== lastLoadedBytes)) {
-      const bytesDelta = loaded - lastLoadedBytes;
-      const speedMBs = timeDelta > 0 ? (bytesDelta / (1024 * 1024 * timeDelta)).toFixed(1) : '0.0';
-      const loadedGB = (loaded / (1024 * 1024 * 1024)).toFixed(2);
-
-      const overallSeconds = (now - startTime) / 1000;
-      const overallSpeed = overallSeconds > 0 ? (loaded / (1024 * 1024 * overallSeconds)) : 0;
-      const remainingBytes = total - loaded;
-      const etaSeconds = overallSpeed > 0 ? Math.round(remainingBytes / (1024 * 1024 * overallSpeed)) : 0;
-      const etaMins = Math.floor(etaSeconds / 60);
-      const etaSecs = etaSeconds % 60;
-      const etaStr = `${etaMins}m ${etaSecs < 10 ? '0' : ''}${etaSecs}s`;
-
-      const progressBarLength = 25;
-      const filledLength = Math.round((percent / 100) * progressBarLength);
-      const bar = '█'.repeat(filledLength) + '░'.repeat(progressBarLength - filledLength);
-
-      logMsg(`[PROGRESS] [${bar}] ${percent}% | ${loadedGB} GB / ${totalGB} GB | Speed: ${speedMBs} MB/s | ETA: ${etaStr}`);
-      lastPercent = percent;
-      lastLoggedTime = now;
-      lastLoadedBytes = loaded;
-    }
-  });
-
-  await parallelUploads3.done();
-  const totalTimeMins = ((Date.now() - startTime) / 60000).toFixed(1);
   logMsg('========================================================================');
-  logMsg(`[SUCCESS] Harry Potter 5 (2007) 4K upload complete in ${totalTimeMins} minutes!`);
+  logMsg(' LIVE RESUMABLE R2 4K UPLOAD: Harry Potter and the Order of the Phoenix');
+  logMsg(` Target Key : ${VIDEO_KEY}`);
+  logMsg(` Total Size : ${totalGB} GB (${totalBytes.toLocaleString()} bytes)`);
+  logMsg(` Total Parts: ${totalParts} parts (${(PART_SIZE / 1024 / 1024)} MB each)`);
+  logMsg(` Concurrency: ${CONCURRENCY} parallel streams`);
+  logMsg('========================================================================');
+
+  await uploadSubtitleIfNeeded();
+
+  const uploadId = await getOrCreateUploadId();
+  const existingPartsMap = await getExistingParts(uploadId);
+  const completedParts = [];
+
+  let alreadyUploadedBytes = 0;
+  for (const [pNum, pInfo] of existingPartsMap.entries()) {
+    completedParts.push({ PartNumber: pNum, ETag: pInfo.ETag });
+    alreadyUploadedBytes += pInfo.Size || PART_SIZE;
+  }
+
+  logMsg(`[RESUME STATUS] Verified ${completedParts.length} / ${totalParts} parts already on Cloudflare R2 (${(alreadyUploadedBytes / (1024 * 1024 * 1024)).toFixed(2)} GB).`);
+
+  const pendingParts = [];
+  for (let pNum = 1; pNum <= totalParts; pNum++) {
+    if (!existingPartsMap.has(pNum)) {
+      pendingParts.push(pNum);
+    }
+  }
+
+  if (pendingParts.length === 0) {
+    logMsg('[COMPLETE] All parts already uploaded! Finalizing upload...');
+  } else {
+    logMsg(`[START] Uploading remaining ${pendingParts.length} parts...`);
+
+    const fileFd = fs.openSync(VIDEO_FILE, 'r');
+    const startTime = Date.now();
+    let uploadedSinceStartBytes = 0;
+    let lastLoggedTime = startTime;
+    let nextIndex = 0;
+
+    async function worker(workerId) {
+      while (nextIndex < pendingParts.length) {
+        const currentIdx = nextIndex++;
+        const partNumber = pendingParts[currentIdx];
+        const startOffset = (partNumber - 1) * PART_SIZE;
+        const currentPartLength = Math.min(PART_SIZE, totalBytes - startOffset);
+
+        const etag = await uploadPartWithRetry(uploadId, partNumber, totalParts, fileFd, startOffset, currentPartLength);
+        completedParts.push({ PartNumber: partNumber, ETag: etag });
+
+        uploadedSinceStartBytes += currentPartLength;
+        const totalUploadedBytes = alreadyUploadedBytes + uploadedSinceStartBytes;
+        const percent = Math.min(100, Math.floor((totalUploadedBytes / totalBytes) * 100));
+
+        const now = Date.now();
+        const elapsedSecs = (now - startTime) / 1000;
+        const overallSpeed = elapsedSecs > 0 ? (uploadedSinceStartBytes / (1024 * 1024 * elapsedSecs)) : 0;
+        const remainingBytes = totalBytes - totalUploadedBytes;
+        const etaSecs = overallSpeed > 0 ? Math.round(remainingBytes / (1024 * 1024 * overallSpeed)) : 0;
+        const etaMins = Math.floor(etaSecs / 60);
+        const etaSeconds = etaSecs % 60;
+        const etaStr = `${etaMins}m ${etaSeconds < 10 ? '0' : ''}${etaSeconds}s`;
+
+        const progressBarLength = 25;
+        const filledLength = Math.round((percent / 100) * progressBarLength);
+        const bar = '█'.repeat(filledLength) + '░'.repeat(progressBarLength - filledLength);
+        const uploadedGB = (totalUploadedBytes / (1024 * 1024 * 1024)).toFixed(2);
+
+        logMsg(`[PROGRESS] [${bar}] ${percent}% | ${uploadedGB} GB / ${totalGB} GB | Part ${completedParts.length}/${totalParts} | Speed: ${overallSpeed.toFixed(1)} MB/s | ETA: ${etaStr}`);
+      }
+    }
+
+    const workers = [];
+    for (let i = 0; i < CONCURRENCY; i++) {
+      workers.push(worker(i + 1));
+    }
+
+    await Promise.all(workers);
+    fs.closeSync(fileFd);
+  }
+
+  // Sort parts by PartNumber ascending
+  completedParts.sort((a, b) => a.PartNumber - b.PartNumber);
+
+  logMsg('[FINALIZE] Assembling and finalizing multipart upload in Cloudflare R2...');
+  await s3Client.send(new CompleteMultipartUploadCommand({
+    Bucket: BUCKET,
+    Key: VIDEO_KEY,
+    UploadId: uploadId,
+    MultipartUpload: {
+      Parts: completedParts.map(p => ({
+        PartNumber: p.PartNumber,
+        ETag: p.ETag
+      }))
+    }
+  }));
+
+  logMsg('========================================================================');
+  logMsg('[SUCCESS] Harry Potter and the Order of the Phoenix (2007) 4K is LIVE!');
   logMsg(`Public Stream URL: https://pub-8831c11f477044598f386d280daece6c.r2.dev/${VIDEO_KEY}`);
   logMsg('========================================================================');
 }
 
-async function main() {
-  if (fs.existsSync(LOG_FILE)) {
-    try { fs.unlinkSync(LOG_FILE); } catch (e) {}
-  }
-
-  try {
-    await uploadSubtitle();
-  } catch (err) {
-    logMsg(`[SUBTITLE ERROR] ${err.message}`);
-  }
-
-  const MAX_RETRIES = 5;
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    try {
-      if (attempt > 1) {
-        logMsg(`[RETRY] Attempt ${attempt} of ${MAX_RETRIES} after connection hiccup...`);
-      }
-      await uploadVideo();
-      break;
-    } catch (err) {
-      logMsg(`[NETWORK WARNING] Attempt ${attempt} encountered error: ${err.message}`);
-      if (attempt < MAX_RETRIES) {
-        logMsg('Waiting 5 seconds before retrying...');
-        await new Promise(r => setTimeout(r, 5000));
-      } else {
-        logMsg('[FATAL ERROR] Upload failed after multiple retries.');
-        process.exit(1);
-      }
-    }
-  }
-}
-
-main();
+startResumableUpload().catch(err => {
+  logMsg(`[FATAL ERROR] ${err.message}`);
+  process.exit(1);
+});
