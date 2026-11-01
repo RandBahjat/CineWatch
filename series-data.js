@@ -18,8 +18,8 @@ window._SERIES_DATA = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "backdrop": "https://images.metahub.space/background/medium/tt33043892/img",
+    "poster": "https://image.tmdb.org/t/p/original/8eg1Ka32Mwcs9fBLcJG1iR8CbPo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
     "videoUrl": "259909",
     "trailerUrl": "https://www.youtube.com/watch?v=nTOf1FIsBcs",
     "overview": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.",

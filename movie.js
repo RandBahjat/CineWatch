@@ -63,6 +63,7 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
+  "Dexter: Resurrection",
   "Sense and Sensibility",
   "Clayface",
   "The Dog Stars",
@@ -71,8 +72,7 @@ let FEATURED_TITLES = [
   "Dragon Ball Super: Beerus",
   "Cyberpunk: Edgerunners",
   "VisionQuest",
-  "Spider-Man: Brand New Day",
-  "Resident Evil",
+  "Spider-Man: Brand New Day"
   
 ];
 let TOP_10_TRENDING_TODAY = [
