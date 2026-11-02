@@ -403,6 +403,35 @@ window._FOURK_DATA = [
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Order_Of_The_Phoenix_2007_English.vtt", srclang: "en", default: true }
     ]
+  },
+
+  // ============================================================
+  // 15. Harry Potter and the Half-Blood Prince (2009)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-half-blood-prince-2009",
+    title: "Harry Potter and the Half-Blood Prince",
+    type: "Movie",
+    year: 2009,
+    rating: 7.7,
+    age: "PG",
+    duration: "2h 33m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/mITJS77BV4TSqdFB5FPGBc7JKXj.jpg",
+    backdrop: "https://images.metahub.space/background/medium/tt0417741/img",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Half_Blood_Prince_2009_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=jpCPvHJ6p90",
+    overview: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book mysteriously marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past. While Voldemort's grip tightens on both the Muggle and wizarding worlds, Harry and Dumbledore race against time to unlock the defensive barriers to defeat the Dark Lord once and for all.",
+    overviewKurdish: "کاتێک هاری پۆتەر دەست بە ساڵی شەشەمی خوێندنی دەکات لە هاگوارتس، پەڕتووکێکی کۆنی دەستدەکەوێت کە نیشانەی 'موڵکی شازادەی نیوە خوێن'ی لەسەرە و دەست دەکات بە فێربوونی زیاتر دەربارەی ڕابردووی تاریکی لۆرد ڤۆڵدمۆرت. لە کاتێکدا هاری و دەمبڵدۆر هەوڵ دەدەن نهێنیی بەزاندنی شازادەی تاریکی ئاشکرا بکەن پێش ئەوەی درەنگ بێت.",
+    director: "David Yates",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Jim Broadbent", "Helena Bonham Carter", "Robbie Coltrane", "Michael Gambon", "Alan Rickman", "Maggie Smith", "Tom Felton", "Bonnie Wright"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Half_Blood_Prince_2009_English.vtt", srclang: "en", default: true }
+    ]
   }
 
 ];
