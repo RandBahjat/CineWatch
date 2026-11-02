@@ -1230,21 +1230,23 @@ const server = http.createServer((req, res) => {
           return;
         }
 
-        // Special handling for Miraculous Season 6 (TMDB ID 65334)
+        // Special handling for Miraculous Season 6 & 7 (TMDB ID 65334)
         if (String(tmdbId) === '65334' && parseInt(season, 10) >= 6) {
+          const sNum = parseInt(season, 10) || 6;
           const epNum = parseInt(episode, 10) || 1;
+          const cacheKey = sNum === 6 ? String(epNum) : `${sNum}_${epNum}`;
           let m3u8Url = '';
-          const cached = miraculousS6Cache[String(epNum)];
+          const cached = miraculousS6Cache[cacheKey] || (sNum === 6 ? miraculousS6Cache[String(epNum)] : null);
 
           if (cached && cached.streamUrl && isM3u8TokenValid(cached.streamUrl)) {
             m3u8Url = cached.streamUrl;
           } else {
-            console.log(`[Miraculous S6] Token expired or missing for Ep ${epNum}, extracting fresh stream...`);
+            console.log(`[Miraculous S${sNum}] Token expired or missing for Ep ${epNum}, extracting fresh stream...`);
             try {
               const freshUrl = await extractVidsrcTvStream(tmdbId, season, epNum);
               if (freshUrl) {
                 m3u8Url = freshUrl;
-                miraculousS6Cache[String(epNum)] = {
+                miraculousS6Cache[cacheKey] = {
                   streamUrl: freshUrl,
                   timestamp: Date.now()
                 };
@@ -1270,7 +1272,7 @@ const server = http.createServer((req, res) => {
 
           if (!m3u8Url) {
             res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-            res.end(JSON.stringify({ success: false, error: 'Could not obtain stream for Miraculous Season 6 Episode ' + epNum }));
+            res.end(JSON.stringify({ success: false, error: `Could not obtain stream for Miraculous Season ${sNum} Episode ${epNum}` }));
             return;
           }
 
@@ -1278,7 +1280,7 @@ const server = http.createServer((req, res) => {
           let tracks = [];
           let enSubUrl = '';
           try {
-            const subRes = await fetch(`https://data.vidsrc.sh/api.php?type=tv&tmdb=65334&season=6&episode=${epNum}`, {
+            const subRes = await fetch(`https://data.vidsrc.sh/api.php?type=tv&tmdb=65334&season=${sNum}&episode=${epNum}`, {
               signal: AbortSignal.timeout(4000)
             });
             if (subRes.ok) {

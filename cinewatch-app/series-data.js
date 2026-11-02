@@ -11766,6 +11766,47 @@ window._SERIES_DATA = [
             overview: "The explosive season finale! Ladybug and Cat Noir assemble every miraculous holder for an unforgettable climax against their ultimate nemesis."
           }
         ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "Replay Value (The Right Time – Part 1)",
+            airDate: "2026-10-30",
+            rating: 8.8,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            overview: "While Marinette and Adrien independently search for the right moment to share an important revelation with one another, their classmate Aglaé vanishes after an accidental misunderstanding. Fearing she will be targeted and akumatized, Ladybug and Cat Noir rush into action as Chrysalis initiates an audacious scheme using past memories to uncover Ladybug's identity."
+          },
+          {
+            episode: 2,
+            title: "Chrysalis (The Right Time – Part 2)",
+            airDate: "2026-10-30",
+            rating: 9.1,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            overview: "In the second part of The Right Time premiere event, Chrysalis unleashes a high-stakes assault on Paris that pushes the heroes to their absolute limits. Ladybug, Cat Noir, and the united Miraculous holders must race against time to overcome their doubts, unravel Chrysalis's calculated traps, and safeguard the miraculous kwamis."
+          },
+          {
+            episode: 3,
+            title: "Dislove",
+            airDate: "2026-11-14",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            overview: "A sudden rift in Paris triggers an akumatization fueled by heartbreak and emotional turbulence, testing Ladybug and Cat Noir's new partnership dynamic."
+          },
+          {
+            episode: 4,
+            title: "Manageman",
+            airDate: "2026-11-21",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+            duration: "22 min",
+            overview: "Under overwhelming bureaucratic and school pressure, an overbearing villain named Manageman attempts to micro-manage the entire city of Paris."
+          }
+        ]
       }
     ]
   },
