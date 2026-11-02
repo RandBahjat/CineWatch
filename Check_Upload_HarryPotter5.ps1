@@ -17,3 +17,4 @@ if (-not (Test-Path $logPath)) {
 }
 
 Get-Content -Path $logPath -Wait -Tail 30
+

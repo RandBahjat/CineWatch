@@ -64,6 +64,14 @@ window._ANIME_DATA = [
             thumbnail: "https://media.kitsu.app/episode/393371/thumbnail/64d2eb53b704fc4ef9174175fdcec8ce.jpg",
             duration: "24m",
             overview: "After Lord Beerus and Whis conclude their search on King Kai's planet, the God of Destruction sets his sights directly on Earth to seek out the remaining Saiyans and unravel the mystery of the Super Saiyan God. Meanwhile, the Z-Fighters are gathered on a luxury cruise ship celebrating Bulma's birthday, completely unaware that a universe-threatening deity is about to crash the party."
+          },
+          {
+            episode: 4,
+            title: "The God of Saiyans",
+            absoluteEpisode: 4,
+            thumbnail: "https://media.kitsu.app/episode/393372/thumbnail/ffd56c2dcfc05b1e229ddb76b3974b85.jpg",
+            duration: "24m",
+            overview: "Over a trivial matter, Beerus decides to destroy Earth. In this desperate situation, Goku suggests asking Shenron about the \"Super Saiyan God\" that Beerus seeks. Is it possible to create this warrior, considered a mythical god?!"
           }
         ]
       }
