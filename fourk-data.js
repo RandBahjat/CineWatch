@@ -432,7 +432,35 @@ window._FOURK_DATA = [
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Half_Blood_Prince_2009_English.vtt", srclang: "en", default: true }
     ]
-  }
+  },
 
+  // ============================================================
+  // 16. Harry Potter and the Deathly Hallows – Part 2 (2011)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-deathly-hallows-part-2-2011",
+    title: "Harry Potter and the Deathly Hallows: Part 2",
+    type: "Movie",
+    year: 2011,
+    rating: 8.1,
+    age: "PG-13",
+    duration: "2h 10m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/c54HpQmuwXjHq2C9wMUsxuj0QgD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mJuhIHQuRgFIoRmKmcPqBdPj8TD.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Deathly_Hallows_Part_2_2011_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=mObK5XD8udk",
+    overview: "As Voldemort's forces close in on Hogwarts, Harry, Ron, and Hermione make their final push to destroy the remaining Horcruxes standing between them and the Dark Lord's defeat. With old allies rallying to defend the castle and long-buried secrets finally coming to light, Harry must confront his destiny head-on in a climactic battle that will decide the future of both the wizarding and Muggle worlds.",
+    overviewKurdish: "کاتێک هێزەکانی ڤۆڵدمۆرت نزیک دەبنەوە لە هۆگوارتس، هاری، ڕۆن و هێرمایۆنی هەوڵی کۆتایی خۆیان دەدەن بۆ لەناوبردنی ئەو هۆرکرۆکسانەی ماونەتەوە پێش ئەوەی ڕووبەڕووی لۆردی تاریکی ببنەوە. لە شەڕێکی مەزن و پڕ لە قوربانیدان، هاری ناچار دەبێت ڕووبەڕووی چارەنووسی خۆی ببێتەوە لە شەڕێکدا کە داهاتووی هەردوو جیهان یەکلا دەکاتەوە.",
+    director: "David Yates",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Ralph Fiennes", "Alan Rickman", "Helena Bonham Carter", "Maggie Smith", "Michael Gambon", "Jason Isaacs", "Tom Felton"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_2_2011_English.vtt", srclang: "en", default: true }
+    ]
+  }
 ];
 
