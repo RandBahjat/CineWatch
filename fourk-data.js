@@ -435,7 +435,36 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 16. Harry Potter and the Deathly Hallows – Part 2 (2011)
+  // 16. Harry Potter and the Deathly Hallows – Part 1 (2010)
+  // ============================================================
+  {
+    id: "harry-potter-and-the-deathly-hallows-part-1-2010",
+    title: "Harry Potter and the Deathly Hallows: Part 1",
+    type: "Movie",
+    year: 2010,
+    rating: 7.7,
+    age: "PG-13",
+    duration: "2h 26m",
+    genres: ["Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tHabY8eKqTo2iPIdquymOkcG1ah.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Deathly_Hallows_Part_1_2010_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=MxqsmsA8r5k",
+    overview: "With Hogwarts no longer safe and the Ministry of Magic under Voldemort's control, Harry, Ron, and Hermione set out on a dangerous journey to track down and destroy the remaining Horcruxes tethering Voldemort to life. Isolated from the wizarding world and hunted at every turn, the trio must rely on each other more than ever as old friendships are tested and a devastating loss brings the war even closer to home.",
+    overviewKurdish: "لەگەڵ ئەوەی هۆگوارتس ئیتر پارێزراو نییە و وەزارەتی جادوو کەوتووەتە ژێر دەسەڵاتی ڤۆڵدمۆرت، هاری، ڕۆن و هێرمایۆنی دەست دەکەن بە گەشتێکی پڕ لە مەترسی بۆ دۆزینەوە و لەناوبردنی هۆرکرۆکسەکانی ڤۆڵدمۆرت. لە کاتێکدا لە جیهانی جادووگەران دابڕاون و لە هەموو لایەکەوە ڕاودەنرێن، پێویستە زیاتر لە هەر کاتێک پشت بە یەکتر ببەستن.",
+    director: "David Yates",
+    cast: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Helena Bonham Carter", "Robbie Coltrane", "Ralph Fiennes", "Michael Gambon", "Brendan Gleeson", "Richard Griffiths", "John Hurt", "Jason Isaacs", "Bill Nighy", "Alan Rickman", "Fiona Shaw", "Maggie Smith", "David Thewlis", "Julie Walters"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_1_2010_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 17. Harry Potter and the Deathly Hallows – Part 2 (2011)
   // ============================================================
   {
     id: "harry-potter-and-the-deathly-hallows-part-2-2011",
@@ -446,8 +475,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 10m",
     genres: ["Adventure", "Fantasy", "Family"],
-    poster: "https://image.tmdb.org/t/p/original/c54HpQmuwXjHq2C9wMUsxuj0QgD.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/mJuhIHQuRgFIoRmKmcPqBdPj8TD.jpg",
+    poster: "https://image.tmdb.org/t/p/original/wyoszFX0do5L7gdjAL8LklzR5PB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jcxG63rpUvwxDl1Q159RyqpUV8F.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_And_The_Deathly_Hallows_Part_2_2011_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=mObK5XD8udk",
     overview: "As Voldemort's forces close in on Hogwarts, Harry, Ron, and Hermione make their final push to destroy the remaining Horcruxes standing between them and the Dark Lord's defeat. With old allies rallying to defend the castle and long-buried secrets finally coming to light, Harry must confront his destiny head-on in a climactic battle that will decide the future of both the wizarding and Muggle worlds.",
