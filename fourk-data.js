@@ -32,7 +32,36 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 2. The Amazing Spider-Man (2012)
+  // 2. Resident Evil (2026)
+  // ============================================================
+  {
+    id: "resident-evil-2026",
+    title: "Resident Evil",
+    type: "Movie",
+    year: 2026,
+    rating: 7.5,
+    age: "R",
+    duration: "1h 35m",
+    genres: ["Horror", "Action", "Sci-Fi"],
+    poster: "https://images.kmphotos.cv/tmdb/poster/resident-evil.2026.84a80b3fc71c.webp",
+    backdrop: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_Backdrop.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=N6r527rBwU8",
+    overview: "Late one winter night, medical courier Bryan Hodukavich accepts a high-paying emergency job to transport a sealed containment vessel to Raccoon General Hospital deep in the secluded Colorado mountains. While arguing on the phone with his pregnant girlfriend, Bryan becomes distracted on a desolate mountain highway and hits a woman who suddenly wanders into the road. Attempting to find help, he stops at a nearby farmhouse, only to realize the surrounding locals and wildlife have begun mutating into grotesque, flesh-fused abominations. Infected himself during a brutal encounter and racing against the T-Virus clock, Bryan must battle through overrun sewers, blood-soaked streets, and a monstrous biological amalgam to deliver the package to Umbrella Corporation’s underground lab—only to discover the horrifying reality of what he was transporting.",
+    overviewKurdish: "لە شەوێکی ساردی زستاندا، گەیەنەرێکی پزیشکی بە ناوی برایان کارێکی بەپەلە و بەنرخ قبوڵ دەکات بۆ گواستنەوەی دەفرێکی پارێزراو بۆ نەخۆشخانەی گشتی ڕاکوون لە ناو شاخەکانی کۆلۆرادۆ. لە ڕێگادا تووشی ڕووداو دەبێت و زۆری پێناچێت دەبینێت خەڵکی ناوچەکە و ئاژەڵەکان تووشی گۆڕانکاری و ڤایرۆسی مەترسیداری تی-ڤایرۆس بوون. برایان لە کاتێکدا خۆیشی تووش دەبێت، دەبێت لە دژی کات و بوونەوەرە تۆقێنەرەکان بجەنگێت بۆ گەیاندنی دەفرەکە بۆ تاقیگەی نهێنی کۆمپانیای ئەمبرێلا.",
+    director: "Zach Cregger",
+    cast: ["Austin Abrams", "Paul Walter Hauser", "Kali Reis", "Zach Cherry", "Johnno Wilson"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 3. The Amazing Spider-Man (2012)
   // ============================================================
   {
     id: "the-amazing-spider-man-2012",
