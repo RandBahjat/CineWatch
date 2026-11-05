@@ -1483,19 +1483,22 @@ window._MOVIES_DATA = [
     rating: 8.2,
     age: "PG-13",
     duration: "2h 20m",
-    genres: ["Action", "Crime"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+    genres: ["Action", "Crime", "Drama"],
+    poster: "https://image.tmdb.org/t/p/original/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
-    videoUrl: "272",
-    trailerUrl: "",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=neY2xVmOfUM",
     overview: "Haunted by his parents' death and driven by a need to conquer his own fears, Bruce Wayne disappears from Gotham to train under the mysterious League of Shadows. Returning years later with new skills and resolve, he becomes Batman — a symbol meant to strike fear into criminals while he wages a personal war against the corruption consuming his city, including a mysterious threat orchestrated by the sinister Ra's al Ghul and Scarecrow.",
-    overviewKurdish: "",
+    overviewKurdish: "بروس وەین دوای کوژرانی دایک و باوکی و نائومێد بوونی لە گەندەڵی شاری گۆثەم، گەشت بە جیهاندا دەکات بۆ ئەوەی فێری شێوازەکانی شەڕکردن دژی زوڵم و ستەم بێت. لە ژێر سەرپەرشتی کۆمەڵەی سێبەرەکان ڕاهێنان دەکات و دەگەڕێتەوە بۆ گۆثەم، دەبێتە باتمان تا ترس بخاتە دڵی تاوانباران و ڕووبەڕووی پیلانگێڕییەکی گەورە ببێتەوە کە هەڕەشە لە لەناوبردنی تەواوی شارەکە دەکات.",
     director: "Christopher Nolan",
     cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Katie Holmes", "Gary Oldman", "Cillian Murphy", "Morgan Freeman"],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt", srclang: "en", default: true }
+    ]
   },
 
   // ============================================================

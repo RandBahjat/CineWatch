@@ -43,8 +43,8 @@ window._FOURK_DATA = [
     age: "R",
     duration: "1h 35m",
     genres: ["Horror", "Action", "Sci-Fi"],
-    poster: "https://images.kmphotos.cv/tmdb/poster/resident-evil.2026.84a80b3fc71c.webp",
-    backdrop: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_Backdrop.jpg",
+    poster: "https://image.tmdb.org/t/p/original/guq5cJ43v0qcMtLqrYHe5P9fgFM.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=N6r527rBwU8",
     overview: "Late one winter night, medical courier Bryan Hodukavich accepts a high-paying emergency job to transport a sealed containment vessel to Raccoon General Hospital deep in the secluded Colorado mountains. While arguing on the phone with his pregnant girlfriend, Bryan becomes distracted on a desolate mountain highway and hits a woman who suddenly wanders into the road. Attempting to find help, he stops at a nearby farmhouse, only to realize the surrounding locals and wildlife have begun mutating into grotesque, flesh-fused abominations. Infected himself during a brutal encounter and racing against the T-Virus clock, Bryan must battle through overrun sewers, blood-soaked streets, and a monstrous biological amalgam to deliver the package to Umbrella Corporation’s underground lab—only to discover the horrifying reality of what he was transporting.",
@@ -72,8 +72,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/bWZwiaJSXwYILxi3bE5Quwy5UXC.jpg",
+    poster: "https://image.tmdb.org/t/p/original/tkFTssETPchiUXCnbU7dm5tKRUe.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6wzxMnxloeFpqv1hQ4OTRsz0qg9.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_IMAX_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=uhUht6vAsMY",
     overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him — using both technology and public opinion as weapons — Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
@@ -90,7 +90,36 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 4. The Amazing Spider-Man (2012)
+  // 4. Batman Begins (2005)
+  // ============================================================
+  {
+    id: "batman-begins-2005",
+    title: "Batman Begins",
+    type: "Movie",
+    year: 2005,
+    rating: 8.2,
+    age: "PG-13",
+    duration: "2h 20m",
+    genres: ["Action", "Crime", "Drama"],
+    poster: "https://image.tmdb.org/t/p/original/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=neY2xVmOfUM",
+    overview: "Driven by the tragedy of his parents' murder and disillusioned with Gotham's corruption, billionaire heir Bruce Wayne travels the world seeking the means to fight injustice. Mentored by the mysterious Ra's al Ghul and Henri Ducard of the League of Shadows, he masters physical and mental discipline. Returning to Gotham, Bruce embraces the dark mantle of Batman to strike terror into criminals, confronting the psychotic Scarecrow and an underground conspiracy that threatens to plunge the city into mass hysteria and destruction.",
+    overviewKurdish: "بروس وەین دوای کوژرانی دایک و باوکی و نائومێد بوونی لە گەندەڵی شاری گۆثەم، گەشت بە جیهاندا دەکات بۆ ئەوەی فێری شێوازەکانی شەڕکردن دژی زوڵم و ستەم بێت. لە ژێر سەرپەرشتی کۆمەڵەی سێبەرەکان ڕاهێنان دەکات و دەگەڕێتەوە بۆ گۆثەم، دەبێتە باتمان تا ترس بخاتە دڵی تاوانباران و ڕووبەڕووی پیلانگێڕییەکی گەورە ببێتەوە کە هەڕەشە لە لەناوبردنی تەواوی شارەکە دەکات.",
+    director: "Christopher Nolan",
+    cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Katie Holmes", "Gary Oldman", "Cillian Murphy", "Morgan Freeman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 5. The Amazing Spider-Man (2012)
   // ============================================================
   {
     id: "the-amazing-spider-man-2012",
