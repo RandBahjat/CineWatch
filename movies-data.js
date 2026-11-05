@@ -2114,22 +2114,25 @@ window._MOVIES_DATA = [
     title: "Superman",
     type: "Movie",
     year: 2025,
-    rating: 7,
+    rating: 8.5,
     age: "PG-13",
-    duration: "2h 9 m",
+    duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mlI9Xiq19VvZESv_r0yRJgb4XIu-Ht0tCR_oMGftFQ&s=10",
+    poster: "https://image.tmdb.org/t/p/original/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bWZwiaJSXwYILxi3bE5Quwy5UXC.jpg",
-    videoUrl: "1061474",
-    trailerUrl: "",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_IMAX_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=uhUht6vAsMY",
     overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him — using both technology and public opinion as weapons — Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
-    overviewKurdish: "",
+    overviewKurdish: "سوپەرمان هاوسەنگی لە نێوان ڕەچەڵەکی کریپتۆنی خۆی و ئەو بەهایانەی لە کەنساس پێی گەورە بووە ڕادەگرێت، لە جیهانێکدا کە ڕۆژ بە ڕۆژ زیاتر گومان لە مەبەستەکانی دەکات. کاتێک لێکس لوتۆر پلانێکی ورد دادەڕێژێت بۆ لەناوبردنی، سوپەرمان دەبێت بڕیار بدات کە دەیەوێت ببێتە چ جۆرە پاڵەوانێک و بیسەلمێنێت کە میهرەبانی هێشتا هێزێکە شایەنی شەڕکردنە.",
     director: "James Gunn",
     cast: ["David Corenswet, Rachel Brosnahan, Nicholas Hoult, Edi Gathegi, Anthony Carrigan, Nathan Fillion"],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_English.vtt", srclang: "en", default: true }
+    ]
   },
 
   // ============================================================
