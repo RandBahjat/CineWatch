@@ -119,7 +119,7 @@ const POPULAR_MOVIES = [
   "Apocalypse Z: New World",
   "The Odysessey",
   "Mutiny",
-  "Moana(2026)",
+  "Verity",
   "The Runner",
   "Obsession",
   "Spider-Man: No Way Home",
