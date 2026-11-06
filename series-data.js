@@ -4,6 +4,101 @@
 
 window._SERIES_DATA = [
   // ============================================================
+  // Campus Drivers (2026 - Present)
+  // ============================================================
+  {
+    "id": "campus-drivers-2026",
+    "title": "Campus Drivers",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": 7.8,
+    "age": "TV-MA",
+    "duration": "1 Season",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/yxlAJqniqx5Qn2CVCDB97FDhQx7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/oaWJm4brEMSWBmQIB73DFxsU683.jpg",
+    "videoUrl": "303044",
+    "trailerUrl": "https://www.youtube.com/watch?v=xybsbjGt1KA",
+    "overview": "Lois has everything going for her: she's been accepted into the prestigious Belrose University alongside her lifelong love, Max. Lane, on the other hand, lives by his own rules. Creator of Campus Drivers, the hottest app on campus, he is as famous for his devastating smile as for his inability to commit. Their paths were never supposed to cross. Until the night when Lois, heartbroken, shows up on his doorstep. An unexpected cohabitation. Two worlds colliding. And an attraction impossible to ignore. But some encounters change everything… even awakening buried wounds. And when love arrives uninvited, nothing is certain anymore.",
+    "overviewKurdish": "لۆیس هەموو شتێکی بۆ فەراهەم بووە: لە زانکۆی بەناوبانگی بێلرۆز لەگەڵ ماکس، خۆشەویستە دێرینەکەی، وەرگیراوە. لە لایەکی ترەوە، لەین بەپێی یاساکانی خۆی دەژی؛ ئەو دروستکەری «کەمپەس درایڤەرز»ە کە گەرمترین ئەپڵیکەیشنی گواستنەوەی خوێندکارانە لە کەمپەسدا، و هێندەی بە زەردەخەنە سەرنجڕاکێشەکەی ناسراوە هێندەش بە ڕاکردنی لە پەیوەندیی جدی ناوی دەرکردووە. هەرگیز بڕیار نەبوو ڕێگاکانیان یەکبگرن، تا ئەو شەوەی لۆیس، بە دڵشکاوەیی و لەدەستدانی شوێنی مانەوەی، لە دەرگای لەین دەدات. ژیانێکی هاوبەشی چاوەڕواننەکراو دەستپێدەکات، دوو جیهانی جیاواز بەیەک دەگەن، و ڕاکێشانێکی بەهێز لە نێوانیاندا سەرهەڵدەدات کە مەحاڵە پشتگوێ بخرێت.",
+    "director": "Tom Goris, Vianney Lebasque",
+    "cast": [
+      "Carmen Kassovitz",
+      "Baptiste Masseline",
+      "Prune Pauchet",
+      "Esteban Vial",
+      "Madior Fall",
+      "Félix Nebel"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Heartbreak",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/b2AQJPuAdGEzAciuafS4ZuegubW.jpg",
+            "duration": "46 min",
+            "overview": "No sooner had she arrived in Belrose than Loïs lost everything: her boyfriend and her flat. With nowhere else to go, she ends up moving in with Lane O'Neill, a popular yet enigmatic student. Along with his best mates, he's launched Campus Drivers, a student ride-hailing app. But Loïs's arrival, combined with Aaron's return to campus, soon threatens to shake up the calm."
+          },
+          {
+            "episode": 2,
+            "title": "New Girl",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7AFzcunvSQpFiLn6ENNjCBicDtr.jpg",
+            "duration": "43 min",
+            "overview": "At Belrose, everything seems to go wrong for Loïs, and even her scholarship is at risk. Determined to stay, she finds support in Becca, Carrie, Hope, and Prudence, slowly rebuilding her confidence. But living with Lane raises new questions. Between the mysterious locked room and Aaron's return, the secrets surrounding Lane threaten the fragile balance they've built."
+          },
+          {
+            "episode": 3,
+            "title": "Zombie Girl",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/rs3euBWAh7nlpJmYYzCV0bDcOxz.jpg",
+            "duration": "43 min",
+            "overview": "Loïs gradually drifts away from Max and grows closer to Lane, with whom a real bond begins to form. But her curiosity about Lane's past threatens their fragile connection. The return of Lane's mother, who puts him in charge of the Alumni Gala, and the escalation with Aaron point to one thing: his past is about to catch up with him."
+          },
+          {
+            "episode": 4,
+            "title": "Winter Break",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/of7B5XrkaEWb43cUmdKh2Q4WNIL.jpg",
+            "duration": "38 min",
+            "overview": "Alone at Christmas, Lane is invited to spend the holidays with Loïs's family in the mountains. Away from Belrose, their bond takes on a new dimension. But Max's unexpected return disrupts their growing closeness and throws Loïs's feelings into turmoil."
+          },
+          {
+            "episode": 5,
+            "title": "Game Over",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cpuqCOain3V8tK7dqQSqIfDRVZv.jpg",
+            "duration": "28 min",
+            "overview": "The physical closeness between Loïs and Lane creates an awkwardness between them. As Loïs hesitates to take her independence, Lane falters under pressure from his mother, who forces Aaron by his side for the Gala. When Lane's wounds get the better of him, their relationship is put to the test."
+          },
+          {
+            "episode": 6,
+            "title": "Supermad",
+            "airDate": "2026-11-06",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/x3NEBScqC2QcEdm6fuyskF1b7n5.jpg",
+            "duration": "42 min",
+            "overview": "Hurt, Loïs refocuses on her future and switches to medicine, keeping her distance from Lane despite his apologies. Consumed by regret, Lane withdraws into himself. He decides to take control of his destiny by writing his own story. The Gala becomes the stage for revelations, where Lane will finally break free from the chains of his past and bring the truth to light."
+          }
+        ]
+      }
+    ]
+  },
+  // ============================================================
   // Dexter: Resurrection (2025 - Present)
   // ============================================================
   {

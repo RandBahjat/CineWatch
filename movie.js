@@ -77,13 +77,13 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-  "Apocalypse Z: New World",
-  "Dexter: Resurrection",
-  "The Dog Stars",
-  "Verity",
-  "Clayface",
-  "Sense and Sensibility",
-  "Cyberpunk: Edgerunners",
+  "Heart of the Beast",
+  "Possible Love",
+  "Resident Evil",
+  "Model Citizen",
+  "The Mongoose",
+  "Godzilla Minus Zero",
+  "Primetime",
   "The Odyssey",
   "You Can See Everything",
   "Obsession"
@@ -99,6 +99,7 @@ let TRENDING_THIS_WEEK_MOVIES = [
   "Verity"
 ];
 let TRENDING_THIS_WEEK_SERIES = [
+  "Campus Drivers",
   "VisionQuest",
   "MobLand",
   "Neagley",
