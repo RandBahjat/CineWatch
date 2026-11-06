@@ -63,30 +63,30 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
+  "Heart of the Beast",
   "Dexter: Resurrection",
   "Apocalypse Z: New World",
-  "Sense and Sensibility",
+  "Model Citizen",
+  "Campus Drivers",
   "Clayface",
   "The Dog Stars",
   "By Any Means",
-  "Verity",
+  "A Dog's Perfect Christmas",
   "Dragon Ball Super: Beerus",
-  "Cyberpunk: Edgerunners",
-  "VisionQuest",
-  "Spider-Man: Brand New Day"
+  "VisionQuest"
   
 ];
 let TOP_10_TRENDING_TODAY = [
   "Heart of the Beast",
   "Possible Love",
   "Resident Evil",
+  "Campus Drivers",
   "Model Citizen",
   "The Mongoose",
   "Godzilla Minus Zero",
   "Primetime",
-  "The Odyssey",
-  "You Can See Everything",
-  "Obsession"
+  "MobLand",
+  "A Dog's Perfect Christmas"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
   "Clayface",

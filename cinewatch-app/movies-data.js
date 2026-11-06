@@ -5,6 +5,27 @@
 window._MOVIES_DATA = [
 
   {
+    title: "A Dog's Perfect Christmas",
+    type: "Movie",
+    year: 2026,
+    rating: 6.5,
+    age: "TV-14",
+    duration: "1h 39m",
+    genres: ["Family","Drama","Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hhQT0TySg3LXCE8BEPpfPJ5zJA2.jpg",
+    videoUrl: "1570488",
+    trailerUrl: "https://youtu.be/L18ih13Bf-U?si=q3UtMqE_JIC8AsAs",
+    overview: "Adapted from W. Bruce Cameron's heartwarming holiday novel, the story follows the Goss family as they struggle to hold themselves together through a season of unexpected personal crises and fractured relationships just days before Christmas. When a young girl rescues an abandoned, mischievous puppy named Ellabelle and brings her into their chaotic home, the devoted four-legged newcomer becomes the unlikely glue that heals old wounds and restores the spirit of the holidays.",
+    overviewKurdish: "لەسەر بنەمای ڕۆمانە دڵگیرەکەی «دەبلیو برووس کامیرۆن»، چیرۆکەکە باس لە خێزانی گۆس دەکات کە تەنها چەند ڕۆژێک پێش جەژنی کریسمس ڕووبەڕووی کۆمەڵێک قەیرانی کەسیی چاوەڕواننەکراو و گرژیی خێزانی دەبنەوە. کاتێک کچە بچووکەکەیان تووتکەسەگێکی جێهێڵراو و بزێو بە ناوی «ئێلابێڵ» ڕزگار دەکات و دەیباتەوە بۆ ناو ماڵە پڕ لە ئاژاوەکەیان، ئەم میوانە بچووک و بەوەفایە دەبێتە هۆکاری سارێژبوونی برینە کۆنەکان و گەڕاندنەوەی خۆشەویستی و ڕۆحی جەژن بۆ ناو خێزانەکە.",
+    director: "Cathryn Michon",
+    cast: ["Milo Ventimiglia, Jennifer Tilly, Dennis Quaid"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Mongoose",
     type: "Movie",
     year: 2026,

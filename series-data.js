@@ -112214,6 +112214,416 @@ window._SERIES_DATA = [
         ]
       }
     ]
+  },
+  // ============================================================
+  // Tulsa King (2022 - Present)
+  // ============================================================
+  {
+    "id": "tulsa-king-2022",
+    "title": "Tulsa King",
+    "type": "TV Show",
+    "year": 2022,
+    "rating": 8.3,
+    "age": "TV-MA",
+    "duration": "4 Seasons",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+    "videoUrl": "153312",
+    "trailerUrl": "https://www.youtube.com/watch?v=aaQSScwZPbA",
+    "overview": "Just after he is released from prison after 25 years, New York mafia capo Dwight \"The General\" Manfredi is unceremoniously exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew from a group of unlikely characters to help him establish a new criminal empire in a place that to him might as well be another planet.",
+    "overviewKurdish": "دەستبەجێ دوای ئازادبوونی لە زیندان پاش ٢٥ ساڵ مانەوە لە پشت میلەکان، کاپۆی مافیای نیویۆرک دوایت «ژەنەڕاڵ» مانفرێدی لەلایەن سەرۆکەکەیەوە دوورخرێتەوە بۆ تالسا لە ئۆکلاهۆما بۆ کردنەوەی لقێکی نوێ. دوایت کە درک بەوە دەکات خێزانە مافیاکەی ڕەنگە بەرژەوەندیی ئەویان لەبەرچاو نەبێت، دەست دەکات بە کۆکردنەوە و دروستکردنی تیمێکی نوێ لە کۆمەڵێک کەسایەتیی چاوەڕواننەکراو بۆ ئەوەی ئیمپراتۆریەتێکی تاوانکاریی سەربەخۆ لە شوێنێکدا بنیات بنێت کە بۆ ئەو وەک هەسارەیەکی دیکە وایە.",
+    "director": "Taylor Sheridan",
+    "cast": [
+      "Sylvester Stallone",
+      "Martin Starr",
+      "Jay Will",
+      "Vincent Piazza",
+      "Annabella Sciorra",
+      "Chris Caldovino",
+      "McKenna Quigley Harrington",
+      "Frank Grillo"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Go West, Old Man",
+            "airDate": "2022-11-13",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/dOe72mwnTFg6ec4gX8szoNgafEr.jpg",
+            "duration": "42 min",
+            "overview": "Dwight, blindsided by the news that his mob family has nothing left for him in New York, is sent to Tulsa, Oklahoma; as he settles in and surveys his new surroundings, Dwight wastes no time making new associates."
+          },
+          {
+            "episode": 2,
+            "title": "Center of the Universe",
+            "airDate": "2022-11-20",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2CpHeTMQQJjgIAWXE3VyPeUPmux.jpg",
+            "duration": "38 min",
+            "overview": "Dwight, Tyson, and Bodhi go on a road trip to take care of some business; Stacy does some digging into Dwight's past."
+          },
+          {
+            "episode": 3,
+            "title": "Caprice",
+            "airDate": "2022-11-27",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ntW59Upv7ihGxHgYLTQDNYu5y4b.jpg",
+            "duration": "40 min",
+            "overview": "Dwight takes note of a possible new business opportunity. Later, a routine errand has an explosive, unexpected outcome. Stacy opens up to Dwight about what led her to Tulsa."
+          },
+          {
+            "episode": 4,
+            "title": "Visitation Place",
+            "airDate": "2022-12-04",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/jTesVrxg1CkdKYHeQsYDOYDAW2R.jpg",
+            "duration": "40 min",
+            "overview": "At the Tulsa Arena, Dwight and company test out their new plan, until a roadblock forces them to adjust and defend their turf. Tyson and his father argue about his future. Dwight gets an unexpected call."
+          },
+          {
+            "episode": 5,
+            "title": "Token Joe",
+            "airDate": "2022-12-11",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ef8FQKmaxMVyj19JubHl3mgOdIB.jpg",
+            "duration": "37 min",
+            "overview": "Dwight returns to New York under unfortunate circumstances, where his reunion with his daughter and family doesn't go quite as expected. Back in Tulsa, Tyson runs into some trouble. Armand gets some news from Roxy."
+          },
+          {
+            "episode": 6,
+            "title": "Stable",
+            "airDate": "2022-12-18",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/pvsWgF9Q8KEKq1AAFXqt3mx1YB3.jpg",
+            "duration": "40 min",
+            "overview": "Dwight visits Tina before returning to Tulsa. Pete agrees to send Goodie to Oklahoma, while Roxy tries to keep the FBI at bay. Dwight has an offer for Mitch."
+          },
+          {
+            "episode": 7,
+            "title": "Warr Acres",
+            "airDate": "2022-12-25",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/bodFvKO9iKvtdzWG2E4MnBRtpRU.jpg",
+            "duration": "43 min",
+            "overview": "Stacy makes a decision that has serious consequences. Dwight and Armand dispose of evidence, and Bodhi proposes a new plan. Tina contemplates her future."
+          },
+          {
+            "episode": 8,
+            "title": "Adobe Walls",
+            "airDate": "2023-01-01",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/eCvaXeQvzDjxYPC9Vxv4va7RLGD.jpg",
+            "duration": "37 min",
+            "overview": "Dwight and Bodhi lay out the casino plan for Jimmy. As pressure increases, Dwight, Mitch, and Tyson assemble their team. Stacy confronts Waltrip."
+          },
+          {
+            "episode": 9,
+            "title": "Happy Trails",
+            "airDate": "2023-01-08",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/5kme01g9nQhOwxaLs4corudfpoe.jpg",
+            "duration": "43 min",
+            "overview": "It's all hands on deck as tensions between Dwight's crew and Waltrip escalate past the point of no return. Elsewhere, a flashback reveals what sent Dwight to prison 25 years ago."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Back in the Saddle",
+            "airDate": "2024-09-15",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/aKybcN7eYWrsd3oDB0Y1atTDLrq.jpg",
+            "duration": "43 min",
+            "overview": "As Dwight and his crew prepare for the opening of their casino and new weed shop, the law comes knocking."
+          },
+          {
+            "episode": 2,
+            "title": "Kansas City Blues",
+            "airDate": "2024-09-22",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/j7tEgHboQDBgarQOLLVkpmZqf31.jpg",
+            "duration": "44 min",
+            "overview": "A family member from Dwight's past surprises him in Tulsa, meanwhile his newfound success draws attention from the Kansas City Mob."
+          },
+          {
+            "episode": 3,
+            "title": "Oklahoma v. Manfredi",
+            "airDate": "2024-09-29",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cWFAqz2f4AucLuVc3qIj3fPYjsK.jpg",
+            "duration": "43 min",
+            "overview": "Dwight has a contentious meeting with Bill Bevilaqua and later finds out his fate in court."
+          },
+          {
+            "episode": 4,
+            "title": "Heroes and Villains",
+            "airDate": "2024-10-06",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/x49IrHqr9ZYLklIG8I2ZSz4TtrN.jpg",
+            "duration": "45 min",
+            "overview": "Dwight and Bodhi explore a new investment opportunity. Meanwhile, Thresher learns how far he can push certain people."
+          },
+          {
+            "episode": 5,
+            "title": "Tilting at Windmills",
+            "airDate": "2024-10-13",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/qcFKPnlM6FIsQA8pLQJ3DxUhbdr.jpg",
+            "duration": "40 min",
+            "overview": "Thresher makes a move on Dwight's crew as tensions rise within the New York City Mob family."
+          },
+          {
+            "episode": 6,
+            "title": "Navigator",
+            "airDate": "2024-10-20",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/lA1lXgbX08rDgXVgOcKIG8kHKcO.jpg",
+            "duration": "38 min",
+            "overview": "Dwight has a sit-down with Kansas City and New York. Tyson tries to make his family proud but it comes at a price."
+          },
+          {
+            "episode": 7,
+            "title": "Life Support",
+            "airDate": "2024-10-27",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xb3qUdeVgeR95YB8eQHgUz0prnp.jpg",
+            "duration": "40 min",
+            "overview": "Dwight and his crew try to identify who's responsible for the recent attack. Power dynamics within the NYC Mob start to shift."
+          },
+          {
+            "episode": 8,
+            "title": "Under New Management",
+            "airDate": "2024-11-03",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/pYwQAxFeTVcXcPWHg86Jr9P1NCD.jpg",
+            "duration": "43 min",
+            "overview": "Bevilaqua prepares for revenge. Thresher and Ming discuss a new arrangement."
+          },
+          {
+            "episode": 9,
+            "title": "Triad",
+            "airDate": "2024-11-10",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2HPELYiW5rhReFwo7CplwY2j4o5.jpg",
+            "duration": "37 min",
+            "overview": "Margaret gets caught up in the middle of Dwight's business as trouble ensues at Fennario Ranch."
+          },
+          {
+            "episode": 10,
+            "title": "Reconstruction",
+            "airDate": "2024-11-17",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/fBGaUvBgaWaAf45898cylageRiz.jpg",
+            "duration": "36 min",
+            "overview": "Dwight and his crew tie up loose ends as their empire expands."
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Blood and Bourbon",
+            "airDate": "2025-09-21",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/kVcIMFusIwWQrVwRidDJKBDoqYX.jpg",
+            "duration": "48 min",
+            "overview": "Dwight tries to secure a distillery deal."
+          },
+          {
+            "episode": 2,
+            "title": "The Fifty",
+            "airDate": "2025-09-28",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/pl4h2iMdnfBcsyQZdzXyJlPttuD.jpg",
+            "duration": "45 min",
+            "overview": "Dwight faces threats from Jeremiah Dunmire and the Dixie Mafia."
+          },
+          {
+            "episode": 3,
+            "title": "The G and the OG",
+            "airDate": "2025-10-05",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1tSPCXDWj7a98ZLqtd9ztlQloaL.jpg",
+            "duration": "48 min",
+            "overview": "Dwight is forced to work with Agent Musso to take down a terrorist."
+          },
+          {
+            "episode": 4,
+            "title": "Staring Down the Barrel",
+            "airDate": "2025-10-12",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1cF0plTuMFx0tjL9NHDOHLtvNa5.jpg",
+            "duration": "41 min",
+            "overview": "Dwight rallies his crew to recover the stolen bourbon from Dunmire."
+          },
+          {
+            "episode": 5,
+            "title": "On the Rocks",
+            "airDate": "2025-10-19",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/hkQOabNWDwdHhX4ytSg6EVsLWe5.jpg",
+            "duration": "44 min",
+            "overview": "Dwight launches his bourbon brand as Dunmire schemes to crash the event."
+          },
+          {
+            "episode": 6,
+            "title": "Bubbles",
+            "airDate": "2025-10-26",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mkqWRARiYLT0WQL9921yWwdFyE2.jpg",
+            "duration": "40 min",
+            "overview": "Dwight scrambles while facing threats from Dunmire and Quiet Ray."
+          },
+          {
+            "episode": 7,
+            "title": "Art of War",
+            "airDate": "2025-11-02",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/6MjNEf7gPhsK7NeV7OfQfChP5cV.jpg",
+            "duration": "40 min",
+            "overview": "Dwight moves to reopen his distillery. Tyson, Goodie & Spencer run a sting."
+          },
+          {
+            "episode": 8,
+            "title": "Nothing Is Over",
+            "airDate": "2025-11-09",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1W3A4cF4Pstx8rZBI3e1rv1cCQt.jpg",
+            "duration": "41 min",
+            "overview": "Dwight uncovers a deadly plan by Dunmire and races to stop it."
+          },
+          {
+            "episode": 9,
+            "title": "Dead Weight",
+            "airDate": "2025-11-16",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/jRgOHqIt1NEta7mEmCndxS0hYsY.jpg",
+            "duration": "40 min",
+            "overview": "As Dwight expands his liquor empire, Tyson's side hustle draws heat."
+          },
+          {
+            "episode": 10,
+            "title": "Jesus Lizard",
+            "airDate": "2025-11-23",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/imjg5MVfmNnmpJvJzbIh6n6A6Xz.jpg",
+            "duration": "38 min",
+            "overview": "Dwight and his crew gear up for all-out war."
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "W.W.D.D.",
+            "airDate": "2026-10-16",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/vgs4jNN99YfC8O2ElCqDqD4Wyys.jpg",
+            "duration": "44 min",
+            "overview": "Dwight leads his crew toward expanding their empire. Season premiere."
+          },
+          {
+            "episode": 2,
+            "title": "Blind Rooster",
+            "airDate": "2026-10-23",
+            "rating": 8.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/fARP0KCN1dygMoWepGmJLa7FkAj.jpg",
+            "duration": "41 min",
+            "overview": "Reeling from a crushing personal loss, Dwight leans on Bodhi's unexpected honesty as his crew faces fallout from Tyson's tainted pills."
+          },
+          {
+            "episode": 3,
+            "title": "Cease & Desist",
+            "airDate": "2026-10-30",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/5QrA5SeIsOIzDTOqbLADqymT7gz.jpg",
+            "duration": "44 min",
+            "overview": "Dwight rallies the troops to fight back as Governor Clark shuts down his businesses, freezes bourbon shipments, and targets his crew."
+          },
+          {
+            "episode": 4,
+            "title": "Square One",
+            "airDate": "2026-11-06",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/505bDYzfILnGh9EYvlEffyqdhRt.jpg",
+            "duration": "44 min",
+            "overview": "Dwight regroups as Mitch and Spencer prep for a high stakes score. Bodhi expands a counterfeit scheme, and Tyson tests his rap ambitions."
+          },
+          {
+            "episode": 5,
+            "title": "Dinosaurs",
+            "airDate": "2026-11-13",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7IQmyY8uLb5Ouv8KGqNwhuyOfl2.jpg",
+            "duration": "40 min",
+            "overview": "Dwight sees his enemies multiplying. Bodhi and Timpone race to profit from their wine as Mitch and Spencer make a discovery worth millions."
+          },
+          {
+            "episode": 6,
+            "title": "Racket Club",
+            "airDate": "2026-11-20",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/wiEBpxf5Y8hGgLqdRigA552cUSh.jpg",
+            "duration": "40 min",
+            "overview": "Dwight battles Turco's rising demands while racing to protect the ranch from Van Heusen's land grab. Tyson gets a life changing offer."
+          },
+          {
+            "episode": 7,
+            "title": "Black Diamonds",
+            "airDate": "2026-11-27",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+            "duration": "40 min",
+            "overview": "Dwight expands his operation while seeking stronger backing abroad. Mitch and Spencer look to score big at the track."
+          },
+          {
+            "episode": 8,
+            "title": "Episode 8",
+            "airDate": "2026-12-04",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+            "duration": "40 min",
+            "overview": ""
+          },
+          {
+            "episode": 9,
+            "title": "Nerved Up",
+            "airDate": "2026-12-11",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/w0GMYXJNqpnaPu4o5sSQ6tpdNA2.jpg",
+            "duration": "40 min",
+            "overview": "Dwight corners Governor Clark before heading to New York to confront Quiet Ray. Meanwhile, Bevilaqua feeds both sides, triggering a deadly showdown."
+          },
+          {
+            "episode": 10,
+            "title": "Exit Interview",
+            "airDate": "2026-12-18",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3mH3EqrA5dct6MIRqt1SX3DYtY5.jpg",
+            "duration": "40 min",
+            "overview": "Dwight's empire is on the brink - but a brutal double-cross shifts the balance of power, forcing him towards a dangerous new throne."
+          }
+        ]
+      }
+    ]
   }
 
 ];
