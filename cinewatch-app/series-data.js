@@ -41625,6 +41625,285 @@ window._SERIES_DATA = [
   },
 
   // ============================================================
+  // Lupin (2021 - Present)
+  // ============================================================
+  {
+    "id": "lupin-2021",
+    "title": "Lupin",
+    "type": "TV Show",
+    "year": 2021,
+    "rating": 7.7,
+    "age": "TV-MA",
+    "duration": "3 Seasons",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
+    "videoUrl": "96677",
+    "trailerUrl": "https://www.youtube.com/watch?v=ga0iTWXCGa0",
+    "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+    "overviewKurdish": "بە ئیلهاموەرگرتن لە سەرکێشییەکانی ئارسێن لوپین، پیاوی بەڕێز و دزی بەناوبانگ ئەسان دیۆپ بڕیار دەدات تۆڵەی باوکی بکاتەوە بەرامبەر ئەو ستەم و نادادپەروەرییەی لەلایەن خێزانێکی دەوڵەمەندەوە لێیکراوە.",
+    "director": "George Kay, François Uzan",
+    "cast": [
+      "Omar Sy",
+      "Ludivine Sagnier",
+      "Antoine Gouy",
+      "Soufiane Guerrab",
+      "Shirine Boutella",
+      "Théo Christine",
+      "Laïka Blanc-Francard"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Chapter 1",
+            "airDate": "2021-01-08",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/edgLqKlZR1dB73duRSO3fgBqhOP.jpg",
+            "duration": "47 min",
+            "overview": "Years after a tragic injustice, Assane seeks to settle a score — and a debt — by stealing a diamond necklace, but the heist takes an unexpected turn."
+          },
+          {
+            "episode": 2,
+            "title": "Chapter 2",
+            "airDate": "2021-01-08",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/71i63q3dtI3iSaEifHS72AvRbsl.jpg",
+            "duration": "52 min",
+            "overview": "Assane hatches a plot to contact Comet, an inmate who steers him to a clue about Babakar's demise. Anne Pellegrini comes clean about the past."
+          },
+          {
+            "episode": 3,
+            "title": "Chapter 3",
+            "airDate": "2021-01-08",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7VcD2tQw5epoBmc8JyNGpVniV8X.jpg",
+            "duration": "42 min",
+            "overview": "Assane confronts Commissioner Dumont and plants a decoy to divert the police. Hubert Pellegrini's connection to Babakar's fate comes to light."
+          },
+          {
+            "episode": 4,
+            "title": "Chapter 4",
+            "airDate": "2021-01-08",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9W14cjDqiXJTM3eVhoBPSujMy6D.jpg",
+            "duration": "47 min",
+            "overview": "To retrieve incriminating evidence on Hubert, Assane enlists the help of a journalist. Officer Guédira connects the dots around the Louvre heist."
+          },
+          {
+            "episode": 5,
+            "title": "Chapter 5",
+            "airDate": "2021-01-08",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/eAnPhMtxJCdvrDfzTz8VGuMBCyS.jpg",
+            "duration": "43 min",
+            "overview": "En route to Étretat with Claire and Raoul, Assane encounters an unwelcome figure. In a bind, Assane sends a message to Capt. Laugier."
+          },
+          {
+            "episode": 6,
+            "title": "Chapter 6",
+            "airDate": "2021-06-11",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/jfpWnI2oJktIFD0hBoZ91fIPQ7n.jpg",
+            "duration": "43 min",
+            "overview": "Assane searches for Raoul with Guédira in tow. In a deserted Normandy mansion, a heated confrontation erupts between Leonard and Assane."
+          },
+          {
+            "episode": 7,
+            "title": "Chapter 7",
+            "airDate": "2021-06-11",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ppOlBCFMZ6OoFNlqboSuxAzYlGV.jpg",
+            "duration": "44 min",
+            "overview": "Hubert makes a deal with Dumont and sets a trap for Assane, who's one step ahead. Claire knocks on Hubert's door."
+          },
+          {
+            "episode": 8,
+            "title": "Chapter 8",
+            "airDate": "2021-06-11",
+            "rating": 6.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2zToF3bdwh0oSpaAbrHezZ7H8lx.jpg",
+            "duration": "41 min",
+            "overview": "As he attempts to gain Juliette's trust with a series of capers, Assane devises an elaborate plot that would blindside Hubert."
+          },
+          {
+            "episode": 9,
+            "title": "Chapter 9",
+            "airDate": "2021-06-11",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/tgsXccjn6bVFqJwtTr97WuOm1Z9.jpg",
+            "duration": "47 min",
+            "overview": "Leonard tails Assane to his home. Hubert orchestrates a frame-up. Assane leaves a clue online for Guédira that sheds light on Dumont."
+          },
+          {
+            "episode": 10,
+            "title": "Chapter 10",
+            "airDate": "2021-06-11",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/8r8dgHAINYk6SuZvKbjS0df8Rjs.jpg",
+            "duration": "50 min",
+            "overview": "In a scheme to usurp all schemes, Assane and Benjamin recruit and disguise a clever accomplice in order to bring Hubert to justice."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Chapter 1",
+            "airDate": "2023-10-05",
+            "rating": 6.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2r2k4OBkLJWWbR6GROVI4M3wQhZ.jpg",
+            "duration": "52 min",
+            "overview": "To mend matters with Claire and Raoul, Assane devises a plan to get them out of France. But with high stakes come greater risks — and no room for error."
+          },
+          {
+            "episode": 2,
+            "title": "Chapter 2",
+            "airDate": "2023-10-05",
+            "rating": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/28Z7kKNDJkYzydXLVLkYmFGClfj.jpg",
+            "duration": "49 min",
+            "overview": "An unfathomable loss rocks France, but Guédira and Raoul grapple with denial. A mysterious classified ad resurrects old ghosts and long-lost hopes."
+          },
+          {
+            "episode": 3,
+            "title": "Chapter 3",
+            "airDate": "2023-10-05",
+            "rating": 5.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/zv7hM1Puwmn2nF1kj15uboXwUGu.jpg",
+            "duration": "53 min",
+            "overview": "As Fleur and Guédira strike a deal, Belkacem visits Benjamin. Assane tries to outmaneuver a new enemy in the shadows while keeping tabs on his family."
+          },
+          {
+            "episode": 4,
+            "title": "Chapter 4",
+            "airDate": "2023-10-05",
+            "rating": 5.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/8b2Ac0RCImtLU7nqU8WSMsI8oyn.jpg",
+            "duration": "43 min",
+            "overview": "Assane meets his mother's captor in the flesh, but there's no sign of her. Tasked with another all-or-nothing heist, he makes a devastating choice."
+          },
+          {
+            "episode": 5,
+            "title": "Chapter 5",
+            "airDate": "2023-10-05",
+            "rating": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/z0WHlhvYhANQYWE0f0NDH5EtmPd.jpg",
+            "duration": "43 min",
+            "overview": "Increasingly suspicious, Claire launches an investigation of her own. Guédira gets the surprise — and opportunity — of a literature lover's lifetime."
+          },
+          {
+            "episode": 6,
+            "title": "Chapter 6",
+            "airDate": "2023-10-05",
+            "rating": 5.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/uRGdq1pUs1IgZ9zoIHs9wXGkFdw.jpg",
+            "duration": "43 min",
+            "overview": "Having identified his opponent, Assane races to protect his family and avoid retaliation. Belkacem remains wary of Guédira; Mariama sends a message."
+          },
+          {
+            "episode": 7,
+            "title": "Chapter 7",
+            "airDate": "2023-10-05",
+            "rating": 6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/dd3xE8GzdMNgeFVK3Cavg8ox36r.jpg",
+            "duration": "52 min",
+            "overview": "A family reunion years in the making comes to pass. With Mariama's help, Assane makes a final play to stop Keller, right his wrongs and go out in style."
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Chapter 1",
+            "airDate": "2026-10-23",
+            "rating": 6.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mqD8Gw3iM5hqTCkhMlS3zIlzWvX.jpg",
+            "duration": "40 min",
+            "overview": "After four years in prison, Assane is days away from early release and a new life with Raoul – until a mysterious cyberattack threatens it all."
+          },
+          {
+            "episode": 2,
+            "title": "Chapter 2",
+            "airDate": "2026-10-23",
+            "rating": 4.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3f1LLYsVE3NkYdVugdtAVUzsBbN.jpg",
+            "duration": "44 min",
+            "overview": "A furious Guédira vows to take Lupin down as Assane comes face to face with his copycat, whose high-risk offer lures him to a heist at the Eiffel Tower."
+          },
+          {
+            "episode": 3,
+            "title": "Chapter 3",
+            "airDate": "2026-10-23",
+            "rating": 4.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cViiGADu0Jhcy00MuWY0dwFLZDr.jpg",
+            "duration": "51 min",
+            "overview": "Assane proclaims his innocence as Raoul lands in his own set of troubles, forcing his dad to join forces with unexpected allies to capture the copycat."
+          },
+          {
+            "episode": 4,
+            "title": "Chapter 4",
+            "airDate": "2026-10-23",
+            "rating": 4.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9LK0JHS54AYKSCjTLDuNd2Fis9t.jpg",
+            "duration": "42 min",
+            "overview": "As police prepare to take Adèle back to London, Raoul's long-awaited trip with his dad hits a last-minute snag. Ben and Assane concoct a daring scheme."
+          },
+          {
+            "episode": 5,
+            "title": "Chapter 5",
+            "airDate": "2026-10-23",
+            "rating": 4.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/oGDMmGivVZGfuuoh4TuYpXniihF.jpg",
+            "duration": "48 min",
+            "overview": "Vowing to go after the Guardians of the Treasure, Adèle and Assane set their sights on Les Invalides. Meanwhile, Raoul also puts his skills to use."
+          },
+          {
+            "episode": 6,
+            "title": "Chapter 6",
+            "airDate": "2026-10-23",
+            "rating": 4.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1uhKLaDXYvpRslIoSYhwgqPMnBn.jpg",
+            "duration": "44 min",
+            "overview": "Assane awakes to an ominous figure from his past. Compelled to tell the truth, he hatches a death-defying plan. Esteban finds Raoul's new place of work."
+          },
+          {
+            "episode": 7,
+            "title": "Chapter 7",
+            "airDate": "2026-10-23",
+            "rating": 4.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/kqJK5hmnnnhCACq3qX4F400jERM.jpg",
+            "duration": "46 min",
+            "overview": "As Raoul embarks on his own journey, Assane and Adèle retrace old steps with new technology to find the treasure – with Korvin hot on their trail."
+          },
+          {
+            "episode": 8,
+            "title": "Chapter 8",
+            "airDate": "2026-10-23",
+            "rating": 3.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1aItG8O2cybTEtGEFqTV1KO5Oi4.jpg",
+            "duration": "49 min",
+            "overview": "Assane and the gang attempt to lure the treasure out of the fortress. But can they outrun the police, the Guardians and all the chaos they've caused?"
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
   // 70. Lucifer (2016)
   // ============================================================
   {
