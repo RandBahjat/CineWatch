@@ -164,7 +164,11 @@ async function uploadPartWithRetry(uploadId, partNumber, totalParts, fileFd, sta
 
 async function startResumableUpload() {
   try {
-    fs.writeFileSync(LOG_FILE, `=== CINEWATCH 4K UPLOAD LOG: THE DARK KNIGHT RISES (2012) ===\nStarted: ${new Date().toISOString()}\n\n`);
+    if (!fs.existsSync(LOG_FILE)) {
+      fs.writeFileSync(LOG_FILE, `=== CINEWATCH 4K UPLOAD LOG: THE DARK KNIGHT RISES (2012) ===\nStarted: ${new Date().toISOString()}\n\n`);
+    } else {
+      fs.appendFileSync(LOG_FILE, `\n=== RESUMED CINEWATCH 4K UPLOAD: THE DARK KNIGHT RISES (2012) ===\nResumed at: ${new Date().toISOString()}\n\n`);
+    }
   } catch (e) {}
 
   if (!fs.existsSync(VIDEO_FILE)) {
@@ -284,3 +288,4 @@ startResumableUpload().catch(err => {
   logMsg(`[FATAL ERROR] ${err.stack || err.message}`);
   process.exit(1);
 });
+
