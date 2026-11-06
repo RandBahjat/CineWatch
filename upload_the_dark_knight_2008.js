@@ -265,3 +265,4 @@ startResumableUpload().catch(err => {
   logMsg(`[FATAL ERROR] ${err.stack || err.message}`);
   process.exit(1);
 });
+

@@ -7,3 +7,4 @@ echo                CINEWATCH 4K UPLOAD MONITOR: THE DARK KNIGHT (2008)
 echo =========================================================================================
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-Content -Path 'E:\the_dark_knight_2008_upload.log' -Wait -Tail 30"
 pause
+
