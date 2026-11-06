@@ -101,8 +101,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 20m",
     genres: ["Action", "Crime", "Drama"],
-    poster: "https://image.tmdb.org/t/p/original/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
+    poster: "https://image.tmdb.org/t/p/original/bhbM9ubZ1ntgG6Nb7W2aSMMHUg2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fa15SGPibZifu2niqmrkAZxqrrD.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=neY2xVmOfUM",
     overview: "Driven by the tragedy of his parents' murder and disillusioned with Gotham's corruption, billionaire heir Bruce Wayne travels the world seeking the means to fight injustice. Mentored by the mysterious Ra's al Ghul and Henri Ducard of the League of Shadows, he masters physical and mental discipline. Returning to Gotham, Bruce embraces the dark mantle of Batman to strike terror into criminals, confronting the psychotic Scarecrow and an underground conspiracy that threatens to plunge the city into mass hysteria and destruction.",
@@ -119,7 +119,36 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 5. The Amazing Spider-Man (2012)
+  // 5. The Dark Knight (2008)
+  // ============================================================
+  {
+    id: "the-dark-knight-2008",
+    title: "The Dark Knight",
+    type: "Movie",
+    year: 2008,
+    rating: 9.1,
+    age: "PG-13",
+    duration: "2h 32m",
+    genres: ["Action", "Crime", "Drama", "Thriller"],
+    poster: "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+    overview: "Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an uneasy alliance to bring down organized crime in Gotham City once and for all. Their progress is shattered by the arrival of a brilliant and chaotic criminal known only as the Joker, whose reign of terror pushes Gotham's guardians to their limits — testing Batman's principles, Dent's ideals, and the very soul of the city itself.",
+    overviewKurdish: "باتمان، مولازم گۆردۆن، و دادوەری گشتی هارڤی دێنت هاوپەیمانییەکی بەهێز پێکدەهێنن بۆ بنبڕکردنی تاوانی ڕێکخراو لە شاری گۆثەم بۆ هەمیشە. بەڵام پێشکەوتنەکانیان تێکدەچێت بە هاتنی تاوانبارێکی بلیمەت و ئاژاوەگێڕ بە ناوی جۆکەر، کە حوکمڕانییەکی پڕ لە ترس و تۆقین دروست دەکات و بنەماکانی باتمان و گیانی تەواوی شارەکە دەخاتە ژێر تاقیکردنەوەیەکی سەختەوە.",
+    director: "Christopher Nolan",
+    cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine", "Maggie Gyllenhaal", "Gary Oldman", "Morgan Freeman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 6. The Amazing Spider-Man (2012)
   // ============================================================
   {
     id: "the-amazing-spider-man-2012",

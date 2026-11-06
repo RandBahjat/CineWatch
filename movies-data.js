@@ -1458,19 +1458,22 @@ window._MOVIES_DATA = [
     rating: 9.1,
     age: "PG-13",
     duration: "2h 32m",
-    genres: ["Action", "Crime", "Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    genres: ["Action", "Crime", "Drama", "Thriller"],
+    poster: "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
-    videoUrl: "155",
-    trailerUrl: "",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=EXeTwQWrcwY",
     overview: "Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an uneasy alliance to bring down organized crime in Gotham City once and for all. Their progress is shattered by the arrival of a brilliant and chaotic criminal known only as the Joker, whose reign of terror pushes Gotham's guardians to their limits — testing Batman's principles, Dent's ideals, and the very soul of the city itself.",
-    overviewKurdish: "",
+    overviewKurdish: "باتمان، مولازم گۆردۆن، و دادوەری گشتی هارڤی دێنت هاوپەیمانییەکی بەهێز پێکدەهێنن بۆ بنبڕکردنی تاوانی ڕێکخراو لە شاری گۆثەم بۆ هەمیشە. بەڵام پێشکەوتنەکانیان تێکدەچێت بە هاتنی تاوانبارێکی بلیمەت و ئاژاوەگێڕ بە ناوی جۆکەر، کە حوکمڕانییەکی پڕ لە ترس و تۆقین دروست دەکات و بنەماکانی باتمان و گیانی تەواوی شارەکە دەخاتە ژێر تاقیکردنەوەیەکی سەختەوە.",
     director: "Christopher Nolan",
     cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine", "Maggie Gyllenhaal", "Gary Oldman", "Morgan Freeman"],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt", srclang: "en", default: true }
+    ]
   },
 
   // ============================================================
