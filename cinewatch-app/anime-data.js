@@ -38252,6 +38252,1033 @@ window._ANIME_DATA = [
       ]
     }
   ]
-}
+},
+  // ============================================================
+  // Sword Art Online (2012 - Present)
+  // ============================================================
+  {
+    "id": "sword-art-online-2012",
+    "title": "Sword Art Online",
+    "type": "TV Show",
+    "isAnime": true,
+    "year": 2012,
+    "rating": 8.1,
+    "age": "TV-14",
+    "duration": "24m",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/wJi7fRmHw0wRMldUY28sSzXpp4G.jpg",
+    "videoUrl": "45782",
+    "trailerUrl": "https://www.youtube.com/watch?v=6ohYYtxfDCg",
+    "animeSlug": "sword-art-online",
+    "malId": 11757,
+    "anilistId": 11757,
+    "tmdbId": 45782,
+    "overview": "In the year 2022, gamers line up for the launch of Sword Art Online, a hotly anticipated VRMMORPG that lets players connect to an immersive virtual reality world with a special helmet called NerveGear. Kirito is one of the players eager to jump into the action. But after logging in, he and 10,000 other players discover that the game's creator has trapped them in the world: the only way to escape is to beat all 100 floors of the floating castle Aincrad—and dying in the game means dying in real life.",
+    "overviewKurdish": "لە ساڵی ٢٠٢٢دا، یاریزانان ڕیز دەبەستن بۆ یاریی چاوەڕوانکراوی «سۆرد ئارت ئۆنلاین»، یارییەکی ئۆنلاینی ڕاستیی مەجازی کە لە ڕێگەی کڵاوێکی تایبەتەوە بە ناوی «نێرڤ گێر» یاریزانەکان دەباتە ناو جیهانێکی مەجازیی بێوێنە. کیریتۆ یەکێکە لەو یاریزانانەی بە پەرۆشەوە دەچێتە ناو یارییەکە. بەڵام دوای چوونەژوورەوە، ئەو و دە هەزار یاریزانی تر بۆیان دەردەکەوێت کە دروستکەری یارییەکە هەموویانی لەو جیهانەدا زیندانی کردووە: تەنها ڕێگە بۆ ڕزگاربوون بەزاندنی هەموو ١٠٠ نهۆمەکەی قەڵای ئاینکرادە، و مردن لە ناو یارییەکەدا بە مانای مردنە لە ژیانی ڕاستەقینەدا.",
+    "director": "Tomohiko Ito",
+    "cast": [
+      "Yoshitsugu Matsuoka",
+      "Haruka Tomatsu",
+      "Hiroaki Hirata",
+      "Ai Kayano",
+      "Rina Hidaka",
+      "Hiroki Yasumoto",
+      "Isshin Chiba",
+      "Kaori Maeda"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The World of Swords",
+            "absoluteEpisode": 1,
+            "airDate": "2012-07-08",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/wokec1ewZhYNMLcKuK01H09i2pB.jpg",
+            "duration": "23m",
+            "overview": "It's launch day for one of the most highly-anticipated video games of all time. Join the character \"Kirito\" as he begins his journey in the virtual world of Sword Art Online."
+          },
+          {
+            "episode": 2,
+            "title": "Beater",
+            "absoluteEpisode": 2,
+            "airDate": "2012-07-15",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/hiBynS5SFi0ltxFsaYtq39C9k76.jpg",
+            "duration": "23m",
+            "overview": "It’s been one month since the players have been locked in the game.  2000 people have died; the first floor hasn’t been cleared yet."
+          },
+          {
+            "episode": 3,
+            "title": "Red-Nosed Reindeer",
+            "absoluteEpisode": 3,
+            "airDate": "2012-07-22",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/kxBO1gp72V4uBWLSACzL3RvEjQ9.jpg",
+            "duration": "23m",
+            "overview": "Kirito has finally joined a guild made up of close friends in reality.  Everything is going well until a tragic accident changes Kirito completely."
+          },
+          {
+            "episode": 4,
+            "title": "The Black Swordsman",
+            "absoluteEpisode": 4,
+            "airDate": "2012-07-29",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xg8AqSOPUaEJvaG8GcdPsCIT2MI.jpg",
+            "duration": "23m",
+            "overview": "Silca is known as Dragon Tamer Silca, but after leaving her group she is caught and her pet, Pina paid the ultimate price.  Before she is killed, Kirito saves her and offers her a choice."
+          },
+          {
+            "episode": 5,
+            "title": "Murder in the Safe Zone",
+            "absoluteEpisode": 5,
+            "airDate": "2012-08-05",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/4r89kn8VYl2NahtGAOS1V552w71.jpg",
+            "duration": "23m",
+            "overview": "A player has been killed inside a safe zone and not by the known means.  Asuna and Krito take it upon themselves to find out how and why this is happening."
+          },
+          {
+            "episode": 6,
+            "title": "Illusionary Avenger",
+            "absoluteEpisode": 6,
+            "airDate": "2012-08-12",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/zz9Zw04cvobbS5Bf9MYKxptk9aQ.jpg",
+            "duration": "23m",
+            "overview": "Kirito has figured out the how and now he has to figure out the why."
+          },
+          {
+            "episode": 7,
+            "title": "The Temperature of the Heart",
+            "absoluteEpisode": 7,
+            "airDate": "2012-08-19",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/iWGUPY39gmNrMmKAfkP8dalEVyz.jpg",
+            "duration": "23m",
+            "overview": "A trip to get a new sword leaves Kirito battling a dragon and his fears."
+          },
+          {
+            "episode": 8,
+            "title": "The Sword Dance of Black and White",
+            "absoluteEpisode": 8,
+            "airDate": "2012-08-26",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cmajeWlA7OCpIT2H6JPXIo9Lwdw.jpg",
+            "duration": "23m",
+            "overview": "After 2 years, people have got used to living in SAO, with a dwindling front line it might just be up to Kirito and Asuna to continue the charge."
+          },
+          {
+            "episode": 9,
+            "title": "The Blue-Eyed Demon",
+            "absoluteEpisode": 9,
+            "airDate": "2012-09-02",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/t2GBif2MdqYhZvQx755Y9xunQkF.jpg",
+            "duration": "23m",
+            "overview": "To save a group of players and Asuna from a Boss character, Kirito is forced to play his trump card."
+          },
+          {
+            "episode": 10,
+            "title": "Crimson Killing Intent",
+            "absoluteEpisode": 10,
+            "airDate": "2012-09-09",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2A6GRQT5uDJhq9vc46fISn0CNzm.jpg",
+            "duration": "23m",
+            "overview": "Kirito has agreed to a duel with the head of the Blood Alliance Knights.  If Kirito wins, Asuna is free to leave the Knights and if he loses…"
+          },
+          {
+            "episode": 11,
+            "title": "The Girl of Morning Dew",
+            "absoluteEpisode": 11,
+            "airDate": "2012-09-16",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/tULdNWI4qoToSyO5PUEiwRWncAh.jpg",
+            "duration": "23m",
+            "overview": "The newly married couple is enjoying their time away from the front lines.  But a new guest will take them all the way back to the beginning."
+          },
+          {
+            "episode": 12,
+            "title": "Yui's Heart",
+            "absoluteEpisode": 12,
+            "airDate": "2012-09-23",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/k8rzVr0A4jtsskjRMLEM5NNlqfr.jpg",
+            "duration": "23m",
+            "overview": "Yulier, second in command, of the Liberation Army has approached Kirito and Asuna for help saving her friend and her guild."
+          },
+          {
+            "episode": 13,
+            "title": "Edge of Hell's Abyss",
+            "absoluteEpisode": 13,
+            "airDate": "2012-09-30",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ooI4fJvu4eUZgvRTQx1v3uzUTLU.jpg",
+            "duration": "23m",
+            "overview": "While enjoying a fishing tournment Kirito receieves an urgent e-mail from the leader of the guild requesting their return."
+          },
+          {
+            "episode": 14,
+            "title": "The End of the World",
+            "absoluteEpisode": 14,
+            "airDate": "2012-10-07",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/fcnSuM0WQyKODZ6BD1yUGJpDbIf.jpg",
+            "duration": "23m",
+            "overview": "Game over."
+          },
+          {
+            "episode": 15,
+            "title": "Return",
+            "absoluteEpisode": 15,
+            "airDate": "2012-10-14",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/sMmzH8KpSNV9dGEQ3LP1Xzeokfo.jpg",
+            "duration": "23m",
+            "overview": "Kirigaya is adjusting to his life outside of the game, but he hasn't forgotten about Asuna. A recent visit to her in the hospital, he meets Sugou Nobuyuki."
+          },
+          {
+            "episode": 16,
+            "title": "Land of the Fairies",
+            "absoluteEpisode": 16,
+            "airDate": "2012-10-21",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/grHJC5Gk7fuk8jywVhs7UYXLiLG.jpg",
+            "duration": "23m",
+            "overview": "A new MMO allows users to fly and encourages player killing. Kirito has joined this new game in search of Asuna and is pleasantly surprised with what he finds."
+          },
+          {
+            "episode": 17,
+            "title": "Captive Queen",
+            "absoluteEpisode": 17,
+            "airDate": "2012-10-28",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/b702zYjB82kk0APiyCCYBn7fGJU.jpg",
+            "duration": "23m",
+            "overview": "As Kirito learns about the game from Leafa and the hatred between the races, Asuna learns the truth of her role from the Fairy King."
+          },
+          {
+            "episode": 18,
+            "title": "To the World Tree",
+            "absoluteEpisode": 18,
+            "airDate": "2012-11-04",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/kP5JiBHMtIuiTcntCZUe9ERzAYj.jpg",
+            "duration": "23m",
+            "overview": "Leafa is making enemies leaving her area and group to team up with Kirito. On their way to neutral Territory, they speak more of the rules and areas of the ALO."
+          },
+          {
+            "episode": 19,
+            "title": "The Legrue Corridor",
+            "absoluteEpisode": 19,
+            "airDate": "2012-11-11",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/eMcIqPhChoBMpzqXG4CIUuEjKR3.jpg",
+            "duration": "23m",
+            "overview": "Something isn’t right; Recon has sent Leafa a message “I was right. Be careful. S.\"  What does he mean and will Leafa and Kirito have the time to figure it out?"
+          },
+          {
+            "episode": 20,
+            "title": "General of the Blazing Flame",
+            "absoluteEpisode": 20,
+            "airDate": "2012-11-18",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cOpNhZSFZv2ocUaGfZajDlHz7NK.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Leafa have made it to the meeting and Kirito’s bluff as an ambassador has been called out.  If he can survive in a fight against the Salamanders General Eugene, his plan to prevent a war might work."
+          },
+          {
+            "episode": 21,
+            "title": "The Truth about ALfheim",
+            "absoluteEpisode": 21,
+            "airDate": "2012-11-25",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9AZUXEji3uy6yu7rtnb2iRuapYm.jpg",
+            "duration": "23m",
+            "overview": "While Asuna continues her attempt to escape, another woman in Kirito’s life tries to make sense of her emotions."
+          },
+          {
+            "episode": 22,
+            "title": "The Grand Quest",
+            "absoluteEpisode": 22,
+            "airDate": "2012-12-02",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/d3Bl4GEYdM6rLO2BYoNz2esIAD7.jpg",
+            "duration": "23m",
+            "overview": "Kirito’s determination to save Asuna borders on the insane.  His reckless is stopped when Leafa suddenly logs out."
+          },
+          {
+            "episode": 23,
+            "title": "Bonds",
+            "absoluteEpisode": 23,
+            "airDate": "2012-12-09",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2OrvGXAS28CGhEs96FCAjkHDAUJ.jpg",
+            "duration": "23m",
+            "overview": "Even though a wall has been built between Kirito and Sugu, he must save Asuna.  The next time he challenges the final dungeon he won’t be alone."
+          },
+          {
+            "episode": 24,
+            "title": "Gilded Hero",
+            "absoluteEpisode": 24,
+            "airDate": "2012-12-16",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3hdDhZFnQ524Tjs5ehiyrDzXJjA.jpg",
+            "duration": "23m",
+            "overview": "Kirito, Asuna, and Yui are finally together again, but the locks placed on Asuna are unbreakable.  Before they have a chance to come up with a plan, the fairy king makes his grand entrance."
+          },
+          {
+            "episode": 25,
+            "title": "The World Seed",
+            "absoluteEpisode": 25,
+            "airDate": "2012-12-23",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/oPuUnWxMttvfVXv99aVgXO3qxpV.jpg",
+            "duration": "25m",
+            "overview": "Kirigaya Kazuto has beaten death twice but there is one more thing he must do."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The World of Guns",
+            "absoluteEpisode": 26,
+            "airDate": "2014-07-05",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7OUSXOcIs9nzdLmLz0Bwdfhrm85.jpg",
+            "duration": "23m",
+            "overview": "A year has passed since SAO was cleared. Summoned by Kikuoka of the Virtual Division at the Ministry of Internal Affairs and Communications, Kazuto learns of a series of bizarre murders linked to the popular VR game, Gun Gale Online (GGO), the only game in Japan played by pros."
+          },
+          {
+            "episode": 2,
+            "title": "Cold-Hearted Sniper",
+            "absoluteEpisode": 27,
+            "airDate": "2014-07-12",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1sCbBCi1nxPqVhowB4PvH9SJPZr.jpg",
+            "duration": "23m",
+            "overview": "Armed with a large sniper rifle, Hecate II, the young girl Sinon is making a name for herself as the No. 1 sniper in GGO. When her squadron ambushes another squadron, she succeeds in taking out her first target. But when she takes aim at her second target, a robed “Behemoth,” he dodges the bullet."
+          },
+          {
+            "episode": 3,
+            "title": "Memories of Blood",
+            "absoluteEpisode": 28,
+            "airDate": "2014-07-19",
+            "rating": 6.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/uYykJcutnYPW8O7LAs0T7MvjXS7.jpg",
+            "duration": "23m",
+            "overview": "In real life, the player Sinon is a high school student named Shino Asada. On her way home from school, she’s dragged into an alley by delinquent girls. Their leader, Endo, tries to extort money from Shino, but she bravely refuses."
+          },
+          {
+            "episode": 4,
+            "title": "GGO",
+            "absoluteEpisode": 29,
+            "airDate": "2014-07-26",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/eJjflgwMR7kcUTOrolwqAlppb4f.jpg",
+            "duration": "23m",
+            "overview": "Kikuoka has recruited Kirito to investigate GGO, and so he logs in. To lure Death Gun into targeting him, he hopes to enter Bullet of Bullets (BoB), a tournament to decide the most powerful gunman in GGO. But as a first-timer, he doesn't know his way around this game, and soon loses his way, when he catches sight of Sinon and approaches her."
+          },
+          {
+            "episode": 5,
+            "title": "Guns and Swords",
+            "absoluteEpisode": 30,
+            "airDate": "2014-08-02",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/oJ9RjaDYoyky1neZvAWQRZLPA9E.jpg",
+            "duration": "23m",
+            "overview": "To register for BoB, Kirito starts entering the required information into a terminal, but is astounded to see that the form includes columns for his real-world name and address. He is temporarily torn when he realizes that without this info, he won't be eligible for the top prizes..."
+          },
+          {
+            "episode": 6,
+            "title": "Showdown in the Wilderness",
+            "absoluteEpisode": 31,
+            "airDate": "2014-08-09",
+            "rating": 6.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/5Q0KetmCeYoWSimDuRp5aQ1jWEJ.jpg",
+            "duration": "23m",
+            "overview": "A man in a beat-up cloak watches Kirito fight his first battle and demands to know if he's \"the real thing\".  The man has the tattoo of Laughing Coffin, a murderer's guild that existed within SAO.  He tells Kirito that he'll kill him someday, and vanishes."
+          },
+          {
+            "episode": 7,
+            "title": "Crimson Memories",
+            "absoluteEpisode": 32,
+            "airDate": "2014-08-16",
+            "rating": 6.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/4Woe1gkRDZtZztJu1Spai6dUqDU.jpg",
+            "duration": "23m",
+            "overview": "The man in the ragged cloak is an SAO survivor, and he might also be a player Kirito fought with to the death... This thought consumes Kirito, and his anguish is palpable - to the point that it worries Suguha."
+          },
+          {
+            "episode": 8,
+            "title": "Bullet of Bullets",
+            "absoluteEpisode": 33,
+            "airDate": "2014-08-23",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3htNh1oP2IZjXTf2ej2H4ZynxKW.jpg",
+            "duration": "23m",
+            "overview": "Kirito decides that Death Gun and the man in the cape will be appearing in BoB.  He uses the remaining time to exchange information with Sinon and find out more about the contestants.  Sinon sees how strange he was acting during the qualifier and asks him what happened.  She learns that he is a SAO survivor.  The main BoB tournament begins and 30 players are dropped in a 10km wide field."
+          },
+          {
+            "episode": 9,
+            "title": "Death Gun",
+            "absoluteEpisode": 34,
+            "airDate": "2014-08-30",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ueDp5eL3maMX8ZzTcHUcOeccnbv.jpg",
+            "duration": "23m",
+            "overview": "The man in the cape shoots Pale Rider and he is eliminated despite the fact that he has HP remaining.  The man says that he is Death Gun, and declares that he will bring true death.  Asuna and her friends are watching a live stream of BoB and realize that Death Gun is one of the leaders of Laughing Coffin."
+          },
+          {
+            "episode": 10,
+            "title": "Death Chaser",
+            "absoluteEpisode": 35,
+            "airDate": "2014-09-06",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/vs3DpifrmbTGuEEzLDSXAqlhAtS.jpg",
+            "duration": "23m",
+            "overview": "Sinon is attacked from behind by Death Gun and paralyzed. He's using a Black Star Type-54, ironically the same gun that Sinon used to shoot the robber. Her memories of the incident come flooding back and Sinon loses control, and Death Gun tries to kill her to make Kirito angry. But just before he can kill her Kirito saves her at the last second. Sinon is out of the fight, and Kirito tries to flee with her but is pursued by Death Gun."
+          },
+          {
+            "episode": 11,
+            "title": "What It Means To Be Strong",
+            "absoluteEpisode": 36,
+            "airDate": "2014-09-13",
+            "rating": 6.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/chqwmSxOydZpXiad2BMCsYrtUK0.jpg",
+            "duration": "23m",
+            "overview": "After escaping from Death Gun, Kirito and Sinon lay low in a desert cave. There, Kirito speculates on how Death Gun murdered other players. In doing so, he hits upon a certain terrifying possibility."
+          },
+          {
+            "episode": 12,
+            "title": "Bullet of a Phantom",
+            "absoluteEpisode": 37,
+            "airDate": "2014-09-20",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/fH9uKZtzgbsTcIUcjlSOuNCVIoM.jpg",
+            "duration": "23m",
+            "overview": "BoB nears its end, and the only surviving players are Kirito, Sinon, and Dark Wind, the second place winner of the last tournament.  Since Death Gun may have multiple partners, and Dark Wind may be in danger as well, Kirito decides to defeat him first.  He acts as a decoy while Sinon snipes the enemy.  Kirito's trust in her pays off as her bullet strikes true, and he finally faces off with Death Gun."
+          },
+          {
+            "episode": 13,
+            "title": "Phantom Bullet",
+            "absoluteEpisode": 38,
+            "airDate": "2014-09-27",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/rZCPOKK3iWsROkGe66IideIFYSl.jpg",
+            "duration": "23m",
+            "overview": "Death Gun's attack is modeled after Star Splash, a SAO skill that doesn't exist in GGO.  Death Gun is skilled with not only a gun but a blade as well, and he gradually wears down Kirito's health.  Meanwhile, Sinon's scope has been destroyed by Death Gun and she cannot attack, so she's forced to simply watch the fight.  She grits her teeth and wonders if there's anything else she can do."
+          },
+          {
+            "episode": 14,
+            "title": "One Little Step",
+            "absoluteEpisode": 39,
+            "airDate": "2014-10-04",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/tMF65VcMIJiUBaJnb0Flq6CZroz.jpg",
+            "duration": "23m",
+            "overview": "Kyouji attacks Shino, saying he'll kill himself after she's dead. Kazuto saves her at the last second by jumping Kyouji.  During the fight, Kazuto is hit with Kyouji's poison syringe, but miraculously it doesn't work and Kirito is saved.  The next day Kazuto and Shino go to meet Kikuoka, and discuss the incident.  Kikuoka has a message from one of the captured Death Guns..."
+          },
+          {
+            "episode": 15,
+            "title": "The Queen of the Lake",
+            "absoluteEpisode": 40,
+            "airDate": "2014-10-18",
+            "rating": 6.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2e9oCP375GrV99oioySGjl5CVz0.jpg",
+            "duration": "23m",
+            "overview": "It's reported that the Holy Sword Excalibur has been discovered inside ALO. Hearing the news, Kirito and Leafa decide to take possession of Excalibur before other players get to it first."
+          },
+          {
+            "episode": 16,
+            "title": "The King of the Giants",
+            "absoluteEpisode": 41,
+            "airDate": "2014-10-25",
+            "rating": 6.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mYSSD9v7EGqPYOapdbIuNSUkcoA.jpg",
+            "duration": "23m",
+            "overview": "Kirito and the others are tasked with subjugating the Frost King Thrymr, and a quest to recover Excalibur. It's Yui's guess that this isn't a quest planned by the game admins, but something automatically generated by the system. And if that's the case…"
+          },
+          {
+            "episode": 17,
+            "title": "Excalibur",
+            "absoluteEpisode": 42,
+            "airDate": "2014-11-01",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/vIqsyFzN4IPJF0xTbmfB3hIYK7d.jpg",
+            "duration": "23m",
+            "overview": "Kirito and the others are taking on Thrymr, the Boss lurking at the bottom level of the dungeon. But unable to make much of a dent in Thrymr's HP, they soon find themselves in grave danger. Just then, their new ally, Freyja, raises her voice…"
+          },
+          {
+            "episode": 18,
+            "title": "Forest House",
+            "absoluteEpisode": 43,
+            "airDate": "2014-11-08",
+            "rating": 6.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9AVzrSS0syPcLXakRPROGF2REOA.jpg",
+            "duration": "23m",
+            "overview": "In an upcoming update of ALO, Floors 21-30 of New Aincrad will be unlocked. Asuna, Kirito and Yui revisit their dream of once again living together in their log cabin on Floor 22."
+          },
+          {
+            "episode": 19,
+            "title": "Zekken",
+            "absoluteEpisode": 44,
+            "airDate": "2014-11-15",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/hQZ4OVlfnc1tp1EZrysc7XiA29r.jpg",
+            "duration": "23m",
+            "overview": "Hearing rumors about a brilliant player known as Zekken, Asuna decides to mount a challenge. But when Asuna logs out, she is told by her mother to take an exam to transfer into an academically oriented high school."
+          },
+          {
+            "episode": 20,
+            "title": "The Sleeping Knights",
+            "absoluteEpisode": 45,
+            "airDate": "2014-11-22",
+            "rating": 6.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/1qwzt6MCPEDZxBbY1DIG8rcOqyp.jpg",
+            "duration": "23m",
+            "overview": "Asuna is asked to help the guild “Sleeping Knights,” which has decided to disband soon due to the members’ circumstances. Before they do, they want to defeat a Floor Boss with only their party."
+          },
+          {
+            "episode": 21,
+            "title": "The Monument of Swordsmen",
+            "absoluteEpisode": 46,
+            "airDate": "2014-11-29",
+            "rating": 6.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ifdlJmiQmUelFhTDvl56ur4QpyP.jpg",
+            "duration": "23m",
+            "overview": "Asuna and the Sleeping Knights’ attempt to defeat the boss on Floor 27 has been observed by a guild specializing in boss raids. Now 20 of its members block the boss room.  With Kirito stalling the rest of the guild, can Asuna and the others break through?"
+          },
+          {
+            "episode": 22,
+            "title": "The End of the Journey",
+            "absoluteEpisode": 47,
+            "airDate": "2014-12-06",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/lwKmF4mpen4czxhWoUDEfJCrbSm.jpg",
+            "duration": "23m",
+            "overview": "A few days have passed since Yuuki suddenly disappeared from in front of Asuna, and she still hasn’t logged in to ALO. Later, Asuna meets Kazuto on the school roof, where he hands her a note and tells her Yuuki might be at the location written on it."
+          },
+          {
+            "episode": 23,
+            "title": "The Dream Begins",
+            "absoluteEpisode": 48,
+            "airDate": "2014-12-13",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/elqZmxx3KnUFRvzeXJ1Z1iMeABE.jpg",
+            "duration": "23m",
+            "overview": "As a tester for the world’s first medical-use Full-Dive device, Yuuki has been diving into virtual worlds from the hospital. Unable to leave her hospital room, she longs to go to school again. To make that wish come true, Asuna asks Kazuto for help…"
+          },
+          {
+            "episode": 24,
+            "title": "Mother's Rosario",
+            "absoluteEpisode": 49,
+            "airDate": "2014-12-20",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/gt2yB4qmF96FQHSwbBEuYwTUon1.jpg",
+            "duration": "23m",
+            "overview": "Getting to experience the outside world, Yuuki’s days are more satisfactory than ever before. In ALO, the players have a barbecue and end up on a quest. In the real world, Asuna and the girls take a trip to Kyoto. One day, Asuna receives an email…"
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Underworld",
+            "absoluteEpisode": 50,
+            "airDate": "2018-10-07",
+            "rating": 7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/4FpuWImV6U6SuYT8QY0SQ4LZWGa.jpg",
+            "duration": "47m",
+            "overview": "Kirito, along with his childhood friend, Eugeo, has been tasked with cutting down a colossal tree called the Gigas Cedar. They’re swinging their ax when their friend Alice arrives with lunch. As they eat, the three friends decide to go to a fabled cave."
+          },
+          {
+            "episode": 2,
+            "title": "The Demon Tree",
+            "absoluteEpisode": 51,
+            "airDate": "2018-10-14",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/vklSxL0fGZsZeMf2JSnlE5CWHZS.jpg",
+            "duration": "23m",
+            "overview": "Kirito wakes up to find himself inside a mysterious world evoking a fantasy game. His memory fuzzy, he tries to log out, but is unable to return to the real world. After wandering aimlessly, he finds himself underneath a colossal tree."
+          },
+          {
+            "episode": 3,
+            "title": "The End Mountains",
+            "absoluteEpisode": 52,
+            "airDate": "2018-10-21",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/yubH2VEg4HfRBfxL38uPc0elJv4.jpg",
+            "duration": "23m",
+            "overview": "Kirito makes up his mind to journey to Centoria. Since he'll need Eugeo's help, he also decides to fell the Gigas Cedar. Meanwhile, Alice's little sister, Selka is worried about Eugeo, and opens up to Kirito about her concerns."
+          },
+          {
+            "episode": 4,
+            "title": "Departure",
+            "absoluteEpisode": 53,
+            "airDate": "2018-10-28",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/oGEAEJX0UOf00N37rP04iApymsR.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Eugeo realize Selka has taken off to the End Mountains alone, and decide to chase after her. As they enter the cave, they encounter goblins, presumably from the Dark Territory, and must engage in a battle."
+          },
+          {
+            "episode": 5,
+            "title": "Ocean Turtle",
+            "absoluteEpisode": 54,
+            "airDate": "2018-11-04",
+            "rating": 6.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/jq0Q41YWgV3ZcOzG17N2mHVuLkA.jpg",
+            "duration": "23m",
+            "overview": "In the real world, Kazuto Kirigaya lies unconscious. At Kikuoka’s request, Kazuto is moved to a well-equipped hospital, but when Asuna and Suguha try to visit, they’re turned away. Suspicious, Asuna and the others split up to find out more about Rath."
+          },
+          {
+            "episode": 6,
+            "title": "Project Alicization",
+            "absoluteEpisode": 55,
+            "airDate": "2018-11-11",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xXZahtMZSkjhBvu5NrIY2KEA2bN.jpg",
+            "duration": "23m",
+            "overview": "Asuna infiltrates Rath, the research lab in the Ocean Turtle, where she relentlessly grills Kikuoka about Kazuto's whereabouts. Kikuoka reveals that behind the development of the Soul Translator is a mind-blowing objective of epic scale."
+          },
+          {
+            "episode": 7,
+            "title": "Swordcraft Academy",
+            "absoluteEpisode": 56,
+            "airDate": "2018-11-18",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mXyRnt3o7BBIb3esUrbiW1ZZ5cy.jpg",
+            "duration": "23m",
+            "overview": "Two years have gone by since Kirito and Eugeo left Rulid Village. In the capital city, Centoria, both boys have attained their goal of being admitted to the North Centoria Imperial Swordcraft Academy."
+          },
+          {
+            "episode": 8,
+            "title": "Swordsman's Pride",
+            "absoluteEpisode": 57,
+            "airDate": "2018-11-25",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/cDMMjmPqU3Bx6CdQLkobJMT1tCJ.jpg",
+            "duration": "23m",
+            "overview": "Kirito finds himself in a duel against the Elite Disciple Volo Levantein, using real swords. As the curious crowd looks on, Kirito is encouraged by Sortiliena, and the duel begins."
+          },
+          {
+            "episode": 9,
+            "title": "Nobleman's Obligations",
+            "absoluteEpisode": 58,
+            "airDate": "2018-12-02",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/mVSRK03EZQVDkg6lpwDcFOSp4bp.jpg",
+            "duration": "23m",
+            "overview": "Now an Elite Disciple along with Kirito, Eugeo struggles with the question of what he should infuse in his sword so he can become stronger. When he's taunted by First-Seat Elite Disciple Raios and Second-Seat Humbert, Eugeo decides to accept Humbert's request for a duel."
+          },
+          {
+            "episode": 10,
+            "title": "Taboo Index",
+            "absoluteEpisode": 59,
+            "airDate": "2018-12-09",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/UB7mydlawxbobIxqWnV8lh1TcB.jpg",
+            "duration": "23m",
+            "overview": "Ronie and Tiese are late getting to the dorm. Kirito rushes out in search of them, but no sooner has he gone than Frenica appears. She tells Eugeo about how she's suffered at Humbert's hands, and that Tiese and Ronie went to confront him about it."
+          },
+          {
+            "episode": 11,
+            "title": "Central Cathedral",
+            "absoluteEpisode": 60,
+            "airDate": "2018-12-16",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/4ER3PIe7IZbHxXi1jAjcvEoGVaI.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Eugeo are now considered criminals for having violated the Taboo Index and are thrown into the underground prison in the Central Cathedral. Meanwhile, on the Ocean Turtle in the real world, Asuna is watching over Kazuto as he's being treated."
+          },
+          {
+            "episode": 12,
+            "title": "The Sage of the Library",
+            "absoluteEpisode": 61,
+            "airDate": "2018-12-23",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/hR3N6Kwr8zlAZgEq3d6OBSgh1L1.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Eugeo escape from their cell, only to find their way blocked by Eldrie Synthesis Thirty-One, under orders from Alice to lie in wait for them. Kirito and Eugeo struggle against him until Eugeo realizes that he's seen Eldrie somewhere before."
+          },
+          {
+            "episode": 13,
+            "title": "Ruler and Mediator",
+            "absoluteEpisode": 62,
+            "airDate": "2019-01-06",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/coCo7uFYVrbpwi1hcuO1ZTgL6aQ.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Eugeo have been rescued by the young girl, Cardinal, who has secluded herself inside the Central Cathedral’s Great Library. Cardinal explains to Kirito how the Axiom Church and the Taboo Index came to be, starting with Administrator’s past."
+          },
+          {
+            "episode": 14,
+            "title": "The Crimson Knight",
+            "absoluteEpisode": 63,
+            "airDate": "2019-01-13",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9SRBdXwI7kWxCqnjmivCRXbUSgT.jpg",
+            "duration": "23m",
+            "overview": "After being entrusted with the fate of the world by the Cardinal, Kirito and Eugeo head to the top floor of the Central Cathedral. On the way, they find their confiscated swords among a vast pile of weapons in an arsenal, only to be greeted with a hail of arrows by the Integrity Knight, Deusolbert Synthesis Seven."
+          },
+          {
+            "episode": 15,
+            "title": "The Relentless Knight",
+            "absoluteEpisode": 64,
+            "airDate": "2019-01-20",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/gmHLaLAz9GyxSk3c6meRtHVZy3N.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Eugeo are on their way up the stairs of the Central Cathedral when they encounter two girls named Linel and Fizel. As they stand, wondering what two children are doing there, they let their guard down and..."
+          },
+          {
+            "episode": 16,
+            "title": "The Osmanthus Knight",
+            "absoluteEpisode": 65,
+            "airDate": "2019-01-27",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/bjpJIJCdQE5KPUqntpQMaqUWzJ5.jpg",
+            "duration": "23m",
+            "overview": "Though riddled with wounds, Kirito manages to activate his Perfect Weapon Control art. Continuing on their way to the top floor of the Central Cathedral, Kirito and Eugeo find themselves standing before a strange-looking floating platform."
+          },
+          {
+            "episode": 17,
+            "title": "Truce",
+            "absoluteEpisode": 66,
+            "airDate": "2019-02-03",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/j2F6KagBjK81YW5zPeG83phCWzJ.jpg",
+            "duration": "23m",
+            "overview": "When Kirito and Alice both unleash the Perfect Weapon Control art in the Cloudtop Garden, the impact rips a hole into the seemingly impregnable Central Cathedral wall, which sends them both flying outside."
+          },
+          {
+            "episode": 18,
+            "title": "The Legendary Hero",
+            "absoluteEpisode": 67,
+            "airDate": "2019-02-10",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/gveaJc1HRJAIB0abGsOfoFN4doj.jpg",
+            "duration": "23m",
+            "overview": "Eugeo reaches the ninetieth floor of the Central Cathedral, which turns out to be a vast bathing area. The perplexed Eugeo encounters Bercouli Synthesis One soaking in the bath. Meanwhile, Kirito and Alice are still climbing the Central Cathedral wall."
+          },
+          {
+            "episode": 19,
+            "title": "The Seal of the Right Eye",
+            "absoluteEpisode": 68,
+            "airDate": "2019-02-24",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xbSBljqM4loFC7ZbKnItGFZSXD8.jpg",
+            "duration": "23m",
+            "overview": "Seeing Alice’s reaction when he mentioned the name Selka, Kirito decides to tell her the truth about the Integrity Knights. Meanwhile, after being knocked unconscious during his battle with Bercouli, Eugeo awakes on the top floor of the cathedral."
+          },
+          {
+            "episode": 20,
+            "title": "Synthesis",
+            "absoluteEpisode": 69,
+            "airDate": "2019-03-03",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/2PyE8uOVgjBvdp89fbamah6RFIs.jpg",
+            "duration": "23m",
+            "overview": "Kirito and Alice reach the communal bath on the nintieth floor. There, they find the Integrity Knight Commander, Bercouli, who's been turned to stone by Chudelkin. Alice breaks down in tears upon seeing her mentor's tragic plight, but then..."
+          },
+          {
+            "episode": 21,
+            "title": "The 32nd Knight",
+            "absoluteEpisode": 70,
+            "airDate": "2019-03-10",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/hGFKKtPvmhA9AcPjCF2gsrlj2HV.jpg",
+            "duration": "23m",
+            "overview": "Standing in Kirito and Alice's way is Eugeo, who's undergone the Synthesis Ritual and become an Integrity Knight. Kirito is rattled, until Alice admonishes him into resolving to fight Eugeo with everything he's got."
+          },
+          {
+            "episode": 22,
+            "title": "Titan of the Sword",
+            "absoluteEpisode": 71,
+            "airDate": "2019-03-17",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xTT4kEnlAjEPtep3i1ngPRp7adf.jpg",
+            "duration": "23m",
+            "overview": "On the top floor of the Central Cathedral, Kirito, Eugeo, and Alice finally face Administrator. But Chudelkin uses the sacred arts to transform himself into a giant clown and attacks."
+          },
+          {
+            "episode": 23,
+            "title": "Administrator",
+            "absoluteEpisode": 72,
+            "airDate": "2019-03-24",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/i1umIkndL7ofm6eSMtO0oHJD51u.jpg",
+            "duration": "23m",
+            "overview": "Cardinal appears on the top floor of Central Cathedral for a showdown with her bitter foe of the last two hundred years. She moves to achieve her objective of deleting Administrator, only to see the fallen sword golem rise up again."
+          },
+          {
+            "episode": 24,
+            "title": "My Hero",
+            "absoluteEpisode": 73,
+            "airDate": "2019-03-31",
+            "rating": 8.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3na4mgCr70jClF70lGEaG9xcYZz.jpg",
+            "duration": "23m",
+            "overview": "Carrying the hopes of Cardinal, Eugeo, and Alice in his heart, Kirito stands yet again and visualizes the Black Swordsman, the top player who cleared SAO. For the sake of everyone he’s encountered in this world, Kirito, faces off with Administrator."
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "In the Far North",
+            "absoluteEpisode": 74,
+            "airDate": "2019-10-13",
+            "rating": 8.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/z8cL9agh1EQ91AF03afc1O73zmv.jpg",
+            "duration": "23m",
+            "overview": "Six months have passed since the fierce battle against Administrator. Alice has brought Kirito to her childhood home, Rulid Village, where they live peacefully. Gazing out at the world that she saved with Kirito, Alice reflects on all that’s happened."
+          },
+          {
+            "episode": 2,
+            "title": "Raids",
+            "absoluteEpisode": 75,
+            "airDate": "2019-10-20",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/oBgJg14AIUxX16x57fnxs0py6cq.jpg",
+            "duration": "23m",
+            "overview": "A force from the Dark Territory is attacking Rulid Village. Though she’d lost her purpose in battle, in order to fight for her family, and for the people that Kirito and Eugeo tried to protect, Alice takes up the Osmanthus Blade once again!"
+          },
+          {
+            "episode": 3,
+            "title": "The Final Load Test",
+            "absoluteEpisode": 76,
+            "airDate": "2019-10-27",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ps9zaKiZOSBYi5l3gWUnh2UGGuc.jpg",
+            "duration": "23m",
+            "overview": "The mysterious group that attacked the Ocean Turtle turns out to be a secret unit under orders from the U.S. National Security Agency. And its leader, Gabriel, has battled Kirito and Sinon before."
+          },
+          {
+            "episode": 4,
+            "title": "Dark Territory",
+            "absoluteEpisode": 77,
+            "airDate": "2019-11-03",
+            "rating": 7.6,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/3uewQSR2HLDr9WsuMWGNlwnzhDG.jpg",
+            "duration": "23m",
+            "overview": "Shasta, commander of the Dark Territory's dark knights, had intended to use Administrator's death as a chance for peace with the Human Empire. But his plans are thwarted by Emperor Vecta's return to the land of darkness."
+          },
+          {
+            "episode": 5,
+            "title": "The Night Before Battle",
+            "absoluteEpisode": 78,
+            "airDate": "2019-11-10",
+            "rating": 7.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/qjQmvuTg2xkpeeWJiBHmIcpvTDa.jpg",
+            "duration": "23m",
+            "overview": "Resolved to fight for humankind, Alice joins the forces of the Human Empire, bringing Kirito with her. But while the forces of darkness boast overwhelming numbers, only thirteen Integrity Knights are available to fight for the Human Empire."
+          },
+          {
+            "episode": 6,
+            "title": "Battle of the Knights",
+            "absoluteEpisode": 79,
+            "airDate": "2019-11-17",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9Ab7KV9JsbBKmAG9WZ6QQQTnNSx.jpg",
+            "duration": "23m",
+            "overview": "The Final Load Test has begun, and the Eastern Gate has collapsed. Incited by Gabriel, now Emperor Vecta, the massive army of the land of darkness pushes on towards the Human Empire."
+          },
+          {
+            "episode": 7,
+            "title": "Stigma of the Disqualified",
+            "absoluteEpisode": 80,
+            "airDate": "2019-11-24",
+            "rating": 7.7,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7lUTCntkCiZmfI46FXtNi4TM7UA.jpg",
+            "duration": "23m",
+            "overview": "Integrity Knight Renly Synthesis Twenty-Seven, in battle for the first time, flees his position, allowing goblins from the forces of darkness to infiltrate to the tent where Kirito is."
+          },
+          {
+            "episode": 8,
+            "title": "Blood and Life",
+            "absoluteEpisode": 81,
+            "airDate": "2019-12-01",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/aac9GQl1szARGPUH0e5dFUmu0y7.jpg",
+            "duration": "23m",
+            "overview": "The powerful formal art unleashed by the Integrity Knight Alice inflicts severe casualties on the forces of darkness. Alice encounters an enemy survivor and learns that Emperor Vecta's objective is to find the \"Priestess of Light.\""
+          },
+          {
+            "episode": 9,
+            "title": "Sword and Fist",
+            "absoluteEpisode": 82,
+            "airDate": "2019-12-08",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ngJJORUALoKW7OaoSaFlBg0Pr37.jpg",
+            "duration": "23m",
+            "overview": "Upon seeing Alice, Gabriel orders his entire army to capture her. The pugilists guild races ahead of the main force. As Alice and Bercouli try to come up with a strategy to counter them, the silent Integrity Knight Sheyta Synthesis Twelve steps forward."
+          },
+          {
+            "episode": 10,
+            "title": "Stacia, the Goddess of Creation",
+            "absoluteEpisode": 83,
+            "airDate": "2019-12-15",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/9is6M5wHgBtftPHks9sLJ7ASoZx.jpg",
+            "duration": "23m",
+            "overview": "Asuna has logged into the Underworld using the superuser account of Stacia, the Goddess of Creation. After she descends, she is reunited with Kirito, thanks to Ronie and Tiese. But soon Alice arrives, leading to a precarious situation!"
+          },
+          {
+            "episode": 11,
+            "title": "Heartless Choice",
+            "absoluteEpisode": 84,
+            "airDate": "2019-12-22",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ojEuCltZ3ZQIMYLYGhABH6AopnS.jpg",
+            "duration": "23m",
+            "overview": "Asuna has created a bottomless chasm. The dark knights and the pugilists attempt to cross over to the other side, where the Human Empire Army waits. Meanwhile, Critter releases an announcement about a limited-time beta test for a bizarre new VRMMO."
+          },
+          {
+            "episode": 12,
+            "title": "Ray of Light",
+            "absoluteEpisode": 85,
+            "airDate": "2019-12-29",
+            "rating": 8.1,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/Agyt1VH7zVHwklzlb9IwVMSynjf.jpg",
+            "duration": "23m",
+            "overview": "Due to Gabriel's scheme, U.S. players were given black knight accounts, and are now continuously logging in to the Underworld. They begin mercilessly slaughtering soldiers from both the Human Empire Army and the Dark Territory Army."
+          },
+          {
+            "episode": 13,
+            "title": "The War of Underworld",
+            "absoluteEpisode": 86,
+            "airDate": "2020-07-12",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/pefmd7agmQ2xA2ZvLJqxHQMlEg6.jpg",
+            "duration": "23m",
+            "overview": "Sinon has logged in with the super-account of Solus, the Sun Goddess and rescues Asuna and the others at the last minute. Meanwhile, Leafa logs in with the super-account of Terraria, the Earth Goddess, and descends to the Underworld."
+          },
+          {
+            "episode": 14,
+            "title": "End to Eternity",
+            "absoluteEpisode": 87,
+            "airDate": "2020-07-19",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/bN9TqIETmwNO0wXeZM2Y4p33vw.jpg",
+            "duration": "23m",
+            "overview": "Despite its modest size, the Human Empire Army and Asuna valiantly battle the wave of American players surging towards them. But they’re hopelessly outnumbered, and the Human Empire soldiers start to fall one after another."
+          },
+          {
+            "episode": 15,
+            "title": "Instigation",
+            "absoluteEpisode": 88,
+            "airDate": "2020-07-26",
+            "rating": 6.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/vdStwtLGjoZsWfVEyV0fLOUgl4l.jpg",
+            "duration": "23m",
+            "overview": "Bercouli pursues Vecta, who’s abducted Alice. After a long, vicious battle, Bercouli unleashes his secret sword skill, Uragiri, and finally defeats Vecta, despite having sustained severe injuries himself."
+          },
+          {
+            "episode": 16,
+            "title": "Code 871",
+            "absoluteEpisode": 89,
+            "airDate": "2020-08-02",
+            "rating": 7.2,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/q6baJ9R5GwEnLLxoX1dC7pITrFC.jpg",
+            "duration": "23m",
+            "overview": "The traitor inside Rath turns out to be a researcher named Yanai. When Higa attempts to restore Kirito, Yanai tries to thwart the operation by holding him at gunpoint. Meanwhile, in the Underworld, Sinon confronts Gabriel, who has logged back in."
+          },
+          {
+            "episode": 17,
+            "title": "Prince of Hell",
+            "absoluteEpisode": 90,
+            "airDate": "2020-08-09",
+            "rating": 7.8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/5xhOYfgLATDxfqnjYZYHg49CQ2w.jpg",
+            "duration": "23m",
+            "overview": "Asuna and the others succumb to Vassago and the Chinese/Korean players. Discovering the catatonic Kirito, Vassago kicks his wheelchair over. Enraged, Klein lunges at Vassago, only to be pinned down by enemy players. Just then, someone unexpected appears."
+          },
+          {
+            "episode": 18,
+            "title": "Memories",
+            "absoluteEpisode": 91,
+            "airDate": "2020-08-16",
+            "rating": 8.4,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/ahW4m6CEBXXHPhC6qejIKrgr39.jpg",
+            "duration": "23m",
+            "overview": "Sinon manages to severely damage Gabriel, but her strength has been sapped. Leafa collapses after wiping out the American players. And Asuna, her situation now hopeless, gazes at Kirito. But the Black Swordsman continues to wander through his dreams."
+          },
+          {
+            "episode": 19,
+            "title": "Awakening",
+            "absoluteEpisode": 92,
+            "airDate": "2020-08-23",
+            "rating": 8.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/yGU5BwtNM1tMLMwZQNStubq5mN0.jpg",
+            "duration": "23m",
+            "overview": "Escaping his nightmares, Kirito regains consciousness at last. With the Night-Sky Blade in his right hand and the broken Blue Rose Sword in his left, he faces off against Vassago, armed with the Mate-Chopper, now enormous in size."
+          },
+          {
+            "episode": 20,
+            "title": "The Night-Sky Blade",
+            "absoluteEpisode": 93,
+            "airDate": "2020-08-30",
+            "rating": 8.5,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/fLiy5OO1Bq6ykose7z4QiNIK1g6.jpg",
+            "duration": "23m",
+            "overview": "Alice and Asuna head to the World’s End Altar as Kirito confronts Gabriel. Unless he can defeat Gabriel and return to the real world before the maximum-acceleration phase begins, Kirito will have to spend the next 200 years in the Underworld."
+          },
+          {
+            "episode": 21,
+            "title": "Beyond Time",
+            "absoluteEpisode": 94,
+            "airDate": "2020-09-06",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/pOsw4FEifCe4sywwv59a9qJpmSr.jpg",
+            "duration": "23m",
+            "overview": "The maximum-acceleration phase has begun. Alice successfully logs out of the Underworld, but Kirito doesn’t make it in time. In the real world, Higa and Kikuoka rush to shut down the STL, in order to disable the maximum-acceleration phase, but…"
+          },
+          {
+            "episode": 22,
+            "title": "Alice",
+            "absoluteEpisode": 95,
+            "airDate": "2020-09-13",
+            "rating": 8,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/7lCpkD21iDINQX17Wd22MSjN28I.jpg",
+            "duration": "23m",
+            "overview": "The “Rath Attack Incident,” masterminded by the American National Security Agency, is over. Now head of the newly formed Oceanic Resource Exploration & Research Institution, Rinko unveils Alice to the world as an authentic artificial general intelligence."
+          },
+          {
+            "episode": 23,
+            "title": "New World",
+            "absoluteEpisode": 96,
+            "airDate": "2020-09-20",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/w0u1bSp9EWatole6ZoRKxGWhqpf.jpg",
+            "duration": "23m",
+            "overview": "Rinko informs Kazuto that Alice is missing. He’s about to rush to the Rath Roppongi branch when the doorbell rings. In a panic, Kazuto throws open the door, only to find a deliveryman there with a huge cardboard box."
+          }
+        ]
+      }
+    ]
+  }
 
 ];

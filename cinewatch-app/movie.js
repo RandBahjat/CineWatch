@@ -89,14 +89,21 @@ let TOP_10_TRENDING_TODAY = [
   "A Dog's Perfect Christmas"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
-  "Clayface",
-  "Spider-Man: Brand New Day",
-  "Matchbox the Movie",
-  "Insidious: Out of the Further",
-  "Tenzing",
-  "Fall 2: Deadpoint",
   "Resident Evil",
-  "Verity"
+  "Heart of the Beast",
+  "Primetime",
+  "Godzilla Minus Zero",
+  "The Mongoose",
+  "Apocalypse Z: New World",
+  "Verity",
+  "ClayFace",
+  "The Dog Stars",
+  "Model Citizen",
+  "A Dog's Perfect Christmas",
+  "Possible Love",
+  "Spider-Man: Brand New Day",
+  "Obsession",
+  "Wildwood"
 ];
 let TRENDING_THIS_WEEK_SERIES = [
   "The Greatest",
@@ -105,7 +112,7 @@ let TRENDING_THIS_WEEK_SERIES = [
   "Dexter: Resurrection",
   "Neagley",
   "Reacher",
-  "Lioness",
+  "Lupin",
   "The Greatest",
   "Slow Horses",
   "One Piece",
