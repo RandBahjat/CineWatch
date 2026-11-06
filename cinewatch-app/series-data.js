@@ -4,6 +4,122 @@
 
 window._SERIES_DATA = [
   // ============================================================
+  // The Greatest (2026 - Present)
+  // ============================================================
+  {
+    "id": "the-greatest-2026",
+    "title": "The Greatest",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": 8.0,
+    "age": "TV-MA",
+    "duration": "1 Season",
+    "genres": [
+      "Drama",
+      "Biography",
+      "Sport"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/hu4jco5AOs8NSIctuc9KsRyuSg8.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/b57tPAE2rpUoNpa63o7U2sFvIZs.jpg",
+    "videoUrl": "258989",
+    "trailerUrl": "https://www.youtube.com/watch?v=RnRf-r-RdA4",
+    "overview": "Fresh off gold at the 1960 Olympics, young boxer Muhammad Ali (then known as Cassius Clay) sets his sights on the Heavyweight Championship. Contending with newfound fame, self-doubt, family conflict and a politically charged America, the once-in-a-generation prodigy discovers his greatest opponent won't be in the ring, but in a society that isn't ready for him to become his own man.",
+    "overviewKurdish": "دوای بەدەستهێنانی مەدالیای زێڕ لە ئۆڵۆمپیادی ١٩٦٠دا، بۆکسێری گەنج محەممەد عەلی (کە ئەوکات بە کاسیۆس کلای ناسرابوو) ئامانجی خۆی بۆ پاڵەوانێتی کێشی قورس دیاری دەکات. لە نێوان ڕووبەڕووبوونەوەی ناوبانگی نوێ، گومان لە خود، کێشە خێزانییەکان و ئەمریکایەکی پڕ لە گرژیی سیاسی و ڕەگەزپەرستی، ئەم بلیمەتە بێوێنەیە درک بەوە دەکات کە گەورەترین ڕکابەری لە ناو ڕینگدا نابێت، بەڵکو لە کۆمەڵگەیەکدایە کە هێشتا ئامادە نییە بۆ ئەوەی ڕێگە بدات ببێتە کەسایەتییەکی سەربەخۆ و خاوەن بڕیاری خۆی.",
+    "director": "Ben Watkins",
+    "cast": [
+      "Jaalen Best",
+      "Omari Hardwick",
+      "Dana Gourrier",
+      "Amin Joseph",
+      "Kai Parham",
+      "Giovanni Ribisi",
+      "Reno Wilson",
+      "Erica Tazel"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Fool's Gold",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/rnDQi9BEmpkOsU0LnxWKdBbFt6D.jpg",
+            "duration": "62 min",
+            "overview": "After winning an Olympic Gold medal in Rome, Cassius Clay returns to Louisville with a changed perspective and excitement for what's to come. He must quickly learn to navigate his newfound fame while juggling career decisions, family dynamics, and the racial politics of his segregated hometown."
+          },
+          {
+            "episode": 2,
+            "title": "Promised Land",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/xAflnwnz6Y7CORIErZwi1KuaS3q.jpg",
+            "duration": "46 min",
+            "overview": "The Clay family scrambles to secure Cassius' future ahead of his first professional fight. Bird is crushed to discover that Cash and the boys are making decisions without her, creating a rift in the family that jeopardizes their plans. With the fight around the corner, the Clay family must put aside their differences and do what's best for Cassius."
+          },
+          {
+            "episode": 3,
+            "title": "The New Negro",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/rPHuWZEKApf4GS2xWAE9Tl3lVaT.jpg",
+            "duration": "54 min",
+            "overview": "Sonny Liston emerges as a fearsome challenger in the boxing world, but fights to escape his ties to the mob. Cassius finds a trainer in the renowned boxer Archie Moore, but his confidence is tested when the legend is unimpressed. Unable to fit into Moore's rigid structure, Cassius is forced to decide between bending who he is or finding someone that believes in him to become the greatest."
+          },
+          {
+            "episode": 4,
+            "title": "Artist at Work",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/eP5CJnemjFBbfZE5eZoLbWPFLtc.jpg",
+            "duration": "52 min",
+            "overview": "Cassius climbs the ranks for a chance at the heavyweight title. Meanwhile, Sonny has bulldozed all competition and is closing in on Floyd Patterson fast. Inspired by an ostentatious wrestler, Cassius crafts a controversial new public persona. With it brings media attention and scrutiny into his private life that threatens to expose his growing ties to the Nation of Islam."
+          },
+          {
+            "episode": 5,
+            "title": "X²",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/4xqRTlKooZWZjgg2X8qSWxNaqqM.jpg",
+            "duration": "48 min",
+            "overview": "A newfound friendship with Malcolm X draws Cassius deeper into the Nation of Islam as he struggles to keep his faith hidden from his parents and the press. During a fraught visit home, Cash and Bird grow suspicious of their sons' religious beliefs. Back in Miami, Angelo scrambles to keep a controversial photograph out of the press that could threaten to derail Cassius' career."
+          },
+          {
+            "episode": 6,
+            "title": "Eight Count",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/zafQ5wm7d5yz3G4IuEcCG6jTkFh.jpg",
+            "duration": "39 min",
+            "overview": "Cassius follows his title dreams to London, where he faces British champion Henry Cooper. But his arrogance and Cooper's devastating left hook send him crashing to the canvas. With his title chance and the dreams of everyone who believes in him hanging in the balance, the world watches to see if Cassius can beat the count. Meanwhile, heavyweight champion Sonny tries to reshape his public image."
+          },
+          {
+            "episode": 7,
+            "title": "Louder than Words",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/roEUKJZrD3OhCWhggmmRMmGruXw.jpg",
+            "duration": "50 min",
+            "overview": "When word of Cassius joining the Nation of Islam hits the papers, public outcry puts the Heavyweight Title fight in jeopardy. His parents, trainers, cornermen, and even Malcolm X urge him to distance himself from the Nation of Islam so the fight can proceed. Cassius is forced to make an impossible decision that will define his career and his life."
+          },
+          {
+            "episode": 8,
+            "title": "Hi, My Name Is...",
+            "airDate": "2026-11-04",
+            "rating": 8.0,
+            "thumbnail": "https://image.tmdb.org/t/p/w780/aa1W09cdRoZr4PtVxAZBS2IksnS.jpg",
+            "duration": "59 min",
+            "overview": "Cassius faces heavyweight champion Sonny Liston in the fight of his career. As the brash contender taunts his formidable opponent, the pressure mounts to prove he's more than just talk. With his dreams in reach, the world watches with bated breath to see if Cassius will be the next Heavyweight Champion."
+          }
+        ]
+      }
+    ]
+  },
+  // ============================================================
   // Campus Drivers (2026 - Present)
   // ============================================================
   {

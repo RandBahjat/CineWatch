@@ -99,9 +99,10 @@ let TRENDING_THIS_WEEK_MOVIES = [
   "Verity"
 ];
 let TRENDING_THIS_WEEK_SERIES = [
-  "Campus Drivers",
+  "The Greatest",
+  "Tulsa King",
   "VisionQuest",
-  "MobLand",
+  "Dexter: Resurrection",
   "Neagley",
   "Reacher",
   "Lioness",
@@ -109,13 +110,13 @@ let TRENDING_THIS_WEEK_SERIES = [
   "Slow Horses",
   "One Piece",
   "Ted Lasso",
-  "City of Blood",
 ];
 const POPULAR_MOVIES = [
   "Spider-Man: Brand New Day",
   "Resident Evil",
-  "The End of Oak Street",
-  "Coyote vs. Acme",
+  "The Dark Knight",
+  "Project Hail Mary",
+  "Apocalypse Z: New World",
   "The Odysessey",
   "Mutiny",
   "Moana(2026)",
@@ -128,7 +129,6 @@ const POPULAR_MOVIES = [
   "The Last House",
   "Drawn Together",
   "Michael",
-  "Project Hail Mary",
   "Avatar Aang: The Last Airbender",
   "The Shawshank Redemption"
 ];
