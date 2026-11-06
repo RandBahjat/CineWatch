@@ -130,7 +130,7 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 32m",
     genres: ["Action", "Crime", "Drama", "Thriller"],
-    poster: "https://image.tmdb.org/t/p/original/gcmi5p5Mmg9RiuRDaSfk5JUnLCz.jpg",
+    poster: "https://image.tmdb.org/t/p/original/ghxS6itn1mGzejZb0SYiTo2SOMR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gCXqGU0TpsLr6NJrCPU5J3rmxRs.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=EXeTwQWrcwY",
@@ -144,6 +144,35 @@ window._FOURK_DATA = [
     seasons: [],
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 6. The Dark Knight Rises (2012)
+  // ============================================================
+  {
+    id: "the-dark-knight-rises-2012",
+    title: "The Dark Knight Rises",
+    type: "Movie",
+    year: 2012,
+    rating: 8.4,
+    age: "PG-13",
+    duration: "2h 44m",
+    genres: ["Action", "Crime", "Thriller"],
+    poster: "https://image.tmdb.org/t/p/original/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/c3OHQncTAnKFhdOTX7D3LTW6son.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=g8evyE9TuYk",
+    overview: "Years after retreating into isolation following the death of Harvey Dent, a crippled and disillusioned Bruce Wayne is forced back into the cowl when a merciless masked revolutionary named Bane threatens to bring Gotham City to its knees. With old allies, new enemies, and a city on the brink of anarchy, Batman must find the strength to rise once more — even if it costs him everything.",
+    overviewKurdish: "ساڵانێک دوای خۆشاردنەوە و گۆشەگیری پاش گیانلەدەستدانی هارڤی دێنت، بروس وەینی بێهیوا و بریندار ناچار دەبێتەوە دەمامکەکەی باتمان بپۆشێتەوە کاتێک شۆڕشگێڕێکی دەمامکداری بێبەزەیی بە ناوی بەین هەڕەشەی خاپوورکردنی شاری گۆثەم دەکات. بە هاوکاریی هاوپەیمانە کۆنەکان و ڕووبەڕووبوونەوەی دوژمنە نوێیەکان لە شارێکدا کە لە لێواری ئاژاوەدایە، دەبێت شوڕشگێڕی تاریکی هێزی خۆی کۆبکاتەوە بۆ هەڵسانەوە، تەنانەت ئەگەر لەسەر باجی هەموو ژیانیشی بێت.",
+    director: "Christopher Nolan",
+    cast: ["Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman", "Joseph Gordon-Levitt", "Marion Cotillard", "Michael Caine", "Morgan Freeman"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_English.vtt", srclang: "en", default: true }
     ]
   },
 
