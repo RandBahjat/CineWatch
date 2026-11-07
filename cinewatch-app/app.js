@@ -1540,7 +1540,6 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   window._cwQualities = null;
 
   const malId = isAnime ? getAnimeMalId(movie, movie.videoUrl || movie.id) : null;
-  const poster = movie.backdrop || movie.poster || '';
   let cleanUrl = '';
   let subtitleUrl = '';
 
@@ -1550,17 +1549,29 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   }
 
   const fourkAppMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
-    ? window._FOURK_DATA.find(f => (movie && (f.id === movie.id || (f.title && movie.title && f.title.toLowerCase() === movie.title.toLowerCase()))))
+    ? window._FOURK_DATA.find(f => (movie && (f.id === movie.id || (f.title && movie.title && f.title.toLowerCase().trim() === String(movie.title).toLowerCase().trim()))))
     : null;
 
   const isFrom4kApp = !isAnime && !isTv && Boolean(
     (typeof state !== 'undefined' && (state.currentDetailsFrom4k === true || state.activeView === '4k')) ||
     (typeof window !== 'undefined' && (window.location.search.includes('section=4k') || window.location.hash.includes('4k'))) ||
     movie?.is4k === true ||
+    movie?.from4kSection === true ||
     movie?.fourkVideoUrl ||
-    fourkAppMatch ||
+    fourkAppMatch !== null ||
     rawVideoStr.includes('_4K_') || rawVideoStr.includes('_4K.') || rawVideoStr.includes('4K_UHD')
   );
+
+  if (isFrom4kApp && fourkAppMatch && movie) {
+    movie.from4kSection = true;
+    movie.is4k = true;
+    if (fourkAppMatch.backdrop) movie.backdrop = fourkAppMatch.backdrop;
+    if (fourkAppMatch.poster) movie.poster = fourkAppMatch.poster;
+  }
+
+  const poster = (isFrom4kApp && (fourkAppMatch?.backdrop || fourkAppMatch?.poster))
+    ? (fourkAppMatch.backdrop || fourkAppMatch.poster)
+    : (movie.backdrop || movie.poster || '');
 
   if (!isFrom4kApp) {
     if (movie) {
@@ -2388,17 +2399,21 @@ function playMovieDirect(movieId) {
   ) && (typeof state === 'undefined' || (state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime'));
 
   if (isFrom4kApp) {
-    const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;
-    if (direct4k) {
-      movie.videoUrl = direct4k;
-    }
+    movie.from4kSection = true;
+    movie.is4k = true;
     if (fourkDirectMatch) {
+      if (fourkDirectMatch.backdrop) movie.backdrop = fourkDirectMatch.backdrop;
+      if (fourkDirectMatch.poster) movie.poster = fourkDirectMatch.poster;
       if (fourkDirectMatch.subtitles && (!movie.subtitles || movie.subtitles.length === 0)) {
         movie.subtitles = fourkDirectMatch.subtitles;
       }
       if (fourkDirectMatch.audioUrl && !movie.audioUrl) {
         movie.audioUrl = fourkDirectMatch.audioUrl;
       }
+    }
+    const direct4k = movie.fourkVideoUrl || fourkDirectMatch?.videoUrl;
+    if (direct4k) {
+      movie.videoUrl = direct4k;
     }
     window._cwQualities = null;
   } else {
@@ -2414,7 +2429,6 @@ function playMovieDirect(movieId) {
     } else if (movie.hdVideoUrl) {
       movie.videoUrl = movie.hdVideoUrl;
     }
-  }
   }
 
   closeDetail();

@@ -4370,6 +4370,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     state.activeView === '4k' ||
     state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
+    (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
     parentMovie?.from4kSection === true ||
     parentMovie?.is4k === true ||
     parentMovie?.fourkVideoUrl ||
@@ -4378,9 +4379,23 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   );
 
   if (is4kPlayback) {
-    if (parentMovie) parentMovie.from4kSection = true;
     if (!parentMovie && fourkMeta) {
-      parentMovie = { ...fourkMeta, from4kSection: true };
+      parentMovie = { ...fourkMeta, from4kSection: true, is4k: true };
+    } else if (parentMovie && fourkMeta) {
+      parentMovie.from4kSection = true;
+      parentMovie.is4k = true;
+      if (fourkMeta.backdrop) parentMovie.backdrop = fourkMeta.backdrop;
+      if (fourkMeta.poster) parentMovie.poster = fourkMeta.poster;
+      if (fourkMeta.subtitles) parentMovie.subtitles = fourkMeta.subtitles;
+      if (fourkMeta.audioUrl) parentMovie.audioUrl = fourkMeta.audioUrl;
+    } else if (parentMovie && epData && (epData.is4k || epData.from4kSection)) {
+      parentMovie.from4kSection = true;
+      parentMovie.is4k = true;
+      if (epData.backdrop) parentMovie.backdrop = epData.backdrop;
+      if (epData.poster) parentMovie.poster = epData.poster;
+    } else if (parentMovie) {
+      parentMovie.from4kSection = true;
+      parentMovie.is4k = true;
     }
     const validPassedUrl = (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv')) && !videoUrl.startsWith('tv_embed:')) ? videoUrl : null;
     const direct4k = validPassedUrl || parentMovie?.fourkVideoUrl || fourkMeta?.videoUrl;
@@ -4504,21 +4519,30 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 }
 
 async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
+  const fourkCandidate = typeof find4kByIdOrTitle === 'function' ? find4kByIdOrTitle(movieId) : null;
   const isFrom4k = is4k === true || (
-    is4k !== false &&
-    state.activeView === '4k' &&
-    state.activeView !== 'movies' &&
-    state.activeView !== 'series' &&
-    state.activeView !== 'anime' &&
-    state.activeView !== 'search' &&
-    state.activeView !== 'home'
+    is4k !== false && (
+      state.activeView === '4k' ||
+      state.currentDetailsFrom4k === true ||
+      (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
+      (fourkCandidate !== null && state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime')
+    )
   );
 
   const movie = isFrom4k
-    ? (find4kByIdOrTitle(movieId) || findMovieByIdOrTitle(movieId))
-    : (findMovieByIdOrTitle(movieId) || find4kByIdOrTitle(movieId));
+    ? (fourkCandidate || findMovieByIdOrTitle(movieId))
+    : (findMovieByIdOrTitle(movieId) || fourkCandidate);
 
   if (!movie) return;
+
+  if (isFrom4k && movie) {
+    movie.from4kSection = true;
+    movie.is4k = true;
+    if (fourkCandidate) {
+      if (fourkCandidate.backdrop) movie.backdrop = fourkCandidate.backdrop;
+      if (fourkCandidate.poster) movie.poster = fourkCandidate.poster;
+    }
+  }
 
   recordWatchEvent(movie.id);
 
@@ -8019,20 +8043,34 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const rawEp = hasSeasonSpecificMal ? (epData?.episode || parsedEp || 1) : (epData?.absoluteEpisode || epData?.episode || parsedEp || 1);
   const epNum = epData?.episode || parsedEp || rawEp;
 
-  const fourkMatch = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
-    ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase() === ref.title.toLowerCase()))) || (videoUrl && f.videoUrl === videoUrl))
-    : null;
+  const fourkMatch = (typeof find4kByIdOrTitle === 'function' ? (find4kByIdOrTitle(ref?.id) || find4kByIdOrTitle(ref?.title) || find4kByIdOrTitle(movie?.id) || find4kByIdOrTitle(movie?.title)) : null) || (
+    (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+      ? window._FOURK_DATA.find(f => (ref && (f.id === ref.id || (f.title && ref.title && f.title.toLowerCase().trim() === String(ref.title).toLowerCase().trim()))) || (videoUrl && f.videoUrl === videoUrl))
+      : null
+  );
 
   const isFrom4kSession = !isAnime && !isTv && Boolean(
     state.activeView === '4k' ||
     state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
+    (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
     ref?.from4kSection === true ||
     ref?.is4k === true ||
     ref?.fourkVideoUrl ||
     fourkMatch !== null ||
     (typeof videoUrl === 'string' && (videoUrl.includes('_4K_') || videoUrl.includes('_4K.') || videoUrl.includes('4K_UHD')))
   );
+
+  if (isFrom4kSession && fourkMatch && ref) {
+    ref.from4kSection = true;
+    ref.is4k = true;
+    if (fourkMatch.backdrop) ref.backdrop = fourkMatch.backdrop;
+    if (fourkMatch.poster) ref.poster = fourkMatch.poster;
+  }
+
+  const poster = (isFrom4kSession && (fourkMatch?.backdrop || fourkMatch?.poster))
+    ? (fourkMatch.backdrop || fourkMatch.poster)
+    : (ref?.backdrop || ref?.poster || '');
 
   let tmdbId = isFrom4kSession ? null : (ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : ''));
   if (!isFrom4kSession && typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
@@ -8075,7 +8113,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-  const poster = ref?.backdrop || ref?.poster || '';
   let cleanUrl = '';
   let subtitleUrl = '';
   let animeChapters = null;
