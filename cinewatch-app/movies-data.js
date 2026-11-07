@@ -1844,25 +1844,30 @@ window._MOVIES_DATA = [
   // 62. Iron Man (2008)
   // ============================================================
   {
+    id: "iron-man-2008",
     title: "Iron Man",
     type: "Movie",
     year: 2008,
     rating: 7.9,
     age: "PG-13",
     duration: "2h 6m",
-    genres: ["Action", "Adventure", "Sci-Fi", "Fantasy"],
-    poster: "https://cdng.europosters.eu/pod_public/1300/263132.jpg",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
     videoUrl: "1726",
-    trailerUrl: "",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=8ugaeA-nMTc",
     overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man — determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
-    overviewKurdish: "",
+    overviewKurdish: "تۆنی ستارک، ملیاردێر و داهێنەرێکی بلیمەتە، لە کاتی سەردانێکیدا بۆ ئەفغانستان لەلایەن تیرۆریستانەوە دەڕفێندرێت و ناچار دەکرێت چەکێکی وێرانکەر دروست بکات. بەڵام لەبری ئەوە، بە نهێنی زرێپۆشێکی بەهێز دروست دەکات و لە دەستیان هەڵدێت. دوای گەڕانەوەی بۆ نیشتمان، بڕیار دەدات کۆتایی بە بەرهەمهێنانی چەک لە کۆمپانیاکەی بهێنێت و ناسنامەی ئایرۆن مان هەڵدەبژێرێت بۆ پاراستنی جیهان، لە کاتێکدا ناپاکی لە نزیکترین کەسەکانییەوە ژیانی دەخاتە مەترسییەوە.",
     director: "Jon Favreau",
-    cast: ["Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges"],
-    trending: false,
+    cast: ["Robert Downey Jr.", "Gwyneth Paltrow", "Terrence Howard", "Jeff Bridges", "Shaun Toub", "Leslie Bibb", "Faran Tahir", "Clark Gregg"],
+    trending: true,
     featured: false,
     is4k: false,
-    seasons: []
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt", srclang: "en", default: true }
+    ]
   },
 
   // ============================================================
