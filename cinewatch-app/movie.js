@@ -4352,12 +4352,19 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
   }
   if (!parentMovie && displayTitle) {
-    parentMovie = MOVIES.find(m => displayTitle.toLowerCase().includes((m.title || '').toLowerCase()));
+    const dLower = String(displayTitle).toLowerCase().trim();
+    parentMovie = MOVIES.find(m => String(m.title || '').toLowerCase().trim() === dLower) || (typeof findMovieByIdOrTitle === 'function' ? findMovieByIdOrTitle(displayTitle) : null);
   }
 
-  const fourkMeta = (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
-    ? window._FOURK_DATA.find(f => (parentId && (f.id === parentId || f.videoUrl === videoUrl)) || (displayTitle && f.title && displayTitle.toLowerCase().includes(f.title.toLowerCase())) || (parentMovie && ((f.id && f.id === parentMovie.id) || (f.title && f.title.toLowerCase() === (parentMovie.title || '').toLowerCase()))))
-    : null;
+  const fourkMeta = (typeof find4kByIdOrTitle === 'function' ? (find4kByIdOrTitle(parentId) || find4kByIdOrTitle(displayTitle)) : null) || (
+    (typeof window !== 'undefined' && Array.isArray(window._FOURK_DATA))
+      ? window._FOURK_DATA.find(f => 
+          (parentId && (f.id === parentId || f.videoUrl === videoUrl)) || 
+          (displayTitle && f.title && f.title.toLowerCase().trim() === String(displayTitle).toLowerCase().trim()) || 
+          (parentMovie && ((f.id && f.id === parentMovie.id) || (f.title && f.title.toLowerCase().trim() === String(parentMovie.title || '').toLowerCase().trim())))
+        )
+      : null
+  );
 
   const is4kPlayback = Boolean(
     state.activeView === '4k' ||
@@ -4375,7 +4382,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     if (!parentMovie && fourkMeta) {
       parentMovie = { ...fourkMeta, from4kSection: true };
     }
-    const direct4k = parentMovie?.fourkVideoUrl || fourkMeta?.videoUrl || (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv')) ? videoUrl : null);
+    const validPassedUrl = (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv')) && !videoUrl.startsWith('tv_embed:')) ? videoUrl : null;
+    const direct4k = validPassedUrl || parentMovie?.fourkVideoUrl || fourkMeta?.videoUrl;
     if (direct4k) {
       videoUrl = direct4k;
     }

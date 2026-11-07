@@ -1482,6 +1482,7 @@ window._MOVIES_DATA = [
   // 48. The Dark Knight Rises (2012)
   // ============================================================
   {
+    id: "the-dark-knight-rises-2012",
     title: "The Dark Knight Rises",
     type: "Movie",
     year: 2012,
@@ -1560,6 +1561,7 @@ window._MOVIES_DATA = [
   // 51. The Dark Knight (2008)
   // ============================================================
   {
+    id: "the-dark-knight-2008",
     title: "The Dark Knight",
     type: "Movie",
     year: 2008,
@@ -1588,6 +1590,7 @@ window._MOVIES_DATA = [
   // 52. Batman Begins (2005)
   // ============================================================
   {
+    id: "batman-begins-2005",
     title: "Batman Begins",
     type: "Movie",
     year: 2005,
