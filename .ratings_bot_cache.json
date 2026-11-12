@@ -1,5 +1,5 @@
 {
-  "lastRun": 1792786682832,
+  "lastRun": 1794511648147,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -4862,6 +4862,251 @@
       "lastChecked": 1792757836693,
       "title": "Spider-Man: Homecoming",
       "year": 2017
+    },
+    "movie:dune: part three": {
+      "imdbId": "tt31378509",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Dune: Part Three",
+      "year": 2026
+    },
+    "series:harry potter": {
+      "imdbId": "tt13918446",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Harry Potter",
+      "year": 2026
+    },
+    "movie:a dog's perfect christmas": {
+      "imdbId": "tt38515310",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "A Dog's Perfect Christmas",
+      "year": 2026
+    },
+    "movie:the good lawyer": {
+      "imdbId": "tt24757822",
+      "rating": "9.0",
+      "lastChecked": 1794511648147,
+      "title": "The Good Lawyer",
+      "year": 2026
+    },
+    "movie:other mommy": {
+      "imdbId": "tt36586020",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Other Mommy",
+      "year": 2026
+    },
+    "movie:the mongoose": {
+      "imdbId": "tt13611778",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "The Mongoose",
+      "year": 2026
+    },
+    "movie:godzilla minus zero": {
+      "imdbId": "tt34384661",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Godzilla Minus Zero",
+      "year": 2026
+    },
+    "movie:model citizen": {
+      "imdbId": "tt13884466",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Model Citizen",
+      "year": 2026
+    },
+    "movie:possible love": {
+      "imdbId": "tt37803364",
+      "rating": "7.7",
+      "lastChecked": 1794511648147,
+      "title": "Possible Love",
+      "year": 2026
+    },
+    "movie:apocalypse z: new world": {
+      "imdbId": "tt37522541",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Apocalypse Z: New World",
+      "year": 2026
+    },
+    "movie:the dog stars": {
+      "imdbId": "tt21285562",
+      "rating": "6.5",
+      "lastChecked": 1794511648147,
+      "title": "The Dog Stars",
+      "year": 2026
+    },
+    "movie:you can see everything": {
+      "imdbId": "tt45368240",
+      "rating": "7.9",
+      "lastChecked": 1794511648147,
+      "title": "You Can See Everything",
+      "year": 2026
+    },
+    "movie:sense and sensibility": {
+      "imdbId": "tt13609648",
+      "rating": "7.2",
+      "lastChecked": 1794511648147,
+      "title": "Sense and Sensibility",
+      "year": 2026
+    },
+    "movie:wildwood": {
+      "imdbId": "tt2056785",
+      "rating": "8.7",
+      "lastChecked": 1794511648147,
+      "title": "Wildwood",
+      "year": 2026
+    },
+    "movie:the cycle": {
+      "imdbId": "tt32358390",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "The Cycle",
+      "year": 2026
+    },
+    "movie:tenzing": {
+      "imdbId": "tt6262770",
+      "rating": "7.7",
+      "lastChecked": 1794511648147,
+      "title": "Tenzing",
+      "year": 2026
+    },
+    "series:the greatest": {
+      "imdbId": "tt15715850",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "The Greatest",
+      "year": 2026
+    },
+    "series:campus drivers": {
+      "imdbId": "tt39943756",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Campus Drivers",
+      "year": 2026
+    },
+    "series:dexter: resurrection": {
+      "imdbId": "tt33043892",
+      "rating": "9.0",
+      "lastChecked": 1794511648147,
+      "title": "Dexter: Resurrection",
+      "year": 2025
+    },
+    "fourk:resident evil": {
+      "imdbId": "tt35538033",
+      "rating": "N/A",
+      "lastChecked": 1794511648147,
+      "title": "Resident Evil",
+      "year": 2026
+    },
+    "fourk:superman": {
+      "imdbId": "tt5950044",
+      "rating": "7.0",
+      "lastChecked": 1794511648147,
+      "title": "Superman",
+      "year": 2025
+    },
+    "series:lupin": {
+      "imdbId": "tt2531336",
+      "rating": "7.5",
+      "lastChecked": 1794511648147,
+      "title": "Lupin",
+      "year": 2021
+    },
+    "series:tulsa king": {
+      "imdbId": "tt16358384",
+      "rating": "7.9",
+      "lastChecked": 1794511648147,
+      "title": "Tulsa King",
+      "year": 2022
+    },
+    "series:batman beyond": {
+      "imdbId": "tt0147746",
+      "rating": "8.1",
+      "lastChecked": 1794511648147,
+      "title": "Batman Beyond",
+      "year": 1999
+    },
+    "series:the legend of korra": {
+      "imdbId": "tt1695360",
+      "rating": "8.3",
+      "lastChecked": 1794511648147,
+      "title": "The Legend of Korra",
+      "year": 2012
+    },
+    "series:spongebob squarepants": {
+      "imdbId": "tt0206512",
+      "rating": "8.2",
+      "lastChecked": 1794511648147,
+      "title": "SpongeBob SquarePants",
+      "year": 1999
+    },
+    "anime:beyblade: metal fusion": {
+      "imdbId": "tt1674928",
+      "rating": "7.0",
+      "lastChecked": 1794511648147,
+      "title": "Beyblade: Metal Fusion",
+      "year": 2009
+    },
+    "anime:bakugan battle brawlers": {
+      "imdbId": "tt1114855",
+      "rating": "5.8",
+      "lastChecked": 1794511648147,
+      "title": "Bakugan Battle Brawlers",
+      "year": 2007
+    },
+    "anime:sword art online": {
+      "imdbId": "tt2250192",
+      "rating": "7.5",
+      "lastChecked": 1794511648147,
+      "title": "Sword Art Online",
+      "year": 2012
+    },
+    "fourk:batman begins": {
+      "imdbId": "tt0372784",
+      "rating": "8.2",
+      "lastChecked": 1794511648147,
+      "title": "Batman Begins",
+      "year": 2005
+    },
+    "fourk:the dark knight": {
+      "imdbId": "tt0468569",
+      "rating": "9.1",
+      "lastChecked": 1794511648147,
+      "title": "The Dark Knight",
+      "year": 2008
+    },
+    "fourk:the dark knight rises": {
+      "imdbId": "tt1345836",
+      "rating": "8.4",
+      "lastChecked": 1794511648147,
+      "title": "The Dark Knight Rises",
+      "year": 2012
+    },
+    "fourk:spider-man: far from home": {
+      "imdbId": "tt6320628",
+      "rating": "7.3",
+      "lastChecked": 1794511648147,
+      "title": "Spider-Man: Far From Home",
+      "year": 2019
+    },
+    "fourk:spider-man: no way home": {
+      "imdbId": "tt10872600",
+      "rating": "8.1",
+      "lastChecked": 1794511648147,
+      "title": "Spider-Man: No Way Home",
+      "year": 2021
+    },
+    "fourk:harry potter and the philosopher’s stone": {
+      "imdbId": "tt16759008",
+      "rating": "7.7",
+      "lastChecked": 1794511648147,
+      "title": "Harry Potter and the Philosopher’s Stone",
+      "year": 2001
     }
   }
 }

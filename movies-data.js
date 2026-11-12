@@ -4,6 +4,9 @@
 
 window._MOVIES_DATA = [
 
+  // ============================================================
+  // 1. A Dog's Perfect Christmas (2026)
+  // ============================================================
   {
     title: "A Dog's Perfect Christmas",
     type: "Movie",
@@ -11,7 +14,7 @@ window._MOVIES_DATA = [
     rating: 6.5,
     age: "TV-14",
     duration: "1h 39m",
-    genres: ["Family","Drama","Comedy"],
+    genres: ["Family", "Drama", "Comedy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hhQT0TySg3LXCE8BEPpfPJ5zJA2.jpg",
     videoUrl: "1570488",
@@ -25,11 +28,15 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 2. The Good Lawyer (2026)
+  // ============================================================
   {
     title: "The Good Lawyer",
     type: "Movie",
     year: 2026,
-    rating: 6.3,
+    rating: "9.0",
     age: "R",
     duration: "1h 54m",
     genres: ["Drama"],
@@ -46,6 +53,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 3. Other Mommy (2026)
+  // ============================================================
   {
     title: "Other Mommy",
     type: "Movie",
@@ -53,7 +64,7 @@ window._MOVIES_DATA = [
     rating: 5.3,
     age: "R",
     duration: "1h 33m",
-    genres: ["Horror","Thriller","Mystery","Supernatural"],
+    genres: ["Horror", "Thriller", "Mystery", "Supernatural"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6LLbuB16itnY6iyRh96nIGPaIVi.jpg",
     videoUrl: "1400837",
@@ -67,14 +78,18 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 4. The Mongoose (2026)
+  // ============================================================
   {
     title: "The Mongoose",
     type: "Movie",
     year: 2026,
-    rating: 5.0,
+    rating: 5,
     age: "R",
     duration: "1h 38m",
-    genres: ["Action","Drama","Crime","Thriller"],
+    genres: ["Action", "Drama", "Crime", "Thriller"],
     poster: "https://image.tmdb.org/t/p/original/nQoLKzZ6cukwOru1SJW9vQwID54.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mfWwnoRLARGXAqZ1B8bP8SFIqF6.jpg",
     videoUrl: "1294189",
@@ -88,6 +103,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 5. Godzilla Minus Zero (2026)
+  // ============================================================
   {
     title: "Godzilla Minus Zero",
     type: "Movie",
@@ -95,7 +114,7 @@ window._MOVIES_DATA = [
     rating: 8.1,
     age: "R",
     duration: "2h 15m",
-    genres: ["Action","Adventure","Drama","Sci-Fi","Horror"],
+    genres: ["Action", "Adventure", "Drama", "Sci-Fi", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rhCg3n4wIu2wkT607h7znedYZBj.jpg",
     videoUrl: "1294189",
@@ -109,6 +128,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 6. Model Citizen (2026)
+  // ============================================================
   {
     title: "Model Citizen",
     type: "Movie",
@@ -116,7 +139,7 @@ window._MOVIES_DATA = [
     rating: 3.9,
     age: "R",
     duration: "1h 33m",
-    genres: ["Drama","Crime","Thriller","Mystery"],
+    genres: ["Drama", "Crime", "Thriller", "Mystery"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pKAQWMGnbGBLgYLI6fKmCBojegC.jpg",
     videoUrl: "1792170",
@@ -130,14 +153,18 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 7. Possible Love (2026)
+  // ============================================================
   {
     title: "Possible Love",
     type: "Movie",
     year: 2026,
-    rating: 8.1,
+    rating: "7.7",
     age: "R",
     duration: "2h 44m",
-    genres: ["Drama","Romance"],
+    genres: ["Drama", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7o0qgFOO9CHs18nd5shXJB1lqj9.jpg",
     videoUrl: "1483525",
@@ -151,6 +178,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 8. Apocalypse Z: New World (2026)
+  // ============================================================
   {
     title: "Apocalypse Z: New World",
     type: "Movie",
@@ -158,7 +189,7 @@ window._MOVIES_DATA = [
     rating: 5.2,
     age: "TV-MA",
     duration: "1h 38m",
-    genres: ["Action","Horror", "Sci-Fi","Thriller"],
+    genres: ["Action", "Horror", "Sci-Fi", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wXln4DUrwcyjcFPwgQxFPYTlG1Z.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/SeQojlDTCwnU2tgWWQi4UFXmr9.jpg",
     videoUrl: "1507696",
@@ -172,14 +203,18 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 9. The Dog Stars (2026)
+  // ============================================================
   {
     title: "The Dog Stars",
     type: "Movie",
     year: 2026,
-    rating: 6.4,
+    rating: "6.5",
     age: "R",
     duration: "1h 58m",
-    genres: ["Adventure","Drama","Thriller", "Sci-Fi"],
+    genres: ["Adventure", "Drama", "Thriller", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w1280/5O616X9vmRzQdB68PHzBewPittd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
     videoUrl: "1384216",
@@ -193,14 +228,18 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 10. You Can See Everything (2026)
+  // ============================================================
   {
     title: "You Can See Everything",
     type: "Movie",
     year: 2026,
-    rating: 9.2,
+    rating: "7.9",
     age: "R",
     duration: "2h 54m",
-    genres: ["Documentary","Biography","Comedy", "Crime"],
+    genres: ["Documentary", "Biography", "Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
     videoUrl: "1765072",
@@ -214,14 +253,18 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 11. Sense and Sensibility (2026)
+  // ============================================================
   {
     title: "Sense and Sensibility",
     type: "Movie",
     year: 2026,
-    rating: 7.3,
+    rating: "7.2",
     age: "PG",
     duration: "2h 12m",
-    genres: ["Drama","Romance",],
+    genres: ["Drama", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tIcONOFK9D3F89ETK8DBS1hIwVF.jpg",
     videoUrl: "1503762",
@@ -235,6 +278,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 12. Wildwood (2026)
+  // ============================================================
   {
     title: "Wildwood",
     type: "Movie",
@@ -242,7 +289,7 @@ window._MOVIES_DATA = [
     rating: 8.7,
     age: "PG-13",
     duration: "2h 10m",
-    genres: ["Animation","Adventure","Family","Fantasy"],
+    genres: ["Animation", "Adventure", "Family", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w1280/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
     videoUrl: "791523",
@@ -256,6 +303,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 13. Clayface (2026)
+  // ============================================================
   {
     title: "Clayface",
     type: "Movie",
@@ -277,8 +328,11 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 14. The Cycle (2026)
+  // ============================================================
   {
-    
     title: "The Cycle",
     type: "Movie",
     year: 2026,
@@ -299,12 +353,15 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 15. Tenzing (2026)
+  // ============================================================
   {
-    
     title: "Tenzing",
     type: "Movie",
     year: 2026,
-    rating: 7.5,
+    rating: "7.7",
     age: "PG",
     duration: "2h 5m",
     genres: ["Adventure", "Biography", "Drama", "History"],
@@ -322,11 +379,8 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-
-
-
   // ============================================================
-  // 1. Fall 2: Deadpoint (2026)
+  // 16. Fall 2: Deadpoint (2026)
   // ============================================================
   {
     title: "Fall 2: Deadpoint",
@@ -351,7 +405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 2. By Any Means (2026)
+  // 17. By Any Means (2026)
   // ============================================================
   {
     title: "By Any Means",
@@ -376,7 +430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 3. Matchbox the Movie (2026)
+  // 18. Matchbox the Movie (2026)
   // ============================================================
   {
     title: "Matchbox the Movie",
@@ -401,7 +455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 4. Whalefall (2026)
+  // 19. Whalefall (2026)
   // ============================================================
   {
     title: "Whalefall",
@@ -426,7 +480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 5. Practical Magic 2 (2026)
+  // 20. Practical Magic 2 (2026)
   // ============================================================
   {
     title: "Practical Magic 2",
@@ -451,7 +505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 6. Animals (2026)
+  // 21. Animals (2026)
   // ============================================================
   {
     title: "Animals",
@@ -476,7 +530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 7. The Florist (2026)
+  // 22. The Florist (2026)
   // ============================================================
   {
     title: "The Florist",
@@ -501,7 +555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 8. Verity (2026)
+  // 23. Verity (2026)
   // ============================================================
   {
     title: "Verity",
@@ -526,7 +580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 9. Street Fighter (2026)
+  // 24. Street Fighter (2026)
   // ============================================================
   {
     title: "Street Fighter",
@@ -551,7 +605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 10. The Uprising (2026)
+  // 25. The Uprising (2026)
   // ============================================================
   {
     title: "The Uprising",
@@ -576,7 +630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 11. Unabomber (2026)
+  // 26. Unabomber (2026)
   // ============================================================
   {
     title: "Unabomber",
@@ -601,7 +655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 12. The Love Hypothesis (2026)
+  // 27. The Love Hypothesis (2026)
   // ============================================================
   {
     title: "The Love Hypothesis",
@@ -626,7 +680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 13. Digger (2026)
+  // 28. Digger (2026)
   // ============================================================
   {
     title: "Digger",
@@ -651,7 +705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 14. One Last Shot (2026)
+  // 29. One Last Shot (2026)
   // ============================================================
   {
     title: "One Last Shot",
@@ -676,7 +730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 15. Heart of the Beast (2026)
+  // 30. Heart of the Beast (2026)
   // ============================================================
   {
     title: "Heart of the Beast",
@@ -701,7 +755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 16. Ice Cream Man (2026)
+  // 31. Ice Cream Man (2026)
   // ============================================================
   {
     title: "Ice Cream Man",
@@ -726,7 +780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 17. The Fix (2026)
+  // 32. The Fix (2026)
   // ============================================================
   {
     title: "The Fix",
@@ -751,7 +805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 18. The Rivals of Amziah King (2026)
+  // 33. The Rivals of Amziah King (2026)
   // ============================================================
   {
     title: "The Rivals of Amziah King",
@@ -776,7 +830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 19. You+Me – Against the World (2026)
+  // 34. You+Me – Against the World (2026)
   // ============================================================
   {
     title: "You+Me – Against the World",
@@ -801,7 +855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 20. Runner (2026)
+  // 35. Runner (2026)
   // ============================================================
   {
     title: "Runner",
@@ -826,7 +880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 21. Go Team! (2026)
+  // 36. Go Team! (2026)
   // ============================================================
   {
     title: "Go Team!",
@@ -851,7 +905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 22. City of Blood (2026)
+  // 37. City of Blood (2026)
   // ============================================================
   {
     title: "City of Blood",
@@ -876,7 +930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 23. The Runner (2026)
+  // 38. The Runner (2026)
   // ============================================================
   {
     title: "The Runner",
@@ -901,7 +955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 24. Drawn Together (2026)
+  // 39. Drawn Together (2026)
   // ============================================================
   {
     title: "Drawn Together",
@@ -926,7 +980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 25. Mayday (2026)
+  // 40. Mayday (2026)
   // ============================================================
   {
     title: "Mayday",
@@ -951,7 +1005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 26. Coyote vs. Acme (2026)
+  // 41. Coyote vs. Acme (2026)
   // ============================================================
   {
     title: "Coyote vs. Acme",
@@ -976,7 +1030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 27. Just Play Dead (2026)
+  // 42. Just Play Dead (2026)
   // ============================================================
   {
     title: "Just Play Dead",
@@ -1001,7 +1055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 28. The Whisper Man (2026)
+  // 43. The Whisper Man (2026)
   // ============================================================
   {
     title: "The Whisper Man",
@@ -1026,7 +1080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 29. Grand Theft Auto VI: An Extended Look (2026)
+  // 44. Grand Theft Auto VI: An Extended Look (2026)
   // ============================================================
   {
     title: "Grand Theft Auto VI: An Extended Look",
@@ -1050,7 +1104,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 30. The Brink of War (2026)
+  // 45. The Brink of War (2026)
   // ============================================================
   {
     title: "The Brink of War",
@@ -1075,7 +1129,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 31. Mutiny (2026)
+  // 46. Mutiny (2026)
   // ============================================================
   {
     title: "Mutiny",
@@ -1100,7 +1154,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 32. The Invite (2026)
+  // 47. The Invite (2026)
   // ============================================================
   {
     title: "The Invite",
@@ -1125,7 +1179,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 33. Spider-Man: Brand New Day (2026)
+  // 48. Spider-Man: Brand New Day (2026)
   // ============================================================
   {
     title: "Spider-Man: Brand New Day",
@@ -1138,11 +1192,6 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4",
-    qualities: [
-      { label: "1080p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4", default: true },
-      { label: "720p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4", default: false },
-      { label: "480p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4", default: false }
-    ],
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     tmdbId: "969681",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
@@ -1153,11 +1202,12 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     seasons: [],
+    qualities: [{"label":"1080p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4","default":true},{"label":"720p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4","default":false},{"label":"480p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_4K_English_Fixed.mp4","default":false}],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 34. Resident Evil (2026)
+  // 49. Resident Evil (2026)
   // ============================================================
   {
     title: "Resident Evil",
@@ -1182,7 +1232,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 35. Supergirl (2026)
+  // 50. Supergirl (2026)
   // ============================================================
   {
     title: "Supergirl",
@@ -1207,7 +1257,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 36. Primetime (2026)
+  // 51. Primetime (2026)
   // ============================================================
   {
     title: "Primetime",
@@ -1232,7 +1282,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 37. The Odyssey (2026)
+  // 52. The Odyssey (2026)
   // ============================================================
   {
     title: "The Odyssey",
@@ -1257,7 +1307,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 38. Batman: Knightfall Part 1: Knightfall (2026)
+  // 53. Batman: Knightfall Part 1: Knightfall (2026)
   // ============================================================
   {
     title: "Batman: Knightfall Part 1: Knightfall",
@@ -1281,7 +1331,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-
+  // ============================================================
+  // 54. Dune: Part Three (2026)
+  // ============================================================
   {
     title: "Dune: Part Three",
     type: "Movie",
@@ -1289,7 +1341,7 @@ window._MOVIES_DATA = [
     rating: "TBR",
     age: "TBR",
     duration: "2h 20m",
-    genres: ["Action","Adventure", "Drama", "Sci-Fi"],
+    genres: ["Action", "Adventure", "Drama", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/g9NhPUTF0rq3M7Ulr9bJNij34kg.jpg",
     videoUrl: "1170608",
@@ -1303,6 +1355,10 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  // ============================================================
+  // 55. Avengers: Doomsday (2026)
+  // ============================================================
   {
     title: "Avengers: Doomsday",
     type: "Movie",
@@ -1326,7 +1382,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 40. Avatar Aang: The Last Airbender (2025)
+  // 56. Avatar Aang: The Last Airbender (2025)
   // ============================================================
   {
     title: "Avatar Aang: The Last Airbender",
@@ -1351,7 +1407,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 41. Obsession (2025)
+  // 57. Obsession (2025)
   // ============================================================
   {
     title: "Obsession",
@@ -1376,7 +1432,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 42. Master of the Universe (2026)
+  // 58. Master of the Universe (2026)
   // ============================================================
   {
     title: "Master of the Universe",
@@ -1401,7 +1457,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 43. The Last Sunrise (2026)
+  // 59. The Last Sunrise (2026)
   // ============================================================
   {
     title: "The Last Sunrise",
@@ -1426,7 +1482,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 44. Camp Rock 3 (2026)
+  // 60. Camp Rock 3 (2026)
   // ============================================================
   {
     title: "Camp Rock 3",
@@ -1451,7 +1507,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 45. One Night Only (2026)
+  // 61. One Night Only (2026)
   // ============================================================
   {
     title: "One Night Only",
@@ -1476,7 +1532,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 46. Evil Dead Burn (2026)
+  // 62. Evil Dead Burn (2026)
   // ============================================================
   {
     title: "Evil Dead Burn",
@@ -1501,7 +1557,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 47. Motor City (2026)
+  // 63. Motor City (2026)
   // ============================================================
   {
     title: "Motor City",
@@ -1526,7 +1582,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 48. The Dark Knight Rises (2012)
+  // 64. The Dark Knight Rises (2012)
   // ============================================================
   {
     id: "the-dark-knight-rises-2012",
@@ -1549,13 +1605,11 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 49. The Death of Robin Hood (2026)
+  // 65. The Death of Robin Hood (2026)
   // ============================================================
   {
     title: "The Death of Robin Hood",
@@ -1580,7 +1634,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 50. The End of Oak Street (2026)
+  // 66. The End of Oak Street (2026)
   // ============================================================
   {
     title: "The End of Oak Street",
@@ -1605,7 +1659,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 51. The Dark Knight (2008)
+  // 67. The Dark Knight (2008)
   // ============================================================
   {
     id: "the-dark-knight-2008",
@@ -1628,13 +1682,11 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 52. Batman Begins (2005)
+  // 68. Batman Begins (2005)
   // ============================================================
   {
     id: "batman-begins-2005",
@@ -1657,13 +1709,11 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 53. Soulm8te (2026)
+  // 69. Soulm8te (2026)
   // ============================================================
   {
     title: "Soulm8te",
@@ -1688,7 +1738,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 54. Backrooms (2026)
+  // 70. Backrooms (2026)
   // ============================================================
   {
     title: "Backrooms",
@@ -1713,7 +1763,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 55. Project Hail Mary (2026)
+  // 71. Project Hail Mary (2026)
   // ============================================================
   {
     title: "Project Hail Mary",
@@ -1738,7 +1788,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 56. Michael (2026)
+  // 72. Michael (2026)
   // ============================================================
   {
     title: "Michael",
@@ -1763,7 +1813,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 57. Insidious: Out of the Further (2026)
+  // 73. Insidious: Out of the Further (2026)
   // ============================================================
   {
     title: "Insidious: Out of the Further",
@@ -1788,7 +1838,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 58. The Last House (2026)
+  // 74. The Last House (2026)
   // ============================================================
   {
     title: "The Last House",
@@ -1813,7 +1863,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 59. Minions & Monsters (2026)
+  // 75. Minions & Monsters (2026)
   // ============================================================
   {
     title: "Minions & Monsters",
@@ -1838,7 +1888,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 60. Young Washington (2026)
+  // 76. Young Washington (2026)
   // ============================================================
   {
     title: "Young Washington",
@@ -1863,7 +1913,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 61. Spider-Man: Homecoming (2017)
+  // 77. Spider-Man: Homecoming (2017)
   // ============================================================
   {
     title: "Spider-Man: Homecoming",
@@ -1888,7 +1938,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 62. Iron Man (2008)
+  // 78. Iron Man (2008)
   // ============================================================
   {
     id: "iron-man-2008",
@@ -1912,13 +1962,11 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 63. Spider-Man: No Way Home (2021)
+  // 79. Spider-Man: No Way Home (2021)
   // ============================================================
   {
     title: "Spider-Man: No Way Home",
@@ -1943,7 +1991,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 64. Spider-Man: Far From Home (2019)
+  // 80. Spider-Man: Far From Home (2019)
   // ============================================================
   {
     title: "Spider-Man: Far From Home",
@@ -1968,7 +2016,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 65. Avengers: Endgame (2019)
+  // 81. Avengers: Endgame (2019)
   // ============================================================
   {
     title: "Avengers: Endgame",
@@ -1993,7 +2041,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 66. Avengers: Infinity War (2018)
+  // 82. Avengers: Infinity War (2018)
   // ============================================================
   {
     title: "Avengers: Infinity War",
@@ -2018,7 +2066,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 67. Avengers: Age of Ultron (2015)
+  // 83. Avengers: Age of Ultron (2015)
   // ============================================================
   {
     title: "Avengers: Age of Ultron",
@@ -2043,7 +2091,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 68. The Avengers (2012)
+  // 84. The Avengers (2012)
   // ============================================================
   {
     title: "The Avengers",
@@ -2068,7 +2116,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 69. The Amazing Spider-Man (2012)
+  // 85. The Amazing Spider-Man (2012)
   // ============================================================
   {
     id: "the-amazing-spider-man-2012",
@@ -2095,7 +2143,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 70. The Amazing Spider-Man 2 (2014)
+  // 86. The Amazing Spider-Man 2 (2014)
   // ============================================================
   {
     id: "the-amazing-spider-man-2-2014",
@@ -2122,7 +2170,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 71. Iron Man 3 (2010)
+  // 87. Iron Man 3 (2010)
   // ============================================================
   {
     title: "Iron Man 3",
@@ -2147,7 +2195,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 72. Harry Potter and the Prisoner of Azkaban  (2004)
+  // 88. Harry Potter and the Prisoner of Azkaban (2004)
   // ============================================================
   {
     id: "harry-potter-and-the-prisoner-of-azkaban-2004",
@@ -2173,7 +2221,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 73. Harry Potter and the Chamber of Secrets   (2002)
+  // 89. Harry Potter and the Chamber of Secrets (2002)
   // ============================================================
   {
     id: "harry-potter-and-the-chamber-of-secrets-2002",
@@ -2199,7 +2247,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 74. Harry Potter and the Sorcerer's Stone  (2001)
+  // 90. Harry Potter and the Sorcerer's Stone (2001)
   // ============================================================
   {
     id: "harry-potter-and-the-sorcerer-s-stone-2001",
@@ -2225,7 +2273,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 75. Aquaman: The Lost Kingdom (2023)
+  // 91. Aquaman: The Lost Kingdom (2023)
   // ============================================================
   {
     title: "Aquaman: The Lost Kingdom",
@@ -2250,7 +2298,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 76. Aquaman (2018)
+  // 92. Aquaman (2018)
   // ============================================================
   {
     title: "Aquaman",
@@ -2275,7 +2323,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 77. Superman (2025)
+  // 93. Superman (2025)
   // ============================================================
   {
     title: "Superman",
@@ -2297,13 +2345,11 @@ window._MOVIES_DATA = [
     featured: true,
     is4k: false,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 78. The Batman  (2022)
+  // 94. The Batman  (2022)
   // ============================================================
   {
     title: "The Batman ",
@@ -2328,7 +2374,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 79. Thor: Ragnarok  (2017)
+  // 95. Thor: Ragnarok  (2017)
   // ============================================================
   {
     title: "Thor: Ragnarok ",
@@ -2353,7 +2399,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 80. Thor: The Dark World  (2013)
+  // 96. Thor: The Dark World  (2013)
   // ============================================================
   {
     title: "Thor: The Dark World ",
@@ -2378,7 +2424,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 81. Thor  (2011)
+  // 97. Thor  (2011)
   // ============================================================
   {
     title: "Thor ",
@@ -2403,7 +2449,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 82. Captain America: Civil War  (2016)
+  // 98. Captain America: Civil War  (2016)
   // ============================================================
   {
     title: "Captain America: Civil War ",
@@ -2428,7 +2474,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 83. Captain America: The Winter Soldier  (2014)
+  // 99. Captain America: The Winter Soldier  (2014)
   // ============================================================
   {
     title: "Captain America: The Winter Soldier ",
@@ -2453,7 +2499,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 84. Captain America: The First Avenger  (2011)
+  // 100. Captain America: The First Avenger  (2011)
   // ============================================================
   {
     title: "Captain America: The First Avenger ",
@@ -2478,7 +2524,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 85. Iron Man 2 (2010)
+  // 101. Iron Man 2 (2010)
   // ============================================================
   {
     title: "Iron Man 2",
@@ -2503,7 +2549,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 86. Thor: Love and Thunder  (2017)
+  // 102. Thor: Love and Thunder  (2017)
   // ============================================================
   {
     title: "Thor: Love and Thunder ",
@@ -2528,7 +2574,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 87. Spider-Man (2002)
+  // 103. Spider-Man (2002)
   // ============================================================
   {
     id: "spider-man-2002",
@@ -2543,11 +2589,6 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     videoUrl: "557",
     fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4",
-    qualities: [
-      { quality: "1080p HD", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4", default: true },
-      { quality: "720p HD", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4" },
-      { quality: "480p SD", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4" }
-    ],
     trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     overviewKurdish: "پیتەر پارکەر هەمیشە هەستی بە نامۆیی دەکرد — سەرلێشێواو، فەرامۆشکراو، و بە نهێنی عاشقی مێری جەینی هاوڕێی مناڵییەتی. هەموو شتێک دەگۆڕێت کاتێک پێوەدانی جاڵجاڵۆکەیەک هێز و چالاکی و توانایەکی لەڕادەبەدەری پێدەبەخشێت. لەکاتێکدا پیتەر هەوڵ دەدات لەگەڵ ئەو بەرپرسیارێتییە گەورەیەدا بژی کە لەگەڵ هێزە نوێیەکانیدا دێت، گۆڕانی تراژیدییانەی زانایەکی بلیمەت بۆ گرین گۆبلینی خراپەکار وا لە پیتەر دەکات بە تەواوی ڕۆڵی سپایدەرمان وەربگرێت.",
@@ -2557,11 +2598,12 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     seasons: [],
+    qualities: [{"quality":"1080p HD","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4","default":true},{"quality":"720p HD","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4"},{"quality":"480p SD","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4"}],
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 88. Logan  (2017)
+  // 104. Logan  (2017)
   // ============================================================
   {
     title: "Logan ",
@@ -2586,7 +2628,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 89. The Wolverine  (2013)
+  // 105. The Wolverine  (2013)
   // ============================================================
   {
     title: "The Wolverine ",
@@ -2611,7 +2653,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 90. X-Men Origin: Wolverine  (2009)
+  // 106. X-Men Origin: Wolverine  (2009)
   // ============================================================
   {
     title: "X-Men Origin: Wolverine ",
@@ -2636,7 +2678,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 91. Deadpool & Wolverine  (2024)
+  // 107. Deadpool & Wolverine  (2024)
   // ============================================================
   {
     title: "Deadpool & Wolverine ",
@@ -2661,7 +2703,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 92. Deadpool 2 (2018)
+  // 108. Deadpool 2 (2018)
   // ============================================================
   {
     title: "Deadpool 2",
@@ -2686,7 +2728,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 93. Deadpool (2016)
+  // 109. Deadpool (2016)
   // ============================================================
   {
     title: "Deadpool",
@@ -2711,7 +2753,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 94. Spider-Man 3 (2007)
+  // 110. Spider-Man 3 (2007)
   // ============================================================
   {
     title: "Spider-Man 3",
@@ -2736,7 +2778,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 95. Spider-Man 2 (2004)
+  // 111. Spider-Man 2 (2004)
   // ============================================================
   {
     title: "Spider-Man 2",
@@ -2749,15 +2791,6 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_1080p.mp4",
-    qualities: [
-      { label: "1080p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_1080p.mp4", default: true },
-      { label: "720p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_720p.mp4", default: false },
-      { label: "480p", url: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_480p.mp4", default: false }
-    ],
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt", srclang: "en", default: false }
-    ],
     trailerUrl: "https://youtu.be/kficMW9vu8M?si=mL2PTzXLk1kvTsuY",
     overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
     overviewKurdish: "",
@@ -2766,11 +2799,13 @@ window._MOVIES_DATA = [
     trending: false,
     featured: false,
     is4k: false,
-    seasons: []
+    seasons: [],
+    qualities: [{"label":"1080p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_1080p.mp4","default":true},{"label":"720p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_720p.mp4","default":false},{"label":"480p","url":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_480p.mp4","default":false}],
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2_2004_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 96. Harry Potter and the Deathly Hallows Part 2 (2011)
+  // 112. Harry Potter and the Deathly Hallows Part 2 (2011)
   // ============================================================
   {
     title: "Harry Potter and the Deathly Hallows Part 2",
@@ -2795,7 +2830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 97. Harry Potter and the Deathly Hallows Part 1 (2010)
+  // 113. Harry Potter and the Deathly Hallows Part 1 (2010)
   // ============================================================
   {
     title: "Harry Potter and the Deathly Hallows Part 1",
@@ -2820,7 +2855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 98. Harry Potter and the Half Blood Prince  (2009)
+  // 114. Harry Potter and the Half Blood Prince  (2009)
   // ============================================================
   {
     title: "Harry Potter and the Half Blood Prince ",
@@ -2845,7 +2880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 99. Harry Potter and the Order of the Phoenix  (2007)
+  // 115. Harry Potter and the Order of the Phoenix  (2007)
   // ============================================================
   {
     title: "Harry Potter and the Order of the Phoenix ",
@@ -2870,7 +2905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 100. Harry Potter and the Goblet of Fire  (2005)
+  // 116. Harry Potter and the Goblet of Fire  (2005)
   // ============================================================
   {
     title: "Harry Potter and the Goblet of Fire ",
@@ -2895,7 +2930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 101. X-Men: Days of Future Past (2014)
+  // 117. X-Men: Days of Future Past (2014)
   // ============================================================
   {
     title: "X-Men: Days of Future Past",
@@ -2920,7 +2955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 102. The New Mutant  (2020)
+  // 118. The New Mutant  (2020)
   // ============================================================
   {
     title: "The New Mutant ",
@@ -2945,7 +2980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 103. Dark Phoenix (2019)
+  // 119. Dark Phoenix (2019)
   // ============================================================
   {
     title: "Dark Phoenix",
@@ -2970,7 +3005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 104. X-Men: Apocalypse (2016)
+  // 120. X-Men: Apocalypse (2016)
   // ============================================================
   {
     title: "X-Men: Apocalypse",
@@ -2995,7 +3030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 105. X-Men: First Class (2011)
+  // 121. X-Men: First Class (2011)
   // ============================================================
   {
     title: "X-Men: First Class",
@@ -3020,7 +3055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 106. X-Men: The Last Stand (2006)
+  // 122. X-Men: The Last Stand (2006)
   // ============================================================
   {
     title: "X-Men: The Last Stand",
@@ -3045,7 +3080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 107. X-Men United (2003)
+  // 123. X-Men United (2003)
   // ============================================================
   {
     title: "X-Men United",
@@ -3070,7 +3105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 108. X-Men  (2000)
+  // 124. X-Men  (2000)
   // ============================================================
   {
     title: "X-Men ",
@@ -3095,7 +3130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 109. Ted (2012)
+  // 125. Ted (2012)
   // ============================================================
   {
     title: "Ted",
@@ -3120,7 +3155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 110. Ted 2 (2015)
+  // 126. Ted 2 (2015)
   // ============================================================
   {
     title: "Ted 2",
@@ -3145,7 +3180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 111. Cars (2006)
+  // 127. Cars (2006)
   // ============================================================
   {
     title: "Cars",
@@ -3170,7 +3205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 112. Cars 2 (2011)
+  // 128. Cars 2 (2011)
   // ============================================================
   {
     title: "Cars 2",
@@ -3195,7 +3230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 113. Cars 3 (2017)
+  // 129. Cars 3 (2017)
   // ============================================================
   {
     title: "Cars 3",
@@ -3220,7 +3255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 114. John Wick (2014)
+  // 130. John Wick (2014)
   // ============================================================
   {
     title: "John Wick",
@@ -3245,7 +3280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 115. John Wick: Chapter 2 (2017)
+  // 131. John Wick: Chapter 2 (2017)
   // ============================================================
   {
     title: "John Wick: Chapter 2",
@@ -3270,7 +3305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 116. John Wick: Chapter 3 - Parabellum (2019)
+  // 132. John Wick: Chapter 3 - Parabellum (2019)
   // ============================================================
   {
     title: "John Wick: Chapter 3 - Parabellum",
@@ -3295,7 +3330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 117. John Wick: Chapter 4 (2023)
+  // 133. John Wick: Chapter 4 (2023)
   // ============================================================
   {
     title: "John Wick: Chapter 4",
@@ -3320,7 +3355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 118. Ghost Rider (2007)
+  // 134. Ghost Rider (2007)
   // ============================================================
   {
     title: "Ghost Rider",
@@ -3345,7 +3380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 119. Ghost Rider: Spirit of Vengeance (2011)
+  // 135. Ghost Rider: Spirit of Vengeance (2011)
   // ============================================================
   {
     title: "Ghost Rider: Spirit of Vengeance",
@@ -3370,7 +3405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 120. Zack Snyder's Justice League (2021)
+  // 136. Zack Snyder's Justice League (2021)
   // ============================================================
   {
     title: "Zack Snyder's Justice League",
@@ -3395,7 +3430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 121. Man of Steel (2013)
+  // 137. Man of Steel (2013)
   // ============================================================
   {
     title: "Man of Steel",
@@ -3420,7 +3455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 122. Thunderbolts  (2025)
+  // 138. Thunderbolts  (2025)
   // ============================================================
   {
     title: "Thunderbolts ",
@@ -3445,7 +3480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 123. The Incredible Hulk   (2008)
+  // 139. The Incredible Hulk   (2008)
   // ============================================================
   {
     title: "The Incredible Hulk  ",
@@ -3470,7 +3505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 124. Guardians of the Galaxy   (2014)
+  // 140. Guardians of the Galaxy   (2014)
   // ============================================================
   {
     title: "Guardians of the Galaxy  ",
@@ -3495,7 +3530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 125. Guardians of the Galaxy: Vol.2  (2017)
+  // 141. Guardians of the Galaxy: Vol.2  (2017)
   // ============================================================
   {
     title: "Guardians of the Galaxy: Vol.2 ",
@@ -3520,7 +3555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 126. Guardians of the Galaxy: Vol.3  (2023)
+  // 142. Guardians of the Galaxy: Vol.3  (2023)
   // ============================================================
   {
     title: "Guardians of the Galaxy: Vol.3 ",
@@ -3545,7 +3580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 127. Ant-Man  (2015)
+  // 143. Ant-Man  (2015)
   // ============================================================
   {
     title: "Ant-Man ",
@@ -3570,7 +3605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 128. Ant-Man and the Wasp: Quantumania  (2023)
+  // 144. Ant-Man and the Wasp: Quantumania  (2023)
   // ============================================================
   {
     title: "Ant-Man and the Wasp: Quantumania ",
@@ -3595,7 +3630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 129. Ant-Man and the Wasp  (2018)
+  // 145. Ant-Man and the Wasp  (2018)
   // ============================================================
   {
     title: "Ant-Man and the Wasp ",
@@ -3620,7 +3655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 130. Black Panther (2018)
+  // 146. Black Panther (2018)
   // ============================================================
   {
     title: "Black Panther",
@@ -3645,7 +3680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 131. Black Panther: Wakanda Forever (2022)
+  // 147. Black Panther: Wakanda Forever (2022)
   // ============================================================
   {
     title: "Black Panther: Wakanda Forever",
@@ -3670,7 +3705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 132. The Flash (2023)
+  // 148. The Flash (2023)
   // ============================================================
   {
     title: "The Flash",
@@ -3695,7 +3730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 133. Batman v Superman: Dawn of Justice (2016)
+  // 149. Batman v Superman: Dawn of Justice (2016)
   // ============================================================
   {
     title: "Batman v Superman: Dawn of Justice",
@@ -3720,7 +3755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 134. Doctor Strange in the Multiverse of Madness (2022)
+  // 150. Doctor Strange in the Multiverse of Madness (2022)
   // ============================================================
   {
     title: "Doctor Strange in the Multiverse of Madness",
@@ -3745,7 +3780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 135. Catch Me if You Can (2002)
+  // 151. Catch Me if You Can (2002)
   // ============================================================
   {
     title: "Catch Me if You Can",
@@ -3770,7 +3805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 136. Top Gun (1986)
+  // 152. Top Gun (1986)
   // ============================================================
   {
     title: "Top Gun",
@@ -3795,7 +3830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 137. Top Gun: Mavrick (2022)
+  // 153. Top Gun: Mavrick (2022)
   // ============================================================
   {
     title: "Top Gun: Mavrick",
@@ -3820,7 +3855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 138. Se7en (1995)
+  // 154. Se7en (1995)
   // ============================================================
   {
     title: "Se7en",
@@ -3845,7 +3880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 139. Inception (2010)
+  // 155. Inception (2010)
   // ============================================================
   {
     title: "Inception",
@@ -3870,7 +3905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 140. Mr. & Mrs. Smith (2005)
+  // 156. Mr. & Mrs. Smith (2005)
   // ============================================================
   {
     title: "Mr. & Mrs. Smith",
@@ -3895,7 +3930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 141. Uncharted (2022)
+  // 157. Uncharted (2022)
   // ============================================================
   {
     title: "Uncharted",
@@ -3920,7 +3955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 142. The Adam Project (2022)
+  // 158. The Adam Project (2022)
   // ============================================================
   {
     title: "The Adam Project",
@@ -3945,7 +3980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 143. Mission: Impossible (1996)
+  // 159. Mission: Impossible (1996)
   // ============================================================
   {
     title: "Mission: Impossible",
@@ -3970,7 +4005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 144. Mission: Impossible II (2000)
+  // 160. Mission: Impossible II (2000)
   // ============================================================
   {
     title: "Mission: Impossible II",
@@ -3995,7 +4030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 145. Mission: Impossible III (2006)
+  // 161. Mission: Impossible III (2006)
   // ============================================================
   {
     title: "Mission: Impossible III",
@@ -4020,7 +4055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 146. Venom: The Last Dance (2024)
+  // 162. Venom: The Last Dance (2024)
   // ============================================================
   {
     title: "Venom: The Last Dance",
@@ -4045,7 +4080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 147. Punisher: One Last Kill (2026)
+  // 163. Punisher: One Last Kill (2026)
   // ============================================================
   {
     title: "Punisher: One Last Kill",
@@ -4070,7 +4105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 148. Home Alone (1990)
+  // 164. Home Alone (1990)
   // ============================================================
   {
     title: "Home Alone",
@@ -4095,7 +4130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 149. Home Alone 2: Lost in New York (1992)
+  // 165. Home Alone 2: Lost in New York (1992)
   // ============================================================
   {
     title: "Home Alone 2: Lost in New York",
@@ -4120,7 +4155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 150. Venom (2018)
+  // 166. Venom (2018)
   // ============================================================
   {
     title: "Venom",
@@ -4145,7 +4180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 151. Venom: Let There Be Carnage (2021)
+  // 167. Venom: Let There Be Carnage (2021)
   // ============================================================
   {
     title: "Venom: Let There Be Carnage",
@@ -4170,7 +4205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 152. Doctor Strange (2016)
+  // 168. Doctor Strange (2016)
   // ============================================================
   {
     title: "Doctor Strange",
@@ -4195,7 +4230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 153. Transformers One (2024)
+  // 169. Transformers One (2024)
   // ============================================================
   {
     title: "Transformers One",
@@ -4220,7 +4255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 154. Sonic the Hedgehog (2020)
+  // 170. Sonic the Hedgehog (2020)
   // ============================================================
   {
     title: "Sonic the Hedgehog",
@@ -4245,7 +4280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 155. Sonic the Hedgehog 2 (2022)
+  // 171. Sonic the Hedgehog 2 (2022)
   // ============================================================
   {
     title: "Sonic the Hedgehog 2",
@@ -4270,7 +4305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 156. Sonic the Hedgehog 3 (2024)
+  // 172. Sonic the Hedgehog 3 (2024)
   // ============================================================
   {
     title: "Sonic the Hedgehog 3",
@@ -4295,7 +4330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 157. The Green Mile (1999)
+  // 173. The Green Mile (1999)
   // ============================================================
   {
     title: "The Green Mile",
@@ -4320,7 +4355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 158. Shrek Forever After (2010)
+  // 174. Shrek Forever After (2010)
   // ============================================================
   {
     title: "Shrek Forever After",
@@ -4345,7 +4380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 159. Tom and Jerry: Forbidden Compass (2025)
+  // 175. Tom and Jerry: Forbidden Compass (2025)
   // ============================================================
   {
     title: "Tom and Jerry: Forbidden Compass",
@@ -4370,7 +4405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 160. Tom and Jerry Cowboy Up!  (2022)
+  // 176. Tom and Jerry Cowboy Up!  (2022)
   // ============================================================
   {
     title: "Tom and Jerry Cowboy Up! ",
@@ -4395,7 +4430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 161. Batman: Mask of the Phantasm  (1993)
+  // 177. Batman: Mask of the Phantasm  (1993)
   // ============================================================
   {
     title: "Batman: Mask of the Phantasm ",
@@ -4420,7 +4455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 162. Batman: Hush (2019)
+  // 178. Batman: Hush (2019)
   // ============================================================
   {
     title: "Batman: Hush",
@@ -4445,7 +4480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 163. Batman vs. Robin (2015)
+  // 179. Batman vs. Robin (2015)
   // ============================================================
   {
     title: "Batman vs. Robin",
@@ -4470,7 +4505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 164. Batman: The Killing Joke (2016)
+  // 180. Batman: The Killing Joke (2016)
   // ============================================================
   {
     title: "Batman: The Killing Joke",
@@ -4495,7 +4530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 165. Batman: The Dark Knight Return - Part 1 (2012)
+  // 181. Batman: The Dark Knight Return - Part 1 (2012)
   // ============================================================
   {
     title: "Batman: The Dark Knight Return - Part 1",
@@ -4520,7 +4555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 166. Batman: The Dark Knight Return - Part 2 (2013)
+  // 182. Batman: The Dark Knight Return - Part 2 (2013)
   // ============================================================
   {
     title: "Batman: The Dark Knight Return - Part 2",
@@ -4545,7 +4580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 167. Batman: The Long Halloween, Part 1 (2021)
+  // 183. Batman: The Long Halloween, Part 1 (2021)
   // ============================================================
   {
     title: "Batman: The Long Halloween, Part 1",
@@ -4570,7 +4605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 168. Batman: The Long Halloween, Part 2 (2021)
+  // 184. Batman: The Long Halloween, Part 2 (2021)
   // ============================================================
   {
     title: "Batman: The Long Halloween, Part 2",
@@ -4595,7 +4630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 169. Son of Batman (2014)
+  // 185. Son of Batman (2014)
   // ============================================================
   {
     title: "Son of Batman",
@@ -4620,7 +4655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 170. Batman and Harley Quinn (2017)
+  // 186. Batman and Harley Quinn (2017)
   // ============================================================
   {
     title: "Batman and Harley Quinn",
@@ -4645,7 +4680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 171. Central Intelligence (2016)
+  // 187. Central Intelligence (2016)
   // ============================================================
   {
     title: "Central Intelligence",
@@ -4670,7 +4705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 172. Mission: Impossible - The Final Reckoning  (2025)
+  // 188. Mission: Impossible - The Final Reckoning  (2025)
   // ============================================================
   {
     title: "Mission: Impossible - The Final Reckoning ",
@@ -4695,7 +4730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 173. Shrek 2 (2004)
+  // 189. Shrek 2 (2004)
   // ============================================================
   {
     title: "Shrek 2",
@@ -4720,7 +4755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 174. Shrek the Third (2007)
+  // 190. Shrek the Third (2007)
   // ============================================================
   {
     title: "Shrek the Third",
@@ -4745,7 +4780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 175. Mission: Impossible - Rogue Nation (2015)
+  // 191. Mission: Impossible - Rogue Nation (2015)
   // ============================================================
   {
     title: "Mission: Impossible - Rogue Nation",
@@ -4770,7 +4805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 176. Mission: Impossible - Fallout (2018)
+  // 192. Mission: Impossible - Fallout (2018)
   // ============================================================
   {
     title: "Mission: Impossible - Fallout",
@@ -4795,7 +4830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 177. Mission: Impossible - Dead Reckoning Part One  (2023)
+  // 193. Mission: Impossible - Dead Reckoning Part One  (2023)
   // ============================================================
   {
     title: "Mission: Impossible - Dead Reckoning Part One ",
@@ -4820,7 +4855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 178. Mission: Impossible - Ghost Protocol (2011)
+  // 194. Mission: Impossible - Ghost Protocol (2011)
   // ============================================================
   {
     title: "Mission: Impossible - Ghost Protocol",
@@ -4845,7 +4880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 179.  Spider-Man: Into the Spider Verse (2018)
+  // 195.  Spider-Man: Into the Spider Verse (2018)
   // ============================================================
   {
     title: " Spider-Man: Into the Spider Verse",
@@ -4870,7 +4905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 180.  Spider-Man: Across the Spider Verse (2023)
+  // 196.  Spider-Man: Across the Spider Verse (2023)
   // ============================================================
   {
     title: " Spider-Man: Across the Spider Verse",
@@ -4895,7 +4930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 181. Kung Fu Panda 2 (2011)
+  // 197. Kung Fu Panda 2 (2011)
   // ============================================================
   {
     title: "Kung Fu Panda 2",
@@ -4920,7 +4955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 182. Kung Fu Panda 3 (2016)
+  // 198. Kung Fu Panda 3 (2016)
   // ============================================================
   {
     title: "Kung Fu Panda 3",
@@ -4945,7 +4980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 183. Kung Fu Panda 4 (2024)
+  // 199. Kung Fu Panda 4 (2024)
   // ============================================================
   {
     title: "Kung Fu Panda 4",
@@ -4970,7 +5005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 184. Rise of the Guardians (2012)
+  // 200. Rise of the Guardians (2012)
   // ============================================================
   {
     title: "Rise of the Guardians",
@@ -4995,7 +5030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 185. Shrek (2001)
+  // 201. Shrek (2001)
   // ============================================================
   {
     title: "Shrek",
@@ -5020,7 +5055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 186. Kung Fu Panda (2008)
+  // 202. Kung Fu Panda (2008)
   // ============================================================
   {
     title: "Kung Fu Panda",
@@ -5045,7 +5080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 187. Captain Marvel (2019)
+  // 203. Captain Marvel (2019)
   // ============================================================
   {
     title: "Captain Marvel",
@@ -5070,7 +5105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 188. The Marvels (2023)
+  // 204. The Marvels (2023)
   // ============================================================
   {
     title: "The Marvels",
@@ -5095,7 +5130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 189. Ballerina (2025)
+  // 205. Ballerina (2025)
   // ============================================================
   {
     title: "Ballerina",
@@ -5120,7 +5155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 190. Wonder Woman (2017)
+  // 206. Wonder Woman (2017)
   // ============================================================
   {
     title: "Wonder Woman",
@@ -5145,7 +5180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 191. V for Vendetta (2005)
+  // 207. V for Vendetta (2005)
   // ============================================================
   {
     title: "V for Vendetta",
@@ -5170,7 +5205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 192. Transformers (2007)
+  // 208. Transformers (2007)
   // ============================================================
   {
     title: "Transformers",
@@ -5195,7 +5230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 193. Transformers: Revenge of the Fallen (2009)
+  // 209. Transformers: Revenge of the Fallen (2009)
   // ============================================================
   {
     title: "Transformers: Revenge of the Fallen",
@@ -5220,7 +5255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 194. Transformers: Dark of the Moon (20011)
+  // 210. Transformers: Dark of the Moon (20011)
   // ============================================================
   {
     title: "Transformers: Dark of the Moon",
@@ -5245,7 +5280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 195. Transformers: Age of Extinction (2014)
+  // 211. Transformers: Age of Extinction (2014)
   // ============================================================
   {
     title: "Transformers: Age of Extinction",
@@ -5270,7 +5305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 196. Transformers: The Last Knight (2017)
+  // 212. Transformers: The Last Knight (2017)
   // ============================================================
   {
     title: "Transformers: The Last Knight",
@@ -5295,7 +5330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 197. Transformers: Rise of the Beast (2023)
+  // 213. Transformers: Rise of the Beast (2023)
   // ============================================================
   {
     title: "Transformers: Rise of the Beast",
@@ -5320,7 +5355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 198. Fantastic Four (2005)
+  // 214. Fantastic Four (2005)
   // ============================================================
   {
     title: "Fantastic Four",
@@ -5345,7 +5380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 199. Fantastic Four: Rise of the Silver Surfer (2007)
+  // 215. Fantastic Four: Rise of the Silver Surfer (2007)
   // ============================================================
   {
     title: "Fantastic Four: Rise of the Silver Surfer",
@@ -5370,7 +5405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 200. Fantastic Four (2015)
+  // 216. Fantastic Four (2015)
   // ============================================================
   {
     title: "Fantastic Four",
@@ -5395,7 +5430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 201. in the Grey (2026)
+  // 217. in the Grey (2026)
   // ============================================================
   {
     title: "in the Grey",
@@ -5420,7 +5455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 202. Ford v Ferrari (2019)
+  // 218. Ford v Ferrari (2019)
   // ============================================================
   {
     title: "Ford v Ferrari",
@@ -5445,7 +5480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 203. Green Lantern (2011)
+  // 219. Green Lantern (2011)
   // ============================================================
   {
     title: "Green Lantern",
@@ -5470,7 +5505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 204. Wrath of Man (2021)
+  // 220. Wrath of Man (2021)
   // ============================================================
   {
     title: "Wrath of Man",
@@ -5495,7 +5530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 205. The Godfather (1972)
+  // 221. The Godfather (1972)
   // ============================================================
   {
     title: "The Godfather",
@@ -5520,7 +5555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 206. The Godfather Part II (1974)
+  // 222. The Godfather Part II (1974)
   // ============================================================
   {
     title: "The Godfather Part II",
@@ -5545,7 +5580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 207. The Godfather Part III (1990)
+  // 223. The Godfather Part III (1990)
   // ============================================================
   {
     title: "The Godfather Part III",
@@ -5570,7 +5605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 208. Back to the Future (1985)
+  // 224. Back to the Future (1985)
   // ============================================================
   {
     title: "Back to the Future",
@@ -5595,7 +5630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 209. Back to the Future II (1989)
+  // 225. Back to the Future II (1989)
   // ============================================================
   {
     title: "Back to the Future II",
@@ -5620,7 +5655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 210. Back to the Future III (1990)
+  // 226. Back to the Future III (1990)
   // ============================================================
   {
     title: "Back to the Future III",
@@ -5645,7 +5680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 211. Toy Story (1995)
+  // 227. Toy Story (1995)
   // ============================================================
   {
     title: "Toy Story",
@@ -5670,7 +5705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 212. Toy Story 2 (1999)
+  // 228. Toy Story 2 (1999)
   // ============================================================
   {
     title: "Toy Story 2",
@@ -5695,7 +5730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 213. Toy Story 3 (2010)
+  // 229. Toy Story 3 (2010)
   // ============================================================
   {
     title: "Toy Story 3",
@@ -5720,7 +5755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 214. Toy Story 4 (2019)
+  // 230. Toy Story 4 (2019)
   // ============================================================
   {
     title: "Toy Story 4",
@@ -5745,7 +5780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 215. Toy Story 5 (2026)
+  // 231. Toy Story 5 (2026)
   // ============================================================
   {
     title: "Toy Story 5",
@@ -5770,7 +5805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 216. Days of Thunder (1990)
+  // 232. Days of Thunder (1990)
   // ============================================================
   {
     title: "Days of Thunder",
@@ -5795,7 +5830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 217. Titanic (1997)
+  // 233. Titanic (1997)
   // ============================================================
   {
     title: "Titanic",
@@ -5820,7 +5855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 218. How to Train Your Dragon 2 (2014)
+  // 234. How to Train Your Dragon 2 (2014)
   // ============================================================
   {
     title: "How to Train Your Dragon 2",
@@ -5845,7 +5880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 219. Hacksaw Ridge (2016)
+  // 235. Hacksaw Ridge (2016)
   // ============================================================
   {
     title: "Hacksaw Ridge",
@@ -5870,7 +5905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 220. The Notebook  (2004)
+  // 236. The Notebook  (2004)
   // ============================================================
   {
     title: "The Notebook ",
@@ -5895,7 +5930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 221. The Wolf of Wall Street  (2013)
+  // 237. The Wolf of Wall Street  (2013)
   // ============================================================
   {
     title: "The Wolf of Wall Street ",
@@ -5920,7 +5955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 222. Need for Speed (2014)
+  // 238. Need for Speed (2014)
   // ============================================================
   {
     title: "Need for Speed",
@@ -5945,7 +5980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 223. Black Widow  (2021)
+  // 239. Black Widow  (2021)
   // ============================================================
   {
     title: "Black Widow ",
@@ -5970,7 +6005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 224. The Departed  (2006)
+  // 240. The Departed  (2006)
   // ============================================================
   {
     title: "The Departed ",
@@ -5995,7 +6030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 225. Shutter Island (2010)
+  // 241. Shutter Island (2010)
   // ============================================================
   {
     title: "Shutter Island",
@@ -6020,7 +6055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 226. Free Guy (2021)
+  // 242. Free Guy (2021)
   // ============================================================
   {
     title: "Free Guy",
@@ -6045,7 +6080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 227. After (2019)
+  // 243. After (2019)
   // ============================================================
   {
     title: "After",
@@ -6070,7 +6105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 228. After: We Collided (2020)
+  // 244. After: We Collided (2020)
   // ============================================================
   {
     title: "After: We Collided",
@@ -6095,7 +6130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 229. After: We Fell (2021)
+  // 245. After: We Fell (2021)
   // ============================================================
   {
     title: "After: We Fell",
@@ -6120,7 +6155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 230. After Ever Happy (2022)
+  // 246. After Ever Happy (2022)
   // ============================================================
   {
     title: "After Ever Happy",
@@ -6145,7 +6180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 231. After Everything (2023)
+  // 247. After Everything (2023)
   // ============================================================
   {
     title: "After Everything",
@@ -6170,7 +6205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 232. Forrest Gump (1997)
+  // 248. Forrest Gump (1997)
   // ============================================================
   {
     title: "Forrest Gump",
@@ -6195,7 +6230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 233. How to Train Your Dragon: The Hidden World (2019)
+  // 249. How to Train Your Dragon: The Hidden World (2019)
   // ============================================================
   {
     title: "How to Train Your Dragon: The Hidden World",
@@ -6220,7 +6255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 234. How to Train Your Dragon (2025)
+  // 250. How to Train Your Dragon (2025)
   // ============================================================
   {
     title: "How to Train Your Dragon",
@@ -6245,7 +6280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 235. The Fantastic Four: First Steps (2025)
+  // 251. The Fantastic Four: First Steps (2025)
   // ============================================================
   {
     title: "The Fantastic Four: First Steps",
@@ -6270,7 +6305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 236. Fight Club (1999)
+  // 252. Fight Club (1999)
   // ============================================================
   {
     title: "Fight Club",
@@ -6295,7 +6330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 237. Jack Reacher (2012)
+  // 253. Jack Reacher (2012)
   // ============================================================
   {
     title: "Jack Reacher",
@@ -6320,7 +6355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 238. Jack Reacher: Never Go Back (2016)
+  // 254. Jack Reacher: Never Go Back (2016)
   // ============================================================
   {
     title: "Jack Reacher: Never Go Back",
@@ -6345,7 +6380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 239. The Shawshank Redemption (1994)
+  // 255. The Shawshank Redemption (1994)
   // ============================================================
   {
     title: "The Shawshank Redemption",
@@ -6370,7 +6405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 240. Big Hero 6 (2014)
+  // 256. Big Hero 6 (2014)
   // ============================================================
   {
     title: "Big Hero 6",
@@ -6395,7 +6430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 241. F1 (2025)
+  // 257. F1 (2025)
   // ============================================================
   {
     title: "F1",
@@ -6420,7 +6455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 242. Sinners (2025)
+  // 258. Sinners (2025)
   // ============================================================
   {
     title: "Sinners",
@@ -6445,7 +6480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 243. How to Train Your Dragon (2010)
+  // 259. How to Train Your Dragon (2010)
   // ============================================================
   {
     title: "How to Train Your Dragon",
@@ -6470,7 +6505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 244. War Machine (2026)
+  // 260. War Machine (2026)
   // ============================================================
   {
     title: "War Machine",
@@ -6495,7 +6530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 245. Justice League: Crisis on Infinite Earths Part One (2024)
+  // 261. Justice League: Crisis on Infinite Earths Part One (2024)
   // ============================================================
   {
     title: "Justice League: Crisis on Infinite Earths Part One",
@@ -6520,7 +6555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 246. Justice League: Crisis on Infinite Earths – Part Two (2024)
+  // 262. Justice League: Crisis on Infinite Earths – Part Two (2024)
   // ============================================================
   {
     title: "Justice League: Crisis on Infinite Earths – Part Two",
@@ -6545,7 +6580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 247. Justice League: Crisis on Infinite Earths – Part Three (2024)
+  // 263. Justice League: Crisis on Infinite Earths – Part Three (2024)
   // ============================================================
   {
     title: "Justice League: Crisis on Infinite Earths – Part Three",
@@ -6570,7 +6605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 248. Justice League (2017)
+  // 264. Justice League (2017)
   // ============================================================
   {
     title: "Justice League",
@@ -6595,7 +6630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 249. Justice League Dark (2017)
+  // 265. Justice League Dark (2017)
   // ============================================================
   {
     title: "Justice League Dark",
@@ -6620,7 +6655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 250. Avatar (2009)
+  // 266. Avatar (2009)
   // ============================================================
   {
     title: "Avatar",
@@ -6645,7 +6680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 251. Avatar: The Way of Water (2022)
+  // 267. Avatar: The Way of Water (2022)
   // ============================================================
   {
     title: "Avatar: The Way of Water",
@@ -6670,7 +6705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 252. Avatar: Fire and Ash (2025)
+  // 268. Avatar: Fire and Ash (2025)
   // ============================================================
   {
     title: "Avatar: Fire and Ash",
@@ -6695,7 +6730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 253. Captain America: Brave New World (2025)
+  // 269. Captain America: Brave New World (2025)
   // ============================================================
   {
     title: "Captain America: Brave New World",
@@ -6720,7 +6755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 254. Mad Max: Fury Road (2015)
+  // 270. Mad Max: Fury Road (2015)
   // ============================================================
   {
     title: "Mad Max: Fury Road",
@@ -6745,7 +6780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 255. Furiosa: A Mad Max Saga (2024)
+  // 271. Furiosa: A Mad Max Saga (2024)
   // ============================================================
   {
     title: "Furiosa: A Mad Max Saga",
@@ -6770,7 +6805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 256. Now You See Me (2013)
+  // 272. Now You See Me (2013)
   // ============================================================
   {
     title: "Now You See Me",
@@ -6795,7 +6830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 257. Now You See Me 2 (2016)
+  // 273. Now You See Me 2 (2016)
   // ============================================================
   {
     title: "Now You See Me 2",
@@ -6820,7 +6855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 258. Now You See Me: Now You Don't (2025)
+  // 274. Now You See Me: Now You Don't (2025)
   // ============================================================
   {
     title: "Now You See Me: Now You Don't",
@@ -6845,7 +6880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 259. The Bourne Legacy (2012)
+  // 275. The Bourne Legacy (2012)
   // ============================================================
   {
     title: "The Bourne Legacy",
@@ -6870,7 +6905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 260. Jason Bourne (2016)
+  // 276. Jason Bourne (2016)
   // ============================================================
   {
     title: "Jason Bourne",
@@ -6895,7 +6930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 261. The Martian (2015)
+  // 277. The Martian (2015)
   // ============================================================
   {
     title: "The Martian",
@@ -6920,7 +6955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 262. Oppenheimer (2023)
+  // 278. Oppenheimer (2023)
   // ============================================================
   {
     title: "Oppenheimer",
@@ -6945,7 +6980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 263. Pulp Fiction (1994)
+  // 279. Pulp Fiction (1994)
   // ============================================================
   {
     title: "Pulp Fiction",
@@ -6970,7 +7005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 264. Moana (2016)
+  // 280. Moana (2016)
   // ============================================================
   {
     title: "Moana",
@@ -6995,7 +7030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 265. Moana 2 (2024)
+  // 281. Moana 2 (2024)
   // ============================================================
   {
     title: "Moana 2",
@@ -7020,7 +7055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 266. Moana  (2026)
+  // 282. Moana  (2026)
   // ============================================================
   {
     title: "Moana ",
@@ -7045,7 +7080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 267. Pirates of the Caribbean: The Curse of the Black Pearl  (2003)
+  // 283. Pirates of the Caribbean: The Curse of the Black Pearl  (2003)
   // ============================================================
   {
     title: "Pirates of the Caribbean: The Curse of the Black Pearl ",
@@ -7070,7 +7105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 268. Gone Girl  (2014)
+  // 284. Gone Girl  (2014)
   // ============================================================
   {
     title: "Gone Girl ",
@@ -7095,7 +7130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 269. Jumanji: Welcome to the Jungle  (2017)
+  // 285. Jumanji: Welcome to the Jungle  (2017)
   // ============================================================
   {
     title: "Jumanji: Welcome to the Jungle ",
@@ -7120,7 +7155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 270. Jumanji: The Next Level  (2019)
+  // 286. Jumanji: The Next Level  (2019)
   // ============================================================
   {
     title: "Jumanji: The Next Level ",
@@ -7145,7 +7180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 271. The Bourne Supremacy (2004)
+  // 287. The Bourne Supremacy (2004)
   // ============================================================
   {
     title: "The Bourne Supremacy",
@@ -7170,7 +7205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 272. The Bourne Ultimatum (2007)
+  // 288. The Bourne Ultimatum (2007)
   // ============================================================
   {
     title: "The Bourne Ultimatum",
@@ -7195,7 +7230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 273. The Nun (2018)
+  // 289. The Nun (2018)
   // ============================================================
   {
     title: "The Nun",
@@ -7220,7 +7255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 274. Puss in Boots (2011)
+  // 290. Puss in Boots (2011)
   // ============================================================
   {
     title: "Puss in Boots",
@@ -7245,7 +7280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 275. Puss in Boots: The Last Wish (2022)
+  // 291. Puss in Boots: The Last Wish (2022)
   // ============================================================
   {
     title: "Puss in Boots: The Last Wish",
@@ -7270,7 +7305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 276. Miraculous: Ladybug & Cat Noir, The Movie  (2023)
+  // 292. Miraculous: Ladybug & Cat Noir, The Movie  (2023)
   // ============================================================
   {
     title: "Miraculous: Ladybug & Cat Noir, The Movie ",
@@ -7295,7 +7330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 277. Miraculous World: New York, United HeroeZ   (2020)
+  // 293. Miraculous World: New York, United HeroeZ   (2020)
   // ============================================================
   {
     title: "Miraculous World: New York, United HeroeZ  ",
@@ -7320,7 +7355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 278. Miraculous World: London, at the Edge of Time   (2024)
+  // 294. Miraculous World: London, at the Edge of Time   (2024)
   // ============================================================
   {
     title: "Miraculous World: London, at the Edge of Time  ",
@@ -7345,7 +7380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 279. The Polar Express (2004)
+  // 295. The Polar Express (2004)
   // ============================================================
   {
     title: "The Polar Express",
@@ -7370,7 +7405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 280. Hotel Transylvania (2012)
+  // 296. Hotel Transylvania (2012)
   // ============================================================
   {
     title: "Hotel Transylvania",
@@ -7395,7 +7430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 281. Hotel Transylvania 2 (2015)
+  // 297. Hotel Transylvania 2 (2015)
   // ============================================================
   {
     title: "Hotel Transylvania 2",
@@ -7420,7 +7455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 282. Hotel Transylvania 3: Summer Vacation (2018)
+  // 298. Hotel Transylvania 3: Summer Vacation (2018)
   // ============================================================
   {
     title: "Hotel Transylvania 3: Summer Vacation",
@@ -7445,7 +7480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 283. The Housemaid (2025)
+  // 299. The Housemaid (2025)
   // ============================================================
   {
     title: "The Housemaid",
@@ -7470,7 +7505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 284. Interstellar (2014)
+  // 300. Interstellar (2014)
   // ============================================================
   {
     title: "Interstellar",
@@ -7495,7 +7530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 285. The Bourne Identity (2002)
+  // 301. The Bourne Identity (2002)
   // ============================================================
   {
     title: "The Bourne Identity",
@@ -7520,7 +7555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 286. Miraculous World: Paris, Tales of Shadybug and Claw Noir   (2023)
+  // 302. Miraculous World: Paris, Tales of Shadybug and Claw Noir   (2023)
   // ============================================================
   {
     title: "Miraculous World: Paris, Tales of Shadybug and Claw Noir  ",
@@ -7545,7 +7580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 287. The Scorpion King (2002)
+  // 303. The Scorpion King (2002)
   // ============================================================
   {
     title: "The Scorpion King",
@@ -7570,7 +7605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 288. Pirates of the Caribbean: At World's End (2007)
+  // 304. Pirates of the Caribbean: At World's End (2007)
   // ============================================================
   {
     title: "Pirates of the Caribbean: At World's End",
@@ -7595,7 +7630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 289. Rocky (1976)
+  // 305. Rocky (1976)
   // ============================================================
   {
     title: "Rocky",
@@ -7620,7 +7655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 290. Rocky II (1979)
+  // 306. Rocky II (1979)
   // ============================================================
   {
     title: "Rocky II",
@@ -7645,7 +7680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 291. Rocky III (1982)
+  // 307. Rocky III (1982)
   // ============================================================
   {
     title: "Rocky III",
@@ -7670,7 +7705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 292. Rocky IV (1985)
+  // 308. Rocky IV (1985)
   // ============================================================
   {
     title: "Rocky IV",
@@ -7695,7 +7730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 293. Rocky V (1990)
+  // 309. Rocky V (1990)
   // ============================================================
   {
     title: "Rocky V",
@@ -7720,7 +7755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 294. Grown Ups (2010)
+  // 310. Grown Ups (2010)
   // ============================================================
   {
     title: "Grown Ups",
@@ -7745,7 +7780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 295. Grown Ups 2 (2013)
+  // 311. Grown Ups 2 (2013)
   // ============================================================
   {
     title: "Grown Ups 2",
@@ -7770,7 +7805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 296. Red One (2024)
+  // 312. Red One (2024)
   // ============================================================
   {
     title: "Red One",
@@ -7795,7 +7830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 297. World War Z (2013)
+  // 313. World War Z (2013)
   // ============================================================
   {
     title: "World War Z",
@@ -7820,7 +7855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 298. Shang-Chi and the Legend of the Ten Rings (2021)
+  // 314. Shang-Chi and the Legend of the Ten Rings (2021)
   // ============================================================
   {
     title: "Shang-Chi and the Legend of the Ten Rings",
@@ -7845,7 +7880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 299. La La Land (2016)
+  // 315. La La Land (2016)
   // ============================================================
   {
     title: "La La Land",
@@ -7870,7 +7905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 300. Baywatch (2017)
+  // 316. Baywatch (2017)
   // ============================================================
   {
     title: "Baywatch",
@@ -7895,7 +7930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 301. The Maze Runner (2014)
+  // 317. The Maze Runner (2014)
   // ============================================================
   {
     title: "The Maze Runner",
@@ -7920,7 +7955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 302. Casino Royal  (2006)
+  // 318. Casino Royal  (2006)
   // ============================================================
   {
     title: "Casino Royal ",
@@ -7945,7 +7980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 303. Quantum of Solace  (2008)
+  // 319. Quantum of Solace  (2008)
   // ============================================================
   {
     title: "Quantum of Solace ",
@@ -7970,7 +8005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 304. Skyfall  (2012)
+  // 320. Skyfall  (2012)
   // ============================================================
   {
     title: "Skyfall ",
@@ -7995,7 +8030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 305. Spectre  (2015)
+  // 321. Spectre  (2015)
   // ============================================================
   {
     title: "Spectre ",
@@ -8020,7 +8055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 306. No Time to Die  (2021)
+  // 322. No Time to Die  (2021)
   // ============================================================
   {
     title: "No Time to Die ",
@@ -8045,7 +8080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 307. Joker  (2019)
+  // 323. Joker  (2019)
   // ============================================================
   {
     title: "Joker ",
@@ -8070,7 +8105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 308. Joker: Folie à Deux  (2024)
+  // 324. Joker: Folie à Deux  (2024)
   // ============================================================
   {
     title: "Joker: Folie à Deux ",
@@ -8095,7 +8130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 309. Pirates of the Caribbean: Dead Man's Chest (2003)
+  // 325. Pirates of the Caribbean: Dead Man's Chest (2003)
   // ============================================================
   {
     title: "Pirates of the Caribbean: Dead Man's Chest",
@@ -8120,7 +8155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 310. The Truman Show  (1998)
+  // 326. The Truman Show  (1998)
   // ============================================================
   {
     title: "The Truman Show ",
@@ -8145,7 +8180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 311. The Mummy  (1999)
+  // 327. The Mummy  (1999)
   // ============================================================
   {
     title: "The Mummy ",
@@ -8170,7 +8205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 312. Skyscraper  (2019)
+  // 328. Skyscraper  (2019)
   // ============================================================
   {
     title: "Skyscraper ",
@@ -8195,7 +8230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 313. Black Adam (2022)
+  // 329. Black Adam (2022)
   // ============================================================
   {
     title: "Black Adam",
@@ -8220,7 +8255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 314. Red Notice (2021)
+  // 330. Red Notice (2021)
   // ============================================================
   {
     title: "Red Notice",
@@ -8245,7 +8280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 315. Indiana Jones and the Dial of Destiny (2023)
+  // 331. Indiana Jones and the Dial of Destiny (2023)
   // ============================================================
   {
     title: "Indiana Jones and the Dial of Destiny",
@@ -8270,7 +8305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 316. Madagascar (2005)
+  // 332. Madagascar (2005)
   // ============================================================
   {
     title: "Madagascar",
@@ -8295,7 +8330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 317. Madagascar: Escape 2 Africa  (2008)
+  // 333. Madagascar: Escape 2 Africa  (2008)
   // ============================================================
   {
     title: "Madagascar: Escape 2 Africa ",
@@ -8320,7 +8355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 318. Madagascar 3: Europe's Most Wanted   (2012)
+  // 334. Madagascar 3: Europe's Most Wanted   (2012)
   // ============================================================
   {
     title: "Madagascar 3: Europe's Most Wanted  ",
@@ -8345,7 +8380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 319. Edge of Tomorrow (2014)
+  // 335. Edge of Tomorrow (2014)
   // ============================================================
   {
     title: "Edge of Tomorrow",
@@ -8370,7 +8405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 320. Vanilla Sky  (2001)
+  // 336. Vanilla Sky  (2001)
   // ============================================================
   {
     title: "Vanilla Sky ",
@@ -8395,7 +8430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 321. American Made  (2017)
+  // 337. American Made  (2017)
   // ============================================================
   {
     title: "American Made ",
@@ -8420,7 +8455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 322. Dune: Part One  (2021)
+  // 338. Dune: Part One  (2021)
   // ============================================================
   {
     title: "Dune: Part One ",
@@ -8445,7 +8480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 323. Dune: Part Two  (2024)
+  // 339. Dune: Part Two  (2024)
   // ============================================================
   {
     title: "Dune: Part Two ",
@@ -8470,7 +8505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 324. Evil Dead Rise  (2023)
+  // 340. Evil Dead Rise  (2023)
   // ============================================================
   {
     title: "Evil Dead Rise ",
@@ -8495,7 +8530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 325. Blade Runner 2049  (2017)
+  // 341. Blade Runner 2049  (2017)
   // ============================================================
   {
     title: "Blade Runner 2049 ",
@@ -8520,7 +8555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 326. A Minecraft Movie (2025)
+  // 342. A Minecraft Movie (2025)
   // ============================================================
   {
     title: "A Minecraft Movie",
@@ -8545,7 +8580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 327. Kraven the Hunter (2024)
+  // 343. Kraven the Hunter (2024)
   // ============================================================
   {
     title: "Kraven the Hunter",
@@ -8570,7 +8605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 328. White Chicks (2004)
+  // 344. White Chicks (2004)
   // ============================================================
   {
     title: "White Chicks",
@@ -8595,7 +8630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 329. Indiana Jones and the Last Crusade (1989)
+  // 345. Indiana Jones and the Last Crusade (1989)
   // ============================================================
   {
     title: "Indiana Jones and the Last Crusade",
@@ -8620,7 +8655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 330. Indiana Jones and the Kingdom of the Crystal Skull (2008)
+  // 346. Indiana Jones and the Kingdom of the Crystal Skull (2008)
   // ============================================================
   {
     title: "Indiana Jones and the Kingdom of the Crystal Skull",
@@ -8645,7 +8680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 331. Scarface  (1983)
+  // 347. Scarface  (1983)
   // ============================================================
   {
     title: "Scarface ",
@@ -8670,7 +8705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 332. Pirates of the Caribbean: On Stranger Tides (2011)
+  // 348. Pirates of the Caribbean: On Stranger Tides (2011)
   // ============================================================
   {
     title: "Pirates of the Caribbean: On Stranger Tides",
@@ -8695,7 +8730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 333. The Meg  (2018)
+  // 349. The Meg  (2018)
   // ============================================================
   {
     title: "The Meg ",
@@ -8720,7 +8755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 334. Meg 2: The Trench  (2023)
+  // 350. Meg 2: The Trench  (2023)
   // ============================================================
   {
     title: "Meg 2: The Trench ",
@@ -8745,7 +8780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 335. American Psycho (2000)
+  // 351. American Psycho (2000)
   // ============================================================
   {
     title: "American Psycho",
@@ -8770,7 +8805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 336. Bullet Train (2022)
+  // 352. Bullet Train (2022)
   // ============================================================
   {
     title: "Bullet Train",
@@ -8795,7 +8830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 337. The Beekeeper (2024)
+  // 353. The Beekeeper (2024)
   // ============================================================
   {
     title: "The Beekeeper",
@@ -8820,7 +8855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 338. Men in Black II (2002)
+  // 354. Men in Black II (2002)
   // ============================================================
   {
     title: "Men in Black II",
@@ -8845,7 +8880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 339. Men in Black III (2012)
+  // 355. Men in Black III (2012)
   // ============================================================
   {
     title: "Men in Black III",
@@ -8870,7 +8905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 340. Road House (2024)
+  // 356. Road House (2024)
   // ============================================================
   {
     title: "Road House",
@@ -8895,7 +8930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 341. Raiders of the Lost Ark (1981)
+  // 357. Raiders of the Lost Ark (1981)
   // ============================================================
   {
     title: "Raiders of the Lost Ark",
@@ -8920,7 +8955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 342. Pirates of the Caribbean: Dead Men Tell No Tales (2017)
+  // 358. Pirates of the Caribbean: Dead Men Tell No Tales (2017)
   // ============================================================
   {
     title: "Pirates of the Caribbean: Dead Men Tell No Tales",
@@ -8945,7 +8980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 343. Indiana Jones and the Temple of Doom (1984)
+  // 359. Indiana Jones and the Temple of Doom (1984)
   // ============================================================
   {
     title: "Indiana Jones and the Temple of Doom",
@@ -8970,7 +9005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 344. Men in Black (1997)
+  // 360. Men in Black (1997)
   // ============================================================
   {
     title: "Men in Black",
@@ -8995,7 +9030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 345. War of the Worlds  (2005)
+  // 361. War of the Worlds  (2005)
   // ============================================================
   {
     title: "War of the Worlds ",
@@ -9020,7 +9055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 346. Rush Hour (1998)
+  // 362. Rush Hour (1998)
   // ============================================================
   {
     title: "Rush Hour",
@@ -9045,7 +9080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 347. Rush Hour 2 (2001)
+  // 363. Rush Hour 2 (2001)
   // ============================================================
   {
     title: "Rush Hour 2",
@@ -9070,7 +9105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 348. Rush Hour 3 (2007)
+  // 364. Rush Hour 3 (2007)
   // ============================================================
   {
     title: "Rush Hour 3",
@@ -9095,7 +9130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 349. A Working Man (2025)
+  // 365. A Working Man (2025)
   // ============================================================
   {
     title: "A Working Man",
@@ -9120,7 +9155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 350. San Andreas (2015)
+  // 366. San Andreas (2015)
   // ============================================================
   {
     title: "San Andreas",
@@ -9145,7 +9180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 351. The Pursuit of Happyness (2006)
+  // 367. The Pursuit of Happyness (2006)
   // ============================================================
   {
     title: "The Pursuit of Happyness",
@@ -9170,7 +9205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 352. Babygirl (2024)
+  // 368. Babygirl (2024)
   // ============================================================
   {
     title: "Babygirl",
@@ -9195,7 +9230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 353. Taken  (2008)
+  // 369. Taken  (2008)
   // ============================================================
   {
     title: "Taken ",
@@ -9220,7 +9255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 354. Taken 2  (2012)
+  // 370. Taken 2  (2012)
   // ============================================================
   {
     title: "Taken 2 ",
@@ -9245,7 +9280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 355. Taken 3  (2014)
+  // 371. Taken 3  (2014)
   // ============================================================
   {
     title: "Taken 3 ",
@@ -9270,7 +9305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 356. The Mask  (1994)
+  // 372. The Mask  (1994)
   // ============================================================
   {
     title: "The Mask ",
@@ -9295,7 +9330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 357. Madame Web  (2024)
+  // 373. Madame Web  (2024)
   // ============================================================
   {
     title: "Madame Web ",
@@ -9320,7 +9355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 358. Batman Beyond: Return of the Joker (2000)
+  // 374. Batman Beyond: Return of the Joker (2000)
   // ============================================================
   {
     title: "Batman Beyond: Return of the Joker",
@@ -9345,7 +9380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 359. Batman: Under the Red Hood (2010)
+  // 375. Batman: Under the Red Hood (2010)
   // ============================================================
   {
     title: "Batman: Under the Red Hood",
@@ -9370,7 +9405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 360. Batman: Year One (2011)
+  // 376. Batman: Year One (2011)
   // ============================================================
   {
     title: "Batman: Year One",
@@ -9395,7 +9430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 361. The Batman vs. Dracula (2005)
+  // 377. The Batman vs. Dracula (2005)
   // ============================================================
   {
     title: "The Batman vs. Dracula",
@@ -9420,7 +9455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 362. Batman: Bad Blood (2016)
+  // 378. Batman: Bad Blood (2016)
   // ============================================================
   {
     title: "Batman: Bad Blood",
@@ -9445,7 +9480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 363. Batman: Mystery of the Batwoman (2003)
+  // 379. Batman: Mystery of the Batwoman (2003)
   // ============================================================
   {
     title: "Batman: Mystery of the Batwoman",
@@ -9470,7 +9505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 364. Batman: Assault on Arkham (2014)
+  // 380. Batman: Assault on Arkham (2014)
   // ============================================================
   {
     title: "Batman: Assault on Arkham",
@@ -9495,7 +9530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 365. Batman and Superman: Battle of the Super Sons (2022)
+  // 381. Batman and Superman: Battle of the Super Sons (2022)
   // ============================================================
   {
     title: "Batman and Superman: Battle of the Super Sons",
@@ -9520,7 +9555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 366. Justice League: Doom (2012)
+  // 382. Justice League: Doom (2012)
   // ============================================================
   {
     title: "Justice League: Doom",
@@ -9545,7 +9580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 367. Green Lantern: First Flight  (2009)
+  // 383. Green Lantern: First Flight  (2009)
   // ============================================================
   {
     title: "Green Lantern: First Flight ",
@@ -9570,7 +9605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 368. Prisoners (2013)
+  // 384. Prisoners (2013)
   // ============================================================
   {
     title: "Prisoners",
@@ -9595,7 +9630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 369. TRON: Ares (2025)
+  // 385. TRON: Ares (2025)
   // ============================================================
   {
     title: "TRON: Ares",
@@ -9620,7 +9655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 370. Anyone but You (2023)
+  // 386. Anyone but You (2023)
   // ============================================================
   {
     title: "Anyone but You",
@@ -9645,7 +9680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 371. The Naked Gun (2025)
+  // 387. The Naked Gun (2025)
   // ============================================================
   {
     title: "The Naked Gun",
@@ -9670,7 +9705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 372. Green Lantern: Beware My Power (2022)
+  // 388. Green Lantern: Beware My Power (2022)
   // ============================================================
   {
     title: "Green Lantern: Beware My Power",
@@ -9695,7 +9730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 373. The Nun II (2023)
+  // 389. The Nun II (2023)
   // ============================================================
   {
     title: "The Nun II",
@@ -9720,7 +9755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 374. Batman & Mr. Freeze: SubZero (1998)
+  // 390. Batman & Mr. Freeze: SubZero (1998)
   // ============================================================
   {
     title: "Batman & Mr. Freeze: SubZero",
@@ -9745,7 +9780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 375. Zootopia  (2016)
+  // 391. Zootopia  (2016)
   // ============================================================
   {
     title: "Zootopia ",
@@ -9770,7 +9805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 376. Zootopia 2 (2025)
+  // 392. Zootopia 2 (2025)
   // ============================================================
   {
     title: "Zootopia 2",
@@ -9795,7 +9830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 377. The Devil Wears Prada (2006)
+  // 393. The Devil Wears Prada (2006)
   // ============================================================
   {
     title: "The Devil Wears Prada",
@@ -9820,7 +9855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 378. The Devil Wears Prada 2 (2026)
+  // 394. The Devil Wears Prada 2 (2026)
   // ============================================================
   {
     title: "The Devil Wears Prada 2",
@@ -9845,7 +9880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 379. Disclosure Day (2026)
+  // 395. Disclosure Day (2026)
   // ============================================================
   {
     title: "Disclosure Day",
@@ -9870,7 +9905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 380. Scary Movie (2000)
+  // 396. Scary Movie (2000)
   // ============================================================
   {
     title: "Scary Movie",
@@ -9895,7 +9930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 381. Scary Movie 3 (2003)
+  // 397. Scary Movie 3 (2003)
   // ============================================================
   {
     title: "Scary Movie 3",
@@ -9920,7 +9955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 382. Scary Movie 4 (2006)
+  // 398. Scary Movie 4 (2006)
   // ============================================================
   {
     title: "Scary Movie 4",
@@ -9945,7 +9980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 383. Scary Movie 5 (2013)
+  // 399. Scary Movie 5 (2013)
   // ============================================================
   {
     title: "Scary Movie 5",
@@ -9970,7 +10005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 384. Scary Movie (2013)
+  // 400. Scary Movie (2013)
   // ============================================================
   {
     title: "Scary Movie",
@@ -9995,7 +10030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 385. Sinister (2012)
+  // 401. Sinister (2012)
   // ============================================================
   {
     title: "Sinister",
@@ -10020,7 +10055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 386. Sinister 2 (2015)
+  // 402. Sinister 2 (2015)
   // ============================================================
   {
     title: "Sinister 2",
@@ -10045,7 +10080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 387. Scary Movie 2 (2001)
+  // 403. Scary Movie 2 (2001)
   // ============================================================
   {
     title: "Scary Movie 2",
@@ -10070,7 +10105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 388. The Drama (2026)
+  // 404. The Drama (2026)
   // ============================================================
   {
     title: "The Drama",
@@ -10095,7 +10130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 389. Revolutionary Road (2008)
+  // 405. Revolutionary Road (2008)
   // ============================================================
   {
     title: "Revolutionary Road",
@@ -10120,7 +10155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 390. Deep Water (2022)
+  // 406. Deep Water (2022)
   // ============================================================
   {
     title: "Deep Water",
@@ -10145,7 +10180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 391. Hotel Desire (2011)
+  // 407. Hotel Desire (2011)
   // ============================================================
   {
     title: "Hotel Desire",
@@ -10170,7 +10205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 392. Fifty Shades of Grey (2015)
+  // 408. Fifty Shades of Grey (2015)
   // ============================================================
   {
     title: "Fifty Shades of Grey",
@@ -10195,7 +10230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 393. Fifty Shades Freed (2018)
+  // 409. Fifty Shades Freed (2018)
   // ============================================================
   {
     title: "Fifty Shades Freed",
@@ -10220,7 +10255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 394. The Transporter (2002)
+  // 410. The Transporter (2002)
   // ============================================================
   {
     title: "The Transporter",
@@ -10245,7 +10280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 395. The Transporter 2 (2005)
+  // 411. The Transporter 2 (2005)
   // ============================================================
   {
     title: "The Transporter 2",
@@ -10270,7 +10305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 396. Transporter 3 (2008)
+  // 412. Transporter 3 (2008)
   // ============================================================
   {
     title: "Transporter 3",
@@ -10295,7 +10330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 397. Retribution (2023)
+  // 413. Retribution (2023)
   // ============================================================
   {
     title: "Retribution",
@@ -10320,7 +10355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 398. The Karate Kid (2010)
+  // 414. The Karate Kid (2010)
   // ============================================================
   {
     title: "The Karate Kid",
@@ -10345,7 +10380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 399. Baby Driver (2017)
+  // 415. Baby Driver (2017)
   // ============================================================
   {
     title: "Baby Driver",
@@ -10370,7 +10405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 400. Subservience (2024)
+  // 416. Subservience (2024)
   // ============================================================
   {
     title: "Subservience",
@@ -10395,7 +10430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 401. The Menu (2022)
+  // 417. The Menu (2022)
   // ============================================================
   {
     title: "The Menu",
@@ -10420,7 +10455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 402. The Girl Next Door (2004)
+  // 418. The Girl Next Door (2004)
   // ============================================================
   {
     title: "The Girl Next Door",
@@ -10445,7 +10480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 403. Friends with Benefits (2011)
+  // 419. Friends with Benefits (2011)
   // ============================================================
   {
     title: "Friends with Benefits",
@@ -10470,7 +10505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 404. No Strings Attached (2011)
+  // 420. No Strings Attached (2011)
   // ============================================================
   {
     title: "No Strings Attached",
@@ -10495,7 +10530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 405. Easy A (2010)
+  // 421. Easy A (2010)
   // ============================================================
   {
     title: "Easy A",
@@ -10520,7 +10555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 406. Regretting You (2025)
+  // 422. Regretting You (2025)
   // ============================================================
   {
     title: "Regretting You",
@@ -10545,7 +10580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 407. Purple Hearts (2022)
+  // 423. Purple Hearts (2022)
   // ============================================================
   {
     title: "Purple Hearts",
@@ -10570,7 +10605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 408. The Social Network (2010)
+  // 424. The Social Network (2010)
   // ============================================================
   {
     title: "The Social Network",
@@ -10595,7 +10630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 409. Teenage Mutant Ninja Turtles: Out of the Shadows (2016)
+  // 425. Teenage Mutant Ninja Turtles: Out of the Shadows (2016)
   // ============================================================
   {
     title: "Teenage Mutant Ninja Turtles: Out of the Shadows",
@@ -10620,7 +10655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 410. Ride Along (2014)
+  // 426. Ride Along (2014)
   // ============================================================
   {
     title: "Ride Along",
@@ -10645,7 +10680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 411. Superman Returns (2006)
+  // 427. Superman Returns (2006)
   // ============================================================
   {
     title: "Superman Returns",
@@ -10670,7 +10705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 412. Batman (1989)
+  // 428. Batman (1989)
   // ============================================================
   {
     title: "Batman",
@@ -10695,7 +10730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 413. Batman Returns (1992)
+  // 429. Batman Returns (1992)
   // ============================================================
   {
     title: "Batman Returns",
@@ -10720,7 +10755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 414. Batman Forever (1995)
+  // 430. Batman Forever (1995)
   // ============================================================
   {
     title: "Batman Forever",
@@ -10745,7 +10780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 415. Shelter (2026)
+  // 431. Shelter (2026)
   // ============================================================
   {
     title: "Shelter",
@@ -10770,7 +10805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 416. Steven Universe: The Movie (2019)
+  // 432. Steven Universe: The Movie (2019)
   // ============================================================
   {
     title: "Steven Universe: The Movie",
@@ -10795,7 +10830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 417. Crime 101 (2026)
+  // 433. Crime 101 (2026)
   // ============================================================
   {
     title: "Crime 101",
@@ -10820,7 +10855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 418. One Battle After Another (2025)
+  // 434. One Battle After Another (2025)
   // ============================================================
   {
     title: "One Battle After Another",
@@ -10845,7 +10880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 419. Django Unchained (2012)
+  // 435. Django Unchained (2012)
   // ============================================================
   {
     title: "Django Unchained",
@@ -10870,7 +10905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 420. Gladiator (2000)
+  // 436. Gladiator (2000)
   // ============================================================
   {
     title: "Gladiator",
@@ -10895,7 +10930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 421. Ride Along 2 (2016)
+  // 437. Ride Along 2 (2016)
   // ============================================================
   {
     title: "Ride Along 2",
@@ -10920,7 +10955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 422. Blacklight (2022)
+  // 438. Blacklight (2022)
   // ============================================================
   {
     title: "Blacklight",
@@ -10945,7 +10980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 423. RED (2010)
+  // 439. RED (2010)
   // ============================================================
   {
     title: "RED",
@@ -10970,7 +11005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 424. Teenage Mutant Ninja Turtles (2014)
+  // 440. Teenage Mutant Ninja Turtles (2014)
   // ============================================================
   {
     title: "Teenage Mutant Ninja Turtles",
@@ -10995,7 +11030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 425. The Family Plan (2023)
+  // 441. The Family Plan (2023)
   // ============================================================
   {
     title: "The Family Plan",
@@ -11020,7 +11055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 426. The Family Plan 2 (2025)
+  // 442. The Family Plan 2 (2025)
   // ============================================================
   {
     title: "The Family Plan 2",
@@ -11045,7 +11080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 427. Ghosted (2023)
+  // 443. Ghosted (2023)
   // ============================================================
   {
     title: "Ghosted",
@@ -11070,7 +11105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 428. The Gray Man (2022)
+  // 444. The Gray Man (2022)
   // ============================================================
   {
     title: "The Gray Man",
@@ -11095,7 +11130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 429. Extraction (2020)
+  // 445. Extraction (2020)
   // ============================================================
   {
     title: "Extraction",
@@ -11120,7 +11155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 430. Extraction 2 (2023)
+  // 446. Extraction 2 (2023)
   // ============================================================
   {
     title: "Extraction 2",
@@ -11145,7 +11180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 431. 6 Bullets (2012)
+  // 447. 6 Bullets (2012)
   // ============================================================
   {
     title: "6 Bullets",
@@ -11170,7 +11205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 432. Stolen Girl (2025)
+  // 448. Stolen Girl (2025)
   // ============================================================
   {
     title: "Stolen Girl",
@@ -11195,7 +11230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 433. Trap House (2025)
+  // 449. Trap House (2025)
   // ============================================================
   {
     title: "Trap House",
@@ -11220,7 +11255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 434. Karate Kid: Legends (2025)
+  // 450. Karate Kid: Legends (2025)
   // ============================================================
   {
     title: "Karate Kid: Legends",
@@ -11245,7 +11280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 435. Gladiator II (2024)
+  // 451. Gladiator II (2024)
   // ============================================================
   {
     title: "Gladiator II",
@@ -11270,7 +11305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 436. Napoleon (2023)
+  // 452. Napoleon (2023)
   // ============================================================
   {
     title: "Napoleon",
@@ -11295,7 +11330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 437. Last Knights (2015)
+  // 453. Last Knights (2015)
   // ============================================================
   {
     title: "Last Knights",
@@ -11320,7 +11355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 438. The Tuxedo (2002)
+  // 454. The Tuxedo (2002)
   // ============================================================
   {
     title: "The Tuxedo",
@@ -11345,7 +11380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 439. Mr. Nice Guy (1997)
+  // 455. Mr. Nice Guy (1997)
   // ============================================================
   {
     title: "Mr. Nice Guy",
@@ -11370,7 +11405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 440. The Matrix (1999)
+  // 456. The Matrix (1999)
   // ============================================================
   {
     title: "The Matrix",
@@ -11395,7 +11430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 441. The Matrix Reloaded (2003)
+  // 457. The Matrix Reloaded (2003)
   // ============================================================
   {
     title: "The Matrix Reloaded",
@@ -11420,7 +11455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 442. The Matrix Revolutions (2003)
+  // 458. The Matrix Revolutions (2003)
   // ============================================================
   {
     title: "The Matrix Revolutions",
@@ -11445,7 +11480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 443. The Matrix Resurrections (2021)
+  // 459. The Matrix Resurrections (2021)
   // ============================================================
   {
     title: "The Matrix Resurrections",
@@ -11470,7 +11505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 444. Resident Evil: Death Island (2023)
+  // 460. Resident Evil: Death Island (2023)
   // ============================================================
   {
     title: "Resident Evil: Death Island",
@@ -11495,7 +11530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 445. Resident Evil: Degeneration (2008)
+  // 461. Resident Evil: Degeneration (2008)
   // ============================================================
   {
     title: "Resident Evil: Degeneration",
@@ -11520,7 +11555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 446. Resident Evil: Damnation (2012)
+  // 462. Resident Evil: Damnation (2012)
   // ============================================================
   {
     title: "Resident Evil: Damnation",
@@ -11545,7 +11580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 447. Superman: Man of Tomorrow (2020)
+  // 463. Superman: Man of Tomorrow (2020)
   // ============================================================
   {
     title: "Superman: Man of Tomorrow",
@@ -11570,7 +11605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 448. All Star Superman (2011)
+  // 464. All Star Superman (2011)
   // ============================================================
   {
     title: "All Star Superman",
@@ -11595,7 +11630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 449. The Death of Superman (2018)
+  // 465. The Death of Superman (2018)
   // ============================================================
   {
     title: "The Death of Superman",
@@ -11620,7 +11655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 450. Teen Titans: The Judas Contract (2017)
+  // 466. Teen Titans: The Judas Contract (2017)
   // ============================================================
   {
     title: "Teen Titans: The Judas Contract",
@@ -11645,7 +11680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 451. Justice League vs. Teen Titans (2016)
+  // 467. Justice League vs. Teen Titans (2016)
   // ============================================================
   {
     title: "Justice League vs. Teen Titans",
@@ -11670,7 +11705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 452. One Piece Film Red (2022)
+  // 468. One Piece Film Red (2022)
   // ============================================================
   {
     title: "One Piece Film Red",
@@ -11695,7 +11730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 453. One Piece Film: Z (2012)
+  // 469. One Piece Film: Z (2012)
   // ============================================================
   {
     title: "One Piece Film: Z",
@@ -11720,7 +11755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 454. One Piece Film: GOLD (2016)
+  // 470. One Piece Film: GOLD (2016)
   // ============================================================
   {
     title: "One Piece Film: GOLD",
@@ -11745,7 +11780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 455. One Piece: Stampede (2019)
+  // 471. One Piece: Stampede (2019)
   // ============================================================
   {
     title: "One Piece: Stampede",
@@ -11770,7 +11805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 456. One Piece Film: Strong World (2009)
+  // 472. One Piece Film: Strong World (2009)
   // ============================================================
   {
     title: "One Piece Film: Strong World",
@@ -11795,7 +11830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 457. One Piece: Adventure of Nebulandia  (2015)
+  // 473. One Piece: Adventure of Nebulandia  (2015)
   // ============================================================
   {
     title: "One Piece: Adventure of Nebulandia ",
@@ -11820,7 +11855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 458. One Piece: Episode of Skypiea (2018)
+  // 474. One Piece: Episode of Skypiea (2018)
   // ============================================================
   {
     title: "One Piece: Episode of Skypiea",
@@ -11845,7 +11880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 459. Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!! (2013)
+  // 475. Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!! (2013)
   // ============================================================
   {
     title: "Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!!",
@@ -11870,7 +11905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 460. One Piece Episode of Alabasta Prologue (2007)
+  // 476. One Piece Episode of Alabasta Prologue (2007)
   // ============================================================
   {
     title: "One Piece Episode of Alabasta Prologue",
@@ -11895,7 +11930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 461. One Piece: Clockwork Island Adventure (2001)
+  // 477. One Piece: Clockwork Island Adventure (2001)
   // ============================================================
   {
     title: "One Piece: Clockwork Island Adventure",
@@ -11920,7 +11955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 462. One Piece: Dead End Adventure (2003)
+  // 478. One Piece: Dead End Adventure (2003)
   // ============================================================
   {
     title: "One Piece: Dead End Adventure",
@@ -11945,7 +11980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 463. One Piece: Heart of Gold (2016)
+  // 479. One Piece: Heart of Gold (2016)
   // ============================================================
   {
     title: "One Piece: Heart of Gold",
@@ -11970,7 +12005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 464. One Piece Episode of East Blue (2017)
+  // 480. One Piece Episode of East Blue (2017)
   // ============================================================
   {
     title: "One Piece Episode of East Blue",
@@ -11995,7 +12030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 465. One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends (2014)
+  // 481. One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends (2014)
   // ============================================================
   {
     title: "One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
@@ -12020,7 +12055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 466. One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom (2008)
+  // 482. One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom (2008)
   // ============================================================
   {
     title: "One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom",
@@ -12045,7 +12080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 467. One Piece Special: Protect! The Last Great Stage (2003)
+  // 483. One Piece Special: Protect! The Last Great Stage (2003)
   // ============================================================
   {
     title: "One Piece Special: Protect! The Last Great Stage",
@@ -12070,7 +12105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 468. One Piece Film Gold: Episode 0 (2016)
+  // 484. One Piece Film Gold: Episode 0 (2016)
   // ============================================================
   {
     title: "One Piece Film Gold: Episode 0",
@@ -12095,7 +12130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 469. One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends  (2012)
+  // 485. One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends  (2012)
   // ============================================================
   {
     title: "One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends ",
@@ -12120,7 +12155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 470. One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will (2015)
+  // 486. One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will (2015)
   // ============================================================
   {
     title: "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
@@ -12145,7 +12180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 471. The Last: Naruto the Movie (2014)
+  // 487. The Last: Naruto the Movie (2014)
   // ============================================================
   {
     title: "The Last: Naruto the Movie",
@@ -12170,7 +12205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 472. Boruto: Naruto the Movie (2015)
+  // 488. Boruto: Naruto the Movie (2015)
   // ============================================================
   {
     title: "Boruto: Naruto the Movie",
@@ -12195,7 +12230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 473. Road to Ninja: Naruto the Movie (2012)
+  // 489. Road to Ninja: Naruto the Movie (2012)
   // ============================================================
   {
     title: "Road to Ninja: Naruto the Movie",
@@ -12220,7 +12255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 474. Naruto Shippuden the Movie (2007)
+  // 490. Naruto Shippuden the Movie (2007)
   // ============================================================
   {
     title: "Naruto Shippuden the Movie",
@@ -12245,7 +12280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 475. Naruto Shippuden the Movie: Blood Prison (2011)
+  // 491. Naruto Shippuden the Movie: Blood Prison (2011)
   // ============================================================
   {
     title: "Naruto Shippuden the Movie: Blood Prison",
@@ -12270,7 +12305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 476. Naruto Shippuden the Movie: Bonds (2008)
+  // 492. Naruto Shippuden the Movie: Bonds (2008)
   // ============================================================
   {
     title: "Naruto Shippuden the Movie: Bonds",
@@ -12295,7 +12330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 477. Naruto Shippuden the Movie: The Lost Tower (2010)
+  // 493. Naruto Shippuden the Movie: The Lost Tower (2010)
   // ============================================================
   {
     title: "Naruto Shippuden the Movie: The Lost Tower",
@@ -12320,7 +12355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 478. Naruto Shippuden the Movie: The Will of Fire (2009)
+  // 494. Naruto Shippuden the Movie: The Will of Fire (2009)
   // ============================================================
   {
     title: "Naruto Shippuden the Movie: The Will of Fire",
@@ -12345,7 +12380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 479. Naruto the Movie: Legend of the Stone of Gelel (2005)
+  // 495. Naruto the Movie: Legend of the Stone of Gelel (2005)
   // ============================================================
   {
     title: "Naruto the Movie: Legend of the Stone of Gelel",
@@ -12370,7 +12405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 480. Naruto the Movie: Ninja Clash in the Land of Snow (2004)
+  // 496. Naruto the Movie: Ninja Clash in the Land of Snow (2004)
   // ============================================================
   {
     title: "Naruto the Movie: Ninja Clash in the Land of Snow",
@@ -12395,7 +12430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 481. Naruto the Movie: Guardians of the Crescent Moon Kingdom (2006)
+  // 497. Naruto the Movie: Guardians of the Crescent Moon Kingdom (2006)
   // ============================================================
   {
     title: "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
@@ -12420,7 +12455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 482. The Good, the Bad and the Ugly (1966)
+  // 498. The Good, the Bad and the Ugly (1966)
   // ============================================================
   {
     title: "The Good, the Bad and the Ugly",
@@ -12445,7 +12480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 483. GoodFellas (1990)
+  // 499. GoodFellas (1990)
   // ============================================================
   {
     title: "GoodFellas",
@@ -12470,7 +12505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 484. A Walk Among the Tombstones (2014)
+  // 500. A Walk Among the Tombstones (2014)
   // ============================================================
   {
     title: "A Walk Among the Tombstones",
@@ -12495,7 +12530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 485. The Informer (2019)
+  // 501. The Informer (2019)
   // ============================================================
   {
     title: "The Informer",
@@ -12520,7 +12555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 486. Knives Out (2019)
+  // 502. Knives Out (2019)
   // ============================================================
   {
     title: "Knives Out",
@@ -12545,7 +12580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 487. Knock Knock (2015)
+  // 503. Knock Knock (2015)
   // ============================================================
   {
     title: "Knock Knock",
@@ -12570,7 +12605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 488. DC League of Super-Pets (2022)
+  // 504. DC League of Super-Pets (2022)
   // ============================================================
   {
     title: "DC League of Super-Pets",
@@ -12595,7 +12630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 489. War Dogs (2016)
+  // 505. War Dogs (2016)
   // ============================================================
   {
     title: "War Dogs",
@@ -12620,7 +12655,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 490. Exposed (2016)
+  // 506. Exposed (2016)
   // ============================================================
   {
     title: "Exposed",
@@ -12645,7 +12680,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 491. Steve (2025)
+  // 507. Steve (2025)
   // ============================================================
   {
     title: "Steve",
@@ -12670,7 +12705,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 492. In Time (2011)
+  // 508. In Time (2011)
   // ============================================================
   {
     title: "In Time",
@@ -12695,7 +12730,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 493. Superbad (2007)
+  // 509. Superbad (2007)
   // ============================================================
   {
     title: "Superbad",
@@ -12720,7 +12755,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 494. Crazy, Stupid, Love. (2011)
+  // 510. Crazy, Stupid, Love. (2011)
   // ============================================================
   {
     title: "Crazy, Stupid, Love.",
@@ -12745,7 +12780,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 495. The Great Gatsby (2013)
+  // 511. The Great Gatsby (2013)
   // ============================================================
   {
     title: "The Great Gatsby",
@@ -12770,7 +12805,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 496. Don't Look Up (2021)
+  // 512. Don't Look Up (2021)
   // ============================================================
   {
     title: "Don't Look Up",
@@ -12795,7 +12830,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 497. Lucy (2014)
+  // 513. Lucy (2014)
   // ============================================================
   {
     title: "Lucy",
@@ -12820,7 +12855,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 498. Bruce Almighty (2003)
+  // 514. Bruce Almighty (2003)
   // ============================================================
   {
     title: "Bruce Almighty",
@@ -12845,7 +12880,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 499. Wanted (2008)
+  // 515. Wanted (2008)
   // ============================================================
   {
     title: "Wanted",
@@ -12870,7 +12905,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 500. London Has Fallen (2016)
+  // 516. London Has Fallen (2016)
   // ============================================================
   {
     title: "London Has Fallen",
@@ -12895,7 +12930,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 501. Kiss the Girls (1997)
+  // 517. Kiss the Girls (1997)
   // ============================================================
   {
     title: "Kiss the Girls",
@@ -12920,7 +12955,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 502. High Crimes (2002)
+  // 518. High Crimes (2002)
   // ============================================================
   {
     title: "High Crimes",
@@ -12945,7 +12980,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 503. Pain & Gain (2013)
+  // 519. Pain & Gain (2013)
   // ============================================================
   {
     title: "Pain & Gain",
@@ -12970,7 +13005,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 504. Get Smart (2008)
+  // 520. Get Smart (2008)
   // ============================================================
   {
     title: "Get Smart",
@@ -12995,7 +13030,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 505. The Other Guys (2010)
+  // 521. The Other Guys (2010)
   // ============================================================
   {
     title: "The Other Guys",
@@ -13020,7 +13055,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 506. Dragon Ball Super: Super Hero (2022)
+  // 522. Dragon Ball Super: Super Hero (2022)
   // ============================================================
   {
     title: "Dragon Ball Super: Super Hero",
@@ -13045,7 +13080,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 507. Dragon Ball Z: Resurrection 'F' (2015)
+  // 523. Dragon Ball Z: Resurrection 'F' (2015)
   // ============================================================
   {
     title: "Dragon Ball Z: Resurrection 'F'",
@@ -13070,7 +13105,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 508. Dragon Ball Z: Fusion Reborn (1995)
+  // 524. Dragon Ball Z: Fusion Reborn (1995)
   // ============================================================
   {
     title: "Dragon Ball Z: Fusion Reborn",
@@ -13095,7 +13130,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 509. Dragon Ball Z: Battle of Gods (2013)
+  // 525. Dragon Ball Z: Battle of Gods (2013)
   // ============================================================
   {
     title: "Dragon Ball Z: Battle of Gods",
@@ -13120,7 +13155,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 510. Dragon Ball Super: Broly (2018)
+  // 526. Dragon Ball Super: Broly (2018)
   // ============================================================
   {
     title: "Dragon Ball Super: Broly",
@@ -13145,7 +13180,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 511. Dragon Ball Z: Bojack Unbound (1993)
+  // 527. Dragon Ball Z: Bojack Unbound (1993)
   // ============================================================
   {
     title: "Dragon Ball Z: Bojack Unbound",
@@ -13170,7 +13205,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 512. Dragon Ball Z: Lord Slug (1991)
+  // 528. Dragon Ball Z: Lord Slug (1991)
   // ============================================================
   {
     title: "Dragon Ball Z: Lord Slug",
@@ -13195,7 +13230,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 513. Dragon Ball Z: Wrath of the Dragon (1995)
+  // 529. Dragon Ball Z: Wrath of the Dragon (1995)
   // ============================================================
   {
     title: "Dragon Ball Z: Wrath of the Dragon",
@@ -13220,7 +13255,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 514. Dragon Ball Z: The Return of Cooler (1992)
+  // 530. Dragon Ball Z: The Return of Cooler (1992)
   // ============================================================
   {
     title: "Dragon Ball Z: The Return of Cooler",
@@ -13245,7 +13280,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 515. Dragon Ball Z: Super Android 13! (1992)
+  // 531. Dragon Ball Z: Super Android 13! (1992)
   // ============================================================
   {
     title: "Dragon Ball Z: Super Android 13!",
@@ -13270,7 +13305,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 516. Dragon Ball Z: Cooler's Revenge (1991)
+  // 532. Dragon Ball Z: Cooler's Revenge (1991)
   // ============================================================
   {
     title: "Dragon Ball Z: Cooler's Revenge",
@@ -13295,7 +13330,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 517. Dragon Ball Z Side Story: Plan to Eradicate the Saiyans (1993)
+  // 533. Dragon Ball Z Side Story: Plan to Eradicate the Saiyans (1993)
   // ============================================================
   {
     title: "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
@@ -13320,7 +13355,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 518. Dragon Ball Z: Bio-Broly (1994)
+  // 534. Dragon Ball Z: Bio-Broly (1994)
   // ============================================================
   {
     title: "Dragon Ball Z: Bio-Broly",
@@ -13345,7 +13380,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 519. Dragon Ball: Curse of the Blood Rubies (1986)
+  // 535. Dragon Ball: Curse of the Blood Rubies (1986)
   // ============================================================
   {
     title: "Dragon Ball: Curse of the Blood Rubies",
@@ -13370,7 +13405,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 520. Dragon Ball Z: Broly - Second Coming (1994)
+  // 536. Dragon Ball Z: Broly - Second Coming (1994)
   // ============================================================
   {
     title: "Dragon Ball Z: Broly - Second Coming",
@@ -13395,7 +13430,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 521. Dragon Ball Z: Broly - The Legendary Super Saiyan (1993)
+  // 537. Dragon Ball Z: Broly - The Legendary Super Saiyan (1993)
   // ============================================================
   {
     title: "Dragon Ball Z: Broly - The Legendary Super Saiyan",
@@ -13420,7 +13455,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 522. Dragon Ball Z: The Tree of Might  (1990)
+  // 538. Dragon Ball Z: The Tree of Might  (1990)
   // ============================================================
   {
     title: "Dragon Ball Z: The Tree of Might ",
@@ -13445,7 +13480,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 523. Marty Supreme (2025)
+  // 539. Marty Supreme (2025)
   // ============================================================
   {
     title: "Marty Supreme",
@@ -13470,7 +13505,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 524. Assassin's Creed (2016)
+  // 540. Assassin's Creed (2016)
   // ============================================================
   {
     title: "Assassin's Creed",
@@ -13495,7 +13530,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 525. Tomb Raider (2018)
+  // 541. Tomb Raider (2018)
   // ============================================================
   {
     title: "Tomb Raider",
@@ -13520,7 +13555,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 526. Oblivion (2013)
+  // 542. Oblivion (2013)
   // ============================================================
   {
     title: "Oblivion",
@@ -13545,7 +13580,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 527. Mean Girls (2004)
+  // 543. Mean Girls (2004)
   // ============================================================
   {
     title: "Mean Girls",
@@ -13570,7 +13605,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 528. Mean Girls 2 (2011)
+  // 544. Mean Girls 2 (2011)
   // ============================================================
   {
     title: "Mean Girls 2",
@@ -13595,7 +13630,7 @@ window._MOVIES_DATA = [
   },
 
   // ============================================================
-  // 529. Reservoir Dogs (1992)
+  // 545. Reservoir Dogs (1992)
   // ============================================================
   {
     title: "Reservoir Dogs",

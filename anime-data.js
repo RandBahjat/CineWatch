@@ -1,11 +1,6 @@
 // CineWatch - Anime Data
 
 window._ANIME_DATA = [
-  // ============================================================
-  // Beyblade: Metal Fusion (2009)
-  // ============================================================
-  
-
 
   // ============================================================
   // 1. Dragon Ball Super: Beerus (2026)
@@ -35048,4241 +35043,4169 @@ window._ANIME_DATA = [
     ]
   },
 
-{
-  "id": "beyblade-metal-fusion-2009",
-  "title": "Beyblade: Metal Fusion",
-  "type": "TV Show",
-  "isAnime": true,
-  "year": 2009,
-  "rating": 7,
-  "age": "TV-Y7",
-  "duration": "24m",
-  "genres": [
-    "Animation",
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Family"
-  ],
-  "tags": [
-    "Animation",
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Family"
-  ],
-  "poster": "https://image.tmdb.org/t/p/original/AvzR1LroQFPs8mtvW761BZX92qx.jpg",
-  "backdrop": "https://image.tmdb.org/t/p/original/dHQ6u5nRMCHGHLCl220iCah6jX0.jpg",
-  "videoUrl": "37807",
-  "trailerUrl": "https://www.youtube.com/watch?v=kYJjZ8k5110",
-  "animeSlug": "beyblade-metal-fusion",
-  "malId": 5962,
-  "anilistId": 5962,
-  "tmdbId": 37807,
-  "cinesrcId": "37807",
-  "overview": "A new cast of characters take on the continued battle between good and evil. Gingka, our hero, and his group of loyal friends combine forces to take on a dangerous group called the Dark Nebula. The plot thickens as friends become enemies and enemies become allies, all in the pursuit of becoming the top Blader.",
-  "overviewKurdish": "دەستەیەکی نوێ لە کەسایەتییەکان درێژە بە شەڕی نێوان چاکە و خراپە دەدەن. گینکا، پاڵەوانی سەرەکی، لەگەڵ هاوڕێ دڵسۆزەکانی یەکدەگرن بۆ ڕووبەڕووبوونەوەی ڕێکخراوی مەترسیداری تارمایی تاریک (Dark Nebula). چیرۆکەکە بەرەو ئاڵۆزی دەچێت کاتێک هاوڕێیان دەبنە دوژمن و دوژمنان دەبنە هاوپەیمان لە پێناو بوون بە باشترین یاریزانی بەیلەید.",
-  "director": "Kunihisa Sugishima",
-  "cast": [
-    "Rob Tinkler",
-    "Barbara Mamabolo",
-    "Lisette St. Louis",
-    "Aki Kanada",
-    "Satoshi Hino"
-  ],
-  "trending": true,
-  "featured": false,
-  "is4k": false,
-  "seasons": [
-    {
-      "season": 1,
-      "seasonTitle": "Metal Fusion",
-      "malId": 5962,
-      "anilistId": 5962,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "Pegasus has Landed",
-          "absoluteEpisode": 1,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/1/w780.jpg",
-          "overview": "When young blader Kenta runs into a rough gang of bladers, the Face Hunters, he is saved by mysterious blader Gingka Hagane and his bey Storm Pegasus. Kenta is determined for the two to become friends, but the next day Gingka is missing and the Face Hunters and their leader have regrouped at a construction site."
-        },
-        {
-          "episode": 2,
-          "title": "Leone's Roar!",
-          "absoluteEpisode": 2,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/2/w780.jpg",
-          "overview": "Kyoya, leader of the Face Hunters, has challenged Gingka. As Gingka and Kenta discuss this challenge a girl appears claiming Pegasus is in need of repair. The girl, named Madoka, treats Pegasus but before she can finish Ginga leaves. Kyoya has stolen Sagittario and unless Gingka wins it will be destroyed."
-        },
-        {
-          "episode": 3,
-          "title": "The Wolf's Ambition!",
-          "absoluteEpisode": 3,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/3/w780.jpg",
-          "overview": "Doji take Kyouya away from the city to make a deal. If Kyouya loses a battle against him then Kyouya must go with him. Meanwhile Kenta is worried Ginga is getting bored of having no strong opponents to battle and challenges him to prove his worth."
-        },
-        {
-          "episode": 4,
-          "title": "Charge! Bull Power!",
-          "absoluteEpisode": 4,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/4/w780.jpg",
-          "overview": "Doji gives Benkei a new bey, Dark Bull, with which he can defeat Gingka. Excited, Benkei sends Kenta off with a challenge for Gingka. Upon arriving, Gingka and co realised strange holes have been made a the battle location, and then a bey appears..."
-        },
-        {
-          "episode": 5,
-          "title": "Vengeful Gasher",
-          "absoluteEpisode": 5,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/5/w780.jpg",
-          "overview": "There is a new blader in town, Tetsuya, who is destroying the beys of the bladers he defeats. Angered by this, Madoka sets off ot find him with Ginga and Kenta in pursute. After splitting up, Kenta realises one fo his friends is a new victim of Tetsuya he battles him, thankfully saved by the arrival of Ginga. But Tetsuya has kidnapped Madoka, and unless Ginga defeats him she'll remain missing."
-        },
-        {
-          "episode": 6,
-          "title": "Aquario's Challenge",
-          "absoluteEpisode": 6,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/6/w780.jpg",
-          "overview": "Hikaru Hasama, a strong blader from afar arrives in town and is asked by Benkei to defeat Ginga. Meanwhile Kenta wonders whether Sagittario could have a special move, Madoka explaining it's possible. Hikaru accepts Benkei's offer, but Ginga is sick and so Kenta battles in his place, unbeknown to Hikaru."
-        },
-        {
-          "episode": 7,
-          "title": "It's Our Special Move! Sagittario",
-          "absoluteEpisode": 7,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/7/w780.jpg",
-          "overview": "Kenta is trained by Benkei to defeat Hikaru whilst Madoka gives Kenta a new bey part to help him with his special move. Meanwhile Hikaru has been told by Tetsuya who her real opponent was and is on the prowl for the real Ginga Hagane, though is interrupted by Kenta."
-        },
-        {
-          "episode": 8,
-          "title": "Merci's Dangerous Trap",
-          "absoluteEpisode": 8,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/8/w780.jpg",
-          "overview": "Kyouya is sent of Wolf Canyon by Doji to test is skills. Meanwhile Merci kidnaps Ginga and convinces him he's on a TV show whilst really he testing his skills."
-        },
-        {
-          "episode": 9,
-          "title": "Leone's Counterattack",
-          "absoluteEpisode": 9,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/9/w780.jpg",
-          "overview": "Kyouya has returned from Wolf Canyon and Benkei is excited to see his old friend again, with encouragement from Kenta. But Kyouya has changed, revealed in a battle, and even with Kenta at his side Benkei loses as Leone destroys the warehouse they're in."
-        },
-        {
-          "episode": 10,
-          "title": "Heated Battle! Gingka Versus Kyoya",
-          "absoluteEpisode": 10,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/10/w780.jpg",
-          "overview": "Kenta returns with an injured Benkei and tells Ginga what Kyouya did to them. Furious, Ginga challenges Kyouya who is now out of control. During the battle, a tornado rips through the city, involuntarily summoning his friends to cheer him on."
-        },
-        {
-          "episode": 11,
-          "title": "Chase The Wolf!",
-          "absoluteEpisode": 11,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/11/w780.jpg",
-          "overview": "Ginga returns and explains to his friends that Doji has a forbidden bey: Lightning L-Drago. Tipped off by Kyouya, they arrive at the Dark Nebula castle and are ambushed by many beys. With help once again from Kyouya, they break down the doors and head inside."
-        },
-        {
-          "episode": 12,
-          "title": "Infiltrate The Dark Nebula's Castle!",
-          "absoluteEpisode": 12,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/12/w780.jpg",
-          "overview": "After many challenges, Ginga is the only one to reach Doji. They battle which causes one of the walls to collapse. But their challenge isn't over yet..."
-        },
-        {
-          "episode": 13,
-          "title": "L-Drago Awakens!",
-          "absoluteEpisode": 13,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/13/w780.jpg",
-          "overview": "Ryouga, an old rival of Ginga's and the new owner of L-Drago. As he and Ginga battle, Ginga is determind to win L-Drago back, but his anger stops him from winning..."
-        },
-        {
-          "episode": 14,
-          "title": "Memories of Ryo",
-          "absoluteEpisode": 14,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/14/w780.jpg",
-          "overview": "Kenta loses his temper when Ginga starts acting strangely. Finally he gets Ginga to tell the story of his past. Ryo Hagane, Ginga's father and the owner of Pegasus, had tried to stop Ryouga taking L-Draco. After losing, Ryo gave Ginga Pegasus before disappearing, and Ginga took it upon himself to stop the Dark Nebula."
-        },
-        {
-          "episode": 15,
-          "title": "Mysterious Hyoma",
-          "absoluteEpisode": 15,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/15/w780.jpg",
-          "overview": "Ginga has run away, possibly to his home town. Kenta, Madoka, Kyouya and Benkei follow him but after many calamities part ways. Then a strange man appears and saved Kenta and Madoka."
-        },
-        {
-          "episode": 16,
-          "title": "The Magnificent Aries",
-          "absoluteEpisode": 16,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/16/w780.jpg",
-          "overview": "The man's name is Hyoma, whom Kyouya has his doubts about. Hyoma says he'll guide them to Koma Village, but Kyouya proves he's walking him in circles. Then Hyoma reveals a secret, and the fact he's an old friend of Ginga's. Meanwhile Ginga, en route to Koma Village, meets an old friend."
-        },
-        {
-          "episode": 17,
-          "title": "The Silver Pegasus",
-          "absoluteEpisode": 17,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/17/w780.jpg",
-          "overview": "The gang arrive in Koma Village and are greeted by a talking dog called Hokuto. Hokuto tells them Ginga is climbing Mt. Hagane, seeking a scroll written by an old barer of Pegasus. But then Ginga learns who the old barer was and learns a valuable lesson."
-        },
-        {
-          "episode": 18,
-          "title": "The Green Hades",
-          "absoluteEpisode": 18,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/18/w780.jpg",
-          "overview": "Ginga takes friends to the bey forest where they are immediately excited. Meanwhile Hyoma, who is already jealous of Ginga's friends, challenges Ginga at a stadium called the Green Hades and reveals that as Ginga's true rival has never lost to Ginga in all their childhood."
-        },
-        {
-          "episode": 19,
-          "title": "Conquer the Tag-Team Battle!",
-          "absoluteEpisode": 19,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/19/w780.jpg",
-          "overview": "Returning from Koma Village, Benkei and Kenta are furious with Madoka when she experiments with their beys without telling them. But then they learn how to switch parts, and that comes in handy at the Aquatic Tag-Team Tournament they've just entered."
-        },
-        {
-          "episode": 20,
-          "title": "Begin! The Survival Battle!",
-          "absoluteEpisode": 20,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/20/w780.jpg",
-          "overview": "The surival battle has begun, the winner being granted one wish. Everyone is entering, even Hyoma, Hikaru and Madoka. But despite everyone's enthusiasum there is a mysterious blader who has been defeating all his opponents..."
-        },
-        {
-          "episode": 21,
-          "title": "Warriors on a Deserted Island",
-          "absoluteEpisode": 21,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/21/w780.jpg",
-          "overview": "Kenta and Benkei are aided by a new battler, Yu Tendo and his bey Flame Libra. Kyouya, after not finishing his battle with Hikaru, challenges Hyoma, who has been watching everyone but not battling. Kyouya wins, but at a price. Meanwhile Yu is upset the tournament is drawing to an end, and is challenged by Kenta, Benkei and Hikaru all at once. But as the battle goes on, Yu reveals himself to be the one who has knocked many of the 1000 competitors out of the competition with ease, and refuses to be taken down."
-        },
-        {
-          "episode": 22,
-          "title": "The Fearsome Libra",
-          "absoluteEpisode": 22,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/22/w780.jpg",
-          "overview": "Ginga, Kyouya, Yu and Madoka are the final four left in the surival battle. Kyouya, after being aided by Madoka, drops out leaving Ginga and Yu left to battle. They both launch their special moves, but in the end Yu is victorious."
-        },
-        {
-          "episode": 23,
-          "title": "The Road to the Battle Bladers",
-          "absoluteEpisode": 23,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/23/w780.jpg",
-          "overview": "As winner of the surivial battle, Yu is granted his wish to hold a tournament to decide the storngest blader in the country. Then he reveals he's a member of the Dark Nebula, before leaving with Doji and Ryouga who showed up to taunt Ginga. After all agreeing to try and earn the 50000 points needed to qualify for Battle Bladers, Ginga and co meet up at a stadium outside town to battle one last time."
-        },
-        {
-          "episode": 24,
-          "title": "The Beautiful Eagle",
-          "absoluteEpisode": 24,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/24/w780.jpg",
-          "overview": "As Ginga travels the country with Pegasus, he is challenged by many point hunters. He is saved by a mysterious blader, Tsubasa Otori, and his bey Earth Aquila. As they are entering the same tournament, the two bladers hang out together, Tsubasa giving Ginga some beyblade tips along the way. But as the tournament progresses, Ginga learns Tsubasa is hiding more secrerts than he expected."
-        },
-        {
-          "episode": 25,
-          "title": "The Sniper Capricorn",
-          "absoluteEpisode": 25,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/25/w780.jpg",
-          "overview": "Kyouya is tired of the weak battles he is forced to battle in, until he learns of a strong blader nearby: Tobio, nicknamed Captain Capri, and his bey Storm Capricorn."
-        },
-        {
-          "episode": 26,
-          "title": "Tsubasa Flies Into The Dark",
-          "absoluteEpisode": 26,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/26/w780.jpg",
-          "overview": "The Dark Nebula get a shock as Tsubasa, who they have been watching, appears to their headquarters demanding to join. Doji agrees, but only if Tsubasa can pass a series of tests."
-        },
-        {
-          "episode": 27,
-          "title": "Intruders in the Challenge Match",
-          "absoluteEpisode": 27,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/27/w780.jpg",
-          "overview": "Kenta and Hyoma meet up at a dual tournament, Kenta battling in the forest stadium and Hyoma in the river stadium. But Hyoma is interrupted when Yu intrudes, demanding to battle. Then Kenta, who has already won his tournament, is challenged by Tsubasa."
-        },
-        {
-          "episode": 28,
-          "title": "Dark Gasher's Big, Crabby-Crabby Operation",
-          "absoluteEpisode": 28,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/28/w780.jpg",
-          "overview": "The fiendish Tetsuya follows Yu back to the Dark Nebula Headquarters. Doji though makes use of this and upgrades Tetsuya's bey as an expirement."
-        },
-        {
-          "episode": 29,
-          "title": "Kenta and Sora",
-          "absoluteEpisode": 29,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/29/w780.jpg",
-          "overview": "Kenta, whilst competing in a tournament, meets Sora, an impatient battler with amazing skills. Sora claims to be Ginga's apprentice with his bey Cyber and attempts to copy Pegasus's special move, but can not pull it off."
-        },
-        {
-          "episode": 30,
-          "title": "The Bewitching Pisces",
-          "absoluteEpisode": 30,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/30/w780.jpg",
-          "overview": "Ginga and the gang meet up at a tournament. But there is a mysterious atmosphere in one corner of the stadium as a mysterious blader Ryutaro tells fortunes..."
-        },
-        {
-          "episode": 31,
-          "title": "The Twin Gemios",
-          "absoluteEpisode": 31,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/31/w780.jpg",
-          "overview": "Four matches are going on in the tournament. As Hikaru and Kyouya's match begins, the others, who were busy congratulating Ginga, realise they're last and in their hast bump into Yu. Then Tsubasa turns up adn Yu explains they're both part of the Dark Nebula. Despite the others' shock, Tsubasa leaves barely saying a word, ordering Yu to follow him away. Kyouya wins his match against Hikaru as Tsubasa wins his against Benkei. Kenta takes on the twins: Dan and Reiki, that Kyouya faced at Dark Nebula's original base with their new bey Evil Gemios. They are on the verge of winning when the two start bickering and Kenta defeats them. Finally Yu wins his battle, but spends most of the time complaining about how only Tsubasa and Kenta appear to have good opponents."
-        },
-        {
-          "episode": 32,
-          "title": "The Stormy Battle Royal",
-          "absoluteEpisode": 32,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/32/w780.jpg",
-          "overview": "The final six bladers of the touranment are: Ginga, Kenta, Kyouya, Yu, Tsubasa and Hyoma. Doji suggests they all battle against each other in a battle royal, mainly to see how well Tsubasa and Yu will get on batting together. Unfortunatly, their hating of each other gets in the way and after taking out Hyoma, mainly by accident so they could get to Ginga, they start fighting each other. Pegasus plunders into the battle and all three loose. Finally Kyouya, who protected Saggitario whilst Yu and Tsubasa battled, defeats Kenta with a single hit and wins the tournament."
-        },
-        {
-          "episode": 33,
-          "title": "The Oath of the Phoenix",
-          "absoluteEpisode": 33,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/33/w780.jpg",
-          "overview": "After the tournament, all the friends part ways. The Dark Nebula memebrs head back to base, Yu though is still furious with Tsubasa. But without warning, the sneaky Tetsuya steals Ginga's point counter. It is rescued by a new and mysterious blader: Phoenix, who only agrees to give it back if Ginga can defeat him in a battle."
-        },
-        {
-          "episode": 34,
-          "title": "Shine, Virgo!",
-          "absoluteEpisode": 34,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/34/w780.jpg",
-          "overview": "Starting at square one, Ginga enters a tournament where he is challenged by a fan of his: Teru. Teru is a former dancer who suffered from an injury during one of his performances. When he was in hospital, he entertained himself by watching Ginga's battles. After a friend gave his Virgo, he has vowed to become a blader as strong as Ginga."
-        },
-        {
-          "episode": 35,
-          "title": "L-Drago, on the Move",
-          "absoluteEpisode": 35,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/35/w780.jpg",
-          "overview": "Ryouga has set out to obtain the 50000 points to gain entery to Battle Bladers. He takes part in a 100 eby battle Benkei is entering and wins with ease and also beats Tobio and Ryutaro in the fianls of a touranment he interrupted. Tsubasa and Yu, who have finally stopped bickering, are supposed to be guarding him, but Tsubasa gets fed up and leaves whilst Yu heads back to base to cause trouble for him. Falling into a trap set by Doji, Tsubasa sees his chance to swipe information from the Dark Nebula database. Though just as he is leaving, he is intercepted by Doji and many bladers Yu summoned upon to help out. Then Ryouga turns up..."
-        },
-        {
-          "episode": 36,
-          "title": "Broken Wings",
-          "absoluteEpisode": 36,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/36/w780.jpg",
-          "overview": "Tsubasa almost looses with Ryouga but Aquila is saved by the sudden arrival of Phoenix. Taking pity on the young blader, Phoenix grabs Tsubasa and the two escape. Yu is at first really annoyed, but the explains the Doji he has already sent a Dark nebula member to keep an eye on Ginga. Tobio interrupts a tournament where Ginga has entered where the stadium has moving walls. Tobio had an early advantage, but in the end Ginga triuphs with his special move."
-        },
-        {
-          "episode": 37,
-          "title": "Rock Scorpio's Deadly Poison",
-          "absoluteEpisode": 37,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/37/w780.jpg",
-          "overview": "Kenta arrives in a town where the kids are forbidden to battle in their stadium as it has been overun by Busujima and a gang of bladers. The Kenta's friend Sora turns up and they begin secret training to beat Busujima. Then one of their number vanishes and it's up to Sora to win her back."
-        },
-        {
-          "episode": 38,
-          "title": "Run, Gingka!",
-          "absoluteEpisode": 38,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/38/w780.jpg",
-          "overview": "Everyone has gained 50000 points apart from Ginga who is only 3000 off. After learning of a nearby tournament, they all head there but are intercepted by Tsubasa. The others send Ginga on ahead whilst they distract Tsubasa, but this turns out to be what he wants. After Phoenix saved him, Tsubasa vowed to defeat Ryouga, but he was told to get to know Ginga's friends first. Kenta is willing to sacrifice everything for Ginga, but then the latter turns up, claim he couldn't leave his friends behind. Tsuabsa becomes confused, but then Phoenix appears..."
-        },
-        {
-          "episode": 39,
-          "title": "Clash! The Fireblaze vs The Pegasus",
-          "absoluteEpisode": 39,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/39/w780.jpg",
-          "overview": "After Tsubasa is easily defeated by Phoenix, Ginga is also challenge. The rules are simple: if he wins he gets his lost points back, if he looses he is forced to quit beyblade. Everyone comes to show support for Ginga, even Kyouya. Fianlly Tsubasa understands what Phoenix had tried to tell him, and reveals his identity to the others."
-        },
-        {
-          "episode": 40,
-          "title": "GO! Battle Bladers!",
-          "absoluteEpisode": 40,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/40/w780.jpg",
-          "overview": "Battler Bladers has begun and everyone is winning their battles with ease. But Ginga's first opponent is Yu, the only person besides Ryouga who has ever defeated him."
-        },
-        {
-          "episode": 41,
-          "title": "The Serpent's Terror",
-          "absoluteEpisode": 41,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/41/w780.jpg",
-          "overview": "Hyoma's next opponent is Regi, a blader who belives in fear and sadness being an important matter in bey battling. Unable to help Hyoma much, the others become worried about Hikaru's match against Ryouga that puts her in a coma."
-        },
-        {
-          "episode": 42,
-          "title": "The Dragon's Punishment",
-          "absoluteEpisode": 42,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/42/w780.jpg",
-          "overview": "Yu and Ryutaro learn of the horrors of the Dark Nebula as Ryutaro watches as his defeated friends are taken down by Ryouga and Yu is forced to battle Regi. Meanwhile Tsubas considers taking Ryouga on himself in order to stop Kyouya from having to battle him, but Kyoya stops him."
-        },
-        {
-          "episode": 43,
-          "title": "The Deck is Stacked",
-          "absoluteEpisode": 43,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/43/w780.jpg",
-          "overview": "After a switch in the pairings Kyouya is now battling Benkei, much to Tsubasa's delight as he now is battling Ryouga. Kyouya wins his battle but Benkei is pleased to have shown his old master his true strength. Meanwhile Ginga battles Ryutaro who, after watching the other Dark Nebula members fall at the hands of Ryouga, knows he is battling for his life. Ryutaro predicts a dark future for the world at the mercy of L-Drago, but after Ginga wins his predition changes and he accepts his fait. After the battle, the others discuss the predition Ryutaro mentioned to Ginga when an injured Yu stumbles in looking for Kenta and Ginga."
-        },
-        {
-          "episode": 44,
-          "title": "Entrusted Emotions",
-          "absoluteEpisode": 44,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/44/w780.jpg",
-          "overview": "Yu explains what has been happening within the Dark Nebula Organisation, showing his broken Libra as proof. Ginga is furious, but not so much as Kenta who, after swapping performance tips, storms off to find and battle Regi."
-        },
-        {
-          "episode": 45,
-          "title": "Eagle Counterattacks",
-          "absoluteEpisode": 45,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/45/w780.jpg",
-          "overview": "After Kenta and Yu's battle of will, everyone is looking for Tsubasa who has gone missing. He eventually shows up for his battle after some backup from Kyouya. The odds are stacked against Tsubasa, but after battling Ryouga once before is there a chance he could win?"
-        },
-        {
-          "episode": 46,
-          "title": "Libra Disappears",
-          "absoluteEpisode": 46,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/46/w780.jpg",
-          "overview": "Ginga prepares to battle Reji who is stronger than in his first two battles. Meanwhile Yu is kidnapped and Kenta and Hyoma, who have both recovered from their battles with Reji, race into the Dark Nebula Organisation's HQ to get him back."
-        },
-        {
-          "episode": 47,
-          "title": "Bonds of Steel",
-          "absoluteEpisode": 47,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/47/w780.jpg",
-          "overview": "Ginga finally defeats Regi. Phoenix appears to protect Kenta and Hyoma, beating Doji. Madoka tells Ginga about Yu, Kenta and Hyoma and the two rush after them. All of them regroup as shards fall from the ceiling, trapping Doji and shattering Phoenix's mask."
-        },
-        {
-          "episode": 48,
-          "title": "The Truth About Light and Darkness",
-          "absoluteEpisode": 48,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/48/w780.jpg",
-          "overview": "Phoenix, who is really Ryo Hagane, helps to rescue Yu. Then he explains to everyone about the orgin of beys, starting with Pegasus and L-Drago. Meanwhile Doji comes across Ryouga who is anxious for more power and knows where to get it."
-        },
-        {
-          "episode": 49,
-          "title": "Fierce Battle! Lion VS Dragon",
-          "absoluteEpisode": 49,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/49/w780.jpg",
-          "overview": "Kyoya finally gets to battle Ryuga, determind to avenge Tsubasa who had become a close friend. After persuading Ryuga to not use his special move, it really looked like Kyoya could win. But in the end L-Drago triumphs and Kyoya suffers the same fait as Hikaru and Tsubasa."
-        },
-        {
-          "episode": 50,
-          "title": "The Furious Final Battle!",
-          "absoluteEpisode": 50,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/50/w780.jpg",
-          "overview": "Upset at the faith of his friends, Ginga goes alone to the final battle. Ryuga battles him on a stage in the air where the true power of L-Drago becomes clear."
-        },
-        {
-          "episode": 51,
-          "title": "Blader's Spirit",
-          "absoluteEpisode": 51,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/1/51/w780.jpg",
-          "overview": "With the help of the spirits of Hikaru, Tsubasa and Kyoya, Ginga manages to survive L-Drago's attacks with support from his friends. Finally he realizes he can win with his greatest special move - Galaxy Nova."
-        }
-      ]
-    },
-    {
-      "season": 2,
-      "seasonTitle": "Metal Masters",
-      "malId": 8630,
-      "anilistId": 8630,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "Seeking a Legend",
-          "absoluteEpisode": 52,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/1/w780.jpg",
-          "overview": "Ryo, Gingka’s father, acts as Director of the new WBBA but the first tournament is disrupted by a blader named Masamune. Gingka meanwhile is on a quest to replace Storm Pegasus with a Legendary Bey sealed in the mountains near Koma Village."
-        },
-        {
-          "episode": 2,
-          "title": "The Persistent Challenger",
-          "absoluteEpisode": 53,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/2/w780.jpg",
-          "overview": "Gingka defeats Masamune but Masamune challenges Gingka again and again, losing each time. Masumune trains hard and eventually manages to defeat Gingka, but Gingka learns a valuable lesson about how to work with Galaxy Pegasus."
-        },
-        {
-          "episode": 3,
-          "title": "A New Challenge",
-          "absoluteEpisode": 54,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/3/w780.jpg",
-          "overview": "New blader Mei-Mei invites Gingka into battle where she is partnered with Chiyun and Gingka is partnered with Masamune. Gingka and Masamune must learn to work together to defeat their opponents, and they do in the nick of time."
-        },
-        {
-          "episode": 4,
-          "title": "Ticket to the World",
-          "absoluteEpisode": 55,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/4/w780.jpg",
-          "overview": "At a qualifying tournament to select representatives for the Beyblade World Championships, Gingka finds that he is already on the team and is not required to battle."
-        },
-        {
-          "episode": 5,
-          "title": "Final Battle! Leone VS Eagle",
-          "absoluteEpisode": 56,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/5/w780.jpg",
-          "overview": "At a qualifying match for the final spot on Team Japan for the Beyblade World Championships, Kyoya and Rock Leone face off against Tsubasa and Earth Eagle. The battle is hard fought, but Kyoya emerges the victor."
-        },
-        {
-          "episode": 6,
-          "title": "Soar Into the the World",
-          "absoluteEpisode": 57,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/6/w780.jpg",
-          "overview": "Since Kyoya has refused to join Team Japan for the Beyblade World Championships, a battle is arranged between Yu and Tsubasa to decide who will be the final Regular Member."
-        },
-        {
-          "episode": 7,
-          "title": "The Beylin Temple in the Sky",
-          "absoluteEpisode": 58,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/7/w780.jpg",
-          "overview": "Team Japan arrives in China and is invited to their opponents’ practice facility, the Beylin Temple to observe their training rituals."
-        },
-        {
-          "episode": 8,
-          "title": "The Third Man",
-          "absoluteEpisode": 59,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/8/w780.jpg",
-          "overview": "Madoka and Gingka visit the opposing team’s training camp to find out who the third blader is. Masamune stumbles on this third blader himself – “Chaoxin”, a flashy blader in it for the glory of his fans."
-        },
-        {
-          "episode": 9,
-          "title": "The World Championships Begin!",
-          "absoluteEpisode": 60,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/9/w780.jpg",
-          "overview": "After his loss to Chaoxin, Masamune begins hard bey training in the wilderness, where he meets a little old man. The mysterious old man repays a meal that Masamune gives him with some unique training that restores Masamune’s confidence."
-        },
-        {
-          "episode": 10,
-          "title": "Lacerta's Will",
-          "absoluteEpisode": 61,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/10/w780.jpg",
-          "overview": "In a heated battle, Chiyun taunts Tsubasa relentlessly about his rigid battling style."
-        },
-        {
-          "episode": 11,
-          "title": "The 4000 Year Old Secret",
-          "absoluteEpisode": 62,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/11/w780.jpg",
-          "overview": "The third and deciding battle of the first round of the Beyblade World Championships features Dashan against Gingka."
-        },
-        {
-          "episode": 12,
-          "title": "The Bey with a Hero's Name",
-          "absoluteEpisode": 63,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/12/w780.jpg",
-          "overview": "Gingka and the team travel abroad where they watch Team Desert Blaze do battle with Team Excalibur from the EU."
-        },
-        {
-          "episode": 13,
-          "title": "The Wintry Land of Russia",
-          "absoluteEpisode": 64,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/13/w780.jpg",
-          "overview": "Gingka and the rest of Team Gangan Galaxy travel by train to Russia to meet their next opponents in the Beyblade World Championships."
-        },
-        {
-          "episode": 14,
-          "title": "How Grand! The Cage Match",
-          "absoluteEpisode": 65,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/14/w780.jpg",
-          "overview": "Gingka and his team battle their next opponents in the Beyblade World Championships, the Russian Team, Lovushka. Masamune meanwhile is lost in the countryside, having been tricked into taking a different train than his teammates."
-        },
-        {
-          "episode": 15,
-          "title": "Libra Departs for the Front!",
-          "absoluteEpisode": 66,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/15/w780.jpg",
-          "overview": "With Masamune still missing, Yu must take his place in the next battle against Aleksey. Anton and Aleksey have rigged the stadium to emit sound waves that disable Flame Libra’s Special Move, but Yu outsmarts them and claims victory for Team Gangan Galaxy."
-        },
-        {
-          "episode": 16,
-          "title": "The Festival of Warriors",
-          "absoluteEpisode": 67,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/16/w780.jpg",
-          "overview": "The bladers find themselves in Greece where they must battle the European Union, aka Team Excalibur."
-        },
-        {
-          "episode": 17,
-          "title": "We Meet Again! Wang Hu Zhong",
-          "absoluteEpisode": 68,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/17/w780.jpg",
-          "overview": "Gingka, Masamune, Tsubasa and Yu try to work on their teamwork skills, but end up quarrelling even more than usual. This leads to Madoka threatening to disband Team Gangan Galaxy."
-        },
-        {
-          "episode": 18,
-          "title": "The Scorching Hot Lion",
-          "absoluteEpisode": 69,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/18/w780.jpg",
-          "overview": "Kyoya travels to a country named Savannah to take part in a tournament that will allow him to attend the Beyblade World Championships if he finishes in the top three."
-        },
-        {
-          "episode": 19,
-          "title": "The Shocking Wild Fang",
-          "absoluteEpisode": 70,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/19/w780.jpg",
-          "overview": "Gingka and the rest of Team Gangan Galaxy travel to India to watch India’s Team Chandora do battle with Africa’s Team Wild Fang. Wild Fang wins, but their leader, Kyoya, seems more interested in informing Gingka that his mission in life is to defeat him."
-        },
-        {
-          "episode": 20,
-          "title": "Horuseus VS Striker",
-          "absoluteEpisode": 71,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/20/w780.jpg",
-          "overview": "The Beyblade World Championships have returned to Japan, where everyone is excited to watch Gingka battle Kyoya. However, when a restless Masamune challenges Nile, he finds that bravado does not always work, as Nile sends him down to defeat."
-        },
-        {
-          "episode": 21,
-          "title": "Eternal Rivals",
-          "absoluteEpisode": 72,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/21/w780.jpg",
-          "overview": "The long awaited rematch between Gingka and Kyoya has finally arrived and their battle is of epic proportions. In the end, their skills are so evenly matched that the two rivals knock each other unconscious and both beys stop spinning simultaneously."
-        },
-        {
-          "episode": 22,
-          "title": "The Third Match: On The Edge",
-          "absoluteEpisode": 73,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/22/w780.jpg",
-          "overview": "The third and tie breaking match between Gangan Galaxy and Wild Fang takes the form of a team battle with Yu and Tsubasa facing Benkei and Damoure."
-        },
-        {
-          "episode": 23,
-          "title": "The End Of A Fierce Struggle!",
-          "absoluteEpisode": 74,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/23/w780.jpg",
-          "overview": "With Team Gangan Galaxy tied with Team Wild Fang, a fourth and final team battle is set to determine a winner."
-        },
-        {
-          "episode": 24,
-          "title": "The Creeping Darkness",
-          "absoluteEpisode": 75,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/24/w780.jpg",
-          "overview": "Team Gangan Galaxy are in shock as they learn that their teammate Tsubasa has been infected by a dark power. Meanwhile, the first battle for a spot in the finals between Excalibur and Wang Hu Zhong is won by Wales and Sophie of the EU team."
-        },
-        {
-          "episode": 25,
-          "title": "The Axe Of Destruction",
-          "absoluteEpisode": 76,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/25/w780.jpg",
-          "overview": "Chiyun battles Klaus in an elimination bout and despite his best efforts, Chiyun loses and Wang Hu Zhong are eliminated from the tournament. Meanwhile, Hyoma finds Ryuga."
-        },
-        {
-          "episode": 26,
-          "title": "The Dragon Emperor Returns",
-          "absoluteEpisode": 77,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/26/w780.jpg",
-          "overview": "Julian Konzern and Team Excalibur return to Italy, where Konzern is surprised to be challenged to a battle by Tsubasa. The battle is interrupted by the unexpected appearance of Ryuga and his new bey, Meteo L-Drago."
-        },
-        {
-          "episode": 27,
-          "title": "Exceed The Limit!",
-          "absoluteEpisode": 78,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/27/w780.jpg",
-          "overview": "Team Gangan Galaxy travels to Italy for the tournament finals, where Masamune loses his match to Klaus of Team Excalibur. Gingka meanwhile battles his oldest rival, Ryuga."
-        },
-        {
-          "episode": 28,
-          "title": "Dark Eagle",
-          "absoluteEpisode": 79,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/28/w780.jpg",
-          "overview": "Tsubasa and Yu battle Wales and Sophie in the finals, with Tsubasa defeating both his own dark side and the opponents to claim victory. Gingka meanwhile receives valuable advice from Ryuga."
-        },
-        {
-          "episode": 29,
-          "title": "Gravity Destroyer",
-          "absoluteEpisode": 80,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/29/w780.jpg",
-          "overview": "Julian Konzern and Gingka meet in the final and deciding battle for the A Block of the Beyblade World Championships. In a close match, Gingka’s Galaxy Pegasus defeats Konzern’s Gravity Destroyer."
-        },
-        {
-          "episode": 30,
-          "title": "The Midday Street Battle",
-          "absoluteEpisode": 81,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/30/w780.jpg",
-          "overview": "Team Gangan Galaxy arrives in Brazil for the Finals of The Beyblade World Championships. Trouble ensues when Yu ventures off on his own to gather information about their opponents."
-        },
-        {
-          "episode": 31,
-          "title": "Brazilian Trap",
-          "absoluteEpisode": 82,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/31/w780.jpg",
-          "overview": "Yu recovers from his injuries in time to battle Enso Garcia in the first match of the finals, but he and his damaged Libra lose. Masamune defeats Enso in the next match, but then loses to Enso’s sister, Selen."
-        },
-        {
-          "episode": 32,
-          "title": "The Explosive Cyclone Battle!",
-          "absoluteEpisode": 83,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/32/w780.jpg",
-          "overview": "Gingka battles Selen and she surprises him by conceding the battle after managing to drain much of Pegasus’s power in the process. In the next match, Gingka defeats Ian to give his team the lead, only to lose to Argo and the teams are tied again."
-        },
-        {
-          "episode": 33,
-          "title": "Charge! Ray Gil",
-          "absoluteEpisode": 84,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/33/w780.jpg",
-          "overview": "Tsubasa and Argo battle to see which of their teams will advance to the finals of the Beyblade World Championships. Argo starts strong but Tsubasa refuses to quit and he wins in the end."
-        },
-        {
-          "episode": 34,
-          "title": "My Friend's Name is Zeo",
-          "absoluteEpisode": 85,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/34/w780.jpg",
-          "overview": "Team Gangan Galaxy arrives in the USA to watch the next matches in the Beyblade World Championships. Masamune meets old friends, and battles one, but they call it a draw and vow to fight another day."
-        },
-        {
-          "episode": 35,
-          "title": "Our Slogan Is Number 1",
-          "absoluteEpisode": 86,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/35/w780.jpg",
-          "overview": "Masamune finds his old friend Toby and through flashback we learn that they made a pact long ago to become the number one bladers in the world."
-        },
-        {
-          "episode": 36,
-          "title": "The Plot Thickens",
-          "absoluteEpisode": 87,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/36/w780.jpg",
-          "overview": "As Gingka and the rest of Gangan Galaxy visit the Dungeon Gym, Zeo battles Ryuga at HD Academy. Ryuga wins and Dr. Ziggurat tells him his plan for world domination."
-        },
-        {
-          "episode": 37,
-          "title": "The Compass of Fate: Byxis",
-          "absoluteEpisode": 88,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/37/w780.jpg",
-          "overview": "Zeo undergoes the “Arrangement” process at Dr. Ziggurat’s lab, and then challenges Masamune to a battle. The battle ends when Damian arrives and he destroys Tsubasa and Yu’s blades and leaves the two bladers unconscious."
-        },
-        {
-          "episode": 38,
-          "title": "The Wicked Peacock: Befall",
-          "absoluteEpisode": 89,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/38/w780.jpg",
-          "overview": "With Tsubasa and Yu in the hospital, the rest of Gangan Galaxy attends a match between Team Excalibur and Team Star Breaker."
-        },
-        {
-          "episode": 39,
-          "title": "The Guard Dog of Hades: Kerbecs",
-          "absoluteEpisode": 90,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/39/w780.jpg",
-          "overview": "Julian Konzern of Team Excalibur battles Damian Heart of Team Star Breaker. Damian challenges Julian to a best two out of three match. Julian accepts but is defeated twice in a row."
-        },
-        {
-          "episode": 40,
-          "title": "The Furious DJ Battle!?",
-          "absoluteEpisode": 91,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/40/w780.jpg",
-          "overview": "Gangan Galaxy tries to pick a replacement member for the Final Battle, but Kenta, Team Wang Hu Zhong and Ryo are all disqualified. Blader DJ and the American DJ battle to see who will announce the final match, but their battle ends in a tie..."
-        },
-        {
-          "episode": 41,
-          "title": "The Final Countdown",
-          "absoluteEpisode": 92,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/41/w780.jpg",
-          "overview": "The final matches of the Beyblade World Championships begin and Zeo of Team Star Breaker battles Masamune of Team Gangan Galaxy. Dr. Ziggurat tells Zeo that if he loses, his friend Toby’s medical treatments will be discontinued."
-        },
-        {
-          "episode": 42,
-          "title": "The Dragon Emperor Descends",
-          "absoluteEpisode": 93,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/42/w780.jpg",
-          "overview": "Gingka is ready to face Jack in the second battle of the final round of the Beyblade World Championships but Ryuga suprises everyone when he shows up to take his place. Ryuga uses L-Drago to defeat Jack’s Befall to even the match between Team Gangan Galax.\r\n"
-        },
-        {
-          "episode": 43,
-          "title": "Last Battle of the Spirit",
-          "absoluteEpisode": 94,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/43/w780.jpg",
-          "overview": "Ryo tells Team Gangan Galaxy that the US team, Star Breaker, consists of members that have artificially enhanced by Dr. Ziggurat. Damian and Gingka begin the final battle of the World Championships."
-        },
-        {
-          "episode": 44,
-          "title": "Showdown! Gingka vs. Damian",
-          "absoluteEpisode": 95,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/44/w780.jpg",
-          "overview": "Gingka battles Damian in the final battle as the Beyblade World Championships continues. Damian’s Kerbecs starts strong, but Gingka’s Pegasus rallies and defeats them and Team Gangan Galaxy become champions."
-        },
-        {
-          "episode": 45,
-          "title": "A Milagrosa Força Espiral",
-          "absoluteEpisode": 96,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/45/w780.jpg",
-          "overview": "The victory party for Team Gangan Galaxy is crashed by Doctor Ziggurat and a group of disgraced bladers who corner Gingka and his friends. Ziggurat demonstrates the power of his bey-based weapon called Spiral Force, which destroys part of the countryside."
-        },
-        {
-          "episode": 46,
-          "title": "Charge! Hades City",
-          "absoluteEpisode": 97,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/46/w780.jpg",
-          "overview": "Gingka and his friends decide to go after Dr. Ziggurat, but they encounter Ziggurat’s minions who use their beys to try and stop their progress. Gingka and his friends prevail, and a small group actually makes it aboard Ziggurat’s Hades City..."
-        },
-        {
-          "episode": 47,
-          "title": "The Fallen Emperor",
-          "absoluteEpisode": 98,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/47/w780.jpg",
-          "overview": "Gingka and his friends try to rescue Toby from the clutches of Dr. Ziggurat but are blocked by Julian Konzern. Wales and Sophie clear the way by battling their former partner, Julian, but they lose. Dashan then battles and defeats Julian..."
-        },
-        {
-          "episode": 48,
-          "title": "Befall`s Trap",
-          "absoluteEpisode": 99,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/48/w780.jpg",
-          "overview": "While Gingka, Masamune and Kyoya try to find Toby in Hades City, Tsubasa is challenged to a battle by Jack. Tsubasa defeats Jack, and Yu destroys Jack’s Arrangement Chamber."
-        },
-        {
-          "episode": 49,
-          "title": "The Wild Beast Unleashed",
-          "absoluteEpisode": 100,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/49/w780.jpg",
-          "overview": "While Masamune and Gingka try to reach the Spiral Core and Toby, Kyoya battles Damian. Kyoya defeats Damian just as Dr. Ziggurat warns the world that he intends on selling his invention, Spiral Force, to the highest bidder."
-        },
-        {
-          "episode": 50,
-          "title": "Rampage! Tempo",
-          "absoluteEpisode": 101,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/50/w780.jpg",
-          "overview": "Gingka and Masamune battle Faust at the Spiral Core. Faust’s bey, Twisted Tempo, actually sends them to another time and space with a Special Move. Ryuga intervenes by launching L-Drago at Hades City, which damages the Spiral Core."
-        },
-        {
-          "episode": 51,
-          "title": "Galaxy Heart",
-          "absoluteEpisode": 102,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/2/51/w780.jpg",
-          "overview": "While Gingka tries to use Pegasus to absorb the excess energy at the Hades City reactor, Masamune finds he must battle Faust again. It is only when Masamune’s old friend Zeo arrives to join the battle..."
-        }
-      ]
-    },
-    {
-      "season": 3,
-      "seasonTitle": "Metal Fury",
-      "malId": 10336,
-      "anilistId": 10336,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "Fragment of the Star",
-          "absoluteEpisode": 103,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/1/w780.jpg",
-          "overview": "When a star falls from the sky, a young blader named Yuki is waiting for it. He immediately sets out to find Gingka, but this proves difficult as Gingka has been lured into a battle on an island against his old rival Kyoya."
-        },
-        {
-          "episode": 2,
-          "title": "Legendary Bladers",
-          "absoluteEpisode": 104,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/2/w780.jpg",
-          "overview": "Yuki battles with a dark character named Johannes, but Gingka arrives and sends Johannes packing. Yuki tells the gang the story of a recently fallen star that has chosen certain bladers to be known as Legendary Bladers.\r\n"
-        },
-        {
-          "episode": 3,
-          "title": "The Monster Cat, Lynx",
-          "absoluteEpisode": 105,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/3/w780.jpg",
-          "overview": "Gingka and his friends are about to start their quest to find the 8 Legendary Bladers, but they run into Johannes and a battle ensues. Things look bad for Gingka until Kyoya arrives and joins the battle, driving Johannes off."
-        },
-        {
-          "episode": 4,
-          "title": "L-Drago Destructor",
-          "absoluteEpisode": 106,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/4/w780.jpg",
-          "overview": "While Gingka and the gang try to make friends, Benkei and Kyoya meet Ryuga at the top of a volcano and Kyoya challenges Ryuga to a bey battle. Ryuga tells Kyoya that he should not be battling, that he doesn’t even know his bey yet."
-        },
-        {
-          "episode": 5,
-          "title": "Awaken, Anubis!",
-          "absoluteEpisode": 107,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/5/w780.jpg",
-          "overview": "After Ryuga defeats Kyoya, Gingka challenges him to a bey battle, but Ryuga quickly defeats him too. Yuki challenges him to yet another battle but his bey, Mercury Anubius, is battered again and again by Ryuga’s L-Drago Destructor."
-        },
-        {
-          "episode": 6,
-          "title": "Requirements of a Warrior",
-          "absoluteEpisode": 108,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/6/w780.jpg",
-          "overview": "When a volcano erupts, Gingka, Yuki and Kyoya change the course of the lava by using their beys and save the village. They leave the island but are shocked when Kenta announces that he is heading out on his own."
-        },
-        {
-          "episode": 7,
-          "title": "Kenta's Determination",
-          "absoluteEpisode": 109,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/7/w780.jpg",
-          "overview": "Kenta travels to a remote desert town where he competes against Ryuga in a tournament but loses. He then follows Ryuga on a difficult cross country trek, trying to convince Ryuga that he should lend his strength as a Legendary Blader to Gingka and the others."
-        },
-        {
-          "episode": 8,
-          "title": "The Crimson Flash",
-          "absoluteEpisode": 110,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/8/w780.jpg",
-          "overview": "Johannes breaks into Beylin Temple and is confronted by Gingka and his friends. Dashan engages the intruder in a bey battle but Johannes quits, claiming that Dashan is not a Legendary Blader and not worth his time."
-        },
-        {
-          "episode": 9,
-          "title": "The Greatest Tag-Team Tournament",
-          "absoluteEpisode": 111,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/9/w780.jpg",
-          "overview": "At the Tag Team Championship a series of battles occur in which Dashan and Chiyun are victorious as are Johannes and his new partner, Motty. When Yuki and Gingka challenge Mei-Mei and Chaoxin, Yuki suffers a serious lack of confidence and almost gives up."
-        },
-        {
-          "episode": 10,
-          "title": "A New Roar!",
-          "absoluteEpisode": 112,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/10/w780.jpg",
-          "overview": "The Tag Team Tournament continues and the final four teams are determined. The team of Dashan and Chiyun win their match quickly, but Kyoya and Benkei have a long battle with Motty and Johannes. In the end Kyoya defeats Johannes to move on."
-        },
-        {
-          "episode": 11,
-          "title": "Cosmic Tornado",
-          "absoluteEpisode": 113,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/11/w780.jpg",
-          "overview": "In the second Round of the Tag Team tournament, Gingka and Yuki face Dashan and Chiyun in a mountain top stadium. Gingka and Yuki win when Gingka creates a new special move, Cosmic Tornado. Next up, it’s Beylin Fist against Kyoya and Benkei.4"
-        },
-        {
-          "episode": 12,
-          "title": "The God of Saturn, Kronos",
-          "absoluteEpisode": 114,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/12/w780.jpg",
-          "overview": "Ginka and Yuki travel to an ancient Bey Temple to battle Bao and Aguma of Beylin Fist in the final of the Toryumon Tag Team Tournament. The Beylin Fist team starts strong and soon has Gingka and Yuki in a tough spot."
-        },
-        {
-          "episode": 13,
-          "title": "Showdown at the Tower of Babel!",
-          "absoluteEpisode": 115,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/13/w780.jpg",
-          "overview": "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
-        },
-        {
-          "episode": 14,
-          "title": "The New Team Dungeon!",
-          "absoluteEpisode": 116,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/14/w780.jpg",
-          "overview": "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
-        },
-        {
-          "episode": 15,
-          "title": "Destroyer Dome",
-          "absoluteEpisode": 117,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/15/w780.jpg",
-          "overview": "Masamune and his friends witness an argument amongst the Garcias before their match in the Destroyer Dome and it appears that the family is breaking apart."
-        },
-        {
-          "episode": 16,
-          "title": "The New Striker is Complete!",
-          "absoluteEpisode": 118,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/16/w780.jpg",
-          "overview": "Masamune and his new bey, Blitz Striker, battle against some old foes and new ones in the Destroyer Dome."
-        },
-        {
-          "episode": 17,
-          "title": "I Am The Champion!",
-          "absoluteEpisode": 119,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/17/w780.jpg",
-          "overview": "In the final of a battle royal in the Destroyer Dome, six bladers battle to see who will come out on top. The bladers, King, Jigsaw, Zeo, Toby, tsubasa and Masamune give it their all."
-        },
-        {
-          "episode": 18,
-          "title": "The Maze of Mist Mountain",
-          "absoluteEpisode": 120,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/18/w780.jpg",
-          "overview": "Gingka and his friends travel to Africa in search of a Legendary Blader that they believe lives in a mysterious place called Mist Mountain. With their guides Nile and Damoure they climb the mountain and come to a maze that was built by an ancient people."
-        },
-        {
-          "episode": 19,
-          "title": "The Lion`s Pride",
-          "absoluteEpisode": 121,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/19/w780.jpg",
-          "overview": "Ryuto leads Gingka and his friends into a temple on Mist Mountain in search of a Star Fragment. They are unaware that they are being followed by Johannes and the bladers from Beylin Fist, who are also seeking the Fragment."
-        },
-        {
-          "episode": 20,
-          "title": "The Guardian of the Temple, Dynamis",
-          "absoluteEpisode": 122,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/20/w780.jpg",
-          "overview": "Gingka and the others reach a temple where they believe a star fragment lies but they cannot open a door that blocks their entrance."
-        },
-        {
-          "episode": 21,
-          "title": "The Legend of Nemesis`s Revival",
-          "absoluteEpisode": 123,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/21/w780.jpg",
-          "overview": "Gingka battles Dynamis the Guardian of the temple. Gingka seems to have chosen the wrong strategy, but admits that he was too caught up in being a legendary Blader and says that he should have been paying more attention."
-        },
-        {
-          "episode": 22,
-          "title": "The Four Season Bladers",
-          "absoluteEpisode": 124,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/22/w780.jpg",
-          "overview": "Dynamis tries to explain to Johannes and his followers that no matter what they do, the heavens will decide what will happen with the resurrection of Hades and Nemesis, not them. A battle ensues and every blader from each side joins in."
-        },
-        {
-          "episode": 23,
-          "title": "The Battle of Beyster Island",
-          "absoluteEpisode": 125,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/23/w780.jpg",
-          "overview": "Gingka and his friends arrive at Beyster Island where they have entered a tournament that has attracted a huge number of strong Bladers."
-        },
-        {
-          "episode": 24,
-          "title": "Two Big, Fierce Battles!",
-          "absoluteEpisode": 126,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/24/w780.jpg",
-          "overview": "As the battle of Beyster Island continues, many more bladers are knocked out of the competition. Gingka catches up with Kenta only to find that he is his next opponent in the tournament."
-        },
-        {
-          "episode": 25,
-          "title": "The Unseen Opponent",
-          "absoluteEpisode": 127,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/25/w780.jpg",
-          "overview": "The Beyster Island Tournament continues as an unseen Blader defeats contestant after contestant through a series of ambushes. When the Blader defeats Zeo and Toby, Masamune swears he will avenge them in the final."
-        },
-        {
-          "episode": 26,
-          "title": "Orion`s Whereabouts",
-          "absoluteEpisode": 128,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/26/w780.jpg",
-          "overview": "Gingka asks Chris, the newest Legendary Blader, to join him in his fight against evil, but Chris says he will join whoever pays him the most. King is enraged by this and Chris’ mocking of Masamune so King challenges him to a battle."
-        },
-        {
-          "episode": 27,
-          "title": "The Lion in the Wilderness (1)",
-          "absoluteEpisode": 129,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/27/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 28,
-          "title": "The Lion in the Wilderness (2)",
-          "absoluteEpisode": 130,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/28/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 29,
-          "title": "The God of Venus, Quetzalcoatl (1)",
-          "absoluteEpisode": 131,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/29/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 30,
-          "title": "The God of Venus, Quetzalcoatl (2)",
-          "absoluteEpisode": 132,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/30/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 31,
-          "title": "The God of Destruction`s Revival!? (1)",
-          "absoluteEpisode": 133,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/31/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 32,
-          "title": "The God of Destruction`s Revival!? (2)",
-          "absoluteEpisode": 134,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/32/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 33,
-          "title": "The Child of Nemesis (1)",
-          "absoluteEpisode": 135,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/33/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 34,
-          "title": "The Child of Nemesis (2)",
-          "absoluteEpisode": 136,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/34/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 35,
-          "title": "Four Hearts (1)",
-          "absoluteEpisode": 137,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/35/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 36,
-          "title": "Four Hearts (2)",
-          "absoluteEpisode": 138,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/36/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 37,
-          "title": "Come Together, Legendary Bladers! (1)",
-          "absoluteEpisode": 139,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/37/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 38,
-          "title": "Come Together, Legendary Bladers! (2)",
-          "absoluteEpisode": 140,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/38/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 39,
-          "title": "Diablo Nemesis (1)",
-          "absoluteEpisode": 141,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/39/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 40,
-          "title": "Diablo Nemesis (2)",
-          "absoluteEpisode": 142,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/40/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 41,
-          "title": "To The Final Battle Ground (1)",
-          "absoluteEpisode": 143,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/41/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 42,
-          "title": "To The Final Battle Ground (2)",
-          "absoluteEpisode": 144,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/42/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 43,
-          "title": "The Lost Kingdom (1)",
-          "absoluteEpisode": 145,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/43/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 44,
-          "title": "The Lost Kingdom (2)",
-          "absoluteEpisode": 146,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/44/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 45,
-          "title": "The Missing Star of the Four Seasons (1)",
-          "absoluteEpisode": 147,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/45/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 46,
-          "title": "The Missing Star of the Four Seasons (2)",
-          "absoluteEpisode": 148,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/46/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 47,
-          "title": "Flash Sagittario (1)",
-          "absoluteEpisode": 149,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/47/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 48,
-          "title": "Flash Sagittario (2)",
-          "absoluteEpisode": 150,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/48/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 49,
-          "title": "Hades` Persistence",
-          "absoluteEpisode": 151,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/49/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 50,
-          "title": "Last Battle",
-          "absoluteEpisode": 152,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/50/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 51,
-          "title": "A Ray of Hope (1)",
-          "absoluteEpisode": 153,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/51/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 52,
-          "title": "A Ray of Hope (2)",
-          "absoluteEpisode": 154,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/3/52/w780.jpg",
-          "overview": ""
-        }
-      ]
-    },
-    {
-      "season": 4,
-      "seasonTitle": "Shogun Steel",
-      "malId": 13231,
-      "anilistId": 13231,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "A New Age Arrives! (1)",
-          "absoluteEpisode": 155,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/1/w780.jpg",
-          "overview": "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
-        },
-        {
-          "episode": 2,
-          "title": "A New Age Arrives! (2)",
-          "absoluteEpisode": 156,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/2/w780.jpg",
-          "overview": "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
-        },
-        {
-          "episode": 3,
-          "title": "Defeat Pirate Orochi! (1)",
-          "absoluteEpisode": 157,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/3/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 4,
-          "title": "Defeat Pirate Orochi! (2)",
-          "absoluteEpisode": 158,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/4/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 5,
-          "title": "The Blazing Special Move! (1)",
-          "absoluteEpisode": 159,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/5/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 6,
-          "title": "The Blazing Special Move! (2)",
-          "absoluteEpisode": 160,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/6/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 7,
-          "title": "The Extraordinary Synchrome! (1)",
-          "absoluteEpisode": 161,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/7/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 8,
-          "title": "The Extraordinary Synchrome! (2)",
-          "absoluteEpisode": 162,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/8/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 9,
-          "title": "The Strength of a Bond (1)",
-          "absoluteEpisode": 163,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/9/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 10,
-          "title": "The Strength of a Bond (2)",
-          "absoluteEpisode": 164,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/10/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 11,
-          "title": "Explode: Phantom Fire Shot! (1)",
-          "absoluteEpisode": 165,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/11/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 12,
-          "title": "Explode: Phantom Fire Shot! (2)",
-          "absoluteEpisode": 166,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/12/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 13,
-          "title": "Kraken Attacks (1)",
-          "absoluteEpisode": 167,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/13/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 14,
-          "title": "Kraken Attacks (2)",
-          "absoluteEpisode": 168,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/14/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 15,
-          "title": "The Jet Black Dragon (1)",
-          "absoluteEpisode": 169,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/15/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 16,
-          "title": "The Jet Black Dragon (2)",
-          "absoluteEpisode": 170,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/16/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 17,
-          "title": "Clash! Zyro vs. Sakyo (1)",
-          "absoluteEpisode": 171,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/17/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 18,
-          "title": "Clash! Zyro vs. Sakyo (2)",
-          "absoluteEpisode": 172,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/18/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 19,
-          "title": "The Ironclad Golem (1)",
-          "absoluteEpisode": 173,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/19/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 20,
-          "title": "The Ironclad Golem (2)",
-          "absoluteEpisode": 174,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/20/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 21,
-          "title": "A Heated Battle of Friendship (1)",
-          "absoluteEpisode": 175,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/21/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 22,
-          "title": "A Heated Battle of Friendship (2)",
-          "absoluteEpisode": 176,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/22/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 23,
-          "title": "The Ruthless Behemoth (1)",
-          "absoluteEpisode": 177,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/23/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 24,
-          "title": "The Ruthless Behemoth (2)",
-          "absoluteEpisode": 178,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/24/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 25,
-          "title": "A Fierce Synchrome Battle (1)",
-          "absoluteEpisode": 179,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/25/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 26,
-          "title": "A Fierce Synchrome Battle (2)",
-          "absoluteEpisode": 180,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/26/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 27,
-          "title": "Neo Battle Bladers (1)",
-          "absoluteEpisode": 181,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/27/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 28,
-          "title": "Neo Battle Bladers (2)",
-          "absoluteEpisode": 182,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/28/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 29,
-          "title": "The Best 8 Decided! (1)",
-          "absoluteEpisode": 183,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/29/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 30,
-          "title": "The Best 8 Decided! (2)",
-          "absoluteEpisode": 184,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/30/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 31,
-          "title": "Get Pumped for the Finals! (1)",
-          "absoluteEpisode": 185,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/31/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 32,
-          "title": "Get Pumped for the Finals! (2)",
-          "absoluteEpisode": 186,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/32/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 33,
-          "title": "A Fated Showdown Between Rivals (1)",
-          "absoluteEpisode": 187,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/33/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 34,
-          "title": "A Fated Showdown Between Rivals (2)",
-          "absoluteEpisode": 188,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/34/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 35,
-          "title": "The Ultimate Emperor of Destruction: Bahamoote (1)",
-          "absoluteEpisode": 189,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/35/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 36,
-          "title": "The Ultimate Emperor of Destruction: Bahamoote (2)",
-          "absoluteEpisode": 190,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/36/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 37,
-          "title": "A Spirit-Filled Attack! (1)",
-          "absoluteEpisode": 191,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/37/w780.jpg",
-          "overview": ""
-        },
-        {
-          "episode": 38,
-          "title": "A Spirit-Filled Attack! (2)",
-          "absoluteEpisode": 192,
-          "duration": "24m",
-          "thumbnail": "https://episodes.metahub.space/tt1674928/4/38/w780.jpg",
-          "overview": ""
-        }
-      ]
-    }
-  ]
-},
-
-// ============================================================
-// Bakugan Battle Brawlers (2007)
-// ============================================================
-{
-  "id": "bakugan-battle-brawlers-2007",
-  "title": "Bakugan Battle Brawlers",
-  "type": "TV Show",
-  "isAnime": true,
-  "year": 2007,
-  "rating": 7.2,
-  "age": "TV-Y7",
-  "duration": "22m",
-  "genres": [
-    "Animation",
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Sci-Fi"
-  ],
-  "tags": [
-    "Animation",
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Sci-Fi"
-  ],
-  "poster": "https://image.tmdb.org/t/p/original/uW2xawK5brroGov2dyhuT0bUeva.jpg",
-  "backdrop": "https://image.tmdb.org/t/p/original/fI3m5UjTMyigglkFeQWkPJgFLSC.jpg",
-  "videoUrl": "34109",
-  "trailerUrl": "https://www.youtube.com/watch?v=q6M0q5wK5lI",
-  "animeSlug": "bakugan-battle-brawlers",
-  "malId": 2156,
-  "anilistId": 2156,
-  "tmdbId": 34109,
-  "cinesrcId": "34109",
-  "overview": "One day, strange cards fall from the sky, and kids around the world use them to create a popular new battle game called Bakugan. Dan Kuso, a spirited young boy, and his friends form the 'Bakugan Battle Brawlers' team. However, they soon discover that Bakugan are not just toys, but living creatures from another dimension called Vestroia, which is now facing annihilation from a rogue Bakugan named Naga. Dan and his partner Drago must fight across dimensions to save both Earth and Vestroia.",
-  "overviewKurdish": "ڕۆژێک، کارتی سەیر و نادیار لە ئاسمانەوە دەبارێنە خوارەوە، و منداڵان لە سەرتاسەری جیهاندا بەکاریاندەهێنن بۆ دروستکردنی یارییەکی شەڕکردنی بەناوبانگ بە ناوی باکوگان. دان کوسۆ، کوڕێکی ورەبەرز و بوێر، لەگەڵ هاوڕێکانیدا تیمێک پێکدەهێنن بە ناوی 'جەنگاوەرانی باکوگان'. بەڵام بەم زووانە دەزانن کە باکوگانەکان تەنها یاری نین، بەڵکو بوونەوەری زیندووی ڕەهەندێکی ترن بە ناوی ڤێسترۆیا، کە ڕووبەڕووی لەناوچوون دەبێتەوە. دان و هاوبەشەکەی دراگۆ دەبێت شەڕ بکەن بۆ ڕزگارکردنی زەوی و ڤێسترۆیا.",
-  "director": "Mitsuo Hashimoto",
-  "cast": [
-    "Yu Kobayashi",
-    "Keiji Fujiwara",
-    "Chihiro Suzuki",
-    "Eri Sendai",
-    "Ryou Hirohashi",
-    "Scott McCord"
-  ],
-  "trending": true,
-  "featured": false,
-  "is4k": false,
-  "seasons": [
-    {
-      "season": 1,
-      "seasonTitle": "Battle Brawlers",
-      "malId": 2156,
-      "anilistId": 2156,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "Bakugan: The Battle Begins",
-          "absoluteEpisode": 1,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/1/w780.jpg",
-          "overview": "The story begins with a young boy named Dan  who has never lost a Bakugan match. While in a match against a bully Dan sees a vision of two Bakugan brawling. Is there more to the game than what the players think?"
-        },
-        {
-          "episode": 2,
-          "title": "Masquerade Ball",
-          "absoluteEpisode": 2,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/2/w780.jpg",
-          "overview": "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
-        },
-        {
-          "episode": 3,
-          "title": "A Feud Between Friends",
-          "absoluteEpisode": 3,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/3/w780.jpg",
-          "overview": "Masquerade teams up with a player with Rikimaru, by giving him a very special Bakugan. When Rikimaru and Dan battle, Drago ends up using a dangerous move to save himself and win the battle. Dan gets angry, and throws Drago into a river, cursing the day they met."
-        },
-        {
-          "episode": 4,
-          "title": "Dan and Drago",
-          "absoluteEpisode": 4,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/4/w780.jpg",
-          "overview": "Dan has a hard time adjusting to life without Drago. He ends up causing a schoolmate named Ryo to drop his computer and runs away, hurting Ryo's feelings. Masquerade takes advantage of Ryo's hurt feelings, and Ryo beats Dan in a battle. Dan finds Drago, and tries to make up with Ryo."
-        },
-        {
-          "episode": 5,
-          "title": "Runo Rules",
-          "absoluteEpisode": 5,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/5/w780.jpg",
-          "overview": "Dan and Runo meet for the first time, outside of the Bakugan website, and realize that they live in the same town. Dan drops his BakuPod, and Runo picks it up, noticing that Dan has battled Masquerade. She goes in his place, but ends up battling a boy named Tatsuya."
-        },
-        {
-          "episode": 6,
-          "title": "A Combination Battle",
-          "absoluteEpisode": 6,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/6/w780.jpg",
-          "overview": "While at an amusement park, Dan and Runo are invited onstage to assist a magician act by two brothers. Dan picks a card, and realizes it's a Doom Card. The brothers are working for Masquerade, and Dan and Runo get tricked into a battle."
-        },
-        {
-          "episode": 7,
-          "title": "Bakugan Idol",
-          "absoluteEpisode": 7,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/7/w780.jpg",
-          "overview": "Marucho reveals that he secretly moved to Dan's neighborhood, and throws an elaborate welcome party. Masquerade makes a business offer with the famous pop band duo, Jenny and Jewels. The duo crash the welcome party, and challenge the Battle Brawlers."
-        },
-        {
-          "episode": 8,
-          "title": "Girls Just Wanna Have Fun",
-          "absoluteEpisode": 8,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/8/w780.jpg",
-          "overview": "Dan and Marucho fight against the pop star duo, Jenny & Jewels. After a narrow victory, Drago tells the Brawlers about how the Bakugan came to Earth, and how a human entered the Bakugan world of Vestroia."
-        },
-        {
-          "episode": 9,
-          "title": "Fight or Flight!",
-          "absoluteEpisode": 9,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/9/w780.jpg",
-          "overview": "Masquerade manipulates two boys, Kosuke and Takashi, into using his Doom Cards against the Bakugan Battle Brawlers. He promises that he'll reunite their friend Ai with her brother if they help him. Wanting to help their friend, they take the bait and soon run into Runo and Marucho, who are at the airport to pick up their website friend, Alice. Luckilly, Alice is skilled in the finer points of combination battle, and coaches her friends to victory. Alice has a secret, however, that might just ruin her friendship with the Brawlers."
-        },
-        {
-          "episode": 10,
-          "title": "A Perfect Match",
-          "absoluteEpisode": 10,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/10/w780.jpg",
-          "overview": "Julie and her childhood friend, Billy, go one-on-one in a Bakugan battle. Although Julie's defeated by Billy, she's impressed with his skills and his Bakugan, \"Cycloid.\" They make a great team, and Julie wishes she could befriend a talking Bakugan. Later, when Julie admits to herself how lonely she really is, the Bakugan Gorem appears. The two seem to be destined for each other."
-        },
-        {
-          "episode": 11,
-          "title": "Grandpa's Got A Brand New Bakugan",
-          "absoluteEpisode": 11,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/11/w780.jpg",
-          "overview": "Marucho and Runo realize that the combined powers of the Bakugan Brawlers are not enough to defeat Masquerade. Without Dan's knowledge, they visit Shun to try and get him to join. Shun's grandfather tries to get them to leave, but Shun makes a deal. If they win, he joins. If they lose, he'll walk away."
-        },
-        {
-          "episode": 12,
-          "title": "Bakugan Stall",
-          "absoluteEpisode": 12,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/12/w780.jpg",
-          "overview": "Alice realizes that she may have a connection with the mysterious Hal-G, but doesn't have the courage to tell the other Brawlers. Meanwhile, Dan recalls the last battle he had with Shun. Shun's mother gives Shun a Bakugan, \"Skyress\", to watch over him."
-        },
-        {
-          "episode": 13,
-          "title": "Just For The Shun Of It",
-          "absoluteEpisode": 13,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/13/w780.jpg",
-          "overview": "Masquerade has been destroying the Bakugans of kids all over the world, and the Brawlers have to put a stop to it. Reluctantly, Dan accompanies Runo and Marucho to Shun's house to recruit him one more, but find out he's joining Masquerade! Dan accepts the challenge of battle, and with Drago, fights against Shun and Masquerade."
-        },
-        {
-          "episode": 14,
-          "title": "The Story of Vestroia",
-          "absoluteEpisode": 14,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/14/w780.jpg",
-          "overview": "Lured by an invitation to celebrate their world class rankings, five of the top ten Bakugan players gather at a mysterious mansion. There they meet Masquerade & the evil Bakugan \"Naga\". They're put under a spell to take Dan & the other Battle Brawlers out of the picture. Meanwhile, Alice confesses that she believes that her grandfather Michael is responsible for the destruction of Vestroia. They decide to take a look around Michael's lab to find evidence of what happened to him."
-        },
-        {
-          "episode": 15,
-          "title": "A Duel in the Desert",
-          "absoluteEpisode": 15,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/15/w780.jpg",
-          "overview": "The Brawlers finally meet Julie up close and personal, but the mood goes from happy to sad when they see what's happening in Vestroia. Julie and Shun fight with Julie's friend Billy, the 9th ranked Bakugan player, and her neighbor Komba, the 5th ranked Bakugan player, knowing they were tricked by Masquerade to take out Dan and the rest of the Brawlers."
-        },
-        {
-          "episode": 16,
-          "title": "No Guts No Glory",
-          "absoluteEpisode": 16,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/16/w780.jpg",
-          "overview": "Julie is still upset about Billy's betrayal, but tries to put it behind her so she can support the other brawlers. Meanwhile, Shun tells them about a valley similar to Bakugan Valley. Everyone heads there but on the way it is revealed that Shun lied about it being similar, and it was all a ploy to try and see why Masquerade always knows where they are all the time. He tells them that there has to be someone spying on them. At the valley, the 3rd best Brawler Chan Lee appears and challenges Dan to a brawl."
-        },
-        {
-          "episode": 17,
-          "title": "BFF - Best Friends Forever",
-          "absoluteEpisode": 17,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/17/w780.jpg",
-          "overview": "The Brawlers are having trouble finding the Infinity Core. When they learn that their location might be being broadcasted, they shut off their signal."
-        },
-        {
-          "episode": 18,
-          "title": "Evolution Revolution",
-          "absoluteEpisode": 18,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/18/w780.jpg",
-          "overview": "When Marucho loses his Bakugan to Klaus, he and Runo give chase, and wind up in Masquerade's castle!"
-        },
-        {
-          "episode": 19,
-          "title": "Julie Plays Hard Brawl",
-          "absoluteEpisode": 19,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/19/w780.jpg",
-          "overview": "After a quarrel between the Brawlers, they all go separate ways. Julie decides to pursue her friend Billy and try to save him from Masquerade's evil ways."
-        },
-        {
-          "episode": 20,
-          "title": "A Little Help From My Friends",
-          "absoluteEpisode": 20,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/20/w780.jpg",
-          "overview": "When Shun leaves the group, Alice chases after him. Meanwhile Dan goes to take on Masquerade alone."
-        },
-        {
-          "episode": 21,
-          "title": "My Good Friend",
-          "absoluteEpisode": 21,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/21/w780.jpg",
-          "overview": "Klaus, Chan-Lee, and Julio return to finish off the Brawlers. Dan, Runo, and Marucho take them on, but what will happen when Klaus uses Marucho's stolen Bakugan?"
-        },
-        {
-          "episode": 22,
-          "title": "Drago's On Fire",
-          "absoluteEpisode": 22,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/22/w780.jpg",
-          "overview": "The Brawlers have been pushed back, but will the return of Preyas and the evolution of Drago be enough to bring them to victory?"
-        },
-        {
-          "episode": 23,
-          "title": "Say It Ain't So Joe",
-          "absoluteEpisode": 23,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/23/w780.jpg",
-          "overview": "Learning that Webmaster Joe is at the hospital, Dan and the other head there. However, while heading for Joe's room, Drago gets lost."
-        },
-        {
-          "episode": 24,
-          "title": "The Secrets of Success",
-          "absoluteEpisode": 24,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/24/w780.jpg",
-          "overview": "Alice helps a little boy defeat his biggest rival."
-        },
-        {
-          "episode": 25,
-          "title": "Trust Me",
-          "absoluteEpisode": 25,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/25/w780.jpg",
-          "overview": "Tensions form between the group of Brawlers when it is believed that one of them is a double agent."
-        },
-        {
-          "episode": 26,
-          "title": "Doom Dimension or Bust",
-          "absoluteEpisode": 26,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/26/w780.jpg",
-          "overview": "The Brawlers head to face Masquerade in one final battle."
-        },
-        {
-          "episode": 27,
-          "title": "Show Down",
-          "absoluteEpisode": 27,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/27/w780.jpg",
-          "overview": "The Battle Brawlers learn through Webmaster Joe (who was on a trip with his mother) that Masqerade has defeated the World's Top Bakugan players, so they try to come up with a strategy to beat him. The strategy seems to backfire when Masquerade visits Dan's house and gets him to accept a battle. Now the evolved Drago and the evolved Hydranoid will go head-to-head with the loser getting a one-way trip to the Doom Dimension, which is later revealed to be full of Bakugan turned into stone."
-        },
-        {
-          "episode": 28,
-          "title": "The Brawler's Last Stand",
-          "absoluteEpisode": 28,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/28/w780.jpg",
-          "overview": "The Brawlers mourn over the loss of Dan and Drago. Meanwhile, Shun gets a challenge from Masquerade and decides to join Dan in the Doom Dimension. When Skyress learns of this plan, she tries to gather the other Bakugan and try to save Vestroia without putting their human partners in risk. Soon, the other Brawlers catch onto his plan and decide to join him, but first Runo makes a promise to Dan's mom - he's safe and will be home soon."
-        },
-        {
-          "episode": 29,
-          "title": "Nightmare In Doomsville",
-          "absoluteEpisode": 29,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/29/w780.jpg",
-          "overview": "In the Doom Dimension, the Legendary Ancient Warriors of Vestroia prepare to test the powers of the Brawlers, seeing if they are worthy enough to save Vestroia. The Brawlers are separated and Julie is left with Gorem to face the Subterra Warrior, Clayf, and a shadow of her perfect sister, Daisy. With help from Gorem, Julie learns that she isn't her sister and she can only do the best she can do. Because of this, Gorem evolves into Subterra Hammer Gorem, and defeats Clayf."
-        },
-        {
-          "episode": 30,
-          "title": "I Am Marucho Hear Me Roar",
-          "absoluteEpisode": 30,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/30/w780.jpg",
-          "overview": "Marucho must battle the Aquos Elemental Warrior, Frosch, and he is forced to send in Preyus early when he learns he is battling a shadow of himself. Preyus isn't feeling well throughout the battle, but he is able to give Marucho guidance to accepting his past. Marucho knew that he only did what his parents told him to make them happy, but he didn't like to always be so obidient. This causes Marucho to hate his old self. By accepting the past him, Marucho was able to help Preyus' digestion problem. This allows Preyus to evolve by spitting out his brothers: Aquos Angelo/Aquos Diablo Preyus. Will the combined strength of these brothers prove to be enough to defeat the Aquos Warrior?"
-        },
-        {
-          "episode": 31,
-          "title": "A Place Far From Home",
-          "absoluteEpisode": 31,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/31/w780.jpg",
-          "overview": "Shun is stuck with the female Ventus Lord, Oberus, who has summoned a child that looks like Shun's mom to battle. The child convinces Shun to play with her while the sun is still setting, which it never does. Shun must battle himself as well when he is forced to choose between going back or staying in this world with his mother. In the battle with Oberus, Shun believes that he doesn't need his friends. His belief causes Skyress to die after a great impact with Oberus. When Shun realises his mistake, a tear drops down onto Skyress' ability card, changing it, and miraclesly reviving Skyress, which evolved into Storm Skyress. In the end, when Shun chooses to return to his world, Skyress evolves to Ventus Storm Skyress."
-        },
-        {
-          "episode": 32,
-          "title": "Play Nice Runo",
-          "absoluteEpisode": 32,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/32/w780.jpg",
-          "overview": "Runo and Tigrerra must battle a young boy from Runo's past (a smaller version of Dan) summoned by The Haos lord, Lars Lion. The test is for Runo to realize how much she truly treasures her and Dan's friendship/love. When Tigrerra is getting hit by Lars Lion's piercing arrows of light, Runo realises the friendship/love that she treasures and says \"We are Friends Forever Dan!\" in the English dub, while she says \"I love you Dan!\" in the Japanese Version. When Runo realizes this, Tigrerra evolves into Haos Blade Tigrerra."
-        },
-        {
-          "episode": 33,
-          "title": "You're Going Down Clown",
-          "absoluteEpisode": 33,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/33/w780.jpg",
-          "overview": "Dan must battle the Pyrus Lord, Apollonier, in order for him and his friends to return to their world. He and Drago soon find out that they're battling a clown. Dan manages to win the battle, but Drago doesn't evolve. When Dan rips off the clown's mask, it turns out to be Runo. In order for Drago to evolve and Dan to past his test, he must battle, and win, against each of the Brawlers."
-        },
-        {
-          "episode": 34,
-          "title": "Home Sweet Home",
-          "absoluteEpisode": 34,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/34/w780.jpg",
-          "overview": "Joe is determined to find out where his friends have gone, so he challenges Masquerade to a battle. At first Joe appears to be outmatched, but Wyvern returns to give Joe assistance. The Brawlers also return, and Masquerade realizes his battle is only beginning. Dan explains everything about the Bakugan to his mother, who believes him and asks Drago to take care of him. Naga is revealed as one of the most dangerous Bakugan in the world."
-        },
-        {
-          "episode": 35,
-          "title": "Dan's Last Stand",
-          "absoluteEpisode": 35,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/35/w780.jpg",
-          "overview": "Dan tells Shun, Julie, and Marucho that he has yet to pass the test in the Doom Dimension and the only way to have Drago evolve he has to defeat his friends one by one. Julie first battles Dan and Dan wins. Then, he battles Marucho and wins again. Shun says he will battle Dan the next morning. Masquerade is in the Doom Dimension and is about to start a battle with Alice."
-        },
-        {
-          "episode": 36,
-          "title": "Show Me What You've Got",
-          "absoluteEpisode": 36,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/36/w780.jpg",
-          "overview": "Dan's final test is to beat his friends so his Dragonoid can evolve to the next level and become the Ultimate Bakugan. Dan battles Runo and Shun while Masquerade goes to see the Darkus Lord, Exeedra, and he ends up fighting Alice as a mirage."
-        },
-        {
-          "episode": 37,
-          "title": "You Say You Want An Evolution",
-          "absoluteEpisode": 37,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/37/w780.jpg",
-          "overview": "Joe shows up after Dan defeats Julie, Marucho, and Runo for Wyvern to check out Drago's battling skills when Dan and Shun have their battle to finish Dan's test. Meanwhile, the Darkus Lord and Masquerade finish their battle. In the end Drago beats Skyress and becomes the Pyrus Ultimate Dragonoid, and Duel Hydranoid beats the Darkus Lord and evolves into the Darkus Alpha Hydranoid."
-        },
-        {
-          "episode": 38,
-          "title": "Behind The Mask Of Masquerade",
-          "absoluteEpisode": 38,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/38/w780.jpg",
-          "overview": "Alice appears to be disappearing all the time. Dan goes to talk with Marucho, Runo, Shun, and Julie and ends up finding Alice! Alice won't explain anything and leaves. Later, Joe receives a message from Masquerade, and Dan decides he'll take over to fight Masquerade with Drago to end it once and for all with Masquerade. Dan wins and offers Masquerade to join the Battle Brawlers to help defeat Naga. But Masquerade refuses and takes off his mask. It is revealed that Alice was Masquerade the whole time!"
-        },
-        {
-          "episode": 39,
-          "title": "Masquerade Unmasked",
-          "absoluteEpisode": 39,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/39/w780.jpg",
-          "overview": "Hal-G appears to explain the origin of Alice and Masquerade. Because she is unable to forgive herself, Alice then disappears. Meanwhile a huge hole opens up in the ocean and weird weather has been happening all throughout the earth. Through much convincing, the Brawlers convince their parents about the Bakugan. What will they find in the decaying Vestroia? Dan and the Brawlers decide to take a little road trip, to Vestroia!"
-        },
-        {
-          "episode": 40,
-          "title": "Alice Gets Schooled",
-          "absoluteEpisode": 40,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/40/w780.jpg",
-          "overview": "Alice tells Klaus about what she did as Masquerade, and gets pulled into a battle to punish her for sending his Bakugan to the Doom Dimension while she had been Masquerade. However, Klaus was just trying to teach her a lesson, that everyone, and everything must work together in order to create harmony."
-        },
-        {
-          "episode": 41,
-          "title": "A Fish Called Tayghen",
-          "absoluteEpisode": 41,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/41/w780.jpg",
-          "overview": "The Bakugan Battle Brawlers enter Vestroia and realize Vestroia has become a hybrid world where two elements are mixed together to make one element together. They enter the Ventus and Aquos world where they meet Tayghen and Hairadee: two Bakugan of both Ventus and Aquos elements. As they fight, they suddenly see the portal to the next hybrid world of Vestroia is closing and so they agree that Shun and Marucho are to stay in the Ventus and Aquos world to defeat the two Bakugan. The rest of the Bakugan team disappear through the portal into another dimension of Vestroia."
-        },
-        {
-          "episode": 42,
-          "title": "The Race To Vestroia",
-          "absoluteEpisode": 42,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/42/w780.jpg",
-          "overview": "As the remaining Brawlers enter the hybrid world of Subterra and Haos, a pair of Subterra/Haos Bakugan sisters named Rabeeder and Tricloid fall in love with Dan. The sisters say the only way out is if they beat them in a race. Dan and Drago win and leave to the next world."
-        },
-        {
-          "episode": 43,
-          "title": "Next Stop Naga-Ville",
-          "absoluteEpisode": 43,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/43/w780.jpg",
-          "overview": "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
-        },
-        {
-          "episode": 44,
-          "title": "It's a Long Shot",
-          "absoluteEpisode": 44,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/44/w780.jpg",
-          "overview": "Dan and Drago are left weak and beaten by their battle with Centorrior and Druman."
-        },
-        {
-          "episode": 45,
-          "title": "Ground Control to Major Dan!",
-          "absoluteEpisode": 45,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/45/w780.jpg",
-          "overview": "The Brawlers have finally made it to Vestroia where they hope to confront Naga and retrieve the Silent Core and save the Universe!"
-        },
-        {
-          "episode": 46,
-          "title": "The One Hit Wonders",
-          "absoluteEpisode": 46,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/46/w780.jpg",
-          "overview": "The human world is in complete chaos when the Brawlers finally return."
-        },
-        {
-          "episode": 47,
-          "title": "Here's Mud In Your Eye",
-          "absoluteEpisode": 47,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/47/w780.jpg",
-          "overview": "The entire world is in a state of chaos as Naga's evil Bakugan invade neighborhood after neighborhood."
-        },
-        {
-          "episode": 48,
-          "title": "R is for Revenge",
-          "absoluteEpisode": 48,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/48/w780.jpg",
-          "overview": "Alice and Christopher brawl with Rabeeder, who is on the hunt for the Infinity Core on Naga's behalf."
-        },
-        {
-          "episode": 49,
-          "title": "Showdown in Wardington",
-          "absoluteEpisode": 49,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/49/w780.jpg",
-          "overview": "The return of Naga's Ventus/Aquos servant hybrid Hairadee has brought new troubles for Komba and Shun. While Skyress is trapped in a barrier of ice, Shun reveals his ninja skills to free Skyress and defeat the hybrid. Julio crashes the party and helps the battle. Will the three of them be enough to take Naga's servant on?"
-        },
-        {
-          "episode": 50,
-          "title": "The Good, the Bad and the Bakugan",
-          "absoluteEpisode": 50,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/50/w780.jpg",
-          "overview": "The Brawlers are in trouble. Wavern and the Infinity Core are hiding at the top of Wardington Tower but Naga and his forces are nearby."
-        },
-        {
-          "episode": 51,
-          "title": "The Final Brawl",
-          "absoluteEpisode": 51,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/51/w780.jpg",
-          "overview": "With most of the Brawlers trapped fighting, Naga is free to go after Wavern and the Infinity Core."
-        },
-        {
-          "episode": 52,
-          "title": "Game Over",
-          "absoluteEpisode": 52,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/1/52/w780.jpg",
-          "overview": "The final battle has been set.  Naga is squaring off against Drago in pursuit of the Infinity Core and in turn, power over the universe!"
-        }
-      ]
-    },
-    {
-      "season": 2,
-      "seasonTitle": "New Vestroia",
-      "malId": 5337,
-      "anilistId": 5337,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "The Invasion of the Vestals",
-          "absoluteEpisode": 53,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/1/w780.jpg",
-          "overview": "The Bakugan are finally living in peace back on New Vestroia when the people of Vestal  invade, turning all the Bakugan into ball form and abducting them before terraforming their world."
-        },
-        {
-          "episode": 2,
-          "title": "Facing Ace",
-          "absoluteEpisode": 54,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/2/w780.jpg",
-          "overview": "On the way to her secret headquarters,  Mira tells the still-distrustful Dan, Marucho and Drago why she has chosen to fight her own people by forming the Bakugan Battle Brawler Resistance."
-        },
-        {
-          "episode": 3,
-          "title": "Get Psyched",
-          "absoluteEpisode": 55,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/3/w780.jpg",
-          "overview": "In preparation for the upcoming battles with the Vexos, Dan agrees to train Baron."
-        },
-        {
-          "episode": 4,
-          "title": "Marucho's Mission",
-          "absoluteEpisode": 56,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/4/w780.jpg",
-          "overview": "Without a Bakugan of his own, Marucho is on the outside looking in as Dan and the rest of the Bakugan Battle Brawlers Resistance become a tight-knit team."
-        },
-        {
-          "episode": 5,
-          "title": "A Taste of Defeat",
-          "absoluteEpisode": 57,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/5/w780.jpg",
-          "overview": "Mira gives Dan a Bakugan Trap of his own, though its abilities and mode of communication remain mysterious."
-        },
-        {
-          "episode": 6,
-          "title": "Return of a Friend",
-          "absoluteEpisode": 58,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/6/w780.jpg",
-          "overview": "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
-        },
-        {
-          "episode": 7,
-          "title": "Cyber Nightmare",
-          "absoluteEpisode": 59,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/7/w780.jpg",
-          "overview": "The Bakugan Battle Brawlers Resistance sneaks into Alpha City, New Vestroia to destroy its towering Dimension Controller."
-        },
-        {
-          "episode": 8,
-          "title": "What's The Plan?",
-          "absoluteEpisode": 60,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/8/w780.jpg",
-          "overview": "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
-        },
-        {
-          "episode": 9,
-          "title": "Freedom Run",
-          "absoluteEpisode": 61,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/9/w780.jpg",
-          "overview": "It's the finals of the Bakugan Battle Tournament and Shun and Ace try to buy time for the others."
-        },
-        {
-          "episode": 10,
-          "title": "Surprise Visitor",
-          "absoluteEpisode": 62,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/10/w780.jpg",
-          "overview": "Runo has had enough of waiting for Dan to return to Earth. She's determined to find a way to New Vestroia to join him in saving the Bakugan."
-        },
-        {
-          "episode": 11,
-          "title": "Gate Crashers",
-          "absoluteEpisode": 63,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/11/w780.jpg",
-          "overview": "Dan, Runo, Mira and Baron arrive on Earth safe and sound, but the Dimensional Transporter also drops off unwelcome visitors; Lync, Gus and Spectra."
-        },
-        {
-          "episode": 12,
-          "title": "Unmasked",
-          "absoluteEpisode": 64,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/12/w780.jpg",
-          "overview": "Realizing they must wait to return to New Vestroia, Dan and the Battle Brawlers decide to enjoy some R & R at an amusement park while they plan their next move."
-        },
-        {
-          "episode": 13,
-          "title": "Voices In The Night",
-          "absoluteEpisode": 65,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/13/w780.jpg",
-          "overview": "Dan and the Bakugan Brawlers try to chill out while they're trapped on Earth, unable to help their friends."
-        },
-        {
-          "episode": 14,
-          "title": "Duel in the Dunes",
-          "absoluteEpisode": 66,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/14/w780.jpg",
-          "overview": "Marucho finds himself in a desert with Elfin. After falling into quicksand, he is rescued by Volt who later engages him in a battle. Marucho seems to be doing well with his new trap, Tripod Epsilon but when Volt pulls out his trap, Dynamo, things get rough and Marucho is defeated. Back on Earth, Mira and Baron hang out at Dan's, who after waking up from a dream, is still eager to return to New Vestroia in order to help Shun and Marucho."
-        },
-        {
-          "episode": 15,
-          "title": "Last One Standing",
-          "absoluteEpisode": 67,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/15/w780.jpg",
-          "overview": "After Marucho and Ace are lured into a trap, Shun sets out to destroy the remaining Dimension Controllers single-handedly."
-        },
-        {
-          "episode": 16,
-          "title": "Show Me the Power!",
-          "absoluteEpisode": 68,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/16/w780.jpg",
-          "overview": "Feeling helpless as he waits for a chance to return to New Vestroia, Dan trains Baron to the breaking point."
-        },
-        {
-          "episode": 17,
-          "title": "Dude, Where's My Bakugan?",
-          "absoluteEpisode": 69,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/17/w780.jpg",
-          "overview": "Tormented by dreams of losing Drago, Dan wakes up from a feverish sleep, surrounded by his friends."
-        },
-        {
-          "episode": 18,
-          "title": "Gone, Gone Bakugan",
-          "absoluteEpisode": 70,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/18/w780.jpg",
-          "overview": "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
-        },
-        {
-          "episode": 19,
-          "title": "Family Ties",
-          "absoluteEpisode": 71,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/19/w780.jpg",
-          "overview": "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
-        },
-        {
-          "episode": 20,
-          "title": "Beta City Blues",
-          "absoluteEpisode": 72,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/20/w780.jpg",
-          "overview": "Spectra and his crew arrive in New Vestroia but Mira has second thoughts about her choices when Shadow Prove reveals Ace, Shun and Marucho are prisoners of the Vexos."
-        },
-        {
-          "episode": 21,
-          "title": "Brotherly Love",
-          "absoluteEpisode": 73,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/21/w780.jpg",
-          "overview": "As the Battle Brawler's Resistance reunite, Ace learns the terrible truth; Mira has joined the Vexos."
-        },
-        {
-          "episode": 22,
-          "title": "Underground Take Down",
-          "absoluteEpisode": 74,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/22/w780.jpg",
-          "overview": "Mira is caught in the middle as Prince Hydron and Spectra move to consolidate their power."
-        },
-        {
-          "episode": 23,
-          "title": "Wall to Wall Brawl",
-          "absoluteEpisode": 75,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/23/w780.jpg",
-          "overview": "Despite Prince Hydron's objections, Spectra sends Mira and Gus to challenge Dan and Ace with Hydron's new Mechanical Bakugan."
-        },
-        {
-          "episode": 24,
-          "title": "Ultimate Bakugan",
-          "absoluteEpisode": 76,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/24/w780.jpg",
-          "overview": "As the Resistance and their Bakugan fly up to Vespalace to free their friends from Prince Hydron, the Vestal monarch reveals another line of defense; a final Dimension Controller."
-        },
-        {
-          "episode": 25,
-          "title": "Final Countdown",
-          "absoluteEpisode": 77,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/25/w780.jpg",
-          "overview": "Now combined with the Vestal's six mechanical Bakugan, Drago squares off against Ultimate Helios."
-        },
-        {
-          "episode": 26,
-          "title": "Reunion",
-          "absoluteEpisode": 78,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/26/w780.jpg",
-          "overview": "With Vespalace crumbling around them, the Battle Brawlers have given up hope of freeing their friends, when the destruction of the final Dimension Controller releases the bronzed Bakugan to their original forms."
-        },
-        {
-          "episode": 27,
-          "title": "Six Degrees of Destruction",
-          "absoluteEpisode": 79,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/27/w780.jpg",
-          "overview": "Six months after New Vestroia has been freed--- Dan and the gang are back on Earth, enjoying a peaceful life with their Bakugan."
-        },
-        {
-          "episode": 28,
-          "title": "Revenge Of The Vexos",
-          "absoluteEpisode": 80,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/28/w780.jpg",
-          "overview": "After being tricked by the Six Ancient Soldiers, King Zenoheld is more determined than ever to get his hands on the Bakugan possessing the Six Attribute Energies. At Mylene's suggestion he dispatches Prince Hydron to Vestal to begin the retrieval."
-        },
-        {
-          "episode": 29,
-          "title": "Saved by the Siren",
-          "absoluteEpisode": 81,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/29/w780.jpg",
-          "overview": "While out apartment hunting for Baron, Ace and Percival are accosted by Mylene and her new Mechanical Bakugan, Macubass."
-        },
-        {
-          "episode": 30,
-          "title": "The Day New Vestroia Stood Still",
-          "absoluteEpisode": 82,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/30/w780.jpg",
-          "overview": "When Dan and the others are finally able to communicate with their comrades on Vestal they learn of the Vexos attacks on Baron and Ace."
-        },
-        {
-          "episode": 31,
-          "title": "Spectra Rises",
-          "absoluteEpisode": 83,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/31/w780.jpg",
-          "overview": "Dan and the gang land on Vestal expecting to run into a Vexos member or two."
-        },
-        {
-          "episode": 32,
-          "title": "Shadow Attack",
-          "absoluteEpisode": 84,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/32/w780.jpg",
-          "overview": "After Prince Hydron successfully captures the Haos Energy from Baron, King Zenohled is anxious for the Vexos to bring him the remaining five Attribute Energies from the Battle Brawlers."
-        },
-        {
-          "episode": 33,
-          "title": "Brontes' Betrayal",
-          "absoluteEpisode": 85,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/33/w780.jpg",
-          "overview": "King Zenoheld's plan to lure the Brawlers off of Vestal and back to Earth in order to battle them for the Attribute Energies seems to have worked."
-        },
-        {
-          "episode": 34,
-          "title": "Earth Invaders",
-          "absoluteEpisode": 86,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/34/w780.jpg",
-          "overview": "The Brawlers return to Earth after they learn of Alice being attacked; though they suspect they have been lured there by Zenoheld in a ploy to steal their remaining attribute energies."
-        },
-        {
-          "episode": 35,
-          "title": "Elfin on the Run!",
-          "absoluteEpisode": 87,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/35/w780.jpg",
-          "overview": "The Brawlers continue to hide out from the Vexos in Marucho's mansion, protected by the Barrier Shield. Elfin is restless, however, and begins talking a big game about facing off with the Vexos."
-        },
-        {
-          "episode": 36,
-          "title": "Samurai Showdown!",
-          "absoluteEpisode": 88,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/36/w780.jpg",
-          "overview": "The Brawlers continue to hide out from the Vexos in Marucho's mansion, when they are paid a surprise visit by Baron's sister Maron."
-        },
-        {
-          "episode": 37,
-          "title": "Virtual Insanity",
-          "absoluteEpisode": 89,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/37/w780.jpg",
-          "overview": "The Brawlers continue to hide from the Vexos in Marucho's mansion, when they are paid a surprise visit by their old pal, Billy."
-        },
-        {
-          "episode": 38,
-          "title": "All or Nothing",
-          "absoluteEpisode": 90,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/38/w780.jpg",
-          "overview": "With the Brawlers' hiding spot now exposed, the pressure is on more than ever."
-        },
-        {
-          "episode": 39,
-          "title": "Avenging Spectra",
-          "absoluteEpisode": 91,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/39/w780.jpg",
-          "overview": "Spectra makes good on his bet with Dan and takes the Brawlers to the Mother Palace."
-        },
-        {
-          "episode": 40,
-          "title": "Ambush",
-          "absoluteEpisode": 92,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/40/w780.jpg",
-          "overview": "As Dan and the Brawlers continue their search for the Bakugan Termination System, they run into an ambush by the Palace Guards."
-        },
-        {
-          "episode": 41,
-          "title": "BT The Final Battle",
-          "absoluteEpisode": 93,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/41/w780.jpg",
-          "overview": "Spectra offers Dr. Clay a place by his side and the secret to Bakugan DNA, however, Dr. Clay remains loyal to Zenoheld and declares that he and Spectra are no longer father and son. A battle soon begins between Hydron and Dan and Mira, just as Spectra arrives to fight alongside Dan!"
-        },
-        {
-          "episode": 42,
-          "title": "Exodus",
-          "absoluteEpisode": 94,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/42/w780.jpg",
-          "overview": "With the BT System fully armed, the Resistance and Spectra head to New Vestroia to initiate a mass evacuation. Many Bakugan are sent to Marucho's house on Earth including the Resistance's. However, Drago decides to remain behind to ensure that everyone has been rescued, remarking how many lives have been lost to protect New Vestroia such as Nobilion, Wavern dying, and also the six Ancient Warriors surrending their powers to six normal bakugan."
-        },
-        {
-          "episode": 43,
-          "title": "Phantom Data Attack",
-          "absoluteEpisode": 95,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/43/w780.jpg",
-          "overview": "With the Bakugan Termination System destroyed, the Brawlers head back to Earth, where Baron expresses interest in staying in order to further his studies."
-        },
-        {
-          "episode": 44,
-          "title": "Spectra's Last Stand",
-          "absoluteEpisode": 96,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/44/w780.jpg",
-          "overview": "The Bakugan Termination System fired up and seconds away from being fully operational, the Brawlers begin a large-scale evacuation of Bakugan from New Vestroia."
-        },
-        {
-          "episode": 45,
-          "title": "Fusion Confusion",
-          "absoluteEpisode": 97,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/45/w780.jpg",
-          "overview": "After Marucho demonstrates that the Brawlers' phantom data is the same as the data Keith received; the newest member of the Brawlers convinces them to let him outfit Drago with Battle Gear."
-        },
-        {
-          "episode": 46,
-          "title": "Volt's Revolt",
-          "absoluteEpisode": 98,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/46/w780.jpg",
-          "overview": "When Zenoheld declares that he is going to use Clay's \"Alternative\" Weapons System to destroy Earth and Vestal, Volt decides that he's had enough."
-        },
-        {
-          "episode": 47,
-          "title": "Payback",
-          "absoluteEpisode": 99,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/47/w780.jpg",
-          "overview": "Professor Clay reveals to Zenoheld that in order to finish the Alternative he will require the DNA Code and the Battle Gear Data from the Brawlers."
-        },
-        {
-          "episode": 48,
-          "title": "Mylene's Meltdown",
-          "absoluteEpisode": 100,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/48/w780.jpg",
-          "overview": "Mylene finds herself next in line to try and retrieve the data Zenoheld requires to complete the Alternative weapons system."
-        },
-        {
-          "episode": 49,
-          "title": "An Heir To Spare ",
-          "absoluteEpisode": 101,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/49/w780.jpg",
-          "overview": "Mylene's Death Ball causes the collapse of Bakugan Interspace."
-        },
-        {
-          "episode": 50,
-          "title": "Ultimate Weapon",
-          "absoluteEpisode": 102,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/50/w780.jpg",
-          "overview": "Hydron continues to cool his heels in his cell, when a mysterious voice from his past calls to him."
-        },
-        {
-          "episode": 51,
-          "title": "All For One",
-          "absoluteEpisode": 103,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/51/w780.jpg",
-          "overview": "The Brawlers enlist Alice and Dr. Michael's help in trying to find a way to the Mother Palace, where they believe Keith has gone to face-off with Zenoheld."
-        },
-        {
-          "episode": 52,
-          "title": "Final Fury",
-          "absoluteEpisode": 104,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/2/52/w780.jpg",
-          "overview": "The battle between the Brawlers and Zenoheld's \"Alternative\" continues to rage."
-        }
-      ]
-    },
-    {
-      "season": 3,
-      "seasonTitle": "Gundalian Invaders",
-      "malId": 7334,
-      "anilistId": 7334,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "A New Beginning",
-          "absoluteEpisode": 105,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/1/w780.jpg",
-          "overview": "It's an all new adventure for the Bakugan Battle Brawlers when Dan's family moves to Bayview City and Marucho's Bakugan Interspace becomes fully operational to everyone, allowing kids all over the world to log on and display their battling skills. Dan has a vision of Bakugan at war each other, something which everyone, except Ren, brushes off as a hallucination."
-        },
-        {
-          "episode": 2,
-          "title": "Revelation",
-          "absoluteEpisode": 106,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/2/w780.jpg",
-          "overview": "Dan continues to be haunted by the visions he saw while unconscious after an explosion during battle. Meanwhile Marucho notices that Ren is also behaving strangely."
-        },
-        {
-          "episode": 3,
-          "title": "The Visitor",
-          "absoluteEpisode": 107,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/3/w780.jpg",
-          "overview": "As Ren identifies three more Neathian moles , Princess Fabia from Neathia arrives in Bakugan Interspace looking for the recipients of the message she sent. Dan, having slept in, rushes to Bakugan Interspace and runs into Fabia, literally. Fabia learns that he is the top brawler in Bakugan Interspace and suspects she may be a Neathian spy."
-        },
-        {
-          "episode": 4,
-          "title": "Brawler to Be",
-          "absoluteEpisode": 108,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/4/w780.jpg",
-          "overview": "Dan is in the midst of training Jake in the battle arena with hopes that he will soon be skilled enough to become a member of the Battle Brawlers."
-        },
-        {
-          "episode": 5,
-          "title": "Confrontation",
-          "absoluteEpisode": 109,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/5/w780.jpg",
-          "overview": "With the Neathian moles making themselves known, they begin kidnapping brawlers from Bakugan Interspace."
-        },
-        {
-          "episode": 6,
-          "title": "Exposed",
-          "absoluteEpisode": 110,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/6/w780.jpg",
-          "overview": "The other Brawlers get together with Ren, who reveals the identities of more of the Neathian sleeper agents."
-        },
-        {
-          "episode": 7,
-          "title": "True Colors",
-          "absoluteEpisode": 111,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/7/w780.jpg",
-          "overview": "When his search for Ren turns up empty, Marucho uses a secret distress call to lure him out of hiding."
-        },
-        {
-          "episode": 8,
-          "title": "Hostile Takeover",
-          "absoluteEpisode": 112,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/8/w780.jpg",
-          "overview": "When the Brawlers discover that the Gundalians are inside Bakugan Interspace \"recruiting\"/kidnapping more battlers to join their cause, they race to the scene to confront them."
-        },
-        {
-          "episode": 9,
-          "title": "Twin Attack",
-          "absoluteEpisode": 113,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/9/w780.jpg",
-          "overview": "Now that Ren has taken over control of Bakugan Interspace, the Brawlers discover that they can no longer enter the virtual realm via the usual access points."
-        },
-        {
-          "episode": 10,
-          "title": "Escape from Darkness",
-          "absoluteEpisode": 114,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/10/w780.jpg",
-          "overview": "With Ren and the Gundalians now in control of Bakugan Interspace, Marucho determines that the security system preventing the Brawlers from diving in is being run out of the secure \"Baku-Room\"."
-        },
-        {
-          "episode": 11,
-          "title": "The Secret Package",
-          "absoluteEpisode": 115,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/11/w780.jpg",
-          "overview": "When the invading Gundalians breakthrough the outer shield, Neathian Castle Guard Linus flees to Earth in search of Fabia."
-        },
-        {
-          "episode": 12,
-          "title": "The Element",
-          "absoluteEpisode": 116,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/12/w780.jpg",
-          "overview": "In an attempt to get Neo Zipzam back before the Gundalians realize he possesses the Element, the Brawlers infiltrate Bakugan Interspace and walk into the middle of a Gundalian power struggle."
-        },
-        {
-          "episode": 13,
-          "title": "Twin Evil",
-          "absoluteEpisode": 117,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/13/w780.jpg",
-          "overview": "Given a brief pardon by Barodius after his earlier failure, Ren hatches a plot with Zenet to regain possession of the Element."
-        },
-        {
-          "episode": 14,
-          "title": "The Sacred Orb",
-          "absoluteEpisode": 118,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/14/w780.jpg",
-          "overview": "The Brawlers arrive at Neathia and meet Fabia's sister Queen Serena. With her blessing, Fabia takes her new friends to see the Sacred Orb, a source of great power that is hidden deep inside a mountain."
-        },
-        {
-          "episode": 15,
-          "title": "Decoy Unit",
-          "absoluteEpisode": 119,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/15/w780.jpg",
-          "overview": "With only one remaining security shield protecting Neathia from the invading Gundalian forces, the Brawlers hatch a plan to reinstate a previously destroyed shield."
-        },
-        {
-          "episode": 16,
-          "title": "The Secret Switch",
-          "absoluteEpisode": 120,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/16/w780.jpg",
-          "overview": "Dan, Fabia and Shun continue to make their way through the jungle to the shield generator building, when Stoica and Jesse suddenly ambush them."
-        },
-        {
-          "episode": 17,
-          "title": "Battle for the Second Shield",
-          "absoluteEpisode": 121,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/17/w780.jpg",
-          "overview": "Having made it to the Generator Building, Shun and Drago find themselves up against an army of Gundalian Guards, as they attempt to restart the Second Shield."
-        },
-        {
-          "episode": 18,
-          "title": "Curtain Call",
-          "absoluteEpisode": 122,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/18/w780.jpg",
-          "overview": "With the Second Shield back up and running the Brawlers help the Neathians rebuild their strongholds. Frustrated that they are losing momentum, Jake strikes out on his own in search of more Gundalians to fight."
-        },
-        {
-          "episode": 19,
-          "title": "The Secret of the Orb",
-          "absoluteEpisode": 123,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/19/w780.jpg",
-          "overview": "When Mason flees his Gundalian ship, Nurzak and Ren are soon in pursuit as they attempt to apprehend him before the Emperor learns of the escape."
-        },
-        {
-          "episode": 20,
-          "title": "Partners Till the End",
-          "absoluteEpisode": 124,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/20/w780.jpg",
-          "overview": "Fearing that her life may be at risk, Zenet morphs into a doppelganger of Ren in order to accompany Gill on a mission to destroy the Second Shield."
-        },
-        {
-          "episode": 21,
-          "title": "Divide and Conquer",
-          "absoluteEpisode": 125,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/21/w780.jpg",
-          "overview": "On the eve of the revolt against Barodius, Nurzak sends a message to the Brawlers asking to meet and discuss a peace treaty."
-        },
-        {
-          "episode": 22,
-          "title": "Mobile Assault",
-          "absoluteEpisode": 126,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/22/w780.jpg",
-          "overview": "While Kazarina works on a secret weapon designed to take down the restored Second Shield, the Gundalians dispatch their army of hypnotized Earth kids to distract the Brawlers in battle."
-        },
-        {
-          "episode": 23,
-          "title": "Sid Returns",
-          "absoluteEpisode": 127,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/23/w780.jpg",
-          "overview": "As Ren prepares to launch an attack on the restored Second Shield, something strange is happening deep within the bowels of the Gundalian Palace."
-        },
-        {
-          "episode": 24,
-          "title": "Colossus Dharak",
-          "absoluteEpisode": 128,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/24/w780.jpg",
-          "overview": "Once Kazarina finally completes the upgrades on Exokor, the Twelve Orders descend on Neathia to take down the restored Second Shield."
-        },
-        {
-          "episode": 25,
-          "title": "Dragonoid Colossus",
-          "absoluteEpisode": 129,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/25/w780.jpg",
-          "overview": "Ren's conflicting loyalties finally come to a head when he decides to turn his back on Barodius."
-        },
-        {
-          "episode": 26,
-          "title": "Forgiveness",
-          "absoluteEpisode": 130,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/26/w780.jpg",
-          "overview": "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
-        },
-        {
-          "episode": 27,
-          "title": "Into the Storm",
-          "absoluteEpisode": 131,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/27/w780.jpg",
-          "overview": "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
-        },
-        {
-          "episode": 28,
-          "title": "Jake Returns",
-          "absoluteEpisode": 132,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/28/w780.jpg",
-          "overview": "Distraught over the loss of Jake to the Gundalians, Dan tries to mount a rescue operation to Gundalia."
-        },
-        {
-          "episode": 29,
-          "title": "Genesis",
-          "absoluteEpisode": 133,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/29/w780.jpg",
-          "overview": "Desperate to rescue the still hypnotized Jake from the clutches of the enemy, Dan rallies the Brawlers to go after their pal."
-        },
-        {
-          "episode": 30,
-          "title": "Infiltrated",
-          "absoluteEpisode": 134,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/30/w780.jpg",
-          "overview": "The Brawlers hitch a ride to Gundalia on Dragonoid Colossus. Once they arrive, Ren announces that in addition to Jake, he would also like to rescue his former teammates who are being held captive in Kazarina's lab."
-        },
-        {
-          "episode": 31,
-          "title": "True Evolution",
-          "absoluteEpisode": 135,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/31/w780.jpg",
-          "overview": "After getting separated from his teammates, Dan finds himself face to face with Barodius. Immediately they engage in a fearsome battle, which Drago quickly winds up on the losing end of."
-        },
-        {
-          "episode": 32,
-          "title": "Redemption",
-          "absoluteEpisode": 136,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/32/w780.jpg",
-          "overview": "After infiltrating Gundalian Castle, Nurzak and Fabia quickly square off with Kazarina and Stoica."
-        },
-        {
-          "episode": 33,
-          "title": "Jake's Last Stand",
-          "absoluteEpisode": 137,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/33/w780.jpg",
-          "overview": "Disguised as a Gundalian Soldier, Marucho and Akwimos infiltrate a troop briefing and are surprised to discover that it's being lead by Jake."
-        },
-        {
-          "episode": 34,
-          "title": "Final Strike",
-          "absoluteEpisode": 138,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/34/w780.jpg",
-          "overview": "As the Brawlers break into the Gundalian's lair, they run into all kinds of trouble. Jake seems to be regaining control as he does not destroy Dan when given the chance to. Will he save Dan and snap out of his trance?"
-        },
-        {
-          "episode": 35,
-          "title": "Dream Escape",
-          "absoluteEpisode": 139,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/35/w780.jpg",
-          "overview": "Just as Kazarina is about to finish Dan off, Jake breaks free of the hypnosis and stops her. Fabia arrives and holds off Lumagrowl while Jake and Coredem rescue Dan and Drago."
-        },
-        {
-          "episode": 36,
-          "title": "Gundalian Showdown",
-          "absoluteEpisode": 140,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/36/w780.jpg",
-          "overview": "The brawlers must head back to Neathia to defend it from Dharak's attack but Kazarina, Stoica, Gill and Airzel are determined to keep them on Gundalia. The brawlers manage to fight them off and escape, but Fabia remains behind to fight Kazarina, as she has a vendetta against her for the death of her fiance, Jin."
-        },
-        {
-          "episode": 37,
-          "title": "Broken Spell",
-          "absoluteEpisode": 141,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/37/w780.jpg",
-          "overview": "Just as the Brawlers return to Neathia, Fabia and Kazarina continue their battle. However, Lumagrowl begins disobeying Kazarina's orders and is determined to finish off Aranaut with or without her."
-        },
-        {
-          "episode": 38,
-          "title": "Code Eve",
-          "absoluteEpisode": 142,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/38/w780.jpg",
-          "overview": "Barodius confronts Serena, who refuses to back down. Barodius prepares to attack her, but Dan arrives in time to stop him. However, the Sacred Orb teleports them to an unknown area and reveals itself to be called \"Code Eve.\""
-        },
-        {
-          "episode": 39,
-          "title": "Destiny Revealed",
-          "absoluteEpisode": 143,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/3/39/w780.jpg",
-          "overview": "Drago struggles against Dharak, and is knocked out and reverts to a primal state, relying solely on instinct, but Dan manages to snap him out of it."
-        }
-      ]
-    },
-    {
-      "season": 4,
-      "seasonTitle": "Mechtanium Surge",
-      "malId": 10330,
-      "anilistId": 10330,
-      "episodes": [
-        {
-          "episode": 1,
-          "title": "Interspace Showdown",
-          "absoluteEpisode": 144,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/1/w780.jpg",
-          "overview": "The Brawlers have returned to Earth and are back battling inside the expanded and awesome Bakugan Interspace."
-        },
-        {
-          "episode": 2,
-          "title": "Mechtogan Mayhem",
-          "absoluteEpisode": 145,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/2/w780.jpg",
-          "overview": "Dan and Drago begin a rigorous training regimen as they attempt to get Drago's newly inherited powers under control."
-        },
-        {
-          "episode": 3,
-          "title": "Disconnect",
-          "absoluteEpisode": 146,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/3/w780.jpg",
-          "overview": "Dan and Drago continue to be evasive with their teammates as they try and figure out the link between Code Eve's powers and the birth of the Mechtogan, Zenthon."
-        },
-        {
-          "episode": 4,
-          "title": "Fall From Grace",
-          "absoluteEpisode": 147,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/4/w780.jpg",
-          "overview": "Marucho and Shun discover that Dan and Drago have been practicing in secret, which leads to the revelation that Zenthon was born of Drago's new powers."
-        },
-        {
-          "episode": 5,
-          "title": "Tri-Twister Take Down",
-          "absoluteEpisode": 148,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/5/w780.jpg",
-          "overview": "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
-        },
-        {
-          "episode": 6,
-          "title": "Agony of Defeat",
-          "absoluteEpisode": 149,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/6/w780.jpg",
-          "overview": "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
-        },
-        {
-          "episode": 7,
-          "title": "BakuNano Explosion",
-          "absoluteEpisode": 150,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/7/w780.jpg",
-          "overview": "After the epic battle with Anubias, Dan and Drago go AWOL. The fans are now clamouring for more intense battle action and the new BakuNano technology is introduced to cause maximum damage."
-        },
-        {
-          "episode": 8,
-          "title": "Return to New Vestroia",
-          "absoluteEpisode": 151,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/8/w780.jpg",
-          "overview": "Dan and Drago land in New Vestroia, to continue training. They are hit by another nightmarish vision, which leaves them with the terrifying realization that escape from the evil forces that haunt them may be impossible."
-        },
-        {
-          "episode": 9,
-          "title": "Chaos Control",
-          "absoluteEpisode": 152,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/9/w780.jpg",
-          "overview": "Mag Mel sends Anubias to New Vestroia to battle Dan and Drago and harness their power."
-        },
-        {
-          "episode": 10,
-          "title": "A Royale Pain",
-          "absoluteEpisode": 153,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/10/w780.jpg",
-          "overview": "With Dan gone, Shun assumes leadership of the Battle Brawlers.  When Shun joins a Battle Royale in an attempt to control the chaos, he is rescued by two mysterious battlers!"
-        },
-        {
-          "episode": 11,
-          "title": "Back in Sync",
-          "absoluteEpisode": 154,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/11/w780.jpg",
-          "overview": "Dan and Drago are paid a visit by their old friend Wyvern.  Marucho is confronted by his father and must decide how to save Bakugan Interspace from further destruction."
-        },
-        {
-          "episode": 12,
-          "title": "Mind Search",
-          "absoluteEpisode": 155,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/12/w780.jpg",
-          "overview": "Dan and Drago try to solve the identity of the mysterious masked entity haunting their dark visions.  Meanwhile, Marucho teaches Paige and Rafe a lesson about strategy."
-        },
-        {
-          "episode": 13,
-          "title": "Re-Connection",
-          "absoluteEpisode": 156,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/13/w780.jpg",
-          "overview": "Marucho and Shun square off in a championship match. As both divisions of the Brawlers fight their battles, Mag Mel uses his pawns Sellon and Anubias to unleash the latest stage of his sinister plan."
-        },
-        {
-          "episode": 14,
-          "title": "Triple Threat",
-          "absoluteEpisode": 157,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/14/w780.jpg",
-          "overview": "In a fierce battle against Sellon on Neathia; Dan and Drago summon Mechtogan Zenthon for help.  But they get more than they bargained for when a Mechtogan Titan appears!"
-        },
-        {
-          "episode": 15,
-          "title": "Interspace Under Siege",
-          "absoluteEpisode": 158,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/15/w780.jpg",
-          "overview": "Dan and Drago return from New Vestroia to help the Battle Brawlers defend Interspace from the rampaging Caos Bakugan."
-        },
-        {
-          "episode": 16,
-          "title": "A Hero Returns",
-          "absoluteEpisode": 159,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/16/w780.jpg",
-          "overview": "Under Marucho's leadership the Brawlers attempt to delete the Chaos Bakugan from Interspace."
-        },
-        {
-          "episode": 17,
-          "title": "Gundalia Under Fire",
-          "absoluteEpisode": 160,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/17/w780.jpg",
-          "overview": "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
-        },
-        {
-          "episode": 18,
-          "title": "Battle Lines",
-          "absoluteEpisode": 161,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/18/w780.jpg",
-          "overview": "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
-        },
-        {
-          "episode": 19,
-          "title": "Unlocking the Gate",
-          "absoluteEpisode": 162,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/19/w780.jpg",
-          "overview": "Dan and Drago are face to face with Mag Mel and Razenoid and the two sides square off in a fierce battle."
-        },
-        {
-          "episode": 20,
-          "title": "True Colours",
-          "absoluteEpisode": 163,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/20/w780.jpg",
-          "overview": "The Brawlers race back to Earth and discover the Chaos Bakugan are destroying Bakugan Interspace."
-        },
-        {
-          "episode": 21,
-          "title": "Dangerous Beauty",
-          "absoluteEpisode": 164,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/21/w780.jpg",
-          "overview": "A wave of Chaos Bakugan causes the Bawlers to split up to fend off the attack. Mid-battle Dan is summoned by Sellon who lures him with information about the link he shares with Mag Mel."
-        },
-        {
-          "episode": 22,
-          "title": "Unfinished Business",
-          "absoluteEpisode": 165,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/22/w780.jpg",
-          "overview": "Dan receives what appears to be a distress call from Noah."
-        },
-        {
-          "episode": 23,
-          "title": "Behind the Mask",
-          "absoluteEpisode": 166,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/23/w780.jpg",
-          "overview": "Dan attempts to link with Mag Mel again, but on a deeper level."
-        },
-        {
-          "episode": 24,
-          "title": "Interspace Armageddon",
-          "absoluteEpisode": 167,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/24/w780.jpg",
-          "overview": "Marucho reveals his plan to completely delete Bakugan Interspace while his father and Kato work on an escape plan."
-        },
-        {
-          "episode": 25,
-          "title": "Dark Moon",
-          "absoluteEpisode": 168,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/25/w780.jpg",
-          "overview": "Dan and the others have arrived safely on earth to find a mysterious dark moon in the sky."
-        },
-        {
-          "episode": 26,
-          "title": "The Final Takedown",
-          "absoluteEpisode": 169,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/26/w780.jpg",
-          "overview": "The final battle continues with Dan and Mag Mel, while the others are fighting the remaining Bakugan, Mechtogan, and Mechtogan Titans on Earth."
-        },
-        {
-          "episode": 27,
-          "title": "Evil Arrival",
-          "absoluteEpisode": 170,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/27/w780.jpg",
-          "overview": "After Mag Mel's defeat at the hands of the Brawlers, peace reigns once again in the universe."
-        },
-        {
-          "episode": 28,
-          "title": "Wiseman Cometh",
-          "absoluteEpisode": 171,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/28/w780.jpg",
-          "overview": "Peace appears to have returned to Bakugan City after the Brawlers made short work of the invading Mechtogan; however it doesn't last long."
-        },
-        {
-          "episode": 29,
-          "title": "Mysterious Bond",
-          "absoluteEpisode": 172,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/29/w780.jpg",
-          "overview": "Fearful of another attack by Wiseman and his Mechtogans, the Brawlers ask Reptak to join Dan and Drago as their additional partner Bakugan."
-        },
-        {
-          "episode": 30,
-          "title": "Prodigal Bakugan",
-          "absoluteEpisode": 173,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/30/w780.jpg",
-          "overview": "Jaakor is visited by his two former students: Skytruss and Orbeum."
-        },
-        {
-          "episode": 31,
-          "title": "Combination Impossible",
-          "absoluteEpisode": 174,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/31/w780.jpg",
-          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
-        },
-        {
-          "episode": 32,
-          "title": "Enemy Allies",
-          "absoluteEpisode": 175,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/32/w780.jpg",
-          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
-        },
-        {
-          "episode": 33,
-          "title": "Battle for Bakugan Land",
-          "absoluteEpisode": 176,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/33/w780.jpg",
-          "overview": "Wiseman reappears and attacks the amusement park that Bakugan helped create Bakugan Land. Julie decides to go and confront him as a reporter to see what his problem is, and the Battle Brawlers must try and find a way to contain the Nomads powers once again."
-        },
-        {
-          "episode": 34,
-          "title": "Gunz Blazing",
-          "absoluteEpisode": 177,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/34/w780.jpg",
-          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
-        },
-        {
-          "episode": 35,
-          "title": "Battle Suit Bash",
-          "absoluteEpisode": 178,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/35/w780.jpg",
-          "overview": "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
-        },
-        {
-          "episode": 36,
-          "title": "Countdown to Doomsday",
-          "absoluteEpisode": 179,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/36/w780.jpg",
-          "overview": "The Brawlers go on the hunt for Wiseman's hideout in an effort to trap him there.  But Wiseman brings out the powerful Mechtogan Mechtavius Destroyer in a vicious battle against Dragonoid Destroyer."
-        },
-        {
-          "episode": 37,
-          "title": "The Eve of Extermination",
-          "absoluteEpisode": 180,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/37/w780.jpg",
-          "overview": "It's a race against time as the Brawlers once again Battle Mechtavius Destroyer but this time without the help of their own Mechtogan, Dragonoid Destroyer."
-        },
-        {
-          "episode": 38,
-          "title": "Jump to Victory",
-          "absoluteEpisode": 181,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/38/w780.jpg",
-          "overview": "Runo meets a new Bakugan named Aerogan who asks to be her partner."
-        },
-        {
-          "episode": 39,
-          "title": "Enemy Infiltration",
-          "absoluteEpisode": 182,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/39/w780.jpg",
-          "overview": "The Nonets begin to get curious about the true identity and motives of Wiseman."
-        },
-        {
-          "episode": 40,
-          "title": "Gunz Lives",
-          "absoluteEpisode": 183,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/40/w780.jpg",
-          "overview": "Gunz wakes up in his own worst nightmare and realizes that the evil ringleader Wiseman looks just like him!"
-        },
-        {
-          "episode": 41,
-          "title": "Evil Evolution",
-          "absoluteEpisode": 184,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/41/w780.jpg",
-          "overview": "The Brawlers learn the origin of Wiseman."
-        },
-        {
-          "episode": 42,
-          "title": "Evil vs. Evil",
-          "absoluteEpisode": 185,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/42/w780.jpg",
-          "overview": "The Brawlers are banished to the Doom Dimension."
-        },
-        {
-          "episode": 43,
-          "title": "Doom Dimension Throwdown",
-          "absoluteEpisode": 186,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/43/w780.jpg",
-          "overview": "Mechtavius Destroyer wreaks havoc in Bakugan City.  The Brawlers, still trapped in the Doom Dimension; battle Gunz and Betadron."
-        },
-        {
-          "episode": 44,
-          "title": "Blast from the Past",
-          "absoluteEpisode": 187,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/44/w780.jpg",
-          "overview": "After attacking Bakugan City, Mechtavius Destroyer invades New Vestroia.  The Bakugan put up a brave fight but are no match for his strength."
-        },
-        {
-          "episode": 45,
-          "title": "Beginning of the End",
-          "absoluteEpisode": 188,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/45/w780.jpg",
-          "overview": "The Brawlers travel back in time with the help of Professor Worton in an attempt to undo the destruction caused by Mechtavius Destroyer."
-        },
-        {
-          "episode": 46,
-          "title": "The End of the Line",
-          "absoluteEpisode": 189,
-          "duration": "22m",
-          "thumbnail": "https://episodes.metahub.space/tt1114855/4/46/w780.jpg",
-          "overview": "In the final battle against Mechtavius Destroyer, Dragonoid Destroyer uses the energy from the powerful bond between humans and Bakugan to defeat him."
-        }
-      ]
-    }
-  ]
-},
   // ============================================================
-  // Sword Art Online (2012 - Present)
+  // 30. Beyblade: Metal Fusion (2009)
   // ============================================================
   {
-    "id": "sword-art-online-2012",
-    "title": "Sword Art Online",
-    "type": "TV Show",
-    "isAnime": true,
-    "year": 2012,
-    "rating": 8.1,
-    "age": "TV-14",
-    "duration": "24m",
-    "genres": [
-      "Animation",
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "poster": "https://image.tmdb.org/t/p/original/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/wJi7fRmHw0wRMldUY28sSzXpp4G.jpg",
-    "videoUrl": "45782",
-    "trailerUrl": "https://www.youtube.com/watch?v=6ohYYtxfDCg",
-    "animeSlug": "sword-art-online",
-    "malId": 11757,
-    "anilistId": 11757,
-    "tmdbId": 45782,
-    "overview": "In the year 2022, gamers line up for the launch of Sword Art Online, a hotly anticipated VRMMORPG that lets players connect to an immersive virtual reality world with a special helmet called NerveGear. Kirito is one of the players eager to jump into the action. But after logging in, he and 10,000 other players discover that the game's creator has trapped them in the world: the only way to escape is to beat all 100 floors of the floating castle Aincrad—and dying in the game means dying in real life.",
-    "overviewKurdish": "لە ساڵی ٢٠٢٢دا، یاریزانان ڕیز دەبەستن بۆ یاریی چاوەڕوانکراوی «سۆرد ئارت ئۆنلاین»، یارییەکی ئۆنلاینی ڕاستیی مەجازی کە لە ڕێگەی کڵاوێکی تایبەتەوە بە ناوی «نێرڤ گێر» یاریزانەکان دەباتە ناو جیهانێکی مەجازیی بێوێنە. کیریتۆ یەکێکە لەو یاریزانانەی بە پەرۆشەوە دەچێتە ناو یارییەکە. بەڵام دوای چوونەژوورەوە، ئەو و دە هەزار یاریزانی تر بۆیان دەردەکەوێت کە دروستکەری یارییەکە هەموویانی لەو جیهانەدا زیندانی کردووە: تەنها ڕێگە بۆ ڕزگاربوون بەزاندنی هەموو ١٠٠ نهۆمەکەی قەڵای ئاینکرادە، و مردن لە ناو یارییەکەدا بە مانای مردنە لە ژیانی ڕاستەقینەدا.",
-    "director": "Tomohiko Ito",
-    "cast": [
-      "Yoshitsugu Matsuoka",
-      "Haruka Tomatsu",
-      "Hiroaki Hirata",
-      "Ai Kayano",
-      "Rina Hidaka",
-      "Hiroki Yasumoto",
-      "Isshin Chiba",
-      "Kaori Maeda"
-    ],
-    "trending": false,
-    "featured": false,
-    "is4k": false,
-    "seasons": [
+    id: "beyblade-metal-fusion-2009",
+    title: "Beyblade: Metal Fusion",
+    type: "TV Show",
+    isAnime: true,
+    year: 2009,
+    rating: 7,
+    age: "TV-Y7",
+    duration: "24m",
+    genres: ["Animation", "Action", "Adventure", "Fantasy", "Family"],
+    tags: ["Animation", "Action", "Adventure", "Fantasy", "Family"],
+    poster: "https://image.tmdb.org/t/p/original/AvzR1LroQFPs8mtvW761BZX92qx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dHQ6u5nRMCHGHLCl220iCah6jX0.jpg",
+    videoUrl: "37807",
+    trailerUrl: "https://www.youtube.com/watch?v=kYJjZ8k5110",
+    animeSlug: "beyblade-metal-fusion",
+    malId: 5962,
+    anilistId: 5962,
+    tmdbId: 37807,
+    cinesrcId: "37807",
+    overview: "A new cast of characters take on the continued battle between good and evil. Gingka, our hero, and his group of loyal friends combine forces to take on a dangerous group called the Dark Nebula. The plot thickens as friends become enemies and enemies become allies, all in the pursuit of becoming the top Blader.",
+    overviewKurdish: "دەستەیەکی نوێ لە کەسایەتییەکان درێژە بە شەڕی نێوان چاکە و خراپە دەدەن. گینکا، پاڵەوانی سەرەکی، لەگەڵ هاوڕێ دڵسۆزەکانی یەکدەگرن بۆ ڕووبەڕووبوونەوەی ڕێکخراوی مەترسیداری تارمایی تاریک (Dark Nebula). چیرۆکەکە بەرەو ئاڵۆزی دەچێت کاتێک هاوڕێیان دەبنە دوژمن و دوژمنان دەبنە هاوپەیمان لە پێناو بوون بە باشترین یاریزانی بەیلەید.",
+    director: "Kunihisa Sugishima",
+    cast: ["Rob Tinkler", "Barbara Mamabolo", "Lisette St. Louis", "Aki Kanada", "Satoshi Hino"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
       {
-        "season": 1,
-        "episodes": [
+        season: 1,
+        episodes: [
           {
-            "episode": 1,
-            "title": "The World of Swords",
-            "absoluteEpisode": 1,
-            "airDate": "2012-07-08",
-            "rating": 8.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/wokec1ewZhYNMLcKuK01H09i2pB.jpg",
-            "duration": "23m",
-            "overview": "It's launch day for one of the most highly-anticipated video games of all time. Join the character \"Kirito\" as he begins his journey in the virtual world of Sword Art Online."
+            episode: 1,
+            title: "Pegasus has Landed",
+            absoluteEpisode: 1,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/1/w780.jpg",
+            duration: "24m",
+            overview: "When young blader Kenta runs into a rough gang of bladers, the Face Hunters, he is saved by mysterious blader Gingka Hagane and his bey Storm Pegasus. Kenta is determined for the two to become friends, but the next day Gingka is missing and the Face Hunters and their leader have regrouped at a construction site."
           },
           {
-            "episode": 2,
-            "title": "Beater",
-            "absoluteEpisode": 2,
-            "airDate": "2012-07-15",
-            "rating": 7.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/hiBynS5SFi0ltxFsaYtq39C9k76.jpg",
-            "duration": "23m",
-            "overview": "It’s been one month since the players have been locked in the game.  2000 people have died; the first floor hasn’t been cleared yet."
+            episode: 2,
+            title: "Leone's Roar!",
+            absoluteEpisode: 2,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/2/w780.jpg",
+            duration: "24m",
+            overview: "Kyoya, leader of the Face Hunters, has challenged Gingka. As Gingka and Kenta discuss this challenge a girl appears claiming Pegasus is in need of repair. The girl, named Madoka, treats Pegasus but before she can finish Ginga leaves. Kyoya has stolen Sagittario and unless Gingka wins it will be destroyed."
           },
           {
-            "episode": 3,
-            "title": "Red-Nosed Reindeer",
-            "absoluteEpisode": 3,
-            "airDate": "2012-07-22",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/kxBO1gp72V4uBWLSACzL3RvEjQ9.jpg",
-            "duration": "23m",
-            "overview": "Kirito has finally joined a guild made up of close friends in reality.  Everything is going well until a tragic accident changes Kirito completely."
+            episode: 3,
+            title: "The Wolf's Ambition!",
+            absoluteEpisode: 3,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/3/w780.jpg",
+            duration: "24m",
+            overview: "Doji take Kyouya away from the city to make a deal. If Kyouya loses a battle against him then Kyouya must go with him. Meanwhile Kenta is worried Ginga is getting bored of having no strong opponents to battle and challenges him to prove his worth."
           },
           {
-            "episode": 4,
-            "title": "The Black Swordsman",
-            "absoluteEpisode": 4,
-            "airDate": "2012-07-29",
-            "rating": 7.8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/xg8AqSOPUaEJvaG8GcdPsCIT2MI.jpg",
-            "duration": "23m",
-            "overview": "Silca is known as Dragon Tamer Silca, but after leaving her group she is caught and her pet, Pina paid the ultimate price.  Before she is killed, Kirito saves her and offers her a choice."
+            episode: 4,
+            title: "Charge! Bull Power!",
+            absoluteEpisode: 4,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/4/w780.jpg",
+            duration: "24m",
+            overview: "Doji gives Benkei a new bey, Dark Bull, with which he can defeat Gingka. Excited, Benkei sends Kenta off with a challenge for Gingka. Upon arriving, Gingka and co realised strange holes have been made a the battle location, and then a bey appears..."
           },
           {
-            "episode": 5,
-            "title": "Murder in the Safe Zone",
-            "absoluteEpisode": 5,
-            "airDate": "2012-08-05",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/4r89kn8VYl2NahtGAOS1V552w71.jpg",
-            "duration": "23m",
-            "overview": "A player has been killed inside a safe zone and not by the known means.  Asuna and Krito take it upon themselves to find out how and why this is happening."
+            episode: 5,
+            title: "Vengeful Gasher",
+            absoluteEpisode: 5,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/5/w780.jpg",
+            duration: "24m",
+            overview: "There is a new blader in town, Tetsuya, who is destroying the beys of the bladers he defeats. Angered by this, Madoka sets off ot find him with Ginga and Kenta in pursute. After splitting up, Kenta realises one fo his friends is a new victim of Tetsuya he battles him, thankfully saved by the arrival of Ginga. But Tetsuya has kidnapped Madoka, and unless Ginga defeats him she'll remain missing."
           },
           {
-            "episode": 6,
-            "title": "Illusionary Avenger",
-            "absoluteEpisode": 6,
-            "airDate": "2012-08-12",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/zz9Zw04cvobbS5Bf9MYKxptk9aQ.jpg",
-            "duration": "23m",
-            "overview": "Kirito has figured out the how and now he has to figure out the why."
+            episode: 6,
+            title: "Aquario's Challenge",
+            absoluteEpisode: 6,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/6/w780.jpg",
+            duration: "24m",
+            overview: "Hikaru Hasama, a strong blader from afar arrives in town and is asked by Benkei to defeat Ginga. Meanwhile Kenta wonders whether Sagittario could have a special move, Madoka explaining it's possible. Hikaru accepts Benkei's offer, but Ginga is sick and so Kenta battles in his place, unbeknown to Hikaru."
           },
           {
-            "episode": 7,
-            "title": "The Temperature of the Heart",
-            "absoluteEpisode": 7,
-            "airDate": "2012-08-19",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/iWGUPY39gmNrMmKAfkP8dalEVyz.jpg",
-            "duration": "23m",
-            "overview": "A trip to get a new sword leaves Kirito battling a dragon and his fears."
+            episode: 7,
+            title: "It's Our Special Move! Sagittario",
+            absoluteEpisode: 7,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/7/w780.jpg",
+            duration: "24m",
+            overview: "Kenta is trained by Benkei to defeat Hikaru whilst Madoka gives Kenta a new bey part to help him with his special move. Meanwhile Hikaru has been told by Tetsuya who her real opponent was and is on the prowl for the real Ginga Hagane, though is interrupted by Kenta."
           },
           {
-            "episode": 8,
-            "title": "The Sword Dance of Black and White",
-            "absoluteEpisode": 8,
-            "airDate": "2012-08-26",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/cmajeWlA7OCpIT2H6JPXIo9Lwdw.jpg",
-            "duration": "23m",
-            "overview": "After 2 years, people have got used to living in SAO, with a dwindling front line it might just be up to Kirito and Asuna to continue the charge."
+            episode: 8,
+            title: "Merci's Dangerous Trap",
+            absoluteEpisode: 8,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/8/w780.jpg",
+            duration: "24m",
+            overview: "Kyouya is sent of Wolf Canyon by Doji to test is skills. Meanwhile Merci kidnaps Ginga and convinces him he's on a TV show whilst really he testing his skills."
           },
           {
-            "episode": 9,
-            "title": "The Blue-Eyed Demon",
-            "absoluteEpisode": 9,
-            "airDate": "2012-09-02",
-            "rating": 7.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/t2GBif2MdqYhZvQx755Y9xunQkF.jpg",
-            "duration": "23m",
-            "overview": "To save a group of players and Asuna from a Boss character, Kirito is forced to play his trump card."
+            episode: 9,
+            title: "Leone's Counterattack",
+            absoluteEpisode: 9,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/9/w780.jpg",
+            duration: "24m",
+            overview: "Kyouya has returned from Wolf Canyon and Benkei is excited to see his old friend again, with encouragement from Kenta. But Kyouya has changed, revealed in a battle, and even with Kenta at his side Benkei loses as Leone destroys the warehouse they're in."
           },
           {
-            "episode": 10,
-            "title": "Crimson Killing Intent",
-            "absoluteEpisode": 10,
-            "airDate": "2012-09-09",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/2A6GRQT5uDJhq9vc46fISn0CNzm.jpg",
-            "duration": "23m",
-            "overview": "Kirito has agreed to a duel with the head of the Blood Alliance Knights.  If Kirito wins, Asuna is free to leave the Knights and if he loses…"
+            episode: 10,
+            title: "Heated Battle! Gingka Versus Kyoya",
+            absoluteEpisode: 10,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/10/w780.jpg",
+            duration: "24m",
+            overview: "Kenta returns with an injured Benkei and tells Ginga what Kyouya did to them. Furious, Ginga challenges Kyouya who is now out of control. During the battle, a tornado rips through the city, involuntarily summoning his friends to cheer him on."
           },
           {
-            "episode": 11,
-            "title": "The Girl of Morning Dew",
-            "absoluteEpisode": 11,
-            "airDate": "2012-09-16",
-            "rating": 7.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/tULdNWI4qoToSyO5PUEiwRWncAh.jpg",
-            "duration": "23m",
-            "overview": "The newly married couple is enjoying their time away from the front lines.  But a new guest will take them all the way back to the beginning."
+            episode: 11,
+            title: "Chase The Wolf!",
+            absoluteEpisode: 11,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/11/w780.jpg",
+            duration: "24m",
+            overview: "Ginga returns and explains to his friends that Doji has a forbidden bey: Lightning L-Drago. Tipped off by Kyouya, they arrive at the Dark Nebula castle and are ambushed by many beys. With help once again from Kyouya, they break down the doors and head inside."
           },
           {
-            "episode": 12,
-            "title": "Yui's Heart",
-            "absoluteEpisode": 12,
-            "airDate": "2012-09-23",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/k8rzVr0A4jtsskjRMLEM5NNlqfr.jpg",
-            "duration": "23m",
-            "overview": "Yulier, second in command, of the Liberation Army has approached Kirito and Asuna for help saving her friend and her guild."
+            episode: 12,
+            title: "Infiltrate The Dark Nebula's Castle!",
+            absoluteEpisode: 12,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/12/w780.jpg",
+            duration: "24m",
+            overview: "After many challenges, Ginga is the only one to reach Doji. They battle which causes one of the walls to collapse. But their challenge isn't over yet..."
           },
           {
-            "episode": 13,
-            "title": "Edge of Hell's Abyss",
-            "absoluteEpisode": 13,
-            "airDate": "2012-09-30",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ooI4fJvu4eUZgvRTQx1v3uzUTLU.jpg",
-            "duration": "23m",
-            "overview": "While enjoying a fishing tournment Kirito receieves an urgent e-mail from the leader of the guild requesting their return."
+            episode: 13,
+            title: "L-Drago Awakens!",
+            absoluteEpisode: 13,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/13/w780.jpg",
+            duration: "24m",
+            overview: "Ryouga, an old rival of Ginga's and the new owner of L-Drago. As he and Ginga battle, Ginga is determind to win L-Drago back, but his anger stops him from winning..."
           },
           {
-            "episode": 14,
-            "title": "The End of the World",
-            "absoluteEpisode": 14,
-            "airDate": "2012-10-07",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/fcnSuM0WQyKODZ6BD1yUGJpDbIf.jpg",
-            "duration": "23m",
-            "overview": "Game over."
+            episode: 14,
+            title: "Memories of Ryo",
+            absoluteEpisode: 14,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/14/w780.jpg",
+            duration: "24m",
+            overview: "Kenta loses his temper when Ginga starts acting strangely. Finally he gets Ginga to tell the story of his past. Ryo Hagane, Ginga's father and the owner of Pegasus, had tried to stop Ryouga taking L-Draco. After losing, Ryo gave Ginga Pegasus before disappearing, and Ginga took it upon himself to stop the Dark Nebula."
           },
           {
-            "episode": 15,
-            "title": "Return",
-            "absoluteEpisode": 15,
-            "airDate": "2012-10-14",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/sMmzH8KpSNV9dGEQ3LP1Xzeokfo.jpg",
-            "duration": "23m",
-            "overview": "Kirigaya is adjusting to his life outside of the game, but he hasn't forgotten about Asuna. A recent visit to her in the hospital, he meets Sugou Nobuyuki."
+            episode: 15,
+            title: "Mysterious Hyoma",
+            absoluteEpisode: 15,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/15/w780.jpg",
+            duration: "24m",
+            overview: "Ginga has run away, possibly to his home town. Kenta, Madoka, Kyouya and Benkei follow him but after many calamities part ways. Then a strange man appears and saved Kenta and Madoka."
           },
           {
-            "episode": 16,
-            "title": "Land of the Fairies",
-            "absoluteEpisode": 16,
-            "airDate": "2012-10-21",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/grHJC5Gk7fuk8jywVhs7UYXLiLG.jpg",
-            "duration": "23m",
-            "overview": "A new MMO allows users to fly and encourages player killing. Kirito has joined this new game in search of Asuna and is pleasantly surprised with what he finds."
+            episode: 16,
+            title: "The Magnificent Aries",
+            absoluteEpisode: 16,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/16/w780.jpg",
+            duration: "24m",
+            overview: "The man's name is Hyoma, whom Kyouya has his doubts about. Hyoma says he'll guide them to Koma Village, but Kyouya proves he's walking him in circles. Then Hyoma reveals a secret, and the fact he's an old friend of Ginga's. Meanwhile Ginga, en route to Koma Village, meets an old friend."
           },
           {
-            "episode": 17,
-            "title": "Captive Queen",
-            "absoluteEpisode": 17,
-            "airDate": "2012-10-28",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/b702zYjB82kk0APiyCCYBn7fGJU.jpg",
-            "duration": "23m",
-            "overview": "As Kirito learns about the game from Leafa and the hatred between the races, Asuna learns the truth of her role from the Fairy King."
+            episode: 17,
+            title: "The Silver Pegasus",
+            absoluteEpisode: 17,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/17/w780.jpg",
+            duration: "24m",
+            overview: "The gang arrive in Koma Village and are greeted by a talking dog called Hokuto. Hokuto tells them Ginga is climbing Mt. Hagane, seeking a scroll written by an old barer of Pegasus. But then Ginga learns who the old barer was and learns a valuable lesson."
           },
           {
-            "episode": 18,
-            "title": "To the World Tree",
-            "absoluteEpisode": 18,
-            "airDate": "2012-11-04",
-            "rating": 7.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/kP5JiBHMtIuiTcntCZUe9ERzAYj.jpg",
-            "duration": "23m",
-            "overview": "Leafa is making enemies leaving her area and group to team up with Kirito. On their way to neutral Territory, they speak more of the rules and areas of the ALO."
+            episode: 18,
+            title: "The Green Hades",
+            absoluteEpisode: 18,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/18/w780.jpg",
+            duration: "24m",
+            overview: "Ginga takes friends to the bey forest where they are immediately excited. Meanwhile Hyoma, who is already jealous of Ginga's friends, challenges Ginga at a stadium called the Green Hades and reveals that as Ginga's true rival has never lost to Ginga in all their childhood."
           },
           {
-            "episode": 19,
-            "title": "The Legrue Corridor",
-            "absoluteEpisode": 19,
-            "airDate": "2012-11-11",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/eMcIqPhChoBMpzqXG4CIUuEjKR3.jpg",
-            "duration": "23m",
-            "overview": "Something isn’t right; Recon has sent Leafa a message “I was right. Be careful. S.\"  What does he mean and will Leafa and Kirito have the time to figure it out?"
+            episode: 19,
+            title: "Conquer the Tag-Team Battle!",
+            absoluteEpisode: 19,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/19/w780.jpg",
+            duration: "24m",
+            overview: "Returning from Koma Village, Benkei and Kenta are furious with Madoka when she experiments with their beys without telling them. But then they learn how to switch parts, and that comes in handy at the Aquatic Tag-Team Tournament they've just entered."
           },
           {
-            "episode": 20,
-            "title": "General of the Blazing Flame",
-            "absoluteEpisode": 20,
-            "airDate": "2012-11-18",
-            "rating": 7.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/cOpNhZSFZv2ocUaGfZajDlHz7NK.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Leafa have made it to the meeting and Kirito’s bluff as an ambassador has been called out.  If he can survive in a fight against the Salamanders General Eugene, his plan to prevent a war might work."
+            episode: 20,
+            title: "Begin! The Survival Battle!",
+            absoluteEpisode: 20,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/20/w780.jpg",
+            duration: "24m",
+            overview: "The surival battle has begun, the winner being granted one wish. Everyone is entering, even Hyoma, Hikaru and Madoka. But despite everyone's enthusiasum there is a mysterious blader who has been defeating all his opponents..."
           },
           {
-            "episode": 21,
-            "title": "The Truth about ALfheim",
-            "absoluteEpisode": 21,
-            "airDate": "2012-11-25",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/9AZUXEji3uy6yu7rtnb2iRuapYm.jpg",
-            "duration": "23m",
-            "overview": "While Asuna continues her attempt to escape, another woman in Kirito’s life tries to make sense of her emotions."
+            episode: 21,
+            title: "Warriors on a Deserted Island",
+            absoluteEpisode: 21,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/21/w780.jpg",
+            duration: "24m",
+            overview: "Kenta and Benkei are aided by a new battler, Yu Tendo and his bey Flame Libra. Kyouya, after not finishing his battle with Hikaru, challenges Hyoma, who has been watching everyone but not battling. Kyouya wins, but at a price. Meanwhile Yu is upset the tournament is drawing to an end, and is challenged by Kenta, Benkei and Hikaru all at once. But as the battle goes on, Yu reveals himself to be the one who has knocked many of the 1000 competitors out of the competition with ease, and refuses to be taken down."
           },
           {
-            "episode": 22,
-            "title": "The Grand Quest",
-            "absoluteEpisode": 22,
-            "airDate": "2012-12-02",
-            "rating": 7.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/d3Bl4GEYdM6rLO2BYoNz2esIAD7.jpg",
-            "duration": "23m",
-            "overview": "Kirito’s determination to save Asuna borders on the insane.  His reckless is stopped when Leafa suddenly logs out."
+            episode: 22,
+            title: "The Fearsome Libra",
+            absoluteEpisode: 22,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/22/w780.jpg",
+            duration: "24m",
+            overview: "Ginga, Kyouya, Yu and Madoka are the final four left in the surival battle. Kyouya, after being aided by Madoka, drops out leaving Ginga and Yu left to battle. They both launch their special moves, but in the end Yu is victorious."
           },
           {
-            "episode": 23,
-            "title": "Bonds",
-            "absoluteEpisode": 23,
-            "airDate": "2012-12-09",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/2OrvGXAS28CGhEs96FCAjkHDAUJ.jpg",
-            "duration": "23m",
-            "overview": "Even though a wall has been built between Kirito and Sugu, he must save Asuna.  The next time he challenges the final dungeon he won’t be alone."
+            episode: 23,
+            title: "The Road to the Battle Bladers",
+            absoluteEpisode: 23,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/23/w780.jpg",
+            duration: "24m",
+            overview: "As winner of the surivial battle, Yu is granted his wish to hold a tournament to decide the storngest blader in the country. Then he reveals he's a member of the Dark Nebula, before leaving with Doji and Ryouga who showed up to taunt Ginga. After all agreeing to try and earn the 50000 points needed to qualify for Battle Bladers, Ginga and co meet up at a stadium outside town to battle one last time."
           },
           {
-            "episode": 24,
-            "title": "Gilded Hero",
-            "absoluteEpisode": 24,
-            "airDate": "2012-12-16",
-            "rating": 7.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/3hdDhZFnQ524Tjs5ehiyrDzXJjA.jpg",
-            "duration": "23m",
-            "overview": "Kirito, Asuna, and Yui are finally together again, but the locks placed on Asuna are unbreakable.  Before they have a chance to come up with a plan, the fairy king makes his grand entrance."
+            episode: 24,
+            title: "The Beautiful Eagle",
+            absoluteEpisode: 24,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/24/w780.jpg",
+            duration: "24m",
+            overview: "As Ginga travels the country with Pegasus, he is challenged by many point hunters. He is saved by a mysterious blader, Tsubasa Otori, and his bey Earth Aquila. As they are entering the same tournament, the two bladers hang out together, Tsubasa giving Ginga some beyblade tips along the way. But as the tournament progresses, Ginga learns Tsubasa is hiding more secrerts than he expected."
           },
           {
-            "episode": 25,
-            "title": "The World Seed",
-            "absoluteEpisode": 25,
-            "airDate": "2012-12-23",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/oPuUnWxMttvfVXv99aVgXO3qxpV.jpg",
-            "duration": "25m",
-            "overview": "Kirigaya Kazuto has beaten death twice but there is one more thing he must do."
+            episode: 25,
+            title: "The Sniper Capricorn",
+            absoluteEpisode: 25,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/25/w780.jpg",
+            duration: "24m",
+            overview: "Kyouya is tired of the weak battles he is forced to battle in, until he learns of a strong blader nearby: Tobio, nicknamed Captain Capri, and his bey Storm Capricorn."
+          },
+          {
+            episode: 26,
+            title: "Tsubasa Flies Into The Dark",
+            absoluteEpisode: 26,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/26/w780.jpg",
+            duration: "24m",
+            overview: "The Dark Nebula get a shock as Tsubasa, who they have been watching, appears to their headquarters demanding to join. Doji agrees, but only if Tsubasa can pass a series of tests."
+          },
+          {
+            episode: 27,
+            title: "Intruders in the Challenge Match",
+            absoluteEpisode: 27,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/27/w780.jpg",
+            duration: "24m",
+            overview: "Kenta and Hyoma meet up at a dual tournament, Kenta battling in the forest stadium and Hyoma in the river stadium. But Hyoma is interrupted when Yu intrudes, demanding to battle. Then Kenta, who has already won his tournament, is challenged by Tsubasa."
+          },
+          {
+            episode: 28,
+            title: "Dark Gasher's Big, Crabby-Crabby Operation",
+            absoluteEpisode: 28,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/28/w780.jpg",
+            duration: "24m",
+            overview: "The fiendish Tetsuya follows Yu back to the Dark Nebula Headquarters. Doji though makes use of this and upgrades Tetsuya's bey as an expirement."
+          },
+          {
+            episode: 29,
+            title: "Kenta and Sora",
+            absoluteEpisode: 29,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/29/w780.jpg",
+            duration: "24m",
+            overview: "Kenta, whilst competing in a tournament, meets Sora, an impatient battler with amazing skills. Sora claims to be Ginga's apprentice with his bey Cyber and attempts to copy Pegasus's special move, but can not pull it off."
+          },
+          {
+            episode: 30,
+            title: "The Bewitching Pisces",
+            absoluteEpisode: 30,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/30/w780.jpg",
+            duration: "24m",
+            overview: "Ginga and the gang meet up at a tournament. But there is a mysterious atmosphere in one corner of the stadium as a mysterious blader Ryutaro tells fortunes..."
+          },
+          {
+            episode: 31,
+            title: "The Twin Gemios",
+            absoluteEpisode: 31,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/31/w780.jpg",
+            duration: "24m",
+            overview: "Four matches are going on in the tournament. As Hikaru and Kyouya's match begins, the others, who were busy congratulating Ginga, realise they're last and in their hast bump into Yu. Then Tsubasa turns up adn Yu explains they're both part of the Dark Nebula. Despite the others' shock, Tsubasa leaves barely saying a word, ordering Yu to follow him away. Kyouya wins his match against Hikaru as Tsubasa wins his against Benkei. Kenta takes on the twins: Dan and Reiki, that Kyouya faced at Dark Nebula's original base with their new bey Evil Gemios. They are on the verge of winning when the two start bickering and Kenta defeats them. Finally Yu wins his battle, but spends most of the time complaining about how only Tsubasa and Kenta appear to have good opponents."
+          },
+          {
+            episode: 32,
+            title: "The Stormy Battle Royal",
+            absoluteEpisode: 32,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/32/w780.jpg",
+            duration: "24m",
+            overview: "The final six bladers of the touranment are: Ginga, Kenta, Kyouya, Yu, Tsubasa and Hyoma. Doji suggests they all battle against each other in a battle royal, mainly to see how well Tsubasa and Yu will get on batting together. Unfortunatly, their hating of each other gets in the way and after taking out Hyoma, mainly by accident so they could get to Ginga, they start fighting each other. Pegasus plunders into the battle and all three loose. Finally Kyouya, who protected Saggitario whilst Yu and Tsubasa battled, defeats Kenta with a single hit and wins the tournament."
+          },
+          {
+            episode: 33,
+            title: "The Oath of the Phoenix",
+            absoluteEpisode: 33,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/33/w780.jpg",
+            duration: "24m",
+            overview: "After the tournament, all the friends part ways. The Dark Nebula memebrs head back to base, Yu though is still furious with Tsubasa. But without warning, the sneaky Tetsuya steals Ginga's point counter. It is rescued by a new and mysterious blader: Phoenix, who only agrees to give it back if Ginga can defeat him in a battle."
+          },
+          {
+            episode: 34,
+            title: "Shine, Virgo!",
+            absoluteEpisode: 34,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/34/w780.jpg",
+            duration: "24m",
+            overview: "Starting at square one, Ginga enters a tournament where he is challenged by a fan of his: Teru. Teru is a former dancer who suffered from an injury during one of his performances. When he was in hospital, he entertained himself by watching Ginga's battles. After a friend gave his Virgo, he has vowed to become a blader as strong as Ginga."
+          },
+          {
+            episode: 35,
+            title: "L-Drago, on the Move",
+            absoluteEpisode: 35,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/35/w780.jpg",
+            duration: "24m",
+            overview: "Ryouga has set out to obtain the 50000 points to gain entery to Battle Bladers. He takes part in a 100 eby battle Benkei is entering and wins with ease and also beats Tobio and Ryutaro in the fianls of a touranment he interrupted. Tsubasa and Yu, who have finally stopped bickering, are supposed to be guarding him, but Tsubasa gets fed up and leaves whilst Yu heads back to base to cause trouble for him. Falling into a trap set by Doji, Tsubasa sees his chance to swipe information from the Dark Nebula database. Though just as he is leaving, he is intercepted by Doji and many bladers Yu summoned upon to help out. Then Ryouga turns up..."
+          },
+          {
+            episode: 36,
+            title: "Broken Wings",
+            absoluteEpisode: 36,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/36/w780.jpg",
+            duration: "24m",
+            overview: "Tsubasa almost looses with Ryouga but Aquila is saved by the sudden arrival of Phoenix. Taking pity on the young blader, Phoenix grabs Tsubasa and the two escape. Yu is at first really annoyed, but the explains the Doji he has already sent a Dark nebula member to keep an eye on Ginga. Tobio interrupts a tournament where Ginga has entered where the stadium has moving walls. Tobio had an early advantage, but in the end Ginga triuphs with his special move."
+          },
+          {
+            episode: 37,
+            title: "Rock Scorpio's Deadly Poison",
+            absoluteEpisode: 37,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/37/w780.jpg",
+            duration: "24m",
+            overview: "Kenta arrives in a town where the kids are forbidden to battle in their stadium as it has been overun by Busujima and a gang of bladers. The Kenta's friend Sora turns up and they begin secret training to beat Busujima. Then one of their number vanishes and it's up to Sora to win her back."
+          },
+          {
+            episode: 38,
+            title: "Run, Gingka!",
+            absoluteEpisode: 38,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/38/w780.jpg",
+            duration: "24m",
+            overview: "Everyone has gained 50000 points apart from Ginga who is only 3000 off. After learning of a nearby tournament, they all head there but are intercepted by Tsubasa. The others send Ginga on ahead whilst they distract Tsubasa, but this turns out to be what he wants. After Phoenix saved him, Tsubasa vowed to defeat Ryouga, but he was told to get to know Ginga's friends first. Kenta is willing to sacrifice everything for Ginga, but then the latter turns up, claim he couldn't leave his friends behind. Tsuabsa becomes confused, but then Phoenix appears..."
+          },
+          {
+            episode: 39,
+            title: "Clash! The Fireblaze vs The Pegasus",
+            absoluteEpisode: 39,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/39/w780.jpg",
+            duration: "24m",
+            overview: "After Tsubasa is easily defeated by Phoenix, Ginga is also challenge. The rules are simple: if he wins he gets his lost points back, if he looses he is forced to quit beyblade. Everyone comes to show support for Ginga, even Kyouya. Fianlly Tsubasa understands what Phoenix had tried to tell him, and reveals his identity to the others."
+          },
+          {
+            episode: 40,
+            title: "GO! Battle Bladers!",
+            absoluteEpisode: 40,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/40/w780.jpg",
+            duration: "24m",
+            overview: "Battler Bladers has begun and everyone is winning their battles with ease. But Ginga's first opponent is Yu, the only person besides Ryouga who has ever defeated him."
+          },
+          {
+            episode: 41,
+            title: "The Serpent's Terror",
+            absoluteEpisode: 41,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/41/w780.jpg",
+            duration: "24m",
+            overview: "Hyoma's next opponent is Regi, a blader who belives in fear and sadness being an important matter in bey battling. Unable to help Hyoma much, the others become worried about Hikaru's match against Ryouga that puts her in a coma."
+          },
+          {
+            episode: 42,
+            title: "The Dragon's Punishment",
+            absoluteEpisode: 42,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/42/w780.jpg",
+            duration: "24m",
+            overview: "Yu and Ryutaro learn of the horrors of the Dark Nebula as Ryutaro watches as his defeated friends are taken down by Ryouga and Yu is forced to battle Regi. Meanwhile Tsubas considers taking Ryouga on himself in order to stop Kyouya from having to battle him, but Kyoya stops him."
+          },
+          {
+            episode: 43,
+            title: "The Deck is Stacked",
+            absoluteEpisode: 43,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/43/w780.jpg",
+            duration: "24m",
+            overview: "After a switch in the pairings Kyouya is now battling Benkei, much to Tsubasa's delight as he now is battling Ryouga. Kyouya wins his battle but Benkei is pleased to have shown his old master his true strength. Meanwhile Ginga battles Ryutaro who, after watching the other Dark Nebula members fall at the hands of Ryouga, knows he is battling for his life. Ryutaro predicts a dark future for the world at the mercy of L-Drago, but after Ginga wins his predition changes and he accepts his fait. After the battle, the others discuss the predition Ryutaro mentioned to Ginga when an injured Yu stumbles in looking for Kenta and Ginga."
+          },
+          {
+            episode: 44,
+            title: "Entrusted Emotions",
+            absoluteEpisode: 44,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/44/w780.jpg",
+            duration: "24m",
+            overview: "Yu explains what has been happening within the Dark Nebula Organisation, showing his broken Libra as proof. Ginga is furious, but not so much as Kenta who, after swapping performance tips, storms off to find and battle Regi."
+          },
+          {
+            episode: 45,
+            title: "Eagle Counterattacks",
+            absoluteEpisode: 45,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/45/w780.jpg",
+            duration: "24m",
+            overview: "After Kenta and Yu's battle of will, everyone is looking for Tsubasa who has gone missing. He eventually shows up for his battle after some backup from Kyouya. The odds are stacked against Tsubasa, but after battling Ryouga once before is there a chance he could win?"
+          },
+          {
+            episode: 46,
+            title: "Libra Disappears",
+            absoluteEpisode: 46,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/46/w780.jpg",
+            duration: "24m",
+            overview: "Ginga prepares to battle Reji who is stronger than in his first two battles. Meanwhile Yu is kidnapped and Kenta and Hyoma, who have both recovered from their battles with Reji, race into the Dark Nebula Organisation's HQ to get him back."
+          },
+          {
+            episode: 47,
+            title: "Bonds of Steel",
+            absoluteEpisode: 47,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/47/w780.jpg",
+            duration: "24m",
+            overview: "Ginga finally defeats Regi. Phoenix appears to protect Kenta and Hyoma, beating Doji. Madoka tells Ginga about Yu, Kenta and Hyoma and the two rush after them. All of them regroup as shards fall from the ceiling, trapping Doji and shattering Phoenix's mask."
+          },
+          {
+            episode: 48,
+            title: "The Truth About Light and Darkness",
+            absoluteEpisode: 48,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/48/w780.jpg",
+            duration: "24m",
+            overview: "Phoenix, who is really Ryo Hagane, helps to rescue Yu. Then he explains to everyone about the orgin of beys, starting with Pegasus and L-Drago. Meanwhile Doji comes across Ryouga who is anxious for more power and knows where to get it."
+          },
+          {
+            episode: 49,
+            title: "Fierce Battle! Lion VS Dragon",
+            absoluteEpisode: 49,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/49/w780.jpg",
+            duration: "24m",
+            overview: "Kyoya finally gets to battle Ryuga, determind to avenge Tsubasa who had become a close friend. After persuading Ryuga to not use his special move, it really looked like Kyoya could win. But in the end L-Drago triumphs and Kyoya suffers the same fait as Hikaru and Tsubasa."
+          },
+          {
+            episode: 50,
+            title: "The Furious Final Battle!",
+            absoluteEpisode: 50,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/50/w780.jpg",
+            duration: "24m",
+            overview: "Upset at the faith of his friends, Ginga goes alone to the final battle. Ryuga battles him on a stage in the air where the true power of L-Drago becomes clear."
+          },
+          {
+            episode: 51,
+            title: "Blader's Spirit",
+            absoluteEpisode: 51,
+            thumbnail: "https://episodes.metahub.space/tt1674928/1/51/w780.jpg",
+            duration: "24m",
+            overview: "With the help of the spirits of Hikaru, Tsubasa and Kyoya, Ginga manages to survive L-Drago's attacks with support from his friends. Finally he realizes he can win with his greatest special move - Galaxy Nova."
           }
         ]
       },
       {
-        "season": 2,
-        "episodes": [
+        season: 2,
+        episodes: [
           {
-            "episode": 1,
-            "title": "The World of Guns",
-            "absoluteEpisode": 26,
-            "airDate": "2014-07-05",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/7OUSXOcIs9nzdLmLz0Bwdfhrm85.jpg",
-            "duration": "23m",
-            "overview": "A year has passed since SAO was cleared. Summoned by Kikuoka of the Virtual Division at the Ministry of Internal Affairs and Communications, Kazuto learns of a series of bizarre murders linked to the popular VR game, Gun Gale Online (GGO), the only game in Japan played by pros."
+            episode: 1,
+            title: "Seeking a Legend",
+            absoluteEpisode: 52,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/1/w780.jpg",
+            duration: "24m",
+            overview: "Ryo, Gingka’s father, acts as Director of the new WBBA but the first tournament is disrupted by a blader named Masamune. Gingka meanwhile is on a quest to replace Storm Pegasus with a Legendary Bey sealed in the mountains near Koma Village."
           },
           {
-            "episode": 2,
-            "title": "Cold-Hearted Sniper",
-            "absoluteEpisode": 27,
-            "airDate": "2014-07-12",
-            "rating": 6.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/1sCbBCi1nxPqVhowB4PvH9SJPZr.jpg",
-            "duration": "23m",
-            "overview": "Armed with a large sniper rifle, Hecate II, the young girl Sinon is making a name for herself as the No. 1 sniper in GGO. When her squadron ambushes another squadron, she succeeds in taking out her first target. But when she takes aim at her second target, a robed “Behemoth,” he dodges the bullet."
+            episode: 2,
+            title: "The Persistent Challenger",
+            absoluteEpisode: 53,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/2/w780.jpg",
+            duration: "24m",
+            overview: "Gingka defeats Masamune but Masamune challenges Gingka again and again, losing each time. Masumune trains hard and eventually manages to defeat Gingka, but Gingka learns a valuable lesson about how to work with Galaxy Pegasus."
           },
           {
-            "episode": 3,
-            "title": "Memories of Blood",
-            "absoluteEpisode": 28,
-            "airDate": "2014-07-19",
-            "rating": 6.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/uYykJcutnYPW8O7LAs0T7MvjXS7.jpg",
-            "duration": "23m",
-            "overview": "In real life, the player Sinon is a high school student named Shino Asada. On her way home from school, she’s dragged into an alley by delinquent girls. Their leader, Endo, tries to extort money from Shino, but she bravely refuses."
+            episode: 3,
+            title: "A New Challenge",
+            absoluteEpisode: 54,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/3/w780.jpg",
+            duration: "24m",
+            overview: "New blader Mei-Mei invites Gingka into battle where she is partnered with Chiyun and Gingka is partnered with Masamune. Gingka and Masamune must learn to work together to defeat their opponents, and they do in the nick of time."
           },
           {
-            "episode": 4,
-            "title": "GGO",
-            "absoluteEpisode": 29,
-            "airDate": "2014-07-26",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/eJjflgwMR7kcUTOrolwqAlppb4f.jpg",
-            "duration": "23m",
-            "overview": "Kikuoka has recruited Kirito to investigate GGO, and so he logs in. To lure Death Gun into targeting him, he hopes to enter Bullet of Bullets (BoB), a tournament to decide the most powerful gunman in GGO. But as a first-timer, he doesn't know his way around this game, and soon loses his way, when he catches sight of Sinon and approaches her."
+            episode: 4,
+            title: "Ticket to the World",
+            absoluteEpisode: 55,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/4/w780.jpg",
+            duration: "24m",
+            overview: "At a qualifying tournament to select representatives for the Beyblade World Championships, Gingka finds that he is already on the team and is not required to battle."
           },
           {
-            "episode": 5,
-            "title": "Guns and Swords",
-            "absoluteEpisode": 30,
-            "airDate": "2014-08-02",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/oJ9RjaDYoyky1neZvAWQRZLPA9E.jpg",
-            "duration": "23m",
-            "overview": "To register for BoB, Kirito starts entering the required information into a terminal, but is astounded to see that the form includes columns for his real-world name and address. He is temporarily torn when he realizes that without this info, he won't be eligible for the top prizes..."
+            episode: 5,
+            title: "Final Battle! Leone VS Eagle",
+            absoluteEpisode: 56,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/5/w780.jpg",
+            duration: "24m",
+            overview: "At a qualifying match for the final spot on Team Japan for the Beyblade World Championships, Kyoya and Rock Leone face off against Tsubasa and Earth Eagle. The battle is hard fought, but Kyoya emerges the victor."
           },
           {
-            "episode": 6,
-            "title": "Showdown in the Wilderness",
-            "absoluteEpisode": 31,
-            "airDate": "2014-08-09",
-            "rating": 6.8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/5Q0KetmCeYoWSimDuRp5aQ1jWEJ.jpg",
-            "duration": "23m",
-            "overview": "A man in a beat-up cloak watches Kirito fight his first battle and demands to know if he's \"the real thing\".  The man has the tattoo of Laughing Coffin, a murderer's guild that existed within SAO.  He tells Kirito that he'll kill him someday, and vanishes."
+            episode: 6,
+            title: "Soar Into the the World",
+            absoluteEpisode: 57,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/6/w780.jpg",
+            duration: "24m",
+            overview: "Since Kyoya has refused to join Team Japan for the Beyblade World Championships, a battle is arranged between Yu and Tsubasa to decide who will be the final Regular Member."
           },
           {
-            "episode": 7,
-            "title": "Crimson Memories",
-            "absoluteEpisode": 32,
-            "airDate": "2014-08-16",
-            "rating": 6.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/4Woe1gkRDZtZztJu1Spai6dUqDU.jpg",
-            "duration": "23m",
-            "overview": "The man in the ragged cloak is an SAO survivor, and he might also be a player Kirito fought with to the death... This thought consumes Kirito, and his anguish is palpable - to the point that it worries Suguha."
+            episode: 7,
+            title: "The Beylin Temple in the Sky",
+            absoluteEpisode: 58,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/7/w780.jpg",
+            duration: "24m",
+            overview: "Team Japan arrives in China and is invited to their opponents’ practice facility, the Beylin Temple to observe their training rituals."
           },
           {
-            "episode": 8,
-            "title": "Bullet of Bullets",
-            "absoluteEpisode": 33,
-            "airDate": "2014-08-23",
-            "rating": 6.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/3htNh1oP2IZjXTf2ej2H4ZynxKW.jpg",
-            "duration": "23m",
-            "overview": "Kirito decides that Death Gun and the man in the cape will be appearing in BoB.  He uses the remaining time to exchange information with Sinon and find out more about the contestants.  Sinon sees how strange he was acting during the qualifier and asks him what happened.  She learns that he is a SAO survivor.  The main BoB tournament begins and 30 players are dropped in a 10km wide field."
+            episode: 8,
+            title: "The Third Man",
+            absoluteEpisode: 59,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/8/w780.jpg",
+            duration: "24m",
+            overview: "Madoka and Gingka visit the opposing team’s training camp to find out who the third blader is. Masamune stumbles on this third blader himself – “Chaoxin”, a flashy blader in it for the glory of his fans."
           },
           {
-            "episode": 9,
-            "title": "Death Gun",
-            "absoluteEpisode": 34,
-            "airDate": "2014-08-30",
-            "rating": 7.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ueDp5eL3maMX8ZzTcHUcOeccnbv.jpg",
-            "duration": "23m",
-            "overview": "The man in the cape shoots Pale Rider and he is eliminated despite the fact that he has HP remaining.  The man says that he is Death Gun, and declares that he will bring true death.  Asuna and her friends are watching a live stream of BoB and realize that Death Gun is one of the leaders of Laughing Coffin."
+            episode: 9,
+            title: "The World Championships Begin!",
+            absoluteEpisode: 60,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/9/w780.jpg",
+            duration: "24m",
+            overview: "After his loss to Chaoxin, Masamune begins hard bey training in the wilderness, where he meets a little old man. The mysterious old man repays a meal that Masamune gives him with some unique training that restores Masamune’s confidence."
           },
           {
-            "episode": 10,
-            "title": "Death Chaser",
-            "absoluteEpisode": 35,
-            "airDate": "2014-09-06",
-            "rating": 6.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/vs3DpifrmbTGuEEzLDSXAqlhAtS.jpg",
-            "duration": "23m",
-            "overview": "Sinon is attacked from behind by Death Gun and paralyzed. He's using a Black Star Type-54, ironically the same gun that Sinon used to shoot the robber. Her memories of the incident come flooding back and Sinon loses control, and Death Gun tries to kill her to make Kirito angry. But just before he can kill her Kirito saves her at the last second. Sinon is out of the fight, and Kirito tries to flee with her but is pursued by Death Gun."
+            episode: 10,
+            title: "Lacerta's Will",
+            absoluteEpisode: 61,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/10/w780.jpg",
+            duration: "24m",
+            overview: "In a heated battle, Chiyun taunts Tsubasa relentlessly about his rigid battling style."
           },
           {
-            "episode": 11,
-            "title": "What It Means To Be Strong",
-            "absoluteEpisode": 36,
-            "airDate": "2014-09-13",
-            "rating": 6.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/chqwmSxOydZpXiad2BMCsYrtUK0.jpg",
-            "duration": "23m",
-            "overview": "After escaping from Death Gun, Kirito and Sinon lay low in a desert cave. There, Kirito speculates on how Death Gun murdered other players. In doing so, he hits upon a certain terrifying possibility."
+            episode: 11,
+            title: "The 4000 Year Old Secret",
+            absoluteEpisode: 62,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/11/w780.jpg",
+            duration: "24m",
+            overview: "The third and deciding battle of the first round of the Beyblade World Championships features Dashan against Gingka."
           },
           {
-            "episode": 12,
-            "title": "Bullet of a Phantom",
-            "absoluteEpisode": 37,
-            "airDate": "2014-09-20",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/fH9uKZtzgbsTcIUcjlSOuNCVIoM.jpg",
-            "duration": "23m",
-            "overview": "BoB nears its end, and the only surviving players are Kirito, Sinon, and Dark Wind, the second place winner of the last tournament.  Since Death Gun may have multiple partners, and Dark Wind may be in danger as well, Kirito decides to defeat him first.  He acts as a decoy while Sinon snipes the enemy.  Kirito's trust in her pays off as her bullet strikes true, and he finally faces off with Death Gun."
+            episode: 12,
+            title: "The Bey with a Hero's Name",
+            absoluteEpisode: 63,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/12/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and the team travel abroad where they watch Team Desert Blaze do battle with Team Excalibur from the EU."
           },
           {
-            "episode": 13,
-            "title": "Phantom Bullet",
-            "absoluteEpisode": 38,
-            "airDate": "2014-09-27",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/rZCPOKK3iWsROkGe66IideIFYSl.jpg",
-            "duration": "23m",
-            "overview": "Death Gun's attack is modeled after Star Splash, a SAO skill that doesn't exist in GGO.  Death Gun is skilled with not only a gun but a blade as well, and he gradually wears down Kirito's health.  Meanwhile, Sinon's scope has been destroyed by Death Gun and she cannot attack, so she's forced to simply watch the fight.  She grits her teeth and wonders if there's anything else she can do."
+            episode: 13,
+            title: "The Wintry Land of Russia",
+            absoluteEpisode: 64,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/13/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and the rest of Team Gangan Galaxy travel by train to Russia to meet their next opponents in the Beyblade World Championships."
           },
           {
-            "episode": 14,
-            "title": "One Little Step",
-            "absoluteEpisode": 39,
-            "airDate": "2014-10-04",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/tMF65VcMIJiUBaJnb0Flq6CZroz.jpg",
-            "duration": "23m",
-            "overview": "Kyouji attacks Shino, saying he'll kill himself after she's dead. Kazuto saves her at the last second by jumping Kyouji.  During the fight, Kazuto is hit with Kyouji's poison syringe, but miraculously it doesn't work and Kirito is saved.  The next day Kazuto and Shino go to meet Kikuoka, and discuss the incident.  Kikuoka has a message from one of the captured Death Guns..."
+            episode: 14,
+            title: "How Grand! The Cage Match",
+            absoluteEpisode: 65,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/14/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his team battle their next opponents in the Beyblade World Championships, the Russian Team, Lovushka. Masamune meanwhile is lost in the countryside, having been tricked into taking a different train than his teammates."
           },
           {
-            "episode": 15,
-            "title": "The Queen of the Lake",
-            "absoluteEpisode": 40,
-            "airDate": "2014-10-18",
-            "rating": 6.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/2e9oCP375GrV99oioySGjl5CVz0.jpg",
-            "duration": "23m",
-            "overview": "It's reported that the Holy Sword Excalibur has been discovered inside ALO. Hearing the news, Kirito and Leafa decide to take possession of Excalibur before other players get to it first."
+            episode: 15,
+            title: "Libra Departs for the Front!",
+            absoluteEpisode: 66,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/15/w780.jpg",
+            duration: "24m",
+            overview: "With Masamune still missing, Yu must take his place in the next battle against Aleksey. Anton and Aleksey have rigged the stadium to emit sound waves that disable Flame Libra’s Special Move, but Yu outsmarts them and claims victory for Team Gangan Galaxy."
           },
           {
-            "episode": 16,
-            "title": "The King of the Giants",
-            "absoluteEpisode": 41,
-            "airDate": "2014-10-25",
-            "rating": 6.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/mYSSD9v7EGqPYOapdbIuNSUkcoA.jpg",
-            "duration": "23m",
-            "overview": "Kirito and the others are tasked with subjugating the Frost King Thrymr, and a quest to recover Excalibur. It's Yui's guess that this isn't a quest planned by the game admins, but something automatically generated by the system. And if that's the case…"
+            episode: 16,
+            title: "The Festival of Warriors",
+            absoluteEpisode: 67,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/16/w780.jpg",
+            duration: "24m",
+            overview: "The bladers find themselves in Greece where they must battle the European Union, aka Team Excalibur."
           },
           {
-            "episode": 17,
-            "title": "Excalibur",
-            "absoluteEpisode": 42,
-            "airDate": "2014-11-01",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/vIqsyFzN4IPJF0xTbmfB3hIYK7d.jpg",
-            "duration": "23m",
-            "overview": "Kirito and the others are taking on Thrymr, the Boss lurking at the bottom level of the dungeon. But unable to make much of a dent in Thrymr's HP, they soon find themselves in grave danger. Just then, their new ally, Freyja, raises her voice…"
+            episode: 17,
+            title: "We Meet Again! Wang Hu Zhong",
+            absoluteEpisode: 68,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/17/w780.jpg",
+            duration: "24m",
+            overview: "Gingka, Masamune, Tsubasa and Yu try to work on their teamwork skills, but end up quarrelling even more than usual. This leads to Madoka threatening to disband Team Gangan Galaxy."
           },
           {
-            "episode": 18,
-            "title": "Forest House",
-            "absoluteEpisode": 43,
-            "airDate": "2014-11-08",
-            "rating": 6.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/9AVzrSS0syPcLXakRPROGF2REOA.jpg",
-            "duration": "23m",
-            "overview": "In an upcoming update of ALO, Floors 21-30 of New Aincrad will be unlocked. Asuna, Kirito and Yui revisit their dream of once again living together in their log cabin on Floor 22."
+            episode: 18,
+            title: "The Scorching Hot Lion",
+            absoluteEpisode: 69,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/18/w780.jpg",
+            duration: "24m",
+            overview: "Kyoya travels to a country named Savannah to take part in a tournament that will allow him to attend the Beyblade World Championships if he finishes in the top three."
           },
           {
-            "episode": 19,
-            "title": "Zekken",
-            "absoluteEpisode": 44,
-            "airDate": "2014-11-15",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/hQZ4OVlfnc1tp1EZrysc7XiA29r.jpg",
-            "duration": "23m",
-            "overview": "Hearing rumors about a brilliant player known as Zekken, Asuna decides to mount a challenge. But when Asuna logs out, she is told by her mother to take an exam to transfer into an academically oriented high school."
+            episode: 19,
+            title: "The Shocking Wild Fang",
+            absoluteEpisode: 70,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/19/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and the rest of Team Gangan Galaxy travel to India to watch India’s Team Chandora do battle with Africa’s Team Wild Fang. Wild Fang wins, but their leader, Kyoya, seems more interested in informing Gingka that his mission in life is to defeat him."
           },
           {
-            "episode": 20,
-            "title": "The Sleeping Knights",
-            "absoluteEpisode": 45,
-            "airDate": "2014-11-22",
-            "rating": 6.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/1qwzt6MCPEDZxBbY1DIG8rcOqyp.jpg",
-            "duration": "23m",
-            "overview": "Asuna is asked to help the guild “Sleeping Knights,” which has decided to disband soon due to the members’ circumstances. Before they do, they want to defeat a Floor Boss with only their party."
+            episode: 20,
+            title: "Horuseus VS Striker",
+            absoluteEpisode: 71,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/20/w780.jpg",
+            duration: "24m",
+            overview: "The Beyblade World Championships have returned to Japan, where everyone is excited to watch Gingka battle Kyoya. However, when a restless Masamune challenges Nile, he finds that bravado does not always work, as Nile sends him down to defeat."
           },
           {
-            "episode": 21,
-            "title": "The Monument of Swordsmen",
-            "absoluteEpisode": 46,
-            "airDate": "2014-11-29",
-            "rating": 6.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ifdlJmiQmUelFhTDvl56ur4QpyP.jpg",
-            "duration": "23m",
-            "overview": "Asuna and the Sleeping Knights’ attempt to defeat the boss on Floor 27 has been observed by a guild specializing in boss raids. Now 20 of its members block the boss room.  With Kirito stalling the rest of the guild, can Asuna and the others break through?"
+            episode: 21,
+            title: "Eternal Rivals",
+            absoluteEpisode: 72,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/21/w780.jpg",
+            duration: "24m",
+            overview: "The long awaited rematch between Gingka and Kyoya has finally arrived and their battle is of epic proportions. In the end, their skills are so evenly matched that the two rivals knock each other unconscious and both beys stop spinning simultaneously."
           },
           {
-            "episode": 22,
-            "title": "The End of the Journey",
-            "absoluteEpisode": 47,
-            "airDate": "2014-12-06",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/lwKmF4mpen4czxhWoUDEfJCrbSm.jpg",
-            "duration": "23m",
-            "overview": "A few days have passed since Yuuki suddenly disappeared from in front of Asuna, and she still hasn’t logged in to ALO. Later, Asuna meets Kazuto on the school roof, where he hands her a note and tells her Yuuki might be at the location written on it."
+            episode: 22,
+            title: "The Third Match: On The Edge",
+            absoluteEpisode: 73,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/22/w780.jpg",
+            duration: "24m",
+            overview: "The third and tie breaking match between Gangan Galaxy and Wild Fang takes the form of a team battle with Yu and Tsubasa facing Benkei and Damoure."
           },
           {
-            "episode": 23,
-            "title": "The Dream Begins",
-            "absoluteEpisode": 48,
-            "airDate": "2014-12-13",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/elqZmxx3KnUFRvzeXJ1Z1iMeABE.jpg",
-            "duration": "23m",
-            "overview": "As a tester for the world’s first medical-use Full-Dive device, Yuuki has been diving into virtual worlds from the hospital. Unable to leave her hospital room, she longs to go to school again. To make that wish come true, Asuna asks Kazuto for help…"
+            episode: 23,
+            title: "The End Of A Fierce Struggle!",
+            absoluteEpisode: 74,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/23/w780.jpg",
+            duration: "24m",
+            overview: "With Team Gangan Galaxy tied with Team Wild Fang, a fourth and final team battle is set to determine a winner."
           },
           {
-            "episode": 24,
-            "title": "Mother's Rosario",
-            "absoluteEpisode": 49,
-            "airDate": "2014-12-20",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/gt2yB4qmF96FQHSwbBEuYwTUon1.jpg",
-            "duration": "23m",
-            "overview": "Getting to experience the outside world, Yuuki’s days are more satisfactory than ever before. In ALO, the players have a barbecue and end up on a quest. In the real world, Asuna and the girls take a trip to Kyoto. One day, Asuna receives an email…"
+            episode: 24,
+            title: "The Creeping Darkness",
+            absoluteEpisode: 75,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/24/w780.jpg",
+            duration: "24m",
+            overview: "Team Gangan Galaxy are in shock as they learn that their teammate Tsubasa has been infected by a dark power. Meanwhile, the first battle for a spot in the finals between Excalibur and Wang Hu Zhong is won by Wales and Sophie of the EU team."
+          },
+          {
+            episode: 25,
+            title: "The Axe Of Destruction",
+            absoluteEpisode: 76,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/25/w780.jpg",
+            duration: "24m",
+            overview: "Chiyun battles Klaus in an elimination bout and despite his best efforts, Chiyun loses and Wang Hu Zhong are eliminated from the tournament. Meanwhile, Hyoma finds Ryuga."
+          },
+          {
+            episode: 26,
+            title: "The Dragon Emperor Returns",
+            absoluteEpisode: 77,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/26/w780.jpg",
+            duration: "24m",
+            overview: "Julian Konzern and Team Excalibur return to Italy, where Konzern is surprised to be challenged to a battle by Tsubasa. The battle is interrupted by the unexpected appearance of Ryuga and his new bey, Meteo L-Drago."
+          },
+          {
+            episode: 27,
+            title: "Exceed The Limit!",
+            absoluteEpisode: 78,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/27/w780.jpg",
+            duration: "24m",
+            overview: "Team Gangan Galaxy travels to Italy for the tournament finals, where Masamune loses his match to Klaus of Team Excalibur. Gingka meanwhile battles his oldest rival, Ryuga."
+          },
+          {
+            episode: 28,
+            title: "Dark Eagle",
+            absoluteEpisode: 79,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/28/w780.jpg",
+            duration: "24m",
+            overview: "Tsubasa and Yu battle Wales and Sophie in the finals, with Tsubasa defeating both his own dark side and the opponents to claim victory. Gingka meanwhile receives valuable advice from Ryuga."
+          },
+          {
+            episode: 29,
+            title: "Gravity Destroyer",
+            absoluteEpisode: 80,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/29/w780.jpg",
+            duration: "24m",
+            overview: "Julian Konzern and Gingka meet in the final and deciding battle for the A Block of the Beyblade World Championships. In a close match, Gingka’s Galaxy Pegasus defeats Konzern’s Gravity Destroyer."
+          },
+          {
+            episode: 30,
+            title: "The Midday Street Battle",
+            absoluteEpisode: 81,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/30/w780.jpg",
+            duration: "24m",
+            overview: "Team Gangan Galaxy arrives in Brazil for the Finals of The Beyblade World Championships. Trouble ensues when Yu ventures off on his own to gather information about their opponents."
+          },
+          {
+            episode: 31,
+            title: "Brazilian Trap",
+            absoluteEpisode: 82,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/31/w780.jpg",
+            duration: "24m",
+            overview: "Yu recovers from his injuries in time to battle Enso Garcia in the first match of the finals, but he and his damaged Libra lose. Masamune defeats Enso in the next match, but then loses to Enso’s sister, Selen."
+          },
+          {
+            episode: 32,
+            title: "The Explosive Cyclone Battle!",
+            absoluteEpisode: 83,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/32/w780.jpg",
+            duration: "24m",
+            overview: "Gingka battles Selen and she surprises him by conceding the battle after managing to drain much of Pegasus’s power in the process. In the next match, Gingka defeats Ian to give his team the lead, only to lose to Argo and the teams are tied again."
+          },
+          {
+            episode: 33,
+            title: "Charge! Ray Gil",
+            absoluteEpisode: 84,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/33/w780.jpg",
+            duration: "24m",
+            overview: "Tsubasa and Argo battle to see which of their teams will advance to the finals of the Beyblade World Championships. Argo starts strong but Tsubasa refuses to quit and he wins in the end."
+          },
+          {
+            episode: 34,
+            title: "My Friend's Name is Zeo",
+            absoluteEpisode: 85,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/34/w780.jpg",
+            duration: "24m",
+            overview: "Team Gangan Galaxy arrives in the USA to watch the next matches in the Beyblade World Championships. Masamune meets old friends, and battles one, but they call it a draw and vow to fight another day."
+          },
+          {
+            episode: 35,
+            title: "Our Slogan Is Number 1",
+            absoluteEpisode: 86,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/35/w780.jpg",
+            duration: "24m",
+            overview: "Masamune finds his old friend Toby and through flashback we learn that they made a pact long ago to become the number one bladers in the world."
+          },
+          {
+            episode: 36,
+            title: "The Plot Thickens",
+            absoluteEpisode: 87,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/36/w780.jpg",
+            duration: "24m",
+            overview: "As Gingka and the rest of Gangan Galaxy visit the Dungeon Gym, Zeo battles Ryuga at HD Academy. Ryuga wins and Dr. Ziggurat tells him his plan for world domination."
+          },
+          {
+            episode: 37,
+            title: "The Compass of Fate: Byxis",
+            absoluteEpisode: 88,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/37/w780.jpg",
+            duration: "24m",
+            overview: "Zeo undergoes the “Arrangement” process at Dr. Ziggurat’s lab, and then challenges Masamune to a battle. The battle ends when Damian arrives and he destroys Tsubasa and Yu’s blades and leaves the two bladers unconscious."
+          },
+          {
+            episode: 38,
+            title: "The Wicked Peacock: Befall",
+            absoluteEpisode: 89,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/38/w780.jpg",
+            duration: "24m",
+            overview: "With Tsubasa and Yu in the hospital, the rest of Gangan Galaxy attends a match between Team Excalibur and Team Star Breaker."
+          },
+          {
+            episode: 39,
+            title: "The Guard Dog of Hades: Kerbecs",
+            absoluteEpisode: 90,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/39/w780.jpg",
+            duration: "24m",
+            overview: "Julian Konzern of Team Excalibur battles Damian Heart of Team Star Breaker. Damian challenges Julian to a best two out of three match. Julian accepts but is defeated twice in a row."
+          },
+          {
+            episode: 40,
+            title: "The Furious DJ Battle!?",
+            absoluteEpisode: 91,
+            rating: 8.2,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/40/w780.jpg",
+            duration: "24m",
+            overview: "Gangan Galaxy tries to pick a replacement member for the Final Battle, but Kenta, Team Wang Hu Zhong and Ryo are all disqualified. Blader DJ and the American DJ battle to see who will announce the final match, but their battle ends in a tie..."
+          },
+          {
+            episode: 41,
+            title: "The Final Countdown",
+            absoluteEpisode: 92,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/41/w780.jpg",
+            duration: "24m",
+            overview: "The final matches of the Beyblade World Championships begin and Zeo of Team Star Breaker battles Masamune of Team Gangan Galaxy. Dr. Ziggurat tells Zeo that if he loses, his friend Toby’s medical treatments will be discontinued."
+          },
+          {
+            episode: 42,
+            title: "The Dragon Emperor Descends",
+            absoluteEpisode: 93,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/42/w780.jpg",
+            duration: "24m",
+            overview: "Gingka is ready to face Jack in the second battle of the final round of the Beyblade World Championships but Ryuga suprises everyone when he shows up to take his place. Ryuga uses L-Drago to defeat Jack’s Befall to even the match between Team Gangan Galax.\r\n"
+          },
+          {
+            episode: 43,
+            title: "Last Battle of the Spirit",
+            absoluteEpisode: 94,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/43/w780.jpg",
+            duration: "24m",
+            overview: "Ryo tells Team Gangan Galaxy that the US team, Star Breaker, consists of members that have artificially enhanced by Dr. Ziggurat. Damian and Gingka begin the final battle of the World Championships."
+          },
+          {
+            episode: 44,
+            title: "Showdown! Gingka vs. Damian",
+            absoluteEpisode: 95,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/44/w780.jpg",
+            duration: "24m",
+            overview: "Gingka battles Damian in the final battle as the Beyblade World Championships continues. Damian’s Kerbecs starts strong, but Gingka’s Pegasus rallies and defeats them and Team Gangan Galaxy become champions."
+          },
+          {
+            episode: 45,
+            title: "A Milagrosa Força Espiral",
+            absoluteEpisode: 96,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/45/w780.jpg",
+            duration: "24m",
+            overview: "The victory party for Team Gangan Galaxy is crashed by Doctor Ziggurat and a group of disgraced bladers who corner Gingka and his friends. Ziggurat demonstrates the power of his bey-based weapon called Spiral Force, which destroys part of the countryside."
+          },
+          {
+            episode: 46,
+            title: "Charge! Hades City",
+            absoluteEpisode: 97,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/46/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his friends decide to go after Dr. Ziggurat, but they encounter Ziggurat’s minions who use their beys to try and stop their progress. Gingka and his friends prevail, and a small group actually makes it aboard Ziggurat’s Hades City..."
+          },
+          {
+            episode: 47,
+            title: "The Fallen Emperor",
+            absoluteEpisode: 98,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/47/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his friends try to rescue Toby from the clutches of Dr. Ziggurat but are blocked by Julian Konzern. Wales and Sophie clear the way by battling their former partner, Julian, but they lose. Dashan then battles and defeats Julian..."
+          },
+          {
+            episode: 48,
+            title: "Befall`s Trap",
+            absoluteEpisode: 99,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/48/w780.jpg",
+            duration: "24m",
+            overview: "While Gingka, Masamune and Kyoya try to find Toby in Hades City, Tsubasa is challenged to a battle by Jack. Tsubasa defeats Jack, and Yu destroys Jack’s Arrangement Chamber."
+          },
+          {
+            episode: 49,
+            title: "The Wild Beast Unleashed",
+            absoluteEpisode: 100,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/49/w780.jpg",
+            duration: "24m",
+            overview: "While Masamune and Gingka try to reach the Spiral Core and Toby, Kyoya battles Damian. Kyoya defeats Damian just as Dr. Ziggurat warns the world that he intends on selling his invention, Spiral Force, to the highest bidder."
+          },
+          {
+            episode: 50,
+            title: "Rampage! Tempo",
+            absoluteEpisode: 101,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/50/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and Masamune battle Faust at the Spiral Core. Faust’s bey, Twisted Tempo, actually sends them to another time and space with a Special Move. Ryuga intervenes by launching L-Drago at Hades City, which damages the Spiral Core."
+          },
+          {
+            episode: 51,
+            title: "Galaxy Heart",
+            absoluteEpisode: 102,
+            thumbnail: "https://episodes.metahub.space/tt1674928/2/51/w780.jpg",
+            duration: "24m",
+            overview: "While Gingka tries to use Pegasus to absorb the excess energy at the Hades City reactor, Masamune finds he must battle Faust again. It is only when Masamune’s old friend Zeo arrives to join the battle..."
           }
         ]
       },
       {
-        "season": 3,
-        "episodes": [
+        season: 3,
+        episodes: [
           {
-            "episode": 1,
-            "title": "Underworld",
-            "absoluteEpisode": 50,
-            "airDate": "2018-10-07",
-            "rating": 7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/4FpuWImV6U6SuYT8QY0SQ4LZWGa.jpg",
-            "duration": "47m",
-            "overview": "Kirito, along with his childhood friend, Eugeo, has been tasked with cutting down a colossal tree called the Gigas Cedar. They’re swinging their ax when their friend Alice arrives with lunch. As they eat, the three friends decide to go to a fabled cave."
+            episode: 1,
+            title: "Fragment of the Star",
+            absoluteEpisode: 103,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/1/w780.jpg",
+            duration: "24m",
+            overview: "When a star falls from the sky, a young blader named Yuki is waiting for it. He immediately sets out to find Gingka, but this proves difficult as Gingka has been lured into a battle on an island against his old rival Kyoya."
           },
           {
-            "episode": 2,
-            "title": "The Demon Tree",
-            "absoluteEpisode": 51,
-            "airDate": "2018-10-14",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/vklSxL0fGZsZeMf2JSnlE5CWHZS.jpg",
-            "duration": "23m",
-            "overview": "Kirito wakes up to find himself inside a mysterious world evoking a fantasy game. His memory fuzzy, he tries to log out, but is unable to return to the real world. After wandering aimlessly, he finds himself underneath a colossal tree."
+            episode: 2,
+            title: "Legendary Bladers",
+            absoluteEpisode: 104,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/2/w780.jpg",
+            duration: "24m",
+            overview: "Yuki battles with a dark character named Johannes, but Gingka arrives and sends Johannes packing. Yuki tells the gang the story of a recently fallen star that has chosen certain bladers to be known as Legendary Bladers.\r\n"
           },
           {
-            "episode": 3,
-            "title": "The End Mountains",
-            "absoluteEpisode": 52,
-            "airDate": "2018-10-21",
-            "rating": 7.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/yubH2VEg4HfRBfxL38uPc0elJv4.jpg",
-            "duration": "23m",
-            "overview": "Kirito makes up his mind to journey to Centoria. Since he'll need Eugeo's help, he also decides to fell the Gigas Cedar. Meanwhile, Alice's little sister, Selka is worried about Eugeo, and opens up to Kirito about her concerns."
+            episode: 3,
+            title: "The Monster Cat, Lynx",
+            absoluteEpisode: 105,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/3/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his friends are about to start their quest to find the 8 Legendary Bladers, but they run into Johannes and a battle ensues. Things look bad for Gingka until Kyoya arrives and joins the battle, driving Johannes off."
           },
           {
-            "episode": 4,
-            "title": "Departure",
-            "absoluteEpisode": 53,
-            "airDate": "2018-10-28",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/oGEAEJX0UOf00N37rP04iApymsR.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Eugeo realize Selka has taken off to the End Mountains alone, and decide to chase after her. As they enter the cave, they encounter goblins, presumably from the Dark Territory, and must engage in a battle."
+            episode: 4,
+            title: "L-Drago Destructor",
+            absoluteEpisode: 106,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/4/w780.jpg",
+            duration: "24m",
+            overview: "While Gingka and the gang try to make friends, Benkei and Kyoya meet Ryuga at the top of a volcano and Kyoya challenges Ryuga to a bey battle. Ryuga tells Kyoya that he should not be battling, that he doesn’t even know his bey yet."
           },
           {
-            "episode": 5,
-            "title": "Ocean Turtle",
-            "absoluteEpisode": 54,
-            "airDate": "2018-11-04",
-            "rating": 6.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/jq0Q41YWgV3ZcOzG17N2mHVuLkA.jpg",
-            "duration": "23m",
-            "overview": "In the real world, Kazuto Kirigaya lies unconscious. At Kikuoka’s request, Kazuto is moved to a well-equipped hospital, but when Asuna and Suguha try to visit, they’re turned away. Suspicious, Asuna and the others split up to find out more about Rath."
+            episode: 5,
+            title: "Awaken, Anubis!",
+            absoluteEpisode: 107,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/5/w780.jpg",
+            duration: "24m",
+            overview: "After Ryuga defeats Kyoya, Gingka challenges him to a bey battle, but Ryuga quickly defeats him too. Yuki challenges him to yet another battle but his bey, Mercury Anubius, is battered again and again by Ryuga’s L-Drago Destructor."
           },
           {
-            "episode": 6,
-            "title": "Project Alicization",
-            "absoluteEpisode": 55,
-            "airDate": "2018-11-11",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/xXZahtMZSkjhBvu5NrIY2KEA2bN.jpg",
-            "duration": "23m",
-            "overview": "Asuna infiltrates Rath, the research lab in the Ocean Turtle, where she relentlessly grills Kikuoka about Kazuto's whereabouts. Kikuoka reveals that behind the development of the Soul Translator is a mind-blowing objective of epic scale."
+            episode: 6,
+            title: "Requirements of a Warrior",
+            absoluteEpisode: 108,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/6/w780.jpg",
+            duration: "24m",
+            overview: "When a volcano erupts, Gingka, Yuki and Kyoya change the course of the lava by using their beys and save the village. They leave the island but are shocked when Kenta announces that he is heading out on his own."
           },
           {
-            "episode": 7,
-            "title": "Swordcraft Academy",
-            "absoluteEpisode": 56,
-            "airDate": "2018-11-18",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/mXyRnt3o7BBIb3esUrbiW1ZZ5cy.jpg",
-            "duration": "23m",
-            "overview": "Two years have gone by since Kirito and Eugeo left Rulid Village. In the capital city, Centoria, both boys have attained their goal of being admitted to the North Centoria Imperial Swordcraft Academy."
+            episode: 7,
+            title: "Kenta's Determination",
+            absoluteEpisode: 109,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/7/w780.jpg",
+            duration: "24m",
+            overview: "Kenta travels to a remote desert town where he competes against Ryuga in a tournament but loses. He then follows Ryuga on a difficult cross country trek, trying to convince Ryuga that he should lend his strength as a Legendary Blader to Gingka and the others."
           },
           {
-            "episode": 8,
-            "title": "Swordsman's Pride",
-            "absoluteEpisode": 57,
-            "airDate": "2018-11-25",
-            "rating": 8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/cDMMjmPqU3Bx6CdQLkobJMT1tCJ.jpg",
-            "duration": "23m",
-            "overview": "Kirito finds himself in a duel against the Elite Disciple Volo Levantein, using real swords. As the curious crowd looks on, Kirito is encouraged by Sortiliena, and the duel begins."
+            episode: 8,
+            title: "The Crimson Flash",
+            absoluteEpisode: 110,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/8/w780.jpg",
+            duration: "24m",
+            overview: "Johannes breaks into Beylin Temple and is confronted by Gingka and his friends. Dashan engages the intruder in a bey battle but Johannes quits, claiming that Dashan is not a Legendary Blader and not worth his time."
           },
           {
-            "episode": 9,
-            "title": "Nobleman's Obligations",
-            "absoluteEpisode": 58,
-            "airDate": "2018-12-02",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/mVSRK03EZQVDkg6lpwDcFOSp4bp.jpg",
-            "duration": "23m",
-            "overview": "Now an Elite Disciple along with Kirito, Eugeo struggles with the question of what he should infuse in his sword so he can become stronger. When he's taunted by First-Seat Elite Disciple Raios and Second-Seat Humbert, Eugeo decides to accept Humbert's request for a duel."
+            episode: 9,
+            title: "The Greatest Tag-Team Tournament",
+            absoluteEpisode: 111,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/9/w780.jpg",
+            duration: "24m",
+            overview: "At the Tag Team Championship a series of battles occur in which Dashan and Chiyun are victorious as are Johannes and his new partner, Motty. When Yuki and Gingka challenge Mei-Mei and Chaoxin, Yuki suffers a serious lack of confidence and almost gives up."
           },
           {
-            "episode": 10,
-            "title": "Taboo Index",
-            "absoluteEpisode": 59,
-            "airDate": "2018-12-09",
-            "rating": 8.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/UB7mydlawxbobIxqWnV8lh1TcB.jpg",
-            "duration": "23m",
-            "overview": "Ronie and Tiese are late getting to the dorm. Kirito rushes out in search of them, but no sooner has he gone than Frenica appears. She tells Eugeo about how she's suffered at Humbert's hands, and that Tiese and Ronie went to confront him about it."
+            episode: 10,
+            title: "A New Roar!",
+            absoluteEpisode: 112,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/10/w780.jpg",
+            duration: "24m",
+            overview: "The Tag Team Tournament continues and the final four teams are determined. The team of Dashan and Chiyun win their match quickly, but Kyoya and Benkei have a long battle with Motty and Johannes. In the end Kyoya defeats Johannes to move on."
           },
           {
-            "episode": 11,
-            "title": "Central Cathedral",
-            "absoluteEpisode": 60,
-            "airDate": "2018-12-16",
-            "rating": 7.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/4ER3PIe7IZbHxXi1jAjcvEoGVaI.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Eugeo are now considered criminals for having violated the Taboo Index and are thrown into the underground prison in the Central Cathedral. Meanwhile, on the Ocean Turtle in the real world, Asuna is watching over Kazuto as he's being treated."
+            episode: 11,
+            title: "Cosmic Tornado",
+            absoluteEpisode: 113,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/11/w780.jpg",
+            duration: "24m",
+            overview: "In the second Round of the Tag Team tournament, Gingka and Yuki face Dashan and Chiyun in a mountain top stadium. Gingka and Yuki win when Gingka creates a new special move, Cosmic Tornado. Next up, it’s Beylin Fist against Kyoya and Benkei.4"
           },
           {
-            "episode": 12,
-            "title": "The Sage of the Library",
-            "absoluteEpisode": 61,
-            "airDate": "2018-12-23",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/hR3N6Kwr8zlAZgEq3d6OBSgh1L1.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Eugeo escape from their cell, only to find their way blocked by Eldrie Synthesis Thirty-One, under orders from Alice to lie in wait for them. Kirito and Eugeo struggle against him until Eugeo realizes that he's seen Eldrie somewhere before."
+            episode: 12,
+            title: "The God of Saturn, Kronos",
+            absoluteEpisode: 114,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/12/w780.jpg",
+            duration: "24m",
+            overview: "Ginka and Yuki travel to an ancient Bey Temple to battle Bao and Aguma of Beylin Fist in the final of the Toryumon Tag Team Tournament. The Beylin Fist team starts strong and soon has Gingka and Yuki in a tough spot."
           },
           {
-            "episode": 13,
-            "title": "Ruler and Mediator",
-            "absoluteEpisode": 62,
-            "airDate": "2019-01-06",
-            "rating": 7.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/coCo7uFYVrbpwi1hcuO1ZTgL6aQ.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Eugeo have been rescued by the young girl, Cardinal, who has secluded herself inside the Central Cathedral’s Great Library. Cardinal explains to Kirito how the Axiom Church and the Taboo Index came to be, starting with Administrator’s past."
+            episode: 13,
+            title: "Showdown at the Tower of Babel!",
+            absoluteEpisode: 115,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/13/w780.jpg",
+            duration: "24m",
+            overview: "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
           },
           {
-            "episode": 14,
-            "title": "The Crimson Knight",
-            "absoluteEpisode": 63,
-            "airDate": "2019-01-13",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/9SRBdXwI7kWxCqnjmivCRXbUSgT.jpg",
-            "duration": "23m",
-            "overview": "After being entrusted with the fate of the world by the Cardinal, Kirito and Eugeo head to the top floor of the Central Cathedral. On the way, they find their confiscated swords among a vast pile of weapons in an arsenal, only to be greeted with a hail of arrows by the Integrity Knight, Deusolbert Synthesis Seven."
+            episode: 14,
+            title: "The New Team Dungeon!",
+            absoluteEpisode: 116,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/14/w780.jpg",
+            duration: "24m",
+            overview: "Aguma and Bao follow Johannes to meet Pluto, who wants Beylin Fist to join him in his dark quest for power. Gingka and his friends travel to Greece where they meet Sophie, Wales, Julian and Klaus."
           },
           {
-            "episode": 15,
-            "title": "The Relentless Knight",
-            "absoluteEpisode": 64,
-            "airDate": "2019-01-20",
-            "rating": 7.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/gmHLaLAz9GyxSk3c6meRtHVZy3N.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Eugeo are on their way up the stairs of the Central Cathedral when they encounter two girls named Linel and Fizel. As they stand, wondering what two children are doing there, they let their guard down and..."
+            episode: 15,
+            title: "Destroyer Dome",
+            absoluteEpisode: 117,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/15/w780.jpg",
+            duration: "24m",
+            overview: "Masamune and his friends witness an argument amongst the Garcias before their match in the Destroyer Dome and it appears that the family is breaking apart."
           },
           {
-            "episode": 16,
-            "title": "The Osmanthus Knight",
-            "absoluteEpisode": 65,
-            "airDate": "2019-01-27",
-            "rating": 8.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/bjpJIJCdQE5KPUqntpQMaqUWzJ5.jpg",
-            "duration": "23m",
-            "overview": "Though riddled with wounds, Kirito manages to activate his Perfect Weapon Control art. Continuing on their way to the top floor of the Central Cathedral, Kirito and Eugeo find themselves standing before a strange-looking floating platform."
+            episode: 16,
+            title: "The New Striker is Complete!",
+            absoluteEpisode: 118,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/16/w780.jpg",
+            duration: "24m",
+            overview: "Masamune and his new bey, Blitz Striker, battle against some old foes and new ones in the Destroyer Dome."
           },
           {
-            "episode": 17,
-            "title": "Truce",
-            "absoluteEpisode": 66,
-            "airDate": "2019-02-03",
-            "rating": 8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/j2F6KagBjK81YW5zPeG83phCWzJ.jpg",
-            "duration": "23m",
-            "overview": "When Kirito and Alice both unleash the Perfect Weapon Control art in the Cloudtop Garden, the impact rips a hole into the seemingly impregnable Central Cathedral wall, which sends them both flying outside."
+            episode: 17,
+            title: "I Am The Champion!",
+            absoluteEpisode: 119,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/17/w780.jpg",
+            duration: "24m",
+            overview: "In the final of a battle royal in the Destroyer Dome, six bladers battle to see who will come out on top. The bladers, King, Jigsaw, Zeo, Toby, tsubasa and Masamune give it their all."
           },
           {
-            "episode": 18,
-            "title": "The Legendary Hero",
-            "absoluteEpisode": 67,
-            "airDate": "2019-02-10",
-            "rating": 8.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/gveaJc1HRJAIB0abGsOfoFN4doj.jpg",
-            "duration": "23m",
-            "overview": "Eugeo reaches the ninetieth floor of the Central Cathedral, which turns out to be a vast bathing area. The perplexed Eugeo encounters Bercouli Synthesis One soaking in the bath. Meanwhile, Kirito and Alice are still climbing the Central Cathedral wall."
+            episode: 18,
+            title: "The Maze of Mist Mountain",
+            absoluteEpisode: 120,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/18/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his friends travel to Africa in search of a Legendary Blader that they believe lives in a mysterious place called Mist Mountain. With their guides Nile and Damoure they climb the mountain and come to a maze that was built by an ancient people."
           },
           {
-            "episode": 19,
-            "title": "The Seal of the Right Eye",
-            "absoluteEpisode": 68,
-            "airDate": "2019-02-24",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/xbSBljqM4loFC7ZbKnItGFZSXD8.jpg",
-            "duration": "23m",
-            "overview": "Seeing Alice’s reaction when he mentioned the name Selka, Kirito decides to tell her the truth about the Integrity Knights. Meanwhile, after being knocked unconscious during his battle with Bercouli, Eugeo awakes on the top floor of the cathedral."
+            episode: 19,
+            title: "The Lion`s Pride",
+            absoluteEpisode: 121,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/19/w780.jpg",
+            duration: "24m",
+            overview: "Ryuto leads Gingka and his friends into a temple on Mist Mountain in search of a Star Fragment. They are unaware that they are being followed by Johannes and the bladers from Beylin Fist, who are also seeking the Fragment."
           },
           {
-            "episode": 20,
-            "title": "Synthesis",
-            "absoluteEpisode": 69,
-            "airDate": "2019-03-03",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/2PyE8uOVgjBvdp89fbamah6RFIs.jpg",
-            "duration": "23m",
-            "overview": "Kirito and Alice reach the communal bath on the nintieth floor. There, they find the Integrity Knight Commander, Bercouli, who's been turned to stone by Chudelkin. Alice breaks down in tears upon seeing her mentor's tragic plight, but then..."
+            episode: 20,
+            title: "The Guardian of the Temple, Dynamis",
+            absoluteEpisode: 122,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/20/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and the others reach a temple where they believe a star fragment lies but they cannot open a door that blocks their entrance."
           },
           {
-            "episode": 21,
-            "title": "The 32nd Knight",
-            "absoluteEpisode": 70,
-            "airDate": "2019-03-10",
-            "rating": 8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/hGFKKtPvmhA9AcPjCF2gsrlj2HV.jpg",
-            "duration": "23m",
-            "overview": "Standing in Kirito and Alice's way is Eugeo, who's undergone the Synthesis Ritual and become an Integrity Knight. Kirito is rattled, until Alice admonishes him into resolving to fight Eugeo with everything he's got."
+            episode: 21,
+            title: "The Legend of Nemesis`s Revival",
+            absoluteEpisode: 123,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/21/w780.jpg",
+            duration: "24m",
+            overview: "Gingka battles Dynamis the Guardian of the temple. Gingka seems to have chosen the wrong strategy, but admits that he was too caught up in being a legendary Blader and says that he should have been paying more attention."
           },
           {
-            "episode": 22,
-            "title": "Titan of the Sword",
-            "absoluteEpisode": 71,
-            "airDate": "2019-03-17",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/xTT4kEnlAjEPtep3i1ngPRp7adf.jpg",
-            "duration": "23m",
-            "overview": "On the top floor of the Central Cathedral, Kirito, Eugeo, and Alice finally face Administrator. But Chudelkin uses the sacred arts to transform himself into a giant clown and attacks."
+            episode: 22,
+            title: "The Four Season Bladers",
+            absoluteEpisode: 124,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/22/w780.jpg",
+            duration: "24m",
+            overview: "Dynamis tries to explain to Johannes and his followers that no matter what they do, the heavens will decide what will happen with the resurrection of Hades and Nemesis, not them. A battle ensues and every blader from each side joins in."
           },
           {
-            "episode": 23,
-            "title": "Administrator",
-            "absoluteEpisode": 72,
-            "airDate": "2019-03-24",
-            "rating": 7.3,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/i1umIkndL7ofm6eSMtO0oHJD51u.jpg",
-            "duration": "23m",
-            "overview": "Cardinal appears on the top floor of Central Cathedral for a showdown with her bitter foe of the last two hundred years. She moves to achieve her objective of deleting Administrator, only to see the fallen sword golem rise up again."
+            episode: 23,
+            title: "The Battle of Beyster Island",
+            absoluteEpisode: 125,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/23/w780.jpg",
+            duration: "24m",
+            overview: "Gingka and his friends arrive at Beyster Island where they have entered a tournament that has attracted a huge number of strong Bladers."
           },
           {
-            "episode": 24,
-            "title": "My Hero",
-            "absoluteEpisode": 73,
-            "airDate": "2019-03-31",
-            "rating": 8.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/3na4mgCr70jClF70lGEaG9xcYZz.jpg",
-            "duration": "23m",
-            "overview": "Carrying the hopes of Cardinal, Eugeo, and Alice in his heart, Kirito stands yet again and visualizes the Black Swordsman, the top player who cleared SAO. For the sake of everyone he’s encountered in this world, Kirito, faces off with Administrator."
+            episode: 24,
+            title: "Two Big, Fierce Battles!",
+            absoluteEpisode: 126,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/24/w780.jpg",
+            duration: "24m",
+            overview: "As the battle of Beyster Island continues, many more bladers are knocked out of the competition. Gingka catches up with Kenta only to find that he is his next opponent in the tournament."
+          },
+          {
+            episode: 25,
+            title: "The Unseen Opponent",
+            absoluteEpisode: 127,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/25/w780.jpg",
+            duration: "24m",
+            overview: "The Beyster Island Tournament continues as an unseen Blader defeats contestant after contestant through a series of ambushes. When the Blader defeats Zeo and Toby, Masamune swears he will avenge them in the final."
+          },
+          {
+            episode: 26,
+            title: "Orion`s Whereabouts",
+            absoluteEpisode: 128,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/26/w780.jpg",
+            duration: "24m",
+            overview: "Gingka asks Chris, the newest Legendary Blader, to join him in his fight against evil, but Chris says he will join whoever pays him the most. King is enraged by this and Chris’ mocking of Masamune so King challenges him to a battle."
+          },
+          {
+            episode: 27,
+            title: "The Lion in the Wilderness (1)",
+            absoluteEpisode: 129,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/27/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 28,
+            title: "The Lion in the Wilderness (2)",
+            absoluteEpisode: 130,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/28/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 29,
+            title: "The God of Venus, Quetzalcoatl (1)",
+            absoluteEpisode: 131,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/29/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 30,
+            title: "The God of Venus, Quetzalcoatl (2)",
+            absoluteEpisode: 132,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/30/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 31,
+            title: "The God of Destruction`s Revival!? (1)",
+            absoluteEpisode: 133,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/31/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 32,
+            title: "The God of Destruction`s Revival!? (2)",
+            absoluteEpisode: 134,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/32/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 33,
+            title: "The Child of Nemesis (1)",
+            absoluteEpisode: 135,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/33/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 34,
+            title: "The Child of Nemesis (2)",
+            absoluteEpisode: 136,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/34/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 35,
+            title: "Four Hearts (1)",
+            absoluteEpisode: 137,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/35/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 36,
+            title: "Four Hearts (2)",
+            absoluteEpisode: 138,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/36/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 37,
+            title: "Come Together, Legendary Bladers! (1)",
+            absoluteEpisode: 139,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/37/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 38,
+            title: "Come Together, Legendary Bladers! (2)",
+            absoluteEpisode: 140,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/38/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 39,
+            title: "Diablo Nemesis (1)",
+            absoluteEpisode: 141,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/39/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 40,
+            title: "Diablo Nemesis (2)",
+            absoluteEpisode: 142,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/40/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 41,
+            title: "To The Final Battle Ground (1)",
+            absoluteEpisode: 143,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/41/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 42,
+            title: "To The Final Battle Ground (2)",
+            absoluteEpisode: 144,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/42/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 43,
+            title: "The Lost Kingdom (1)",
+            absoluteEpisode: 145,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/43/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 44,
+            title: "The Lost Kingdom (2)",
+            absoluteEpisode: 146,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/44/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 45,
+            title: "The Missing Star of the Four Seasons (1)",
+            absoluteEpisode: 147,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/45/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 46,
+            title: "The Missing Star of the Four Seasons (2)",
+            absoluteEpisode: 148,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/46/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 47,
+            title: "Flash Sagittario (1)",
+            absoluteEpisode: 149,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/47/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 48,
+            title: "Flash Sagittario (2)",
+            absoluteEpisode: 150,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/48/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 49,
+            title: "Hades` Persistence",
+            absoluteEpisode: 151,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/49/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 50,
+            title: "Last Battle",
+            absoluteEpisode: 152,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/50/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 51,
+            title: "A Ray of Hope (1)",
+            absoluteEpisode: 153,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/51/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 52,
+            title: "A Ray of Hope (2)",
+            absoluteEpisode: 154,
+            thumbnail: "https://episodes.metahub.space/tt1674928/3/52/w780.jpg",
+            duration: "24m",
+            overview: ""
           }
         ]
       },
       {
-        "season": 4,
-        "episodes": [
+        season: 4,
+        episodes: [
           {
-            "episode": 1,
-            "title": "In the Far North",
-            "absoluteEpisode": 74,
-            "airDate": "2019-10-13",
-            "rating": 8.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/z8cL9agh1EQ91AF03afc1O73zmv.jpg",
-            "duration": "23m",
-            "overview": "Six months have passed since the fierce battle against Administrator. Alice has brought Kirito to her childhood home, Rulid Village, where they live peacefully. Gazing out at the world that she saved with Kirito, Alice reflects on all that’s happened."
+            episode: 1,
+            title: "A New Age Arrives! (1)",
+            absoluteEpisode: 155,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/1/w780.jpg",
+            duration: "24m",
+            overview: "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
           },
           {
-            "episode": 2,
-            "title": "Raids",
-            "absoluteEpisode": 75,
-            "airDate": "2019-10-20",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/oBgJg14AIUxX16x57fnxs0py6cq.jpg",
-            "duration": "23m",
-            "overview": "A force from the Dark Territory is attacking Rulid Village. Though she’d lost her purpose in battle, in order to fight for her family, and for the people that Kirito and Eugeo tried to protect, Alice takes up the Osmanthus Blade once again!"
+            episode: 2,
+            title: "A New Age Arrives! (2)",
+            absoluteEpisode: 156,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/2/w780.jpg",
+            duration: "24m",
+            overview: "It's been several years later since the battle with the God of Destruction. Beyblade has entered a new era. Meanwhile, new Blader, Zero Kurogane goes on a training pilgrimage with his Beyblade, \"Samurai Ifraid\"."
           },
           {
-            "episode": 3,
-            "title": "The Final Load Test",
-            "absoluteEpisode": 76,
-            "airDate": "2019-10-27",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ps9zaKiZOSBYi5l3gWUnh2UGGuc.jpg",
-            "duration": "23m",
-            "overview": "The mysterious group that attacked the Ocean Turtle turns out to be a secret unit under orders from the U.S. National Security Agency. And its leader, Gabriel, has battled Kirito and Sinon before."
+            episode: 3,
+            title: "Defeat Pirate Orochi! (1)",
+            absoluteEpisode: 157,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/3/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 4,
-            "title": "Dark Territory",
-            "absoluteEpisode": 77,
-            "airDate": "2019-11-03",
-            "rating": 7.6,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/3uewQSR2HLDr9WsuMWGNlwnzhDG.jpg",
-            "duration": "23m",
-            "overview": "Shasta, commander of the Dark Territory's dark knights, had intended to use Administrator's death as a chance for peace with the Human Empire. But his plans are thwarted by Emperor Vecta's return to the land of darkness."
+            episode: 4,
+            title: "Defeat Pirate Orochi! (2)",
+            absoluteEpisode: 158,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/4/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 5,
-            "title": "The Night Before Battle",
-            "absoluteEpisode": 78,
-            "airDate": "2019-11-10",
-            "rating": 7.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/qjQmvuTg2xkpeeWJiBHmIcpvTDa.jpg",
-            "duration": "23m",
-            "overview": "Resolved to fight for humankind, Alice joins the forces of the Human Empire, bringing Kirito with her. But while the forces of darkness boast overwhelming numbers, only thirteen Integrity Knights are available to fight for the Human Empire."
+            episode: 5,
+            title: "The Blazing Special Move! (1)",
+            absoluteEpisode: 159,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/5/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 6,
-            "title": "Battle of the Knights",
-            "absoluteEpisode": 79,
-            "airDate": "2019-11-17",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/9Ab7KV9JsbBKmAG9WZ6QQQTnNSx.jpg",
-            "duration": "23m",
-            "overview": "The Final Load Test has begun, and the Eastern Gate has collapsed. Incited by Gabriel, now Emperor Vecta, the massive army of the land of darkness pushes on towards the Human Empire."
+            episode: 6,
+            title: "The Blazing Special Move! (2)",
+            absoluteEpisode: 160,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/6/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 7,
-            "title": "Stigma of the Disqualified",
-            "absoluteEpisode": 80,
-            "airDate": "2019-11-24",
-            "rating": 7.7,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/7lUTCntkCiZmfI46FXtNi4TM7UA.jpg",
-            "duration": "23m",
-            "overview": "Integrity Knight Renly Synthesis Twenty-Seven, in battle for the first time, flees his position, allowing goblins from the forces of darkness to infiltrate to the tent where Kirito is."
+            episode: 7,
+            title: "The Extraordinary Synchrome! (1)",
+            absoluteEpisode: 161,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/7/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 8,
-            "title": "Blood and Life",
-            "absoluteEpisode": 81,
-            "airDate": "2019-12-01",
-            "rating": 7.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/aac9GQl1szARGPUH0e5dFUmu0y7.jpg",
-            "duration": "23m",
-            "overview": "The powerful formal art unleashed by the Integrity Knight Alice inflicts severe casualties on the forces of darkness. Alice encounters an enemy survivor and learns that Emperor Vecta's objective is to find the \"Priestess of Light.\""
+            episode: 8,
+            title: "The Extraordinary Synchrome! (2)",
+            absoluteEpisode: 162,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/8/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 9,
-            "title": "Sword and Fist",
-            "absoluteEpisode": 82,
-            "airDate": "2019-12-08",
-            "rating": 8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ngJJORUALoKW7OaoSaFlBg0Pr37.jpg",
-            "duration": "23m",
-            "overview": "Upon seeing Alice, Gabriel orders his entire army to capture her. The pugilists guild races ahead of the main force. As Alice and Bercouli try to come up with a strategy to counter them, the silent Integrity Knight Sheyta Synthesis Twelve steps forward."
+            episode: 9,
+            title: "The Strength of a Bond (1)",
+            absoluteEpisode: 163,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/9/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 10,
-            "title": "Stacia, the Goddess of Creation",
-            "absoluteEpisode": 83,
-            "airDate": "2019-12-15",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/9is6M5wHgBtftPHks9sLJ7ASoZx.jpg",
-            "duration": "23m",
-            "overview": "Asuna has logged into the Underworld using the superuser account of Stacia, the Goddess of Creation. After she descends, she is reunited with Kirito, thanks to Ronie and Tiese. But soon Alice arrives, leading to a precarious situation!"
+            episode: 10,
+            title: "The Strength of a Bond (2)",
+            absoluteEpisode: 164,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/10/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 11,
-            "title": "Heartless Choice",
-            "absoluteEpisode": 84,
-            "airDate": "2019-12-22",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ojEuCltZ3ZQIMYLYGhABH6AopnS.jpg",
-            "duration": "23m",
-            "overview": "Asuna has created a bottomless chasm. The dark knights and the pugilists attempt to cross over to the other side, where the Human Empire Army waits. Meanwhile, Critter releases an announcement about a limited-time beta test for a bizarre new VRMMO."
+            episode: 11,
+            title: "Explode: Phantom Fire Shot! (1)",
+            absoluteEpisode: 165,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/11/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 12,
-            "title": "Ray of Light",
-            "absoluteEpisode": 85,
-            "airDate": "2019-12-29",
-            "rating": 8.1,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/Agyt1VH7zVHwklzlb9IwVMSynjf.jpg",
-            "duration": "23m",
-            "overview": "Due to Gabriel's scheme, U.S. players were given black knight accounts, and are now continuously logging in to the Underworld. They begin mercilessly slaughtering soldiers from both the Human Empire Army and the Dark Territory Army."
+            episode: 12,
+            title: "Explode: Phantom Fire Shot! (2)",
+            absoluteEpisode: 166,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/12/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 13,
-            "title": "The War of Underworld",
-            "absoluteEpisode": 86,
-            "airDate": "2020-07-12",
-            "rating": 7.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/pefmd7agmQ2xA2ZvLJqxHQMlEg6.jpg",
-            "duration": "23m",
-            "overview": "Sinon has logged in with the super-account of Solus, the Sun Goddess and rescues Asuna and the others at the last minute. Meanwhile, Leafa logs in with the super-account of Terraria, the Earth Goddess, and descends to the Underworld."
+            episode: 13,
+            title: "Kraken Attacks (1)",
+            absoluteEpisode: 167,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/13/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 14,
-            "title": "End to Eternity",
-            "absoluteEpisode": 87,
-            "airDate": "2020-07-19",
-            "rating": 8.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/bN9TqIETmwNO0wXeZM2Y4p33vw.jpg",
-            "duration": "23m",
-            "overview": "Despite its modest size, the Human Empire Army and Asuna valiantly battle the wave of American players surging towards them. But they’re hopelessly outnumbered, and the Human Empire soldiers start to fall one after another."
+            episode: 14,
+            title: "Kraken Attacks (2)",
+            absoluteEpisode: 168,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/14/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 15,
-            "title": "Instigation",
-            "absoluteEpisode": 88,
-            "airDate": "2020-07-26",
-            "rating": 6.8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/vdStwtLGjoZsWfVEyV0fLOUgl4l.jpg",
-            "duration": "23m",
-            "overview": "Bercouli pursues Vecta, who’s abducted Alice. After a long, vicious battle, Bercouli unleashes his secret sword skill, Uragiri, and finally defeats Vecta, despite having sustained severe injuries himself."
+            episode: 15,
+            title: "The Jet Black Dragon (1)",
+            absoluteEpisode: 169,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/15/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 16,
-            "title": "Code 871",
-            "absoluteEpisode": 89,
-            "airDate": "2020-08-02",
-            "rating": 7.2,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/q6baJ9R5GwEnLLxoX1dC7pITrFC.jpg",
-            "duration": "23m",
-            "overview": "The traitor inside Rath turns out to be a researcher named Yanai. When Higa attempts to restore Kirito, Yanai tries to thwart the operation by holding him at gunpoint. Meanwhile, in the Underworld, Sinon confronts Gabriel, who has logged back in."
+            episode: 16,
+            title: "The Jet Black Dragon (2)",
+            absoluteEpisode: 170,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/16/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 17,
-            "title": "Prince of Hell",
-            "absoluteEpisode": 90,
-            "airDate": "2020-08-09",
-            "rating": 7.8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/5xhOYfgLATDxfqnjYZYHg49CQ2w.jpg",
-            "duration": "23m",
-            "overview": "Asuna and the others succumb to Vassago and the Chinese/Korean players. Discovering the catatonic Kirito, Vassago kicks his wheelchair over. Enraged, Klein lunges at Vassago, only to be pinned down by enemy players. Just then, someone unexpected appears."
+            episode: 17,
+            title: "Clash! Zyro vs. Sakyo (1)",
+            absoluteEpisode: 171,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/17/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 18,
-            "title": "Memories",
-            "absoluteEpisode": 91,
-            "airDate": "2020-08-16",
-            "rating": 8.4,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/ahW4m6CEBXXHPhC6qejIKrgr39.jpg",
-            "duration": "23m",
-            "overview": "Sinon manages to severely damage Gabriel, but her strength has been sapped. Leafa collapses after wiping out the American players. And Asuna, her situation now hopeless, gazes at Kirito. But the Black Swordsman continues to wander through his dreams."
+            episode: 18,
+            title: "Clash! Zyro vs. Sakyo (2)",
+            absoluteEpisode: 172,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/18/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 19,
-            "title": "Awakening",
-            "absoluteEpisode": 92,
-            "airDate": "2020-08-23",
-            "rating": 8.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/yGU5BwtNM1tMLMwZQNStubq5mN0.jpg",
-            "duration": "23m",
-            "overview": "Escaping his nightmares, Kirito regains consciousness at last. With the Night-Sky Blade in his right hand and the broken Blue Rose Sword in his left, he faces off against Vassago, armed with the Mate-Chopper, now enormous in size."
+            episode: 19,
+            title: "The Ironclad Golem (1)",
+            absoluteEpisode: 173,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/19/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 20,
-            "title": "The Night-Sky Blade",
-            "absoluteEpisode": 93,
-            "airDate": "2020-08-30",
-            "rating": 8.5,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/fLiy5OO1Bq6ykose7z4QiNIK1g6.jpg",
-            "duration": "23m",
-            "overview": "Alice and Asuna head to the World’s End Altar as Kirito confronts Gabriel. Unless he can defeat Gabriel and return to the real world before the maximum-acceleration phase begins, Kirito will have to spend the next 200 years in the Underworld."
+            episode: 20,
+            title: "The Ironclad Golem (2)",
+            absoluteEpisode: 174,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/20/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 21,
-            "title": "Beyond Time",
-            "absoluteEpisode": 94,
-            "airDate": "2020-09-06",
-            "rating": 7.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/pOsw4FEifCe4sywwv59a9qJpmSr.jpg",
-            "duration": "23m",
-            "overview": "The maximum-acceleration phase has begun. Alice successfully logs out of the Underworld, but Kirito doesn’t make it in time. In the real world, Higa and Kikuoka rush to shut down the STL, in order to disable the maximum-acceleration phase, but…"
+            episode: 21,
+            title: "A Heated Battle of Friendship (1)",
+            absoluteEpisode: 175,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/21/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 22,
-            "title": "Alice",
-            "absoluteEpisode": 95,
-            "airDate": "2020-09-13",
-            "rating": 8,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/7lCpkD21iDINQX17Wd22MSjN28I.jpg",
-            "duration": "23m",
-            "overview": "The “Rath Attack Incident,” masterminded by the American National Security Agency, is over. Now head of the newly formed Oceanic Resource Exploration & Research Institution, Rinko unveils Alice to the world as an authentic artificial general intelligence."
+            episode: 22,
+            title: "A Heated Battle of Friendship (2)",
+            absoluteEpisode: 176,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/22/w780.jpg",
+            duration: "24m",
+            overview: ""
           },
           {
-            "episode": 23,
-            "title": "New World",
-            "absoluteEpisode": 96,
-            "airDate": "2020-09-20",
-            "rating": 7.9,
-            "thumbnail": "https://image.tmdb.org/t/p/w780/w0u1bSp9EWatole6ZoRKxGWhqpf.jpg",
-            "duration": "23m",
-            "overview": "Rinko informs Kazuto that Alice is missing. He’s about to rush to the Rath Roppongi branch when the doorbell rings. In a panic, Kazuto throws open the door, only to find a deliveryman there with a huge cardboard box."
+            episode: 23,
+            title: "The Ruthless Behemoth (1)",
+            absoluteEpisode: 177,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/23/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 24,
+            title: "The Ruthless Behemoth (2)",
+            absoluteEpisode: 178,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/24/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 25,
+            title: "A Fierce Synchrome Battle (1)",
+            absoluteEpisode: 179,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/25/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 26,
+            title: "A Fierce Synchrome Battle (2)",
+            absoluteEpisode: 180,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/26/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 27,
+            title: "Neo Battle Bladers (1)",
+            absoluteEpisode: 181,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/27/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 28,
+            title: "Neo Battle Bladers (2)",
+            absoluteEpisode: 182,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/28/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 29,
+            title: "The Best 8 Decided! (1)",
+            absoluteEpisode: 183,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/29/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 30,
+            title: "The Best 8 Decided! (2)",
+            absoluteEpisode: 184,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/30/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 31,
+            title: "Get Pumped for the Finals! (1)",
+            absoluteEpisode: 185,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/31/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 32,
+            title: "Get Pumped for the Finals! (2)",
+            absoluteEpisode: 186,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/32/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 33,
+            title: "A Fated Showdown Between Rivals (1)",
+            absoluteEpisode: 187,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/33/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 34,
+            title: "A Fated Showdown Between Rivals (2)",
+            absoluteEpisode: 188,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/34/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 35,
+            title: "The Ultimate Emperor of Destruction: Bahamoote (1)",
+            absoluteEpisode: 189,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/35/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 36,
+            title: "The Ultimate Emperor of Destruction: Bahamoote (2)",
+            absoluteEpisode: 190,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/36/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 37,
+            title: "A Spirit-Filled Attack! (1)",
+            absoluteEpisode: 191,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/37/w780.jpg",
+            duration: "24m",
+            overview: ""
+          },
+          {
+            episode: 38,
+            title: "A Spirit-Filled Attack! (2)",
+            absoluteEpisode: 192,
+            thumbnail: "https://episodes.metahub.space/tt1674928/4/38/w780.jpg",
+            duration: "24m",
+            overview: ""
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 31. Bakugan Battle Brawlers (2007)
+  // ============================================================
+  {
+    id: "bakugan-battle-brawlers-2007",
+    title: "Bakugan Battle Brawlers",
+    type: "TV Show",
+    isAnime: true,
+    year: 2007,
+    rating: "5.8",
+    age: "TV-Y7",
+    duration: "22m",
+    genres: ["Animation", "Action", "Adventure", "Fantasy", "Sci-Fi"],
+    tags: ["Animation", "Action", "Adventure", "Fantasy", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/uW2xawK5brroGov2dyhuT0bUeva.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fI3m5UjTMyigglkFeQWkPJgFLSC.jpg",
+    videoUrl: "34109",
+    trailerUrl: "https://www.youtube.com/watch?v=q6M0q5wK5lI",
+    animeSlug: "bakugan-battle-brawlers",
+    malId: 2156,
+    anilistId: 2156,
+    tmdbId: 34109,
+    cinesrcId: "34109",
+    overview: "One day, strange cards fall from the sky, and kids around the world use them to create a popular new battle game called Bakugan. Dan Kuso, a spirited young boy, and his friends form the 'Bakugan Battle Brawlers' team. However, they soon discover that Bakugan are not just toys, but living creatures from another dimension called Vestroia, which is now facing annihilation from a rogue Bakugan named Naga. Dan and his partner Drago must fight across dimensions to save both Earth and Vestroia.",
+    overviewKurdish: "ڕۆژێک، کارتی سەیر و نادیار لە ئاسمانەوە دەبارێنە خوارەوە، و منداڵان لە سەرتاسەری جیهاندا بەکاریاندەهێنن بۆ دروستکردنی یارییەکی شەڕکردنی بەناوبانگ بە ناوی باکوگان. دان کوسۆ، کوڕێکی ورەبەرز و بوێر، لەگەڵ هاوڕێکانیدا تیمێک پێکدەهێنن بە ناوی 'جەنگاوەرانی باکوگان'. بەڵام بەم زووانە دەزانن کە باکوگانەکان تەنها یاری نین، بەڵکو بوونەوەری زیندووی ڕەهەندێکی ترن بە ناوی ڤێسترۆیا، کە ڕووبەڕووی لەناوچوون دەبێتەوە. دان و هاوبەشەکەی دراگۆ دەبێت شەڕ بکەن بۆ ڕزگارکردنی زەوی و ڤێسترۆیا.",
+    director: "Mitsuo Hashimoto",
+    cast: ["Yu Kobayashi", "Keiji Fujiwara", "Chihiro Suzuki", "Eri Sendai", "Ryou Hirohashi", "Scott McCord"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bakugan: The Battle Begins",
+            absoluteEpisode: 1,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/1/w780.jpg",
+            duration: "22m",
+            overview: "The story begins with a young boy named Dan  who has never lost a Bakugan match. While in a match against a bully Dan sees a vision of two Bakugan brawling. Is there more to the game than what the players think?"
+          },
+          {
+            episode: 2,
+            title: "Masquerade Ball",
+            absoluteEpisode: 2,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/2/w780.jpg",
+            duration: "22m",
+            overview: "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
+          },
+          {
+            episode: 3,
+            title: "A Feud Between Friends",
+            absoluteEpisode: 3,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/3/w780.jpg",
+            duration: "22m",
+            overview: "Masquerade teams up with a player with Rikimaru, by giving him a very special Bakugan. When Rikimaru and Dan battle, Drago ends up using a dangerous move to save himself and win the battle. Dan gets angry, and throws Drago into a river, cursing the day they met."
+          },
+          {
+            episode: 4,
+            title: "Dan and Drago",
+            absoluteEpisode: 4,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/4/w780.jpg",
+            duration: "22m",
+            overview: "Dan has a hard time adjusting to life without Drago. He ends up causing a schoolmate named Ryo to drop his computer and runs away, hurting Ryo's feelings. Masquerade takes advantage of Ryo's hurt feelings, and Ryo beats Dan in a battle. Dan finds Drago, and tries to make up with Ryo."
+          },
+          {
+            episode: 5,
+            title: "Runo Rules",
+            absoluteEpisode: 5,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/5/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Runo meet for the first time, outside of the Bakugan website, and realize that they live in the same town. Dan drops his BakuPod, and Runo picks it up, noticing that Dan has battled Masquerade. She goes in his place, but ends up battling a boy named Tatsuya."
+          },
+          {
+            episode: 6,
+            title: "A Combination Battle",
+            absoluteEpisode: 6,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/6/w780.jpg",
+            duration: "22m",
+            overview: "While at an amusement park, Dan and Runo are invited onstage to assist a magician act by two brothers. Dan picks a card, and realizes it's a Doom Card. The brothers are working for Masquerade, and Dan and Runo get tricked into a battle."
+          },
+          {
+            episode: 7,
+            title: "Bakugan Idol",
+            absoluteEpisode: 7,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/7/w780.jpg",
+            duration: "22m",
+            overview: "Marucho reveals that he secretly moved to Dan's neighborhood, and throws an elaborate welcome party. Masquerade makes a business offer with the famous pop band duo, Jenny and Jewels. The duo crash the welcome party, and challenge the Battle Brawlers."
+          },
+          {
+            episode: 8,
+            title: "Girls Just Wanna Have Fun",
+            absoluteEpisode: 8,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/8/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Marucho fight against the pop star duo, Jenny & Jewels. After a narrow victory, Drago tells the Brawlers about how the Bakugan came to Earth, and how a human entered the Bakugan world of Vestroia."
+          },
+          {
+            episode: 9,
+            title: "Fight or Flight!",
+            absoluteEpisode: 9,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/9/w780.jpg",
+            duration: "22m",
+            overview: "Masquerade manipulates two boys, Kosuke and Takashi, into using his Doom Cards against the Bakugan Battle Brawlers. He promises that he'll reunite their friend Ai with her brother if they help him. Wanting to help their friend, they take the bait and soon run into Runo and Marucho, who are at the airport to pick up their website friend, Alice. Luckilly, Alice is skilled in the finer points of combination battle, and coaches her friends to victory. Alice has a secret, however, that might just ruin her friendship with the Brawlers."
+          },
+          {
+            episode: 10,
+            title: "A Perfect Match",
+            absoluteEpisode: 10,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/10/w780.jpg",
+            duration: "22m",
+            overview: "Julie and her childhood friend, Billy, go one-on-one in a Bakugan battle. Although Julie's defeated by Billy, she's impressed with his skills and his Bakugan, \"Cycloid.\" They make a great team, and Julie wishes she could befriend a talking Bakugan. Later, when Julie admits to herself how lonely she really is, the Bakugan Gorem appears. The two seem to be destined for each other."
+          },
+          {
+            episode: 11,
+            title: "Grandpa's Got A Brand New Bakugan",
+            absoluteEpisode: 11,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/11/w780.jpg",
+            duration: "22m",
+            overview: "Marucho and Runo realize that the combined powers of the Bakugan Brawlers are not enough to defeat Masquerade. Without Dan's knowledge, they visit Shun to try and get him to join. Shun's grandfather tries to get them to leave, but Shun makes a deal. If they win, he joins. If they lose, he'll walk away."
+          },
+          {
+            episode: 12,
+            title: "Bakugan Stall",
+            absoluteEpisode: 12,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/12/w780.jpg",
+            duration: "22m",
+            overview: "Alice realizes that she may have a connection with the mysterious Hal-G, but doesn't have the courage to tell the other Brawlers. Meanwhile, Dan recalls the last battle he had with Shun. Shun's mother gives Shun a Bakugan, \"Skyress\", to watch over him."
+          },
+          {
+            episode: 13,
+            title: "Just For The Shun Of It",
+            absoluteEpisode: 13,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/13/w780.jpg",
+            duration: "22m",
+            overview: "Masquerade has been destroying the Bakugans of kids all over the world, and the Brawlers have to put a stop to it. Reluctantly, Dan accompanies Runo and Marucho to Shun's house to recruit him one more, but find out he's joining Masquerade! Dan accepts the challenge of battle, and with Drago, fights against Shun and Masquerade."
+          },
+          {
+            episode: 14,
+            title: "The Story of Vestroia",
+            absoluteEpisode: 14,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/14/w780.jpg",
+            duration: "22m",
+            overview: "Lured by an invitation to celebrate their world class rankings, five of the top ten Bakugan players gather at a mysterious mansion. There they meet Masquerade & the evil Bakugan \"Naga\". They're put under a spell to take Dan & the other Battle Brawlers out of the picture. Meanwhile, Alice confesses that she believes that her grandfather Michael is responsible for the destruction of Vestroia. They decide to take a look around Michael's lab to find evidence of what happened to him."
+          },
+          {
+            episode: 15,
+            title: "A Duel in the Desert",
+            absoluteEpisode: 15,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/15/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers finally meet Julie up close and personal, but the mood goes from happy to sad when they see what's happening in Vestroia. Julie and Shun fight with Julie's friend Billy, the 9th ranked Bakugan player, and her neighbor Komba, the 5th ranked Bakugan player, knowing they were tricked by Masquerade to take out Dan and the rest of the Brawlers."
+          },
+          {
+            episode: 16,
+            title: "No Guts No Glory",
+            absoluteEpisode: 16,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/16/w780.jpg",
+            duration: "22m",
+            overview: "Julie is still upset about Billy's betrayal, but tries to put it behind her so she can support the other brawlers. Meanwhile, Shun tells them about a valley similar to Bakugan Valley. Everyone heads there but on the way it is revealed that Shun lied about it being similar, and it was all a ploy to try and see why Masquerade always knows where they are all the time. He tells them that there has to be someone spying on them. At the valley, the 3rd best Brawler Chan Lee appears and challenges Dan to a brawl."
+          },
+          {
+            episode: 17,
+            title: "BFF - Best Friends Forever",
+            absoluteEpisode: 17,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/17/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers are having trouble finding the Infinity Core. When they learn that their location might be being broadcasted, they shut off their signal."
+          },
+          {
+            episode: 18,
+            title: "Evolution Revolution",
+            absoluteEpisode: 18,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/18/w780.jpg",
+            duration: "22m",
+            overview: "When Marucho loses his Bakugan to Klaus, he and Runo give chase, and wind up in Masquerade's castle!"
+          },
+          {
+            episode: 19,
+            title: "Julie Plays Hard Brawl",
+            absoluteEpisode: 19,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/19/w780.jpg",
+            duration: "22m",
+            overview: "After a quarrel between the Brawlers, they all go separate ways. Julie decides to pursue her friend Billy and try to save him from Masquerade's evil ways."
+          },
+          {
+            episode: 20,
+            title: "A Little Help From My Friends",
+            absoluteEpisode: 20,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/20/w780.jpg",
+            duration: "22m",
+            overview: "When Shun leaves the group, Alice chases after him. Meanwhile Dan goes to take on Masquerade alone."
+          },
+          {
+            episode: 21,
+            title: "My Good Friend",
+            absoluteEpisode: 21,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/21/w780.jpg",
+            duration: "22m",
+            overview: "Klaus, Chan-Lee, and Julio return to finish off the Brawlers. Dan, Runo, and Marucho take them on, but what will happen when Klaus uses Marucho's stolen Bakugan?"
+          },
+          {
+            episode: 22,
+            title: "Drago's On Fire",
+            absoluteEpisode: 22,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/22/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers have been pushed back, but will the return of Preyas and the evolution of Drago be enough to bring them to victory?"
+          },
+          {
+            episode: 23,
+            title: "Say It Ain't So Joe",
+            absoluteEpisode: 23,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/23/w780.jpg",
+            duration: "22m",
+            overview: "Learning that Webmaster Joe is at the hospital, Dan and the other head there. However, while heading for Joe's room, Drago gets lost."
+          },
+          {
+            episode: 24,
+            title: "The Secrets of Success",
+            absoluteEpisode: 24,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/24/w780.jpg",
+            duration: "22m",
+            overview: "Alice helps a little boy defeat his biggest rival."
+          },
+          {
+            episode: 25,
+            title: "Trust Me",
+            absoluteEpisode: 25,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/25/w780.jpg",
+            duration: "22m",
+            overview: "Tensions form between the group of Brawlers when it is believed that one of them is a double agent."
+          },
+          {
+            episode: 26,
+            title: "Doom Dimension or Bust",
+            absoluteEpisode: 26,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/26/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers head to face Masquerade in one final battle."
+          },
+          {
+            episode: 27,
+            title: "Show Down",
+            absoluteEpisode: 27,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/27/w780.jpg",
+            duration: "22m",
+            overview: "The Battle Brawlers learn through Webmaster Joe (who was on a trip with his mother) that Masqerade has defeated the World's Top Bakugan players, so they try to come up with a strategy to beat him. The strategy seems to backfire when Masquerade visits Dan's house and gets him to accept a battle. Now the evolved Drago and the evolved Hydranoid will go head-to-head with the loser getting a one-way trip to the Doom Dimension, which is later revealed to be full of Bakugan turned into stone."
+          },
+          {
+            episode: 28,
+            title: "The Brawler's Last Stand",
+            absoluteEpisode: 28,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/28/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers mourn over the loss of Dan and Drago. Meanwhile, Shun gets a challenge from Masquerade and decides to join Dan in the Doom Dimension. When Skyress learns of this plan, she tries to gather the other Bakugan and try to save Vestroia without putting their human partners in risk. Soon, the other Brawlers catch onto his plan and decide to join him, but first Runo makes a promise to Dan's mom - he's safe and will be home soon."
+          },
+          {
+            episode: 29,
+            title: "Nightmare In Doomsville",
+            absoluteEpisode: 29,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/29/w780.jpg",
+            duration: "22m",
+            overview: "In the Doom Dimension, the Legendary Ancient Warriors of Vestroia prepare to test the powers of the Brawlers, seeing if they are worthy enough to save Vestroia. The Brawlers are separated and Julie is left with Gorem to face the Subterra Warrior, Clayf, and a shadow of her perfect sister, Daisy. With help from Gorem, Julie learns that she isn't her sister and she can only do the best she can do. Because of this, Gorem evolves into Subterra Hammer Gorem, and defeats Clayf."
+          },
+          {
+            episode: 30,
+            title: "I Am Marucho Hear Me Roar",
+            absoluteEpisode: 30,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/30/w780.jpg",
+            duration: "22m",
+            overview: "Marucho must battle the Aquos Elemental Warrior, Frosch, and he is forced to send in Preyus early when he learns he is battling a shadow of himself. Preyus isn't feeling well throughout the battle, but he is able to give Marucho guidance to accepting his past. Marucho knew that he only did what his parents told him to make them happy, but he didn't like to always be so obidient. This causes Marucho to hate his old self. By accepting the past him, Marucho was able to help Preyus' digestion problem. This allows Preyus to evolve by spitting out his brothers: Aquos Angelo/Aquos Diablo Preyus. Will the combined strength of these brothers prove to be enough to defeat the Aquos Warrior?"
+          },
+          {
+            episode: 31,
+            title: "A Place Far From Home",
+            absoluteEpisode: 31,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/31/w780.jpg",
+            duration: "22m",
+            overview: "Shun is stuck with the female Ventus Lord, Oberus, who has summoned a child that looks like Shun's mom to battle. The child convinces Shun to play with her while the sun is still setting, which it never does. Shun must battle himself as well when he is forced to choose between going back or staying in this world with his mother. In the battle with Oberus, Shun believes that he doesn't need his friends. His belief causes Skyress to die after a great impact with Oberus. When Shun realises his mistake, a tear drops down onto Skyress' ability card, changing it, and miraclesly reviving Skyress, which evolved into Storm Skyress. In the end, when Shun chooses to return to his world, Skyress evolves to Ventus Storm Skyress."
+          },
+          {
+            episode: 32,
+            title: "Play Nice Runo",
+            absoluteEpisode: 32,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/32/w780.jpg",
+            duration: "22m",
+            overview: "Runo and Tigrerra must battle a young boy from Runo's past (a smaller version of Dan) summoned by The Haos lord, Lars Lion. The test is for Runo to realize how much she truly treasures her and Dan's friendship/love. When Tigrerra is getting hit by Lars Lion's piercing arrows of light, Runo realises the friendship/love that she treasures and says \"We are Friends Forever Dan!\" in the English dub, while she says \"I love you Dan!\" in the Japanese Version. When Runo realizes this, Tigrerra evolves into Haos Blade Tigrerra."
+          },
+          {
+            episode: 33,
+            title: "You're Going Down Clown",
+            absoluteEpisode: 33,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/33/w780.jpg",
+            duration: "22m",
+            overview: "Dan must battle the Pyrus Lord, Apollonier, in order for him and his friends to return to their world. He and Drago soon find out that they're battling a clown. Dan manages to win the battle, but Drago doesn't evolve. When Dan rips off the clown's mask, it turns out to be Runo. In order for Drago to evolve and Dan to past his test, he must battle, and win, against each of the Brawlers."
+          },
+          {
+            episode: 34,
+            title: "Home Sweet Home",
+            absoluteEpisode: 34,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/34/w780.jpg",
+            duration: "22m",
+            overview: "Joe is determined to find out where his friends have gone, so he challenges Masquerade to a battle. At first Joe appears to be outmatched, but Wyvern returns to give Joe assistance. The Brawlers also return, and Masquerade realizes his battle is only beginning. Dan explains everything about the Bakugan to his mother, who believes him and asks Drago to take care of him. Naga is revealed as one of the most dangerous Bakugan in the world."
+          },
+          {
+            episode: 35,
+            title: "Dan's Last Stand",
+            absoluteEpisode: 35,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/35/w780.jpg",
+            duration: "22m",
+            overview: "Dan tells Shun, Julie, and Marucho that he has yet to pass the test in the Doom Dimension and the only way to have Drago evolve he has to defeat his friends one by one. Julie first battles Dan and Dan wins. Then, he battles Marucho and wins again. Shun says he will battle Dan the next morning. Masquerade is in the Doom Dimension and is about to start a battle with Alice."
+          },
+          {
+            episode: 36,
+            title: "Show Me What You've Got",
+            absoluteEpisode: 36,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/36/w780.jpg",
+            duration: "22m",
+            overview: "Dan's final test is to beat his friends so his Dragonoid can evolve to the next level and become the Ultimate Bakugan. Dan battles Runo and Shun while Masquerade goes to see the Darkus Lord, Exeedra, and he ends up fighting Alice as a mirage."
+          },
+          {
+            episode: 37,
+            title: "You Say You Want An Evolution",
+            absoluteEpisode: 37,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/37/w780.jpg",
+            duration: "22m",
+            overview: "Joe shows up after Dan defeats Julie, Marucho, and Runo for Wyvern to check out Drago's battling skills when Dan and Shun have their battle to finish Dan's test. Meanwhile, the Darkus Lord and Masquerade finish their battle. In the end Drago beats Skyress and becomes the Pyrus Ultimate Dragonoid, and Duel Hydranoid beats the Darkus Lord and evolves into the Darkus Alpha Hydranoid."
+          },
+          {
+            episode: 38,
+            title: "Behind The Mask Of Masquerade",
+            absoluteEpisode: 38,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/38/w780.jpg",
+            duration: "22m",
+            overview: "Alice appears to be disappearing all the time. Dan goes to talk with Marucho, Runo, Shun, and Julie and ends up finding Alice! Alice won't explain anything and leaves. Later, Joe receives a message from Masquerade, and Dan decides he'll take over to fight Masquerade with Drago to end it once and for all with Masquerade. Dan wins and offers Masquerade to join the Battle Brawlers to help defeat Naga. But Masquerade refuses and takes off his mask. It is revealed that Alice was Masquerade the whole time!"
+          },
+          {
+            episode: 39,
+            title: "Masquerade Unmasked",
+            absoluteEpisode: 39,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/39/w780.jpg",
+            duration: "22m",
+            overview: "Hal-G appears to explain the origin of Alice and Masquerade. Because she is unable to forgive herself, Alice then disappears. Meanwhile a huge hole opens up in the ocean and weird weather has been happening all throughout the earth. Through much convincing, the Brawlers convince their parents about the Bakugan. What will they find in the decaying Vestroia? Dan and the Brawlers decide to take a little road trip, to Vestroia!"
+          },
+          {
+            episode: 40,
+            title: "Alice Gets Schooled",
+            absoluteEpisode: 40,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/40/w780.jpg",
+            duration: "22m",
+            overview: "Alice tells Klaus about what she did as Masquerade, and gets pulled into a battle to punish her for sending his Bakugan to the Doom Dimension while she had been Masquerade. However, Klaus was just trying to teach her a lesson, that everyone, and everything must work together in order to create harmony."
+          },
+          {
+            episode: 41,
+            title: "A Fish Called Tayghen",
+            absoluteEpisode: 41,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/41/w780.jpg",
+            duration: "22m",
+            overview: "The Bakugan Battle Brawlers enter Vestroia and realize Vestroia has become a hybrid world where two elements are mixed together to make one element together. They enter the Ventus and Aquos world where they meet Tayghen and Hairadee: two Bakugan of both Ventus and Aquos elements. As they fight, they suddenly see the portal to the next hybrid world of Vestroia is closing and so they agree that Shun and Marucho are to stay in the Ventus and Aquos world to defeat the two Bakugan. The rest of the Bakugan team disappear through the portal into another dimension of Vestroia."
+          },
+          {
+            episode: 42,
+            title: "The Race To Vestroia",
+            absoluteEpisode: 42,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/42/w780.jpg",
+            duration: "22m",
+            overview: "As the remaining Brawlers enter the hybrid world of Subterra and Haos, a pair of Subterra/Haos Bakugan sisters named Rabeeder and Tricloid fall in love with Dan. The sisters say the only way out is if they beat them in a race. Dan and Drago win and leave to the next world."
+          },
+          {
+            episode: 43,
+            title: "Next Stop Naga-Ville",
+            absoluteEpisode: 43,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/43/w780.jpg",
+            duration: "22m",
+            overview: "It seems a very gifted and mysterious Bakugan player named Masquerade has been stealing Bakugans from kids all around the world."
+          },
+          {
+            episode: 44,
+            title: "It's a Long Shot",
+            absoluteEpisode: 44,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/44/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago are left weak and beaten by their battle with Centorrior and Druman."
+          },
+          {
+            episode: 45,
+            title: "Ground Control to Major Dan!",
+            absoluteEpisode: 45,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/45/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers have finally made it to Vestroia where they hope to confront Naga and retrieve the Silent Core and save the Universe!"
+          },
+          {
+            episode: 46,
+            title: "The One Hit Wonders",
+            absoluteEpisode: 46,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/46/w780.jpg",
+            duration: "22m",
+            overview: "The human world is in complete chaos when the Brawlers finally return."
+          },
+          {
+            episode: 47,
+            title: "Here's Mud In Your Eye",
+            absoluteEpisode: 47,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/47/w780.jpg",
+            duration: "22m",
+            overview: "The entire world is in a state of chaos as Naga's evil Bakugan invade neighborhood after neighborhood."
+          },
+          {
+            episode: 48,
+            title: "R is for Revenge",
+            absoluteEpisode: 48,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/48/w780.jpg",
+            duration: "22m",
+            overview: "Alice and Christopher brawl with Rabeeder, who is on the hunt for the Infinity Core on Naga's behalf."
+          },
+          {
+            episode: 49,
+            title: "Showdown in Wardington",
+            absoluteEpisode: 49,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/49/w780.jpg",
+            duration: "22m",
+            overview: "The return of Naga's Ventus/Aquos servant hybrid Hairadee has brought new troubles for Komba and Shun. While Skyress is trapped in a barrier of ice, Shun reveals his ninja skills to free Skyress and defeat the hybrid. Julio crashes the party and helps the battle. Will the three of them be enough to take Naga's servant on?"
+          },
+          {
+            episode: 50,
+            title: "The Good, the Bad and the Bakugan",
+            absoluteEpisode: 50,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/50/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers are in trouble. Wavern and the Infinity Core are hiding at the top of Wardington Tower but Naga and his forces are nearby."
+          },
+          {
+            episode: 51,
+            title: "The Final Brawl",
+            absoluteEpisode: 51,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/51/w780.jpg",
+            duration: "22m",
+            overview: "With most of the Brawlers trapped fighting, Naga is free to go after Wavern and the Infinity Core."
+          },
+          {
+            episode: 52,
+            title: "Game Over",
+            absoluteEpisode: 52,
+            thumbnail: "https://episodes.metahub.space/tt1114855/1/52/w780.jpg",
+            duration: "22m",
+            overview: "The final battle has been set.  Naga is squaring off against Drago in pursuit of the Infinity Core and in turn, power over the universe!"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Invasion of the Vestals",
+            absoluteEpisode: 53,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/1/w780.jpg",
+            duration: "22m",
+            overview: "The Bakugan are finally living in peace back on New Vestroia when the people of Vestal  invade, turning all the Bakugan into ball form and abducting them before terraforming their world."
+          },
+          {
+            episode: 2,
+            title: "Facing Ace",
+            absoluteEpisode: 54,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/2/w780.jpg",
+            duration: "22m",
+            overview: "On the way to her secret headquarters,  Mira tells the still-distrustful Dan, Marucho and Drago why she has chosen to fight her own people by forming the Bakugan Battle Brawler Resistance."
+          },
+          {
+            episode: 3,
+            title: "Get Psyched",
+            absoluteEpisode: 55,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/3/w780.jpg",
+            duration: "22m",
+            overview: "In preparation for the upcoming battles with the Vexos, Dan agrees to train Baron."
+          },
+          {
+            episode: 4,
+            title: "Marucho's Mission",
+            absoluteEpisode: 56,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/4/w780.jpg",
+            duration: "22m",
+            overview: "Without a Bakugan of his own, Marucho is on the outside looking in as Dan and the rest of the Bakugan Battle Brawlers Resistance become a tight-knit team."
+          },
+          {
+            episode: 5,
+            title: "A Taste of Defeat",
+            absoluteEpisode: 57,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/5/w780.jpg",
+            duration: "22m",
+            overview: "Mira gives Dan a Bakugan Trap of his own, though its abilities and mode of communication remain mysterious."
+          },
+          {
+            episode: 6,
+            title: "Return of a Friend",
+            absoluteEpisode: 58,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/6/w780.jpg",
+            duration: "22m",
+            overview: "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
+          },
+          {
+            episode: 7,
+            title: "Cyber Nightmare",
+            absoluteEpisode: 59,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/7/w780.jpg",
+            duration: "22m",
+            overview: "The Bakugan Battle Brawlers Resistance sneaks into Alpha City, New Vestroia to destroy its towering Dimension Controller."
+          },
+          {
+            episode: 8,
+            title: "What's The Plan?",
+            absoluteEpisode: 60,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/8/w780.jpg",
+            duration: "22m",
+            overview: "Dan is haunted by dreams of his defeat at the hands of Gus, the Vexos Number Two Brawler."
+          },
+          {
+            episode: 9,
+            title: "Freedom Run",
+            absoluteEpisode: 61,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/9/w780.jpg",
+            duration: "22m",
+            overview: "It's the finals of the Bakugan Battle Tournament and Shun and Ace try to buy time for the others."
+          },
+          {
+            episode: 10,
+            title: "Surprise Visitor",
+            absoluteEpisode: 62,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/10/w780.jpg",
+            duration: "22m",
+            overview: "Runo has had enough of waiting for Dan to return to Earth. She's determined to find a way to New Vestroia to join him in saving the Bakugan."
+          },
+          {
+            episode: 11,
+            title: "Gate Crashers",
+            absoluteEpisode: 63,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/11/w780.jpg",
+            duration: "22m",
+            overview: "Dan, Runo, Mira and Baron arrive on Earth safe and sound, but the Dimensional Transporter also drops off unwelcome visitors; Lync, Gus and Spectra."
+          },
+          {
+            episode: 12,
+            title: "Unmasked",
+            absoluteEpisode: 64,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/12/w780.jpg",
+            duration: "22m",
+            overview: "Realizing they must wait to return to New Vestroia, Dan and the Battle Brawlers decide to enjoy some R & R at an amusement park while they plan their next move."
+          },
+          {
+            episode: 13,
+            title: "Voices In The Night",
+            absoluteEpisode: 65,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/13/w780.jpg",
+            duration: "22m",
+            overview: "Dan and the Bakugan Brawlers try to chill out while they're trapped on Earth, unable to help their friends."
+          },
+          {
+            episode: 14,
+            title: "Duel in the Dunes",
+            absoluteEpisode: 66,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/14/w780.jpg",
+            duration: "22m",
+            overview: "Marucho finds himself in a desert with Elfin. After falling into quicksand, he is rescued by Volt who later engages him in a battle. Marucho seems to be doing well with his new trap, Tripod Epsilon but when Volt pulls out his trap, Dynamo, things get rough and Marucho is defeated. Back on Earth, Mira and Baron hang out at Dan's, who after waking up from a dream, is still eager to return to New Vestroia in order to help Shun and Marucho."
+          },
+          {
+            episode: 15,
+            title: "Last One Standing",
+            absoluteEpisode: 67,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/15/w780.jpg",
+            duration: "22m",
+            overview: "After Marucho and Ace are lured into a trap, Shun sets out to destroy the remaining Dimension Controllers single-handedly."
+          },
+          {
+            episode: 16,
+            title: "Show Me the Power!",
+            absoluteEpisode: 68,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/16/w780.jpg",
+            duration: "22m",
+            overview: "Feeling helpless as he waits for a chance to return to New Vestroia, Dan trains Baron to the breaking point."
+          },
+          {
+            episode: 17,
+            title: "Dude, Where's My Bakugan?",
+            absoluteEpisode: 69,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/17/w780.jpg",
+            duration: "22m",
+            overview: "Tormented by dreams of losing Drago, Dan wakes up from a feverish sleep, surrounded by his friends."
+          },
+          {
+            episode: 18,
+            title: "Gone, Gone Bakugan",
+            absoluteEpisode: 70,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/18/w780.jpg",
+            duration: "22m",
+            overview: "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
+          },
+          {
+            episode: 19,
+            title: "Family Ties",
+            absoluteEpisode: 71,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/19/w780.jpg",
+            duration: "22m",
+            overview: "The Battle Brawlers spend their last night on Earth, saying their goodbyes and making final arrangements before returning to New Vestroia."
+          },
+          {
+            episode: 20,
+            title: "Beta City Blues",
+            absoluteEpisode: 72,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/20/w780.jpg",
+            duration: "22m",
+            overview: "Spectra and his crew arrive in New Vestroia but Mira has second thoughts about her choices when Shadow Prove reveals Ace, Shun and Marucho are prisoners of the Vexos."
+          },
+          {
+            episode: 21,
+            title: "Brotherly Love",
+            absoluteEpisode: 73,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/21/w780.jpg",
+            duration: "22m",
+            overview: "As the Battle Brawler's Resistance reunite, Ace learns the terrible truth; Mira has joined the Vexos."
+          },
+          {
+            episode: 22,
+            title: "Underground Take Down",
+            absoluteEpisode: 74,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/22/w780.jpg",
+            duration: "22m",
+            overview: "Mira is caught in the middle as Prince Hydron and Spectra move to consolidate their power."
+          },
+          {
+            episode: 23,
+            title: "Wall to Wall Brawl",
+            absoluteEpisode: 75,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/23/w780.jpg",
+            duration: "22m",
+            overview: "Despite Prince Hydron's objections, Spectra sends Mira and Gus to challenge Dan and Ace with Hydron's new Mechanical Bakugan."
+          },
+          {
+            episode: 24,
+            title: "Ultimate Bakugan",
+            absoluteEpisode: 76,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/24/w780.jpg",
+            duration: "22m",
+            overview: "As the Resistance and their Bakugan fly up to Vespalace to free their friends from Prince Hydron, the Vestal monarch reveals another line of defense; a final Dimension Controller."
+          },
+          {
+            episode: 25,
+            title: "Final Countdown",
+            absoluteEpisode: 77,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/25/w780.jpg",
+            duration: "22m",
+            overview: "Now combined with the Vestal's six mechanical Bakugan, Drago squares off against Ultimate Helios."
+          },
+          {
+            episode: 26,
+            title: "Reunion",
+            absoluteEpisode: 78,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/26/w780.jpg",
+            duration: "22m",
+            overview: "With Vespalace crumbling around them, the Battle Brawlers have given up hope of freeing their friends, when the destruction of the final Dimension Controller releases the bronzed Bakugan to their original forms."
+          },
+          {
+            episode: 27,
+            title: "Six Degrees of Destruction",
+            absoluteEpisode: 79,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/27/w780.jpg",
+            duration: "22m",
+            overview: "Six months after New Vestroia has been freed--- Dan and the gang are back on Earth, enjoying a peaceful life with their Bakugan."
+          },
+          {
+            episode: 28,
+            title: "Revenge Of The Vexos",
+            absoluteEpisode: 80,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/28/w780.jpg",
+            duration: "22m",
+            overview: "After being tricked by the Six Ancient Soldiers, King Zenoheld is more determined than ever to get his hands on the Bakugan possessing the Six Attribute Energies. At Mylene's suggestion he dispatches Prince Hydron to Vestal to begin the retrieval."
+          },
+          {
+            episode: 29,
+            title: "Saved by the Siren",
+            absoluteEpisode: 81,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/29/w780.jpg",
+            duration: "22m",
+            overview: "While out apartment hunting for Baron, Ace and Percival are accosted by Mylene and her new Mechanical Bakugan, Macubass."
+          },
+          {
+            episode: 30,
+            title: "The Day New Vestroia Stood Still",
+            absoluteEpisode: 82,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/30/w780.jpg",
+            duration: "22m",
+            overview: "When Dan and the others are finally able to communicate with their comrades on Vestal they learn of the Vexos attacks on Baron and Ace."
+          },
+          {
+            episode: 31,
+            title: "Spectra Rises",
+            absoluteEpisode: 83,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/31/w780.jpg",
+            duration: "22m",
+            overview: "Dan and the gang land on Vestal expecting to run into a Vexos member or two."
+          },
+          {
+            episode: 32,
+            title: "Shadow Attack",
+            absoluteEpisode: 84,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/32/w780.jpg",
+            duration: "22m",
+            overview: "After Prince Hydron successfully captures the Haos Energy from Baron, King Zenohled is anxious for the Vexos to bring him the remaining five Attribute Energies from the Battle Brawlers."
+          },
+          {
+            episode: 33,
+            title: "Brontes' Betrayal",
+            absoluteEpisode: 85,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/33/w780.jpg",
+            duration: "22m",
+            overview: "King Zenoheld's plan to lure the Brawlers off of Vestal and back to Earth in order to battle them for the Attribute Energies seems to have worked."
+          },
+          {
+            episode: 34,
+            title: "Earth Invaders",
+            absoluteEpisode: 86,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/34/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers return to Earth after they learn of Alice being attacked; though they suspect they have been lured there by Zenoheld in a ploy to steal their remaining attribute energies."
+          },
+          {
+            episode: 35,
+            title: "Elfin on the Run!",
+            absoluteEpisode: 87,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/35/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers continue to hide out from the Vexos in Marucho's mansion, protected by the Barrier Shield. Elfin is restless, however, and begins talking a big game about facing off with the Vexos."
+          },
+          {
+            episode: 36,
+            title: "Samurai Showdown!",
+            absoluteEpisode: 88,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/36/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers continue to hide out from the Vexos in Marucho's mansion, when they are paid a surprise visit by Baron's sister Maron."
+          },
+          {
+            episode: 37,
+            title: "Virtual Insanity",
+            absoluteEpisode: 89,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/37/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers continue to hide from the Vexos in Marucho's mansion, when they are paid a surprise visit by their old pal, Billy."
+          },
+          {
+            episode: 38,
+            title: "All or Nothing",
+            absoluteEpisode: 90,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/38/w780.jpg",
+            duration: "22m",
+            overview: "With the Brawlers' hiding spot now exposed, the pressure is on more than ever."
+          },
+          {
+            episode: 39,
+            title: "Avenging Spectra",
+            absoluteEpisode: 91,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/39/w780.jpg",
+            duration: "22m",
+            overview: "Spectra makes good on his bet with Dan and takes the Brawlers to the Mother Palace."
+          },
+          {
+            episode: 40,
+            title: "Ambush",
+            absoluteEpisode: 92,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/40/w780.jpg",
+            duration: "22m",
+            overview: "As Dan and the Brawlers continue their search for the Bakugan Termination System, they run into an ambush by the Palace Guards."
+          },
+          {
+            episode: 41,
+            title: "BT The Final Battle",
+            absoluteEpisode: 93,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/41/w780.jpg",
+            duration: "22m",
+            overview: "Spectra offers Dr. Clay a place by his side and the secret to Bakugan DNA, however, Dr. Clay remains loyal to Zenoheld and declares that he and Spectra are no longer father and son. A battle soon begins between Hydron and Dan and Mira, just as Spectra arrives to fight alongside Dan!"
+          },
+          {
+            episode: 42,
+            title: "Exodus",
+            absoluteEpisode: 94,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/42/w780.jpg",
+            duration: "22m",
+            overview: "With the BT System fully armed, the Resistance and Spectra head to New Vestroia to initiate a mass evacuation. Many Bakugan are sent to Marucho's house on Earth including the Resistance's. However, Drago decides to remain behind to ensure that everyone has been rescued, remarking how many lives have been lost to protect New Vestroia such as Nobilion, Wavern dying, and also the six Ancient Warriors surrending their powers to six normal bakugan."
+          },
+          {
+            episode: 43,
+            title: "Phantom Data Attack",
+            absoluteEpisode: 95,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/43/w780.jpg",
+            duration: "22m",
+            overview: "With the Bakugan Termination System destroyed, the Brawlers head back to Earth, where Baron expresses interest in staying in order to further his studies."
+          },
+          {
+            episode: 44,
+            title: "Spectra's Last Stand",
+            absoluteEpisode: 96,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/44/w780.jpg",
+            duration: "22m",
+            overview: "The Bakugan Termination System fired up and seconds away from being fully operational, the Brawlers begin a large-scale evacuation of Bakugan from New Vestroia."
+          },
+          {
+            episode: 45,
+            title: "Fusion Confusion",
+            absoluteEpisode: 97,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/45/w780.jpg",
+            duration: "22m",
+            overview: "After Marucho demonstrates that the Brawlers' phantom data is the same as the data Keith received; the newest member of the Brawlers convinces them to let him outfit Drago with Battle Gear."
+          },
+          {
+            episode: 46,
+            title: "Volt's Revolt",
+            absoluteEpisode: 98,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/46/w780.jpg",
+            duration: "22m",
+            overview: "When Zenoheld declares that he is going to use Clay's \"Alternative\" Weapons System to destroy Earth and Vestal, Volt decides that he's had enough."
+          },
+          {
+            episode: 47,
+            title: "Payback",
+            absoluteEpisode: 99,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/47/w780.jpg",
+            duration: "22m",
+            overview: "Professor Clay reveals to Zenoheld that in order to finish the Alternative he will require the DNA Code and the Battle Gear Data from the Brawlers."
+          },
+          {
+            episode: 48,
+            title: "Mylene's Meltdown",
+            absoluteEpisode: 100,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/48/w780.jpg",
+            duration: "22m",
+            overview: "Mylene finds herself next in line to try and retrieve the data Zenoheld requires to complete the Alternative weapons system."
+          },
+          {
+            episode: 49,
+            title: "An Heir To Spare ",
+            absoluteEpisode: 101,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/49/w780.jpg",
+            duration: "22m",
+            overview: "Mylene's Death Ball causes the collapse of Bakugan Interspace."
+          },
+          {
+            episode: 50,
+            title: "Ultimate Weapon",
+            absoluteEpisode: 102,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/50/w780.jpg",
+            duration: "22m",
+            overview: "Hydron continues to cool his heels in his cell, when a mysterious voice from his past calls to him."
+          },
+          {
+            episode: 51,
+            title: "All For One",
+            absoluteEpisode: 103,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/51/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers enlist Alice and Dr. Michael's help in trying to find a way to the Mother Palace, where they believe Keith has gone to face-off with Zenoheld."
+          },
+          {
+            episode: 52,
+            title: "Final Fury",
+            absoluteEpisode: 104,
+            thumbnail: "https://episodes.metahub.space/tt1114855/2/52/w780.jpg",
+            duration: "22m",
+            overview: "The battle between the Brawlers and Zenoheld's \"Alternative\" continues to rage."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "A New Beginning",
+            absoluteEpisode: 105,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/1/w780.jpg",
+            duration: "22m",
+            overview: "It's an all new adventure for the Bakugan Battle Brawlers when Dan's family moves to Bayview City and Marucho's Bakugan Interspace becomes fully operational to everyone, allowing kids all over the world to log on and display their battling skills. Dan has a vision of Bakugan at war each other, something which everyone, except Ren, brushes off as a hallucination."
+          },
+          {
+            episode: 2,
+            title: "Revelation",
+            absoluteEpisode: 106,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/2/w780.jpg",
+            duration: "22m",
+            overview: "Dan continues to be haunted by the visions he saw while unconscious after an explosion during battle. Meanwhile Marucho notices that Ren is also behaving strangely."
+          },
+          {
+            episode: 3,
+            title: "The Visitor",
+            absoluteEpisode: 107,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/3/w780.jpg",
+            duration: "22m",
+            overview: "As Ren identifies three more Neathian moles , Princess Fabia from Neathia arrives in Bakugan Interspace looking for the recipients of the message she sent. Dan, having slept in, rushes to Bakugan Interspace and runs into Fabia, literally. Fabia learns that he is the top brawler in Bakugan Interspace and suspects she may be a Neathian spy."
+          },
+          {
+            episode: 4,
+            title: "Brawler to Be",
+            absoluteEpisode: 108,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/4/w780.jpg",
+            duration: "22m",
+            overview: "Dan is in the midst of training Jake in the battle arena with hopes that he will soon be skilled enough to become a member of the Battle Brawlers."
+          },
+          {
+            episode: 5,
+            title: "Confrontation",
+            absoluteEpisode: 109,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/5/w780.jpg",
+            duration: "22m",
+            overview: "With the Neathian moles making themselves known, they begin kidnapping brawlers from Bakugan Interspace."
+          },
+          {
+            episode: 6,
+            title: "Exposed",
+            absoluteEpisode: 110,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/6/w780.jpg",
+            duration: "22m",
+            overview: "The other Brawlers get together with Ren, who reveals the identities of more of the Neathian sleeper agents."
+          },
+          {
+            episode: 7,
+            title: "True Colors",
+            absoluteEpisode: 111,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/7/w780.jpg",
+            duration: "22m",
+            overview: "When his search for Ren turns up empty, Marucho uses a secret distress call to lure him out of hiding."
+          },
+          {
+            episode: 8,
+            title: "Hostile Takeover",
+            absoluteEpisode: 112,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/8/w780.jpg",
+            duration: "22m",
+            overview: "When the Brawlers discover that the Gundalians are inside Bakugan Interspace \"recruiting\"/kidnapping more battlers to join their cause, they race to the scene to confront them."
+          },
+          {
+            episode: 9,
+            title: "Twin Attack",
+            absoluteEpisode: 113,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/9/w780.jpg",
+            duration: "22m",
+            overview: "Now that Ren has taken over control of Bakugan Interspace, the Brawlers discover that they can no longer enter the virtual realm via the usual access points."
+          },
+          {
+            episode: 10,
+            title: "Escape from Darkness",
+            absoluteEpisode: 114,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/10/w780.jpg",
+            duration: "22m",
+            overview: "With Ren and the Gundalians now in control of Bakugan Interspace, Marucho determines that the security system preventing the Brawlers from diving in is being run out of the secure \"Baku-Room\"."
+          },
+          {
+            episode: 11,
+            title: "The Secret Package",
+            absoluteEpisode: 115,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/11/w780.jpg",
+            duration: "22m",
+            overview: "When the invading Gundalians breakthrough the outer shield, Neathian Castle Guard Linus flees to Earth in search of Fabia."
+          },
+          {
+            episode: 12,
+            title: "The Element",
+            absoluteEpisode: 116,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/12/w780.jpg",
+            duration: "22m",
+            overview: "In an attempt to get Neo Zipzam back before the Gundalians realize he possesses the Element, the Brawlers infiltrate Bakugan Interspace and walk into the middle of a Gundalian power struggle."
+          },
+          {
+            episode: 13,
+            title: "Twin Evil",
+            absoluteEpisode: 117,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/13/w780.jpg",
+            duration: "22m",
+            overview: "Given a brief pardon by Barodius after his earlier failure, Ren hatches a plot with Zenet to regain possession of the Element."
+          },
+          {
+            episode: 14,
+            title: "The Sacred Orb",
+            absoluteEpisode: 118,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/14/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers arrive at Neathia and meet Fabia's sister Queen Serena. With her blessing, Fabia takes her new friends to see the Sacred Orb, a source of great power that is hidden deep inside a mountain."
+          },
+          {
+            episode: 15,
+            title: "Decoy Unit",
+            absoluteEpisode: 119,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/15/w780.jpg",
+            duration: "22m",
+            overview: "With only one remaining security shield protecting Neathia from the invading Gundalian forces, the Brawlers hatch a plan to reinstate a previously destroyed shield."
+          },
+          {
+            episode: 16,
+            title: "The Secret Switch",
+            absoluteEpisode: 120,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/16/w780.jpg",
+            duration: "22m",
+            overview: "Dan, Fabia and Shun continue to make their way through the jungle to the shield generator building, when Stoica and Jesse suddenly ambush them."
+          },
+          {
+            episode: 17,
+            title: "Battle for the Second Shield",
+            absoluteEpisode: 121,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/17/w780.jpg",
+            duration: "22m",
+            overview: "Having made it to the Generator Building, Shun and Drago find themselves up against an army of Gundalian Guards, as they attempt to restart the Second Shield."
+          },
+          {
+            episode: 18,
+            title: "Curtain Call",
+            absoluteEpisode: 122,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/18/w780.jpg",
+            duration: "22m",
+            overview: "With the Second Shield back up and running the Brawlers help the Neathians rebuild their strongholds. Frustrated that they are losing momentum, Jake strikes out on his own in search of more Gundalians to fight."
+          },
+          {
+            episode: 19,
+            title: "The Secret of the Orb",
+            absoluteEpisode: 123,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/19/w780.jpg",
+            duration: "22m",
+            overview: "When Mason flees his Gundalian ship, Nurzak and Ren are soon in pursuit as they attempt to apprehend him before the Emperor learns of the escape."
+          },
+          {
+            episode: 20,
+            title: "Partners Till the End",
+            absoluteEpisode: 124,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/20/w780.jpg",
+            duration: "22m",
+            overview: "Fearing that her life may be at risk, Zenet morphs into a doppelganger of Ren in order to accompany Gill on a mission to destroy the Second Shield."
+          },
+          {
+            episode: 21,
+            title: "Divide and Conquer",
+            absoluteEpisode: 125,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/21/w780.jpg",
+            duration: "22m",
+            overview: "On the eve of the revolt against Barodius, Nurzak sends a message to the Brawlers asking to meet and discuss a peace treaty."
+          },
+          {
+            episode: 22,
+            title: "Mobile Assault",
+            absoluteEpisode: 126,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/22/w780.jpg",
+            duration: "22m",
+            overview: "While Kazarina works on a secret weapon designed to take down the restored Second Shield, the Gundalians dispatch their army of hypnotized Earth kids to distract the Brawlers in battle."
+          },
+          {
+            episode: 23,
+            title: "Sid Returns",
+            absoluteEpisode: 127,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/23/w780.jpg",
+            duration: "22m",
+            overview: "As Ren prepares to launch an attack on the restored Second Shield, something strange is happening deep within the bowels of the Gundalian Palace."
+          },
+          {
+            episode: 24,
+            title: "Colossus Dharak",
+            absoluteEpisode: 128,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/24/w780.jpg",
+            duration: "22m",
+            overview: "Once Kazarina finally completes the upgrades on Exokor, the Twelve Orders descend on Neathia to take down the restored Second Shield."
+          },
+          {
+            episode: 25,
+            title: "Dragonoid Colossus",
+            absoluteEpisode: 129,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/25/w780.jpg",
+            duration: "22m",
+            overview: "Ren's conflicting loyalties finally come to a head when he decides to turn his back on Barodius."
+          },
+          {
+            episode: 26,
+            title: "Forgiveness",
+            absoluteEpisode: 130,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/26/w780.jpg",
+            duration: "22m",
+            overview: "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
+          },
+          {
+            episode: 27,
+            title: "Into the Storm",
+            absoluteEpisode: 131,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/27/w780.jpg",
+            duration: "22m",
+            overview: "When the Brawlers are transported back to the Royal Palace, Ren is nowhere to be found. They learn that the Third Shield has been outfitted with a Bio-Filter that prevents anyone with Gundalian DNA from passing through."
+          },
+          {
+            episode: 28,
+            title: "Jake Returns",
+            absoluteEpisode: 132,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/28/w780.jpg",
+            duration: "22m",
+            overview: "Distraught over the loss of Jake to the Gundalians, Dan tries to mount a rescue operation to Gundalia."
+          },
+          {
+            episode: 29,
+            title: "Genesis",
+            absoluteEpisode: 133,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/29/w780.jpg",
+            duration: "22m",
+            overview: "Desperate to rescue the still hypnotized Jake from the clutches of the enemy, Dan rallies the Brawlers to go after their pal."
+          },
+          {
+            episode: 30,
+            title: "Infiltrated",
+            absoluteEpisode: 134,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/30/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers hitch a ride to Gundalia on Dragonoid Colossus. Once they arrive, Ren announces that in addition to Jake, he would also like to rescue his former teammates who are being held captive in Kazarina's lab."
+          },
+          {
+            episode: 31,
+            title: "True Evolution",
+            absoluteEpisode: 135,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/31/w780.jpg",
+            duration: "22m",
+            overview: "After getting separated from his teammates, Dan finds himself face to face with Barodius. Immediately they engage in a fearsome battle, which Drago quickly winds up on the losing end of."
+          },
+          {
+            episode: 32,
+            title: "Redemption",
+            absoluteEpisode: 136,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/32/w780.jpg",
+            duration: "22m",
+            overview: "After infiltrating Gundalian Castle, Nurzak and Fabia quickly square off with Kazarina and Stoica."
+          },
+          {
+            episode: 33,
+            title: "Jake's Last Stand",
+            absoluteEpisode: 137,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/33/w780.jpg",
+            duration: "22m",
+            overview: "Disguised as a Gundalian Soldier, Marucho and Akwimos infiltrate a troop briefing and are surprised to discover that it's being lead by Jake."
+          },
+          {
+            episode: 34,
+            title: "Final Strike",
+            absoluteEpisode: 138,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/34/w780.jpg",
+            duration: "22m",
+            overview: "As the Brawlers break into the Gundalian's lair, they run into all kinds of trouble. Jake seems to be regaining control as he does not destroy Dan when given the chance to. Will he save Dan and snap out of his trance?"
+          },
+          {
+            episode: 35,
+            title: "Dream Escape",
+            absoluteEpisode: 139,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/35/w780.jpg",
+            duration: "22m",
+            overview: "Just as Kazarina is about to finish Dan off, Jake breaks free of the hypnosis and stops her. Fabia arrives and holds off Lumagrowl while Jake and Coredem rescue Dan and Drago."
+          },
+          {
+            episode: 36,
+            title: "Gundalian Showdown",
+            absoluteEpisode: 140,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/36/w780.jpg",
+            duration: "22m",
+            overview: "The brawlers must head back to Neathia to defend it from Dharak's attack but Kazarina, Stoica, Gill and Airzel are determined to keep them on Gundalia. The brawlers manage to fight them off and escape, but Fabia remains behind to fight Kazarina, as she has a vendetta against her for the death of her fiance, Jin."
+          },
+          {
+            episode: 37,
+            title: "Broken Spell",
+            absoluteEpisode: 141,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/37/w780.jpg",
+            duration: "22m",
+            overview: "Just as the Brawlers return to Neathia, Fabia and Kazarina continue their battle. However, Lumagrowl begins disobeying Kazarina's orders and is determined to finish off Aranaut with or without her."
+          },
+          {
+            episode: 38,
+            title: "Code Eve",
+            absoluteEpisode: 142,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/38/w780.jpg",
+            duration: "22m",
+            overview: "Barodius confronts Serena, who refuses to back down. Barodius prepares to attack her, but Dan arrives in time to stop him. However, the Sacred Orb teleports them to an unknown area and reveals itself to be called \"Code Eve.\""
+          },
+          {
+            episode: 39,
+            title: "Destiny Revealed",
+            absoluteEpisode: 143,
+            thumbnail: "https://episodes.metahub.space/tt1114855/3/39/w780.jpg",
+            duration: "22m",
+            overview: "Drago struggles against Dharak, and is knocked out and reverts to a primal state, relying solely on instinct, but Dan manages to snap him out of it."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Interspace Showdown",
+            absoluteEpisode: 144,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/1/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers have returned to Earth and are back battling inside the expanded and awesome Bakugan Interspace."
+          },
+          {
+            episode: 2,
+            title: "Mechtogan Mayhem",
+            absoluteEpisode: 145,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/2/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago begin a rigorous training regimen as they attempt to get Drago's newly inherited powers under control."
+          },
+          {
+            episode: 3,
+            title: "Disconnect",
+            absoluteEpisode: 146,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/3/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago continue to be evasive with their teammates as they try and figure out the link between Code Eve's powers and the birth of the Mechtogan, Zenthon."
+          },
+          {
+            episode: 4,
+            title: "Fall From Grace",
+            absoluteEpisode: 147,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/4/w780.jpg",
+            duration: "22m",
+            overview: "Marucho and Shun discover that Dan and Drago have been practicing in secret, which leads to the revelation that Zenthon was born of Drago's new powers."
+          },
+          {
+            episode: 5,
+            title: "Tri-Twister Take Down",
+            absoluteEpisode: 148,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/5/w780.jpg",
+            duration: "22m",
+            overview: "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
+          },
+          {
+            episode: 6,
+            title: "Agony of Defeat",
+            absoluteEpisode: 149,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/6/w780.jpg",
+            duration: "22m",
+            overview: "Shun and Marucho confront Dan and insist that he take a break from battling until he gets a handle on Drago's new powers."
+          },
+          {
+            episode: 7,
+            title: "BakuNano Explosion",
+            absoluteEpisode: 150,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/7/w780.jpg",
+            duration: "22m",
+            overview: "After the epic battle with Anubias, Dan and Drago go AWOL. The fans are now clamouring for more intense battle action and the new BakuNano technology is introduced to cause maximum damage."
+          },
+          {
+            episode: 8,
+            title: "Return to New Vestroia",
+            absoluteEpisode: 151,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/8/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago land in New Vestroia, to continue training. They are hit by another nightmarish vision, which leaves them with the terrifying realization that escape from the evil forces that haunt them may be impossible."
+          },
+          {
+            episode: 9,
+            title: "Chaos Control",
+            absoluteEpisode: 152,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/9/w780.jpg",
+            duration: "22m",
+            overview: "Mag Mel sends Anubias to New Vestroia to battle Dan and Drago and harness their power."
+          },
+          {
+            episode: 10,
+            title: "A Royale Pain",
+            absoluteEpisode: 153,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/10/w780.jpg",
+            duration: "22m",
+            overview: "With Dan gone, Shun assumes leadership of the Battle Brawlers.  When Shun joins a Battle Royale in an attempt to control the chaos, he is rescued by two mysterious battlers!"
+          },
+          {
+            episode: 11,
+            title: "Back in Sync",
+            absoluteEpisode: 154,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/11/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago are paid a visit by their old friend Wyvern.  Marucho is confronted by his father and must decide how to save Bakugan Interspace from further destruction."
+          },
+          {
+            episode: 12,
+            title: "Mind Search",
+            absoluteEpisode: 155,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/12/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago try to solve the identity of the mysterious masked entity haunting their dark visions.  Meanwhile, Marucho teaches Paige and Rafe a lesson about strategy."
+          },
+          {
+            episode: 13,
+            title: "Re-Connection",
+            absoluteEpisode: 156,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/13/w780.jpg",
+            duration: "22m",
+            overview: "Marucho and Shun square off in a championship match. As both divisions of the Brawlers fight their battles, Mag Mel uses his pawns Sellon and Anubias to unleash the latest stage of his sinister plan."
+          },
+          {
+            episode: 14,
+            title: "Triple Threat",
+            absoluteEpisode: 157,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/14/w780.jpg",
+            duration: "22m",
+            overview: "In a fierce battle against Sellon on Neathia; Dan and Drago summon Mechtogan Zenthon for help.  But they get more than they bargained for when a Mechtogan Titan appears!"
+          },
+          {
+            episode: 15,
+            title: "Interspace Under Siege",
+            absoluteEpisode: 158,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/15/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago return from New Vestroia to help the Battle Brawlers defend Interspace from the rampaging Caos Bakugan."
+          },
+          {
+            episode: 16,
+            title: "A Hero Returns",
+            absoluteEpisode: 159,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/16/w780.jpg",
+            duration: "22m",
+            overview: "Under Marucho's leadership the Brawlers attempt to delete the Chaos Bakugan from Interspace."
+          },
+          {
+            episode: 17,
+            title: "Gundalia Under Fire",
+            absoluteEpisode: 160,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/17/w780.jpg",
+            duration: "22m",
+            overview: "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
+          },
+          {
+            episode: 18,
+            title: "Battle Lines",
+            absoluteEpisode: 161,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/18/w780.jpg",
+            duration: "22m",
+            overview: "The Battle Brawlers race to the aid of their old friends Ren, Fabia and Nurzak on Gundalia."
+          },
+          {
+            episode: 19,
+            title: "Unlocking the Gate",
+            absoluteEpisode: 162,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/19/w780.jpg",
+            duration: "22m",
+            overview: "Dan and Drago are face to face with Mag Mel and Razenoid and the two sides square off in a fierce battle."
+          },
+          {
+            episode: 20,
+            title: "True Colours",
+            absoluteEpisode: 163,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/20/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers race back to Earth and discover the Chaos Bakugan are destroying Bakugan Interspace."
+          },
+          {
+            episode: 21,
+            title: "Dangerous Beauty",
+            absoluteEpisode: 164,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/21/w780.jpg",
+            duration: "22m",
+            overview: "A wave of Chaos Bakugan causes the Bawlers to split up to fend off the attack. Mid-battle Dan is summoned by Sellon who lures him with information about the link he shares with Mag Mel."
+          },
+          {
+            episode: 22,
+            title: "Unfinished Business",
+            absoluteEpisode: 165,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/22/w780.jpg",
+            duration: "22m",
+            overview: "Dan receives what appears to be a distress call from Noah."
+          },
+          {
+            episode: 23,
+            title: "Behind the Mask",
+            absoluteEpisode: 166,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/23/w780.jpg",
+            duration: "22m",
+            overview: "Dan attempts to link with Mag Mel again, but on a deeper level."
+          },
+          {
+            episode: 24,
+            title: "Interspace Armageddon",
+            absoluteEpisode: 167,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/24/w780.jpg",
+            duration: "22m",
+            overview: "Marucho reveals his plan to completely delete Bakugan Interspace while his father and Kato work on an escape plan."
+          },
+          {
+            episode: 25,
+            title: "Dark Moon",
+            absoluteEpisode: 168,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/25/w780.jpg",
+            duration: "22m",
+            overview: "Dan and the others have arrived safely on earth to find a mysterious dark moon in the sky."
+          },
+          {
+            episode: 26,
+            title: "The Final Takedown",
+            absoluteEpisode: 169,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/26/w780.jpg",
+            duration: "22m",
+            overview: "The final battle continues with Dan and Mag Mel, while the others are fighting the remaining Bakugan, Mechtogan, and Mechtogan Titans on Earth."
+          },
+          {
+            episode: 27,
+            title: "Evil Arrival",
+            absoluteEpisode: 170,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/27/w780.jpg",
+            duration: "22m",
+            overview: "After Mag Mel's defeat at the hands of the Brawlers, peace reigns once again in the universe."
+          },
+          {
+            episode: 28,
+            title: "Wiseman Cometh",
+            absoluteEpisode: 171,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/28/w780.jpg",
+            duration: "22m",
+            overview: "Peace appears to have returned to Bakugan City after the Brawlers made short work of the invading Mechtogan; however it doesn't last long."
+          },
+          {
+            episode: 29,
+            title: "Mysterious Bond",
+            absoluteEpisode: 172,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/29/w780.jpg",
+            duration: "22m",
+            overview: "Fearful of another attack by Wiseman and his Mechtogans, the Brawlers ask Reptak to join Dan and Drago as their additional partner Bakugan."
+          },
+          {
+            episode: 30,
+            title: "Prodigal Bakugan",
+            absoluteEpisode: 173,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/30/w780.jpg",
+            duration: "22m",
+            overview: "Jaakor is visited by his two former students: Skytruss and Orbeum."
+          },
+          {
+            episode: 31,
+            title: "Combination Impossible",
+            absoluteEpisode: 174,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/31/w780.jpg",
+            duration: "22m",
+            overview: "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+          },
+          {
+            episode: 32,
+            title: "Enemy Allies",
+            absoluteEpisode: 175,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/32/w780.jpg",
+            duration: "22m",
+            overview: "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+          },
+          {
+            episode: 33,
+            title: "Battle for Bakugan Land",
+            absoluteEpisode: 176,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/33/w780.jpg",
+            duration: "22m",
+            overview: "Wiseman reappears and attacks the amusement park that Bakugan helped create Bakugan Land. Julie decides to go and confront him as a reporter to see what his problem is, and the Battle Brawlers must try and find a way to contain the Nomads powers once again."
+          },
+          {
+            episode: 34,
+            title: "Gunz Blazing",
+            absoluteEpisode: 177,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/34/w780.jpg",
+            duration: "22m",
+            overview: "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+          },
+          {
+            episode: 35,
+            title: "Battle Suit Bash",
+            absoluteEpisode: 178,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/35/w780.jpg",
+            duration: "22m",
+            overview: "After Shun and Jaakor relay the details of their last battle to the rest of the team, it is decided that Bakugan combining is the best strategy they can employ against Wiseman."
+          },
+          {
+            episode: 36,
+            title: "Countdown to Doomsday",
+            absoluteEpisode: 179,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/36/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers go on the hunt for Wiseman's hideout in an effort to trap him there.  But Wiseman brings out the powerful Mechtogan Mechtavius Destroyer in a vicious battle against Dragonoid Destroyer."
+          },
+          {
+            episode: 37,
+            title: "The Eve of Extermination",
+            absoluteEpisode: 180,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/37/w780.jpg",
+            duration: "22m",
+            overview: "It's a race against time as the Brawlers once again Battle Mechtavius Destroyer but this time without the help of their own Mechtogan, Dragonoid Destroyer."
+          },
+          {
+            episode: 38,
+            title: "Jump to Victory",
+            absoluteEpisode: 181,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/38/w780.jpg",
+            duration: "22m",
+            overview: "Runo meets a new Bakugan named Aerogan who asks to be her partner."
+          },
+          {
+            episode: 39,
+            title: "Enemy Infiltration",
+            absoluteEpisode: 182,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/39/w780.jpg",
+            duration: "22m",
+            overview: "The Nonets begin to get curious about the true identity and motives of Wiseman."
+          },
+          {
+            episode: 40,
+            title: "Gunz Lives",
+            absoluteEpisode: 183,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/40/w780.jpg",
+            duration: "22m",
+            overview: "Gunz wakes up in his own worst nightmare and realizes that the evil ringleader Wiseman looks just like him!"
+          },
+          {
+            episode: 41,
+            title: "Evil Evolution",
+            absoluteEpisode: 184,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/41/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers learn the origin of Wiseman."
+          },
+          {
+            episode: 42,
+            title: "Evil vs. Evil",
+            absoluteEpisode: 185,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/42/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers are banished to the Doom Dimension."
+          },
+          {
+            episode: 43,
+            title: "Doom Dimension Throwdown",
+            absoluteEpisode: 186,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/43/w780.jpg",
+            duration: "22m",
+            overview: "Mechtavius Destroyer wreaks havoc in Bakugan City.  The Brawlers, still trapped in the Doom Dimension; battle Gunz and Betadron."
+          },
+          {
+            episode: 44,
+            title: "Blast from the Past",
+            absoluteEpisode: 187,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/44/w780.jpg",
+            duration: "22m",
+            overview: "After attacking Bakugan City, Mechtavius Destroyer invades New Vestroia.  The Bakugan put up a brave fight but are no match for his strength."
+          },
+          {
+            episode: 45,
+            title: "Beginning of the End",
+            absoluteEpisode: 188,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/45/w780.jpg",
+            duration: "22m",
+            overview: "The Brawlers travel back in time with the help of Professor Worton in an attempt to undo the destruction caused by Mechtavius Destroyer."
+          },
+          {
+            episode: 46,
+            title: "The End of the Line",
+            absoluteEpisode: 189,
+            thumbnail: "https://episodes.metahub.space/tt1114855/4/46/w780.jpg",
+            duration: "22m",
+            overview: "In the final battle against Mechtavius Destroyer, Dragonoid Destroyer uses the energy from the powerful bond between humans and Bakugan to defeat him."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 32. Sword Art Online (2012)
+  // ============================================================
+  {
+    id: "sword-art-online-2012",
+    title: "Sword Art Online",
+    type: "TV Show",
+    isAnime: true,
+    year: 2012,
+    rating: "7.5",
+    age: "TV-14",
+    duration: "24m",
+    genres: ["Animation", "Action", "Adventure", "Fantasy", "Romance", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wJi7fRmHw0wRMldUY28sSzXpp4G.jpg",
+    videoUrl: "45782",
+    trailerUrl: "https://www.youtube.com/watch?v=6ohYYtxfDCg",
+    animeSlug: "sword-art-online",
+    malId: 11757,
+    anilistId: 11757,
+    tmdbId: 45782,
+    overview: "In the year 2022, gamers line up for the launch of Sword Art Online, a hotly anticipated VRMMORPG that lets players connect to an immersive virtual reality world with a special helmet called NerveGear. Kirito is one of the players eager to jump into the action. But after logging in, he and 10,000 other players discover that the game's creator has trapped them in the world: the only way to escape is to beat all 100 floors of the floating castle Aincrad—and dying in the game means dying in real life.",
+    overviewKurdish: "لە ساڵی ٢٠٢٢دا، یاریزانان ڕیز دەبەستن بۆ یاریی چاوەڕوانکراوی «سۆرد ئارت ئۆنلاین»، یارییەکی ئۆنلاینی ڕاستیی مەجازی کە لە ڕێگەی کڵاوێکی تایبەتەوە بە ناوی «نێرڤ گێر» یاریزانەکان دەباتە ناو جیهانێکی مەجازیی بێوێنە. کیریتۆ یەکێکە لەو یاریزانانەی بە پەرۆشەوە دەچێتە ناو یارییەکە. بەڵام دوای چوونەژوورەوە، ئەو و دە هەزار یاریزانی تر بۆیان دەردەکەوێت کە دروستکەری یارییەکە هەموویانی لەو جیهانەدا زیندانی کردووە: تەنها ڕێگە بۆ ڕزگاربوون بەزاندنی هەموو ١٠٠ نهۆمەکەی قەڵای ئاینکرادە، و مردن لە ناو یارییەکەدا بە مانای مردنە لە ژیانی ڕاستەقینەدا.",
+    director: "Tomohiko Ito",
+    cast: ["Yoshitsugu Matsuoka", "Haruka Tomatsu", "Hiroaki Hirata", "Ai Kayano", "Rina Hidaka", "Hiroki Yasumoto", "Isshin Chiba", "Kaori Maeda"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The World of Swords",
+            absoluteEpisode: 1,
+            airDate: "2012-07-08",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/wokec1ewZhYNMLcKuK01H09i2pB.jpg",
+            duration: "23m",
+            overview: "It's launch day for one of the most highly-anticipated video games of all time. Join the character \"Kirito\" as he begins his journey in the virtual world of Sword Art Online."
+          },
+          {
+            episode: 2,
+            title: "Beater",
+            absoluteEpisode: 2,
+            airDate: "2012-07-15",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/hiBynS5SFi0ltxFsaYtq39C9k76.jpg",
+            duration: "23m",
+            overview: "It’s been one month since the players have been locked in the game.  2000 people have died; the first floor hasn’t been cleared yet."
+          },
+          {
+            episode: 3,
+            title: "Red-Nosed Reindeer",
+            absoluteEpisode: 3,
+            airDate: "2012-07-22",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/kxBO1gp72V4uBWLSACzL3RvEjQ9.jpg",
+            duration: "23m",
+            overview: "Kirito has finally joined a guild made up of close friends in reality.  Everything is going well until a tragic accident changes Kirito completely."
+          },
+          {
+            episode: 4,
+            title: "The Black Swordsman",
+            absoluteEpisode: 4,
+            airDate: "2012-07-29",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/xg8AqSOPUaEJvaG8GcdPsCIT2MI.jpg",
+            duration: "23m",
+            overview: "Silca is known as Dragon Tamer Silca, but after leaving her group she is caught and her pet, Pina paid the ultimate price.  Before she is killed, Kirito saves her and offers her a choice."
+          },
+          {
+            episode: 5,
+            title: "Murder in the Safe Zone",
+            absoluteEpisode: 5,
+            airDate: "2012-08-05",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/4r89kn8VYl2NahtGAOS1V552w71.jpg",
+            duration: "23m",
+            overview: "A player has been killed inside a safe zone and not by the known means.  Asuna and Krito take it upon themselves to find out how and why this is happening."
+          },
+          {
+            episode: 6,
+            title: "Illusionary Avenger",
+            absoluteEpisode: 6,
+            airDate: "2012-08-12",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/zz9Zw04cvobbS5Bf9MYKxptk9aQ.jpg",
+            duration: "23m",
+            overview: "Kirito has figured out the how and now he has to figure out the why."
+          },
+          {
+            episode: 7,
+            title: "The Temperature of the Heart",
+            absoluteEpisode: 7,
+            airDate: "2012-08-19",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/iWGUPY39gmNrMmKAfkP8dalEVyz.jpg",
+            duration: "23m",
+            overview: "A trip to get a new sword leaves Kirito battling a dragon and his fears."
+          },
+          {
+            episode: 8,
+            title: "The Sword Dance of Black and White",
+            absoluteEpisode: 8,
+            airDate: "2012-08-26",
+            rating: 7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/cmajeWlA7OCpIT2H6JPXIo9Lwdw.jpg",
+            duration: "23m",
+            overview: "After 2 years, people have got used to living in SAO, with a dwindling front line it might just be up to Kirito and Asuna to continue the charge."
+          },
+          {
+            episode: 9,
+            title: "The Blue-Eyed Demon",
+            absoluteEpisode: 9,
+            airDate: "2012-09-02",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/t2GBif2MdqYhZvQx755Y9xunQkF.jpg",
+            duration: "23m",
+            overview: "To save a group of players and Asuna from a Boss character, Kirito is forced to play his trump card."
+          },
+          {
+            episode: 10,
+            title: "Crimson Killing Intent",
+            absoluteEpisode: 10,
+            airDate: "2012-09-09",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2A6GRQT5uDJhq9vc46fISn0CNzm.jpg",
+            duration: "23m",
+            overview: "Kirito has agreed to a duel with the head of the Blood Alliance Knights.  If Kirito wins, Asuna is free to leave the Knights and if he loses…"
+          },
+          {
+            episode: 11,
+            title: "The Girl of Morning Dew",
+            absoluteEpisode: 11,
+            airDate: "2012-09-16",
+            rating: 7.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/tULdNWI4qoToSyO5PUEiwRWncAh.jpg",
+            duration: "23m",
+            overview: "The newly married couple is enjoying their time away from the front lines.  But a new guest will take them all the way back to the beginning."
+          },
+          {
+            episode: 12,
+            title: "Yui's Heart",
+            absoluteEpisode: 12,
+            airDate: "2012-09-23",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/k8rzVr0A4jtsskjRMLEM5NNlqfr.jpg",
+            duration: "23m",
+            overview: "Yulier, second in command, of the Liberation Army has approached Kirito and Asuna for help saving her friend and her guild."
+          },
+          {
+            episode: 13,
+            title: "Edge of Hell's Abyss",
+            absoluteEpisode: 13,
+            airDate: "2012-09-30",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ooI4fJvu4eUZgvRTQx1v3uzUTLU.jpg",
+            duration: "23m",
+            overview: "While enjoying a fishing tournment Kirito receieves an urgent e-mail from the leader of the guild requesting their return."
+          },
+          {
+            episode: 14,
+            title: "The End of the World",
+            absoluteEpisode: 14,
+            airDate: "2012-10-07",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/fcnSuM0WQyKODZ6BD1yUGJpDbIf.jpg",
+            duration: "23m",
+            overview: "Game over."
+          },
+          {
+            episode: 15,
+            title: "Return",
+            absoluteEpisode: 15,
+            airDate: "2012-10-14",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/sMmzH8KpSNV9dGEQ3LP1Xzeokfo.jpg",
+            duration: "23m",
+            overview: "Kirigaya is adjusting to his life outside of the game, but he hasn't forgotten about Asuna. A recent visit to her in the hospital, he meets Sugou Nobuyuki."
+          },
+          {
+            episode: 16,
+            title: "Land of the Fairies",
+            absoluteEpisode: 16,
+            airDate: "2012-10-21",
+            rating: 7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/grHJC5Gk7fuk8jywVhs7UYXLiLG.jpg",
+            duration: "23m",
+            overview: "A new MMO allows users to fly and encourages player killing. Kirito has joined this new game in search of Asuna and is pleasantly surprised with what he finds."
+          },
+          {
+            episode: 17,
+            title: "Captive Queen",
+            absoluteEpisode: 17,
+            airDate: "2012-10-28",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/b702zYjB82kk0APiyCCYBn7fGJU.jpg",
+            duration: "23m",
+            overview: "As Kirito learns about the game from Leafa and the hatred between the races, Asuna learns the truth of her role from the Fairy King."
+          },
+          {
+            episode: 18,
+            title: "To the World Tree",
+            absoluteEpisode: 18,
+            airDate: "2012-11-04",
+            rating: 7.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/kP5JiBHMtIuiTcntCZUe9ERzAYj.jpg",
+            duration: "23m",
+            overview: "Leafa is making enemies leaving her area and group to team up with Kirito. On their way to neutral Territory, they speak more of the rules and areas of the ALO."
+          },
+          {
+            episode: 19,
+            title: "The Legrue Corridor",
+            absoluteEpisode: 19,
+            airDate: "2012-11-11",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/eMcIqPhChoBMpzqXG4CIUuEjKR3.jpg",
+            duration: "23m",
+            overview: "Something isn’t right; Recon has sent Leafa a message “I was right. Be careful. S.\"  What does he mean and will Leafa and Kirito have the time to figure it out?"
+          },
+          {
+            episode: 20,
+            title: "General of the Blazing Flame",
+            absoluteEpisode: 20,
+            airDate: "2012-11-18",
+            rating: 7.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/cOpNhZSFZv2ocUaGfZajDlHz7NK.jpg",
+            duration: "23m",
+            overview: "Kirito and Leafa have made it to the meeting and Kirito’s bluff as an ambassador has been called out.  If he can survive in a fight against the Salamanders General Eugene, his plan to prevent a war might work."
+          },
+          {
+            episode: 21,
+            title: "The Truth about ALfheim",
+            absoluteEpisode: 21,
+            airDate: "2012-11-25",
+            rating: 6.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/9AZUXEji3uy6yu7rtnb2iRuapYm.jpg",
+            duration: "23m",
+            overview: "While Asuna continues her attempt to escape, another woman in Kirito’s life tries to make sense of her emotions."
+          },
+          {
+            episode: 22,
+            title: "The Grand Quest",
+            absoluteEpisode: 22,
+            airDate: "2012-12-02",
+            rating: 7.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/d3Bl4GEYdM6rLO2BYoNz2esIAD7.jpg",
+            duration: "23m",
+            overview: "Kirito’s determination to save Asuna borders on the insane.  His reckless is stopped when Leafa suddenly logs out."
+          },
+          {
+            episode: 23,
+            title: "Bonds",
+            absoluteEpisode: 23,
+            airDate: "2012-12-09",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2OrvGXAS28CGhEs96FCAjkHDAUJ.jpg",
+            duration: "23m",
+            overview: "Even though a wall has been built between Kirito and Sugu, he must save Asuna.  The next time he challenges the final dungeon he won’t be alone."
+          },
+          {
+            episode: 24,
+            title: "Gilded Hero",
+            absoluteEpisode: 24,
+            airDate: "2012-12-16",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/3hdDhZFnQ524Tjs5ehiyrDzXJjA.jpg",
+            duration: "23m",
+            overview: "Kirito, Asuna, and Yui are finally together again, but the locks placed on Asuna are unbreakable.  Before they have a chance to come up with a plan, the fairy king makes his grand entrance."
+          },
+          {
+            episode: 25,
+            title: "The World Seed",
+            absoluteEpisode: 25,
+            airDate: "2012-12-23",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oPuUnWxMttvfVXv99aVgXO3qxpV.jpg",
+            duration: "25m",
+            overview: "Kirigaya Kazuto has beaten death twice but there is one more thing he must do."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "The World of Guns",
+            absoluteEpisode: 26,
+            airDate: "2014-07-05",
+            rating: 6.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/7OUSXOcIs9nzdLmLz0Bwdfhrm85.jpg",
+            duration: "23m",
+            overview: "A year has passed since SAO was cleared. Summoned by Kikuoka of the Virtual Division at the Ministry of Internal Affairs and Communications, Kazuto learns of a series of bizarre murders linked to the popular VR game, Gun Gale Online (GGO), the only game in Japan played by pros."
+          },
+          {
+            episode: 2,
+            title: "Cold-Hearted Sniper",
+            absoluteEpisode: 27,
+            airDate: "2014-07-12",
+            rating: 6.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/1sCbBCi1nxPqVhowB4PvH9SJPZr.jpg",
+            duration: "23m",
+            overview: "Armed with a large sniper rifle, Hecate II, the young girl Sinon is making a name for herself as the No. 1 sniper in GGO. When her squadron ambushes another squadron, she succeeds in taking out her first target. But when she takes aim at her second target, a robed “Behemoth,” he dodges the bullet."
+          },
+          {
+            episode: 3,
+            title: "Memories of Blood",
+            absoluteEpisode: 28,
+            airDate: "2014-07-19",
+            rating: 6.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/uYykJcutnYPW8O7LAs0T7MvjXS7.jpg",
+            duration: "23m",
+            overview: "In real life, the player Sinon is a high school student named Shino Asada. On her way home from school, she’s dragged into an alley by delinquent girls. Their leader, Endo, tries to extort money from Shino, but she bravely refuses."
+          },
+          {
+            episode: 4,
+            title: "GGO",
+            absoluteEpisode: 29,
+            airDate: "2014-07-26",
+            rating: 7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/eJjflgwMR7kcUTOrolwqAlppb4f.jpg",
+            duration: "23m",
+            overview: "Kikuoka has recruited Kirito to investigate GGO, and so he logs in. To lure Death Gun into targeting him, he hopes to enter Bullet of Bullets (BoB), a tournament to decide the most powerful gunman in GGO. But as a first-timer, he doesn't know his way around this game, and soon loses his way, when he catches sight of Sinon and approaches her."
+          },
+          {
+            episode: 5,
+            title: "Guns and Swords",
+            absoluteEpisode: 30,
+            airDate: "2014-08-02",
+            rating: 7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oJ9RjaDYoyky1neZvAWQRZLPA9E.jpg",
+            duration: "23m",
+            overview: "To register for BoB, Kirito starts entering the required information into a terminal, but is astounded to see that the form includes columns for his real-world name and address. He is temporarily torn when he realizes that without this info, he won't be eligible for the top prizes..."
+          },
+          {
+            episode: 6,
+            title: "Showdown in the Wilderness",
+            absoluteEpisode: 31,
+            airDate: "2014-08-09",
+            rating: 6.8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/5Q0KetmCeYoWSimDuRp5aQ1jWEJ.jpg",
+            duration: "23m",
+            overview: "A man in a beat-up cloak watches Kirito fight his first battle and demands to know if he's \"the real thing\".  The man has the tattoo of Laughing Coffin, a murderer's guild that existed within SAO.  He tells Kirito that he'll kill him someday, and vanishes."
+          },
+          {
+            episode: 7,
+            title: "Crimson Memories",
+            absoluteEpisode: 32,
+            airDate: "2014-08-16",
+            rating: 6.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/4Woe1gkRDZtZztJu1Spai6dUqDU.jpg",
+            duration: "23m",
+            overview: "The man in the ragged cloak is an SAO survivor, and he might also be a player Kirito fought with to the death... This thought consumes Kirito, and his anguish is palpable - to the point that it worries Suguha."
+          },
+          {
+            episode: 8,
+            title: "Bullet of Bullets",
+            absoluteEpisode: 33,
+            airDate: "2014-08-23",
+            rating: 6.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/3htNh1oP2IZjXTf2ej2H4ZynxKW.jpg",
+            duration: "23m",
+            overview: "Kirito decides that Death Gun and the man in the cape will be appearing in BoB.  He uses the remaining time to exchange information with Sinon and find out more about the contestants.  Sinon sees how strange he was acting during the qualifier and asks him what happened.  She learns that he is a SAO survivor.  The main BoB tournament begins and 30 players are dropped in a 10km wide field."
+          },
+          {
+            episode: 9,
+            title: "Death Gun",
+            absoluteEpisode: 34,
+            airDate: "2014-08-30",
+            rating: 7.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ueDp5eL3maMX8ZzTcHUcOeccnbv.jpg",
+            duration: "23m",
+            overview: "The man in the cape shoots Pale Rider and he is eliminated despite the fact that he has HP remaining.  The man says that he is Death Gun, and declares that he will bring true death.  Asuna and her friends are watching a live stream of BoB and realize that Death Gun is one of the leaders of Laughing Coffin."
+          },
+          {
+            episode: 10,
+            title: "Death Chaser",
+            absoluteEpisode: 35,
+            airDate: "2014-09-06",
+            rating: 6.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/vs3DpifrmbTGuEEzLDSXAqlhAtS.jpg",
+            duration: "23m",
+            overview: "Sinon is attacked from behind by Death Gun and paralyzed. He's using a Black Star Type-54, ironically the same gun that Sinon used to shoot the robber. Her memories of the incident come flooding back and Sinon loses control, and Death Gun tries to kill her to make Kirito angry. But just before he can kill her Kirito saves her at the last second. Sinon is out of the fight, and Kirito tries to flee with her but is pursued by Death Gun."
+          },
+          {
+            episode: 11,
+            title: "What It Means To Be Strong",
+            absoluteEpisode: 36,
+            airDate: "2014-09-13",
+            rating: 6.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/chqwmSxOydZpXiad2BMCsYrtUK0.jpg",
+            duration: "23m",
+            overview: "After escaping from Death Gun, Kirito and Sinon lay low in a desert cave. There, Kirito speculates on how Death Gun murdered other players. In doing so, he hits upon a certain terrifying possibility."
+          },
+          {
+            episode: 12,
+            title: "Bullet of a Phantom",
+            absoluteEpisode: 37,
+            airDate: "2014-09-20",
+            rating: 6.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/fH9uKZtzgbsTcIUcjlSOuNCVIoM.jpg",
+            duration: "23m",
+            overview: "BoB nears its end, and the only surviving players are Kirito, Sinon, and Dark Wind, the second place winner of the last tournament.  Since Death Gun may have multiple partners, and Dark Wind may be in danger as well, Kirito decides to defeat him first.  He acts as a decoy while Sinon snipes the enemy.  Kirito's trust in her pays off as her bullet strikes true, and he finally faces off with Death Gun."
+          },
+          {
+            episode: 13,
+            title: "Phantom Bullet",
+            absoluteEpisode: 38,
+            airDate: "2014-09-27",
+            rating: 6.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/rZCPOKK3iWsROkGe66IideIFYSl.jpg",
+            duration: "23m",
+            overview: "Death Gun's attack is modeled after Star Splash, a SAO skill that doesn't exist in GGO.  Death Gun is skilled with not only a gun but a blade as well, and he gradually wears down Kirito's health.  Meanwhile, Sinon's scope has been destroyed by Death Gun and she cannot attack, so she's forced to simply watch the fight.  She grits her teeth and wonders if there's anything else she can do."
+          },
+          {
+            episode: 14,
+            title: "One Little Step",
+            absoluteEpisode: 39,
+            airDate: "2014-10-04",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/tMF65VcMIJiUBaJnb0Flq6CZroz.jpg",
+            duration: "23m",
+            overview: "Kyouji attacks Shino, saying he'll kill himself after she's dead. Kazuto saves her at the last second by jumping Kyouji.  During the fight, Kazuto is hit with Kyouji's poison syringe, but miraculously it doesn't work and Kirito is saved.  The next day Kazuto and Shino go to meet Kikuoka, and discuss the incident.  Kikuoka has a message from one of the captured Death Guns..."
+          },
+          {
+            episode: 15,
+            title: "The Queen of the Lake",
+            absoluteEpisode: 40,
+            airDate: "2014-10-18",
+            rating: 6.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2e9oCP375GrV99oioySGjl5CVz0.jpg",
+            duration: "23m",
+            overview: "It's reported that the Holy Sword Excalibur has been discovered inside ALO. Hearing the news, Kirito and Leafa decide to take possession of Excalibur before other players get to it first."
+          },
+          {
+            episode: 16,
+            title: "The King of the Giants",
+            absoluteEpisode: 41,
+            airDate: "2014-10-25",
+            rating: 6.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mYSSD9v7EGqPYOapdbIuNSUkcoA.jpg",
+            duration: "23m",
+            overview: "Kirito and the others are tasked with subjugating the Frost King Thrymr, and a quest to recover Excalibur. It's Yui's guess that this isn't a quest planned by the game admins, but something automatically generated by the system. And if that's the case…"
+          },
+          {
+            episode: 17,
+            title: "Excalibur",
+            absoluteEpisode: 42,
+            airDate: "2014-11-01",
+            rating: 6.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/vIqsyFzN4IPJF0xTbmfB3hIYK7d.jpg",
+            duration: "23m",
+            overview: "Kirito and the others are taking on Thrymr, the Boss lurking at the bottom level of the dungeon. But unable to make much of a dent in Thrymr's HP, they soon find themselves in grave danger. Just then, their new ally, Freyja, raises her voice…"
+          },
+          {
+            episode: 18,
+            title: "Forest House",
+            absoluteEpisode: 43,
+            airDate: "2014-11-08",
+            rating: 6.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/9AVzrSS0syPcLXakRPROGF2REOA.jpg",
+            duration: "23m",
+            overview: "In an upcoming update of ALO, Floors 21-30 of New Aincrad will be unlocked. Asuna, Kirito and Yui revisit their dream of once again living together in their log cabin on Floor 22."
+          },
+          {
+            episode: 19,
+            title: "Zekken",
+            absoluteEpisode: 44,
+            airDate: "2014-11-15",
+            rating: 7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/hQZ4OVlfnc1tp1EZrysc7XiA29r.jpg",
+            duration: "23m",
+            overview: "Hearing rumors about a brilliant player known as Zekken, Asuna decides to mount a challenge. But when Asuna logs out, she is told by her mother to take an exam to transfer into an academically oriented high school."
+          },
+          {
+            episode: 20,
+            title: "The Sleeping Knights",
+            absoluteEpisode: 45,
+            airDate: "2014-11-22",
+            rating: 6.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/1qwzt6MCPEDZxBbY1DIG8rcOqyp.jpg",
+            duration: "23m",
+            overview: "Asuna is asked to help the guild “Sleeping Knights,” which has decided to disband soon due to the members’ circumstances. Before they do, they want to defeat a Floor Boss with only their party."
+          },
+          {
+            episode: 21,
+            title: "The Monument of Swordsmen",
+            absoluteEpisode: 46,
+            airDate: "2014-11-29",
+            rating: 6.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ifdlJmiQmUelFhTDvl56ur4QpyP.jpg",
+            duration: "23m",
+            overview: "Asuna and the Sleeping Knights’ attempt to defeat the boss on Floor 27 has been observed by a guild specializing in boss raids. Now 20 of its members block the boss room.  With Kirito stalling the rest of the guild, can Asuna and the others break through?"
+          },
+          {
+            episode: 22,
+            title: "The End of the Journey",
+            absoluteEpisode: 47,
+            airDate: "2014-12-06",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/lwKmF4mpen4czxhWoUDEfJCrbSm.jpg",
+            duration: "23m",
+            overview: "A few days have passed since Yuuki suddenly disappeared from in front of Asuna, and she still hasn’t logged in to ALO. Later, Asuna meets Kazuto on the school roof, where he hands her a note and tells her Yuuki might be at the location written on it."
+          },
+          {
+            episode: 23,
+            title: "The Dream Begins",
+            absoluteEpisode: 48,
+            airDate: "2014-12-13",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/elqZmxx3KnUFRvzeXJ1Z1iMeABE.jpg",
+            duration: "23m",
+            overview: "As a tester for the world’s first medical-use Full-Dive device, Yuuki has been diving into virtual worlds from the hospital. Unable to leave her hospital room, she longs to go to school again. To make that wish come true, Asuna asks Kazuto for help…"
+          },
+          {
+            episode: 24,
+            title: "Mother's Rosario",
+            absoluteEpisode: 49,
+            airDate: "2014-12-20",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/gt2yB4qmF96FQHSwbBEuYwTUon1.jpg",
+            duration: "23m",
+            overview: "Getting to experience the outside world, Yuuki’s days are more satisfactory than ever before. In ALO, the players have a barbecue and end up on a quest. In the real world, Asuna and the girls take a trip to Kyoto. One day, Asuna receives an email…"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Underworld",
+            absoluteEpisode: 50,
+            airDate: "2018-10-07",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/4FpuWImV6U6SuYT8QY0SQ4LZWGa.jpg",
+            duration: "47m",
+            overview: "Kirito, along with his childhood friend, Eugeo, has been tasked with cutting down a colossal tree called the Gigas Cedar. They’re swinging their ax when their friend Alice arrives with lunch. As they eat, the three friends decide to go to a fabled cave."
+          },
+          {
+            episode: 2,
+            title: "The Demon Tree",
+            absoluteEpisode: 51,
+            airDate: "2018-10-14",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/vklSxL0fGZsZeMf2JSnlE5CWHZS.jpg",
+            duration: "23m",
+            overview: "Kirito wakes up to find himself inside a mysterious world evoking a fantasy game. His memory fuzzy, he tries to log out, but is unable to return to the real world. After wandering aimlessly, he finds himself underneath a colossal tree."
+          },
+          {
+            episode: 3,
+            title: "The End Mountains",
+            absoluteEpisode: 52,
+            airDate: "2018-10-21",
+            rating: 7.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/yubH2VEg4HfRBfxL38uPc0elJv4.jpg",
+            duration: "23m",
+            overview: "Kirito makes up his mind to journey to Centoria. Since he'll need Eugeo's help, he also decides to fell the Gigas Cedar. Meanwhile, Alice's little sister, Selka is worried about Eugeo, and opens up to Kirito about her concerns."
+          },
+          {
+            episode: 4,
+            title: "Departure",
+            absoluteEpisode: 53,
+            airDate: "2018-10-28",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oGEAEJX0UOf00N37rP04iApymsR.jpg",
+            duration: "23m",
+            overview: "Kirito and Eugeo realize Selka has taken off to the End Mountains alone, and decide to chase after her. As they enter the cave, they encounter goblins, presumably from the Dark Territory, and must engage in a battle."
+          },
+          {
+            episode: 5,
+            title: "Ocean Turtle",
+            absoluteEpisode: 54,
+            airDate: "2018-11-04",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/jq0Q41YWgV3ZcOzG17N2mHVuLkA.jpg",
+            duration: "23m",
+            overview: "In the real world, Kazuto Kirigaya lies unconscious. At Kikuoka’s request, Kazuto is moved to a well-equipped hospital, but when Asuna and Suguha try to visit, they’re turned away. Suspicious, Asuna and the others split up to find out more about Rath."
+          },
+          {
+            episode: 6,
+            title: "Project Alicization",
+            absoluteEpisode: 55,
+            airDate: "2018-11-11",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/xXZahtMZSkjhBvu5NrIY2KEA2bN.jpg",
+            duration: "23m",
+            overview: "Asuna infiltrates Rath, the research lab in the Ocean Turtle, where she relentlessly grills Kikuoka about Kazuto's whereabouts. Kikuoka reveals that behind the development of the Soul Translator is a mind-blowing objective of epic scale."
+          },
+          {
+            episode: 7,
+            title: "Swordcraft Academy",
+            absoluteEpisode: 56,
+            airDate: "2018-11-18",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mXyRnt3o7BBIb3esUrbiW1ZZ5cy.jpg",
+            duration: "23m",
+            overview: "Two years have gone by since Kirito and Eugeo left Rulid Village. In the capital city, Centoria, both boys have attained their goal of being admitted to the North Centoria Imperial Swordcraft Academy."
+          },
+          {
+            episode: 8,
+            title: "Swordsman's Pride",
+            absoluteEpisode: 57,
+            airDate: "2018-11-25",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/cDMMjmPqU3Bx6CdQLkobJMT1tCJ.jpg",
+            duration: "23m",
+            overview: "Kirito finds himself in a duel against the Elite Disciple Volo Levantein, using real swords. As the curious crowd looks on, Kirito is encouraged by Sortiliena, and the duel begins."
+          },
+          {
+            episode: 9,
+            title: "Nobleman's Obligations",
+            absoluteEpisode: 58,
+            airDate: "2018-12-02",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mVSRK03EZQVDkg6lpwDcFOSp4bp.jpg",
+            duration: "23m",
+            overview: "Now an Elite Disciple along with Kirito, Eugeo struggles with the question of what he should infuse in his sword so he can become stronger. When he's taunted by First-Seat Elite Disciple Raios and Second-Seat Humbert, Eugeo decides to accept Humbert's request for a duel."
+          },
+          {
+            episode: 10,
+            title: "Taboo Index",
+            absoluteEpisode: 59,
+            airDate: "2018-12-09",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/UB7mydlawxbobIxqWnV8lh1TcB.jpg",
+            duration: "23m",
+            overview: "Ronie and Tiese are late getting to the dorm. Kirito rushes out in search of them, but no sooner has he gone than Frenica appears. She tells Eugeo about how she's suffered at Humbert's hands, and that Tiese and Ronie went to confront him about it."
+          },
+          {
+            episode: 11,
+            title: "Central Cathedral",
+            absoluteEpisode: 60,
+            airDate: "2018-12-16",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/4ER3PIe7IZbHxXi1jAjcvEoGVaI.jpg",
+            duration: "23m",
+            overview: "Kirito and Eugeo are now considered criminals for having violated the Taboo Index and are thrown into the underground prison in the Central Cathedral. Meanwhile, on the Ocean Turtle in the real world, Asuna is watching over Kazuto as he's being treated."
+          },
+          {
+            episode: 12,
+            title: "The Sage of the Library",
+            absoluteEpisode: 61,
+            airDate: "2018-12-23",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/hR3N6Kwr8zlAZgEq3d6OBSgh1L1.jpg",
+            duration: "23m",
+            overview: "Kirito and Eugeo escape from their cell, only to find their way blocked by Eldrie Synthesis Thirty-One, under orders from Alice to lie in wait for them. Kirito and Eugeo struggle against him until Eugeo realizes that he's seen Eldrie somewhere before."
+          },
+          {
+            episode: 13,
+            title: "Ruler and Mediator",
+            absoluteEpisode: 62,
+            airDate: "2019-01-06",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/coCo7uFYVrbpwi1hcuO1ZTgL6aQ.jpg",
+            duration: "23m",
+            overview: "Kirito and Eugeo have been rescued by the young girl, Cardinal, who has secluded herself inside the Central Cathedral’s Great Library. Cardinal explains to Kirito how the Axiom Church and the Taboo Index came to be, starting with Administrator’s past."
+          },
+          {
+            episode: 14,
+            title: "The Crimson Knight",
+            absoluteEpisode: 63,
+            airDate: "2019-01-13",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/9SRBdXwI7kWxCqnjmivCRXbUSgT.jpg",
+            duration: "23m",
+            overview: "After being entrusted with the fate of the world by the Cardinal, Kirito and Eugeo head to the top floor of the Central Cathedral. On the way, they find their confiscated swords among a vast pile of weapons in an arsenal, only to be greeted with a hail of arrows by the Integrity Knight, Deusolbert Synthesis Seven."
+          },
+          {
+            episode: 15,
+            title: "The Relentless Knight",
+            absoluteEpisode: 64,
+            airDate: "2019-01-20",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/gmHLaLAz9GyxSk3c6meRtHVZy3N.jpg",
+            duration: "23m",
+            overview: "Kirito and Eugeo are on their way up the stairs of the Central Cathedral when they encounter two girls named Linel and Fizel. As they stand, wondering what two children are doing there, they let their guard down and..."
+          },
+          {
+            episode: 16,
+            title: "The Osmanthus Knight",
+            absoluteEpisode: 65,
+            airDate: "2019-01-27",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/bjpJIJCdQE5KPUqntpQMaqUWzJ5.jpg",
+            duration: "23m",
+            overview: "Though riddled with wounds, Kirito manages to activate his Perfect Weapon Control art. Continuing on their way to the top floor of the Central Cathedral, Kirito and Eugeo find themselves standing before a strange-looking floating platform."
+          },
+          {
+            episode: 17,
+            title: "Truce",
+            absoluteEpisode: 66,
+            airDate: "2019-02-03",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/j2F6KagBjK81YW5zPeG83phCWzJ.jpg",
+            duration: "23m",
+            overview: "When Kirito and Alice both unleash the Perfect Weapon Control art in the Cloudtop Garden, the impact rips a hole into the seemingly impregnable Central Cathedral wall, which sends them both flying outside."
+          },
+          {
+            episode: 18,
+            title: "The Legendary Hero",
+            absoluteEpisode: 67,
+            airDate: "2019-02-10",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/gveaJc1HRJAIB0abGsOfoFN4doj.jpg",
+            duration: "23m",
+            overview: "Eugeo reaches the ninetieth floor of the Central Cathedral, which turns out to be a vast bathing area. The perplexed Eugeo encounters Bercouli Synthesis One soaking in the bath. Meanwhile, Kirito and Alice are still climbing the Central Cathedral wall."
+          },
+          {
+            episode: 19,
+            title: "The Seal of the Right Eye",
+            absoluteEpisode: 68,
+            airDate: "2019-02-24",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/xbSBljqM4loFC7ZbKnItGFZSXD8.jpg",
+            duration: "23m",
+            overview: "Seeing Alice’s reaction when he mentioned the name Selka, Kirito decides to tell her the truth about the Integrity Knights. Meanwhile, after being knocked unconscious during his battle with Bercouli, Eugeo awakes on the top floor of the cathedral."
+          },
+          {
+            episode: 20,
+            title: "Synthesis",
+            absoluteEpisode: 69,
+            airDate: "2019-03-03",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2PyE8uOVgjBvdp89fbamah6RFIs.jpg",
+            duration: "23m",
+            overview: "Kirito and Alice reach the communal bath on the nintieth floor. There, they find the Integrity Knight Commander, Bercouli, who's been turned to stone by Chudelkin. Alice breaks down in tears upon seeing her mentor's tragic plight, but then..."
+          },
+          {
+            episode: 21,
+            title: "The 32nd Knight",
+            absoluteEpisode: 70,
+            airDate: "2019-03-10",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/hGFKKtPvmhA9AcPjCF2gsrlj2HV.jpg",
+            duration: "23m",
+            overview: "Standing in Kirito and Alice's way is Eugeo, who's undergone the Synthesis Ritual and become an Integrity Knight. Kirito is rattled, until Alice admonishes him into resolving to fight Eugeo with everything he's got."
+          },
+          {
+            episode: 22,
+            title: "Titan of the Sword",
+            absoluteEpisode: 71,
+            airDate: "2019-03-17",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/xTT4kEnlAjEPtep3i1ngPRp7adf.jpg",
+            duration: "23m",
+            overview: "On the top floor of the Central Cathedral, Kirito, Eugeo, and Alice finally face Administrator. But Chudelkin uses the sacred arts to transform himself into a giant clown and attacks."
+          },
+          {
+            episode: 23,
+            title: "Administrator",
+            absoluteEpisode: 72,
+            airDate: "2019-03-24",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/i1umIkndL7ofm6eSMtO0oHJD51u.jpg",
+            duration: "23m",
+            overview: "Cardinal appears on the top floor of Central Cathedral for a showdown with her bitter foe of the last two hundred years. She moves to achieve her objective of deleting Administrator, only to see the fallen sword golem rise up again."
+          },
+          {
+            episode: 24,
+            title: "My Hero",
+            absoluteEpisode: 73,
+            airDate: "2019-03-31",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/3na4mgCr70jClF70lGEaG9xcYZz.jpg",
+            duration: "23m",
+            overview: "Carrying the hopes of Cardinal, Eugeo, and Alice in his heart, Kirito stands yet again and visualizes the Black Swordsman, the top player who cleared SAO. For the sake of everyone he’s encountered in this world, Kirito, faces off with Administrator."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "In the Far North",
+            absoluteEpisode: 74,
+            airDate: "2019-10-13",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/z8cL9agh1EQ91AF03afc1O73zmv.jpg",
+            duration: "23m",
+            overview: "Six months have passed since the fierce battle against Administrator. Alice has brought Kirito to her childhood home, Rulid Village, where they live peacefully. Gazing out at the world that she saved with Kirito, Alice reflects on all that’s happened."
+          },
+          {
+            episode: 2,
+            title: "Raids",
+            absoluteEpisode: 75,
+            airDate: "2019-10-20",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oBgJg14AIUxX16x57fnxs0py6cq.jpg",
+            duration: "23m",
+            overview: "A force from the Dark Territory is attacking Rulid Village. Though she’d lost her purpose in battle, in order to fight for her family, and for the people that Kirito and Eugeo tried to protect, Alice takes up the Osmanthus Blade once again!"
+          },
+          {
+            episode: 3,
+            title: "The Final Load Test",
+            absoluteEpisode: 76,
+            airDate: "2019-10-27",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ps9zaKiZOSBYi5l3gWUnh2UGGuc.jpg",
+            duration: "23m",
+            overview: "The mysterious group that attacked the Ocean Turtle turns out to be a secret unit under orders from the U.S. National Security Agency. And its leader, Gabriel, has battled Kirito and Sinon before."
+          },
+          {
+            episode: 4,
+            title: "Dark Territory",
+            absoluteEpisode: 77,
+            airDate: "2019-11-03",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/3uewQSR2HLDr9WsuMWGNlwnzhDG.jpg",
+            duration: "23m",
+            overview: "Shasta, commander of the Dark Territory's dark knights, had intended to use Administrator's death as a chance for peace with the Human Empire. But his plans are thwarted by Emperor Vecta's return to the land of darkness."
+          },
+          {
+            episode: 5,
+            title: "The Night Before Battle",
+            absoluteEpisode: 78,
+            airDate: "2019-11-10",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/qjQmvuTg2xkpeeWJiBHmIcpvTDa.jpg",
+            duration: "23m",
+            overview: "Resolved to fight for humankind, Alice joins the forces of the Human Empire, bringing Kirito with her. But while the forces of darkness boast overwhelming numbers, only thirteen Integrity Knights are available to fight for the Human Empire."
+          },
+          {
+            episode: 6,
+            title: "Battle of the Knights",
+            absoluteEpisode: 79,
+            airDate: "2019-11-17",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/9Ab7KV9JsbBKmAG9WZ6QQQTnNSx.jpg",
+            duration: "23m",
+            overview: "The Final Load Test has begun, and the Eastern Gate has collapsed. Incited by Gabriel, now Emperor Vecta, the massive army of the land of darkness pushes on towards the Human Empire."
+          },
+          {
+            episode: 7,
+            title: "Stigma of the Disqualified",
+            absoluteEpisode: 80,
+            airDate: "2019-11-24",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/7lUTCntkCiZmfI46FXtNi4TM7UA.jpg",
+            duration: "23m",
+            overview: "Integrity Knight Renly Synthesis Twenty-Seven, in battle for the first time, flees his position, allowing goblins from the forces of darkness to infiltrate to the tent where Kirito is."
+          },
+          {
+            episode: 8,
+            title: "Blood and Life",
+            absoluteEpisode: 81,
+            airDate: "2019-12-01",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/aac9GQl1szARGPUH0e5dFUmu0y7.jpg",
+            duration: "23m",
+            overview: "The powerful formal art unleashed by the Integrity Knight Alice inflicts severe casualties on the forces of darkness. Alice encounters an enemy survivor and learns that Emperor Vecta's objective is to find the \"Priestess of Light.\""
+          },
+          {
+            episode: 9,
+            title: "Sword and Fist",
+            absoluteEpisode: 82,
+            airDate: "2019-12-08",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ngJJORUALoKW7OaoSaFlBg0Pr37.jpg",
+            duration: "23m",
+            overview: "Upon seeing Alice, Gabriel orders his entire army to capture her. The pugilists guild races ahead of the main force. As Alice and Bercouli try to come up with a strategy to counter them, the silent Integrity Knight Sheyta Synthesis Twelve steps forward."
+          },
+          {
+            episode: 10,
+            title: "Stacia, the Goddess of Creation",
+            absoluteEpisode: 83,
+            airDate: "2019-12-15",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/9is6M5wHgBtftPHks9sLJ7ASoZx.jpg",
+            duration: "23m",
+            overview: "Asuna has logged into the Underworld using the superuser account of Stacia, the Goddess of Creation. After she descends, she is reunited with Kirito, thanks to Ronie and Tiese. But soon Alice arrives, leading to a precarious situation!"
+          },
+          {
+            episode: 11,
+            title: "Heartless Choice",
+            absoluteEpisode: 84,
+            airDate: "2019-12-22",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ojEuCltZ3ZQIMYLYGhABH6AopnS.jpg",
+            duration: "23m",
+            overview: "Asuna has created a bottomless chasm. The dark knights and the pugilists attempt to cross over to the other side, where the Human Empire Army waits. Meanwhile, Critter releases an announcement about a limited-time beta test for a bizarre new VRMMO."
+          },
+          {
+            episode: 12,
+            title: "Ray of Light",
+            absoluteEpisode: 85,
+            airDate: "2019-12-29",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/Agyt1VH7zVHwklzlb9IwVMSynjf.jpg",
+            duration: "23m",
+            overview: "Due to Gabriel's scheme, U.S. players were given black knight accounts, and are now continuously logging in to the Underworld. They begin mercilessly slaughtering soldiers from both the Human Empire Army and the Dark Territory Army."
+          },
+          {
+            episode: 13,
+            title: "The War of Underworld",
+            absoluteEpisode: 86,
+            airDate: "2020-07-12",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pefmd7agmQ2xA2ZvLJqxHQMlEg6.jpg",
+            duration: "23m",
+            overview: "Sinon has logged in with the super-account of Solus, the Sun Goddess and rescues Asuna and the others at the last minute. Meanwhile, Leafa logs in with the super-account of Terraria, the Earth Goddess, and descends to the Underworld."
+          },
+          {
+            episode: 14,
+            title: "End to Eternity",
+            absoluteEpisode: 87,
+            airDate: "2020-07-19",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/bN9TqIETmwNO0wXeZM2Y4p33vw.jpg",
+            duration: "23m",
+            overview: "Despite its modest size, the Human Empire Army and Asuna valiantly battle the wave of American players surging towards them. But they’re hopelessly outnumbered, and the Human Empire soldiers start to fall one after another."
+          },
+          {
+            episode: 15,
+            title: "Instigation",
+            absoluteEpisode: 88,
+            airDate: "2020-07-26",
+            rating: 6.8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/vdStwtLGjoZsWfVEyV0fLOUgl4l.jpg",
+            duration: "23m",
+            overview: "Bercouli pursues Vecta, who’s abducted Alice. After a long, vicious battle, Bercouli unleashes his secret sword skill, Uragiri, and finally defeats Vecta, despite having sustained severe injuries himself."
+          },
+          {
+            episode: 16,
+            title: "Code 871",
+            absoluteEpisode: 89,
+            airDate: "2020-08-02",
+            rating: 7.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/q6baJ9R5GwEnLLxoX1dC7pITrFC.jpg",
+            duration: "23m",
+            overview: "The traitor inside Rath turns out to be a researcher named Yanai. When Higa attempts to restore Kirito, Yanai tries to thwart the operation by holding him at gunpoint. Meanwhile, in the Underworld, Sinon confronts Gabriel, who has logged back in."
+          },
+          {
+            episode: 17,
+            title: "Prince of Hell",
+            absoluteEpisode: 90,
+            airDate: "2020-08-09",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/5xhOYfgLATDxfqnjYZYHg49CQ2w.jpg",
+            duration: "23m",
+            overview: "Asuna and the others succumb to Vassago and the Chinese/Korean players. Discovering the catatonic Kirito, Vassago kicks his wheelchair over. Enraged, Klein lunges at Vassago, only to be pinned down by enemy players. Just then, someone unexpected appears."
+          },
+          {
+            episode: 18,
+            title: "Memories",
+            absoluteEpisode: 91,
+            airDate: "2020-08-16",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ahW4m6CEBXXHPhC6qejIKrgr39.jpg",
+            duration: "23m",
+            overview: "Sinon manages to severely damage Gabriel, but her strength has been sapped. Leafa collapses after wiping out the American players. And Asuna, her situation now hopeless, gazes at Kirito. But the Black Swordsman continues to wander through his dreams."
+          },
+          {
+            episode: 19,
+            title: "Awakening",
+            absoluteEpisode: 92,
+            airDate: "2020-08-23",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/yGU5BwtNM1tMLMwZQNStubq5mN0.jpg",
+            duration: "23m",
+            overview: "Escaping his nightmares, Kirito regains consciousness at last. With the Night-Sky Blade in his right hand and the broken Blue Rose Sword in his left, he faces off against Vassago, armed with the Mate-Chopper, now enormous in size."
+          },
+          {
+            episode: 20,
+            title: "The Night-Sky Blade",
+            absoluteEpisode: 93,
+            airDate: "2020-08-30",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/fLiy5OO1Bq6ykose7z4QiNIK1g6.jpg",
+            duration: "23m",
+            overview: "Alice and Asuna head to the World’s End Altar as Kirito confronts Gabriel. Unless he can defeat Gabriel and return to the real world before the maximum-acceleration phase begins, Kirito will have to spend the next 200 years in the Underworld."
+          },
+          {
+            episode: 21,
+            title: "Beyond Time",
+            absoluteEpisode: 94,
+            airDate: "2020-09-06",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pOsw4FEifCe4sywwv59a9qJpmSr.jpg",
+            duration: "23m",
+            overview: "The maximum-acceleration phase has begun. Alice successfully logs out of the Underworld, but Kirito doesn’t make it in time. In the real world, Higa and Kikuoka rush to shut down the STL, in order to disable the maximum-acceleration phase, but…"
+          },
+          {
+            episode: 22,
+            title: "Alice",
+            absoluteEpisode: 95,
+            airDate: "2020-09-13",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/7lCpkD21iDINQX17Wd22MSjN28I.jpg",
+            duration: "23m",
+            overview: "The “Rath Attack Incident,” masterminded by the American National Security Agency, is over. Now head of the newly formed Oceanic Resource Exploration & Research Institution, Rinko unveils Alice to the world as an authentic artificial general intelligence."
+          },
+          {
+            episode: 23,
+            title: "New World",
+            absoluteEpisode: 96,
+            airDate: "2020-09-20",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/w0u1bSp9EWatole6ZoRKxGWhqpf.jpg",
+            duration: "23m",
+            overview: "Rinko informs Kazuto that Alice is missing. He’s about to rush to the Rath Roppongi branch when the doorbell rings. In a panic, Kazuto throws open the door, only to find a deliveryman there with a huge cardboard box."
           }
         ]
       }

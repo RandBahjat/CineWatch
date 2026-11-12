@@ -55,9 +55,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Resident_Evil_2026_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
@@ -68,7 +66,7 @@ window._FOURK_DATA = [
     title: "Superman",
     type: "Movie",
     year: 2025,
-    rating: 8.5,
+    rating: 7,
     age: "PG-13",
     duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -84,9 +82,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Superman_2025_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
@@ -113,9 +109,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Batman_Begins_2005_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
@@ -142,9 +136,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_2008_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
@@ -171,9 +163,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Dark_Knight_Rises_2012_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
@@ -204,7 +194,7 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 3. The Amazing Spider-Man 2 (2014)
+  // 8. The Amazing Spider-Man 2 (2014)
   // ============================================================
   {
     id: "the-amazing-spider-man-2-2014",
@@ -231,7 +221,7 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 4. Spider-Man (2002)
+  // 9. Spider-Man (2002)
   // ============================================================
   {
     id: "spider-man-2002",
@@ -258,7 +248,7 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 5. Spider-Man 2 (2004)
+  // 10. Spider-Man 2 (2004)
   // ============================================================
   {
     id: "spider-man-2-2004",
@@ -286,7 +276,7 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 6. Spider-Man 3 (2007)
+  // 11. Spider-Man 3 (2007)
   // ============================================================
   {
     id: "spider-man-3-2007",
@@ -314,7 +304,7 @@ window._FOURK_DATA = [
   },
 
   // ============================================================
-  // 7. Spider-Man: Homecoming (2017)
+  // 12. Spider-Man: Homecoming (2017)
   // ============================================================
   {
     id: "spider-man-homecoming-2017",
@@ -338,21 +328,18 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_English.vtt", srclang: "en", default: false }
-    ]
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Homecoming_2017_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 8. Spider-Man: Far From Home (2019)
+  // 13. Spider-Man: Far From Home (2019)
   // ============================================================
   {
     id: "spider-man-far-from-home-2019",
     title: "Spider-Man: Far From Home",
     type: "Movie",
     year: 2019,
-    rating: 7.5,
+    rating: 7.3,
     age: "PG-13",
     duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -368,14 +355,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_English.vtt", srclang: "en", default: false }
-    ]
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Far_From_Home_2019_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 9. Spider-Man: No Way Home (2021)
+  // 14. Spider-Man: No Way Home (2021)
   // ============================================================
   {
     id: "spider-man-no-way-home-2021",
@@ -398,21 +382,18 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "Kurdish (Sorani)", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_Kurdish.vtt", srclang: "ku", default: true },
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_English.vtt", srclang: "en", default: false }
-    ]
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_No_Way_Home_2021_English.vtt","srclang":"en","default":false}]
   },
 
   // ============================================================
-  // 10. Harry Potter and the Philosopher’s Stone (2001)
+  // 15. Harry Potter and the Philosopher’s Stone (2001)
   // ============================================================
   {
     id: "Harry Potter and the Philosopher’s Stone",
     title: "Harry Potter and the Philosopher’s Stone",
     type: "Movie",
     year: 2001,
-    rating: 7.9,
+    rating: 7.7,
     age: "PG",
     duration: "2h 32m",
     genres: ["Adventure", "Fantasy", "Family"],
@@ -428,13 +409,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_1_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_1_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 11. Harry Potter and the Chamber of Secrets (2002)
+  // 16. Harry Potter and the Chamber of Secrets (2002)
   // ============================================================
   {
     id: "harry-potter-and-the-chamber-of-secrets-2002",
@@ -457,13 +436,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Chamber_Of_Secrets_2002_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 12. Harry Potter and the Prisoner of Azkaban (2004)
+  // 17. Harry Potter and the Prisoner of Azkaban (2004)
   // ============================================================
   {
     id: "harry-potter-and-the-prisoner-of-azkaban-2004",
@@ -486,13 +463,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Prisoner_Of_Azkaban_2004_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 13. Harry Potter and the Goblet of Fire (2005)
+  // 18. Harry Potter and the Goblet of Fire (2005)
   // ============================================================
   {
     id: "harry-potter-and-the-goblet-of-fire-2005",
@@ -515,13 +490,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Goblet_Of_Fire_2005_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Goblet_Of_Fire_2005_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 14. Harry Potter and the Order of the Phoenix (2007)
+  // 19. Harry Potter and the Order of the Phoenix (2007)
   // ============================================================
   {
     id: "harry-potter-and-the-order-of-the-phoenix-2007",
@@ -544,13 +517,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Order_Of_The_Phoenix_2007_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Order_Of_The_Phoenix_2007_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 15. Harry Potter and the Half-Blood Prince (2009)
+  // 20. Harry Potter and the Half-Blood Prince (2009)
   // ============================================================
   {
     id: "harry-potter-and-the-half-blood-prince-2009",
@@ -573,13 +544,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Half_Blood_Prince_2009_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Half_Blood_Prince_2009_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 16. Harry Potter and the Deathly Hallows – Part 1 (2010)
+  // 21. Harry Potter and the Deathly Hallows: Part 1 (2010)
   // ============================================================
   {
     id: "harry-potter-and-the-deathly-hallows-part-1-2010",
@@ -602,13 +571,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_1_2010_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_1_2010_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 17. Harry Potter and the Deathly Hallows – Part 2 (2011)
+  // 22. Harry Potter and the Deathly Hallows: Part 2 (2011)
   // ============================================================
   {
     id: "harry-potter-and-the-deathly-hallows-part-2-2011",
@@ -631,13 +598,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_2_2011_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Harry_Potter_Deathly_Hallows_Part_2_2011_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 18. Iron Man (2008)
+  // 23. Iron Man (2008)
   // ============================================================
   {
     id: "iron-man-2008",
@@ -660,20 +625,18 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 19. Iron Man 2 (2010)
+  // 24. Iron Man 2 (2010)
   // ============================================================
   {
     id: "iron-man-2-2010",
     title: "Iron Man 2",
     type: "Movie",
     year: 2010,
-    rating: 7.0,
+    rating: 7,
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -689,13 +652,11 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2_2010_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2_2010_English.vtt","srclang":"en","default":true}]
   },
 
   // ============================================================
-  // 20. Iron Man 3 (2013)
+  // 25. Iron Man 3 (2013)
   // ============================================================
   {
     id: "iron-man-3-2013",
@@ -718,9 +679,7 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: [],
-    subtitles: [
-      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_3_2013_English.vtt", srclang: "en", default: true }
-    ]
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_3_2013_English.vtt","srclang":"en","default":true}]
   }
-];
 
+];
