@@ -9174,7 +9174,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
                     hlsNetErrorCount++;
                     if (hlsNetErrorCount >= 2) {
-                      console.warn('[CineWatch] Retrying HLS stream load for custom player...');
+                      if (fallbackEmbedUrl && iframe && !is4kStream && !isFrom4kSession) {
+                        console.warn('[CineWatch] Upstream HLS stream failed, falling back to backup embed...');
+                        try { art.destroy(); } catch(e) {}
+                        if (artContainer) {
+                          artContainer.innerHTML = '';
+                          artContainer.classList.add('hidden');
+                        }
+                        iframe.src = fallbackEmbedUrl;
+                        iframe.classList.remove('hidden');
+                        return;
+                      }
                       hls.startLoad();
                       return;
                     } else {
