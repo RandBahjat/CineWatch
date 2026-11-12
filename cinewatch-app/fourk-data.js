@@ -244,8 +244,7 @@ window._FOURK_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://image.tmdb.org/t/p/original/kjdJntyBeEvqm9w97QGBdxPptzj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oAX0snutoordC5Gtb3MmVgGiNqI.jpg",
-    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mkv",
-    audioUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_audio.m4a",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_2002_4K_UHD.mp4",
     trailerUrl: "https://youtu.be/t06RUxPbp_c?si=TfRrwrRVseydzxGn",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     overviewKurdish: "پیتەر پارکەر هەمیشە هەستی بە نامۆیی دەکرد — سەرلێشێواو، فەرامۆشکراو، و بە نهێنی عاشقی مێری جەینی هاوڕێی مناڵییەتی. هەموو شتێک دەگۆڕێت کاتێک پێوەدانی جاڵجاڵۆکەیەک هێز و چالاکی و توانایەکی لەڕادەبەدەری پێدەبەخشێت. لەکاتێکدا پیتەر هەوڵ دەدات لەگەڵ ئەو بەرپرسیارێتییە گەورەیەدا بژی کە لەگەڵ هێزە نوێیەکانیدا دێت، گۆڕانی تراژیدییانەی زانایەکی بلیمەت بۆ گرین گۆبلینی خراپەکار وا لە پیتەر دەکات بە تەواوی ڕۆڵی سپایدەرمان وەربگرێت.",
@@ -649,8 +648,8 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
+    poster: "https://image.tmdb.org/t/p/original/8sxDCrdn0UcBa3hjs0m50XT3R44.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cKvDv2LpwVEqbdXWoQl4XgGN6le.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_4K_UHD.mp4",
     trailerUrl: "https://www.youtube.com/watch?v=8ugaeA-nMTc",
     overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man — determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
@@ -663,6 +662,64 @@ window._FOURK_DATA = [
     seasons: [],
     subtitles: [
       { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2008_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 19. Iron Man 2 (2010)
+  // ============================================================
+  {
+    id: "iron-man-2-2010",
+    title: "Iron Man 2",
+    type: "Movie",
+    year: 2010,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "2h 4m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/jPbXIg5ZPJXGbOyaxCd3Yb1XBKN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hCVQPB77eXBGh9abVdrWtKpKgkN.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2_2010_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=wKtcmiifycU",
+    overview: "Now publicly known as Iron Man, Tony Stark must navigate mounting pressure from the U.S. government, who want his suit's technology for themselves. Meanwhile, dying from the very device keeping him alive, Stark struggles to maintain his composure — even as a vengeful new enemy named Ivan Vanko builds his own devastating weapons, backed by Stark's rival, Justin Hammer, in a scheme to destroy everything Tony has built.",
+    overviewKurdish: "دوای ئەوەی تۆنی ستارک ناسنامەی خۆی وەک ئایرۆن مان بۆ هەموو جیهان ئاشکرا دەکات، رووبەڕووی گوشارێکی زۆری حکومەت و سوپا دەبێتەوە بۆ پێدانی نهێنی چەکی زرێپۆشەکەی. لە هەمان کاتدا تۆنی دەبێت لەگەڵ ژەهراویبوونی جەستەی بەهۆی کارتێکردنی کەرەستەی ناو سینگی بجەنگێت، لە کاتێکدا زانایەکی تۆڵەسەندنەوەی ڕووسی بە ناوی ئیڤان ڤانکۆ بە هاوکاری جەستن هامەری ڕکابەری دەیانەوێت تەواوی بەرهەمەکانی تۆنی لەناوببەن.",
+    director: "Jon Favreau",
+    cast: ["Robert Downey Jr.", "Gwyneth Paltrow", "Don Cheadle", "Scarlett Johansson", "Sam Rockwell", "Mickey Rourke", "Samuel L. Jackson", "Clark Gregg"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_2_2010_English.vtt", srclang: "en", default: true }
+    ]
+  },
+
+  // ============================================================
+  // 20. Iron Man 3 (2013)
+  // ============================================================
+  {
+    id: "iron-man-3-2013",
+    title: "Iron Man 3",
+    type: "Movie",
+    year: 2013,
+    rating: 7.1,
+    age: "PG-13",
+    duration: "2h 10m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/5PkWd4nlnu3cGGWTvZAdK43kF1U.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tKa1gmGKAUVYnflYcadipeL3d9h.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_3_2013_4K_UHD.mp4",
+    trailerUrl: "https://www.youtube.com/watch?v=YLorLVa95Xo",
+    overview: "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution. With his back against the wall, Stark must survive on his own ingenuity and instincts to protect those closest to him while uncovering the answer to the question that has secretly haunted him: does the man make the suit or does the suit make the man?",
+    overviewKurdish: "کاتێک جیهانی تایبەتی تۆنی ستارک لەلایەن تیرۆریستێکی بەهێز بە ناوی ماندارین وێران دەکرێت، ئەو دەست دەکات بە گەشتێکی بێوچان بۆ تۆڵەسەندنەوە. بەبێ کەرەستە و زرێپۆشەکانی، دەبێت پشت بە زیرەکی و تواناکانی ببەستێت بۆ پاراستنی ئەوانەی خۆشی دەوێن و دۆزینەوەی وەڵامی ئەو پرسیارەی کە ئایا پیاوەکە زرێپۆشەکە دروست دەکات، یان زرێپۆشەکە پیاوەکە؟",
+    director: "Shane Black",
+    cast: ["Robert Downey Jr.", "Gwyneth Paltrow", "Don Cheadle", "Guy Pearce", "Rebecca Hall", "Stéphanie Szostak", "James Badge Dale", "Jon Favreau", "Ben Kingsley"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [
+      { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Iron_Man_3_2013_English.vtt", srclang: "en", default: true }
     ]
   }
 ];

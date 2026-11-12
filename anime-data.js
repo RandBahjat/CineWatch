@@ -72,6 +72,14 @@ window._ANIME_DATA = [
             thumbnail: "https://media.kitsu.app/episode/393372/thumbnail/ffd56c2dcfc05b1e229ddb76b3974b85.jpg",
             duration: "24m",
             overview: "Over a trivial matter, Beerus decides to destroy Earth. In this desperate situation, Goku suggests asking Shenron about the \"Super Saiyan God\" that Beerus seeks. Is it possible to create this warrior, considered a mythical god?!"
+          },
+          {
+            episode: 5,
+            title: "The God of Destruction and Son Goku",
+            absoluteEpisode: 5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302614.jpg",
+            duration: "24m",
+            overview: "Goku successfully undergoes the Super Saiyan God ritual, combining the righteous spirits of six Saiyans to ascend into a divine form cloaked in crimson flame. With the newfound power of a deity, Goku takes to the sky to face Lord Beerus in a celestial clash that will determine the survival of Earth."
           }
         ]
       }

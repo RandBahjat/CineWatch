@@ -371,7 +371,7 @@ window._SERIES_DATA = [
     age: "TV-PG",
     duration: "60m",
     genres: ["Adventure", "Fantasy", "Drama", "Family", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/AcVckVxfN169mGOgQGYe983KT1C.jpg",
+    poster: "https://image.tmdb.org/t/p/original/iNijUehKvb4IYR48Z9Hk2KNHXk5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sYRC6gXSNHBeTkda5xTKHXBAVfp.jpg",
     videoUrl: "224377",
     trailerUrl: "https://www.youtube.com/watch?v=RIu4sFKGi6E",
@@ -714,12 +714,12 @@ window._SERIES_DATA = [
     year: 2026,
     rating: "8.8",
     age: "TV-14",
-    duration: "23m",
+    duration: "54m",
     genres: ["Action", "Adventure", "Sci-Fi", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
     videoUrl: "213375",
-    trailerUrl: "https://youtu.be/nhdh962_ee0?si=NPPr_kkAaUk6IMet",
+    trailerUrl: "https://www.youtube.com/watch?v=sXKnmgmbkoE",
     overview: "Following the catastrophic events of Westview, the newly reconstructed White Vision embarks on a solitary, soul-searching odyssey across the globe to rediscover his stolen identity, understand human consciousness, and reclaim the emotional memories of the hero he once was.",
     overviewKurdish: "دوای ڕووداوە وێرانکەرەکانی وێست‌ڤیو، کەسایەتیی دووبارە دروستکراوەی «ڤیژنی سپی» دەست بە گەشتێکی تایبەت و قووڵ دەکات لە سەرتاسەری جیهاندا، بە ئامانجی دووبارە دۆزینەوەی ناسنامە ونبووەکەی، تێگەیشتن لە هەست و بیرکردنەوەی مرۆڤ، و گەڕاندنەوەی ئەو یادەوەرییانەی کە لە ڕابردوودا وەک پاڵەوانێک هەیبوون.",
     director: "Terry Matalas",
@@ -734,18 +734,18 @@ window._SERIES_DATA = [
           {
             episode: 1,
             title: "No Strings",
-            airDate: "2026-10-14",
-            rating: 8.8,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWEyNjlhZDgtOTNhZC00ZTkzLTg1ZGYtMjcyMDJhYzU1ZGE3XkEyXkFqcGc@._V1_.jpg",
-            duration: "45 min",
+            airDate: "2026-10-13",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615067.jpg",
+            duration: "53 min",
             overview: "Vision, rebooted and hiding, consults F.R.I.D.A.Y., E.D.I.T.H., J.A.R.V.I.S., and Ultron. A bounty forces him on the run with Thomas Shepard, possibly his reincarnated son. He must resist Ultron's influence and solve the mystery."
           },
           {
             episode: 2,
             title: "Theseus",
-            airDate: "2026-10-14",
-            rating: 8.6,
-            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmM5NzM1YzEtZGQ0OC00Y2Q0LTgzM2QtMDM4MWUyZWI4NWFlXkEyXkFqcGc@._V1_.jpg",
+            airDate: "2026-10-13",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615068.jpg",
             duration: "45 min",
             overview: "Delving into the classic Ship of Theseus paradox, Vision struggles to reconcile his restored memories with his rebuilt synthezoid hardware while forming a fragile alliance with Tommy and his embedded AI network."
           },
@@ -753,17 +753,17 @@ window._SERIES_DATA = [
             episode: 3,
             title: "Reboot",
             airDate: "2026-10-20",
-            rating: 8.7,
-            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
-            duration: "46 min",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617395.jpg",
+            duration: "52 min",
             overview: "Tommy risks everything to initiate a high-stakes hard reset on Vision's core systems, inadvertently opening a backdoor to a lethal digital entity known as the Butcherbird Killer."
           },
           {
             episode: 4,
             title: "Malware",
             airDate: "2026-10-20",
-            rating: 8.9,
-            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617400.jpg",
             duration: "48 min",
             overview: "When the Butcherbird breaches Vision's mindspace, a desperate Vision surrenders physical control of his synthezoid body to Ultron, unleashing devastating consequences as Ultron takes the wheel."
           },
@@ -771,19 +771,37 @@ window._SERIES_DATA = [
             episode: 5,
             title: "Firewall",
             airDate: "2026-10-27",
-            rating: 9.0,
-            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
-            duration: "47 min",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620878.jpg",
+            duration: "46 min",
             overview: "Trapped in the digital attic of his own consciousness, Vision and his AI allies work frantically to decipher Ultron's sinister real-world scheme while facing a brutal ultimatum to drop the firewall."
           },
           {
             episode: 6,
             title: "Deadlock",
             airDate: "2026-10-27",
-            rating: 9.1,
-            thumbnail: "https://image.tmdb.org/t/p/w780/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
-            duration: "49 min",
+            rating: 9.0,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620880.jpg",
+            duration: "54 min",
             overview: "As Ultron initiates a catastrophic hive-mind convergence and bounty hunters close in on Tommy, Vision makes an agonizing sacrifice to disable the internal firewalls and break the deadlock."
+          },
+          {
+            episode: 7,
+            title: "Immolation",
+            airDate: "2026-11-03",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/649/1624357.jpg",
+            duration: "62 min",
+            overview: "Vision delves deep into his own programming and subconscious memories of 1939 inventor Phineas Horton as Ultron and Jocasta edge closer to completing their plans and Vision and Ultron's twisted relationship comes undone."
+          },
+          {
+            episode: 8,
+            title: "Forever",
+            airDate: "2026-11-10",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/650/1627252.jpg",
+            duration: "69 min",
+            overview: "In the series finale, Vision confronts his true identity, his bond with Tommy Shepherd, and the ultimate reckoning with Ultron and the mysterious Client behind it all."
           }
         ]
       }
@@ -113015,6 +113033,4076 @@ window._SERIES_DATA = [
             "thumbnail": "https://image.tmdb.org/t/p/w780/3mH3EqrA5dct6MIRqt1SX3DYtY5.jpg",
             "duration": "40 min",
             "overview": "Dwight's empire is on the brink - but a brutal double-cross shifts the balance of power, forcing him towards a dangerous new throne."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // Batman Beyond (1999 - 2001)
+  // ============================================================
+  {
+    id: "batman-beyond-1999",
+    title: "Batman Beyond",
+    type: "TV Show",
+    year: 1999,
+    rating: 8.1,
+    age: "TV-Y7",
+    duration: "22m",
+    genres: ["Animation","Action","Adventure","Sci-Fi","Kids"],
+    poster: "https://static.tvmaze.com/uploads/images/original_untouched/4/10842.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/A8We2BSM6hJ1VWzncssnU2fFsft.jpg",
+    videoUrl: "513",
+    trailerUrl: "",
+    overview: "Fuelled by remorse and vengeance, a high schooler named Terry McGinnis revives the mantle of Batman and fights crime in a futuristic Gotham under the supervision of an elderly Bruce Wayne.",
+    overviewKurdish: "لە نێو تۆڵەسەندنەوە و پەشیمانیدا، خوێندکارێکی ئامادەیی بە ناوی تێری مەگینیس ناونیشانی باتمان زیندوو دەکاتەوە و لە ژێر چاودێری بروس وەینی بەتەمەندا دژی تاوان دەجەنگێت لە شاری گۆتامی داهاتوودا.",
+    director: "Bruce Timm, Paul Dini, Alan Burnett",
+    cast: ["Will Friedle","Kevin Conroy","Lauren Tom","Cree Summer","Teri Garr"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Rebirth (1)",
+            "airDate": "1999-01-10",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765575.jpg",
+            "duration": "22 min",
+            "overview": "Fifty years into the future, a young Terry McGinnis meets the aged and reclusive Bruce Wayne even as the boy's father discovers a foul secret of his corrupt employer that leads to his death."
+          },
+          {
+            "episode": 2,
+            "title": "Rebirth (2)",
+            "airDate": "1999-01-10",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765576.jpg",
+            "duration": "22 min",
+            "overview": "Determined to bring his father's murderers to justice, Terry finally impulsively resorts to using Wayne's last Batsuit to investigate as the new Batman."
+          },
+          {
+            "episode": 3,
+            "title": "Black Out",
+            "airDate": "1999-01-30",
+            "rating": 7.7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765577.jpg",
+            "duration": "22 min",
+            "overview": "A dangerous shapeshifter in the employ of Derek Powers is out to sabotage a competing company and Batman must stand in her way."
+          },
+          {
+            "episode": 4,
+            "title": "Golem",
+            "airDate": "1999-02-06",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765578.jpg",
+            "duration": "22 min",
+            "overview": "A bullied nerd uses his newfound mental control of a giant construction robot to seek revenge."
+          },
+          {
+            "episode": 5,
+            "title": "Meltdown",
+            "airDate": "1999-02-13",
+            "rating": 7.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765579.jpg",
+            "duration": "22 min",
+            "overview": "For his own reasons, Derek Powers arranges for Mr. Freeze to have a new organic body, but things don't go according to plan."
+          },
+          {
+            "episode": 6,
+            "title": "Heroes",
+            "airDate": "1999-02-20",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765580.jpg",
+            "duration": "22 min",
+            "overview": "A trio of new superheroes make their debut, but they have dark secrets that lead to a disastrous crisis Batman must stop."
+          },
+          {
+            "episode": 7,
+            "title": "Shriek",
+            "airDate": "1999-03-13",
+            "rating": 7.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765581.jpg",
+            "duration": "22 min",
+            "overview": "An inventor of a sound-based weapon plots against Bruce Wayne."
+          },
+          {
+            "episode": 8,
+            "title": "Dead Man's Hand",
+            "airDate": "1999-03-20",
+            "rating": 9.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765587.jpg",
+            "duration": "22 min",
+            "overview": "Terry falls for a new girl, unaware that she is actually the supervillain Ten of the Royal Flush Gang."
+          },
+          {
+            "episode": 9,
+            "title": "The Winning Edge",
+            "airDate": "1999-04-10",
+            "rating": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765582.jpg",
+            "duration": "22 min",
+            "overview": "While Terry investigates the source of illegal performance-enhancing stimulants based on Bane's venom, his mother suspects he is using them himself."
+          },
+          {
+            "episode": 10,
+            "title": "Spellbound",
+            "airDate": "1999-05-01",
+            "rating": 6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765583.jpg",
+            "duration": "22 min",
+            "overview": "A new supervillain is manipulating victims to commit crimes for him using extremely lifelike illusions."
+          },
+          {
+            "episode": 11,
+            "title": "Disappearing Inque",
+            "airDate": "1999-05-08",
+            "rating": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765584.jpg",
+            "duration": "22 min",
+            "overview": "An enamored warder of the imprisoned Inque frees her and helps her in her quests for healing and revenge."
+          },
+          {
+            "episode": 12,
+            "title": "A Touch of Curaré",
+            "airDate": "1999-05-15",
+            "rating": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765585.jpg",
+            "duration": "22 min",
+            "overview": "Commissioner Barbara Gordon is determined to protect her DA husband from an elite assassin, and definitely does not want Batman, and especially Bruce Wayne's, help."
+          },
+          {
+            "episode": 13,
+            "title": "Ascension",
+            "airDate": "1999-05-22",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765586.jpg",
+            "duration": "22 min",
+            "overview": "As Derek Powers' medical condition as Blight worsens, he calls his estranged son home for help. However, an enemy hidden in plain sight has other plans for him that eventually involve Batman as well."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Splicers",
+            "airDate": "1999-09-17",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765589.jpg",
+            "duration": "22 min",
+            "overview": "Splicing genetics into humans is the new thing among the kids at Terry's school. The city wants to make it illegal due to overly aggressive behavior in the subjects. Batman is suspicious."
+          },
+          {
+            "episode": 2,
+            "title": "Earth Mover",
+            "airDate": "1999-09-25",
+            "rating": 6.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765590.jpg",
+            "duration": "22 min",
+            "overview": "Jackie; a friend of Terry is being followed by a monster that seems made of soil and her \"father\" is not really her father."
+          },
+          {
+            "episode": 3,
+            "title": "Joyride",
+            "airDate": "1999-10-02",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765591.jpg",
+            "duration": "22 min",
+            "overview": "When a prototype military vehicle with a disastrous flaw is abandoned and seized by Jokerz, Batman and the vehicle's creator must hunt it down before it explodes."
+          },
+          {
+            "episode": 4,
+            "title": "Lost Soul",
+            "airDate": "1999-10-09",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765592.jpg",
+            "duration": "22 min",
+            "overview": "When a digitized consciousness of a deceased computer genius is revived, it starts causing havoc throughout the city before it decides to take over the systems of Terry's batsuit next."
+          },
+          {
+            "episode": 5,
+            "title": "Hidden Agenda",
+            "airDate": "1999-10-16",
+            "rating": 8.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765593.jpg",
+            "duration": "22 min",
+            "overview": "A girl genius finds herself unaccountably harassed by Jokerz at school and she begins to suspect Terry is responsible."
+          },
+          {
+            "episode": 6,
+            "title": "Bloodsport",
+            "airDate": "1999-10-23",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765594.jpg",
+            "duration": "22 min",
+            "overview": "Batman finds himself the quarry of an augmented hunter seeking the ultimate challenge."
+          },
+          {
+            "episode": 7,
+            "title": "Once Burned",
+            "airDate": "1999-11-06",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765595.jpg",
+            "duration": "22 min",
+            "overview": "Batman finds Ten determined to rob a rich underground poker game supposedly to save her family and he struggles to decide whether to trust her."
+          },
+          {
+            "episode": 8,
+            "title": "Hooked Up",
+            "airDate": "1999-11-13",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765596.jpg",
+            "duration": "22 min",
+            "overview": "Batman investigates a ring of troubled kids who are so addicted to powerful virtual reality fantasies that they will do anything to continue them."
+          },
+          {
+            "episode": 9,
+            "title": "Rats!",
+            "airDate": "1999-11-20",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765597.jpg",
+            "duration": "22 min",
+            "overview": "Terry and Dana's relationship is strained when Terry's Batman duties get in the way of their relationship. Receiving a flower, Dana believes it's from Terry but comes to realize it's from an unexpected stalker.. with some unexpected friends."
+          },
+          {
+            "episode": 10,
+            "title": "Mind Games",
+            "airDate": "1999-12-04",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765598.jpg",
+            "duration": "22 min",
+            "overview": "A young girl with telepathic powers calls to Batman for help."
+          },
+          {
+            "episode": 11,
+            "title": "Revenant",
+            "airDate": "1999-12-11",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765599.jpg",
+            "duration": "22 min",
+            "overview": "McGinnis' high school seems to be haunted by a poltergeist."
+          },
+          {
+            "episode": 12,
+            "title": "Babel",
+            "airDate": "2000-01-08",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765600.jpg",
+            "duration": "22 min",
+            "overview": "In order to have his revenge, Shriek makes the speech of the population of Gotham City incomprehensible and demands Batman surrendered to him to stop the chaos."
+          },
+          {
+            "episode": 13,
+            "title": "Terry's Friend Dates a Robot",
+            "airDate": "2000-01-15",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765601.jpg",
+            "duration": "22 min",
+            "overview": "A status-seeking nerd illegally buys a robot girlfriend, only to have it become dangerously jealous."
+          },
+          {
+            "episode": 14,
+            "title": "Eyewitness",
+            "airDate": "2000-01-22",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765602.jpg",
+            "duration": "22 min",
+            "overview": "When Commissioner Barbara Gordon sees Batman committing murder, she initiates an all-out manhunt for him while Bruce Wayne investigates what really happened."
+          },
+          {
+            "episode": 15,
+            "title": "Final Cut",
+            "airDate": "2000-02-05",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765603.jpg",
+            "duration": "22 min",
+            "overview": "Batman is blackmailed by a bomb threat to protect a member of the Society of Assassins from Curaré."
+          },
+          {
+            "episode": 16,
+            "title": "The Last Resort",
+            "airDate": "2000-03-04",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765604.jpg",
+            "duration": "22 min",
+            "overview": "Terry investigates a troubled child reform camp that is more like a prison."
+          },
+          {
+            "episode": 17,
+            "title": "Armory",
+            "airDate": "2000-03-11",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765605.jpg",
+            "duration": "22 min",
+            "overview": "To support his family, a desperately unemployed advanced weapons engineer must steal vital materials for an illegal arms deal and elude Batman to do it."
+          },
+          {
+            "episode": 18,
+            "title": "Sneak Peek",
+            "airDate": "2000-03-25",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765606.jpg",
+            "duration": "22 min",
+            "overview": "An arrogantly intrusive reporter with a special ability to become intangible discovers Terry and Bruce's big secret."
+          },
+          {
+            "episode": 19,
+            "title": "The Eggbaby",
+            "airDate": "2000-04-01",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765588.jpg",
+            "duration": "22 min",
+            "overview": "Terry has a school project where he must constantly care for a baby simulator, even when he's out in the field as Batman."
+          },
+          {
+            "episode": 20,
+            "title": "Zeta",
+            "airDate": "2000-04-08",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765607.jpg",
+            "duration": "22 min",
+            "overview": "Batman meets a good-hearted artificially intelligent robot assassin on the run from his creators."
+          },
+          {
+            "episode": 21,
+            "title": "Plague",
+            "airDate": "2000-04-15",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765608.jpg",
+            "duration": "22 min",
+            "overview": "Batman and Stalker must work together to stop the Kobra cult from unleashing a fearsome bioweapon on the populous."
+          },
+          {
+            "episode": 22,
+            "title": "April Moon",
+            "airDate": "2000-04-22",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765609.jpg",
+            "duration": "22 min",
+            "overview": "Batman must battle a gang of cyborgs made possible by blackmailing a bionics specialist."
+          },
+          {
+            "episode": 23,
+            "title": "Sentries of the Last Cosmos",
+            "airDate": "2000-05-06",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765610.jpg",
+            "duration": "22 min",
+            "overview": "Ardent players of an in-depth virtual reality role-playing game are recruited by the supposed creator of the game for his own purposes."
+          },
+          {
+            "episode": 24,
+            "title": "Payback",
+            "airDate": "2000-05-13",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765611.jpg",
+            "duration": "22 min",
+            "overview": "Batman investigates a mysterious vigilante who is somehow linked to a teens' counseling center and wants to attack people who torment them."
+          },
+          {
+            "episode": 25,
+            "title": "Where's Terry?",
+            "airDate": "2000-05-27",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765612.jpg",
+            "duration": "22 min",
+            "overview": "When Terry goes missing, Wayne and Max go searching for him."
+          },
+          {
+            "episode": 26,
+            "title": "Ace in the Hole",
+            "airDate": "2000-08-19",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765613.jpg",
+            "duration": "22 min",
+            "overview": "When Ace spots the man who abused him into becoming a sport fighting dog, he chases him and gets lost from his guardians."
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "King's Ransom",
+            "airDate": "2000-09-16",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765614.jpg",
+            "duration": "22 min",
+            "overview": "Reduced to doing Paxton Power's dirty work, The Royal Flush Gang begins to fall apart while Batman has to clean up the mess."
+          },
+          {
+            "episode": 2,
+            "title": "Untouchable",
+            "airDate": "2000-09-23",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765615.jpg",
+            "duration": "22 min",
+            "overview": "Batman hunts for a mysterious criminal with a personal repulsion field and one of the occupants of a medical research lab may be that person."
+          },
+          {
+            "episode": 3,
+            "title": "Inqueling",
+            "airDate": "2000-09-30",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765616.jpg",
+            "duration": "22 min",
+            "overview": "Seriously wounded in a doublecross, Inque approaches her estranged daughter for help."
+          },
+          {
+            "episode": 4,
+            "title": "Big Time",
+            "airDate": "2000-10-07",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765617.jpg",
+            "duration": "22 min",
+            "overview": "An old reprobate childhood friend of Terry returns with a half-baked plan to become a big-time criminal."
+          },
+          {
+            "episode": 5,
+            "title": "Out of the Past",
+            "airDate": "2000-10-21",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/160/401240.jpg",
+            "duration": "22 min",
+            "overview": "Talia arrives in Gotham claiming she has mastered the Lazarus Pit and offers to use it to restore Bruce's youth without any side affects. But all is not as it seems."
+          },
+          {
+            "episode": 6,
+            "title": "Speak No Evil",
+            "airDate": "2000-11-04",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765618.jpg",
+            "duration": "22 min",
+            "overview": "A genetically enhanced gorilla enlists Batman's help to hunt his kidnappers."
+          },
+          {
+            "episode": 7,
+            "title": "The Call (1)",
+            "airDate": "2000-11-11",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765619.jpg",
+            "duration": "22 min",
+            "overview": "Superman comes for a visit to offer Terry membership in the Justice League. Superman needs Batman's help to find a traitor in the League."
+          },
+          {
+            "episode": 8,
+            "title": "The Call (2)",
+            "airDate": "2000-11-18",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765620.jpg",
+            "duration": "22 min",
+            "overview": "The identity of the traitor is revealed, which set the stage for a confrontation."
+          },
+          {
+            "episode": 9,
+            "title": "Betrayal",
+            "airDate": "2000-12-09",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765621.jpg",
+            "duration": "22 min",
+            "overview": "Escaped from prison, Big Time attempts to recruit Terry as his partner in crime."
+          },
+          {
+            "episode": 10,
+            "title": "Curse of Kobra (1)",
+            "airDate": "2001-02-03",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765622.jpg",
+            "duration": "22 min",
+            "overview": "Terry goes for advanced martial arts training at a special dojo, but there is far more to one of his fellow students than he realizes."
+          },
+          {
+            "episode": 11,
+            "title": "Curse of Kobra (2)",
+            "airDate": "2001-02-10",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765623.jpg",
+            "duration": "22 min",
+            "overview": "After being seriously injured trying to stop Zander of the Kobra cult from kidnapping Max as his bride, Terry is still determined to stop him and his ultimate scheme."
+          },
+          {
+            "episode": 12,
+            "title": "Countdown",
+            "airDate": "2001-04-07",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765624.jpg",
+            "duration": "22 min",
+            "overview": "When Zeta and Ro come to Gotham City, the android finds himself separated and manipulated by Mad Stan into one of his terrorist bombing schemes."
+          },
+          {
+            "episode": 13,
+            "title": "Unmasked",
+            "airDate": "2001-12-18",
+            "rating": 4.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/306/765625.jpg",
+            "duration": "22 min",
+            "overview": "Terry explains to Max why he needs a secret identity by telling the story of the trouble caused when he revealed it to a small boy who is then kidnapped by Kobra to interrogate him."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // The Legend of Korra (2012 - 2014)
+  // ============================================================
+  {
+    id: "the-legend-of-korra-2012",
+    title: "The Legend of Korra",
+    type: "TV Show",
+    year: 2012,
+    rating: 8.3,
+    age: "TV-PG",
+    duration: "23m",
+    genres: ["Animation","Action","Adventure","Fantasy","Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/fqsQ4nUyLb8ucRT2BobBTiKess7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bauKfP3CX5JPAXpmveOlPG1pngC.jpg",
+    videoUrl: "33880",
+    trailerUrl: "https://www.youtube.com/watch?v=-1ftJQmyv5E",
+    overview: "Taking place 70 years after the events of Avatar: The Last Airbender, this story follows the next Avatar - a passionate, rebellious, and fearless teenage girl named Korra from the Southern Water Tribe. As she masters the four elements, Korra must protect Republic City and restore balance against dangerous forces from both the physical and spiritual worlds.",
+    overviewKurdish: "٧٠ ساڵ دوای ڕووداوەکانی «ئەڤەتار: دوایین ملکەچپێکەری با»، چیرۆکەکە باسی کۆڕا دەکات، کچێکی یاخی و بەئیرادەی خێڵی ئاوی باشوور و ئاڤاتاری نوێ، کە هەوڵ دەدات فێری کۆنترۆڵکردنی هەر چوار توخمەکە بێت و شاری کۆماری لە هەڕەشە شەڕانگێزەکانی جیهانی فیزیکی و ڕۆحی بپارێزێت.",
+    director: "Michael Dante DiMartino, Bryan Konietzko",
+    cast: ["Janet Varney","P.J. Byrne","David Faustino","J.K. Simmons","Seychelle Gabriel","Dee Bradley Baker"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Welcome to Republic City",
+            "airDate": "2012-04-14",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4038.jpg",
+            "duration": "30 min",
+            "overview": "The series premiere of this cartoon about a bold and rebellious teenage girl who undergoes training to become a fully realized Avatar, Korra arrives in Republic City and discovers it's a dangerous place for benders."
+          },
+          {
+            "episode": 2,
+            "title": "A Leaf in the Wind",
+            "airDate": "2012-04-14",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4039.jpg",
+            "duration": "30 min",
+            "overview": "Korra is thrilled to discover the city's Pro-bending Arena, where she meets two brothers who compete there."
+          },
+          {
+            "episode": 3,
+            "title": "The Revelation",
+            "airDate": "2012-04-21",
+            "rating": 7.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4040.jpg",
+            "duration": "30 min",
+            "overview": "Korra tries to gain access to the Equalist movement and its secretive leader."
+          },
+          {
+            "episode": 4,
+            "title": "The Voice in the Night",
+            "airDate": "2012-04-28",
+            "rating": 7.6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4041.jpg",
+            "duration": "30 min",
+            "overview": "A task force recruits Korra to help them with their violent plan to remove Equalists."
+          },
+          {
+            "episode": 5,
+            "title": "The Spirit of Competition",
+            "airDate": "2012-05-05",
+            "rating": 7.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4042.jpg",
+            "duration": "30 min",
+            "overview": "Romantic rivalries disrupt the harmony on Korra's team."
+          },
+          {
+            "episode": 6,
+            "title": "And the Winner is...",
+            "airDate": "2012-05-12",
+            "rating": 8.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4043.jpg",
+            "duration": "30 min",
+            "overview": "Korra prepares for the pro-bending championship while a sense of danger hovers over the arena."
+          },
+          {
+            "episode": 7,
+            "title": "The Aftermath",
+            "airDate": "2012-05-19",
+            "rating": 8.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4044.jpg",
+            "duration": "30 min",
+            "overview": "Korra worries that a friend is secretly aligned with the Equalists."
+          },
+          {
+            "episode": 8,
+            "title": "When Extremes Meet",
+            "airDate": "2012-06-02",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4045.jpg",
+            "duration": "30 min",
+            "overview": "Korra quarrels with Councilman Tarrlok in the midst of growing Equalist activity."
+          },
+          {
+            "episode": 9,
+            "title": "Out of the Past",
+            "airDate": "2012-06-09",
+            "rating": 8.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4046.jpg",
+            "duration": "30 min",
+            "overview": "Korra tries to analyze the mysterious visions she's been having. Meanwhile, Tenzin and Beifong look for Equalist hostages."
+          },
+          {
+            "episode": 10,
+            "title": "Turning the Tides",
+            "airDate": "2012-06-16",
+            "rating": 8.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4047.jpg",
+            "duration": "30 min",
+            "overview": "Republic City gets bombarded by the Equalists."
+          },
+          {
+            "episode": 11,
+            "title": "Skeletons in the Closet",
+            "airDate": "2012-06-23",
+            "rating": 8.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4048.jpg",
+            "duration": "30 min",
+            "overview": "Korra goes undercover and learns a secret while her teammates go after the enemies' stronghold."
+          },
+          {
+            "episode": 12,
+            "title": "Endgame",
+            "airDate": "2012-06-23",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4049.jpg",
+            "duration": "30 min",
+            "overview": "Korra confronts the enigmatic ruler of the Equalists."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Rebel Spirit",
+            "airDate": "2013-09-13",
+            "rating": 7.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4018.jpg",
+            "duration": "30 min",
+            "overview": "Korra attends the Southern Water Tribe Festival, where she tries to connect to the spirit world."
+          },
+          {
+            "episode": 2,
+            "title": "The Southern Lights",
+            "airDate": "2013-09-13",
+            "rating": 7.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4019.jpg",
+            "duration": "30 min",
+            "overview": "Korra she enters a violent maelstrom and discovers a source of spiritual power."
+          },
+          {
+            "episode": 3,
+            "title": "Civil Wars, Part 1",
+            "airDate": "2013-09-20",
+            "rating": 7.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4020.jpg",
+            "duration": "30 min",
+            "overview": "Part 1 of 2. Korra tries to be impartial as tension rises between the northern and southern tribes."
+          },
+          {
+            "episode": 4,
+            "title": "Civil Wars, Part 2",
+            "airDate": "2013-09-27",
+            "rating": 7.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4021.jpg",
+            "duration": "30 min",
+            "overview": "Korra's folks are wrongfully incarcerated, so Korra fights to free them."
+          },
+          {
+            "episode": 5,
+            "title": "Peacekeepers",
+            "airDate": "2013-10-04",
+            "rating": 7.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4022.jpg",
+            "duration": "30 min",
+            "overview": "Korra reaches a dead end when she turns to the president for help, so she strikes out on her own."
+          },
+          {
+            "episode": 6,
+            "title": "The Sting",
+            "airDate": "2013-10-11",
+            "rating": 7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4023.jpg",
+            "duration": "30 min",
+            "overview": "Future Industries may close up shop because of the threat Triad poses, so Mako does some research and stumbles upon a huge conspiracy at work."
+          },
+          {
+            "episode": 7,
+            "title": "Beginnings, Part 1",
+            "airDate": "2013-10-18",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4024.jpg",
+            "duration": "30 min",
+            "overview": "The origins of the first Avatar are revealed to Korra."
+          },
+          {
+            "episode": 8,
+            "title": "Beginnings, Part 2",
+            "airDate": "2013-10-18",
+            "rating": 8.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4025.jpg",
+            "duration": "30 min",
+            "overview": "Korra sets out to restore balance between the physical and spirit worlds."
+          },
+          {
+            "episode": 9,
+            "title": "The Guide",
+            "airDate": "2013-11-01",
+            "rating": 8.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4026.jpg",
+            "duration": "30 min",
+            "overview": "Tenzin's assistance is sought by Korra as she prepares to enter the Spirit World for the first time."
+          },
+          {
+            "episode": 10,
+            "title": "A New Spiritual Age",
+            "airDate": "2013-11-08",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4027.jpg",
+            "duration": "30 min",
+            "overview": "Korra arrives in the Spirit World, where she has difficulty forging connections with the spirits."
+          },
+          {
+            "episode": 11,
+            "title": "Night of a Thousand Stars",
+            "airDate": "2013-11-15",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4028.jpg",
+            "duration": "30 min",
+            "overview": "Bolin proves to be a hero when President Raiko is attacked."
+          },
+          {
+            "episode": 12,
+            "title": "Harmonic Convergence",
+            "airDate": "2013-11-15",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4029.jpg",
+            "duration": "30 min",
+            "overview": "Korra tries to seal the spirit portals prior to Harmonic Convergence."
+          },
+          {
+            "episode": 13,
+            "title": "Darkness Falls",
+            "airDate": "2013-11-15",
+            "rating": 8.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4030.jpg",
+            "duration": "30 min",
+            "overview": "Unalaq's scheme has a twist uncovered by Korra. Meanwhile, Tenzin must deal with his demons if he wants to rescue his daughter."
+          },
+          {
+            "episode": 14,
+            "title": "Light in the Dark",
+            "airDate": "2013-11-15",
+            "rating": 7.6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4031.jpg",
+            "duration": "30 min",
+            "overview": "Korra learns of a method she can employ to attempt to destroy the dark spirit."
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Breath of Fresh Air",
+            "airDate": "2014-06-27",
+            "rating": 7.9,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715215.jpg",
+            "duration": "30 min",
+            "overview": "In the third-season opener, Korra uncovers a huge shift in the bending world, which is the result of Harmonic Convergence."
+          },
+          {
+            "episode": 2,
+            "title": "Rebirth",
+            "airDate": "2014-06-27",
+            "rating": 8.6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715216.jpg",
+            "duration": "30 min",
+            "overview": "Air Nation is revived thanks to Korra and Team Avatar."
+          },
+          {
+            "episode": 3,
+            "title": "The Earth Queen",
+            "airDate": "2014-06-27",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715217.jpg",
+            "duration": "30 min",
+            "overview": "The team look for Airbenders on a trip to Ba Sing Se."
+          },
+          {
+            "episode": 4,
+            "title": "In Harm's Way",
+            "airDate": "2014-07-11",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715218.jpg",
+            "duration": "30 min",
+            "overview": "Korra wants to free Airbenders in Be Sing Se who are being forced to join the Earth Queen's army."
+          },
+          {
+            "episode": 5,
+            "title": "The Metal Clan",
+            "airDate": "2014-07-11",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715219.jpg",
+            "duration": "30 min",
+            "overview": "Korra and her pals arrive in the metal city of Zaofu."
+          },
+          {
+            "episode": 6,
+            "title": "Old Wounds",
+            "airDate": "2014-07-18",
+            "rating": 7.9,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715220.jpg",
+            "duration": "30 min",
+            "overview": "Beifong confronts her past."
+          },
+          {
+            "episode": 7,
+            "title": "Original Airbenders",
+            "airDate": "2014-07-18",
+            "rating": 7.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715221.jpg",
+            "duration": "30 min",
+            "overview": "New members receive training from Tenzin, who must also deal with Bumi's poor attitude."
+          },
+          {
+            "episode": 8,
+            "title": "The Terror Within",
+            "airDate": "2014-07-25",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/286/715222.jpg",
+            "duration": "30 min",
+            "overview": "Zaheer and his crew try to kidnap Korra."
+          },
+          {
+            "episode": 9,
+            "title": "The Stakeout",
+            "airDate": "2014-08-01",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4006.jpg",
+            "duration": "30 min",
+            "overview": "Zaheer reveals the goals of the Red Lotus to Korra while his allies close in on her."
+          },
+          {
+            "episode": 10,
+            "title": "Long Live the Queen",
+            "airDate": "2014-08-08",
+            "rating": 7.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4005.jpg",
+            "duration": "30 min",
+            "overview": "Korra and Asami escape and return to the oasis, so Zaheer takes his anger out on the Earth Queen as the Red Lotus destroy the city."
+          },
+          {
+            "episode": 11,
+            "title": "The Ultimatum",
+            "airDate": "2014-08-15",
+            "rating": 8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4015.jpg",
+            "duration": "30 min",
+            "overview": "Korra contacts Tenzin as the Red Lotus attack the temple, so Tenzin and his siblings try to fight off the invaders."
+          },
+          {
+            "episode": 12,
+            "title": "Enter the Void",
+            "airDate": "2014-08-22",
+            "rating": 8.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4016.jpg",
+            "duration": "30 min",
+            "overview": "Zaheer removes the hostages from the temple as Korra prepares to sacrifice herself for the other airbenders."
+          },
+          {
+            "episode": 13,
+            "title": "Venom of the Red Lotus",
+            "airDate": "2014-08-22",
+            "rating": 9,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/4017.jpg",
+            "duration": "30 min",
+            "overview": "The Red Lotus poison Korra, who takes to the skies to battle Zaheer."
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "After All These Years",
+            "airDate": "2014-10-03",
+            "rating": 7.6,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/3122.jpg",
+            "duration": "30 min",
+            "overview": "Kai and Opal try to assist a struggling community in Earth Kingdom three years after Team Avatar was poisoned by Zaheer."
+          },
+          {
+            "episode": 2,
+            "title": "Korra Alone",
+            "airDate": "2014-10-10",
+            "rating": 8.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/3121.jpg",
+            "duration": "30 min",
+            "overview": "Avatar Korra may have escaped Republic City, but she can't seem to escape her past."
+          },
+          {
+            "episode": 3,
+            "title": "The Coronation",
+            "airDate": "2014-10-17",
+            "rating": 7.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/1/3552.jpg",
+            "duration": "30 min",
+            "overview": "There's only one thing Prince Wu is looking forward to more than ruling the Earth Kingdom, his PARTY!"
+          },
+          {
+            "episode": 4,
+            "title": "The Calling",
+            "airDate": "2014-10-24",
+            "rating": 8.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/2/5272.jpg",
+            "duration": "30 min",
+            "overview": "Pema and Tenzin's kids leave their home to find Korra."
+          },
+          {
+            "episode": 5,
+            "title": "Enemy at the Gates",
+            "airDate": "2014-10-31",
+            "rating": 7.2,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/2/6565.jpg",
+            "duration": "30 min",
+            "overview": "Kuvira travels to the city of Zaofu to negotiate with Suyin Beifong. Zaofu is the last city in the Earth Kingdom not under Kuvira's rule."
+          },
+          {
+            "episode": 6,
+            "title": "The Battle of Zaofu",
+            "airDate": "2014-11-07",
+            "rating": 7.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/5/12950.jpg",
+            "duration": "30 min",
+            "overview": "Korra and Kuvira face off in an epic showdown."
+          },
+          {
+            "episode": 7,
+            "title": "Reunion",
+            "airDate": "2014-11-14",
+            "rating": 7.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/5/12951.jpg",
+            "duration": "30 min",
+            "overview": "Korra returns to Republic City, but Kuvira'a actions spoil her homecoming."
+          },
+          {
+            "episode": 8,
+            "title": "Remembrances",
+            "airDate": "2014-11-21",
+            "rating": 5.8,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/5/12949.jpg",
+            "duration": "30 min",
+            "overview": "Korra goes to Zaheer in order to face her inner fears and find balance within herself."
+          },
+          {
+            "episode": 9,
+            "title": "Beyond the Wilds",
+            "airDate": "2014-11-28",
+            "rating": 8.3,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/164/411453.jpg",
+            "duration": "30 min",
+            "overview": "Jinora gets trapped in the Spirit World and Korra mounts a rescue mission, but she's halted by Zaheer's apparition."
+          },
+          {
+            "episode": 10,
+            "title": "Operation Beifong",
+            "airDate": "2014-12-05",
+            "rating": 7.4,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/164/411452.jpg",
+            "duration": "30 min",
+            "overview": "Bolin assists Opal and Lin in rescuing the Beifongs. Meanwhile, Korra searches for help in the Spirit World."
+          },
+          {
+            "episode": 11,
+            "title": "Kuvira's Gambit",
+            "airDate": "2014-12-12",
+            "rating": 7.1,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/164/411451.jpg",
+            "duration": "30 min",
+            "overview": "Korra and the gang attempt to halt Kuvira's actions against Republic City. Meanwhile, Kuvira reveals a new lethal weapon in her arsenal."
+          },
+          {
+            "episode": 12,
+            "title": "Day of the Colossus",
+            "airDate": "2014-12-19",
+            "rating": 7.5,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/164/411450.jpg",
+            "duration": "30 min",
+            "overview": "Team Avatar battle Kuvira in the heart of Republic City, and innocent bystanders are evacuated by Pema and Prince Wu."
+          },
+          {
+            "episode": 13,
+            "title": "The Last Stand",
+            "airDate": "2014-12-19",
+            "rating": 7.7,
+            "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/164/411449.jpg",
+            "duration": "30 min",
+            "overview": "Korra faces off with Kuvira, and the fate of many hangs in the balance."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // SpongeBob SquarePants (1999 - Present)
+  // ============================================================
+  {
+    id: "spongebob-squarepants-1999",
+    title: "SpongeBob SquarePants",
+    type: "TV Show",
+    year: 1999,
+    rating: 8.2,
+    age: "TV-Y7",
+    duration: "23m",
+    genres: ["Animation","Comedy","Family","Fantasy","Kids"],
+    poster: "https://www.themoviedb.org/t/p/w1280/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/maFEWU41jdUOzDfRVkojq7fluIm.jpg",
+    videoUrl: "387",
+    trailerUrl: "https://www.youtube.com/watch?v=fDImf2FeNi4",
+    overview: "The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple in the colorful Pacific city of Bikini Bottom alongside his eccentric aquatic friends.",
+    overviewKurdish: "سەرکێشی و ڕووداوە پێکەنیناوییەکانی ئیسفەنجێکی دەریایی قسەکەر بە ناوی سپۆنجبۆب، کە لە چێشتخانەی کڕەستی کراب کار دەکات، دەچێتە قوتابخانەی لێخوڕینی بەلەم، و لە ناو ئەناناسێکی ژێر ئاودا لە شاری بیکینی بۆتەم لەگەڵ هاوڕێ دەریایییە سەیروسەمەرەکانیدا دەژی.",
+    director: "Stephen Hillenburg",
+    cast: ["Tom Kenny","Bill Fagerbakke","Rodger Bumpass","Clancy Brown","Carolyn Lawrence","Mr. Lawrence"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Help Wanted/Reef Blower/Tea at the Treedome",
+            "airDate": "1999-05-01",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzdmMDk4ODQtYzQ5My00ZjFmLTk5MGMtOWYxZDdjY2U2NmQxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob attempts to fulfill his dream of working at the Krusty Krab; SpongeBob meets a squirrel named Sandy and goes to extreme lengths in an attempt to impress her."
+          },
+          {
+            "episode": 2,
+            "title": "BubbleStand/Ripped Pants",
+            "airDate": "1999-07-17",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTFjZjZmMzktZTk3MS00MGM2LWJjYmQtNWNmZTdiN2ZjOTMxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Bubblestand: SpongeBob blows bubbles. Ripped Pants: SpongeBob accidentally tears his pants."
+          },
+          {
+            "episode": 3,
+            "title": "Jellyfishing/Plankton!",
+            "airDate": "1999-07-31",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzQ3Y2I0NjMtZTQxZi00ZGY4LWI0YzgtN2ZhOTc1OGYyMmMyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Jellyfishing: SpongeBob and Patrick take Squidward jellyfishing. Plankton!: Plankton tries to steal the formula."
+          },
+          {
+            "episode": 4,
+            "title": "Naughty Nautical Neighbors/Boating School",
+            "airDate": "1999-08-06",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDM5Y2IxZDAtMzA3MS00YzJjLWEzM2MtNTA1NjUzZmQ1MTg3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Tired of his annoying neighbors, Squidward turns Spongebob and Patrick against each other. Later, Spongebob tries to pass his boating test."
+          },
+          {
+            "episode": 5,
+            "title": "Pizza Delivery/Home Sweet Pineapple",
+            "airDate": "1999-08-14",
+            "rating": 9.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGRiZWI2NTQtNjM1MC00Y2ViLWIwY2QtZjdmYTI1YjVkNDZmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and Squidward must deliver a pizza for the Krusty Krab. Later, Spongebob's pineapple house is eaten by nematodes, leaving him homeless."
+          },
+          {
+            "episode": 6,
+            "title": "Mermaidman and Barnacleboy/Pickles",
+            "airDate": "1999-08-20",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTlkZTI4YTAtNmFhMC00YWU1LWI4NjUtOTZjMGU5NjlhMjAxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mermaid Man and Barnacle Boy: SpongeBob and Patrick visit a retirement home. Pickles: SpongeBob loses his confidence."
+          },
+          {
+            "episode": 7,
+            "title": "Hall Monitor/Jellyfish Jam",
+            "airDate": "1999-08-28",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjY4MDYyMWEtMmE5Mi00NjdhLWJmOTMtODdhODZiMDVkNDI1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Hall Monitor: SpongeBob takes his turn as hall monitor. Jellyfish Jam: SpongeBob takes a wild jellyfish home."
+          },
+          {
+            "episode": 8,
+            "title": "Sandy's Rocket/Squeaky Boots",
+            "airDate": "1999-09-17",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2I3YzQxNmItMDE2Yi00YmI5LWE3NDYtNzQzNTA1NDVmZTUwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and Patrick are launched into space after fooling around with the controls. Mr. Krabs goes crazy from the squeaky sound of SpongeBob's new boots."
+          },
+          {
+            "episode": 9,
+            "title": "Nature Pants/Opposite Day",
+            "airDate": "1999-09-11",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDliYmRiNjItODU0Mi00ZTljLWI5ZDYtYmIzYjRlZTQxNmQyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Nature Pants: After suffering through some unusually rough days at work, SpongeBob decides to leave his industrialized life and \"live off the land\" with the jellyfish in JellyFish Fields. A rough day on the job, however, is nothin..."
+          },
+          {
+            "episode": 10,
+            "title": "Culture Shock/F.U.N.",
+            "airDate": "1999-09-18",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmUxZTU2ZjctN2JjNy00MmY0LTk3ZWQtN2FlMGM5NjRkZmQ0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs decides to host a talent show at the Krusty Krab in an attempt to boost customers, meanwhile Squidward sees it as his opportunity to break through./A new friendship between SpongeBob and Plankton causes issues at the Kru..."
+          },
+          {
+            "episode": 11,
+            "title": "MuscleBob BuffPants/Squidward the Unfriendly Ghost",
+            "airDate": "1999-10-02",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzAzNjhlODMtY2VkOC00MzFjLTkyMTEtOWZiNTY4OWFhNTFmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob orders a pair of fake muscles to impress his friends. / Squidward pretends that he is a ghost."
+          },
+          {
+            "episode": 12,
+            "title": "The Chaperone/Employee of the Month",
+            "airDate": "2000-03-08",
+            "rating": 8.3,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 13,
+            "title": "Scaredy Pants/I Was a Teenage Gary",
+            "airDate": "1999-10-28",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjRkYzdiODctNzc1OC00ODA0LTk5MmUtNmJkNmQ4M2E0YWI3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Scaredy Pants: Halloween party. I Was a Teenage Gary: Squidward takes care of SpongeBob's pet snail."
+          },
+          {
+            "episode": 14,
+            "title": "SB-129/Karate Choppers",
+            "airDate": "1999-12-31",
+            "rating": 9.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzJiZmUyYWYtOWE5NS00MTcwLTkxNmEtYjZmMjUzM2E2NGUwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Whilst fleeing from SpongeBob and Patrick, Squidward accidentally locks himself in the Krusty Krab freezer, causing him to travel to the future./SpongeBob's addiction to karate puts his job at stake."
+          },
+          {
+            "episode": 15,
+            "title": "Sleepy Time/Suds",
+            "airDate": "2000-01-17",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzNmNTUwN2YtZjg0Yi00YTQ5LTk1OTctOWE0YmRlYzVlNjYxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob visits his friends' dreams. / SpongeBob comes down with a case of the Suds."
+          },
+          {
+            "episode": 16,
+            "title": "Valentine's Day/The Paper",
+            "airDate": "2000-02-14",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWVkZTA2NzQtNGYwNC00MDE5LTlkYmEtZTQ2YzVkOTA3ZWE2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick go to the carnival. / SpongeBob has fun with a gum wrapper."
+          },
+          {
+            "episode": 17,
+            "title": "Arrgh!/Rock Bottom",
+            "airDate": "2000-03-15",
+            "rating": 9.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDk0YjQ1OWYtMzYyZC00ZjU3LWFhOGEtZmQyZDM2YTIyZjk0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs' addiction to a board game SpongeBob and Patrick invite him to play inspires him to bring the two on a real treasure hunt./SpongeBob and Patrick take the wrong bus home from Glove World and get stuck in an unfamiliar place."
+          },
+          {
+            "episode": 18,
+            "title": "Texas/Walking Small",
+            "airDate": "2000-03-22",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzE1MmE3NmQtOWYwNC00YWE2LThjN2ItYmRhZDljMzc3YmZlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick try to help Sandy out when she feels homesick. / Plankton tries to get SpongeBob to be mean."
+          },
+          {
+            "episode": 19,
+            "title": "Fools in April/Neptune's Spatula",
+            "airDate": "2000-04-01",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWQwNTE5ZmUtNmU5ZS00MDQ5LThlY2QtZDgxOTRlYWU1MGExXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob stages practical jokes for April Fool's Day and annoys Squidward who decides to get even; SpongeBob takes part in the Fry Cook Hall of Fame."
+          },
+          {
+            "episode": 20,
+            "title": "Hooky/Mermaidman and Barnacleboy II",
+            "airDate": "2001-03-03",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjQ1ZTA0NzItMzA5Ni00ZWU1LThjNzgtOWNlZjA0Yzk2N2IzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Hooky: When the mysterious \"hooks\" (fishing, that is) suddenly appear in Bikini Bottom, Mr. Krabs warns SpongeBob to stay away from them. Despite Mr. Krabs' scary tales of sea creatures winding up in gift shops or packed cans, Pat..."
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Something Smells/Bossy Boots",
+            "airDate": "2000-10-20",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGVhNTI5ZjEtZTA0ZS00MWJhLTkwY2QtNTU0ZTdhNGU4MTdjXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob's breath starts to stink. / Mr. Krabs employs his daughter at the Krusty Krab."
+          },
+          {
+            "episode": 2,
+            "title": "Your Shoe's Untied/Squid's Day Off",
+            "airDate": "2001-02-17",
+            "rating": 8.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjgzYmE2MmQtNDA4Yy00YmY5LTg2NjMtOTkyZTgwMzBkNmE5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob realizes he can't tie his shoes. / Mr. Krabs puts Squidward in charge for a day."
+          },
+          {
+            "episode": 3,
+            "title": "Big Pink Loser/Bubble Buddy",
+            "airDate": "2000-11-16",
+            "rating": 8.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQ0MzM4MDU0OV5BMl5BanBnXkFtZTgwMDYxNDE1NTE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick tries to win an award. / SpongeBob gets a new friend."
+          },
+          {
+            "episode": 4,
+            "title": "Dying for Pie/Imitation Krabs",
+            "airDate": "2001-01-27",
+            "rating": 9.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQzMzQ3NDEwNF5BMl5BanBnXkFtZTgwNDUwNDIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward unknowingly gives Spongebob a pie laced with explosives, he attempts to make Spongebob's last day on Earth meaningful. Plankton builds a robot that looks like Mr. Krabs in an attempt to steal the formula."
+          },
+          {
+            "episode": 5,
+            "title": "Wormy/Patty Hype",
+            "airDate": "2001-02-24",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQxMjEwMzk0Nl5BMl5BanBnXkFtZTgwNjM4MjIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick watch over Sandy's pets when she is out of town. / SpongeBob has an idea, but nobody will listen."
+          },
+          {
+            "episode": 6,
+            "title": "Grandma's Kisses/Squidville",
+            "airDate": "2001-04-28",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzY3NzQ2MDQtZTE1ZS00MmQ3LTllM2MtZjU1ZmZkYmE0MmRhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob gets embarrassed when his grandma kisses him in public. Squidward moves into a gated community for squids."
+          },
+          {
+            "episode": 7,
+            "title": "PreHibernation Week/Life of Crime",
+            "airDate": "2001-05-05",
+            "rating": 8.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDgwNjQyYmUtMjdjMC00MGMwLTgzMjMtYTZjOWVjNzQzZTQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Pre-Hibernation Week: SpongeBob hides from Sandy. Life of Crime: SpongeBob and Patrick borrow a balloon from a store and accidentally pop it."
+          },
+          {
+            "episode": 8,
+            "title": "Christmas Who?",
+            "airDate": "2000-12-07",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDNkMGNkYzMtZjAyYi00OThhLTgzNmItYjYzYTdkYTVkNWQ0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Christmas Who?: Nobody in Bikini Bottom has ever heard of Christmas or Santa Clause until Sandy lets them in on this surface tradition. SpongeBob wants to bring Christmas to Bikini Bottom this year and his enthusiasm is infectious..."
+          },
+          {
+            "episode": 9,
+            "title": "Survival of the Idiots/Dumped",
+            "airDate": "2001-05-19",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTgyODUzMzc0NF5BMl5BanBnXkFtZTgwMTc2MjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Survival of the Idiots: SpongeBob and Patrick sneak into the Treedome. Dumped: Gary goes to Patrick, and SpongeBob becomes jealous."
+          },
+          {
+            "episode": 10,
+            "title": "No Free Rides/I'm Your Biggest Fanatic",
+            "airDate": "2001-04-14",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmJhMDRiNmItYTI5Yy00ODc3LWJlMDYtYzRjZDkyNDBjZTQ4XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob gets extra credit in order to pass his driving test. / SpongeBob and Patrick go to a jellyfishing convention."
+          },
+          {
+            "episode": 11,
+            "title": "Mermaidman and Barnacleboy III/Squirrel Jokes",
+            "airDate": "2001-10-10",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDk3NDU0MTA2Ml5BMl5BanBnXkFtZTgwMDU2MzIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mermaid Man and Barnacle Boy fight one of their toughest enemies, ManRay, after Spongebob and Patrick free him; Spongebob tells mean squirrel jokes."
+          },
+          {
+            "episode": 12,
+            "title": "Pressure/The Smoking Peanut",
+            "airDate": "2001-05-12",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzkyY2EzM2YtYzYyZC00Njk2LTljOWUtOWNkYTE2Y2ZhN2ZkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy and SpongeBob compete in a series of extreme underwater activities; SpongeBob covers up the fact that he caused emotional hurt to an oyster at the zoo."
+          },
+          {
+            "episode": 13,
+            "title": "Shanghaied/Gary Takes a Bath",
+            "airDate": "2001-03-09",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWUwZGE0ZDgtODM1Yy00OGNkLWJjZGEtZDQ4MGRiYWRmNTZiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob, Patrick, and Squidward become unwilling crew members aboard the Flying Dutchman's ghostly pirate ship. Spongebob attempts to give Gary a bath."
+          },
+          {
+            "episode": 14,
+            "title": "Welcome to the Chum Bucket/Frankendoodle",
+            "airDate": "2002-01-22",
+            "rating": 9.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjY4MWVkMTUtMzRmMS00ZDVmLWEzMjItZTMzYWUyYTRhMjQ3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "After Mr. Krabs loses a card game to Plankton, Spongebob is forced to work at the Chum Bucket. Later, Spongebob and Patrick discover a magic pencil that brings anything they draw with it to life."
+          },
+          {
+            "episode": 15,
+            "title": "The Secret Box/Band Geeks",
+            "airDate": "2001-09-07",
+            "rating": 9.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDQ0OGE0NGMtZTlhNC00MGMzLTkyNWMtZGNlOGE3ODU0YzQwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Curiosity is killing Spongebob as he tries to invite out what is in the box that Patrick keeps with him: Squidward wants to form a marching band."
+          },
+          {
+            "episode": 16,
+            "title": "Graveyard Shift/Krusty Love",
+            "airDate": "2002-09-06",
+            "rating": 9.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTlhMDRjZDUtYzlkNC00YTNjLThmZTQtYjM1NjUzOGYxMmIzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Krusty Krab is open for 24 hours a day to make more money, and Squidward scares Spongebob with the \"hash slinging slasher.\"/ Ms. Puff comes to the Krusty Krab and Mr. Krabs gets Spongebob's help to woo her."
+          },
+          {
+            "episode": 17,
+            "title": "Procrastination/I'm with Stupid",
+            "airDate": "2001-10-19",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWM0YWRkNjctYmY3NS00MTMwLTg0YTQtNDllNTI3ZGVlMGMwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob must write an essay for Boating School, but he keeps putting it off. Patrick's parents come to visit, and Patrick wants to make a good impression."
+          },
+          {
+            "episode": 18,
+            "title": "Sailor Mouth/Artist Unknown",
+            "airDate": "2001-09-21",
+            "rating": 9.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYWZlOGRjYmEtNTYzOS00N2NiLTlhMTUtZDRiMzFkMzU1MWUzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and Patrick learn a curse word and begin using it frequently. Squidward decides to teach an art class, but Spongebob is his only student."
+          },
+          {
+            "episode": 19,
+            "title": "Jellyfish Hunter/The Fry Cook Games",
+            "airDate": "2001-09-28",
+            "rating": 8.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjM3NTE2MDg0OV5BMl5BanBnXkFtZTgwMjg2MjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Jellyfish Hunter: When money hungry Mr. Krabs discovers that customers love SpongeBob's special jellyfish jelly Krabby Patty, he convinces Spongebob to bring him as many of the jellyfish as he can. Spongebob easily brings in herds..."
+          },
+          {
+            "episode": 20,
+            "title": "Squid on Strike/Sandy, SpongeBob, and the Worm",
+            "airDate": "2001-10-12",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDljNzJlNzItYjg0Ni00MzllLTk5MDYtOGVlMjNiZDI4ZTA3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy, SpongeBob &amp; The Worm: A large worm is terrorizing Bikini Bottom and SpongeBob is terrified of it. Sandy thinks SpongeBob is chicken and drags him out into the wilderness to take the worm on. When they finally see the worm, ..."
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Algae's Always Greener/SpongeGuard on Duty",
+            "airDate": "2002-03-22",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDU2MjQyNTM3M15BMl5BanBnXkFtZTgwMDM2MzIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton uses one of his devices to get a glance into the life of Mr. Krabs, which is not all that he expects it to be; After being mistaken for a lifeguard by Larry, SpongeBob must protect his lie a well as the safety of the beac..."
+          },
+          {
+            "episode": 2,
+            "title": "Club SpongeBob/My Pretty Seahorse",
+            "airDate": "2002-07-12",
+            "rating": 9.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTgwNDM4ODU4M15BMl5BanBnXkFtZTgwOTg2MjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward tries to gain access to Spongebob and Patrick's \"secret\" club, the three of them end up stranded in the woods. Spongebob decides to adopt a wild seahorse."
+          },
+          {
+            "episode": 3,
+            "title": "Just One Bite/The Bully",
+            "airDate": "2001-10-05",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTNmYmFlZjItNTkwYS00NTg5LWFiYWUtZDgwNTFhNDg5NWI2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward is forced to eat a Krabby Patty; A large and mean new student joins Mrs. Puff's boating class and immediately decides that he wants to cause bodily harm to SpongeBob."
+          },
+          {
+            "episode": 4,
+            "title": "Nasty Patty/Idiot Box",
+            "airDate": "2002-03-01",
+            "rating": 9.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjU0ZDYyZDgtN2Y0NC00MTQ4LWIyMjYtZjgwNzczYmRjNGU0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Believing a health inspector to be an impostor Spongebob and Me, Krabs create a disgusting Krabby Patty to feed him; SpongeBob and Patrick play with a box."
+          },
+          {
+            "episode": 5,
+            "title": "Mermaidman and Barnacleboy IV/Doing Time",
+            "airDate": "2002-01-21",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzAxMzU2OWUtMjA0Yy00NDFlLWEzOTEtMjljZGQwNDA0NjU2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mermaidman and Barnacleboy IV: Mermaidman and Barnacleboy are eating at the Krusty Krab when Mermaidman accidentally drops his utility belt. SpongeBob finds the belt and can't resist it. He takes it home and tries it on. He plays ..."
+          },
+          {
+            "episode": 6,
+            "title": "Snowball Effect/One Krab's Trash",
+            "airDate": "2002-02-22",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWE0NmI4MmQtZWQ0Ni00MDlkLWFhZjAtM2Q5OTc1MWQzYzVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward is annoyed by Spongebob and Patrick's antics in the Snow. / Mr. Krabs accidentally sells Spongebob a priceless item and he tries to get it back."
+          },
+          {
+            "episode": 7,
+            "title": "As Seen on TV/Can You Spare a Dime?",
+            "airDate": "2002-03-08",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGE4ZTE2MjUtOTg4My00MWJhLWFkOTMtMjU5OTg3N2RhNjdiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "As Seen on TV: Krabs makes a low budget commercial and SpongeBob is in it for one second. After the commercial airs once at three in the morning, a blind man recognizes SpongeBob. SpongeBob's head blows up and he tells Mr. Krabs t..."
+          },
+          {
+            "episode": 8,
+            "title": "No Weenies Allowed/Squilliam Returns",
+            "airDate": "2002-03-15",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzVkYzEwODYtNDI0NS00YzA4LTgzMWUtNjZhNjM1ODhjMjQ3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob tries to get into the Salty Spitoon, the toughest club in town. Squidward must turn the Krusty Krab into a five-star restaurant in order to impress his nemesis, Squilliam Fancyson."
+          },
+          {
+            "episode": 9,
+            "title": "Krab Borg/Rock-a-Bye Bivalve",
+            "airDate": "2002-09-17",
+            "rating": 8.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjEwMzAwOTkzOF5BMl5BanBnXkFtZTgwNDE2MzIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Krab Borg: SpongeBob stays up late one night watching a sci-fi film where robots take over the world. He comes to work paranoid and Squidward scoffs at him. Through a series of wild coincidences, SpongeBob gets it in his head that..."
+          },
+          {
+            "episode": 10,
+            "title": "Wet Painters/Krusty Krab Training Video",
+            "airDate": "2002-05-10",
+            "rating": 9.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjE0MjEzMmMtZTRhMi00ODllLTkzYWUtOTFkMjI3MjcyZGJhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and Patrick spill paint on Mr. Krabs' first dollar. / Instructional spoof episode of everything about the Krusty Krab Restauraunt."
+          },
+          {
+            "episode": 11,
+            "title": "SpongeBob's House Party (Party Pooper Pants)",
+            "airDate": "2002-05-17",
+            "rating": 7.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2M3Mjc0ZTgtMGFiNi00NTdmLWE1YzEtZjg0MTM4ODNlZDdkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob's House Party: SpongeBob, while grocery shopping, discovers a \"how to throw a party\" kit. He decides to throw a big party and invites everyone he's ever known. Unfortunately for his guests, SpongeBob plans everything rig..."
+          },
+          {
+            "episode": 12,
+            "title": "Chocolate with Nuts/Mermaidman and Barnacleboy V",
+            "airDate": "2002-06-01",
+            "rating": 9.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQ4NDAzNDE1NF5BMl5BanBnXkFtZTgwODE2MzIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and Patrick sell chocolate bars to make money. / Barnacleboy turns evil to protest Mermaidman treating him like a child."
+          },
+          {
+            "episode": 13,
+            "title": "New Student Starfish/Clams",
+            "airDate": "2002-09-20",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTk5NDc4MDgyNF5BMl5BanBnXkFtZTgwMDg2MjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "New Student Starfish: It's another day of boating school for SpongeBob, and this time, Patrick wants to come along too. Patrick becomes the new student in SpongeBob's class, and from his introduction, begins getting SpongeBob in t..."
+          },
+          {
+            "episode": 14,
+            "title": "SpongeBob B.C. (Before Comedy) (Ugh)",
+            "airDate": "2004-03-05",
+            "rating": 8.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTg3OTExNDI0N15BMl5BanBnXkFtZTgwNTczMzEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Millions of years in the past, prehistoric versions of SpongeBob, Patrick and Squidward discover fire and proceed to use it to cook various food items."
+          },
+          {
+            "episode": 15,
+            "title": "The Great Snail Race/Mid-Life Crustacean",
+            "airDate": "2003-01-24",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDlkMDJkOTgtMjU2Ny00ZmUxLThiN2ItYzdjYjk2YTViNDRhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Great Snail Race: Squidward gets a pure-bred snail, Snelle, and decides to race her in the snail races. SpongeBob becomes competitive and enters Gary, coaching him to the point of exhaustion. At the races, Gary fizzles out, an..."
+          },
+          {
+            "episode": 16,
+            "title": "Born Again Krabs/I Had an Accident",
+            "airDate": "2003-10-04",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWM5ZjE1YjYtMWZkOC00MzI3LTlkZmMtYWE3ZDNjNzFkYTBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "\"Born Again Krabs\": Mr. Krabs refuses to let SpongeBob throw away a moldy Krabby Patty that was festering under the grill. He tries to pawn it off on customers to save the fifty-two cents he would have lost if he threw the patty a..."
+          },
+          {
+            "episode": 17,
+            "title": "Krabby Land/The Camping Episode",
+            "airDate": "2004-04-03",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDIzMDI1MGMtMGNhNS00NGZjLTgzMWUtM2MzMTFmNmYyM2UyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs converts the Krusty Krab into an amusement park. Spongebob, Patrick, and Squidward go camping."
+          },
+          {
+            "episode": 18,
+            "title": "Missing Identity/Plankton's Army",
+            "airDate": "2004-01-19",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmNlM2U4ZDUtMWUyYS00OGZkLTkyNzMtZDE1MWUyMGI1ZTIyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "While at a restaurant, SpongeBob tells of how he once lost his own name tag and spent an entire day trying to hunt down the elusive label; Plankton hires an army who happens to be his redneck cousins."
+          },
+          {
+            "episode": 19,
+            "title": "The Sponge Who Could Fly",
+            "airDate": "2003-03-21",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjE4MDllYzctYzQ2MS00ODI3LTk1OTAtZmE2ZDE3MWIwYTE0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Lost Episode (The Sponge Who Could Fly): SpongeBob is jellyfishing when he wistfully realizes that he wants to fly with the jellyfish. He proceeds to come up with numerous ways to fly. He and Patrick try everything from constructi..."
+          },
+          {
+            "episode": 20,
+            "title": "SpongeBob Meets the Strangler/Pranks a Lot",
+            "airDate": "2004-10-11",
+            "rating": 9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTk0MWEzNzctNTc0Yi00OGM5LWFiOTQtMzQxZTBkYTRjMGZhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob unknowingly snitches on a notorious strangler, who vows revenge. Later, Spongebob and Patrick prank the whole town by pretending to be ghosts."
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Fear of a Krabby Patty/Shell of a Man",
+            "airDate": "2005-05-23",
+            "rating": 7.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2E5NjhkOGYtNDIwZS00Y2QxLWI0OTktN2U5YTBkMWM3ZTFhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Fear of a Krabby Patty: The Krusty Krab is now open 24-hours-a-day, which means that the Krusty Krab employees have to work round-the-clock and without a break. At first the prospect of never leaving work is like a dream come true..."
+          },
+          {
+            "episode": 2,
+            "title": "The Lost Mattress/Krabs vs. Plankton",
+            "airDate": "2005-05-13",
+            "rating": 8.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmJjYWVhNDItMDRiMi00NjIxLWJmM2EtY2I5NjU0NjJhYjk3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Lost Mattress: SpongeBob hears that Mr. Krabs cannot get a good night sleep on his lumpy mattress, so, with the help of Patrick and Squidward, SpongeBob buys Mr. Krabs a brand new mattress and throws the old one away. Once Mr...."
+          },
+          {
+            "episode": 3,
+            "title": "Have You Seen This Snail?",
+            "airDate": "2005-11-14",
+            "rating": 8.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWVhNWIxZGItNTExMC00YjMxLWIwN2YtMjMyZTliY2Q1MjMyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Have You Seen This Snail?: While trying to beat a paddle-ball world record, SpongeBob forgets to feed Gary-for several weeks. So Gary runs away to downtown Bikini Bottom where he is taken in by a kindly old woman who confuses him ..."
+          },
+          {
+            "episode": 4,
+            "title": "Skill Crane/Good Neighbors",
+            "airDate": "2005-05-27",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2UwZGJjZTctMjEwMy00ZTM3LThkMzYtZWNlMTE2OGI1NzI3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward becomes obsessed with winning a stuffed animal from the skill crane; SpongeBob and Patrick intrude upon Squidward's day off and try to make a club."
+          },
+          {
+            "episode": 5,
+            "title": "Selling Out/Funny Pants",
+            "airDate": "2005-10-31",
+            "rating": 7.4,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 6,
+            "title": "Dunces and Dragons",
+            "airDate": "2006-02-20",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmNhZGIwYjYtYjViMi00NmJlLWFjOTUtNTBlYzgwMzgyYTkyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Dunces and Dragons: After a freak jousting accident at a Medieval Times-style restaurant, SpongeBob and Patrick are transported to a medieval version of Bikini Bottom. There they are mistaken for great knights and sent on a quest ..."
+          },
+          {
+            "episode": 7,
+            "title": "Enemy In-Law/Mermaidman and Barnacleboy VI: The Motion Picture",
+            "airDate": "2005-10-07",
+            "rating": 7.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmMxOTM1NzUtMWFkYy00YTZlLWEyOTMtYjgwOTAwMWVlZGM2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Enemy-In-Law: Mr. Krabs' Mom is dating again, and it seems like things could be serious. Mr. Krabs tries to be happy for his mother, but he is absolutely horrified when he learns that the secret paramour is his arch-rival Plankton..."
+          },
+          {
+            "episode": 8,
+            "title": "Patrick SmartPants/SquidBob TentaclePants",
+            "airDate": "2006-03-05",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTU4NTYxMTEwNV5BMl5BanBnXkFtZTgwNzc2MjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick SmartPants: Patrick becomes smart after getting hit on the head. SquidBob TentaclePants: Sandy's experiment turns Squidward and SpongeBob into one body."
+          },
+          {
+            "episode": 9,
+            "title": "Krusty Towers/Mrs. Puff, You're Fired",
+            "airDate": "2006-04-01",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjZiNzU5NTgtMzUwMi00NTAzLTg5MDItN2Y1YWEzZmJjZmJhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs turns the Krusty Krab into a hotel; SpongeBob's record of failed boating tests caused Mrs. Puff to lose her job."
+          },
+          {
+            "episode": 10,
+            "title": "Chimps Ahoy/Ghost Host",
+            "airDate": "2006-05-05",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzQ5OTc5MzYwOF5BMl5BanBnXkFtZTgwMDY2NDE1NTE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick have to take over some of Sandy's responsibilities to take some of the pressures off while she prepares for a visit from the chimps; The Flying Dutchman can't control his shapeshifting powers to haunt people."
+          },
+          {
+            "episode": 11,
+            "title": "Whale of a Birthday/Karate Island",
+            "airDate": "2006-05-12",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZWZjYjIxZDEtOTY5Yy00NTM0LWJmNTgtM2RmOWFjM2ZiNzJiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs wants to throw a birthday party for Pearl; SpongeBob receives an invitation to take part in a competition."
+          },
+          {
+            "episode": 12,
+            "title": "All That Glitters/Wishing You Well",
+            "airDate": "2006-06-02",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2M3NzViMzEtNDQ2OS00OGM5LWFlZmMtZGU5MjM5MDRiMTIxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "All That Glitters: During an intense day on the job, SpongeBob's spatula breaks mid patty-flip. With his favorite kitchen implement out of commission, SpongeBob searches for a temporary replacement. Enter \"Le Spatula,\" the latest ..."
+          },
+          {
+            "episode": 13,
+            "title": "New Leaf/Once Bitten",
+            "airDate": "2006-10-10",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjgzNGI3OGQtMTkzNC00ODI2LWIwN2UtMjQ2ZjY2NGNhZTlkXkEyXkFqcGdeQXVyMTE0NzY5OTk5._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton decides to give up on the Chum Bucket and opens a gift shop; Bikini Botton falls into a mass hysteria after Gary begins biting everyone in town."
+          },
+          {
+            "episode": 14,
+            "title": "Bummer Vacation/Wigstruck",
+            "airDate": "2006-10-17",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGIyODdjOGQtMmQ0Ny00NmYzLTliMTctMGYyZGY0MzdkMjIzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Bummer Vacation: Mr. Krabs is about to be fined for unfair labor practices. It turns out that in all the years he has been working at the Krusty Krab, SpongeBob has never taken a vacation. So Mr. Krabs makes his #1 employee take t..."
+          },
+          {
+            "episode": 15,
+            "title": "Squidtastic Voyage/That's No Lady",
+            "airDate": "2006-10-14",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDM1NjBlYWYtOGU5Ny00MjUwLWJmMWEtZjhmZmQyMWYwYWVlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward swallows his clarinet reed Sandy offers to retrieve the piece./A misunderstanding over an advertisement causes Patrick to think he must \"get out of town.\""
+          },
+          {
+            "episode": 16,
+            "title": "The Thing/Hocus Pocus",
+            "airDate": "2007-01-15",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZWFiYzMwNTAtNDUzOS00YmExLThkZWItMDk5ZmQ1MzFlMWZmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Thing: After a freak bicycling accident, Squidward is coated in so much mud, leaves, branches and gunk to make him totally unrecognizable. The residents of Bikini Bottom think that Squidward is some sort of monster come to ter..."
+          },
+          {
+            "episode": 17,
+            "title": "Driven to Tears/Rule of Dumb",
+            "airDate": "2007-02-19",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTNkNWVkY2YtYzdiNy00Yzc4LTlkMzYtYmI1MWVkYzU5MjljXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Driven to Tears: SpongeBob has failed his driving test-again. Patrick is so outraged by the injustice of it all that he storms into the testing facility and takes the test to prove that it is an unfair test and impossible to pass...."
+          },
+          {
+            "episode": 18,
+            "title": "Born to Be Wild/Best Frenemies",
+            "airDate": "2007-03-31",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmUzYThkYmEtMDBmMi00MjJhLWE4MTAtMjEzNDQ3YjAyZjU0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Born to be Wild: SpongeBob hears that a ferocious biker gang is coming to town, only no one in Bikini Bottom seems bothered by the news. So SpongeBob dons his leather jacket, warms up his bike, and prepares to protect the town all..."
+          },
+          {
+            "episode": 19,
+            "title": "The Pink Purloiner/Squid Wood",
+            "airDate": "2007-03-10",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGU0NDQzNzEtNWI1NC00ZWM3LWI3ZmEtMWM5OWUyNDY1ZTQ4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Pink Purloiner: SpongeBob's favorite jellyfishing net is missing! And worst of all, Patrick may have been the one that stole it. But SpongeBob can't accuse his friend of anything until he can find some hard evidence that the s..."
+          },
+          {
+            "episode": 20,
+            "title": "Best Day Ever/The Gift of Gum",
+            "airDate": "2006-11-29",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzJmMmViYmItZjg3OS00ZWEzLWE3MmUtMjEzYmU0ZWE1ZmZkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Best Day Ever: SpongeBob is going to have the best day ever. First he gets to work at the Krusty Krab. Then he is going to meet Sandy for a little Ka-Ra-Tay, followed by jellyfishing with Patrick, and Squidward's clarinet recital...."
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Friend or Foe",
+            "airDate": "2007-04-13",
+            "rating": 7.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDkwMmU3ZGYtNGIyMi00MGEzLTlkMWEtOTAyMzgzYTdkNzQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Eugene H. Krabs and Sheldon J. Plankton have been business rivals and bitter enemies for longer than anyone can remember, but, one day, during another one of Plankton's failed attempts at stealing the Krabby Patty formula, Eugene ..."
+          },
+          {
+            "episode": 2,
+            "title": "The Original Fry Cook/Night Light",
+            "airDate": "2007-07-31",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDM3MTJiNTctZTk0NS00ODVhLWE3NDctYWRhNmVhMWQzNGQ1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Original Fry Cook: Mr. Krab's old fry cook pays a special visit to the Krusty Krab. SpongeBob is in awe of his predecessor, who has since become a world renowned chef following his departure from Krabs' restaurant. When Sponge..."
+          },
+          {
+            "episode": 3,
+            "title": "Rise and Shine/Waiting/Fungus Among Us",
+            "airDate": "2007-02-19",
+            "rating": 6.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTNiYTEwZjUtMWI4Yy00OWU4LThjOTEtMDhiODFiYmNlYmQ3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Rise and Shine: Take a look inside Patrick Star's rock where we see that his morning routine is anything but ordinary. Waiting: SpongeBob discovers that his breakfast cereal has an offer for free toy. After gathering the necessary..."
+          },
+          {
+            "episode": 4,
+            "title": "Spy Buddies/Boat Smarts/Good Ol' Whatshisname",
+            "airDate": "2007-07-23",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWIzOGU2YTMtOWZmMC00NzFlLWI1YmItYjg2M2JlYzFmMGYxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spy Buddies: Determined to uncover Plankton's next devious plot, Mr. Krabs sends SpongeBob and Patrick to spy on him. Boat Smarts: Watch an instructional video on the best (and worst) boating techniques as demonstrated by Squidwar..."
+          },
+          {
+            "episode": 5,
+            "title": "New Digs/Krabs á la Mode",
+            "airDate": "2007-07-25",
+            "rating": 7.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWIwODU4YmMtMjFjYS00ZDRmLThlNmQtNWI1ZDAyNDY3Y2RjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "New Digs: After arriving one minute late for work, SpongeBob decides to move into the Krusty Krab so that he will never be late to work again. Krabs a la Mode: When Plankton secretly turns down the thermostat at the Krusty Krab th..."
+          },
+          {
+            "episode": 6,
+            "title": "Roller Cowards/Bucket, Sweet Bucket",
+            "airDate": "2007-07-27",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDlhZGJiMGItNjE4OS00ZDVlLTkyZmItNmY5YmZlODI4MmJiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Roller Cowards: The scariest roller coaster ever has just opened at Bikini Bottom's amusement park. At first SpongeBob and Patrick are determined to ride this monster coaster. But the more they think about how scary it is the more..."
+          },
+          {
+            "episode": 7,
+            "title": "To Love a Patty/Breath of Fresh Squidward",
+            "airDate": "2007-07-26",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmRlOTJjOGItYThiYy00MmVjLTlhMDItYzVkYTc3ZjJlNGMzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob has trouble letting go of a perfect krabby patty; Squidward's personality changes when his security fence electrocutes him."
+          },
+          {
+            "episode": 8,
+            "title": "Money Talks/SpongeBob vs. The Patty Gadget/Slimy Dancing",
+            "airDate": "2007-07-31",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2IwYzRjNjAtYmZiNS00OWI5LWE3YjctODRjZTQ3NTNjN2VkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Money Talks: Mr. Krabs makes a wish that he could talk to money. When his wish is magically granted, Mr. Krabs learns (to his horror) what all of his dollars, pennies and quarters have been longing for: they want Mr. Krabs to spen..."
+          },
+          {
+            "episode": 9,
+            "title": "The Krusty Sponge/Sing a Song of Patrick",
+            "airDate": "2007-02-19",
+            "rating": 7.3,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 10,
+            "title": "A Flea in Her Dome/The Donut of Shame/The Krusty Plate",
+            "airDate": "2007-08-01",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTE5NmZkOTgtYTEzZS00N2E0LWJhZGQtNmFkNjBiZWRhZTIxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A Flea in Her Dome: Sandy comes back from Texas with fleas and SpongeBob and Patrick try to help Sandy rid her Tree Dome of them. The Donut of Shame: When Patrick accidentally takes SpongeBob's donut he is wracked with guilt over ..."
+          },
+          {
+            "episode": 11,
+            "title": "Goo Goo Gas/Le Big Switch",
+            "airDate": "2007-09-29",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTczMzA1OTc4NF5BMl5BanBnXkFtZTgwNzkzMTIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Goo Goo Gas: Plankton plans on making Mr. Krabs helpless by turning him and the rest of the Krusty Krab staff into babies with a gas he created. Le Big Switch: After being enrolled in a chef exchange program, SpongeBob switches pl..."
+          },
+          {
+            "episode": 12,
+            "title": "Atlantis SquarePantis",
+            "airDate": "2007-11-12",
+            "rating": 5.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGExNGUzZmMtM2NjMC00ZDIxLTk0OWMtOTQ2M2Q1NDFhMGUwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When two halves of an ancient medallion reunite, SpongeBob and his friends find themselves in the city of Atlantis, where the king gives them a tour."
+          },
+          {
+            "episode": 13,
+            "title": "Picture Day/Pat No Pay/Blackjack",
+            "airDate": "2007-08-02",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYWZhNTE2ZjItNzE0Yi00NjgzLWE5YzgtZmVhNDJlZmY0NDlmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Picture Day: It's Picture Day for the Boating School Year Book, and SpongeBob has spent all morning getting ready for it. Now all he has to do is make it to Boating School without getting dirty. But this proves to be more difficul..."
+          },
+          {
+            "episode": 14,
+            "title": "Blackened Sponge/Mermaidman vs. SpongeBob",
+            "airDate": "2007-08-03",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmZlMzczZDYtZTljYy00Zjk1LWFlYTctMmJlMmRkMzljMmE2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Blackened Sponge: While trying to wrestle open the cap off of a tube of toothpaste SpongeBob accidentally punches himself in the face leaving behind a hideous black eye. Too embarrassed to tell anyone the truth behind the shiner, ..."
+          },
+          {
+            "episode": 15,
+            "title": "The Inmates of Summer/To Save a Squirrel",
+            "airDate": "2007-11-23",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDk3ZDM1MGEtMzc1Ni00ZWNjLTgzNjMtNzRmNmYwNGU5YmM2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Inmates of Summer: Instead of getting on the ship headed for summer camp, SpongeBob and Patrick accidentally board a ship full of prisoners on their way to jail on Inferno Island. To Save a Squirrel: SpongeBob and Patrick stow..."
+          },
+          {
+            "episode": 16,
+            "title": "Pest of the West",
+            "airDate": "2008-04-15",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzcxZmEwNGEtZTY1Zi00NDM5LTgyOWMtNmQwOTE2ZmYyMjUyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Pest of the West: While researching his family tree SpongeBob discovers that he was related to the great Western hero, and famous chili-slinger, SpongeBuck. The tale of his ancestor's fame begins in the town of Dead Eye Gulch, whi..."
+          },
+          {
+            "episode": 17,
+            "title": "20,000 Patties Under the Sea/The Battle of Bikini Bottom",
+            "airDate": "2007-11-23",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjQzYzZiOWQtNGYwZS00YzRhLTg5YzMtYTdmYTMxOGNmNGVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "20,000 Patties Under the Sea: SpongeBob and Mr. Krabs turn an old submarine into a mobile Krusty Krab. Not to be undone by his competitor's new gimmick, Plankton responds with his own traveling Chum Bucket, and the two rival resta..."
+          },
+          {
+            "episode": 18,
+            "title": "Whatever Happened to SpongeBob? (WhoBob WhatPants)",
+            "airDate": "2008-10-13",
+            "rating": 6.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDQ5NDRmNWUtZjJkMi00NzMwLWJkZDktMjk2NGNhZWI5MDM5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Whatever Happened to SpongeBob? (WhoBob WhatPants): When SpongeBob tries to spend some quality time with his friends, he just ends up being a nuisance to everyone instead. They all tell him to go away, so with a heavy heart, Spong..."
+          },
+          {
+            "episode": 19,
+            "title": "The Two Faces of Squidward/SpongeHenge",
+            "airDate": "2007-11-23",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjYyYmFlODQtYmIyMS00MDNlLTk2MWMtMjMwMTUzYjZjYTM2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Two Faces of Squidward: Squidward is rushed to the hospital when SpongeBob accidentally slams the door on Squidward's face. He undergoes surgery to have his face fixed to look normal again-but things don't go exactly as planne..."
+          },
+          {
+            "episode": 20,
+            "title": "Banned in Bikini Bottom/Stanley S. SquarePants",
+            "airDate": "2007-11-23",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmYxYmQ4MWUtZmY0YS00NDNjLWE5MTgtMWUwZWMwNmQ5NmJjXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Banned in Bikini Bottom: SpongeBob loves Krabby Patties so much, he just can't help singing and dancing when he's around the delicious sandwiches. But Miss Priss, who is against all things fun and delicious, is appalled by his beh..."
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "House Fancy/Krabby Road",
+            "airDate": "2008-03-03",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjM4ZGNhNmUtOTQzOS00NzhhLWI0Y2UtOTBhMWU3NTY1ZDdmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "House Fancy: Squidward is enraged when he sees the home of his rival, Squilliam featured on a TV show about fancy houses. Determined not to be outdone, Squidward arranges to have his own house on the program. But he quickly realiz..."
+          },
+          {
+            "episode": 2,
+            "title": "Penny Foolish/Nautical Novice",
+            "airDate": "2008-03-07",
+            "rating": 6.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDNlZDBlMDMtOThiMy00Mjg0LWEzMDQtZDk2Y2ZmM2U3NTRjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Penny Foolish: When Mr. Krabs sees SpongeBob pick a penny up off the street, he becomes obsessed with the coin and vows to have it in his possession no matter what it takes. Nautical Novice: SpongeBob's boating school class is goi..."
+          },
+          {
+            "episode": 3,
+            "title": "Spongicus/Suction Cup Symphony",
+            "airDate": "2008-03-06",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDcyY2M2OWUtOWVhMy00MTRjLWFmOGEtZGU0YmY1YTExNzA2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongicus: Plankton has demolished the Chum Bucket! In its place, he has built a Roman coliseum and announces there will be a gladiator show, which means togas, chariots, and ferocious lionfish. And on top of all that, it's free! ..."
+          },
+          {
+            "episode": 4,
+            "title": "Not Normal/Gone",
+            "airDate": "2008-03-04",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTM4ZjhhZmQtYWRhZi00MDkwLWIyZTAtMmE2M2JjNWRiMjZiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Not Normal: When Squidward points out to SpongeBob that he's not normal, SpongeBob makes it his mission to become normal. SpongeBob begins to lose all his spongey-ness, and it's not long before he's completely unrecognizable, even..."
+          },
+          {
+            "episode": 5,
+            "title": "The Splinter/Slide Whistle Stooges",
+            "airDate": "2008-06-02",
+            "rating": 4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDRiNDgyMGItZTA4OC00NWQ2LTgzYjMtNTFkMTQzODA0ZGQ5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob tries to remove a splinter before Mr. Krabs learns about it and sends him home early; SpongeBob and Patrick get new slide whistles and keep playing them, much to the annoyance of Squidward."
+          },
+          {
+            "episode": 6,
+            "title": "A Life in a Day/Sun Bleached",
+            "airDate": "2008-06-04",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTY1NGE5ZGEtM2Q5Zi00NDM1LWE0MjUtZTk1NzQxODhhYjQxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A Life in a Day: Everyone is in awe of Larry the Lobster's daredevil ways, especially SpongeBob and Patrick. Patrick decides that it's time for them to start living like Larry, but SpongeBob isn't so sure. Sun Bleached: Everybody ..."
+          },
+          {
+            "episode": 7,
+            "title": "Giant Squidward/No Nose Knows",
+            "airDate": "2008-06-03",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzNhN2NhNzYtODgyYy00Yjg3LTlkOTAtYzE2YzgzYTNlZWVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Giant Squidward: When Squidward gets spritzed with plant growth spray, he becomes monstrously huge. SpongeBob and Patrick are thrilled because they now have a giant buddy to play games with. But the citizens of Bikini Bottom are t..."
+          },
+          {
+            "episode": 8,
+            "title": "The Patty Caper/Plankton's Regular",
+            "airDate": "2008-08-05",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTI2OTQ4MDY1OF5BMl5BanBnXkFtZTgwMjEwMTIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Patty Caper: The Krabby Patty formula has been placed in a vault far away for safe keeping. When Mr. Krabs forgets the recipe, he gives SpongeBob the key to the vault and sends him on a train ride to retrieve the formula. But ..."
+          },
+          {
+            "episode": 9,
+            "title": "Boating Buddies/The Krabby Kronicle",
+            "airDate": "2008-08-07",
+            "rating": 6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2ZkYThlZDgtMTc2Ny00ZjA5LTljNDctZDc0Yjk4NzlkZDE0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Boating Buddies: In an attempt to get away from SpongeBob, Squidward drives off in his boat as fast as he can. But he's stopped in his tracks when he's pulled over by a cop and is ordered to go to boating school. Now Squidward has..."
+          },
+          {
+            "episode": 10,
+            "title": "The Slumber Party/Grooming Gary",
+            "airDate": "2008-11-28",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWFjYTI2YzItMzc2Zi00YzZlLTgzMjAtZWEyNDQxMWU0OTA0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Slumber Party: Pearl's getting ready for her slumber party, but Mr. Krabs' meddling in the party preparations is getting out of control. Pearl forces him out of the house and orders him to stay at SpongeBob's house until the p..."
+          },
+          {
+            "episode": 11,
+            "title": "SpongeBob SquarePants vs. The Big One",
+            "airDate": "2009-04-17",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjY1OWZlNzYtMGUxZi00N2NlLWIxNzAtY2YxYmM5ZWJjNzZlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob and his friends are swept away by a giant wave and find themselves stranded on a remote tropical island. In order to get home, they must learn how to surf from enigmatic surf guru: Jack Kahuna Laguna."
+          },
+          {
+            "episode": 12,
+            "title": "Porous Pockets/Choir Boys",
+            "airDate": "2008-11-28",
+            "rating": 5.7,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 13,
+            "title": "Krusty Krushers/The Card",
+            "airDate": "2008-11-28",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTU2MTUxOTk3NF5BMl5BanBnXkFtZTgwNTkxNjE1NTE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Krusty Krushers: Mr. Krabs hatches up yet another get-rich-quick scheme: professional wrestling! But Mr. Krabs isn't the one who's going to wrestle. He's going to be the manager and money-handler-for the newest tag-team wrestlers ..."
+          },
+          {
+            "episode": 14,
+            "title": "Dear Vikings/Ditchin'",
+            "airDate": "2008-11-28",
+            "rating": 6.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODM3NTUyMjQzNl5BMl5BanBnXkFtZTgwMDczNjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Dear Vikings: There's a new Viking-themed promotion at the Krusty Krab, so SpongeBob is determined to find out everything there is to know about Vikings. And what better way to find out about Vikings than to talk to them himself? ..."
+          },
+          {
+            "episode": 15,
+            "title": "Grandpappy the Pirate/Cephalopod Lodge",
+            "airDate": "2009-02-17",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzg2MmU2MDUtM2YzYi00NWMzLWEwOWYtYmZjZDU2YjY5OGQyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Grandpappy the Pirate: Mr. Krabs' granddad is coming to town! But instead of being excited, Mr. Krabs is nervous because his swarthy pirate granddad thinks that Mr. Krabs is a pirate, too. Will Mr. Krabs be able to fool his grandd..."
+          },
+          {
+            "episode": 16,
+            "title": "Squid's Visit/To Squarepants or Not to Squarepants",
+            "airDate": "2009-07-17",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDZlYzdiOGItODRlNi00NWI2LWI1NTUtODZiNWNjOTJhOTFiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob's pants have shrunk in the dryer, so he buys some new, round pants, but no one recognises him."
+          },
+          {
+            "episode": 17,
+            "title": "Shuffleboarding/Professor Squidward",
+            "airDate": "2009-02-16",
+            "rating": 5.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTA2NDQxNjU1MTleQTJeQWpwZ15BbWU4MDcyNTMyMzIx._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A-SpongeBob and Patrick get carried away when they fill in for Mermaidman and Barnacleboy. B-Squidward poses as the teacher at a prestigious music school."
+          },
+          {
+            "episode": 18,
+            "title": "Pet or Pests/Komputer Overload",
+            "airDate": "2009-03-18",
+            "rating": 5.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTBiYjY3M2UtYjc0ZC00N2NlLWFjZjUtOTY4MjljMGY3Zjg0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Pets or Pests: SpongeBob adopts a stray worm, and to his surprise, the worm gives birth to some worm babies overnight! But since Gary won't play nice, SpongeBob needs to find loving homes for his new slimy, weird-looking friends. ..."
+          },
+          {
+            "episode": 19,
+            "title": "Gullible Pants/Overbooked",
+            "airDate": "2009-06-05",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDNlYTQxYjctZGIxYy00MTA4LWI4ZTItODUzMzllYjA2NGY3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Gullible Pants: SpongeBob is left in charge of the Krusty Krab while Mr. Krabs steps out for 15 minutes, and he is determined to make it the best-managed 15 minutes ever! So when Squidward tells him that there are a lot of rules t..."
+          },
+          {
+            "episode": 20,
+            "title": "No Hat for Pat/Toy Store of Doom",
+            "airDate": "2009-03-17",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjFlMDUxM2ItMGRhYi00ZGUyLWFjYTEtMjI3ZGI3ODQwNjM2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "No Hat for Pat: Patrick is sick of all of his friends not being able to play with him because they have to put on their Krusty Krab hats and go to work. So when Mr. Krabs offers him a job as a sign-holder, Patrick is thrilled beca..."
+          },
+          {
+            "episode": 21,
+            "title": "Sand Castles in the Sand/Shell Shocked",
+            "airDate": "2009-03-16",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTBiOTE3OGUtMjVhYy00M2U3LTlkNWQtMjFlZmI0Zjg0NmE2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob breaks Gary's shell and tries to get him a new one at Angry Jack's Shell Imporium."
+          },
+          {
+            "episode": 22,
+            "title": "Chum Bucket Supreme/Single Cell Anniversary",
+            "airDate": "2009-06-03",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGExNjk1ZjctNWQ4Zi00NjE5LTgwYmMtMjE4OGFiNWQ1NTY2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Chum Bucket Supreme: None of Plankton's intellectually advanced advertising slogans for the Chum Bucket seem to be working. Plankton decides to switch gears by hiring someone who can create the dumbest slogans ever-Patrick! Single..."
+          },
+          {
+            "episode": 23,
+            "title": "Truth or Square",
+            "airDate": "2009-11-06",
+            "rating": 5.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjI1Nzg5OWItZWI4NC00NzM5LTg1ODQtOGQxOTYwODA4NTU1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The cast look back on major events in their lives; Patchy hosts a star-studded anniversary special."
+          },
+          {
+            "episode": 25,
+            "title": "Pineapple Fever/Chum Caverns",
+            "airDate": "2009-07-18",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGYzNDc0NGEtMDU1MC00ZDEzLWE4ZGQtYzhhYzJkMDE1NTFjXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton discovers an underground cave which he decides to convert into part of the Chum Bucket. The Chum Buket becomes popular because of the great scenery and threatens to put the Krusty Krabs out of business."
+          },
+          {
+            "episode": 26,
+            "title": "The Clash of Triton",
+            "airDate": "2010-07-05",
+            "rating": 5.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTk1OTkyMzI5NF5BMl5BanBnXkFtZTgwMjQ0MTM1NTE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "King Neptune hosts a party, inviting all of the sea creatures. SpongeBob is jealous of the royal chef."
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Tentacle-Vision/I Heart Dancing",
+            "airDate": "2009-07-19",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWNhOGFmMmYtYjVhMC00YTI3LTlmYzMtODBjYzBjNDg4NGIyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Tenacle-vison: Squidward becomes the star of his own public access TV show. I Heart Dancing: Squidward tries to sabotage SpongeBob's big dance audition."
+          },
+          {
+            "episode": 2,
+            "title": "Growth Spout/Stuck in the Wringer",
+            "airDate": "2009-07-19",
+            "rating": 4.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2Y0MDI3NDgtM2U0YS00YzNlLThjMWYtYmYxODBlOTIyNmI5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Growth Spout: Mr. Krabs tries to find enough food to feed Pearl as she goes through her growth spurt. Stuck in the Wringer: After showering, SpongeBob gets stuck in his wringer."
+          },
+          {
+            "episode": 3,
+            "title": "Someone's in the Kitchen with Sandy/The Inside Job",
+            "airDate": "2009-07-19",
+            "rating": 5.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjU0ZDdlMGYtNzE3Mi00Zjc5LWExZDMtMzllZmNjM2FkODQ0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Someone's in the Kitchen with Sandy: Plankton steals Sandy's fur to disguise himself as Sandy and get the Krabby Patty formula. The Inside Job: Plankton goes inside SpongeBob's head to get the Krabby Patty formula."
+          },
+          {
+            "episode": 4,
+            "title": "Greasy Buffoons/Model Sponge",
+            "airDate": "2009-11-27",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDVlZjMwYjAtOWI4OS00Nzc4LWJjZTAtYTVjZDVkYTMyZTFlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Greasy Buffoons: Mr. Krabs and Plankton woo customers with greasy entrees. Model Sponge: SpongeBob tries a career at being a model in a kitchen sponge commercial."
+          },
+          {
+            "episode": 5,
+            "title": "Keep Bikini Bottom Beautiful/A Pal for Gary",
+            "airDate": "2010-01-02",
+            "rating": 3.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjIxZWY3YzgtNmRhZi00MjIxLTkwODEtZGFmNDA2OGU1NjgzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward cleans up the city of Bikini Bottom with 'help' from SpongeBob.SpongeBob brings Gary a pet that terrorizes him."
+          },
+          {
+            "episode": 6,
+            "title": "Yours, Mine and Mine/Kracked Krabs",
+            "airDate": "2010-09-11",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGJlMWM3ODAtZWUyNi00ZTA0LWE0MWEtNmIwZDQ0OWQ3NDJjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick buy a toy and have to learn to share it./SpongeBob goes with Mr. Krabs to the Cheapest Crab Convention."
+          },
+          {
+            "episode": 7,
+            "title": "The Curse of Bikini Bottom/Squidward in Clarinetland",
+            "airDate": "2010-03-24",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTQ0NTQ0MTMwNV5BMl5BanBnXkFtZTgwNTc5MDIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward requires Mr. Krabs to give him extra space for his clarinet, he is forced to share a locker with Spongebob. But, his paranoia drives him \"literally\" crazy."
+          },
+          {
+            "episode": 8,
+            "title": "SpongeBob's Last Stand",
+            "airDate": "2010-04-22",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjU2YzQ0YjEtOTE0Ny00OWFmLWJmZGEtN2VkYmVhYWE4ZTc0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick protest the construction of a highway that would destroy Jellyfish Fields."
+          },
+          {
+            "episode": 9,
+            "title": "Back to the Past/The Bad Guy Club for Villains",
+            "airDate": "2010-02-15",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWMzMmNlMjEtOTdhMS00NTNlLWFmZmQtNTQyMGQ3Y2M0N2UxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick go back in time to see the young Mermaidman and Barnacleboy. SpongeBob and Patrick watch their heroes fight bad guys in a classic Mermaidman and Barnacleboy episode."
+          },
+          {
+            "episode": 10,
+            "title": "A Day Without Tears/Summer Job",
+            "airDate": "2010-03-22",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTMxYzExZWQtNmYwNi00MjZlLWI5NTItODUxZDU1NGI0Y2YzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward bets SpongeBob he can't go a day without crying.Mrs. Puff has to work through her summer break at the Krusty Krab."
+          },
+          {
+            "episode": 11,
+            "title": "One Coarse Meal/Gary in Love",
+            "airDate": "2010-02-06",
+            "rating": 3.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzQ4ZDJmYjctMTBmNi00ZTkxLTk4MDUtZjkzYTkwNWJlYjllXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs finds out that Plankton's afraid of whales.Gary falls for a snail named Mary."
+          },
+          {
+            "episode": 12,
+            "title": "The Play's the Thing/Rodeo Daze",
+            "airDate": "2010-02-06",
+            "rating": 5.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjM2OTgwMDQ5Nl5BMl5BanBnXkFtZTgwNzgyMjIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs opens a Dinner Theater at the Krusty KrabSpongeBob takes his pals to Texas to see Sandy in a squirrel rodeo."
+          },
+          {
+            "episode": 13,
+            "title": "Gramma's Secret Recipe/The Cent of Money",
+            "airDate": "2010-07-06",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGYyMmQzNzYtZGFlNi00YWUyLWJmYTEtOTNkMTc5OWI4OTRlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton disguises himself as SpongeBob's grandmother.Mr. Krabs uses Gary to find spare change."
+          },
+          {
+            "episode": 14,
+            "title": "The Monster Who Came to Bikini Bottom/Welcome to the Bikini Bottom Triangle",
+            "airDate": "2011-01-28",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjkwZTc1NmMtYjcxYi00Y2JhLTlkNzctZTAyYWFmOTZhNWJiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A monster terrorizes Bikini Bottom./All the Bikini Bottom citizens disappear."
+          },
+          {
+            "episode": 15,
+            "title": "The Curse of the Hex/The Main Drain",
+            "airDate": "2011-06-11",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDE1NjQ1NTItZTQwOC00OGY1LTk1ZmUtOTU4ODhkOTdkYWViXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Madam Hagfish puts a hex on the Krusty Krab, and SpongeBob and Patrick search for a legendary drain on the ocean floor."
+          },
+          {
+            "episode": 16,
+            "title": "Trenchbillies/Sponge-Cano!",
+            "airDate": "2011-01-28",
+            "rating": 5.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWU5NTRhYzYtMDhiOC00ZmZjLTk3NWYtMzI2MzI2YTAzNGZjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick are held prisoners by a backward gang. A volcanic eruption brings an ancient warrior to Bikini Bottom with dire predictions."
+          },
+          {
+            "episode": 17,
+            "title": "The Great Patty Caper",
+            "airDate": "2010-11-11",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWJkZWRmZDEtZmE5MC00YWFiLWIyY2UtYzJlNDFlMWIzZTFjXkEyXkFqcGdeQXVyMTE0NzY5OTk5._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob, Patrick and Plankton solve a mystery on a runaway train."
+          },
+          {
+            "episode": 18,
+            "title": "That Sinking Feeling/Karate Star",
+            "airDate": "2010-07-08",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTc1OTcxMDc0OV5BMl5BanBnXkFtZTgwOTcwMzIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick dig a tunnel between their two houses and drive Squidward nuts.Pat learns just enough karate to wreak havoc in Bikini Bottom."
+          },
+          {
+            "episode": 19,
+            "title": "Buried in Time/Enchanted Tiki Dreams",
+            "airDate": "2010-06-19",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGRhMDQ5ZTUtZGRlMC00NWNhLTlmNDctZTUxNzk3MGI0ZTg0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob, Patrick and Squidward get trapped inside a time capsule./SpongeBob and Patrick build Squidward a tiki land in order to give him some much-needed relaxation."
+          },
+          {
+            "episode": 20,
+            "title": "The Abrasive Side/Earworm",
+            "airDate": "2010-11-27",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODNkZmMyNmMtYjhhNS00MGJkLTlhNjYtZmY4NzUwZWZkYzQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob orders a product that will help him learn to say no; SpongeBob gets a song stuck in his head."
+          },
+          {
+            "episode": 21,
+            "title": "Hide and Then What Happens?/Shellback Shenanigans",
+            "airDate": "2010-08-09",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDBkNjU4OTItYTQyMS00MDMxLWI0YjItZjQ1MDgzYzU4ZTAxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton masquerades as Gary to steal the Krabby Patty formula./SpongeBob and Patrick play Hide N' Seek and SpongeBob searches the world for Patrick."
+          },
+          {
+            "episode": 22,
+            "title": "The Masterpiece/Whelk Attack",
+            "airDate": "2010-10-02",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGI0NjIzZjktMWFkMS00YmE1LWI4ZDUtODQwYjI1NjE5ZGYxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward sculpts a statue of Mr. Krabs for The Krusty Krab./Giant sea whelks terrorize the folks of Bikini Bottom."
+          },
+          {
+            "episode": 23,
+            "title": "You Don't Know Sponge/Tunnel of Glove",
+            "airDate": "2010-08-09",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjViNWM2YTktYTJmNC00ZjdiLTg3MTMtODQ4MWE5ZGY5MDZkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob is frustrated when Patrick can't remember any information about him. A ride at Glove World stops working, leaving Pearl stranded inside with Spongebob."
+          },
+          {
+            "episode": 24,
+            "title": "Krusty Dogs/The Wreck of the Mauna Loa",
+            "airDate": "2010-10-09",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWYyNjJjZDItMjg0YS00MzcwLThjMWMtOGU2NWIwMTU4MjZmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs decides to start selling hot dogs instead of Krabby Patties./SpongeBob and Patrick discover a lost ship."
+          },
+          {
+            "episode": 25,
+            "title": "New Fish in Town/Love That Squid",
+            "airDate": "2011-02-12",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjNkNzUxNjYtOWIzOC00YWJlLThiN2YtYWY1Nzk5ZDUyM2VmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A new neighbor moves in and becomes Squidward's best friend./Spongebob helps Squidward prepare for a date."
+          },
+          {
+            "episode": 26,
+            "title": "Big Sister Sam/Perfect Chemistry",
+            "airDate": "2011-02-26",
+            "rating": 5.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTg0MzU5MDMzOF5BMl5BanBnXkFtZTgwMTUzMjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick's big sister Samantha comes for a visit./Sandy and Plankton bond over their shared love."
+          }
+        ]
+      },
+      {
+        "season": 8,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Accidents Will Happen/The Other Patty",
+            "airDate": "2011-06-25",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWM1YjJiZmItZjIwYi00ZTdlLWIzMzUtN2QwOGIzNGU0ZTZmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward gets hurt on the job, he threatens to take legal action unless Mr. Krabs agrees to cater to him hand and foot. Mr. Krabs and Plankton find a common enemy in the popular new \"Flabby Patty\" restaurant."
+          },
+          {
+            "episode": 2,
+            "title": "Drive Thru/The Hot Shot",
+            "airDate": "2011-06-18",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzVlOWM5MTMtNzg4NS00ZDRjLTkxYzQtNTlmYmRjZjUyOWVhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Accidents Will Happen: When Squidward gets hurt on the job, he threatens to take legal action unless Mr. Krabs agrees to cater to him hand and foot. Mr. Krabs and Plankton find a common enemy in the popular new \"Flabby Patty\" rest..."
+          },
+          {
+            "episode": 3,
+            "title": "A Friendly Game/Sentimental Sponge",
+            "airDate": "2011-04-02",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODY2ODY2ODI2OF5BMl5BanBnXkFtZTgwNTU4MTEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick build an indoor miniature golf course in SpongeBob's house./SpongeBob has trouble throwing anything away when he realizes how many memories are attached to all his possessions."
+          },
+          {
+            "episode": 4,
+            "title": "Frozen Face-Off",
+            "airDate": "2011-07-15",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTZlNTI0NzMtNWM4NC00MzRmLTkzYjUtNWVlMzhiNGQwYjkxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "All of Bikini Bottom enters a sleigh race to win $1 million. While racing, they are attacked by the abominable snow mollusk. Plankton takes advantage of everyone being gone to steal the Krabby Patty secret formula."
+          },
+          {
+            "episode": 5,
+            "title": "Squidward's School for Grown Ups/Oral Report",
+            "airDate": "2011-06-04",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjYxYTAwMjItMWFiMC00NjI3LWIyNDctZjgwNzRhYWJiOWFjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Patrick suddenly grows a very grown-up beard, he decides it's time to act like a grown-up and perhaps Squiward is the perfect squid to help him. But can it be done without leaving SpongeBob heartbroken?/While preparing to giv..."
+          },
+          {
+            "episode": 6,
+            "title": "Sweet and Sour Squid/The Googly Artiste",
+            "airDate": "2011-07-20",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTJhODIxOGItMTFlZi00NzMyLWI3Y2ItOWE2OGQyYTgwNGNiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton tries to befriend Squidward so he can get the Krabby Patty formula.When an art critic deems Patrick a true artiste for his rocks-with-googly-eyes creations, everyone in Bikini Bottom clamors for a Patrick original."
+          },
+          {
+            "episode": 7,
+            "title": "SquarePants Family Vacation",
+            "airDate": "2011-11-11",
+            "rating": 5.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGZjNzczYjktNDgxNi00ZDNlLWE2YmQtNzJkZDI3ZmY3MWVhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "While on a family road trip to the Great Barrier Reef, SpongeBob and Patrick get lost and end up on the adventure of a lifetime."
+          },
+          {
+            "episode": 8,
+            "title": "Patrick's Staycation/Walking the Plankton",
+            "airDate": "2011-11-07",
+            "rating": 6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTc5NjYyMTg4Nl5BMl5BanBnXkFtZTgwMjQ4ODEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick wants to take a vacation, but can't afford one--until SpongeBob comes up with the perfect solution: a \"staycation\"!Mr. Krabs and SpongeBob win a free cruise thanks to Plankton, who secretly goes with them to try to steal t..."
+          },
+          {
+            "episode": 9,
+            "title": "Mooncation/Mr. Krabs Takes a Vacation",
+            "airDate": "2011-11-09",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmQ1YWViYzgtNTM2Zi00NWIxLTk5MWItNjU4ZWZmNjQ4ZTY5XkEyXkFqcGdeQXVyMTQ3ODI2OTQz._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob accidentally stows away on Sandy's vacation to the Moon. Mr. Krabs takes Pearl and SpongeBob on a vacation to the Ocean Mint."
+          },
+          {
+            "episode": 10,
+            "title": "Ghoul Fools",
+            "airDate": "2011-10-21",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjIyNjg0NzA4MV5BMl5BanBnXkFtZTgwNjU2NjEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick find a houseboat haunted by a crew of ghost pirates--and get caught in the feud between them and the Flying Dutchman."
+          },
+          {
+            "episode": 11,
+            "title": "Mermaid Man Begins/Plankton's Good Eye",
+            "airDate": "2011-09-23",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTlhMWU2NmUtNWI2NS00NzAwLTllY2MtZjdmNjI0Y2U2NGJjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick learn the secret origins of Mermaid Man and Branacle Boy from the heroes themselves. Plankton grows himself a second eye using SpongeBob's DNA, and becomes nice."
+          },
+          {
+            "episode": 12,
+            "title": "Barnacle Face/Pet Sitter Pat",
+            "airDate": "2011-09-16",
+            "rating": 4.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjI0MTcyMDg3OV5BMl5BanBnXkFtZTgwNTE1NDEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Barnacle Face: The night before the big school dance, Mr. Krabs asks SpongeBob to help Pearl get rid of a barnacle on her face. Pet Sitter Pat: When SpongeBob gets invited to his Grandma's birthday party, he asks Patrick to pet-si..."
+          },
+          {
+            "episode": 13,
+            "title": "House Sittin' for Sandy/Smoothe Jazz at Bikini Bottom",
+            "airDate": "2011-09-30",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzMzNDg5MDM2NV5BMl5BanBnXkFtZTgwMTI1MzEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob house-sits for Sandy; SpongeBob and Squidward go to the Kelpy G concert."
+          },
+          {
+            "episode": 14,
+            "title": "Tunnel of Glove/Love That Squid",
+            "airDate": "2011-02-12",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTA4OTM2MjM1NzZeQTJeQWpwZ15BbWU4MDcwMzcxNTUx._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick take a friendship test./Pearl is embarrassed when she must sit next to SpongeBob in the Tunnel of Glove."
+          },
+          {
+            "episode": 14,
+            "title": "Bubble Troubles/The Way of the Sponge",
+            "airDate": "2011-11-25",
+            "rating": 6.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTA4OTM2MjM1NzZeQTJeQWpwZ15BbWU4MDcwMzcxNTUx._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick take a friendship test./Pearl is embarrassed when she must sit next to SpongeBob in the Tunnel of Glove."
+          },
+          {
+            "episode": 15,
+            "title": "The Krabby Patty That Ate Bikini Bottom/Bubble Buddy Returns",
+            "airDate": "2011-11-25",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTJlZDkyNjEtMGJkNi00OThiLWE2ZWItNDhhZTgzZjkwZmQ5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr Krabs uses Sandy's experimental growth formula on a Krabby Patty with disastrous results.SpongeBob tries to keep Bubble Buddy's visiting son, Shiny, out of trouble and away from sharp edges."
+          },
+          {
+            "episode": 16,
+            "title": "Restraining SpongeBob/Fiasco!",
+            "airDate": "2012-04-02",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzAzNjE3ODc3MF5BMl5BanBnXkFtZTgwMzU3NTEzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward has had enough of SpongeBob's annoying antics and issues a restraining order against him.Plankton thinks he's stolen a Krabby Patty from the Krusty Krab, but he's really stolen an art piece by the famous artist, Fiasco."
+          },
+          {
+            "episode": 17,
+            "title": "Are You Happy Now?/Planet of the Jellyfish",
+            "airDate": "2012-03-31",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTdmNTNhMGQtYTEyOC00N2FiLTk2NjMtNWJhMmI1ZTI0Njk5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward has trouble recalling his happiest memory; SpongeBob and Sandy must defeat an evil Jellien overlord who has replaced everyone with clones."
+          },
+          {
+            "episode": 18,
+            "title": "Free Samples/Home Sweet Rubble",
+            "airDate": "2012-04-04",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTYyYTJlMDYtY2IzNS00NDZhLWI4NGMtZDMyMzJjZjc3MDA4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs is forced to give out free food to win back customers. SpongeBob needs all of his friends to help him remodel his pineapple."
+          },
+          {
+            "episode": 19,
+            "title": "Karen 2.0/InSpongeiac",
+            "airDate": "2012-04-09",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmQ0OTMxMmMtZGIzNy00ODgxLTk3ODEtYjIwMDU1YjczNDdlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Plankton replaces his computer wife Karen with the new, better Karen 2, the original Karen ends up working at the Krusty Krab. / SpongeBob can't get to sleep, and asks for help from Patrick... who can't stay awake."
+          },
+          {
+            "episode": 20,
+            "title": "Face Freeze!/Glove World R.I.P.",
+            "airDate": "2012-04-03",
+            "rating": 5.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmE2ZjQxYmEtMDg0Ni00MTFiLTg1YjAtMDUyMzJhM2VmODY1XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick make a bet to see who can hold a \"funny face\" the longest...then their faces freeze that way!SpongeBob and Patrick spend one last glorious - and dangerous - day at Glove World before it closes for good."
+          },
+          {
+            "episode": 21,
+            "title": "Squiditis/Demolition Doofus",
+            "airDate": "2012-04-11",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWJiZGU4NTktZDNhNC00YThjLTk3ZTgtYjI5ODYwMzg0NzA2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward goes home sick with a fake illness, SpongeBob HypochondriacPants thinks he's caught it for real!Mrs. Puff finally finds a use for SpongeBob's reckless driving and enters him in the Demolition Derby!"
+          },
+          {
+            "episode": 22,
+            "title": "Treats!/For Here or to Go",
+            "airDate": "2012-04-10",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjVhZDI3YzItODM3MC00OGFmLTg4ODgtZjFkNDlkNjk1ZWZhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob brings home a box of new snail treats that Gary will do anything to get - especially when they run out. / Plankton wins a free Krabby Patty, and Mr. Krabs will do anything to stop him from collecting."
+          },
+          {
+            "episode": 23,
+            "title": "It's a SpongeBob Christmas!",
+            "airDate": "2012-11-23",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTUyYjFlMGYtNGMxMy00YzdiLWIzZTMtYjY2NTVkNWI2Njk2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton, Mr. Krabs' nemesis, vows to get his Christmas wish - obtaining the Krusty Krab's secret Krabby Patty formula - by turning everyone bad in Bikini Bottom with the help of his special jerktonium-laced fruitcake."
+          },
+          {
+            "episode": 24,
+            "title": "Super Evil Aquatic Villain Team Up Is Go!/Chum Fricassee",
+            "airDate": "2012-10-27",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTc4ZDhlYWEtNWIxMC00NWE5LWFhOTQtYzA2NjU0YmE3MGY0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton teams up with Man Ray to take over the Krusty Krab. Squidward quits his job and starts working at the Chum Bucket, where his new chum recipe becomes a success."
+          },
+          {
+            "episode": 25,
+            "title": "The Good Krabby Name/Move It or Lose It",
+            "airDate": "2012-10-21",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE0ODQ4MTM1MV5BMl5BanBnXkFtZTgwMTQ5MjIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Who lives in a pineapple under the sea? SpongeBob SquarePants! Follow the adventures of this enthusiastic, optimistic sponge whose good intentions inevitably lead him and his friends into trouble."
+          },
+          {
+            "episode": 26,
+            "title": "Hello Bikini Bottom!",
+            "airDate": "2012-10-08",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjBjNjc5OTAtZDc3Yi00MDMwLTliMmItODBhYjdhMTQ0M2JiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Squidward form a band and go on tour with Mr. Krabs as their manager and Patrick as their roadie, but they experience several difficulties along the way."
+          },
+          {
+            "episode": 31,
+            "title": "For Here or to Go?",
+            "airDate": "2012-04-12",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTY2MTM0MDE0N15BMl5BanBnXkFtZTgwNDAwMjIzMjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob brings home a box of new snail treats that Gary will do anything to get - especially when they run out. / Plankton wins a free Krabby Patty, and Mr. Krabs will do anything to stop him from collecting."
+          }
+        ]
+      },
+      {
+        "season": 9,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Extreme Spots/Squirrel Record",
+            "airDate": "2012-07-21",
+            "rating": 6.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGY5ODRhZGUtYjUwNi00ZTY0LTk1ZTItODg0ZTg3NmIwY2MzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick attempt to join Johnny Krill's extreme sports team. Sandy is determined to break a record number of world records, in record time, so SpongeBob joins her for an action-packed weekend of dangerous record setting."
+          },
+          {
+            "episode": 2,
+            "title": "Patrick-Man!/Gary's New Toy",
+            "airDate": "2012-10-14",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGU5MjM0NzgtZTViNy00NDllLThlYzgtYTNiYzA4OWU1ODAwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick becomes the superhero Patrick-Man, who intends to clean up Bikini Bottom--whether it wants it or not! Gary becomes obsessed with his new red ball, forcing SpongeBob to take drastic measures to intervene."
+          },
+          {
+            "episode": 3,
+            "title": "License to Milkshake/Squid Baby",
+            "airDate": "2012-09-07",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTAwZWI4MjMtNDM3Yy00NWFkLTllNmEtMmQ3NWM4NTVmZDY5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob must return to the Milkshake Academy after he realizes his Milkshake License has expired. / Squidward suffers a head injury and gets the mind of an infant."
+          },
+          {
+            "episode": 4,
+            "title": "Little Yellow Book/Bumper to Bumper",
+            "airDate": "2012-11-25",
+            "rating": 5.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTJmMDJhZmItMjYzNi00OTg0LWI2MmItOThlYTVmNmMzODhjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward finds SpongeBob's diary, and starts reading it out loud in the Krusty Krab.SpongeBob once again fails his driving test, forcing Mrs. Puff to think outside the box--and off the road."
+          },
+          {
+            "episode": 5,
+            "title": "Eek, an Urchin!/Squid Defense",
+            "airDate": "2012-10-28",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjA4MjY2NWYtMWExZS00NmI0LTgxZGYtMGE2ZTFlZTdkOWRjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob finds a nasty sea urchin living in the Krusty Krab, and tries everything to force it out. After getting his groceries stolen, Squidward convinces SpongeBob and Sandy to teach him karate."
+          },
+          {
+            "episode": 6,
+            "title": "Jailbreak!/Evil Spatula",
+            "airDate": "2013-03-16",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYThkZjE0NGYtZWFhNi00ZmMxLTkwNTctMmFmNTY1ZDMzMTFhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "An imprisoned Plankton teams up with his fellow inmates to break out of jail and steal the Krabby Patty secret formula. / SpongeBob replaces his broken spatula with one from Plankton, which may or may not have magical powers."
+          },
+          {
+            "episode": 7,
+            "title": "It Came from Goo Lagoon",
+            "airDate": "2014-02-17",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWYwNjc3OTQtNzUyMS00MDRhLWIzNzAtYjViNTAyYTY1ZjE4XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "What do microwave ovens, dry cleaning, corn dogs and purple floaty things have in common? They can all destroy Bikini Bottom, that's what! But will they? Find out in this spine-tingling SpongeBob SquarePants adventure, It Came Fro..."
+          },
+          {
+            "episode": 8,
+            "title": "Safe Deposit Krabs/Plankton's Pet",
+            "airDate": "2013-01-19",
+            "rating": 7.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWFkNzU5MDItOGMzYi00ODdhLThmYzAtNDIzY2IwY2RjN2M0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs gets trapped in Bikini Bottom's brand-new bank, and it's up to SpongeBob and Patrick to save him. After failing again to steal the Krabby Patty formula, Plankton gets a pet to cheer himself up."
+          },
+          {
+            "episode": 9,
+            "title": "Don't Look Now/Séance Shméance",
+            "airDate": "2013-10-14",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWQ4YmQ0ZGQtZTI4OS00MDZkLTkxZTEtZWUxNjdlOTU0MjcxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick go to see the latest horror film, only to be seemingly stalked by the villain. SpongeBob holds a séance at the Krusty Krab to learn the recipe for a long-lost sandwich."
+          },
+          {
+            "episode": 10,
+            "title": "Kenny the Cat/Yeti Krabs",
+            "airDate": "2014-03-29",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzBhNjNkNGUtMTM2NS00NjBmLWI4Y2UtNGJjY2ZmMmQ2NTFhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Spongebob is desperate to meet his newest hero, Kenny the Cat. Mr. Krabs tries to scare Squidward into working harder."
+          },
+          {
+            "episode": 11,
+            "title": "SpongeBob, You're Fired",
+            "airDate": "2013-11-11",
+            "rating": 4.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjBmZDA2YWMtYjQ2Zi00MjhiLWE4ZjAtMzAzZjE3NWM3YTZiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "In order to save money, Mr. Krabs fires SpongeBob; however, unable to just \"do nothing\", SpongeBob decides to go back to work, no matter what - or where."
+          },
+          {
+            "episode": 12,
+            "title": "Lost in Bikini Bottom/Tutor Sauce",
+            "airDate": "2015-07-16",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmIzYTczNTgtNTM2ZC00NWNkLTkyM2EtZmMzNGMxNjdlYTVhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Lost in Bikini Bottom: On his way to work, SpongeBob attempts to take a shortcut to get there quicker, only to find himself in an abandoned area of Bikini Bottom, and unable to find his way out. Tutor Sauce: After failing his driv..."
+          },
+          {
+            "episode": 13,
+            "title": "Squid Plus One/The Executive Treatment",
+            "airDate": "2015-09-07",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzBkZDdlZjktYmUwNC00ZDVkLTliMmUtYzZmYTc5NTYzNWI3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squid Plus One: Squidward gets invited to a gallery opening and wants to take someone, but can't decide who. The Executive Treatment: Patrick takes on a career of business when he tries to order a special sandwich."
+          },
+          {
+            "episode": 14,
+            "title": "Company Picnic/Pull Up a Barrel",
+            "airDate": "2015-09-18",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDhkYjVhNjgtYjViYS00NWE2LWI4M2QtYjA3OTE1ZjM1NDBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Company Picnic: In order to boost morale, Mr. Krabs throws a company picnic - On the same day Plankton is hosting his own. Pull Up a Barrel: It's a stormy day in Bikini Bottom while SpongeBob and Squidward are at work, so Mr. Krab..."
+          },
+          {
+            "episode": 15,
+            "title": "Sanctuary!/What's Eating Patrick?",
+            "airDate": "2015-10-02",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTBhNDQyY2YtZmM3Zi00OTgyLWFjOWQtZjYyNWIzOGM4MWVlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When stray snails start appearing around Bikini Bottom, SpongeBob decides to care for them himself. To defend Bikini Bottom's honor, Patrick enters a Krabby Patty eating competition."
+          },
+          {
+            "episode": 16,
+            "title": "Patrick! The Game/The Sewers of Bikini Bottom",
+            "airDate": "2015-11-11",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODcwZTg1MjktNzNlNy00YWU0LWJlMmItZGEwMmNhY2YxMzQ0XkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick invents a new board game, and invites SpongeBob, Sandy and Squidward to play it with him. After accidentally flushing Mr. Krabs' safe, SpongeBob and Squidward must go into the sewers to find it."
+          },
+          {
+            "episode": 17,
+            "title": "SpongeBob LongPants/Larry's Gym",
+            "airDate": "2016-02-15",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWZjNTAyZmItY2ZiNi00YmI2LWExOWMtYzFiZWU3YWViNjcwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob gets a pair of long pants, but they change his life in unexpected ways. When Larry the Lobster opens a new gym in Bikini Bottom, SpongeBob becomes his best customer."
+          },
+          {
+            "episode": 18,
+            "title": "The Fish Bowl/Married to Money",
+            "airDate": "2016-05-03",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZWRiNGM2NDAtZDdhMS00NTZhLTlkNzUtYmJjZjFiMDJjYzJmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy tries to study SpongeBob and Patrick's behavior, but her science experiment goes horribly awry. Mr. Krabs takes Plankton's advice, and finally marries the only thing he ever loved...money!"
+          },
+          {
+            "episode": 19,
+            "title": "Mall Girl Pearl/Two Thumbs Down",
+            "airDate": "2016-03-12",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGM3NmRhN2ItOGI1NS00OWU0LWI4YmUtMjUwNjZlY2IyMzg2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "In \"Mall Girl Pearl,\" Pearl must find a job to be cool like her friends, but, the only place hiring is the mall's lamest store. In \"Two Thumbs Down,\" SpongeBob loses the use of his thumbs, making his life difficult."
+          },
+          {
+            "episode": 20,
+            "title": "Sharks vs. Pods/CopyBob DittoPants",
+            "airDate": "2016-05-04",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 20,
+            "title": "Sharks vs. Pods/CopyBob DittoPants",
+            "airDate": "2016-05-04",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 20,
+            "title": "Squid Defense",
+            "airDate": "2013-01-01",
+            "rating": 6.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 21,
+            "title": "Plankton's Pet",
+            "airDate": "2013-01-19",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjFjZWRmYjMtMzdiOC00MTU5LWJiNzMtMjM3N2JjMzBlMWU5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick see a commercial and believe their houses are sold. The Krusty Krab starts selling fortune cookies, but Plankton decides to use them for his evil schemes."
+          },
+          {
+            "episode": 21,
+            "title": "Sold!/Lame and Fortune",
+            "airDate": "2016-05-06",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjFjZWRmYjMtMzdiOC00MTU5LWJiNzMtMjM3N2JjMzBlMWU5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick see a commercial and believe their houses are sold. The Krusty Krab starts selling fortune cookies, but Plankton decides to use them for his evil schemes."
+          },
+          {
+            "episode": 22,
+            "title": "Goodbye, Krabby Patty?",
+            "airDate": "2017-02-20",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 22,
+            "title": "Evil Spatula",
+            "airDate": "2013-03-09",
+            "rating": 5.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 23,
+            "title": "Sandy's Nutmare/Bulletin Board",
+            "airDate": "2016-07-12",
+            "rating": 7.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjNmMTBlZWMtMmYwYS00YzJjLTliZDgtN2Q1NTliZWJmYzUxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy creates the latest acorn-based food sensation, but her tree pays the price for her greed. SpongeBob erects a community bulletin board in the Krusty Krab, but anonymous reviews posted on it lead to trouble."
+          },
+          {
+            "episode": 24,
+            "title": "Safe Deposit Krabs",
+            "airDate": "2013-05-25",
+            "rating": 5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 24,
+            "title": "Food Con Castaways/Snail Mail",
+            "airDate": "2016-07-13",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 25,
+            "title": "Pineapple Invasion/Salsa Imbecilicus",
+            "airDate": "2016-06-14",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmEwMzVjMjUtNmRiNC00YzdhLWFkZWQtMjViYmQyOTU2MDg1XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When SpongeBob hides the secret formula in his home, it's up to Gary to protect it from Plankton. When a freak accident causes everyone in town to become as stupid as Patrick, Sandy must save the day."
+          },
+          {
+            "episode": 26,
+            "title": "Mutiny on the Krusty/The Whole Tooth",
+            "airDate": "2016-10-08",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGRmOWI0NGUtMDQyNC00YjRmLWFlZGMtNmUzYmM2NzhmNzFhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When the Krusty Krab is blown away by a storm, an insane Mr. Krabs has to guide his employees and customers back to their homes. Patrick is forced to lose his last baby tooth, but he is frightened."
+          }
+        ]
+      },
+      {
+        "season": 10,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Whirly Brains/MermaidPants",
+            "airDate": "2016-10-15",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDUxMDRiM2YtMThjNS00YTY0LWI4NGYtZTczNDcwMDgxMjJmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick get hooked on the latest fad - flying your own brain like a tiny drone! When SpongeBob &amp; Patrick play Mermaidman and Barnacleboy, it's all fun and games until their sworn enemies arrive."
+          },
+          {
+            "episode": 2,
+            "title": "The Other Spongebob Is Back: Part 1",
+            "airDate": "2012-02-06",
+            "rating": 7.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2I5Y2M3MzMtZTQxOS00M2Q4LWE1MmUtNzhiMjA5ZTY0NjA4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "In order to get SpongeBob to move away, Squidward puts black pepper all over SpongeBob's house to make him think he's allergic to his home; Squidward decides to get a nose job at the hospital, and SpongeBob volunteers as a doctor."
+          },
+          {
+            "episode": 2,
+            "title": "Unreal Estate/Code Yellow",
+            "airDate": "2017-06-03",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2I5Y2M3MzMtZTQxOS00M2Q4LWE1MmUtNzhiMjA5ZTY0NjA4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "In order to get SpongeBob to move away, Squidward puts black pepper all over SpongeBob's house to make him think he's allergic to his home; Squidward decides to get a nose job at the hospital, and SpongeBob volunteers as a doctor."
+          },
+          {
+            "episode": 3,
+            "title": "Mimic Madness/House Worming",
+            "airDate": "2017-02-25",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2ZiOGZiOGEtMTBlNi00YmY3LWE0NDItZDQ3NjA0ZWQyYTI0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob imitates everyone for fun, but it goes too far once SpongeBob gets \"Mocking Mimicry Madness\"/A worm named Prickles goes inside SpongeBob, and brings uninvited guests."
+          },
+          {
+            "episode": 4,
+            "title": "Snooze You Lose/Krusty Katering",
+            "airDate": "2017-03-04",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 4,
+            "title": "The Bob Land/The Magic Gum",
+            "airDate": "2012-03-04",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 5,
+            "title": "SpongeBob's Place/Plankton Gets the Boot",
+            "airDate": "2017-03-11",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 5,
+            "title": "The Battle Begins/Where Is Patrick Star?",
+            "airDate": "2012-03-30",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 6,
+            "title": "Life Insurance/Burst Your Bubble",
+            "airDate": "2017-03-18",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjQ2MTk2MzYtMTBmNC00MGY1LWJlZDUtNWU1ODlmZDY0N2Q4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A misunderstanding leaves Spongebob and Patrick to think Life Insurance will protect them from any danger; Spongebob blows himself a bubble boat, and Mrs. Puff tries to stop Spongebob."
+          },
+          {
+            "episode": 7,
+            "title": "Plankton Retires/Trident Trouble",
+            "airDate": "2017-03-25",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGZlZDczMmEtYmJjZi00N2YyLTkwYTgtMTZiZDkxYTZhYjYwXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton decides to close the Chum Bucket and move to a new town, but Mr. Krabs still suspects he is up to something./SpongeBob accidentally picks up King Neptune's magic trident."
+          },
+          {
+            "episode": 8,
+            "title": "The Incredible Shrinking Sponge/Sportz?",
+            "airDate": "2017-12-02",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTBlMzI0ODctZTljMS00N2E2LWJiNTUtZjY1NWQxNjA4MTA4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob must figure out how to do his job after accidentally shrinking himself; Squidward invents a new sport to get back at SpongeBob and Patrick for annoying him."
+          },
+          {
+            "episode": 9,
+            "title": "The Getaway/Lost and Found",
+            "airDate": "2017-06-10",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTY5ODU2NGYtMTM5Ni00ZDc4LTlmYjktMmZkN2RkNDA0ZjBkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When SpongeBob mistakes an escaped convict for his driving instructor, it's the new teacher who learns a lesson; Mr. Krabs sends SpongeBob in search of a missing toy, and SpongeBob finds himself lost in the lost-and-found."
+          },
+          {
+            "episode": 10,
+            "title": "Patrick's Coupon/Out of the Picture",
+            "airDate": "2017-06-17",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjI2YzA2MmUtYzAxYy00MDI0LTlmNDEtNjE5M2E1Y2ZmMTBhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick has a coupon for free ice cream, but he has to get to the store if he wants to use it; Mr. Krabs buys Squidward's art, but to make a profit on his purchase, he will have to get the artist out of the picture."
+          },
+          {
+            "episode": 11,
+            "title": "Feral Friends/Don't Wake Patrick",
+            "airDate": "2017-10-07",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmI0ZWZkYzctYWQ1Mi00MjA2LTk3OWItNjJjOWRlZjBjMTVkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A weird moon turns everyone in the city into wild animals, and Sandy is the only one who can save them. Patrick sleepwalks and SpongeBob can't wake him up."
+          }
+        ]
+      },
+      {
+        "season": 11,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Cave Dwelling Sponge/The Clam Whisperer",
+            "airDate": "2017-09-23",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTBjZTE3NTEtYTA4OS00MmQxLWFhY2QtMmRjZjcwOGYzNGRmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When a prehistoric Sponge is unfrozen, he causes chaos all over town - and only SpongeBob can communicate with him! When a flock of clams descend on Bikini Bottom, SpongeBob has to get them out before they ruin the whole town!"
+          },
+          {
+            "episode": 2,
+            "title": "Spot Returns/The Check-Up",
+            "airDate": "2017-06-24",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGUzZDRhN2EtYTRmMS00MzYxLWI2N2MtNjFkYzMwYTE0NGExXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton's pet amoeba Spot has babies and decides to use them in one of his evil schemes/Mr. Krabs has to get a medical exam, but he's too afraid. However, if he doesn't get it, the Krusty Krab will have to be shut down."
+          },
+          {
+            "episode": 3,
+            "title": "Spin the Bottle/There's a Sponge in My Soup",
+            "airDate": "2017-07-16",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzBiOWNjYjMtYmFmOC00MjMwLWE3YjUtNDcwOGVlM2ZlMjFkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton poses as a wish-granting genie in his latest scheme to get the secret formula. Mr. Krabs' new Krabby soup is a hit - until some heat-loving hippies move into the soup vat!"
+          },
+          {
+            "episode": 4,
+            "title": "Man Ray Returns/Larry the Floor Manager",
+            "airDate": "2017-09-30",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2U2ZmI4OTctMjFlNC00ZWI2LTg0MGYtMWViZmEwNDViMTAzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Man Ray rents Squidward's house for the weekend, it's up to SpongeBob and Patrick to stop his evil vacation! Mr. Krabs takes a vacation and makes Larry the Lobster the temporary manager of the Krusty Krab."
+          },
+          {
+            "episode": 5,
+            "title": "The Legend of Boo-Kini Bottom",
+            "airDate": "2017-10-13",
+            "rating": 7.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTVhOTg2OTEtMzg1Zi00OGY3LTkzMjUtNzBlOGVhY2FlNjBkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and friends don costumes and decorate their neighborhood for some Halloween fun, but the spooky Flying Dutchman has other plans."
+          },
+          {
+            "episode": 6,
+            "title": "No Pictures Please/Stuck on the Roof",
+            "airDate": "2017-11-06",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzg3YmJhOGUtYzc2ZC00NjhlLWEwMWMtY2ZmMzg3OWUwNzU1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick leads an enthusiastic stranger on a tour of his favorite places in Bikini Bottom; SpongeBob is afraid to get off the roof of the Krusty Krab, but he won't let that stop him from living his life."
+          },
+          {
+            "episode": 7,
+            "title": "Krabby Patty Creature Feature/Teacher's Pests",
+            "airDate": "2017-10-21",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTcyYzNkYzYtYjBlMS00YTllLThhOTgtNzg2ODA2ZDhlMTRlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "A new secret Krabby Patty formula has disastrous results for Bikini Bottom, and only SpongeBob can save the day. Mr. Krabs and Plankton have to take boating school classes. Thankfully, SpongeBob's there to show them the ropes!"
+          },
+          {
+            "episode": 8,
+            "title": "Sanitation Insanity/Bunny Hunt",
+            "airDate": "2017-11-10",
+            "rating": 6.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTUyMTA0OWEtMDBjNC00Y2EyLTkyY2UtZGEzNjgzZDgyNjkxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Mr. Krabs gets in trouble for littering, he makes SpongeBob and Squidward clean up Bikini Bottom; A sea bunny ravages Squidward's garden, but SpongeBob thinks it's cute."
+          },
+          {
+            "episode": 9,
+            "title": "Squid Noir/Scavenger Pants",
+            "airDate": "2017-11-10",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjViNGRhNzItZGY4OS00MDUzLWI4NjctZTMzMGViZjJhZDEwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Squidward's clarinet disappears, he has to become a hard-boiled detective to track it down; Squidward sends SpongeBob and Patrick on a difficult scavenger hunt to get them out of his hair."
+          },
+          {
+            "episode": 10,
+            "title": "Cuddle E. Hugs/Pat the Horse",
+            "airDate": "2017-12-02",
+            "rating": 5.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjAxMzg4MzQtNjZiMy00NzFlLWFiMjktNTUwNWRiMzg1YzRmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob's new friend is a giant, fluffy hamster that no one else can see; Patrick wants to be a horse."
+          },
+          {
+            "episode": 11,
+            "title": "Chatterbox Gary/Don't Feed the Clowns",
+            "airDate": "2018-02-12",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTZkZGIxZTItZDRmNC00ZThjLWE0M2ItZGI4N2VlOTQxNWFmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Gary has a pet translation collar, and he's talking up a storm. Everyone loves it, except for Squidward. When a small clown gets left behind by the circus, SpongeBob takes the hapless harlequin under his wing."
+          },
+          {
+            "episode": 12,
+            "title": "Drive Happy/Old Man Patrick",
+            "airDate": "2018-02-13",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODkzYmJjZmYtMTA1NS00MzQxLWE1NTItYzZkYzNiOWNkNDY1XkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob can't drive, but you don't need a license to operate a self-driving car! Patrick thinks he's an old man, so it's up to SpongeBob to remind him how much fun being a kid can be!"
+          },
+          {
+            "episode": 13,
+            "title": "Fun-Sized Friends/Grandmum's the Word",
+            "airDate": "2018-02-15",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmEwOWQ4YjEtMTIyNy00ODZhLTllNWMtNjFhZjk3ODVhOGExXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick exchange tiny living versions of themselves. Plankton lies to his grandma, telling her that he owns the Krusty Krab to fulfill a promise he made, but must keep the lie going when she comes to visit."
+          },
+          {
+            "episode": 14,
+            "title": "Doodle Dimension/Moving Bubble Bass",
+            "airDate": "2018-03-09",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTIyOWQ0ZTItNWU1NS00Mzc4LTgxYjMtOGQxZjg1NWRjMGEyXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick become trapped in an alternate dimension, where anything they draw comes to life. SpongeBob and Patrick help Bubble Bass move out of his mother's basement."
+          },
+          {
+            "episode": 15,
+            "title": "High Sea Diving/Bottle Burglars",
+            "airDate": "2018-04-13",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTk4ZDRmMzAtOGM3My00MzU1LWFlZDAtNTQ3OTU1ZjllYTYxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob wants to be the first sponge that dives to the surface of the ocean. SpongeBob and Squidward accidentally let Plankton slip away with the formula, and it is up to them to retrieve it."
+          },
+          {
+            "episode": 16,
+            "title": "My Leg!/Ink Lemonade",
+            "airDate": "2018-05-09",
+            "rating": 4.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmJlZDQyMmItZjM4NC00MzQ5LWE1YzUtYmVjZmEzODM4ZTcwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Once Fred's leg heals up, SpongeBob is determined to keep it out of harm's way. Patrick's lemonade stand is unsuccessful until he gets a secret ingredient from Squidward."
+          },
+          {
+            "episode": 17,
+            "title": "Mustard O' Mine/Shopping List",
+            "airDate": "2018-05-10",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTI0YjEzNDItYzk3MC00MDgyLThkMGItM2MwZmIyY2ZhNGNhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When the Krusty Krab runs out of mustard, Mr. Krabs sends SpongeBob, Patrick and Squidward to dig up some more. SpongeBob and Sandy have to collect Krabby Patty ingredients, but Plankton follows their every step."
+          },
+          {
+            "episode": 18,
+            "title": "Whale Watching/Krusty Kleaners",
+            "airDate": "2018-08-06",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmI5MjdhZGUtYTQ5ZC00OTcyLWE0MjMtNDkxYjAwNWM1OTBjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs hires Squidward to babysit Pearl for the night, but she just wants to sneak out to a cool teen party; after spilling a milkshake during a delivery, SpongeBob vows to return and clean the entire building."
+          },
+          {
+            "episode": 19,
+            "title": "Patnocchio/ChefBob",
+            "airDate": "2018-08-08",
+            "rating": 6.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjFmMTllYzUtMTYxZC00NjYwLThkMGYtZGQ0YjQxNzhmOWI3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton tells Patrick he's his conscience so he can convince the wooden-headed star to steal him a Krabby Patty. When Mr. Krabs puts in an open kitchen, SpongeBob gets stage fright and has to invent a new persona."
+          },
+          {
+            "episode": 20,
+            "title": "Plankton Paranoia/Library Cards",
+            "airDate": "2018-09-26",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDBiYmVkNGYtOTM0Ny00MzVmLTg5ZmQtYWM2ODkzYTA4ZjA0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton hasn't tried to steal the secret formula in a while - and that's making Mr. Krabs nervous. When Patrick discovers the pineapple's library, SpongeBob introduces him to the wonderful world of book learning."
+          },
+          {
+            "episode": 21,
+            "title": "Call the Cops/Surf n' Turf",
+            "airDate": "2018-09-27",
+            "rating": 6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzc0NmRjOGYtYjZlMy00MDQ5LTkwZjItMThmZGQyOTQwNzNhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton goes to jail, but the secret formula is taken as evidence, so SpongeBob and Mr. Krabs plot to get it back. Sandy struggles to build a ship-in-a-bottle before a big contest, so SpongeBob calls in a little extra help."
+          },
+          {
+            "episode": 22,
+            "title": "Goons on the Moon",
+            "airDate": "2018-11-25",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGM1MjY0MWItMDE3ZC00OGU0LWJlYWEtMDEzOGM4ZTliMjNhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy takes her Science Scout troop on a trip to the moon."
+          },
+          {
+            "episode": 23,
+            "title": "Appointment TV/Karen's Virus",
+            "airDate": "2018-10-28",
+            "rating": 7.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTY0OTdmNTItNGE2OS00OTA3LThkY2QtNzYyMDRlMjIzMTBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The long-lost episode of Mermaid Man is finally showing on TV, but SpongeBob may not make it home in time to watch. Karen gets a computer virus, and it's up to SpongeBob to get it out of her."
+          },
+          {
+            "episode": 24,
+            "title": "The Grill is Gone/The Night Patty",
+            "airDate": "2018-10-21",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzMwYmU4ZmItYjZiOS00ZWVmLTkwZDctMTEwYmQ4YTMzNGJkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When a gang of kids steal the Krusty Krab's grill, SpongeBob and Mr. Krabs go to extreme lengths to win it back. SpongeBob helps out the Krusty Krab's night shift crew, but the customers crave something creepier than usual."
+          },
+          {
+            "episode": 25,
+            "title": "Bubble Town/Girls' Night Out",
+            "airDate": "2018-11-04",
+            "rating": 6.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjk1OGU1YTktZGMyMS00NDFkLWFjYzYtYjUwN2UwMGUyY2ZjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob visits his old friend Bubble Buddy in his new hometown. Sandy invites Karen and Mrs. Puff out for a night on the town, so the ladies decide to blow off some steam."
+          },
+          {
+            "episode": 26,
+            "title": "Squirrel Jelly/The String",
+            "airDate": "2018-11-18",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzUyMzBiMDQtMDMyOC00ODc2LTk5ZTMtN2VjYjExOWJjZTdlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick have their peaceful day of jellyfishing disturbed by Sandy's competitive nature; SpongeBob pulls a loose string from Squidward's shirt that never seems to end."
+          }
+        ]
+      },
+      {
+        "season": 12,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "FarmerBob/Gary & Spot",
+            "airDate": "2019-05-20",
+            "rating": 6.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODVkNzFhMGEtZTRjMi00MzViLThkNDYtZWI5NTM1ZTZhN2EwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick work a day on Old Man Jenkins' farm, much to his dismay. Sandy narrates the nocturnal adventures of Gary and his secret pal - Spot."
+          },
+          {
+            "episode": 2,
+            "title": "The Nitwitting/The Ballad of Filthy Muck",
+            "airDate": "2019-02-01",
+            "rating": 4.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGFiMTcwZDEtYzQ1OS00MDU1LWE4N2YtNjQxOTdlYzlkYjQ2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick inducts SpongeBob into his prestigious society of dullards and doofuses. Patrick takes his grime to a new extreme, playing around in so much trash that he becomes unrecognizable."
+          },
+          {
+            "episode": 3,
+            "title": "The Krusty Slammer/Pineapple RV",
+            "airDate": "2019-01-27",
+            "rating": 6.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzRlMDZlZWItYzllNy00NWVjLThhNmYtNzM2ZTZmMWUwMTJjXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs turns the Krusty Krab into a jailhouse after Plankton breaks the law, but crime only pays for so long. SpongeBob and Patrick turn the pineapple into a mobile home to take Squidward on the road trip he deserves."
+          },
+          {
+            "episode": 4,
+            "title": "Gary's Got Legs/King Plankton",
+            "airDate": "2019-06-22",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjZmMGNkYmEtODQxYS00YzhhLWJiMzEtMWNlOWIxMWI3ODMyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Gary is given a set of limbs to keep up with SpongeBob, but soon makes his owner look sluggish by comparison. Plankton practices ruling the world by shrinking himself down and declaring himself king of SpongeBob's aquarium."
+          },
+          {
+            "episode": 5,
+            "title": "Plankton's Old Chum/Stormy Weather",
+            "airDate": "2019-06-25",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGNlZDJmYzEtZTY2MC00NDNkLTg0NTgtMzE0NGI5MmQ4OTFhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Where Plankton usually dumps his rotten chum is too full, so he tricks SpongeBob into hiding it around the city. SpongeBob befriends a small storm cloud, but has to protect it from a crazed weather man."
+          },
+          {
+            "episode": 6,
+            "title": "Swamp Mates/One Trick Sponge",
+            "airDate": "2020-04-11",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTI5NzNiYzktYWI5Yy00NjM1LTg3MTktZjYzMjVkODRhOTU2XkEyXkFqcGdeQXVyMTA1NTAyNzY1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Bubble Bass finds himself stranded with Patrick in a mysterious swamp, looking for a lost action figure. SpongeBob learns a new magic trick, but he can't find anyone to watch it."
+          },
+          {
+            "episode": 7,
+            "title": "The Krusty Bucket/Squid's on a Bus",
+            "airDate": "2019-08-10",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmNjZmY3ZDAtNGMyZS00MjE3LWI1Y2YtNmRlYTQ5ZDY0YzA1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton creates a clone of himself and Mr. Krabs, but neither restaurant is safe from the newcomer. Squidward gleefully switches jobs with a bus driver for an easy ride - until SpongeBob and Patrick climb aboard."
+          },
+          {
+            "episode": 8,
+            "title": "Sandy's Nutty Nieces/Insecurity Guards",
+            "airDate": "2019-07-02",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDJjNTFiZjgtNDAwOS00YjcxLTkxMDQtNGNiMzZiY2ZlYmUwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob gets in over his head when he volunteers to babysit Sandy's 3 nieces. SpongeBob and Patrick volunteer as guards at the museum, while Squidward attempts to hang his painting unnoticed."
+          },
+          {
+            "episode": 9,
+            "title": "Broken Alarm/Karen's Baby",
+            "airDate": "2019-07-06",
+            "rating": 7.4,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGIxNDBmMzctNGI4My00ZjA2LThkZTctMGY2NDAxYWRlZDAzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob breaks his precious alarm clock, but nothing else is loud enough to wake him up on time. Karen quickly learns that kids grow up too fast after her new child arrives in the mail."
+          },
+          {
+            "episode": 10,
+            "title": "Shell Games/Senior Discount",
+            "airDate": "2019-07-06",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGEwYTI1ZTMtODBhZi00M2NlLTkzMzMtNTk2YmUxYmEyZmEzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Patrick discovers that the rock he lives under is actually a sea turtle who overslept. Old Man Jenkins disrupts business as usual at the Krusty Krab, but Mr. Krabs can't find a way to kick him out."
+          },
+          {
+            "episode": 11,
+            "title": "Mind the Gap/Dirty Bubble Returns",
+            "airDate": "2019-09-14",
+            "rating": 7.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzAyNzQ0NjQtMDM3Mi00MTZlLWI3NmUtM2M3YmViNjQzNjM1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward closes the gap in SpongeBob's teeth, which causes a dramatic and unexpected change in his demeanor. The newly reformed \"Clean Bubble\" takes a dishwashing job at the Krusty Krab, where he is tempted by the grime."
+          },
+          {
+            "episode": 12,
+            "title": "Jolly Lodgers/Biddy Sitting",
+            "airDate": "2020-02-08",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmQxY2JhOWYtNTBjYy00ZDg5LTgwNmUtZmQ2NmYyMzFlNjJmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward packs his bags after his house gets infested, but a different kind of pest waits at his hotel. SpongeBob and Patrick get tricked into babysitting a grouchy old lady, who does all she can to escape."
+          },
+          {
+            "episode": 13,
+            "title": "SpongeBob's Big Birthday Blowout",
+            "airDate": "2019-07-12",
+            "rating": 8.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzBjODc2MDYtMWI2YS00MWU3LWE4ODEtYjQ3NDBmNTJhMDc5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick tour the surface world, while the rest of Bikini Bottom prepares a surprise party for SpongeBob. And in celebration of the show's 20th anniversary, since May 1st, 1999."
+          },
+          {
+            "episode": 15,
+            "title": "SpongeBob in RandomLand/SpongeBob's Bad Habit",
+            "airDate": "2019-09-21",
+            "rating": 6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzQ1NDFlNGItMDg0NC00MmU2LTg5M2QtMDFlZTE0YzRiMWU4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Squidward take a delivery to a dreadedtown where the laws of logic no longer apply. SpongeBob can't stop biting his nails, but he also can't figure out why."
+          },
+          {
+            "episode": 16,
+            "title": "Handemonium/Breakin'",
+            "airDate": "2019-09-14",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTkwODBlOGYtMjM3Ni00NDg0LTk3MmUtMmI0ZjkzZjQyMjBlXkEyXkFqcGdeQXVyODk1Nzg2NjE@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton's giant Chum Bucket glove runs wild in town, but SpongeBob has a handy friend to help them out. SpongeBob takes his first break ever at work, but how will he spend his precious time?"
+          },
+          {
+            "episode": 17,
+            "title": "Boss for a Day/The Goofy Newbie",
+            "airDate": "2019-09-28",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWRiNmQ0NjEtNzQxZC00ZWFhLTlhOWEtNmM4MTUyNDU4ODNiXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs has an accident and leaves SpongeBob in charge of the Krusty Krab. What could go wrong? Patrick takes a job at the Goofy Goober when he finds out the employees get free ice cream."
+          },
+          {
+            "episode": 18,
+            "title": "The Ghost of Plankton/My Two Krabses",
+            "airDate": "2019-10-12",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGNiNjAxODAtNTQ0OC00YzcxLTkzYjEtYjRlNjAyYWNiZTJkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton becomes a ghost to steal the secret formula, but requires a few lessons from the Flying Dutchman. The Gal Pals take Pearl to a cabin in the woods for a weekend of silly pranks."
+          },
+          {
+            "episode": 19,
+            "title": "Knock Knock, Who's There?/Pat Hearts Squid",
+            "airDate": "2021-04-23",
+            "rating": 6.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjg3ZGYyZjItY2U5Yy00MTk2LTliMjAtN2QwZDFkM2QyODg2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob watches Mr. Krabs' house while he's away and takes extreme measures to make sure no one breaks in. Squidward is forced to room with Patrick."
+          },
+          {
+            "episode": 20,
+            "title": "Lighthouse Louie/Hiccup Plague",
+            "airDate": "2020-03-20",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTMwNThmZmQtNWJkYi00YTVlLTkxMDYtNjcwOTAwYTIwZDkzXkEyXkFqcGdeQXVyODc0OTgxMDM@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob cleans out the boating school lighthouse, where he finds a cute but inconvenient companion. No one in Bikini Bottom is safe from a case of contagious hiccups."
+          },
+          {
+            "episode": 21,
+            "title": "A Cabin in the Kelp/The Hankering",
+            "airDate": "2019-10-12",
+            "rating": 6.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZWQzYmMyN2QtYzJkYi00MDk5LWFlYTUtNjBhZTg2M2FmMGQyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Gal Pals take Pearl to a cabin in the woods for a weekend of silly pranks. Mr. Krabs has a secret taste for something - surprising."
+          },
+          {
+            "episode": 22,
+            "title": "Who R Zoo?/Kwarantined Krab",
+            "airDate": "2020-02-08",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTMyMWMwMDgtOWU1NC00ZDExLTg0Y2YtNzQxNWI0ZGJmMWY5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick create their own zoo made entirely of bubbles. The Krusty Krab goes under an emergency quarantine, but no one knows who carries the mysterious illness."
+          },
+          {
+            "episode": 23,
+            "title": "Plankton's Intern/Patrick's Tantrum",
+            "airDate": "2021-04-30",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWNiNTFmZTctY2E3ZC00NDJjLTkzODQtYTg4N2YwNDc2ZDZiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton needs help stealing the formula, so he hires an intern who knows more about Mr. Krabs than anyone. Patrick goes into a destructive fit whenever he hears a bell, so his friends help him in their own ways."
+          },
+          {
+            "episode": 24,
+            "title": "Bubble Bass's Tab/Kooky Cooks",
+            "airDate": "2021-04-09",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDY3ZTgwMmYtODgyZS00ZDE1LTg1ZWUtZDA4NjRmNjFkNDY3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Bubble Bass doesn't pay his tab after buying food at the Krusty Krab, so Mr. Krabs sends SpongeBob and Squidward to his house to try and make him pay/Mrs. Puff thinks Mr. Krabs is too cheap, so he hires SpongeBob and Squidward as ..."
+          },
+          {
+            "episode": 25,
+            "title": "Escape from Beneath Glove World",
+            "airDate": "2020-01-18",
+            "rating": 6.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjYwOGQ1OTgtYTYwNi00NTY5LTkyNDgtOWVmNWU1MzFhMGM1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick are sent to jail in the underground tunnels of Glove World, leading to a daring escape."
+          },
+          {
+            "episode": 26,
+            "title": "Krusty Koncessionaires/Dream Hoppers",
+            "airDate": "2020-11-07",
+            "rating": 7.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmZmZjY1YzEtYjliMS00ZjMyLWI4YmMtNDJiZjU0MDYwNjhmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Krusty Krab crew goes to a big concert to sell krabby patties in the stands. SpongeBob explores the melodious dreamscapes of his sleeping neighbors."
+          },
+          {
+            "episode": 27,
+            "title": "A Place for Pets/Lockdown for Love",
+            "airDate": "2020-10-22",
+            "rating": 7.9,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "When customers bring pets into the Krusty Krab, Mr. Krabs soon realizes pets are more profitable than owners. Plankton ruins another date with Karen, so she puts the Chum Bucket on lockdown until he proves his affection."
+          }
+        ]
+      },
+      {
+        "season": 13,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Place for Pets/Lockdown for Love",
+            "airDate": "2020-10-22",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWM1ZGJjMzYtNDVkMS00YTEwLWE2YTUtYjZmOGQzZGNjNGM3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When customers bring pets into the Krusty Krab, Mr. Krabs soon realizes pets are more profitable than owners. Plankton ruins another date with Karen, so she puts the Chum Bucket on lockdown until he proves his affection."
+          },
+          {
+            "episode": 2,
+            "title": "Under the Small Top/Squidward's Sick Daze",
+            "airDate": "2021-04-16",
+            "rating": 5.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODM0ZDAyZTAtNDVkMi00MjMxLTk2YjktZmY3ZTg4ZmYzNjU0XkEyXkFqcGdeQXVyODUxMTE5NjU@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward's house becomes infested with a mail-order flea circus meant for SpongeBob/Squidward fakes being sick to get out of work, but his agony only begins when SpongeBob arrives to care for him."
+          },
+          {
+            "episode": 3,
+            "title": "Goofy Scoopers/Pat the Dog",
+            "airDate": "2021-07-09",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMGU1YzJiMzAtYTNiYi00N2M0LWIzYTctNWNhYTM0ZjE2NDdmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Patrick make it their mission to reunite the recently fired robot band from Goofy Goobers. Patrick is sent to the pound for acting like a worm, but he won't be able to leave unless SpongeBob can train him."
+          },
+          {
+            "episode": 4,
+            "title": "Something Narwhal This Way Comes/C.H.U.M.S",
+            "airDate": "2021-11-19",
+            "rating": 4.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMWYzODI2YzYtNGE5Mi00NmJmLWIyYmItOWQwYTBmMWRjMzQwXkEyXkFqcGdeQXVyODUxMTE5NjU@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Two familiar faces from SpongeBob's past visit Bikini Bottom, but they bring a big problem along with them. After falling down the drain, Plankton finds an unlikely ally in the sewers."
+          },
+          {
+            "episode": 5,
+            "title": "SpongeBob's Road to Christmas",
+            "airDate": "2021-12-10",
+            "rating": 6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODU2Y2FjNTEtZjJhNy00Yzc5LWFmMzQtNDQ3MzZjM2RkZTFmXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and his pals journey to the North Pole to give Santa a gift"
+          },
+          {
+            "episode": 6,
+            "title": "Potato Puff/There Will be Grease",
+            "airDate": "2022-04-22",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDVjYzk5ZDEtODEwNC00YzBkLWFlNDgtODY3NWNiMTVmNjNkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mrs. Puff's new substitute teacher gives SpongeBob a crash course in driving. Mr. Krabs and Plankton must work together after discovering a well of miracle-grease under their restaurants."
+          },
+          {
+            "episode": 7,
+            "title": "The Big Bad Bubble Bass/Sea-Man Sponge Haters Club",
+            "airDate": "2022-05-06",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTY3YWU5N2UtZDE3OC00YzMyLWFlMmEtYjJmNjg2YWJhZGIzXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Karen tells the fairy tale of a nerd trying to steal an action figure from his three little neighbors. Squidward hosts a secret 'We Hate SpongeBob Club' at his house."
+          },
+          {
+            "episode": 8,
+            "title": "Food PBFFT! Truck/Upturn Girls",
+            "airDate": "2022-05-13",
+            "rating": 5.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2ZjZDJiMDAtYzFhMS00MDZhLTk3OTAtYzliMWM0MmY5NWZkXkEyXkFqcGdeQXVyMTUwNTk2ODM3._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob and Squidward try to sell Krabby Patties from a food truck in the darkest depths of the ocean. Pearl and Narlene have a whales' day out in the big city."
+          },
+          {
+            "episode": 9,
+            "title": "Say Awww!/Patrick the Mailman",
+            "airDate": "2022-05-20",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzE5NTViMTAtY2I4Ny00MDMwLWE3ZmEtNDRkYjQ5YjE5OWQwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Frustrated that he's seen as cute instead of evil, Plankton builds a robot to punish anyone who says 'aww!'. Patrick crushes the postman, so he and SpongeBob deliver the mail around Bikini Bottom."
+          },
+          {
+            "episode": 10,
+            "title": "Captain Pipsqueak/Plane to Sea",
+            "airDate": "2022-07-22",
+            "rating": 5.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmNiNDIyYTAtYTJlNC00NGQwLWIwMmUtMjk0N2E0MjJkNTAyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton joins the League of E.V.I.L./SpongeBob and Patrick take Squidward on a plane to a tropical resort."
+          },
+          {
+            "episode": 11,
+            "title": "Squidferatu/Slappy Daze",
+            "airDate": "2022-10-14",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWE0OGU1YjEtOWYxNS00NjgyLTk1YjktZmQ0ODM1NmQzMzQwXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward ventures to Nosferatu's castle after accidentally receiving his mail. Nosferatu's minion Slappy kills some time around Bikini Bottom."
+          },
+          {
+            "episode": 12,
+            "title": "Welcome to Binary Bottom/You're Going to Pay... Phone/A Skin Wrinkle in Time",
+            "airDate": "2023-01-13",
+            "rating": 7.1,
+            "thumbnail": "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 13,
+            "title": "Abandon Twits/Wallhalla",
+            "airDate": "2023-01-20",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2VmOTc1ZjktOGExMC00NmRlLWFmMzEtNGE3MjJiYTMwMmI0XkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Krusty Krew builds a boat for their penny-pinching captain. SpongeBob discovers a crazed castaway living in his walls."
+          },
+          {
+            "episode": 14,
+            "title": "Salty Sponge/Karen for Spot",
+            "airDate": "2023-01-27",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODQxM2FlZTMtODYzZS00OGViLWEzMjEtMTdkYmUwZGE3MTY0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob works the grill at the toughest joint in town. Karen looks after Spot while Plankton goes out of town."
+          },
+          {
+            "episode": 15,
+            "title": "Arbor Day Disarray/Ain't That the Tooth",
+            "airDate": "2023-06-27",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWMyNWU3OTUtMzI0MS00MDUwLWJkZmEtOTE4NjAwYWZiNzI2XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy gives her friends special saltwater trees, but they need more attention than she expected. SpongeBob and Patrick mistake a burglar for the tooth fairy."
+          },
+          {
+            "episode": 16,
+            "title": "Ma and Pa's Big Hurrah/Yellow Pavement",
+            "airDate": "2023-03-10",
+            "rating": 6.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGEyYzAyNDEtNDY0MS00MTBiLThmMzAtNGU3ZTNmZWI3OTRmXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When SpongeBob's parents come to visit, their thirst for thrills comes as a big surprise. You'll learn all you need to get your boating license in this educational driving film."
+          },
+          {
+            "episode": 17,
+            "title": "The Flower Plot/SpongeBob on Parade",
+            "airDate": "2023-03-24",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDNkNWYyZjYtZjc1OS00Y2QyLWFlOGMtMTM4ODEyZGM5ODlhXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Chum Bucket is replaced by a flower shop with a charming new owner. The Krusty Krab enters a float in the annual Bikini Bottom Parade."
+          },
+          {
+            "episode": 18,
+            "title": "Delivery to Monster Island/Ride Patrick, Ride!",
+            "airDate": "2023-04-07",
+            "rating": 7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjZiYTRmY2EtYjY5NC00MmRlLTkxZDAtMDhlYzUzZjUyODEzXkEyXkFqcGdeQXVyMTYzNjg2NTQy._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Delivery to Monster Island: Spongebob and Plankton must work together on a delivery to Monster Island. They both end up being stranded. They are also later chased by monsters and must return to safety. Ride Patrick Ride: Patrick t..."
+          },
+          {
+            "episode": 19,
+            "title": "Hot Crossed Nuts/Sir Urchin and Snail Fail",
+            "airDate": "2023-06-20",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDgxZWNhMjQtMDk0My00NWRiLWFmNjYtZjc2NzVkYTFjZTc4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Sandy's homemade snack becomes a big hit at the Krusty Krab, SpongeBob and Patrick's favorite comedy duo has a falling out on live television."
+          },
+          {
+            "episode": 20,
+            "title": "Friendiversary/Mandatory Music",
+            "airDate": "2023-06-22",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGU5YTczYzktNDhkYS00M2Y3LTlmZWYtMmM4Mzc4NzkyYzM0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob celebrates the anniversary of his friendship with Squidward. Squidward's lack of talent lands him in a court-ordered music class."
+          },
+          {
+            "episode": 21,
+            "title": "Dopey Dick/Plankton and the Beanstalk",
+            "airDate": "2023-06-29",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmVmMDMyZTYtYWNlOC00ZmRhLWJkM2MtZWU0MjViMTI1OTFlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward joins a crew of sailors hunting down the great white jellyfish. Plankton finds a magic bean that takes him to a land of giants."
+          },
+          {
+            "episode": 22,
+            "title": "My Friend Patty/FUN-believable",
+            "airDate": "2023-07-18",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjMxMjY5MTQtYmE1OC00NWU5LWJjNjQtNzgwZDBhZTk4Yzc1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob befriends a sentient Krabby Patty whose only wish is to be eaten. Rube hosts an episode of \"FUN-Believable With Rube\" where he explores little known oddities and attractions around Bikini Bottom."
+          },
+          {
+            "episode": 23,
+            "title": "Spatula of the Heavens/Gary's Playhouse",
+            "airDate": "2023-07-20",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 24,
+            "title": "Swimming Fools/The Goobfather",
+            "airDate": "2023-08-08",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDI2NDc3YWQtODU3My00NWI1LTliYmMtY2IxYmUxYTZmYzk0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob builds a pool in his backyard and Squidward tries to resist taking a dip. Mr. Krabs must reckon with the Goobfather after he adds \"Patty Whips\" to the menu at the Krusty Krab."
+          },
+          {
+            "episode": 25,
+            "title": "SquidBird/Allergy Attack!",
+            "airDate": "2023-08-10",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTMwN2RhNjktOWE2Mi00OGQ0LWJmNDktZjg0MThkMTk0MWNmXkEyXkFqcGdeQXVyMzYzMDc0NzU@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward gets left with a mess when SpongeBob and Patrick use carrier clams to send messages to each other. After cooking his kazillionth Krabby Patty, SpongeBob believes he's developed an allergy to them."
+          },
+          {
+            "episode": 26,
+            "title": "Big Top Flop/Sandy, Help Us!",
+            "airDate": "2023-10-31",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2NmNzhhNjktN2JkNy00MjEzLTg1YjMtY2VkN2NkZmY5NmJkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When the circus comes to town and steals his customers away, Mr. Krabs tries to sabotage the show. Sandy spends the day solving everyone's issues, only to return home to her own monster of a problem."
+          }
+        ]
+      },
+      {
+        "season": 14,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Episode #14.1",
+            "airDate": "2023-11-02",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 2,
+            "title": "We Heart Hoops/SpongeChovy",
+            "airDate": "2023-11-21",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs steps out of his shell and into the gym after Larry shows him up at the beach."
+          },
+          {
+            "episode": 3,
+            "title": "BassWard/Squidiot Box",
+            "airDate": "2023-11-23",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BODRmZTYxZmQtOTQ3My00MmU2LWI4ODItMTFhNDgzYTE2OTQ4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward and Bubble Bass are forced to tolerate each other's company on a trip to Jetsam City. Squidward takes a trip inside the imagination box and must rely on SpongeBob and Patrick's creativity in order to escape."
+          },
+          {
+            "episode": 4,
+            "title": "Blood is Thicker Than Grease/Don't Make Me Laugh",
+            "airDate": "2024-02-12",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYjNmZDhhOWItNGRmNi00YWU1LTgwOGMtMjYxNmU2OTdmMGFkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton's family open their own restaurant - directly next to the Chum Bucket. SpongeBob suddenly finds everything funny, much to everyone's annoyance."
+          },
+          {
+            "episode": 5,
+            "title": "Momageddon/Pet the Rock",
+            "airDate": "2024-02-14",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjgzNGU2OGItNjZhMC00YmQ1LTgxNGYtODIxM2UxMjkzZThjXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The Krusty Krew get lazy when their moms take over the Krusty Krab. Patrick's new pet rock catches the eye of a mischievous rock collector."
+          },
+          {
+            "episode": 6,
+            "title": "Tango Tangle/Necro-Nom-Nom-Nom-I-Con",
+            "airDate": "2024-02-20",
+            "rating": 7.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZWM2MzdhZmEtN2ZlYi00NTQ5LTgyOGQtZGZmN2I1ODg4MGZkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton and Karen take dance lessons and quickly become top of the class. Equipped with a magical spell book, SpongeBob cooks up chaos in the Krusty Krab kitchen."
+          },
+          {
+            "episode": 7,
+            "title": "PL-1413/ln the Mood to Feud",
+            "airDate": "2024-07-15",
+            "rating": 7.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjBlNjA3NTgtM2U1Yi00OTE0LWFlNTEtOTA1YTgyZWY3ZDNlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton travels two thousand years into the future and finds a few unfamiliar faces./SpongeBob, Patrick, and Sandy find themselves in the middle of a long-standing feud between the Narwhals and the Planktons."
+          },
+          {
+            "episode": 8,
+            "title": "Mooned!/Hysterical History",
+            "airDate": "2024-07-17",
+            "rating": 8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2YwNzkwOTAtMmIwYS00Mjk3LWExMWMtMTU2YTE5MDY2YjIzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob wants to catch an ultra-rare jellyfish and enlists the help of former jellyfishing champion, Kevin/On a trip to the museum, SpongeBob and Patrick teach Sandy all about Bikini Bottom's fascinating, yet questionable, history."
+          },
+          {
+            "episode": 9,
+            "title": "Kreepaway Kamp",
+            "airDate": "2024-10-10",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzY5NTU0OWUtMDRlNS00YTc2LTg5NTEtZTU4YjYyZWU0MDdkXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "While at Kamp Koral for a reunion, SpongeBob and the gang are stalked by a mysterious figure lurking in the shadows as campers start disappearing one by one."
+          },
+          {
+            "episode": 11,
+            "title": "Snow Yellow and the Seven Jellies",
+            "airDate": "2024-11-11",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTkwZWFkMTgtZjFjYi00NjEyLWFmNDgtMWJkYzAwZDdjNzc4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When Snow Yellow is deemed the \"squarest of them all,\" the evil queen Karen seeks to claim the title for herself by any means necessary."
+          },
+          {
+            "episode": 12,
+            "title": "The Dirty Bubble Bass/Sheldon SquarePants",
+            "airDate": "2024-07-22",
+            "rating": 6.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTE5MWM4YWYtNmEyMS00MGY0LWI4N2EtNGMxYzVhODJjYmUyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Bubble Bass and the Dirty Bubble team up to become Bikini Bottom's nastiest nefarious nuisance/Plankton joins the SquarePants family in the hope of becoming closer with SpongeBob."
+          },
+          {
+            "episode": 13,
+            "title": "Sandy's Country Christmas",
+            "airDate": "2024-10-15",
+            "rating": 6.8,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNTkzZjA1Y2UtZWRkOC00ZjMyLWEwMTYtMjk3NjdkM2YyMmViXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When one of Sandy's experiments goes awry, the Cheeks family team up to save Christmas in Bikini Bottom."
+          },
+          {
+            "episode": 14,
+            "title": "Sammy Suckerfish/Big League Bob",
+            "airDate": "2024-07-24",
+            "rating": 8.6,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTBjODM5NjUtMzMwNS00NmM5LTgwZTgtMTliODk2OThhODQ1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "When the Krusty Krab is left filthy, a magical fish teaches SpongeBob how to keep surfaces looking spiffy, lickety split. SpongeBob is recruiting to cook in the big leagues, but first, he must prove his worth in the test kitchen."
+          }
+        ]
+      },
+      {
+        "season": 15,
+        "episodes": [
+          {
+            "episode": 2,
+            "title": "Upward/Unidentified Flailing Octopus",
+            "airDate": "2024-12-03",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjNlMDlmZDgtYmU2Zi00NTRkLTliZDMtZGIwMDU5MjhmNjQwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Lady Upturn introduces Squidward, and his musical \"talents,\" to her high society friends after she becomes his patron/ Squidward sets out to prove that aliens aren't real - until he has a close encounter of his own."
+          },
+          {
+            "episode": 3,
+            "title": "Bad Luck Bob/The Sandman Cometh",
+            "airDate": "2024-12-09",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTNlNzVkYmQtMmU1Yy00OWQyLWJiOTAtZjQ2OTQyNDk3MGQzXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob experiences a bad luck streak when his lucky tie clip suddenly goes missing/When Patrick cannot fall asleep, he seeks assistance from the Sandman."
+          },
+          {
+            "episode": 4,
+            "title": "Biscuit Ballyhoo/Student Driver Survivor",
+            "airDate": "2024-12-13",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDFlMGU4M2MtNmQ2OC00M2Q1LTk0NTMtODI0ZjM3YWRhMDIxXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "After the Science Scouts begin selling biscuits to fund a trip to Mars, Mr. Krabs enters the ring and turns it into a competition."
+          },
+          {
+            "episode": 5,
+            "title": "Wiener Takes All/Stuck in an Elevator",
+            "airDate": "2024-12-19",
+            "rating": 7.5,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZTFhYmNkNjktMTRjMC00NTZiLThlMDktNzhiZWI3M2Q2MzY5XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Tired of doing grunt work at the Krusty Krab, Squidward takes a new job as manager of Weenie Hut Jr.'s."
+          },
+          {
+            "episode": 6,
+            "title": "Squidness Protection/Dome Alone",
+            "airDate": "2025-02-14",
+            "rating": 7.1,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDAyOWNmYzItNGQ2Yi00YjJmLWJmNTctZTA1MjQ4Nzg1OTk1XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward's amazing new life in witness protection is threatened after SpongeBob and Patrick discover his whereabouts/While stuck in her dome, Sandy suspects Plankton's up to no good and recruits Patrick to investigate."
+          },
+          {
+            "episode": 7,
+            "title": "Wary Gary/Pinned",
+            "airDate": "2025-02-21",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDQ0OTNjNmMtOGRiZi00NGE1LWIxYWYtN2ZhYjZjYzZjZTkwXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            "episode": 8,
+            "title": "Jeffy T's Prankwell Emporium/A Taste of Plankton",
+            "airDate": "2025-02-28",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWQ5YjdlZGEtMmYwYS00NzQ5LWE0MzgtY2M5NjYyYWIzOGE4XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward's prankster dad visits and brings all sorts of gags with him, much to Squidward's annoyance. Plankton tries to get a taste of the secret formula by attaching himself to SpongeBob's tongue."
+          },
+          {
+            "episode": 9,
+            "title": "Smartificial Intelligence/Firehouse Bob",
+            "airDate": "2025-03-07",
+            "rating": 8.3,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGEyZGFiN2ItNjk1NS00ZWI2LTk2NjUtNmQ4YzA3OWY5MzQ3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Perch Perkins fights for his job after he's fired and replaced by a robot anchorman. SpongeBob, Patrick, and Squidward feel the heat when they become volunteer firefighters."
+          },
+          {
+            "episode": 10,
+            "title": "Pablum Plankton/MuseBob ModelPants",
+            "airDate": "2025-03-14",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTE5NTY1MmYtYTUwNS00MzA5LWI4NTktZDUxOWY5N2ZkNTMyXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Plankton wins a \"cutest baby\" contest and becomes the face of a baby food brand/When Squidward's one-off portrait of SpongeBob takes the art world by storm, he has no choice but to produce more."
+          },
+          {
+            "episode": 11,
+            "title": "Delivery of Doom!/My Father the Boat",
+            "airDate": "2025-03-21",
+            "rating": 7.9,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmM0Y2NhMmMtYzkzZS00ZjRhLWJkZWUtNGQzZTU4ZjA0MGI0XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "SpongeBob is challenged by E.V.I.L. to make a delivery to their secret lair in 10 minutes or less/When Mr. Krabs gets trapped inside of Pearl's new boat, he must pretend to be its engine to avoid being caught."
+          },
+          {
+            "episode": 12,
+            "title": "Who's Afraid of Mr. Snippers?/A Fish called Sandy",
+            "airDate": "2025-04-08",
+            "rating": 8.7,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWNmZTFkNjQtMDIxNC00OTliLTlkMjQtNTMyMTg0NTE5NzRlXkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Squidward and Plankton come together to make their very own stage play - and SpongeBob is casted as the villain/Sandy decides to give herself gills so she can truly experience Bikini Bottom."
+          },
+          {
+            "episode": 13,
+            "title": "Making Waves/Captain Quasar: The Next Generation",
+            "airDate": "2025-06-06",
+            "rating": 8.2,
+            "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTRlZTIyMjYtMmFlNy00MjhjLTgzZjYtMDExNDkxZGFmMGY3XkEyXkFqcGc@._V1_.jpg",
+            "duration": "23 min",
+            "overview": "Mr. Krabs and Plankton must learn to get along after ending up shipwrecked on an island/SpongeBob and Squidina try to start their very own Captain Quasar fan club after being kicked out of Bubble Bass's."
           }
         ]
       }

@@ -77,31 +77,31 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-  "Heart of the Beast",
-  "Possible Love",
-  "Resident Evil",
-  "Campus Drivers",
   "Model Citizen",
-  "The Mongoose",
+  "The Oddyssey",
+  "The Good Lawyer",
+  "Other Mommy",
+  "Heart of the Beast",
+  "Resident Evil",
   "Godzilla Minus Zero",
+  "Possible Love",
   "Primetime",
-  "MobLand",
-  "A Dog's Perfect Christmas"
+  "VisionQuest"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
+  "Model Citizen",
+  "The Oddyssey",
   "Resident Evil",
   "Heart of the Beast",
-  "Primetime",
   "Godzilla Minus Zero",
+  "Primetime",
+  "Possible Love",
   "The Mongoose",
-  "Apocalypse Z: New World",
   "Verity",
   "ClayFace",
   "The Dog Stars",
   "Model Citizen",
   "A Dog's Perfect Christmas",
-  "Possible Love",
-  "Spider-Man: Brand New Day",
   "Obsession",
   "Wildwood"
 ];
@@ -1147,7 +1147,7 @@ async function initApp() {
     const deepLinkMovie = params.get('v');
     const deepLinkSection = params.get('section') || params.get('view');
     if (deepLinkMovie) {
-      const is4kDeepLink = deepLinkSection === '4k' || Boolean(find4kByIdOrTitle(deepLinkMovie));
+      const is4kDeepLink = deepLinkSection === '4k';
       setTimeout(() => openDetailsModal(deepLinkMovie, is4kDeepLink), 300); // slight delay for smooth UI
     } else {
       checkAutoAuthPrompt();
@@ -2594,7 +2594,7 @@ function _performSwitchView(viewName) {
   // 4K Ultra HD Showcase View
   if (viewName === "4k") {
     const tier = (window.userVipTier || '').toLowerCase();
-    if (tier !== 'pro' && tier !== 'ultimate') {
+    if (!isUserVip() && tier !== 'pro' && tier !== 'ultimate' && tier !== 'vip') {
       if (typeof openVipModal === 'function') openVipModal();
       return;
     }
@@ -3509,14 +3509,31 @@ window.submitComment = async function (movieId) {
 };
 
 function openDetailsModal(movieId, from4k = null) {
-  const is4kContext = from4k === true || (
-    from4k !== false &&
-    state.activeView === '4k' &&
-    state.activeView !== 'movies' &&
-    state.activeView !== 'series' &&
-    state.activeView !== 'anime' &&
-    state.activeView !== 'search' &&
-    state.activeView !== 'home'
+  if (state.activeView && state.activeView !== 'details') {
+    state.previousView = state.activeView;
+  }
+
+  const isFrom4kExplicit = from4k === true || (
+    typeof window !== 'undefined' && window.location.search.includes('section=4k')
+  ) || state.activeView === '4k' || state.currentDetailsFrom4k === true;
+
+  const isExplicitNon4k = from4k === false || (!isFrom4kExplicit && (
+    state.activeView === 'movies' ||
+    state.activeView === 'series' ||
+    state.activeView === 'anime' ||
+    (typeof window !== 'undefined' && (
+      window.location.search.includes('section=movies') ||
+      window.location.search.includes('section=series') ||
+      window.location.search.includes('section=anime')
+    ))
+  ));
+
+  const is4kContext = !isExplicitNon4k && (
+    isFrom4kExplicit ||
+    state.activeView === '4k' ||
+    state.previousView === '4k' ||
+    state.currentDetailsFrom4k === true ||
+    (typeof window !== 'undefined' && window.location.search.includes('section=4k'))
   );
 
   const movie = is4kContext
@@ -3556,7 +3573,7 @@ function openDetailsModal(movieId, from4k = null) {
     if (detailsSection) detailsSection.scrollTo(0, 0);
     const detailsBg = document.getElementById("detailsBg");
     if (detailsBg) {
-      const detailsHeroImg = movie.backdrop || movie.poster;
+      const detailsHeroImg = (movie.backdrop || movie.poster || '').trim();
       detailsBg.style.backgroundImage = `url('${detailsHeroImg}')`;
       
       // Cancel previous trailer timer and remove iframe
@@ -3716,7 +3733,16 @@ function openDetailsModal(movieId, from4k = null) {
     }
     if (qualityBadge) {
       const isSeriesOrAnime = movie.isAnime || movie.type === 'Series' || movie.type === 'TV Show' || movie.type === 'Anime' || (Array.isArray(movie.seasons) && movie.seasons.length > 0) || movie.category === 'series' || movie.category === 'anime' || state.activeView === 'series' || state.activeView === 'anime' || state.previousView === 'series' || state.previousView === 'anime';
-      const isFrom4k = !isSeriesOrAnime && Boolean(is4kContext);
+      const isFrom4k = !isSeriesOrAnime && Boolean(
+        is4kContext ||
+        movie.from4kSection === true ||
+        (movie.is4k && (
+          state.activeView === '4k' ||
+          state.previousView === '4k' ||
+          state.currentDetailsFrom4k === true ||
+          (typeof window !== 'undefined' && window.location.search.includes('section=4k'))
+        ))
+      );
       qualityBadge.textContent = isFrom4k ? "4K UHD" : "HD";
       qualityBadge.style.cssText = isFrom4k
         ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"
@@ -4186,7 +4212,7 @@ function openDetailsModal(movieId, from4k = null) {
       // Movie ΓÇö hide TV section
       tvSection.classList.add("hidden");
       playBtn.onclick = () => {
-        openVideoPlayer(movie.id, 0, is4kContext);
+        openVideoPlayer(movie.id || movie.title, 0, is4kContext);
       };
     }
 
@@ -4366,16 +4392,16 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       : null
   );
 
+  const isTargetAnime = Boolean(parentMovie?.isAnime || parentMovie?.type === 'Anime');
+  const isTargetTv = Boolean(parentMovie?.type === 'TV Show' || parentMovie?.type === 'Series' || (parentMovie?.seasons && parentMovie.seasons.length > 0) || (epData && epData.season) || (typeof videoUrl === 'string' && videoUrl.startsWith('tv_embed:')));
+
   const is4kPlayback = Boolean(
-    state.activeView === '4k' ||
-    state.previousView === '4k' ||
-    state.currentDetailsFrom4k === true ||
-    (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
-    parentMovie?.from4kSection === true ||
-    parentMovie?.is4k === true ||
-    parentMovie?.fourkVideoUrl ||
-    fourkMeta !== null ||
-    (typeof videoUrl === 'string' && (videoUrl.includes('_4K_') || videoUrl.includes('_4K.') || videoUrl.includes('4K_UHD')))
+    !isTargetAnime && !isTargetTv && (
+      state.activeView === '4k' ||
+      state.currentDetailsFrom4k === true ||
+      (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
+      parentMovie?.from4kSection === true
+    )
   );
 
   if (is4kPlayback) {
@@ -4417,6 +4443,20 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
         videoUrl = def?.url || parentMovie.qualities[0].url;
       } else if (parentMovie.hdVideoUrl) {
         videoUrl = parentMovie.hdVideoUrl;
+      } else {
+        const directStream = (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv'))) ? videoUrl : (
+          (parentMovie.fourkVideoUrl && (parentMovie.fourkVideoUrl.startsWith('http') || parentMovie.fourkVideoUrl.includes('.mp4'))) ? parentMovie.fourkVideoUrl : (
+            (fourkMeta?.videoUrl && (fourkMeta.videoUrl.startsWith('http') || fourkMeta.videoUrl.includes('.mp4'))) ? fourkMeta.videoUrl : null
+          )
+        );
+        if (directStream) {
+          videoUrl = directStream;
+          window._cwQualities = [
+            { quality: "1080p HD", url: directStream, default: true },
+            { quality: "720p HD", url: directStream },
+            { quality: "480p SD", url: directStream }
+          ];
+        }
       }
     }
   }
@@ -4519,19 +4559,19 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 }
 
 async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
-  const fourkCandidate = typeof find4kByIdOrTitle === 'function' ? find4kByIdOrTitle(movieId) : null;
+  const targetId = (typeof movieId === 'object' && movieId !== null) ? (movieId.id || movieId.title) : movieId;
+  const fourkCandidate = typeof find4kByIdOrTitle === 'function' ? find4kByIdOrTitle(targetId) : null;
   const isFrom4k = is4k === true || (
     is4k !== false && (
       state.activeView === '4k' ||
       state.currentDetailsFrom4k === true ||
-      (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
-      (fourkCandidate !== null && state.activeView !== 'movies' && state.activeView !== 'series' && state.activeView !== 'anime')
+      (typeof window !== 'undefined' && window.location.search.includes('section=4k'))
     )
   );
 
   const movie = isFrom4k
-    ? (fourkCandidate || findMovieByIdOrTitle(movieId))
-    : (findMovieByIdOrTitle(movieId) || fourkCandidate);
+    ? (fourkCandidate || findMovieByIdOrTitle(targetId))
+    : (findMovieByIdOrTitle(targetId) || fourkCandidate);
 
   if (!movie) return;
 
@@ -4542,6 +4582,9 @@ async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
       if (fourkCandidate.backdrop) movie.backdrop = fourkCandidate.backdrop;
       if (fourkCandidate.poster) movie.poster = fourkCandidate.poster;
     }
+  } else if (movie) {
+    movie.from4kSection = false;
+    movie.is4k = false;
   }
 
   recordWatchEvent(movie.id);
@@ -4582,7 +4625,21 @@ async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
       const def = movie.qualities.find(q => q.default) || movie.qualities[0];
       if (def && def.url) targetUrl = def.url;
     } else {
-      window._cwQualities = null;
+      const directStream = (typeof targetUrl === 'string' && (targetUrl.startsWith('http') || targetUrl.includes('.mp4') || targetUrl.includes('.mkv'))) ? targetUrl : (
+        (movie.fourkVideoUrl && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.includes('.mp4'))) ? movie.fourkVideoUrl : (
+          (fourkCandidate?.videoUrl && (fourkCandidate.videoUrl.startsWith('http') || fourkCandidate.videoUrl.includes('.mp4'))) ? fourkCandidate.videoUrl : null
+        )
+      );
+      if (directStream) {
+        targetUrl = directStream;
+        window._cwQualities = [
+          { quality: "1080p HD", url: directStream, default: true },
+          { quality: "720p HD", url: directStream },
+          { quality: "480p SD", url: directStream }
+        ];
+      } else {
+        window._cwQualities = null;
+      }
     }
   }
 
@@ -4753,7 +4810,7 @@ function closeVideoPlayer() {
 
   // Re-open the details modal so the user returns to the movie/show info page
   if (movieId && movieId !== "_episode_") {
-    openDetailsModal(movieId);
+    openDetailsModal(movieId, state.currentDetailsFrom4k);
   }
 }
 
@@ -6434,8 +6491,9 @@ function bindEventListeners() {
         return;
       }
 
-      const is4kCard = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null;
-      openDetailsModal(movieId, is4kCard);
+      const is4kCard = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null || state.activeView === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
+      const isNon4kSection = state.activeView === 'movies' || state.activeView === 'series' || state.activeView === 'anime' || (typeof window !== 'undefined' && (window.location.search.includes('section=movies') || window.location.search.includes('section=series') || window.location.search.includes('section=anime')));
+      openDetailsModal(movieId, is4kCard ? true : (isNon4kSection ? false : null));
     }
   });
 
@@ -6721,8 +6779,8 @@ function bindEventListeners() {
         if (movie) saveRecentSearch(movie.title);
         searchDropdown.classList.add("hidden");
         closeSearchModal();
-        state.currentDetailsFrom4k = false;
-        openDetailsModal(movieId, false);
+        const in4kView = state.activeView === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
+        openDetailsModal(movieId, in4kView ? true : null);
       }
     };
   }
@@ -7673,7 +7731,8 @@ function bindEventListeners() {
         return;
       }
     } else if (deepLinkMovie && state.activeView !== "details") {
-      openDetailsModal(deepLinkMovie);
+      const is4kPop = params.get('section') === '4k' || params.get('view') === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
+      openDetailsModal(deepLinkMovie, is4kPop ? true : null);
       return;
     }
 
@@ -8051,14 +8110,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const isFrom4kSession = !isAnime && !isTv && Boolean(
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
     state.currentDetailsFrom4k === true ||
     (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
-    ref?.from4kSection === true ||
-    ref?.is4k === true ||
-    ref?.fourkVideoUrl ||
-    fourkMatch !== null ||
-    (typeof videoUrl === 'string' && (videoUrl.includes('_4K_') || videoUrl.includes('_4K.') || videoUrl.includes('4K_UHD')))
+    ref?.from4kSection === true
   );
 
   if (isFrom4kSession && fourkMatch && ref) {
@@ -8147,6 +8201,30 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       if (def && def.url) {
         cleanUrl = def.url;
       }
+    } else {
+      const fallbackStream = (cleanUrl && (cleanUrl.startsWith('http') || cleanUrl.includes('.mp4') || cleanUrl.includes('.mkv') || cleanUrl.includes('.m3u8'))) ? cleanUrl : (
+        (ref?.fourkVideoUrl && (ref.fourkVideoUrl.startsWith('http') || ref.fourkVideoUrl.includes('.mp4'))) ? ref.fourkVideoUrl : (
+          (fourkMatch?.videoUrl && (fourkMatch.videoUrl.startsWith('http') || fourkMatch.videoUrl.includes('.mp4'))) ? fourkMatch.videoUrl : (
+            (ref?.videoUrl && (ref.videoUrl.startsWith('http') || ref.videoUrl.includes('.mp4'))) ? ref.videoUrl : null
+          )
+        )
+      );
+      if (fallbackStream) {
+        cleanUrl = fallbackStream;
+        window._cwQualities = [
+          { quality: "1080p HD", url: fallbackStream, default: true },
+          { quality: "720p HD", url: fallbackStream },
+          { quality: "480p SD", url: fallbackStream }
+        ];
+      }
+    }
+    if (fourkMatch) {
+      if (fourkMatch.subtitles && (!ref?.subtitles || ref.subtitles.length === 0)) {
+        if (ref) ref.subtitles = fourkMatch.subtitles;
+      }
+      if (fourkMatch.audioUrl && !ref?.audioUrl) {
+        if (ref) ref.audioUrl = fourkMatch.audioUrl;
+      }
     }
   }
 
@@ -8168,7 +8246,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  const is4kStream = isFrom4kSession || Boolean(ref?.is4k || ref?.fourkVideoUrl || fourkMatch || (cleanUrl && (cleanUrl.includes('_4K_') || cleanUrl.includes('_4K.') || cleanUrl.includes('4K_UHD'))));
+  const is4kStream = isFrom4kSession;
   if (is4kStream) {
     // 4K section and 4K titles stream exclusively in native 4K UHD with no quality selector
     window._cwQualities = null;
@@ -8440,28 +8518,33 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
   }
 
-  // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
-  if (!is4kStream && !isFrom4kSession && ((!streamUrl && iframe) || driveIframeUrl)) {
-    if (isAnime) {
-      // For Anime: The user explicitly requires CineWatch Custom Server (ArtPlayer), never external iframe
-      if (artContainer) {
-        artContainer.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;gap:16px;padding:20px;text-align:center;"><div style="width:44px;height:44px;border:3px solid rgba(255,255,255,0.2);border-top-color:#e50914;border-radius:50%;animation:cwSpin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:#f1f5f9;">Connecting to CineWatch Custom Server...</div><div style="font-size:13px;color:#94a3b8;max-width:380px;">Stream is loading. If it takes longer than usual, click Retry below.</div><button id="cwAnimeRetryBtn" style="margin-top:8px;padding:9px 24px;background:#e50914;color:#fff;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:background 0.2s;">Retry Custom Stream</button></div><style>@keyframes cwSpin{to{transform:rotate(360deg)}}</style>';
-        const retryBtn = document.getElementById("cwAnimeRetryBtn");
-        if (retryBtn) {
-          retryBtn.onclick = () => {
-            initArtPlayerForAnime(videoUrl, movie, parentMovie, epData);
-          };
-        }
+  // If no direct stream is available, KEEP IN CUSTOM ARTPLAYER with retry/status screen — NEVER external server iframe
+  if (!streamUrl && !driveIframeUrl) {
+    if (artContainer) {
+      artContainer.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;gap:16px;padding:20px;text-align:center;"><div style="width:44px;height:44px;border:3px solid rgba(255,255,255,0.2);border-top-color:#e50914;border-radius:50%;animation:cwSpin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:#f1f5f9;">Connecting to CineWatch Custom Server...</div><div style="font-size:13px;color:#94a3b8;max-width:380px;">Stream is loading. If it takes longer than usual, click Retry below.</div><button id="cwRetryStreamBtn" style="margin-top:8px;padding:9px 24px;background:#e50914;color:#fff;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:background 0.2s;">Retry Custom Stream</button></div><style>@keyframes cwSpin{to{transform:rotate(360deg)}}</style>';
+      const retryBtn = document.getElementById("cwRetryStreamBtn");
+      if (retryBtn) {
+        retryBtn.onclick = () => {
+          initArtPlayerForAnime(videoUrl, movie, parentMovie, epData);
+        };
       }
-      return;
     }
-    iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
-    iframe.classList.remove("hidden");
+    if (iframe) {
+      iframe.classList.add("hidden");
+      iframe.src = "";
+    }
+    return;
+  }
+  if (driveIframeUrl) {
+    if (iframe) {
+      iframe.src = driveIframeUrl;
+      iframe.classList.remove("hidden");
+    }
     if (artContainer) {
       artContainer.innerHTML = "";
       artContainer.classList.add("hidden");
     }
-    return; // Do not initialize ArtPlayer
+    return;
   }
 
   // We have a direct stream (or anime source), play strictly inside CineWatch Custom ArtPlayer
@@ -9077,17 +9160,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
                     hlsNetErrorCount++;
                     if (hlsNetErrorCount >= 2) {
-                      if (isAnime || (String(tmdbId) === "65334" && parseInt(season, 10) >= 6)) {
-                        console.warn('[CineWatch] Retrying HLS stream load for custom player...');
-                        hls.startLoad();
-                        return;
-                      }
-                      if (!isAnime && iframe) {
-                        try { art.destroy(); } catch(e) {}
-                        if (artContainer) artContainer.classList.add('hidden');
-                        iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
-                        iframe.classList.remove('hidden');
-                      }
+                      console.warn('[CineWatch] Retrying HLS stream load for custom player...');
+                      hls.startLoad();
+                      return;
                     } else {
                       hls.startLoad();
                     }
@@ -9096,14 +9171,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     hls.recoverMediaError();
                     break;
                   default:
-                    if (isAnime) {
-                      hls.startLoad();
-                    } else if (iframe) {
-                      try { art.destroy(); } catch(e) {}
-                      if (artContainer) artContainer.classList.add('hidden');
-                      iframe.src = driveIframeUrl || (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
-                      iframe.classList.remove('hidden');
-                    }
+                    hls.startLoad();
                     break;
                 }
               }
@@ -9367,15 +9435,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        if (isAnime || (String(tmdbId) === "65334" && parseInt(season, 10) >= 6)) {
-          return; // Never downgrade Anime or Miraculous to external server iframe
-        }
-        if (!is4kStream && !isFrom4kSession && iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
-          console.info("Falling back to external server iframe due to player error");
-          iframe.src = driveIframeUrl || (isAnime && malId ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}` : (isTv ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}` : `https://vidsrc.to/embed/movie/${tmdbId}`));
-          iframe.classList.remove("hidden");
-          if (artContainer) artContainer.classList.add("hidden");
-        }
+        // Strictly preserve CineWatch Custom Server Layout — never downgrade to third-party iframe
       } catch (e) {}
     });
 
