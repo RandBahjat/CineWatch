@@ -8425,49 +8425,42 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
     try {
       let sData = null;
+      const isStreamUrlPlayable = (url) => {
+        if (!url || typeof url !== 'string') return false;
+        try {
+          let target = url;
+          if (url.includes('url=')) {
+            const u = new URL(url);
+            target = decodeURIComponent(u.searchParams.get('url') || url);
+          }
+          const innerUrl = new URL(target);
+          const token = innerUrl.searchParams.get('token');
+          if (token) {
+            const parts = token.split('.');
+            if (parts.length >= 2) {
+              const payload = JSON.parse(atob(parts[1]));
+              if (payload.exp && (payload.exp - Math.floor(Date.now() / 1000)) <= 30) {
+                return false; // Token expired
+              }
+            }
+          }
+          return true;
+        } catch (e) {
+          return true;
+        }
+      };
+
       for (const epUrl of uniqueEndpoints) {
         try {
           const res = await fetch(epUrl, { signal: AbortSignal.timeout(10000) });
           if (!res.ok) continue;
           const data = await res.json();
-          if (data && data.success && data.streamUrl) {
+          if (data && data.success && data.streamUrl && isStreamUrlPlayable(data.streamUrl)) {
             sData = data;
             break;
           }
         } catch (e) {
           continue;
-        }
-      }
-
-      // Static cache fallback for Miraculous Season 6 if backend server is unreachable
-      if (!sData && String(tmdbId) === "65334" && parseInt(season, 10) >= 6) {
-        const cachePaths = ["miraculous_s6_cache.json", "/miraculous_s6_cache.json", "../miraculous_s6_cache.json"];
-        for (const cp of cachePaths) {
-          try {
-            const cacheRes = await fetch(cp);
-            if (cacheRes.ok) {
-              const cacheData = await cacheRes.json();
-              const epEntry = cacheData[String(epNum)] || cacheData[epNum];
-              if (epEntry && epEntry.streamUrl) {
-                const subBase = (window.location.origin && window.location.origin.includes(':3000')) ? window.location.origin : 'https://cinewatch-maaa.onrender.com';
-                const proxiedUrl = `${subBase}/api/stream-m3u8?url=${encodeURIComponent(epEntry.streamUrl)}`;
-                sData = {
-                  success: true,
-                  streamUrl: proxiedUrl,
-                  qualities: [{ quality: "Auto", url: proxiedUrl }],
-                  tracks: [
-                    {
-                      label: "Kurdish (Sorani)",
-                      file: `${subBase}/api/movie-sub?title=Miraculous%3A%20Tales%20of%20Ladybug%20%26%20Cat%20Noir&type=series&season=6&ep=${epNum}`,
-                      srclang: "ku",
-                      default: true
-                    }
-                  ]
-                };
-                break;
-              }
-            }
-          } catch (e) {}
         }
       }
 
@@ -8518,8 +8511,29 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
   }
 
-  // If no direct stream is available, KEEP IN CUSTOM ARTPLAYER with retry/status screen — NEVER external server iframe
+  const fallbackEmbedUrl = driveIframeUrl || (
+    tmdbId
+      ? (isTv
+          ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
+          : (isAnime && malId
+              ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+              : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
+            )
+        )
+      : ''
+  );
+
+  // If no direct stream is available, use fallback embed iframe seamlessly or show status
   if (!streamUrl && !driveIframeUrl) {
+    if (fallbackEmbedUrl && iframe) {
+      if (artContainer) {
+        artContainer.innerHTML = "";
+        artContainer.classList.add("hidden");
+      }
+      iframe.src = fallbackEmbedUrl;
+      iframe.classList.remove("hidden");
+      return;
+    }
     if (artContainer) {
       artContainer.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;gap:16px;padding:20px;text-align:center;"><div style="width:44px;height:44px;border:3px solid rgba(255,255,255,0.2);border-top-color:#e50914;border-radius:50%;animation:cwSpin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:#f1f5f9;">Connecting to CineWatch Custom Server...</div><div style="font-size:13px;color:#94a3b8;max-width:380px;">Stream is loading. If it takes longer than usual, click Retry below.</div><button id="cwRetryStreamBtn" style="margin-top:8px;padding:9px 24px;background:#e50914;color:#fff;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:background 0.2s;">Retry Custom Stream</button></div><style>@keyframes cwSpin{to{transform:rotate(360deg)}}</style>';
       const retryBtn = document.getElementById("cwRetryStreamBtn");
