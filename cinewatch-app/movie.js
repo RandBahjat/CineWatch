@@ -9459,7 +9459,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        // Strictly preserve CineWatch Custom Server Layout — never downgrade to third-party iframe
+        if (fallbackEmbedUrl && iframe && !is4kStream && !isFrom4kSession) {
+          console.info("[CineWatch] Falling back to backup server embed due to player error");
+          try { window.artPlayerInstance.destroy(); } catch(e) {}
+          if (artContainer) {
+            artContainer.innerHTML = '';
+            artContainer.classList.add("hidden");
+          }
+          iframe.src = fallbackEmbedUrl;
+          iframe.classList.remove("hidden");
+        }
       } catch (e) {}
     });
 
