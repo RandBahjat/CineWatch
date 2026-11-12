@@ -100879,4 +100879,16179 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116785.jpg",
             duration: "30 min",
-            overview: "While working for Fat Tony (Joe Mantegna), Bart gains enough influence with his boss to solve his problems with Principal Skinner---perhaps
+            overview: "While working for Fat Tony (Joe Mantegna), Bart gains enough influence with his boss to solve his problems with Principal Skinner---perhaps permanently."
+          },
+          {
+            episode: 5,
+            title: "Homer Defined",
+            airDate: "1991-10-17",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116808.jpg",
+            duration: "30 min",
+            overview: "Homer's averting of a nuclear meltdown earns him employee-of-the-month honors---and a call from Magic Johnson; Milhouse's parents prohibit him from playing with Bart."
+          },
+          {
+            episode: 6,
+            title: "Like Father Like Clown",
+            airDate: "1991-10-24",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116837.jpg",
+            duration: "30 min",
+            overview: "Bart and Lisa use theological arguments to try to reunite Krusty the Clown and his rabbi father, who disowned Krusty when he turned from rabbi to clown."
+          },
+          {
+            episode: 7,
+            title: "Treehouse of Horror II",
+            airDate: "1991-10-31",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116881.jpg",
+            duration: "30 min",
+            overview: "Maggie uses one of three wishes; a mind-reading Bart rules Springfield; Homer donates his brain to Mr. Burns' science project."
+          },
+          {
+            episode: 8,
+            title: "Lisa's Pony",
+            airDate: "1991-11-07",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116949.jpg",
+            duration: "30 min",
+            overview: "After disappointing Lisa, Homer buys her a pony, solving one problem, but creating others, requiring a second job---at Apu's Quik-e-Mart."
+          },
+          {
+            episode: 9,
+            title: "Saturdays of Thunder",
+            airDate: "1991-11-14",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173364.jpg",
+            duration: "30 min",
+            overview: "When Homer helps Bart build a soapbox racer, it does little for the car but a lot for their relationship. Meanwhile, Patty and Selma get a hair makeover."
+          },
+          {
+            episode: 10,
+            title: "Flaming Moe's",
+            airDate: "1991-11-21",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118115.jpg",
+            duration: "30 min",
+            overview: "Homer's new drink makes Moe's hot enough to draw Aerosmith, who perform \"Walk This Way.\" Meanwhile, Lisa has invited her friends over for a slumber party which causes problems for Bart."
+          },
+          {
+            episode: 11,
+            title: "Burns Verkaufen der Kraftwerk",
+            airDate: "1991-12-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118121.jpg",
+            duration: "30 min",
+            overview: "Burns sells the power plant to a German corporation that doesn't care for Homer's approach to his work."
+          },
+          {
+            episode: 12,
+            title: "I Married Marge",
+            airDate: "1991-12-26",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118170.jpg",
+            duration: "30 min",
+            overview: "A trip down memory lane to the early days of Simpson wedded bliss, when Marge was with child and Homer was without a job."
+          },
+          {
+            episode: 13,
+            title: "Radio Bart",
+            airDate: "1992-01-09",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118220.jpg",
+            duration: "30 min",
+            overview: "Bart fools the town into thinking there's a little boy trapped in a well. Sting performs \"We're Sending Our Love down the Well.\""
+          },
+          {
+            episode: 14,
+            title: "Lisa the Greek",
+            airDate: "1992-01-23",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/119689.jpg",
+            duration: "30 min",
+            overview: "From 1992: Lisa's ability to pick winning football teams kicks off a strong bond with Homer---which might end with the upcoming Super Bowl."
+          },
+          {
+            episode: 15,
+            title: "Homer Alone",
+            airDate: "1992-02-06",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108616.jpg",
+            duration: "30 min",
+            overview: "A stressed Marge vacations alone, leaving Bart and Lisa with Patty and Selma, and Maggie with Homer---until she leaves in search of Marge."
+          },
+          {
+            episode: 16,
+            title: "Bart the Lover",
+            airDate: "1992-02-13",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/119719.jpg",
+            duration: "30 min",
+            overview: "Bart's answer to detention from Mrs. Krabappel is to answer her personal ad with letters from a Mr. Wonderful, but his last laugh is more of a guilty whimper. Meanwhile, Homer makes a bet with Flanders that if he tries to stop swearing, Flanders will shave off his mustache."
+          },
+          {
+            episode: 17,
+            title: "Homer at the Bat",
+            airDate: "1992-02-20",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107115.jpg",
+            duration: "30 min",
+            overview: "Burns hires Major League ringers for the plant softball championship."
+          },
+          {
+            episode: 18,
+            title: "Separate Vocations",
+            airDate: "1992-02-27",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110263.jpg",
+            duration: "30 min",
+            overview: "The results from their aptitude tests cause Bart and Lisa to make 180-degree turns in their behavior."
+          },
+          {
+            episode: 19,
+            title: "Dog of Death",
+            airDate: "1992-03-12",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/119788.jpg",
+            duration: "30 min",
+            overview: "Santa's Little Helper notices resentment after the Simpsons make sacrifices to fund his life-saving operation."
+          },
+          {
+            episode: 20,
+            title: "Colonel Homer",
+            airDate: "1992-03-26",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173365.jpg",
+            duration: "30 min",
+            overview: "Marge fears a cheatin' heart when a waitress-country singer asks Homer to be her manager."
+          },
+          {
+            episode: 21,
+            title: "Black Widower",
+            airDate: "1992-04-09",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/64/162022.jpg",
+            duration: "30 min",
+            overview: "Bart suspects something rotten when Selma gets engaged to Sideshow Bob."
+          },
+          {
+            episode: 22,
+            title: "The Otto Show",
+            airDate: "1992-04-23",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/64/162148.jpg",
+            duration: "30 min",
+            overview: "Spinal Tap hits Springfield, and Otto the bus driver hits the skids after being fired, taking refuge in the Simpsons' garage."
+          },
+          {
+            episode: 23,
+            title: "Bart's Friend Falls in Love",
+            airDate: "1992-05-07",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/64/162157.jpg",
+            duration: "30 min",
+            overview: "Bart resents Milhouse's new girlfriend; Homer gets the wrong subliminal tape, which has him gaining vocabulary, not losing weight."
+          },
+          {
+            episode: 24,
+            title: "Brother, Can You Spare Two Dimes?",
+            airDate: "1992-08-27",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173366.jpg",
+            duration: "30 min",
+            overview: "Homer's stepbrother asks for a loan after Homer is awarded some cash, presented by Smokin' Joe Frazier."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Kamp Krusty",
+            airDate: "1992-09-24",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101667.jpg",
+            duration: "30 min",
+            overview: "Bart leads an uprising at Krusty's summer camp after he and Lisa are subjected to a Dickensian sweatshop."
+          },
+          {
+            episode: 2,
+            title: "A Streetcar Named Marge",
+            airDate: "1992-10-01",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103889.jpg",
+            duration: "30 min",
+            overview: "Marge is cast in a version of \"A Streetcar Named Desire,\" playing Blanche to Ned Flanders' Stanley."
+          },
+          {
+            episode: 3,
+            title: "Homer the Heretic",
+            airDate: "1992-10-08",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/48/122476.jpg",
+            duration: "30 min",
+            overview: "Homer decides to skip church permanently, and God gives His OK in Homer's dream."
+          },
+          {
+            episode: 4,
+            title: "Lisa the Beauty Queen",
+            airDate: "1992-10-15",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173367.jpg",
+            duration: "30 min",
+            overview: "Lisa meets Bob Hope when she becomes Little Miss Springfield, a title she inherits after the winner's struck by lightning."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror III",
+            airDate: "1992-10-29",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173369.jpg",
+            duration: "30 min",
+            overview: "A Halloween trilogy includes a murderous Krusty doll; a \"King Kong\" parody; an invasion of zombies unleashed by Bart's incantation."
+          },
+          {
+            episode: 6,
+            title: "Itchy & Scratchy: The Movie",
+            airDate: "1992-11-03",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173370.jpg",
+            duration: "30 min",
+            overview: "Bart is punished by being barred from the Itchy and Scratchy movie."
+          },
+          {
+            episode: 7,
+            title: "Marge Gets a Job",
+            airDate: "1992-11-05",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108594.jpg",
+            duration: "30 min",
+            overview: "Burns tries to please a new employee---Marge---with singer Tom Jones. Meanwhile, Bart cries \"wolf\" too often."
+          },
+          {
+            episode: 8,
+            title: "The New Kid on the Block",
+            airDate: "1992-11-12",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173371.jpg",
+            duration: "30 min",
+            overview: "A new neighbor captures---and breaks---Bart's heart; Homer sues after a restaurant denies him \"all you can eat.\""
+          },
+          {
+            episode: 9,
+            title: "Mr. Plow",
+            airDate: "1992-11-19",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173372.jpg",
+            duration: "30 min",
+            overview: "Homer and Barney become competitors in the snow-plowing business."
+          },
+          {
+            episode: 10,
+            title: "Lisa's First Word",
+            airDate: "1992-12-03",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173373.jpg",
+            duration: "30 min",
+            overview: "Maggie speaks, but not before the story of Lisa's first word is recalled, as well as how the 1984 Soviet Olympic boycott hurt Krusty."
+          },
+          {
+            episode: 11,
+            title: "Homer's Triple Bypass",
+            airDate: "1992-12-17",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173374.jpg",
+            duration: "30 min",
+            overview: "The stresses of life and his eating habits catch up and Homer sees a discount doctor for a coronary bypass."
+          },
+          {
+            episode: 12,
+            title: "Marge vs. the Monorail",
+            airDate: "1993-01-14",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173375.jpg",
+            duration: "30 min",
+            overview: "Leonard Nimoy is among the first to ride Springfield's new monorail, opposed by Marge."
+          },
+          {
+            episode: 13,
+            title: "Selma's Choice",
+            airDate: "1993-01-21",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110003.jpg",
+            duration: "30 min",
+            overview: "A relative passes away and the Simpson clan goes to the Funeral. After Selma receives a videotaped warning about dying alone, she wants a baby."
+          },
+          {
+            episode: 14,
+            title: "Brother from the Same Planet",
+            airDate: "1993-02-04",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110005.jpg",
+            duration: "30 min",
+            overview: "Homer's neglect sends Bart looking for a new father; Lisa battles addiction to a \"Springfield Heights, 90210\" star."
+          },
+          {
+            episode: 15,
+            title: "I Love Lisa",
+            airDate: "1993-02-11",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108575.jpg",
+            duration: "30 min",
+            overview: "Chief Wiggum's son has a crush on Lisa after she gives him a Valentine out of pity."
+          },
+          {
+            episode: 16,
+            title: "Duffless",
+            airDate: "1993-02-18",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173376.jpg",
+            duration: "30 min",
+            overview: "Homer goes on the wagon after a drunken-driving arrest; Lisa's science project pits Bart's brain against a hamster's."
+          },
+          {
+            episode: 17,
+            title: "Last Exit to Springfield",
+            airDate: "1993-03-11",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173377.jpg",
+            duration: "30 min",
+            overview: "Union president Homer fights to keep the dental plan."
+          },
+          {
+            episode: 18,
+            title: "So It's Come to This: A Simpsons Clip Show",
+            airDate: "1993-04-01",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/130186.jpg",
+            duration: "30 min",
+            overview: "Bart's prank hospitalizes Homer, whose life flashes by (in past clips) before he goes into a coma."
+          },
+          {
+            episode: 19,
+            title: "The Front",
+            airDate: "1993-04-15",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/130173.jpg",
+            duration: "30 min",
+            overview: "Lisa and Bart write an Itchy and Scratchy episode; Homer makes up a missing high-school credit."
+          },
+          {
+            episode: 20,
+            title: "Whacking Day",
+            airDate: "1993-04-29",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/64/161343.jpg",
+            duration: "30 min",
+            overview: "Barry White helps Lisa's effort to save snakes from Whacking Day. And, Bart is expelled from Springfield Elementary."
+          },
+          {
+            episode: 21,
+            title: "Marge in Chains",
+            airDate: "1993-05-06",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/64/161509.jpg",
+            duration: "30 min",
+            overview: "Lionel Hutz represents Marge after Apu catches her accidentally taking an item from his store."
+          },
+          {
+            episode: 22,
+            title: "Krusty Gets Kancelled",
+            airDate: "1993-05-13",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173378.jpg",
+            duration: "30 min",
+            overview: "Johnny Carson, Bette Midler, Luke Perry, Hugh Hefner and the Red Hot Chili Peppers help Krusty when his show is canceled after a new star causes his ratings to plummet."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Homer's Barbershop Quartet",
+            airDate: "1993-09-30",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101687.jpg",
+            duration: "30 min",
+            overview: "Homer recalls when he, Apu, Barney and Principal Skinner became recording icons---after Barney replaced Chief Wiggum, on the advice of their manager. Blackboard: 'I will never win an emmy'."
+          },
+          {
+            episode: 2,
+            title: "Cape Feare",
+            airDate: "1993-10-07",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101690.jpg",
+            duration: "30 min",
+            overview: "The Simpsons go incognito to avoid the newly paroled Sideshow Bob, who's out to get Bart. Blackboard: 'The cafeteria deep fryer is not a toy'."
+          },
+          {
+            episode: 3,
+            title: "Homer Goes to College",
+            airDate: "1993-10-14",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101691.jpg",
+            duration: "30 min",
+            overview: "Homer takes Nuclear Physics 101 at the local college, where he gets a trio of nerdy tutors expelled for extracurricular activities."
+          },
+          {
+            episode: 4,
+            title: "Rosebud",
+            airDate: "1993-10-21",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101696.jpg",
+            duration: "30 min",
+            overview: "Burns longs for a childhood toy that winds up in the grip of Maggie."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror IV",
+            airDate: "1993-10-28",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101795.jpg",
+            duration: "30 min",
+            overview: "Homer sells his soul; Vampire Burns invites the Simpsons for dinner; Bart sees a gremlin damaging his school bus."
+          },
+          {
+            episode: 6,
+            title: "Marge on the Lam",
+            airDate: "1993-11-04",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/101797.jpg",
+            duration: "30 min",
+            overview: "Marge's wild night out with neighbor Ruth (Pamela Reed) includes running from the police in Ruth's car, stolen from her ex."
+          },
+          {
+            episode: 7,
+            title: "Bart's Inner Child",
+            airDate: "1993-11-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102313.jpg",
+            duration: "30 min",
+            overview: "Springfield emulates Bart after he's praised by a self-help guru. James Brown has a cameo at Springfield's Do What You Want festival."
+          },
+          {
+            episode: 8,
+            title: "Boy-Scoutz 'n the Hood",
+            airDate: "1993-11-18",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173379.jpg",
+            duration: "30 min",
+            overview: "Bart joins the Junior Campers, which isn't all bad until he goes on a rafting trip that includes Flanders and \"celebrity dad\" Ernest Borgnine."
+          },
+          {
+            episode: 9,
+            title: "The Last Temptation of Homer",
+            airDate: "1993-12-09",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110265.jpg",
+            duration: "30 min",
+            overview: "Homer is attracted to a pretty power-plant worker (voice of Michelle Pfeiffer), and Werner Klemperer speaks for the guardian angel who helps Homer fight temptation. Blackboard: 'All work and no play makes Bart a dull boy.'."
+          },
+          {
+            episode: 10,
+            title: "$pringfield (or, How I Learned to Stop Worrying and Love Legalized Gambling)",
+            airDate: "1993-12-16",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110267.jpg",
+            duration: "30 min",
+            overview: "Legalized gambling comes to Springfield, and Marge becomes addicted; Robert Goulet entertains at Bart's casino for kids. Blackboard: 'I will not say \"Springfield\" just to get applause'."
+          },
+          {
+            episode: 11,
+            title: "Homer the Vigilante",
+            airDate: "1994-01-06",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173380.jpg",
+            duration: "30 min",
+            overview: "Homer leads a vigilante group to catch the Springfield Cat Burglar (voice of Sam Neill), who then robs the museum. Blackboard: 'I am not authorized to fire substitute teachers'."
+          },
+          {
+            episode: 12,
+            title: "Bart Gets Famous",
+            airDate: "1994-02-03",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173381.jpg",
+            duration: "30 min",
+            overview: "When an on-air remark catapults Bart to instant stardom, he finds that fame isn't all it's cracked up to be. Blackboard: 'My homework was not stolen by a one-armed man'."
+          },
+          {
+            episode: 13,
+            title: "Homer and Apu",
+            airDate: "1994-02-10",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173382.jpg",
+            duration: "30 min",
+            overview: "Homer accompanies Apu to the Kwik-E-Mart home office---in India---after Apu is fired. Blackboard: 'I will not go near the kindergarten turtle'."
+          },
+          {
+            episode: 14,
+            title: "Lisa vs. Malibu Stacy",
+            airDate: "1994-02-17",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173383.jpg",
+            duration: "30 min",
+            overview: "Lisa's outrage over the gender stereotypes reinforced by a new talking doll prompts her to confront the dollmaker (Kathleen Turner)."
+          },
+          {
+            episode: 15,
+            title: "Deep Space Homer",
+            airDate: "1994-02-24",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173384.jpg",
+            duration: "30 min",
+            overview: "Homer and Barney compete to be the first \"average\" American in space."
+          },
+          {
+            episode: 16,
+            title: "Homer Loves Flanders",
+            airDate: "1994-03-17",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173386.jpg",
+            duration: "30 min",
+            overview: "Flanders' extra ticket to the big game makes him Homer's new best friend, a role that sorely tests Flanders' patience. Blackboard: 'I am not delightfully saucy'."
+          },
+          {
+            episode: 17,
+            title: "Bart Gets an Elephant",
+            airDate: "1994-03-31",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102905.jpg",
+            duration: "30 min",
+            overview: "Bart wins an elephant, but Homer won't let him keep it. Blackboard: 'Organ transplants are best left to the professionals'."
+          },
+          {
+            episode: 18,
+            title: "Burns' Heir",
+            airDate: "1994-04-14",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107127.jpg",
+            duration: "30 min",
+            overview: "Bart is picked to be Burns' heir and moves into the Burns mansion, prompting Homer and Marge to hire a deprogrammer to get him back. Blackboard: 'The pledge of Allegiance does not end with hail satan'."
+          },
+          {
+            episode: 19,
+            title: "Sweet Seymour Skinner's Baadasssss Song",
+            airDate: "1994-04-28",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107136.jpg",
+            duration: "30 min",
+            overview: "Bart takes his dog to school, which gets Skinner fired, which in turn leaves Bart missing his archnemesis. Blackboard: 'I will not celebrate meaningless milestones'."
+          },
+          {
+            episode: 20,
+            title: "The Boy Who Knew Too Much",
+            airDate: "1994-05-05",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107158.jpg",
+            duration: "30 min",
+            overview: "Bart can clear Mayor Quimby's nephew of a charge of battery, but only by implicating himself as a hooky player. Blackboard: 'There are plenty of businesses like show business'."
+          },
+          {
+            episode: 21,
+            title: "Lady Bouvier's Lover",
+            airDate: "1994-05-12",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107163.jpg",
+            duration: "30 min",
+            overview: "Grandpa Simpson falls for Marge's mother, but loses out to a competitor; Bart gets ripped off shopping at home with Homer's credit card."
+          },
+          {
+            episode: 22,
+            title: "Secrets of a Successful Marriage",
+            airDate: "1994-05-19",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107425.jpg",
+            duration: "30 min",
+            overview: "Homer teaches a class on \"Secrets of a Successful Marriage,\" but sharing secrets about his own union gets him kicked out of the house. Blackboard: 'Five days is not too long to wait for a gun'."
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bart of Darkness",
+            airDate: "1994-09-04",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173387.jpg",
+            duration: "30 min",
+            overview: "The Simpsons get a pool, but a broken leg sinks the summer for Bart. Blackboard: 'Beans are neither fruit nor musical'."
+          },
+          {
+            episode: 2,
+            title: "Lisa's Rival",
+            airDate: "1994-09-11",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173388.jpg",
+            duration: "30 min",
+            overview: "Lisa is dumbfounded by a new classmate who's younger, smarter and her competitor for first-chair sax. Meanwhile, Homer tries to profit after a truck spills its load of sugar."
+          },
+          {
+            episode: 3,
+            title: "Another Simpsons Clip Show",
+            airDate: "1994-09-25",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173389.jpg",
+            duration: "30 min",
+            overview: "A family discussion of love yields stories (seen in flashbacks) that all end in heartbreak."
+          },
+          {
+            episode: 4,
+            title: "Itchy & Scratchy Land",
+            airDate: "1994-10-02",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173390.jpg",
+            duration: "30 min",
+            overview: "Marge makes Homer promise not to embarrass her when they visit Itchy &amp; Scratchy Land, \"the violentest place on earth.\" Blackboard: 'I am not the reincarnation of Sammy Davis Jr.'."
+          },
+          {
+            episode: 5,
+            title: "Sideshow Bob Roberts",
+            airDate: "1994-10-09",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107982.jpg",
+            duration: "30 min",
+            overview: "Mayor Quimby pardons attempted murderer Sideshow Bob (Kelsey Grammer), who then runs against Quimby for mayor."
+          },
+          {
+            episode: 6,
+            title: "Treehouse of Horror V",
+            airDate: "1994-10-30",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173392.jpg",
+            duration: "30 min",
+            overview: "Frightfest '94: Lack of beer and cable TV make Homer a crazed killer; the present is altered by a time-traveling Homer; and Principal Skinner turns detention students into food."
+          },
+          {
+            episode: 7,
+            title: "Bart's Girlfriend",
+            airDate: "1994-11-06",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173393.jpg",
+            duration: "30 min",
+            overview: "Bart learns that the good Rev. Lovejoy's daughter (voice of Meryl Streep) is really bad. Blackboard: 'I will not send lard through the mail'."
+          },
+          {
+            episode: 8,
+            title: "Lisa on Ice",
+            airDate: "1994-11-13",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/125186.jpg",
+            duration: "30 min",
+            overview: "Lisa's surprising ability at hockey spawns jealousy in Bart and a showdown when their teams meet."
+          },
+          {
+            episode: 9,
+            title: "Homer Badman",
+            airDate: "1994-11-27",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173394.jpg",
+            duration: "30 min",
+            overview: "A baby sitter accuses Homer of sexual harassment. Dennis Franz has a voice cameo."
+          },
+          {
+            episode: 10,
+            title: "Grandpa vs. Sexual Inadequacy",
+            airDate: "1994-12-04",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173396.jpg",
+            duration: "30 min",
+            overview: "Grandpa's homemade tonic puts life back in the Simpson bedroom, so he and Homer hit the road to sell the stuff. Blackboard: 'My homework was not stolen by a one-armed man'."
+          },
+          {
+            episode: 11,
+            title: "Fear of Flying",
+            airDate: "1994-12-18",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173397.jpg",
+            duration: "30 min",
+            overview: "Marge sees a psychiatrist (Anne Bancroft) to explore her fear of flying and learns that her father may be the key. Blackboard: 'Ralph won't \"morph\" if you squeeze him hard enough'."
+          },
+          {
+            episode: 12,
+            title: "Homer the Great",
+            airDate: "1995-01-08",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173398.jpg",
+            duration: "30 min",
+            overview: "Homer becomes the leader of a secret club, but his power is undermined by a \"spiritual emptiness.\" Blackboard: 'Adding \"Just kidding\" doesn't make it okay to insult the principal'."
+          },
+          {
+            episode: 13,
+            title: "And Maggie Makes Three",
+            airDate: "1995-01-22",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/63/158114.jpg",
+            duration: "30 min",
+            overview: "Homer recalls his days as a debt-free dad of two---until Marge got pregnant with Maggie."
+          },
+          {
+            episode: 14,
+            title: "Bart's Comet",
+            airDate: "1995-02-05",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173399.jpg",
+            duration: "30 min",
+            overview: "A comet is hurtling toward Springfield, so the Simpsons take refuge in a bomb shelter---Flanders'."
+          },
+          {
+            episode: 15,
+            title: "Homie the Clown",
+            airDate: "1995-02-12",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173400.jpg",
+            duration: "30 min",
+            overview: "Homer graduates from Krusty's Clown College and becomes a target for the clown's bookie. Blackboard: 'Next time it could be me on the scaffolding'."
+          },
+          {
+            episode: 16,
+            title: "Bart vs. Australia",
+            airDate: "1995-02-19",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173401.jpg",
+            duration: "30 min",
+            overview: "After tricking an Australian boy into accepting a collect call, Bart flies Down Under to apologize. Blackboard: 'I will not hang donuts on my person'."
+          },
+          {
+            episode: 17,
+            title: "Homer vs. Patty and Selma",
+            airDate: "1995-02-26",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/62/157071.jpg",
+            duration: "30 min",
+            overview: "A loan from Patty and Selma makes Homer their slave; Bart is forced to take ballet."
+          },
+          {
+            episode: 18,
+            title: "A Star is Burns",
+            airDate: "1995-03-05",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/128139.jpg",
+            duration: "30 min",
+            overview: "Film critic Jay Sherman (Jon Lovitz) is among the judges at the Springfield Film Festival, which Mr. Burns conspires to win by bribing some judges."
+          },
+          {
+            episode: 19,
+            title: "Lisa's Wedding",
+            airDate: "1995-03-19",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173402.jpg",
+            duration: "30 min",
+            overview: "A fortuneteller predicts Lisa's engagement and wedding to a fellow student (Mandy Patinkin) from an upper-crust British family."
+          },
+          {
+            episode: 20,
+            title: "Two Dozen and One Greyhounds",
+            airDate: "1995-04-09",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107977.jpg",
+            duration: "30 min",
+            overview: "The Simpson household's overrun with puppies---the offspring of Santa's Little Helper and his new girlfriend from which Mr. Burns would love to make a greyhound-skin tuxedo."
+          },
+          {
+            episode: 21,
+            title: "The PTA Disbands",
+            airDate: "1995-04-16",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172222.jpg",
+            duration: "30 min",
+            overview: "Bart helps precipitate a teachers strike, but he rues his handiwork when Marge takes over for Mrs. Krabapple. Blackboard: 'I do not have power of attorney over first graders'."
+          },
+          {
+            episode: 22,
+            title: "Round Springfield",
+            airDate: "1995-04-30",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173403.jpg",
+            duration: "30 min",
+            overview: "Bart winds up in the hospital as a result of eating Krusty cereal, and when Lisa comes to visit him, she is reunited with her sax idol, who recounts his big break on \"The Tonight Show.\".  Blackboard: 'Nerve gas is not a toy'."
+          },
+          {
+            episode: 23,
+            title: "The Springfield Connection",
+            airDate: "1995-05-07",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173404.jpg",
+            duration: "30 min",
+            overview: "Marge joins the police force after thwarting a criminal, and Homer thinks he now has a free ride as a cop's spouse. Blackboard: 'I will not mock Mrs. Dumbface'."
+          },
+          {
+            episode: 24,
+            title: "Lemon of Troy",
+            airDate: "1995-05-14",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173405.jpg",
+            duration: "30 min",
+            overview: "Springfield boys try to recapture the town's beloved lemon tree after it's stolen."
+          },
+          {
+            episode: 25,
+            title: "Who Shot Mr. Burns? (1)",
+            airDate: "1995-05-21",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173406.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns makes many enemies when he steals the oil discovered beneath Springfield Elementary. Blackboard: 'This is not a clue...or is it?'."
+          }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "Who Shot Mr. Burns? (2)",
+            airDate: "1995-09-17",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173407.jpg",
+            duration: "30 min",
+            overview: "Chief Wiggum conducts an investigation into who shot Mr. Burns in an episode that parodies TV dramas, including \"Dallas,\" \"Twin Peaks\" and \"The Fugitive.\" Blackboard: 'I will not complain about the solution when I hear it'."
+          },
+          {
+            episode: 2,
+            title: "Radioactive Man",
+            airDate: "1995-09-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173408.jpg",
+            duration: "30 min",
+            overview: "Bart auditions for the part of Fallout Boy in the movie \"Radioactive Man,\" being filmed in Springfield. Blackboard: 'Bewitched does not support satanism'."
+          },
+          {
+            episode: 3,
+            title: "Home Sweet Homediddly-Dum-Doodily",
+            airDate: "1995-10-01",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/125689.jpg",
+            duration: "30 min",
+            overview: "Innocent mishaps draw the attention of investigators, who put the Simpson kids in a foster home---the Flanders'. Blackboard: 'No one want's to hear from my armpits'."
+          },
+          {
+            episode: 4,
+            title: "Bart Sells His Soul",
+            airDate: "1995-10-08",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173409.jpg",
+            duration: "30 min",
+            overview: "Bart sells his soul to Milhouse for five bucks; Moe goes after the family crowd. Blackboard 'I am not a lean mean spitting machine.'."
+          },
+          {
+            episode: 5,
+            title: "Lisa the Vegetarian",
+            airDate: "1995-10-15",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173410.jpg",
+            duration: "30 min",
+            overview: "Vegetarian Lisa ruins Homer's barbecue, but she gets moral support from Apu and his friends, Paul and Linda McCartney."
+          },
+          {
+            episode: 6,
+            title: "Treehouse of Horror VI",
+            airDate: "1995-10-29",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173411.jpg",
+            duration: "30 min",
+            overview: "Halloween 1996: Homer tumbles into another dimension in a story spun off \"The Twilight Zone\"; Paul Anka helps combat the \"Attack of the 50-Foot Eyesores\"; and Groundskeeper Willie appears in a spoof of \"A Nightmare on Elm Street.\""
+          },
+          {
+            episode: 7,
+            title: "King-Size Homer",
+            airDate: "1995-11-05",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173412.jpg",
+            duration: "30 min",
+            overview: "Homer purposely gains weight to qualify for disability, disdaining Marge's complaints and the fact that she's losing interest in him physically. Blackboard: 'Indian burns are not our cultural heritage'."
+          },
+          {
+            episode: 8,
+            title: "Mother Simpson",
+            airDate: "1995-11-19",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173413.jpg",
+            duration: "30 min",
+            overview: "Homer comes face-to-face with his long-lost mother (voice of Glenn Close)---who reveals why she abandoned him."
+          },
+          {
+            episode: 9,
+            title: "Sideshow Bob's Last Gleaming",
+            airDate: "1995-11-26",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/54/136511.jpg",
+            duration: "30 min",
+            overview: "Sideshow Bob (voice of Kelsey Grammer) steals an atomic bomb and demands that Springfield abolish television. Blackboard: 'Wedgies are unhealthy for children and other living things'."
+          },
+          {
+            episode: 10,
+            title: "The Simpsons 138th Episode Spectacular",
+            airDate: "1995-12-03",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173414.jpg",
+            duration: "30 min",
+            overview: "Troy McClure hosts a retrospective featuring Simpsons history and trivia, and series \"outtakes,\" including an alternate ending to the \"Who Shot Mr. Burns?\" episode and a burping contest between Barney and baseball's Wade Boggs."
+          },
+          {
+            episode: 11,
+            title: "Marge Be Not Proud",
+            airDate: "1995-12-17",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173415.jpg",
+            duration: "30 min",
+            overview: "Busted for shoplifting, Bart manages to keep the incident quiet---until he returns to the store for the Simpsons' Christmas portrait. And the news is devastating to Marge. Blackboard: 'I will stop talking about the twelve inch pianist'."
+          },
+          {
+            episode: 12,
+            title: "Team Homer",
+            airDate: "1996-01-07",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107784.jpg",
+            duration: "30 min",
+            overview: "Homer, Moe, Apu and Otto form a bowling team; Bart's prank leads Springfield Elementary to adopt school uniforms. Blackboard: 'I am not certified to remove asbestos'."
+          },
+          {
+            episode: 13,
+            title: "Two Bad Neighbors",
+            airDate: "1996-01-14",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129635.jpg",
+            duration: "30 min",
+            overview: "Homer is irked by his new neighbors, former U.S. President George Bush and Former U.S. First Lady Barbara Bush, especially when Mr. Bush gives Bart a spanking and criticizes Homer's parenting for menacing and ruined to have the outboard motor to damage Former President George Bush's new memoirs that he was working in his autobiography."
+          },
+          {
+            episode: 14,
+            title: "Scenes from the Class Struggle in Springfield",
+            airDate: "1996-02-04",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173416.jpg",
+            duration: "30 min",
+            overview: "Marge's new designer suit nets her an invitation to the Springfield Country Club, where she finds it's a stress to dress to impress. Meanwhile, \"natural\" golfer Homer hits the links with Mr. Burns."
+          },
+          {
+            episode: 15,
+            title: "Bart the Fink",
+            airDate: "1996-02-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106658.jpg",
+            duration: "30 min",
+            overview: "Bart inadvertently alerts the IRS to tax fraud by Krusty, whose possessions are auctioned off by the Government."
+          },
+          {
+            episode: 16,
+            title: "Lisa the Iconoclast",
+            airDate: "1996-02-18",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173153.jpg",
+            duration: "30 min",
+            overview: "Lisa's research on Jebediah Springfield turns up some unknown---and unpopular---facts."
+          },
+          {
+            episode: 17,
+            title: "Homer the Smithers",
+            airDate: "1996-02-25",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102900.jpg",
+            duration: "30 min",
+            overview: "Homer succumbs to job stress while subbing for Smithers as Burns' assistant."
+          },
+          {
+            episode: 18,
+            title: "The Day the Violence Died",
+            airDate: "1996-03-17",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173417.jpg",
+            duration: "30 min",
+            overview: "Bart wants justice done after learning that the animator (voice of Kirk Douglas) who created Itchy was ripped off. Lionel Hutz takes the animator's case."
+          },
+          {
+            episode: 19,
+            title: "A Fish Called Selma",
+            airDate: "1996-03-24",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106746.jpg",
+            duration: "30 min",
+            overview: "Selma dates Troy McClure, whose agent (voice of Jeff Goldblum) reports that being seen in public with a woman is a career boost that could make people forget \"that scandal at the aquarium.\""
+          },
+          {
+            episode: 20,
+            title: "Bart on the Road",
+            airDate: "1996-03-31",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/65/163517.jpg",
+            duration: "30 min",
+            overview: "Bart drives Milhouse, Martin and Nelson to Tennessee, thanks to his fake ID and Martin's cash from a stock dividend."
+          },
+          {
+            episode: 21,
+            title: "22 Short Films About Springfield",
+            airDate: "1996-04-14",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173418.jpg",
+            duration: "30 min",
+            overview: "Interconnecting vignettes depict moments in the lives of Springfield residents, including Apu's partying activities; Smithers' allergic reaction to a bee sting; and Dr. Nick's appearance before a medical review board."
+          },
+          {
+            episode: 22,
+            title: "Raging Abe Simpson and His Grumbling Grandson in 'The Curse of the Flying Hellfish'",
+            airDate: "1996-04-28",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172267.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns tries to kill Grampa Simpson to seize a treasure the two found during World War II as members of the \"Flying Hellfish\" battalion."
+          },
+          {
+            episode: 23,
+            title: "Much Apu About Nothing",
+            airDate: "1996-05-05",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106745.jpg",
+            duration: "30 min",
+            overview: "Marge and Homer support a proposal to deport illegal immigrants from Springfield---until they learn it would affect Apu, who buys fraudulent identification documents from Fat Tony (voice of Joe Mantegna)."
+          },
+          {
+            episode: 24,
+            title: "Homerpalooza",
+            airDate: "1996-05-19",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173419.jpg",
+            duration: "30 min",
+            overview: "Homer goes on tour with Hullabalooza, a rock concert featuring sideshow acts. His talent: catching a cannonball with his belly."
+          },
+          {
+            episode: 25,
+            title: "Summer of 4 ft. 2",
+            airDate: "1996-05-19",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172066.jpg",
+            duration: "30 min",
+            overview: "On vacation, Lisa plays dumb to make friends with the \"cool\" kids, leaving a jealous Bart all burned up, with Milhouse as his only comrade."
+          }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror VII",
+            airDate: "1996-10-27",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173420.jpg",
+            duration: "30 min",
+            overview: "A Halloween trilogy. This time, Bart meets his \"pure evil\" Siamese twin; Lisa's science project attacks Bart; aliens Kang and Kodos invade Clinton and Dole's replicas just before the 1996 Presidential election."
+          },
+          {
+            episode: 2,
+            title: "You Only Move Twice",
+            airDate: "1996-11-03",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/19/49990.jpg",
+            duration: "30 min",
+            overview: "In an idyllic planned community, Homer works for a new boss who has trouble with the government. Meanwhile, the rest of the family has difficulty dealing with the bucolic burg. Blackboard: 'I did not learn everything I need to know in kindergarten'."
+          },
+          {
+            episode: 3,
+            title: "The Homer They Fall",
+            airDate: "1996-11-10",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173421.jpg",
+            duration: "30 min",
+            overview: "Moe turns Homer into a prizefighter, who meets the champ in a bout called by ring announcer Michael Buffer."
+          },
+          {
+            episode: 4,
+            title: "Burns, Baby Burns",
+            airDate: "1996-11-17",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129902.jpg",
+            duration: "30 min",
+            overview: "Rodney Dangerfield is the voice of Mr. Burns' illegitimate son, who irritates Burns with his lack of social graces. Homer and Mr. Burn's son hatch a scheme to get Mr. Burns's attention."
+          },
+          {
+            episode: 5,
+            title: "Bart After Dark",
+            airDate: "1996-11-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103851.jpg",
+            duration: "30 min",
+            overview: "While Marge and Lisa are away, Bart becomes the right-hand man for the owner of a burlesque house."
+          },
+          {
+            episode: 6,
+            title: "A Milhouse Divided",
+            airDate: "1996-12-01",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173423.jpg",
+            duration: "30 min",
+            overview: "Milhouse's parents decide to divorce, prompting Homer to take action to prevent a similar fate for himself and Marge."
+          },
+          {
+            episode: 7,
+            title: "Lisa's Date with Density",
+            airDate: "1996-12-15",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/56/141183.jpg",
+            duration: "30 min",
+            overview: "Lisa develops a crush on Nelson, and then she tries to change him. Meanwhile, Homer solicits money over the phone using an automatic telephone dialer."
+          },
+          {
+            episode: 8,
+            title: "Hurricane Neddy",
+            airDate: "1996-12-29",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111534.jpg",
+            duration: "30 min",
+            overview: "Citizens rebuild the Flanders' hurricane-damaged house. But Ned's guilt about criticizing their work sends him to a mental hospital."
+          },
+          {
+            episode: 9,
+            title: "El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)",
+            airDate: "1997-01-05",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172361.jpg",
+            duration: "30 min",
+            overview: "Chief Wiggum's chili peppers send Homer on a hallucinatory, spiritual journey that makes him question whether Marge is his soulmate."
+          },
+          {
+            episode: 10,
+            title: "The Springfield Files",
+            airDate: "1997-01-12",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173424.jpg",
+            duration: "30 min",
+            overview: "Homer's claim of an alien sighting brings FBI agents Scully and Mulder to investigate. Blackboard: 'The truth is not out there'."
+          },
+          {
+            episode: 11,
+            title: "The Twisted World of Marge Simpson",
+            airDate: "1997-01-19",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129950.jpg",
+            duration: "30 min",
+            overview: "A smooth talker sells Marge on the pretzel business. But when sales go soft, Homer asks crime boss Fat Tony for help. Blackboard \"I am not licensed to do anything\"."
+          },
+          {
+            episode: 12,
+            title: "Mountain of Madness",
+            airDate: "1997-02-02",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173427.jpg",
+            duration: "30 min",
+            overview: "On a company mountain retreat, an avalanche traps hiking partners Homer and Mr. Burns in a cabin."
+          },
+          {
+            episode: 13,
+            title: "Simpsoncalifragilisticexpiala (Annoyed Grunt) cious",
+            airDate: "1997-02-07",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/561/1404180.jpg",
+            duration: "30 min",
+            overview: "When Marge suffers stress-related hair loss, the Simpsons hire nanny Shary Bobbins, who speaks in song and inspires others to do so. But the Simpsons may prove too much for her. Blackboard: 'I will not hide the teacher's prozac'."
+          },
+          {
+            episode: 14,
+            title: "The Itchy & Scratchy & Poochie Show",
+            airDate: "1997-02-09",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106669.jpg",
+            duration: "30 min",
+            overview: "Itchy and Scratchy creator Roger Myers picks Homer to be the voice of a new canine character---who is roundly rejected by the public."
+          },
+          {
+            episode: 15,
+            title: "Homer's Phobia",
+            airDate: "1997-02-16",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115701.jpg",
+            duration: "30 min",
+            overview: "Homer's fearful about the potential influence that the Simpsons' new gay friend may have on Bart."
+          },
+          {
+            episode: 16,
+            title: "Brother from Another Series",
+            airDate: "1997-02-23",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173429.jpg",
+            duration: "30 min",
+            overview: "Murderous convict Sideshow Bob (Kelsey Grammer) is released to work for his brother Cecil (David Hyde Pierce), whom Bob bested at the Krusty-sidekick audition."
+          },
+          {
+            episode: 17,
+            title: "My Sister, My Sitter",
+            airDate: "1997-03-02",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173430.jpg",
+            duration: "30 min",
+            overview: "Lisa's reputation as a first-rate baby sitter is jeopardized when she's put in charge of Bart, who's determined to make things tough."
+          },
+          {
+            episode: 18,
+            title: "Homer vs. the Eighteenth Amendment",
+            airDate: "1997-03-16",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107108.jpg",
+            duration: "30 min",
+            overview: "Homer becomes a bootlegger when Springfield decides to enforce a 200-year-old prohibition decree."
+          },
+          {
+            episode: 19,
+            title: "Grade School Confidential",
+            airDate: "1997-04-06",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/132087.jpg",
+            duration: "30 min",
+            overview: "After witnessing a kiss between Skinner and Mrs. Krabappel, Bart becomes their confidante. But rumors of their passion lead to their being fired---until Skinner reveals a secret."
+          },
+          {
+            episode: 20,
+            title: "The Canine Mutiny",
+            airDate: "1997-04-13",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102850.jpg",
+            duration: "30 min",
+            overview: "Bart replaces Santa's Little Helper with a \"limited edition\" dog he bought with a fraudulent credit card. Blackboard: 'A fire drill does not demand a fire'."
+          },
+          {
+            episode: 21,
+            title: "The Old Man and Lisa",
+            airDate: "1997-04-20",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/126084.jpg",
+            duration: "30 min",
+            overview: "Penniless from bad investments, Burns asks for help from Lisa, who turns him into a profitable recycler. But then Burns takes things a nasty step further to increase his dividends."
+          },
+          {
+            episode: 22,
+            title: "In Marge We Trust",
+            airDate: "1997-04-27",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/125465.jpg",
+            duration: "30 min",
+            overview: "Reverend Lovejoy puts Marge in charge of counseling parishioners; Homer finds his likeness is popular in Japan as the symbol for a cleaning product."
+          },
+          {
+            episode: 23,
+            title: "Homer's Enemy",
+            airDate: "1997-05-04",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173431.jpg",
+            duration: "30 min",
+            overview: "A new plant employee who's had it tough resents Homer's lack of professionalism and his cushy life. Meanwhile, Bart buys an abandoned factory at an auction for a dollar."
+          },
+          {
+            episode: 24,
+            title: "The Simpsons Spin-Off Showcase",
+            airDate: "1997-05-11",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106959.jpg",
+            duration: "30 min",
+            overview: "Three mock spin-offs: \"Chief Wiggum, P.I.\"; \"The Love-Matic Grandpa\"; and \"The Simpson Family Smile-Time Variety Hour,\" with guest star Tim Conway and a teen stand-in for Lisa."
+          },
+          {
+            episode: 25,
+            title: "The Secret War of Lisa Simpson",
+            airDate: "1997-05-18",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173432.jpg",
+            duration: "30 min",
+            overview: "Lisa joins the all-male military school where Bart is sent for discipline. Then comes the hazing."
+          }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          {
+            episode: 1,
+            title: "The City of New York vs. Homer Simpson",
+            airDate: "1997-09-21",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106917.jpg",
+            duration: "30 min",
+            overview: "Homer has to take his family to New York city for a madcap adventure after Barney goes on a bender and leaves Homer's car illegally parked at the World Trade Center."
+          },
+          {
+            episode: 2,
+            title: "The Principal and the Pauper",
+            airDate: "1997-09-28",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/127309.jpg",
+            duration: "30 min",
+            overview: "Principal Skinner is given a achievement award and in the middle of the ceremony a man who claims to be the real Seymour Skinner shows up."
+          },
+          {
+            episode: 3,
+            title: "Lisa's Sax",
+            airDate: "1997-10-19",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173434.jpg",
+            duration: "30 min",
+            overview: "The story of how Lisa got her sax includes Bart's first day at school, his visit to the school psychologist and a heat wave in Springfield."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror VIII",
+            airDate: "1997-10-26",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173435.jpg",
+            duration: "30 min",
+            overview: "In a Halloween trilogy, nuclear survivor Homer battles mutants; Bart is morphed with a fly; Marge is accused of being a witch in 1649."
+          },
+          {
+            episode: 5,
+            title: "The Cartridge Family",
+            airDate: "1997-11-02",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173436.jpg",
+            duration: "30 min",
+            overview: "Homer buys a gun, but after a few mishaps, Marge demands he get rid of it. When he doesn't, she leaves with the kids. Blackboard: 'Everyone is tired of that Richard Gere story'."
+          },
+          {
+            episode: 6,
+            title: "Bart Star",
+            airDate: "1997-11-09",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173437.jpg",
+            duration: "30 min",
+            overview: "Homer heckles Flanders out of coaching Pee Wee football---and then takes over, replacing winning QB Nelson with Bart."
+          },
+          {
+            episode: 7,
+            title: "The Two Mrs. Nahasapeemapetilons",
+            airDate: "1997-11-16",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/125686.jpg",
+            duration: "30 min",
+            overview: "Apu tries to wriggle out of a marriage prearranged by his mother years in the past to a woman that he does not remember."
+          },
+          {
+            episode: 8,
+            title: "Lisa the Skeptic",
+            airDate: "1997-11-23",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111528.jpg",
+            duration: "30 min",
+            overview: "While digging at a construction site, Lisa finds bones that everyone thinks are the bones of a angel."
+          },
+          {
+            episode: 9,
+            title: "Realty Bites",
+            airDate: "1997-12-07",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173439.jpg",
+            duration: "30 min",
+            overview: "Marge gets a realtor's license and goes to work---for Lionel Hutz, who finds her honesty a dubious asset. Meanwhile, Homer buys a hot rod at a police auction, but the incarcerated former owner protests. Blackboard \"There was no Roman God named 'Fartacus' \"."
+          },
+          {
+            episode: 10,
+            title: "Miracle on Evergreen Terrace",
+            airDate: "1997-12-21",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173440.jpg",
+            duration: "30 min",
+            overview: "After accidentally destroying the Simpsons' Christmas gifts, Bart claims a burglar stole them, and Springfield responds generously to that false news. Blackboard: 'Rudolph's red nose is not alcohol-related'."
+          },
+          {
+            episode: 11,
+            title: "All Singing, All Dancing",
+            airDate: "1998-01-04",
+            rating: 5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103855.jpg",
+            duration: "30 min",
+            overview: "Homer rents Paint Your Wagon with Lee Marvin and Clint Eastwood expecting a Shoot 'Em up western. He is so disappointed about it that Marge and Lisa have to try and cheer him up."
+          },
+          {
+            episode: 12,
+            title: "Bart Carny",
+            airDate: "1998-01-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173441.jpg",
+            duration: "30 min",
+            overview: "Homer and Bart become carnival workers, and take in two fellow carnies whose crooked game is closed by Chief Wiggum."
+          },
+          {
+            episode: 13,
+            title: "The Joy of Sect",
+            airDate: "1998-02-08",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106689.jpg",
+            duration: "30 min",
+            overview: "Homer is talked into joining a cult at the airport. The cult promises to take people to another planet. Marge has to work hard to get through the brainwashing. Blackboard: 'Shooting paintballs is not an art form'."
+          },
+          {
+            episode: 14,
+            title: "Das Bus",
+            airDate: "1998-02-15",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173442.jpg",
+            duration: "30 min",
+            overview: "A bus accident strands Bart, Lisa and their classmates on an island; Homer starts a business on the Internet."
+          },
+          {
+            episode: 15,
+            title: "The Last Temptation of Krusty",
+            airDate: "1998-02-22",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115617.jpg",
+            duration: "30 min",
+            overview: "Krusty makes a fool of himself at the Springfield Comedy Festival and decides to retire. Once at the retirement ceremony he discovers how to make people laugh."
+          },
+          {
+            episode: 16,
+            title: "Dumbbell Indemnity",
+            airDate: "1998-03-01",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102305.jpg",
+            duration: "30 min",
+            overview: "Moe finally finds a woman to date, then has Homer help him with a insurance scam to get more money to spend on her. Blackboard: 'Silly string is not a nasal spray'."
+          },
+          {
+            episode: 17,
+            title: "Lisa the Simpson",
+            airDate: "1998-03-08",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173443.jpg",
+            duration: "30 min",
+            overview: "Grandpa says \"Simpson genes\" are behind Lisa's sudden lack of brain power; Jasper tries to live for the future in the Kwik-E-Mart freezer."
+          },
+          {
+            episode: 18,
+            title: "This Little Wiggy",
+            airDate: "1998-03-22",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173444.jpg",
+            duration: "30 min",
+            overview: "Marge orders Bart to play with Ralph Wiggum, an appalling task---until Bart gets hold of Chief Wiggum's master key to the city. Blackboard: 'I was not told to do this'."
+          },
+          {
+            episode: 19,
+            title: "Simpson Tide",
+            airDate: "1998-03-29",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173445.jpg",
+            duration: "30 min",
+            overview: "When Homer comes up with a not so bright idea at work involving a donut and the nuclear core, Mr. Burns fires him. He then decides to join the Naval Reserve when Lisa tells him that she would be proud of him if he did. Later a nuclear-sub captain puts naval reservist Homer in command during war games. Blackboard: \"My butt does not deserve a website\"."
+          },
+          {
+            episode: 20,
+            title: "The Trouble with Trillions",
+            airDate: "1998-04-05",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106296.jpg",
+            duration: "30 min",
+            overview: "Homer gets in trouble with the IRS for his taxes and has to get proof that Burns has money the government wants for them in return."
+          },
+          {
+            episode: 21,
+            title: "Girly Edition",
+            airDate: "1998-04-19",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107642.jpg",
+            duration: "30 min",
+            overview: "Lisa becomes the anchor for a kids news show when Krusty's producers try to spice up his program. Bart takes over the show when he is made co-anchor of the program."
+          },
+          {
+            episode: 22,
+            title: "Trash of the Titans",
+            airDate: "1998-04-26",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106915.jpg",
+            duration: "30 min",
+            overview: "Homer becomes head of the Springfield Sanitation department and makes outrageous promises that he can't keep. Homer also disrupts a U2 concert."
+          },
+          {
+            episode: 23,
+            title: "King of the Hill",
+            airDate: "1998-05-03",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173446.jpg",
+            duration: "30 min",
+            overview: "Homer gets in shape (no, really!) and climbs a mountain to promote the alleged health-food product that helped him achieve success."
+          },
+          {
+            episode: 24,
+            title: "Lost Our Lisa",
+            airDate: "1998-05-10",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173447.jpg",
+            duration: "30 min",
+            overview: "Lisa tricks Homer into giving her permission to take the bus downtown alone---then she gets lost. Blackboard; 'I am not the new Dali Lama'."
+          },
+          {
+            episode: 25,
+            title: "Natural Born Kissers",
+            airDate: "1998-05-17",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102862.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge try to find ways to spice up their love life by experimenting with risky locals. Blackboard: 'I was not the inspiration for \"Kramer\"'."
+          }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          {
+            episode: 1,
+            title: "Lard of the Dance",
+            airDate: "1998-08-23",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173115.jpg",
+            duration: "30 min",
+            overview: "A hip new student makes an impression at Springfield Elementary; Homer drags Bart into grease recycling."
+          },
+          {
+            episode: 2,
+            title: "The Wizard of Evergreen Terrace",
+            airDate: "1998-09-20",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129938.jpg",
+            duration: "30 min",
+            overview: "Homer goes through a bought of midlife depression and tries to overcome it with a string of inventions inspire by Thomas Edison."
+          },
+          {
+            episode: 3,
+            title: "Bart the Mother",
+            airDate: "1998-09-27",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172699.jpg",
+            duration: "30 min",
+            overview: "After an accident with a gun, Bart becomes the caretaker of the eggs from a birds nest."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror IX",
+            airDate: "1998-10-25",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173114.jpg",
+            duration: "30 min",
+            overview: "The ninth Halloween show. Included: Homer turns evil after a hair transplant; Bart and Lisa get trapped inside their TV; the alien Kang is revealed as Maggie's father."
+          },
+          {
+            episode: 5,
+            title: "When You Dish Upon a Star",
+            airDate: "1998-11-08",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173113.jpg",
+            duration: "30 min",
+            overview: "Homer becomes an assistant to Kim Basinger and Alec Baldwin (and their houseguest, Ron Howard), none of whom are interested in his screenplay. Blackboard: 'Butt-Butt is not my email address'."
+          },
+          {
+            episode: 6,
+            title: "D'Oh-in' in the Wind",
+            airDate: "1998-11-15",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107540.jpg",
+            duration: "30 min",
+            overview: "In a quest to discover his middle name, Homer meets some of his mothers old hippie friends. He then starts to live a hippy lifestyle."
+          },
+          {
+            episode: 7,
+            title: "Lisa Gets an 'A'",
+            airDate: "1998-11-22",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113458.jpg",
+            duration: "30 min",
+            overview: "Lisa gets sick then does not study and ends up buying test answers from Nelson."
+          },
+          {
+            episode: 8,
+            title: "Homer Simpson in: 'Kidney Trouble'",
+            airDate: "1998-12-06",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173112.jpg",
+            duration: "30 min",
+            overview: "Homer takes the family on a trip and does not stop on the way home so Grandpa Simpson can go to the bathroom. This results in Grandpa needing a kidney transplant and Homer has compatible kidney's with his dad."
+          },
+          {
+            episode: 9,
+            title: "Mayored to the Mob",
+            airDate: "1998-12-20",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173111.jpg",
+            duration: "30 min",
+            overview: "Homer becomes the mayor's bodyguard and puts a stop to a crooked operation involving Fat Tony, who vows revenge on the mayor."
+          },
+          {
+            episode: 10,
+            title: "Viva Ned Flanders",
+            airDate: "1999-01-10",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107983.jpg",
+            duration: "30 min",
+            overview: "Ned is feeling depressed and Homer talks him into going to Las Vegas. After arriving, they spend a wild night on the town and wake up married to two Las Vegas wives. Blackboard: 'My mom is not dating Jerry Seinfeld'."
+          },
+          {
+            episode: 11,
+            title: "Wild Barts Can't Be Broken",
+            airDate: "1999-01-17",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173109.jpg",
+            duration: "30 min",
+            overview: "Wiggum declares a curfew for kids, who are being blamed for school vandalism committed by a drunken Homer and friends. Blackboard: 'Sherri does not \"Get Back\"'."
+          },
+          {
+            episode: 12,
+            title: "Sunday, Cruddy Sunday",
+            airDate: "1999-01-31",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173108.jpg",
+            duration: "30 min",
+            overview: "Homer leads a slew of Springfield denizens to the Super Bowl. Blackboard: 'I will not do the dirty bird'."
+          },
+          {
+            episode: 13,
+            title: "Homer to the Max",
+            airDate: "1999-02-07",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/112492.jpg",
+            duration: "30 min",
+            overview: "Homer discovers a cool Tv character with his name and then they turn the character into a dummy and Homer becomes mortified. He then changes his name and a lot of things change for him."
+          },
+          {
+            episode: 14,
+            title: "I'm with Cupid",
+            airDate: "1999-02-14",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/112060.jpg",
+            duration: "30 min",
+            overview: "Apu invites Homer and Marge over to his house for dinner and Manjula finds out that most American men do not work 7 days a week 12 plus hours a day and flips out. Apu then begins a series of daily gifts leading up to Valentines day for Manjula which causes all the other wives in Springfield to get Jealous of the attention she is getting from Apu. This causes the men of Springfield to be in the doghouse with their wives and them to be mad at Apu."
+          },
+          {
+            episode: 15,
+            title: "Marge Simpson in: 'Screaming Yellow Honkers'",
+            airDate: "1999-02-21",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173107.jpg",
+            duration: "30 min",
+            overview: "Marge gets a new sports utility vehicle and develops a bad case of road rage. She then has to go to driving school. Blackboard: 'Grammar is not a time of waste'."
+          },
+          {
+            episode: 16,
+            title: "Make Room for Lisa",
+            airDate: "1999-02-28",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106057.jpg",
+            duration: "30 min",
+            overview: "Homer damages the bill of rights at the museum and gives away Lisa's room to compensate for it. Lisa has to move in with Bart. Marge discover that Maggie's baby monitor is picking up local phone calls. Blackboard: 'I do not have diplomatic immunity'."
+          },
+          {
+            episode: 17,
+            title: "Maximum Homerdrive",
+            airDate: "1999-03-28",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173106.jpg",
+            duration: "30 min",
+            overview: "Truck drivers target Homer after he blabs about an industry scam while filling in for a recently deceased driver."
+          },
+          {
+            episode: 18,
+            title: "Simpsons Bible Stories",
+            airDate: "1999-04-04",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173104.jpg",
+            duration: "30 min",
+            overview: "The family's biblical dreams include Homer and Marge as Adam and Eve, with Flanders as God; Milhouse as Moses; and Bart as David battling Goliath's son (\"this time, it's personal\")."
+          },
+          {
+            episode: 19,
+            title: "Mom and Pop Art",
+            airDate: "1999-04-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173103.jpg",
+            duration: "30 min",
+            overview: "Isabella Rossellini plays a gallery owner who sees art in the concrete mess that results from Homer's attempt at building a barbeque. After the piece sells, she arranges a one-man show. Blackboard: 'A trained ape could not teach gym'."
+          },
+          {
+            episode: 20,
+            title: "The Old Man and the 'C' Student",
+            airDate: "1999-04-25",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102868.jpg",
+            duration: "30 min",
+            overview: "Bart puts on a show that causes Springfield to loose hosting the Olympic Games. For punishment, he is forced to volunteer at Grandpa's retirement home."
+          },
+          {
+            episode: 21,
+            title: "Monty Can't Buy Me Love",
+            airDate: "1999-05-02",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173102.jpg",
+            duration: "30 min",
+            overview: "After another billionaire makes a memorable impression on Springfield, Burns asks for Homer's help on a quest for popularity, which eventually takes them both to Scotland."
+          },
+          {
+            episode: 22,
+            title: "They Saved Lisa's Brain",
+            airDate: "1999-05-09",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173101.jpg",
+            duration: "30 min",
+            overview: "Lisa is invited to join local members of Mensa, who take a complaint to City Hall---and wind up running it. Blackboard: 'No one wants to hear from my armpits.'."
+          },
+          {
+            episode: 23,
+            title: "30 Minutes Over Tokyo",
+            airDate: "1999-05-16",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173100.jpg",
+            duration: "30 min",
+            overview: "After getting tips on thrifty living, the family takes a vacation to Japan, where they appear on a game show to win plane tickets back home. Blackboard: 'I'm so very tired'."
+          }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          {
+            episode: 1,
+            title: "Beyond Blunderdome",
+            airDate: "1999-09-26",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173096.jpg",
+            duration: "30 min",
+            overview: "Mel Gibson brings the Simpsons to Hollywood so Homer can help \"tweak\" his new film after Homer's is the sole negative voice at a test screening. First tweak: add action, and lots of it."
+          },
+          {
+            episode: 2,
+            title: "Brother's Little Helper",
+            airDate: "1999-10-03",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173095.jpg",
+            duration: "30 min",
+            overview: "A drug for Attention Deficit Disorder makes Bart studious, productive---and paranoid about satellites spying on him. Blackboard 'Pork is not a Verb'."
+          },
+          {
+            episode: 3,
+            title: "Guess Who's Coming to Criticize Dinner",
+            airDate: "1999-10-24",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106295.jpg",
+            duration: "30 min",
+            overview: "After crashing a food critic's retirement party for the food, Homer ends up taking the lady's place as food critic. He then has Lisa proofread his column and the power goes to his head. The French chef bakes him a very special eclair because of his bad reviews. Blackboard 'I am not the last Don'."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror X",
+            airDate: "1999-10-31",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173094.jpg",
+            duration: "30 min",
+            overview: "A Halloween trilogy: Homer causes a Y2K catastrophe; superheroes Lisa and Bart save actress Lucy Lawless; Marge runs Flanders over, and Homer tries to cover it up. Dick Clark and Tom Arnold also appear as themselves."
+          },
+          {
+            episode: 5,
+            title: "E-I-E-I-(Annoyed Grunt)",
+            airDate: "1999-11-07",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107428.jpg",
+            duration: "30 min",
+            overview: "Homer thinks dueling is great and because of that, the Simpsons end up having to move to a old farm and Homer grows a highly addictive crop after fertilizing the field with plutonium."
+          },
+          {
+            episode: 6,
+            title: "Hello Gutter, Hello Fadder",
+            airDate: "1999-11-14",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113457.jpg",
+            duration: "30 min",
+            overview: "Homer cuts out of work to bowl a perfect game then has trouble staying in the limelight afterwords."
+          },
+          {
+            episode: 7,
+            title: "Eight Misbehavin",
+            airDate: "1999-11-21",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173093.jpg",
+            duration: "30 min",
+            overview: "Feeling more stressed than blessed after the birth of their octuplets, Apu and Manjula get child-care help in a deal they come to regret."
+          },
+          {
+            episode: 8,
+            title: "Take My Wife, Sleaze",
+            airDate: "1999-11-28",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114951.jpg",
+            duration: "30 min",
+            overview: "Homer wins a motorcycle and starts his own gang. The he gets entangled with a real motorcycle gang and they kidnap Marge. Blackboard \"I can't see dead people\"."
+          },
+          {
+            episode: 9,
+            title: "Grift of the Magi",
+            airDate: "1999-12-19",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173092.jpg",
+            duration: "30 min",
+            overview: "Bankrupt Springfield Elementary is taken over by a private outfit whose members' real goal is to mine the kids' minds for toy ideas. Blackboard ' I will not sell my kidney on Ebay.'."
+          },
+          {
+            episode: 10,
+            title: "Little Big Mom",
+            airDate: "2000-01-09",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173091.jpg",
+            duration: "30 min",
+            overview: "With Marge laid up by a skiing (lodge) accident, Lisa tries to run the house and plays a trick on Homer and Bart to get them to help clean. Blackboard: 'I will not create art from dung'."
+          },
+          {
+            episode: 11,
+            title: "Faith Off",
+            airDate: "2000-01-16",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173090.jpg",
+            duration: "30 min",
+            overview: "After Bart's successful laying on of hands at a revival meeting, a preacher declares Bart has \"the power.\" So the boy pitches his own tent. Blackboard: 'I will stop phoning it in'."
+          },
+          {
+            episode: 12,
+            title: "The Mansion Family",
+            airDate: "2000-01-23",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110564.jpg",
+            duration: "30 min",
+            overview: "The Simpsons have to take care of Mr. Burn's mansion while he is at the Mayo Clinic getting a checkup. Homer takes advantage of it. Blackboard 'Class Clown is not a paid position'."
+          },
+          {
+            episode: 13,
+            title: "Saddlesore Galactica",
+            airDate: "2000-02-06",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173089.jpg",
+            duration: "30 min",
+            overview: "The band Bachman Turner Overdrive preforms at the State Fair. Bart and Homer rescue a horse from the State fair. Homer then starts racing the horse with Bart as the Jockey. Later, Homer discovers a secret about horse jockeys. Lisa's school band competes in a band contest and the winning school band cheats. Lisa then writes a letter to the President of the USA."
+          },
+          {
+            episode: 14,
+            title: "Alone Again Natura-Diddily",
+            airDate: "2000-02-13",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173088.jpg",
+            duration: "30 min",
+            overview: "The Simpsons go on a nature hike and Marge discovers that the bird preserve she loves has been turned into a racetrack. During the race a bad accident happens causing someone to pass away, the Simpsons console a grieving friend."
+          },
+          {
+            episode: 15,
+            title: "Missionary Impossible",
+            airDate: "2000-02-20",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/65/163524.jpg",
+            duration: "30 min",
+            overview: "Homer is forced to become a missionary on a remote island after he pledges a large sum of money to a local PBS station."
+          },
+          {
+            episode: 16,
+            title: "Pygmoelian",
+            airDate: "2000-02-27",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173087.jpg",
+            duration: "30 min",
+            overview: "Moe wins Duff's \"beer-tending\" contest but loses out on making their calendar. So he undergoes plastic surgery and lands a soap-opera role that he missed years before."
+          },
+          {
+            episode: 17,
+            title: "Bart to the Future",
+            airDate: "2000-03-19",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106341.jpg",
+            duration: "30 min",
+            overview: "Bart attempts to sneak into an Indian casino by replacing the ventriloquist dummy and the head of the casino shows him the future when Lisa is President of the United States."
+          },
+          {
+            episode: 18,
+            title: "Days of Wine and D'Ohses",
+            airDate: "2000-04-09",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173086.jpg",
+            duration: "30 min",
+            overview: "Barney quits drinking to take helicopter-flying lessons, leaving Homer feeling resentful and inferior; Lisa and Bart enter a contest to photograph the cover of the Springfield phone book."
+          },
+          {
+            episode: 19,
+            title: "Kill the Alligator and Run",
+            airDate: "2000-04-30",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102255.jpg",
+            duration: "30 min",
+            overview: "In Florida, Homer gets caught up in spring break partying and accidentally runs over \"Captain Jack\" a iconic swamp alligator and the family has to go on the lam. Blackboard: \"I am not here on a fartball scholarship\"."
+          },
+          {
+            episode: 20,
+            title: "Last Tap Dance in Springfield",
+            airDate: "2000-05-07",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/112087.jpg",
+            duration: "30 min",
+            overview: "Bart and Milhouse camp out in a shopping mall for a week and drive Chief Wiggam crazy, while Lisa enrolls in a tap dance school run by a former child star who is full of herself."
+          },
+          {
+            episode: 21,
+            title: "It's a Mad, Mad, Mad, Mad Marge",
+            airDate: "2000-05-14",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173085.jpg",
+            duration: "30 min",
+            overview: "Otto's girlfriend seems to be usurping Marge's role when she moves in with the family after a dispute over heavy metal."
+          },
+          {
+            episode: 22,
+            title: "Behind the Laughter",
+            airDate: "2000-05-21",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103721.jpg",
+            duration: "30 min",
+            overview: "A clip show like episode of behinds the scenes as if Simpsons were a real family doing unanimated tv."
+          }
+        ]
+      },
+      {
+        season: 12,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror XI",
+            airDate: "2000-11-01",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173084.jpg",
+            duration: "30 min",
+            overview: "In the 11th annual Halloween trilogy, a ghostly Homer tries to perform a good deed on Earth; Bart and Lisa are trapped in a fairy-tale forest; and dolphins revolt against humans after Lisa frees their king from the Springfield Marine Park."
+          },
+          {
+            episode: 2,
+            title: "A Tale of Two Springfields",
+            airDate: "2000-11-05",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/107421.jpg",
+            duration: "30 min",
+            overview: "Homer gets frustrated because Springfield now has to area codes for phone calls and he divides the Town, becomes mayor of New Springfield. He then wages war against Olde Springfield and it is up to The Who to reunite the town."
+          },
+          {
+            episode: 3,
+            title: "Insane Clown Poppy",
+            airDate: "2000-11-12",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106357.jpg",
+            duration: "30 min",
+            overview: "While Krusty is signing autographs, Bart meets a girl who turns out to be Krusty's daughter. Krusty then spends a day at the beach with her and later that night he gambles away his daughter Sophie's violin. He then recruits Homer to help him get it back from Fat Tony and the Mob. Blackboard 'I will not surprise the incontinent'."
+          },
+          {
+            episode: 4,
+            title: "Lisa the Treehugger",
+            airDate: "2000-11-19",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173083.jpg",
+            duration: "30 min",
+            overview: "Joshua Jackson plays a committed---and cute---teen environmentalist who inspires Lisa to take up residence in a redwood tree to save it from destruction. Blackboard 'I am not the acting President'."
+          },
+          {
+            episode: 5,
+            title: "Homer vs. Dignity",
+            airDate: "2000-11-26",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173082.jpg",
+            duration: "30 min",
+            overview: "With Smithers away, Burns hires a cash-hungry Homer as his \"prank monkey\" to perform stunts that ultimately damage Homer's dignity. Leeza Gibbons has a cameo. Blackboard 'I was not the sixth Beattle'."
+          },
+          {
+            episode: 6,
+            title: "The Computer Wore Menace Shoes",
+            airDate: "2000-12-03",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103758.jpg",
+            duration: "30 min",
+            overview: "After having to go to work because he did not get the email about the day off, Homer buys a computer and starts a tell all web page. He then wins a award for the web site. Blackboard 'I will only provide a urine sample when asked'."
+          },
+          {
+            episode: 7,
+            title: "The Great Money Caper",
+            airDate: "2000-12-10",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110913.jpg",
+            duration: "30 min",
+            overview: "Homer and Bart turn into a couple of con artists in order to pay for a really high car repair bill. Blackboard 'The nurse is not dealing'."
+          },
+          {
+            episode: 8,
+            title: "Skinner's Sense of Snow",
+            airDate: "2000-12-17",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173078.jpg",
+            duration: "30 min",
+            overview: "A blizzard traps Skinner and Groundskeeper Willie with an assortment of students at Springfield Elementary. Bart (of course) leads the revolt."
+          },
+          {
+            episode: 9,
+            title: "HOMR",
+            airDate: "2001-01-07",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173076.jpg",
+            duration: "30 min",
+            overview: "Researchers find and fix the cause of Homer's \"subnormal\" intelligence, but Homer finds life as a brain is a drain on his popularity. Blackboard 'Network TV is not dead'."
+          },
+          {
+            episode: 10,
+            title: "Pokey Mom",
+            airDate: "2001-01-14",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173075.jpg",
+            duration: "30 min",
+            overview: "Homer hurts his back at a prison rodeo, where Marge meets an artistic inmate whom she takes under her wing. Blackboard 'I will not \"Let The Dogs Out!\"''"
+          },
+          {
+            episode: 11,
+            title: "Worst Episode Ever",
+            airDate: "2001-02-04",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/117222.jpg",
+            duration: "30 min",
+            overview: "Bart and Milhouse are at the Android Dungeon and end up being banned from the store for a lifetime. After Comic Book Guy has a heart attack, Bart and Milhouse take over running the store for him. Once Comic Book Guy recovers, he starts dating Principle Skinners mother. Blackboard 'I will not hide the teacher's medication'."
+          },
+          {
+            episode: 12,
+            title: "Tennis the Menace",
+            airDate: "2001-02-11",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173074.jpg",
+            duration: "30 min",
+            overview: "The Simpsons win points for their new tennis court, but constantly lose on Homer's poor play. Blackboard 'I will not publish the principal's credit report'."
+          },
+          {
+            episode: 13,
+            title: "Day of the Jackanapes",
+            airDate: "2001-02-18",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173073.jpg",
+            duration: "30 min",
+            overview: "Sideshow Bob talks his way out of prison and into a job at the school. There, he hypnotizes Bart---to make him kill Krusty, who plans a final show after growing sick of network interference. Blackboard 'The hamster did not have \"A Full Life\"'."
+          },
+          {
+            episode: 14,
+            title: "New Kids on the Blecch",
+            airDate: "2001-02-25",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106656.jpg",
+            duration: "30 min",
+            overview: "After Bart pulls a stunt during the Springfield Marathon, Lt. Smash boy-band creator recruits Bart, Nelson, Milhouse and Ralph to create a boy band. NSYNC visit's Springfield. Blackboard 'I will not buy a presidential pardon'."
+          },
+          {
+            episode: 15,
+            title: "Hungry Hungry Homer",
+            airDate: "2001-03-04",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173072.jpg",
+            duration: "30 min",
+            overview: "The family goes to Blocko land, Homer stands up to a guy for Lisa. Homer then proceeds to go on a hunger strike protesting a decision the Springfield Isotopes baseball teams owner is in the process of making."
+          },
+          {
+            episode: 16,
+            title: "Bye Bye Nerdy",
+            airDate: "2001-03-11",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/124221.jpg",
+            duration: "30 min",
+            overview: "A new girl joins the elementary class and Lisa tries to figure out why she is bullying everyone. Homer goes on a mission to baby proof Springfield. Blackboard: 'I will not scare the vice president'."
+          },
+          {
+            episode: 17,
+            title: "Simpsons Safari",
+            airDate: "2001-04-01",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172197.jpg",
+            duration: "30 min",
+            overview: "Hungry Homer rips into a 30 year old box of animal crackers and finds a winning ticket for a trip to Africa. He then demands his prize. Blackboard: 'I will not flush evidence'."
+          },
+          {
+            episode: 18,
+            title: "Trilogy of Error",
+            airDate: "2001-04-29",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173071.jpg",
+            duration: "30 min",
+            overview: "Homer's severed thumb, Lisa's science project and Bart's discovery of fireworks prompt separate but simultaneous adventures that conclude with an encounter with mobster Fat Tony. Blackboard: 'Fire is not the cleanser'."
+          },
+          {
+            episode: 19,
+            title: "I'm Goin' to Praise Land",
+            airDate: "2001-05-06",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173070.jpg",
+            duration: "30 min",
+            overview: "With Homer's help, Ned Flanders tries to establish a Christian theme park based on drawings in his deceased wife's sketch book. Blackboard: 'Genetics is not an excuse'."
+          },
+          {
+            episode: 20,
+            title: "Children of a Lesser Clod",
+            airDate: "2001-05-13",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173069.jpg",
+            duration: "30 min",
+            overview: "Homer opens a day-care center in the house, prompting envy in Lisa and Bart when he treats other kids better than he treats them. Blackboard 'Today is not Mothra's day'."
+          },
+          {
+            episode: 21,
+            title: "Simpsons Tall Tales",
+            airDate: "2001-05-20",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173068.jpg",
+            duration: "30 min",
+            overview: "Folk-tale parodies abound, with Homer as Paul Bunyan; Lisa as Connie Appleseed; and Bart as Tom Sawyer, helping to save Huck Finn from a shotgun marriage to Becky Thatcher. Blackboard: 'I should not be twenty-one by now'."
+          }
+        ]
+      },
+      {
+        season: 13,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror XII",
+            airDate: "2001-11-06",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173062.jpg",
+            duration: "30 min",
+            overview: "\"Treehouse of Horror XII\" includes Pierce Brosnan as the voice of a computerized house that falls for Marge; a Gypsy's curse bringing bad luck to Homer's loved ones; and Bart and Lisa as competing wizards, with Bart enlisting help from a dark source."
+          },
+          {
+            episode: 2,
+            title: "The Parent Rap",
+            airDate: "2001-11-11",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116561.jpg",
+            duration: "30 min",
+            overview: "Bart is tethered to Homer as punishment for stealing a police cruiser. Blackboard 'Nobody reads these anymore!'."
+          },
+          {
+            episode: 3,
+            title: "Homer the Moe",
+            airDate: "2001-11-18",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/124702.jpg",
+            duration: "30 min",
+            overview: "Moe gets more depressed than usual and renovates his tavern. He then kicks the old gang out and Homer opens a bar in his garage so the gang can have a place to hang out and fit in."
+          },
+          {
+            episode: 4,
+            title: "Hunka Hunka Burns in Love",
+            airDate: "2001-12-02",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102300.jpg",
+            duration: "30 min",
+            overview: "Homer is hired to write fortunes for fortune cookies, one of them changes Mr. Burn's life. Homer helps Mr. Burns with his dating. Blackboard: 'Fun does not have a size'."
+          },
+          {
+            episode: 5,
+            title: "The Blunder Years",
+            airDate: "2001-12-09",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110860.jpg",
+            duration: "30 min",
+            overview: "Marge becomes obsessed with a brand of paper towels and Homer pulls a gag on her. To make up for it, Homer takes her out, gets hypnotized and regresses to a childhood fear and starts screaming and does not stop until the source of the fear is drawn out of him. Blackboard 'I am not Charlie Brown on acid'."
+          },
+          {
+            episode: 6,
+            title: "She of Little Faith",
+            airDate: "2001-12-16",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173060.jpg",
+            duration: "30 min",
+            overview: "In this Christmas episode, Richard Gere offers Buddhist teachings to Lisa after she leaves her church because of Mr. Burns' tacky fund-raising efforts, which include commercials (during sermons) and podium-placed ads. Blackboard: 'I do not have a cereal named after me'."
+          },
+          {
+            episode: 7,
+            title: "Brawl in the Family",
+            airDate: "2002-01-06",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/126058.jpg",
+            duration: "30 min",
+            overview: "Grampa comes to Homer's rescue after Ned and His Vegas wives show up at the house."
+          },
+          {
+            episode: 8,
+            title: "Sweets and Sour Marge",
+            airDate: "2002-01-20",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173058.jpg",
+            duration: "30 min",
+            overview: "Ben Stiller plays a sugar company's CEO who draws Marge's ire after Springfield is declared the \"World's Fattest Town.\""
+          },
+          {
+            episode: 9,
+            title: "Jaws Wired Shut",
+            airDate: "2002-01-27",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113215.jpg",
+            duration: "30 min",
+            overview: "When Homer accidentally breaks his jaw, he has to have it wired shut and can not talk. He learns to become the good listener that Marge has wanted."
+          },
+          {
+            episode: 10,
+            title: "Half-Decent Proposal",
+            airDate: "2002-02-10",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173046.jpg",
+            duration: "30 min",
+            overview: "Now fabulously wealthy, Marge's grabby prom date Artie Ziff offers a million dollars for a weekend with her that, he says, will have \"no funny stuff.\" The Simpsons agree when they realize the money will help their marriage---by paying for an operation that will cure Homer's snoring."
+          },
+          {
+            episode: 11,
+            title: "The Bart Wants What It Wants",
+            airDate: "2002-02-17",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107771.jpg",
+            duration: "30 min",
+            overview: "Bart ends up becoming close friends with Greta Wolfecastle after a fun fair and he has a blind eye to her feelings about him. Blackboard: 'The giving tree is not a chump'."
+          },
+          {
+            episode: 12,
+            title: "The Lastest Gun in the West",
+            airDate: "2002-02-24",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172032.jpg",
+            duration: "30 min",
+            overview: "Bart and Lisa try to help an old cowboy actor, who yearns to reclaim his past fame by getting him booked on the Krusty the Clown show."
+          },
+          {
+            episode: 13,
+            title: "The Old Man and the Key",
+            airDate: "2002-03-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173045.jpg",
+            duration: "30 min",
+            overview: "Grampa Simpson regains his driver's license to woo a new woman but is goaded into a race by senior punks."
+          },
+          {
+            episode: 14,
+            title: "Tales from the Public Domain",
+            airDate: "2002-03-17",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172084.jpg",
+            duration: "30 min",
+            overview: "Homer discovers a library book he checked out when Bart was born and Lisa suggests that he read aloud from it. Blackboard: 'Vampire is not a career choice'."
+          },
+          {
+            episode: 15,
+            title: "Blame It on Lisa",
+            airDate: "2002-03-31",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107880.jpg",
+            duration: "30 min",
+            overview: "Homer refuses to pay a really high phone bill then their service is shut off. The family travels to Rio De Janeiro to see Lisa's sponsored orphan."
+          },
+          {
+            episode: 16,
+            title: "Weekend at Burnsies",
+            airDate: "2002-04-07",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172374.jpg",
+            duration: "30 min",
+            overview: "Homer uses medicinal marijuana to relieve pain from eye injuries he suffered when attacked by crows."
+          },
+          {
+            episode: 17,
+            title: "Gump Roast",
+            airDate: "2002-04-21",
+            rating: 5.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173044.jpg",
+            duration: "30 min",
+            overview: "The Springfield Friars Club roasts Homer, with emcee Krusty the Clown introducing friends, family and their memories from past episodes."
+          },
+          {
+            episode: 18,
+            title: "I Am Furious Yellow",
+            airDate: "2002-04-28",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173043.jpg",
+            duration: "30 min",
+            overview: "Encouraged by comic-book guru Stan Lee (in a cameo), Bart creates a strip about Homer that gets onto the Internet."
+          },
+          {
+            episode: 19,
+            title: "The Sweetest Apu",
+            airDate: "2002-05-05",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108320.jpg",
+            duration: "30 min",
+            overview: "Homer accidentally walks in on Apu when he is cheating on his wife at the Kwiki Mart."
+          },
+          {
+            episode: 20,
+            title: "Little Girl in the Big Ten",
+            airDate: "2002-05-12",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108385.jpg",
+            duration: "30 min",
+            overview: "Lisa becomes friends with college girls who are unaware of her age. Bart is bitten by a Chinese mosquito and must live in a bubble. Bart and Lisa also share a special moment."
+          },
+          {
+            episode: 21,
+            title: "Frying Game",
+            airDate: "2002-05-19",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173042.jpg",
+            duration: "30 min",
+            overview: "Homer's community service for threatening an endangered species involves helping a kindly senior, who meets an untimely death."
+          },
+          {
+            episode: 22,
+            title: "Papa's Got a Brand New Badge",
+            airDate: "2002-05-22",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173041.jpg",
+            duration: "30 min",
+            overview: "Homer starts a security company that ultimately replaces the cops---and runs afoul of mobster Fat Tony"
+          }
+        ]
+      },
+      {
+        season: 14,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror XIII",
+            airDate: "2002-11-03",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173038.jpg",
+            duration: "30 min",
+            overview: "\"Treehouse of Horror XIII\" finds Homer cloned; Dr. Hibbert turning the family into half animals; and Springfield invaded by zombie cowboys."
+          },
+          {
+            episode: 2,
+            title: "How I Spent My Strummer Vacation",
+            airDate: "2002-11-10",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173036.jpg",
+            duration: "30 min",
+            overview: "Mick Jagger, Keith Richards, Tom Petty, Elvis Costello, Lenny Kravitz and Brian Setzer are the teachers when Homer attends a rock-and-roll fantasy camp."
+          },
+          {
+            episode: 3,
+            title: "Bart vs. Lisa vs. 3rd Grade",
+            airDate: "2002-11-17",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106294.jpg",
+            duration: "30 min",
+            overview: "After testing, Lisa is moved up a grade and Bart is held back so they are both in the 3rd grade together. The teacher thinks Bart is the smarter of the two since he already knows everything. They go on a field trip to Capital City and get left behind and lost. Blackboard 'Fish do not like Coffee'."
+          },
+          {
+            episode: 4,
+            title: "Large Marge",
+            airDate: "2002-11-24",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/54/135502.jpg",
+            duration: "30 min",
+            overview: "Marge gets breast implants meant for Mayor Quimby's young girlfriend; Bart and Milhouse spot Krusty the Clown on a old episode of Batman."
+          },
+          {
+            episode: 5,
+            title: "Helter Shelter",
+            airDate: "2002-12-01",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113491.jpg",
+            duration: "30 min",
+            overview: "The Simpsons end up with termites after going to a hockey game and have to stay out of their house for 6 months. They end up on a reality series where they live in a 1880's type house and life style. Blackboard: 'Milhouse did not test cootie positive'."
+          },
+          {
+            episode: 6,
+            title: "The Great Louse Detective",
+            airDate: "2002-12-15",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110409.jpg",
+            duration: "30 min",
+            overview: "Someone's trying to kill Homer, so Chief Wiggum consults an expert: Sideshow Bob, who moves in with the Simpsons to shadow Homer."
+          },
+          {
+            episode: 7,
+            title: "Special Edna (a.k.a. Love and Marking)",
+            airDate: "2003-01-05",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103892.jpg",
+            duration: "30 min",
+            overview: "Bart feels sorry for Mrs. Krabappel after she is stood up by Principle Skinner, so he nominates her for an award."
+          },
+          {
+            episode: 8,
+            title: "The Dad Who Knew Too Little",
+            airDate: "2003-01-12",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103895.jpg",
+            duration: "30 min",
+            overview: "Homer feels bad because he does not know much about Lisa so he hires a private detective to spy on her. He then becomes a big hit with her because of the information."
+          },
+          {
+            episode: 9,
+            title: "The Strong Arms of the Ma",
+            airDate: "2003-02-02",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103896.jpg",
+            duration: "30 min",
+            overview: "After she is mugged, Marge retreats to the basement to lift weights. She then becomes obsessed with body building. Marge starts entering contests and her disposition changes as she gets stronger. Blackboard reads 'This school does not need a \"regime change\"'."
+          },
+          {
+            episode: 10,
+            title: "Pray Anything",
+            airDate: "2003-02-09",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/104689.jpg",
+            duration: "30 min",
+            overview: "Jealous of Ned Flanders winning money at a sports event, Homer starts praying to God for good things to happen then develops a hedonistic lifestyle. Blackboard reads 'Spongebob is not a contraceptive'."
+          },
+          {
+            episode: 11,
+            title: "Barting Over",
+            airDate: "2003-02-16",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/104698.jpg",
+            duration: "30 min",
+            overview: "While doing spring cleaning, Lisa comes across a video cassette of a add Bart did as baby \"Stink Breath\". Bart gets so mad about Homer having spent his earnings from the add that he asks the court to emancipate him from the family. Blackboard reads 'I will not'."
+          },
+          {
+            episode: 12,
+            title: "I'm Spelling As Fast As I Can",
+            airDate: "2003-02-16",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173035.jpg",
+            duration: "30 min",
+            overview: "Spelling champ Lisa makes the Spellympics, where host George Plimpton proposes a deal; Homer joins a traveling fan club for a new Krusty food product."
+          },
+          {
+            episode: 13,
+            title: "A Star is Born Again",
+            airDate: "2003-03-02",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/123858.jpg",
+            duration: "30 min",
+            overview: "Ned becomes lonely when all the Springfield family's spend a day at the beach with their significant others and ends up dating an actor."
+          },
+          {
+            episode: 14,
+            title: "Mr. Spritz Goes to Washington",
+            airDate: "2003-03-09",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173034.jpg",
+            duration: "30 min",
+            overview: "Hoping to reroute air traffic over their house, the Simpsons ask Krusty to run for Congress, where the successful clown finds more of his kind."
+          },
+          {
+            episode: 15,
+            title: "C. E. D'oh",
+            airDate: "2003-03-16",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173033.jpg",
+            duration: "30 min",
+            overview: "Homer's stint in a success workshop gives him new initiative, but Mr. Burns' lack of appreciation prompts Homer to plot revenge, which results in a takeover of the power plant."
+          },
+          {
+            episode: 16,
+            title: "'Scuse Me While I Miss the Sky",
+            airDate: "2003-03-30",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102258.jpg",
+            duration: "30 min",
+            overview: "Lisa searches for a steady career after a British filmmaker makes her feel inadequate and decides on astronomy."
+          },
+          {
+            episode: 17,
+            title: "Three Gays of the Condo",
+            airDate: "2003-04-13",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116560.jpg",
+            duration: "30 min",
+            overview: "While looking for a puzzle piece, Homer comes across a letter Marge wrote about how upset she was with Homer right before they were married. He thinks she married him because she became pregnant with Bart and moves out."
+          },
+          {
+            episode: 18,
+            title: "Dude, Where's My Ranch?",
+            airDate: "2003-04-27",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108386.jpg",
+            duration: "30 min",
+            overview: "Musician David Byrne offers to produce the song that Homer wrote about how much he dislikes his neighbor Ned Flanders. The Simpsons then go to a Dude Ranch where Lisa meets a special boy."
+          },
+          {
+            episode: 19,
+            title: "Old Yeller-Belly",
+            airDate: "2003-05-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173032.jpg",
+            duration: "30 min",
+            overview: "When Homer is trapped, the dog ignores him and he is saved by the cat. Homer then says he has no dog. H.K. Duff, owner of Duff beer makes the Simpsons dog, Santa's Little Helper the Duff mascot. Blackboard reads 'my pen is not a booger launcher'."
+          },
+          {
+            episode: 20,
+            title: "Brake My Wife, Please",
+            airDate: "2003-05-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108525.jpg",
+            duration: "30 min",
+            overview: "Homer has his drivers license revoked by Judge Harm which forces Marge to do all the driving for the family."
+          },
+          {
+            episode: 21,
+            title: "The Bart of War",
+            airDate: "2003-05-18",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173031.jpg",
+            duration: "30 min",
+            overview: "Busted for a prank gone awry, Milhouse and Bart are enrolled in different youth groups that become heated rivals. Blackboard reads 'sandwiches should not contain sand'."
+          },
+          {
+            episode: 22,
+            title: "Moe Baby Blues",
+            airDate: "2003-05-18",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/171996.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge permit Moe to baby sit Maggie and she takes a shine to Moe, which causes Homer to become jealous."
+          }
+        ]
+      },
+      {
+        season: 15,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror XIV",
+            airDate: "2003-11-02",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173029.jpg",
+            duration: "30 min",
+            overview: "A Halloween trilogy (XIV), with Jennifer Garner, Oscar De La Hoya and Jerry Lewis as Professor Frink's father, who goes on a rampage after being brought back from the dead. Homer kills death in the first tale and has to become the grim reaper; In the Second tale Professor Frink wins a Nobel prize and then brings his father back from the dead in a Frankenstein parody; in the 3rd tale Bart gets access to a watch that changes the fabric of existence and along with Milhouse they cause trouble in Springfield."
+          },
+          {
+            episode: 2,
+            title: "My Mother the Carjacker",
+            airDate: "2003-11-09",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173027.jpg",
+            duration: "30 min",
+            overview: "Surfacing to see her son, Homer's fugitive mom is caught and tried for sabotaging a lab owned by Mr. Burns, who's loath to let a grudge die."
+          },
+          {
+            episode: 3,
+            title: "The President Wore Pearls",
+            airDate: "2003-11-16",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173026.jpg",
+            duration: "30 min",
+            overview: "Lisa is made to look like Eva Peron in this loose parody as faculty members undermine her student-body presidency."
+          },
+          {
+            episode: 4,
+            title: "The Regina Monologues",
+            airDate: "2003-11-23",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172371.jpg",
+            duration: "30 min",
+            overview: "Prime Minister Tony Blair welcomes the Simpsons to England, where they run into author J.K. Rowling and actor Ian McKellan."
+          },
+          {
+            episode: 5,
+            title: "The Fat and the Furriest",
+            airDate: "2003-11-30",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108891.jpg",
+            duration: "30 min",
+            overview: "Homer goes on a mission of revenge against a bear that attacked him during a visit to the dump and creates a home made bear-fighting suit. Blackboard 'My pen is not a booger launcher'."
+          },
+          {
+            episode: 6,
+            title: "Today I Am a Klown",
+            airDate: "2003-12-07",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173025.jpg",
+            duration: "30 min",
+            overview: "Krusty's rabbi father helps him prepare for his bar mitzvah, which includes Mr. T; Homer guest hosts for Krusty and is a hit. Dan Castellaneta, Blackboard reads 'over forty &amp; single is not funny'."
+          },
+          {
+            episode: 7,
+            title: "'Tis the Fifteenth Season",
+            airDate: "2003-12-14",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173024.jpg",
+            duration: "30 min",
+            overview: "A version of \"A Christmas Carol\" causes Homer to go from greedy to giving, prompting jealousy in Flanders, who gives gifts to everyone in town."
+          },
+          {
+            episode: 8,
+            title: "Marge vs. Singles, Seniors, Childless Couples and Teens, and Gays",
+            airDate: "2004-01-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173023.jpg",
+            duration: "30 min",
+            overview: "Maggie is among the babies who riot at a kiddie concert, prompting a backlash by single childless citizens, who organize against kids and families."
+          },
+          {
+            episode: 9,
+            title: "I, (Annoyed Grunt)-Bot",
+            airDate: "2004-01-11",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173022.jpg",
+            duration: "30 min",
+            overview: "Unable to build Bart a working robot for TV's \"Robot Rumble,\" Homer becomes the robot by hiding inside, taking beatings, but giving better."
+          },
+          {
+            episode: 10,
+            title: "Diatribe of a Mad Housewife",
+            airDate: "2004-01-25",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173021.jpg",
+            duration: "30 min",
+            overview: "Tom Clancy, Thomas Pynchon and the Olsen twins have cameos as Marge writes a novel that casts Homer in a bad light, and Flanders in a good one."
+          },
+          {
+            episode: 11,
+            title: "Margical History Tour",
+            airDate: "2004-02-08",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173019.jpg",
+            duration: "30 min",
+            overview: "Marge talks history, with Homer as Henry VIII, Lenny and Carl as Lewis and Clark, Lisa as an opinionated Sacagawea and Bart as Mozart."
+          },
+          {
+            episode: 12,
+            title: "Milhouse Doesn't Live Here Anymore",
+            airDate: "2004-02-15",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173018.jpg",
+            duration: "30 min",
+            overview: "Bart bonds with Lisa after Milhouse and his mom move to Capital City; Homer panhandles to buy Marge's anniversary gift."
+          },
+          {
+            episode: 13,
+            title: "Smart & Smarter",
+            airDate: "2004-02-22",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173017.jpg",
+            duration: "30 min",
+            overview: "Simon Cowell plays an admissions interviewer at a prestigious pre-nursery school where Maggie's IQ is found to surpass Lisa's, causing an identity crisis for the older sister."
+          },
+          {
+            episode: 14,
+            title: "The Ziff Who Came to Dinner",
+            airDate: "2004-03-14",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111037.jpg",
+            duration: "30 min",
+            overview: "Lisa finds Arte Ziff living in their attic after seeing a horror movie with Homer and Bart. Artie moves in because he owes massive amounts of money to his company shareholders. Blackboard reads 'I will not speculate on how hot teacher used to be'."
+          },
+          {
+            episode: 15,
+            title: "Co-Dependent's Day",
+            airDate: "2004-03-21",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173016.jpg",
+            duration: "30 min",
+            overview: "After a winery tour, Marge and Homer become drinking pals, until a driving mishap prompts one to pull a fast one on the other."
+          },
+          {
+            episode: 16,
+            title: "Wandering Juvie",
+            airDate: "2004-03-28",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173014.jpg",
+            duration: "30 min",
+            overview: "Sarah Michelle Gellar plays a delinquent whom Bart meets in a juvenile-correction facility that's not strong enough to hold them."
+          },
+          {
+            episode: 17,
+            title: "My Big Fat Geek Wedding",
+            airDate: "2004-04-18",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173013.jpg",
+            duration: "30 min",
+            overview: "Skinner's cold feet near the altar also give Edna second thoughts, leading her into a rebound romance."
+          },
+          {
+            episode: 18,
+            title: "Catch 'Em If You Can",
+            airDate: "2004-04-25",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108384.jpg",
+            duration: "30 min",
+            overview: "Grandpa, Bart and Lisa Simpson take off on a cross country journey when Homer and Marge just want to spend a bit of kid free time."
+          },
+          {
+            episode: 19,
+            title: "Simple Simpson",
+            airDate: "2004-05-02",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173011.jpg",
+            duration: "30 min",
+            overview: "Avenging a slight to Lisa turns Homer into the city's new crusader for justice, a masked man whose weapon of choice is a pie in the face."
+          },
+          {
+            episode: 20,
+            title: "The Way We Weren't",
+            airDate: "2004-05-09",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/62/156563.jpg",
+            duration: "30 min",
+            overview: "After Bart and Milhouse play a game of Spin the Bottle in the tree house, Homer tells the story of his and Marge's first kiss. Marge and Homer then learn they were destined to be together."
+          },
+          {
+            episode: 21,
+            title: "Bart-Mangled Banner",
+            airDate: "2004-05-16",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/105760.jpg",
+            duration: "30 min",
+            overview: "Marge and Homer work hard to get Bart to the doctor for a shot, he then goes deaf as a side effect. Later he is bending over doing a full moon and accidentally moons the American Flag and the Dante basket ball classic during the national anthem."
+          },
+          {
+            episode: 22,
+            title: "Fraudcast News",
+            airDate: "2004-05-23",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110300.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns buys all the media outlets in town after everyone thinks he is dead and does not care. Lisa starts her own newspaper and ends up in a war with Burns."
+          }
+        ]
+      },
+      {
+        season: 16,
+        episodes: [
+          {
+            episode: 1,
+            title: "Treehouse of Horror XV",
+            airDate: "2004-11-07",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173009.jpg",
+            duration: "30 min",
+            overview: "Hands out its annual Halloween treats on the \"Treehouse of Horror XV\" special featuring three deliciously frightful mini-episodes. In \"The Ned Zone,\" Ned Flanders gains the power of foretelling people's deaths after suffering a head injury, and is shocked to discover that he will be the one to kill Homer. In the second short, \"In the Belly of the Boss,\" Maggie is shrunken inside a vitamin capsule in a freak science accident and is swallowed by Mr. Burns. The final Halloween scare, \"Four Beheadings and a Funeral,\" is set in Victorian London, where Master Detective Eliza Simpson and her faithful sidekick, Dr. Bartley, attempt to catch The Muttonchop Murderer, a Jack the Ripper-esque serial killer."
+          },
+          {
+            episode: 2,
+            title: "All's Fair in Oven War",
+            airDate: "2004-11-14",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173008.jpg",
+            duration: "30 min",
+            overview: "When Bart fishes Homer's vintage \"Playdude\" magazines out of the trash, he decides to adopt the ring-a-ding-ding lifestyle of the 1970s, as interpreted by a 10-year-old. Looking for some action, actor James Caan, guest-starring as himself, drops by Bart's swinging Playdude treehouse. Meanwhile, Marge stoops to sabotage to keep up with the other contestants during the Ovenfresh Bakeoff, attended by the likes of."
+          },
+          {
+            episode: 3,
+            title: "Sleeping with the Enemy",
+            airDate: "2004-11-21",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107783.jpg",
+            duration: "30 min",
+            overview: "Feeling unappreciated by her own children, Marge takes in neglected son and Springfield Elementary School bully Nelson Muntz. Horrified his tormentor is now living under the same roof, Bart goes on a mission to find Nelson's parents and reunite the Muntzes."
+          },
+          {
+            episode: 4,
+            title: "She Used to Be My Girl",
+            airDate: "2004-12-05",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/48/120538.jpg",
+            duration: "30 min",
+            overview: "Marge runs into her former high school pal Chloe Talbot, who is now a famous newscaster. Chloe is cultured, sharp-dressed and has a successful career on television. While Lisa has become enamored with Chloe's worldliness, Marge becomes jealous and wonders if she made the right decision by choosing family over a career. Blackboard 'Poking a dead raccoon is not research'."
+          },
+          {
+            episode: 5,
+            title: "Fat Man and Little Boy",
+            airDate: "2004-12-12",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/62/156330.jpg",
+            duration: "30 min",
+            overview: "When Bart writes slogans on t-shirts, he catches the attention of Goose Gladwell, a gag gift entrepreneur, and soon becomes a t-shirt mogul. With Bart now the breadwinner, Homer feels he no longer has a place in the family. In order to feel more useful, Homer begins spending more time with Lisa, including watching documentaries by scholar Declan Desmond. But when Gladwell is revealed as a fraud, Homer steps in to show him who's really boss. Blackboard 'My pen is not a booger launcher'."
+          },
+          {
+            episode: 6,
+            title: "Midnight Rx",
+            airDate: "2005-01-16",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102374.jpg",
+            duration: "30 min",
+            overview: "When Mr. Burns terminates the employee prescription drug program, the citizens of Springfield are no longer able to afford their very expensive but much-needed prescription drugs. In order to keep the town medicated, Homer, Grampa, Apu and Flanders travel to Canada to buy the drugs with fake Canadian health care cards. When they are caught smuggling the goods, all of Springfield rallies around them to fight for their freedom."
+          },
+          {
+            episode: 7,
+            title: "Mommie Beerest",
+            airDate: "2005-01-30",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173007.jpg",
+            duration: "30 min",
+            overview: "When Moe's Tavern is shut down by the health department, Homer refinances the house to save the bar. Infuriated by this, Marge decides to protect her investment and takes an active, hands-on role as Moe's partner. Marge gives the bar a facelift and boosts the clientele, while Homer has to stay home and play Mr. Mom. Meanwhile, Moe begins to develop deep feelings for his new partner."
+          },
+          {
+            episode: 8,
+            title: "Homer and Ned's Hail Mary Pass",
+            airDate: "2005-02-06",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173006.jpg",
+            duration: "30 min",
+            overview: "In THE SIMPSONS post-Super Bowl XXXIX episode, \"Homer and Ned's Hail Mary Pass,\" after Homer inadvertently performs a wild crowd-pleasing dance at a local carnival, he is hired by several prolific sports figures - including Tom Brady, LeBron James, Warren Sapp, Yao Ming and Michelle Kwan, guest-starring as themselves - to choreograph their victory dances. After his dances prove successful, Homer is tapped to choreograph the Super Bowl halftime show. Panicked the night before the event, Homer enlists the help of his neighbor, Ned Flanders, and together they put on a nonviolent, deeply meaningful half-time show that America chastises for its blatant display of decency."
+          },
+          {
+            episode: 9,
+            title: "Pranksta Rap",
+            airDate: "2005-02-13",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173005.jpg",
+            duration: "30 min",
+            overview: "After sneaking out of the house to attend a 50 Cent concert and getting nabbed by Marge and Homer, Bart fakes his own kidnapping, hiding out in Kirk Van Houten's bachelor pad, to prevent being grounded. It is up to Springfield's finest - bumbling Police Chief Clancy Wiggum - to save him. Inspired by an apparition of Barney Fife, Wiggum cracks the case, rescues Bart and is promoted to Police Commissioner, while wrongly-imprisoned Kirk becomes a lady's man among the felon-loving singles of Springfield."
+          },
+          {
+            episode: 10,
+            title: "There's Something About Marrying",
+            airDate: "2005-02-20",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173004.jpg",
+            duration: "30 min",
+            overview: "One of Springfield's own comes out of the closet. To boost tourism, the town of Springfield decides to legalize same-sex marriage. Homer discovers the monetary value of gay union, becomes an ordained minister via the Internet and soon marries everyone and everything in town - including a surprising someone very close to him."
+          },
+          {
+            episode: 11,
+            title: "On a Clear Day I Can't See My Sister",
+            airDate: "2005-03-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172036.jpg",
+            duration: "30 min",
+            overview: "Fed up with Bart's endless taunting and torture, Lisa enlists the help of Chief Wiggum and files a restraining order against him. After watching a restraining order video hosted by guest voice Gary Busey, Bart learns he must stay 20 feet away from his sister. When he tries to contest it, Judge Harm increases it to 200 feet, forcing Bart to live in the back yard. Meanwhile, Homer takes over Grampa's job as a greeter at the Sprawl Mart."
+          },
+          {
+            episode: 12,
+            title: "Goo Goo Gai Pan",
+            airDate: "2005-03-13",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173003.jpg",
+            duration: "30 min",
+            overview: "After watching a video on menopause, hosted by guest voice Robert Wagner, Selma realizes that she missed her chance to have a baby and decides to adopt a baby girl from China. Selma encounters a bump in the road when the application asks for her husband's name. In an act of desperation, she puts down \"Homer Simpson.\" Soon, Selma and the Simpsons are off to China to pick up her baby girl, while Homer must pretend to be her husband. When their charade is finally revealed, the functionary, Madam Yu, takes Selma's baby back. Homer and the gang must devise a plan to rescue the baby from the orphanage."
+          },
+          {
+            episode: 13,
+            title: "Mobile Homer",
+            airDate: "2005-03-20",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/105773.jpg",
+            duration: "30 min",
+            overview: "After Homer suffers a garage-door-to-the-throat incident, Marge is pressured into buying life insurance for the entire family. Much to her surprise, she finds out that Homer is uninsurable and resorts to cutting costs across the board in the household. Homer is convinced by his buddies that Marge is trying to make all financial decisions, so in an act of defiance, he buys an RV. This reckless act infuriates Marge, causing a divide between the two and ultimately forcing Homer to live in his new RV. Determined to save their feuding parents, Bart and Lisa steal the RV in hopes of returning it for a refund, but are instantly faced with obstacles."
+          },
+          {
+            episode: 14,
+            title: "The Seven-Beer Snitch",
+            airDate: "2005-04-03",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173002.jpg",
+            duration: "30 min",
+            overview: "To prove to Shelbyville that Springfield is not a hick town, Marge convinces the Springfield townspeople to fund a Frank Gehry- designed concert hall. Opening night turns disastrous after the sounds of Beethoven's Fifth Symphony drive the uninterested townspeople away, ultimately leading the hall to bankruptcy. Never one to miss an opportunity, Mr. Burns assumes the debt and turns the hall into the Montgomery Burns State Prison. Initially the prison proves to be a positive addition to the town, providing jobs to almost everyone except Homer, who is imprisoned after a lab test mix-up. Meanwhile at prison, Fat Tony puts a mark on Homer's head for being a snitch ."
+          },
+          {
+            episode: 15,
+            title: "Future-Drama",
+            airDate: "2005-04-17",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172262.jpg",
+            duration: "30 min",
+            overview: "When Professor Frink uses an astrology machine to ease the constant bickering between Bart and Lisa, they are given a sneak-peek into their final days of high school. In this future view, Marge and Homer are separated, Lisa is dating a muscular Milhouse and Bart is dating the girl of his dreams, Jenda, guest-voiced by Amy Poehler. Much to their disappointment, both the relationships quickly flounder. In hopes of winning Jenda back, Bart takes a job at a Kwik-E-Mart, where he becomes the local hero after saving Mr. Burns from a robber. His reward is a scholarship to Yale that was initially intended for Lisa. Bart's deeper look into the future causes him to have a change of heart, ultimately affecting his present-day sibling rivalry for the better."
+          },
+          {
+            episode: 16,
+            title: "Don't Fear the Roofer",
+            airDate: "2005-05-01",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173001.jpg",
+            duration: "30 min",
+            overview: "In the milestone 350th episode, Homer befriends beer-loving barfly and roofer Ray Magini, guest-voiced by Ray Romano. After discovering a shared passion for sandwiches and the Three Stooges, Homer and Ray become inseparable friends. However, Marge believes Ray is a figment of Homer's imagination and enlists the help of Dr. Hibbert to literally \"shock\" Ray Magini out of Homer's system."
+          },
+          {
+            episode: 17,
+            title: "The Heartbroke Kid",
+            airDate: "2005-05-01",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173000.jpg",
+            duration: "30 min",
+            overview: "Bart becomes addicted to junk food when a new vending machine is installed at Springfield Elementary. His steady diet of processed foods leads to a massive weight gain and health issues. When he's unable to stick to his prescribed low-fat diet, the Simpsons stage an intervention and ship Bart off to \"Serenity Ranch - A Forced Starvation Facility,\" headed up by former food addict Tab Spangler. While Spangler tries to help Bart overcome his obsession, Homer and Marge turn their home into a hostel for German travelers in order to pay for the costly Serenity Ranch."
+          },
+          {
+            episode: 18,
+            title: "A Star is Torn",
+            airDate: "2005-05-08",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172999.jpg",
+            duration: "30 min",
+            overview: "When Lisa agrees to participate in a Krusty-sponsored \"Li'l Starmaker\" competition, she panics when another contestant performs a better rendition of \"Mockingbird.\" Thankfully, Homer saves the day by hammering out a manipulative tune about Springfield that leads Lisa to victory. With a win under his belt, Homer becomes a star-crazed stage father/manager, who ultimately drives Lisa to fire him. A distraught Homer counters by taking Lisa's rival, Cameron, under his wing to groom him for the finals."
+          },
+          {
+            episode: 19,
+            title: "Thank God It's Doomsday",
+            airDate: "2005-05-08",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129905.jpg",
+            duration: "30 min",
+            overview: "An apocalyptic movie followed by three real-life omens cause a fearful Homer to research the rapture. Believing that he has deduced when the event will happen, he begins warning others as a way to secure his spot in heaven. After a skeptical Kent Brockman reports on Homer's prediction of stars falling from the sky, there's a Krusty Special blimp accident, and Homer attracts a slew of new believers. When the rapture never comes, a discredited Homer discovers an error in his calculations and returns to the Springfield Mesa alone, where he experiences the rapture - or maybe a heat-induced dream - and convinces God to delay doomsday."
+          },
+          {
+            episode: 20,
+            title: "Home Away from Homer",
+            airDate: "2005-05-15",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110478.jpg",
+            duration: "30 min",
+            overview: "Financial trouble inspires Ned to rent his rumpus room to a pair of college-aged women, who end up running a soft-core webcam from the Flanders' home without their knowledge. When Ned becomes the laughingstock of Springfield and moves his family to their dream town, \"Humble, PA - Home of the Humble Figurines,\" an unruly neighbor moves in, forcing Homer to beg for Flanders to return. Jason Bateman guest-stars as himself. Later, after Bart is falsely blamed and then expelled for a mishap at the school-sponsored Medieval festival, Fat Tony, guest-voiced by Joe Mantegna, suggests to Marge that he enroll in a private Catholic school. After a rough introduction with a nun on his first day, Bart meets and instantly likes an Eminem-quoting priest named Father Sean, guest-voiced by Neeson. Father Sean shows Bart the cooler parts of the religion through graphic stories and comic books. Bart's growing interest alarms his parents and ultimately drives Homer to visit the church. He, too, finds himself attracted to the religion after Father's offerings of beer, pancakes and games. It's up to Marge to bring her family back to their roots."
+          },
+          {
+            episode: 21,
+            title: "Father, Son and Holy Guest-Star",
+            airDate: "2005-05-15",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/62/157067.jpg",
+            duration: "30 min",
+            overview: "Bart is expelled from school after being accused of pulling a prank and sent to parochial school."
+          }
+        ]
+      },
+      {
+        season: 17,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bonfire of the Manatees",
+            airDate: "2005-09-11",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110475.jpg",
+            duration: "30 min",
+            overview: "Marge is outraged when she discovers Homer allowed Fat Tony to shoot a \"gentleman's\" film in their house to make restitution for his football gambling debt. So she takes off and leaves Homer with the kids. While on her journey of self-discovery, Marge befriends Caleb Thorn, an attractive marine biologist who is on a quest to save not only the endangered manatee, but Marge from a husband who doesn't seem to appreciate her. Blackboard 'Does anyone still do this anymore?'."
+          },
+          {
+            episode: 2,
+            title: "The Girl Who Slept Too Little",
+            airDate: "2005-09-18",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/109511.jpg",
+            duration: "30 min",
+            overview: "After protesting the construction of a stamp museum scheduled to be built on their neighboring lot, the Simpsons are dismayed when they discover that what they thought was a successful relocation of the museum to a cemetery lot turns into a creepy nightmare when that cemetery moves next door. When Lisa's sleepless nights become too much for Homer and Marge, they turn to a psychiatrist for advice. Meanwhile, Lisa chooses to face her fears dead-on by visiting the cemetery alone late one night."
+          },
+          {
+            episode: 3,
+            title: "Millhouse Of Sand And Fog",
+            airDate: "2005-09-25",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/102373.jpg",
+            duration: "30 min",
+            overview: "Homer capitalizes on Maggie's chicken pox by throwing a \"pox party\" and charging parents to infect their children. Meanwhile, Milhouse soon realizes he was better off when his parents competed for his love, and launches \"Operation Reverse Parent Trap\" ."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XVI",
+            airDate: "2005-11-06",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172983.jpg",
+            duration: "30 min",
+            overview: "It's time for all-new tricks and devilish treats on THE SIMPSONS annual Halloween trilogy, -Treehouse Of Horror XVI.- The fright-fest begins in - B.I.: Bartificial Intelligence - when the Simpsons adopt David, a newly developed artificial robot son, to replace Bart after he falls into a coma. In - Survival of the Fattest,- Mr. Burns invites Homer and his friends to his gigantic estate for a hunting tournament, but Homer and the gang learn they are the ones being the hunted on -The World Series Of Manhunter- hosted by Bradshaw. In the final Halloween scare, -I've Grown a Costume on Your Face,- a costume contest goes awry when a real witch turns all the Springfieldians into real-life versions of their costumes, leaving Maggie dressed like a witch with the only real power to reverse the spell."
+          },
+          {
+            episode: 5,
+            title: "Marge's Son Poisoning",
+            airDate: "2005-11-13",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172150.jpg",
+            duration: "30 min",
+            overview: "Observing that Marge is lonely, Bart offers to spend time with her. After they go on tandem bike rides and decorate Bart's tree house as a teahouse, the bullies from school dub Bart a mama's boy. When Marge finds out that Bart's schoolmates are teasing him, she gives him the necessary tools to win back his reputation. Meanwhile, Homer teams up with Moe and joins a professional arm-wrestling circuit ."
+          },
+          {
+            episode: 6,
+            title: "See Homer Run",
+            airDate: "2005-11-20",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172984.jpg",
+            duration: "30 min",
+            overview: "Homer's inability to embrace Lisa's Father's Day book the same way he does Bart's Father's Day Toolman causes Lisa to develop Ddd. Meanwhile, Bart steals the Bart Boulevard street sign and causes a huge pile-up. While Mayor Quimby creates The Safety Salamander spokesperson in response to the accident, the town still forces the ineffective Mayor into a recall election. Homer, longing to win back his daughter's love, takes the spokesperson position, and after a heroic run as The Safety Salamander, he runs for Mayor along with every other unqualified Springfieldian."
+          },
+          {
+            episode: 7,
+            title: "The Last of the Red Hat Mamas",
+            airDate: "2005-11-27",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172985.jpg",
+            duration: "30 min",
+            overview: "Homer has an altercation with the Easter Bunny at the Mayor's egg hunt, causing Marge to be shunned. A lonely Marge decides to join a women's group called The Cheery Red Tomatoes and agrees to help with an upcoming charity drive - robbing Mr. Burns of his Faberge egg collection. Meanwhile, Lisa's plans to spend a summer in Italy hit a bump when she learns the first requirement is being fluent in Italian, so she takes on a teacher from a classified ad - who turns out to be Milhouse."
+          },
+          {
+            episode: 8,
+            title: "The Italian Bob",
+            airDate: "2005-12-11",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107974.jpg",
+            duration: "30 min",
+            overview: "After Mr. Burns crashes his Stutz Bearcat, he sends Homer and the family off to Italy to pick up his new fancy sport car. While on their Italian adventure, the Simpsons end up stranded in a small Italian village where a rehabilitated Sideshow Bob reigns as mayor. Sideshow Bob impresses the Simpsons enough so that they keep his sordid past a secret until one of the family members, in a wine-induced state, spills the beans."
+          },
+          {
+            episode: 9,
+            title: "Simpsons Christmas Stories",
+            airDate: "2005-12-18",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172986.jpg",
+            duration: "30 min",
+            overview: "The Simpsons deliver holiday cheer in this Christmas-themed trilogy. In The First -El, - when Reverend Lovejoy's car breaks down en route to Christmas mass, Homer takes over the sermon and delivers his version of the birth of Christ to his parents Joseph and Mary. - I Saw Grampa Cussing Santa Claus - finds Grampa reminiscing about his daredevil days as a WWII fighter pilot, when he was stranded on an island alongside his gunner, Burns. Grampa recalls mistaking Santa Claus for an enemy aircraft and gunning him down from the sky. Realizing their mistake, Grampa helps Jolly Ol' St. Nick to safety, only to have Burns steal the sleigh and escape the island - leaving Grampa stranded again. The final installment, -The Nutcracker - Sweet,- which finds the townspeople of Springfield preparing for Christmas Day, is set to the tune of the famed Nutcracker ballet."
+          },
+          {
+            episode: 10,
+            title: "Homer's Paternity Coot",
+            airDate: "2006-01-08",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172988.jpg",
+            duration: "30 min",
+            overview: "Marge's rage against the new toll road system somehow leads to the discovery of a frozen mailman and his 40-year-old mail. The letters are returned to the rightful recipients, including one to Grandpa Simpson's deceased wife, revealing a secret love affair and the real father of her baby, Homer. Confused and emotional, Homer finds Mason Fairbanks, his wealthy and much improved paternal dad, and happily establishes a father-son relationship with him while rejecting his surrogate father of 40 years. But soon Homer realizes that a DNA test doesn't necessarily tell who his true father is. Blackboard 'I am not smarter than the president'."
+          },
+          {
+            episode: 11,
+            title: "We're on the Road to D'oh-where",
+            airDate: "2006-01-29",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172989.jpg",
+            duration: "30 min",
+            overview: "After Bart steals a key from Principal Skinner's office and gets himself into hot water, Marge and Homer send him to a \"behavior modification camp.\" Homer is forced to cancel his much-anticipated trip to Las Vegas in order to drive Bart to the camp, but on the way there, Homer decides it's a great time to bond with Bart. Blackboard: 'Teacher was not dumped--it was mutual'."
+          },
+          {
+            episode: 12,
+            title: "My Fair Laddy",
+            airDate: "2006-02-26",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172990.jpg",
+            duration: "30 min",
+            overview: "The Simpsons open up their home to Groundskeeper Willy after Bart accidentally destroys his house. But soon after his arrival, Willy's poor manners become the focus of a bet between Bart and Lisa, as she takes on the challenge of turning him into a proper gentleman. Meanwhile, Homer rips his favorite blue pants and starts an ambitious advertising campaign to reestablish the discontinued garment."
+          },
+          {
+            episode: 13,
+            title: "The Seemingly Never-Ending Story",
+            airDate: "2006-03-12",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111930.jpg",
+            duration: "30 min",
+            overview: "While cave exploring with his family, Homer causes the cave to crumble and finds himself stuck upside down in the ceiling. Marge and Bart search for help while Lisa passes the time by telling Homer a story, which turns into a chain of narrated tales."
+          },
+          {
+            episode: 14,
+            title: "Bart Has Two Mommies",
+            airDate: "2006-03-19",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172991.jpg",
+            duration: "30 min",
+            overview: "Ned Flanders wins a new computer that features guest star Sarandon as the \"You've Got Mail\" voice and he offers it to Marge, as he has no use for it. In return, Marge babysits the Flanders children so that Ned can attend the Left-Handed Convention, where he meets New York Yankees guest star Randy Johnson, who is selling left-handed teddy bears. With Marge spending so much time at The Flanders',Homer must look after Bart and Lisa. Homer takes the kids to an animal retirement home, but the trip goes awry when Toot-Toot the monkey pulls Bart into her cage and holds him hostage. Marge learns of the kidnapping when it is a breaking news report and she must figure out a way to get her son back."
+          },
+          {
+            episode: 15,
+            title: "Homer Simpson, This is Your Wife",
+            airDate: "2006-03-26",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/131206.jpg",
+            duration: "30 min",
+            overview: "Homer's obsession with Lenny's new plasma TV prompts Marge to enter the family in a sweepstakes, and they win a trip to the Fox Studio Lot. Against Marge's wishes, Homer signs them up for a \"Trading Spouses\"-type show and is forced to take in a controlling wife, while Marge moves in with a beaten-down husband, Charlie, and his perfect son. Charlie quickly develops a crush on Marge, while she tries to give him the strength to stand up to his own wife. Blackboard 'I will not laminate dog doo'."
+          },
+          {
+            episode: 16,
+            title: "Million Dollar Abie",
+            airDate: "2006-04-02",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172992.jpg",
+            duration: "30 min",
+            overview: "Grampa ruins Homer's plans to make Springfield the new home of a pro football franchise when he mistakes the Commissioner of Football for a burglar and the football stadium is transformed into a bull fighting arena. Tortured by threatening calls from his family and friends, Grampa seeks Manfred Manslaughter's help in committing suicide. When his plan fails at the last minute, Grampa gets a new outlook on life and decides to become Springfield's very own matador. Blackboard: 'I will not flip the classroom upside down'."
+          },
+          {
+            episode: 17,
+            title: "Kiss Kiss Bang Bangalore",
+            airDate: "2006-04-09",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172440.jpg",
+            duration: "30 min",
+            overview: "Homer learns that the nuclear power plant is being shut down and outsourced to India. After Homer is sent to train the new employees, he becomes power hungry in his new position of authority. Meanwhile, Selma and Patty meet their Hollywood heartthrob, MacGyver, and kidnap him for their own obsessive worship. When Anderson discovers how exciting real-life drama can be, he refuses to leave until Selma and Patty devise their own plan."
+          },
+          {
+            episode: 18,
+            title: "The Wettest Stories Ever Told",
+            airDate: "2006-04-23",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172993.jpg",
+            duration: "30 min",
+            overview: "When the Simpsons' plans for a nice family outing at the Frying Dutchman turn into a dining disaster, the family tries to salvage the night by telling different stories of disasters at sea. Lisa recounts the Mayflower voyage, Bart tells tales of Tahitian mutiny and Homer puts his own spin on the capsizing cruise ships."
+          },
+          {
+            episode: 19,
+            title: "Girls Just Want to Have Sums",
+            airDate: "2006-04-30",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108379.jpg",
+            duration: "30 min",
+            overview: "Springfield is in an uproar after Principal Skinner makes a sexist comment at the end of an Itchy and Scratchy musical. Principal Skinner is replaced by Melanie Upfoot, a women's educational expert, who decides to divide the school into two different schools: one for boys, and one for girls. Studious Lisa soon becomes frustrated when she isn't learning anything from \"girls' school.\" When the Principal refuses to allow her to take math at the boys' school, Lisa decides to dress up as a boy. While Bart teaches her the ropes of boyhood, Lisa wins the math award at the Student Achievement Awards and learns what it's really like to be a part of the \"boys' club\" ."
+          },
+          {
+            episode: 20,
+            title: "Regarding Margie",
+            airDate: "2006-05-07",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172994.jpg",
+            duration: "30 min",
+            overview: "After a spring-cleaning frenzy and inhaling too many fumes, Marge suffers from retrograde amnesia. In an effort to bring back her memory, Homer takes her around town to re-familiarize her with her surroundings. Marge still has no recollection of who Homer is and puts herself back on the singles market. Not until she realizes that Homer is truly genuine at heart will she remember who he is and why she loves him. Blackboard ' I will not leak the plot of the movie'."
+          },
+          {
+            episode: 21,
+            title: "The Monkey Suit",
+            airDate: "2006-05-14",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116562.jpg",
+            duration: "30 min",
+            overview: "After visiting an evolution exhibit narrated by guest star Griffith, Flanders pushes Mayor Quimby to appoint Reverend Lovejoy as a \"Mortality Czar\" in charge of spreading the theory of creationism. Darwin's theories are quickly outlawed and Lisa finds herself as the only supporter of the scientific theory. After holding secret evolution classes, Lisa is arrested and retains Southern lawyer Wallace Brady to help defend her beliefs in front of a judge. While Flanders is on the stand in court, Homer's antics cause him to crack under pressure and he calls Homer an ape, which leads the judge to believe Homer resembles the missing link - putting a monkey wrench in the prosecutors' case. Blackboard: 'Je ne parle pas Francais'."
+          },
+          {
+            episode: 22,
+            title: "Marge and Homer Turn a Couple Play",
+            airDate: "2006-05-21",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172995.jpg",
+            duration: "30 min",
+            overview: "After a passionate kiss between Marge and Homer airs on the Isotope Jumbotron, struggling second baseman Buck Mitchell turns to the couple for marital advice. The Simpsons are able to get Buck and his sexy singing wife, Fiona, on track, and the Isotopes' season turns for the better. Things seem to be coming up aces for the Simpsons until Buck catches Homer giving Fiona a post-show neck massage, which results in both couples separating. Blackboard 'Have a great summer everyone'."
+          }
+        ]
+      },
+      {
+        season: 18,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Mook, the Chef, the Wife and Her Homer",
+            airDate: "2006-09-10",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172958.jpg",
+            duration: "30 min",
+            overview: "After Lisa befriends Fat Tony's son Michael, Fat Tony invites the Simpsons over for dinner as a sign of gratitude. Shockingly, Fat Tony is shot by a rival family moments after Michael admits he would rather be a chef than take over the family business. Fat Tony's main thugs, Dante and Dante Jr., want Michael to be the new kingpin, but when he declines, Homer steps up and leads the family on a major mob spree in \"The Mook, The Chef, The Wife and Her Homer\"."
+          },
+          {
+            episode: 2,
+            title: "Jazzy and the Pussycats",
+            airDate: "2006-09-17",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172959.jpg",
+            duration: "30 min",
+            overview: "When Bart turns a quiet funeral into a chaotic mess, his parents are faced with a mob of angry Springfieldians who have had enough. Homer and Marge desperately look to a child psychiatrist for help, who suggests that Bart take up drumming to channel his energy. Before long, Bart is laying down fills like a pro, getting into drum-offs with The White Stripes, and jamming in a band with Lisa's favorite jazz musicians. It doesn't take long before Lisa's encouragement turns to deep-seated jealousy, forcing the Simpson siblings to learn how to march to the beat of the same drum."
+          },
+          {
+            episode: 3,
+            title: "Please Homer, Don't Hammer 'em",
+            airDate: "2006-09-24",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/105923.jpg",
+            duration: "30 min",
+            overview: "Hoping to see a new side to Homer, Marge convinces him to buy a refined collection of carpentry books. To Marge's dismay, the books only gather dust until she accidentally breaks a nightstand - and uses the books to fix it herself. Soon Marge is hammering together everything from birdfeeders to doghouses and it isn't long before she decides to transform her new skills into a full-fledged business. Unfortunately, the residents of Springfield don't trust a handywoman to make repairs, so Marge hires Homer to pose as a \"front\" while she handles the real work. Meanwhile, Bart finds out that peanuts are no longer allowed at Springfield Elementary because someone suffers from an allergy. But this loss becomes his treasure when he finds out that the allergy belongs to his nemesis, the one and only Principal Skinner. Before long, both Bart and Homer are in over their heads and it's up to Marge to nail things back together."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XVII",
+            airDate: "2006-11-05",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172960.jpg",
+            duration: "30 min",
+            overview: "Hand out screams and scare up laughs in their annual, bone-chilling Halloween special. The horror starts in 'Married To The Blob,' when a meteor falls to Earth and reveals a green goo that Homer mistakes for a marshmallow. After Homer eats the goo, he turns into a rampaging blob with a never-ending appetite that even guest voice Dr. Phil McGraw can't stop. In 'You Gotta Know When To Golem,' the fright-fest continues when Bart brings Golem, guest voice Richard Lewis as a legendary monster from Jewish folklore, to life and forces him to carry out his ghastly bidding. But when the creature is finally freed of his evil-doing, Marge, Bart and Lisa create a female monster that captures Golem's heart. In the final scare, 'The Day the Earth Looked Stupid,' a fake radio broadcast convinces the residents of Springfield that they're in the midst of an alien invasion, throwing the town into a state of pandemonium ; which only worsens when the invasion stops being a hoax and becomes reality."
+          },
+          {
+            episode: 5,
+            title: "GI (Annoyed Grunt)",
+            airDate: "2006-11-12",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172961.jpg",
+            duration: "30 min",
+            overview: "After Bart gets out of a commitment to join the Army at 18, Homer falls prey to a couple of Army recruiters and lands himself in basic training. Homer, of course, treats it like summer camp and infuriates his hard-nosed colonel when he is unfazed by the constant hazing and humiliation. Homer is assigned as the enemy of the Army's war games, but when the war games get out of hand and Springfield becomes the battlefield, Homer and the Springfield community must join forces before the city goes up in smoke."
+          },
+          {
+            episode: 6,
+            title: "Moe 'N' a Lisa",
+            airDate: "2006-11-19",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172962.jpg",
+            duration: "30 min",
+            overview: "When Homer forgets Moe's birthday, Moe's anger inspires Lisa to write about him for her school report. She finds a poetic side to Moe and helps him get published in \"American Poetry Perspectives.\" However, when Moe is featured at a literary conference, where he encounters Gore Vidal, Michael Chabon, Tom Wolfe and Jonathan Franzen, he takes all the credit despite Lisa's feelings."
+          },
+          {
+            episode: 7,
+            title: "Ice Cream of Margie (With the Light Blue Hair)",
+            airDate: "2006-11-26",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172963.jpg",
+            duration: "30 min",
+            overview: "After Homer gets fired at the nuclear power plant, he takes over the ice cream truck business, while a depressed Marge creates popsicle stick sculptures to keep busy. The sculptures quickly become popular and Marge is excited to have a purpose in life, until a turn of events divides the Simpsons household."
+          },
+          {
+            episode: 8,
+            title: "The Haw-Hawed Couple",
+            airDate: "2006-12-10",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172964.jpg",
+            duration: "30 min",
+            overview: "After Bart convinces all his friends not to go to Nelson's birthday party, Marge forces him to attend. After the party, Bart becomes Nelson's new best friend and under Nelson's protection no one dares to mess with Bart. There's only drawback to his newfound friend/bodyguard ; he can no longer pal around with Milhouse."
+          },
+          {
+            episode: 9,
+            title: "Kill Gil (Parts I & II)",
+            airDate: "2006-12-17",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172965.jpg",
+            duration: "30 min",
+            overview: "During a holiday ice skating show starring guest voice Elvis Stojko, Homer jumps into a chaotic brawl involving the other ice skaters. In order to escape the chaos, Marge decides to take the family holiday shopping. Gil, dressed as Santa Claus, unknowingly gives Lisa a sold-out Malibu Stacy doll that belongs to his boss' daughter. When Gil loses his job, the Simpsons invite him over for Christmas dinner, which becomes a huge mistake as Gil moves in uninvited and mooches off the Simpsons. Out of guilt, Marge continually allows Gil to prolong his stay, but when her patience wears thin, she's forced to overcome her fear and finally say 'no'. Blackboard: 'Frankincense is not a monster'."
+          },
+          {
+            episode: 10,
+            title: "The Wife Aquatic",
+            airDate: "2007-01-07",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172967.jpg",
+            duration: "30 min",
+            overview: "While watching a home movie, Marge becomes depressed as she is reminded of memorable childhood vacations spent at Barnacle Bay. Hating to see Marge sad, Homer and the kids take her on a surprise trip to the bay, only to discover that it has turned into a rundown mess due to the absence of fish. Homer and the kids lovingly give the boardwalk a whole new makeover for Marge. But when Homer accidentally lights the renovated carousal on fire, stirring up an angry mob of townspeople, more than just waves come crashing down."
+          },
+          {
+            episode: 11,
+            title: "Revenge is a Dish Best Served Three Times",
+            airDate: "2007-01-28",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172969.jpg",
+            duration: "30 min",
+            overview: "After the Simpsons' car breaks down, the family tells each other tales of revenge gone wrong. Marge offers a cautionary tale of revenge from 19th-century France, where Homer is charged with treason; Lisa tells of a nerd revenge at Springfield Elementary involving Milhouse leading the nerds to overthrow the bullies; and Bart's story follows the great crime-fighter."
+          },
+          {
+            episode: 12,
+            title: "Little Big Girl",
+            airDate: "2007-02-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172970.jpg",
+            duration: "30 min",
+            overview: "When Lisa struggles to find excitement and intrigue in her family heritage for a school presentation, she decides to take creative license in crafting her heritage as a Native American, since it's only for a school project. What begins as an innocent embellishment quickly turns into a web of lies when Lisa is chosen to represent the school, and 'her people,' at City Hall, and then as a keynote speaker for the National Native American Tribal Council. As a reward for his heroic act, Bart is granted a driver's license, and in an attempt to escape endless family errands and chauffeuring he flees to a faraway town where he is romanced by an older teenage girl whose expectations may prove to be too much for Bart."
+          },
+          {
+            episode: 13,
+            title: "Springfield Up",
+            airDate: "2007-02-18",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172971.jpg",
+            duration: "30 min",
+            overview: "An eccentric documentary filmmaker Declan Desmond offers an inside look at his work chronicling the growth and development of some of Springfield's 'finest' for his documentary, 'Growing up Springfield.' We see Marge put her photojournalism dreams on hold in order to support Homer as he tries out odd jobs in search of success that continually evades him until a strange invention turns it all around for the couple. However, a suspicious Desmond challenges the Simpsons, who have a lot of questions to answer about their overnight success."
+          },
+          {
+            episode: 14,
+            title: "Yokel Chords",
+            airDate: "2007-03-04",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115634.jpg",
+            duration: "30 min",
+            overview: "When the ever-righteous Lisa protests denying education to Cletus' 'hillbilly' kids, Principal Skinner offers her a chance to tutor the kids herself. However, Lisa's plans to help are diverted when Krusty spots the kids during their field trip and decides to use them as a musical act for his show. Meanwhile, in a scheme to steal his lunch for the day, Bart tries to scare his peers out of the cafeteria by claiming it's haunted by the ghost of an old school chef who uses students as ingredients in his recipes. When the school erupts with fear and chaos, Bart is punished and sent to receive psychiatric treatment, and he develops a unique relationship with his therapist."
+          },
+          {
+            episode: 15,
+            title: "Rome-old and Juli-eh",
+            airDate: "2007-03-11",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172972.jpg",
+            duration: "30 min",
+            overview: "The court appoints an accountant for Homer when he incorrectly files for bankruptcy, which results in his cutting back on all of his expenses, including Grampa's nursing home. In an unexpected turn of events, Grampa and Selma fall in love and move in together, and Homer and Patty plot to break up their love connection. Meanwhile, Bart and Lisa con a delivery man into giving them the most sought-after commodity in the neighborhood - cardboard boxes. Their alliance is put to the test when the delivery man realizes he was duped. Blackboard: 'We are not all naked under out clothes'."
+          },
+          {
+            episode: 16,
+            title: "Homerazzi",
+            airDate: "2007-03-25",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172973.jpg",
+            duration: "30 min",
+            overview: "When a candle on Homer's birthday cake sets fire to his party hat, the Springfield fire department must save the Simpson home from peril for the sixth time that month. Marge is inspired to purchase a fireproof safe to protect the family's most precious valuables, but a freak accident causes the safe itself to explode and destroy its contents, including Marge's family photo album. Refusing to accept the tragedy, Marge decides to restage all of the family's photographs, and when a celebrity dating scandal is captured in the background of one of their photos, the Simpsons strike tabloid gold. Tasting success and seeing money to be made, Homer takes to the streets as one of the paparazzi. Overnight, Homer becomes Springfield's most valued photographer, and he appears unstoppable. However, when he crashes a celebrity wedding, the subjects who've been humiliated in his photos band together to seek revenge against Homer."
+          },
+          {
+            episode: 17,
+            title: "Marge Gamer",
+            airDate: "2007-04-22",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172211.jpg",
+            duration: "30 min",
+            overview: "Marge becomes a spectacle during a PTA meeting for not having an e-mail address, and she decides to take a chance on using the Internet. Amazed and delighted by all the Internet has to offer, Marge joins a popular role-playing fantasy game called 'Earthland Realms' To Marge's dismay, the game has her interacting with practically the whole town of Springfield including Bart, who happens to be the game's most feared and destructive player. Meanwhile, Homer saves Lisa's soccer game from cancellation after he volunteers to take the place of a referee who recently quit. However, Homer's refereeing skills only exasperate Lisa, and her competitive streak gets the best of her."
+          },
+          {
+            episode: 18,
+            title: "The Boys of Bummer",
+            airDate: "2007-04-29",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172974.jpg",
+            duration: "30 min",
+            overview: "Bart becomes a hometown hero when he makes the game-winning catch at his Little League game, sending the Springfield Isotots to the Little League championship for the first time ever. However, Springfield turns on him when he drops an easy pop fly in the bottom of the ninth, losing the game for his team. As the citizens of Springfield continue to mock and terrorize Bart, his guilt and shame threaten to send him over the edge. In an effort to cheer him up, Lisa introduces Bart to Bill Buckner. Meanwhile, after falling asleep in a department store display bed, Homer is saved from disaster when a customer mistakes Homer's crafty excuses for a sales pitch, leading the store owner to hire Homer as a salesperson. When the Lovejoys return a mattress they had purchased in hopes of spicing up their sex life, they find success on Homer's personal mattress and convince him to trade, a transaction Homer and Marge immediately regret and seek to remedy."
+          },
+          {
+            episode: 19,
+            title: "Crook and Ladder",
+            airDate: "2007-05-06",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107879.jpg",
+            duration: "30 min",
+            overview: "Maggie goes on a path of destruction in the Simpsons' home after Marge follows advice in a parenting magazine and throws away her pacifier. Marge finally gives in and sends Homer to get Maggie a new pacifier, but when he can't find the right brand, Maggie comes up with her own substitute - an especially squeaky dog toy. Homer can't sleep through the toy's incessant squeaking and is driven to take sleeping pills, which turn him into a sleepwalker with a penchant for mischief. When one of Homer's sleepwalking schemes leaves the entire Springfield Fire Department debilitated in the hospital, Homer and some of his fellow Springfieldians become volunteer firefighters. They extinguish several fires and are rewarded with gifts, but when the gifts stop coming, they seek other forms of compensation for their heroic acts."
+          },
+          {
+            episode: 20,
+            title: "Stop or My Dog Will Shoot",
+            airDate: "2007-05-13",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110901.jpg",
+            duration: "30 min",
+            overview: "Homer is upset when he realizes that Marge brought him and the family to a boring Harvest Fest instead of his much-anticipated day of debauchery at October Fest. Attempting to leave, Homer accidentally drags the family into a puzzling cornfield maze. When the whole family manages to escape except for Homer, they send out Santa's Little Helper, who sniffs out Homer and rescues him. Santa's Little Helper becomes a local hero and the Simpsons decide to enroll him in Police Dog Academy, where he's teamed with a grizzled veteran cop named Lou and they become a crime-busting duo. Bart's excitement quickly dissipates when a jaded Santa's Little Helper bites him, and the Simpsons send the dog away to live with Chief Wiggum. To appease Bart's depression after the loss of his dog, Marge agrees to buy him a huge pet snake. But when the snake causes a life-threatening situation at Bart and Lisa's school, Santa's Little Helper gets a chance to redeem himself."
+          },
+          {
+            episode: 21,
+            title: "24 Minutes",
+            airDate: "2007-05-20",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172975.jpg",
+            duration: "30 min",
+            overview: "In a parody of \"24,\" the school's Counter Truancy Unit tries to stop three sixth-graders planning to disrupt the school bake sale with a stink bomb."
+          },
+          {
+            episode: 22,
+            title: "You Kent Always Say What You Want",
+            airDate: "2007-05-20",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172976.jpg",
+            duration: "30 min",
+            overview: "At the Simpsons' annual dental check-up, Lisa gets an education in dental hygiene from a video starring Ludacris (guest voice Chris \"Ludacris\" Bridges) as Luda-Crest, a tube of toothpaste with a talent for rapping. The Simpsons stop for ice cream on the way home from the dentist, and when Homer purchases the 1-millionth ice cream cone, he is featured on Kent Brockman's nightly news program. However, the innocent interview turns into trouble when Brockman uses a shocking expletive and Ned Flanders wages an anti-indecency campaign. The Simpsons take in the dejected Brockman, and he and Lisa begin to devise a scheme for the anchor to make his comeback. Meanwhile, Principal Skinner ushers the students of Springfield Elementary into a new era of sneaking, snooping and snitching with the opening of the school's CTU Counter Truancy Unit with Lisa heading up the operation. Homer is sent on a mission to dispose of a container of yogurt so far past its freshness date that it could be toxic, but the reeking yogurt falls into the wrong hands. With the help of Jack Bauer (guest voice Kiefer Sutherland) and Chloe O'Brian (guest voice Mary Lynn Rajskub), Bart and Lisa must stop bullies Dolph, Kearney and Jimbo from releasing the ultimate stink bomb at the school's annual bake sale."
+          }
+        ]
+      },
+      {
+        season: 19,
+        episodes: [
+          {
+            episode: 1,
+            title: "He Loves to Fly and He D'ohs",
+            airDate: "2007-09-23",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172941.jpg",
+            duration: "30 min",
+            overview: "After Homer saves Mr. Burns from drowning in a mall fountain, Burns thanks him by taking him on a whirlwind trip to Chicago on his private plane. Homer is smitten with the luxury jet and all the perks that come with it, including flying with song legend Lionel Richie, who serenades him with a customized version of \"Say You, Say Me.\" After returning home, Homer makes it his mission to find a job that offers him the chance to fly on a corporate jet and enlists a life coach, guest star Stephen Colbert, to help fulfill this dream."
+          },
+          {
+            episode: 2,
+            title: "Homer of Seville",
+            airDate: "2007-09-30",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172942.jpg",
+            duration: "30 min",
+            overview: "Homer injures himself in a fall, and while in the hospital he develops the ability to sing in a beautiful, operatic voice whenever he is lying on his back. Mr. Burns overhears Homer during one of his singing sessions at the hospital and immediately hires him to sing the lead in his production of \"La Bohème.\" Although Homer has to lie down during the performance, he wows the crowd at the Springfield Opera House. Homer becomes an enormous celebrity, especially with the ladies - much to Marge's chagrin. While running from a mob of crazed fans, Homer is saved by a mysterious woman named Julia (Maya Rudolph), who turns out to be a little too concerned for Homer's well being. Blackboard 'The Wall Street Journal is better than ever.'."
+          },
+          {
+            episode: 3,
+            title: "Midnight Towboy",
+            airDate: "2007-10-07",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172943.jpg",
+            duration: "30 min",
+            overview: "Feeling that Maggie is getting too clingy, Marge hires a counselor to teach her the \"C.R.I.E. Method,\" a counseling program that helps parents raise their children to be very independent at an early age. But the method works a little too well, leaving Maggie with no need for Marge at all. Meanwhile, Homer goes in search of milk for Maggie in Mookington and ends up having his car towed by a tow truck driver named Louie (Matt Dillon) who introduces Homer to the joy of towing cars for a living. Louie invites Homer to be the tow truck driver for Springfield on one condition: that Homer stay off of Louie's turf in Mookington. When Homer gets a little too \"tow happy,\" the residents of Springfield set Homer up to look like he's towing in Louie's territory, and Homer must suffer the wrath. With Homer missing, the newly independent Maggie is spurred to action."
+          },
+          {
+            episode: 4,
+            title: "I Don't Wanna Know Why the Caged Bird Sings",
+            airDate: "2007-10-14",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172944.jpg",
+            duration: "30 min",
+            overview: "While waiting in line at the bank, Marge strikes up a conversation with a strange man named Dwight (Steve Buscemi) who later attempts to rob the bank. When the police show up, Marge convinces a cornered Dwight to turn himself in by promising to visit him in prison. As Dwight eagerly awaits Marge's visit, Homer assures her that Dwight will not expect her to actually visit. But when Dwight receives a phone call and the caller (Ted Nugent) isn't Marge, he escapes to find her. Watching the news report about Dwight's jail break, she wishes she had kept her promise."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror XVIII",
+            airDate: "2007-11-04",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172945.jpg",
+            duration: "30 min",
+            overview: "The frightfest begins in \"Mr. and Mrs. Simpson\" as Homer and Marge leave for what appears to be an ordinary day. But Homer is living a double life as a secret agent, and he is assigned to eliminate Kent Brockman. When a mysterious woman blocks Homer's shot and tries to kill Brockman herself, Homer finds that his competition \"hits\" a little too close to home. In \"E.T. Go Home,\" Bart and Lisa come to the aid of Kodo the space alien, who's hiding from the government. Kodo asks them to help him obtain a long list of devices so he can reconnect with his home planet, but his intentions prove to be anything but friendly. In the final Halloween scare, \"Heck House,\" Bart, Lisa and their friends spend Halloween night pulling pranks on unsuspecting people in Springfield. But when they go too far, Flanders decides he's going to spook them straight. Transforming the church into the \"Heck House,\" Flanders is filled with supernatural power and subjects the children to his wrath of seven deadly sins."
+          },
+          {
+            episode: 6,
+            title: "Little Orphan Millie",
+            airDate: "2007-11-11",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172946.jpg",
+            duration: "30 min",
+            overview: "When Milhouse's parents are lost at sea and presumed dead, Milhouse decides it's time to begin acting like a real man, and his new attitude makes him more attractive and popular than ever. Bart can't stand that Milhouse has become cooler than him, and he devises a plan to win back his cooler-than-Milhouse status. Meanwhile, Homer finds himself in hot water when he can't remember the color of Marge's eyes, and Marge vows not to let Homer see her eyes again until he remembers their color."
+          },
+          {
+            episode: 7,
+            title: "Husbands and Knives",
+            airDate: "2007-11-18",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/112644.jpg",
+            duration: "30 min",
+            overview: "Much to the Comic Book Guy's chagrin, Bart, Lisa and Milhouse check out a new comic book store called Coolsville, where they are treated like royalty by a friendly comic book buff named Milo (guest voice Jack Black). Coolsville attracts some real-life comic book creators, such as Alan Moore, Art Spiegelman and Dan Clowes (guest-voicing as themselves), and the Comic Book Guy wages war on Coolsville in an attempt to win back his customers. Meanwhile, Marge decides her middle-aged physique could use some help, and she launches a gym for \"regular women.\" Marge's gym becomes wildly successful and as her fame grows, Homer fears she will dump him for a younger, more fit guy. Homer decides to take matters into his own hands to get into shape."
+          },
+          {
+            episode: 8,
+            title: "Funeral for a Fiend",
+            airDate: "2007-11-25",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172947.jpg",
+            duration: "30 min",
+            overview: "Kelsey Grammer returns to guest-voice as the infamous Sideshow Bob, David Hyde Pierce as Sideshow Bob's dubious brother Cecil Terwilliger, and John Mahoney as their father, Mr. Terwilliger. Marge dreams that Keith Olbermann (guest-voicing as himself) chides her for fast-forwarding through television commercials. Marge tries her to make restitution by watching hours of advertisements, and she and the Simpson family take particular interest in an ad for Wes Doobner's World-Famous Family-Style Rib Huts. They drive to the restaurant, only to find Sideshow Bob waiting for them, triumphant in his elaborate hoax to lure them to their doom. When Sideshow Bob's attempt to terminate the family is foiled, he is put on trial, where his father blames Sideshow Bob's psychosis on Bart. During the proceedings, Bart accidentally kills his old nemesis, and Bob's brother Cecil invites Bart to attend the memorial service for Sideshow Bob to bury the hatchet for good."
+          },
+          {
+            episode: 9,
+            title: "Eternal Moonshine of the Simpson Mind",
+            airDate: "2007-12-16",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172948.jpg",
+            duration: "30 min",
+            overview: "Homer wakes up one morning only to find himself outdoors and covered with snow. With no recollection of what happened the night before, aside from a lingering hangover, Homer makes his way home only to find his entire family missing. Hopelessly confused, Homer makes his way to Moe's bar, where Moe reveals that Homer drank a \"Forget-Me-Shot\" the night before - a drink is so potent, it wipes out a the last 24 hours of one's memory. When Wiggum informs Homer of a domestic disturbance at his house the night before, Homer begins to worry that he may have done something awful. As he probes his cloudy memory to unravel the mystery, Homer turns to Professor Frink, who hooks him up to a device that allows him to explore his memories, and he interacts with his Memory Family to piece together the night's events."
+          },
+          {
+            episode: 10,
+            title: "E Pluribus Wiggum",
+            airDate: "2008-01-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172949.jpg",
+            duration: "30 min",
+            overview: "When Homer disposes of a leaky battery along with his fast food containers, he causes an explosion that destroys Springfield's fast-food district. Mayor Quimby proposes to rebuild the district during the next election. The next election, however, isn't until June, so Quimby decides to move it to the upcoming Saturday. This change makes Springfield the first city in the nation to hold a presidential primary. Excitement builds as reporters from around the country descend upon Springfield to cover the debate. The news is dismal though as the candidates turn out to be less than compelling. On the night of the primary, Kent Brockman announces an unexpected turn of events: Springfield voters rejected all the leading candidates and embraced a write-in: Ralph Wiggum. Much to Lisa's chagrin, the leaders of both parties realize that embracing Ralph as a candidate means certain victory come November. Although no one knows for sure which political party Ralph is representing, he insists that everyone is invited to his party. Blackboard: 'Teacher did not pay too much for her condo'."
+          },
+          {
+            episode: 11,
+            title: "That 90's Show",
+            airDate: "2008-01-27",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172062.jpg",
+            duration: "30 min",
+            overview: "When Bart and Lisa discover Marge's diploma from Springfield University, Marge reveals that she had attended the university back when she and Homer had first started dating. In a flash back, Homer gives up his dreams of becoming a musician and takes a job at his father's laser tag warehouse to support Marge attending Springfield University. However, when Marge finds herself attracted to an offbeat professor named Professor August, Homer decides he has had enough of Marge's wandering eye. Homer instead focuses his emotions on his music, inventing a new sound called \"grunge.\" As Marge continues to date the pretentious professor, Homer becomes the hottest grunge artist around, as evidenced by Weird Al's parody of his music. But when Marge sees a special news report on MTV with Kurt Loder announcing that Homer's band, Sadgasm, has broken up and that Homer is holed-up in a mansion hopelessly addicted to drugs, Marge must choose between her new life and her old love."
+          },
+          {
+            episode: 12,
+            title: "Love, Springfieldian Style",
+            airDate: "2008-02-17",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172950.jpg",
+            duration: "30 min",
+            overview: "To celebrate Valentine's Day, Homer takes Marge to the Tunnel of Love at a carnival. But when Bart pulls a prank involving some Jell-O, they become hopelessly stranded. Homer tries to cheer Marge up by recounting some of the greatest love stories of all time, beginning with Bonnie and Clyde (as Marge and Homer) who steal each others' hearts as they rob their town dry. Next, Marge tells the story of two dogs, Sadie (Marge) and Scamp (Homer), in her take on \"Lady and the Tramp.\" Lastly, Bart spins the final romantic tale in his recounting of the rock-and-roll romance of the The Sex Pistols when Nancy Spungeon (Lisa) falls for the rebellious Sid Vicious (Nelson)."
+          },
+          {
+            episode: 13,
+            title: "The Debarted",
+            airDate: "2008-03-02",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172951.jpg",
+            duration: "30 min",
+            overview: "When a new, tough-looking kid at school named Donny teams up with Bart to help him carry out his pranks, Bart thinks he has found his ultimate partner in crime. However, when Bart's seemingly foolproof pranks begin to backfire, Groundskeeper Willie warns Bart that he smells a rat in Bart's group of friends. With Principal Skinner on his case and the possibility of expulsion on the horizon, Bart must figure out who he can trust and who he must get rid of before it is too late. Meanwhile, Homer receives a fancy loaner car after Marge damages their old car in an accident, and he grows extremely attached to his new set of luxury wheels."
+          },
+          {
+            episode: 14,
+            title: "Dial 'N' for Nerder",
+            airDate: "2008-03-09",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172952.jpg",
+            duration: "30 min",
+            overview: "Marge hires a nutritionist who puts Homer on a strict diet, but Homer decides to sneak in snacks and meals on the side. Marge becomes suspicious of Homer's weight gain and calls the producers of \"The Sneakers,\" a take-off on \"Cheaters.\" Meanwhile, Bart and Lisa go bike-riding in Springfield National Park, where they run into Martin Prince and play a prank on him. Bart and Lisa are wracked with guilt when their prank goes terribly wrong they think they're responsible for the accidental death of Martin Prince."
+          },
+          {
+            episode: 15,
+            title: "Smoke on the Daughter",
+            airDate: "2008-03-30",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172953.jpg",
+            duration: "30 min",
+            overview: "When Lisa convinces Marge to pursue her childhood dream of becoming a ballerina by auditioning for the Chazz Busby Ballet Academy, Chazz discovers Lisa's natural talent and enrolls her in the academy instead. During a break from practice, Lisa inhales her fellow ballerinas' cigarette smoke and attributes her improvement in ballet to smoking. Lisa soon becomes addicted to secondhand smoke, with no chance of quitting in sight. Meanwhile, Homer shows Bart his secret room where he manufactures beef jerky. When Homer realizes that a family of raccoons have made off with his beef, he decides to confront the animals."
+          },
+          {
+            episode: 16,
+            title: "Papa Don't Leech",
+            airDate: "2008-04-13",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115704.jpg",
+            duration: "30 min",
+            overview: "When Mayor Quimby realizes the city of Springfield has gone broke, Homer suggests they feign a natural disaster in order to obtain relief funds from the federal government. When the plan goes awry, Lisa goes through the town's financial records only to discover millions in uncollected city taxes. Springfield hits up its most notorious tax evaders, and Lurleen Lumpkin, a country music star Homer once managed, remains the last outstanding debtor. As Springfieldians scour the city to find her, Marge reluctantly permits the fugitive to stay with the family, creating a very interesting dynamic in the Simpson household."
+          },
+          {
+            episode: 17,
+            title: "Apocalypse Cow",
+            airDate: "2008-04-27",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/103865.jpg",
+            duration: "30 min",
+            overview: "When Bart joins the 4-H Club, he unexpectedly falls in love with a cow named Lou. But when Bart finds out that Lou has been sold to a slaughterhouse, he becomes determined to save him. Bart and Lisa free Lou from the slaughterhouse, and Bart gives the cow to Mary, a fellow 4-H Club member. However, Mary's father mistakenly believes Bart is giving them the cow as a dowry for Mary's hand in marriage. When Homer and Marge hear of Bart's engagement, they devise a plan to save Lou and free Bart from his marriage."
+          },
+          {
+            episode: 18,
+            title: "Any Given Sundance",
+            airDate: "2008-05-04",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172954.jpg",
+            duration: "30 min",
+            overview: "Lisa makes a documentary about her family for a school project. After the success of her project, Principal Skinner and Superintendent Chalmers encourage her to enter the film into the Sundance Film Festival. But when Lisa's film premieres at Sundance, Homer, Marge and Bart are embarrassed by the candid behind-the-scenes look at their lives."
+          },
+          {
+            episode: 19,
+            title: "Mona Leaves-a",
+            airDate: "2008-05-11",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/107863.jpg",
+            duration: "30 min",
+            overview: "When Homer's mother Mona (guest voice Glenn Close) unexpectedly passes away, Homer is filled with guilt for not telling her how much he loved her before she died. To make it up to her, Homer decides to fulfill her final wishes by throwing her ashes over Lake Wastershare at Springfield Monument Park. Blackboard: 'This punishment is not medieval.'."
+          },
+          {
+            episode: 20,
+            title: "All About Lisa",
+            airDate: "2008-05-18",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172955.jpg",
+            duration: "30 min",
+            overview: "As Krusty's new assistant, Lisa steals the spotlight and gets her own television show, leaving Krusty behind. But when she's honored as Entertainer of the Year at the Springfield Media Awards, she realizes that the she may not be cut out for showbiz after all. Meanwhile, Bart and Homer spend some time bonding through their newfound love of coin-collecting."
+          }
+        ]
+      },
+      {
+        season: 20,
+        episodes: [
+          {
+            episode: 1,
+            title: "Sex, Pies and Idiot Scrapes",
+            airDate: "2008-09-28",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172917.jpg",
+            duration: "30 min",
+            overview: "Homer is sent to jail after a haphazard, booze-free brawl at the Springfield St. Patrick's Day parade. When he goes to get his bail bond, Homer meets Lucky Jim (guest voice Forster) and Wolf the Bounty Hunter and decides to try his own hand at the lucrative profession. The new-and-improved Homer the Bounty Hunter soon teams up with Ned Flanders to create quite the unlikely bounty-hunting duo, but when Homer's new no-mercy attitude gets the best of him, Flanders is less than impressed. Meanwhile, unbeknownst to her, Marge begins working at an erotic bakery."
+          },
+          {
+            episode: 2,
+            title: "Lost Verizon",
+            airDate: "2008-10-05",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172918.jpg",
+            duration: "30 min",
+            overview: "In order to save up money to buy a cell phone, Bart takes a job at a country club retrieving golf balls. While at the course, Bart watches celebrities, including Leary (guest-starring as himself) playing a round. When Leary's cell phone rings just as he is about to take a swing, he furiously throws the phone in the air and it lands right next to Bart. Bart decides to keep the cell and makes prank calls to all over the world pretending to be Leary. He even accepts a job offer from famed producer Grazer (guest-starring as himself) to star in the film version of \"Everyone Poops.\" When Marge discovers what Bart has been up to, she confiscates the device and calls Leary to return the phone. But Leary has a better idea, and instructs Marge to activate the GPS system on the phone so she can track Bart's every move. Bart quickly catches on and devises a plan that sends the family on a wild goose chase all the way to Machu Picchu. Blackboard: 'teacher's diet is working'."
+          },
+          {
+            episode: 3,
+            title: "Double, Double, Boy in Trouble",
+            airDate: "2008-10-19",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/43/108378.jpg",
+            duration: "30 min",
+            overview: "When Lenny wins the lottery and invites the Simpson family to a celebratory party at a posh hotel, Bart meets his doppelganger, Simon Woosterfield, who happens to be a member of the richest family in Springfield. Simon and Bart decide to switch places, and Bart arrives at the lavish Woosterfield mansion only to find football great Joe Montana (guest-voicing as himself) hanging around the estate. As Simon adjusts to the simple life over at the Simpson household, Bart begins to notice his wealthy new siblings acting strangely toward him. With some frightening words of wisdom from Mr. Burns, Bart realizes his new siblings are plotting his demise so they can inherit the Woosterfield family fortune all for themselves. Lisa and Simon must reach Bart before he goes from riches to ditches. Blackboard: 'There's no such month as Rocktober'."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XIX",
+            airDate: "2008-11-02",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172919.jpg",
+            duration: "30 min",
+            overview: "Three chilling tales of Halloween horror unwind in THE SIMPSONS annual \"Treehouse of Horror\" Halloween special. First, Homer kills off celebrities so their likenesses can be exploited free-of-charge in \"How to Get Ahead in Dead-Vertising.\" Next, Transformer-like robots duke it out in Springfield in \"Untitled Robot Parody.\" And in \"It's the Grand Pumpkin, Milhouse,\" Lisa accompanies Milhouse to a pumpkin patch to await the appearance of the Grand Pumpkin, but when he finally appears, the Grand Pumpkin goes on a rampage to avenge all the pumpkins carved and tortured in the name of Halloween. Also, the highly-anticipated episode opener features Homer Simpson as he attempts to cast his ballot for the 2008 Presidential election with a deadly twist."
+          },
+          {
+            episode: 5,
+            title: "Dangerous Curves",
+            airDate: "2008-11-09",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172920.jpg",
+            duration: "30 min",
+            overview: "When the Simpson family takes a road trip to a cabin in the woods, a series of flashbacks depict Homer and Marge's blissful courtship and their early married years. They recall their first encounter with Flanders and Maude twenty years prior at the very same cabins, where Flanders insisted the unmarried Homer and Marge stay in separates rooms. Later, they recall when they each met distracting members of the opposite sex who nearly wooed Homer and Marge away from each other. Bart and Lisa also reflect on happier times from their early childhood. Despite the obstacles and the passing of time, Homer and Marge attempt to see the forest for the trees."
+          },
+          {
+            episode: 6,
+            title: "Homer and Lisa Exchange Cross Words",
+            airDate: "2008-11-16",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172921.jpg",
+            duration: "30 min",
+            overview: "Lisa discovers her amazing talent for doing crossword puzzles and becomes an expert cruciverbalist, and she soon enters a citywide crossword puzzle tournament. Homer, short on cash after abandoning his \"Sweet Conclusions\" professional break-up artist business, goes to cheer Lisa on at her tournament and discovers an underground crossword puzzle betting ring. In the ultimate betrayal, Homer profits from betting against Lisa in the championship match. When the heartbroken Lisa finds out, Homer must spell out his love for her with a little help from New York Times crossword puzzle editor Will Shortz (guest voice as himself) and master crossword constructor Merl Reagle (guest voice as himself)."
+          },
+          {
+            episode: 7,
+            title: "Mypods and Boomsticks",
+            airDate: "2008-11-30",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172922.jpg",
+            duration: "30 min",
+            overview: "The Simpson family takes a trip to the Mapple Store at the Springfield Mall where Lisa get her very own Mypod, and Bart interrupts an announcement from Steve Mobbs with his own voiceover, causing pandemonium to break loose in the store. On his way home from the mall, Bart narrowly escapes punishment and befriends a Muslim boy named Bashir. Homer becomes suspicious of Bart's new friend and invites Bashir, his mother (guest voice Shohreh Aghdashloo) and his father over for dinner so he can investigate their supposed anti-American sentiments. Having already offended Bashir and his family at dinner, Homer goes to their home to apologize, but he instead snoops around their house, a la Jack Bauer, and uncovers what he believes to be a terrorist plot to blow up the Springfield Mall. The race is on as Homer tries to warn the residents of Springfield about the impending disaster. Blackboard 'Prosperity is just around the corner'."
+          },
+          {
+            episode: 8,
+            title: "The Burns and the Bees",
+            airDate: "2008-12-07",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172923.jpg",
+            duration: "30 min",
+            overview: "During the annual billionaires' retreat, Mr. Burns wins the Boston Celtics in a casual game of poker. While hosting the season opener in Springfield, Mr. Burns witnesses the antics of Dallas Mavericks' owner Mark Cuban (guest voice as himself). Fascinated with his behavior, Mr. Burns decides to emulate Cuban's over-the-top crowd pleasing stunts in order to win over the hearts of Springfield's basketball fans. In the midst of his failing endeavor, Mr. Burns decides that the best way to win over the fans is to build a brand new, state-of-the-art sports arena. Unfortunately, the last remaining bee colony in Springfield is located on the proposed stadium site, and Lisa is single-handedly spearheading a movement to protect them. As Lisa fights for a safe haven for the bees, Homer attempts to help the quickly diminishing bee population by mating the Springfield bees with Africanized bees, creating a buzzworthy fiasco."
+          },
+          {
+            episode: 9,
+            title: "Lisa the Drama Queen",
+            airDate: "2009-01-25",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172924.jpg",
+            duration: "30 min",
+            overview: "Lisa meets an equally academic and creative new friend named Juliet (guest voice Emily Blunt), and together they construct a fantasy world that takes them both a little too far from reality."
+          },
+          {
+            episode: 10,
+            title: "Take My Life, Please",
+            airDate: "2009-02-15",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/68/172193.jpg",
+            duration: "30 min",
+            overview: "When Mayor Quimby inducts Vance Connor into the Springfield Walk of Fame, Homer recounts how he ran against Vance for class president in high school and lost. After a little digging, Homer learns that the election had been rigged, and he wonders what course his life would have taken if only fate had smiled on him. Homer soon meets an old Italian cook at Luigi's Italian Restaurant whose magical tomato sauce, when stirred in just the right way, reveals what Homer's life would have been like had he won the election. However, when Homer gets a chance to see what his life could have been, he wonders if fate was actually been on his side all along."
+          },
+          {
+            episode: 11,
+            title: "How the Test Was Won",
+            airDate: "2009-03-01",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172925.jpg",
+            duration: "30 min",
+            overview: "Bart is informed that he and a select group of students have received perfect scores on a practice test for the upcoming Vice President's Assessment Test. As a result, he will be exempt from taking the real exam and will be transported by helicopter to a pizza party. Shocked at how Bart could have performed better than she did, Lisa freezes up when it comes time for her to take the exam. However, Bart and the others soon realize their trip is not what it seems, and their day turns into an adventure all its own. Meanwhile, when Homer is late on making an insurance payment, he must avoid bodily accidents at all costs until his insurance check is cashed, making for one very tense afternoon. Blackboard: '\"march madness\" is not an excuse for missing school'."
+          },
+          {
+            episode: 12,
+            title: "No Loan Again, Naturally",
+            airDate: "2009-03-08",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172926.jpg",
+            duration: "30 min",
+            overview: "After too many years of financing Homer's annual Mardi Gras party on home equity loans, Homer and Marge's adjustable-rate mortgage skyrockets and they are forced to put their house up for sale. Flanders does a good deed by outbidding Mr. Burns and purchasing the property, thus becoming Homer and Marge's new landlord. But when Homer publicly accuses Flanders of neglecting the Simpsons' unsafe living conditions, Flanders threatens to throw the family out on the streets. Blackboard: 'I will not have fun with educational toys'."
+          },
+          {
+            episode: 13,
+            title: "Gone Maggie Gone",
+            airDate: "2009-03-15",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172927.jpg",
+            duration: "30 min",
+            overview: "When Homer leaves Maggie on the doorstep of a convent to keep her safe as he rescues Santa's Little Helper from a sticky situation, the nuns at the convent take Maggie in. Lisa comes up with a plan to infiltrate the convent and rescue Maggie. After deciphering a series of cryptic messages at the convent, Lisa sets off to find Springfield's most coveted jewel and gets a little help from an ancient order of mystery buffs led by Comic Book Guy and Principal Skinner. But when Springfield's Freemasons, led by Mr. Burns, get wind of Lisa's quest, she must race to solve the mystery and find Maggie."
+          },
+          {
+            episode: 14,
+            title: "In the Name of the Grandfather",
+            airDate: "2009-03-22",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172928.jpg",
+            duration: "30 min",
+            overview: "The Simpson family travels to Ireland to take Grandpa to have one last beer at his beloved O'Flanagan's Pub in Dunkilderry. However, when they arrive, the little town of Dunkilderry isn't the quaint little Irish village that Grandpa remembers. It has become a gentrified yuppie enclave filled with hipsters on laptops and Bluetooths, surrounded by swanky stores and coffee shops. When they track down O'Flanagan's Pub, the bar is run down and nearly empty. After a few spirits, Homer and Grandpa buy the pub from Tom O'Flanagan, and they are left with trying to bring the bar back to life amidst an ultra-hip, hardworking and sober Irish town. With a little help from Moe, they find the perfect scheme to bring the pub back to life and put \"Simpson &amp; Son\" on the map."
+          },
+          {
+            episode: 15,
+            title: "Wedding for Disaster",
+            airDate: "2009-03-29",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172929.jpg",
+            duration: "30 min",
+            overview: "When Homer and Marge's marriage turns out to be invalid because Reverend Lovejoy was not licensed at the time, Homer asks Marge to marry him again. But when Homer mysteriously disappears on their wedding day, Bart and Lisa search for answers and are led on a cryptic trail of clues, leading them to Sideshow Bob. Meanwhile, Homer finds himself chained to a pipe in a dark room. When a mysterious voice tells him that the key to unlock his chains is inside a lollipop, he frantically eats it only to discover the lollipop is made of fiery hot sauce and he is tormented as Bart and Lisa race to save him. Blackboard: 'My piggy bank is not entitled to tarp funds'."
+          },
+          {
+            episode: 16,
+            title: "Eeny Teeny Maya Moe",
+            airDate: "2009-04-05",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111983.jpg",
+            duration: "30 min",
+            overview: "In an effort to spend more time with Maggie, Homer takes her to happy hour at Moe's. While at the bar, Moe tells Homer about his new love, Maya, a woman he met on the internet. When Moe finally meets Maya in person, she is just as beautiful as her photos but he can't help but notice one small detail: she is three feet tall. In order to make the relationship work, Moe must learn to love their differences."
+          },
+          {
+            episode: 17,
+            title: "The Good, the Sad and the Drugly",
+            airDate: "2009-04-19",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172930.jpg",
+            duration: "30 min",
+            overview: "When Bart and Milhouse pull off a prank at Springfield Elementary, Milhouse takes the fall and gets suspended from school. Homer forces Bart to sign in under Homer's name and visit Grampa at his retirement home, and Bart soon becomes smitten with a delightful 11-year-old volunteer named Jenny. Hoping to impress Jenny, Bart offers to volunteer at the home. But as Bart and Jenny's relationship progresses, Milhouse emerges from his suspension and is less than thrilled about Bart turning his back on him for a girl. Meanwhile, Lisa does a report on what Springfield will look like in 50 years and becomes very depressed at the dreary outlook. A concerned Marge takes Lisa to a psychiatrist who diagnoses Lisa with Environment-Related Despair and puts on her on an antidepressant to cure her eco-blues. Blackboard: 'I will not mock teacher's outdated cell phone'."
+          },
+          {
+            episode: 18,
+            title: "Father Knows Worst",
+            airDate: "2009-04-26",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172931.jpg",
+            duration: "30 min",
+            overview: "When Homer observes Bart and Lisa struggling in certain aspects of their academic and social lives at school, he becomes a proponent of \"helicopter parenting,\" the process of closely monitoring a child and forcing them to succeed. Homer takes hovering to a new level when he chooses a nearly impossible subject for Bart's balsa wood model-building competition and gives Lisa some not-so-friendly advice on how to make friends. Meanwhile, Marge discovers a sauna in the Simpson family's basement that she finds hard to resist. Blackboard: 'I will not put hot sauce in the CPR dummy'."
+          },
+          {
+            episode: 19,
+            title: "Waverly Hills, 9021-D'Oh",
+            airDate: "2009-05-03",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110843.jpg",
+            duration: "30 min",
+            overview: "When Marge learns Springfield Elementary is the worst school in the state, she and Homer rent an apartment in the upscale Waverly Hills neighborhood so Bart and Lisa can attend a better school. When Lisa is ostracized by the popular girls at Waverly Hills, Bart uses his newly established bad boy image to impress the other students and increase Lisa's popularity by telling everyone she is best friends with the pop star Alaska Nebraska. However, when Alaska Nebraska comes to town, Lisa is left wishing Bart had never opened his big mouth. Meanwhile, Homer moves into the new Waverly Hills apartment to make it look like someone is living there, and he quickly gets used to the bachelor lifestyle."
+          },
+          {
+            episode: 20,
+            title: "Four Great Women and a Manicure",
+            airDate: "2009-05-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172932.jpg",
+            duration: "30 min",
+            overview: "Marge and Lisa visit the nail salon where they engage in a spirited debate as to whether a woman can be smart, powerful and beautiful all at the same time. To prove their point, they spin four tales of famous women featuring famous Springfield faces: Selma as Queen Elizabeth I, Lisa as Snow White, Marge as Lady Macbeth and Maggie as the idealistic architect protagonist from Ayn Rand's \"The Fountainhead\" ."
+          },
+          {
+            episode: 21,
+            title: "Coming to Homerica",
+            airDate: "2009-05-17",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172933.jpg",
+            duration: "30 min",
+            overview: "When nearby Ogdenville's economy crumbles due to tainted barley discovered in Krusty's veggie burgers, the unemployed workers of Ogdenville flock to Springfield. After Mayor Quimby closes Springfield's borders and enlists private citizens to help patrol them, Homer organizes a border patrol group."
+          }
+        ]
+      },
+      {
+        season: 21,
+        episodes: [
+          {
+            episode: 1,
+            title: "Homer the Whopper",
+            airDate: "2009-09-27",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172899.jpg",
+            duration: "30 min",
+            overview: "Comic Book Guy casts Homer as the lead in \"Everyman,\" a feature film based on a new comic book superhero who possesses the ability to take on the powers of every superhero in every comic he touches. To whip Homer into superhero shape, the movie studio hires celebrity fitness trainer Lyle McCarthy, but Homer has trouble sticking to his new healthy regimen. Blackboard: 'The class hamster isn't just sleeping'."
+          },
+          {
+            episode: 2,
+            title: "Bart Gets a 'Z'",
+            airDate: "2009-10-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172900.jpg",
+            duration: "30 min",
+            overview: "When Mrs. Krabappel confiscates student's cell phones, the class, organized by Bart, decides to teach her a lesson by spiking her coffee and watching her make a drunken fool of herself. Principal Skinner fires Mrs. Krabappel and replaces her with a cool new teacher, Zachary Vaughn, who impresses Bart and his friends with a hip attitude and love of texting, blogging and using Twitter and Facebook. Torn by his affection for Mr. Vaughn, yet plagued by guilt, Bart makes his way to Skinner's office to tell him the truth and get Mrs. Krabappel's job back. Blackboard: 'Chalkboarding is not torture'."
+          },
+          {
+            episode: 3,
+            title: "The Great Wife Hope",
+            airDate: "2009-10-11",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172901.jpg",
+            duration: "30 min",
+            overview: "The men and boys of Springfield become obsessed with Mixed Martial Arts, a violent sport where fighters inflict severe pain on one another. When Marge and her friends stage a protest, the show's promoter embraces the controversy and challenges Marge to a match, promising to shut down the competition if she wins."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XX",
+            airDate: "2009-10-18",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106885.jpg",
+            duration: "30 min",
+            overview: "In the 20th anniversary of THE SIMPSONS annual \"Treehouse of Horror\" Halloween special, three chilling tales of Halloween horror unwind. First, Lisa becomes livid with Miss Hoover, and in a series of homages to classic Hitchcock sets out for deadly revenge. Next, Krusty's latest fast-food sandwich transforms news anchor Kent Brockman into an enraged zombie and twenty-eight days later, cannibal zombies have overrun Springfield. In the final frightening fable, Homer accidentally falls through a trapdoor in Moe's tavern and impales himself on the pipes of Moe's microbrewery. Moe serves the barflies a glass of delicious beer flavored with Homer's blood and Homer, now half-man, half-brewing apparatus, returns for vengeance."
+          },
+          {
+            episode: 5,
+            title: "The Devil Wears Nada",
+            airDate: "2009-11-15",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129636.jpg",
+            duration: "30 min",
+            overview: "In an effort to raise money for charity, Marge and \"Philanthro-Chicks\" decide to pose for a calendar. At the photo studio, Marge is a bit reluctant to reveal any skin, but the photographer loosens her up with wine and before long, Marge and her pin-up poses are the talk of Springfield. Blackboard: 'I do not have the hots for my mom'."
+          },
+          {
+            episode: 6,
+            title: "Pranks and Greens",
+            airDate: "2009-11-22",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172902.jpg",
+            duration: "30 min",
+            overview: "Fed up with Bart's constant pranks, Principal Skinner tells Bart that there is a former Springfield Elementary student hailed as the best prankster ever - even better than Bart - but he won't divulge the legendary student's name. Bart finally gets Groundskeeper Willie to reveal the prankster's identity: Andy Hamilton. Bart tracks down Andy, who is now 19 years old and hasn't grown out of his pranking days. Bart and Andy become fast friends until Bart gets Andy a job working for the ultimate clown."
+          },
+          {
+            episode: 7,
+            title: "Rednecks and Broomsticks",
+            airDate: "2009-11-29",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/124709.jpg",
+            duration: "30 min",
+            overview: "After getting lost in a game of hide-and-seek, Lisa wanders into the field and discovers three teenage girls, including Cassandra, who are practicing Wiccans. Though she is skeptical of their spells, the girls assure Lisa that they never hurt anyone and ask her to join their coven. Just before Lisa is inducted into their pact, Chief Wiggum arrives and arrests the three girls for witchcraft and Lisa becomes the star witness in the trial. Meanwhile, Homer starts hanging out with Cleatus and his hillbilly friends when he discovers that they make moonshine."
+          },
+          {
+            episode: 8,
+            title: "O Brother, Where Bart Thou?",
+            airDate: "2009-12-13",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/131733.jpg",
+            duration: "30 min",
+            overview: "One snowy day in Springfield, Lisa informs Bart that she and Maggie share a bond that Bart will never understand because he doesn't have a brother, so Bart asks Homer for a baby brother. When Homer denies Bart's request, Bart makes his way to the Springfield Orphanage to find what he thinks he's missing."
+          },
+          {
+            episode: 9,
+            title: "Thursdays with Abie",
+            airDate: "2010-01-03",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172903.jpg",
+            duration: "30 min",
+            overview: "Grampa is sitting on a bench waiting for his family when a thoughtful-looking man named Marshall Goldman approaches him and asks to hear about his life. Grampa tells Goldman about the time he was on a World War II battleship, which was hit by an enemy torpedo, and Goldman, a human-interest columnist, publishes it in The Springfield Shopper. Later, Grampa meets Mitch Albom and shares another story with Goldman for a follow-up article. Homer becomes jealous of Grampa's newfound fame and seeks a surrogate father. But when Homer discovers a draft of Goldman's third story, he must race to find Grampa before it is published and his life is changed forever."
+          },
+          {
+            episode: 10,
+            title: "Once Upon a Time in Springfield",
+            airDate: "2010-01-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172904.jpg",
+            duration: "30 min",
+            overview: "In the landmark 450th episode of THE SIMPSONS, Krusty is approached by two network executives who want to bring on female co-star Princess Penelope to increase the show's female demographic. The onstage and behind-the-scenes rapport between Krusty and Princess Penelope grows, and before long, Krusty asks for his co-star's hand in marriage. Meanwhile, when Mr. Burns puts a stop to the free donuts at the plant to cut costs, Homer, Lenny and Carl decide to meet with a headhunter who specializes in nuclear workers and opens their eyes to opportunities free of draconian donut-cutting measures."
+          },
+          {
+            episode: 11,
+            title: "Million Dollar Maybe",
+            airDate: "2010-01-31",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172905.jpg",
+            duration: "30 min",
+            overview: "Homer blows off Marge to buy a lottery ticket and winds up winning the million-dollar jackpot. Fearing how Marge will react if she finds out the reason Homer missed their date, Homer keeps his newly inherited fortune a secret and spoils his family with \"anonymous\" gifts. When Bart finds out, he and Homer spend the money like it's going out of style, including buying front-row to tickets to see Coldplay in concert,."
+          },
+          {
+            episode: 12,
+            title: "Boy Meets Curl",
+            airDate: "2010-02-14",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172906.jpg",
+            duration: "30 min",
+            overview: "Homer takes Marge out for a romantic evening of ice skating and hand-holding, but upon entering the rink, they encounter a curling team practicing. Marge and Homer take to the ice and discover their love for the sport, and soon after, join the curling team and compete with them in the Olympic trials. Team Springfield claims the win and moves on to the 2010 Vancouver Games where Bob Costas covers the action. Meanwhile, sleazy vendors introduce Lisa to the world of collecting Olympic pins, and before long, Lisa is hopelessly addicted."
+          },
+          {
+            episode: 13,
+            title: "The Color Yellow",
+            airDate: "2010-02-21",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172907.jpg",
+            duration: "30 min",
+            overview: "When Miss Hoover asks her students to research their family history, Lisa is horrified to discover that most of her ancestors were bad people - a motley crew of horse thieves and deadbeats. But while rummaging through the attic, Lisa happens upon a diary kept by her ancestor, Eliza Simpson. As Eliza's story unfolds, Lisa learns that her family was part of the Underground Railroad, a group that helped slaves escape to freedom. Eliza recounts liberating a slave named Virgil, but when Lisa presents her findings at school, some of her classmates refute it, leaving Lisa determined to exonerate her family's name."
+          },
+          {
+            episode: 14,
+            title: "Postcards from the Wedge",
+            airDate: "2010-03-14",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115614.jpg",
+            duration: "30 min",
+            overview: "When Bart fails to turn in his homework, Mrs. Krabappel sends a letter home about Bart's behavior. Despite Bart's best efforts to intercept it, Homer reads the letter, and he and Marge visit Principal Skinner for a parent-teacher conference. Furious, Homer punishes him, but Marge takes a more sympathetic approach. When Bart realizes he can pit Homer and Marge against each other to his benefit, his scheming reaches new heights."
+          },
+          {
+            episode: 15,
+            title: "Stealing First Base",
+            airDate: "2010-03-21",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172908.jpg",
+            duration: "30 min",
+            overview: "Principal Skinner announces that Mrs. Krabappel was called out of town and budget cuts dictate that, until she returns, the school's two fourth grade classes will merge. Bart reluctantly shares a desk with Nikki and develops a flirtatious rapport. Bart talks to Grampa about his new crush, and at Grampa's suggestion, gives Nikki a kiss. But when Nikki starts sending Bart mixed signals, he swears off women forever. Meanwhile, Lisa's classmates ostracize her for being an overachiever, and First Lady Michelle Obama, a self-professed nerd, comes to Lisa's defense."
+          },
+          {
+            episode: 16,
+            title: "The Greatest Story Ever Doh'd",
+            airDate: "2010-03-28",
+            rating: 5.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172909.jpg",
+            duration: "30 min",
+            overview: "When Homer is playing noisily in the yard, it disrupts Flanders' bible-study group. Coaxed by the reverend, a frustrated Flanders takes it upon himself to redeem Homer by inviting the Simpson family on his church retreat to Jerusalem. Unappreciative of the history and culture, Homer would rather hang out at the hotel's breakfast buffet rather than tour the city. But when an eccentric tour guide takes the group to famous monuments, including the Dome of the Rock and the Wailing Wall, Homer finally proves he is not beyond salvation."
+          },
+          {
+            episode: 17,
+            title: "American History X-cellent",
+            airDate: "2010-04-11",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172910.jpg",
+            duration: "30 min",
+            overview: "When the police are called to diffuse a rowdy crowd at Mr. Burns' estate, one of the officers recognizes priceless stolen paintings on the walls, and the maniacal billionaire is taken downtown for questioning. With Mr. Burns gone, Smithers takes charge of the power plant. But when employees take advantage of his good nature, he exacts revenge by forcing the employees to work night and day. These unfair working conditions prompt Homer and his crew to devise a plan to bust out Mr. Burns. Blackboard 'Hot dogs are not bookmarks'."
+          },
+          {
+            episode: 18,
+            title: "Chief of Hearts",
+            airDate: "2010-04-18",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129903.jpg",
+            duration: "30 min",
+            overview: "Homer is completing his court-ordered community service when he befriends his supervisor, Chief Wiggum, by offering him one of his sandwiches. Touched by the act of kindness, Wiggum assigns the other convicts unpleasant tasks, but allows Homer to join him at the picnic table. They continue to grow close, but when the Chief gets injured during a botched bank robbery, Homer doesn't come through when Wiggum needs him the most. Meanwhile, Bart becomes addicted to Battle Ball, a Japanese game made up of plastic balls and magnetic cards, and his family and teachers try to help him kick the habit."
+          },
+          {
+            episode: 19,
+            title: "The Squirt and the Whale",
+            airDate: "2010-04-25",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172911.jpg",
+            duration: "30 min",
+            overview: "The Simpsons decide to embrace a cheaper, alternate source of energy by erecting a wind turbine in their backyard. But when Homer realizes some of the power is being directed to the local electric company, he decides to remove his home from the grid and becomes completely dependent upon an unreliable source of power. Meanwhile, a storm erupts, trapping a magnificent 150-foot-long blue whale ashore, and Lisa and Homer attempt to help the poor creature. Blackboard: 'Je Ne Suis Pas Francais'.  English translation: 'I'm Not French'."
+          },
+          {
+            episode: 20,
+            title: "To Surveil with Love",
+            airDate: "2010-05-02",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172912.jpg",
+            duration: "30 min",
+            overview: "Bomb squad mistakenly blows up Homer's unattended gym bag, releasing radiation into the city and authorities react by suspending civil liberties. Wiggum and his men install surveillance cameras around Springfield and round up suspected terrorists, including groundskeeper Willie, but when monitoring the nonstop flow of video imagery proves to be too much, Wiggum enlists concerned citizens to help keep the city safe. Meanwhile, Lisa becomes fed up with being blonde, so she dyes her hair a dark color."
+          },
+          {
+            episode: 21,
+            title: "Moe Letter Blues",
+            airDate: "2010-05-09",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111932.jpg",
+            duration: "30 min",
+            overview: "As Mother's Day approaches, Moe narrates an episode in which he writes a letter to Homer, Apu and Reverend Lovejoy, who are vacationing with their children, and threatens to run away with one of their wives. While the trio tries to determine whose wife Moe is referring to, Homer, Lovejoy and Apu flashback to the intimate moments they initially ignored between Moe and Marge, Manjula and Helen Lovejoy. But when the boys return from their trip, they're in for the surprise of their lives."
+          },
+          {
+            episode: 22,
+            title: "The Bob Next Door",
+            airDate: "2010-05-16",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172913.jpg",
+            duration: "30 min",
+            overview: "Bart becomes convinced that his new neighbor, Walt, is his archenemy, Sideshow Bob, disguised and back for revenge. But when Marge tries to convince Bart otherwise by taking him to visit the state penitentiary, a disturbing truth is revealed."
+          },
+          {
+            episode: 23,
+            title: "Judge Me Tender",
+            airDate: "2010-05-23",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110594.jpg",
+            duration: "30 min",
+            overview: "When Moe discovers a hidden talent for judging contests, he is approached by a television agent to join the AMERICAN IDOL judges' panel. Moe flies to Los Angeles where he tours the Fox lot and receives some sage career advice. Meanwhile, Homer drives Marge crazy when he begins hanging around the house."
+          }
+        ]
+      },
+      {
+        season: 22,
+        episodes: [
+          {
+            episode: 1,
+            title: "Elementary School Musical",
+            airDate: "2010-09-26",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172880.jpg",
+            duration: "30 min",
+            overview: "When Krusty the Clown is announced as the recipient of the Nobel Peace Prize, Homer invites Bart to accompany him on a trip to Oslo for the ceremony. Sensing that Lisa would feel left out, Marge surprises her with a week-long retreat at performing arts camp, where she is greeted by her artsy counselors and fellow musically inclined campers, who inspire her to embrace her creative side. After she returns to Springfield, Lisa becomes restless with her ho-hum suburban lifestyle and sneaks off to Srooklyn in hopes of connecting with her inner hipster, but she soon realizes that the city is not the same as camp . Blackboard 'When I slept in class, it was not to help Leo Dicaprio'."
+          },
+          {
+            episode: 2,
+            title: "Loan-a-Lisa",
+            airDate: "2010-10-03",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172881.jpg",
+            duration: "30 min",
+            overview: "When Grampa gives each member of the family a portion of his savings, Lisa and Marge spend their money in drastically different ways. Lisa invests in Nelson's brand-new business venture, but soon realizes that her friend's instant success might lure him away from the classroom. Worried that his judgment might be clouded, Lisa introduces Nelson to the well-educated and successful creator of Facebook, Mark Zuckerberg, only to find out that he too dropped out of school. But when the soaring business suddenly takes a sharp turn, Lisa teaches her friend that education is invaluable."
+          },
+          {
+            episode: 3,
+            title: "Money Bart",
+            airDate: "2010-10-10",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172882.jpg",
+            duration: "30 min",
+            overview: "Visit by a Springfield Elementary alum-turned-Ivy-League student pushes Lisa to question her own go-getter attitude and reevaluate the scope of her extracurricular activities. Convinced that there is no such thing as having too many clubs or activities listed on her resume, Lisa jumps at the opportunity to coach Bart's little league team. Despite having little understanding of baseball, Lisa coaches the team to a record winning streak by putting her book smarts in statistics and probability into play. But when Bart questions Lisa's coaching tactics and confronts her for taking the fun out of baseball, Lisa benches him from the championship game. Hoping to lift his spirits, Marge spends the day with Bart at an amusement park where MLB manager and former catcher Mike Scioscia gives Bart sound advice and reminds him of his genuine love of the sport. Meanwhile, with one last chance to win the game, Lisa makes an unexpected call and learns that there is more to sports than winning. Blackboard: 'I must not write all over the walls'."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXI",
+            airDate: "2010-11-07",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/59/148251.jpg",
+            duration: "30 min",
+            overview: "Beware of ouija boards, vampires and unexpected guests in the 21st annual installment of the \"Treehouse of Horror.\" In \"War and Pieces,\" the first of three spine-tingling tales, Marge, worried about the effects of excessively violent video games, encourages Bart and Milhouse to give wholesome, classic board games a shot. The best friends discover that board games aren't boring after all when they find themselves playing a real-life game in which they must beat all the challenges before they are allowed to return to home. The supernatural spells continue in \"Tweenlight,\" when Lisa becomes smitten with a mysterious new student, Edmund, who also happens to be a vampire. When a romance blossoms, the young lovers run away to Dracula-la Land, leaving Homer to come to Lisa's rescue. In the final frightening fable, \"Master and Cadaver,\" Homer and Marge set sail on a romantic second honeymoon, but are interrupted when they rescue Roger, a castaway who escaped an attempted poisoning on his ship. Convinced that Roger is sabotaging their getaway and plotting a murder of his own, Homer and Marge take matters into their own hands."
+          },
+          {
+            episode: 5,
+            title: "Lisa Simpson, This Isn't Your Life",
+            airDate: "2010-11-14",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172883.jpg",
+            duration: "30 min",
+            overview: "When the Simpsons visit Marge's childhood home and discover a box of her old belongings, Lisa is surprised to learn that Marge was once a stellar A+ student. After discovering that a distraction caused Marge's grades to slip in high school, Lisa fears that she will end up just like her mom unless she pledges to focus solely on academics. When Lisa learns that prep school Cloisters Academy is accepting new students, Marge puts her feelings aside and makes a secret deal allowing Lisa to attend her dream school. Meanwhile, Bart puts Nelson and his bully ways in place and unintentionally claims the title of School Bully, and Lisa learns a lesson in family and altruism."
+          },
+          {
+            episode: 6,
+            title: "The Fool Monty",
+            airDate: "2010-11-21",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129639.jpg",
+            duration: "30 min",
+            overview: "After learning that he is suffering from multiple illnesses and has only a few weeks to live, Mr. Burns becomes distraught by the town's less-than-sensitive reaction to his announcement. Following an unexpected turn of events, Bart finds Mr. Burns weak and vulnerable in the wilderness and secretly takes him into the Simpsons' home. But when Homer and Marge learn about their new houseguest, they decide it's payback time, and Lisa, determined to stand up for Mr. Burns, learns that old habits die hard."
+          },
+          {
+            episode: 7,
+            title: "How Munched is That Birdie in the Window",
+            airDate: "2010-11-28",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113783.jpg",
+            duration: "30 min",
+            overview: "When a pigeon flies through the Simpsons' home and suffers a broken wing, Bart makes it his duty to care for the bird - whom he names Ray - and nurse it back to health. When Ray is ready to fly, Homer decides to enter him in a bird race when Danica Patrick appears to him in a dream. Things don't go according to plan, however, when Santa's Little Helper swallows Ray. Worried that Bart needs some help getting over the loss, Marge and Homer take him to a therapy session with Dr. Thurston, who advises that the only cure for Bart's blues is to give away the family dog. But when the Simpsons visit the pup's new home, a shock causes them to rethink their decision. Blackboard: ' \"A Charlie Brown Thanksgiving\" is as good as \"A Charlie Brown Christmas\" '."
+          },
+          {
+            episode: 8,
+            title: "The Fight Before Christmas",
+            airDate: "2010-12-05",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172884.jpg",
+            duration: "30 min",
+            overview: "It's beginning to look a lot like Christmas in Springfield, but while Marge gets in the holiday spirit, it's bah humbug for the rest of the family. Disappointed that she is alone spreading the holiday cheer, Marge sends a letter to Martha Clause to help her save the family Christmas. Martha comes to the rescue and transforms the house into the North Pole chalet Marge has always dreamed of, but when the family is noticeably absent from the perfectly trimmed holiday home, she realizes that it's Homer and the kids who make the holidays special. Meanwhile, the Simpsons get ready to sneak away for a tropical holiday vacation in Hawaii, but surprise visitors Mr. Burns and Moe's new friend, Katy Perry delay their getaway. Four special holiday tales will be spun."
+          },
+          {
+            episode: 9,
+            title: "Donnie Fatso",
+            airDate: "2010-12-12",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106329.jpg",
+            duration: "30 min",
+            overview: "Homer spends New Year's Eve in the Springfield Penitentiary after getting caught bribing an official. An FBI investigator offers to reduce his jail time if Homer agrees to go undercover as an informant to investigate Fat Tony. When Homer forges a special bond with Fat Tony and his family, he becomes conflicted between his obligation to the government and his loyalty to his new family. After an unexpected turn of events, Fat Tony's cousin Fit Tony seeks to settle a score with Homer, but winds up teaching him an important lesson. Blackboard: 'Candy Canes are not Elf bones'."
+          },
+          {
+            episode: 10,
+            title: "Moms I'd Like to Forget",
+            airDate: "2011-01-09",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172885.jpg",
+            duration: "30 min",
+            overview: "After the fourth graders and fifth graders engage in a heated dodgeball battle, Bart discovers that one of the fifth graders has the same mysterious scar on his hand. Puzzled by the matching blemishes, Bart tries to understand why and how he got it, leading Marge to explain that seven years ago, she and her girlfriends formed the \"The Cool Moms,\" a tight-knit group of moms who set playdates for their young boys. Inspired to reconnect with the women, Marge's social life soon becomes recharged, but when Bart's playdates stop being fun, he attempts to break up the club, and Marge finally remembers why she left the group in the first place. Blackboard: 'January is not Bart history month'."
+          },
+          {
+            episode: 11,
+            title: "Flaming Moe",
+            airDate: "2011-01-16",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172886.jpg",
+            duration: "30 min",
+            overview: "When Smithers offers to help transform Moe's dingy pub into a more refined and trendy lounge, the revamped \"Mo's\" quickly becomes Springfield's local gay hangout. With Smithers' friends and colleagues infusing new life into \"Mo's,\" business starts to boom, but Moe inadvertently leads his new bar patrons to believe that he, too, is gay. Afraid that telling the truth would hurt his newly flourishing business, Moe's new friends teach him a lesson in acceptance. Meanwhile, Principal Skinner becomes smitten with the new free-spirited music teacher, Ms. Juniper, who inspires the by-the-book principal to take chances. When Skinner finds out that Ms. Juniper's daughter, Melody, has a crush on Bart, he uses Bart to get close to Ms. Juniper."
+          },
+          {
+            episode: 12,
+            title: "Homer the Father",
+            airDate: "2011-01-23",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172887.jpg",
+            duration: "30 min",
+            overview: "Homer becomes obsessed with \"Thicker than Waters,\" a 1980s family sitcom written by David Mamet, and models his parenting skills after the show's sensible father much to the chagrin on Bart, who desperately sets his sights on a brand new dirt bike. But when Homer insists that Bart must earn the dirt bike, Bart takes matters into his own hands and schemes with Russian and Chinese spies to provide top-secret information in exchange for the new bike, which winds up putting Bart in a precarious situation. Later, James Lipton conducts an interview with a television cast on \"Inside the Actor's Studio\". Blackboard: 'Prince is not the son of Martin Luther King'."
+          },
+          {
+            episode: 13,
+            title: "The Blue and the Gray",
+            airDate: "2011-02-13",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172888.jpg",
+            duration: "30 min",
+            overview: "After spending another Valentine's Day alone, Moe attends a seminar led by Dr. Kissingher in the hopes of gaining more confidence with women. Moe takes the doctor's advice and asks Homer to be his wingman, but Moe becomes distraught when women are drawn to Homer as well. Meanwhile, Marge discovers her first gray hairs and surprises both her family and the neighborhood by going completely gray and sporting a brand new mature do, but Bart is not humored when the neighborhood kids tease him about Marge's look. Later, Marge confronts Homer when she learns that he is becoming increasingly popular with the young ladies, but Homer helps Marge realize that he only has eyes for her and proves that love is still in the Springfield air. Blackboard: 'I will not make fun of Cupid's dink'."
+          },
+          {
+            episode: 14,
+            title: "Angry Dad: The Movie",
+            airDate: "2011-02-20",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172889.jpg",
+            duration: "30 min",
+            overview: "Bart's cartoon about an angry dad is turned into \"Angry Dad: The Movie\" and quickly becomes a critics' favorite. When Russell Brand presents the Golden Globe to Bart's film, Homer usurps the podium and gives his own acceptance speech. The film's winning streak continues with Homer taking credit at each ceremony, so when \"Angry Dad\" receives an Oscar nomination, Bart keeps it a secret. With the help of DJ Kwanzaa, Homer and Marge arrive at the ceremony just as Halle Berry presents the award. Bart's fellow nominee, Nick Park, helps him realize that creating a film is a team effort, and Bart gives credit where credit is due."
+          },
+          {
+            episode: 15,
+            title: "The Scorpion's Tale",
+            airDate: "2011-03-06",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172890.jpg",
+            duration: "30 min",
+            overview: "After a field trip to the desert, Lisa discovers that the desert water mysteriously makes typically combative creatures get along, so she brings some of the water home as a souvenir. When Grampa moves in with the family after getting kicked out of the retirement home, Homer secretly tests the desert water on Grampa, who is instantly cured of his crankiness. A pharmaceutical representative gets word of Homer's discovery and quickly tries to replicate the water into a drug, using Grampa as the primary guinea pig. But when the pills get in the wrong hands and are sold on the black market, unexpected side effects of the new drug take an eye-popping toll on the elderly citizens of Springfield, and the Simpsons learn that their new medical cure comes with major consequences. Blackboard: 'I'm not here on a spitball scholarship'."
+          },
+          {
+            episode: 16,
+            title: "A Midsummer's Nice Dream",
+            airDate: "2011-03-13",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172891.jpg",
+            duration: "30 min",
+            overview: "The town is abuzz when Cheech and Chong announce a Springfield stop on their much-anticipated reunion tour. But when Cheech and Chong take the stage in front of their loyal fans, the jokes were just not the same for Chong, so Homer steps in and delivers all the punchlines by heart. Impressed, Cheech invites Homer to go on tour with him as new duo \"Cheech and Chunk\" while Chong forms a more progressive comedic team, \"Teach and Chong,\" with Principal Skinner. While Homer is on tour, Marge attempts to help the neighborhood cat lady and change her hoarder ways, but turns into a hoarder herself in the process, and Homer realizes that life on the road is not all high times and slapstick humor. Blackboard: 'Daylight Savings is not a failed Bank'."
+          },
+          {
+            episode: 17,
+            title: "Love is a Many Strangled Thing",
+            airDate: "2011-03-27",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172892.jpg",
+            duration: "30 min",
+            overview: "When Homer inadvertently humiliates Bart in front of a stadium crowd, Marge encourages Homer to enroll in a fathering enrichment class taught by therapist Dr. Zander. Shocked to learn that Homer often strangles Bart for mischievous behavior, Dr. Zander conducts a series of treatments with the help of Kareem Abdul-Jabbar to teach Homer what it feels like to be young and small. But when Bart learns that the therapy sessions have transformed Homer into a pushover, he takes advantage of Homer and becomes a school bully. Hoping therapy could also cure Bart of his bullying habits, Marge enlists Dr. Zander's help to patch their relationship. Blackboard:  'I will not ridicule teacher's final four bracket'."
+          },
+          {
+            episode: 18,
+            title: "The Great Simpsina",
+            airDate: "2011-04-10",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172893.jpg",
+            duration: "30 min",
+            overview: "The family is greeted by folk singer Ewell Freestone when they visit a peach farm, but when Marge goes overboard with peach-inspired dishes, Lisa and Bart try to get rid of the unwanted fruit. Later, Lisa becomes a magician's apprentice to the legendary Great Raymondo who helps her develop her craft, but a schoolgirl crush clouds her judgment when she is coaxed into revealing the Great Raymondo's most famous magic trick to his phony archnemesis. But when the rival magician's act takes a risky turn, the Great Raymondo has one last trick up his sleeve and stages showdown with Ricky Jay, Penn &amp; Teller and David Copperfield, showing them why he is the master of the craft."
+          },
+          {
+            episode: 19,
+            title: "The Real Housewives of Fat Tony",
+            airDate: "2011-05-01",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172894.jpg",
+            duration: "30 min",
+            overview: "Fat Tony and Selma, Marge's painfully blunt sister, fall in love and get married after a whirlwind courtship. Marge has her reservations about the couple's marriage after Selma begins to prioritize her looks and ritzy new lifestyle over her family, so Fat Tony invites Homer and Marge to a weekend getaway at the Jersey Shore. Meanwhile, Bart discovers a special talent that allows him to detect the location of truffles by smell, and Lisa jumps at the chance to capitalize on the rare culinary treasures."
+          },
+          {
+            episode: 20,
+            title: "Homer Scissorhands",
+            airDate: "2011-05-08",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172895.jpg",
+            duration: "30 min",
+            overview: "After Homer discovers a genius talent for styling hair and opens his own salon, he becomes Springfield's most in-demand hair stylist. But having to listen to women's problems and gossip all day long leads Homer to believe his gift may actually be a curse. Meanwhile, when Milhouse decides to live each day to the fullest, he comes out of his shell and professes his love for Lisa, only to have his heart broken. Milhouse then catches the eye of popular fifth-grader Taffy, causing Lisa to make a bold move. Blackboard: 'I do not deserve a Mothers day gift for being \"One Badass Mother\"."
+          },
+          {
+            episode: 21,
+            title: "500 Keys",
+            airDate: "2011-05-15",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172896.jpg",
+            duration: "30 min",
+            overview: "When the Simpsons discover a collection of keys to every door in Springfield, Lisa stumbles upon an eerie hidden classroom beneath Springfield Elementary School. When she shares her discovery with Principal Skinner, the secret room mysteriously disappears and he takes the only key away. A determined Lisa uses her detective skills to lead her back to the room to solve an old school mystery."
+          },
+          {
+            episode: 22,
+            title: "The Ned-Liest Catch",
+            airDate: "2011-05-22",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172898.jpg",
+            duration: "30 min",
+            overview: "Feeling guilty for getting Mrs. Krabappel suspended after one of his school pranks, Bart helps her escape detention, and Ned Flanders winds up saving her life in the process. When Edna and Ned start dating, he is surprised to learn she's been with many of Springfield's men, including Homer and Aerosmith drummer Joey Kramer ."
+          }
+        ]
+      },
+      {
+        season: 23,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Falcon and the D'ohman",
+            airDate: "2011-09-25",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172851.jpg",
+            duration: "30 min",
+            overview: "Homer befriends Wayne, a reserved security guard recently hired by the nuclear power plant. Plagued by violent flashbacks from his past as a CIA agent, he must overcome his tortured nightmares to save Homer from a Ukranian terrorist. Meanwhile, Marge fantasizes about being a contestant on \"Top Chef\" hosted by Tom Colicchio, and the future of Springfield's hottest \"it\" couple Nedna, Edna Krabappel and Ned Flanders, will be revealed after months of online fan voting and speculation."
+          },
+          {
+            episode: 2,
+            title: "Bart Stops to Smell the Roosevelts",
+            airDate: "2011-10-02",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/128125.jpg",
+            duration: "30 min",
+            overview: "Principal Skinner challenges superintendent Gary Chalmers to take over Bart's education after one of Bart's pranks leads to a school fundraiser debacle. Chalmers takes an unconventional approach to teaching American history which sparks a fascination in President Teddy Roosevelt. Encouraged by Bart's educational renaissance, Chalmers takes Bart and his band of \"Rough Riders\" on an overnight excursion to Springfield Forest, but after a minor accident, the school administration fires Chalmers for taking the boys on an unauthorized field trip. Determined to get Chalmers' job back, Bart and the boys hold the school hostage until the administration reinstates Chalmers, and they stand up for the teacher who made a meaningful impact. Blackboard \"It's not to early to speculate about the 2016 election\"."
+          },
+          {
+            episode: 3,
+            title: "Treehouse of Horror XXII",
+            airDate: "2011-10-30",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172852.jpg",
+            duration: "30 min",
+            overview: "In the spooky opener of the 22nd annual installment of \"Treehouse of Horror,\" Homer takes a dangerous dive into an isolated canyon on Candy Peak, but when a crashing boulder traps his arm, he channels Aron Ralston to save himself. In \"The Diving Bell and Butterball,\" the first of three hair-raising Halloween tales, a venomous spider bite leaves Homer paralyzed, but when Lisa discovers Homer's ability to communicate through natural gases, he is able to express his love for Marge. The killer spells continue in \"Dial D for Diddly,\" when Ned Flanders, devout preacher by day, transforms into a cold-blooded vigilante by night. In the final terrifying tale, \"In the Na'Vi,\" Bart and Milhouse are assigned on a mission to access a sacred extract on a distant planet. They morph into the land's indigenous one-eyed avatars, but when Bart finds love and an eternal mate abroad, he is caught in planet warfare."
+          },
+          {
+            episode: 4,
+            title: "Replaceable You",
+            airDate: "2011-11-06",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172853.jpg",
+            duration: "30 min",
+            overview: "BART's science fair project, a mechanical baby seal, outshines Lisa's brainy asteroid model and becomes a popular pet among the retirement home patrons. Meanwhile, Homer gets a new and eager assistant Roz, but when Homer quickly loses his job to her and discovers her evil past, he and Flanders team up to reveal her true dark colors. Blackboard : 'It's November 6th, how come we're not airing a Halloween Show?'."
+          },
+          {
+            episode: 5,
+            title: "The Food Wife",
+            airDate: "2011-11-13",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172854.jpg",
+            duration: "30 min",
+            overview: "Marge takes Bart and Lisa on a weekend excursion, but when an unexpected restaurant detour awakens their taste buds, fellow foodies Amuse Bruce and Fois Garth inspire them to start their own food blog, \"The Three Mouthketeers.\" They score an exclusive reservation at Springfield's premiere modern restaurant, but Marge has an unsettling dream during which Anthony Bourdain, Gordon Ramsay, and Mario Batali lead her to reconsider extending the invite to Homer. Later, Marge directs Homer to a different type of cooking lab where he gets into a bind with law enforcement authorities."
+          },
+          {
+            episode: 6,
+            title: "The Book Job",
+            airDate: "2011-11-20",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172855.jpg",
+            duration: "30 min",
+            overview: "Lisa becomes disheartened when she learns the shocking truth behind the \"tween lit\" industry and her beloved fantasy novel characters. But Homer decides to cash in on the craze and forms a team to group-write the next \"tween lit\" hit, with the king of fantasy, Neil Gaiman, lending his expertise to the effort. After catching the eye of a slick industry publisher at the Springfield Book Fair, the team gets an advanced copy of their work and discovers that the corporate lit business is a bigger operation than they imagined."
+          },
+          {
+            episode: 7,
+            title: "The Man in the Blue Flannel Pants",
+            airDate: "2011-11-27",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172856.jpg",
+            duration: "30 min",
+            overview: "Host a tastemaker party at their home to promote Absolut Krusty, Krusty the Clown's own brand of liquor. Mr. Burns takes notice of the party's success and decides to promote Homer to \"Account Man\" for the Springfield Nuclear Plant. Robert Marlow, a seasoned account veteran, takes Homer under his wing and shows Homer what the high life is like in the corner office. Meanwhile, Lisa introduces Bart to a new literary world which sparks his interest in reading classic novels, and when Homer's long hours at the office become the norm, a family vacation with Marge and the kids help him realize that family always comes before work."
+          },
+          {
+            episode: 8,
+            title: "The Ten-Per-Cent Solution",
+            airDate: "2011-12-04",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172857.jpg",
+            duration: "30 min",
+            overview: "Krusty the Clown is stuck in a rut when the television network pulls his show from the air and his talent agency drops him as a client. But when THE SIMPSONS introduce him to seasoned agent Annie, they are surprised to learn that Annie was Krusty's very first agent. Despite their rocky relationship, Annie is convinced to re-sign Krusty and craft his career comeback. But when Krusty's retro comedy show reboot is deemed a critical success, Krusty must decide to stay with his agent or side with the network executives."
+          },
+          {
+            episode: 9,
+            title: "Holidays of Future Passed",
+            airDate: "2011-12-11",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172858.jpg",
+            duration: "30 min",
+            overview: "It's the most wonderful time of the year, and THE SIMPSONS flash forward thirty years and find themselves in a tech-savvy, futuristic Springfield. Bart and Lisa have children of their own and decide to spend the holidays as one big family at Homer and Marge's house. Lisa and Bart turn to Homer and Marge for parenting advice and begin to realize that the apple doesn't fall far from the tree. Blackboard: 'Cafeteria trays are not toboggans'."
+          },
+          {
+            episode: 10,
+            title: "Politically Inept, with Homer Simpson",
+            airDate: "2012-01-08",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172859.jpg",
+            duration: "30 min",
+            overview: "Homer lands his own political talk show after a video featuring his impassioned rant on poor treatment at the airport goes viral. As his talk show quickly gains popularity nationwide, Homer becomes the spokesperson for the Gravy Movement and the voice of America's newest political party. But when ill-informed Homer is asked to select the next Republican nominee for President and officially endorses right-wing rock star Ted Nugent, Marge and Lisa worry that Homer's opinion and influence might be more powerful than he realizes."
+          },
+          {
+            episode: 11,
+            title: "The D'oh-cial Network",
+            airDate: "2012-01-15",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172860.jpg",
+            duration: "30 min",
+            overview: "As the mastermind and creator of the online social networking phenomenon SpringFace, Lisa is called to trial when Springfield's obsession with the site becomes chaotic and dysfunctional. Lisa recounts her story and explains that she created the site after realizing she had no real friends. But as SpringFace expands and Springfield's fixation with the site causes mass hysteria, Lisa begins to realize that adding thousands of friends online did not compare to having real friendships. Later, Patty and Selma compete against the Winklevoss Twins in the rowing event at the 2012 Olympic Games."
+          },
+          {
+            episode: 12,
+            title: "Moe Goes from Rags to Riches",
+            airDate: "2012-01-29",
+            rating: 5.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172861.jpg",
+            duration: "30 min",
+            overview: "After Moe is heckled for not having any real companions, Moe's best friend and beloved bar rag narrates his incredible thousand-year journey to Springfield. Beginning in the Middle Ages, the bar rag was loomed into a beautiful and ornate medieval tapestry and traveled around the globe through the hands of royalty before finding himself found himself at Moe's Tavern. Meanwhile, Bart begs Milhouse for forgiveness after the two friends get into a tiff, and when the bar rag goes missing, Moe realizes that he has more friends than he thought."
+          },
+          {
+            episode: 13,
+            title: "The Daughter Also Rises",
+            airDate: "2012-02-12",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172862.jpg",
+            duration: "30 min",
+            overview: "Marge and Lisa's mother-daughter Valentine's Day plans take a turn when Lisa meets Nick, an intellectual romantic who shares the same passion for culture, history and literature. Lisa and Nick fall head over heels for each other in a fairytale romance and make a secret getaway to Mulberry Island to profess their eternal love. Meanwhile, Bart and Milhouse are inspired by the hosts of \"MythCrackers\" to \"crack\" Springfield Elementary's own legends."
+          },
+          {
+            episode: 14,
+            title: "At Long Last Leave",
+            airDate: "2012-02-19",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172863.jpg",
+            duration: "30 min",
+            overview: "The Simpsons are evicted from Springfield and join an off-the-grid community outside of town. But when Homer and Marge try to sneak back into Springfield, they are welcomed with hostility from their former friends and neighbors and begin to appreciate their new and more accepting home."
+          },
+          {
+            episode: 15,
+            title: "Exit Through the Kwik-E-Mart",
+            airDate: "2012-03-04",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172864.jpg",
+            duration: "30 min",
+            overview: "In order to get back at his dad, Bart goes undercover as a graffiti street artist and plasters Homer's unflattering image all over Springfield. But one night, Bart and Milhouse get caught in the act by established street artists Shepard Fairey, Ron English, Kenny Scharf and Robbie Conal, and to Bart's surprise, they invite him to exhibit his satirical artwork in his very own gallery show. Meanwhile, a hip, new health food superstore opens in Springfield that threatens to put Apu and the Kwik-E-Mart out of business."
+          },
+          {
+            episode: 16,
+            title: "How I Wet Your Mother",
+            airDate: "2012-03-11",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172865.jpg",
+            duration: "30 min",
+            overview: "Karma gets the best of Homer after he gets his friends in trouble, and as a result, his bedwetting problem worsens. The family goes on a mission to infiltrate his dreams to search for clues in his subconscious to determine the source of his problem. But just as things take a dangerous turn in the dream, a figure from Homer's past appears, and he is finally reassured that the fond memories of his mother Mona remain alive, giving him just the right amount of reassurance to cure him of his problem."
+          },
+          {
+            episode: 17,
+            title: "Them, Robot",
+            airDate: "2012-03-18",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172866.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns replaces all of Springfield Power Plant's employees with robots but decides to keep Homer as the sole human worker. With unemployment at an all-time high and mechanical arms operating the workplace, Springfield becomes a dismal and humorless place. But when Homer's machine-programmed peers start to turn on the community and his former real-life employees come to the rescue, they all realize that robots can't replace human friends."
+          },
+          {
+            episode: 18,
+            title: "Beware My Cheating Bart",
+            airDate: "2012-04-15",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172868.jpg",
+            duration: "30 min",
+            overview: "When Bart is forced to chaperone Jimbo's girlfriend to a movie, she ends up developing feelings for him, resulting in a whole bunch of trouble with the bullies at school. Meanwhile, Homer is persuaded to buy a state-of-the-art treadmill, fully equipped with a television. When Lisa shows Homer that he can access television shows wirelessly, he develops an obsession with watching an old television show from the treadmill, but not actually working out, until Marge decides to intervene. Blackboard 'Teacher does not have to pay a \"Ugly Tax\"."
+          },
+          {
+            episode: 19,
+            title: "A Totally Fun Thing That Bart Will Never Do Again",
+            airDate: "2012-04-29",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172869.jpg",
+            duration: "30 min",
+            overview: "When Bart sees a commercial for the ultimate cruise, he begs his parents for a family vacation. Low on cash, the only way they can go is if each family member sells one valuable. Once they're away, Bart is determined to make the vacation last forever. So he comes up with a plan to make sure they never have to return home."
+          },
+          {
+            episode: 20,
+            title: "The Spy Who Learned Me",
+            airDate: "2012-05-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172870.jpg",
+            duration: "30 min",
+            overview: "After going on \"date night\" to a spy movie starring crime fighter Stradivarius Cain, Marge becomes upset with Homer for blurting out embarrassing remarks throughout the film, but Homer's attempts to reconcile with Marge do not seem to fix anything. Later, Homer is knocked off a ladder and suffers a concussion on the job, leaving him out of work for six weeks. Instead of telling Marge, Homer decides to use the time to learn how to become a better husband with the help of someone whom he believes is Stradivarius Cain."
+          },
+          {
+            episode: 21,
+            title: "Ned 'n' Edna's Blend",
+            airDate: "2012-05-13",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172871.jpg",
+            duration: "30 min",
+            overview: "When the town of Springfield discovers that Ned and Edna have secretly gotten hitched, Marge offers to throw them a congratulatory reception. However, bringing everyone together makes them all realize that no marriage is perfect. Meanwhile, Edna tries to help Ned's children become more socially acceptable by changing some of the rules."
+          },
+          {
+            episode: 22,
+            title: "Lisa Goes Gaga",
+            airDate: "2012-05-20",
+            rating: 4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/105920.jpg",
+            duration: "30 min",
+            overview: "Lisa tries to reverse her status as one of the least popular girls in school by ghostwriting positive things about herself on the school blog. When her plan backfires, her social ranking plummets to a new low - until a psychic force tells Lady Gaga that Lisa needs her help. With Gaga's assistance, Lisa and the entire town of Springfield realize that being yourself is better than being like anyone else."
+          }
+        ]
+      },
+      {
+        season: 24,
+        episodes: [
+          {
+            episode: 1,
+            title: "Moonshine River",
+            airDate: "2012-09-30",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172818.jpg",
+            duration: "30 min",
+            overview: "America's favorite Midwestern family travels to New York City in search of Bart's long-lost love Mary Spuckler who he wants to reconnect with since she has left Springfield and her hillbilly family there to reinvent herself in the big apple. Lisa and Marge look forward to experiencing all the city has to offer but when they realize their budget won't allow a Broadway play they settle for the free \"Shakespeare In the Park\" which doesn't go as planned."
+          },
+          {
+            episode: 2,
+            title: "Treehouse of Horror XXIII",
+            airDate: "2012-10-07",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172820.jpg",
+            duration: "30 min",
+            overview: "Destined to be yet another classic Halloween-themed episode of THE SIMPSONS, in the opener of the 23rd annual \"Treehouse of Horror,\" we go back to ancient times when a Mayan Homer and Marge are witnesses to the prediction by ancient calendar makers that 2012 will be the end of the world. In \"The Greatest Story Ever Holed,\" the first of three spine-chilling stories, the Springfield Subatomic Supercollider creates a black hole that terrorizes the city, sucking up everything in its path. Then, in \"UNnormal Activity\" the Simpsons install cameras all over the house when things start to go bump in the night and Marge discovers it may have to do with an unholy pact she made some years prior. In the final thrilling tale, \"Bart &amp; Homer's Excellent Adventure,\" Bart travels to 1974 to buy a comic book at cover price but inadvertently disrupts Homer and Marge's courtship, leading Marge to end up with Artie Ziff ."
+          },
+          {
+            episode: 3,
+            title: "Adventures in Baby-Getting",
+            airDate: "2012-11-04",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/113192.jpg",
+            duration: "30 min",
+            overview: "When Marge's car falls into a sink hole, she buys the perfect replacement to fit her family of five. But she quickly grows to hate it because, as she tells a shocked Homer, the car would be too small if she wanted to have another baby. Meanwhile Bart and his friends are determined to find out what secret Lisa is keeping when Bart finds her cryptic messages and follows her sneaking off downtown for covert meetings after school."
+          },
+          {
+            episode: 4,
+            title: "Gone Abie Gone",
+            airDate: "2012-11-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115537.jpg",
+            duration: "30 min",
+            overview: "Grampa escapes from his retirement home, and when Homer and Marge frantically try to track him down, they follow clues that reveal secrets in Grampa's past. They find that he worked at a local restaurant with Marvin Hamlish and met and fell in love with the restaurant's singer Rita LaFleur. Meanwhile Lisa tries her hand at online poker, getting tips from the experts, including Jennifer Tilly but is soon gambling with her college fund. Blackboard: 'I will not concede the election until Karl Rove gives me permission'."
+          },
+          {
+            episode: 5,
+            title: "Penny-Wiseguys",
+            airDate: "2012-11-18",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115899.jpg",
+            duration: "30 min",
+            overview: "Homer is shocked to discover that his bowling teammate Dan Gillick, is an accountant for Fat Tony and his mob. When the government finally catches up with Fat Tony and he is forced to serve time on a jury, he names Dan as his temporary replacement. Meanwhile, Lisa adds insects to her vegetarian diet after passing out during a saxophone solo, but starts questioning her decision when bugs start pleading for mercy in her dreams. Blackboard ' I want to secede but don't know which state I'm in'."
+          },
+          {
+            episode: 6,
+            title: "A Tree Grows in Springfield",
+            airDate: "2012-11-25",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/115751.jpg",
+            duration: "30 min",
+            overview: "Lisa tries to cheer up a down-in-the-dumps Homer by winning him a \"MyPad\" at the school auction. But he falls back into a funk when he breaks the magical tablet device - until Ned Flanders discovers a miracle tree in the Simpsons' backyard with bark that spells the word \"HOPE\"."
+          },
+          {
+            episode: 7,
+            title: "The Day the Earth Stood Cool",
+            airDate: "2012-12-09",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/46/116323.jpg",
+            duration: "30 min",
+            overview: "Homer wants a younger, hipper image. So he starts hanging out with Terrence and Emily, his cool new neighbors from Portland, OR. But Marge finds their trendy parenting methods extreme and Bart quickly realizes their son, T-Rex, is super-pretentious."
+          },
+          {
+            episode: 8,
+            title: "To Cur with Love",
+            airDate: "2012-12-16",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172824.jpg",
+            duration: "30 min",
+            overview: "When a fire at the retirement home forces Grampa to move back in with the Simpsons, Homer throws out his back on moving day. While \"resting\" at home, he gets hooked on the super-addictive tablet game, \"Villageville.\" And, in his distraction, he loses the family dog, Santa's Little Helper. Everyone is angry with Homer for not seeming to care about the missing dog, but Grampa tells them the story of Homer's long-lost childhood pup, Bongo,."
+          },
+          {
+            episode: 9,
+            title: "Homer Goes to Prep School",
+            airDate: "2013-01-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172826.jpg",
+            duration: "30 min",
+            overview: "Homer joins the \"Springfield Preppers,\" an off-the-grid survivalist group whose leader has set up a top-secret retreat outside of town to prepare for the end of the world. But Marge grows skeptical of the group's alarmist shenanigans."
+          },
+          {
+            episode: 10,
+            title: "A Test Before Trying",
+            airDate: "2013-01-13",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172827.jpg",
+            duration: "30 min",
+            overview: "When Springfield Elementary is threatened with closure because of low standardized test scores, the fate of the school rests on one student who missed the test, and who must raise the average above the minimum threshold: Bart Simpson. Meanwhile, Homer finds a parking meter at a local dump, and starts deploying it around Springfield to fleece unwitting parkers of their quarters. Blackboard: 'I will obey oscar campaign rules from now on'."
+          },
+          {
+            episode: 11,
+            title: "The Changing of the Guardian",
+            airDate: "2013-01-27",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172830.jpg",
+            duration: "30 min",
+            overview: "After surviving a tornado, Marge and Homer seek out guardians for the kids, in case the worst should happen. They first turn to friends and family, including Homer's half-brother, Herb Powell with whom to entrust their kids, but when Bart and Lisa fall in love with a super-cool couple, Mav and Portia, Marge starts to question their potential guardians' true motivations."
+          },
+          {
+            episode: 12,
+            title: "Love is a Many-Splintered Thing",
+            airDate: "2013-02-10",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172831.jpg",
+            duration: "30 min",
+            overview: "Bart's heart strings are pulled once again when Mary Spuckler returns to Springfield. But his failure to pay her enough attention strains their relationship. Marge, too, puts Homer in the dog house."
+          },
+          {
+            episode: 13,
+            title: "Hardly Kirk-Ing",
+            airDate: "2013-02-17",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172833.jpg",
+            duration: "30 min",
+            overview: "Bart and Milhouse explore the perks of being an adult when a shaving experiment leaves Milhouse looking exactly like his father, Kirk. Also, Marge desperately tries to save Maggie from the dangers of children's television. Blackboard: 'I will not tweet as the principal's toilet'."
+          },
+          {
+            episode: 14,
+            title: "Gorgeous Grampa",
+            airDate: "2013-03-03",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172835.jpg",
+            duration: "30 min",
+            overview: "Homer's obsession with the TV show \"Storage Battles\" leads the family to discover Grampa's past identity as \"Gorgeous Godfrey,\" the most feared, villainous man in pro-wrestling history. What's more, he was once revered by a young Montgomery Burns who now convinces Grampa to get back in the ring. But when Bart starts to adopt some of his grandfather's former cheating ways, Grampa must reconcile with his past before it's too late."
+          },
+          {
+            episode: 15,
+            title: "Black-eyed, Please",
+            airDate: "2013-03-10",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172837.jpg",
+            duration: "30 min",
+            overview: "Flanders becomes jealous when his laid-back parents start to prefer Homer's company over his and he faces unbearable guilt after punching Homer in the eye, as he desperately tries to reconcile with him. Meanwhile, Lisa is distressed by her new substitute teacher, who bullies her for no apparent reason. Blackboard: 'Sorry I broke the blackboard'."
+          },
+          {
+            episode: 16,
+            title: "Dark Knight Court",
+            airDate: "2013-03-17",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/112987.jpg",
+            duration: "30 min",
+            overview: "Bart is falsely accused of pulling a prank on Easter involving the school marching band and stuffing rotten eggs in the brass section's horns, and Lisa must step in as his attorney to defend her brother. Meanwhile, Mr. Burns attempts to fulfill his lifelong dream of becoming a superhero, Fruit Bat Man,."
+          },
+          {
+            episode: 17,
+            title: "What Animated Women Want",
+            airDate: "2013-04-14",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172838.jpg",
+            duration: "30 min",
+            overview: "Once again, Homer must save his marriage when Marge gets fed up with his behavior. Meanwhile, after watching \"A Streetcar Named Desire,\" Milhouse takes on a Marlon Brando-inspired bad-boy persona to attract Lisa."
+          },
+          {
+            episode: 18,
+            title: "Pulpit Friction",
+            airDate: "2013-04-28",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/123842.jpg",
+            duration: "30 min",
+            overview: "Homer is recruited to be a church deacon by the trendy new reverend in town. But Bart asks Flanders to help him track down their former pastor, Reverend Lovejoy, when Homer starts to embrace the faith a little too seriously. Meanwhile, Marge finds out her dry cleaners mistakenly swapped her wedding dress with one of Krusty's costumes."
+          },
+          {
+            episode: 19,
+            title: "Whiskey Business",
+            airDate: "2013-05-05",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172841.jpg",
+            duration: "30 min",
+            overview: "Moe finds a new lease on life when rich venture capitalists take an interest in his homemade whiskey. Then, Grampa injures himself while babysitting Bart, and quickly discovers he prefers being cared for by his grandson than the staff at the nursing home. Also, Lisa takes exception to a \"Tupac-at-Coachella\"-style hologram of jazz legend Bleeding Gums Murphy and Sonny Rollins appears to ask her not to boycott the record label."
+          },
+          {
+            episode: 20,
+            title: "The Fabulous Faker Boy",
+            airDate: "2013-05-12",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172843.jpg",
+            duration: "30 min",
+            overview: "Marge encourages Bart to explore his creative side, and his initial reticence quickly subsides when Marge hires Slava's beautiful daughter, Zhenya, as his new piano instructor. Meanwhile, Homer is shocked when he loses the last two remaining hairs on his head, and employs a wide variety of headgear to try and keep his newfound baldness a secret from Marge."
+          },
+          {
+            episode: 21,
+            title: "The Saga of Carl",
+            airDate: "2013-05-19",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172845.jpg",
+            duration: "30 min",
+            overview: "Homer, Moe, Lenny and Carl win $200,000 in the Springfield Lottery. But when Carl takes off to Iceland - his homeland - with all the winnings, the guys embark on a Nordic adventure to get the cash back. Then, Marge mistakes a swinging Ashley Madison-type website for a Dolly Madison-type cupcake site, not realizing it's a destination for married people seeking liaisons. On the site, she meets the charming \"Ben\", who pursues her after they learn they share a love for a \"Downton Abbey\"-type TV series."
+          },
+          {
+            episode: 22,
+            title: "Dangers on a Train",
+            airDate: "2013-05-19",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172846.jpg",
+            duration: "30 min",
+            overview: "Marge unwittingly gets involved with a Web site for married people seeking affairs, and meets a charming man (voice of Seth MacFarlane) who takes quite an interest in her."
+          }
+        ]
+      },
+      {
+        season: 25,
+        episodes: [
+          {
+            episode: 1,
+            title: "Homerland",
+            airDate: "2013-09-29",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172817.jpg",
+            duration: "30 min",
+            overview: "In a nod to the hit cable series \"Homeland,\" Lisa suspects Homer may have been \"turned\" when he returns a changed man from a nuclear power plant operating convention. So she enlists the services of Annie, an intense, jumpy FBI agent to help her unravel the truth."
+          },
+          {
+            episode: 2,
+            title: "Treehouse of Horror XXIV",
+            airDate: "2013-10-06",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172816.jpg",
+            duration: "30 min",
+            overview: "The opener of the 24th annual \"Treehouse of Horror\" is from Guillermo del Toro and features monsters and classic characters from horror films throughout history. In \"Oh The Places You'll D'oh,\" the first of three spine-tingling stories, Homer rides around Springfield wreaking havoc as \"The Fat in The Hat\" in a rhyming Dr. Seuss-ian tale. In \"Dead and Shoulders,\" Bart is beheaded during a kite accident, his head is attached to Lisa's body and they must live together as one. The final terrifying tale, \"Freaks no Geeks,\" features Mr. Burns' traveling circus, The Burnsum and Bailey Circus, which has stopped in Springfieldland in the 1930s. Trapeze artist Marge and Strong Man Homer are performers and things go awry when circus freak Moe starts to make advances towards Marge."
+          },
+          {
+            episode: 3,
+            title: "Four Regrettings and a Funeral",
+            airDate: "2013-11-03",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172814.jpg",
+            duration: "30 min",
+            overview: "Four Springfielders are prompted to try to right past regrets following the funeral of a beloved neighbor. Homer regrets selling his Apple stock to buy a bowling ball, Marge worries she caused Bart's rebellious streak, Mr. Burns reminisces about a romance he gave up with a beautiful Parisian woman and Kent Brockman admits he was too afraid to leave local news and follow his former partner Rachel Maddow to cable news. Blackboard: 'We'll really miss you mrs. K.'"
+          },
+          {
+            episode: 4,
+            title: "YOLO",
+            airDate: "2013-11-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172813.jpg",
+            duration: "30 min",
+            overview: "Marge encourages Homer to embrace his \"You-Only-Live-Once\" spirit by inviting an old pen pal to stay with him and cross items off of his \"to-do\" list from when he was a 10-year old. Meanwhile, Lisa institutes a new honor code at Springfield Elementary. Blackboard: 'My school schedule does not include a bye week'."
+          },
+          {
+            episode: 5,
+            title: "Labor Pains",
+            airDate: "2013-11-17",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/172812.jpg",
+            duration: "30 min",
+            overview: "Homer remembers his Lamaze skills when he's forced to deliver a baby in an elevator. When the mother names the child Homer Jr., he quickly develops a deep emotional bond with the kid. Meanwhile, Lisa is recruited by the cheerleaders of the local pro football team, the Springfield Atoms. Blackboard: 'Rocktober is not followed by blowvember'."
+          },
+          {
+            episode: 6,
+            title: "The Kid is All Right",
+            airDate: "2013-11-24",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84014.jpg",
+            duration: "30 min",
+            overview: "Lisa finally makes a new best friend, Isabel Gutierrez, only to discover that she's a Republican and her opponent in the campaign for second grade class representative. Also guest-voicing is Anderson Cooper as himself."
+          },
+          {
+            episode: 7,
+            title: "Yellow Subterfuge",
+            airDate: "2013-12-08",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84013.jpg",
+            duration: "30 min",
+            overview: "Principal Skinner promises the students that the best-behaved among them can take a ride in a submarine. When Skinner gives all the kids a clean slate, Bart believes even his own past indiscretions will be forgotten if he doesn't get into any more trouble. Meanwhile Lisa tries to help a cash-poor Krusty to turn things around by suggesting he sell the foreign rights to his shows. Blackboard: 'I will stop asking when Santa goes to the bathroom'."
+          },
+          {
+            episode: 8,
+            title: "White Christmas Blues",
+            airDate: "2013-12-15",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84009.jpg",
+            duration: "30 min",
+            overview: "Springfield is inundated with holiday revelers after the nuclear power plant springs a radiation leak, causing snow to fall all over town. When the tourists drive up Christmas shopping prices, Marge opens up the Simpsons' house to boarders. Blackboard: 'I will not call my teacher \"prancer\" and \"vixen\".'."
+          },
+          {
+            episode: 9,
+            title: "Steal This Episode",
+            airDate: "2014-01-05",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84008.jpg",
+            duration: "30 min",
+            overview: "Homer becomes annoyed with movie theaters, so Bart teaches him how to download movies illegally. Homer is delighted with his discovery of free movies until he's caught for piracy."
+          },
+          {
+            episode: 10,
+            title: "Married to the Blob",
+            airDate: "2014-01-12",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84007.jpg",
+            duration: "30 min",
+            overview: "Comic Book Guy realizes his comics are nothing if he can't share them with anyone. Then he meets Kumiko, a Japanese woman writing an autobiographical manga, and he seeks out Homer's advice on how to date her, ending happily for everyone. Blackboard: 'If you haven't broken your Christmas presents yet, you're not trying'."
+          },
+          {
+            episode: 11,
+            title: "Specs and the City",
+            airDate: "2014-01-26",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84006.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns gives high-tech eyeglasses to all of his employees in order to spy on them. Homer loves the enhanced reality of his new gadget - that is, until Marge tries them on and he finds out she's seeing a marriage counselor. Meanwhile, Bart takes a stand against buying Nelson a Valentine's Day card, despite buying one for every other kid in class, and Nelson delivers him an ultimatum: find him the best Valentine's Day gift ever or be fed to the classroom electric pencil sharpener."
+          },
+          {
+            episode: 12,
+            title: "Diggs",
+            airDate: "2014-03-09",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84005.jpg",
+            duration: "30 min",
+            overview: "Bart is rescued from a confrontation with Springfield Elementary's bullies by Diggs, a recent transfer student and aspiring champion in the niche sport of falconry. But, Bart soon discovers that Diggs wants to do more than just wrangle falcons: he wants to take to the sky himself."
+          },
+          {
+            episode: 13,
+            title: "The Man Who Grew Too Much",
+            airDate: "2014-03-09",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84004.jpg",
+            duration: "30 min",
+            overview: "On a research trip, Lisa is shocked to discover that Sideshow Bob is now the chief scientist at a massive chemical engineering company, but her fears are allayed as she becomes enamored with his likeminded appreciation of high-culture. Meanwhile, Marge's attempt to preach healthy sexual practices to a teen church group goes awry."
+          },
+          {
+            episode: 14,
+            title: "The Winter of His Content",
+            airDate: "2014-03-16",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84003.jpg",
+            duration: "30 min",
+            overview: "Marge invites Grampa and two other octogenarians to live at the Simpsons' house after the Retirement Castle is closed for health violations, but she quickly becomes frustrated with Homer when he starts embracing the \"old person lifestyle.\" Meanwhile, at Springfield Elementary, Bart defends Nelson's affinity for hand-me-down underwear, leading Nelson to befriend Bart. Blackboard 'My Dad's already drunk for St. Patrick's'."
+          },
+          {
+            episode: 15,
+            title: "The War of Art",
+            airDate: "2014-03-23",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84002.jpg",
+            duration: "30 min",
+            overview: "After Lisa's new pet guinea pig destroys the Simpsons' living room art, Marge falls in love with a beautiful painting at the Van Houten's yard sale, which Homer snaps up for 20 bucks. But, when Lisa reveals it's by a famous early 20th century painter and could be worth $100,000, Marge and Homer face a dilemma: split the money with the Van Houtens, or keep the cash as a \"cushion\" for their kids."
+          },
+          {
+            episode: 16,
+            title: "You Don't Have to Live Like a Referee",
+            airDate: "2014-03-30",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83983.jpg",
+            duration: "30 min",
+            overview: "Homer is recruited as a World Cup referee after Lisa extolls his integrity on the youth soccer field in a Springfield Elementary speech contest. But when the Simpsons travel to Brazil, Homer finds his honesty tested by one of South America's slickest gangsters in the soccer match-bribing business."
+          },
+          {
+            episode: 17,
+            title: "Luca$",
+            airDate: "2014-04-06",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83982.jpg",
+            duration: "30 min",
+            overview: "Marge is concerned that Lisa is dating below her station when she brings home competitive eater-in-training Lucas Bortner, and she enlists Homer to help Lisa explore other options. Meanwhile, Bart is thrilled to receive free gifts from Snake Jailbird after he helps the convict escape from a jam, but when a betrayal from Milhouse puts Snake back in jail, Bart must forge a plan to set him free."
+          },
+          {
+            episode: 18,
+            title: "Days of Future Future",
+            airDate: "2014-04-13",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83981.jpg",
+            duration: "30 min",
+            overview: "Set in the future, Homer has a new clone for every time he dies. Lisa is married to a zombie version of Milhouse, while Bart deals with custody issues with his ex-wife, Jenda. Each defines what love means to them."
+          },
+          {
+            episode: 19,
+            title: "What to Expect When Bart's Expecting",
+            airDate: "2014-04-27",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83979.jpg",
+            duration: "30 min",
+            overview: "Bart can't stand art class. So he makes a voodoo doll of his art teacher. But when his spell makes her pregnant instead, he becomes a savior to Springfield couples trying to conceive. Then, he's kidnapped to help conceive a thoroughbred race horse. Blackboard 'You can't play April Fool's jokes on April 27th'."
+          },
+          {
+            episode: 20,
+            title: "Brick Like Me",
+            airDate: "2014-05-04",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83977.jpg",
+            duration: "30 min",
+            overview: "Homer wakes up in a world where his family and everyone in Springfield are made of Legos. Can he \"put together\" how he got there, and figure out how to get home before he's stuck in a world of bricks forever? Find out."
+          },
+          {
+            episode: 21,
+            title: "Pay Pal",
+            airDate: "2014-05-11",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83976.jpg",
+            duration: "30 min",
+            overview: "Marge swears off befriending any more couples when Homer offends their charming new British neighbors. But when Lisa declares that she, too, doesn't need friends, Marge reconsiders."
+          },
+          {
+            episode: 22,
+            title: "The Yellow Badge of Cowardge",
+            airDate: "2014-05-18",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83953.jpg",
+            duration: "30 min",
+            overview: "Bart is plagued with guilt when he wins the annual \"Race Around the School,\" with an assist from Nelson, who beats up frontrunner Milhouse. Meanwhile, Homer tries to bring back the annual 4th of July fireworks display after it's canceled for budget reasons. Guest voice Glenn Close returns as Mona Simpson and Olympian Edwin Moses guest-voices as himself."
+          }
+        ]
+      },
+      {
+        season: 26,
+        episodes: [
+          {
+            episode: 1,
+            title: "Clown in the Dumps",
+            airDate: "2014-09-28",
+            rating: 5.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83952.jpg",
+            duration: "30 min",
+            overview: "In the milestone 26th season opener of THE SIMPSONS, the unthinkable happens: a Springfield resident dies. Also, Krusty retires after he's offended by a comedy cable channel roast of him, and Lisa tries to protect Homer from getting hurt. Blackboard: 'Spoiler Alert: Unfortunately my dad doesn't die'."
+          },
+          {
+            episode: 2,
+            title: "The Wreck of the Relationship",
+            airDate: "2014-10-05",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83947.jpg",
+            duration: "30 min",
+            overview: "When Bart disrespects Homer's authority, Homer makes a point to try his hand at parenting. This proves fruitless, so Marge signs them up for the Relation Ship, where they'll resolve their conflicts at sea. Meanwhile, Marge is in charge of Homer's fantasy football league, but manages to win despite being the underdog."
+          },
+          {
+            episode: 3,
+            title: "Super Franchise Me",
+            airDate: "2014-10-12",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83946.jpg",
+            duration: "30 min",
+            overview: "Marge opens a sandwich franchise store after her sandwiches become a huge hit at Springfield Elementary. But running day-to-day at the store proves challenging, especially when the same franchise opens another location across the street."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXV",
+            airDate: "2014-10-19",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4727.jpg",
+            duration: "30 min",
+            overview: "\"Treehouse of Horror XXV\" is the 25th installment in the Treehouse of Horror series.-In this Halloween special, Bart and Lisa go to hell and become demons. (This short is titled school in hell.)-Moe's \"Clockwork Orange\"-style gang is disrupted when Dum (Homer) falls in love with a girl (Marge). -And, in a parody of The Others, the Simpsons are haunted by a family of ghosts, which turn out the be the family from the shorts, who were murdered and buried in the house."
+          },
+          {
+            episode: 5,
+            title: "Opposites A-frack",
+            airDate: "2014-11-02",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/2/7392.jpg",
+            duration: "30 min",
+            overview: "Lisa brings in Assemblywoman Maxine Lombard to put a stop to Mr. Burns' fracking operation, but is taken aback when the two political opponents find themselves attracted to one another."
+          },
+          {
+            episode: 6,
+            title: "Simpsorama",
+            airDate: "2014-11-09",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/3/8089.jpg",
+            duration: "30 min",
+            overview: "In a special crossover episode, \"Futurama's\" Planet Express crew comes to present-day Springfield to prevent the Simpsons from destroying the future."
+          },
+          {
+            episode: 7,
+            title: "Blazed and Confused",
+            airDate: "2014-11-16",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/4/11019.jpg",
+            duration: "30 min",
+            overview: "Bart faces a tough test at school when he gets a new teacher, Mr. Lassen, who vows to crush his spirit."
+          },
+          {
+            episode: 8,
+            title: "Covercraft",
+            airDate: "2014-11-23",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/4/12444.jpg",
+            duration: "30 min",
+            overview: "Homer has a mid-life crisis, takes up bass guitar and forms a cover band with some of the other dads in town. But the band's modest early success is soon overwhelmed by the breakout potential of their most unlikely star, Apu."
+          },
+          {
+            episode: 9,
+            title: "I Won't Be Home for Christmas",
+            airDate: "2014-12-07",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/5/14563.jpg",
+            duration: "30 min",
+            overview: "It looks like Homer won't be home for Christmas after he stays too long at Moe's Tavern on Christmas Eve and an irate Marge tells him not to return to their house, so he's left to wander alone around Springfield and lament the effects of Christmas spirits. Blackboard 'Reindeer meat does not taste like chicken'."
+          },
+          {
+            episode: 10,
+            title: "The Man Who Came to Be Dinner",
+            airDate: "2015-01-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/7/18643.jpg",
+            duration: "30 min",
+            overview: "During a trip to \"Dizzneeland\" the Simpsons board the wrong ride, Rocket To Your Doom, and are transported through the galaxy to Kang and Kodos' home planet, where they are held captive at the local zoo and the inhabitants decide to eat Homer."
+          },
+          {
+            episode: 11,
+            title: "Bart's New Friend",
+            airDate: "2015-01-11",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83945.jpg",
+            duration: "30 min",
+            overview: "Bart has a new accomplice and best friend when Homer is hypnotized at the circus and believes he is a young boy again. Blackboard: 'Snowmen don't have carrot penises'."
+          },
+          {
+            episode: 12,
+            title: "The Musk Who Fell to Earth",
+            airDate: "2015-01-25",
+            rating: 5.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83944.jpg",
+            duration: "30 min",
+            overview: "When inventor Elon Musk lands in Springfield, he and Homer become fast friends and revolutionize the town's nuclear plant. But when Musk goes overboard and Mr. Burns wants him removed, Homer must figure out a way to break up with him."
+          },
+          {
+            episode: 13,
+            title: "Walking Big & Tall",
+            airDate: "2015-02-08",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/8/21347.jpg",
+            duration: "30 min",
+            overview: "When Lisa learns Springfield's anthem was stolen from another town she writes a replacement. Meanwhile, Homer learns the meaning of \"Wide Pride\"."
+          },
+          {
+            episode: 14,
+            title: "My Fare Lady",
+            airDate: "2015-02-15",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/8/21759.jpg",
+            duration: "30 min",
+            overview: "When Marge gets fed up with the thankless duty of chauffeuring her kids around, she begins working as a driver for a transportation app service. Meanwhile, Homer bankrupts Moe when he watches over the bar for one night, which forces Moe to take a temporary job as a janitor at the nuclear plant. Blackboard: 'Pixel art is not real art'."
+          },
+          {
+            episode: 15,
+            title: "The Princess Guide",
+            airDate: "2015-03-01",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/22737.jpg",
+            duration: "30 min",
+            overview: "Homer is put in charge of keeping Princess Kemi out of trouble while her father, a Nigerian king, works out a uranium deal with Mr. Burns. When Kemi ends up at Moe's, Moe jumps to the conclusion that she must be related to the Nigerian prince who scammed him over email and schemes to get his money back. But much to his surprise, he finds himself falling for the princess."
+          },
+          {
+            episode: 16,
+            title: "Sky Police",
+            airDate: "2015-03-08",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/23231.jpg",
+            duration: "30 min",
+            overview: "Chief Wiggum is mistakenly delivered a military jet pack, which he gleefully accepts and uses in order to fight crime. But when the jet pack crashes into the church, the congregation, led by Marge, must resort to gambling and counting cards in order to collect money to repair the church."
+          },
+          {
+            episode: 17,
+            title: "Waiting for Duffman",
+            airDate: "2015-03-15",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/23931.jpg",
+            duration: "30 min",
+            overview: "When Duffman undergoes hip replacement surgery and retires, the company sets up a reality show competition to find his replacement. Homer wins the competition, and because the job requires him to stay sober, he learns that beer isn't as necessary as he thought to have a good time."
+          },
+          {
+            episode: 18,
+            title: "Peeping Mom",
+            airDate: "2015-04-19",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/10/26036.jpg",
+            duration: "30 min",
+            overview: "Bart lies about being involved in a bulldozer crash, so Marge decides to follow him everywhere until he confesses. Meanwhile, Homer ignores Santa's Little Helper when Flanders gets a new dog."
+          },
+          {
+            episode: 19,
+            title: "The Kids Are All Fight",
+            airDate: "2015-04-26",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/10/26492.jpg",
+            duration: "30 min",
+            overview: "When Homer gets an old film roll developed, the family takes a trip down memory lane to see the origins of how Bart and Lisa first started fighting with each other. Blackboard: 'I will not pay my sister to do my punishment'."
+          },
+          {
+            episode: 20,
+            title: "Let's Go Fly a Coot",
+            airDate: "2015-05-03",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/10/26850.jpg",
+            duration: "30 min",
+            overview: "The Simpsons learn about Grampa's days in the Air Force, and Bart takes up smoking to impress Milhouse's Dutch cousin, Annika,."
+          },
+          {
+            episode: 21,
+            title: "Bull-E",
+            airDate: "2015-05-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/10/27309.jpg",
+            duration: "30 min",
+            overview: "After Bart gets bullied at the school dance, Marge convinces the town to pass anti-bullying legislation. Homer then gets arrested and sent to rehab for bullying Ned Flanders, only to subsequently leave rehab as a hero."
+          },
+          {
+            episode: 22,
+            title: "Mathlete's Feat",
+            airDate: "2015-05-17",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/11/27671.jpg",
+            duration: "30 min",
+            overview: "When a modernized Springfield Elementary has a technical meltdown, Lisa transforms it into a Waldorf school. Meanwhile, Groundskeeper Willie becomes the coach of the mathletes."
+          }
+        ]
+      },
+      {
+        season: 27,
+        episodes: [
+          {
+            episode: 1,
+            title: "Every Man's Dream",
+            airDate: "2015-09-27",
+            rating: 5.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83938.jpg",
+            duration: "30 min",
+            overview: "In the season 27 premiere, Marge and Homer split up--and this time it looks like it's for good. Homer takes up with a young pharmacist named Candace, but he misses Marge."
+          },
+          {
+            episode: 2,
+            title: "Cue Detective",
+            airDate: "2015-10-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/22/57162.jpg",
+            duration: "30 min",
+            overview: "Scotty Boom, a Chew Network super-chef, challenges Homer to a smoke-off. But when someone steals Homer's secret weapon - a smoker he bought off a mysterious man at a BBQ shack - Lisa and Bart are on the case."
+          },
+          {
+            episode: 3,
+            title: "Puffless",
+            airDate: "2015-10-11",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/24/60284.jpg",
+            duration: "30 min",
+            overview: "Upon learning that their father really died of lung cancer, Selma and Patty agree to quit smoking. When Selma relapses, an angry Patty moves in with Marge and Homer."
+          },
+          {
+            episode: 4,
+            title: "Halloween of Horror",
+            airDate: "2015-10-18",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/25/63080.jpg",
+            duration: "30 min",
+            overview: "When Lisa becomes scared at the Krustyland Halloween Horror Night, Homer is forced to take down his Everscream Terrors decorations. Halloween pop-up employees seek vengeance on Homer for causing them to lose their jobs, and rob his house while Homer and Lisa hide out in the attic. Homer and Lisa light up their stored holiday decorations to attract attention and stand up to the intruders."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror XXVI",
+            airDate: "2015-10-25",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/26/66011.jpg",
+            duration: "30 min",
+            overview: "In the annual fright fest Halloween episode, Sideshow Bob finally kills Bart, only to reanimate him; Homerzilla terrorizes the Springfield Prefecture; and Lisa and Milhouse get super powers from radiation."
+          },
+          {
+            episode: 6,
+            title: "Friend with Benefit",
+            airDate: "2015-11-08",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/29/73102.jpg",
+            duration: "30 min",
+            overview: "Lisa befriends Harper, a new kid at school who happens to be super-rich. Then, Homer befriends Harper's dad and is able to enjoy the perks of Lisa having a rich friend, as well. But Lisa decides that Harper is a bully and moves to end the friendship, which prompts Homer to try and smooth things over so he can continue to enjoy the good life."
+          },
+          {
+            episode: 7,
+            title: "Lisa with an 'S'",
+            airDate: "2015-11-22",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/31/79419.jpg",
+            duration: "30 min",
+            overview: "When Homer loses $5,000 at a poker game with Broadway legend Laney Fontaine, the only way he is able to settle the bet is if he loans Lisa to Laney for a month. Then, Laney turns Lisa into a show biz kid and Marge and Homer fear they made a mistake letting her go. So they head to New York to get her back."
+          },
+          {
+            episode: 8,
+            title: "Paths of Glory",
+            airDate: "2015-12-06",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/83937.jpg",
+            duration: "30 min",
+            overview: "Lisa sets out to restore the tarnished reputation of Springfield's first female inventor. To find her invention, she scours an abandoned asylum and a restaurant that caters to men. Bart joins Lisa at the asylum, stealing one of the homicidal patient's notebooks, and bragging to the boys at school that he wrote the entries himself. This revelation causes Homer and Marge to believe he is a sociopath, which Bart decides to use to his advantage until things go too far."
+          },
+          {
+            episode: 9,
+            title: "Barthood",
+            airDate: "2015-12-13",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84015.jpg",
+            duration: "30 min",
+            overview: "Bart's coming of age story, a la \"Boyhood,\" chronicles his life from six years old to his time as an accomplished young man. Along the way, his tense relationship with Homer, an overly uncaring version of himself, and Lisa, who overshadows him in every way possible, shape Bart more than he realizes."
+          },
+          {
+            episode: 10,
+            title: "The Girl Code",
+            airDate: "2016-01-03",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/39/98041.jpg",
+            duration: "30 min",
+            overview: "After a photo Marge posts on social media gets Homer fired, he returns to the best job he ever had, a dishwasher at a Greek restaurant. This same post inspires Lisa to code an app that predicts the real-life consequences of anything you post online, only to create sentient artificial intelligence."
+          },
+          {
+            episode: 11,
+            title: "Teenage Mutant Milk-caused Hurdles",
+            airDate: "2016-01-10",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/39/97736.jpg",
+            duration: "30 min",
+            overview: "A new teacher at Springfield Elementary, and a captivated Bart tries everything to win her over. Meanwhile, Homer decides to buy a new brand of \"milk,\" which causes early puberty, both for Bart (augmenting his wooing powers) and Lisa (whose small bout with acne opens her up to the world of makeup and popularity)."
+          },
+          {
+            episode: 12,
+            title: "Much Apu About Something",
+            airDate: "2016-01-17",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/100506.jpg",
+            duration: "30 min",
+            overview: "Sanjay passes his stake in the Kwik-E-Mart to his millennial son, Jay, who turns it into a hip, health food market against Apu's insistence on tradition. Bart, whom Homer had convinced to give up pranking, is called upon to return to his trickster life and take down the new store."
+          },
+          {
+            episode: 13,
+            title: "Love is in the N2-O2-Ar-CO2-Ne-He-CH4",
+            airDate: "2016-02-14",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/111820.jpg",
+            duration: "30 min",
+            overview: "Lonely Professor Fink uses science to turn himself into a man whom women find attractive. Then, overwhelmed by the attention, he invents an algorithm to perfectly pair the lonely men and women of Springfield, realizing that scientific exploration is his true love. Meanwhile, Marge, Bart, and Lisa visit Grampa for Valentine's Day and try to rescue the old folks from a drug-induced hallucination that allows them to relive their happiest memories."
+          },
+          {
+            episode: 14,
+            title: "Gal of Constant Sorrow",
+            airDate: "2016-02-21",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114390.jpg",
+            duration: "30 min",
+            overview: "After Bart accidentally sends a sweet homeless woman's cart into the river, he allows her to live in his closet for a small fee. When Lisa discovers that the woman is an incredible folk singer, she offers her own closet and plans a concert, only to be disappointed by Hettie's surprising substance abuse and violent nature. Meanwhile Homer tries to prove he's handy, but accidentally traps the cat in the walls of the house."
+          },
+          {
+            episode: 15,
+            title: "Lisa the Veterinarian",
+            airDate: "2016-03-06",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/119846.jpg",
+            duration: "30 min",
+            overview: "After performing CPR on a tased raccoon, Lisa discovers her calling to be veterinarian and becomes an intern at the local office, but learns a tough lesson when her neglected class hamster dies. Meanwhile, Marge moonlights as a crime scene cleaner for a little extra money, and the trauma of the gory scenes make her increasingly dead inside."
+          },
+          {
+            episode: 16,
+            title: "The Marge-ian Chronicles",
+            airDate: "2016-03-13",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/48/121329.jpg",
+            duration: "30 min",
+            overview: "Not feeling unique, Lisa signs up for the Mars One Space Colony – to Marge's dismay. Then, Marge hires Bart to go through the tryout process with Lisa to make her want to quit."
+          },
+          {
+            episode: 17,
+            title: "The Burns Cage",
+            airDate: "2016-04-03",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129429.jpg",
+            duration: "30 min",
+            overview: "When Smithers is devastated by Burns' lack of affection towards him, Homer makes it his mission to find him a boyfriend. Meanwhile, after Bart orchestrates the removal of the lead in the school's stage production of \"Casablanca,\" Milhouse serves as a terrible understudy, which frustrates his co-star, Lisa."
+          },
+          {
+            episode: 18,
+            title: "How Lisa Got Her Marge Back",
+            airDate: "2016-04-10",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/131746.jpg",
+            duration: "30 min",
+            overview: "After getting into an argument, Marge takes Lisa on a touristy trip to Capital City, where, after attending a musical, they meet the show's star, Andrew Rannells (guest-voicing as himself), who reminds Lisa how lucky she is to have such a great mom. Meanwhile, Bart is frustrated that everyone expects his pranks, so he teams up with Maggie to trick people. Blackboard: Features Principal Skinner writing 'Never loose a bet to Bart Simpson' while Bart watches."
+          },
+          {
+            episode: 19,
+            title: "Fland Canyon",
+            airDate: "2016-04-24",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/54/136560.jpg",
+            duration: "30 min",
+            overview: "Homer recalls a tense family vacation to the Grand Canyon with the Flanders family. At first, the Flanders' perfection puts the families at odds, but when they get stranded and Ned and Bart go for help, the families finally bond. Blackboard: 'Dad swears he'll get his taxes in soon'."
+          },
+          {
+            episode: 20,
+            title: "To Courier with Love",
+            airDate: "2016-05-08",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/56/142196.jpg",
+            duration: "30 min",
+            overview: "After promising Marge the trip of a lifetime, frugality gets the better of Homer when he makes a deal with a travel agent to be a courier of a top-secret briefcase in exchange for a discounted family vacation to Paris. Blackboard: 'Dirty clothes are not a Mother's Day gift'."
+          },
+          {
+            episode: 21,
+            title: "Simprovised",
+            airDate: "2016-05-15",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/58/145894.jpg",
+            duration: "30 min",
+            overview: "After butchering a speech in front of all of his friends at work, Homer turns to improv comedy to gain back his confidence in his public speaking skills. Meanwhile, Marge decides to rebuild Bart's lackluster treehouse, but tensions rise when Bart questions her building skills. Also, in the episode's last three minutes, Homer appears live for the first time on television (both for East and West Coast broadcasts) to answer fan questions."
+          },
+          {
+            episode: 22,
+            title: "Orange is the New Yellow",
+            airDate: "2016-05-22",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/59/148022.jpg",
+            duration: "30 min",
+            overview: "When Marge gets arrested for letting Bart go to the park unsupervised, she serves time only to realize that prison is a welcome break from the demands of her life as a mom and wife. In her absence, Homer struggles to manage all of the parenting responsibilities that Marge usually handles. Blackboard: 'Milhouse does not live below the puberty line'."
+          }
+        ]
+      },
+      {
+        season: 28,
+        episodes: [
+          {
+            episode: 1,
+            title: "Monty Burns' Fleeing Circus",
+            airDate: "2016-09-25",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234018.jpg",
+            duration: "30 min",
+            overview: "When Springfield is burned to the ground, the Simpsons beg Mr. Burns to fund its rebuilding. Burns agrees – with one condition: he gets to put on a variety show at the Springfield Bowl. Blackboard: 'This arm needs Tommy John surgery'."
+          },
+          {
+            episode: 2,
+            title: "Friends and Family",
+            airDate: "2016-10-02",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234017.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns hires the Simpsons to play his live-in virtual reality family, but excludes Homer so that he may play dad. Now alone, Homer finds a new best friend in girl-next-door Julia, who eats, drinks and thinks like him. Blackboard: 'I will stop losing 50% of my NFL lead-in'."
+          },
+          {
+            episode: 3,
+            title: "The Town",
+            airDate: "2016-10-09",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234016.jpg",
+            duration: "30 min",
+            overview: "After Homer catches Bart rooting for Springfield's football rival, the Boston Americans, he plans a family \"hate-cation\" trip to Boston in an attempt to show Bart that Boston is a terrible city."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXVII",
+            airDate: "2016-10-16",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234015.jpg",
+            duration: "30 min",
+            overview: "In the midst of a major drought, Mr. Burns introduces a Hunger Games-style contest in which Springfield's children fight each other for a day in Burns' personal reservoir. Meanwhile, Lisa's imaginary best friend, Rachel, is jealous of Lisa's real best friends and starts killing them. Moe tells Bart that the barflies are actually covert agents and that he wants Bart join their team in Homer's place."
+          },
+          {
+            episode: 5,
+            title: "Trust But Clarify",
+            airDate: "2016-10-23",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234012.jpg",
+            duration: "30 min",
+            overview: "Lisa and Bart investigate Krusty's suspicious new \"Krustaceans\" candy. Meanwhile, Homer wants a promotion at the nuclear plant and asks Marge to help him dress the part, and news anchor Kent Brockman struggles to find his feet in the changing media world. Blackboard: 'The first episode of the second 600'."
+          },
+          {
+            episode: 6,
+            title: "There Will Be Buds",
+            airDate: "2016-11-06",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234014.jpg",
+            duration: "30 min",
+            overview: "Homer gets roped into coaching the kids' lacrosse team with Milhouse's dad, Kirk, who is in desperate need of a friend. When Kirk gets too clingy, Homer vents about how much of a loser he is. Kirk overhears his rant and disappears, right when the team needs him most: the championship game."
+          },
+          {
+            episode: 7,
+            title: "Havana Wild Weekend",
+            airDate: "2016-11-13",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234011.jpg",
+            duration: "30 min",
+            overview: "When the Retirement Castle and the V.A. Hospital can't solve Grampa's health issues, the Simpsons decide to take a family trip to Cuba to get him cheap medical care. Blackboard: 'Being right sucks'."
+          },
+          {
+            episode: 8,
+            title: "Dad Behavior",
+            airDate: "2016-11-20",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234010.jpg",
+            duration: "30 min",
+            overview: "Homer finds a new app that makes his life much easier and outsources his father-son bonding. Meanwhile, Grampa finds that he is about to be a father again. Blackboard: 'I will watch all 600 episodes without sleeping'."
+          },
+          {
+            episode: 9,
+            title: "The Last Traction Hero",
+            airDate: "2016-12-04",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234009.jpg",
+            duration: "30 min",
+            overview: "A workplace accident leaves Homer in a cast, and in a position to sue Mr. Burns. This leaves Marge unfulfilled, so she turns to an unexpected source for romance. Meanwhile, Lisa is made \"Bus Monitor\" and tries to keep the peace."
+          },
+          {
+            episode: 10,
+            title: "The Nightmare After Krustmas",
+            airDate: "2016-12-11",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234006.jpg",
+            duration: "30 min",
+            overview: "Krusty tries to impress his daughter as they spend Christmas with the Simpsons. Meanwhile, Reverend Lovejoy seeks converts after church attendance plummets, and Maggie is haunted by a spooky Christmas toy."
+          },
+          {
+            episode: 11,
+            title: "Pork & Burns",
+            airDate: "2017-01-08",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234007.jpg",
+            duration: "30 min",
+            overview: "When Marge becomes obsessed with a Japanese style of living, the Simpsons must part with any item that no longer brings them joy. For Homer, this means finding a new home for the family pig. For Lisa, it means saying goodbye to her beloved sax."
+          },
+          {
+            episode: 12,
+            title: "The Great Phatsby, Part One",
+            airDate: "2017-01-15",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234062.jpg",
+            duration: "60 min",
+            overview: "Mr. Burns tries to relive his glory days, and crosses paths with a mysterious music mogul. After being conned by him and reduced to bankruptcy, Mr. Burns seeks revenge on the music producer with the help of Homer, Bart, rapper Jazzy James and the mogul's ex-wife, Praline. Also, Lisa is courted by the richest kid in town, Smithers begins a perilous journey and Marge opens an obscure boutique store."
+          },
+          {
+            episode: 13,
+            title: "The Great Phatsby, Part Two",
+            airDate: "2017-01-15",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/99/249250.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns tries to relive his glory days, and crosses paths with a mysterious music mogul. After being conned by him and reduced to bankruptcy, Mr. Burns seeks revenge on the music producer with the help of Homer, Bart, rapper Jazzy James and the mogul's ex-wife, Praline. Also, Lisa is courted by the richest kid in town, Smithers begins a perilous journey and Marge opens an obscure boutique"
+          },
+          {
+            episode: 14,
+            title: "Fatzcarraldo",
+            airDate: "2017-02-12",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/98/245232.jpg",
+            duration: "30 min",
+            overview: "When all the fast food restaurants in Springfield become healthy, Homer turns to the last bastion of greasy food for comfort; Lisa must find a good news story when her school radio station is in jeopardy. Blackboard: 'If we're so good at predicting how come my dad bet on Atlanta'."
+          },
+          {
+            episode: 15,
+            title: "The Cad and the Hat",
+            airDate: "2017-02-19",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/99/248177.jpg",
+            duration: "30 min",
+            overview: "When Bart betrays Lisa, he has to deal with his guilt – literally. Meanwhile, Springfield is in awe when Homer is revealed to be a chess savant."
+          },
+          {
+            episode: 16,
+            title: "Kamp Krustier",
+            airDate: "2017-03-05",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/100/252448.jpg",
+            duration: "30 min",
+            overview: "When Bart and Lisa return home abruptly after a traumatic incident at Kamp Krustier, they put an end to Homer and Marge's romantic encounters. Without sex to distract him, Homer becomes a more productive worker and caring husband, but Marge misses the old Homer. Then, Bart and Lisa return to camp to confront the source of their trauma. Blackboard: 'We're the only house where the Christmas tree is still up'."
+          },
+          {
+            episode: 17,
+            title: "22 for 30",
+            airDate: "2017-03-12",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/102/255077.jpg",
+            duration: "30 min",
+            overview: "In this parody of a cable sports show, Bart goes from delinquent with detention to the star basketball player at Springfield Elementary. Lisa covers Bart's success for the school paper, and Homer becomes the team's coach. Things go awry when Bart gets involved with the mafia."
+          },
+          {
+            episode: 18,
+            title: "A Father's Watch",
+            airDate: "2017-03-19",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/102/257471.jpg",
+            duration: "30 min",
+            overview: "Worried that Bart is destined for failure, Marge turns to a series of parenting \"experts\" for advice. Homer decides to cash in on one expert's advice by opening up a trophy store in Springfield. Meanwhile, Bart finds some needed encouragement from Grampa, who gives him a precious watch coveted by Homer."
+          },
+          {
+            episode: 19,
+            title: "Caper Chase",
+            airDate: "2017-04-02",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/105/263087.jpg",
+            duration: "30 min",
+            overview: "Disappointed in Yale, Mr. Burns decides to start his own for-profit university and Homer is hired as a professor."
+          },
+          {
+            episode: 20,
+            title: "Looking for Mr. Goodbart",
+            airDate: "2017-04-30",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/109/274739.jpg",
+            duration: "30 min",
+            overview: "Bart gets in trouble on Grandparents Day at school and is forced to hang out with Skinner's mother as punishment. After spending time with various grandmas in the neighborhood, he learns the benefits of hanging out with the elderly, but eventually recognizes the dangers of taking advantage of them. Meanwhile, Peekimon Get has taken over the town of Springfield."
+          },
+          {
+            episode: 21,
+            title: "Moho House",
+            airDate: "2017-05-07",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/110/277155.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge attempt to work on their marriage, not knowing that Mr. Burns and Nigel have a bet on whether Nigel can break them apart. With the successful, albeit unconventional, help of Moe, the couple gets back their mojo."
+          },
+          {
+            episode: 22,
+            title: "Dogtown",
+            airDate: "2017-05-21",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/113/282686.jpg",
+            duration: "30 min",
+            overview: "When Homer's court case determines that a dog's life is more valuable than a human's is, the status of man's best friend rises in Springfield. When the dogs recognize their new position of power, they assert their dominance over the humans."
+          }
+        ]
+      },
+      {
+        season: 29,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Serfsons",
+            airDate: "2017-10-01",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/129/324311.jpg",
+            duration: "30 min",
+            overview: "In a magical medieval world, Marge's mother is turned into an Ice Walker and the only way for Homer to afford the cure is to force Lisa to use illegal magic. When the King discovers this, he kidnaps Lisa, and Homer must lead a feudal uprising to save her."
+          },
+          {
+            episode: 2,
+            title: "Springfield Splendor",
+            airDate: "2017-10-08",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/130/326856.jpg",
+            duration: "30 min",
+            overview: "Marge and Lisa turn Lisa's sad experience into a successful graphic novel-turned-Broadway show, but they struggle with creative differences and ego."
+          },
+          {
+            episode: 3,
+            title: "Whistler's Father",
+            airDate: "2017-10-15",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/131/328873.jpg",
+            duration: "30 min",
+            overview: "Homer discovers that Maggie is a whistling savant and launches her baby-celebrity career. Meanwhile, Marge impresses Fat Tony with her interior design taste, and he hires her to style his brothel."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXVIII",
+            airDate: "2017-10-22",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/132/330637.jpg",
+            duration: "30 min",
+            overview: "Maggie becomes possessed by an ancient demon, Lisa discovers a creepy/perfect version of her family in an alternate universe and Homer cannibalizes himself."
+          },
+          {
+            episode: 5,
+            title: "Grampy Can Ya Hear Me",
+            airDate: "2017-11-05",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/134/335556.jpg",
+            duration: "30 min",
+            overview: "Grampa gets a hearing aid and finally hears what everyone has been saying about him. Meanwhile, Mr. Skinner discovers that his mother has kept the ultimate secret from him. Blackboard: 'Hooligan is not a profession'."
+          },
+          {
+            episode: 6,
+            title: "The Old Blue Mayor She Ain't What She Used to Be",
+            airDate: "2017-11-12",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/135/337642.jpg",
+            duration: "30 min",
+            overview: "Frustrated with the local government, Marge decides to run for Mayor. To win public support, she begins making Homer the butt of her jokes. Blackboard: 'I will not ask my guidance counselor why he couldn't get a better job'."
+          },
+          {
+            episode: 7,
+            title: "Singin' in the Lane",
+            airDate: "2017-11-19",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/136/340016.jpg",
+            duration: "30 min",
+            overview: "Homer and the guys reunite their old bowling team to cheer up Moe, only to end up in fierce competition with a team of arrogant millionaires. Meanwhile, Lisa and Marge try to teach Bart that money isn't everything. Blackboard: 'We do not live in our own pee'. (underwater title sequence)"
+          },
+          {
+            episode: 8,
+            title: "Mr. Lisa's Opus",
+            airDate: "2017-12-03",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/137/343335.jpg",
+            duration: "30 min",
+            overview: "As future Lisa writes her college application essay for Harvard, she recalls past disappointing birthdays that helped shape her."
+          },
+          {
+            episode: 9,
+            title: "Gone Boy",
+            airDate: "2017-12-10",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/138/345944.jpg",
+            duration: "30 min",
+            overview: "When Bart goes missing, the town puts together a search party to find him. After most give up hope, Sideshow Bob manipulates Millhouse into revealing where Bart is hiding. Blackboard 'Snow Angels are not frozen Hobos'."
+          },
+          {
+            episode: 10,
+            title: "Haw-Haw Land",
+            airDate: "2018-01-07",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/141/354505.jpg",
+            duration: "30 min",
+            overview: "When the Simpsons go to a STEM conference, Lisa falls for a crooning jazz pianist named Brendan. Meanwhile, Bart discovers that he has an affinity for chemistry."
+          },
+          {
+            episode: 11,
+            title: "Frink Gets Testy",
+            airDate: "2018-01-14",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/142/356252.jpg",
+            duration: "30 min",
+            overview: "Fearing that the end of the world is near, Mr. Burns tasks Dr. Frink with testing all of Springfield to determine who is worth saving. The results shake the Simpson family to their core. Blackboard: features Bart watching Homer assigned to write 'Strangling is not an effective parenting tool'."
+          },
+          {
+            episode: 12,
+            title: "Homer is Where the Art Isn't",
+            airDate: "2018-03-18",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/149/374652.jpg",
+            duration: "30 min",
+            overview: "When Homer is accused of stealing a million-dollar painting, only a detective from the 1970s can clear his name, or send him to jail. It's a classic impossible mystery."
+          },
+          {
+            episode: 13,
+            title: "3 Scenes Plus a Tag from a Marriage",
+            airDate: "2018-03-25",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/150/376755.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge recount the story of their transition from loving their life without kids to being miserable parents."
+          },
+          {
+            episode: 14,
+            title: "Fears of a Clown",
+            airDate: "2018-04-01",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/151/378928.jpg",
+            duration: "30 min",
+            overview: "Bart goes to prankster rehab after a clown-mask prank terrifies the town and destroys Krusty's career. A tortured Krusty then tries his hand at serious drama with a regional theater company."
+          },
+          {
+            episode: 15,
+            title: "No Good Read Goes Unpunished",
+            airDate: "2018-04-08",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/152/380563.jpg",
+            duration: "30 min",
+            overview: "In an attempt to bring the family together, Marge forces everyone to hand in their electronics and take a trip to a book store. Blackboard: 'April Showers did not date the president'."
+          },
+          {
+            episode: 16,
+            title: "King Leer",
+            airDate: "2018-04-15",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/152/382441.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge follow Moe after the bar closes early and discover him and his father fighting. The Simpsons, after finding out that Moe has been excommunicated from his family for years, attempt to bring them back together."
+          },
+          {
+            episode: 17,
+            title: "Lisa Gets the Blues",
+            airDate: "2018-04-22",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/154/385093.jpg",
+            duration: "30 min",
+            overview: "When the Simpsons' flight to Gainesville gets re-routed to New Orleans, Lisa is forced to face her failures, and regain her confidence as a jazz musician. Meanwhile, Bart is intrigued by the voodoo in Louisiana, and Homer is intrigued by the drinking."
+          },
+          {
+            episode: 18,
+            title: "Forgive and Regret",
+            airDate: "2018-04-29",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/154/386343.jpg",
+            duration: "30 min",
+            overview: "Grampa makes a confession to Homer while on his deathbed. After his recovery, he comes to realize that this issue will not be easy to reconcile."
+          },
+          {
+            episode: 19,
+            title: "Left Behind",
+            airDate: "2018-05-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/155/387918.jpg",
+            duration: "30 min",
+            overview: "Homer gets Flanders a job at the plant, and he soon learns that no good deed goes unpunished when Flanders starts to insist on carpools and demands more from Homer's work performance. Meanwhile, Marge feels as though their marriage has lost its spark."
+          },
+          {
+            episode: 20,
+            title: "Throw Grampa from the Dane",
+            airDate: "2018-05-13",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/155/389414.jpg",
+            duration: "30 min",
+            overview: "After receiving an insurance payout, the Simpsons go to Denmark, so Grampa can benefit from the country's free healthcare."
+          },
+          {
+            episode: 21,
+            title: "Flanders' Ladder",
+            airDate: "2018-05-20",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/156/391098.jpg",
+            duration: "30 min",
+            overview: "After getting struck by lightning, Bart receives visits from ghosts, who want closure only he can provide."
+          }
+        ]
+      },
+      {
+        season: 30,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bart's Not Dead",
+            airDate: "2018-09-30",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/169/423812.jpg",
+            duration: "30 min",
+            overview: "Bart takes a dare, and ends up in the hospital. To cover for himself and Homer, he says he went to Heaven and met Jesus. Christian producers offer the Simpsons a movie deal, which Homer takes. But Bart can't deal with the guilt and comes clean to Marge after the movie is finished."
+          },
+          {
+            episode: 2,
+            title: "Heartbreak Hotel",
+            airDate: "2018-10-07",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/170/426501.jpg",
+            duration: "30 min",
+            overview: "Marge and Homer's marriage is tested when they travel to a tropical island to compete for a million dollars on Marge's favorite reality competition show."
+          },
+          {
+            episode: 3,
+            title: "My Way or the Highway to Heaven",
+            airDate: "2018-10-14",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/171/428823.jpg",
+            duration: "30 min",
+            overview: "God and St. Peter contemplate what merits a soul getting into heaven, while citizens of Springfield remember their divine encounters."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXIX",
+            airDate: "2018-10-21",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/172/431071.jpg",
+            duration: "30 min",
+            overview: "Homer wins an oyster-eating contest against the mythical Cthulhu, Springfield is overrun by plant body-snatchers, Lisa finally snaps and Mr. Burns opens a retirement home with some Jurassic upgrades."
+          },
+          {
+            episode: 5,
+            title: "Baby You Can't Drive My Car",
+            airDate: "2018-11-04",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/173/434644.jpg",
+            duration: "30 min",
+            overview: "A self-driving car company comes to Springfield, poaching all of the power plant employees with its fun work environment."
+          },
+          {
+            episode: 6,
+            title: "From Russia Without Love",
+            airDate: "2018-11-11",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/174/436390.jpg",
+            duration: "30 min",
+            overview: "On a mission to play hardcore pranks, Bart, Nelson and Milhouse get Moe a mail-order bride on the Dark Web."
+          },
+          {
+            episode: 7,
+            title: "Werking Mom",
+            airDate: "2018-11-18",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/175/437921.jpg",
+            duration: "30 min",
+            overview: "Marge wants a job, and stumbles into becoming a plastic food storage container-selling drag queen. Meanwhile, Lisa tries to make the world better in the style of \"Amelie\""
+          },
+          {
+            episode: 8,
+            title: "Krusty the Clown",
+            airDate: "2018-11-25",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/175/439311.jpg",
+            duration: "30 min",
+            overview: "Homer finds his calling as a TV recapper, but his harsh grading causes a brawl with Krusty. After almost killing Homer, Krusty hides out at a real circus, and finds happiness there."
+          },
+          {
+            episode: 9,
+            title: "Daddicus Finch",
+            airDate: "2018-12-02",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/176/441055.jpg",
+            duration: "30 min",
+            overview: "Lisa and Homer's bond gets stronger when they start spending real quality time together, and Bart feels neglected. So Marge tries to help Homer balance his attention between the kids."
+          },
+          {
+            episode: 10,
+            title: "'Tis the 30th Season",
+            airDate: "2018-12-09",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/176/442342.jpg",
+            duration: "30 min",
+            overview: "After a failed Black Friday shopping spree, Marge is determined to fix Christmas. However, Homer and the kids surprise Marge with a vacation to a Florida resort."
+          },
+          {
+            episode: 11,
+            title: "Mad About the Toy",
+            airDate: "2019-01-06",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/179/448451.jpg",
+            duration: "30 min",
+            overview: "When Marge and Homer leave Grampa to babysit the kids, some little green army men trigger a PTSD episode, sending the family on a journey to Grampa's past to when he was a post-war toy model."
+          },
+          {
+            episode: 12,
+            title: "The Girl on the Bus",
+            airDate: "2019-01-13",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/180/450212.jpg",
+            duration: "30 min",
+            overview: "When Lisa spots a new best friend from the window of the bus, she gets a taste of what life could be like with a different, more cultured family, and proceeds to try and live a double life."
+          },
+          {
+            episode: 13,
+            title: "I'm Dancing as Fat as I Can",
+            airDate: "2019-02-10",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/183/458693.jpg",
+            duration: "30 min",
+            overview: "Homer angers Marge by binging their favorite show without her, and has to pick up a new skill in order to make amends. Meanwhile, Bart prepares to compete in \"Krusty's Holiday Trample\"."
+          },
+          {
+            episode: 14,
+            title: "The Clown Stays in the Picture",
+            airDate: "2019-02-17",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/184/461020.jpg",
+            duration: "30 min",
+            overview: "Krusty reveals the untold story of his past in his movie \"The Sands of Space.\" While working as personal assistants on the movie, Bart and Lisa learn about the early years of their parents' relationship."
+          },
+          {
+            episode: 15,
+            title: "101 Mitigations",
+            airDate: "2019-03-03",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/186/466419.jpg",
+            duration: "30 min",
+            overview: "After Homer steals Comic Book Guy's car, he must either prove his innocence in court or reconcile with the jilted nerd."
+          },
+          {
+            episode: 16,
+            title: "I Want You (She's So Heavy)",
+            airDate: "2019-03-10",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/187/468546.jpg",
+            duration: "30 min",
+            overview: "When a romantic night ends in injury, Marge recovers by taking up kiteboarding while Homer bonds with his hallucinated hernia. Lisa attempts to fix her parents' strained relationship by seeking advice from an unlikely source."
+          },
+          {
+            episode: 17,
+            title: "E My Sports",
+            airDate: "2019-03-17",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/188/471539.jpg",
+            duration: "30 min",
+            overview: "As Bart begins to excel in video game competitions, Homer discovers a passion for coaching him. Lisa attempts to bring Homer back to reality, but the plan causes chaos."
+          },
+          {
+            episode: 18,
+            title: "Bart vs. Itchy & Scratchy",
+            airDate: "2019-03-24",
+            rating: 5.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/189/473998.jpg",
+            duration: "30 min",
+            overview: "Krusty releases an all-female reboot of \"Itchy and Scratchy,\" so Bart and his crew of all-male friends decide to boycott the show. After Bart's friends turn on him for laughing at the reboot, Bart joins a woke group of sixth-grade girls who commit crimes against patriarchy."
+          },
+          {
+            episode: 19,
+            title: "Girl's in the Band",
+            airDate: "2019-03-31",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/190/475723.jpg",
+            duration: "30 min",
+            overview: "Lisa is scouted by the director of the Capitol City Philharmonic, to her band teacher's dismay. Homer works extra shifts at the plant so Lisa can play, putting strain on the family."
+          },
+          {
+            episode: 20,
+            title: "I'm Just a Girl Who Can't Say D'oh",
+            airDate: "2019-04-07",
+            rating: 5.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/191/477656.jpg",
+            duration: "30 min",
+            overview: "Marge becomes Director of Springfield's local theater, armed with Lisa's script resembling \"Hamilton.\" Meanwhile, Homer joins a baby class with Maggie, where he takes a liking to supervisor Chloe"
+          },
+          {
+            episode: 21,
+            title: "D'oh Canada",
+            airDate: "2019-04-28",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/193/484803.jpg",
+            duration: "30 min",
+            overview: "On a family vacation to Niagara Falls, Lisa is mistakenly granted political asylum in Canada. When Marge goes to rescue Lisa, they are forced to re-evaluate their love for America as they navigate the polite Canadian landscape. Meanwhile, Homer takes Maggie to a \"Daddy and Me\" class."
+          },
+          {
+            episode: 22,
+            title: "Woo-Hoo Dunnit",
+            airDate: "2019-05-05",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/195/487863.jpg",
+            duration: "30 min",
+            overview: "When the secret stack of cash – aka Lisa's college fund – Marge keeps under the sink goes missing, the documentary crime series \"Deadline Springfield\" goes in-depth to solve the case, leaving no stone unturned."
+          },
+          {
+            episode: 23,
+            title: "Crystal Blue-Haired Persuasion",
+            airDate: "2019-05-12",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/196/491665.jpg",
+            duration: "30 min",
+            overview: "After Homer's work cuts children's healthcare benefits, Marge turns to buying healing crystals as a cheaper solution for Bart's ADD. Bart begins to succeed in school, prompting Marge to open her very own crystals empire and sell to the naive mothers at school."
+          }
+        ]
+      },
+      {
+        season: 31,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Winter of Our Monetized Content",
+            airDate: "2019-09-29",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/213/533245.jpg",
+            duration: "30 min",
+            overview: "When a video of Bart and Homer fighting goes viral, they begin a journey as social media celebrities. Meanwhile, Lisa battles the school's new industrialized detention system."
+          },
+          {
+            episode: 2,
+            title: "Go Big or Go Homer",
+            airDate: "2019-10-06",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/214/536039.jpg",
+            duration: "30 min",
+            overview: "Homer is demoted to supervising interns, among whom is go-getter millennial Mike, a 35-year-old who asks Homer to be his mentor. However, when Homer inspires Mike to start a business of his own, the two find themselves being chased by the mob."
+          },
+          {
+            episode: 3,
+            title: "The Fat Blue Line",
+            airDate: "2019-10-13",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/215/538769.jpg",
+            duration: "30 min",
+            overview: "During the San Castellanta street festival, much of the town realizes their wallets have been pickpocketed. After the state investigator puts the wrong man in jail, Chief Wiggum sets out to clear his name, catch the real criminal and show he's still up for police work."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXX",
+            airDate: "2019-10-20",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/216/542281.jpg",
+            duration: "30 min",
+            overview: "The 30th Treehouse of Horror features a demon Maggie, a mission to rescue Milhouse from another dimension, dead-Homer's spirit trying on some new bodies for size and Selma finally finding love in an unlikely place – the alien in the basement."
+          },
+          {
+            episode: 5,
+            title: "Gorillas on the Mast",
+            airDate: "2019-11-03",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/218/546592.jpg",
+            duration: "30 min",
+            overview: "After a trip to Aquatraz Water Park, Lisa becomes determined to set free Springfield's most vicious animals in captivity. Meanwhile, Homer fulfills a lifelong dream of buying a boat, and quickly realizes boat ownership sucks."
+          },
+          {
+            episode: 6,
+            title: "Marge the Lumberjill",
+            airDate: "2019-11-10",
+            rating: 5.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/221/553984.jpg",
+            duration: "30 min",
+            overview: "When Marge realizes that everyone views her as boring, she takes up competitive lumber-jacking as a hobby (and has a real gift for it). The circuit of competitive timbersports takes her on a month-long retreat to Portland with her trainer, Paula, whom Homer worries is going to steal her away forever."
+          },
+          {
+            episode: 7,
+            title: "Livin La Pura Vida",
+            airDate: "2019-11-17",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/224/562131.jpg",
+            duration: "30 min",
+            overview: "The Simpsons join other Springfield families on the Van Houten's annual trip to Costa Rica, which they obviously can't afford. While there, Homer befriends Patty's new girlfriend, Evelyn, and Lisa tracks down the real reason the Van Houtens can go on this trip every year."
+          },
+          {
+            episode: 8,
+            title: "Thanksgiving of Horror",
+            airDate: "2019-11-24",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/227/569058.jpg",
+            duration: "30 min",
+            overview: "In a special Thanksgiving edition of \"Treehouse of Horror,\" the Simpsons are forced to face various Thanksgiving nightmares, including the first Thanksgiving, an A.I. mishap and a dangerous space mission complicated by a sentient cranberry sauce."
+          },
+          {
+            episode: 9,
+            title: "Todd, Todd, Why Hast Thou Forsaken Me?",
+            airDate: "2019-12-01",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/229/572940.jpg",
+            duration: "30 min",
+            overview: "In this Flanders family-focused episode, Todd blames God for the death of his mother and rejects his faith – causing great distress for Ned, who sends him to live with the Simpsons in an attempt to scare him back into God's arms."
+          },
+          {
+            episode: 10,
+            title: "Bobby, It's Cold Outside",
+            airDate: "2019-12-15",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/231/579222.jpg",
+            duration: "30 min",
+            overview: "Sideshow Bob gets contracted as this year's mall Santa. Meanwhile, someone is stealing all the Christmas packages off people's front porches."
+          },
+          {
+            episode: 11,
+            title: "Hail to the Teeth",
+            airDate: "2020-01-05",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/234/586722.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge attend Artie Ziff's wedding and become quite uncomfortable when they realize that his bride-to-be is a clone of Marge. Meanwhile, Lisa grapples with the misogynistic implications of the immediate popularity she receives after getting her new Invisalign braces."
+          },
+          {
+            episode: 12,
+            title: "The Miseducation of Lisa Simpson",
+            airDate: "2020-02-16",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/242/605226.jpg",
+            duration: "30 min",
+            overview: "The sea captain finds a treasure he's been searching for all his life, but it's taken from him by the townspeople. Marge convinces the people of Springfield to build a S.T.E.M. school with the money."
+          },
+          {
+            episode: 13,
+            title: "Frinkcoin",
+            airDate: "2020-02-23",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/243/608022.jpg",
+            duration: "30 min",
+            overview: "Homer and Marge compete to be the topic of Lisa's \"Most Interesting Person I Know\" essay. Lisa instead chooses Professor Frink. While Lisa works on the essay, Frink develops a cryptocurrency, overtaking Mr. Burn's title of richest man in Springfield. With new fame, Frink struggles to know who his real friends are, while Mr. Burns schemes to take his title back."
+          },
+          {
+            episode: 14,
+            title: "Bart the Bad Guy",
+            airDate: "2020-03-01",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/244/610569.jpg",
+            duration: "30 min",
+            overview: "Bart accidentally sees a brand-new superhero movie a month before it comes out.. and the world cowers before his newfound plot-spoiling powers. Thus, a new super-villain is born: Spoiler Boy! Can heroic movie executives stop Bart before he succumbs to the temptations of ultimate evil? Find out."
+          },
+          {
+            episode: 15,
+            title: "Screenless",
+            airDate: "2020-03-08",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/245/613548.jpg",
+            duration: "30 min",
+            overview: "Marge implements a screen time limit for the whole family, all of whom all easily adjust to the new lifestyle. However, Marge realizes that she is the one addicted - not her husband and children."
+          },
+          {
+            episode: 16,
+            title: "Better Off Ned",
+            airDate: "2020-03-15",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/246/616108.jpg",
+            duration: "30 min",
+            overview: "Bart bonds with Ned Flanders, which leaves Homer jealous, so he retaliates by mentoring Nelson Muntz. Then, a heroic act by Homer makes Bart look up to him again."
+          },
+          {
+            episode: 17,
+            title: "Highway to Well",
+            airDate: "2020-03-22",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/247/619504.jpg",
+            duration: "30 min",
+            overview: "When Maggie goes to pre-school, Marge decides to get a job to pass the time and ends up working at an upscale weed dispensary. Then, Homer decides to open his own dispensary that mimics a sketchy drug deal, putting their two businesses at odds."
+          },
+          {
+            episode: 18,
+            title: "The Incredible Lightness of Being a Baby",
+            airDate: "2020-04-19",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/252/632328.jpg",
+            duration: "30 min",
+            overview: "Cletus becomes a helium tycoon. Meanwhile, Marge reunites with baby Hudson from Playdate with Destiny."
+          },
+          {
+            episode: 19,
+            title: "Warrin' Priests",
+            airDate: "2020-04-26",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/254/635280.jpg",
+            duration: "30 min",
+            overview: "When Bode, a young charismatic new preacher, comes to town and shakes things up at church, Reverend Lovejoy investigates his mysterious past."
+          },
+          {
+            episode: 20,
+            title: "Warrin' Priests Part Two",
+            airDate: "2020-05-03",
+            rating: 5.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/255/638395.jpg",
+            duration: "30 min",
+            overview: "In Michigan, Reverend Lovejoy uncovers the reason why Bode left and came to Springfield. When the congregation learns of his crime, they must decide whether to banish their new priest."
+          },
+          {
+            episode: 21,
+            title: "The Hateful Eight-Year-Olds",
+            airDate: "2020-05-10",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/256/640852.jpg",
+            duration: "30 min",
+            overview: "Lisa makes a new friend who loves horses, but then becomes part of a circle of snooty young rich girls. Meanwhile, Homer takes Marge on a romantic cruise."
+          },
+          {
+            episode: 22,
+            title: "The Way of the Dog",
+            airDate: "2020-05-17",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/299/749655.jpg",
+            duration: "30 min",
+            overview: "After the Simpsons' dog bites Marge, the family explores the tragic past of Santa's Little Helper."
+          }
+        ]
+      },
+      {
+        season: 32,
+        episodes: [
+          {
+            episode: 1,
+            title: "Undercover Burns",
+            airDate: "2020-09-27",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/275/688897.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns goes undercover as \"Fred\" at the nuclear power plant and becomes friends with Homer and the gang. Burns implements all sorts of amenities to improve his employees' lives, but a jealous Smithers plots to bring the old, bitter Burns back and destroy Fred."
+          },
+          {
+            episode: 2,
+            title: "I, Carumbus",
+            airDate: "2020-10-04",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/276/691875.jpg",
+            duration: "30 min",
+            overview: "At a museum exhibit of Ancient Rome, Marge and Homer get into an argument about Homer's lack of ambition. They then imagine a Roman version of what would happen if Homer was more career-driven."
+          },
+          {
+            episode: 3,
+            title: "Now Museum, Now You Don't",
+            airDate: "2020-10-11",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/277/694979.jpg",
+            duration: "30 min",
+            overview: "Lisa stays home from school to explore the wonders of Western art. She appears as Lisanardo, while Bart takes the shape of a French impressionist, Homer and Marge as Diego Rivera and Frida Kahlo, and Maggie as a warrior Cupid."
+          },
+          {
+            episode: 4,
+            title: "Treehouse of Horror XXXI",
+            airDate: "2020-11-01",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/281/702527.jpg",
+            duration: "30 min",
+            overview: "Don't miss the annual terror-themed trilogy, including a frightening look at the 2020 election, parodies of Pixar and Spider-Man: Into the Spider-Verse and a ninth birthday Lisa just can't get over."
+          },
+          {
+            episode: 5,
+            title: "The 7 Beer Itch",
+            airDate: "2020-11-08",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/282/705159.jpg",
+            duration: "30 min",
+            overview: "When Marge and the kids take a seaside vacation, Homer is unwittingly tempted by a British femme fatale."
+          },
+          {
+            episode: 6,
+            title: "Podcast News",
+            airDate: "2020-11-15",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/282/705161.jpg",
+            duration: "30 min",
+            overview: "Grampa is accused of a crime. Meanwhile, Kent Brockman questions his career."
+          },
+          {
+            episode: 7,
+            title: "Three Dreams Denied",
+            airDate: "2020-11-22",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/284/710606.jpg",
+            duration: "30 min",
+            overview: "Bart becomes a voiceover actor and Comic Book Guy is humiliated at Comic-Con. Meanwhile, Lisa is set up for a fall."
+          },
+          {
+            episode: 8,
+            title: "The Road To Cincinnati",
+            airDate: "2020-11-29",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/282/705160.jpg",
+            duration: "30 min",
+            overview: "Odd couple Skinner and Chalmers embark on an 800-mile car ride to Cincinnati to attend an administrator's convention - but can they reach their destination without killing each other first."
+          },
+          {
+            episode: 9,
+            title: "Sorry Not Sorry",
+            airDate: "2020-12-06",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/285/714609.jpg",
+            duration: "30 min",
+            overview: "Lisa calls her teacher, Ms. Hoover, a hack and refuses to apologize. Then, she learns Ms. Hoover's private pain."
+          },
+          {
+            episode: 10,
+            title: "A Springfield Summer Christmas for Christmas",
+            airDate: "2020-12-13",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/285/714610.jpg",
+            duration: "30 min",
+            overview: "A cable channel films a Christmas movie in Springfield and Skinner falls in love."
+          },
+          {
+            episode: 11,
+            title: "The Dad-Feelings Limited",
+            airDate: "2021-01-03",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/291/729479.jpg",
+            duration: "30 min",
+            overview: "Comic Book Guy and his wife Kumiko debate having a baby and we learn his awesome origin story."
+          },
+          {
+            episode: 12,
+            title: "Diary Queen",
+            airDate: "2021-02-21",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/294/736774.jpg",
+            duration: "30 min",
+            overview: "Bart finds his old teacher's diary and learns a surprising secret. Then, Lisa discovers an even bigger surprise."
+          },
+          {
+            episode: 13,
+            title: "Wad Goals",
+            airDate: "2021-02-28",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/296/742106.jpg",
+            duration: "30 min",
+            overview: "Bart becomes a successful caddy, but Marge worries it is ruining his character."
+          },
+          {
+            episode: 14,
+            title: "Yokel Hero",
+            airDate: "2021-03-07",
+            rating: 5.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/296/742107.jpg",
+            duration: "30 min",
+            overview: "Cletus becomes a singing sensation, while Homer becomes a new man. Then, Cletus turns on his fans, ruining everything."
+          },
+          {
+            episode: 15,
+            title: "Do PizzaBots Dream of Electric Guitars?",
+            airDate: "2021-03-14",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/298/746399.jpg",
+            duration: "30 min",
+            overview: "Homer tries to reunite a mechanical band from his youth, but film and TV creator J.J. Abrams gets ahold of them first."
+          },
+          {
+            episode: 16,
+            title: "Manger Things",
+            airDate: "2021-03-21",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/298/746400.jpg",
+            duration: "30 min",
+            overview: "A secret from Flanders' past is revealed; a never-before-seen room in the Simpson home."
+          },
+          {
+            episode: 17,
+            title: "Uncut Femmes",
+            airDate: "2021-03-28",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/299/749645.jpg",
+            duration: "30 min",
+            overview: "We learn that Chief Wiggum's wife is more than she seems. Meanwhile, Marge takes part in a jewel heist."
+          },
+          {
+            episode: 18,
+            title: "Burger Kings",
+            airDate: "2021-04-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/307/767641.jpg",
+            duration: "30 min",
+            overview: "Mr. Burns gets into the plant-based burger business. Lisa refuses to believe he's up to no good."
+          },
+          {
+            episode: 19,
+            title: "Panic On The Streets Of Springfield",
+            airDate: "2021-04-18",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/307/767669.jpg",
+            duration: "30 min",
+            overview: "Lisa gets an imaginary friend who makes her feel much better about her friends. Meanwhile, Homer gets a vehicle with awesome torque."
+          },
+          {
+            episode: 20,
+            title: "Mother and Child Reunion",
+            airDate: "2021-05-09",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/310/776203.jpg",
+            duration: "30 min",
+            overview: "Lisa makes a shocking college decision, wounding Marge. It leads to a very surprising place."
+          },
+          {
+            episode: 21,
+            title: "The Man from G.R.A.M.P.A.",
+            airDate: "2021-05-16",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/315/788052.jpg",
+            duration: "30 min",
+            overview: "A British secret agent comes to Springfield in search of a Russian spy."
+          },
+          {
+            episode: 22,
+            title: "The Last Barfighter",
+            airDate: "2021-05-23",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/315/788053.jpg",
+            duration: "30 min",
+            overview: "After Moe breaks their most sacred rule, a secret society of bartenders seeks ultimate vengeance on Homer and his friends."
+          }
+        ]
+      },
+      {
+        season: 33,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Star of the Backstage",
+            airDate: "2021-09-26",
+            rating: 4.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/358/897335.jpg",
+            duration: "30 min",
+            overview: "A musical comes to life in Springfield as Marge stages a revival of her beloved high school show - but her wonderful memories are threatened by the return of a rival from the past."
+          },
+          {
+            episode: 2,
+            title: "Bart's in Jail",
+            airDate: "2021-10-03",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/358/897336.jpg",
+            duration: "30 min",
+            overview: "When Grampa falls victim to a phone scammer, the Simpsons set out on a mission of vengeance to get his money back."
+          },
+          {
+            episode: 3,
+            title: "Treehouse of Horror XXXII",
+            airDate: "2021-10-10",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/358/897337.jpg",
+            duration: "30 min",
+            overview: "Bong Joon-ho's \"Parasite,\" Bambi's revenge and much, much more are featured."
+          },
+          {
+            episode: 4,
+            title: "The Wayz We Were",
+            airDate: "2021-10-17",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/367/918314.jpg",
+            duration: "30 min",
+            overview: "Evergreen Terrace is overrun with traffic and Moe has a fateful choice to make."
+          },
+          {
+            episode: 5,
+            title: "Lisa's Belly",
+            airDate: "2021-10-24",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/367/918315.jpg",
+            duration: "30 min",
+            overview: "Marge puts a hurtful word in Lisa's brain and Bart gets swole."
+          },
+          {
+            episode: 6,
+            title: "A Serious Flanders Part One",
+            airDate: "2021-11-07",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/369/923404.jpg",
+            duration: "30 min",
+            overview: "When a ruthless debt collector comes to Springfield, Homer and Ned's lives are sucked into the artfully violent world of prestige TV."
+          },
+          {
+            episode: 7,
+            title: "A Serious Flanders Part Two",
+            airDate: "2021-11-14",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938247.jpg",
+            duration: "30 min",
+            overview: "Things for Ned and Homer go from bad to gosh-darn worse as their prestige crime thriller nightmare continues."
+          },
+          {
+            episode: 8,
+            title: "Portrait of a Lackey on Fire",
+            airDate: "2021-11-21",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938248.jpg",
+            duration: "30 min",
+            overview: "Smithers finds true love with a famous fashion designer, but will his new relationship destroy Springfield? Find out."
+          },
+          {
+            episode: 9,
+            title: "Mothers and Other Strangers",
+            airDate: "2021-11-28",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/942894.jpg",
+            duration: "30 min",
+            overview: "Teenage Homer and Grampa go on a road trip to ease their sorrow."
+          },
+          {
+            episode: 10,
+            title: "A Made Maggie",
+            airDate: "2021-12-19",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/385/962790.jpg",
+            duration: "30 min",
+            overview: "Fat Tony becomes Godfather to Maggie Simpson."
+          },
+          {
+            episode: 11,
+            title: "The Longest Marge",
+            airDate: "2022-01-02",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/385/964142.jpg",
+            duration: "30 min",
+            overview: "Marge and Mr. Burns fight for soul of a brash young football prodigy."
+          },
+          {
+            episode: 12,
+            title: "Pixelated and Afraid",
+            airDate: "2022-02-27",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/397/994732.jpg",
+            duration: "30 min",
+            overview: "When Homer and Marge are lost in an icy wilderness, they must push themselves to their limits to survive."
+          },
+          {
+            episode: 13,
+            title: "Boyz N The Highlands",
+            airDate: "2022-03-06",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/397/994733.jpg",
+            duration: "30 min",
+            overview: "Bart, Martin and the bullies are on the run for their lives when a wilderness weekend takes a chilling turn."
+          },
+          {
+            episode: 14,
+            title: "You Won't Believe What This Episode is About - Act Three Will Shock You!",
+            airDate: "2022-03-13",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/397/994734.jpg",
+            duration: "30 min",
+            overview: "When Homer is erroneously blamed for leaving Santa's Little Helper locked in a hot car, footage of the incident goes viral, outraging all of Springfield and making Homer a pariah."
+          },
+          {
+            episode: 15,
+            title: "Bart the Cool Kid",
+            airDate: "2022-03-20",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/398/997172.jpg",
+            duration: "30 min",
+            overview: "When Bart befriends a famous kid influencer who owns an ultra-cool skate wear brand, Homer leads a rebellion of loser dads against them."
+          },
+          {
+            episode: 16,
+            title: "Pretty Whittle Liar",
+            airDate: "2022-03-27",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/399/998923.jpg",
+            duration: "30 min",
+            overview: "Cletus discovers that his wife Brandine has been hiding a secret love.. of learning."
+          },
+          {
+            episode: 17,
+            title: "The Sound of Bleeding Gums",
+            airDate: "2022-04-10",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/401/1004938.jpg",
+            duration: "30 min",
+            overview: "Lisa meets the son of the late musician Bleeding Gums Murphy - and attempts to improve his life."
+          },
+          {
+            episode: 18,
+            title: "My Octopus and a Teacher",
+            airDate: "2022-04-24",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/403/1009772.jpg",
+            duration: "30 min",
+            overview: "Bart can't control his feelings when he gets a new teacher. Meanwhile, Lisa befriends an octopus."
+          },
+          {
+            episode: 19,
+            title: "Girls Just Shauna Have Fun",
+            airDate: "2022-05-01",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/406/1016402.jpg",
+            duration: "30 min",
+            overview: "When Lisa joins the high school marching band, she finds an unlikely mentor in Shauna Chalmers. Meanwhile, Homer becomes a craft beer brewer."
+          },
+          {
+            episode: 20,
+            title: "Marge the Meanie",
+            airDate: "2022-05-08",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/408/1020397.jpg",
+            duration: "30 min",
+            overview: "A surprise from Marge's past has her bonding with Bart and terrifying Homer."
+          },
+          {
+            episode: 21,
+            title: "Meat Is Murder",
+            airDate: "2022-05-15",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/409/1022680.jpg",
+            duration: "30 min",
+            overview: "Grampa finds himself in a pickle when his hidden hamburger past comes back to \"ketchup\" with him."
+          },
+          {
+            episode: 22,
+            title: "Poorhouse Rock",
+            airDate: "2022-05-22",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/409/1024787.jpg",
+            duration: "30 min",
+            overview: "After Bart humiliates him at church, Homer finally teaches his son to admire his dad - until a visit from a magical, singing janitor changes everything they thought they knew."
+          }
+        ]
+      },
+      {
+        season: 34,
+        episodes: [
+          {
+            episode: 1,
+            title: "Habeas Tortoise",
+            airDate: "2022-09-25",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/423/1058763.jpg",
+            duration: "30 min",
+            overview: "After Homer humiliates himself in a town meeting, he looks for acceptance in an internet group hunting for a missing tortoise but finds something much more sinister."
+          },
+          {
+            episode: 2,
+            title: "One Angry Lisa",
+            airDate: "2022-10-02",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/424/1061747.jpg",
+            duration: "30 min",
+            overview: "Lisa gets called for jury duty while Marge becomes obsessed with her exercise bike."
+          },
+          {
+            episode: 3,
+            title: "Lisa the Boy Scout",
+            airDate: "2022-10-09",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/425/1064120.jpg",
+            duration: "30 min",
+            overview: "When the Boy Explorers become co-ed, Bart and Lisa vow to \"out scout\" each other at the annual jamboree."
+          },
+          {
+            episode: 4,
+            title: "The King of Nice",
+            airDate: "2022-10-16",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/425/1064121.jpg",
+            duration: "30 min",
+            overview: "Marge is hired as a segment producer on Krusty's new daytime talk show. But her initial excitement about the job fades when she discovers what an endless nightmare it is."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror Presents Not It",
+            airDate: "2022-10-23",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/425/1064122.jpg",
+            duration: "30 min",
+            overview: "In this \"Treehouse of Horror\" Halloween episode.. Homer and his teenaged friends are pursued by a killer clown in a spoof of Stephen King's novel \"It\"."
+          },
+          {
+            episode: 6,
+            title: "Treehouse of Horror XXXIII",
+            airDate: "2022-10-30",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/428/1070802.jpg",
+            duration: "30 min",
+            overview: "In a book-themed trilogy, Marge's resentment takes monstrous form, Lisa tries to save the planet through murder and Homer learns he's not the man he thought he was."
+          },
+          {
+            episode: 7,
+            title: "From Beer to Paternity",
+            airDate: "2022-11-13",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/428/1070803.jpg",
+            duration: "30 min",
+            overview: "Homer teaches Duffman on how to be a better father."
+          },
+          {
+            episode: 8,
+            title: "Step Brother from the Same Planet",
+            airDate: "2022-11-20",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/428/1070809.jpg",
+            duration: "30 min",
+            overview: "Homer has a rival in Grampa's love in a \"Step Brothers\" scenario."
+          },
+          {
+            episode: 9,
+            title: "When Nelson Met Lisa",
+            airDate: "2022-11-27",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/430/1077175.jpg",
+            duration: "30 min",
+            overview: "A future tale of the will-they-won't-they-I-guess-they-won't-maybe-they-will of Springfield's most unlikely couple."
+          },
+          {
+            episode: 10,
+            title: "Game Done Changed",
+            airDate: "2022-12-04",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/430/1077177.jpg",
+            duration: "30 min",
+            overview: "When Bart discovers a profitable glitch in an online game, he ropes Principal Skinner into his lucrative criminal enterprise. Meanwhile Marge and Maggie discover paradise."
+          },
+          {
+            episode: 11,
+            title: "Top Goon",
+            airDate: "2022-12-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/430/1077176.jpg",
+            duration: "30 min",
+            overview: "When Coach Moe recruits the world's greatest brawlers to teach Nelson the art of hockey goonery, Simpsons fans are enraged by a second hockey episode in 35 years."
+          },
+          {
+            episode: 12,
+            title: "My Life as a Vlog",
+            airDate: "2023-01-01",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/433/1084063.jpg",
+            duration: "30 min",
+            overview: "Through a series of YouTube recommended videos, the story of the rise and fall of The Simpson Family Vlog is revealed."
+          },
+          {
+            episode: 13,
+            title: "The Many Saints of Springfield",
+            airDate: "2023-02-19",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/448/1120385.jpg",
+            duration: "30 min",
+            overview: "Flanders goes to work for Fat Tony."
+          },
+          {
+            episode: 14,
+            title: "Carl Carlson Rides Again",
+            airDate: "2023-02-26",
+            rating: 6.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/449/1123742.jpg",
+            duration: "30 min",
+            overview: "When Carl is smitten by a beautiful black woman, he looks into the roots of his own identity by discovering the origins of a mysterious rodeo buckle."
+          },
+          {
+            episode: 15,
+            title: "Bartless",
+            airDate: "2023-03-05",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/449/1124045.jpg",
+            duration: "30 min",
+            overview: "When Bart's latest prank leads to chaos at Springfield Elementary, Marge and Homer dream of a world in which their rambunctious son was never a Simpson."
+          },
+          {
+            episode: 16,
+            title: "Hostile Kirk Place",
+            airDate: "2023-03-12",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/449/1124046.jpg",
+            duration: "30 min",
+            overview: "By fanning the flames of hate and division instead of embracing historical fact, nobody Kirk Van Houten rises from obscurity to become arbiter of Springfield Elementary's curriculum--leading to a fascist, dystopian future where Kirk is Springfield's dictator."
+          },
+          {
+            episode: 17,
+            title: "Pin Gal",
+            airDate: "2023-03-19",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128737.jpg",
+            duration: "30 min",
+            overview: "A mysterious figure from Marge's past returns to coach her for a bowling tournament."
+          },
+          {
+            episode: 18,
+            title: "Fan-ily Feud",
+            airDate: "2023-04-23",
+            rating: 5.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/455/1139741.jpg",
+            duration: "30 min",
+            overview: "Homer publicly disparages a pop singer and faces the ire of her vindictive and highly organized fan army."
+          },
+          {
+            episode: 19,
+            title: "Write Off This Episode",
+            airDate: "2023-04-30",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/455/1139748.jpg",
+            duration: "30 min",
+            overview: "When Marge and Lisa start a charity together, Marge is seduced by the money and prestige of Big Charity fundraising"
+          },
+          {
+            episode: 20,
+            title: "The Very Hungry Caterpillars",
+            airDate: "2023-05-07",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/460/1151001.jpg",
+            duration: "30 min",
+            overview: "When a plague of insects shuts down Springfield, the Simpsons face their greatest challenge yet.. spending time in lockdown with each other."
+          },
+          {
+            episode: 21,
+            title: "Clown V. Board of Education",
+            airDate: "2023-05-14",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/461/1153224.jpg",
+            duration: "30 min",
+            overview: "Krusty opens a school for clowning, and it becomes the most successful thing he's ever done."
+          },
+          {
+            episode: 22,
+            title: "Homer's Adventures Through the Windshield Glass",
+            airDate: "2023-05-21",
+            rating: 5.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/462/1155613.jpg",
+            duration: "30 min",
+            overview: "Time stands still after Homer crashes his car and flies through the windshield. As his life flashes before his eyes, a magical friend helps Homer learn the secret truth about his marriage."
+          }
+        ]
+      },
+      {
+        season: 35,
+        episodes: [
+          {
+            episode: 1,
+            title: "Homer's Crossing",
+            airDate: "2023-10-01",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/479/1198549.jpg",
+            duration: "30 min",
+            overview: "Feeling worthless at work, Homer volunteers to be a school crossing guard. But when his safety squad receives too much funding, the crossing guards become a force to be feared."
+          },
+          {
+            episode: 2,
+            title: "A Mid-Childhood Night's Dream",
+            airDate: "2023-10-08",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/479/1199176.jpg",
+            duration: "30 min",
+            overview: "Marge feels an overwhelming dread of the empty nest."
+          },
+          {
+            episode: 3,
+            title: "McMansion & Wife",
+            airDate: "2023-10-22",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/479/1199610.jpg",
+            duration: "30 min",
+            overview: "When a new neighbor showers him with kindness, Homer thinks he's being tricked into buying a sports car at the dealership where the neighbor works, but the truth turns out to be even more sinister; Lisa neutralizes Nelson after he goes on a bullying spree."
+          },
+          {
+            episode: 4,
+            title: "Thirst Trap: A Corporate Love Story",
+            airDate: "2023-10-29",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/480/1201856.jpg",
+            duration: "30 min",
+            overview: "In a parody documentary, a young college-dropout CEO embraces the Silicon Valley \"fake it until you make it\" philosophy and bewitches Mr. Burns into funding her highly dubious dream project."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror XXXIV",
+            airDate: "2023-11-05",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/479/1199609.jpg",
+            duration: "30 min",
+            overview: "Bart is turned into an NFT and Marge must fight through the Blockchain to rescue him; Lisa turns to a murderer from her past; an outbreak transforms Springfielders into a plague of lazy, beer-loving oafs."
+          },
+          {
+            episode: 6,
+            title: "Iron Marge",
+            airDate: "2023-11-12",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/483/1209844.jpg",
+            duration: "30 min",
+            overview: "When Marge's heart is broken by a bad birthday present, Bart and Lisa must dig into their mom's past to show that they really know her. Homer becomes a neighborhood fear-monger."
+          },
+          {
+            episode: 7,
+            title: "It's a Blunderful Life",
+            airDate: "2023-11-19",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/485/1212753.jpg",
+            duration: "30 min",
+            overview: "Lisa recounts the story of how Homer was scapegoated for a power outage that plunged Springfield into darkness days before Thanksgiving."
+          },
+          {
+            episode: 8,
+            title: "Ae Bonny Romance",
+            airDate: "2023-12-03",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/490/1226787.jpg",
+            duration: "30 min",
+            overview: "When Groundskeeper Willie is kidnapped to Scotland, Bart and the Simpsons follow - only to discover that what awaits is Homer's worst nightmare."
+          },
+          {
+            episode: 9,
+            title: "Murder, She Boat",
+            airDate: "2023-12-17",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/494/1235630.jpg",
+            duration: "30 min",
+            overview: "Lisa must solve a closed-boat mystery when Comic Book Guy's million-dollar action figure is \"murdered\" on a pop culture cruise."
+          },
+          {
+            episode: 10,
+            title: "Do The Wrong Thing",
+            airDate: "2023-12-24",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/496/1240504.jpg",
+            duration: "30 min",
+            overview: "Homer and Bart become kings of the blue-collar sports circuit, but Marge suspects something dishonest at the core of their father-son bond."
+          },
+          {
+            episode: 11,
+            title: "Frinkenstein's Monster",
+            airDate: "2024-02-18",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/504/1262481.jpg",
+            duration: "30 min",
+            overview: "Professor Frink believes he's created a monster when he helps Homer land a high-level position at a state-of-the-art nuclear plant in Shelbyville."
+          },
+          {
+            episode: 12,
+            title: "Lisa Gets an F1",
+            airDate: "2024-02-25",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/506/1265430.jpg",
+            duration: "30 min",
+            overview: "Lisa feels a need for speed as well a need for control of her anxiety when she becomes a pro kid go-cart racer."
+          },
+          {
+            episode: 13,
+            title: "Clan of the Cave Mom",
+            airDate: "2024-03-24",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/510/1276822.jpg",
+            duration: "30 min",
+            overview: "A parenting disagreement between Marge and Luann Van Houten escalates into a life-or-death struggle for survival."
+          },
+          {
+            episode: 14,
+            title: "Night of the Living Wage",
+            airDate: "2024-04-07",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/512/1282000.jpg",
+            duration: "30 min",
+            overview: "Marge gets a job in a high-pressure ghost kitchen, but when she tries to start a union, she gets more than she collectively bargained for."
+          },
+          {
+            episode: 15,
+            title: "Cremains of the Day",
+            airDate: "2024-04-21",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/515/1288449.jpg",
+            duration: "30 min",
+            overview: "When someone in Homer's life passes away, he and guys from Moe's go on a road trip to scatter the ashes... but will their friendship die as well?"
+          },
+          {
+            episode: 16,
+            title: "The Tell-Tale Pants",
+            airDate: "2024-05-05",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/517/1294675.jpg",
+            duration: "30 min",
+            overview: "Marge comes upon a surprising windfall and, angry with Homer, spends it secretly on herself."
+          },
+          {
+            episode: 17,
+            title: "The Tipping Point",
+            airDate: "2024-05-12",
+            rating: 6.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/519/1297601.jpg",
+            duration: "30 min",
+            overview: "Homer loses his mind over tipping culture run amok."
+          },
+          {
+            episode: 18,
+            title: "Bart's Brain",
+            airDate: "2024-05-19",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/519/1297604.jpg",
+            duration: "30 min",
+            overview: "Bart makes a new friend."
+          }
+        ]
+      },
+      {
+        season: 36,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bart's Birthday",
+            airDate: "2024-09-29",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/537/1343874.jpg",
+            duration: "30 min",
+            overview: "Bart celebrates a birthday that will change his life forever."
+          },
+          {
+            episode: 2,
+            title: "The Yellow Lotus",
+            airDate: "2024-10-06",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/538/1346069.jpg",
+            duration: "30 min",
+            overview: "The Simpsons will encounter a death while on vacation at a high-end resort."
+          },
+          {
+            episode: 3,
+            title: "Desperately Seeking Lisa",
+            airDate: "2024-10-20",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1350494.jpg",
+            duration: "30 min",
+            overview: "Lisa has a blazing misadventure in the dark world of Capital City's downtown art scene."
+          },
+          {
+            episode: 4,
+            title: "Shoddy Heat",
+            airDate: "2024-10-27",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/541/1353047.jpg",
+            duration: "30 min",
+            overview: "An unearthed corpse opens up a cold case from Springfield in the 1980s.. as well as a steamy relationship between young Grampa and Agnes Skinner."
+          },
+          {
+            episode: 5,
+            title: "Treehouse of Horror XXXV",
+            airDate: "2024-11-03",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/542/1355560.jpg",
+            duration: "30 min",
+            overview: "Giant monsters created by political rage threaten to tear the town apart, a Victorian Mr. Burns is jump-scared on Thanksgiving by the ghosts of his abused workers, and Homer bonds with a pair of extra-terrestrial jeans in an unforgettable stop-motion adventure that can only be called.. Denim."
+          },
+          {
+            episode: 6,
+            title: "Women in Shorts",
+            airDate: "2024-11-10",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/543/1358452.jpg",
+            duration: "30 min",
+            overview: "Girls just want to have funny."
+          },
+          {
+            episode: 7,
+            title: "Treehouse of Horror Presents: Simpsons Wicked This Way Comes",
+            airDate: "2024-11-24",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/545/1363440.jpg",
+            duration: "30 min",
+            overview: "A tattooed man at a mysterious night circus transports Lisa into three strange stories from the innocent 1950s, the chilling retro-present, and a brutalist future where prestige TV rules the world."
+          },
+          {
+            episode: 8,
+            title: "Convenience Airways",
+            airDate: "2024-12-08",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/547/1367567.jpg",
+            duration: "30 min",
+            overview: "The Simpsons are trapped on a flight with the most unruly passengers in America."
+          },
+          {
+            episode: 9,
+            title: "Homer and Her Sisters",
+            airDate: "2024-12-15",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/548/1370110.jpg",
+            duration: "30 min",
+            overview: "After a fight in an escape room, Krusty's truth-telling Aunt fixes Homer's relationship with Patty and Selma."
+          },
+          {
+            episode: 10,
+            title: "The Man Who Flew Too Much",
+            airDate: "2024-12-22",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/548/1372226.jpg",
+            duration: "30 min",
+            overview: "The new and improved Pin Pals travel to Capital City for their first ever state bowling championship."
+          },
+          {
+            episode: 11,
+            title: "Bottle Episode",
+            airDate: "2024-12-29",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/549/1374340.jpg",
+            duration: "30 min",
+            overview: "Marge and Smithers team up to become wine-forging Robin Hoods."
+          },
+          {
+            episode: 12,
+            title: "The Flandshees of Innersimpson",
+            airDate: "2025-03-30",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/562/1405827.jpg",
+            duration: "30 min",
+            overview: "Bart dips his toe into the world of celebrity DJ-ing, and Homer finally pushes Flanders too far ."
+          },
+          {
+            episode: 13,
+            title: "The Last Man Expanding",
+            airDate: "2025-04-06",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/563/1408493.jpg",
+            duration: "30 min",
+            overview: "Springfield becomes hooked on a miracle weight loss drug.. all except Homer."
+          },
+          {
+            episode: 14,
+            title: "P.S. I Hate You",
+            airDate: "2025-04-13",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/564/1410267.jpg",
+            duration: "30 min",
+            overview: "Marge's \"nice-lady\" reputation is on the line when an unknown blackmailer threatens to expose the angry woman she is inside."
+          },
+          {
+            episode: 15,
+            title: "Abe League of Their Moe",
+            airDate: "2025-04-27",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/566/1415389.jpg",
+            duration: "30 min",
+            overview: "After Grampa And Moe recruit a Macedonian slugger to play in Springfield, it strains their friendship and the very integrity of baseball."
+          },
+          {
+            episode: 16,
+            title: "Stew Lies",
+            airDate: "2025-05-04",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/567/1419734.jpg",
+            duration: "30 min",
+            overview: "Homer reinvigorates a celebrity chef's lost passion for food -- with some help from the mob."
+          },
+          {
+            episode: 17,
+            title: "Full Heart, Empty Pool",
+            airDate: "2025-05-11",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/568/1420875.jpg",
+            duration: "30 min",
+            overview: "Homer and Grampa team up to create a new sport that rivals pickleball, until Homer kicks Grampa off."
+          },
+          {
+            episode: 18,
+            title: "Estranger Things",
+            airDate: "2025-05-18",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/569/1423869.jpg",
+            duration: "30 min",
+            overview: "When Bart &amp; Lisa stop watching Itchy &amp; Scratchy together, Marge fears that they'll start to drift apart.. but she has no idea how bad things are about to get!."
+          }
+        ]
+      },
+      {
+        season: 37,
+        episodes: [
+          {
+            episode: 1,
+            title: "Thrifty Ways to Thieve Your Mother",
+            airDate: "2025-09-28",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/589/1474629.jpg",
+            duration: "30 min",
+            overview: "When Lisa starts wearing Marge's \"vintage\" clothes from the 90's, she's welcomed into the school's super-elite fashion club. But as they run out of retro looks, the funky fashionistas become obsessed with getting more.. by hook or by crook."
+          },
+          {
+            episode: 2,
+            title: "Keep Chalm and Gary On",
+            airDate: "2025-10-05",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/589/1474630.jpg",
+            duration: "30 min",
+            overview: "Homer gets Superintendent Chalmers a job at the power plant. There, Chalmers discovers huge mutated snails that produce valuable slime launching his new career as a man-o-sphere guru."
+          },
+          {
+            episode: 3,
+            title: "Treehouse of Horror XXXVI",
+            airDate: "2025-10-19",
+            rating: 6.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/593/1484237.jpg",
+            duration: "30 min",
+            overview: "In this year's installment of the annual fright-fest, the town is menaced by a mysterious murdering monster from out of the sewers, Krusty has a demonic special guest on his live Halloween special, and we go a thousand years into Springfield's poseable plastic post-apocalyptic future."
+          },
+          {
+            episode: 4,
+            title: "Men Behaving Manly",
+            airDate: "2025-10-26",
+            rating: 5.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/595/1488071.jpg",
+            duration: "30 min",
+            overview: "Springfield's men are in crisis."
+          },
+          {
+            episode: 5,
+            title: "Bad Boys... For Life?",
+            airDate: "2025-11-02",
+            rating: 6.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/597/1494037.jpg",
+            duration: "30 min",
+            overview: "Is Bart Simpson truly a bad seed? Homer and Marge must find out once and for good."
+          },
+          {
+            episode: 6,
+            title: "Bart 'N' Frink",
+            airDate: "2025-11-09",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/597/1494032.jpg",
+            duration: "30 min",
+            overview: "When Bart becomes Professor Frink's lab assistant, the Simpsons are thrown into a world of tech billionaires determined to live forever, with the future of the internet at stake."
+          },
+          {
+            episode: 7,
+            title: "Sashes to Sashes",
+            airDate: "2025-11-16",
+            rating: 6.4,
+            duration: "30 min",
+            overview: "Bart runs against Mayor Quimby's son for student council president, while Lisa learns troubling secrets about the Quimby clan.. and about the Simpsons."
+          },
+          {
+            episode: 8,
+            title: "The Day of the Jack-up",
+            airDate: "2025-11-23",
+            rating: 7.3,
+            duration: "30 min",
+            overview: "After a mysterious buyer purchases every ticket for the KPOP concert Lisa wants to go to, the Simpsons have to figure out the identity of this evil ticket reseller. Or do they? (Yes, they do)."
+          },
+          {
+            episode: 9,
+            title: "Aunt Misbehavin'",
+            airDate: "2025-11-30",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/606/1517023.jpg",
+            duration: "30 min",
+            overview: "Patty and Bart team up for the ultimate prank: getting Homer declared legally dead. To their chagrin, Homer loves being officially dead - which leads to Patty and Selma having a huge fight and Patty moving away to \"Palm Springfield\"."
+          },
+          {
+            episode: 10,
+            title: "Guess Who's Coming to Skinner",
+            airDate: "2025-12-07",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/602/1506401.jpg",
+            duration: "30 min",
+            overview: "When Principal Skinner discovers that one of his students is a runaway who has been living in the school library, he has to take the snarky, difficult kid into his home and is forced into a role he never expected or wanted - being a parent."
+          },
+          {
+            episode: 11,
+            title: "Parahormonal Activity",
+            airDate: "2025-12-14",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/605/1514937.jpg",
+            duration: "30 min",
+            overview: "Set in the near future, Marge is competently coping with the hormonal onslaught hitting her now teenage kids when she's suddenly struck by a big life change of her own, leaving Homer as the last sane person in the house.. or is he?"
+          },
+          {
+            episode: 12,
+            title: "Â¡The Fall Guy-Yi-Yi!",
+            airDate: "2025-12-28",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/605/1514936.jpg",
+            duration: "30 min",
+            overview: "Homer revitalizes Bumblebee Man's career when he becomes his secret stuntman. But how much punishment can a Stunt-Bee take before it starts to sting."
+          },
+          {
+            episode: 13,
+            title: "Seperance",
+            airDate: "2026-01-04",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/606/1517016.jpg",
+            duration: "30 min",
+            overview: "Homer's enthusiasm skills land him a job at a secretive company with a mind-altering agenda."
+          },
+          {
+            episode: 14,
+            title: "Irrational Treasure",
+            airDate: "2026-02-15",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/613/1534577.jpg",
+            duration: "30 min",
+            overview: "Marge's crusade to get the family dog in better shape leads to her entering Santa's Little Helper in canine agility competitions and a trip to the National Dog Show in Philadelphia. There, Marge and Homer suddenly find themselves - and the dog - mixed up in a historical conspiracy adventure worthy of a \"National Treasure\" movie."
+          },
+          {
+            episode: 15,
+            title: "Homer? A Cracker Bro?",
+            airDate: "2026-02-15",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/613/1534579.jpg",
+            duration: "30 min",
+            overview: "Homer strikes up an unlikely friendship with Kirk Van Houten, which leads to them launching a hugely successful business venture together - a \"crumbless\" cracker that sweeps the nation. But when Kirk's darkest secrets are revealed, Homer has to choose between his family and his fortune... and may just end up going in jail."
+          }
+        ]
+      },
+      {
+        season: 38,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Children's Book Job",
+            airDate: "2026-09-27",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/643/1608318.jpg",
+            duration: "30 min",
+            overview: "A British children's book author comes to Springfield to give a talk at Springfield Elementary School. Homer is tasked with picking her up from the airport, but things go bad from there."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 137. You (2018)
+  // ============================================================
+  {
+    title: "You",
+    type: "TV Show",
+    year: 2018,
+    rating: "7.6",
+    age: "TV-MA",
+    duration: "45m",
+    genres: ["Mystery", "Crime", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+    videoUrl: "78191",
+    trailerUrl: "",
+    overview: "Joe Goldberg, charming bookstore manager, become obsess with woman, use tech, manipulation, sometimes murder, get close to her. Each season new target, same dark pattern, love twist into obsession, obsession twist into violence.",
+    director: "Greg Berlanti, Sera Gamble",
+    cast: ["Penn Badgley, Elizabeth Lail, Victoria Pedretti, Ambyr Childers, Tati Gabrielle"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Pilot",
+            airDate: "2018-09-09",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938930.jpg",
+            duration: "60 min",
+            overview: "A charming first encounter quickly turns into something more nefarious when bookstore manager Joe takes a very strong liking to grad student Beck."
+          },
+          {
+            episode: 2,
+            title: "The Last Nice Guy in New York",
+            airDate: "2018-09-16",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938931.jpg",
+            duration: "60 min",
+            overview: "As Beck deals with unwanted advances from her advisor, she brings Joe to Peach's high society soiree. Joe tries to navigate matters with Benji."
+          },
+          {
+            episode: 3,
+            title: "Maybe",
+            airDate: "2018-09-23",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938932.jpg",
+            duration: "60 min",
+            overview: "Beck's continued casual encounters catch Joe off guard, as does a run-in with the police. Both make him realize a key situation must be dealt with."
+          },
+          {
+            episode: 4,
+            title: "The Captain",
+            airDate: "2018-09-30",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938933.jpg",
+            duration: "60 min",
+            overview: "After an awkward evening with Beck, Joe discovers he's not the only one keeping secrets. Peach's antagonistic approach to Joe intensifies."
+          },
+          {
+            episode: 5,
+            title: "Living with the Enemy",
+            airDate: "2018-10-07",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938935.jpg",
+            duration: "60 min",
+            overview: "A video from Annika's past comes back to haunt her. Joe and Peach's simmering tension boils over when Peach introduces Beck to a major literary agent."
+          },
+          {
+            episode: 6,
+            title: "Amour Fou",
+            airDate: "2018-10-14",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938936.jpg",
+            duration: "60 min",
+            overview: "Beck heads to Connecticut with Peach, whose motives are not what they seem. Joe's pursuit of her stirs up old memories -- and brings new injuries."
+          },
+          {
+            episode: 7,
+            title: "Everythingship",
+            airDate: "2018-10-21",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938937.jpg",
+            duration: "60 min",
+            overview: "A grieving Beck turns to therapy, which leads Joe to do the same -- for different reasons. Joe's plans for Beck's birthday don't go as expected."
+          },
+          {
+            episode: 8,
+            title: "You Got Me, Babe",
+            airDate: "2018-10-28",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938939.jpg",
+            duration: "60 min",
+            overview: "Three months later, life is good for Joe and Beck, respectively. But a series of reconnections may spell trouble for Joe's current relationship."
+          },
+          {
+            episode: 9,
+            title: "Candace",
+            airDate: "2018-11-04",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938940.jpg",
+            duration: "60 min",
+            overview: "So, what exactly happened to Candace? Beck is determined to find out -- but to do so, she'll have to take a page straight from Joe's book."
+          },
+          {
+            episode: 10,
+            title: "Bluebeard's Castle",
+            airDate: "2018-11-11",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/375/938941.jpg",
+            duration: "60 min",
+            overview: "Joe juggles problems with Paco and Beck -- and now must contend with a private investigator as well. But resolution is coming, one way or another."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Fresh Start",
+            airDate: "2019-12-26",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582520.jpg",
+            duration: "50 min",
+            overview: "Joe -- now \"Will\" -- arrives in his own personal hell on Earth: LA. He's trying to go straight, but the past doesn't always leave well enough alone."
+          },
+          {
+            episode: 2,
+            title: "Just The Tip",
+            airDate: "2019-12-26",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582521.jpg",
+            duration: "51 min",
+            overview: "Joe realizes Will Bettelheim isn't all he's cracked up to be. The fallout threatens to get in the way of his burgeoning connection with Love."
+          },
+          {
+            episode: 3,
+            title: "What Are Friends For?",
+            airDate: "2019-12-26",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582522.jpg",
+            duration: "50 min",
+            overview: "Joe attempts to keep things platonic with Love and keep his nose out of Ellie's business. But his instincts soon get the better of him."
+          },
+          {
+            episode: 4,
+            title: "The Good, The Bad & The Hendy",
+            airDate: "2019-12-26",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582523.jpg",
+            duration: "50 min",
+            overview: "As he tries to adapt to sharing Love with Forty, Joe is caught off guard by a group date -- while his protectiveness of Ellie quickly escalates."
+          },
+          {
+            episode: 5,
+            title: "Have a Good Wellkend, Joe!",
+            airDate: "2019-12-26",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582524.jpg",
+            duration: "50 min",
+            overview: "Love brings Joe to a wellness weekend, where he gets a good look at her family's dynamic. But Forty's surprise guest has him feeling anything but zen."
+          },
+          {
+            episode: 6,
+            title: "Farewell, My Bunny",
+            airDate: "2019-12-26",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582525.jpg",
+            duration: "46 min",
+            overview: "Joe performs surveillance on a potential problem, but suspects someone might be tailing him, too. Painful memories put Love on edge about the present."
+          },
+          {
+            episode: 7,
+            title: "Ex-istential Crisis",
+            airDate: "2019-12-26",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582526.jpg",
+            duration: "51 min",
+            overview: "To soothe heartache, Joe turns to ancient remedies, modern technology and drinking with Delilah. But one small slip-up could have major consequences."
+          },
+          {
+            episode: 8,
+            title: "Fear and Loathing in Beverly Hills",
+            airDate: "2019-12-26",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582527.jpg",
+            duration: "49 min",
+            overview: "Joe wants to get away, but Forty insists they finish their script. As pressure mounts, Forty's excessive coping devices make for a harrowing night."
+          },
+          {
+            episode: 9,
+            title: "P.I. Joe",
+            airDate: "2019-12-26",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582528.jpg",
+            duration: "46 min",
+            overview: "As Love looks after an increasingly skittish Ellie, Joe tries to reconstruct the events of a trippy evening -- but finds the truth to be elusive."
+          },
+          {
+            episode: 10,
+            title: "Love, Actually",
+            airDate: "2019-12-26",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/582529.jpg",
+            duration: "51 min",
+            overview: "Joe has always been full of surprises, but Love has a few of her own. Is this the beginning of the end, or the end of the deceiving?"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "And They Lived Happily Ever After",
+            airDate: "2021-10-15",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916878.jpg",
+            duration: "52 min",
+            overview: "After a delivery room surprise, new dad Joe struggles to connect with his infant child, but he has no trouble at all fostering a new infatuation."
+          },
+          {
+            episode: 2,
+            title: "So I Married An Axe Murderer",
+            airDate: "2021-10-15",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916879.jpg",
+            duration: "51 min",
+            overview: "Joe and Love try couples therapy, but their issues may need more than counseling — and their friction isn't the only thing they need to make disappear."
+          },
+          {
+            episode: 3,
+            title: "Missing White Woman Syndrome",
+            airDate: "2021-10-15",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916880.jpg",
+            duration: "45 min",
+            overview: "Love grows apprehensive as media scrutiny intensifies next door. An acute sickness in the family drudges up old memories — and worse — for Joe."
+          },
+          {
+            episode: 4,
+            title: "Hands Across Madre Linda",
+            airDate: "2021-10-15",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916881.jpg",
+            duration: "47 min",
+            overview: "An impulsive retaliation by Love lands her and Joe in a bind. Though Joe seeks a different way out than usual, it proves to be a tall order."
+          },
+          {
+            episode: 5,
+            title: "Into the Woods",
+            airDate: "2021-10-15",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916882.jpg",
+            duration: "45 min",
+            overview: "Joe begrudgingly goes on a hunting trip with some other local husbands as Love tries to manage her burgeoning relationship with Theo."
+          },
+          {
+            episode: 6,
+            title: "W.O.M.B.",
+            airDate: "2021-10-15",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916883.jpg",
+            duration: "53 min",
+            overview: "As her mother launches a new venture, Love grows increasingly concerned about a potential big change herself. Joe has a breakthrough in self-awareness."
+          },
+          {
+            episode: 7,
+            title: "We're All Mad Here",
+            airDate: "2021-10-15",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916884.jpg",
+            duration: "51 min",
+            overview: "While Dottie spirals into emotional turmoil, Love tries to get intel on Matthew's investigation. Joe sets his sights on derailing Marienne's ex."
+          },
+          {
+            episode: 8,
+            title: "Swing and a Miss",
+            airDate: "2021-10-15",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916885.jpg",
+            duration: "51 min",
+            overview: "Joe selfishly tries to coerce Love into a lifestyle change, but things go south quickly. Theo discovers just how deep Matthew's obsession goes."
+          },
+          {
+            episode: 9,
+            title: "Red Flag",
+            airDate: "2021-10-15",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916886.jpg",
+            duration: "49 min",
+            overview: "While Love tends to some unexpected long-term guests, Joe decides to take a drastic step to get what he wants the most."
+          },
+          {
+            episode: 10,
+            title: "What is Love?",
+            airDate: "2021-10-15",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/366/916887.jpg",
+            duration: "60 min",
+            overview: "As news permeates the community about a recent murder, Joe looks toward a future with Marienne — but hell hath no fury like Love scorned."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Joe Takes a Holiday",
+            airDate: "2023-02-09",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/446/1115464.jpg",
+            duration: "52 min",
+            overview: "Now living in London, Joe tries to lay low and resist old habits... until he's forced to tie up loose ends and bond with a circle of wealthy socialites."
+          },
+          {
+            episode: 2,
+            title: "Portrait of the Artist",
+            airDate: "2023-02-09",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/446/1115465.jpg",
+            duration: "47 min",
+            overview: "Joe leans on his skills — and a student's insights — to catch his stalker. An art show offers a gallery of suspects, revealing more than the eye can see."
+          },
+          {
+            episode: 3,
+            title: "Eat the Rich",
+            airDate: "2023-02-09",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/446/1115466.jpg",
+            duration: "44 min",
+            overview: "As news of a killer targeting the rich swirls, Joe's stalker inches dangerously close to the truth. Joe's efforts to protect Kate take a dark turn."
+          },
+          {
+            episode: 4,
+            title: "Hampsie",
+            airDate: "2023-02-09",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/446/1115467.jpg",
+            duration: "54 min",
+            overview: "A ritzy weekend getaway doubles as a chance for Joe to hunt down his elusive stalker. Without cell service or Wi-Fi, Joe makes a key connection."
+          },
+          {
+            episode: 5,
+            title: "The Fox and the Hound",
+            airDate: "2023-02-09",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/446/1115468.jpg",
+            duration: "49 min",
+            overview: "While falling back into familiar patterns, Joe gets caught up in an unfortunate game as everyone's plans go up in flames."
+          },
+          {
+            episode: 6,
+            title: "Best of Friends",
+            airDate: "2023-03-09",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128157.jpg",
+            duration: "54 min",
+            overview: "In the aftermath of the murders, Joe searches for a scapegoat and Rhys pursues his grand ambitions while Kate and Phoebe assert their independence."
+          },
+          {
+            episode: 7,
+            title: "Good Man, Cruel World",
+            airDate: "2023-03-09",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128158.jpg",
+            duration: "46 min",
+            overview: "The tables turn for Joe when an influential figure comes to town with a tempting offer as Nadia follows a hunch."
+          },
+          {
+            episode: 8,
+            title: "Where Are You Going, Where Have You Been?",
+            airDate: "2023-03-09",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128159.jpg",
+            duration: "51 min",
+            overview: "As memories of the past trickle in, Joe struggles to recall an important detail. Phoebe shares her hasty plans with Kate. Nadia scrambles for a solution."
+          },
+          {
+            episode: 9,
+            title: "She's Not There",
+            airDate: "2023-03-09",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128160.jpg",
+            duration: "46 min",
+            overview: "Torn between his dark side and good intentions, Joe works to right his wrongs. After attempting to help Phoebe, Kate faces her father — and hard truths."
+          },
+          {
+            episode: 10,
+            title: "The Death of Jonathan Moore",
+            airDate: "2023-03-09",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/451/1128161.jpg",
+            duration: "54 min",
+            overview: "With love and loss weighing heavily on his mind, Joe commits a final act in hopes of never walking down the same path again."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode 1",
+            airDate: "2025-04-24",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413180.jpg",
+            duration: "48 min",
+            overview: "Joe and Kate settle in New York with a pledge to start over, but their headline-making marriage hits a snag when betrayal strikes close to home."
+          },
+          {
+            episode: 2,
+            title: "Episode 2",
+            airDate: "2025-04-24",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413181.jpg",
+            duration: "52 min",
+            overview: "A family dinner descends into chaos when Kate's sister Reagan makes a shocking allegation. Bronte's curiosity lands her in a tight spot."
+          },
+          {
+            episode: 3,
+            title: "Episode 3",
+            airDate: "2025-04-24",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413182.jpg",
+            duration: "53 min",
+            overview: "Joe hits an impasse in Mooney's basement, as tension builds at home. Kate plays hardball to protect Henry. Bronte faces exposure at a literary salon."
+          },
+          {
+            episode: 4,
+            title: "Episode 4",
+            airDate: "2025-04-24",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413183.jpg",
+            duration: "53 min",
+            overview: "A game-changing announcement at Lockwood Corporation sets off alarm bells for Kate. An unwelcome guest crashes Mooney's grand reopening."
+          },
+          {
+            episode: 5,
+            title: "Episode 5",
+            airDate: "2025-04-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413184.jpg",
+            duration: "50 min",
+            overview: "Fueled by fear, Kate finds answers from a troubled source. A puzzling note at work sends Joe on a search for the whereabouts of a missing person."
+          },
+          {
+            episode: 6,
+            title: "Episode 6",
+            airDate: "2025-04-24",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413185.jpg",
+            duration: "47 min",
+            overview: "A viral video complicates Joe's dreams of a fresh start — and forces Bronte to question her loyalties. Kate makes changes at home."
+          },
+          {
+            episode: 7,
+            title: "Episode 7",
+            airDate: "2025-04-24",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413186.jpg",
+            duration: "45 min",
+            overview: "As faces from his past resurface, the \"most visible man in New York\" must sway the court of public opinion."
+          },
+          {
+            episode: 8,
+            title: "Episode 8",
+            airDate: "2025-04-24",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413187.jpg",
+            duration: "53 min",
+            overview: "With their relationship at a crossroads, Joe gives Bronte a gift to test her commitment. Kate finds a shoulder to lean on."
+          },
+          {
+            episode: 9,
+            title: "Episode 9",
+            airDate: "2025-04-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413188.jpg",
+            duration: "46 min",
+            overview: "Joe must use all his talents to liberate himself from the Lockwoods' financial grip. Kate tries a dose of deception to achieve her goal."
+          },
+          {
+            episode: 10,
+            title: "Episode 10",
+            airDate: "2025-04-24",
+            rating: 5.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1413189.jpg",
+            duration: "55 min",
+            overview: "Hoping to decisively close the book on the past, Joe embarks on a risky new chapter. But as with every great story, one last twist awaits."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 138. Marvel's Agents of S.H.I.E.L.D. (2013)
+  // ============================================================
+  {
+    title: "Marvel's Agents of S.H.I.E.L.D.",
+    type: "TV Show",
+    year: 2013,
+    rating: "6.7",
+    age: "TV-14",
+    duration: "45m",
+    genres: ["Action", "Adventure", "Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3tbKHQEP6BNUC5ZMNqps0rITwO7.jpg",
+    videoUrl: "1403",
+    trailerUrl: "",
+    overview: "Agent Phil Coulson lead team of skilled operative, handle strange, dangerous case too big for regular cop, too small for Avengers. Team dig into world of superhuman, alien tech, secret conspiracy tie back to S.H.I.E.L.D. itself.",
+    director: "Joss Whedon, Jed Whedon, Maurissa Tancharoen",
+    cast: ["Clark Gregg, Ming-Na Wen, Brett Dalton, Chloe Bennet, Iain De Caestecker, Elizabeth Henstridge"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Pilot",
+            airDate: "2013-09-24",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173976.jpg",
+            duration: "60 min",
+            overview: "Joss Whedon, the creative genius behind the feature film \"Marvel's The Avengers,\" one of the highest grossing films of all time, and of the iconic television series \"Buffy The Vampire Slayer,\" has co-created \"Marvel's Agents of S.H.I.E.L.D.,\" a dynamic, action-packed one-hour drama that brings back Agent Phil Coulson to lead a team of highly skilled agents to investigate extra-normal and super human people and events worldwide."
+          },
+          {
+            episode: 2,
+            title: "0-8-4",
+            airDate: "2013-10-01",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173986.jpg",
+            duration: "60 min",
+            overview: "Coulson and his S.H.I.E.L.D. agents travel to Peru to investigate an object of unknown origin, codenamed 0-8-4. But when he runs into Comandante Camilla Reyes, more than just sparks fly at 30,000 feet."
+          },
+          {
+            episode: 3,
+            title: "The Asset",
+            airDate: "2013-10-08",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/173988.jpg",
+            duration: "60 min",
+            overview: "When the brilliant scientist Dr. Franklin Hall is kidnapped, Agent Coulson and his S.H.I.E.L.D. agents must race against the clock to locate him. Skye is their only way in -- pushing the team to their limits when the entire plan turns upside-down."
+          },
+          {
+            episode: 4,
+            title: "Eye Spy",
+            airDate: "2013-10-15",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174000.jpg",
+            duration: "60 min",
+            overview: "Agent Coulson and the S.H.I.E.L.D. team try to track down a mysterious woman who has single-handedly committed numerous high-stakes heists. But when the woman's identity is revealed, a troubling secret stands to ruin Coulson."
+          },
+          {
+            episode: 5,
+            title: "Girl in the Flower Dress",
+            airDate: "2013-10-22",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174001.jpg",
+            duration: "60 min",
+            overview: "An elusive girl in a flower dress may hold the key to the mystery that brings Coulson and team to Asia to rescue a young man with an unusual and dangerous power. Meanwhile, Skye has a secret that jeopardizes her relationship with the team right when they need her most."
+          },
+          {
+            episode: 6,
+            title: "FZZT",
+            airDate: "2013-11-05",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174234.jpg",
+            duration: "60 min",
+            overview: "When floating bodies turn up, Coulson and the Agents of S.H.I.E.L.D must hunt down an elusive killer. No one is safe -- not even the team."
+          },
+          {
+            episode: 7,
+            title: "The Hub",
+            airDate: "2013-11-12",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174456.jpg",
+            duration: "60 min",
+            overview: "Dangerous secrets are being kept from Coulson's team and he works the system to save Ward and Fitz when they are sent on a Level 8 classified mission that may end in tragedy."
+          },
+          {
+            episode: 8,
+            title: "The Well",
+            airDate: "2013-11-19",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174480.jpg",
+            duration: "60 min",
+            overview: "In the aftermath of the events chronicled in the feature film THOR: THE DARK WORLD, Coulson and The Agents of S.H.I.E.L.D. pick up the pieces -- one of which threatens to destroy a member of the team."
+          },
+          {
+            episode: 9,
+            title: "Repairs",
+            airDate: "2013-11-26",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174504.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team are haunted by a mysterious force that threatens to destroy them all, and only a secret from May's past can save them."
+          },
+          {
+            episode: 10,
+            title: "The Bridge",
+            airDate: "2013-12-10",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174850.jpg",
+            duration: "60 min",
+            overview: "In a shocking cliffhanger episode, Coulson takes the war back to Centipede, and this time he brings in Mike Peterson for some super-soldier support. As they get closer to the truth, startling secrets are revealed and an unexpected twist threatens the team."
+          },
+          {
+            episode: 11,
+            title: "The Magical Place",
+            airDate: "2014-01-07",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174858.jpg",
+            duration: "60 min",
+            overview: "Coulson uncovers vital information about the mystery of his death, but, with Centipede out for blood, this knowledge may come at the cost of one of the team."
+          },
+          {
+            episode: 12,
+            title: "Seeds",
+            airDate: "2014-01-14",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174861.jpg",
+            duration: "60 min",
+            overview: "Coulson and May uncover startling information about Skye's past, while the team is swept into a storm at S.H.I.E.L.D. Academy."
+          },
+          {
+            episode: 13,
+            title: "T.R.A.C.K.S.",
+            airDate: "2014-02-04",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174862.jpg",
+            duration: "60 min",
+            overview: "Hot on the trail of the Clairvoyant, Coulson and his team board a mystery train that seems to be headed for certain death."
+          },
+          {
+            episode: 14,
+            title: "T.A.H.I.T.I.",
+            airDate: "2014-03-04",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174883.jpg",
+            duration: "60 min",
+            overview: "Coulson goes on the attack to save Skye - enlisting the aid of Ward's former S.O. John Garrett -- and uncovers shocking truths about his own life and S.H.I.E.L.D.."
+          },
+          {
+            episode: 15,
+            title: "Yes Men",
+            airDate: "2014-03-11",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174884.jpg",
+            duration: "60 min",
+            overview: "When Coulson and his team are attacked by Lorelei - a deadly seductress who escaped from Asgard - Thor's Lady Sif, her longtime nemesis, steps in to try to save them."
+          },
+          {
+            episode: 16,
+            title: "End of the Beginning",
+            airDate: "2014-04-01",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174922.jpg",
+            duration: "60 min",
+            overview: "Agents Garrett and Triplett are back to help Coulson's team track down S.H.I.E.L.D.'S nefarious enemy - the Clairvoyant. But will Deathlok destroy them all to protect his master's identity?"
+          },
+          {
+            episode: 17,
+            title: "Turn, Turn, Turn",
+            airDate: "2014-04-08",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/69/174923.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team find themselves without anyone they can trust, only to discover that they are trapped with a traitor in their midst."
+          },
+          {
+            episode: 18,
+            title: "Providence",
+            airDate: "2014-04-15",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175048.jpg",
+            duration: "60 min",
+            overview: "With Colonel Glenn Talbot now on their trail, Coulson and his team seek refuge in the last place anyone would look, where they begin to uncover S.H.I.E.L.D.'s most dangerous secrets -- secrets that could destroy them all."
+          },
+          {
+            episode: 19,
+            title: "The Only Light in the Darkness",
+            airDate: "2014-04-22",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175051.jpg",
+            duration: "60 min",
+            overview: "With their world turned upside down, Coulson races to save the life of his one true love as the mystery of \"The Cellist,\" which began in Marvel's The Avengers."
+          },
+          {
+            episode: 20,
+            title: "Nothing Personal",
+            airDate: "2014-04-29",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175056.jpg",
+            duration: "60 min",
+            overview: "Just when there's no one left to trust, Agent Maria Hill -- from \"Marvel's The Avengers\" and \"Marvel's Captain America: The Winter Solider\" -- returns to team up with Coulson as S.H.I.E.L.D. is being destroyed around them."
+          },
+          {
+            episode: 21,
+            title: "Ragtag",
+            airDate: "2014-05-06",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175058.jpg",
+            duration: "60 min",
+            overview: "In the last episode before the epic season finale, Ward's betrayal and HYDRA's shocking secrets are revealed as Coulson's team goes undercover on a mission that leaves no one unscathed."
+          },
+          {
+            episode: 22,
+            title: "Beginning of the End",
+            airDate: "2014-05-13",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175064.jpg",
+            duration: "60 min",
+            overview: "Dark secrets are revealed as Coulson and his team put everything on the line to stop Garrett and the forces of HYDRA."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Shadows",
+            airDate: "2014-09-23",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175092.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team are now wanted fugitives with limited resources -- but that's not stopping them from keeping the world safe from powerful and unseen threats everywhere. However, with new members they hardly know, will S.H.I.E.L.D. ever be trusted again?"
+          },
+          {
+            episode: 2,
+            title: "Heavy Is the Head",
+            airDate: "2014-09-30",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175093.jpg",
+            duration: "60 min",
+            overview: "Hunted and running out of solutions, Coulson puts his team right in the line of fire in the hopes of saving them all. But with General Talbot, Hydra and Creel all on the attack, can they possibly survive? Meanwhile, a mysterious Doctor harbors some dangerous secrets that could destroy one of our core team members."
+          },
+          {
+            episode: 3,
+            title: "Making Friends and Influencing People",
+            airDate: "2014-10-07",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175236.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team race against Hydra to get to Donnie Gill -- a dangerous gifted with the ability to freeze objects -- while Simmons is caught in the crossfire."
+          },
+          {
+            episode: 4,
+            title: "Face My Enemy",
+            airDate: "2014-10-14",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175250.jpg",
+            duration: "60 min",
+            overview: "While on a mission to learn more about the secrets of the mysterious writing, Coulson finds himself attacked by the only person he can trust: Agent Melinda May. Meanwhile, the rest of the team is trapped in an explosive situation, and it's up to Fitz to save them -- but is he up to it?"
+          },
+          {
+            episode: 5,
+            title: "A Hen in the Wolf House",
+            airDate: "2014-10-21",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175307.jpg",
+            duration: "60 min",
+            overview: "Coulson's team is up against the beautiful and deadly Bobbi Morse -- Security Chief for Hydra. Meanwhile, Skye's father forces Raina to reunite him with his daughter at any cost."
+          },
+          {
+            episode: 6,
+            title: "A Fractured House",
+            airDate: "2014-10-28",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175314.jpg",
+            duration: "60 min",
+            overview: "The world turns against S.H.I.E.L.D. when Hydra impersonates them to attack The United Nations, and an unexpected enemy leads the charge to bring about their downfall."
+          },
+          {
+            episode: 7,
+            title: "The Writing on the Wall",
+            airDate: "2014-11-11",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175316.jpg",
+            duration: "60 min",
+            overview: "The team discovers murder victims with the alien glyphs on them that Coulson's been etching. All of Coulson's secrets and lies come to a head."
+          },
+          {
+            episode: 8,
+            title: "The Things We Bury",
+            airDate: "2014-11-18",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175351.jpg",
+            duration: "60 min",
+            overview: "Coulson and team find themselves in an epic face-off against Hydra to uncover an ancient secret, while Ward kidnaps his brother, Senator Christian Ward, for a violent trip down memory lane."
+          },
+          {
+            episode: 9,
+            title: "...Ye Who Enter Here",
+            airDate: "2014-12-02",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175364.jpg",
+            duration: "60 min",
+            overview: "Discovers the ancient city before Hydra, but uncovering the secrets may require one of Coulson's team to make the ultimate sacrifice. Meanwhile, May and Skye race to get to Raina before Whitehall takes her."
+          },
+          {
+            episode: 10,
+            title: "What They Become",
+            airDate: "2014-12-09",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175366.jpg",
+            duration: "60 min",
+            overview: "Coulson and Whitehall's forces meet in an explosive confrontation that dramatically alters everyone's fates. Meanwhile, Skye discovers shocking secrets about her past, on the Winter finale."
+          },
+          {
+            episode: 11,
+            title: "Aftershocks",
+            airDate: "2015-03-03",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175371.jpg",
+            duration: "60 min",
+            overview: "In the midseason premiere, \"Aftershocks,\" Coulson's team must deal with the consequences of their war with Hydra as shocking revelations threaten to tear them apart, and Hydra makes a dangerous move that may involve a traitor in S.H.I.E.L.D.'s midst."
+          },
+          {
+            episode: 12,
+            title: "Who You Really Are",
+            airDate: "2015-03-10",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175373.jpg",
+            duration: "60 min",
+            overview: "Coulson and team come to the aid of a confused Lady Sif, who has lost her memory after fighting with a mysterious warrior, whose true mission will send shockwaves through S.H.I.E.L.D. Meanwhile, Bobbi and Mac continue to hide their true mission from everyone close to them."
+          },
+          {
+            episode: 13,
+            title: "One of Us",
+            airDate: "2015-03-17",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175374.jpg",
+            duration: "60 min",
+            overview: "Cal seeks revenge on Coulson by assembling a team of Super Villains to destroy S.H.I.E.L.D. Meanwhile, May calls on renowned Dr. Andrew Garner, her charismatic ex-husband, with a crisis that threatens to tear the team apart."
+          },
+          {
+            episode: 14,
+            title: "Love in the Time of HYDRA",
+            airDate: "2015-03-24",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175466.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team are still reeling from a shocking revelation that leaves the team fractured as they must decide what to do with one of their own. Meanwhile, Bobbi and Mack reveal their true allegiance to Hunter, while elsewhere, Ward and Agent 33 embark on a personal mission."
+          },
+          {
+            episode: 15,
+            title: "One Door Closes",
+            airDate: "2015-03-31",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175468.jpg",
+            duration: "60 min",
+            overview: "War comes to Coulson's doorstep in a way he never anticipated as shocking revelations are brought to light, and Skye struggles to control her new abilities but will soon make a decision that irrevocably changes her life."
+          },
+          {
+            episode: 16,
+            title: "Afterlife",
+            airDate: "2015-04-07",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175697.jpg",
+            duration: "60 min",
+            overview: "As Robert Gonzales makes his move, Coulson must do whatever it takes to protect the future of S.H.I.E.L.D. Meanwhile, Skye's journey to control her powers takes a surprising turn when she meets the enigmatic Inhuman named Lincoln."
+          },
+          {
+            episode: 17,
+            title: "Melinda",
+            airDate: "2015-04-14",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175705.jpg",
+            duration: "60 min",
+            overview: "The story of Melinda May's transformation into \"The Cavalry\" is revealed as she finds herself at a crossroads in the war between Coulson and Gonzales. As Skye learns more about her true heritage from Lincoln, the truth about the Inhumans will send her in a new direction."
+          },
+          {
+            episode: 18,
+            title: "The Frenemy of My Enemy",
+            airDate: "2015-04-21",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175712.jpg",
+            duration: "60 min",
+            overview: "Dangerous new alliance is formed as Coulson and Hunter turn to the last person anyone would expect - Grant Ward! As the war between S.H.I.E.L.D. factions continues, Skye and Lincoln will find themselves drawn into this conflict."
+          },
+          {
+            episode: 19,
+            title: "The Dirty Half Dozen",
+            airDate: "2015-04-28",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175731.jpg",
+            duration: "60 min",
+            overview: "Gonzales and Coulson must find a way to put their differences aside and work together against Hydra, even if it means teaming up with someone they don't trust."
+          },
+          {
+            episode: 20,
+            title: "Scars",
+            airDate: "2015-05-05",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175739.jpg",
+            duration: "60 min",
+            overview: "Skye is torn between her loyalty to S.H.I.E.L.D. and her connection to the Inhumans as tensions rise between the groups -- and Coulson reveals a secret he's been hiding from even those closest to him."
+          },
+          {
+            episode: 21,
+            title: "S.O.S.: Part 1",
+            airDate: "2015-05-12",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175766.jpg",
+            duration: "60 min",
+            overview: "In Part 1 of the two-part second-season finale, sacrifices are made by Agent Coulson and his team in order to get through a war, and relationships are permanently altered as a result."
+          },
+          {
+            episode: 22,
+            title: "S.O.S.: Part 2",
+            airDate: "2015-05-12",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/70/175765.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team launch a last-ditch attack on the helicarrier to stop Jiaying from unleashing the Terrigen crystals and wiping out S.H.I.E.L.D."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Laws of Nature",
+            airDate: "2015-09-29",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/21/54432.jpg",
+            duration: "60 min",
+            overview: "Coulson and his team track down an outbreak of Inhumans and discover that someone is killing or capturing many of them... and it's not who they think. Meanwhile, Fitz takes desperate steps to recover Jemma, and Daisy and Mack ask Lincoln for help."
+          },
+          {
+            episode: 2,
+            title: "Purpose in the Machine",
+            airDate: "2015-10-06",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/22/57346.jpg",
+            duration: "60 min",
+            overview: "The team turn to Asgardian Elliott Randolph for help deciphering the monolith and rescuring Jemma. Meanwhile, Grant abducts a key player in his quest to rebuild Hydra, while Lance begins his quest to find--and kill--Grant."
+          },
+          {
+            episode: 3,
+            title: "A Wanted (Inhu)man",
+            airDate: "2015-10-13",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/23/57774.jpg",
+            duration: "60 min",
+            overview: "The ATCU launches a public alert to bring Lincoln in, and he reluctantly turns to Daisy for help when he realizes that he's in over his head. Meanwhile, Rosalind and Coulson negotiate a deal, and Lance and Melinda take the first step to infiltrating Hydra."
+          },
+          {
+            episode: 4,
+            title: "Devils You Know",
+            airDate: "2015-10-20",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/25/63194.jpg",
+            duration: "60 min",
+            overview: "S.H.I.E.L.D. and the ATCU get a lead on the mysterious Inhuman killer, Lash. Meanwhile, Lance prepares for a face-to-face meeting with Grant, and Melinda turns to Coulson and Andrew for help."
+          },
+          {
+            episode: 5,
+            title: "4,722 Hours",
+            airDate: "2015-10-27",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/26/66241.jpg",
+            duration: "60 min",
+            overview: "Jemma tells Fitz how she survived on the alien planet for six and a half months... and who helped her."
+          },
+          {
+            episode: 6,
+            title: "Among Us Hideâ€¦",
+            airDate: "2015-11-03",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/27/69578.jpg",
+            duration: "60 min",
+            overview: "While Melinda recruits Bobbi to help her find Werner after his attack on Andrew, Lance joins Daisy and Mack to confirm if Rosalind's man Banks is the mysterious Lash. Meanwhiile, Fitz and Jemma continue to try and bring Will home."
+          },
+          {
+            episode: 7,
+            title: "Chaos Theory",
+            airDate: "2015-11-10",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/29/73427.jpg",
+            duration: "60 min",
+            overview: "Melinda realizes who--and what--Andrew really is and confronts him. Meanwhile, Coulson has Daisy give Rosalind a tour of the Zephyr, and Lincoln reaches out to Mack for help."
+          },
+          {
+            episode: 8,
+            title: "Many Heads, One Tale",
+            airDate: "2015-11-17",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/30/76823.jpg",
+            duration: "60 min",
+            overview: "Having gained Rosalind's trust, Coulson distracts her with a tour of the base while the rest of the team breaks into the ATCU headquarters to learn about the Inhumans they have captured and their attempts at a cure. Meanwhile,Grant learns the true secret of Hydra."
+          },
+          {
+            episode: 9,
+            title: "Closure",
+            airDate: "2015-12-01",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/32/82476.jpg",
+            duration: "60 min",
+            overview: "After Grant strikes at Coulson through someone close to him, Coulson swears revenge and goes after the only thing that Grant cares about. Meanwhile, Mack takes command of S.H.I.E.L.D., and Jemma and Fitz are captured during a reconaissance mission."
+          },
+          {
+            episode: 10,
+            title: "Maveth",
+            airDate: "2015-12-08",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/33/84846.jpg",
+            duration: "60 min",
+            overview: "Mack and his team invade the Hydra castle in the hopes of bringing Fitz and Coulson back through the portal. Meanwhile, on the alien world Grant's team find Will and Fitz convinces him to lead them to the extraction point."
+          },
+          {
+            episode: 11,
+            title: "Bouncing Back",
+            airDate: "2016-03-08",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118493.jpg",
+            duration: "60 min",
+            overview: "President Ellis sanctions Coulson to continue leading S.H.I.E.L.D. to deal with the Inhuman power. Meanwhile, Malick discovers that his new guest can speak, and Daisy's team encounters two new Inhumans in Bogota."
+          },
+          {
+            episode: 12,
+            title: "The Inside Man",
+            airDate: "2016-03-15",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/118494.jpg",
+            duration: "60 min",
+            overview: "Coulson and a reluctant Talbot attend an international symposium on the Inhumans, and discover a traitor in their midst. Meanwhile, the team meets Talbot's new bodyguard, who may provide a vaccine against Terrigenesis."
+          },
+          {
+            episode: 13,
+            title: "Parting Shot",
+            airDate: "2016-03-22",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/124531.jpg",
+            duration: "60 min",
+            overview: "A mission in Russia goes bad, and Bobbi and Lance are captured. To stop a coup and save S.H.I.E.L.D., the couple must make the ultimate sacrifice."
+          },
+          {
+            episode: 14,
+            title: "Watchdogs",
+            airDate: "2016-03-29",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/128390.jpg",
+            duration: "60 min",
+            overview: "A group calling themselves the Watchdogs vows to take out any Inhumans that they can find. They begin their campaign of terror by taking out an ATCu facility, but the team soon learn that the Watchdogs are a front for Hydra."
+          },
+          {
+            episode: 15,
+            title: "Spacetime",
+            airDate: "2016-04-05",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/128391.jpg",
+            duration: "60 min",
+            overview: "Daisy tries to stop a future that she foresees due to an Inhuman's power. Meanwhile, Hive gives Gideon a taste of true power, and Giyera chooses sides."
+          },
+          {
+            episode: 16,
+            title: "Paradise Lost",
+            airDate: "2016-04-12",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/128392.jpg",
+            duration: "60 min",
+            overview: "Hive calls a meeting of Hydra's inner circle to show them his true face... and to teach Gideon a lesson in loyalty. Meanwhile, Daisy and Lincoln contact a former Afterlife resident who has information on Hive, while the others investigate Hydra's newest purchase."
+          },
+          {
+            episode: 17,
+            title: "The Team",
+            airDate: "2016-04-19",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/52/132086.jpg",
+            duration: "60 min",
+            overview: "Daisy's secret warriors rescue Coulson and his people from Hydra. However, when they return to base with a captive Gideon, Coulson realizes that there may be a traitor among them."
+          },
+          {
+            episode: 18,
+            title: "The Singularity",
+            airDate: "2016-04-26",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/54/136442.jpg",
+            duration: "60 min",
+            overview: "While Coulson, Melinda, and Lincoln try to recover Daisy, Fitz, Jemma, and Mack go after a scientist who may hold the key to stopping Hive."
+          },
+          {
+            episode: 19,
+            title: "Failed Experiments",
+            airDate: "2016-05-03",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/55/139325.jpg",
+            duration: "60 min",
+            overview: "Coulson sends a strike team to eliminate Hive before he poses a danger to the world. Meanwhile, Mack tries to save Daisy, and Lincoln insists on taking the anti-toxin that Fitz-Simmons has created to defeat Hive's parasites."
+          },
+          {
+            episode: 20,
+            title: "Emancipation",
+            airDate: "2016-05-10",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/55/138170.jpg",
+            duration: "60 min",
+            overview: "After the Accords are passed, Coulson brings Talbot to the S.H.I.E.L.D. base to take inventory of their Inhumans. Meanwhile, Daisy helps Lincoln escape while Holden discovers the process to create Inhuman Primitives."
+          },
+          {
+            episode: 21,
+            title: "Absolution",
+            airDate: "2016-05-17",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/58/146082.jpg",
+            duration: "60 min",
+            overview: "S.H.I.E.L.D. manages to stop the missile launch and capture Hive... only to discover that he's exactly where he wants to be. Meanwhile, Daisy tries to deal with the guilt of what she's done."
+          },
+          {
+            episode: 22,
+            title: "Ascension",
+            airDate: "2016-05-17",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/58/146085.jpg",
+            duration: "60 min",
+            overview: "One of the team will have to sacrifice themselves to stop Hive from spreading the pathogen across the world."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Ghost",
+            airDate: "2016-09-20",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/75/189737.jpg",
+            duration: "60 min",
+            overview: "After the Sokovia Accords, S.H.I.E.L.D. is under new management. Jemma is advising the new Director, Coulson and Mack are in the field, Melinda is training an elite strike force, and Daisy has gone rogue taking down Watchdog resources. She comes across a mysterious serial killer known as \"Ghost Rider\" who is apparently the Spirit of Vengeance.... and will stop at nothing to get his grisly revenge."
+          },
+          {
+            episode: 2,
+            title: "Meet the New Boss",
+            airDate: "2016-09-27",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/81/202686.jpg",
+            duration: "60 min",
+            overview: "Daisy tracks down Robbie and demands answers. Meanwhile, Fitz and Mack get a lead on the ghost that emerged from the box, and discover that there are more than one."
+          },
+          {
+            episode: 3,
+            title: "Uprising",
+            airDate: "2016-10-11",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/81/202682.jpg",
+            duration: "60 min",
+            overview: "A group claiming to be the Inhumans Resistance launches a series of blackouts across the globe. Jeffrey suspects something more is going on and sends Coulson, Mack, and Fitz to investigate. Meanwhile, Daisy learns more about Robbie and his brother Gabe, and Jemma and Holden struggle to save Melinda's life."
+          },
+          {
+            episode: 4,
+            title: "Let Me Stand Next to Your Fire",
+            airDate: "2016-10-18",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/81/202681.jpg",
+            duration: "60 min",
+            overview: "Daisy turns to Jemma for help, while Mack and Coulson pay a visit to Robbie's uncle Eli and encounter Ghost Rider. Meanwhile, Holden and Fitz use Melinda to test to see if Aida can pass as human."
+          },
+          {
+            episode: 5,
+            title: "Lockup",
+            airDate: "2016-10-25",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/82/205042.jpg",
+            duration: "60 min",
+            overview: "Coulson and his people break into prison to free Eli before Lucy finds him. Meanwhile, Jeffrey goes before the nation to debate Senator Nadeer about the Inhuman issue."
+          },
+          {
+            episode: 6,
+            title: "The Good Samaritan",
+            airDate: "2016-11-01",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/83/207663.jpg",
+            duration: "60 min",
+            overview: "How Robbie became Ghost Rider is revealed, after Jeffrey boards the Quinjet looking for Robbie and Daisy. Meanwhile, Lucy forces Eli to reveal the secrets of the Darkhold."
+          },
+          {
+            episode: 7,
+            title: "Deals with Our Devils",
+            airDate: "2016-11-29",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/87/217816.jpg",
+            duration: "60 min",
+            overview: "Coulson, Fitz, and Robbie disappear and their teammates assume that they're dead... unaware that they're out of phase, intangible, and invisible. Meanwhile, Mack loses hope and the vengeance demon seeks a now host."
+          },
+          {
+            episode: 8,
+            title: "The Laws of Inferno Dynamics",
+            airDate: "2016-12-06",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/88/220301.jpg",
+            duration: "60 min",
+            overview: "When Eli creates a nuclear bomb using his new powers, Fitz realizes where he is getting his energies from... and that they threaten to destroy LA. The team has to take Eli down before it's too late, but Eli manages to take Ghost Rider out of commission."
+          },
+          {
+            episode: 9,
+            title: "Broken Promises",
+            airDate: "2017-01-10",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/92/232235.jpg",
+            duration: "60 min",
+            overview: "Jemma confirms Vijay's identity, and she, Jeffrey, and Daisy go to rescue him from his sister and the Watchdogs. Meanwhile, Aida attacks S.H.I.E.L.D. HQ in an attempt to obtain the Darkhold."
+          },
+          {
+            episode: 10,
+            title: "The Patriot",
+            airDate: "2017-01-17",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/93/234618.jpg",
+            duration: "60 min",
+            overview: "After an attempt on Jeffrey's life, Coulson and Mack escort him to safety... and discover the secret of his Inhuman abilities. Meanwhile, Fitz promises the decapitated Aida that he'll try to restore her, and Melinda wakes up in Holden's apartment."
+          },
+          {
+            episode: 11,
+            title: "Wake Up",
+            airDate: "2017-01-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/94/236815.jpg",
+            duration: "60 min",
+            overview: "Coulson authorizes a mission to bug Nadeer's office against Talbot's advice, but things go bad. Meanwhile, Holden finds the key to keeping Melinda imprisoned, and Fitz finds out what his friend is up to."
+          },
+          {
+            episode: 12,
+            title: "Hot Potato Soup",
+            airDate: "2017-01-31",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/95/239763.jpg",
+            duration: "60 min",
+            overview: "The Superior and his men abduct Billy Koenig to get the location of the Darkhold from him. While Coulson and his field team go after Sam, Fitz, Jemma, and Mack deal with the Holden LMD that they captured."
+          },
+          {
+            episode: 13,
+            title: "BOOM",
+            airDate: "2017-02-07",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/97/242941.jpg",
+            duration: "60 min",
+            overview: "The Superior sends Terrence to trigger Terragenesis in Nadeer, believing that she's an Inhuman. However, they all got an explosive surprise. Meanwhile, Coulson and Mack track down the woman that Aida's appearance was based on and try to use her to find Melinda."
+          },
+          {
+            episode: 14,
+            title: "The Man Behind the Shield",
+            airDate: "2017-02-14",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/98/246001.jpg",
+            duration: "60 min",
+            overview: "The team follows a series of clues left by the Superior designed to bring them to their opponent's base... and the trap that he's set for them."
+          },
+          {
+            episode: 15,
+            title: "Self Control",
+            airDate: "2017-02-21",
+            rating: 9.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/99/248729.jpg",
+            duration: "60 min",
+            overview: "Fitz and Jemma realize that they may be the only senior staff that haven't been replaced with LMDs. Meanwhile, Aida makes her own plans to protect the Framework."
+          },
+          {
+            episode: 16,
+            title: "What If...",
+            airDate: "2017-04-04",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/105/263681.jpg",
+            duration: "60 min",
+            overview: "Jemma and Daisy discover that things have gone horribly wrong in the Framework, when they realize that Hydra now rules the world and ruthlessly hunts down and exterminates Inhumans."
+          },
+          {
+            episode: 17,
+            title: "Identity and Change",
+            airDate: "2017-04-11",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/106/266836.jpg",
+            duration: "60 min",
+            overview: "While Daisy tries to get Holden's location via Hydra's databases, Coulson and Jemma meet with the head of the resistance. Meanwhile, Aida tells Fitz her version of the truth about the Framework."
+          },
+          {
+            episode: 18,
+            title: "No Regrets",
+            airDate: "2017-04-18",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/107/269442.jpg",
+            duration: "60 min",
+            overview: "Coulson and Jeffrey break into an Enlightenment Center to rescue a prisoner with valuable information about Project Looking Glass. Meanwhile, Fitz meets with an unexpected ally, and Jemma tries to convince Grant and Jeffrey that their world isn't real."
+          },
+          {
+            episode: 19,
+            title: "All the Madame's Men",
+            airDate: "2017-04-25",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/108/271977.jpg",
+            duration: "60 min",
+            overview: "Daisy and Melinda escape the Triskelion and go on the run from Hydra. Meanwhile, Jemma realizes what Aida has planned, and Holden tells Alistair who he is in the real world."
+          },
+          {
+            episode: 20,
+            title: "Farewell, Cruel World!",
+            airDate: "2017-05-02",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/110/275418.jpg",
+            duration: "60 min",
+            overview: "Daisy and Jemma take the team to the backdoor, only to discover that Aida has anticipated them. Meanwhile, Fitz discovers that his father is dead and who is responsible, and sets out to exact vengeance."
+          },
+          {
+            episode: 21,
+            title: "The Return",
+            airDate: "2017-05-09",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/111/277683.jpg",
+            duration: "60 min",
+            overview: "While Coulson and Melinda try to escape the rig, Jemma and Daisy find themselves under attack. Meanwhile, Aida revels in the joys of becoming human."
+          },
+          {
+            episode: 22,
+            title: "World's End",
+            airDate: "2017-05-16",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/112/280444.jpg",
+            duration: "60 min",
+            overview: "Aida sets out to destroy the world with the help of the Darkhold, and only Ghost Rider can stop her. Meanwhile, S.H.I.E.L.D. is framed for weaponizing the Inhumans and the authorities close in on the team."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Orientation (Part One)",
+            airDate: "2017-12-01",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/137/342764.jpg",
+            duration: "60 min",
+            overview: "The team finds themselves on a mysterious outpost in space surrounded by corpses, and with no sign of Fitz. As they meet the inhabitants, the agents try to work out where they are."
+          },
+          {
+            episode: 2,
+            title: "Orientation (Part Two)",
+            airDate: "2017-12-01",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/137/342772.jpg",
+            duration: "60 min",
+            overview: "As they come to their grips with their new surroundings, Coulson, Mack, and Elena are forced to make a deal with a crime lord, Grill. Meanwhile, Jemma is captured by the Kree, and Daisy discovers who was responsible for Earth's fate."
+          },
+          {
+            episode: 3,
+            title: "A Life Spent",
+            airDate: "2017-12-08",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/137/344935.jpg",
+            duration: "60 min",
+            overview: "While Daisy tries to rescue Jemma, Coulson and his team search the rubble belt for a mysterious segment. Meanwhile, Jemma coaches a young Inhuman in her powers."
+          },
+          {
+            episode: 4,
+            title: "A Life Earned",
+            airDate: "2017-12-15",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/138/346732.jpg",
+            duration: "60 min",
+            overview: "Kasius tells Daisy what her value is to him. Meanwhile, Grill tasks Mack with acting as his new enforcer, and Coulson and Melinda discover that Deke isn't being honest with them."
+          },
+          {
+            episode: 5,
+            title: "Rewind",
+            airDate: "2017-12-22",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/139/348685.jpg",
+            duration: "60 min",
+            overview: "Fitz is left behind and the military locks him up. He soon plots an escape, and works out a way to travel to the future to rescue his friends."
+          },
+          {
+            episode: 6,
+            title: "Fun & Games",
+            airDate: "2018-01-05",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/141/353458.jpg",
+            duration: "60 min",
+            overview: "Fitz makes contact with Jemma and tries to plan an escape. Meanwhile, the human teenagers undergo Terrigenesis and one of them reveals his new power."
+          },
+          {
+            episode: 7,
+            title: "Together or Not at All",
+            airDate: "2018-01-12",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/142/355378.jpg",
+            duration: "60 min",
+            overview: "Faulnak sends his best hunter to recover Daisy, while Daisy, Fitz, and Jemma try to reunite with Coulson and the others. On the surface, Melinda meets Enoch."
+          },
+          {
+            episode: 8,
+            title: "The Last Day",
+            airDate: "2018-01-19",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/142/357399.jpg",
+            duration: "60 min",
+            overview: "Coulson and the others meet up with the surface survivors, while Mack, Elena, and Flint battle the Roaches that Kasius has unleashed on the Lighthouse humans."
+          },
+          {
+            episode: 9,
+            title: "Best Laid Plans",
+            airDate: "2018-01-26",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/143/359641.jpg",
+            duration: "60 min",
+            overview: "While Elena and Mack rally the humans to fight against Kasius, Coulson and the others try to find a way to return to the Lighthouse while Sinara comes looking for Daisy."
+          },
+          {
+            episode: 10,
+            title: "Past Life",
+            airDate: "2018-02-02",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/144/361725.jpg",
+            duration: "60 min",
+            overview: "As Deke and Enoch prepare to open the time portal, Elena discovers who Kasius' Seer is while Daisy refuses to go back to 2018 and end up destroying the planet."
+          },
+          {
+            episode: 11,
+            title: "All the Comforts of Home",
+            airDate: "2018-03-02",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/147/368981.jpg",
+            duration: "60 min",
+            overview: "Coulson and team return to 2018 and discover that they're fugitives from the government. A mysterious woman leads the government forces, and sets off a chain of events that may lead to the future that the team experienced."
+          },
+          {
+            episode: 12,
+            title: "The Real Deal",
+            airDate: "2018-03-09",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/148/371107.jpg",
+            duration: "60 min",
+            overview: "The team discovers what Coulson has been hiding from them, as the monoliths' explosion causes a rift to a fear dimension that threatens to destroy them all."
+          },
+          {
+            episode: 13,
+            title: "Principia",
+            airDate: "2018-03-16",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/149/373248.jpg",
+            duration: "60 min",
+            overview: "The team gets a lead on the Gravitonium they need to seal the rift once and for all. Meanwhile, Deke learns who his grandparents are, while Hale and Ruby recruit another member to their team."
+          },
+          {
+            episode: 14,
+            title: "The Devil Complex",
+            airDate: "2018-03-23",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/150/375483.jpg",
+            duration: "60 min",
+            overview: "Fitz tries to seal the rift, and what appears to be his greatest fear materializes to help him. Meanwhile, Coulson and Melinda capture Hale only to discover that it's a trap."
+          },
+          {
+            episode: 15,
+            title: "Rise and Shine",
+            airDate: "2018-03-30",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/151/378079.jpg",
+            duration: "60 min",
+            overview: "Hale's history with Hydra is revealed as she tries to convince Coulson to join forces with her. Meanwhile, Fitz asks for his freedom so that he can help find out why Hale wants their leader."
+          },
+          {
+            episode: 16,
+            title: "Inside Voices",
+            airDate: "2018-04-06",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/151/379704.jpg",
+            duration: "60 min",
+            overview: "Coulson convinces one of Hale's people to help him. Meanwhile, Jemma and Elena come up with a plan to free Fitz, while Daisy and Melinda turn to Robin for help."
+          },
+          {
+            episode: 17,
+            title: "The Honeymoon",
+            airDate: "2018-04-13",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/152/381733.jpg",
+            duration: "60 min",
+            overview: "Deke is injured trying to help Daisy, while Fitzsimmons and Elena discover what Hale has planned. Meanwhile, Melinda makes a confession to Coulson."
+          },
+          {
+            episode: 18,
+            title: "All Roads Leadâ€¦",
+            airDate: "2018-04-20",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/153/383689.jpg",
+            duration: "60 min",
+            overview: "Daisy benches Coulson and takes a team to stop Ruby before she becomes the Destroyer of Worlds."
+          },
+          {
+            episode: 19,
+            title: "Option Two",
+            airDate: "2018-04-27",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/154/385577.jpg",
+            duration: "60 min",
+            overview: "Qovas sends his men to get the Gravitonium, and finds a team torn apart by suspicion and distrust of each other... and no sign of Daisy."
+          },
+          {
+            episode: 20,
+            title: "The One Who Will Save Us All",
+            airDate: "2018-05-04",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/154/387079.jpg",
+            duration: "60 min",
+            overview: "Talbot and Coulson go to negotiate with the Confederacy, while Daisy has Jemma find a way to make the Centipede technology work."
+          },
+          {
+            episode: 21,
+            title: "The Force of Gravity",
+            airDate: "2018-05-11",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/155/388603.jpg",
+            duration: "60 min",
+            overview: "While Talbot pays his family a visit, Coulson and Melinda try to find a way off of the Confederacy spaceship."
+          },
+          {
+            episode: 22,
+            title: "The End",
+            airDate: "2018-05-18",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/156/390112.jpg",
+            duration: "60 min",
+            overview: "A member of the team dies while trying to stop Talbot, who is intent on acquiring enough Gravitonium to fight Thanos. Meanwhile, the agents try to deal with Coulson's impending death."
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "Missing Pieces",
+            airDate: "2019-05-10",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/196/490395.jpg",
+            duration: "60 min",
+            overview: "Daisy, Jemma, Piper, and Davis search the galaxy for Fitz. On Earth, Mac continues his command of S.H.I.E.L.D. as a series of dimensional anomalies spring up across the planet."
+          },
+          {
+            episode: 2,
+            title: "Window of Opportunity",
+            airDate: "2019-05-17",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/197/493745.jpg",
+            duration: "60 min",
+            overview: "Sarge and his crew seek out a vital component to their plan, and S.H.I.E.L.D. slowly learns of their intentions while pursuing them. Fitz's position as an engineer on the Sivian ship is threatened... along with his life."
+          },
+          {
+            episode: 3,
+            title: "Fear and Loathing on the Planet of Kitson",
+            airDate: "2019-05-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/198/497363.jpg",
+            duration: "60 min",
+            overview: "Daisy and her team track Fitz and Enoch to Kitson, where the unlikely duo have lost their ship and are trying to make enough money gambling to get off the planet."
+          },
+          {
+            episode: 4,
+            title: "Code Yellow",
+            airDate: "2019-05-31",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/200/500419.jpg",
+            duration: "60 min",
+            overview: "What Deke has been up to is revealed, and he discovers that Sarge and his crew are after him. Meanwhile, Keller is infected by an alien parasite and Yo-Yo and Marcus try to save his life."
+          },
+          {
+            episode: 5,
+            title: "The Other Thing",
+            airDate: "2019-06-14",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/202/505095.jpg",
+            duration: "60 min",
+            overview: "Sarge demonstrates to Miranda the magnitude of the threat Earth faces. Marcus gets a clue to the parasites' plans in Yucatan, and Enoch betrays his best friend."
+          },
+          {
+            episode: 6,
+            title: "Inescapable",
+            airDate: "2019-06-21",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/202/506757.jpg",
+            duration: "60 min",
+            overview: "Atarah traps Fitz and Jemma in a mind prison and the only way out is for them to find a way for the remaining Chronicoms to travel back through time and save their homeworld. But to do so, the couple must face their inner demons."
+          },
+          {
+            episode: 7,
+            title: "Toldja",
+            airDate: "2019-06-28",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/203/508971.jpg",
+            duration: "60 min",
+            overview: "Mack questions the captive Sarge, who has plans of his own. Fitz, Jemma, and Enoch return to Kitson and Mr. Kitson has words with them."
+          },
+          {
+            episode: 8,
+            title: "Collision Course (Part I)",
+            airDate: "2019-07-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/204/510441.jpg",
+            duration: "60 min",
+            overview: "Mack sends Melinda, Daisy, and Deke with Sarge and Snowflake, while he holds Jaco and Pax. Meanwhile, Fitz and Jemma begin the journey back to Earth but find something odd going on involving Izel."
+          },
+          {
+            episode: 9,
+            title: "Collision Course (Part II)",
+            airDate: "2019-07-12",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/204/512424.jpg",
+            duration: "60 min",
+            overview: "Sarge, Jaco, and Pax capture the Zephyr and prepare to go after Izel. The team in the trailer try to stop Sarge's bomb, and Izel questions Fitz-Simmons' loyalty."
+          },
+          {
+            episode: 10,
+            title: "Leap",
+            airDate: "2019-07-19",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/205/514230.jpg",
+            duration: "60 min",
+            overview: "After Melinda tells Yo-yo that she has no memory of shooting Sarge, a deadly game of hide-and-seek ensues as the team realizes that Izel can possess anyone she wishes."
+          },
+          {
+            episode: 11,
+            title: "From the Ashes",
+            airDate: "2019-07-26",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/206/515841.jpg",
+            duration: "60 min",
+            overview: "While Deke and Fitz-Simmons try to find a way to negate Izel's powers, Daisy tries to get Sarge to reveal who he truly is and Izel forces Marcus to take her to the temple."
+          },
+          {
+            episode: 12,
+            title: "The Sign",
+            airDate: "2019-08-02",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/207/517733.jpg",
+            duration: "60 min",
+            overview: "Izel uses Flint's powers to open a gateway to her dimension and bring her people through. Melinda tries to convince Sarge that he's a good person with or without Coulson, and Deke has enough of everyone looking down on him."
+          },
+          {
+            episode: 13,
+            title: "New Life",
+            airDate: "2019-08-02",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/207/517998.jpg",
+            duration: "60 min",
+            overview: "Melinda battles Izel, Daisy and Mack fight Sarge, and Yo-Yo deals with a problem from within. Fitz-Simmons have to deal with another situation where they have to change the course of their natural lives, and Sarge's true people prepare to invade Earth."
+          }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "The New Deal",
+            airDate: "2020-05-27",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/256/641968.jpg",
+            duration: "60 min",
+            overview: "Coulson and the Agents of S.H.I.E.L.D. are thrust backward in time and stranded in 1931 New York City. With the all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened. If they fail, it would mean disaster for the past, present and future of the world."
+          },
+          {
+            episode: 2,
+            title: "Know Your Onions",
+            airDate: "2020-06-03",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/260/650185.jpg",
+            duration: "60 min",
+            overview: "With the identity of the timeline-unraveling \"thread\" revealed, the team's mission to protect him at all costs leads each agent to question their own values."
+          },
+          {
+            episode: 3,
+            title: "Alien Commies from the Future!",
+            airDate: "2020-06-10",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/261/652731.jpg",
+            duration: "60 min",
+            overview: "A surprise leap forward in time has stranded Enoch in 1931 and landed the team in yet another unfamiliar decade. Now, in order to stop the chronicoms from launching their newest future-dismantling plan, the agents will have to infiltrate one of S.H.I.E.L.D.'s most secure bases. They won't be able to succeed without help from a familiar face or two."
+          },
+          {
+            episode: 4,
+            title: "Out of the Past",
+            airDate: "2020-06-17",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/261/652787.jpg",
+            duration: "60 min",
+            overview: "It was just another average morning on July 22, 1955, when Agent Phil Coulson realized the importance of that day in the S.H.I.E.L.D. history books. With a chip on his shoulder and a genre-bending glitch in his system, he'd set into motion a chain of events that would hopefully preserve the timeline as we know it and ensure those pesky chronicoms get the ending they deserve. What could go wrong?"
+          },
+          {
+            episode: 5,
+            title: "A Trout in the Milk",
+            airDate: "2020-06-24",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/262/656790.jpg",
+            duration: "60 min",
+            overview: "After a bumpy landing in the disco decade, the team – Daniel Sousa in tow – reunites with more than one familiar face at the S.H.I.E.L.D. hangout and discovers exactly how to dismantle the Chronicoms' latest plan. But when they get too close for comfort, the Zephyr unexpectedly leaps forward again, this time to a date pivotal to not only the future of S.H.I.E.L.D. but to the future of Director Mack as well."
+          },
+          {
+            episode: 6,
+            title: "Adapt or Die",
+            airDate: "2020-07-01",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/263/659388.jpg",
+            duration: "60 min",
+            overview: "The team must scramble to rescue Mack's parents, save S.H.I.E.L.D. from a chronicom infestation and fix the ship, all before the next time-jump. Meanwhile, Daisy and Sousa find themselves at a disadvantage against a power hungry Nathaniel Malick and his goons, and Coulson will have to do the thing he does best in order to save the future."
+          },
+          {
+            episode: 7,
+            title: "The Totally Excellent Adventures of Mack and the D",
+            airDate: "2020-07-08",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/264/661119.jpg",
+            duration: "60 min",
+            overview: "After being unexpectedly stranded in 1982, Mack retreats to his childhood home to process the death of his parents, while Deke gets to work scouting a chart-topping group of new agents. With no idea if or when the team is coming back for them, time seems to finally be on their side ... at least until the killer robots show up."
+          },
+          {
+            episode: 8,
+            title: "After, Before",
+            airDate: "2020-07-15",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/265/663021.jpg",
+            duration: "60 min",
+            overview: "With the Zephyr's time drive malfunctioning, the team is quite literally hurling toward disaster and Yo-Yo may be their only hope. The only problem? To get her powers back, she'll need to enlist the help of an old adversary and revisit part of her past long hidden away."
+          },
+          {
+            episode: 9,
+            title: "As I Have Always Been",
+            airDate: "2020-07-22",
+            rating: 9.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/265/664658.jpg",
+            duration: "60 min",
+            overview: "A time storm ravages the Zephyr, propelling it toward destruction while simultaneously forcing Daisy and Coulson to relive their failed attempts to save the team over and over, until they find a solution or are swallowed by the storm. Making it to their next destination will take trust, courage and sacrifice from everyone on board, but it will all come down to having enough time."
+          },
+          {
+            episode: 10,
+            title: "Stolen",
+            airDate: "2020-07-29",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/266/666483.jpg",
+            duration: "60 min",
+            overview: "After Enoch's sacrifice propelled them out of the time storm, the team arrives back in 1983 where Nathanial and Kora are hard at work building an army of hand-selected anarchist Inhumans at Afterlife. When the agents split up to cover more ground, Daisy is tasked with protecting Jiaying and is compelled to confront her mother for the first time since her death; while the others quickly learn they'll need to face yet another supercharged former enemy in order to stop Malick."
+          },
+          {
+            episode: 11,
+            title: "Brand New Day",
+            airDate: "2020-08-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/267/668291.jpg",
+            duration: "60 min",
+            overview: "With the help of Kora on the inside, Sibyl and Nathanial continue their fight to shape a dark new future for S.H.I.E.L.D., managing to stay one step ahead of the agents along the way. If the team is going to turn this one around, they'll have to get creative, and maybe even a little out of this world."
+          },
+          {
+            episode: 12,
+            title: "The End Is at Hand",
+            airDate: "2020-08-12",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/268/670248.jpg",
+            duration: "60 min",
+            overview: "With their backs against the wall and Nathaniel and Sibyl edging ever closer to eliminating S.H.I.E.L.D. from the history books, the agents must rely on their strengths to outsmart and outlast the Chronicoms. This is their most important fight, and it will take the help of friends and teammates, past and present, to survive."
+          },
+          {
+            episode: 13,
+            title: "What We're Fighting For",
+            airDate: "2020-08-12",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/268/670324.jpg",
+            duration: "60 min",
+            overview: "This is their most important fight, and it will take the help of friends and teammates, past and present, to survive."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 139. Silo (2023)
+  // ============================================================
+  {
+    title: "Silo",
+    type: "TV Show",
+    year: 2023,
+    rating: 8.1,
+    age: "TV-MA",
+    duration: "45m",
+    genres: ["Drama", "Sci-Fi", "Mystery"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
+    videoUrl: "125988",
+    trailerUrl: "",
+    overview: "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
+    overviewKurdish: "",
+    director: "Graham Yost",
+    cast: ["Rebecca Ferguson, Common, Rashida Jones, David Oyelowo, Tim Robbins"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Freedom Day",
+            airDate: "2023-05-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365228.jpg",
+            duration: "59 min",
+            overview: "Sheriff Becker's plans for the future are thrown off course after his wife meets a hacker with information about the silo."
+          },
+          {
+            episode: 2,
+            title: "Holston's Pick",
+            airDate: "2023-05-05",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365229.jpg",
+            duration: "47 min",
+            overview: "Juliette, an engineer, pieces together what might have led to a co-worker's mysterious death."
+          },
+          {
+            episode: 3,
+            title: "Machines",
+            airDate: "2023-05-12",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365230.jpg",
+            duration: "62 min",
+            overview: "In her hunt for a new sheriff, Mayor Jahns clashes with Bernard. Juliette strikes a deal to keep the generator running."
+          },
+          {
+            episode: 4,
+            title: "Truth",
+            airDate: "2023-05-19",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365231.jpg",
+            duration: "45 min",
+            overview: "Juliette tries gaining the trust of Deputy Marnes as they work to uncover the truth about recent tragedies."
+          },
+          {
+            episode: 5,
+            title: "The Janitor's Boy",
+            airDate: "2023-05-26",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365232.jpg",
+            duration: "50 min",
+            overview: "Sims appoints Billings as chief deputy to keep tabs on Juliette, whose efforts to solve two murders lead to a showdown."
+          },
+          {
+            episode: 6,
+            title: "The Relic",
+            airDate: "2023-06-02",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/462/1156767.jpg",
+            duration: "50 min",
+            overview: "During her investigation, Juliette uncovers disturbing secrets about someone she thought she knew."
+          },
+          {
+            episode: 7,
+            title: "The Flamekeepers",
+            airDate: "2023-06-09",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/463/1158819.jpg",
+            duration: "47 min",
+            overview: "Bernard seeks Juliette's cooperation as he grows increasingly concerned about the silo's security. Juliette asks her father for a favor."
+          },
+          {
+            episode: 8,
+            title: "Hanna",
+            airDate: "2023-06-16",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/464/1161889.jpg",
+            duration: "43 min",
+            overview: "New information causes Juliette to see her family's past differently—and she finally gains access to the silo's biggest secrets."
+          },
+          {
+            episode: 9,
+            title: "The Getaway",
+            airDate: "2023-06-23",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365233.jpg",
+            duration: "43 min",
+            overview: "Racked with guilt, Billings sets off on a personal mission, only to discover a mind-blowing clue from Juliette."
+          },
+          {
+            episode: 10,
+            title: "Outside",
+            airDate: "2023-06-30",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365234.jpg",
+            duration: "44 min",
+            overview: "Season finale. Juliette's fate seems sealed when certain truths finally come to light."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Engineer",
+            airDate: "2024-11-15",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365235.jpg",
+            duration: "45 min",
+            overview: "Juliette finds sanctuary in a silo long ago destroyed by war, thinking she's alone."
+          },
+          {
+            episode: 2,
+            title: "Order",
+            airDate: "2024-11-22",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365236.jpg",
+            duration: "41 min",
+            overview: "In Silo 18, shock and unrest take hold in the wake of Juliette doing what no one's done before."
+          },
+          {
+            episode: 3,
+            title: "Solo",
+            airDate: "2024-11-27",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365237.jpg",
+            duration: "54 min",
+            overview: "Bernard turns to Judge Meadows for help. Billings begins to wonder if he's being lied to. Juliette finally meets the man in the vault."
+          },
+          {
+            episode: 4,
+            title: "The Harmonium",
+            airDate: "2024-12-06",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1365238.jpg",
+            duration: "55 min",
+            overview: "Juliette sets out on a dangerous quest to retrieve a suit so she can return home and save her silo. Mechanical plans a meeting with Judge Meadows."
+          },
+          {
+            episode: 5,
+            title: "Descent",
+            airDate: "2024-12-13",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/546/1367249.jpg",
+            duration: "49 min",
+            overview: "Sims finds himself with a new position. Juliette learns Solo isn't being honest. Bernard and Lukas make an important discovery."
+          },
+          {
+            episode: 6,
+            title: "Barricades",
+            airDate: "2024-12-20",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/548/1371700.jpg",
+            duration: "43 min",
+            overview: "Bernard enacts a plan to root out Knox, Shirley, and Walker. Billings takes a stand. Solo saves Juliette's life and wants something in return."
+          },
+          {
+            episode: 7,
+            title: "The Dive",
+            airDate: "2024-12-27",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/548/1371699.jpg",
+            duration: "51 min",
+            overview: "Lukas is assigned a mission. Mechanical sends a powerful message. Juliette embarks on a perilous descent—and confronts a new danger."
+          },
+          {
+            episode: 8,
+            title: "The Book of Quinn",
+            airDate: "2025-01-03",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/550/1376880.jpg",
+            duration: "48 min",
+            overview: "Juliette discovers something's happened to Solo. Bernard makes an offer to Walker. Lukas meets with Salvador Quinn's descendants."
+          },
+          {
+            episode: 9,
+            title: "The Last Resort",
+            airDate: "2025-01-10",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/550/1376881.jpg",
+            duration: "60 min",
+            overview: "Billings' faith is shaken. Lukas heads to the down deep. Knox identifies the traitor. Juliette uncovers the truth about Solo's past."
+          },
+          {
+            episode: 10,
+            title: "Episode 10",
+            airDate: "2025-01-17",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/551/1379329.jpg",
+            duration: "59 min",
+            overview: "Season finale. The rebels make their move—and so does Juliette."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Who Are You?",
+            airDate: "2026-07-03",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/633/1584206.jpg",
+            duration: "52 min",
+            overview: "New mayor Juliette can't remember anything from her time outside—or her past."
+          },
+          {
+            episode: 2,
+            title: "It's All Good",
+            airDate: "2026-07-10",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/633/1584205.jpg",
+            duration: "52 min",
+            overview: "Billings investigates a disappearance. Daniel Keene has a run-in with a reporter."
+          },
+          {
+            episode: 3,
+            title: "A Dark Web",
+            airDate: "2026-07-17",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/632/1580424.jpg",
+            duration: "49 min",
+            overview: "Juliette takes control of her recovery process. Helen suffers consequences of her investigation."
+          },
+          {
+            episode: 4,
+            title: "Whatever You Do, Don't Go Home",
+            airDate: "2026-07-24",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/633/1584204.jpg",
+            duration: "48 min",
+            overview: "The race to evade Camille leads Juliette to a shocking discovery. Daniel seeks help from a friend."
+          },
+          {
+            episode: 5,
+            title: "Memory",
+            airDate: "2026-07-31",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/634/1586802.jpg",
+            duration: "53 min",
+            overview: "The events following Juliette's return come to light—and unexpected allies are made."
+          },
+          {
+            episode: 6,
+            title: "The Drive",
+            airDate: "2026-08-07",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/635/1589276.jpg",
+            duration: "54 min",
+            overview: "Billings and Hank stumble on a new mystery. Daniel and Helen receive a surprising proposition."
+          },
+          {
+            episode: 7,
+            title: "Radio",
+            airDate: "2026-08-14",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/636/1591906.jpg",
+            duration: "55 min",
+            overview: "Juliette sends Lukas and Kennedy on a mission, as a desperate Camille threatens Robert to tell the truth."
+          },
+          {
+            episode: 8,
+            title: "Gray Goo",
+            airDate: "2026-08-21",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/637/1594298.jpg",
+            duration: "56 min",
+            overview: "Knox's father Gus comes clean about a secret. Charlotte makes a life-changing decision."
+          },
+          {
+            episode: 9,
+            title: "Farewell",
+            airDate: "2026-08-28",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596689.jpg",
+            duration: "62 min",
+            overview: "Camille's announcement shakes the entire silo. Daniel and Helen attend a special event."
+          },
+          {
+            episode: 10,
+            title: "Troy",
+            airDate: "2026-09-04",
+            rating: 9.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/639/1599599.jpg",
+            duration: "60 min",
+            overview: "Season finale. A leader wakes to a new world."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 140. X-Men '97 (2024)
+  // ============================================================
+  {
+    title: "X-Men '97",
+    type: "TV Show",
+    year: 2024,
+    rating: 8.7,
+    age: "TV-14",
+    genres: ["Animation", "Action", "Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    videoUrl: "138502",
+    trailerUrl: "",
+    overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
+    overviewKurdish: "",
+    director: "Beau DeMayo",
+    cast: ["Ray Chase, Jennifer Hale, Cal Dodd, Alison Sealy-Smith, Lenore Zann, JP Karliak"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "To Me, My X-Men",
+            airDate: "2024-03-20",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/509/1273642.jpg",
+            duration: "32 min",
+            overview: "Cyclops races to find the source of new anti-mutant technology."
+          },
+          {
+            episode: 2,
+            title: "Mutant Liberation Begins",
+            airDate: "2024-03-20",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/509/1273643.jpg",
+            duration: "32 min",
+            overview: "When Magneto is forced by the UN to stand trial, a group of anti-mutant rioters test his resolve."
+          },
+          {
+            episode: 3,
+            title: "Fire Made Flesh",
+            airDate: "2024-03-27",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/510/1276038.jpg",
+            duration: "32 min",
+            overview: "The team is propelled into a tragic confrontation with an immortal mad scientist."
+          },
+          {
+            episode: 4,
+            title: "Motendo / Lifedeath â€“ Part 1",
+            airDate: "2024-04-03",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/511/1279933.jpg",
+            duration: "29 min",
+            overview: "Jubilee must relive the X-Men's greatest adventures when she's transported into a 16-bit video game."
+          },
+          {
+            episode: 5,
+            title: "Remember It",
+            airDate: "2024-04-10",
+            rating: 9.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/513/1283108.jpg",
+            duration: "36 min",
+            overview: "Team members hit Genosha as UN honorees while a press event risks exposing the team's dirty laundry."
+          },
+          {
+            episode: 6,
+            title: "Lifedeath â€“ Part 2",
+            airDate: "2024-04-17",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/514/1286038.jpg",
+            duration: "33 min",
+            overview: "Storm is forced to face her worst fears in order to free herself."
+          },
+          {
+            episode: 7,
+            title: "Bright Eyes",
+            airDate: "2024-04-24",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/515/1289936.jpg",
+            duration: "34 min",
+            overview: "The X-Men finds Sentinel inventor Bolivar Trask, realizing they've been played by a mastermind."
+          },
+          {
+            episode: 8,
+            title: "Tolerance is Extinction â€“ Part 1",
+            airDate: "2024-05-01",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/517/1292604.jpg",
+            duration: "34 min",
+            overview: "The X-Men must unite to face a new threat."
+          },
+          {
+            episode: 9,
+            title: "Tolerance is Extinction â€“ Part 2",
+            airDate: "2024-05-08",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/518/1295425.jpg",
+            duration: "31 min",
+            overview: "The X-Men work to settle the score before it is too late."
+          },
+          {
+            episode: 10,
+            title: "Tolerance is Extinction â€“ Part 3",
+            airDate: "2024-05-15",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/519/1298329.jpg",
+            duration: "42 min",
+            overview: "The X-Men's dream is put to the test as mutant-human relations reach a tipping point."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Days of Past Future",
+            airDate: "2026-07-01",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1576791.jpg",
+            duration: "33 min",
+            overview: "Forge and Bishop launch a bold plan to rescue the X-Men scattered through time."
+          },
+          {
+            episode: 2,
+            title: "A Force to be Reckoned With",
+            airDate: "2026-07-01",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1576792.jpg",
+            duration: "29 min",
+            overview: "After E-Day, a secret paramilitary group emerges to fill the void left by the X-Men."
+          },
+          {
+            episode: 3,
+            title: "Rise of Apocalypse: Part 1",
+            airDate: "2026-07-01",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1576793.jpg",
+            duration: "29 min",
+            overview: "An unexpected visitor upends the plan to rescue the team from Ancient Egypt."
+          },
+          {
+            episode: 4,
+            title: "Rise of Apocalypse: Part 2",
+            airDate: "2026-07-08",
+            rating: 9.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/631/1579243.jpg",
+            duration: "35 min",
+            overview: "An alliance between the X-Men and En Sabah Nur starts to crack when Rama-Tut seeks ultimate power."
+          },
+          {
+            episode: 5,
+            title: "Weapon X, Lies, and DVDs",
+            airDate: "2026-07-15",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/632/1581401.jpg",
+            duration: "31 min",
+            overview: "Wolverine, Morph, and a motley crew of old rivals face off against Weapon X's latest experiment."
+          },
+          {
+            episode: 6,
+            title: "Danger.Exe",
+            airDate: "2026-07-22",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/633/1583968.jpg",
+            duration: "33 min",
+            overview: "Former X-Men Polaris returns to Xavier's mansion just as a new threat emerges on campus."
+          },
+          {
+            episode: 7,
+            title: "Strange Land, Savage Heart",
+            airDate: "2026-07-29",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/634/1586280.jpg",
+            duration: "30 min",
+            overview: "The X-Men travel to the Savage Land and are surprised to find a familiar face."
+          },
+          {
+            episode: 8,
+            title: "The Dead Man's Hand",
+            airDate: "2026-08-05",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/635/1588668.jpg",
+            duration: "34 min",
+            overview: "The X-Men confront a ghost from their past."
+          },
+          {
+            episode: 9,
+            title: "Survival of the Fittest",
+            airDate: "2026-08-12",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/636/1591134.jpg",
+            duration: "32 min",
+            overview: "The X-Men are pushed to their limits as their past comes back to haunt them."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 141. Dutton Ranch (2026)
+  // ============================================================
+  {
+    title: "Dutton Ranch",
+    type: "TV Show",
+    year: 2026,
+    rating: 8.2,
+    age: "TV-MA",
+    genres: ["Drama", "Western"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
+    videoUrl: "299167",
+    trailerUrl: "",
+    overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
+    overviewKurdish: "",
+    director: "Chad Feehan",
+    cast: ["Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Untold Want",
+            airDate: "2026-05-15",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/625/1563123.jpg",
+            duration: "55 min",
+            overview: "Beth and Rip rebuild their lives in Rio Paloma, Texas, but violent rivals and small‑town tensions threaten their hard‑won peace as they fight to protect their land and family."
+          },
+          {
+            episode: 2,
+            title: "Earn Another Day",
+            airDate: "2026-05-15",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/625/1563124.jpg",
+            duration: "46 min",
+            overview: "Beth and Rip work to forge their new life in Rio Paloma, carrying scars of what they lost and hope for what might rise. As he searches for his place in their fresh start, Carter finds connection with Oreana."
+          },
+          {
+            episode: 3,
+            title: "Act of God Business",
+            airDate: "2026-05-22",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/626/1565250.jpg",
+            duration: "48 min",
+            overview: "As Beth fights to secure their business, Rip confronts a deadly threat. Tensions increase throughout Rio Paloma, and circumstances require everyone to make choices."
+          },
+          {
+            episode: 4,
+            title: "Start With a Bullet",
+            airDate: "2026-05-29",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/627/1567524.jpg",
+            duration: "46 min",
+            overview: "Beth and Rip face a crisis that forces them into extreme action, while Beulah consolidates her power and strengthens her control over the situation."
+          },
+          {
+            episode: 5,
+            title: "Peaceful Find Peace",
+            airDate: "2026-06-05",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/627/1569588.jpg",
+            duration: "52 min",
+            overview: "Beth offers Beulah a high‑stakes deal to secure both their futures."
+          },
+          {
+            episode: 6,
+            title: "A Cowboy Saint",
+            airDate: "2026-06-12",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/628/1571550.jpg",
+            duration: "41 min",
+            overview: "Beth and Beulah chase a deal that could alter everything."
+          },
+          {
+            episode: 7,
+            title: "Den of Sin",
+            airDate: "2026-06-19",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/629/1573519.jpg",
+            duration: "41 min",
+            overview: "A lavish 10 Petal celebration unfolds with Beulah at the helm."
+          },
+          {
+            episode: 8,
+            title: "Whiskey Limits",
+            airDate: "2026-06-26",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1575265.jpg",
+            duration: "44 min",
+            overview: "A storm shakes Rio Paloma. Beth and Rip's choices are put to the test. Beulah's bonds crumble. Joaquin and Will face off. Carter faces a crossroad that might define his future."
+          },
+          {
+            episode: 9,
+            title: "El Padrino",
+            airDate: "2026-07-03",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/630/1577421.jpg",
+            duration: "59 min",
+            overview: "Rip and Beth confront a danger that threatens everything. Season finale."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 142. ONE PIECE (2023)
+  // ============================================================
+  {
+    title: "ONE PIECE",
+    type: "TV Show",
+    year: 2023,
+    rating: 8.3,
+    age: "TV-14",
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
+    poster: "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+    videoUrl: "111110",
+    trailerUrl: "",
+    overview: "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
+    overviewKurdish: "",
+    director: "Matt Owens, Steven Maeda",
+    cast: ["IÃ±aki Godoy, Mackenyu, Emily Rudd, Jacob Romero, Taz Skylar, Vincent Regan, Jeff Ward, Morgan Davies"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Romance Dawn",
+            airDate: "2023-08-31",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187145.jpg",
+            duration: "64 min",
+            overview: "Stranded on a sinking boat, carefree Luffy begins his journey in search of a pirate king's lost treasure. But first, he'll need a crew, a ship and a map."
+          },
+          {
+            episode: 2,
+            title: "The Man in the Straw Hat",
+            airDate: "2023-08-31",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187146.jpg",
+            duration: "55 min",
+            overview: "After securing a map to the Grand Line, Luffy, Nami and Zoro are taken hostage by a no-nonsense clown. New cadet Koby is cornered by Vice-Admiral Garp."
+          },
+          {
+            episode: 3,
+            title: "Tell No Tales",
+            airDate: "2023-08-31",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187147.jpg",
+            duration: "58 min",
+            overview: "In need of a proper ship, the gang reaches Syrup Village and meets the cheerful Usopp and his best friend Kaya. A sinister threat disrupts their plans."
+          },
+          {
+            episode: 4,
+            title: "The Pirates Are Coming",
+            airDate: "2023-08-31",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187148.jpg",
+            duration: "63 min",
+            overview: "With his friends in danger and Klahadore's plan in motion, Usopp seeks help from the Marines. Blades clash when a fierce battle erupts at Kaya's mansion."
+          },
+          {
+            episode: 5,
+            title: "Eat at Baratie!",
+            airDate: "2023-08-31",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187149.jpg",
+            duration: "51 min",
+            overview: "The Straw Hat Pirates face their first adversary as a group. At a floating fish house, Luffy befriends a cook, and Zoro enters a duel with a warlord."
+          },
+          {
+            episode: 6,
+            title: "The Chef and the Chore Boy",
+            airDate: "2023-08-31",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187150.jpg",
+            duration: "54 min",
+            overview: "Sanji and head chef Zeff put their differences aside to save a severely wounded Zoro. A ruthless Fishman on a mission stirs up trouble for the crew."
+          },
+          {
+            episode: 7,
+            title: "The Girl with the Sawfish Tattoo",
+            airDate: "2023-08-31",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187151.jpg",
+            duration: "58 min",
+            overview: "After striking a deal with a familiar foe to find Arlong, Luffy and his friends set sail for Coco Village and learn about Nami's mysterious past."
+          },
+          {
+            episode: 8,
+            title: "Worst in the East",
+            airDate: "2023-08-31",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/474/1187152.jpg",
+            duration: "49 min",
+            overview: "The Straw Hat crew strives to take down Arlong and the Fishmen once and for all. After a tense family reunion, Luffy inches closer to his dreams."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Beginning and the End",
+            airDate: "2026-03-10",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542892.jpg",
+            duration: "66 min",
+            overview: "To prepare for the Grand Line, the Straw Hats visit Loguetown, birthplace of the Great Pirate Era — where rivals both old and new await."
+          },
+          {
+            episode: 2,
+            title: "Good Whale Hunting",
+            airDate: "2026-03-10",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542893.jpg",
+            duration: "63 min",
+            overview: "When the Merry lands in the belly of a giant whale, Luffy must win over a gruff lighthouse keeper to save his friends and his ship."
+          },
+          {
+            episode: 3,
+            title: "Whisky Business",
+            airDate: "2026-03-10",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542894.jpg",
+            duration: "63 min",
+            overview: "The crew receives a warm welcome to the pirate-loving town of Whisky Peak. But with a pair of assassins on the loose, trouble isn't far behind."
+          },
+          {
+            episode: 4,
+            title: "Big Trouble in Little Garden",
+            airDate: "2026-03-10",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542895.jpg",
+            duration: "54 min",
+            overview: "A new addition to the ship raises the stakes. On the lush isle of Little Garden, the crew encounters an adventure of giant proportions."
+          },
+          {
+            episode: 5,
+            title: "Wax On, Wax Off",
+            airDate: "2026-03-10",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542896.jpg",
+            duration: "57 min",
+            overview: "The Straw Hats are held captive by two artists: one who colors emotions, and one intent on making them part of his latest — and deadliest — masterwork."
+          },
+          {
+            episode: 6,
+            title: "Nami Deerest",
+            airDate: "2026-03-10",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542897.jpg",
+            duration: "55 min",
+            overview: "When Nami is stricken by a mysterious illness, Luffy and Sanji embark on a perilous mission to save her. Smoker and Tashigi investigate a Marine outpost."
+          },
+          {
+            episode: 7,
+            title: "Reindeer Shames",
+            airDate: "2026-03-10",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542898.jpg",
+            duration: "60 min",
+            overview: "Dr. Kureha tells the heartwrenching story of Chopper's origins, including how he met his mentor Dr. Hiriluk and their quest to cure all disease."
+          },
+          {
+            episode: 8,
+            title: "Deer and Loathing in Drum Kingdom",
+            airDate: "2026-03-10",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/617/1542899.jpg",
+            duration: "63 min",
+            overview: "The Straw Hats lend themselves to Drum Island's cause when King Wapol and his army of monsters return to reclaim the throne."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 143. Shameless (2011)
+  // ============================================================
+  {
+    title: "Shameless",
+    type: "TV Show",
+    year: 2011,
+    rating: 8.5,
+    age: "TV-MA",
+    duration: "45m",
+    genres: ["Drama", "Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg",
+    videoUrl: "34307",
+    trailerUrl: "",
+    overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
+    overviewKurdish: "",
+    director: "John Wells",
+    cast: ["William H. Macy", "Emmy Rossum", "Jeremy Allen White", "Ethan Cutkosky", "Shanola Hampton", "Steve Howey", "Emma Kenney", "Cameron Monaghan", "Noel Fisher"],
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Pilot",
+            airDate: "2011-01-09",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114877.jpg",
+            duration: "60 min",
+            overview: "The premiere of a series following the escapades of a hard-partying Chicago father who provides no guidance to his dysfunctional brood of six. First up: daughter Fiona has her purse snatched but manages to make the acquaintance of a handsome young man, and Lip discovers an unsettling secret about younger brother Ian."
+          },
+          {
+            episode: 2,
+            title: "Frank the Plank",
+            airDate: "2011-01-16",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114878.jpg",
+            duration: "60 min",
+            overview: "A manhunt goes out for Frank after he heads off on a Friday bender and uncharacteristically fails to show up to cash his disability check. Later, he turns up in Toronto with no memory of how he got there."
+          },
+          {
+            episode: 3,
+            title: "Aunt Ginger",
+            airDate: "2011-01-23",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/252/632368.jpg",
+            duration: "60 min",
+            overview: "Fiona contemplates romance with a policeman who has had a lifelong crush on her, but Steve isn't about to remove himself from the picture. Meanwhile, Ian spurns a girl's attentions and her brothers come looking for him; and elderly Aunt Ginger, who actually owns the Gallagher house, goes missing and the whole family joins in the search."
+          },
+          {
+            episode: 4,
+            title: "Casey Casden",
+            airDate: "2011-01-30",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114880.jpg",
+            duration: "60 min",
+            overview: "When Aunt Ginger takes her leave, little Debbie is left sad and lonely, so to ease the hurt she kidnaps a toddler from a birthday party, leaving the Gallaghers scrambling to come up with a plan to return the child before the Chicago Police Department fingers them for the crime. Meanwhile, Frank parries sexual advances from Karen, while Kevin's white lie involving his noninvolvement with an attractive young lady leads to a surprising conclusion."
+          },
+          {
+            episode: 5,
+            title: "Three Boys",
+            airDate: "2011-02-06",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114881.jpg",
+            duration: "60 min",
+            overview: "The family attempts to pull off a fake wedding when it is revealed that Veronica comes from a wealthy family; Frank is given bad medical news and doesn't do such a good job of handling it; and Steve goes cruising for a new car, with Fiona along for the ride."
+          },
+          {
+            episode: 6,
+            title: "Killer Carl",
+            airDate: "2011-02-13",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114882.jpg",
+            duration: "60 min",
+            overview: "Fiona scrambles to spruce up the house for an impending visit from Carl's teacher; Lip makes some extra cash by taking tests for his less-intelligent classmates; the Kash and Grab is repeatedly robbed by a local punk; and Frank's lack of business acumen costs him."
+          },
+          {
+            episode: 7,
+            title: "Frank Gallagher: Loving Husband, Devoted Father",
+            airDate: "2011-02-20",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114883.jpg",
+            duration: "60 min",
+            overview: "To come up with $6000 Frank owes to two thugs, he entertains the notion of a risky business that's going to require some big-time help from the family. Elsewhere, Ian stands up to a bully, and Fiona agrees to go away with Steve, leaving Liam with agoraphobe Sheila."
+          },
+          {
+            episode: 8,
+            title: "It's Time to Kill the Turtle",
+            airDate: "2011-02-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114884.jpg",
+            duration: "60 min",
+            overview: "Frank goes on the wagon, which pleases Carl and Debbie, but a skeptical Lip doesn't believe their father's newfound temperance will keep him from the bottle for long. Elsewhere, Fiona scrambles to find a better-paying job, which leads her to overlook some suspicious behavior of Steve's; Kev and Veronica open their house to a foster child and get quite a surprise when they learn her family history; Ian pursues Mickey; and Sheila worries Frank has lost interest in her."
+          },
+          {
+            episode: 9,
+            title: "But at Last Came a Knock",
+            airDate: "2011-03-06",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114885.jpg",
+            duration: "60 min",
+            overview: "Frank is in line for some settlement money, but there's a catch: he needs his ex-wife's signature on the paperwork. Elsewhere, Debbie discovers a secret about Steve; Monica turns up and announces she's taking baby Liam with her; and an angry Fiona moves out of the house and in with Steve."
+          },
+          {
+            episode: 10,
+            title: "Nana Gallagher Had an Affair",
+            airDate: "2011-03-13",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114886.jpg",
+            duration: "60 min",
+            overview: "Monica returns and the Gallagher clan are in a tizzy as they try to determine if Frank is their real father. And Fiona, who is thoroughly disgusted with Monica, decides to move in next door with Steve. Meanwhile, Eddie invites Karen to a Purity Ball; and Frank uses Carl in an effort to thwart a disability worker's attempt to pull the plug on the state funds he receives."
+          },
+          {
+            episode: 11,
+            title: "Daddyz Girl",
+            airDate: "2011-03-20",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114887.jpg",
+            duration: "60 min",
+            overview: "Fiona befriends an alluring young lady after Debbie talks her into joining a mothers' group. Elsewhere, Tony suspects he knows the truth behind Steve's car-stealing business; Lip and Ian try to learn which of their uncles is Ian's dad; and Frank sees his workman's compensation benefits come to an end, so he sends the kids on a mission to find him a job, preferably one that is highly dangerous."
+          },
+          {
+            episode: 12,
+            title: "Father Frank, Full of Grace",
+            airDate: "2011-03-27",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114888.jpg",
+            duration: "60 min",
+            overview: "In the Season 1 finale, Steve's actual occupation is revealed and he tries to persuade Fiona to leave town with him. Meanwhile, Frank goes into hiding when his and Karen's secret is spilled; and car thieves Lip and Ian get caught and locked up, and it's up to Fiona to figure out how to spring them."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Summertime",
+            airDate: "2012-01-08",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114862.jpg",
+            duration: "60 min",
+            overview: "In the second-season premiere, following her breakup with Steve, Fiona lands a job tending bar at a popular local joint and makes a new acquaintance in an enterprising young businessman. Meanwhile, Frank uses Liam as collateral for a gambling debt; Lip takes bets on Little League games; and Kash leaves town, so Ian decides to take over the Kash and Grab."
+          },
+          {
+            episode: 2,
+            title: "Summer Loving",
+            airDate: "2012-01-15",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114863.jpg",
+            duration: "60 min",
+            overview: "Frank spots a potential sugar momma in a bar patron named Dottie, whose health is failing fast but is living well on a city pension. Meanwhile, Fiona has her hands full with a new job tending bar, the kids and the new man in her life; and at home, Debbie wants a room of her own while Carl beds down in a van."
+          },
+          {
+            episode: 3,
+            title: "I'll Light a Candle for You Every Day",
+            airDate: "2012-01-22",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114864.jpg",
+            duration: "60 min",
+            overview: "Fiona ponders the morality of getting involved with a high-school crush who's now married; Frank pulls out all the stops in an effort to stay in the good graces of his meal ticket, Dottie; and Harry's health issues leave Debbie obsessing over death. Meanwhile, Kevin considers buying the Alibi; Lip takes a meeting with an Army officer to see about getting Ian into West Point; Jody asks for Frank's permission to marry Karen."
+          },
+          {
+            episode: 4,
+            title: "A Beautiful Mess",
+            airDate: "2012-01-29",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114865.jpg",
+            duration: "60 min",
+            overview: "After sleeping with Craig, Fiona is unprepared for the arrival of his irate wife. And on the family front, Fiona is concerned that she is dumping too much responsibility on the Gallagher children when stress causes Debbie to break out in a rash. Meanwhile, Frank begins to suspect his days in the Jackson household are coming to an end; Ian marches forward in his efforts to get into West Point; and Lip attempts to dig up dirt on Jody."
+          },
+          {
+            episode: 5,
+            title: "Father's Day",
+            airDate: "2012-02-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114866.jpg",
+            duration: "60 min",
+            overview: "When Eddie Jackson's body turns up, Frank thinks he should be in line to claim his pension and insurance benefits. Meanwhile, Fiona attends a high-class wedding with her sugar daddy; Lip discovers startling news about Karen and Jody; Frank's room is rented to a hooker; Veronica suspects Kev of cheating; and Sheila uncovers the truth about what transpired between Frank and Karen last year."
+          },
+          {
+            episode: 6,
+            title: "Can I Have a Mother",
+            airDate: "2012-02-12",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114867.jpg",
+            duration: "60 min",
+            overview: "Debbie's day at day care takes a wild turn with the arrival of Grammy Gallagher, who's been released on a medical furlough. She seeks Frank's help in tracking down her old meth-lab pal who owes her a big debt. Meanwhile, Steve invites Fiona and Adam on a double date with him and his Brazilian bombshell; and when Frank finds out the beneficiary of Eddie's life-insurance policy, he hits the roof."
+          },
+          {
+            episode: 7,
+            title: "A Bottle of Jean Nate",
+            airDate: "2012-02-19",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114868.jpg",
+            duration: "60 min",
+            overview: "Jasmine throws an end-of-summer blowout and invites Fiona down to David's boat but neglects to inform her that Steve and Estefania will also be on board; Lip tries to get back into Karen's good graces and prepares a prenup for her and Jody. Meanwhile, the Ian and Lip impasse heats up into a physical confrontation; Frank tires of doing Grammy's bidding and wants her out, but Fiona is enjoying the old girl's company."
+          },
+          {
+            episode: 8,
+            title: "Parenthood",
+            airDate: "2012-03-04",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114869.jpg",
+            duration: "60 min",
+            overview: "While Jody and Sheila comfort a dying Grammy, Frank steps out and stops at the Kash and Grab, where he walks in on Ian and Mickey in a compromising position. Meanwhile, Lip wants to quit school, but Fiona tells him that if he reconsiders, she'll go back and get her GED; Lip takes Karen to a number of adoption agencies and doesn't like what she has planned; Steve decides to coach Carl's football team."
+          },
+          {
+            episode: 9,
+            title: "Hurricane Monica",
+            airDate: "2012-03-11",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114870.jpg",
+            duration: "60 min",
+            overview: "Monica blows back into town and immediately hooks up with Frank for more shenanigans, but the kids are left wondering if she's finally here to stay, and Frank is eager to pick up the ashes of his late mother and reclaim the cash he believes she's hidden. Meanwhile, after Fiona kicks out Lip, he kicks around with stops at Karen's and Steve's. Later, Sheila and Jody think the house is haunted by Eddie's ghost."
+          },
+          {
+            episode: 10,
+            title: "A Great Cause",
+            airDate: "2012-03-18",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114871.jpg",
+            duration: "60 min",
+            overview: "With Monica around and pitching in, Fiona is able to devote more time to pursuing her GED and seek a promotion at the club; Steve learns Estefania is still in love with her ex-boyfriend, so he and Lip conspire to sneak her beau back into the country. Meanwhile, Ian is busy dodging a vengeful Terry Milkovich; and Lip ponders the possibility that he might be poppa to Mandy's impending arrival."
+          },
+          {
+            episode: 11,
+            title: "Just Like the Pilgrims Intended",
+            airDate: "2012-03-25",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114872.jpg",
+            duration: "60 min",
+            overview: "Fiona's Thanksgiving plans get put on the back burner when Frank tries to get Monica out of bed and help her out of her depression. Meanwhile, Estefania and Marco's rocky reunion takes a turn for the better when Steve offers to surrender his identity so Marco can stay in the country and marry. Later, Karen goes into labor; and Debbie worries that depression may run in the Gallagher family."
+          },
+          {
+            episode: 12,
+            title: "Fiona Interrupted",
+            airDate: "2012-04-01",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114873.jpg",
+            duration: "60 min",
+            overview: "Jimmy gets back into Fiona's good graces and decides to have her meet his family; Frank plots to free Monica from the psychiatric institution; and Jody and Sheila attempt to hide Karen's newborn in the second-season finale. Later, Ian runs into the guy he slept with; and the late Eddie's long-awaited insurance check arrives."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "El Gran Cañon",
+            airDate: "2013-01-13",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114846.jpg",
+            duration: "60 min",
+            overview: "In the Season 3 premiere, Fiona adapts to living with Jimmy; Frank awakens in a strange place; and Lip gets sentenced to community service. Meanwhile, Jody and Sheila are losing sleep over Baby Hymie's nocturnal restlessness."
+          },
+          {
+            episode: 2,
+            title: "The American Dream",
+            airDate: "2013-01-20",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114847.jpg",
+            duration: "60 min",
+            overview: "Fiona has second thoughts about loaning money to Meg; and a drunken Frank staggers home, where no one wants him, until he proves to be the only one who can quiet fussy Baby Hymie. Meanwhile, Lip's community-service encounter with a North Side youth group gives him a moneymaking idea, while Kev's wife returns with her son Kyle and Frank puts in a call to child services."
+          },
+          {
+            episode: 3,
+            title: "May I Trim Your Hedges?",
+            airDate: "2013-01-27",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114848.jpg",
+            duration: "60 min",
+            overview: "Frank works a scam on a cancer foundation; and Fiona is shocked to learn what she must do for a job as a grocery-store cashier and teams with Veronica to get back at the manager. Meanwhile, crusader Lip hunts down sex offenders in the neighborhood."
+          },
+          {
+            episode: 4,
+            title: "The Helpful Gallaghers",
+            airDate: "2013-02-10",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114849.jpg",
+            duration: "60 min",
+            overview: "Carl heads to cancer camp, where the facility's activities leave a lot to be desired, while Frank goes on babysitting duty and Sheila plans to introduce Jody to \"toy time.\" Later, Fiona rallies coworkers against the boss; Lip and Mandy rescue her half sister from foster care; and Jimmy gets bad news about his parents."
+          },
+          {
+            episode: 5,
+            title: "The Sins of My Caretaker",
+            airDate: "2013-02-17",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114850.jpg",
+            duration: "60 min",
+            overview: "Frank has a major problem on his hands when the city announces it will be doing work on the main sewer and they'll be digging up his yard, where Aunt Ginger's remains are located. Meanwhile, Fiona's boss finds her work unsatisfactory; Molly uncovers a startling secret; and Ned wants Ian to break into his wife's house."
+          },
+          {
+            episode: 6,
+            title: "Cascading Failures",
+            airDate: "2013-02-24",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114851.jpg",
+            duration: "60 min",
+            overview: "The Department of Family Services takes away the Gallagher children, and Fiona is desperate to get them back, so much so that she must round up Frank, get him to act responsibly and make a court appearance. Meanwhile, Kev and Veronica decide to use her mother as a surrogate; and Terry catches Mickey and Ian in flagrante."
+          },
+          {
+            episode: 7,
+            title: "A Long Way from Home",
+            airDate: "2013-03-03",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114852.jpg",
+            duration: "60 min",
+            overview: "Fiona makes a fateful decision about the future of her and her siblings, and recruits Lip for a plan to forge Aunt Ginger's will, but first they need a dead body. Meanwhile, Carl and Debbie deal with life in their foster homes; Frank sobers up in preparation for a court date; and Timmy Wong and his mother come to Sheila's for Hymie."
+          },
+          {
+            episode: 8,
+            title: "Where There's a Will",
+            airDate: "2013-03-10",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114853.jpg",
+            duration: "60 min",
+            overview: "At the gathering for Aunt Ginger's fake funeral, the family meet Frank's wily cousin Patrick, who might just be devious enough to \"out-Gallagher\" the Gallaghers."
+          },
+          {
+            episode: 9,
+            title: "Frank the Plumber",
+            airDate: "2013-03-17",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114854.jpg",
+            duration: "60 min",
+            overview: "Fiona has a difficult time dealing with the corporate culture in her new office job, while Frank, needing medical coverage, somehow gets mixed up in a gay-rights event, where he rubs elbows with a powerful activist."
+          },
+          {
+            episode: 10,
+            title: "Civil Wrongs",
+            airDate: "2013-03-24",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114855.jpg",
+            duration: "60 min",
+            overview: "Just when Fiona has settled into her job and found some structure to her life, Jimmy drops a bomb on her, while Frank revels in being the face of the gay-rights movement, and sees a way to make even more money out of his newfound celebrity."
+          },
+          {
+            episode: 11,
+            title: "Order Room Service",
+            airDate: "2013-03-31",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114856.jpg",
+            duration: "60 min",
+            overview: "Fiona takes the kids camping, while homeless Frank tries to get Carl to sneak him into the Gallagher van for the night."
+          },
+          {
+            episode: 12,
+            title: "Survival of the Fittest",
+            airDate: "2013-04-07",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114857.jpg",
+            duration: "60 min",
+            overview: "In the Season 3 finale, Fiona and the family throw a surprise party for Lip's high-school graduation; and Frank uses his gambling winnings to take Lip out for a nice dad-lad dinner."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Simple Pleasures",
+            airDate: "2014-01-12",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114834.jpg",
+            duration: "60 min",
+            overview: "Season 4 begins with a drug-addled and deathly ill Frank reappearing. Meanwhile, Fiona cares for the household and works at Worldwide Cup with her boyfriend boss Mike Pratt, and attempts to connect with Debbie and Carl, who are dealing with the upheaval of their adolescent hormones."
+          },
+          {
+            episode: 2,
+            title: "My Oldest Daughter",
+            airDate: "2014-01-19",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114835.jpg",
+            duration: "60 min",
+            overview: "Fiona is involved in a road rage incident that damages a company car and leads her to tell a lie about how it happened. Meanwhile, Lip struggles in school and with the ladies."
+          },
+          {
+            episode: 3,
+            title: "Like Father, Like Daughter",
+            airDate: "2014-01-26",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114836.jpg",
+            duration: "60 min",
+            overview: "Frank stalks his previously unseen daughter Sammi and is surprised to learn that she has a son. Meanwhile, Fiona and Mike get serious; and Carl steals dogs and holds them for ransom, so he can earn some drug money for Frank. Also: Sheila has her first successful online date with a Native American cowboy named Roger Running Tree."
+          },
+          {
+            episode: 4,
+            title: "Strangers on a Train",
+            airDate: "2014-02-02",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114837.jpg",
+            duration: "60 min",
+            overview: "Fiona continues her secret affair with Robbie, but her infidelity is threatened to be exposed when Mike shows up at Robbie's apartment while Fiona is there. Meanwhile, Frank tries to contrive an \"accident\" that will net him a big insurance payout, so he can afford a potential liver transplant."
+          },
+          {
+            episode: 5,
+            title: "There's the Rub",
+            airDate: "2014-02-09",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114838.jpg",
+            duration: "60 min",
+            overview: "Fiona's series of bad decisions involving Robbie finally boil over. Meanwhile, Frank and Sammi pursue a cure for Frank's liver trouble and try to catch up on missed father-daughter time; and Lip gets a surprise visit at college from Army investigators."
+          },
+          {
+            episode: 6,
+            title: "Iron City",
+            airDate: "2014-02-16",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114839.jpg",
+            duration: "60 min",
+            overview: "The aftermath of Liam's accident lands Fiona in county jail, unsure of Liam's condition or her future. The family, minus Frank, wait nervously for any update on Liam's status at the hospital. Meanwhile, after almost being killed by the sweat lodge, Frank wakes up in the emergency room and gets some sobering news about his declining health."
+          },
+          {
+            episode: 7,
+            title: "A Jailbird, Invalid, Martyr, Cutter, Retard, and Parasitic Twin",
+            airDate: "2014-02-23",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114840.jpg",
+            duration: "60 min",
+            overview: "Lip is faced with being the Gallagher's guardian when Fiona is released from jail and ordered by the court to remain inside the house, and Frank continues to be out of commission due to his illness. Fortunately, he gets some unexpected assistance from Amanda, his roommate's girlfriend."
+          },
+          {
+            episode: 8,
+            title: "Hope Springs Paternal",
+            airDate: "2014-03-09",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114841.jpg",
+            duration: "60 min",
+            overview: "Fiona rids the house of all suspicious items to prepare for a visit from her probation officer, but her efforts aren't appreciated by Debbie and Carl. Meanwhile, Ian gets kicked out of Mickey's house by a hammer-wielding Svetlana and makes a long-awaited return to the Gallagher house."
+          },
+          {
+            episode: 9,
+            title: "The Legend of Bonnie and Carl",
+            airDate: "2014-03-16",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114842.jpg",
+            duration: "60 min",
+            overview: "Carl connects with a troubled girl in detention; Lip grows close to his roommate's ex-girlfriend; Debbie tries to make life miserable for the new girl in Matty's life; Fiona struggles to get a job now that she has a criminal record; Sheila returns from her trip to the reservation with plans to adopt Native American kids; Mickey ignores the birth of his son to spend time with an erratic-behaving Ian."
+          },
+          {
+            episode: 10,
+            title: "Liver, I Hardly Know Her",
+            airDate: "2014-03-23",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114843.jpg",
+            duration: "60 min",
+            overview: "Fiona goes wild and violates multiple terms of her probation by partying with Robbie's degenerate friends. A search for her gets underway when she fails to contact anyone."
+          },
+          {
+            episode: 11,
+            title: "Emily",
+            airDate: "2014-03-30",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114844.jpg",
+            duration: "60 min",
+            overview: "Fiona is taken to a correctional facility; Frank wakes up from his operation suffering from post-operative delirium; Ian crashes the christening for Mickey's son; Amanda's parents bribe Lip to stay away from their daughter; Debbie meets an older student with a dark ulterior motive."
+          },
+          {
+            episode: 12,
+            title: "Lazarus",
+            airDate: "2014-04-06",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114845.jpg",
+            duration: "60 min",
+            overview: "Season 4 ends with Sheila fighting for custody of the Native American kids and clashing with Sammi over where they will all live once Frank is released. Meanwhile, Fiona passes a drug test, gets released from jail and lands a job at Patsy's Pies with the help of her parole officer; and Frank begins to feel again like his old, troubled self."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Milk of the Gods",
+            airDate: "2015-01-11",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/7/19029.jpg",
+            duration: "60 min",
+            overview: "Season 5 begins with Fiona balancing her job and a crush on her older boss. Meanwhile, Lip leaves college and heads back home to work a demolition job; Frank unveils the secret project he's been working on; Ian helps a pregnant Svetlana take care of baby Yevgeny; and Kevin plays stay-at-home dad when Veronica goes to work at the Alibi."
+          },
+          {
+            episode: 2,
+            title: "I'm the Liver",
+            airDate: "2015-01-18",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/7/19530.jpg",
+            duration: "60 min",
+            overview: "Frank tries to talk Sheila out of an offer from two lesbians who want to buy her home and begins warning everyone of the neighborhood's impending gentrification. Meanwhile, Lip starts his first day of work; Kev bonds with Svetlana; Ian plots revenge with Mickey and Mandy against a homophobic military funeral protest; and Fiona officially comes off house arrest."
+          },
+          {
+            episode: 3,
+            title: "The Two Lisas",
+            airDate: "2015-01-25",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114832.jpg",
+            duration: "60 min",
+            overview: "Frank tries to scare off the two lesbians who are buying up property in the neighborhood; Debbie throws a wild party; Fiona agrees to go to a concert with Davis; Carl discovers a hidden talent; Ian goes on a crazed cleaning spree and asks Lip to help convince Mandy not to move to Indiana with her abusive boyfriend."
+          },
+          {
+            episode: 4,
+            title: "A Night to Remem... Wait, What?",
+            airDate: "2015-02-01",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114833.jpg",
+            duration: "60 min",
+            overview: "Frank tries to retrace his steps after an epic bender to find what he did with his six-figure insurance settlement; Gus admits he is falling in love with Fiona; Lip visits Amanda in Miami; Carl starts a new job as a drug dealer; Debbie develops a new crush; Debbie begins training at Derek's boxing gym; Kev blows off a date because he doesn't want to leave the girls with a sitter."
+          },
+          {
+            episode: 5,
+            title: "Rite of Passage",
+            airDate: "2015-02-08",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/8/21350.jpg",
+            duration: "60 min",
+            overview: "Fiona and Gus navigate the awkwardness of their quickie wedding, but her plans to announce the marriage at a family dinner unravels when a coworker overdoses on heroin. Meanwhile, Frank avoids an irate Sammi; Debbie trains at Derek's gym; Mickey grows more concerned with Ian's erratic behavior; and Lip decides to head back to school early."
+          },
+          {
+            episode: 6,
+            title: "Crazy Love",
+            airDate: "2015-02-15",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114831.jpg",
+            duration: "60 min",
+            overview: "Newlywed Fiona struggles to remain faithful when Jimmy returns and relentlessly pursues her; Ian steals Mickey and Svetlana's baby; Sammi takes over the Gallagher house and enforces strict curfews; Debbie starts high school; Veronica grapples with her decision to separate from Kev."
+          },
+          {
+            episode: 7,
+            title: "Tell Me You Fucking Need Me",
+            airDate: "2015-03-01",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/22752.jpg",
+            duration: "60 min",
+            overview: "Ian gets upset when he learns he is under a mandatory 72-hour hold at the psych ward; Frank returns home from the hospital and refuses to apologize to Sammi; Jimmy and Gus have a face-to-face meeting about their futures with Fiona; Lip discovers he never filled out his financial aid forms and now owes thousands in tuition; Debbie tries to get out of the \"friend zone\" with Derek."
+          },
+          {
+            episode: 8,
+            title: "Uncle Carl",
+            airDate: "2015-03-08",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/23237.jpg",
+            duration: "60 min",
+            overview: "Ian returns home from the psych ward but refuses to accept his bipolar diagnosis or take his medication; Gus tells Fiona he is going on tour and that they need time apart; Frank recovers from his gunshot wound and plots revenge against Sammi; Carl is asked by his boss to run drugs to Indiana; Lip convinces Kev to sell drugs in the dorms."
+          },
+          {
+            episode: 9,
+            title: "Carl's First Sentencing",
+            airDate: "2015-03-15",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/23940.jpg",
+            duration: "60 min",
+            overview: "Frank plays tour guide to the seedier side of life for his doctor after she is diagnosed with terminal cancer; Fiona prepares Carl for his sentencing hearing; Lip sleeps with a professor; Ian realizes he needs to get back on his meds."
+          },
+          {
+            episode: 10,
+            title: "South Side Rules",
+            airDate: "2015-03-22",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/24324.jpg",
+            duration: "60 min",
+            overview: "Frank starts to enjoy the company of his new sick friend and formerly uptight doctor, but she dumps him when she suspects he is developing feelings for her."
+          },
+          {
+            episode: 11,
+            title: "Drugs Actually",
+            airDate: "2015-03-29",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/9/24654.jpg",
+            duration: "60 min",
+            overview: "Frank becomes concerned about Bianca's increasingly erratic and dangerous behavior."
+          },
+          {
+            episode: 12,
+            title: "Love Songs (In the Key of Gallagher)",
+            airDate: "2015-04-05",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/10/25049.jpg",
+            duration: "60 min",
+            overview: "Season 5 ends with Fiona reuniting with Gus after he returns from his tour, but she struggles with the fact that her feelings for Sean have turned into love. In Costa Rica, Frank has love struggles of his own while he works to keep Bianca happy."
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "I Only Miss Her When I'm Breathing",
+            airDate: "2016-01-10",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/37/93966.jpg",
+            duration: "60 min",
+            overview: "Frank's new found appreciation for life freaks everyone out; Fiona is determined to get Ian to take his meds; Debbie takes a pregnancy test."
+          },
+          {
+            episode: 2,
+            title: "#AbortionRules",
+            airDate: "2016-01-17",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/40/100083.jpg",
+            duration: "60 min",
+            overview: "Debbie carries a bag of flour around all day to prove Fiona wrong about her ability to raise a child while going to school, but she quickly realizes people are not as accommodating to mothers and babies as she hoped."
+          },
+          {
+            episode: 3,
+            title: "The F Word",
+            airDate: "2016-01-24",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/41/102697.jpg",
+            duration: "60 min",
+            overview: "Frank teaches Debbie how to work the welfare system to her advantage. Meanwhile, Kevin and Veronica visit a paralyzed Yanis in the hospital and try to make amends, but Yanis arrives home and tries to kill the two Lisas with Kev's van."
+          },
+          {
+            episode: 4,
+            title: "Going Once, Going Twice",
+            airDate: "2016-01-31",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/42/106922.jpg",
+            duration: "60 min",
+            overview: "Fiona confronts Patrick about the eviction notice, but her only choice is to get a mortgage from the bank and bid on the house at auction. Meanwhile, Ian bakes cookies for the firehouse and discovers he was saved by the shift of gay firemen."
+          },
+          {
+            episode: 5,
+            title: "Refugees",
+            airDate: "2016-02-07",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110136.jpg",
+            duration: "60 min",
+            overview: "Frank helps Erica through the cancer concierge process; Debbie ups her game as a shoulder for Tyler to lean on; Lip tries to protect Helene from the fallout of Amanda's disclosure, but she refuses to see him anymore."
+          },
+          {
+            episode: 6,
+            title: "NSFW",
+            airDate: "2016-02-14",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/44/110138.jpg",
+            duration: "60 min",
+            overview: "Ian's relationship with Caleb gets more serious. Meanwhile, Lip is called to appear before a faculty disciplinary committee, but Helene accepts the blame for the scandal and tells the committee she will no longer teach or see Lip."
+          },
+          {
+            episode: 7,
+            title: "Pimp's Paradise",
+            airDate: "2016-02-21",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/45/114789.jpg",
+            duration: "60 min",
+            overview: "Carl struggles with Nick's absence, inviting his friends to the Gallagher home for a party; Frank and Queenie rule the house; Debbie returns."
+          },
+          {
+            episode: 8,
+            title: "Be a Good Boy. Come for Grandma.",
+            airDate: "2016-03-06",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/47/119494.jpg",
+            duration: "60 min",
+            overview: "Fiona tries to get Sean's son to like her, but when he starts warming up to her, he takes a gun from the Gallagher house."
+          },
+          {
+            episode: 9,
+            title: "A Yurt of One's Own",
+            airDate: "2016-03-13",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/48/121426.jpg",
+            duration: "60 min",
+            overview: "Fiona tries to make amends with Sean, who is uncooperative; Debbie and Queenie travel with Frank to a rural commune."
+          },
+          {
+            episode: 10,
+            title: "Paradise Lost",
+            airDate: "2016-03-20",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/49/123833.jpg",
+            duration: "60 min",
+            overview: "Sean moves into the Gallagher house; Fiona plans a traditional wedding; Kev is unhappy about the green card marriage."
+          },
+          {
+            episode: 11,
+            title: "Sleep No More",
+            airDate: "2016-03-27",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/50/126534.jpg",
+            duration: "60 min",
+            overview: "Frank offers to pay for Fiona's reception; when Sean worries that Frank will only hurt Fiona in the end, he confronts Frank."
+          },
+          {
+            episode: 12,
+            title: "Familia Supra Gallegorious Omnia!",
+            airDate: "2016-04-03",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/51/129500.jpg",
+            duration: "60 min",
+            overview: "It's wedding day and Frank shows up uninvited - and high."
+          }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "Hiraeth",
+            airDate: "2016-10-02",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/76/191005.jpg",
+            duration: "60 min",
+            overview: "Frank wakes up after a month-long coma to find no one missed him. Worried she isn't a good mother, Debbie takes a criminal approach to making sure Franny grows up wealthy. Meanwhile, Lip successfully completes rehab and is determined to stay \"sober;\" Carl looks into surgery after learning he's the only uncircumcised brother; and Ian gets a bad feeling about Caleb's friend Denise. Season premiere."
+          },
+          {
+            episode: 2,
+            title: "Swipe, Fuck, Leave",
+            airDate: "2016-10-09",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/76/191004.jpg",
+            duration: "60 min",
+            overview: "Ready to disown his family, Frank takes Liam under wing and starts a new life barricaded on the top floor of the Gallagher home. Fiona, meanwhile, adopts a new, relaxed attitude and starts running Patsy's Pies on her own terms. Debbie gets into trouble in the stroller business; Ian tries out heterosexuality; and Carl finds himself forced into abstinence."
+          },
+          {
+            episode: 3,
+            title: "Home Sweet Homeless Shelter",
+            airDate: "2016-10-16",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/76/191006.jpg",
+            duration: "60 min",
+            overview: "Kevin, Veronica and Svetlana start a topless maid service. At the shelter, meanwhile, Frank makes new friends to replace his old family - leading them to a for-sale house converted into the Gallagher Home for the Homeless. Plus, Debbie's new lifestyle comes to an abrupt end; Carl gets a syphilis scare; Ian struggles with a breakup; and with Fiona on the run to clean up after her siblings, business at Patsy's hits the skids."
+          },
+          {
+            episode: 4,
+            title: "I Am a Storm",
+            airDate: "2016-10-23",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/79/198453.jpg",
+            duration: "60 min",
+            overview: "Frank worries that he and his new family will lose their Home for the Homeless shelter, so he plans a little goodwill for the neighborhood. Meanwhile, Fiona drums up business by throwing a speakeasy party at Patsy's Pies."
+          },
+          {
+            episode: 5,
+            title: "Own Your Shit",
+            airDate: "2016-10-30",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/82/205019.jpg",
+            duration: "60 min",
+            overview: "Frank learns that a billionaire philanthropist has bought the homeless shelter and he and his clan can stay. Meanwhile, Fiona gets smart financial advice from a Tinder hookup as Ian struggles with his feelings for Trevor."
+          },
+          {
+            episode: 6,
+            title: "The Defenestration of Frank",
+            airDate: "2016-11-06",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/82/205020.jpg",
+            duration: "60 min",
+            overview: "Fiona sees opportunity in a laundromat for sale and decides to invest. Frank revels in the good fortune of his scam, but the troops catch a whiff of foul play. Meanwhile, Kev and V discover a shocking secret about Svetlana's father."
+          },
+          {
+            episode: 7,
+            title: "You'll Never Ever Get a Chicken in Your Whole Entire Life",
+            airDate: "2016-11-13",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/84/211907.jpg",
+            duration: "60 min",
+            overview: "Fiona learns that owning a laundromat is costlier than expected. Frank helps Liam get into a plush new school after his old one is permanently shut down. Meanwhile, Debbie cleans up her act and grows closer to Neil."
+          },
+          {
+            episode: 8,
+            title: "You Sold Me the Laundromat, Remember?",
+            airDate: "2016-11-20",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/85/214154.jpg",
+            duration: "60 min",
+            overview: "Fiona takes a DIY approach to renovating the laundromat. Lip agrees to go before the school board in hopes of getting reinstated. Meanwhile, Kev's trust in Svetlana wanes even further when the titty van goes missing."
+          },
+          {
+            episode: 9,
+            title: "Ouroboros",
+            airDate: "2016-11-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/86/215583.jpg",
+            duration: "60 min",
+            overview: "Monica is back! And her first task is to help Debbie get back Franny. Meanwhile, Frank tries to avoid her, Ian has his first fight with Trevor, Lip tries to mask his relapsing alcoholism and Fiona's laundromat gets a bad review."
+          },
+          {
+            episode: 10,
+            title: "Ride or Die",
+            airDate: "2016-12-04",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/87/219781.jpg",
+            duration: "60 min",
+            overview: "Fiona, facing mounting issues, contemplates an offer to buy the laundromat."
+          },
+          {
+            episode: 11,
+            title: "Happily Ever After",
+            airDate: "2016-12-11",
+            rating: 9.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/88/222135.jpg",
+            duration: "60 min",
+            overview: "Frank and Monica have a proposal for the kids. Fiona sees an opportunity."
+          },
+          {
+            episode: 12,
+            title: "Requiem for a Slut",
+            airDate: "2016-12-18",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/89/224455.jpg",
+            duration: "60 min",
+            overview: "The Gallaghers struggle with loss; Lip tries to improve his future; Debbie, Carl and Liam are sucked into Frank's latest scheme; Kev and V get their revenge."
+          }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          {
+            episode: 1,
+            title: "We Become What We ... Frank!",
+            airDate: "2017-11-05",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/133/332797.jpg",
+            duration: "60 min",
+            overview: "The Gallaghers find themselves with money to burn as Carl sells their inheritance from Monica. Meanwhile, Fiona swears off random hookups to focus on her new apartment building; Lip deals with the sacrifice that comes with sobriety; and Frank emerges out of a meth-induced haze to make amends for decades of depravity."
+          },
+          {
+            episode: 2,
+            title: "Where's My Meth?",
+            airDate: "2017-11-12",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/135/337639.jpg",
+            duration: "60 min",
+            overview: "Frank re-lives his 20s and joins the workforce for the first time! Meanwhile, Fiona grapples with evicting someone from her building; Lip works out a plan to sabotage Charlie's chances with Sierra; Ian and Carl make a troubling discovery about Monica; and Kev says his goodbyes as he prepares to go under the knife."
+          },
+          {
+            episode: 3,
+            title: "God Bless Her Rotting Soul",
+            airDate: "2017-11-19",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/136/340012.jpg",
+            duration: "60 min",
+            overview: "A violent meth dealer threatens the Gallaghers, forcing Ian, Carl, Lip and Debbie to find a way to pay him off without involving Fiona. In the meantime, Fiona battles it out with a vindictive tenant; Lip cares for a down-and-out Professor Youens; and Frank - miraculously - attains something resembling sainthood."
+          },
+          {
+            episode: 4,
+            title: "F**k Paying It Forward",
+            airDate: "2017-11-26",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/136/341979.jpg",
+            duration: "60 min",
+            overview: "A blast from the past shakes up Fiona's view of her life. Meanwhile, Frank gets involved with Liam's school and becomes the most popular dad in the PTA; Lip learns getting laid is harder than anticipated when sober; Ian crosses a boundary with a kid from the youth center; and Kev and V take a trip to meet his birth family."
+          },
+          {
+            episode: 5,
+            title: "The (Mis)Education of Liam Fergus Beircheart Gallagher",
+            airDate: "2017-12-03",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/137/343358.jpg",
+            duration: "60 min",
+            overview: "As Fiona tries to raise the profile of the neighborhood, Ian helps Trevor to raise money for a new youth shelter. Meanwhile, Carl loses his scholarship and gets creative with securing the tuition, Lip stands up to a friend and gets hurt and Frank teaches the parents at Liam's school all about the working class."
+          },
+          {
+            episode: 6,
+            title: "Icarus Fell and Rusty Ate Him",
+            airDate: "2017-12-10",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/138/345942.jpg",
+            duration: "60 min",
+            overview: "Fiona is forced to reflect on her own life after a lonely tenant dies and the duty of cleaning out the apartment falls upon her. Meanwhile, Debbie has a pregnancy scare and winds up in a compromising position, Lip enlists Carl's help to search for his sponsor and Frank enjoys having his first-ever credit card."
+          },
+          {
+            episode: 7,
+            title: "Occupy Fiona",
+            airDate: "2017-12-17",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/139/347709.jpg",
+            duration: "60 min",
+            overview: "Ian tests Fiona's patience and resolve by bringing a messy \"Occupy Fiona\" movement right to her front door. Lip struggles to get Professor Youens to court for his DUI trial. Meanwhile, a now unemployed Frank goes on a job hunt and Carl gets a feisty new rehab client with a plan to help him get the rest of his tuition."
+          },
+          {
+            episode: 8,
+            title: "Frank's Northern Southern Express",
+            airDate: "2017-12-31",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/140/352383.jpg",
+            duration: "60 min",
+            overview: "Frank starts a booming import-export business. Fiona considers moving into her own place after Ford shows her a side of Chicago she's never seen. Meanwhile, Lip interviews new sponsors, Ian confronts a pastor trying to \"pray the gay away\" and Debbie deals with being unemployed while looking for a way to afford school and raise Franny."
+          },
+          {
+            episode: 9,
+            title: "The Fugees",
+            airDate: "2018-01-07",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/141/354499.jpg",
+            duration: "60 min",
+            overview: "Frank's business takes a turn for the worse, sending him on the run through the Great White North. Ian's run-in with a minister brings about some unexpected allies. Meanwhile, Fiona tries (and fails) to fit in with Ford's group of friends, Carl's new girlfriend suffers separation anxiety and Lip must decide whether to tell Sierra about Charlie's past."
+          },
+          {
+            episode: 10,
+            title: "Church of Gay Jesus",
+            airDate: "2018-01-14",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/141/354500.jpg",
+            duration: "60 min",
+            overview: "Ian's fame in the LGBTQIA community explodes but the sudden surge of 'followers' may be more than he can handle; Frank, however, finds a way to cash in. Meanwhile, Fiona struggles with her conscience when she learns about a worker who fell off her roof and Lip realizes his relationship with Professor Youens may not have been as special as he thought."
+          },
+          {
+            episode: 11,
+            title: "A Gallagher Pedicure",
+            airDate: "2018-01-21",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/143/358000.jpg",
+            duration: "60 min",
+            overview: "Fiona's homeless tenants barricade themselves inside her apartment. Lip takes in a terrified Sierra and Lucas when her father is released from prison. Meanwhile Ian, despite warnings, provides sanctuary to a runaway teen, Frank considers his retirement and Debbie must choose between paying for school and paying for surgery to keep her toes."
+          },
+          {
+            episode: 12,
+            title: "Sleepwalking",
+            airDate: "2018-01-28",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/144/360830.jpg",
+            duration: "60 min",
+            overview: "Fiona taps deep into her Gallagher roots to get the homeless family out of her apartment and dismiss their lawsuit. An explosive incident sends Ian and some of his followers into hiding from the authorities. Meanwhile, Lip makes a difficult decision in order to have the life he really wants, Carl looks for a way to go back to school without upsetting Kassidi, Debbie considers letting Derek back into Franny's life and Frank makes plans to take advantage of Liam's rich friend. Season finale."
+          }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          {
+            episode: 1,
+            title: "Are You There Shim? It's Me, Ian",
+            airDate: "2018-09-09",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/167/417731.jpg",
+            duration: "60 min",
+            overview: "Frank's latest sexual escapades get him into trouble with the Hopkins Academy PTA. Fiona struggles with her decision to bail Ian out of jail, while he continues his Gay Jesus antics inside. Lip juggles taking care of Xan with a potential romance. Debbie fights for equal pay at work, and Carl has to prove himself at military school. Kev and V have trouble with the twins without Svetlana."
+          },
+          {
+            episode: 2,
+            title: "Mo White!",
+            airDate: "2018-09-16",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/188/471275.jpg",
+            duration: "60 min",
+            overview: "Fiona makes a play for a risky investment opportunity, ignoring Ford's advice. Frank discovers the financial incentives of local politics. Carl bolsters his West Point application in unexpected ways. Debbie struggles to find allies in her battle against sexual harassment. Ian is overwhelmed by the growth of the Gay Jesus movement. Kev and V try to find the perfect preschool for the twins."
+          },
+          {
+            episode: 3,
+            title: "Weirdo Gallagher Vortex",
+            airDate: "2018-09-23",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/168/421745.jpg",
+            duration: "60 min",
+            overview: "Frank faces obstacles in his new role as a campaign manager. Fiona prepares to close her real estate deal. Carl enlists V to help him get a West Point recommendation from a congressman. Xan's medical emergency puts Lip in a compromising position. Debbie gets closer with her partner in crime. Ian embarks on a spiritual journey."
+          },
+          {
+            episode: 4,
+            title: "Do Right, Vote White!",
+            airDate: "2018-09-30",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/169/424211.jpg",
+            duration: "60 min",
+            overview: "Election day puts Frank and Fiona in a head to head battle as they each try to round up votes for their candidates. Lip has to make an important choice about Xan's future. Debbie gets in over her head with Alex. Carl's killer instinct is put to the test. With his trial looming, Ian struggles to decide how to plead.100th episode!"
+          },
+          {
+            episode: 5,
+            title: "Black Haired Ginger",
+            airDate: "2018-10-07",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/170/426497.jpg",
+            duration: "60 min",
+            overview: "Frank's new liver medication comes with tragic side effects. Ian tries to get away from Fiona's hovering. Lip has to keep himself occupied during a day of temptation. Carl makes a connection at a West Point mixer. Debbie tries to repair things with Alex."
+          },
+          {
+            episode: 6,
+            title: "Face It, You're Gorgeous",
+            airDate: "2018-10-14",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/194/485785.jpg",
+            duration: "60 min",
+            overview: "Frank employs Liam to help him chase down a romantic connection. Lip spends the day wrangling an alcoholic actress who hired him to be her sober companion. Fiona struggles to keep up with the demands of her new investment as Ford pushes her to get serious about their relationship. Kev and V run into trouble at the twins' preschool when show and tell goes awry."
+          },
+          {
+            episode: 7,
+            title: "Down Like the Titanic",
+            airDate: "2018-10-21",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/172/431075.jpg",
+            duration: "60 min",
+            overview: "Debbie finds Fiona at a low point and helps her pick up the pieces as Fiona continues to face pressure from Max Whitford on her investment hubris. Tami stumbles back into Lip's life. Frank enjoys the honeymoon period of his relationship with Ingrid, but reality interferes soon enough. Kev and V disagree about the future of their family."
+          },
+          {
+            episode: 8,
+            title: "The Apple Doesn't Fall Far from the Alibi",
+            airDate: "2019-01-20",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/181/452600.jpg",
+            duration: "60 min",
+            overview: "Fiona's downward spiral continues and Debbie steps in to pick up the slack at the Gallagher house. Carl and Kelly continue their relationship in secret despite her father's strict expectations. Ingrid ropes Frank into fulfilling her lifelong dream. Tami shows Lip a different version of adulthood."
+          },
+          {
+            episode: 9,
+            title: "Boooooooooooone!",
+            airDate: "2019-01-27",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/181/454480.jpg",
+            duration: "60 min",
+            overview: "Frank searches for ways to finance Ingrid's vision for their future together. Fiona's anger issues cause problems at Patsy's. Lip is forced to confront his real feelings for Tami. Kelly's father attempts to get in the middle of her relationship with Carl. Kev and V realize they are in over their heads with their latest fostering endeavor."
+          },
+          {
+            episode: 10,
+            title: "Los Diablos!",
+            airDate: "2019-02-10",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/182/455425.jpg",
+            duration: "60 min",
+            overview: "Frank meets his match in a fellow participant in the Hobo Loco competition; Fiona has a dark encounter at Patsy's that scares her into cleaning up her act; Debbie throws herself into home improvements as she gets closer with Kelly."
+          },
+          {
+            episode: 11,
+            title: "The Hobo Games",
+            airDate: "2019-02-17",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/184/460622.jpg",
+            duration: "60 min",
+            overview: "The finals of the Hobo Games have arrived, and Frank faces off against his friend and greatest opponent while Ingrid grows anxious about his commitment to their future family. Lip prepares to officially adopt Xan, but his plans collide with Fiona's partying. Debbie starts developing feelings for someone surprising, and Carl excels at the shrimp shack."
+          },
+          {
+            episode: 12,
+            title: "You'll Know the Bottom When You Hit It",
+            airDate: "2019-02-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/185/462995.jpg",
+            duration: "60 min",
+            overview: "When a blackout hits the South Side, Kevin and Veronica come up with a plan to bring the neighborhood together. Carl grows suspicious of Debbie's attempts to get closer with Kelly. Fiona receives guidance from an unexpected person and Lip has to deal with the fallout from Xan's DCFS visit."
+          },
+          {
+            episode: 13,
+            title: "Lost",
+            airDate: "2019-03-03",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/186/465820.jpg",
+            duration: "60 min",
+            overview: "Frank's injury gets in the way of everyone's plans as Fiona attempts to get her life back on track and Lip grows frustrated with his relationship with Tami. Carl gets some bad news about his future, and Debbie finally makes a move on Kelly. Kevin and Veronica get in trouble at the twins' preschool."
+          },
+          {
+            episode: 14,
+            title: "Found",
+            airDate: "2019-03-10",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/187/468277.jpg",
+            duration: "60 min",
+            overview: "As the Gallaghers decide what to do with a bedridden Frank, Fiona has to make a decision about her future; Carl and Debbie share their heartbreak together; Lip has to deal with a distressed Tami."
+          }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          {
+            episode: 1,
+            title: "We Few, We Lucky Few, We Band of Gallaghers!",
+            airDate: "2019-11-10",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/221/553064.jpg",
+            duration: "60 min",
+            overview: "Frank milks his injury for all its worth as Debbie, now the self-elected leader of the Gallagher family, cooks up a scam of her own. Lip and Tami get a surprise. Carl returns home from military school and Liam faces an identity crisis."
+          },
+          {
+            episode: 2,
+            title: "Sleep Well My Prince for Tomorrow You Shall Be King",
+            airDate: "2019-11-17",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/224/561271.jpg",
+            duration: "60 min",
+            overview: "Feeling the pressure from Debbie, Frank sets out to make money to keep his place in the house, but Mikey has bigger plans for him. Lip is overwhelmed by the demands of a newborn, and Carl learns more about his mysterious new coworker at Captain Bob's. Ian and Mickey struggle to keep the romance alive in prison."
+          },
+          {
+            episode: 3,
+            title: "Which America?",
+            airDate: "2019-11-24",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/227/568295.jpg",
+            duration: "60 min",
+            overview: "Liam gets to know his newfound family members as Frank revels in his new position in the Gallagher house. Lip looks for support as the pressures of fatherhood take their toll. Ian and Mickey make a decision about their future, and Carl tries to woo Anne despite Lori's efforts to get in his way."
+          },
+          {
+            episode: 4,
+            title: "A Little Gallagher Goes a Long Way",
+            airDate: "2019-12-01",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/229/572697.jpg",
+            duration: "60 min",
+            overview: "Frank and Mikey set off on a day of adventure around the city in pursuit of Mikey's dreams. Debbie discovers a new way to make money in the midst of a strike as Lip leans on his new friend for parenting advice. Carl gets more than he bargained for when he offers to help Anne. Liam grows suspicious of his seemingly perfect mentor."
+          },
+          {
+            episode: 5,
+            title: "Sparky",
+            airDate: "2019-12-08",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/230/575924.jpg",
+            duration: "60 min",
+            overview: "Frank hatches the idea for a new scheme when an unexpected visitor shows up at the Gallagher house. With Tami back in the house, Lip struggles to give up control of Fred. Debbie's fight for child support escalates and Carl tries to juggle multiple romantic prospects. Ian returns home and is immediately thrown in with a corrupt parole officer."
+          },
+          {
+            episode: 6,
+            title: "Adios Gringos",
+            airDate: "2019-12-15",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/231/578611.jpg",
+            duration: "60 min",
+            overview: "Frank and Liam get wined and dined by potential baby buyers. Carl comes up with a strategy to protect Anne's family business, and Ian gets on Paula's bad side. Backed into a corner, Debbie fights to protect Franny from Pepa. A figure from Kev's past makes him reconsider his childhood."
+          },
+          {
+            episode: 7,
+            title: "Citizen Carl",
+            airDate: "2019-12-22",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/232/581432.jpg",
+            duration: "60 min",
+            overview: "Carl embraces his civic duty while Debbie searches for her next payday. Frank meets the woman of his dreams, and Ian and Mickey get roped into a dangerous scam for Paula. When tragedy strikes at the Alibi, Kev and V go undercover to find new customers."
+          },
+          {
+            episode: 8,
+            title: "Debbie Might Be a Prostitute",
+            airDate: "2019-12-29",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/233/583562.jpg",
+            duration: "60 min",
+            overview: "Debbie weighs the pros and cons of a new career path. Frank uncovers the truth about Faye's living situation. A miscommunication between Ian and Mickey has disastrous consequences and Lip and Tami disagree over who should be taking care of Fred."
+          },
+          {
+            episode: 9,
+            title: "O Captain, My Captain",
+            airDate: "2020-01-05",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/234/586110.jpg",
+            duration: "60 min",
+            overview: "Frank goes back in time to uncover his connection to Faye, as Debbie's day with Claudia's daughter goes awry. Carl takes extreme measures to toughen up his new group of cadets. Ian struggles to connect with Mickey after their blowup."
+          },
+          {
+            episode: 10,
+            title: "Now Leaving Illinois",
+            airDate: "2020-01-12",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/235/588963.jpg",
+            duration: "60 min",
+            overview: "An incident in the Tamietti family presents Lip and Tami with a new opportunity. Faye's betrayal lands Frank in front of a judge. Mickey's antics drive Ian to online dating. Carl makes an unexpected discovery at his new job."
+          },
+          {
+            episode: 11,
+            title: "Location, Location, Location",
+            airDate: "2020-01-19",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/236/591424.jpg",
+            duration: "60 min",
+            overview: "Frank finds a cushy place to make his new home. Lip gets cold feet when Tami moves forward with a plan for their future. Ian sees a new side of Mickey, and Debbie's love triangle reaches a breaking point."
+          },
+          {
+            episode: 12,
+            title: "\"Gallavich!\"",
+            airDate: "2020-01-26",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/237/594973.jpg",
+            duration: "60 min",
+            overview: "Liam out-Gallaghers Frank, Lip works to convince Tami to stay in Chicago with their baby, Debbie turns over a new romantic leaf and Kev's new business takes off, but V wonders where the money is going."
+          }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          {
+            episode: 1,
+            title: "This is Chicago!",
+            airDate: "2020-12-06",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/284/711761.jpg",
+            duration: "60 min",
+            overview: "The Gallaghers adjust to life during the pandemic: Frank fears the loss of the South Side to gentrification, while bar closures force Kev and V to get creative at the Alibi. Sleep-deprived Lip and Tami work to make their new house a home as Carl finishes his time at the police academy. Debbie becomes her own boss and deals with the repercussions of her statutory rape conviction of 17-year-old Julia. Ian and Mickey's honeymoon phase is over as they have very different ideas about what married life would be."
+          },
+          {
+            episode: 2,
+            title: "Go Home, Gentrifier!",
+            airDate: "2020-12-13",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/288/721673.jpg",
+            duration: "60 min",
+            overview: "It's Franny's birthday, and with Tami and Sandy's help, Debbie prepares to throw her the best princess party Franny never wanted. Ian is on the straight and narrow which forces Mickey to get a real job. Frank the weed connoisseur helps Kev and V with their struggling pot business. Lip's home renovations run him into some trouble with his new neighbors. Carl's first day on the force is not the vigilante fantasy he thought it would be. Liam profits from kids who find themselves in lunch debt due to a tyrannical lunch lady."
+          },
+          {
+            episode: 3,
+            title: "Frances Francis Franny Frank",
+            airDate: "2020-12-20",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/289/724597.jpg",
+            duration: "60 min",
+            overview: "In a rush to get out of the house, Debbie loses track of Franny and has to balance her search for Franny with her handy-woman jobs. Meanwhile, Frank and Franny have a day of weed runs and adventure. Ian and Mickey question who is the \"man\" in their relationship. A delighted Carl gets a new Training Officer who loves to kick ass. When Brad and Cami learn about their newborn baby's health complications, Lip and Tami step in to help. Kev's newfound money and lack of modesty prove to be trouble."
+          },
+          {
+            episode: 4,
+            title: "NIMBY",
+            airDate: "2021-01-10",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/292/731225.jpg",
+            duration: "60 min",
+            overview: "The Milkoviches move in next door and wreak havoc, leading Frank, Kev and Liam to plot how to get rid of them. Mickey embarks on a new security gig for Kev and V and drags Ian along against his will. V and Debbie turn into stage moms when Gemma and Franny compete in the Little Miss South Side beauty pageant. Lip gets a big surprise when he reluctantly agrees to go to brunch with Tami and her old high school music teacher. When Carl's training officer is overly aggressive, Carl is forced to choose between his job and his neighborhood."
+          },
+          {
+            episode: 5,
+            title: "Slaughter",
+            airDate: "2021-01-31",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/294/737489.jpg",
+            duration: "60 min",
+            overview: "Ian and Mickey get creative when the safety of their security gig comes into question. Dynamic duo Frank and Kev make a last-ditch effort to take down the Milkovich's. V canvasses to get black people to the polls but realizes there's barely any black people left on the Southside. Lip and Tami get surprising news about their house that forces them to look elsewhere. Debbie takes Franny to a comic book signing for her favorite wrestler. Carl and Leesie's differing approaches to policing come to a head."
+          },
+          {
+            episode: 6,
+            title: "Do Not Go Gentle Into That Good....Eh, Screw It",
+            airDate: "2021-02-14",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/296/741683.jpg",
+            duration: "60 min",
+            overview: "A surprising twist of fate has left the Milkovich's vulnerable, forcing Ian and Mickey to step in to help. Frank's day takes some unexpected turns and Liam deals with inner turmoil after doing a bad thing. Debbie confronts Sandy on their relationship, while Carl enjoys the spoils of his day off. Lip and Brad seek revenge on the new BornFree owners, all the while Lip is forced to figure out a plan for the future. While Kev runs the bar, V is class parent at school – but elementary school looks a little different these days."
+          },
+          {
+            episode: 7,
+            title: "Two at a Biker Bar, One in the Lake",
+            airDate: "2021-03-07",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/299/747844.jpg",
+            duration: "60 min",
+            overview: "The Gallaghers disagree on the fate of their childhood home so a stranded Frank tries to get back to weigh in on the matter. Realizing that they have none, Ian and Mickey embark on a journey to find gay friends. Carl is upset after his night with Tish, and Debbie and Sandy have another visitor from Sandy's past. Lip and Brad get ready to sell stolen bikes while Kevin has to think fast when he's spotted riding a stolen chopper. Veronica hopes to pass the rent control bill with Liam's help, but receives some unexpected news."
+          },
+          {
+            episode: 8,
+            title: "Cancelled",
+            airDate: "2021-03-14",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/299/749543.jpg",
+            duration: "60 min",
+            overview: "Frank and Liam compete in a renaming contest of the Dennis Hastert Middle School. Debbie has a day of zero responsibilities, while Ian and Mickey take on all the responsibility for Terry. Veronica is depressed about her mom moving so Kevin tries to cheer her up, all while planning a special surprise. Carl is put on vice squad, which is all fun and games, until it's not. Lip has a close encounter with the law, which forces Lip and Tami to team up and sends Brad into a spiral."
+          },
+          {
+            episode: 9,
+            title: "Survivors",
+            airDate: "2021-03-21",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/300/751203.jpg",
+            duration: "60 min",
+            overview: "Frank wants to pull one last heist with the old gang. Debbie struggles with the idea of change and blames Lip, while Lip and Brad find out the new owners of BornFree are in the mob. Mickey and Ian learn a surprising truth about Terry's past, and Liam tries to find a new place to live. Veronica reluctantly helps her mom move to Louisville, while Kevin is forced to watch Gemma and Amy while running the Alibi all on his own. Carl is put on the eviction unit and reunited with an old partner."
+          },
+          {
+            episode: 10,
+            title: "DNR",
+            airDate: "2021-03-28",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/301/752924.jpg",
+            duration: "60 min",
+            overview: "Lip has a million projects going on, and Frank is one of them. Liam is forced to watch Frank, so the two of them embark on a journey to take down Liam's classmate in an effort to get Liam into STEM school. Carl's disillusionment with the police force comes to a head. Debbie embraces the next chapter of her life and hunts for a new place. Mickey and Ian toy with the idea of the West Side. Kev meets Veronica in Louisville in a last-ditch effort to convince Carol not to move."
+          },
+          {
+            episode: 11,
+            title: "The Fickle Lady is Calling it Quits",
+            airDate: "2021-04-04",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/302/755115.jpg",
+            duration: "60 min",
+            overview: "Kev and V announce their big news. Lip has some promising leads on selling the house, forcing Debbie to reevaluate her future and her history of regrettable love interests. Ian and Mickey try to adjust to a vastly different life on the West Side. Carl's commitment to the force is challenged when he's reassigned to an unglamorous police unit. Liam reminds Frank of everything that makes Frank, Frank."
+          },
+          {
+            episode: 12,
+            title: "Father Frank, Full of Grace",
+            airDate: "2021-04-11",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765707.jpg",
+            duration: "60 min",
+            overview: "Ian and Mickey shop for furniture for their new place and Kev and V look for a buyer for the Alibi. While Lip settles for a new job, Carl finally finds his calling in a new role on the police force. Debbie plunges into a treacherous world when she meets someone new. Frank comes to terms with his own mortality. Series finale."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 144. Beauty in Black (2024)
+  // ============================================================
+  {
+    title: "Beauty in Black",
+    type: "TV Show",
+    year: 2024,
+    rating: "6.0",
+    age: "TV-MA",
+    duration: "45m",
+    genres: ["Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xKk4bFCCpZ9tvjUykvvMYLSBnjo.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
+    videoUrl: "246246",
+    trailerUrl: "",
+    overview: "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
+    overviewKurdish: "",
+    director: "Tyler Perry",
+    cast: ["Taylor Polidore Williams", "Amber Reign Smith", "Crystle Stewart", "Ricco Ross"],
+    trending: true,
+    featured: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Make It Rain",
+            airDate: "2024-10-24",
+            rating: 6.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351567.jpg",
+            duration: "43 min",
+            overview: "In a bid to escape the strip club and Jules' control, Kimmie applies for a scholarship to the Beauty in Black hair school founded by the Bellarie family."
+          },
+          {
+            episode: 2,
+            title: "A Dance with Daddy",
+            airDate: "2024-10-24",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351568.jpg",
+            duration: "53 min",
+            overview: "Mallory and Roy try to outmaneuver a chaotic string of events. Kimmie defies orders to help Rain and forges a pact with a secretive, powerful client."
+          },
+          {
+            episode: 3,
+            title: "The Aftermath",
+            airDate: "2024-10-24",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351569.jpg",
+            duration: "48 min",
+            overview: "Kimmie's choices lead to dangerous consequences. Tension builds between the Bellaries as a furious Norman hunts for answers about the hit and run."
+          },
+          {
+            episode: 4,
+            title: "A Family Affair",
+            airDate: "2024-10-24",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351570.jpg",
+            duration: "47 min",
+            overview: "Olivia plays hardball to protect her sons. Angel comes to Kimmie with a daring proposal. As the lawsuit escalates, Mallory contemplates her options."
+          },
+          {
+            episode: 5,
+            title: "Unraveling Threads",
+            airDate: "2024-10-24",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351571.jpg",
+            duration: "50 min",
+            overview: "After Angel's world gets rocked, Kimmie reconsiders his idea. Jules pulls the family's strings. Faced with a difficult choice, Norman's suspicions grow."
+          },
+          {
+            episode: 6,
+            title: "Bang Bang",
+            airDate: "2024-10-24",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351572.jpg",
+            duration: "47 min",
+            overview: "Roy's ego reaches new heights as Mallory hunts for his \"other woman.\" Kimmie and Angel look for a way out. Norman's grief takes a bloody turn."
+          },
+          {
+            episode: 7,
+            title: "Even Playing Field",
+            airDate: "2024-10-24",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351573.jpg",
+            duration: "57 min",
+            overview: "Fed up with Roy, Mallory takes matters into her own hands. As Norman digs for the truth, a familiar face comes into focus. Kimmie and Angel make moves."
+          },
+          {
+            episode: 8,
+            title: "Killing Karma",
+            airDate: "2024-10-24",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351574.jpg",
+            duration: "45 min",
+            overview: "Schemes and secrets come full circle as Horace connects the dots behind the robbery, Mallory asserts her dominance, and Kimmie hits her breaking point."
+          },
+          {
+            episode: 9,
+            title: "Blind Rage",
+            airDate: "2025-03-06",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396482.jpg",
+            duration: "47 min",
+            overview: "Emotions run high as the Bellarie family grieves and schemes. Fueled by vengeance, Kimmie begins a desperate search for her kidnapped sister, Sylvie."
+          },
+          {
+            episode: 10,
+            title: "Power Struggle",
+            airDate: "2025-03-06",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396483.jpg",
+            duration: "48 min",
+            overview: "Kimmie's hunt for clues leads to a hostile reunion. Jules does what he does best: clean up the mess. Horace zeroes in on Norman's criminal dealings."
+          },
+          {
+            episode: 11,
+            title: "Up Against the Wall",
+            airDate: "2025-03-06",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396484.jpg",
+            duration: "42 min",
+            overview: "A worsening lawsuit is the least of Mallory's problems as Horace sows chaos. Kimmie takes her search for Sylvie to dangerous new heights."
+          },
+          {
+            episode: 12,
+            title: "Hot Seat",
+            airDate: "2025-03-06",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396485.jpg",
+            duration: "43 min",
+            overview: "Jules and his men search for Kimmie. Angel plays a precarious game to stay alive. Varney finds himself in the crosshairs of another Bellarie scandal."
+          },
+          {
+            episode: 13,
+            title: "By Any Means",
+            airDate: "2025-03-06",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396486.jpg",
+            duration: "42 min",
+            overview: "Horace proposes a deal to help Kimmie find Sylvie. Can she trust him? Meanwhile, Angel makes a disturbing discovery in the club."
+          },
+          {
+            episode: 14,
+            title: "Wild Ride",
+            airDate: "2025-03-06",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396487.jpg",
+            duration: "43 min",
+            overview: "Money talks when Mallory traces Roy's infidelity back to the strip club. A brazen attempt to rescue Sylvie drags Kimmie into deeper danger."
+          },
+          {
+            episode: 15,
+            title: "The Lion's Den",
+            airDate: "2025-03-06",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396488.jpg",
+            duration: "45 min",
+            overview: "Horace's endgame puts the Bellaries on high alert. Olivia bides her time. Angel and Rain contemplate next steps. Kimmie inadvertently makes the news."
+          },
+          {
+            episode: 16,
+            title: "Now Make It Thunder",
+            airDate: "2025-03-06",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/558/1396489.jpg",
+            duration: "48 min",
+            overview: "The tables turn when Horace asks Kimmie for help. Astounded, the Bellaries scramble to maintain their hold on their empire."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Crowned in Beauty",
+            airDate: "2025-09-11",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468106.jpg",
+            duration: "54 min",
+            overview: "Kimmie's sudden rise sends shockwaves through the Bellarie empire, as Horace's backroom maneuvers hit the family where it hurts most — the bottom line."
+          },
+          {
+            episode: 2,
+            title: "When the Tables Turn",
+            airDate: "2025-09-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468107.jpg",
+            duration: "50 min",
+            overview: "Kimmie, Rain and Sylvie enjoy their luxurious new lifestyle. Roy uses his leverage to dominate a rival. Things get ugly as Jules and Angel square off."
+          },
+          {
+            episode: 3,
+            title: "Blaze of Beauty",
+            airDate: "2025-09-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468108.jpg",
+            duration: "53 min",
+            overview: "A sibling showdown exposes grudges too deep to reconcile. Norman takes care of unfinished business. Olivia crashes a dinner for two."
+          },
+          {
+            episode: 4,
+            title: "The Next Chapter",
+            airDate: "2025-09-11",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468109.jpg",
+            duration: "50 min",
+            overview: "A deadly development shatters Kimmie's trust. At Delinda's, a dancer targets a VIP for a potential payday. Rain pumps Alex for info on Angel."
+          },
+          {
+            episode: 5,
+            title: "Hunter's Prey",
+            airDate: "2025-09-11",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468110.jpg",
+            duration: "47 min",
+            overview: "A meeting with Horace pulls Kimmie deeper into the game. Rain hits the club with a score to settle. Charles brings home more than he bargained for."
+          },
+          {
+            episode: 6,
+            title: "The Enemy of My Enemy",
+            airDate: "2025-09-11",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468111.jpg",
+            duration: "57 min",
+            overview: "Rain and Alex handle cleanup duty. A vicious insult leaves Roy dripping with rage. Kimmie's poolside breakfast comes with a side of shade."
+          },
+          {
+            episode: 7,
+            title: "Gloves Off",
+            airDate: "2025-09-11",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468112.jpg",
+            duration: "45 min",
+            overview: "Fireworks ignite at the office as Kimmie shows the Bellaries who's boss. A rugged ranch hand welcomes Sylvie to the stables. Jules smells a rat."
+          },
+          {
+            episode: 8,
+            title: "Hold The Pleasantries",
+            airDate: "2025-09-11",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/587/1468113.jpg",
+            duration: "55 min",
+            overview: "The boardroom becomes a battlefield as Kimmie and the family face off. Charles and Rain make impulsive decisions with dangerous consequences."
+          },
+          {
+            episode: 9,
+            title: "Toxic Vibes",
+            airDate: "2026-03-19",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546123.jpg",
+            duration: "52 min",
+            overview: "A violent wake-up call leaves Charles shaken and desperate. Kimmie attempts to control the narrative. Felicia and Mallory strike a bargain."
+          },
+          {
+            episode: 10,
+            title: "Playing for Keeps",
+            airDate: "2026-03-19",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546124.jpg",
+            duration: "47 min",
+            overview: "A tense dinner puts Kimmie and Sylvie's bond to the test. Olivia proves that loyalty has a price. Angel's new lifestyle fuels his worst instincts."
+          },
+          {
+            episode: 11,
+            title: "Fed Up",
+            airDate: "2026-03-19",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546125.jpg",
+            duration: "52 min",
+            overview: "Roy spirals out in public. Unwanted guests hammer home a warning to Olivia. Kimmie tries to keep her cards close as Jules runs game."
+          },
+          {
+            episode: 12,
+            title: "Flames of Fury",
+            airDate: "2026-03-19",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546126.jpg",
+            duration: "49 min",
+            overview: "Angel discovers Horace's generosity has limits. Charles overplays his hand with Varney. Kimmie and Mallory have a meeting of the minds."
+          },
+          {
+            episode: 13,
+            title: "Boom!",
+            airDate: "2026-03-19",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546127.jpg",
+            duration: "46 min",
+            overview: "Kimmie's mandate puts Charles and Roy at risk. Rain takes on an ambitious business venture. A shocking revelation upends Norman's world."
+          },
+          {
+            episode: 14,
+            title: "Your Turn Is Coming",
+            airDate: "2026-03-19",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546128.jpg",
+            duration: "56 min",
+            overview: "Kimmie cautiously weighs an unlikely alliance. Jules menaces a suspect who knows more than she's saying. A stakeout turns into a white-knuckle pursuit."
+          },
+          {
+            episode: 15,
+            title: "The Power of Us",
+            airDate: "2026-03-19",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546129.jpg",
+            duration: "53 min",
+            overview: "Hungry for payback, three queens deliver an overdue reckoning. Left high and dry, Angel pleads for mercy. Norman presses Olivia for answers."
+          },
+          {
+            episode: 16,
+            title: "Queen's Gambit",
+            airDate: "2026-03-19",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/618/1546130.jpg",
+            duration: "55 min",
+            overview: "Kimmie and the Bellaries face off at an explosive shareholder summit, where secrets spill, loyalties fray — and the sharpest move is saved for last."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "King In Play",
+            airDate: "2026-08-27",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596508.jpg",
+            duration: "47 min",
+            overview: "In the wake of the FBI raid, an immunity deal pits the Bellaries against each other. Meanwhile, Kimmie and Horace celebrate a fragile victory."
+          },
+          {
+            episode: 2,
+            title: "Gotcha",
+            airDate: "2026-08-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596509.jpg",
+            duration: "46 min",
+            overview: "Rain discovers that her takeover of the club comes with strings attached. Roy offers up info to the feds. Angel tries to get back on Horace's good side."
+          },
+          {
+            episode: 3,
+            title: "Throne Of Blood",
+            airDate: "2026-08-27",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596510.jpg",
+            duration: "45 min",
+            overview: "Olivia discovers her cellmates aren't strangers while Norman applies leverage to a bureau contact. Kimmie's attempt at seduction shakes things up."
+          },
+          {
+            episode: 4,
+            title: "A Tender Betrayal",
+            airDate: "2026-08-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596511.jpg",
+            duration: "47 min",
+            overview: "Varney makes a play to extract information from Olivia. Tensions boil over at the mansion when Sylvie threatens to reveal an explosive truth."
+          },
+          {
+            episode: 5,
+            title: "Devil In The Details",
+            airDate: "2026-08-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596512.jpg",
+            duration: "48 min",
+            overview: "While Horace uncovers a vicious betrayal, Charles maneuvers to secure his own safety. Mallory warms up to an unexpected new man in her life."
+          },
+          {
+            episode: 6,
+            title: "A Pack Of Wolves",
+            airDate: "2026-08-27",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596513.jpg",
+            duration: "50 min",
+            overview: "The Bellaries' feud reaches deadly new heights. Horace meets with Jules and demands answers. Rain's power trip at the club grows reckless and violent."
+          },
+          {
+            episode: 7,
+            title: "The Looking Glass",
+            airDate: "2026-08-27",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596514.jpg",
+            duration: "46 min",
+            overview: "A stunning secret comes to light as Horace leads Charles and Varney behind closed doors. While crises tear at Kimmie, Jules schemes for his freedom."
+          },
+          {
+            episode: 8,
+            title: "Dancing In The Rain",
+            airDate: "2026-08-27",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/638/1596515.jpg",
+            duration: "45 min",
+            overview: "As the Bellarie empire teeters on the brink, Kimmie and Mallory struggle to contain the fallout while chaos and bloodshed close in from all sides."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 145. MobLand (2025)
+  // ============================================================
+  {
+    title: "MobLand",
+    type: "TV Show",
+    year: 2025,
+    rating: "8.3",
+    age: "TV-MA",
+    genres: ["Crime", "Drama"],
+    poster: "https://image.tmdb.org/t/p/original/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
+    videoUrl: "247718",
+    trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
+    overview: "Harry Da Souza is a street-smart, formidable fixer caught in the brutal crossfire between two warring London crime syndicates. Working directly for the powerful Harrigan family dynasty, Harry is tasked with resolving volatile underworld disputes and making high-stakes problems disappear, all while fighting to keep his own family alive as an all-out gang war threatens to tear the city apart.",
+    overviewKurdish: "هاری داسۆزا، پیاوێکی لێهاتوو و بەئەزموونی چارەسەرکردنی کێشەکانە (Fixer)، کە لە ناوەڕاستی شەڕێکی خوێناوی و دڕندانەی نێوان دوو بنەماڵەی مافیای گەورەی لەندەندا گیریان خواردووە. هاری لەلایەن بنەماڵەی دەسەڵاتداری هاریگانەوە ڕادەسپێردرێت بۆ چارەسەرکردنی کێشە ئاڵۆزەکان و سڕینەوەی بەڵگەکان، بەڵام لەگەڵ گەورەبوونی شەڕی سەر شەقامەکان، ناچار دەبێت شەڕ بۆ پاراستنی گیانی خێزانەکەی بکات.",
+    director: "Ronan Bennett, Guy Ritchie",
+    cast: ["Tom Hardy, Pierce Brosnan, Helen Mirren, Paddy Considine, Joanne Froggatt, Lara Pulver, Anson Boon"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Stick or Twist",
+            airDate: "2025-03-30",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/561/1404087.jpg",
+            duration: "59 min",
+            overview: "Harry Da Souza is called upon to make a problem disappear. Series premiere."
+          },
+          {
+            episode: 2,
+            title: "Jigsaw Puzzle",
+            airDate: "2025-04-06",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/562/1406695.jpg",
+            duration: "51 min",
+            overview: "Harry deals with the aftermath of the Harrigan family meeting as Jan wonders what's the final straw; Kevin scurries Eddie out of London after a threat from Richie; Maeve shows her hand to Conrad; chasing a lead, Harry makes a startling discovery."
+          },
+          {
+            episode: 3,
+            title: "Plan B",
+            airDate: "2025-04-13",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/563/1409439.jpg",
+            duration: "47 min",
+            overview: "Richie makes his move, putting the Harrigans on high alert; Conrad and Maeve lock horns over Eddie but agree on a Plan B; as Kevin prepares for all-out war, Harry kills two birds with one stone; an anonymous tip leads Fisk to the cemetery."
+          },
+          {
+            episode: 4,
+            title: "Rat Trap",
+            airDate: "2025-04-20",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/564/1411759.jpg",
+            duration: "42 min",
+            overview: "Harry pays a visit to Antoine at the urging of Bella; Fisk and Mukasa trade theories; suspecting a rat, Conrad comes to Jan for a favor; Kevin makes a startling confession; Richie calls a midnight meeting at the Sinful Monkey with shocking results."
+          },
+          {
+            episode: 5,
+            title: "Funeral for a Friend",
+            airDate: "2025-04-27",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/565/1414394.jpg",
+            duration: "41 min",
+            overview: "Kevin and Harry assess scenarios in a search for insurance and an exit strategy; looking for a way back in, Brendan approaches Seraphina; left to their own devices, Bella and Jan commiserate; Richie makes a proposal; Maeve strikes."
+          },
+          {
+            episode: 6,
+            title: "Antwerp Blues",
+            airDate: "2025-05-04",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/567/1417644.jpg",
+            duration: "42 min",
+            overview: "In the aftermath of Plan B, Conrad twists the knife and Fisk has a realization: this is war. Maeve gives Eddie a lesson in the art of chess. Richie takes the bait. Harry goes searching for Seraphina and Brendan, who've gone rogue."
+          },
+          {
+            episode: 7,
+            title: "The Crossroads",
+            airDate: "2025-05-11",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/568/1420388.jpg",
+            duration: "40 min",
+            overview: "In the Cotswolds, O'Hara points out the elephant in the room. Maeve pivots, testing Conrad's resolve. Alice comes to Jan for a favor. Eddie and Gina make common cause. Harry, with the clock ticking, takes extreme measures."
+          },
+          {
+            episode: 8,
+            title: "Helter Skelter",
+            airDate: "2025-05-18",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/568/1421500.jpg",
+            duration: "44 min",
+            overview: "Maeve extends an olive branch. Kevin questions the wisdom of a sit down with Jaime. Tattersall offers Fisk and Mukasa a new point of entry. Harry comes to Kat for a favor as Richie, at the Sinful Monkey, contemplates a new affiliation."
+          },
+          {
+            episode: 9,
+            title: "Beggars Banquet",
+            airDate: "2025-05-25",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/569/1424949.jpg",
+            duration: "47 min",
+            overview: "Bella, trying to salvage her plan with Antoine, does a runner down to London. Tattersall gets Alice's tootsies tapping. Conrad clears the air at The Falkland Arms. Kevin confronts his past. The Harrigans sit down for a normal family dinner."
+          },
+          {
+            episode: 10,
+            title: "The Beast in Me",
+            airDate: "2025-06-01",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/571/1428534.jpg",
+            duration: "54 min",
+            overview: "Kevin takes care of a problem. Tattersall delivers on a promise as Richie prepares for war. Seraphina, reading the room, agrees to a meet and greet. Maeve spills the tea. Jan gets Harry's attention. Season finale."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "I Wanna Be Your Dog",
+            airDate: "2026-09-18",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/641/1604707.jpg",
+            duration: "49 min",
+            overview: "Maeve and Conrad go to the dogs, leaving Harry to deal with the messy fallout. Jan makes a startling confession. Kevin and Seraphina both look to the future. Tattersall puts his cards on the table."
+          },
+          {
+            episode: 2,
+            title: "Song 2",
+            airDate: "2026-09-25",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/642/1607370.jpg",
+            duration: "46 min",
+            overview: "With Conrad's self-control slipping, Maeve make plans of her own while Jan hits Harry with a hard truth. Smelling blood, Frankie and Tattersall circle like sharks."
+          },
+          {
+            episode: 3,
+            title: "Episode 3",
+            airDate: "2026-10-02",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/643/1609824.jpg",
+            duration: "44 min",
+            overview: "Maeve probes Conrad for secrets, positioning herself against threats old and new. As Frankie forces a high-stakes sit-down, Kevin and Harry game out their strategy."
+          },
+          {
+            episode: 4,
+            title: "Episode 4",
+            airDate: "2026-10-09",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/645/1612835.jpg",
+            duration: "44 min",
+            overview: "The Harrigans reel from an unexpected turn of events, triggering Harry to do damage control before police scrutiny closes in. Maeve's unseen hand moves Eddie out of London as Seraphina makes a new alliance and Conrad re-asserts his dominance."
+          },
+          {
+            episode: 5,
+            title: "Episode 5",
+            airDate: "2026-10-16",
+            duration: "38 min",
+            overview: "Conrad declares war, stacking bodies and turning the Cotswolds into a fortress. Maeve plays puppet-master, sending Eddie on a mission before secrets start to spill and a hit hurtles the Harrigans into all‑out chaos."
+          },
+          {
+            episode: 6,
+            title: "Episode 6",
+            airDate: "2026-10-23",
+            duration: "42 min",
+            overview: "Licking wounds and turning on each other after fleeing Frankie's assault, Seraphina goes all in, pitching the Harrigans on a global power play, while Maeve and Harry square off over crossed lines."
+          },
+          {
+            episode: 7,
+            title: "Episode 7",
+            airDate: "2026-10-30",
+            duration: "53 min",
+            overview: "The Harrigans lock down the Cotswolds and roll back into London to shake the tree – buying loyalty with cash, threats, and broken fingers. Maeve tightens the screws within the family, while Harry walks into a trap."
+          },
+          {
+            episode: 8,
+            title: "Episode 8",
+            airDate: "2026-11-06",
+            duration: "46 min"
+          },
+          {
+            episode: 9,
+            title: "Episode 9",
+            airDate: "2026-11-13",
+            duration: "46 min"
+          },
+          {
+            episode: 10,
+            title: "Episode 10",
+            airDate: "2026-11-20",
+            duration: "46 min"
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 146. Green Lantern: The Animated Series (2011)
+  // ============================================================
+  {
+    title: "Green Lantern: The Animated Series",
+    type: "TV Show",
+    year: 2011,
+    rating: "8.0",
+    age: "TV-PG",
+    duration: "22m",
+    genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/xNrJgBSjVLFaQcxkFbkWtjIuq01.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wajrzbvqaKbAnK4MXbPh3FsrbY5.jpg",
+    videoUrl: "40351",
+    trailerUrl: "https://youtu.be/lNwRUuYolmU",
+    overview: "Hal Jordan and his hot-headed partner Kilowog travel to the dangerous Frontier Space to investigate a string of Green Lantern murders. There, they discover the Red Lantern Corps, a vengeful army powered by rage, poised to destroy the Guardians of the Universe.",
+    overviewKurdish: "هال جۆردن و هاوبەشەکەی کیلۆوۆگ گەشت دەکەن بۆ ناوچە دوورەدەست و مەترسیدارەکانی گەردوون بۆ لێکۆڵینەوە لە زنجیرەیەک کوشتنی ئەندامانی گرین لانتێرن، لەوێ دەستەی ڕێد لانتێرن دەدۆزنەوە کە سوپایەکن بە ڕق و تووڕەیی دەجووڵێن و هەڕەشە لە گەردوون دەکەن.",
+    director: "Bruce Timm, Giancarlo Volpe",
+    cast: ["Josh Keaton", "Kevin Michael Richardson", "Jason Spisak", "Grey DeLisle", "Brian George"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Beware My Power (Part One)",
+            airDate: "2011-11-11",
+            rating: 8.1
+          },
+          {
+            episode: 2,
+            title: "Beware My Power (Part Two)",
+            airDate: "2011-11-11",
+            rating: 8
+          },
+          {
+            episode: 3,
+            title: "Razer's Edge",
+            airDate: "2012-03-17",
+            rating: 8.3
+          },
+          {
+            episode: 4,
+            title: "Into the Abyss",
+            airDate: "2012-03-24",
+            rating: 8.3
+          },
+          {
+            episode: 5,
+            title: "Heir Apparent",
+            airDate: "2012-03-31",
+            rating: 7
+          },
+          {
+            episode: 6,
+            title: "Lost Planet",
+            airDate: "2012-04-07",
+            rating: 9
+          },
+          {
+            episode: 7,
+            title: "Reckoning",
+            airDate: "2012-04-14",
+            rating: 7.3
+          },
+          {
+            episode: 8,
+            title: "Fear Itself",
+            airDate: "2012-04-21",
+            rating: 8
+          },
+          {
+            episode: 9,
+            title: "...In Love and War",
+            airDate: "2012-04-28",
+            rating: 8
+          },
+          {
+            episode: 10,
+            title: "Regime Change",
+            airDate: "2012-05-05",
+            rating: 6.7
+          },
+          {
+            episode: 11,
+            title: "Flight Club",
+            airDate: "2012-05-12",
+            rating: 7.3
+          },
+          {
+            episode: 12,
+            title: "Invasion",
+            airDate: "2012-05-19",
+            rating: 7.3
+          },
+          {
+            episode: 13,
+            title: "Homecoming",
+            airDate: "2012-05-26",
+            rating: 8.3
+          },
+          {
+            episode: 14,
+            title: "The New Guy",
+            airDate: "2012-09-29",
+            rating: 8.5
+          },
+          {
+            episode: 15,
+            title: "Reboot",
+            airDate: "2012-10-06",
+            rating: 8
+          },
+          {
+            episode: 16,
+            title: "Steam Lantern",
+            airDate: "2013-01-05",
+            rating: 7.5
+          },
+          {
+            episode: 17,
+            title: "Blue Hope",
+            airDate: "2013-01-12",
+            rating: 7.5
+          },
+          {
+            episode: 18,
+            title: "Prisoner of Sinestro",
+            airDate: "2013-01-19",
+            rating: 7.5
+          },
+          {
+            episode: 19,
+            title: "Loss",
+            airDate: "2013-01-26",
+            rating: 7.5
+          },
+          {
+            episode: 20,
+            title: "Cold Fury",
+            airDate: "2013-02-02",
+            rating: 9.3
+          },
+          {
+            episode: 21,
+            title: "Babel",
+            airDate: "2013-02-09",
+            rating: 7.5
+          },
+          {
+            episode: 22,
+            title: "Love Is a Battlefield",
+            airDate: "2013-02-16",
+            rating: 8
+          },
+          {
+            episode: 23,
+            title: "Larfleeze",
+            airDate: "2013-02-23",
+            rating: 8
+          },
+          {
+            episode: 24,
+            title: "Scarred",
+            airDate: "2013-03-02",
+            rating: 8.4
+          },
+          {
+            episode: 25,
+            title: "Ranx",
+            airDate: "2013-03-09",
+            rating: 7.3
+          },
+          {
+            episode: 26,
+            title: "Dark Matter",
+            airDate: "2013-03-16",
+            rating: 7.7
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 147. Tulsa King (2022)
+  // ============================================================
+  {
+    id: "tulsa-king-2022",
+    title: "Tulsa King",
+    type: "TV Show",
+    year: 2022,
+    rating: "7.9",
+    age: "TV-MA",
+    duration: "4 Seasons",
+    genres: ["Crime", "Drama", "Comedy"],
+    poster: "https://image.tmdb.org/t/p/original/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+    videoUrl: "153312",
+    trailerUrl: "https://www.youtube.com/watch?v=aaQSScwZPbA",
+    overview: "Just after he is released from prison after 25 years, New York mafia capo Dwight \"The General\" Manfredi is unceremoniously exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew from a group of unlikely characters to help him establish a new criminal empire in a place that to him might as well be another planet.",
+    overviewKurdish: "دەستبەجێ دوای ئازادبوونی لە زیندان پاش ٢٥ ساڵ مانەوە لە پشت میلەکان، کاپۆی مافیای نیویۆرک دوایت «ژەنەڕاڵ» مانفرێدی لەلایەن سەرۆکەکەیەوە دوورخرێتەوە بۆ تالسا لە ئۆکلاهۆما بۆ کردنەوەی لقێکی نوێ. دوایت کە درک بەوە دەکات خێزانە مافیاکەی ڕەنگە بەرژەوەندیی ئەویان لەبەرچاو نەبێت، دەست دەکات بە کۆکردنەوە و دروستکردنی تیمێکی نوێ لە کۆمەڵێک کەسایەتیی چاوەڕواننەکراو بۆ ئەوەی ئیمپراتۆریەتێکی تاوانکاریی سەربەخۆ لە شوێنێکدا بنیات بنێت کە بۆ ئەو وەک هەسارەیەکی دیکە وایە.",
+    director: "Taylor Sheridan",
+    cast: ["Sylvester Stallone", "Martin Starr", "Jay Will", "Vincent Piazza", "Annabella Sciorra", "Chris Caldovino", "McKenna Quigley Harrington", "Frank Grillo"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Go West, Old Man",
+            airDate: "2022-11-13",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/dOe72mwnTFg6ec4gX8szoNgafEr.jpg",
+            duration: "42 min",
+            overview: "Dwight, blindsided by the news that his mob family has nothing left for him in New York, is sent to Tulsa, Oklahoma; as he settles in and surveys his new surroundings, Dwight wastes no time making new associates."
+          },
+          {
+            episode: 2,
+            title: "Center of the Universe",
+            airDate: "2022-11-20",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2CpHeTMQQJjgIAWXE3VyPeUPmux.jpg",
+            duration: "38 min",
+            overview: "Dwight, Tyson, and Bodhi go on a road trip to take care of some business; Stacy does some digging into Dwight's past."
+          },
+          {
+            episode: 3,
+            title: "Caprice",
+            airDate: "2022-11-27",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ntW59Upv7ihGxHgYLTQDNYu5y4b.jpg",
+            duration: "40 min",
+            overview: "Dwight takes note of a possible new business opportunity. Later, a routine errand has an explosive, unexpected outcome. Stacy opens up to Dwight about what led her to Tulsa."
+          },
+          {
+            episode: 4,
+            title: "Visitation Place",
+            airDate: "2022-12-04",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/jTesVrxg1CkdKYHeQsYDOYDAW2R.jpg",
+            duration: "40 min",
+            overview: "At the Tulsa Arena, Dwight and company test out their new plan, until a roadblock forces them to adjust and defend their turf. Tyson and his father argue about his future. Dwight gets an unexpected call."
+          },
+          {
+            episode: 5,
+            title: "Token Joe",
+            airDate: "2022-12-11",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/ef8FQKmaxMVyj19JubHl3mgOdIB.jpg",
+            duration: "37 min",
+            overview: "Dwight returns to New York under unfortunate circumstances, where his reunion with his daughter and family doesn't go quite as expected. Back in Tulsa, Tyson runs into some trouble. Armand gets some news from Roxy."
+          },
+          {
+            episode: 6,
+            title: "Stable",
+            airDate: "2022-12-18",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pvsWgF9Q8KEKq1AAFXqt3mx1YB3.jpg",
+            duration: "40 min",
+            overview: "Dwight visits Tina before returning to Tulsa. Pete agrees to send Goodie to Oklahoma, while Roxy tries to keep the FBI at bay. Dwight has an offer for Mitch."
+          },
+          {
+            episode: 7,
+            title: "Warr Acres",
+            airDate: "2022-12-25",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/bodFvKO9iKvtdzWG2E4MnBRtpRU.jpg",
+            duration: "43 min",
+            overview: "Stacy makes a decision that has serious consequences. Dwight and Armand dispose of evidence, and Bodhi proposes a new plan. Tina contemplates her future."
+          },
+          {
+            episode: 8,
+            title: "Adobe Walls",
+            airDate: "2023-01-01",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/eCvaXeQvzDjxYPC9Vxv4va7RLGD.jpg",
+            duration: "37 min",
+            overview: "Dwight and Bodhi lay out the casino plan for Jimmy. As pressure increases, Dwight, Mitch, and Tyson assemble their team. Stacy confronts Waltrip."
+          },
+          {
+            episode: 9,
+            title: "Happy Trails",
+            airDate: "2023-01-08",
+            rating: 8.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/5kme01g9nQhOwxaLs4corudfpoe.jpg",
+            duration: "43 min",
+            overview: "It's all hands on deck as tensions between Dwight's crew and Waltrip escalate past the point of no return. Elsewhere, a flashback reveals what sent Dwight to prison 25 years ago."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Back in the Saddle",
+            airDate: "2024-09-15",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/aKybcN7eYWrsd3oDB0Y1atTDLrq.jpg",
+            duration: "43 min",
+            overview: "As Dwight and his crew prepare for the opening of their casino and new weed shop, the law comes knocking."
+          },
+          {
+            episode: 2,
+            title: "Kansas City Blues",
+            airDate: "2024-09-22",
+            rating: 7.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/j7tEgHboQDBgarQOLLVkpmZqf31.jpg",
+            duration: "44 min",
+            overview: "A family member from Dwight's past surprises him in Tulsa, meanwhile his newfound success draws attention from the Kansas City Mob."
+          },
+          {
+            episode: 3,
+            title: "Oklahoma v. Manfredi",
+            airDate: "2024-09-29",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/cWFAqz2f4AucLuVc3qIj3fPYjsK.jpg",
+            duration: "43 min",
+            overview: "Dwight has a contentious meeting with Bill Bevilaqua and later finds out his fate in court."
+          },
+          {
+            episode: 4,
+            title: "Heroes and Villains",
+            airDate: "2024-10-06",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/x49IrHqr9ZYLklIG8I2ZSz4TtrN.jpg",
+            duration: "45 min",
+            overview: "Dwight and Bodhi explore a new investment opportunity. Meanwhile, Thresher learns how far he can push certain people."
+          },
+          {
+            episode: 5,
+            title: "Tilting at Windmills",
+            airDate: "2024-10-13",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/qcFKPnlM6FIsQA8pLQJ3DxUhbdr.jpg",
+            duration: "40 min",
+            overview: "Thresher makes a move on Dwight's crew as tensions rise within the New York City Mob family."
+          },
+          {
+            episode: 6,
+            title: "Navigator",
+            airDate: "2024-10-20",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/lA1lXgbX08rDgXVgOcKIG8kHKcO.jpg",
+            duration: "38 min",
+            overview: "Dwight has a sit-down with Kansas City and New York. Tyson tries to make his family proud but it comes at a price."
+          },
+          {
+            episode: 7,
+            title: "Life Support",
+            airDate: "2024-10-27",
+            rating: 8.1,
+            thumbnail: "https://image.tmdb.org/t/p/w780/xb3qUdeVgeR95YB8eQHgUz0prnp.jpg",
+            duration: "40 min",
+            overview: "Dwight and his crew try to identify who's responsible for the recent attack. Power dynamics within the NYC Mob start to shift."
+          },
+          {
+            episode: 8,
+            title: "Under New Management",
+            airDate: "2024-11-03",
+            rating: 7.8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pYwQAxFeTVcXcPWHg86Jr9P1NCD.jpg",
+            duration: "43 min",
+            overview: "Bevilaqua prepares for revenge. Thresher and Ming discuss a new arrangement."
+          },
+          {
+            episode: 9,
+            title: "Triad",
+            airDate: "2024-11-10",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/2HPELYiW5rhReFwo7CplwY2j4o5.jpg",
+            duration: "37 min",
+            overview: "Margaret gets caught up in the middle of Dwight's business as trouble ensues at Fennario Ranch."
+          },
+          {
+            episode: 10,
+            title: "Reconstruction",
+            airDate: "2024-11-17",
+            rating: 8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/fBGaUvBgaWaAf45898cylageRiz.jpg",
+            duration: "36 min",
+            overview: "Dwight and his crew tie up loose ends as their empire expands."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Blood and Bourbon",
+            airDate: "2025-09-21",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/kVcIMFusIwWQrVwRidDJKBDoqYX.jpg",
+            duration: "48 min",
+            overview: "Dwight tries to secure a distillery deal."
+          },
+          {
+            episode: 2,
+            title: "The Fifty",
+            airDate: "2025-09-28",
+            rating: 7.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/pl4h2iMdnfBcsyQZdzXyJlPttuD.jpg",
+            duration: "45 min",
+            overview: "Dwight faces threats from Jeremiah Dunmire and the Dixie Mafia."
+          },
+          {
+            episode: 3,
+            title: "The G and the OG",
+            airDate: "2025-10-05",
+            rating: 6.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/1tSPCXDWj7a98ZLqtd9ztlQloaL.jpg",
+            duration: "48 min",
+            overview: "Dwight is forced to work with Agent Musso to take down a terrorist."
+          },
+          {
+            episode: 4,
+            title: "Staring Down the Barrel",
+            airDate: "2025-10-12",
+            rating: 7.2,
+            thumbnail: "https://image.tmdb.org/t/p/w780/1cF0plTuMFx0tjL9NHDOHLtvNa5.jpg",
+            duration: "41 min",
+            overview: "Dwight rallies his crew to recover the stolen bourbon from Dunmire."
+          },
+          {
+            episode: 5,
+            title: "On the Rocks",
+            airDate: "2025-10-19",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/hkQOabNWDwdHhX4ytSg6EVsLWe5.jpg",
+            duration: "44 min",
+            overview: "Dwight launches his bourbon brand as Dunmire schemes to crash the event."
+          },
+          {
+            episode: 6,
+            title: "Bubbles",
+            airDate: "2025-10-26",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mkqWRARiYLT0WQL9921yWwdFyE2.jpg",
+            duration: "40 min",
+            overview: "Dwight scrambles while facing threats from Dunmire and Quiet Ray."
+          },
+          {
+            episode: 7,
+            title: "Art of War",
+            airDate: "2025-11-02",
+            rating: 7.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/6MjNEf7gPhsK7NeV7OfQfChP5cV.jpg",
+            duration: "40 min",
+            overview: "Dwight moves to reopen his distillery. Tyson, Goodie & Spencer run a sting."
+          },
+          {
+            episode: 8,
+            title: "Nothing Is Over",
+            airDate: "2025-11-09",
+            rating: 7.8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/1W3A4cF4Pstx8rZBI3e1rv1cCQt.jpg",
+            duration: "41 min",
+            overview: "Dwight uncovers a deadly plan by Dunmire and races to stop it."
+          },
+          {
+            episode: 9,
+            title: "Dead Weight",
+            airDate: "2025-11-16",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/w780/jRgOHqIt1NEta7mEmCndxS0hYsY.jpg",
+            duration: "40 min",
+            overview: "As Dwight expands his liquor empire, Tyson's side hustle draws heat."
+          },
+          {
+            episode: 10,
+            title: "Jesus Lizard",
+            airDate: "2025-11-23",
+            rating: 7.8,
+            thumbnail: "https://image.tmdb.org/t/p/w780/imjg5MVfmNnmpJvJzbIh6n6A6Xz.jpg",
+            duration: "38 min",
+            overview: "Dwight and his crew gear up for all-out war."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "W.W.D.D.",
+            airDate: "2026-10-16",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/vgs4jNN99YfC8O2ElCqDqD4Wyys.jpg",
+            duration: "44 min",
+            overview: "Dwight leads his crew toward expanding their empire. Season premiere."
+          },
+          {
+            episode: 2,
+            title: "Blind Rooster",
+            airDate: "2026-10-23",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/fARP0KCN1dygMoWepGmJLa7FkAj.jpg",
+            duration: "41 min",
+            overview: "Reeling from a crushing personal loss, Dwight leans on Bodhi's unexpected honesty as his crew faces fallout from Tyson's tainted pills."
+          },
+          {
+            episode: 3,
+            title: "Cease & Desist",
+            airDate: "2026-10-30",
+            rating: 8.4,
+            thumbnail: "https://image.tmdb.org/t/p/w780/5QrA5SeIsOIzDTOqbLADqymT7gz.jpg",
+            duration: "44 min",
+            overview: "Dwight rallies the troops to fight back as Governor Clark shuts down his businesses, freezes bourbon shipments, and targets his crew."
+          },
+          {
+            episode: 4,
+            title: "Square One",
+            airDate: "2026-11-06",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/505bDYzfILnGh9EYvlEffyqdhRt.jpg",
+            duration: "44 min",
+            overview: "Dwight regroups as Mitch and Spencer prep for a high stakes score. Bodhi expands a counterfeit scheme, and Tyson tests his rap ambitions."
+          },
+          {
+            episode: 5,
+            title: "Dinosaurs",
+            airDate: "2026-11-13",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/7IQmyY8uLb5Ouv8KGqNwhuyOfl2.jpg",
+            duration: "40 min",
+            overview: "Dwight sees his enemies multiplying. Bodhi and Timpone race to profit from their wine as Mitch and Spencer make a discovery worth millions."
+          },
+          {
+            episode: 6,
+            title: "Racket Club",
+            airDate: "2026-11-20",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/wiEBpxf5Y8hGgLqdRigA552cUSh.jpg",
+            duration: "40 min",
+            overview: "Dwight battles Turco's rising demands while racing to protect the ranch from Van Heusen's land grab. Tyson gets a life changing offer."
+          },
+          {
+            episode: 7,
+            title: "Black Diamonds",
+            airDate: "2026-11-27",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+            duration: "40 min",
+            overview: "Dwight expands his operation while seeking stronger backing abroad. Mitch and Spencer look to score big at the track."
+          },
+          {
+            episode: 8,
+            title: "Episode 8",
+            airDate: "2026-12-04",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+            duration: "40 min",
+            overview: ""
+          },
+          {
+            episode: 9,
+            title: "Nerved Up",
+            airDate: "2026-12-11",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/w0GMYXJNqpnaPu4o5sSQ6tpdNA2.jpg",
+            duration: "40 min",
+            overview: "Dwight corners Governor Clark before heading to New York to confront Quiet Ray. Meanwhile, Bevilaqua feeds both sides, triggering a deadly showdown."
+          },
+          {
+            episode: 10,
+            title: "Exit Interview",
+            airDate: "2026-12-18",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/w780/3mH3EqrA5dct6MIRqt1SX3DYtY5.jpg",
+            duration: "40 min",
+            overview: "Dwight's empire is on the brink - but a brutal double-cross shifts the balance of power, forcing him towards a dangerous new throne."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 148. Batman Beyond (1999)
+  // ============================================================
+  {
+    id: "batman-beyond-1999",
+    title: "Batman Beyond",
+    type: "TV Show",
+    year: 1999,
+    rating: 8.1,
+    age: "TV-Y7",
+    duration: "22m",
+    genres: ["Animation", "Action", "Adventure", "Sci-Fi", "Kids"],
+    poster: "https://static.tvmaze.com/uploads/images/original_untouched/4/10842.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/A8We2BSM6hJ1VWzncssnU2fFsft.jpg",
+    videoUrl: "513",
+    trailerUrl: "",
+    overview: "Fuelled by remorse and vengeance, a high schooler named Terry McGinnis revives the mantle of Batman and fights crime in a futuristic Gotham under the supervision of an elderly Bruce Wayne.",
+    overviewKurdish: "لە نێو تۆڵەسەندنەوە و پەشیمانیدا، خوێندکارێکی ئامادەیی بە ناوی تێری مەگینیس ناونیشانی باتمان زیندوو دەکاتەوە و لە ژێر چاودێری بروس وەینی بەتەمەندا دژی تاوان دەجەنگێت لە شاری گۆتامی داهاتوودا.",
+    director: "Bruce Timm, Paul Dini, Alan Burnett",
+    cast: ["Will Friedle", "Kevin Conroy", "Lauren Tom", "Cree Summer", "Teri Garr"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Rebirth (1)",
+            airDate: "1999-01-10",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765575.jpg",
+            duration: "22 min",
+            overview: "Fifty years into the future, a young Terry McGinnis meets the aged and reclusive Bruce Wayne even as the boy's father discovers a foul secret of his corrupt employer that leads to his death."
+          },
+          {
+            episode: 2,
+            title: "Rebirth (2)",
+            airDate: "1999-01-10",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765576.jpg",
+            duration: "22 min",
+            overview: "Determined to bring his father's murderers to justice, Terry finally impulsively resorts to using Wayne's last Batsuit to investigate as the new Batman."
+          },
+          {
+            episode: 3,
+            title: "Black Out",
+            airDate: "1999-01-30",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765577.jpg",
+            duration: "22 min",
+            overview: "A dangerous shapeshifter in the employ of Derek Powers is out to sabotage a competing company and Batman must stand in her way."
+          },
+          {
+            episode: 4,
+            title: "Golem",
+            airDate: "1999-02-06",
+            rating: 7.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765578.jpg",
+            duration: "22 min",
+            overview: "A bullied nerd uses his newfound mental control of a giant construction robot to seek revenge."
+          },
+          {
+            episode: 5,
+            title: "Meltdown",
+            airDate: "1999-02-13",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765579.jpg",
+            duration: "22 min",
+            overview: "For his own reasons, Derek Powers arranges for Mr. Freeze to have a new organic body, but things don't go according to plan."
+          },
+          {
+            episode: 6,
+            title: "Heroes",
+            airDate: "1999-02-20",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765580.jpg",
+            duration: "22 min",
+            overview: "A trio of new superheroes make their debut, but they have dark secrets that lead to a disastrous crisis Batman must stop."
+          },
+          {
+            episode: 7,
+            title: "Shriek",
+            airDate: "1999-03-13",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765581.jpg",
+            duration: "22 min",
+            overview: "An inventor of a sound-based weapon plots against Bruce Wayne."
+          },
+          {
+            episode: 8,
+            title: "Dead Man's Hand",
+            airDate: "1999-03-20",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765587.jpg",
+            duration: "22 min",
+            overview: "Terry falls for a new girl, unaware that she is actually the supervillain Ten of the Royal Flush Gang."
+          },
+          {
+            episode: 9,
+            title: "The Winning Edge",
+            airDate: "1999-04-10",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765582.jpg",
+            duration: "22 min",
+            overview: "While Terry investigates the source of illegal performance-enhancing stimulants based on Bane's venom, his mother suspects he is using them himself."
+          },
+          {
+            episode: 10,
+            title: "Spellbound",
+            airDate: "1999-05-01",
+            rating: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765583.jpg",
+            duration: "22 min",
+            overview: "A new supervillain is manipulating victims to commit crimes for him using extremely lifelike illusions."
+          },
+          {
+            episode: 11,
+            title: "Disappearing Inque",
+            airDate: "1999-05-08",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765584.jpg",
+            duration: "22 min",
+            overview: "An enamored warder of the imprisoned Inque frees her and helps her in her quests for healing and revenge."
+          },
+          {
+            episode: 12,
+            title: "A Touch of Curaré",
+            airDate: "1999-05-15",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765585.jpg",
+            duration: "22 min",
+            overview: "Commissioner Barbara Gordon is determined to protect her DA husband from an elite assassin, and definitely does not want Batman, and especially Bruce Wayne's, help."
+          },
+          {
+            episode: 13,
+            title: "Ascension",
+            airDate: "1999-05-22",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765586.jpg",
+            duration: "22 min",
+            overview: "As Derek Powers' medical condition as Blight worsens, he calls his estranged son home for help. However, an enemy hidden in plain sight has other plans for him that eventually involve Batman as well."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Splicers",
+            airDate: "1999-09-17",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765589.jpg",
+            duration: "22 min",
+            overview: "Splicing genetics into humans is the new thing among the kids at Terry's school. The city wants to make it illegal due to overly aggressive behavior in the subjects. Batman is suspicious."
+          },
+          {
+            episode: 2,
+            title: "Earth Mover",
+            airDate: "1999-09-25",
+            rating: 6.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765590.jpg",
+            duration: "22 min",
+            overview: "Jackie; a friend of Terry is being followed by a monster that seems made of soil and her \"father\" is not really her father."
+          },
+          {
+            episode: 3,
+            title: "Joyride",
+            airDate: "1999-10-02",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765591.jpg",
+            duration: "22 min",
+            overview: "When a prototype military vehicle with a disastrous flaw is abandoned and seized by Jokerz, Batman and the vehicle's creator must hunt it down before it explodes."
+          },
+          {
+            episode: 4,
+            title: "Lost Soul",
+            airDate: "1999-10-09",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765592.jpg",
+            duration: "22 min",
+            overview: "When a digitized consciousness of a deceased computer genius is revived, it starts causing havoc throughout the city before it decides to take over the systems of Terry's batsuit next."
+          },
+          {
+            episode: 5,
+            title: "Hidden Agenda",
+            airDate: "1999-10-16",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765593.jpg",
+            duration: "22 min",
+            overview: "A girl genius finds herself unaccountably harassed by Jokerz at school and she begins to suspect Terry is responsible."
+          },
+          {
+            episode: 6,
+            title: "Bloodsport",
+            airDate: "1999-10-23",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765594.jpg",
+            duration: "22 min",
+            overview: "Batman finds himself the quarry of an augmented hunter seeking the ultimate challenge."
+          },
+          {
+            episode: 7,
+            title: "Once Burned",
+            airDate: "1999-11-06",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765595.jpg",
+            duration: "22 min",
+            overview: "Batman finds Ten determined to rob a rich underground poker game supposedly to save her family and he struggles to decide whether to trust her."
+          },
+          {
+            episode: 8,
+            title: "Hooked Up",
+            airDate: "1999-11-13",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765596.jpg",
+            duration: "22 min",
+            overview: "Batman investigates a ring of troubled kids who are so addicted to powerful virtual reality fantasies that they will do anything to continue them."
+          },
+          {
+            episode: 9,
+            title: "Rats!",
+            airDate: "1999-11-20",
+            rating: 6.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765597.jpg",
+            duration: "22 min",
+            overview: "Terry and Dana's relationship is strained when Terry's Batman duties get in the way of their relationship. Receiving a flower, Dana believes it's from Terry but comes to realize it's from an unexpected stalker.. with some unexpected friends."
+          },
+          {
+            episode: 10,
+            title: "Mind Games",
+            airDate: "1999-12-04",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765598.jpg",
+            duration: "22 min",
+            overview: "A young girl with telepathic powers calls to Batman for help."
+          },
+          {
+            episode: 11,
+            title: "Revenant",
+            airDate: "1999-12-11",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765599.jpg",
+            duration: "22 min",
+            overview: "McGinnis' high school seems to be haunted by a poltergeist."
+          },
+          {
+            episode: 12,
+            title: "Babel",
+            airDate: "2000-01-08",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765600.jpg",
+            duration: "22 min",
+            overview: "In order to have his revenge, Shriek makes the speech of the population of Gotham City incomprehensible and demands Batman surrendered to him to stop the chaos."
+          },
+          {
+            episode: 13,
+            title: "Terry's Friend Dates a Robot",
+            airDate: "2000-01-15",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765601.jpg",
+            duration: "22 min",
+            overview: "A status-seeking nerd illegally buys a robot girlfriend, only to have it become dangerously jealous."
+          },
+          {
+            episode: 14,
+            title: "Eyewitness",
+            airDate: "2000-01-22",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765602.jpg",
+            duration: "22 min",
+            overview: "When Commissioner Barbara Gordon sees Batman committing murder, she initiates an all-out manhunt for him while Bruce Wayne investigates what really happened."
+          },
+          {
+            episode: 15,
+            title: "Final Cut",
+            airDate: "2000-02-05",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765603.jpg",
+            duration: "22 min",
+            overview: "Batman is blackmailed by a bomb threat to protect a member of the Society of Assassins from Curaré."
+          },
+          {
+            episode: 16,
+            title: "The Last Resort",
+            airDate: "2000-03-04",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765604.jpg",
+            duration: "22 min",
+            overview: "Terry investigates a troubled child reform camp that is more like a prison."
+          },
+          {
+            episode: 17,
+            title: "Armory",
+            airDate: "2000-03-11",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765605.jpg",
+            duration: "22 min",
+            overview: "To support his family, a desperately unemployed advanced weapons engineer must steal vital materials for an illegal arms deal and elude Batman to do it."
+          },
+          {
+            episode: 18,
+            title: "Sneak Peek",
+            airDate: "2000-03-25",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765606.jpg",
+            duration: "22 min",
+            overview: "An arrogantly intrusive reporter with a special ability to become intangible discovers Terry and Bruce's big secret."
+          },
+          {
+            episode: 19,
+            title: "The Eggbaby",
+            airDate: "2000-04-01",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765588.jpg",
+            duration: "22 min",
+            overview: "Terry has a school project where he must constantly care for a baby simulator, even when he's out in the field as Batman."
+          },
+          {
+            episode: 20,
+            title: "Zeta",
+            airDate: "2000-04-08",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765607.jpg",
+            duration: "22 min",
+            overview: "Batman meets a good-hearted artificially intelligent robot assassin on the run from his creators."
+          },
+          {
+            episode: 21,
+            title: "Plague",
+            airDate: "2000-04-15",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765608.jpg",
+            duration: "22 min",
+            overview: "Batman and Stalker must work together to stop the Kobra cult from unleashing a fearsome bioweapon on the populous."
+          },
+          {
+            episode: 22,
+            title: "April Moon",
+            airDate: "2000-04-22",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765609.jpg",
+            duration: "22 min",
+            overview: "Batman must battle a gang of cyborgs made possible by blackmailing a bionics specialist."
+          },
+          {
+            episode: 23,
+            title: "Sentries of the Last Cosmos",
+            airDate: "2000-05-06",
+            rating: 6.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765610.jpg",
+            duration: "22 min",
+            overview: "Ardent players of an in-depth virtual reality role-playing game are recruited by the supposed creator of the game for his own purposes."
+          },
+          {
+            episode: 24,
+            title: "Payback",
+            airDate: "2000-05-13",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765611.jpg",
+            duration: "22 min",
+            overview: "Batman investigates a mysterious vigilante who is somehow linked to a teens' counseling center and wants to attack people who torment them."
+          },
+          {
+            episode: 25,
+            title: "Where's Terry?",
+            airDate: "2000-05-27",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765612.jpg",
+            duration: "22 min",
+            overview: "When Terry goes missing, Wayne and Max go searching for him."
+          },
+          {
+            episode: 26,
+            title: "Ace in the Hole",
+            airDate: "2000-08-19",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765613.jpg",
+            duration: "22 min",
+            overview: "When Ace spots the man who abused him into becoming a sport fighting dog, he chases him and gets lost from his guardians."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "King's Ransom",
+            airDate: "2000-09-16",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765614.jpg",
+            duration: "22 min",
+            overview: "Reduced to doing Paxton Power's dirty work, The Royal Flush Gang begins to fall apart while Batman has to clean up the mess."
+          },
+          {
+            episode: 2,
+            title: "Untouchable",
+            airDate: "2000-09-23",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765615.jpg",
+            duration: "22 min",
+            overview: "Batman hunts for a mysterious criminal with a personal repulsion field and one of the occupants of a medical research lab may be that person."
+          },
+          {
+            episode: 3,
+            title: "Inqueling",
+            airDate: "2000-09-30",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765616.jpg",
+            duration: "22 min",
+            overview: "Seriously wounded in a doublecross, Inque approaches her estranged daughter for help."
+          },
+          {
+            episode: 4,
+            title: "Big Time",
+            airDate: "2000-10-07",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765617.jpg",
+            duration: "22 min",
+            overview: "An old reprobate childhood friend of Terry returns with a half-baked plan to become a big-time criminal."
+          },
+          {
+            episode: 5,
+            title: "Out of the Past",
+            airDate: "2000-10-21",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/160/401240.jpg",
+            duration: "22 min",
+            overview: "Talia arrives in Gotham claiming she has mastered the Lazarus Pit and offers to use it to restore Bruce's youth without any side affects. But all is not as it seems."
+          },
+          {
+            episode: 6,
+            title: "Speak No Evil",
+            airDate: "2000-11-04",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765618.jpg",
+            duration: "22 min",
+            overview: "A genetically enhanced gorilla enlists Batman's help to hunt his kidnappers."
+          },
+          {
+            episode: 7,
+            title: "The Call (1)",
+            airDate: "2000-11-11",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765619.jpg",
+            duration: "22 min",
+            overview: "Superman comes for a visit to offer Terry membership in the Justice League. Superman needs Batman's help to find a traitor in the League."
+          },
+          {
+            episode: 8,
+            title: "The Call (2)",
+            airDate: "2000-11-18",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765620.jpg",
+            duration: "22 min",
+            overview: "The identity of the traitor is revealed, which set the stage for a confrontation."
+          },
+          {
+            episode: 9,
+            title: "Betrayal",
+            airDate: "2000-12-09",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765621.jpg",
+            duration: "22 min",
+            overview: "Escaped from prison, Big Time attempts to recruit Terry as his partner in crime."
+          },
+          {
+            episode: 10,
+            title: "Curse of Kobra (1)",
+            airDate: "2001-02-03",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765622.jpg",
+            duration: "22 min",
+            overview: "Terry goes for advanced martial arts training at a special dojo, but there is far more to one of his fellow students than he realizes."
+          },
+          {
+            episode: 11,
+            title: "Curse of Kobra (2)",
+            airDate: "2001-02-10",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765623.jpg",
+            duration: "22 min",
+            overview: "After being seriously injured trying to stop Zander of the Kobra cult from kidnapping Max as his bride, Terry is still determined to stop him and his ultimate scheme."
+          },
+          {
+            episode: 12,
+            title: "Countdown",
+            airDate: "2001-04-07",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765624.jpg",
+            duration: "22 min",
+            overview: "When Zeta and Ro come to Gotham City, the android finds himself separated and manipulated by Mad Stan into one of his terrorist bombing schemes."
+          },
+          {
+            episode: 13,
+            title: "Unmasked",
+            airDate: "2001-12-18",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/306/765625.jpg",
+            duration: "22 min",
+            overview: "Terry explains to Max why he needs a secret identity by telling the story of the trouble caused when he revealed it to a small boy who is then kidnapped by Kobra to interrogate him."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 149. The Legend of Korra (2012)
+  // ============================================================
+  {
+    id: "the-legend-of-korra-2012",
+    title: "The Legend of Korra",
+    type: "TV Show",
+    year: 2012,
+    rating: 8.3,
+    age: "TV-PG",
+    duration: "23m",
+    genres: ["Animation", "Action", "Adventure", "Fantasy", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/fqsQ4nUyLb8ucRT2BobBTiKess7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bauKfP3CX5JPAXpmveOlPG1pngC.jpg",
+    videoUrl: "33880",
+    trailerUrl: "https://www.youtube.com/watch?v=-1ftJQmyv5E",
+    overview: "Taking place 70 years after the events of Avatar: The Last Airbender, this story follows the next Avatar - a passionate, rebellious, and fearless teenage girl named Korra from the Southern Water Tribe. As she masters the four elements, Korra must protect Republic City and restore balance against dangerous forces from both the physical and spiritual worlds.",
+    overviewKurdish: "٧٠ ساڵ دوای ڕووداوەکانی «ئەڤەتار: دوایین ملکەچپێکەری با»، چیرۆکەکە باسی کۆڕا دەکات، کچێکی یاخی و بەئیرادەی خێڵی ئاوی باشوور و ئاڤاتاری نوێ، کە هەوڵ دەدات فێری کۆنترۆڵکردنی هەر چوار توخمەکە بێت و شاری کۆماری لە هەڕەشە شەڕانگێزەکانی جیهانی فیزیکی و ڕۆحی بپارێزێت.",
+    director: "Michael Dante DiMartino, Bryan Konietzko",
+    cast: ["Janet Varney", "P.J. Byrne", "David Faustino", "J.K. Simmons", "Seychelle Gabriel", "Dee Bradley Baker"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Welcome to Republic City",
+            airDate: "2012-04-14",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4038.jpg",
+            duration: "30 min",
+            overview: "The series premiere of this cartoon about a bold and rebellious teenage girl who undergoes training to become a fully realized Avatar, Korra arrives in Republic City and discovers it's a dangerous place for benders."
+          },
+          {
+            episode: 2,
+            title: "A Leaf in the Wind",
+            airDate: "2012-04-14",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4039.jpg",
+            duration: "30 min",
+            overview: "Korra is thrilled to discover the city's Pro-bending Arena, where she meets two brothers who compete there."
+          },
+          {
+            episode: 3,
+            title: "The Revelation",
+            airDate: "2012-04-21",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4040.jpg",
+            duration: "30 min",
+            overview: "Korra tries to gain access to the Equalist movement and its secretive leader."
+          },
+          {
+            episode: 4,
+            title: "The Voice in the Night",
+            airDate: "2012-04-28",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4041.jpg",
+            duration: "30 min",
+            overview: "A task force recruits Korra to help them with their violent plan to remove Equalists."
+          },
+          {
+            episode: 5,
+            title: "The Spirit of Competition",
+            airDate: "2012-05-05",
+            rating: 7.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4042.jpg",
+            duration: "30 min",
+            overview: "Romantic rivalries disrupt the harmony on Korra's team."
+          },
+          {
+            episode: 6,
+            title: "And the Winner is...",
+            airDate: "2012-05-12",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4043.jpg",
+            duration: "30 min",
+            overview: "Korra prepares for the pro-bending championship while a sense of danger hovers over the arena."
+          },
+          {
+            episode: 7,
+            title: "The Aftermath",
+            airDate: "2012-05-19",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4044.jpg",
+            duration: "30 min",
+            overview: "Korra worries that a friend is secretly aligned with the Equalists."
+          },
+          {
+            episode: 8,
+            title: "When Extremes Meet",
+            airDate: "2012-06-02",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4045.jpg",
+            duration: "30 min",
+            overview: "Korra quarrels with Councilman Tarrlok in the midst of growing Equalist activity."
+          },
+          {
+            episode: 9,
+            title: "Out of the Past",
+            airDate: "2012-06-09",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4046.jpg",
+            duration: "30 min",
+            overview: "Korra tries to analyze the mysterious visions she's been having. Meanwhile, Tenzin and Beifong look for Equalist hostages."
+          },
+          {
+            episode: 10,
+            title: "Turning the Tides",
+            airDate: "2012-06-16",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4047.jpg",
+            duration: "30 min",
+            overview: "Republic City gets bombarded by the Equalists."
+          },
+          {
+            episode: 11,
+            title: "Skeletons in the Closet",
+            airDate: "2012-06-23",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4048.jpg",
+            duration: "30 min",
+            overview: "Korra goes undercover and learns a secret while her teammates go after the enemies' stronghold."
+          },
+          {
+            episode: 12,
+            title: "Endgame",
+            airDate: "2012-06-23",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4049.jpg",
+            duration: "30 min",
+            overview: "Korra confronts the enigmatic ruler of the Equalists."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Rebel Spirit",
+            airDate: "2013-09-13",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4018.jpg",
+            duration: "30 min",
+            overview: "Korra attends the Southern Water Tribe Festival, where she tries to connect to the spirit world."
+          },
+          {
+            episode: 2,
+            title: "The Southern Lights",
+            airDate: "2013-09-13",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4019.jpg",
+            duration: "30 min",
+            overview: "Korra she enters a violent maelstrom and discovers a source of spiritual power."
+          },
+          {
+            episode: 3,
+            title: "Civil Wars, Part 1",
+            airDate: "2013-09-20",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4020.jpg",
+            duration: "30 min",
+            overview: "Part 1 of 2. Korra tries to be impartial as tension rises between the northern and southern tribes."
+          },
+          {
+            episode: 4,
+            title: "Civil Wars, Part 2",
+            airDate: "2013-09-27",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4021.jpg",
+            duration: "30 min",
+            overview: "Korra's folks are wrongfully incarcerated, so Korra fights to free them."
+          },
+          {
+            episode: 5,
+            title: "Peacekeepers",
+            airDate: "2013-10-04",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4022.jpg",
+            duration: "30 min",
+            overview: "Korra reaches a dead end when she turns to the president for help, so she strikes out on her own."
+          },
+          {
+            episode: 6,
+            title: "The Sting",
+            airDate: "2013-10-11",
+            rating: 7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4023.jpg",
+            duration: "30 min",
+            overview: "Future Industries may close up shop because of the threat Triad poses, so Mako does some research and stumbles upon a huge conspiracy at work."
+          },
+          {
+            episode: 7,
+            title: "Beginnings, Part 1",
+            airDate: "2013-10-18",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4024.jpg",
+            duration: "30 min",
+            overview: "The origins of the first Avatar are revealed to Korra."
+          },
+          {
+            episode: 8,
+            title: "Beginnings, Part 2",
+            airDate: "2013-10-18",
+            rating: 9.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4025.jpg",
+            duration: "30 min",
+            overview: "Korra sets out to restore balance between the physical and spirit worlds."
+          },
+          {
+            episode: 9,
+            title: "The Guide",
+            airDate: "2013-11-01",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4026.jpg",
+            duration: "30 min",
+            overview: "Tenzin's assistance is sought by Korra as she prepares to enter the Spirit World for the first time."
+          },
+          {
+            episode: 10,
+            title: "A New Spiritual Age",
+            airDate: "2013-11-08",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4027.jpg",
+            duration: "30 min",
+            overview: "Korra arrives in the Spirit World, where she has difficulty forging connections with the spirits."
+          },
+          {
+            episode: 11,
+            title: "Night of a Thousand Stars",
+            airDate: "2013-11-15",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4028.jpg",
+            duration: "30 min",
+            overview: "Bolin proves to be a hero when President Raiko is attacked."
+          },
+          {
+            episode: 12,
+            title: "Harmonic Convergence",
+            airDate: "2013-11-15",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4029.jpg",
+            duration: "30 min",
+            overview: "Korra tries to seal the spirit portals prior to Harmonic Convergence."
+          },
+          {
+            episode: 13,
+            title: "Darkness Falls",
+            airDate: "2013-11-15",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4030.jpg",
+            duration: "30 min",
+            overview: "Unalaq's scheme has a twist uncovered by Korra. Meanwhile, Tenzin must deal with his demons if he wants to rescue his daughter."
+          },
+          {
+            episode: 14,
+            title: "Light in the Dark",
+            airDate: "2013-11-15",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4031.jpg",
+            duration: "30 min",
+            overview: "Korra learns of a method she can employ to attempt to destroy the dark spirit."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Breath of Fresh Air",
+            airDate: "2014-06-27",
+            rating: 7.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715215.jpg",
+            duration: "30 min",
+            overview: "In the third-season opener, Korra uncovers a huge shift in the bending world, which is the result of Harmonic Convergence."
+          },
+          {
+            episode: 2,
+            title: "Rebirth",
+            airDate: "2014-06-27",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715216.jpg",
+            duration: "30 min",
+            overview: "Air Nation is revived thanks to Korra and Team Avatar."
+          },
+          {
+            episode: 3,
+            title: "The Earth Queen",
+            airDate: "2014-06-27",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715217.jpg",
+            duration: "30 min",
+            overview: "The team look for Airbenders on a trip to Ba Sing Se."
+          },
+          {
+            episode: 4,
+            title: "In Harm's Way",
+            airDate: "2014-07-11",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715218.jpg",
+            duration: "30 min",
+            overview: "Korra wants to free Airbenders in Be Sing Se who are being forced to join the Earth Queen's army."
+          },
+          {
+            episode: 5,
+            title: "The Metal Clan",
+            airDate: "2014-07-11",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715219.jpg",
+            duration: "30 min",
+            overview: "Korra and her pals arrive in the metal city of Zaofu."
+          },
+          {
+            episode: 6,
+            title: "Old Wounds",
+            airDate: "2014-07-18",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715220.jpg",
+            duration: "30 min",
+            overview: "Beifong confronts her past."
+          },
+          {
+            episode: 7,
+            title: "Original Airbenders",
+            airDate: "2014-07-18",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715221.jpg",
+            duration: "30 min",
+            overview: "New members receive training from Tenzin, who must also deal with Bumi's poor attitude."
+          },
+          {
+            episode: 8,
+            title: "The Terror Within",
+            airDate: "2014-07-25",
+            rating: 8.1,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/286/715222.jpg",
+            duration: "30 min",
+            overview: "Zaheer and his crew try to kidnap Korra."
+          },
+          {
+            episode: 9,
+            title: "The Stakeout",
+            airDate: "2014-08-01",
+            rating: 8.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4006.jpg",
+            duration: "30 min",
+            overview: "Zaheer reveals the goals of the Red Lotus to Korra while his allies close in on her."
+          },
+          {
+            episode: 10,
+            title: "Long Live the Queen",
+            airDate: "2014-08-08",
+            rating: 7.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4005.jpg",
+            duration: "30 min",
+            overview: "Korra and Asami escape and return to the oasis, so Zaheer takes his anger out on the Earth Queen as the Red Lotus destroy the city."
+          },
+          {
+            episode: 11,
+            title: "The Ultimatum",
+            airDate: "2014-08-15",
+            rating: 9.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4015.jpg",
+            duration: "30 min",
+            overview: "Korra contacts Tenzin as the Red Lotus attack the temple, so Tenzin and his siblings try to fight off the invaders."
+          },
+          {
+            episode: 12,
+            title: "Enter the Void",
+            airDate: "2014-08-22",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4016.jpg",
+            duration: "30 min",
+            overview: "Zaheer removes the hostages from the temple as Korra prepares to sacrifice herself for the other airbenders."
+          },
+          {
+            episode: 13,
+            title: "Venom of the Red Lotus",
+            airDate: "2014-08-22",
+            rating: 9.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/4017.jpg",
+            duration: "30 min",
+            overview: "The Red Lotus poison Korra, who takes to the skies to battle Zaheer."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "After All These Years",
+            airDate: "2014-10-03",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/3122.jpg",
+            duration: "30 min",
+            overview: "Kai and Opal try to assist a struggling community in Earth Kingdom three years after Team Avatar was poisoned by Zaheer."
+          },
+          {
+            episode: 2,
+            title: "Korra Alone",
+            airDate: "2014-10-10",
+            rating: 9.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/3121.jpg",
+            duration: "30 min",
+            overview: "Avatar Korra may have escaped Republic City, but she can't seem to escape her past."
+          },
+          {
+            episode: 3,
+            title: "The Coronation",
+            airDate: "2014-10-17",
+            rating: 8.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/1/3552.jpg",
+            duration: "30 min",
+            overview: "There's only one thing Prince Wu is looking forward to more than ruling the Earth Kingdom, his PARTY!"
+          },
+          {
+            episode: 4,
+            title: "The Calling",
+            airDate: "2014-10-24",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/2/5272.jpg",
+            duration: "30 min",
+            overview: "Pema and Tenzin's kids leave their home to find Korra."
+          },
+          {
+            episode: 5,
+            title: "Enemy at the Gates",
+            airDate: "2014-10-31",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/2/6565.jpg",
+            duration: "30 min",
+            overview: "Kuvira travels to the city of Zaofu to negotiate with Suyin Beifong. Zaofu is the last city in the Earth Kingdom not under Kuvira's rule."
+          },
+          {
+            episode: 6,
+            title: "The Battle of Zaofu",
+            airDate: "2014-11-07",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/5/12950.jpg",
+            duration: "30 min",
+            overview: "Korra and Kuvira face off in an epic showdown."
+          },
+          {
+            episode: 7,
+            title: "Reunion",
+            airDate: "2014-11-14",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/5/12951.jpg",
+            duration: "30 min",
+            overview: "Korra returns to Republic City, but Kuvira'a actions spoil her homecoming."
+          },
+          {
+            episode: 8,
+            title: "Remembrances",
+            airDate: "2014-11-21",
+            rating: 5.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/5/12949.jpg",
+            duration: "30 min",
+            overview: "Korra goes to Zaheer in order to face her inner fears and find balance within herself."
+          },
+          {
+            episode: 9,
+            title: "Beyond the Wilds",
+            airDate: "2014-11-28",
+            rating: 8.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/164/411453.jpg",
+            duration: "30 min",
+            overview: "Jinora gets trapped in the Spirit World and Korra mounts a rescue mission, but she's halted by Zaheer's apparition."
+          },
+          {
+            episode: 10,
+            title: "Operation Beifong",
+            airDate: "2014-12-05",
+            rating: 8.9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/164/411452.jpg",
+            duration: "30 min",
+            overview: "Bolin assists Opal and Lin in rescuing the Beifongs. Meanwhile, Korra searches for help in the Spirit World."
+          },
+          {
+            episode: 11,
+            title: "Kuvira's Gambit",
+            airDate: "2014-12-12",
+            rating: 8.6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/164/411451.jpg",
+            duration: "30 min",
+            overview: "Korra and the gang attempt to halt Kuvira's actions against Republic City. Meanwhile, Kuvira reveals a new lethal weapon in her arsenal."
+          },
+          {
+            episode: 12,
+            title: "Day of the Colossus",
+            airDate: "2014-12-19",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/164/411450.jpg",
+            duration: "30 min",
+            overview: "Team Avatar battle Kuvira in the heart of Republic City, and innocent bystanders are evacuated by Pema and Prince Wu."
+          },
+          {
+            episode: 13,
+            title: "The Last Stand",
+            airDate: "2014-12-19",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/164/411449.jpg",
+            duration: "30 min",
+            overview: "Korra faces off with Kuvira, and the fate of many hangs in the balance."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 150. SpongeBob SquarePants (1999)
+  // ============================================================
+  {
+    id: "spongebob-squarepants-1999",
+    title: "SpongeBob SquarePants",
+    type: "TV Show",
+    year: 1999,
+    rating: 8.2,
+    age: "TV-Y7",
+    duration: "23m",
+    genres: ["Animation", "Comedy", "Family", "Fantasy", "Kids"],
+    poster: "https://www.themoviedb.org/t/p/w1280/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/maFEWU41jdUOzDfRVkojq7fluIm.jpg",
+    videoUrl: "387",
+    trailerUrl: "https://www.youtube.com/watch?v=fDImf2FeNi4",
+    overview: "The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple in the colorful Pacific city of Bikini Bottom alongside his eccentric aquatic friends.",
+    overviewKurdish: "سەرکێشی و ڕووداوە پێکەنیناوییەکانی ئیسفەنجێکی دەریایی قسەکەر بە ناوی سپۆنجبۆب، کە لە چێشتخانەی کڕەستی کراب کار دەکات، دەچێتە قوتابخانەی لێخوڕینی بەلەم، و لە ناو ئەناناسێکی ژێر ئاودا لە شاری بیکینی بۆتەم لەگەڵ هاوڕێ دەریایییە سەیروسەمەرەکانیدا دەژی.",
+    director: "Stephen Hillenburg",
+    cast: ["Tom Kenny", "Bill Fagerbakke", "Rodger Bumpass", "Clancy Brown", "Carolyn Lawrence", "Mr. Lawrence"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Help Wanted/Reef Blower/Tea at the Treedome",
+            airDate: "1999-05-01",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzdmMDk4ODQtYzQ5My00ZjFmLTk5MGMtOWYxZDdjY2U2NmQxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob attempts to fulfill his dream of working at the Krusty Krab; SpongeBob meets a squirrel named Sandy and goes to extreme lengths in an attempt to impress her."
+          },
+          {
+            episode: 2,
+            title: "BubbleStand/Ripped Pants",
+            airDate: "1999-07-17",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTFjZjZmMzktZTk3MS00MGM2LWJjYmQtNWNmZTdiN2ZjOTMxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Bubblestand: SpongeBob blows bubbles. Ripped Pants: SpongeBob accidentally tears his pants."
+          },
+          {
+            episode: 3,
+            title: "Jellyfishing/Plankton!",
+            airDate: "1999-07-31",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzQ3Y2I0NjMtZTQxZi00ZGY4LWI0YzgtN2ZhOTc1OGYyMmMyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Jellyfishing: SpongeBob and Patrick take Squidward jellyfishing. Plankton!: Plankton tries to steal the formula."
+          },
+          {
+            episode: 4,
+            title: "Naughty Nautical Neighbors/Boating School",
+            airDate: "1999-08-06",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDM5Y2IxZDAtMzA3MS00YzJjLWEzM2MtNTA1NjUzZmQ1MTg3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Tired of his annoying neighbors, Squidward turns Spongebob and Patrick against each other. Later, Spongebob tries to pass his boating test."
+          },
+          {
+            episode: 5,
+            title: "Pizza Delivery/Home Sweet Pineapple",
+            airDate: "1999-08-14",
+            rating: 9.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGRiZWI2NTQtNjM1MC00Y2ViLWIwY2QtZjdmYTI1YjVkNDZmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and Squidward must deliver a pizza for the Krusty Krab. Later, Spongebob's pineapple house is eaten by nematodes, leaving him homeless."
+          },
+          {
+            episode: 6,
+            title: "Mermaidman and Barnacleboy/Pickles",
+            airDate: "1999-08-20",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTlkZTI4YTAtNmFhMC00YWU1LWI4NjUtOTZjMGU5NjlhMjAxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mermaid Man and Barnacle Boy: SpongeBob and Patrick visit a retirement home. Pickles: SpongeBob loses his confidence."
+          },
+          {
+            episode: 7,
+            title: "Hall Monitor/Jellyfish Jam",
+            airDate: "1999-08-28",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjY4MDYyMWEtMmE5Mi00NjdhLWJmOTMtODdhODZiMDVkNDI1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Hall Monitor: SpongeBob takes his turn as hall monitor. Jellyfish Jam: SpongeBob takes a wild jellyfish home."
+          },
+          {
+            episode: 8,
+            title: "Sandy's Rocket/Squeaky Boots",
+            airDate: "1999-09-17",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2I3YzQxNmItMDE2Yi00YmI5LWE3NDYtNzQzNTA1NDVmZTUwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and Patrick are launched into space after fooling around with the controls. Mr. Krabs goes crazy from the squeaky sound of SpongeBob's new boots."
+          },
+          {
+            episode: 9,
+            title: "Nature Pants/Opposite Day",
+            airDate: "1999-09-11",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDliYmRiNjItODU0Mi00ZTljLWI5ZDYtYmIzYjRlZTQxNmQyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Nature Pants: After suffering through some unusually rough days at work, SpongeBob decides to leave his industrialized life and \"live off the land\" with the jellyfish in JellyFish Fields. A rough day on the job, however, is nothin..."
+          },
+          {
+            episode: 10,
+            title: "Culture Shock/F.U.N.",
+            airDate: "1999-09-18",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmUxZTU2ZjctN2JjNy00MmY0LTk3ZWQtN2FlMGM5NjRkZmQ0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs decides to host a talent show at the Krusty Krab in an attempt to boost customers, meanwhile Squidward sees it as his opportunity to break through./A new friendship between SpongeBob and Plankton causes issues at the Kru..."
+          },
+          {
+            episode: 11,
+            title: "MuscleBob BuffPants/Squidward the Unfriendly Ghost",
+            airDate: "1999-10-02",
+            rating: 8.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzAzNjhlODMtY2VkOC00MzFjLTkyMTEtOWZiNTY4OWFhNTFmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob orders a pair of fake muscles to impress his friends. / Squidward pretends that he is a ghost."
+          },
+          {
+            episode: 12,
+            title: "The Chaperone/Employee of the Month",
+            airDate: "2000-03-08",
+            rating: 8.3,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 13,
+            title: "Scaredy Pants/I Was a Teenage Gary",
+            airDate: "1999-10-28",
+            rating: 8.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjRkYzdiODctNzc1OC00ODA0LTk5MmUtNmJkNmQ4M2E0YWI3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Scaredy Pants: Halloween party. I Was a Teenage Gary: Squidward takes care of SpongeBob's pet snail."
+          },
+          {
+            episode: 14,
+            title: "SB-129/Karate Choppers",
+            airDate: "1999-12-31",
+            rating: 9.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYzJiZmUyYWYtOWE5NS00MTcwLTkxNmEtYjZmMjUzM2E2NGUwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Whilst fleeing from SpongeBob and Patrick, Squidward accidentally locks himself in the Krusty Krab freezer, causing him to travel to the future./SpongeBob's addiction to karate puts his job at stake."
+          },
+          {
+            episode: 15,
+            title: "Sleepy Time/Suds",
+            airDate: "2000-01-17",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzNmNTUwN2YtZjg0Yi00YTQ5LTk1OTctOWE0YmRlYzVlNjYxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob visits his friends' dreams. / SpongeBob comes down with a case of the Suds."
+          },
+          {
+            episode: 16,
+            title: "Valentine's Day/The Paper",
+            airDate: "2000-02-14",
+            rating: 8.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWVkZTA2NzQtNGYwNC00MDE5LTlkYmEtZTQ2YzVkOTA3ZWE2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick go to the carnival. / SpongeBob has fun with a gum wrapper."
+          },
+          {
+            episode: 17,
+            title: "Arrgh!/Rock Bottom",
+            airDate: "2000-03-15",
+            rating: 9.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDk0YjQ1OWYtMzYyZC00ZjU3LWFhOGEtZmQyZDM2YTIyZjk0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs' addiction to a board game SpongeBob and Patrick invite him to play inspires him to bring the two on a real treasure hunt./SpongeBob and Patrick take the wrong bus home from Glove World and get stuck in an unfamiliar place."
+          },
+          {
+            episode: 18,
+            title: "Texas/Walking Small",
+            airDate: "2000-03-22",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYzE1MmE3NmQtOWYwNC00YWE2LThjN2ItYmRhZDljMzc3YmZlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick try to help Sandy out when she feels homesick. / Plankton tries to get SpongeBob to be mean."
+          },
+          {
+            episode: 19,
+            title: "Fools in April/Neptune's Spatula",
+            airDate: "2000-04-01",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWQwNTE5ZmUtNmU5ZS00MDQ5LThlY2QtZDgxOTRlYWU1MGExXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob stages practical jokes for April Fool's Day and annoys Squidward who decides to get even; SpongeBob takes part in the Fry Cook Hall of Fame."
+          },
+          {
+            episode: 20,
+            title: "Hooky/Mermaidman and Barnacleboy II",
+            airDate: "2001-03-03",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjQ1ZTA0NzItMzA5Ni00ZWU1LThjNzgtOWNlZjA0Yzk2N2IzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Hooky: When the mysterious \"hooks\" (fishing, that is) suddenly appear in Bikini Bottom, Mr. Krabs warns SpongeBob to stay away from them. Despite Mr. Krabs' scary tales of sea creatures winding up in gift shops or packed cans, Pat..."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Something Smells/Bossy Boots",
+            airDate: "2000-10-20",
+            rating: 8.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMGVhNTI5ZjEtZTA0ZS00MWJhLTkwY2QtNTU0ZTdhNGU4MTdjXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob's breath starts to stink. / Mr. Krabs employs his daughter at the Krusty Krab."
+          },
+          {
+            episode: 2,
+            title: "Your Shoe's Untied/Squid's Day Off",
+            airDate: "2001-02-17",
+            rating: 8.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjgzYmE2MmQtNDA4Yy00YmY5LTg2NjMtOTkyZTgwMzBkNmE5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob realizes he can't tie his shoes. / Mr. Krabs puts Squidward in charge for a day."
+          },
+          {
+            episode: 3,
+            title: "Big Pink Loser/Bubble Buddy",
+            airDate: "2000-11-16",
+            rating: 8.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ0MzM4MDU0OV5BMl5BanBnXkFtZTgwMDYxNDE1NTE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick tries to win an award. / SpongeBob gets a new friend."
+          },
+          {
+            episode: 4,
+            title: "Dying for Pie/Imitation Krabs",
+            airDate: "2001-01-27",
+            rating: 9.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQzMzQ3NDEwNF5BMl5BanBnXkFtZTgwNDUwNDIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward unknowingly gives Spongebob a pie laced with explosives, he attempts to make Spongebob's last day on Earth meaningful. Plankton builds a robot that looks like Mr. Krabs in an attempt to steal the formula."
+          },
+          {
+            episode: 5,
+            title: "Wormy/Patty Hype",
+            airDate: "2001-02-24",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQxMjEwMzk0Nl5BMl5BanBnXkFtZTgwNjM4MjIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick watch over Sandy's pets when she is out of town. / SpongeBob has an idea, but nobody will listen."
+          },
+          {
+            episode: 6,
+            title: "Grandma's Kisses/Squidville",
+            airDate: "2001-04-28",
+            rating: 8.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzY3NzQ2MDQtZTE1ZS00MmQ3LTllM2MtZjU1ZmZkYmE0MmRhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob gets embarrassed when his grandma kisses him in public. Squidward moves into a gated community for squids."
+          },
+          {
+            episode: 7,
+            title: "PreHibernation Week/Life of Crime",
+            airDate: "2001-05-05",
+            rating: 8.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDgwNjQyYmUtMjdjMC00MGMwLTgzMjMtYTZjOWVjNzQzZTQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Pre-Hibernation Week: SpongeBob hides from Sandy. Life of Crime: SpongeBob and Patrick borrow a balloon from a store and accidentally pop it."
+          },
+          {
+            episode: 8,
+            title: "Christmas Who?",
+            airDate: "2000-12-07",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDNkMGNkYzMtZjAyYi00OThhLTgzNmItYjYzYTdkYTVkNWQ0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Christmas Who?: Nobody in Bikini Bottom has ever heard of Christmas or Santa Clause until Sandy lets them in on this surface tradition. SpongeBob wants to bring Christmas to Bikini Bottom this year and his enthusiasm is infectious..."
+          },
+          {
+            episode: 9,
+            title: "Survival of the Idiots/Dumped",
+            airDate: "2001-05-19",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTgyODUzMzc0NF5BMl5BanBnXkFtZTgwMTc2MjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Survival of the Idiots: SpongeBob and Patrick sneak into the Treedome. Dumped: Gary goes to Patrick, and SpongeBob becomes jealous."
+          },
+          {
+            episode: 10,
+            title: "No Free Rides/I'm Your Biggest Fanatic",
+            airDate: "2001-04-14",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmJhMDRiNmItYTI5Yy00ODc3LWJlMDYtYzRjZDkyNDBjZTQ4XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob gets extra credit in order to pass his driving test. / SpongeBob and Patrick go to a jellyfishing convention."
+          },
+          {
+            episode: 11,
+            title: "Mermaidman and Barnacleboy III/Squirrel Jokes",
+            airDate: "2001-10-10",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDk3NDU0MTA2Ml5BMl5BanBnXkFtZTgwMDU2MzIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mermaid Man and Barnacle Boy fight one of their toughest enemies, ManRay, after Spongebob and Patrick free him; Spongebob tells mean squirrel jokes."
+          },
+          {
+            episode: 12,
+            title: "Pressure/The Smoking Peanut",
+            airDate: "2001-05-12",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzkyY2EzM2YtYzYyZC00Njk2LTljOWUtOWNkYTE2Y2ZhN2ZkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy and SpongeBob compete in a series of extreme underwater activities; SpongeBob covers up the fact that he caused emotional hurt to an oyster at the zoo."
+          },
+          {
+            episode: 13,
+            title: "Shanghaied/Gary Takes a Bath",
+            airDate: "2001-03-09",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWUwZGE0ZDgtODM1Yy00OGNkLWJjZGEtZDQ4MGRiYWRmNTZiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob, Patrick, and Squidward become unwilling crew members aboard the Flying Dutchman's ghostly pirate ship. Spongebob attempts to give Gary a bath."
+          },
+          {
+            episode: 14,
+            title: "Welcome to the Chum Bucket/Frankendoodle",
+            airDate: "2002-01-22",
+            rating: 9.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjY4MWVkMTUtMzRmMS00ZDVmLWEzMjItZTMzYWUyYTRhMjQ3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "After Mr. Krabs loses a card game to Plankton, Spongebob is forced to work at the Chum Bucket. Later, Spongebob and Patrick discover a magic pencil that brings anything they draw with it to life."
+          },
+          {
+            episode: 15,
+            title: "The Secret Box/Band Geeks",
+            airDate: "2001-09-07",
+            rating: 9.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDQ0OGE0NGMtZTlhNC00MGMzLTkyNWMtZGNlOGE3ODU0YzQwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Curiosity is killing Spongebob as he tries to invite out what is in the box that Patrick keeps with him: Squidward wants to form a marching band."
+          },
+          {
+            episode: 16,
+            title: "Graveyard Shift/Krusty Love",
+            airDate: "2002-09-06",
+            rating: 9.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTlhMDRjZDUtYzlkNC00YTNjLThmZTQtYjM1NjUzOGYxMmIzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "The Krusty Krab is open for 24 hours a day to make more money, and Squidward scares Spongebob with the \"hash slinging slasher.\"/ Ms. Puff comes to the Krusty Krab and Mr. Krabs gets Spongebob's help to woo her."
+          },
+          {
+            episode: 17,
+            title: "Procrastination/I'm with Stupid",
+            airDate: "2001-10-19",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWM0YWRkNjctYmY3NS00MTMwLTg0YTQtNDllNTI3ZGVlMGMwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob must write an essay for Boating School, but he keeps putting it off. Patrick's parents come to visit, and Patrick wants to make a good impression."
+          },
+          {
+            episode: 18,
+            title: "Sailor Mouth/Artist Unknown",
+            airDate: "2001-09-21",
+            rating: 9.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYWZlOGRjYmEtNTYzOS00N2NiLTlhMTUtZDRiMzFkMzU1MWUzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and Patrick learn a curse word and begin using it frequently. Squidward decides to teach an art class, but Spongebob is his only student."
+          },
+          {
+            episode: 19,
+            title: "Jellyfish Hunter/The Fry Cook Games",
+            airDate: "2001-09-28",
+            rating: 8.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjM3NTE2MDg0OV5BMl5BanBnXkFtZTgwMjg2MjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Jellyfish Hunter: When money hungry Mr. Krabs discovers that customers love SpongeBob's special jellyfish jelly Krabby Patty, he convinces Spongebob to bring him as many of the jellyfish as he can. Spongebob easily brings in herds..."
+          },
+          {
+            episode: 20,
+            title: "Squid on Strike/Sandy, SpongeBob, and the Worm",
+            airDate: "2001-10-12",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDljNzJlNzItYjg0Ni00MzllLTk5MDYtOGVlMjNiZDI4ZTA3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy, SpongeBob &amp; The Worm: A large worm is terrorizing Bikini Bottom and SpongeBob is terrified of it. Sandy thinks SpongeBob is chicken and drags him out into the wilderness to take the worm on. When they finally see the worm, ..."
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Algae's Always Greener/SpongeGuard on Duty",
+            airDate: "2002-03-22",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDU2MjQyNTM3M15BMl5BanBnXkFtZTgwMDM2MzIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton uses one of his devices to get a glance into the life of Mr. Krabs, which is not all that he expects it to be; After being mistaken for a lifeguard by Larry, SpongeBob must protect his lie a well as the safety of the beac..."
+          },
+          {
+            episode: 2,
+            title: "Club SpongeBob/My Pretty Seahorse",
+            airDate: "2002-07-12",
+            rating: 9.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTgwNDM4ODU4M15BMl5BanBnXkFtZTgwOTg2MjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward tries to gain access to Spongebob and Patrick's \"secret\" club, the three of them end up stranded in the woods. Spongebob decides to adopt a wild seahorse."
+          },
+          {
+            episode: 3,
+            title: "Just One Bite/The Bully",
+            airDate: "2001-10-05",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTNmYmFlZjItNTkwYS00NTg5LWFiYWUtZDgwNTFhNDg5NWI2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward is forced to eat a Krabby Patty; A large and mean new student joins Mrs. Puff's boating class and immediately decides that he wants to cause bodily harm to SpongeBob."
+          },
+          {
+            episode: 4,
+            title: "Nasty Patty/Idiot Box",
+            airDate: "2002-03-01",
+            rating: 9.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjU0ZDYyZDgtN2Y0NC00MTQ4LWIyMjYtZjgwNzczYmRjNGU0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Believing a health inspector to be an impostor Spongebob and Me, Krabs create a disgusting Krabby Patty to feed him; SpongeBob and Patrick play with a box."
+          },
+          {
+            episode: 5,
+            title: "Mermaidman and Barnacleboy IV/Doing Time",
+            airDate: "2002-01-21",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzAxMzU2OWUtMjA0Yy00NDFlLWEzOTEtMjljZGQwNDA0NjU2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mermaidman and Barnacleboy IV: Mermaidman and Barnacleboy are eating at the Krusty Krab when Mermaidman accidentally drops his utility belt. SpongeBob finds the belt and can't resist it. He takes it home and tries it on. He plays ..."
+          },
+          {
+            episode: 6,
+            title: "Snowball Effect/One Krab's Trash",
+            airDate: "2002-02-22",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWE0NmI4MmQtZWQ0Ni00MDlkLWFhZjAtM2Q5OTc1MWQzYzVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward is annoyed by Spongebob and Patrick's antics in the Snow. / Mr. Krabs accidentally sells Spongebob a priceless item and he tries to get it back."
+          },
+          {
+            episode: 7,
+            title: "As Seen on TV/Can You Spare a Dime?",
+            airDate: "2002-03-08",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGE4ZTE2MjUtOTg4My00MWJhLWFkOTMtMjU5OTg3N2RhNjdiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "As Seen on TV: Krabs makes a low budget commercial and SpongeBob is in it for one second. After the commercial airs once at three in the morning, a blind man recognizes SpongeBob. SpongeBob's head blows up and he tells Mr. Krabs t..."
+          },
+          {
+            episode: 8,
+            title: "No Weenies Allowed/Squilliam Returns",
+            airDate: "2002-03-15",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzVkYzEwODYtNDI0NS00YzA4LTgzMWUtNjZhNjM1ODhjMjQ3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob tries to get into the Salty Spitoon, the toughest club in town. Squidward must turn the Krusty Krab into a five-star restaurant in order to impress his nemesis, Squilliam Fancyson."
+          },
+          {
+            episode: 9,
+            title: "Krab Borg/Rock-a-Bye Bivalve",
+            airDate: "2002-09-17",
+            rating: 8.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjEwMzAwOTkzOF5BMl5BanBnXkFtZTgwNDE2MzIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Krab Borg: SpongeBob stays up late one night watching a sci-fi film where robots take over the world. He comes to work paranoid and Squidward scoffs at him. Through a series of wild coincidences, SpongeBob gets it in his head that..."
+          },
+          {
+            episode: 10,
+            title: "Wet Painters/Krusty Krab Training Video",
+            airDate: "2002-05-10",
+            rating: 9.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjE0MjEzMmMtZTRhMi00ODllLTkzYWUtOTFkMjI3MjcyZGJhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and Patrick spill paint on Mr. Krabs' first dollar. / Instructional spoof episode of everything about the Krusty Krab Restauraunt."
+          },
+          {
+            episode: 11,
+            title: "SpongeBob's House Party (Party Pooper Pants)",
+            airDate: "2002-05-17",
+            rating: 7.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2M3Mjc0ZTgtMGFiNi00NTdmLWE1YzEtZjg0MTM4ODNlZDdkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob's House Party: SpongeBob, while grocery shopping, discovers a \"how to throw a party\" kit. He decides to throw a big party and invites everyone he's ever known. Unfortunately for his guests, SpongeBob plans everything rig..."
+          },
+          {
+            episode: 12,
+            title: "Chocolate with Nuts/Mermaidman and Barnacleboy V",
+            airDate: "2002-06-01",
+            rating: 9.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ4NDAzNDE1NF5BMl5BanBnXkFtZTgwODE2MzIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and Patrick sell chocolate bars to make money. / Barnacleboy turns evil to protest Mermaidman treating him like a child."
+          },
+          {
+            episode: 13,
+            title: "New Student Starfish/Clams",
+            airDate: "2002-09-20",
+            rating: 8.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTk5NDc4MDgyNF5BMl5BanBnXkFtZTgwMDg2MjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "New Student Starfish: It's another day of boating school for SpongeBob, and this time, Patrick wants to come along too. Patrick becomes the new student in SpongeBob's class, and from his introduction, begins getting SpongeBob in t..."
+          },
+          {
+            episode: 14,
+            title: "SpongeBob B.C. (Before Comedy) (Ugh)",
+            airDate: "2004-03-05",
+            rating: 8.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTg3OTExNDI0N15BMl5BanBnXkFtZTgwNTczMzEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Millions of years in the past, prehistoric versions of SpongeBob, Patrick and Squidward discover fire and proceed to use it to cook various food items."
+          },
+          {
+            episode: 15,
+            title: "The Great Snail Race/Mid-Life Crustacean",
+            airDate: "2003-01-24",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDlkMDJkOTgtMjU2Ny00ZmUxLThiN2ItYzdjYjk2YTViNDRhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "The Great Snail Race: Squidward gets a pure-bred snail, Snelle, and decides to race her in the snail races. SpongeBob becomes competitive and enters Gary, coaching him to the point of exhaustion. At the races, Gary fizzles out, an..."
+          },
+          {
+            episode: 16,
+            title: "Born Again Krabs/I Had an Accident",
+            airDate: "2003-10-04",
+            rating: 8.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWM5ZjE1YjYtMWZkOC00MzI3LTlkZmMtYWE3ZDNjNzFkYTBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "\"Born Again Krabs\": Mr. Krabs refuses to let SpongeBob throw away a moldy Krabby Patty that was festering under the grill. He tries to pawn it off on customers to save the fifty-two cents he would have lost if he threw the patty a..."
+          },
+          {
+            episode: 17,
+            title: "Krabby Land/The Camping Episode",
+            airDate: "2004-04-03",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDIzMDI1MGMtMGNhNS00NGZjLTgzMWUtM2MzMTFmNmYyM2UyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs converts the Krusty Krab into an amusement park. Spongebob, Patrick, and Squidward go camping."
+          },
+          {
+            episode: 18,
+            title: "Missing Identity/Plankton's Army",
+            airDate: "2004-01-19",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmNlM2U4ZDUtMWUyYS00OGZkLTkyNzMtZDE1MWUyMGI1ZTIyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "While at a restaurant, SpongeBob tells of how he once lost his own name tag and spent an entire day trying to hunt down the elusive label; Plankton hires an army who happens to be his redneck cousins."
+          },
+          {
+            episode: 19,
+            title: "The Sponge Who Could Fly",
+            airDate: "2003-03-21",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjE4MDllYzctYzQ2MS00ODI3LTk1OTAtZmE2ZDE3MWIwYTE0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Lost Episode (The Sponge Who Could Fly): SpongeBob is jellyfishing when he wistfully realizes that he wants to fly with the jellyfish. He proceeds to come up with numerous ways to fly. He and Patrick try everything from constructi..."
+          },
+          {
+            episode: 20,
+            title: "SpongeBob Meets the Strangler/Pranks a Lot",
+            airDate: "2004-10-11",
+            rating: 9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTk0MWEzNzctNTc0Yi00OGM5LWFiOTQtMzQxZTBkYTRjMGZhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob unknowingly snitches on a notorious strangler, who vows revenge. Later, Spongebob and Patrick prank the whole town by pretending to be ghosts."
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Fear of a Krabby Patty/Shell of a Man",
+            airDate: "2005-05-23",
+            rating: 7.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2E5NjhkOGYtNDIwZS00Y2QxLWI0OTktN2U5YTBkMWM3ZTFhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Fear of a Krabby Patty: The Krusty Krab is now open 24-hours-a-day, which means that the Krusty Krab employees have to work round-the-clock and without a break. At first the prospect of never leaving work is like a dream come true..."
+          },
+          {
+            episode: 2,
+            title: "The Lost Mattress/Krabs vs. Plankton",
+            airDate: "2005-05-13",
+            rating: 8.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmJjYWVhNDItMDRiMi00NjIxLWJmM2EtY2I5NjU0NjJhYjk3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "The Lost Mattress: SpongeBob hears that Mr. Krabs cannot get a good night sleep on his lumpy mattress, so, with the help of Patrick and Squidward, SpongeBob buys Mr. Krabs a brand new mattress and throws the old one away. Once Mr...."
+          },
+          {
+            episode: 3,
+            title: "Have You Seen This Snail?",
+            airDate: "2005-11-14",
+            rating: 8.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWVhNWIxZGItNTExMC00YjMxLWIwN2YtMjMyZTliY2Q1MjMyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Have You Seen This Snail?: While trying to beat a paddle-ball world record, SpongeBob forgets to feed Gary-for several weeks. So Gary runs away to downtown Bikini Bottom where he is taken in by a kindly old woman who confuses him ..."
+          },
+          {
+            episode: 4,
+            title: "Skill Crane/Good Neighbors",
+            airDate: "2005-05-27",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2UwZGJjZTctMjEwMy00ZTM3LThkMzYtZWNlMTE2OGI1NzI3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward becomes obsessed with winning a stuffed animal from the skill crane; SpongeBob and Patrick intrude upon Squidward's day off and try to make a club."
+          },
+          {
+            episode: 5,
+            title: "Selling Out/Funny Pants",
+            airDate: "2005-10-31",
+            rating: 7.4,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 6,
+            title: "Dunces and Dragons",
+            airDate: "2006-02-20",
+            rating: 7.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmNhZGIwYjYtYjViMi00NmJlLWFjOTUtNTBlYzgwMzgyYTkyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Dunces and Dragons: After a freak jousting accident at a Medieval Times-style restaurant, SpongeBob and Patrick are transported to a medieval version of Bikini Bottom. There they are mistaken for great knights and sent on a quest ..."
+          },
+          {
+            episode: 7,
+            title: "Enemy In-Law/Mermaidman and Barnacleboy VI: The Motion Picture",
+            airDate: "2005-10-07",
+            rating: 7.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmMxOTM1NzUtMWFkYy00YTZlLWEyOTMtYjgwOTAwMWVlZGM2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Enemy-In-Law: Mr. Krabs' Mom is dating again, and it seems like things could be serious. Mr. Krabs tries to be happy for his mother, but he is absolutely horrified when he learns that the secret paramour is his arch-rival Plankton..."
+          },
+          {
+            episode: 8,
+            title: "Patrick SmartPants/SquidBob TentaclePants",
+            airDate: "2006-03-05",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTU4NTYxMTEwNV5BMl5BanBnXkFtZTgwNzc2MjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick SmartPants: Patrick becomes smart after getting hit on the head. SquidBob TentaclePants: Sandy's experiment turns Squidward and SpongeBob into one body."
+          },
+          {
+            episode: 9,
+            title: "Krusty Towers/Mrs. Puff, You're Fired",
+            airDate: "2006-04-01",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjZiNzU5NTgtMzUwMi00NTAzLTg5MDItN2Y1YWEzZmJjZmJhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs turns the Krusty Krab into a hotel; SpongeBob's record of failed boating tests caused Mrs. Puff to lose her job."
+          },
+          {
+            episode: 10,
+            title: "Chimps Ahoy/Ghost Host",
+            airDate: "2006-05-05",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzQ5OTc5MzYwOF5BMl5BanBnXkFtZTgwMDY2NDE1NTE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick have to take over some of Sandy's responsibilities to take some of the pressures off while she prepares for a visit from the chimps; The Flying Dutchman can't control his shapeshifting powers to haunt people."
+          },
+          {
+            episode: 11,
+            title: "Whale of a Birthday/Karate Island",
+            airDate: "2006-05-12",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZWZjYjIxZDEtOTY5Yy00NTM0LWJmNTgtM2RmOWFjM2ZiNzJiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs wants to throw a birthday party for Pearl; SpongeBob receives an invitation to take part in a competition."
+          },
+          {
+            episode: 12,
+            title: "All That Glitters/Wishing You Well",
+            airDate: "2006-06-02",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BY2M3NzViMzEtNDQ2OS00OGM5LWFlZmMtZGU5MjM5MDRiMTIxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "All That Glitters: During an intense day on the job, SpongeBob's spatula breaks mid patty-flip. With his favorite kitchen implement out of commission, SpongeBob searches for a temporary replacement. Enter \"Le Spatula,\" the latest ..."
+          },
+          {
+            episode: 13,
+            title: "New Leaf/Once Bitten",
+            airDate: "2006-10-10",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjgzNGI3OGQtMTkzNC00ODI2LWIwN2UtMjQ2ZjY2NGNhZTlkXkEyXkFqcGdeQXVyMTE0NzY5OTk5._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton decides to give up on the Chum Bucket and opens a gift shop; Bikini Botton falls into a mass hysteria after Gary begins biting everyone in town."
+          },
+          {
+            episode: 14,
+            title: "Bummer Vacation/Wigstruck",
+            airDate: "2006-10-17",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGIyODdjOGQtMmQ0Ny00NmYzLTliMTctMGYyZGY0MzdkMjIzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Bummer Vacation: Mr. Krabs is about to be fined for unfair labor practices. It turns out that in all the years he has been working at the Krusty Krab, SpongeBob has never taken a vacation. So Mr. Krabs makes his #1 employee take t..."
+          },
+          {
+            episode: 15,
+            title: "Squidtastic Voyage/That's No Lady",
+            airDate: "2006-10-14",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDM1NjBlYWYtOGU5Ny00MjUwLWJmMWEtZjhmZmQyMWYwYWVlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward swallows his clarinet reed Sandy offers to retrieve the piece./A misunderstanding over an advertisement causes Patrick to think he must \"get out of town.\""
+          },
+          {
+            episode: 16,
+            title: "The Thing/Hocus Pocus",
+            airDate: "2007-01-15",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZWFiYzMwNTAtNDUzOS00YmExLThkZWItMDk5ZmQ1MzFlMWZmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Thing: After a freak bicycling accident, Squidward is coated in so much mud, leaves, branches and gunk to make him totally unrecognizable. The residents of Bikini Bottom think that Squidward is some sort of monster come to ter..."
+          },
+          {
+            episode: 17,
+            title: "Driven to Tears/Rule of Dumb",
+            airDate: "2007-02-19",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTNkNWVkY2YtYzdiNy00Yzc4LTlkMzYtYmI1MWVkYzU5MjljXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Driven to Tears: SpongeBob has failed his driving test-again. Patrick is so outraged by the injustice of it all that he storms into the testing facility and takes the test to prove that it is an unfair test and impossible to pass...."
+          },
+          {
+            episode: 18,
+            title: "Born to Be Wild/Best Frenemies",
+            airDate: "2007-03-31",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmUzYThkYmEtMDBmMi00MjJhLWE4MTAtMjEzNDQ3YjAyZjU0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Born to be Wild: SpongeBob hears that a ferocious biker gang is coming to town, only no one in Bikini Bottom seems bothered by the news. So SpongeBob dons his leather jacket, warms up his bike, and prepares to protect the town all..."
+          },
+          {
+            episode: 19,
+            title: "The Pink Purloiner/Squid Wood",
+            airDate: "2007-03-10",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGU0NDQzNzEtNWI1NC00ZWM3LWI3ZmEtMWM5OWUyNDY1ZTQ4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Pink Purloiner: SpongeBob's favorite jellyfishing net is missing! And worst of all, Patrick may have been the one that stole it. But SpongeBob can't accuse his friend of anything until he can find some hard evidence that the s..."
+          },
+          {
+            episode: 20,
+            title: "Best Day Ever/The Gift of Gum",
+            airDate: "2006-11-29",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzJmMmViYmItZjg3OS00ZWEzLWE3MmUtMjEzYmU0ZWE1ZmZkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Best Day Ever: SpongeBob is going to have the best day ever. First he gets to work at the Krusty Krab. Then he is going to meet Sandy for a little Ka-Ra-Tay, followed by jellyfishing with Patrick, and Squidward's clarinet recital...."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Friend or Foe",
+            airDate: "2007-04-13",
+            rating: 7.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDkwMmU3ZGYtNGIyMi00MGEzLTlkMWEtOTAyMzgzYTdkNzQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Eugene H. Krabs and Sheldon J. Plankton have been business rivals and bitter enemies for longer than anyone can remember, but, one day, during another one of Plankton's failed attempts at stealing the Krabby Patty formula, Eugene ..."
+          },
+          {
+            episode: 2,
+            title: "The Original Fry Cook/Night Light",
+            airDate: "2007-07-31",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDM3MTJiNTctZTk0NS00ODVhLWE3NDctYWRhNmVhMWQzNGQ1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Original Fry Cook: Mr. Krab's old fry cook pays a special visit to the Krusty Krab. SpongeBob is in awe of his predecessor, who has since become a world renowned chef following his departure from Krabs' restaurant. When Sponge..."
+          },
+          {
+            episode: 3,
+            title: "Rise and Shine/Waiting/Fungus Among Us",
+            airDate: "2007-02-19",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTNiYTEwZjUtMWI4Yy00OWU4LThjOTEtMDhiODFiYmNlYmQ3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Rise and Shine: Take a look inside Patrick Star's rock where we see that his morning routine is anything but ordinary. Waiting: SpongeBob discovers that his breakfast cereal has an offer for free toy. After gathering the necessary..."
+          },
+          {
+            episode: 4,
+            title: "Spy Buddies/Boat Smarts/Good Ol' Whatshisname",
+            airDate: "2007-07-23",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWIzOGU2YTMtOWZmMC00NzFlLWI1YmItYjg2M2JlYzFmMGYxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spy Buddies: Determined to uncover Plankton's next devious plot, Mr. Krabs sends SpongeBob and Patrick to spy on him. Boat Smarts: Watch an instructional video on the best (and worst) boating techniques as demonstrated by Squidwar..."
+          },
+          {
+            episode: 5,
+            title: "New Digs/Krabs á la Mode",
+            airDate: "2007-07-25",
+            rating: 7.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWIwODU4YmMtMjFjYS00ZDRmLThlNmQtNWI1ZDAyNDY3Y2RjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "New Digs: After arriving one minute late for work, SpongeBob decides to move into the Krusty Krab so that he will never be late to work again. Krabs a la Mode: When Plankton secretly turns down the thermostat at the Krusty Krab th..."
+          },
+          {
+            episode: 6,
+            title: "Roller Cowards/Bucket, Sweet Bucket",
+            airDate: "2007-07-27",
+            rating: 7.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDlhZGJiMGItNjE4OS00ZDVlLTkyZmItNmY5YmZlODI4MmJiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Roller Cowards: The scariest roller coaster ever has just opened at Bikini Bottom's amusement park. At first SpongeBob and Patrick are determined to ride this monster coaster. But the more they think about how scary it is the more..."
+          },
+          {
+            episode: 7,
+            title: "To Love a Patty/Breath of Fresh Squidward",
+            airDate: "2007-07-26",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmRlOTJjOGItYThiYy00MmVjLTlhMDItYzVkYTc3ZjJlNGMzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob has trouble letting go of a perfect krabby patty; Squidward's personality changes when his security fence electrocutes him."
+          },
+          {
+            episode: 8,
+            title: "Money Talks/SpongeBob vs. The Patty Gadget/Slimy Dancing",
+            airDate: "2007-07-31",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2IwYzRjNjAtYmZiNS00OWI5LWE3YjctODRjZTQ3NTNjN2VkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Money Talks: Mr. Krabs makes a wish that he could talk to money. When his wish is magically granted, Mr. Krabs learns (to his horror) what all of his dollars, pennies and quarters have been longing for: they want Mr. Krabs to spen..."
+          },
+          {
+            episode: 9,
+            title: "The Krusty Sponge/Sing a Song of Patrick",
+            airDate: "2007-02-19",
+            rating: 7.3,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 10,
+            title: "A Flea in Her Dome/The Donut of Shame/The Krusty Plate",
+            airDate: "2007-08-01",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTE5NmZkOTgtYTEzZS00N2E0LWJhZGQtNmFkNjBiZWRhZTIxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "A Flea in Her Dome: Sandy comes back from Texas with fleas and SpongeBob and Patrick try to help Sandy rid her Tree Dome of them. The Donut of Shame: When Patrick accidentally takes SpongeBob's donut he is wracked with guilt over ..."
+          },
+          {
+            episode: 11,
+            title: "Goo Goo Gas/Le Big Switch",
+            airDate: "2007-09-29",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTczMzA1OTc4NF5BMl5BanBnXkFtZTgwNzkzMTIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Goo Goo Gas: Plankton plans on making Mr. Krabs helpless by turning him and the rest of the Krusty Krab staff into babies with a gas he created. Le Big Switch: After being enrolled in a chef exchange program, SpongeBob switches pl..."
+          },
+          {
+            episode: 12,
+            title: "Atlantis SquarePantis",
+            airDate: "2007-11-12",
+            rating: 5.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGExNGUzZmMtM2NjMC00ZDIxLTk0OWMtOTQ2M2Q1NDFhMGUwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When two halves of an ancient medallion reunite, SpongeBob and his friends find themselves in the city of Atlantis, where the king gives them a tour."
+          },
+          {
+            episode: 13,
+            title: "Picture Day/Pat No Pay/Blackjack",
+            airDate: "2007-08-02",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYWZhNTE2ZjItNzE0Yi00NjgzLWE5YzgtZmVhNDJlZmY0NDlmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Picture Day: It's Picture Day for the Boating School Year Book, and SpongeBob has spent all morning getting ready for it. Now all he has to do is make it to Boating School without getting dirty. But this proves to be more difficul..."
+          },
+          {
+            episode: 14,
+            title: "Blackened Sponge/Mermaidman vs. SpongeBob",
+            airDate: "2007-08-03",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmZlMzczZDYtZTljYy00Zjk1LWFlYTctMmJlMmRkMzljMmE2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Blackened Sponge: While trying to wrestle open the cap off of a tube of toothpaste SpongeBob accidentally punches himself in the face leaving behind a hideous black eye. Too embarrassed to tell anyone the truth behind the shiner, ..."
+          },
+          {
+            episode: 15,
+            title: "The Inmates of Summer/To Save a Squirrel",
+            airDate: "2007-11-23",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDk3ZDM1MGEtMzc1Ni00ZWNjLTgzNjMtNzRmNmYwNGU5YmM2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "The Inmates of Summer: Instead of getting on the ship headed for summer camp, SpongeBob and Patrick accidentally board a ship full of prisoners on their way to jail on Inferno Island. To Save a Squirrel: SpongeBob and Patrick stow..."
+          },
+          {
+            episode: 16,
+            title: "Pest of the West",
+            airDate: "2008-04-15",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYzcxZmEwNGEtZTY1Zi00NDM5LTgyOWMtNmQwOTE2ZmYyMjUyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Pest of the West: While researching his family tree SpongeBob discovers that he was related to the great Western hero, and famous chili-slinger, SpongeBuck. The tale of his ancestor's fame begins in the town of Dead Eye Gulch, whi..."
+          },
+          {
+            episode: 17,
+            title: "20,000 Patties Under the Sea/The Battle of Bikini Bottom",
+            airDate: "2007-11-23",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjQzYzZiOWQtNGYwZS00YzRhLTg5YzMtYTdmYTMxOGNmNGVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "20,000 Patties Under the Sea: SpongeBob and Mr. Krabs turn an old submarine into a mobile Krusty Krab. Not to be undone by his competitor's new gimmick, Plankton responds with his own traveling Chum Bucket, and the two rival resta..."
+          },
+          {
+            episode: 18,
+            title: "Whatever Happened to SpongeBob? (WhoBob WhatPants)",
+            airDate: "2008-10-13",
+            rating: 6.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDQ5NDRmNWUtZjJkMi00NzMwLWJkZDktMjk2NGNhZWI5MDM5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Whatever Happened to SpongeBob? (WhoBob WhatPants): When SpongeBob tries to spend some quality time with his friends, he just ends up being a nuisance to everyone instead. They all tell him to go away, so with a heavy heart, Spong..."
+          },
+          {
+            episode: 19,
+            title: "The Two Faces of Squidward/SpongeHenge",
+            airDate: "2007-11-23",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjYyYmFlODQtYmIyMS00MDNlLTk2MWMtMjMwMTUzYjZjYTM2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Two Faces of Squidward: Squidward is rushed to the hospital when SpongeBob accidentally slams the door on Squidward's face. He undergoes surgery to have his face fixed to look normal again-but things don't go exactly as planne..."
+          },
+          {
+            episode: 20,
+            title: "Banned in Bikini Bottom/Stanley S. SquarePants",
+            airDate: "2007-11-23",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMmYxYmQ4MWUtZmY0YS00NDNjLWE5MTgtMWUwZWMwNmQ5NmJjXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Banned in Bikini Bottom: SpongeBob loves Krabby Patties so much, he just can't help singing and dancing when he's around the delicious sandwiches. But Miss Priss, who is against all things fun and delicious, is appalled by his beh..."
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "House Fancy/Krabby Road",
+            airDate: "2008-03-03",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjM4ZGNhNmUtOTQzOS00NzhhLWI0Y2UtOTBhMWU3NTY1ZDdmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "House Fancy: Squidward is enraged when he sees the home of his rival, Squilliam featured on a TV show about fancy houses. Determined not to be outdone, Squidward arranges to have his own house on the program. But he quickly realiz..."
+          },
+          {
+            episode: 2,
+            title: "Penny Foolish/Nautical Novice",
+            airDate: "2008-03-07",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDNlZDBlMDMtOThiMy00Mjg0LWEzMDQtZDk2Y2ZmM2U3NTRjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Penny Foolish: When Mr. Krabs sees SpongeBob pick a penny up off the street, he becomes obsessed with the coin and vows to have it in his possession no matter what it takes. Nautical Novice: SpongeBob's boating school class is goi..."
+          },
+          {
+            episode: 3,
+            title: "Spongicus/Suction Cup Symphony",
+            airDate: "2008-03-06",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDcyY2M2OWUtOWVhMy00MTRjLWFmOGEtZGU0YmY1YTExNzA2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongicus: Plankton has demolished the Chum Bucket! In its place, he has built a Roman coliseum and announces there will be a gladiator show, which means togas, chariots, and ferocious lionfish. And on top of all that, it's free! ..."
+          },
+          {
+            episode: 4,
+            title: "Not Normal/Gone",
+            airDate: "2008-03-04",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTM4ZjhhZmQtYWRhZi00MDkwLWIyZTAtMmE2M2JjNWRiMjZiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Not Normal: When Squidward points out to SpongeBob that he's not normal, SpongeBob makes it his mission to become normal. SpongeBob begins to lose all his spongey-ness, and it's not long before he's completely unrecognizable, even..."
+          },
+          {
+            episode: 5,
+            title: "The Splinter/Slide Whistle Stooges",
+            airDate: "2008-06-02",
+            rating: 4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDRiNDgyMGItZTA4OC00NWQ2LTgzYjMtNTFkMTQzODA0ZGQ5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob tries to remove a splinter before Mr. Krabs learns about it and sends him home early; SpongeBob and Patrick get new slide whistles and keep playing them, much to the annoyance of Squidward."
+          },
+          {
+            episode: 6,
+            title: "A Life in a Day/Sun Bleached",
+            airDate: "2008-06-04",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTY1NGE5ZGEtM2Q5Zi00NDM1LWE0MjUtZTk1NzQxODhhYjQxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A Life in a Day: Everyone is in awe of Larry the Lobster's daredevil ways, especially SpongeBob and Patrick. Patrick decides that it's time for them to start living like Larry, but SpongeBob isn't so sure. Sun Bleached: Everybody ..."
+          },
+          {
+            episode: 7,
+            title: "Giant Squidward/No Nose Knows",
+            airDate: "2008-06-03",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzNhN2NhNzYtODgyYy00Yjg3LTlkOTAtYzE2YzgzYTNlZWVjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Giant Squidward: When Squidward gets spritzed with plant growth spray, he becomes monstrously huge. SpongeBob and Patrick are thrilled because they now have a giant buddy to play games with. But the citizens of Bikini Bottom are t..."
+          },
+          {
+            episode: 8,
+            title: "The Patty Caper/Plankton's Regular",
+            airDate: "2008-08-05",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTI2OTQ4MDY1OF5BMl5BanBnXkFtZTgwMjEwMTIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Patty Caper: The Krabby Patty formula has been placed in a vault far away for safe keeping. When Mr. Krabs forgets the recipe, he gives SpongeBob the key to the vault and sends him on a train ride to retrieve the formula. But ..."
+          },
+          {
+            episode: 9,
+            title: "Boating Buddies/The Krabby Kronicle",
+            airDate: "2008-08-07",
+            rating: 6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2ZkYThlZDgtMTc2Ny00ZjA5LTljNDctZDc0Yjk4NzlkZDE0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Boating Buddies: In an attempt to get away from SpongeBob, Squidward drives off in his boat as fast as he can. But he's stopped in his tracks when he's pulled over by a cop and is ordered to go to boating school. Now Squidward has..."
+          },
+          {
+            episode: 10,
+            title: "The Slumber Party/Grooming Gary",
+            airDate: "2008-11-28",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWFjYTI2YzItMzc2Zi00YzZlLTgzMjAtZWEyNDQxMWU0OTA0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Slumber Party: Pearl's getting ready for her slumber party, but Mr. Krabs' meddling in the party preparations is getting out of control. Pearl forces him out of the house and orders him to stay at SpongeBob's house until the p..."
+          },
+          {
+            episode: 11,
+            title: "SpongeBob SquarePants vs. The Big One",
+            airDate: "2009-04-17",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjY1OWZlNzYtMGUxZi00N2NlLWIxNzAtY2YxYmM5ZWJjNzZlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob and his friends are swept away by a giant wave and find themselves stranded on a remote tropical island. In order to get home, they must learn how to surf from enigmatic surf guru: Jack Kahuna Laguna."
+          },
+          {
+            episode: 12,
+            title: "Porous Pockets/Choir Boys",
+            airDate: "2008-11-28",
+            rating: 5.7,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 13,
+            title: "Krusty Krushers/The Card",
+            airDate: "2008-11-28",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTU2MTUxOTk3NF5BMl5BanBnXkFtZTgwNTkxNjE1NTE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Krusty Krushers: Mr. Krabs hatches up yet another get-rich-quick scheme: professional wrestling! But Mr. Krabs isn't the one who's going to wrestle. He's going to be the manager and money-handler-for the newest tag-team wrestlers ..."
+          },
+          {
+            episode: 14,
+            title: "Dear Vikings/Ditchin'",
+            airDate: "2008-11-28",
+            rating: 6.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODM3NTUyMjQzNl5BMl5BanBnXkFtZTgwMDczNjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Dear Vikings: There's a new Viking-themed promotion at the Krusty Krab, so SpongeBob is determined to find out everything there is to know about Vikings. And what better way to find out about Vikings than to talk to them himself? ..."
+          },
+          {
+            episode: 15,
+            title: "Grandpappy the Pirate/Cephalopod Lodge",
+            airDate: "2009-02-17",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzg2MmU2MDUtM2YzYi00NWMzLWEwOWYtYmZjZDU2YjY5OGQyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Grandpappy the Pirate: Mr. Krabs' granddad is coming to town! But instead of being excited, Mr. Krabs is nervous because his swarthy pirate granddad thinks that Mr. Krabs is a pirate, too. Will Mr. Krabs be able to fool his grandd..."
+          },
+          {
+            episode: 16,
+            title: "Squid's Visit/To Squarepants or Not to Squarepants",
+            airDate: "2009-07-17",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDZlYzdiOGItODRlNi00NWI2LWI1NTUtODZiNWNjOTJhOTFiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob's pants have shrunk in the dryer, so he buys some new, round pants, but no one recognises him."
+          },
+          {
+            episode: 17,
+            title: "Shuffleboarding/Professor Squidward",
+            airDate: "2009-02-16",
+            rating: 5.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTA2NDQxNjU1MTleQTJeQWpwZ15BbWU4MDcyNTMyMzIx._V1_.jpg",
+            duration: "23 min",
+            overview: "A-SpongeBob and Patrick get carried away when they fill in for Mermaidman and Barnacleboy. B-Squidward poses as the teacher at a prestigious music school."
+          },
+          {
+            episode: 18,
+            title: "Pet or Pests/Komputer Overload",
+            airDate: "2009-03-18",
+            rating: 5.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTBiYjY3M2UtYjc0ZC00N2NlLWFjZjUtOTY4MjljMGY3Zjg0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Pets or Pests: SpongeBob adopts a stray worm, and to his surprise, the worm gives birth to some worm babies overnight! But since Gary won't play nice, SpongeBob needs to find loving homes for his new slimy, weird-looking friends. ..."
+          },
+          {
+            episode: 19,
+            title: "Gullible Pants/Overbooked",
+            airDate: "2009-06-05",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDNlYTQxYjctZGIxYy00MTA4LWI4ZTItODUzMzllYjA2NGY3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Gullible Pants: SpongeBob is left in charge of the Krusty Krab while Mr. Krabs steps out for 15 minutes, and he is determined to make it the best-managed 15 minutes ever! So when Squidward tells him that there are a lot of rules t..."
+          },
+          {
+            episode: 20,
+            title: "No Hat for Pat/Toy Store of Doom",
+            airDate: "2009-03-17",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjFlMDUxM2ItMGRhYi00ZGUyLWFjYTEtMjI3ZGI3ODQwNjM2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "No Hat for Pat: Patrick is sick of all of his friends not being able to play with him because they have to put on their Krusty Krab hats and go to work. So when Mr. Krabs offers him a job as a sign-holder, Patrick is thrilled beca..."
+          },
+          {
+            episode: 21,
+            title: "Sand Castles in the Sand/Shell Shocked",
+            airDate: "2009-03-16",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTBiOTE3OGUtMjVhYy00M2U3LTlkNWQtMjFlZmI0Zjg0NmE2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob breaks Gary's shell and tries to get him a new one at Angry Jack's Shell Imporium."
+          },
+          {
+            episode: 22,
+            title: "Chum Bucket Supreme/Single Cell Anniversary",
+            airDate: "2009-06-03",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGExNjk1ZjctNWQ4Zi00NjE5LTgwYmMtMjE4OGFiNWQ1NTY2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Chum Bucket Supreme: None of Plankton's intellectually advanced advertising slogans for the Chum Bucket seem to be working. Plankton decides to switch gears by hiring someone who can create the dumbest slogans ever-Patrick! Single..."
+          },
+          {
+            episode: 23,
+            title: "Truth or Square",
+            airDate: "2009-11-06",
+            rating: 5.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjI1Nzg5OWItZWI4NC00NzM5LTg1ODQtOGQxOTYwODA4NTU1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The cast look back on major events in their lives; Patchy hosts a star-studded anniversary special."
+          },
+          {
+            episode: 25,
+            title: "Pineapple Fever/Chum Caverns",
+            airDate: "2009-07-18",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGYzNDc0NGEtMDU1MC00ZDEzLWE4ZGQtYzhhYzJkMDE1NTFjXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton discovers an underground cave which he decides to convert into part of the Chum Bucket. The Chum Buket becomes popular because of the great scenery and threatens to put the Krusty Krabs out of business."
+          },
+          {
+            episode: 26,
+            title: "The Clash of Triton",
+            airDate: "2010-07-05",
+            rating: 5.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTk1OTkyMzI5NF5BMl5BanBnXkFtZTgwMjQ0MTM1NTE@._V1_.jpg",
+            duration: "23 min",
+            overview: "King Neptune hosts a party, inviting all of the sea creatures. SpongeBob is jealous of the royal chef."
+          }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "Tentacle-Vision/I Heart Dancing",
+            airDate: "2009-07-19",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWNhOGFmMmYtYjVhMC00YTI3LTlmYzMtODBjYzBjNDg4NGIyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Tenacle-vison: Squidward becomes the star of his own public access TV show. I Heart Dancing: Squidward tries to sabotage SpongeBob's big dance audition."
+          },
+          {
+            episode: 2,
+            title: "Growth Spout/Stuck in the Wringer",
+            airDate: "2009-07-19",
+            rating: 4.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2Y0MDI3NDgtM2U0YS00YzNlLThjMWYtYmYxODBlOTIyNmI5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Growth Spout: Mr. Krabs tries to find enough food to feed Pearl as she goes through her growth spurt. Stuck in the Wringer: After showering, SpongeBob gets stuck in his wringer."
+          },
+          {
+            episode: 3,
+            title: "Someone's in the Kitchen with Sandy/The Inside Job",
+            airDate: "2009-07-19",
+            rating: 5.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjU0ZDdlMGYtNzE3Mi00Zjc5LWExZDMtMzllZmNjM2FkODQ0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Someone's in the Kitchen with Sandy: Plankton steals Sandy's fur to disguise himself as Sandy and get the Krabby Patty formula. The Inside Job: Plankton goes inside SpongeBob's head to get the Krabby Patty formula."
+          },
+          {
+            episode: 4,
+            title: "Greasy Buffoons/Model Sponge",
+            airDate: "2009-11-27",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDVlZjMwYjAtOWI4OS00Nzc4LWJjZTAtYTVjZDVkYTMyZTFlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Greasy Buffoons: Mr. Krabs and Plankton woo customers with greasy entrees. Model Sponge: SpongeBob tries a career at being a model in a kitchen sponge commercial."
+          },
+          {
+            episode: 5,
+            title: "Keep Bikini Bottom Beautiful/A Pal for Gary",
+            airDate: "2010-01-02",
+            rating: 3.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjIxZWY3YzgtNmRhZi00MjIxLTkwODEtZGFmNDA2OGU1NjgzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward cleans up the city of Bikini Bottom with 'help' from SpongeBob.SpongeBob brings Gary a pet that terrorizes him."
+          },
+          {
+            episode: 6,
+            title: "Yours, Mine and Mine/Kracked Krabs",
+            airDate: "2010-09-11",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGJlMWM3ODAtZWUyNi00ZTA0LWE0MWEtNmIwZDQ0OWQ3NDJjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick buy a toy and have to learn to share it./SpongeBob goes with Mr. Krabs to the Cheapest Crab Convention."
+          },
+          {
+            episode: 7,
+            title: "The Curse of Bikini Bottom/Squidward in Clarinetland",
+            airDate: "2010-03-24",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ0NTQ0MTMwNV5BMl5BanBnXkFtZTgwNTc5MDIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward requires Mr. Krabs to give him extra space for his clarinet, he is forced to share a locker with Spongebob. But, his paranoia drives him \"literally\" crazy."
+          },
+          {
+            episode: 8,
+            title: "SpongeBob's Last Stand",
+            airDate: "2010-04-22",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjU2YzQ0YjEtOTE0Ny00OWFmLWJmZGEtN2VkYmVhYWE4ZTc0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick protest the construction of a highway that would destroy Jellyfish Fields."
+          },
+          {
+            episode: 9,
+            title: "Back to the Past/The Bad Guy Club for Villains",
+            airDate: "2010-02-15",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWMzMmNlMjEtOTdhMS00NTNlLWFmZmQtNTQyMGQ3Y2M0N2UxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick go back in time to see the young Mermaidman and Barnacleboy. SpongeBob and Patrick watch their heroes fight bad guys in a classic Mermaidman and Barnacleboy episode."
+          },
+          {
+            episode: 10,
+            title: "A Day Without Tears/Summer Job",
+            airDate: "2010-03-22",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTMxYzExZWQtNmYwNi00MjZlLWI5NTItODUxZDU1NGI0Y2YzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward bets SpongeBob he can't go a day without crying.Mrs. Puff has to work through her summer break at the Krusty Krab."
+          },
+          {
+            episode: 11,
+            title: "One Coarse Meal/Gary in Love",
+            airDate: "2010-02-06",
+            rating: 3.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzQ4ZDJmYjctMTBmNi00ZTkxLTk4MDUtZjkzYTkwNWJlYjllXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs finds out that Plankton's afraid of whales.Gary falls for a snail named Mary."
+          },
+          {
+            episode: 12,
+            title: "The Play's the Thing/Rodeo Daze",
+            airDate: "2010-02-06",
+            rating: 5.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjM2OTgwMDQ5Nl5BMl5BanBnXkFtZTgwNzgyMjIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs opens a Dinner Theater at the Krusty KrabSpongeBob takes his pals to Texas to see Sandy in a squirrel rodeo."
+          },
+          {
+            episode: 13,
+            title: "Gramma's Secret Recipe/The Cent of Money",
+            airDate: "2010-07-06",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMGYyMmQzNzYtZGFlNi00YWUyLWJmYTEtOTNkMTc5OWI4OTRlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton disguises himself as SpongeBob's grandmother.Mr. Krabs uses Gary to find spare change."
+          },
+          {
+            episode: 14,
+            title: "The Monster Who Came to Bikini Bottom/Welcome to the Bikini Bottom Triangle",
+            airDate: "2011-01-28",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjkwZTc1NmMtYjcxYi00Y2JhLTlkNzctZTAyYWFmOTZhNWJiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A monster terrorizes Bikini Bottom./All the Bikini Bottom citizens disappear."
+          },
+          {
+            episode: 15,
+            title: "The Curse of the Hex/The Main Drain",
+            airDate: "2011-06-11",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDE1NjQ1NTItZTQwOC00OGY1LTk1ZmUtOTU4ODhkOTdkYWViXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Madam Hagfish puts a hex on the Krusty Krab, and SpongeBob and Patrick search for a legendary drain on the ocean floor."
+          },
+          {
+            episode: 16,
+            title: "Trenchbillies/Sponge-Cano!",
+            airDate: "2011-01-28",
+            rating: 5.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWU5NTRhYzYtMDhiOC00ZmZjLTk3NWYtMzI2MzI2YTAzNGZjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick are held prisoners by a backward gang. A volcanic eruption brings an ancient warrior to Bikini Bottom with dire predictions."
+          },
+          {
+            episode: 17,
+            title: "The Great Patty Caper",
+            airDate: "2010-11-11",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWJkZWRmZDEtZmE5MC00YWFiLWIyY2UtYzJlNDFlMWIzZTFjXkEyXkFqcGdeQXVyMTE0NzY5OTk5._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob, Patrick and Plankton solve a mystery on a runaway train."
+          },
+          {
+            episode: 18,
+            title: "That Sinking Feeling/Karate Star",
+            airDate: "2010-07-08",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTc1OTcxMDc0OV5BMl5BanBnXkFtZTgwOTcwMzIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick dig a tunnel between their two houses and drive Squidward nuts.Pat learns just enough karate to wreak havoc in Bikini Bottom."
+          },
+          {
+            episode: 19,
+            title: "Buried in Time/Enchanted Tiki Dreams",
+            airDate: "2010-06-19",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGRhMDQ5ZTUtZGRlMC00NWNhLTlmNDctZTUxNzk3MGI0ZTg0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob, Patrick and Squidward get trapped inside a time capsule./SpongeBob and Patrick build Squidward a tiki land in order to give him some much-needed relaxation."
+          },
+          {
+            episode: 20,
+            title: "The Abrasive Side/Earworm",
+            airDate: "2010-11-27",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODNkZmMyNmMtYjhhNS00MGJkLTlhNjYtZmY4NzUwZWZkYzQxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob orders a product that will help him learn to say no; SpongeBob gets a song stuck in his head."
+          },
+          {
+            episode: 21,
+            title: "Hide and Then What Happens?/Shellback Shenanigans",
+            airDate: "2010-08-09",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDBkNjU4OTItYTQyMS00MDMxLWI0YjItZjQ1MDgzYzU4ZTAxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton masquerades as Gary to steal the Krabby Patty formula./SpongeBob and Patrick play Hide N' Seek and SpongeBob searches the world for Patrick."
+          },
+          {
+            episode: 22,
+            title: "The Masterpiece/Whelk Attack",
+            airDate: "2010-10-02",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGI0NjIzZjktMWFkMS00YmE1LWI4ZDUtODQwYjI1NjE5ZGYxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward sculpts a statue of Mr. Krabs for The Krusty Krab./Giant sea whelks terrorize the folks of Bikini Bottom."
+          },
+          {
+            episode: 23,
+            title: "You Don't Know Sponge/Tunnel of Glove",
+            airDate: "2010-08-09",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjViNWM2YTktYTJmNC00ZjdiLTg3MTMtODQ4MWE5ZGY5MDZkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob is frustrated when Patrick can't remember any information about him. A ride at Glove World stops working, leaving Pearl stranded inside with Spongebob."
+          },
+          {
+            episode: 24,
+            title: "Krusty Dogs/The Wreck of the Mauna Loa",
+            airDate: "2010-10-09",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWYyNjJjZDItMjg0YS00MzcwLThjMWMtOGU2NWIwMTU4MjZmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs decides to start selling hot dogs instead of Krabby Patties./SpongeBob and Patrick discover a lost ship."
+          },
+          {
+            episode: 25,
+            title: "New Fish in Town/Love That Squid",
+            airDate: "2011-02-12",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjNkNzUxNjYtOWIzOC00YWJlLThiN2YtYWY1Nzk5ZDUyM2VmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A new neighbor moves in and becomes Squidward's best friend./Spongebob helps Squidward prepare for a date."
+          },
+          {
+            episode: 26,
+            title: "Big Sister Sam/Perfect Chemistry",
+            airDate: "2011-02-26",
+            rating: 5.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTg0MzU5MDMzOF5BMl5BanBnXkFtZTgwMTUzMjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick's big sister Samantha comes for a visit./Sandy and Plankton bond over their shared love."
+          }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          {
+            episode: 1,
+            title: "Accidents Will Happen/The Other Patty",
+            airDate: "2011-06-25",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWM1YjJiZmItZjIwYi00ZTdlLWIzMzUtN2QwOGIzNGU0ZTZmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward gets hurt on the job, he threatens to take legal action unless Mr. Krabs agrees to cater to him hand and foot. Mr. Krabs and Plankton find a common enemy in the popular new \"Flabby Patty\" restaurant."
+          },
+          {
+            episode: 2,
+            title: "Drive Thru/The Hot Shot",
+            airDate: "2011-06-18",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzVlOWM5MTMtNzg4NS00ZDRjLTkxYzQtNTlmYmRjZjUyOWVhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Accidents Will Happen: When Squidward gets hurt on the job, he threatens to take legal action unless Mr. Krabs agrees to cater to him hand and foot. Mr. Krabs and Plankton find a common enemy in the popular new \"Flabby Patty\" rest..."
+          },
+          {
+            episode: 3,
+            title: "A Friendly Game/Sentimental Sponge",
+            airDate: "2011-04-02",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODY2ODY2ODI2OF5BMl5BanBnXkFtZTgwNTU4MTEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick build an indoor miniature golf course in SpongeBob's house./SpongeBob has trouble throwing anything away when he realizes how many memories are attached to all his possessions."
+          },
+          {
+            episode: 4,
+            title: "Frozen Face-Off",
+            airDate: "2011-07-15",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTZlNTI0NzMtNWM4NC00MzRmLTkzYjUtNWVlMzhiNGQwYjkxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "All of Bikini Bottom enters a sleigh race to win $1 million. While racing, they are attacked by the abominable snow mollusk. Plankton takes advantage of everyone being gone to steal the Krabby Patty secret formula."
+          },
+          {
+            episode: 5,
+            title: "Squidward's School for Grown Ups/Oral Report",
+            airDate: "2011-06-04",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjYxYTAwMjItMWFiMC00NjI3LWIyNDctZjgwNzRhYWJiOWFjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When Patrick suddenly grows a very grown-up beard, he decides it's time to act like a grown-up and perhaps Squiward is the perfect squid to help him. But can it be done without leaving SpongeBob heartbroken?/While preparing to giv..."
+          },
+          {
+            episode: 6,
+            title: "Sweet and Sour Squid/The Googly Artiste",
+            airDate: "2011-07-20",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTJhODIxOGItMTFlZi00NzMyLWI3Y2ItOWE2OGQyYTgwNGNiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton tries to befriend Squidward so he can get the Krabby Patty formula.When an art critic deems Patrick a true artiste for his rocks-with-googly-eyes creations, everyone in Bikini Bottom clamors for a Patrick original."
+          },
+          {
+            episode: 7,
+            title: "SquarePants Family Vacation",
+            airDate: "2011-11-11",
+            rating: 5.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGZjNzczYjktNDgxNi00ZDNlLWE2YmQtNzJkZDI3ZmY3MWVhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "While on a family road trip to the Great Barrier Reef, SpongeBob and Patrick get lost and end up on the adventure of a lifetime."
+          },
+          {
+            episode: 8,
+            title: "Patrick's Staycation/Walking the Plankton",
+            airDate: "2011-11-07",
+            rating: 6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTc5NjYyMTg4Nl5BMl5BanBnXkFtZTgwMjQ4ODEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick wants to take a vacation, but can't afford one--until SpongeBob comes up with the perfect solution: a \"staycation\"!Mr. Krabs and SpongeBob win a free cruise thanks to Plankton, who secretly goes with them to try to steal t..."
+          },
+          {
+            episode: 9,
+            title: "Mooncation/Mr. Krabs Takes a Vacation",
+            airDate: "2011-11-09",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmQ1YWViYzgtNTM2Zi00NWIxLTk5MWItNjU4ZWZmNjQ4ZTY5XkEyXkFqcGdeQXVyMTQ3ODI2OTQz._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob accidentally stows away on Sandy's vacation to the Moon. Mr. Krabs takes Pearl and SpongeBob on a vacation to the Ocean Mint."
+          },
+          {
+            episode: 10,
+            title: "Ghoul Fools",
+            airDate: "2011-10-21",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjIyNjg0NzA4MV5BMl5BanBnXkFtZTgwNjU2NjEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick find a houseboat haunted by a crew of ghost pirates--and get caught in the feud between them and the Flying Dutchman."
+          },
+          {
+            episode: 11,
+            title: "Mermaid Man Begins/Plankton's Good Eye",
+            airDate: "2011-09-23",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTlhMWU2NmUtNWI2NS00NzAwLTllY2MtZjdmNjI0Y2U2NGJjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick learn the secret origins of Mermaid Man and Branacle Boy from the heroes themselves. Plankton grows himself a second eye using SpongeBob's DNA, and becomes nice."
+          },
+          {
+            episode: 12,
+            title: "Barnacle Face/Pet Sitter Pat",
+            airDate: "2011-09-16",
+            rating: 4.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjI0MTcyMDg3OV5BMl5BanBnXkFtZTgwNTE1NDEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Barnacle Face: The night before the big school dance, Mr. Krabs asks SpongeBob to help Pearl get rid of a barnacle on her face. Pet Sitter Pat: When SpongeBob gets invited to his Grandma's birthday party, he asks Patrick to pet-si..."
+          },
+          {
+            episode: 13,
+            title: "House Sittin' for Sandy/Smoothe Jazz at Bikini Bottom",
+            airDate: "2011-09-30",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzMzNDg5MDM2NV5BMl5BanBnXkFtZTgwMTI1MzEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob house-sits for Sandy; SpongeBob and Squidward go to the Kelpy G concert."
+          },
+          {
+            episode: 14,
+            title: "Tunnel of Glove/Love That Squid",
+            airDate: "2011-02-12",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTA4OTM2MjM1NzZeQTJeQWpwZ15BbWU4MDcwMzcxNTUx._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick take a friendship test./Pearl is embarrassed when she must sit next to SpongeBob in the Tunnel of Glove."
+          },
+          {
+            episode: 14,
+            title: "Bubble Troubles/The Way of the Sponge",
+            airDate: "2011-11-25",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTA4OTM2MjM1NzZeQTJeQWpwZ15BbWU4MDcwMzcxNTUx._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick take a friendship test./Pearl is embarrassed when she must sit next to SpongeBob in the Tunnel of Glove."
+          },
+          {
+            episode: 15,
+            title: "The Krabby Patty That Ate Bikini Bottom/Bubble Buddy Returns",
+            airDate: "2011-11-25",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTJlZDkyNjEtMGJkNi00OThiLWE2ZWItNDhhZTgzZjkwZmQ5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr Krabs uses Sandy's experimental growth formula on a Krabby Patty with disastrous results.SpongeBob tries to keep Bubble Buddy's visiting son, Shiny, out of trouble and away from sharp edges."
+          },
+          {
+            episode: 16,
+            title: "Restraining SpongeBob/Fiasco!",
+            airDate: "2012-04-02",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzAzNjE3ODc3MF5BMl5BanBnXkFtZTgwMzU3NTEzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward has had enough of SpongeBob's annoying antics and issues a restraining order against him.Plankton thinks he's stolen a Krabby Patty from the Krusty Krab, but he's really stolen an art piece by the famous artist, Fiasco."
+          },
+          {
+            episode: 17,
+            title: "Are You Happy Now?/Planet of the Jellyfish",
+            airDate: "2012-03-31",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTdmNTNhMGQtYTEyOC00N2FiLTk2NjMtNWJhMmI1ZTI0Njk5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward has trouble recalling his happiest memory; SpongeBob and Sandy must defeat an evil Jellien overlord who has replaced everyone with clones."
+          },
+          {
+            episode: 18,
+            title: "Free Samples/Home Sweet Rubble",
+            airDate: "2012-04-04",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTYyYTJlMDYtY2IzNS00NDZhLWI4NGMtZDMyMzJjZjc3MDA4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs is forced to give out free food to win back customers. SpongeBob needs all of his friends to help him remodel his pineapple."
+          },
+          {
+            episode: 19,
+            title: "Karen 2.0/InSpongeiac",
+            airDate: "2012-04-09",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMmQ0OTMxMmMtZGIzNy00ODgxLTk3ODEtYjIwMDU1YjczNDdlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When Plankton replaces his computer wife Karen with the new, better Karen 2, the original Karen ends up working at the Krusty Krab. / SpongeBob can't get to sleep, and asks for help from Patrick... who can't stay awake."
+          },
+          {
+            episode: 20,
+            title: "Face Freeze!/Glove World R.I.P.",
+            airDate: "2012-04-03",
+            rating: 5.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmE2ZjQxYmEtMDg0Ni00MTFiLTg1YjAtMDUyMzJhM2VmODY1XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick make a bet to see who can hold a \"funny face\" the longest...then their faces freeze that way!SpongeBob and Patrick spend one last glorious - and dangerous - day at Glove World before it closes for good."
+          },
+          {
+            episode: 21,
+            title: "Squiditis/Demolition Doofus",
+            airDate: "2012-04-11",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWJiZGU4NTktZDNhNC00YThjLTk3ZTgtYjI5ODYwMzg0NzA2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward goes home sick with a fake illness, SpongeBob HypochondriacPants thinks he's caught it for real!Mrs. Puff finally finds a use for SpongeBob's reckless driving and enters him in the Demolition Derby!"
+          },
+          {
+            episode: 22,
+            title: "Treats!/For Here or to Go",
+            airDate: "2012-04-10",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjVhZDI3YzItODM3MC00OGFmLTg4ODgtZjFkNDlkNjk1ZWZhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob brings home a box of new snail treats that Gary will do anything to get - especially when they run out. / Plankton wins a free Krabby Patty, and Mr. Krabs will do anything to stop him from collecting."
+          },
+          {
+            episode: 23,
+            title: "It's a SpongeBob Christmas!",
+            airDate: "2012-11-23",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTUyYjFlMGYtNGMxMy00YzdiLWIzZTMtYjY2NTVkNWI2Njk2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton, Mr. Krabs' nemesis, vows to get his Christmas wish - obtaining the Krusty Krab's secret Krabby Patty formula - by turning everyone bad in Bikini Bottom with the help of his special jerktonium-laced fruitcake."
+          },
+          {
+            episode: 24,
+            title: "Super Evil Aquatic Villain Team Up Is Go!/Chum Fricassee",
+            airDate: "2012-10-27",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTc4ZDhlYWEtNWIxMC00NWE5LWFhOTQtYzA2NjU0YmE3MGY0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton teams up with Man Ray to take over the Krusty Krab. Squidward quits his job and starts working at the Chum Bucket, where his new chum recipe becomes a success."
+          },
+          {
+            episode: 25,
+            title: "The Good Krabby Name/Move It or Lose It",
+            airDate: "2012-10-21",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE0ODQ4MTM1MV5BMl5BanBnXkFtZTgwMTQ5MjIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Who lives in a pineapple under the sea? SpongeBob SquarePants! Follow the adventures of this enthusiastic, optimistic sponge whose good intentions inevitably lead him and his friends into trouble."
+          },
+          {
+            episode: 26,
+            title: "Hello Bikini Bottom!",
+            airDate: "2012-10-08",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjBjNjc5OTAtZDc3Yi00MDMwLTliMmItODBhYjdhMTQ0M2JiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Squidward form a band and go on tour with Mr. Krabs as their manager and Patrick as their roadie, but they experience several difficulties along the way."
+          },
+          {
+            episode: 31,
+            title: "For Here or to Go?",
+            airDate: "2012-04-12",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTY2MTM0MDE0N15BMl5BanBnXkFtZTgwNDAwMjIzMjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob brings home a box of new snail treats that Gary will do anything to get - especially when they run out. / Plankton wins a free Krabby Patty, and Mr. Krabs will do anything to stop him from collecting."
+          }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          {
+            episode: 1,
+            title: "Extreme Spots/Squirrel Record",
+            airDate: "2012-07-21",
+            rating: 6.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGY5ODRhZGUtYjUwNi00ZTY0LTk1ZTItODg0ZTg3NmIwY2MzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick attempt to join Johnny Krill's extreme sports team. Sandy is determined to break a record number of world records, in record time, so SpongeBob joins her for an action-packed weekend of dangerous record setting."
+          },
+          {
+            episode: 2,
+            title: "Patrick-Man!/Gary's New Toy",
+            airDate: "2012-10-14",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGU5MjM0NzgtZTViNy00NDllLThlYzgtYTNiYzA4OWU1ODAwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick becomes the superhero Patrick-Man, who intends to clean up Bikini Bottom--whether it wants it or not! Gary becomes obsessed with his new red ball, forcing SpongeBob to take drastic measures to intervene."
+          },
+          {
+            episode: 3,
+            title: "License to Milkshake/Squid Baby",
+            airDate: "2012-09-07",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTAwZWI4MjMtNDM3Yy00NWFkLTllNmEtMmQ3NWM4NTVmZDY5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob must return to the Milkshake Academy after he realizes his Milkshake License has expired. / Squidward suffers a head injury and gets the mind of an infant."
+          },
+          {
+            episode: 4,
+            title: "Little Yellow Book/Bumper to Bumper",
+            airDate: "2012-11-25",
+            rating: 5.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTJmMDJhZmItMjYzNi00OTg0LWI2MmItOThlYTVmNmMzODhjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward finds SpongeBob's diary, and starts reading it out loud in the Krusty Krab.SpongeBob once again fails his driving test, forcing Mrs. Puff to think outside the box--and off the road."
+          },
+          {
+            episode: 5,
+            title: "Eek, an Urchin!/Squid Defense",
+            airDate: "2012-10-28",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjA4MjY2NWYtMWExZS00NmI0LTgxZGYtMGE2ZTFlZTdkOWRjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob finds a nasty sea urchin living in the Krusty Krab, and tries everything to force it out. After getting his groceries stolen, Squidward convinces SpongeBob and Sandy to teach him karate."
+          },
+          {
+            episode: 6,
+            title: "Jailbreak!/Evil Spatula",
+            airDate: "2013-03-16",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYThkZjE0NGYtZWFhNi00ZmMxLTkwNTctMmFmNTY1ZDMzMTFhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "An imprisoned Plankton teams up with his fellow inmates to break out of jail and steal the Krabby Patty secret formula. / SpongeBob replaces his broken spatula with one from Plankton, which may or may not have magical powers."
+          },
+          {
+            episode: 7,
+            title: "It Came from Goo Lagoon",
+            airDate: "2014-02-17",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWYwNjc3OTQtNzUyMS00MDRhLWIzNzAtYjViNTAyYTY1ZjE4XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "What do microwave ovens, dry cleaning, corn dogs and purple floaty things have in common? They can all destroy Bikini Bottom, that's what! But will they? Find out in this spine-tingling SpongeBob SquarePants adventure, It Came Fro..."
+          },
+          {
+            episode: 8,
+            title: "Safe Deposit Krabs/Plankton's Pet",
+            airDate: "2013-01-19",
+            rating: 7.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWFkNzU5MDItOGMzYi00ODdhLThmYzAtNDIzY2IwY2RjN2M0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs gets trapped in Bikini Bottom's brand-new bank, and it's up to SpongeBob and Patrick to save him. After failing again to steal the Krabby Patty formula, Plankton gets a pet to cheer himself up."
+          },
+          {
+            episode: 9,
+            title: "Don't Look Now/Séance Shméance",
+            airDate: "2013-10-14",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWQ4YmQ0ZGQtZTI4OS00MDZkLTkxZTEtZWUxNjdlOTU0MjcxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick go to see the latest horror film, only to be seemingly stalked by the villain. SpongeBob holds a séance at the Krusty Krab to learn the recipe for a long-lost sandwich."
+          },
+          {
+            episode: 10,
+            title: "Kenny the Cat/Yeti Krabs",
+            airDate: "2014-03-29",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzBhNjNkNGUtMTM2NS00NjBmLWI4Y2UtNGJjY2ZmMmQ2NTFhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Spongebob is desperate to meet his newest hero, Kenny the Cat. Mr. Krabs tries to scare Squidward into working harder."
+          },
+          {
+            episode: 11,
+            title: "SpongeBob, You're Fired",
+            airDate: "2013-11-11",
+            rating: 4.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjBmZDA2YWMtYjQ2Zi00MjhiLWE4ZjAtMzAzZjE3NWM3YTZiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "In order to save money, Mr. Krabs fires SpongeBob; however, unable to just \"do nothing\", SpongeBob decides to go back to work, no matter what - or where."
+          },
+          {
+            episode: 12,
+            title: "Lost in Bikini Bottom/Tutor Sauce",
+            airDate: "2015-07-16",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMmIzYTczNTgtNTM2ZC00NWNkLTkyM2EtZmMzNGMxNjdlYTVhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Lost in Bikini Bottom: On his way to work, SpongeBob attempts to take a shortcut to get there quicker, only to find himself in an abandoned area of Bikini Bottom, and unable to find his way out. Tutor Sauce: After failing his driv..."
+          },
+          {
+            episode: 13,
+            title: "Squid Plus One/The Executive Treatment",
+            airDate: "2015-09-07",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzBkZDdlZjktYmUwNC00ZDVkLTliMmUtYzZmYTc5NTYzNWI3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squid Plus One: Squidward gets invited to a gallery opening and wants to take someone, but can't decide who. The Executive Treatment: Patrick takes on a career of business when he tries to order a special sandwich."
+          },
+          {
+            episode: 14,
+            title: "Company Picnic/Pull Up a Barrel",
+            airDate: "2015-09-18",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDhkYjVhNjgtYjViYS00NWE2LWI4M2QtYjA3OTE1ZjM1NDBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Company Picnic: In order to boost morale, Mr. Krabs throws a company picnic - On the same day Plankton is hosting his own. Pull Up a Barrel: It's a stormy day in Bikini Bottom while SpongeBob and Squidward are at work, so Mr. Krab..."
+          },
+          {
+            episode: 15,
+            title: "Sanctuary!/What's Eating Patrick?",
+            airDate: "2015-10-02",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTBhNDQyY2YtZmM3Zi00OTgyLWFjOWQtZjYyNWIzOGM4MWVlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When stray snails start appearing around Bikini Bottom, SpongeBob decides to care for them himself. To defend Bikini Bottom's honor, Patrick enters a Krabby Patty eating competition."
+          },
+          {
+            episode: 16,
+            title: "Patrick! The Game/The Sewers of Bikini Bottom",
+            airDate: "2015-11-11",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODcwZTg1MjktNzNlNy00YWU0LWJlMmItZGEwMmNhY2YxMzQ0XkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick invents a new board game, and invites SpongeBob, Sandy and Squidward to play it with him. After accidentally flushing Mr. Krabs' safe, SpongeBob and Squidward must go into the sewers to find it."
+          },
+          {
+            episode: 17,
+            title: "SpongeBob LongPants/Larry's Gym",
+            airDate: "2016-02-15",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWZjNTAyZmItY2ZiNi00YmI2LWExOWMtYzFiZWU3YWViNjcwXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob gets a pair of long pants, but they change his life in unexpected ways. When Larry the Lobster opens a new gym in Bikini Bottom, SpongeBob becomes his best customer."
+          },
+          {
+            episode: 18,
+            title: "The Fish Bowl/Married to Money",
+            airDate: "2016-05-03",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZWRiNGM2NDAtZDdhMS00NTZhLTlkNzUtYmJjZjFiMDJjYzJmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy tries to study SpongeBob and Patrick's behavior, but her science experiment goes horribly awry. Mr. Krabs takes Plankton's advice, and finally marries the only thing he ever loved...money!"
+          },
+          {
+            episode: 19,
+            title: "Mall Girl Pearl/Two Thumbs Down",
+            airDate: "2016-03-12",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGM3NmRhN2ItOGI1NS00OWU0LWI4YmUtMjUwNjZlY2IyMzg2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "In \"Mall Girl Pearl,\" Pearl must find a job to be cool like her friends, but, the only place hiring is the mall's lamest store. In \"Two Thumbs Down,\" SpongeBob loses the use of his thumbs, making his life difficult."
+          },
+          {
+            episode: 20,
+            title: "Sharks vs. Pods/CopyBob DittoPants",
+            airDate: "2016-05-04",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 20,
+            title: "Sharks vs. Pods/CopyBob DittoPants",
+            airDate: "2016-05-04",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 20,
+            title: "Squid Defense",
+            airDate: "2013-01-01",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 21,
+            title: "Plankton's Pet",
+            airDate: "2013-01-19",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjFjZWRmYjMtMzdiOC00MTU5LWJiNzMtMjM3N2JjMzBlMWU5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick see a commercial and believe their houses are sold. The Krusty Krab starts selling fortune cookies, but Plankton decides to use them for his evil schemes."
+          },
+          {
+            episode: 21,
+            title: "Sold!/Lame and Fortune",
+            airDate: "2016-05-06",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjFjZWRmYjMtMzdiOC00MTU5LWJiNzMtMjM3N2JjMzBlMWU5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick see a commercial and believe their houses are sold. The Krusty Krab starts selling fortune cookies, but Plankton decides to use them for his evil schemes."
+          },
+          {
+            episode: 22,
+            title: "Goodbye, Krabby Patty?",
+            airDate: "2017-02-20",
+            rating: 5.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 22,
+            title: "Evil Spatula",
+            airDate: "2013-03-09",
+            rating: 5.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 23,
+            title: "Sandy's Nutmare/Bulletin Board",
+            airDate: "2016-07-12",
+            rating: 7.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjNmMTBlZWMtMmYwYS00YzJjLTliZDgtN2Q1NTliZWJmYzUxXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy creates the latest acorn-based food sensation, but her tree pays the price for her greed. SpongeBob erects a community bulletin board in the Krusty Krab, but anonymous reviews posted on it lead to trouble."
+          },
+          {
+            episode: 24,
+            title: "Safe Deposit Krabs",
+            airDate: "2013-05-25",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 24,
+            title: "Food Con Castaways/Snail Mail",
+            airDate: "2016-07-13",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 25,
+            title: "Pineapple Invasion/Salsa Imbecilicus",
+            airDate: "2016-06-14",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmEwMzVjMjUtNmRiNC00YzdhLWFkZWQtMjViYmQyOTU2MDg1XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When SpongeBob hides the secret formula in his home, it's up to Gary to protect it from Plankton. When a freak accident causes everyone in town to become as stupid as Patrick, Sandy must save the day."
+          },
+          {
+            episode: 26,
+            title: "Mutiny on the Krusty/The Whole Tooth",
+            airDate: "2016-10-08",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMGRmOWI0NGUtMDQyNC00YjRmLWFlZGMtNmUzYmM2NzhmNzFhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When the Krusty Krab is blown away by a storm, an insane Mr. Krabs has to guide his employees and customers back to their homes. Patrick is forced to lose his last baby tooth, but he is frightened."
+          }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          {
+            episode: 1,
+            title: "Whirly Brains/MermaidPants",
+            airDate: "2016-10-15",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDUxMDRiM2YtMThjNS00YTY0LWI4NGYtZTczNDcwMDgxMjJmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick get hooked on the latest fad - flying your own brain like a tiny drone! When SpongeBob &amp; Patrick play Mermaidman and Barnacleboy, it's all fun and games until their sworn enemies arrive."
+          },
+          {
+            episode: 2,
+            title: "The Other Spongebob Is Back: Part 1",
+            airDate: "2012-02-06",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2I5Y2M3MzMtZTQxOS00M2Q4LWE1MmUtNzhiMjA5ZTY0NjA4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "In order to get SpongeBob to move away, Squidward puts black pepper all over SpongeBob's house to make him think he's allergic to his home; Squidward decides to get a nose job at the hospital, and SpongeBob volunteers as a doctor."
+          },
+          {
+            episode: 2,
+            title: "Unreal Estate/Code Yellow",
+            airDate: "2017-06-03",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2I5Y2M3MzMtZTQxOS00M2Q4LWE1MmUtNzhiMjA5ZTY0NjA4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "In order to get SpongeBob to move away, Squidward puts black pepper all over SpongeBob's house to make him think he's allergic to his home; Squidward decides to get a nose job at the hospital, and SpongeBob volunteers as a doctor."
+          },
+          {
+            episode: 3,
+            title: "Mimic Madness/House Worming",
+            airDate: "2017-02-25",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2ZiOGZiOGEtMTBlNi00YmY3LWE0NDItZDQ3NjA0ZWQyYTI0XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob imitates everyone for fun, but it goes too far once SpongeBob gets \"Mocking Mimicry Madness\"/A worm named Prickles goes inside SpongeBob, and brings uninvited guests."
+          },
+          {
+            episode: 4,
+            title: "Snooze You Lose/Krusty Katering",
+            airDate: "2017-03-04",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 4,
+            title: "The Bob Land/The Magic Gum",
+            airDate: "2012-03-04",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 5,
+            title: "SpongeBob's Place/Plankton Gets the Boot",
+            airDate: "2017-03-11",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 5,
+            title: "The Battle Begins/Where Is Patrick Star?",
+            airDate: "2012-03-30",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1MDc5NjAzNl5BMl5BanBnXkFtZTYwMzQwNDc2._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 6,
+            title: "Life Insurance/Burst Your Bubble",
+            airDate: "2017-03-18",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjQ2MTk2MzYtMTBmNC00MGY1LWJlZDUtNWU1ODlmZDY0N2Q4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A misunderstanding leaves Spongebob and Patrick to think Life Insurance will protect them from any danger; Spongebob blows himself a bubble boat, and Mrs. Puff tries to stop Spongebob."
+          },
+          {
+            episode: 7,
+            title: "Plankton Retires/Trident Trouble",
+            airDate: "2017-03-25",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGZlZDczMmEtYmJjZi00N2YyLTkwYTgtMTZiZDkxYTZhYjYwXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton decides to close the Chum Bucket and move to a new town, but Mr. Krabs still suspects he is up to something./SpongeBob accidentally picks up King Neptune's magic trident."
+          },
+          {
+            episode: 8,
+            title: "The Incredible Shrinking Sponge/Sportz?",
+            airDate: "2017-12-02",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTBlMzI0ODctZTljMS00N2E2LWJiNTUtZjY1NWQxNjA4MTA4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob must figure out how to do his job after accidentally shrinking himself; Squidward invents a new sport to get back at SpongeBob and Patrick for annoying him."
+          },
+          {
+            episode: 9,
+            title: "The Getaway/Lost and Found",
+            airDate: "2017-06-10",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTY5ODU2NGYtMTM5Ni00ZDc4LTlmYjktMmZkN2RkNDA0ZjBkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When SpongeBob mistakes an escaped convict for his driving instructor, it's the new teacher who learns a lesson; Mr. Krabs sends SpongeBob in search of a missing toy, and SpongeBob finds himself lost in the lost-and-found."
+          },
+          {
+            episode: 10,
+            title: "Patrick's Coupon/Out of the Picture",
+            airDate: "2017-06-17",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjI2YzA2MmUtYzAxYy00MDI0LTlmNDEtNjE5M2E1Y2ZmMTBhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick has a coupon for free ice cream, but he has to get to the store if he wants to use it; Mr. Krabs buys Squidward's art, but to make a profit on his purchase, he will have to get the artist out of the picture."
+          },
+          {
+            episode: 11,
+            title: "Feral Friends/Don't Wake Patrick",
+            airDate: "2017-10-07",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmI0ZWZkYzctYWQ1Mi00MjA2LTk3OWItNjJjOWRlZjBjMTVkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A weird moon turns everyone in the city into wild animals, and Sandy is the only one who can save them. Patrick sleepwalks and SpongeBob can't wake him up."
+          }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          {
+            episode: 1,
+            title: "Cave Dwelling Sponge/The Clam Whisperer",
+            airDate: "2017-09-23",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTBjZTE3NTEtYTA4OS00MmQxLWFhY2QtMmRjZjcwOGYzNGRmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When a prehistoric Sponge is unfrozen, he causes chaos all over town - and only SpongeBob can communicate with him! When a flock of clams descend on Bikini Bottom, SpongeBob has to get them out before they ruin the whole town!"
+          },
+          {
+            episode: 2,
+            title: "Spot Returns/The Check-Up",
+            airDate: "2017-06-24",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGUzZDRhN2EtYTRmMS00MzYxLWI2N2MtNjFkYzMwYTE0NGExXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton's pet amoeba Spot has babies and decides to use them in one of his evil schemes/Mr. Krabs has to get a medical exam, but he's too afraid. However, if he doesn't get it, the Krusty Krab will have to be shut down."
+          },
+          {
+            episode: 3,
+            title: "Spin the Bottle/There's a Sponge in My Soup",
+            airDate: "2017-07-16",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzBiOWNjYjMtYmFmOC00MjMwLWE3YjUtNDcwOGVlM2ZlMjFkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton poses as a wish-granting genie in his latest scheme to get the secret formula. Mr. Krabs' new Krabby soup is a hit - until some heat-loving hippies move into the soup vat!"
+          },
+          {
+            episode: 4,
+            title: "Man Ray Returns/Larry the Floor Manager",
+            airDate: "2017-09-30",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2U2ZmI4OTctMjFlNC00ZWI2LTg0MGYtMWViZmEwNDViMTAzXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When Man Ray rents Squidward's house for the weekend, it's up to SpongeBob and Patrick to stop his evil vacation! Mr. Krabs takes a vacation and makes Larry the Lobster the temporary manager of the Krusty Krab."
+          },
+          {
+            episode: 5,
+            title: "The Legend of Boo-Kini Bottom",
+            airDate: "2017-10-13",
+            rating: 7.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTVhOTg2OTEtMzg1Zi00OGY3LTkzMjUtNzBlOGVhY2FlNjBkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and friends don costumes and decorate their neighborhood for some Halloween fun, but the spooky Flying Dutchman has other plans."
+          },
+          {
+            episode: 6,
+            title: "No Pictures Please/Stuck on the Roof",
+            airDate: "2017-11-06",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzg3YmJhOGUtYzc2ZC00NjhlLWEwMWMtY2ZmMzg3OWUwNzU1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick leads an enthusiastic stranger on a tour of his favorite places in Bikini Bottom; SpongeBob is afraid to get off the roof of the Krusty Krab, but he won't let that stop him from living his life."
+          },
+          {
+            episode: 7,
+            title: "Krabby Patty Creature Feature/Teacher's Pests",
+            airDate: "2017-10-21",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTcyYzNkYzYtYjBlMS00YTllLThhOTgtNzg2ODA2ZDhlMTRlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "A new secret Krabby Patty formula has disastrous results for Bikini Bottom, and only SpongeBob can save the day. Mr. Krabs and Plankton have to take boating school classes. Thankfully, SpongeBob's there to show them the ropes!"
+          },
+          {
+            episode: 8,
+            title: "Sanitation Insanity/Bunny Hunt",
+            airDate: "2017-11-10",
+            rating: 6.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTUyMTA0OWEtMDBjNC00Y2EyLTkyY2UtZGEzNjgzZDgyNjkxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Mr. Krabs gets in trouble for littering, he makes SpongeBob and Squidward clean up Bikini Bottom; A sea bunny ravages Squidward's garden, but SpongeBob thinks it's cute."
+          },
+          {
+            episode: 9,
+            title: "Squid Noir/Scavenger Pants",
+            airDate: "2017-11-10",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjViNGRhNzItZGY4OS00MDUzLWI4NjctZTMzMGViZjJhZDEwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Squidward's clarinet disappears, he has to become a hard-boiled detective to track it down; Squidward sends SpongeBob and Patrick on a difficult scavenger hunt to get them out of his hair."
+          },
+          {
+            episode: 10,
+            title: "Cuddle E. Hugs/Pat the Horse",
+            airDate: "2017-12-02",
+            rating: 5.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjAxMzg4MzQtNjZiMy00NzFlLWFiMjktNTUwNWRiMzg1YzRmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob's new friend is a giant, fluffy hamster that no one else can see; Patrick wants to be a horse."
+          },
+          {
+            episode: 11,
+            title: "Chatterbox Gary/Don't Feed the Clowns",
+            airDate: "2018-02-12",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTZkZGIxZTItZDRmNC00ZThjLWE0M2ItZGI4N2VlOTQxNWFmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Gary has a pet translation collar, and he's talking up a storm. Everyone loves it, except for Squidward. When a small clown gets left behind by the circus, SpongeBob takes the hapless harlequin under his wing."
+          },
+          {
+            episode: 12,
+            title: "Drive Happy/Old Man Patrick",
+            airDate: "2018-02-13",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODkzYmJjZmYtMTA1NS00MzQxLWE1NTItYzZkYzNiOWNkNDY1XkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob can't drive, but you don't need a license to operate a self-driving car! Patrick thinks he's an old man, so it's up to SpongeBob to remind him how much fun being a kid can be!"
+          },
+          {
+            episode: 13,
+            title: "Fun-Sized Friends/Grandmum's the Word",
+            airDate: "2018-02-15",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmEwOWQ4YjEtMTIyNy00ODZhLTllNWMtNjFhZjk3ODVhOGExXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick exchange tiny living versions of themselves. Plankton lies to his grandma, telling her that he owns the Krusty Krab to fulfill a promise he made, but must keep the lie going when she comes to visit."
+          },
+          {
+            episode: 14,
+            title: "Doodle Dimension/Moving Bubble Bass",
+            airDate: "2018-03-09",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTIyOWQ0ZTItNWU1NS00Mzc4LTgxYjMtOGQxZjg1NWRjMGEyXkEyXkFqcGdeQXVyNjUzMDIyNzE@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick become trapped in an alternate dimension, where anything they draw comes to life. SpongeBob and Patrick help Bubble Bass move out of his mother's basement."
+          },
+          {
+            episode: 15,
+            title: "High Sea Diving/Bottle Burglars",
+            airDate: "2018-04-13",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTk4ZDRmMzAtOGM3My00MzU1LWFlZDAtNTQ3OTU1ZjllYTYxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob wants to be the first sponge that dives to the surface of the ocean. SpongeBob and Squidward accidentally let Plankton slip away with the formula, and it is up to them to retrieve it."
+          },
+          {
+            episode: 16,
+            title: "My Leg!/Ink Lemonade",
+            airDate: "2018-05-09",
+            rating: 4.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmJlZDQyMmItZjM4NC00MzQ5LWE1YzUtYmVjZmEzODM4ZTcwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Once Fred's leg heals up, SpongeBob is determined to keep it out of harm's way. Patrick's lemonade stand is unsuccessful until he gets a secret ingredient from Squidward."
+          },
+          {
+            episode: 17,
+            title: "Mustard O' Mine/Shopping List",
+            airDate: "2018-05-10",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTI0YjEzNDItYzk3MC00MDgyLThkMGItM2MwZmIyY2ZhNGNhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When the Krusty Krab runs out of mustard, Mr. Krabs sends SpongeBob, Patrick and Squidward to dig up some more. SpongeBob and Sandy have to collect Krabby Patty ingredients, but Plankton follows their every step."
+          },
+          {
+            episode: 18,
+            title: "Whale Watching/Krusty Kleaners",
+            airDate: "2018-08-06",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmI5MjdhZGUtYTQ5ZC00OTcyLWE0MjMtNDkxYjAwNWM1OTBjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs hires Squidward to babysit Pearl for the night, but she just wants to sneak out to a cool teen party; after spilling a milkshake during a delivery, SpongeBob vows to return and clean the entire building."
+          },
+          {
+            episode: 19,
+            title: "Patnocchio/ChefBob",
+            airDate: "2018-08-08",
+            rating: 6.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjFmMTllYzUtMTYxZC00NjYwLThkMGYtZGQ0YjQxNzhmOWI3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton tells Patrick he's his conscience so he can convince the wooden-headed star to steal him a Krabby Patty. When Mr. Krabs puts in an open kitchen, SpongeBob gets stage fright and has to invent a new persona."
+          },
+          {
+            episode: 20,
+            title: "Plankton Paranoia/Library Cards",
+            airDate: "2018-09-26",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDBiYmVkNGYtOTM0Ny00MzVmLTg5ZmQtYWM2ODkzYTA4ZjA0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton hasn't tried to steal the secret formula in a while - and that's making Mr. Krabs nervous. When Patrick discovers the pineapple's library, SpongeBob introduces him to the wonderful world of book learning."
+          },
+          {
+            episode: 21,
+            title: "Call the Cops/Surf n' Turf",
+            airDate: "2018-09-27",
+            rating: 6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzc0NmRjOGYtYjZlMy00MDQ5LTkwZjItMThmZGQyOTQwNzNhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton goes to jail, but the secret formula is taken as evidence, so SpongeBob and Mr. Krabs plot to get it back. Sandy struggles to build a ship-in-a-bottle before a big contest, so SpongeBob calls in a little extra help."
+          },
+          {
+            episode: 22,
+            title: "Goons on the Moon",
+            airDate: "2018-11-25",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGM1MjY0MWItMDE3ZC00OGU0LWJlYWEtMDEzOGM4ZTliMjNhXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy takes her Science Scout troop on a trip to the moon."
+          },
+          {
+            episode: 23,
+            title: "Appointment TV/Karen's Virus",
+            airDate: "2018-10-28",
+            rating: 7.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTY0OTdmNTItNGE2OS00OTA3LThkY2QtNzYyMDRlMjIzMTBiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "The long-lost episode of Mermaid Man is finally showing on TV, but SpongeBob may not make it home in time to watch. Karen gets a computer virus, and it's up to SpongeBob to get it out of her."
+          },
+          {
+            episode: 24,
+            title: "The Grill is Gone/The Night Patty",
+            airDate: "2018-10-21",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYzMwYmU4ZmItYjZiOS00ZWVmLTkwZDctMTEwYmQ4YTMzNGJkXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When a gang of kids steal the Krusty Krab's grill, SpongeBob and Mr. Krabs go to extreme lengths to win it back. SpongeBob helps out the Krusty Krab's night shift crew, but the customers crave something creepier than usual."
+          },
+          {
+            episode: 25,
+            title: "Bubble Town/Girls' Night Out",
+            airDate: "2018-11-04",
+            rating: 6.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjk1OGU1YTktZGMyMS00NDFkLWFjYzYtYjUwN2UwMGUyY2ZjXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob visits his old friend Bubble Buddy in his new hometown. Sandy invites Karen and Mrs. Puff out for a night on the town, so the ladies decide to blow off some steam."
+          },
+          {
+            episode: 26,
+            title: "Squirrel Jelly/The String",
+            airDate: "2018-11-18",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYzUyMzBiMDQtMDMyOC00ODc2LTk5ZTMtN2VjYjExOWJjZTdlXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick have their peaceful day of jellyfishing disturbed by Sandy's competitive nature; SpongeBob pulls a loose string from Squidward's shirt that never seems to end."
+          }
+        ]
+      },
+      {
+        season: 12,
+        episodes: [
+          {
+            episode: 1,
+            title: "FarmerBob/Gary & Spot",
+            airDate: "2019-05-20",
+            rating: 6.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODVkNzFhMGEtZTRjMi00MzViLThkNDYtZWI5NTM1ZTZhN2EwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick work a day on Old Man Jenkins' farm, much to his dismay. Sandy narrates the nocturnal adventures of Gary and his secret pal - Spot."
+          },
+          {
+            episode: 2,
+            title: "The Nitwitting/The Ballad of Filthy Muck",
+            airDate: "2019-02-01",
+            rating: 4.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGFiMTcwZDEtYzQ1OS00MDU1LWE4N2YtNjQxOTdlYzlkYjQ2XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick inducts SpongeBob into his prestigious society of dullards and doofuses. Patrick takes his grime to a new extreme, playing around in so much trash that he becomes unrecognizable."
+          },
+          {
+            episode: 3,
+            title: "The Krusty Slammer/Pineapple RV",
+            airDate: "2019-01-27",
+            rating: 6.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzRlMDZlZWItYzllNy00NWVjLThhNmYtNzM2ZTZmMWUwMTJjXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs turns the Krusty Krab into a jailhouse after Plankton breaks the law, but crime only pays for so long. SpongeBob and Patrick turn the pineapple into a mobile home to take Squidward on the road trip he deserves."
+          },
+          {
+            episode: 4,
+            title: "Gary's Got Legs/King Plankton",
+            airDate: "2019-06-22",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjZmMGNkYmEtODQxYS00YzhhLWJiMzEtMWNlOWIxMWI3ODMyXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Gary is given a set of limbs to keep up with SpongeBob, but soon makes his owner look sluggish by comparison. Plankton practices ruling the world by shrinking himself down and declaring himself king of SpongeBob's aquarium."
+          },
+          {
+            episode: 5,
+            title: "Plankton's Old Chum/Stormy Weather",
+            airDate: "2019-06-25",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGNlZDJmYzEtZTY2MC00NDNkLTg0NTgtMzE0NGI5MmQ4OTFhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Where Plankton usually dumps his rotten chum is too full, so he tricks SpongeBob into hiding it around the city. SpongeBob befriends a small storm cloud, but has to protect it from a crazed weather man."
+          },
+          {
+            episode: 6,
+            title: "Swamp Mates/One Trick Sponge",
+            airDate: "2020-04-11",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTI5NzNiYzktYWI5Yy00NjM1LTg3MTktZjYzMjVkODRhOTU2XkEyXkFqcGdeQXVyMTA1NTAyNzY1._V1_.jpg",
+            duration: "23 min",
+            overview: "Bubble Bass finds himself stranded with Patrick in a mysterious swamp, looking for a lost action figure. SpongeBob learns a new magic trick, but he can't find anyone to watch it."
+          },
+          {
+            episode: 7,
+            title: "The Krusty Bucket/Squid's on a Bus",
+            airDate: "2019-08-10",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYmNjZmY3ZDAtNGMyZS00MjE3LWI1Y2YtNmRlYTQ5ZDY0YzA1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton creates a clone of himself and Mr. Krabs, but neither restaurant is safe from the newcomer. Squidward gleefully switches jobs with a bus driver for an easy ride - until SpongeBob and Patrick climb aboard."
+          },
+          {
+            episode: 8,
+            title: "Sandy's Nutty Nieces/Insecurity Guards",
+            airDate: "2019-07-02",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDJjNTFiZjgtNDAwOS00YjcxLTkxMDQtNGNiMzZiY2ZlYmUwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob gets in over his head when he volunteers to babysit Sandy's 3 nieces. SpongeBob and Patrick volunteer as guards at the museum, while Squidward attempts to hang his painting unnoticed."
+          },
+          {
+            episode: 9,
+            title: "Broken Alarm/Karen's Baby",
+            airDate: "2019-07-06",
+            rating: 7.4,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGIxNDBmMzctNGI4My00ZjA2LThkZTctMGY2NDAxYWRlZDAzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob breaks his precious alarm clock, but nothing else is loud enough to wake him up on time. Karen quickly learns that kids grow up too fast after her new child arrives in the mail."
+          },
+          {
+            episode: 10,
+            title: "Shell Games/Senior Discount",
+            airDate: "2019-07-06",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGEwYTI1ZTMtODBhZi00M2NlLTkzMzMtNTk2YmUxYmEyZmEzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Patrick discovers that the rock he lives under is actually a sea turtle who overslept. Old Man Jenkins disrupts business as usual at the Krusty Krab, but Mr. Krabs can't find a way to kick him out."
+          },
+          {
+            episode: 11,
+            title: "Mind the Gap/Dirty Bubble Returns",
+            airDate: "2019-09-14",
+            rating: 7.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzAyNzQ0NjQtMDM3Mi00MTZlLWI3NmUtM2M3YmViNjQzNjM1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward closes the gap in SpongeBob's teeth, which causes a dramatic and unexpected change in his demeanor. The newly reformed \"Clean Bubble\" takes a dishwashing job at the Krusty Krab, where he is tempted by the grime."
+          },
+          {
+            episode: 12,
+            title: "Jolly Lodgers/Biddy Sitting",
+            airDate: "2020-02-08",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMmQxY2JhOWYtNTBjYy00ZDg5LTgwNmUtZmQ2NmYyMzFlNjJmXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward packs his bags after his house gets infested, but a different kind of pest waits at his hotel. SpongeBob and Patrick get tricked into babysitting a grouchy old lady, who does all she can to escape."
+          },
+          {
+            episode: 13,
+            title: "SpongeBob's Big Birthday Blowout",
+            airDate: "2019-07-12",
+            rating: 8.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzBjODc2MDYtMWI2YS00MWU3LWE4ODEtYjQ3NDBmNTJhMDc5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick tour the surface world, while the rest of Bikini Bottom prepares a surprise party for SpongeBob. And in celebration of the show's 20th anniversary, since May 1st, 1999."
+          },
+          {
+            episode: 15,
+            title: "SpongeBob in RandomLand/SpongeBob's Bad Habit",
+            airDate: "2019-09-21",
+            rating: 6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzQ1NDFlNGItMDg0NC00MmU2LTg5M2QtMDFlZTE0YzRiMWU4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Squidward take a delivery to a dreadedtown where the laws of logic no longer apply. SpongeBob can't stop biting his nails, but he also can't figure out why."
+          },
+          {
+            episode: 16,
+            title: "Handemonium/Breakin'",
+            airDate: "2019-09-14",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTkwODBlOGYtMjM3Ni00NDg0LTk3MmUtMmI0ZjkzZjQyMjBlXkEyXkFqcGdeQXVyODk1Nzg2NjE@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton's giant Chum Bucket glove runs wild in town, but SpongeBob has a handy friend to help them out. SpongeBob takes his first break ever at work, but how will he spend his precious time?"
+          },
+          {
+            episode: 17,
+            title: "Boss for a Day/The Goofy Newbie",
+            airDate: "2019-09-28",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWRiNmQ0NjEtNzQxZC00ZWFhLTlhOWEtNmM4MTUyNDU4ODNiXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs has an accident and leaves SpongeBob in charge of the Krusty Krab. What could go wrong? Patrick takes a job at the Goofy Goober when he finds out the employees get free ice cream."
+          },
+          {
+            episode: 18,
+            title: "The Ghost of Plankton/My Two Krabses",
+            airDate: "2019-10-12",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGNiNjAxODAtNTQ0OC00YzcxLTkzYjEtYjRlNjAyYWNiZTJkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton becomes a ghost to steal the secret formula, but requires a few lessons from the Flying Dutchman. The Gal Pals take Pearl to a cabin in the woods for a weekend of silly pranks."
+          },
+          {
+            episode: 19,
+            title: "Knock Knock, Who's There?/Pat Hearts Squid",
+            airDate: "2021-04-23",
+            rating: 6.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjg3ZGYyZjItY2U5Yy00MTk2LTliMjAtN2QwZDFkM2QyODg2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob watches Mr. Krabs' house while he's away and takes extreme measures to make sure no one breaks in. Squidward is forced to room with Patrick."
+          },
+          {
+            episode: 20,
+            title: "Lighthouse Louie/Hiccup Plague",
+            airDate: "2020-03-20",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTMwNThmZmQtNWJkYi00YTVlLTkxMDYtNjcwOTAwYTIwZDkzXkEyXkFqcGdeQXVyODc0OTgxMDM@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob cleans out the boating school lighthouse, where he finds a cute but inconvenient companion. No one in Bikini Bottom is safe from a case of contagious hiccups."
+          },
+          {
+            episode: 21,
+            title: "A Cabin in the Kelp/The Hankering",
+            airDate: "2019-10-12",
+            rating: 6.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZWQzYmMyN2QtYzJkYi00MDk5LWFlYTUtNjBhZTg2M2FmMGQyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Gal Pals take Pearl to a cabin in the woods for a weekend of silly pranks. Mr. Krabs has a secret taste for something - surprising."
+          },
+          {
+            episode: 22,
+            title: "Who R Zoo?/Kwarantined Krab",
+            airDate: "2020-02-08",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTMyMWMwMDgtOWU1NC00ZDExLTg0Y2YtNzQxNWI0ZGJmMWY5XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick create their own zoo made entirely of bubbles. The Krusty Krab goes under an emergency quarantine, but no one knows who carries the mysterious illness."
+          },
+          {
+            episode: 23,
+            title: "Plankton's Intern/Patrick's Tantrum",
+            airDate: "2021-04-30",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWNiNTFmZTctY2E3ZC00NDJjLTkzODQtYTg4N2YwNDc2ZDZiXkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton needs help stealing the formula, so he hires an intern who knows more about Mr. Krabs than anyone. Patrick goes into a destructive fit whenever he hears a bell, so his friends help him in their own ways."
+          },
+          {
+            episode: 24,
+            title: "Bubble Bass's Tab/Kooky Cooks",
+            airDate: "2021-04-09",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDY3ZTgwMmYtODgyZS00ZDE1LTg1ZWUtZDA4NjRmNjFkNDY3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Bubble Bass doesn't pay his tab after buying food at the Krusty Krab, so Mr. Krabs sends SpongeBob and Squidward to his house to try and make him pay/Mrs. Puff thinks Mr. Krabs is too cheap, so he hires SpongeBob and Squidward as ..."
+          },
+          {
+            episode: 25,
+            title: "Escape from Beneath Glove World",
+            airDate: "2020-01-18",
+            rating: 6.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZjYwOGQ1OTgtYTYwNi00NTY5LTkyNDgtOWVmNWU1MzFhMGM1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick are sent to jail in the underground tunnels of Glove World, leading to a daring escape."
+          },
+          {
+            episode: 26,
+            title: "Krusty Koncessionaires/Dream Hoppers",
+            airDate: "2020-11-07",
+            rating: 7.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNmZmZjY1YzEtYjliMS00ZjMyLWI4YmMtNDJiZjU0MDYwNjhmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Krusty Krab crew goes to a big concert to sell krabby patties in the stands. SpongeBob explores the melodious dreamscapes of his sleeping neighbors."
+          },
+          {
+            episode: 27,
+            title: "A Place for Pets/Lockdown for Love",
+            airDate: "2020-10-22",
+            rating: 7.9,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "When customers bring pets into the Krusty Krab, Mr. Krabs soon realizes pets are more profitable than owners. Plankton ruins another date with Karen, so she puts the Chum Bucket on lockdown until he proves his affection."
+          }
+        ]
+      },
+      {
+        season: 13,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Place for Pets/Lockdown for Love",
+            airDate: "2020-10-22",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWM1ZGJjMzYtNDVkMS00YTEwLWE2YTUtYjZmOGQzZGNjNGM3XkEyXkFqcGdeQXVyMTM1NTIzOTI1._V1_.jpg",
+            duration: "23 min",
+            overview: "When customers bring pets into the Krusty Krab, Mr. Krabs soon realizes pets are more profitable than owners. Plankton ruins another date with Karen, so she puts the Chum Bucket on lockdown until he proves his affection."
+          },
+          {
+            episode: 2,
+            title: "Under the Small Top/Squidward's Sick Daze",
+            airDate: "2021-04-16",
+            rating: 5.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODM0ZDAyZTAtNDVkMi00MjMxLTk2YjktZmY3ZTg4ZmYzNjU0XkEyXkFqcGdeQXVyODUxMTE5NjU@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward's house becomes infested with a mail-order flea circus meant for SpongeBob/Squidward fakes being sick to get out of work, but his agony only begins when SpongeBob arrives to care for him."
+          },
+          {
+            episode: 3,
+            title: "Goofy Scoopers/Pat the Dog",
+            airDate: "2021-07-09",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMGU1YzJiMzAtYTNiYi00N2M0LWIzYTctNWNhYTM0ZjE2NDdmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Patrick make it their mission to reunite the recently fired robot band from Goofy Goobers. Patrick is sent to the pound for acting like a worm, but he won't be able to leave unless SpongeBob can train him."
+          },
+          {
+            episode: 4,
+            title: "Something Narwhal This Way Comes/C.H.U.M.S",
+            airDate: "2021-11-19",
+            rating: 4.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMWYzODI2YzYtNGE5Mi00NmJmLWIyYmItOWQwYTBmMWRjMzQwXkEyXkFqcGdeQXVyODUxMTE5NjU@._V1_.jpg",
+            duration: "23 min",
+            overview: "Two familiar faces from SpongeBob's past visit Bikini Bottom, but they bring a big problem along with them. After falling down the drain, Plankton finds an unlikely ally in the sewers."
+          },
+          {
+            episode: 5,
+            title: "SpongeBob's Road to Christmas",
+            airDate: "2021-12-10",
+            rating: 6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODU2Y2FjNTEtZjJhNy00Yzc5LWFmMzQtNDQ3MzZjM2RkZTFmXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and his pals journey to the North Pole to give Santa a gift"
+          },
+          {
+            episode: 6,
+            title: "Potato Puff/There Will be Grease",
+            airDate: "2022-04-22",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDVjYzk5ZDEtODEwNC00YzBkLWFlNDgtODY3NWNiMTVmNjNkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mrs. Puff's new substitute teacher gives SpongeBob a crash course in driving. Mr. Krabs and Plankton must work together after discovering a well of miracle-grease under their restaurants."
+          },
+          {
+            episode: 7,
+            title: "The Big Bad Bubble Bass/Sea-Man Sponge Haters Club",
+            airDate: "2022-05-06",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTY3YWU5N2UtZDE3OC00YzMyLWFlMmEtYjJmNjg2YWJhZGIzXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            duration: "23 min",
+            overview: "Karen tells the fairy tale of a nerd trying to steal an action figure from his three little neighbors. Squidward hosts a secret 'We Hate SpongeBob Club' at his house."
+          },
+          {
+            episode: 8,
+            title: "Food PBFFT! Truck/Upturn Girls",
+            airDate: "2022-05-13",
+            rating: 5.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BN2ZjZDJiMDAtYzFhMS00MDZhLTk3OTAtYzliMWM0MmY5NWZkXkEyXkFqcGdeQXVyMTUwNTk2ODM3._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob and Squidward try to sell Krabby Patties from a food truck in the darkest depths of the ocean. Pearl and Narlene have a whales' day out in the big city."
+          },
+          {
+            episode: 9,
+            title: "Say Awww!/Patrick the Mailman",
+            airDate: "2022-05-20",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNzE5NTViMTAtY2I4Ny00MDMwLWE3ZmEtNDRkYjQ5YjE5OWQwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Frustrated that he's seen as cute instead of evil, Plankton builds a robot to punish anyone who says 'aww!'. Patrick crushes the postman, so he and SpongeBob deliver the mail around Bikini Bottom."
+          },
+          {
+            episode: 10,
+            title: "Captain Pipsqueak/Plane to Sea",
+            airDate: "2022-07-22",
+            rating: 5.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmNiNDIyYTAtYTJlNC00NGQwLWIwMmUtMjk0N2E0MjJkNTAyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton joins the League of E.V.I.L./SpongeBob and Patrick take Squidward on a plane to a tropical resort."
+          },
+          {
+            episode: 11,
+            title: "Squidferatu/Slappy Daze",
+            airDate: "2022-10-14",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWE0OGU1YjEtOWYxNS00NjgyLTk1YjktZmQ0ODM1NmQzMzQwXkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward ventures to Nosferatu's castle after accidentally receiving his mail. Nosferatu's minion Slappy kills some time around Bikini Bottom."
+          },
+          {
+            episode: 12,
+            title: "Welcome to Binary Bottom/You're Going to Pay... Phone/A Skin Wrinkle in Time",
+            airDate: "2023-01-13",
+            rating: 7.1,
+            thumbnail: "https://image.tmdb.org/t/p/original/f3f5OzzYd8m3zN47DAjKs0sbx00.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 13,
+            title: "Abandon Twits/Wallhalla",
+            airDate: "2023-01-20",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BY2VmOTc1ZjktOGExMC00NmRlLWFmMzEtNGE3MjJiYTMwMmI0XkEyXkFqcGdeQXVyMTM1MTA5MzU2._V1_.jpg",
+            duration: "23 min",
+            overview: "The Krusty Krew builds a boat for their penny-pinching captain. SpongeBob discovers a crazed castaway living in his walls."
+          },
+          {
+            episode: 14,
+            title: "Salty Sponge/Karen for Spot",
+            airDate: "2023-01-27",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODQxM2FlZTMtODYzZS00OGViLWEzMjEtMTdkYmUwZGE3MTY0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob works the grill at the toughest joint in town. Karen looks after Spot while Plankton goes out of town."
+          },
+          {
+            episode: 15,
+            title: "Arbor Day Disarray/Ain't That the Tooth",
+            airDate: "2023-06-27",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNWMyNWU3OTUtMzI0MS00MDUwLWJkZmEtOTE4NjAwYWZiNzI2XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy gives her friends special saltwater trees, but they need more attention than she expected. SpongeBob and Patrick mistake a burglar for the tooth fairy."
+          },
+          {
+            episode: 16,
+            title: "Ma and Pa's Big Hurrah/Yellow Pavement",
+            airDate: "2023-03-10",
+            rating: 6.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZGEyYzAyNDEtNDY0MS00MTBiLThmMzAtNGU3ZTNmZWI3OTRmXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When SpongeBob's parents come to visit, their thirst for thrills comes as a big surprise. You'll learn all you need to get your boating license in this educational driving film."
+          },
+          {
+            episode: 17,
+            title: "The Flower Plot/SpongeBob on Parade",
+            airDate: "2023-03-24",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNDNkNWYyZjYtZjc1OS00Y2QyLWFlOGMtMTM4ODEyZGM5ODlhXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Chum Bucket is replaced by a flower shop with a charming new owner. The Krusty Krab enters a float in the annual Bikini Bottom Parade."
+          },
+          {
+            episode: 18,
+            title: "Delivery to Monster Island/Ride Patrick, Ride!",
+            airDate: "2023-04-07",
+            rating: 7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjZiYTRmY2EtYjY5NC00MmRlLTkxZDAtMDhlYzUzZjUyODEzXkEyXkFqcGdeQXVyMTYzNjg2NTQy._V1_.jpg",
+            duration: "23 min",
+            overview: "Delivery to Monster Island: Spongebob and Plankton must work together on a delivery to Monster Island. They both end up being stranded. They are also later chased by monsters and must return to safety. Ride Patrick Ride: Patrick t..."
+          },
+          {
+            episode: 19,
+            title: "Hot Crossed Nuts/Sir Urchin and Snail Fail",
+            airDate: "2023-06-20",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDgxZWNhMjQtMDk0My00NWRiLWFmNjYtZjc2NzVkYTFjZTc4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Sandy's homemade snack becomes a big hit at the Krusty Krab, SpongeBob and Patrick's favorite comedy duo has a falling out on live television."
+          },
+          {
+            episode: 20,
+            title: "Friendiversary/Mandatory Music",
+            airDate: "2023-06-22",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOGU5YTczYzktNDhkYS00M2Y3LTlmZWYtMmM4Mzc4NzkyYzM0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob celebrates the anniversary of his friendship with Squidward. Squidward's lack of talent lands him in a court-ordered music class."
+          },
+          {
+            episode: 21,
+            title: "Dopey Dick/Plankton and the Beanstalk",
+            airDate: "2023-06-29",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMmVmMDMyZTYtYWNlOC00ZmRhLWJkM2MtZWU0MjViMTI1OTFlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward joins a crew of sailors hunting down the great white jellyfish. Plankton finds a magic bean that takes him to a land of giants."
+          },
+          {
+            episode: 22,
+            title: "My Friend Patty/FUN-believable",
+            airDate: "2023-07-18",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjMxMjY5MTQtYmE1OC00NWU5LWJjNjQtNzgwZDBhZTk4Yzc1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob befriends a sentient Krabby Patty whose only wish is to be eaten. Rube hosts an episode of \"FUN-Believable With Rube\" where he explores little known oddities and attractions around Bikini Bottom."
+          },
+          {
+            episode: 23,
+            title: "Spatula of the Heavens/Gary's Playhouse",
+            airDate: "2023-07-20",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 24,
+            title: "Swimming Fools/The Goobfather",
+            airDate: "2023-08-08",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDI2NDc3YWQtODU3My00NWI1LTliYmMtY2IxYmUxYTZmYzk0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob builds a pool in his backyard and Squidward tries to resist taking a dip. Mr. Krabs must reckon with the Goobfather after he adds \"Patty Whips\" to the menu at the Krusty Krab."
+          },
+          {
+            episode: 25,
+            title: "SquidBird/Allergy Attack!",
+            airDate: "2023-08-10",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTMwN2RhNjktOWE2Mi00OGQ0LWJmNDktZjg0MThkMTk0MWNmXkEyXkFqcGdeQXVyMzYzMDc0NzU@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward gets left with a mess when SpongeBob and Patrick use carrier clams to send messages to each other. After cooking his kazillionth Krabby Patty, SpongeBob believes he's developed an allergy to them."
+          },
+          {
+            episode: 26,
+            title: "Big Top Flop/Sandy, Help Us!",
+            airDate: "2023-10-31",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BM2NmNzhhNjktN2JkNy00MjEzLTg1YjMtY2VkN2NkZmY5NmJkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When the circus comes to town and steals his customers away, Mr. Krabs tries to sabotage the show. Sandy spends the day solving everyone's issues, only to return home to her own monster of a problem."
+          }
+        ]
+      },
+      {
+        season: 14,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode #14.1",
+            airDate: "2023-11-02",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 2,
+            title: "We Heart Hoops/SpongeChovy",
+            airDate: "2023-11-21",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTk2NzEyNTQtZTQ5MS00MjAyLTgzMDMtNDNkYTBkM2M2OTU3XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs steps out of his shell and into the gym after Larry shows him up at the beach."
+          },
+          {
+            episode: 3,
+            title: "BassWard/Squidiot Box",
+            airDate: "2023-11-23",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BODRmZTYxZmQtOTQ3My00MmU2LWI4ODItMTFhNDgzYTE2OTQ4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward and Bubble Bass are forced to tolerate each other's company on a trip to Jetsam City. Squidward takes a trip inside the imagination box and must rely on SpongeBob and Patrick's creativity in order to escape."
+          },
+          {
+            episode: 4,
+            title: "Blood is Thicker Than Grease/Don't Make Me Laugh",
+            airDate: "2024-02-12",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYjNmZDhhOWItNGRmNi00YWU1LTgwOGMtMjYxNmU2OTdmMGFkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton's family open their own restaurant - directly next to the Chum Bucket. SpongeBob suddenly finds everything funny, much to everyone's annoyance."
+          },
+          {
+            episode: 5,
+            title: "Momageddon/Pet the Rock",
+            airDate: "2024-02-14",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMjgzNGU2OGItNjZhMC00YmQ1LTgxNGYtODIxM2UxMjkzZThjXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The Krusty Krew get lazy when their moms take over the Krusty Krab. Patrick's new pet rock catches the eye of a mischievous rock collector."
+          },
+          {
+            episode: 6,
+            title: "Tango Tangle/Necro-Nom-Nom-Nom-I-Con",
+            airDate: "2024-02-20",
+            rating: 7.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZWM2MzdhZmEtN2ZlYi00NTQ5LTgyOGQtZGZmN2I1ODg4MGZkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton and Karen take dance lessons and quickly become top of the class. Equipped with a magical spell book, SpongeBob cooks up chaos in the Krusty Krab kitchen."
+          },
+          {
+            episode: 7,
+            title: "PL-1413/ln the Mood to Feud",
+            airDate: "2024-07-15",
+            rating: 7.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjBlNjA3NTgtM2U1Yi00OTE0LWFlNTEtOTA1YTgyZWY3ZDNlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton travels two thousand years into the future and finds a few unfamiliar faces./SpongeBob, Patrick, and Sandy find themselves in the middle of a long-standing feud between the Narwhals and the Planktons."
+          },
+          {
+            episode: 8,
+            title: "Mooned!/Hysterical History",
+            airDate: "2024-07-17",
+            rating: 8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BY2YwNzkwOTAtMmIwYS00Mjk3LWExMWMtMTU2YTE5MDY2YjIzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob wants to catch an ultra-rare jellyfish and enlists the help of former jellyfishing champion, Kevin/On a trip to the museum, SpongeBob and Patrick teach Sandy all about Bikini Bottom's fascinating, yet questionable, history."
+          },
+          {
+            episode: 9,
+            title: "Kreepaway Kamp",
+            airDate: "2024-10-10",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMzY5NTU0OWUtMDRlNS00YTc2LTg5NTEtZTU4YjYyZWU0MDdkXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "While at Kamp Koral for a reunion, SpongeBob and the gang are stalked by a mysterious figure lurking in the shadows as campers start disappearing one by one."
+          },
+          {
+            episode: 11,
+            title: "Snow Yellow and the Seven Jellies",
+            airDate: "2024-11-11",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOTkwZWFkMTgtZjFjYi00NjEyLWFmNDgtMWJkYzAwZDdjNzc4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When Snow Yellow is deemed the \"squarest of them all,\" the evil queen Karen seeks to claim the title for herself by any means necessary."
+          },
+          {
+            episode: 12,
+            title: "The Dirty Bubble Bass/Sheldon SquarePants",
+            airDate: "2024-07-22",
+            rating: 6.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTE5MWM4YWYtNmEyMS00MGY0LWI4N2EtNGMxYzVhODJjYmUyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Bubble Bass and the Dirty Bubble team up to become Bikini Bottom's nastiest nefarious nuisance/Plankton joins the SquarePants family in the hope of becoming closer with SpongeBob."
+          },
+          {
+            episode: 13,
+            title: "Sandy's Country Christmas",
+            airDate: "2024-10-15",
+            rating: 6.8,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNTkzZjA1Y2UtZWRkOC00ZjMyLWEwMTYtMjk3NjdkM2YyMmViXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When one of Sandy's experiments goes awry, the Cheeks family team up to save Christmas in Bikini Bottom."
+          },
+          {
+            episode: 14,
+            title: "Sammy Suckerfish/Big League Bob",
+            airDate: "2024-07-24",
+            rating: 8.6,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMTBjODM5NjUtMzMwNS00NmM5LTgwZTgtMTliODk2OThhODQ1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "When the Krusty Krab is left filthy, a magical fish teaches SpongeBob how to keep surfaces looking spiffy, lickety split. SpongeBob is recruiting to cook in the big leagues, but first, he must prove his worth in the test kitchen."
+          }
+        ]
+      },
+      {
+        season: 15,
+        episodes: [
+          {
+            episode: 2,
+            title: "Upward/Unidentified Flailing Octopus",
+            airDate: "2024-12-03",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNjNlMDlmZDgtYmU2Zi00NTRkLTliZDMtZGIwMDU5MjhmNjQwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Lady Upturn introduces Squidward, and his musical \"talents,\" to her high society friends after she becomes his patron/ Squidward sets out to prove that aliens aren't real - until he has a close encounter of his own."
+          },
+          {
+            episode: 3,
+            title: "Bad Luck Bob/The Sandman Cometh",
+            airDate: "2024-12-09",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTNlNzVkYmQtMmU1Yy00OWQyLWJiOTAtZjQ2OTQyNDk3MGQzXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob experiences a bad luck streak when his lucky tie clip suddenly goes missing/When Patrick cannot fall asleep, he seeks assistance from the Sandman."
+          },
+          {
+            episode: 4,
+            title: "Biscuit Ballyhoo/Student Driver Survivor",
+            airDate: "2024-12-13",
+            rating: 8.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDFlMGU4M2MtNmQ2OC00M2Q1LTk0NTMtODI0ZjM3YWRhMDIxXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "After the Science Scouts begin selling biscuits to fund a trip to Mars, Mr. Krabs enters the ring and turns it into a competition."
+          },
+          {
+            episode: 5,
+            title: "Wiener Takes All/Stuck in an Elevator",
+            airDate: "2024-12-19",
+            rating: 7.5,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZTFhYmNkNjktMTRjMC00NTZiLThlMDktNzhiZWI3M2Q2MzY5XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Tired of doing grunt work at the Krusty Krab, Squidward takes a new job as manager of Weenie Hut Jr.'s."
+          },
+          {
+            episode: 6,
+            title: "Squidness Protection/Dome Alone",
+            airDate: "2025-02-14",
+            rating: 7.1,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BMDAyOWNmYzItNGQ2Yi00YjJmLWJmNTctZTA1MjQ4Nzg1OTk1XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward's amazing new life in witness protection is threatened after SpongeBob and Patrick discover his whereabouts/While stuck in her dome, Sandy suspects Plankton's up to no good and recruits Patrick to investigate."
+          },
+          {
+            episode: 7,
+            title: "Wary Gary/Pinned",
+            airDate: "2025-02-21",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZDQ0OTNjNmMtOGRiZi00NGE1LWIxYWYtN2ZhYjZjYzZjZTkwXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "The underwater adventures of SpongeBob SquarePants and his friends in Bikini Bottom."
+          },
+          {
+            episode: 8,
+            title: "Jeffy T's Prankwell Emporium/A Taste of Plankton",
+            airDate: "2025-02-28",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWQ5YjdlZGEtMmYwYS00NzQ5LWE0MzgtY2M5NjYyYWIzOGE4XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward's prankster dad visits and brings all sorts of gags with him, much to Squidward's annoyance. Plankton tries to get a taste of the secret formula by attaching himself to SpongeBob's tongue."
+          },
+          {
+            episode: 9,
+            title: "Smartificial Intelligence/Firehouse Bob",
+            airDate: "2025-03-07",
+            rating: 8.3,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BNGEyZGFiN2ItNjk1NS00ZWI2LTk2NjUtNmQ4YzA3OWY5MzQ3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Perch Perkins fights for his job after he's fired and replaced by a robot anchorman. SpongeBob, Patrick, and Squidward feel the heat when they become volunteer firefighters."
+          },
+          {
+            episode: 10,
+            title: "Pablum Plankton/MuseBob ModelPants",
+            airDate: "2025-03-14",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTE5NTY1MmYtYTUwNS00MzA5LWI4NTktZDUxOWY5N2ZkNTMyXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Plankton wins a \"cutest baby\" contest and becomes the face of a baby food brand/When Squidward's one-off portrait of SpongeBob takes the art world by storm, he has no choice but to produce more."
+          },
+          {
+            episode: 11,
+            title: "Delivery of Doom!/My Father the Boat",
+            airDate: "2025-03-21",
+            rating: 7.9,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BZmM0Y2NhMmMtYzkzZS00ZjRhLWJkZWUtNGQzZTU4ZjA0MGI0XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "SpongeBob is challenged by E.V.I.L. to make a delivery to their secret lair in 10 minutes or less/When Mr. Krabs gets trapped inside of Pearl's new boat, he must pretend to be its engine to avoid being caught."
+          },
+          {
+            episode: 12,
+            title: "Who's Afraid of Mr. Snippers?/A Fish called Sandy",
+            airDate: "2025-04-08",
+            rating: 8.7,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BOWNmZTFkNjQtMDIxNC00OTliLTlkMjQtNTMyMTg0NTE5NzRlXkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Squidward and Plankton come together to make their very own stage play - and SpongeBob is casted as the villain/Sandy decides to give herself gills so she can truly experience Bikini Bottom."
+          },
+          {
+            episode: 13,
+            title: "Making Waves/Captain Quasar: The Next Generation",
+            airDate: "2025-06-06",
+            rating: 8.2,
+            thumbnail: "https://m.media-amazon.com/images/M/MV5BYTRlZTIyMjYtMmFlNy00MjhjLTgzZjYtMDExNDkxZGFmMGY3XkEyXkFqcGc@._V1_.jpg",
+            duration: "23 min",
+            overview: "Mr. Krabs and Plankton must learn to get along after ending up shipwrecked on an island/SpongeBob and Squidina try to start their very own Captain Quasar fan club after being kicked out of Bubble Bass's."
+          }
+        ]
+      }
+    ]
+  }
+
+];
