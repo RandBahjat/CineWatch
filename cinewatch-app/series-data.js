@@ -11747,7 +11747,11 @@ window._SERIES_DATA = [
             rating: 8.1,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris."
+            overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E02.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E02_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 3,
