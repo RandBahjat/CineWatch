@@ -8515,14 +8515,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const fallbackEmbedUrl = driveIframeUrl || (
     tmdbId
-      ? (String(tmdbId) === '65334' && parseInt(season, 10) >= 6
-          ? `https://vidsrc.to/embed/tv/65334/${season}/${epNum}`
-          : (isTv
-              ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
-              : (isAnime && malId
-                  ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-                  : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
-                )
+      ? (isTv
+          ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
+          : (isAnime && malId
+              ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+              : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
             )
         )
       : ''
