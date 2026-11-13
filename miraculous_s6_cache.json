@@ -411,5 +411,26 @@
       }
     ],
     "fileName": "Miraculous Tales of Ladybug and Cat Noir S06E14 Noe 1080p FUBO WEB-DL DDP5 1 H 264-Kitsune/Miraculous Tales of Ladybug and Cat Noir S06E14 Noe 1080p FUBO WEB-DL DDP5 1 H 264-Kitsune.mkv"
+  },
+  "15": {
+    "host": "nightjarandnectar.space",
+    "rawUrls": [
+      "https://nightjarandnectar.space/pl/H4sIAAAAAAAAAwXB3W6DIBgA0FcSUatLejFSmUXzuSKoeFeFxB8wLt2q7dPvnOAUR34U3k8DxvpuhsSLvQQNkTZx1Ac6.FBWPo2MnyVlSOOt7DOy1XR5yXUMegR.VSVNt9JSOTrpmRW9A8xX_jbrZ1j4BynT6965IzBVctU.k8rajbsUC0QygWAaLkw2LaOqpU9AXDUzwRUmov4aN4WJHSzsnV3epoYZ5DHBK1EmRT.NsH8yg0UiHoiWPWq3Y5ORVNrxMOtYQE1b43iu7eBBrSMlIBevRwhV4sq2W7sLd7n_y_T75n3fzud_9ax0ZQkBAAA-/master.m3u8",
+      "https://nightjarandnectar.space/pl/H4sIAAAAAAAAAwXB2XKCMBQA0F_Kggid8aFjRWAGSgK5F3jLQutAqoyNS_36nqPjL2oSqrneJklsYxPHW2KiKTWaJGbL32wuEQ7rWtF3Mu5Drvwa4XEzKAZlnQlqWJ0jUi24XIDbp.nH3sHp5fqsaLsSR7IyvQDTmHLsL9xwV7UEzoD1XXK3GdBe9ceY2SULn.3vUywP4pSl2ssHenmbFk.Arb1C3.D8fVUvKC3Si8DgVV_w6RBuah42la8XuQ.RQne0PyAMKefxXNzFXzhVnefQZTiw9FgBgFTQGeIb4I4pFrJG7Hb_JOJsfQkBAAA-/master.m3u8",
+      "https://nightjarandnectar.space/pl/H4sIAAAAAAAAAwXB25JDMAAA0F.ShBo704d2RJUVS5NQb4nYGpGOYt2.fs9B0LNOjf1b2.ikpOt6SMgTQI7nQNcT0P0SrN2lIUYVmyF6GAnMtoxfDsmJSAOyPvQTxSD_q0GyUD1ZMuRWU8xtbtpUhEHMAcf5LeDSBBPXzk6hQ6rueVDWRwQPfgx60dzaWeFhKbprlYd4VYBM4qhhbta18l9L8o6QRHxMmCcK5iBaRowZtmQH3ptS76q7tjW9jxzOvgjVR.CIKmsuuPYsAnOc8egj3pdRltE9DQIuNGCEbT2F8.Pbetk_2fn8D45YfI8JAQAA/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "English - SDH",
+        "file": "https://vidapi.cloud/subs/f99b495946b0ff65b5977ab6cdc0cfee/SDH.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "English - eng",
+        "file": "https://vidapi.cloud/subs/f99b495946b0ff65b5977ab6cdc0cfee/eng.eng.srt",
+        "srclang": "en"
+      }
+    ],
+    "fileName": "Miraculous Tales of Ladybug and Cat Noir S06E15 Grendiaper 1080p FUBO WEB-DL DDP5 1 H 264-Kitsune/Miraculous Tales of Ladybug and Cat Noir S06E15 Grendiaper 1080p FUBO WEB-DL DDP5 1 H 264-Kitsune.mkv"
   }
 }
