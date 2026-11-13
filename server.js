@@ -1212,6 +1212,41 @@ const server = http.createServer((req, res) => {
           return;
         }
 
+        // Dedicated resolver for Miraculous Season 6+ to bypass Vidlink misrouting bug and stream in ArtPlayer
+        if (String(tmdbId) === '65334' && isTv && parseInt(season, 10) >= 6) {
+          try {
+            const s6Data = await resolveMiraculousS6Stream(episode || 1);
+            if (s6Data && s6Data.primaryStreamUrl) {
+              const streamTarget = s6Data.primaryStreamUrl;
+              const ref = 'https://stellarconductornexus.com/';
+              const streamM3u8Url = `${baseUrl}/api/stream-m3u8?url=${encodeURIComponent(streamTarget)}&referer=${encodeURIComponent(ref)}`;
+              
+              const qualities = (s6Data.qualities || []).map((q, idx) => ({
+                quality: q.quality || (idx === 0 ? '1080p' : `Backup ${idx}`),
+                url: `${baseUrl}/api/stream-m3u8?url=${encodeURIComponent(q.url)}&referer=${encodeURIComponent(ref)}`,
+                rawUrl: q.url
+              }));
+
+              const tracks = (s6Data.tracks || []).map(t => ({
+                label: t.label,
+                file: `${baseUrl}/api/sub-proxy?url=${encodeURIComponent(t.file)}`,
+                srclang: t.srclang
+              }));
+
+              res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+              res.end(JSON.stringify({
+                success: true,
+                streamUrl: streamM3u8Url,
+                qualities: qualities.length > 0 ? qualities : [{ quality: 'Auto (1080p)', url: streamM3u8Url }],
+                tracks: tracks
+              }));
+              return;
+            }
+          } catch (s6Err) {
+            console.error('Error in resolveMiraculousS6Stream:', s6Err.message);
+          }
+        }
+
         const data = await resolveVidlinkStream(tmdbId, isTv ? (season || 1) : null, isTv ? (episode || 1) : null);
         const qualitiesObj = data?.stream?.qualities;
 
