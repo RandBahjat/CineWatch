@@ -343,5 +343,26 @@
       }
     ],
     "fileName": "Miraculous Tales of Ladybug and Cat Noir S06E11 Revelator 1080p DSNP WEB-DL DDP5 1 H 264-LADYBUG[EZTVx.to].mkv"
+  },
+  "12": {
+    "host": "gildedgardenmarket.space",
+    "rawUrls": [
+      "https://gildedgardenmarket.space/pl/H4sIAAAAAAAAAw3LQVKDMBQA0CuFQEpxpgsdAopAaMj_KewoETtQYsSxsbe3._diMrExjA3d7RMz7aPIUPYRxlEcmIGZcHoaLRJcE32GvhEZejMXtIWr7gCxWtl7lSelXHsqU3lU4dGPSqbn62VoLY8EeKJodpfWvbWvtaiIvGj9syFnNeSuVQH4kvSphKwWJ2T1ku0A2Je0n2FFCw02WwbO5g76sMqdELjcOiLvihdq1MkvLH_fQ_owSxaMWNMhcC.KOq5Xt0GO2sw9LQPX1AQocrkpZYrHEaPlNz13vp0Ljqdn3xwPh385PevbCQEAAA--/master.m3u8",
+      "https://gildedgardenmarket.space/pl/H4sIAAAAAAAAAwXBbXNDMAAA4L8UIRu764faJdTKJq.TbyFUCbOeuvHr9zy2C15R07WobqMIIBSi6MUHXY1QBMMWwDcLHLE8Kz5FFlQ8S1uulR3XlQ4uMKSf7HB.GM89zHyBTMYbV31VAuq0WN7zqXiWcL1.QP1bzYtjx7hLFW08idZmvu0MFk.TZIWU5C6.GyhheLSTnCj48Qy._ZUs9PPjHGhMpJGU1IRcGpwBM5GYCwoUdrtJtRGjHiQkhxDSp8Dejd8vDGdeq0jBFN5YSoOrtyju4qMepbayQpVfDPlh4yah21d5Ov0D_pF2UQkBAAA-/master.m3u8",
+      "https://gildedgardenmarket.space/pl/H4sIAAAAAAAAAwXB3XJEMBgA0FcKoTWd2Ytaf2sHDV8.5I6EUcLuaKeynr7nEKvrKVU2JfbgUemSt5F4svOGUb2P9kg_eDyxLPHbcjUMNgFtMxVsRshBEoD0Jhb.6uvnd7s9E1Gn92GJItTiULG1i0Q6wA8D.vM1gLrWs9.qZdrwDA0jAvMzc_JA3Xkgqt7GmFGVsLos.4a5VRgl3ZYapI9dzv7O58iRtaGQKN1DSVn9m4sArYKrB2hRoG06XCZdrTqqEK.CT1UZ_lDZhC5gXmURGmXd3J5ovzzFzBfnL2.mtVuy44tdLv8Tb38XCQEAAA--/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "French - SDH",
+        "file": "https://vidapi.cloud/subs/3c72d1acaa67019a177fc76b434f7e61/SDH.fre.srt",
+        "srclang": "fr"
+      },
+      {
+        "label": "French - fre",
+        "file": "https://vidapi.cloud/subs/3c72d1acaa67019a177fc76b434f7e61/fre.fre.srt",
+        "srclang": "fr"
+      }
+    ],
+    "fileName": "Miraculous Les aventures de Ladybug et Chat Noir S06E12 Psyconductrice 1080p TF1 WEB-DL AAC2 0 H 264-LADYBUG[EZTVx.to].mkv"
   }
 }
