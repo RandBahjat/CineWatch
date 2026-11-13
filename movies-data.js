@@ -1367,7 +1367,7 @@ window._MOVIES_DATA = [
     age: "TBR",
     duration: "2h 45m",
     genres: ["Action", "Animation", "Sci-Fi"],
-    poster: "https://image.tmdb.org/t/p/original/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/tTMmREfhVd51CCg7GN73wL8cIoT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
     videoUrl: "1003596",
     trailerUrl: "https://youtu.be/irVNGjRFZGk?si=l5r7wEgaXgw_gpYp",
