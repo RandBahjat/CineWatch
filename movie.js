@@ -8187,6 +8187,24 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     cleanUrl = rawVideoStr;
   }
 
+  // Handle Miraculous Season 6 & external embed players (VidSrc, etc.)
+  const isMiraculousS6 = (String(tmdbId) === "65334" && parseInt(season, 10) >= 6);
+  if (isMiraculousS6 || (rawVideoStr.startsWith('http') && (rawVideoStr.includes('/embed/') || rawVideoStr.includes('vidsrc')))) {
+    const embedSrc = (rawVideoStr.startsWith('http') && (rawVideoStr.includes('/embed/') || rawVideoStr.includes('vidsrc')))
+      ? rawVideoStr
+      : `https://vidsrc.to/embed/tv/65334/${season}/${epNum}`;
+    
+    if (iframe) {
+      iframe.src = embedSrc;
+      iframe.classList.remove("hidden");
+    }
+    if (artContainer) {
+      artContainer.innerHTML = "";
+      artContainer.classList.add("hidden");
+    }
+    return;
+  }
+
   if (!isFrom4kSession) {
     if (ref) {
       ref.is4k = false;
