@@ -8257,9 +8257,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // Subtitle parameters
   let subParam = '';
   const cleanName = ref?.title ? ref.title.split(' - S')[0].split(' - Ep')[0].trim() : '';
-  if (ref?.subtitles && Array.isArray(ref.subtitles) && ref.subtitles.length > 0) {
-    window._cwSubtitleTracks = ref.subtitles;
-    const defaultSub = ref.subtitles.find(s => s.default) || ref.subtitles[0];
+  const activeSubs = (epData?.subtitles && Array.isArray(epData.subtitles) && epData.subtitles.length > 0)
+    ? epData.subtitles
+    : (ref?.subtitles && Array.isArray(ref.subtitles) && ref.subtitles.length > 0 ? ref.subtitles : null);
+  if (activeSubs) {
+    window._cwSubtitleTracks = activeSubs;
+    const defaultSub = activeSubs.find(s => s.default) || activeSubs[0];
     if (defaultSub && defaultSub.file) {
       subtitleUrl = defaultSub.file;
     }
