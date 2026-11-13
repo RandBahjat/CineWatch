@@ -681,7 +681,7 @@ window._SERIES_DATA = [
     title: "VisionQuest",
     type: "TV Show",
     year: 2026,
-    rating: "8.8",
+    rating: "7.8",
     age: "TV-14",
     duration: "54m",
     genres: ["Action", "Adventure", "Sci-Fi", "Drama"],
@@ -704,7 +704,7 @@ window._SERIES_DATA = [
             episode: 1,
             title: "No Strings",
             airDate: "2026-10-13",
-            rating: 8.4,
+            rating: 7.9,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615067.jpg",
             duration: "53 min",
             overview: "Vision, rebooted and hiding, consults F.R.I.D.A.Y., E.D.I.T.H., J.A.R.V.I.S., and Ultron. A bounty forces him on the run with Thomas Shepard, possibly his reincarnated son. He must resist Ultron's influence and solve the mystery."
@@ -713,7 +713,7 @@ window._SERIES_DATA = [
             episode: 2,
             title: "Theseus",
             airDate: "2026-10-13",
-            rating: 8.3,
+            rating: 8.1,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615068.jpg",
             duration: "45 min",
             overview: "Delving into the classic Ship of Theseus paradox, Vision struggles to reconcile his restored memories with his rebuilt synthezoid hardware while forming a fragile alliance with Tommy and his embedded AI network."
@@ -722,7 +722,7 @@ window._SERIES_DATA = [
             episode: 3,
             title: "Reboot",
             airDate: "2026-10-20",
-            rating: 8.4,
+            rating: 8,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617395.jpg",
             duration: "52 min",
             overview: "Tommy risks everything to initiate a high-stakes hard reset on Vision's core systems, inadvertently opening a backdoor to a lethal digital entity known as the Butcherbird Killer."
@@ -731,7 +731,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "Malware",
             airDate: "2026-10-20",
-            rating: 8.7,
+            rating: 8.5,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617400.jpg",
             duration: "48 min",
             overview: "When the Butcherbird breaches Vision's mindspace, a desperate Vision surrenders physical control of his synthezoid body to Ultron, unleashing devastating consequences as Ultron takes the wheel."
@@ -740,7 +740,7 @@ window._SERIES_DATA = [
             episode: 5,
             title: "Firewall",
             airDate: "2026-10-27",
-            rating: 8.6,
+            rating: 7.9,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620878.jpg",
             duration: "46 min",
             overview: "Trapped in the digital attic of his own consciousness, Vision and his AI allies work frantically to decipher Ultron's sinister real-world scheme while facing a brutal ultimatum to drop the firewall."
@@ -749,7 +749,7 @@ window._SERIES_DATA = [
             episode: 6,
             title: "Deadlock",
             airDate: "2026-10-27",
-            rating: 9,
+            rating: 8.5,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620880.jpg",
             duration: "54 min",
             overview: "As Ultron initiates a catastrophic hive-mind convergence and bounty hunters close in on Tommy, Vision makes an agonizing sacrifice to disable the internal firewalls and break the deadlock."
@@ -11736,11 +11736,9 @@ window._SERIES_DATA = [
             rating: 8.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E01.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E01_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E01_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 2,
