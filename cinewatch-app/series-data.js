@@ -11760,7 +11760,8 @@ window._SERIES_DATA = [
             rating: 8.3,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger."
+            overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E03.mp4"
           },
           {
             episode: 4,
