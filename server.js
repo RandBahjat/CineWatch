@@ -281,18 +281,36 @@ async function resolveVidlinkStream(id, season, episode) {
 // ==========================================
 // MIRACULOUS SEASON 6 RESOLVER (NATIVE HLS / ARTPLAYER)
 // ==========================================
-const miraculousS6Cache = new Map();
-
-async function resolveMiraculousS6Stream(episode = 1) {
-  const ep = parseInt(episode, 10) || 1;
-  const now = Date.now();
-  if (miraculousS6Cache.has(ep)) {
-    const cached = miraculousS6Cache.get(ep);
-    if (now - cached.timestamp < 3 * 60 * 60 * 1000) {
-      return cached.data;
+let miraculousS6FileCache = {};
+const miraculousCachePath = path.join(__dirname, 'miraculous_s6_cache.json');
+function loadMiraculousCache() {
+  try {
+    if (fs.existsSync(miraculousCachePath)) {
+      miraculousS6FileCache = JSON.parse(fs.readFileSync(miraculousCachePath, 'utf8'));
     }
+  } catch (e) {
+    console.error('Error loading miraculous_s6_cache.json:', e.message);
   }
+}
+loadMiraculousCache();
 
+let cachedHostToken = { token: null, host: 'cedarchestcollectibles.space', expiresAt: 0 };
+
+async function getHostToken() {
+  const now = Math.floor(Date.now() / 1000);
+  if (cachedHostToken.token && (cachedHostToken.expiresAt - now > 180)) {
+    return cachedHostToken.token;
+  }
+  const fresh = await resolveMiraculousS6Live(1);
+  if (fresh && fresh.token) {
+    cachedHostToken = { token: fresh.token, host: fresh.host || 'cedarchestcollectibles.space', expiresAt: now + 3 * 3600 };
+    return fresh.token;
+  }
+  return null;
+}
+
+async function resolveMiraculousS6Live(episode = 1) {
+  const ep = parseInt(episode, 10) || 1;
   const tmdbId = '65334';
   const season = 6;
 
@@ -373,18 +391,53 @@ async function resolveMiraculousS6Stream(episode = 1) {
     srclang: s.code || 'en'
   }));
 
-  const result = {
+  return {
     primaryStreamUrl: streams[0],
     qualities: streams.map((url, i) => ({
       quality: i === 0 ? '1080p' : `Backup ${i}`,
       url: url,
       rawUrl: url
     })),
-    tracks: tracks
+    tracks: tracks,
+    token: token,
+    host: host
   };
+}
 
-  miraculousS6Cache.set(ep, { timestamp: now, data: result });
-  return result;
+async function resolveMiraculousS6Stream(episode = 1) {
+  const ep = String(parseInt(episode, 10) || 1);
+  loadMiraculousCache();
+
+  if (miraculousS6FileCache[ep] && miraculousS6FileCache[ep].rawUrls && miraculousS6FileCache[ep].rawUrls.length > 0) {
+    const entry = miraculousS6FileCache[ep];
+    try {
+      const token = await getHostToken();
+      if (token) {
+        const host = entry.host || 'cedarchestcollectibles.space';
+        const streams = entry.rawUrls.map(u => {
+          const full = u.startsWith('http') ? u : `https://${host}${u}`;
+          return full + (full.includes('?') ? '&' : '?') + 'token=' + token;
+        });
+        return {
+          success: true,
+          primaryStreamUrl: streams[0],
+          qualities: streams.map((url, i) => ({
+            quality: i === 0 ? '1080p' : `Backup ${i}`,
+            url: url,
+            rawUrl: url
+          })),
+          tracks: entry.tracks || [],
+          token: token,
+          host: host
+        };
+      }
+    } catch (tokenErr) {
+      console.warn('Failed to get host token for cached S6 ep:', tokenErr.message);
+    }
+  }
+
+  // Fallback to live extraction
+  return await resolveMiraculousS6Live(parseInt(ep, 10) || 1);
 }
 
 const server = http.createServer((req, res) => {
