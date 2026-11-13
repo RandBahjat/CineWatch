@@ -11770,7 +11770,11 @@ window._SERIES_DATA = [
             rating: 8.5,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets."
+            overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E04.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E04_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 5,
