@@ -193,6 +193,9 @@ const streamCache = new Map();
 const inflightStreams = new Map();
 
 async function resolveVidlinkStream(id, season, episode) {
+  if (String(id) === '65334' && parseInt(season, 10) >= 6) {
+    throw new Error('Vidlink upstream misroutes Miraculous Season 6 to Season 4');
+  }
   const cacheKey = `${id}_${season || ''}_${episode || ''}`;
   if (streamCache.has(cacheKey)) {
     const cached = streamCache.get(cacheKey);
