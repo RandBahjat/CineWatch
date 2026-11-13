@@ -8513,21 +8513,26 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
   }
 
+  const isMiraculousS6 = (String(tmdbId) === "65334" && parseInt(season, 10) >= 6);
+
   const fallbackEmbedUrl = driveIframeUrl || (
-    tmdbId
-      ? (isTv
-          ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
-          : (isAnime && malId
-              ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-              : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
+    isMiraculousS6
+      ? ''
+      : (tmdbId
+          ? (isTv
+              ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
+              : (isAnime && malId
+                  ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+                  : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
+                )
             )
+          : ''
         )
-      : ''
   );
 
   // If no direct stream is available, use fallback embed iframe seamlessly or show status
   if (!streamUrl && !driveIframeUrl) {
-    if (fallbackEmbedUrl && iframe) {
+    if (!isMiraculousS6 && fallbackEmbedUrl && iframe) {
       if (artContainer) {
         artContainer.innerHTML = "";
         artContainer.classList.add("hidden");
