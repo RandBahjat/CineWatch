@@ -281,5 +281,31 @@
       }
     ],
     "fileName": "Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E09.1080p.WEB.h264-DOLORES/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E09.1080p.WEB.h264-DOLORES.mkv"
+  },
+  "10": {
+    "host": "emberandelm.space",
+    "rawUrls": [
+      "https://emberandelm.space/pl/H4sIAAAAAAAAAw3NS3KCMAAA0CsFAWk64yY1qSAE8hd2mOBoiyAfW.jp68zbv9qCM4TbbeRfIt.3b6AJIXTRxXo2clsL37ONNsxMXiPJ0BD0IboHTzf9Wt5j33X0qb7cUIl5OoJHUB_QSHG_iMM1ERJVzEcBx2Wg8XWsSb8yQ4cc05xiDEowm4qUvxkIn9kpkdSjlcBhbvfJaFq0cEyLXMaBUfBupSukatu6a2f5SY19zUx9r7xrF3ci..M6B5WHRwp0yG4TqG.QKP2iUSqBGnOM_7jhqRbzTyUTddaEOTzHtIt96jlesN3uHy6OpgcJAQAA/master.m3u8",
+      "https://emberandelm.space/pl/H4sIAAAAAAAAAw3OQXKDIBQA0CshCtXOZNEMRaOVhK.AYSdohlQbu7CN4.nbd4IXRyN2o08GQm8JInGSulvykhJCh5RiTF.hE9RMG2vyuddTqN0Xb4xa.VmHiy143nTAgQ8nh_QucbjDJPoKB.GKo4ZJRuMM2ij9KbVlzgwnMwnpuX1KZIlTIAe8Vg3Kfjznfc144dEq7T3d3Ay2UVv8gbZjixbs57IwJlBoxbcyYlfT8hT_B2fCe7ULZh9vyKqMQVR2Pl42zfVaR.J30JD0PCznQhPRZFiwshY7PFQxX9s8gysicJGHwx.ONBHpCQEAAA--/master.m3u8",
+      "https://emberandelm.space/pl/H4sIAAAAAAAAAw3H3W6CMBgA0Ffir1iXeDEEihW7UT8K7R20JEqxGkd06dNv5.6EODUDxnGK4xCNExpwlODIbNJpkyQ6TT_GmV87oG6yJRk8C2G_Rq3Lambli3nKlf1N2ttFTX25ily1ChoPvUDtzL5OLa.0NbUMwpMuWD7.n.9_vA6o7KwiKjAgPX9zMKmo7k8ZoJcuxMHAhbR.IcJn89kyZgp.lT09akd7KFhkSpU0nVI6ZiuIJTvGn..R4EQHWwQzJR3ZRtpxWcd3f84Ngoo.WHl4ciFcN1sEwBp5WwKwj0G4zH03u90fMhRPdgkBAAA-/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "Chinese-Traditional",
+        "file": "https://vidapi.cloud/subs/f8b1c22975e998fe5798ca3f768e09c8/Chinese-Traditional.chi.srt",
+        "srclang": "zh"
+      },
+      {
+        "label": "English-SDH",
+        "file": "https://vidapi.cloud/subs/f8b1c22975e998fe5798ca3f768e09c8/English-SDH.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Japanese",
+        "file": "https://vidapi.cloud/subs/f8b1c22975e998fe5798ca3f768e09c8/Japanese.jpn.srt",
+        "srclang": "ja"
+      }
+    ],
+    "fileName": "Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E10.1080p.WEB.h264-DOLORES/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E10.1080p.WEB.h264-DOLORES.mkv"
   }
 }
