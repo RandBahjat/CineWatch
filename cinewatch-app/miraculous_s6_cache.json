@@ -1,1 +1,74 @@
-{}
+{
+  "1": {
+    "host": "cedarchestcollectibles.space",
+    "rawUrls": [
+      "https://cedarchestcollectibles.space/pl/H4sIAAAAAAAAAw3OUW6DIAAA0CspWpUl_RitWLXgSgWUPwWXZoJ1menU02_vBM9E_aATGB4OcdzpEAwaBMDE4WcCNIgS.FYHdB7sO5DSf95Gu3QTsqwpLsMII.7TL2UVpYEOyZmvalK_9WSkmFBuPJqSVBE5FpzVht3dLO47q_SOrm2DbO2o7c65p9zDEbkWmhdYbclLuyWr3VKWgcn7DHssnb_JCe4qwD.9JGEr6cxtvnKJNyHZ1mFbtf.vtsEv0czRdVeoknQsPZoJCSOBx41lfkcs94fUnoTAD9EoQcHyVBxOElv0cTse_wCvVfofCQEAAA--/master.m3u8",
+      "https://cedarchestcollectibles.space/pl/H4sIAAAAAAAAAw3NSW6DMBQA0CsZu6A4UhYl5UPCECZ_g3cGkw6YBCFUObdv3wWeGUYaMHIfRh5M94MhB675SCcT.MTXAT8WoDwNa6QpIQPJ39CGvwJxFh3QG9SZiYuzpte1b9.djv1SEfOdW9v07OKlHoKJnDclZr5Jvk0Np_3yuUkA36C1eVtvw.w.FKnTqsOmsKsTnZIZqXsp3KKtelR49c3iEv0zUhXtHibqXHVFJgFTA0jEa3.NBGlDo21gdhHw9WyZETmzz_8zE1C92nh_DALWWq4S4wvLpZIVYqlYGBYthGV1Ov0BDKw0kQkBAAA-/master.m3u8",
+      "https://cedarchestcollectibles.space/pl/H4sIAAAAAAAAAw3MW3KCMBQA0C3dS2iLnfHHEslQQB4hkfxhAg0Qpoxiq6y.PQs4Pr6hj_BKWtS9aaEnbeBhgKg1CYD075yVYTa6MQGXN_zLLzwTd9NKTuzALhF9FOeDVaHyNXVQOIHVpoZqfvk1dEX1vEG2OaZGcb_QG6T1ThjxjdyZtnNL2DgL9aw.UnZYjFBST.BJJvJyXtX_NWbERmaOvZIupzLSmwzjpJC2Vme7ppMYBBTXCsRPOjlIMbvWR1t9gnm2GA.cx1RFDeFhGXXSPlJimJE203J3l5PFmguZbIZKlx3zYr__Ayr4zwYJAQAA/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "French - Forced",
+        "file": "https://vidapi.cloud/subs/e534d36613fe50a00d438ebaaa6e1dd1/Forced.fre.srt",
+        "srclang": "fr"
+      },
+      {
+        "label": "English - SDH",
+        "file": "https://vidapi.cloud/subs/e534d36613fe50a00d438ebaaa6e1dd1/SDH.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Chinese - Traditional",
+        "file": "https://vidapi.cloud/subs/e534d36613fe50a00d438ebaaa6e1dd1/Traditional.chi.srt",
+        "srclang": "zh"
+      },
+      {
+        "label": "English - eng",
+        "file": "https://vidapi.cloud/subs/e534d36613fe50a00d438ebaaa6e1dd1/eng.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Japanese - jpn",
+        "file": "https://vidapi.cloud/subs/e534d36613fe50a00d438ebaaa6e1dd1/jpn.jpn.srt",
+        "srclang": "ja"
+      }
+    ],
+    "fileName": "Miraculous Tales Of Ladybug Cat Noir S06E01 The Illustrhater 1080p DSNP WEB-DL DD 5 1 H 264-playWEB/Miraculous Tales Of Ladybug Cat Noir S06E01 The Illustrhater 1080p DSNP WEB-DL DD 5 1 H 264-playWEB.mkv"
+  },
+  "2": {
+    "host": "gossamerandgrove.space",
+    "rawUrls": [
+      "https://gossamerandgrove.space/pl/H4sIAAAAAAAAAw3K3W6CMBgA0Fei_OoSbxABm7SRQr_a3iF1gVIYcwaQpx85t8fVrl8jFEbHQ3QMd986coIoiFBQe_XT_6JitQ9UILnxmQj7Yue_T5Xjcznalxph47xNyhR7wipT51hUxk7SxDMV11mNGAjSHnFZ0jh6Py1oiEeVrUi6GINhizb0xrqDC_cCNZ83eSRqkL3KnnydBBSzzmlIL21IkxSJBHzSr4pxCKGy3X4YeNRQo1CTXRdxsaZM2AYby8pBY9lPv8RZ89JTP7p7S4UUqap4Yhl3dRZUZJgWSLl_K06nf7D50rkJAQAA/master.m3u8",
+      "https://gossamerandgrove.space/pl/H4sIAAAAAAAAAw3M206DMAAA0F9qKa1gsgdlFMalCPSy9Y1STIOwdRqN69fr.YCDDFgIIRDGBuIkAejJYhLP0zuIZ4zS9Lnf_WTHL7TkrL2cHVJcBL3qW88pmXNYj6Cqu2IDU9THfO1jAzAVIvlUH7phiLqpYCejwGM50yAKH4y0eslToqU9yh1nJrhiUunF0pfHQKVvy80t1FIZXCaVK5hK4YSqb3V95Rq6fZbVXQi6jmr.rUHFGtBijobo_7sPZXVbVFU3YXPt5oDZHWfUesM1G2T_0wmHpXTZGHmkSnsawtZ2ub..9YfDH5P2txoJAQAA/master.m3u8",
+      "https://gossamerandgrove.space/pl/H4sIAAAAAAAAAwXB226CMAAA0F8qIGqX.IK0XIwwSi_Qt9JimkHRCA7Y1..cgw7gQwXa685Hv38EB_948o7qrE59F_aw_yoE_BDxch2DW8XwWA3bXP_lexvkPmlwRLEcOicpmexG2RLULFvpdUnKGLdi1KtifCkTKPpm2HhiPmq8_8pYuraRM5lkoSjf.RC.zSAtoRIznD_NmHvSad9w61MU7ia1bw34XAgGWnDf5IjTGr3QDdhJizkQOMqMgEI5iG5ehDrErwTbiqIMlClRgpGWAViUSZHU4gl0LGvptp86wY65av2uLpd_uzs_WgkBAAA-/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "French - Forced",
+        "file": "https://vidapi.cloud/subs/521cdcb7833917cbff23db44343164e9/Forced.fre.srt",
+        "srclang": "fr"
+      },
+      {
+        "label": "English - SDH",
+        "file": "https://vidapi.cloud/subs/521cdcb7833917cbff23db44343164e9/SDH.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Chinese - Traditional",
+        "file": "https://vidapi.cloud/subs/521cdcb7833917cbff23db44343164e9/Traditional.chi.srt",
+        "srclang": "zh"
+      },
+      {
+        "label": "English - eng",
+        "file": "https://vidapi.cloud/subs/521cdcb7833917cbff23db44343164e9/eng.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Japanese - jpn",
+        "file": "https://vidapi.cloud/subs/521cdcb7833917cbff23db44343164e9/jpn.jpn.srt",
+        "srclang": "ja"
+      }
+    ],
+    "fileName": "Miraculous Tales Of Ladybug Cat Noir S06E02 Sublimation 1080p DSNP WEB-DL DD 5 1 H 264-playWEB/Miraculous Tales Of Ladybug Cat Noir S06E02 Sublimation 1080p DSNP WEB-DL DD 5 1 H 264-playWEB.mkv"
+  }
+}
