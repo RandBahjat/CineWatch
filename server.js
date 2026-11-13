@@ -279,130 +279,112 @@ async function resolveVidlinkStream(id, season, episode) {
 }
 
 // ==========================================
-// MIRACULOUS SEASON 6 CACHE & DYNAMIC EXTRACTOR
+// MIRACULOUS SEASON 6 RESOLVER (NATIVE HLS / ARTPLAYER)
 // ==========================================
-let puppeteer = null;
-try {
-  puppeteer = require('puppeteer');
-} catch (e) {
-  console.warn('Puppeteer not available, relying on pre-extracted cache for Miraculous S6.');
-}
+const miraculousS6Cache = new Map();
 
-let miraculousS6Cache = {};
-const miraculousCachePath = path.join(__dirname, 'miraculous_s6_cache.json');
-try {
-  if (fs.existsSync(miraculousCachePath)) {
-    miraculousS6Cache = JSON.parse(fs.readFileSync(miraculousCachePath, 'utf8'));
+async function resolveMiraculousS6Stream(episode = 1) {
+  const ep = parseInt(episode, 10) || 1;
+  const now = Date.now();
+  if (miraculousS6Cache.has(ep)) {
+    const cached = miraculousS6Cache.get(ep);
+    if (now - cached.timestamp < 3 * 60 * 60 * 1000) {
+      return cached.data;
+    }
   }
-} catch (e) {
-  console.error('Error loading miraculous_s6_cache.json:', e.message);
-}
 
-function isM3u8TokenValid(streamUrl) {
-  try {
-    const urlObj = new URL(streamUrl);
-    const token = urlObj.searchParams.get('token');
-    if (!token) return true;
-    const parts = token.split('.');
-    if (parts.length < 2) return true;
-    const payload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf8'));
-    if (!payload.exp) return true;
-    const nowSec = Math.floor(Date.now() / 1000);
-    // Valid if at least 2 minutes remaining before expiration
-    return (payload.exp - nowSec) > 120;
-  } catch (e) {
-    return false;
-  }
-}
+  const tmdbId = '65334';
+  const season = 6;
 
-let puppeteerBrowser = null;
-async function getPuppeteerBrowser() {
-  if (!puppeteer) return null;
-  if (!puppeteerBrowser || !puppeteerBrowser.isConnected()) {
-    puppeteerBrowser = await puppeteer.launch({
-      headless: 'new',
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--disable-gpu',
-        '--mute-audio'
-      ]
-    });
-  }
-  return puppeteerBrowser;
-}
+  // Step 1: vs_src.php
+  const vsSrcUrl = `https://vidsrc.sh/vs_src.php?type=tv&id=${tmdbId}&season=${season}&episode=${ep}`;
+  const res1 = await fetch(vsSrcUrl, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': `https://vidsrc.sh/embed/tv/${tmdbId}/${season}-${ep}` }
+  });
+  if (!res1.ok) throw new Error(`vs_src.php responded with ${res1.status}`);
+  const data1 = await res1.json();
+  if (!data1.src) throw new Error('No src returned from vs_src.php');
 
-async function extractVidsrcTvStream(tmdbId, season, ep) {
-  if (!puppeteer) return null;
-  const browser = await getPuppeteerBrowser();
-  if (!browser) return null;
-  const page = await browser.newPage();
-  
-  await page.setRequestInterception(true);
-  
-  let resolvedM3u8 = null;
-  let resolvePromise;
-  const streamPromise = new Promise(resolve => {
-    resolvePromise = resolve;
+  // Step 2: nexus embed
+  const nexusUrl = data1.src;
+  const res2 = await fetch(nexusUrl, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': 'https://vidsrc.sh/' }
+  });
+  if (!res2.ok) throw new Error(`nexus responded with ${res2.status}`);
+  const html2 = await res2.text();
+  const playerUrlMatch = html2.match(/"playerUrl":"([^"]+)"/);
+  if (!playerUrlMatch) throw new Error('playerUrl not found in nexus embed');
+  const playerPath = playerUrlMatch[1].replace(/\\u0026/g, '&');
+  const fullPlayerUrl = new URL(nexusUrl).origin + playerPath;
+
+  // Step 3: player config
+  const res3 = await fetch(fullPlayerUrl, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': nexusUrl }
+  });
+  if (!res3.ok) throw new Error(`player embed responded with ${res3.status}`);
+  const html3 = await res3.text();
+  const configMatch = html3.match(/window\.CONFIG\s*=\s*({[\s\S]*?});/);
+  if (!configMatch) throw new Error('window.CONFIG not found');
+  const config = JSON.parse(configMatch[1]);
+  if (!config.apiToken) throw new Error('No apiToken in CONFIG');
+
+  // Step 4: metadata & encrypted stream_urls
+  const metaUrl = `${config.streamBase}&season=${season}&episode=${ep}&stream_urls&api_token=${encodeURIComponent(config.apiToken)}`;
+  const res4 = await fetch(metaUrl, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': fullPlayerUrl }
+  });
+  if (!res4.ok) throw new Error(`metaApi responded with ${res4.status}`);
+  const meta = await res4.json();
+  if (!meta.data || !meta.data.stream_urls) throw new Error('No stream_urls in metadata');
+
+  // Step 5: WebAssembly decryption
+  const wasmRes = await fetch(meta.vs.wasm_url);
+  const wasmBuf = await wasmRes.arrayBuffer();
+  const mod = await WebAssembly.compile(wasmBuf);
+  const inst = await WebAssembly.instantiate(mod, {});
+  const ex = inst.exports;
+
+  const enc = Buffer.from(meta.data.stream_urls, 'base64');
+  const ptr = ex.alloc(enc.length);
+  new Uint8Array(ex.memory.buffer, ptr, enc.length).set(enc);
+  const outLen = ex.decrypt(ptr, enc.length);
+  const decrypted = new TextDecoder().decode(new Uint8Array(ex.memory.buffer, ptr + 12, outLen));
+  const rawUrls = decrypted.split('\n').filter(Boolean);
+  if (rawUrls.length === 0) throw new Error('Decrypted stream_urls is empty');
+
+  // Step 6: generate token
+  const host = meta.data.stream_urls_api_host || 'cedarchestcollectibles.space';
+  const genUrl = `https://${host}/generate.php?api_token=${encodeURIComponent(config.apiToken)}`;
+  const res5 = await fetch(genUrl, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': fullPlayerUrl }
+  });
+  if (!res5.ok) throw new Error(`generate.php responded with ${res5.status}`);
+  const token = (await res5.text()).trim();
+
+  // Step 7: assemble streams & subtitles
+  const streams = rawUrls.map(u => {
+    const full = u.startsWith('http') ? u : `https://${host}${u}`;
+    return full + (full.includes('?') ? '&' : '?') + 'token=' + token;
   });
 
-  page.on('request', req => {
-    const u = req.url();
-    const type = req.resourceType();
-    
-    if (u.includes('disable-devtool') || u.includes('histats') || u.includes('llvpn') || u.includes('google-analytics')) {
-      req.abort();
-      return;
-    }
+  const tracks = (meta.default_subs || []).map(s => ({
+    label: s.lang || s.code || 'English',
+    file: s.url,
+    srclang: s.code || 'en'
+  }));
 
-    if (type === 'image' || type === 'font' || type === 'stylesheet') {
-      req.abort();
-      return;
-    }
+  const result = {
+    primaryStreamUrl: streams[0],
+    qualities: streams.map((url, i) => ({
+      quality: i === 0 ? '1080p' : `Backup ${i}`,
+      url: url,
+      rawUrl: url
+    })),
+    tracks: tracks
+  };
 
-    if (u.includes('master.m3u8') || (u.includes('.m3u8') && !u.includes('secret/m3u8'))) {
-      if (!resolvedM3u8) {
-        resolvedM3u8 = u;
-        resolvePromise(u);
-      }
-    }
-    req.continue();
-  });
-
-  let clickInterval = null;
-  try {
-    const embedUrl = `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${ep}`;
-    await page.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
-
-    clickInterval = setInterval(async () => {
-      if (resolvedM3u8) {
-        clearInterval(clickInterval);
-        return;
-      }
-      for (const frame of page.frames()) {
-        try {
-          const btn = await frame.$('#bigPlay, .jw-bigplay, button');
-          if (btn) await btn.click().catch(() => {});
-        } catch(e) {}
-      }
-    }, 350);
-
-    const m3u8 = await Promise.race([
-      streamPromise,
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout extracting stream')), 12000))
-    ]);
-
-    if (clickInterval) clearInterval(clickInterval);
-    return m3u8;
-  } catch (err) {
-    console.error(`Dynamic extraction failed for ${tmdbId} S${season}E${ep}:`, err.message);
-    return null;
-  } finally {
-    if (clickInterval) clearInterval(clickInterval);
-    await page.close().catch(() => {});
-  }
+  miraculousS6Cache.set(ep, { timestamp: now, data: result });
+  return result;
 }
 
 const server = http.createServer((req, res) => {
