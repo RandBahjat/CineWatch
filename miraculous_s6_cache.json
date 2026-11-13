@@ -307,5 +307,41 @@
       }
     ],
     "fileName": "Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E10.1080p.WEB.h264-DOLORES/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S06E10.1080p.WEB.h264-DOLORES.mkv"
+  },
+  "11": {
+    "host": "indigoinksociety.space",
+    "rawUrls": [
+      "https://indigoinksociety.space/pl/H4sIAAAAAAAAAxWMSW6DMAAAv2QWk1Aph5oYKIppMV6CbwZTEWIoEpZSeH3pZTSH0Xz3EJzCc9BqE0Fgus4Pu1MMgQdgF.sIvimvAZq7K0_TgWQvKNj7RiaxNLZwt50A7pnViOGHjuVN2cOxerK83MVYRBVTjknnWimETtbAzGjV6fBobTHWObq3_GjThdDMhEYuAZVkq2QJJFMbvZeTTtzHpxioAQozHu8ig4rzl1_nxYOzQuspRgTYlf1_AUV9Zq6EIShtIbiMcfO0SW0VqnE5qzxNxEEhcNjJ31ROzpEJ._1sg6_qcvkDrysG5gkBAAA-/master.m3u8",
+      "https://indigoinksociety.space/pl/H4sIAAAAAAAAAw3L3W6DIBgA0FdCBGuX9MYMZrdBi5OP6h2CzlWwydL9yNNv5_4Q4ijGJcW2sFnpp2Gyu3Fwu7KcHEF7.uAjnyGGRl0AqyAShIr5HIJ5lPdBMyKwSPIqMpE48sFjqf2zZYj2a_XS1rDISH8a47aGZdWweCtW3znG7aipbmH5Fqm_9WsTHZZfr9u9gIVgeGp.zdrIoVVbnwJqjVd9q7D72J91XRFTgxbcn.yqP7t4b1UeCrXQmzDH9Mb4rK8gPZNFh8Umwv_HfQH5nDkQqMMlOvEqjvE9dSs_2gD5WR0Of2OwHT4JAQAA/master.m3u8",
+      "https://indigoinksociety.space/pl/H4sIAAAAAAAAAw3L226DIAAA0F8CvFSX9GWpYNXSgnIpb1hMqLeZdXHVr9_O.0lCkIQgPTyQi2GYRh2w6BBDBxIbJ8iFH2LAQAlMjfBvixy49L5RotAmc1sJKaHkgWzgvBR064bxKba0kFBO7enzJAj1XIS_Tt0328u6mY2uYMEvCH9TxHO3c9WKpS6Buanc8DrgZzfhUqD3RLVfGRql1Fg3gcyZKGaHuDbjUrkAiysxpMPc_L.1QampAv4yu.SN5me209niped9trUkiqySXwyOVE4_zCp_pcgNdxCNdnqtMqP9jR2Pf3C3lN0JAQAA/master.m3u8"
+    ],
+    "tracks": [
+      {
+        "label": "Forced-For-French-audio",
+        "file": "https://vidapi.cloud/subs/8235f3638008add36c9426aac5c09654/Forced-For-French-audio.fre.srt",
+        "srclang": "fr"
+      },
+      {
+        "label": "English - SDH",
+        "file": "https://vidapi.cloud/subs/8235f3638008add36c9426aac5c09654/SDH.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Chinese - chi",
+        "file": "https://vidapi.cloud/subs/8235f3638008add36c9426aac5c09654/chi.chi.srt",
+        "srclang": "zh"
+      },
+      {
+        "label": "English - eng",
+        "file": "https://vidapi.cloud/subs/8235f3638008add36c9426aac5c09654/eng.eng.srt",
+        "srclang": "en"
+      },
+      {
+        "label": "Japanese - jpn",
+        "file": "https://vidapi.cloud/subs/8235f3638008add36c9426aac5c09654/jpn.jpn.srt",
+        "srclang": "ja"
+      }
+    ],
+    "fileName": "Miraculous Tales of Ladybug and Cat Noir S06E11 Revelator 1080p DSNP WEB-DL DDP5 1 H 264-LADYBUG[EZTVx.to].mkv"
   }
 }
