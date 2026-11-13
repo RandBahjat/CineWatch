@@ -11736,7 +11736,11 @@ window._SERIES_DATA = [
             rating: 8.4,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers."
+            overview: "Marinette and Adrien face off against a newly akumatized villain, The Illustrhater, kicking off their new high school adventure in Paris with upgraded superhero powers.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E01.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E01_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 2,
