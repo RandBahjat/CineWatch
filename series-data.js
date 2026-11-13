@@ -11778,12 +11778,16 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: "Revelator",
+            title: "Werepapas",
             airDate: "2025-02-22",
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "A truth-seeking akumatized villain threatens to force everyone in Paris to reveal their deepest secrets, putting the secret identities of Ladybug and Cat Noir in jeopardy."
+            overview: "Marinette's father and grandfather are akumatized into Werepapas, threatening Paris with their overwhelming baker powers while Ladybug and Cat Noir try to reason with them.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E05.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E05_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 6,
