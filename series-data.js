@@ -11823,7 +11823,8 @@ window._SERIES_DATA = [
             rating: 9.2,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy."
+            overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E09.mp4"
           },
           {
             episode: 10,
