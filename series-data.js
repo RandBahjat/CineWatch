@@ -11822,7 +11822,11 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens."
+            overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E08.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E08_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 9,
