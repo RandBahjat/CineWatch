@@ -11809,7 +11809,11 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm."
+            overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E07.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E07_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 8,
