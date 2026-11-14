@@ -11791,12 +11791,16 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: "Climatiqueen",
+            title: "Sleeping Syren",
             airDate: "2025-03-01",
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Aurore Beauréal returns more dangerous than ever as Climatiqueen, unleashing catastrophic meteorological storms that freeze the city."
+            overview: "Ondine is akumatized once again into Sleeping Syren, submerging Paris into a submerged dreamscape that puts Ladybug and Cat Noir's underwater skills to the ultimate test.",
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E06.mp4",
+            subtitles: [
+              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E06_English.vtt", srclang: "en", default: true }
+            ]
           },
           {
             episode: 7,
