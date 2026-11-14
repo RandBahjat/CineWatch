@@ -175,7 +175,7 @@ window._SERIES_DATA = [
             episode: 5,
             title: "Game Over",
             airDate: "2026-11-06",
-            rating: 7.8,
+            rating: 7.9,
             thumbnail: "https://image.tmdb.org/t/p/w780/cpuqCOain3V8tK7dqQSqIfDRVZv.jpg",
             duration: "28 min",
             overview: "The physical closeness between Loïs and Lane creates an awkwardness between them. As Loïs hesitates to take her independence, Lane falters under pressure from his mother, who forces Aaron by his side for the Gala. When Lane's wounds get the better of him, their relationship is put to the test."
@@ -11747,11 +11747,9 @@ window._SERIES_DATA = [
             rating: 8.1,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E02.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E02_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "Ladybug and Cat Noir must deal with subtle traps laid across the city as new mystical threats awaken in Paris.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E02_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 3,
@@ -11760,8 +11758,8 @@ window._SERIES_DATA = [
             rating: 8.3,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger.",
-            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E03.mp4"
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E03.mp4",
+            overview: "With Paris facing a severe crisis, Ladybug and Cat Noir combine their abilities to defend innocent citizens from escalating danger."
           },
           {
             episode: 4,
@@ -11770,11 +11768,9 @@ window._SERIES_DATA = [
             rating: 8.5,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E04.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E04_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "Officer Roger Raincomprix is akumatized into Daddycop, enforcing an ironclad curfew across Paris and locking down the streets.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E04_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 5,
@@ -11783,11 +11779,9 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Marinette's father and grandfather are akumatized into Werepapas, threatening Paris with their overwhelming baker powers while Ladybug and Cat Noir try to reason with them.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E05.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E05_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "Marinette's father and grandfather are akumatized into Werepapas, threatening Paris with their overwhelming baker powers while Ladybug and Cat Noir try to reason with them.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E05_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 6,
@@ -11796,11 +11790,9 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Ondine is akumatized once again into Sleeping Syren, submerging Paris into a submerged dreamscape that puts Ladybug and Cat Noir's underwater skills to the ultimate test.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E06.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E06_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "Ondine is akumatized once again into Sleeping Syren, submerging Paris into a submerged dreamscape that puts Ladybug and Cat Noir's underwater skills to the ultimate test.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E06_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 7,
@@ -11809,11 +11801,9 @@ window._SERIES_DATA = [
             rating: 8.7,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E07.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E07_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "A stone powerhouse rampages through the historic streets of Paris, challenging Cat Noir's agile maneuvers and Ladybug's strategic Lucky Charm.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E07_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 8,
@@ -11822,11 +11812,9 @@ window._SERIES_DATA = [
             rating: 8.6,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens.",
             videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E08.mp4",
-            subtitles: [
-              { label: "English", file: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E08_English.vtt", srclang: "en", default: true }
-            ]
+            overview: "An authoritarian villain named The Ruler attempts to force rigid geometric perfection and strict obedience on all Parisian citizens.",
+            subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E08_English.vtt","srclang":"en","default":true}]
           },
           {
             episode: 9,

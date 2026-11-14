@@ -1,10 +1,10 @@
 {
-  "lastRun": 1794665825669,
+  "lastRun": 1794673010651,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
       "rating": "8.3",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "MobLand",
       "year": 2025
     },
@@ -25,7 +25,7 @@
     "series:brothers": {
       "imdbId": "tt6773088",
       "rating": "6.2",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Brothers",
       "year": 2026
     },
@@ -276,7 +276,7 @@
     "series:visionquest": {
       "imdbId": "tt23112594",
       "rating": "7.8",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "VisionQuest",
       "year": 2026
     },
@@ -656,55 +656,49 @@
     "movie:the family plan 2": {
       "imdbId": "tt34276058",
       "rating": "5.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "The Family Plan 2",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:stolen girl": {
       "imdbId": "tt4682810",
       "rating": "5.4",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "Stolen Girl",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:trap house": {
       "imdbId": "tt10799690",
       "rating": "5.5",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "Trap House",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:karate kid: legends": {
       "imdbId": "tt1674782",
       "rating": "6.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "Karate Kid: Legends",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:steve": {
       "imdbId": "tt32985279",
       "rating": "6.4",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "Steve",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:marty supreme": {
       "imdbId": "tt32916440",
       "rating": "7.5",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794673010651,
       "title": "Marty Supreme",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "fourk:spider-man: brand new day": {
       "imdbId": "tt22084616",
       "rating": "8.0",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Spider-Man: Brand New Day",
       "year": 2026
     },
@@ -1541,21 +1535,21 @@
     "movie:kung fu panda 3": {
       "imdbId": "tt2267968",
       "rating": "7.1",
-      "lastChecked": 1792526561514,
+      "lastChecked": 1794673010651,
       "title": "Kung Fu Panda 3",
       "year": 2016
     },
     "movie:kung fu panda 4": {
       "imdbId": "tt21692408",
       "rating": "6.3",
-      "lastChecked": 1792526561514,
+      "lastChecked": 1794673010651,
       "title": "Kung Fu Panda 4",
       "year": 2024
     },
     "movie:rise of the guardians": {
       "imdbId": "tt1446192",
       "rating": "7.2",
-      "lastChecked": 1792526561514,
+      "lastChecked": 1794673010651,
       "title": "Rise of the Guardians",
       "year": 2012
     },
@@ -3691,112 +3685,112 @@
     "series:avatar: seven havens": {
       "imdbId": "tt35854736",
       "rating": "N/A",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Avatar: Seven Havens",
       "year": 2026
     },
     "series:east of eden": {
       "imdbId": "tt21097264",
       "rating": "8.1",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "East of Eden",
       "year": 2026
     },
     "series:monster: the lizzie borden story": {
       "imdbId": "tt39673631",
       "rating": "4.6",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Monster: The Lizzie Borden Story",
       "year": 2026
     },
     "series:stranger things: tales from '85": {
       "imdbId": "tt27486290",
       "rating": "5.9",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Stranger Things: Tales from '85",
       "year": 2026
     },
     "series:neagley": {
       "imdbId": "tt33539520",
       "rating": "7.7",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Neagley",
       "year": 2026
     },
     "series:last seen": {
       "imdbId": "tt6037988",
       "rating": "N/A",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Last Seen",
       "year": 2026
     },
     "series:mousetrap": {
       "imdbId": "tt36996011",
       "rating": "7.0",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Mousetrap",
       "year": 2026
     },
     "series:lanterns": {
       "imdbId": "tt26545992",
       "rating": "7.8",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Lanterns",
       "year": 2026
     },
     "series:lucky": {
       "imdbId": "tt34866681",
       "rating": "6.7",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Lucky",
       "year": 2026
     },
     "series:daredevil: born again": {
       "imdbId": "tt18923754",
       "rating": "8.1",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Daredevil: Born Again",
       "year": 2025
     },
     "series:off campus": {
       "imdbId": "tt33546863",
       "rating": "7.8",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Off Campus",
       "year": 2026
     },
     "series:spider noir": {
       "imdbId": "tt30460310",
       "rating": "7.6",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Spider Noir",
       "year": 2026
     },
     "series:your friendly neighborhood spider-man": {
       "imdbId": "tt16027074",
       "rating": "7.5",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Your Friendly Neighborhood Spider-Man",
       "year": 2025
     },
     "series:the wonderfully weird world of gumball": {
       "imdbId": "tt36985473",
       "rating": "8.5",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "The Wonderfully Weird World of Gumball",
       "year": 2025
     },
     "series:dutton ranch": {
       "imdbId": "tt34991493",
       "rating": "8.2",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Dutton Ranch",
       "year": 2026
     },
     "anime:dragon ball super: beerus": {
       "imdbId": "tt39395275",
       "rating": "N/A",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Dragon Ball Super: Beerus",
       "year": 2026
     },
@@ -4823,7 +4817,7 @@
     "series:carrie": {
       "imdbId": "tt11540908",
       "rating": "7.8",
-      "lastChecked": 1794562880689,
+      "lastChecked": 1794673010651,
       "title": "Carrie",
       "year": 2026
     },
@@ -5019,35 +5013,35 @@
     "series:the greatest": {
       "imdbId": "tt15715850",
       "rating": "N/A",
-      "lastChecked": 1794511648147,
+      "lastChecked": 1794673010651,
       "title": "The Greatest",
       "year": 2026
     },
     "series:campus drivers": {
       "imdbId": "tt39943756",
       "rating": "N/A",
-      "lastChecked": 1794511648147,
+      "lastChecked": 1794673010651,
       "title": "Campus Drivers",
       "year": 2026
     },
     "series:dexter: resurrection": {
       "imdbId": "tt33043892",
       "rating": "9.0",
-      "lastChecked": 1794511648147,
+      "lastChecked": 1794673010651,
       "title": "Dexter: Resurrection",
       "year": 2025
     },
     "fourk:resident evil": {
       "imdbId": "tt35538033",
       "rating": "N/A",
-      "lastChecked": 1794511648147,
+      "lastChecked": 1794673010651,
       "title": "Resident Evil",
       "year": 2026
     },
     "fourk:superman": {
       "imdbId": "tt5950044",
       "rating": "7.0",
-      "lastChecked": 1794511648147,
+      "lastChecked": 1794673010651,
       "title": "Superman",
       "year": 2025
     },
