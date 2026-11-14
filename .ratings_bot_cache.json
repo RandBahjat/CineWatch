@@ -1,5 +1,5 @@
 {
-  "lastRun": 1794662033211,
+  "lastRun": 1794665825669,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -411,276 +411,247 @@
     "movie:insidious: out of the further": {
       "imdbId": "tt32393988",
       "rating": "6.2",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "Insidious: Out of the Further",
       "year": 2026
     },
     "movie:the last house": {
       "imdbId": "tt32268156",
       "rating": "5.5",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "The Last House",
       "year": 2026
     },
     "movie:minions & monsters": {
       "imdbId": "tt32890033",
       "rating": "6.3",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "Minions & Monsters",
       "year": 2026
     },
     "movie:young washington": {
       "imdbId": "tt32104007",
       "rating": "6.9",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "Young Washington",
       "year": 2026
     },
     "movie:superman": {
       "imdbId": "tt5950044",
       "rating": "7.0",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "Superman",
       "year": 2025
     },
     "movie:thunderbolts": {
       "imdbId": "tt20969586",
       "rating": "7.1",
-      "lastChecked": 1794553039137,
+      "lastChecked": 1794665825669,
       "title": "Thunderbolts ",
       "year": 2025
     },
     "movie:punisher: one last kill": {
       "imdbId": "tt36042156",
       "rating": "N/A",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Punisher: One Last Kill",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:tom and jerry: forbidden compass": {
       "imdbId": "tt37185884",
       "rating": "3.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Tom and Jerry: Forbidden Compass",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:mission: impossible - the final reckoning": {
       "imdbId": "tt9603208",
       "rating": "7.1",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Mission: Impossible - The Final Reckoning ",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:ballerina": {
       "imdbId": "tt7181546",
       "rating": "6.8",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Ballerina",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:transformers: dark of the moon": {
       "imdbId": "tt1399103",
       "rating": "6.2",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Transformers: Dark of the Moon",
-      "year": 20011,
-      "notFound": true
+      "year": 20011
     },
     "movie:in the grey": {
       "imdbId": "tt27681354",
       "rating": "6.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "in the Grey",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:toy story 5": {
       "imdbId": "tt29355505",
       "rating": "7.4",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Toy Story 5",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:how to train your dragon": {
       "imdbId": "tt0892769",
       "rating": "8.1",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "How to Train Your Dragon",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:the fantastic four: first steps": {
       "imdbId": "tt10676052",
       "rating": "6.8",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "The Fantastic Four: First Steps",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:f1": {
       "imdbId": "tt16311594",
       "rating": "7.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "F1",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:sinners": {
       "imdbId": "tt31193180",
       "rating": "7.5",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Sinners",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:war machine": {
       "imdbId": "tt15940132",
       "rating": "6.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "War Machine",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:avatar: fire and ash": {
       "imdbId": "tt1757678",
       "rating": "7.2",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Avatar: Fire and Ash",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:captain america: brave new world": {
       "imdbId": "tt14513804",
       "rating": "5.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Captain America: Brave New World",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:now you see me: now you don't": {
       "imdbId": "tt4712810",
       "rating": "5.9",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Now You See Me: Now You Don't",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:moana": {
       "imdbId": "tt3521164",
       "rating": "7.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Moana ",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:the housemaid": {
       "imdbId": "tt27543632",
       "rating": "6.7",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "The Housemaid",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:a minecraft movie": {
       "imdbId": "tt3566834",
       "rating": "5.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "A Minecraft Movie",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:a working man": {
       "imdbId": "tt9150192",
       "rating": "5.7",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "A Working Man",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:tron: ares": {
       "imdbId": "tt6604188",
       "rating": "6.1",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "TRON: Ares",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:the naked gun": {
       "imdbId": "tt3402138",
       "rating": "6.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "The Naked Gun",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:zootopia 2": {
       "imdbId": "tt26443597",
       "rating": "7.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Zootopia 2",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:the devil wears prada 2": {
       "imdbId": "tt33612209",
       "rating": "6.3",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "The Devil Wears Prada 2",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:disclosure day": {
       "imdbId": "tt15047880",
       "rating": "6.4",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Disclosure Day",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:the drama": {
       "imdbId": "tt33071426",
       "rating": "7.1",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "The Drama",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:regretting you": {
       "imdbId": "tt33088452",
       "rating": "6.0",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Regretting You",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:shelter": {
       "imdbId": "tt32357218",
       "rating": "6.1",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Shelter",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:crime 101": {
       "imdbId": "tt32430579",
       "rating": "6.8",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "Crime 101",
-      "year": 2026,
-      "notFound": true
+      "year": 2026
     },
     "movie:one battle after another": {
       "imdbId": "tt30144839",
       "rating": "7.6",
-      "lastChecked": 1794560224155,
+      "lastChecked": 1794665825669,
       "title": "One Battle After Another",
-      "year": 2025,
-      "notFound": true
+      "year": 2025
     },
     "movie:the family plan 2": {
       "imdbId": "tt34276058",
