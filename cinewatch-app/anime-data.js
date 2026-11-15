@@ -75,6 +75,14 @@ window._ANIME_DATA = [
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302614.jpg",
             duration: "24m",
             overview: "Goku successfully undergoes the Super Saiyan God ritual, combining the righteous spirits of six Saiyans to ascend into a divine form cloaked in crimson flame. With the newfound power of a deity, Goku takes to the sky to face Lord Beerus in a celestial clash that will determine the survival of Earth."
+          },
+          {
+            episode: 6,
+            title: "Battle of Gods",
+            absoluteEpisode: 6,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/651/1629196.jpg",
+            duration: "24m",
+            overview: "The fierce celestial battle between Goku and Beerus reaches its ultimate climax high in the stratosphere. As Goku's Super Saiyan God transformation reaches its time limit and begins to fade, Goku refuses to yield, fighting with everything he has left to defend Earth from the God of Destruction's overwhelming might."
           }
         ]
       }

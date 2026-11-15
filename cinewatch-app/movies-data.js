@@ -5,7 +5,33 @@
 window._MOVIES_DATA = [
 
   // ============================================================
-  // 1. A Dog's Perfect Christmas (2026)
+  // 1. 12 12 12 (2026)
+  // ============================================================
+  {
+    id: "12-12-12-2026",
+    title: "12 12 12",
+    type: "Movie",
+    year: 2026,
+    rating: 7.2,
+    age: "TV-MA",
+    duration: "1h 55m",
+    genres: ["Action", "Adventure", "Crime", "Drama"],
+    poster: "https://image.tmdb.org/t/p/original/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tjy25xpiFeo2gahl7N0hoxbRtG7.jpg",
+    videoUrl: "254630",
+    trailerUrl: "https://www.youtube.com/watch?v=cDroSYeUlG4",
+    overview: "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
+    overviewKurdish: "چیرۆکی دزییەکی گەورە کە پلانەکەی ١٢ مانگی پێدەچێت، لە ماوەی ١٢ کاتژمێردا جێبەجێ دەکرێت، و ئەگەر دزەکە لە ماوەی ١٢ ڕۆژدا دەستگیر نەکرێت، هەرگیز دەستگیر ناکرێت. لە سێ کاتی جیاواز و پڕ لە گرژیدا، بریکارێکی ئێف بی ئای و تاوانبارێکی بەئەزموون لە یارییەکی کوشندەی پشیلە و مشک لە سەرتاسەری ئەوروپادا ڕووبەڕووی یەکتر دەبنەوە.",
+    director: "Kari Skogland",
+    cast: ["Anthony Mackie, Jamie Dornan, Jack Kesy, Agathe Rousselle, Sallie Harmsen"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+
+  // ============================================================
+  // 2. A Dog's Perfect Christmas (2026)
   // ============================================================
   {
     title: "A Dog's Perfect Christmas",
