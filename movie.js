@@ -8522,15 +8522,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const fallbackEmbedUrl = driveIframeUrl || (
     isMiraculousS6
       ? ''
-      : (tmdbId
-          ? (isTv
-              ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
-              : (isAnime && malId
-                  ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+      : (isAnime && malId
+          ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+          : (tmdbId
+              ? (isTv
+                  ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914&autoplay=true`
                   : `https://vidlink.pro/movie/${tmdbId}?primaryColor=e50914&autoplay=true`
                 )
+              : ''
             )
-          : ''
         )
   );
 
@@ -8687,6 +8687,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           const route = isDub ? 'dub' : 'sub';
           if (window.__cwPreferencesAllowed !== false) {
             localStorage.setItem("cw_anime_audio_pref", route);
+          }
+          if (window.artPlayerInstance && window.artPlayerInstance.hls && window.artPlayerInstance.hls.audioTracks && window.artPlayerInstance.hls.audioTracks.length > 1) {
+            const targetLang = isDub ? 'en' : 'ja';
+            const targetName = isDub ? 'eng' : 'jap';
+            const trackIdx = window.artPlayerInstance.hls.audioTracks.findIndex(t => 
+              (t.lang && t.lang.toLowerCase().startsWith(targetLang)) ||
+              (t.name && t.name.toLowerCase().includes(targetName))
+            );
+            if (trackIdx !== -1) {
+              window.artPlayerInstance.hls.audioTrack = trackIdx;
+              return item.html;
+            }
           }
           const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
           const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
@@ -9082,7 +9094,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             });
             hls.loadSource(url);
             hls.attachMedia(video);
+
+            const applyAudioTrackPref = function () {
+              if (!hls.audioTracks || hls.audioTracks.length === 0) return;
+              const pref = (localStorage.getItem("cw_anime_audio_pref") || curPref) === 'dub';
+              const targetLang = pref ? 'en' : 'ja';
+              const targetName = pref ? 'eng' : 'jap';
+              const trackIdx = hls.audioTracks.findIndex(t => 
+                (t.lang && t.lang.toLowerCase().startsWith(targetLang)) ||
+                (t.name && t.name.toLowerCase().includes(targetName))
+              );
+              if (trackIdx !== -1 && hls.audioTrack !== trackIdx) {
+                hls.audioTrack = trackIdx;
+              }
+            };
+
+            hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, applyAudioTrackPref);
+
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+              applyAudioTrackPref();
               if (!is4kStream && !isFrom4kSession) {
                 const qualityItems = [
                   { default: true, html: 'Auto', level: -1, height: 'auto' },

@@ -567,11 +567,11 @@ const server = http.createServer((req, res) => {
           const rewritten = text.split('\n').map(line => {
             const trimmed = line.trim();
             if (!trimmed || trimmed.startsWith('#')) {
-              if (trimmed.startsWith('#EXT-X-KEY:') && trimmed.includes('URI="')) {
-                return trimmed.replace(/URI="([^"]+)"/, (m, uri) => {
+              if (trimmed.includes('URI="')) {
+                return trimmed.replace(/URI="([^"]+)"/g, (m, uri) => {
                   try {
-                    const fullKey = new URL(uri, streamTarget).href;
-                    return `URI="${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullKey)}"`;
+                    const fullUri = new URL(uri, streamTarget).href;
+                    return `URI="${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullUri)}"`;
                   } catch (e) { return m; }
                 });
               }
