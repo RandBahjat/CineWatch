@@ -4120,6 +4120,7 @@ function openDetailsModal(movieId, from4k = null) {
             <h4 class="ep-row-title notranslate" translate="no">${ep.title}</h4>
             <div class="ep-row-meta">
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+              ${ep.hasDub ? `<span class="ep-row-dub-badge" style="font-size: 0.7rem; font-weight: 700; color: #4ade80; background: rgba(74, 222, 128, 0.12); border: 1px solid rgba(74, 222, 128, 0.3); padding: 1px 5px; border-radius: 4px; letter-spacing: 0.3px;">DUB</span>` : ""}
               ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
               ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
             </div>
