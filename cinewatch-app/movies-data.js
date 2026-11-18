@@ -2792,6 +2792,7 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/vdMbdIb8kKx29tAOzICO2Zm0lBd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7RuIBRl1nCsYMyh84NmU7HJ3EKb.jpg",
     videoUrl: "559",
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_3_2007_4K_UHD.mp4",
     trailerUrl: "https://youtu.be/e5wUilOeOmg?si=JmZnbWHPPtwytQfN",
     overview: "With fame and confidence going to his head, Peter Parker finds his world spiraling when a strange black substance from space bonds with his Spider-Man suit, amplifying his powers but also corrupting his personality. As his relationships with Mary Jane and Harry Osborn fracture under the strain, Peter must confront both an escaped convict transformed into the sand-manipulating Sandman and the return of an old rival — all while battling the darker version of himself the symbiote is bringing to the surface.",
     overviewKurdish: "",
