@@ -81,7 +81,7 @@ window._ANIME_DATA = [
             episode: 6,
             title: "Battle of Gods",
             absoluteEpisode: 6,
-            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/651/1629196.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302615.jpg",
             duration: "24m",
             overview: "The fierce celestial battle between Goku and Beerus reaches its ultimate climax high in the stratosphere. As Goku's Super Saiyan God transformation reaches its time limit and begins to fade, Goku refuses to yield, fighting with everything he has left to defend Earth from the God of Destruction's overwhelming might."
           },
@@ -90,7 +90,7 @@ window._ANIME_DATA = [
             title: "Resurrection 'F'",
             hasDub: true,
             absoluteEpisode: 7,
-            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/651/1629197.jpg",
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302609.jpg",
             duration: "24m",
             airDate: "2026-11-22",
             overview: "Following the climactic celestial duel between Goku and Lord Beerus, tranquility returns to Earth as Goku and Vegeta resume their training. Meanwhile, Sorbet and the remnants of the Frieza Force arrive on Earth in search of the Dragon Balls, plotting to resurrect the galactic tyrant Lord Frieza."
