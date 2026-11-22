@@ -13680,7 +13680,29 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     seasons: [],
-    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_English.vtt","srclang":"en","default":false}]
-  }
+    subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Reservoir_Dogs_1992_English.vtt","srclang":"en","default":false}],
+  },
+  {
+    title: "Shaft",
+    type: "Movie",
+    year: 2000,
+    rating: 6.0,
+    age: "R",
+    duration: "1h 39m",
+    genres: ["Action","Crime", "Thriller"],
+    poster: "https://image.tmdb.org/t/p/original/98XEJC34OEbdmhv9e6vEIfWCoAP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sblTwYXpm6Nrl4qewg3526lBdlK.jpg",
+    videoUrl: "479",
+    trailerUrl: "https://youtu.be/qsMTksRxy1M?si=f-0m808rcJvHUCQ8",
+    overview: "NYPD detective John Shaft—nephew of the original 1970s private eye—arrests Walter Wade Jr., the arrogant, racist son of a wealthy real estate tycoon, for a brutal hate-crime murder. When Wade jumps bail and flees to Switzerland, a frustrated Shaft quits the police force to bring him to justice on his own terms. Two years later, when Wade secretly returns to New York, Shaft must track down the only eyewitness to the crime before Wade's hired Dominican drug lord, Peoples Hernandez, silences her forever.",
+    overviewKurdish: "جۆن شافت، لێکۆڵەرێکی پۆلیسی نیویۆرک، کوڕی بازرگانێکی دەوڵەمەند و ڕەگەزپەرست بە ناوی «واڵتەر وەید» بە تۆمەتی ئەنجامدانی تاوانێکی کوشتنی دڕندانە دەستگیر دەکات. کاتێک وەید بە کەفالەت ئازاد دەکرێت و هەڵدێت بۆ سویسرا، شافت بەهۆی بێهیوابوونی لە سیستەمی دادوەری واز لە پۆلیس دەهێنێت بۆ ئەوەی بە شێوازی خۆی دادپەروەری بچەسپێنێت. دوای دوو ساڵ و لەگەڵ گەڕانەوەی نهێنیی وەید بۆ نیویۆرک، شافت دەبێت تاکە شایەتحاڵی تاوانەکە بدۆزێتەوە و بیپارێزێت پێش ئەوەی ئەو بازرگانە ماددە هۆشبەرەی وەید بەکرێی گرتووە، کۆتایی بە ژیانی بهێنێت.",
+    director: "John Singleton",
+    cast: ["Samuel L. Jackson, Vanessa Williams, Jeffrey Wright, Christian Bale, Busta Rhymes, Dan Hedaya, Toni Collette, Richard Roundtree"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [],
+    
+  },
 
 ];
