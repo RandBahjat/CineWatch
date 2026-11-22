@@ -63,8 +63,8 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
-  "Heart of the Beast",
-  "Dexter: Resurrection",
+  "I Play Rocky",
+  "The Oddyssey",
   "Apocalypse Z: New World",
   "Model Citizen",
   "Campus Drivers",
