@@ -65,7 +65,6 @@ try {
 let FEATURED_TITLES = [
   "I Play Rocky",
   "The Oddyssey",
-  "Apocalypse Z: New World",
   "Model Citizen",
   "Campus Drivers",
   "Clayface",
