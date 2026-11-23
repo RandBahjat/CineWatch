@@ -88,7 +88,6 @@ window._ANIME_DATA = [
           {
             episode: 7,
             title: "Resurrection 'F'",
-            hasDub: true,
             absoluteEpisode: 7,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302609.jpg",
             duration: "24m",
