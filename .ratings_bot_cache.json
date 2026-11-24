@@ -1,5 +1,5 @@
 {
-  "lastRun": 1795440123523,
+  "lastRun": 1795525451562,
   "items": {
     "series:mobland": {
       "imdbId": "tt31510819",
@@ -11,16 +11,18 @@
     "movie:street fighter": {
       "imdbId": "tt27419420",
       "rating": "6.2",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Street Fighter",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:avengers: doomsday": {
       "imdbId": "tt21357150",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Avengers: Doomsday",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "series:brothers": {
       "imdbId": "tt6773088",
@@ -32,72 +34,82 @@
     "movie:matchbox the movie": {
       "imdbId": "tt28498219",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Matchbox the Movie",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:animals": {
       "imdbId": "tt39050812",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Animals",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the florist": {
       "imdbId": "tt33214716",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Florist",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:verity": {
       "imdbId": "tt32261958",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Verity",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the uprising": {
       "imdbId": "tt36983905",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Uprising",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:unabomber": {
       "imdbId": "tt6933238",
       "rating": "6.2",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Unabomber",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the love hypothesis": {
       "imdbId": "tt22526100",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Love Hypothesis",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:digger": {
       "imdbId": "tt31450459",
       "rating": "N/A",
-      "lastChecked": 1795432943684,
+      "lastChecked": 1795525451562,
       "title": "Digger",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:one last shot": {
       "imdbId": "tt37971717",
       "rating": "N/A",
-      "lastChecked": 1795432943684,
+      "lastChecked": 1795525451562,
       "title": "One Last Shot",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:heart of the beast": {
       "imdbId": "tt7526136",
       "rating": "7.1",
-      "lastChecked": 1795432943684,
+      "lastChecked": 1795525451562,
       "title": "Heart of the Beast",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:ice cream man": {
       "imdbId": "tt36893729",
@@ -4768,16 +4780,18 @@
     "movie:whalefall": {
       "imdbId": "tt28535715",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Whalefall",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:practical magic 2": {
       "imdbId": "tt32588798",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Practical Magic 2",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "series:carrie": {
       "imdbId": "tt11540908",
@@ -4810,16 +4824,18 @@
     "movie:fall 2: deadpoint": {
       "imdbId": "tt31192372",
       "rating": "5.3",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Fall 2: Deadpoint",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:by any means": {
       "imdbId": "tt34379051",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "By Any Means",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "fourk:spider-man": {
       "imdbId": "tt0145487",
@@ -4845,9 +4861,10 @@
     "movie:clayface": {
       "imdbId": "tt34890576",
       "rating": "7.5",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Clayface",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "fourk:spider-man 3": {
       "imdbId": "tt0413300",
@@ -4866,114 +4883,130 @@
     "movie:dune: part three": {
       "imdbId": "tt31378509",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Dune: Part Three",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "series:harry potter": {
       "imdbId": "tt13918446",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Harry Potter",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:a dog's perfect christmas": {
       "imdbId": "tt38515310",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "A Dog's Perfect Christmas",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the good lawyer": {
       "imdbId": "tt24757822",
       "rating": "9.0",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Good Lawyer",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:other mommy": {
       "imdbId": "tt36586020",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Other Mommy",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the mongoose": {
       "imdbId": "tt13611778",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Mongoose",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:godzilla minus zero": {
       "imdbId": "tt34384661",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Godzilla Minus Zero",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:model citizen": {
       "imdbId": "tt13884466",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Model Citizen",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:possible love": {
       "imdbId": "tt37803364",
       "rating": "7.7",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Possible Love",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:apocalypse z: new world": {
       "imdbId": "tt37522541",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Apocalypse Z: New World",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the dog stars": {
       "imdbId": "tt21285562",
       "rating": "6.2",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Dog Stars",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:you can see everything": {
       "imdbId": "tt45368240",
       "rating": "7.9",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "You Can See Everything",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:sense and sensibility": {
       "imdbId": "tt13609648",
       "rating": "7.2",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Sense and Sensibility",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:wildwood": {
       "imdbId": "tt2056785",
       "rating": "8.7",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Wildwood",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:the cycle": {
       "imdbId": "tt32358390",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "The Cycle",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:tenzing": {
       "imdbId": "tt6262770",
       "rating": "7.7",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "Tenzing",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "series:the greatest": {
       "imdbId": "tt15715850",
@@ -5181,16 +5214,18 @@
     "movie:i play rocky": {
       "imdbId": "tt11995650",
       "rating": "N/A",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "I Play Rocky",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:12 12 12": {
       "imdbId": "tt2353755",
       "rating": "5.0",
-      "lastChecked": 1795369754512,
+      "lastChecked": 1795525451562,
       "title": "12 12 12",
-      "year": 2026
+      "year": 2026,
+      "notFound": true
     },
     "movie:shaft": {
       "imdbId": "tt0162650",
