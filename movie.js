@@ -3594,9 +3594,21 @@ function openDetailsModal(movieId, from4k = null) {
   state.currentDetailsFrom4k = Boolean(is4kContext);
 
   const currentUrl = new URL(window.location.href);
+  currentUrl.searchParams.delete('view');
+  if (is4kContext) {
+    currentUrl.searchParams.set('section', '4k');
+  } else {
+    const non4kSec = (state.previousView && state.previousView !== '4k' && state.previousView !== 'details' && state.previousView !== 'home' && state.previousView !== 'search' && state.previousView !== 'genres')
+      ? state.previousView
+      : null;
+    if (non4kSec) {
+      currentUrl.searchParams.set('section', non4kSec);
+    } else {
+      currentUrl.searchParams.delete('section');
+    }
+  }
   currentUrl.searchParams.set('v', movie.id);
-  const existingV = new URLSearchParams(window.location.search).get('v');
-  if (existingV !== String(movie.id)) {
+  if (window.location.href !== currentUrl.toString()) {
     window.history.pushState({ modal: 'details', movieId: movie.id, previousView: state.previousView }, '', currentUrl.toString());
   }
 
