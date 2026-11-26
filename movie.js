@@ -4963,13 +4963,9 @@ function startAuthSlideshow() {
 
   applyAuthSlideState(cwAuthCurrentSlide);
 
-  // Skip image preloading & rotation when visual panel is hidden on mobile screens
-  if (window.matchMedia && window.matchMedia("(max-width: 820px)").matches) {
-    return;
-  }
-
-  // Preload slides for seamless crossfading
-  if (!container._preloaded) {
+  const isMobileViewport = () => window.matchMedia && window.matchMedia("(max-width: 820px)").matches;
+  const preloadSlides = () => {
+    if (container._preloaded || isMobileViewport()) return;
     container._preloaded = true;
     slides.forEach(slide => {
       const match = slide.style.backgroundImage.match(/url\(['"]?(https?:\/\/[^'"]+)['"]?\)/);
@@ -4978,7 +4974,8 @@ function startAuthSlideshow() {
         img.src = match[1];
       }
     });
-  }
+  };
+  preloadSlides();
 
   cwAuthSlideshowTimer = setInterval(() => {
     const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
@@ -4986,7 +4983,8 @@ function startAuthSlideshow() {
       stopAuthSlideshow();
       return;
     }
-    if (window.matchMedia && window.matchMedia("(max-width: 820px)").matches) return;
+    if (isMobileViewport()) return;
+    preloadSlides();
     applyAuthSlideState(cwAuthCurrentSlide + 1);
   }, 4500);
 }
@@ -5012,7 +5010,7 @@ function openAuthModal() {
   const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
   if (!modal) return;
   modal.classList.remove("hidden");
-  modal.style.display = "flex";
+  modal.style.display = "block";
   modal.style.opacity = "1";
   modal.style.visibility = "visible";
   modal.style.pointerEvents = "auto";
