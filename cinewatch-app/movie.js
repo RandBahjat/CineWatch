@@ -1299,10 +1299,10 @@ function setupHeroBanner() {
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
             <div class="hero-actions">
-                <button class="btn-hero-play notranslate" translate="no" onclick="openVideoPlayer('${movie.id}')">
+                <button class="btn-hero-play notranslate" translate="no" onclick="openVideoPlayer('${movie.id}', 0, false)">
                     <ion-icon name="play" style="font-size: 1.15em; vertical-align: -1px; margin-right: 4px;"></ion-icon> ${playText}
                 </button>
-                <button class="btn-hero-more notranslate" translate="no" onclick="openDetailsModal('${movie.id}')">
+                <button class="btn-hero-more notranslate" translate="no" onclick="openDetailsModal('${movie.id}', false)">
                     <ion-icon name="information-circle-outline" style="font-size: 1.25em; vertical-align: -2px; margin-right: 4px;"></ion-icon> ${moreText}
                 </button>
             </div>
