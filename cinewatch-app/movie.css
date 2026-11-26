@@ -4345,7 +4345,7 @@ body.auth-modal-open::-webkit-scrollbar {
   box-sizing: border-box !important;
 }
 
-/* Full-Viewport Split Grid Container */
+/* Full-Viewport Seamless Split Container */
 #authModal .modal-card.auth-split-container {
   position: relative !important;
   z-index: 2 !important;
@@ -4361,8 +4361,7 @@ body.auth-modal-open::-webkit-scrollbar {
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
-  display: grid !important;
-  grid-template-columns: minmax(430px, 46%) 1fr !important;
+  display: block !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
   animation: authFadeIn 0.25s ease !important;
@@ -4373,20 +4372,21 @@ body.auth-modal-open::-webkit-scrollbar {
   to { opacity: 1; }
 }
 
-/* LEFT SIDE: Form Panel */
+/* LEFT SIDE: Seamless Form Panel */
 .auth-split-form {
   position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: clamp(420px, 46%, 560px);
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 18px clamp(20px, 3.5vw, 48px) 22px;
+  padding: 18px clamp(24px, 4vw, 56px) 22px;
   background:
-    radial-gradient(circle at 22% 0%, rgba(229, 9, 20, 0.08) 0%, transparent 48%),
-    #08090d;
+    radial-gradient(circle at 24% 8%, rgba(229, 9, 20, 0.08) 0%, transparent 45%),
+    linear-gradient(90deg, #08090d 0%, #08090d 78%, rgba(8, 9, 13, 0.84) 90%, rgba(8, 9, 13, 0) 100%);
   box-sizing: border-box;
 }
 
