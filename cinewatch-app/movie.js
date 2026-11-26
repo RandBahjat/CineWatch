@@ -7820,8 +7820,8 @@ function bindEventListeners() {
         return;
       }
     } else if (deepLinkMovie && state.activeView !== "details") {
-      const is4kPop = params.get('section') === '4k' || params.get('view') === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
-      openDetailsModal(deepLinkMovie, is4kPop ? true : null);
+      const is4kPop = params.get('section') === '4k' || params.get('view') === '4k';
+      openDetailsModal(deepLinkMovie, is4kPop ? true : false);
       return;
     }
 
