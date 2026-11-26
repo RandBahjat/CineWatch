@@ -3906,7 +3906,10 @@ function openDetailsModal(movieId, from4k = null) {
         similarsSection.classList.remove("hidden");
         similarsGrid.innerHTML = limited.map((m) => createMovieCardHTML(m)).join("");
         similarsGrid.querySelectorAll(".movie-card").forEach((card) => {
-          card.onclick = () => openDetailsModal(card.dataset.id);
+          card.onclick = (e) => {
+            e.stopPropagation();
+            openDetailsModal(card.dataset.id, false);
+          };
         });
       } else {
         similarsSection.classList.add("hidden");
