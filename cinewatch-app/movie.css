@@ -4617,8 +4617,7 @@ body.auth-modal-open::-webkit-scrollbar {
 }
 
 #authModal .cf-turnstile {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 100%;
   margin-bottom: 10px;
   max-width: 100%;
