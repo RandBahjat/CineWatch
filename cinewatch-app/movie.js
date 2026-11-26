@@ -2862,6 +2862,26 @@ function updateSectionSEO(viewName) {
       title: 'Watch 4K Ultra HD Movies & Series | CineWatch VIP',
       description: 'Stream 4K Ultra HD movies and series on CineWatch. Unlock crystal-clear 4K content with a VIP membership.',
       url: `${BASE}/?section=4k`
+    },
+    watchlist: {
+      title: 'My Watchlist | CineWatch',
+      description: 'View and manage your saved movies, series, and anime on CineWatch.',
+      url: `${BASE}/?section=watchlist`
+    },
+    continue: {
+      title: 'Continue Watching | CineWatch',
+      description: 'Resume your recently watched movies, series, and anime on CineWatch.',
+      url: `${BASE}/?section=continue`
+    },
+    genres: {
+      title: 'Explore All Titles | CineWatch',
+      description: 'Explore all movies, TV series, and anime titles on CineWatch.',
+      url: `${BASE}/`
+    },
+    search: {
+      title: 'Search Results | CineWatch',
+      description: 'Search movies, TV series, and anime on CineWatch.',
+      url: `${BASE}/`
     }
   };
 
