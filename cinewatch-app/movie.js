@@ -3515,26 +3515,35 @@ function openDetailsModal(movieId, from4k = null) {
     state.previousView = state.activeView;
   }
 
-  const isFrom4kExplicit = from4k === true || (
-    typeof window !== 'undefined' && window.location.search.includes('section=4k')
-  ) || state.activeView === '4k' || state.currentDetailsFrom4k === true;
+  const isExplicitNon4k = from4k === false || (
+    from4k !== true && (
+      state.activeView === 'home' ||
+      state.activeView === 'movies' ||
+      state.activeView === 'series' ||
+      state.activeView === 'anime' ||
+      state.activeView === 'continue' ||
+      state.activeView === 'watchlist' ||
+      state.activeView === 'genres' ||
+      state.activeView === 'search' ||
+      (typeof window !== 'undefined' && (
+        window.location.search.includes('section=movies') ||
+        window.location.search.includes('section=series') ||
+        window.location.search.includes('section=anime')
+      ))
+    )
+  );
 
-  const isExplicitNon4k = from4k === false || (!isFrom4kExplicit && (
-    state.activeView === 'movies' ||
-    state.activeView === 'series' ||
-    state.activeView === 'anime' ||
-    (typeof window !== 'undefined' && (
-      window.location.search.includes('section=movies') ||
-      window.location.search.includes('section=series') ||
-      window.location.search.includes('section=anime')
-    ))
-  ));
+  const isFrom4kExplicit = from4k === true || (
+    !isExplicitNon4k && (
+      (typeof window !== 'undefined' && window.location.search.includes('section=4k')) ||
+      state.activeView === '4k'
+    )
+  );
 
   const is4kContext = !isExplicitNon4k && (
     isFrom4kExplicit ||
     state.activeView === '4k' ||
-    state.previousView === '4k' ||
-    state.currentDetailsFrom4k === true ||
+    (state.activeView === 'details' && state.currentDetailsFrom4k === true) ||
     (typeof window !== 'undefined' && window.location.search.includes('section=4k'))
   );
 
