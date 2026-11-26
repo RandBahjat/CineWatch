@@ -39,11 +39,11 @@ window._ANIME_DATA = [
           {
             episode: 1,
             title: "The God Who Destroys",
-            hasDub: true,
             absoluteEpisode: 1,
             thumbnail: "https://media.kitsu.app/episode/393369/thumbnail/6564e0c3506571ff3ece5982b6552323.jpg",
             duration: "24m",
-            overview: "Beerus, the God of Destruction, awakens from his decades-long slumber after having a prophetic dream of a powerful warrior known as the Super Saiyan God. Accompanied by Whis, Beerus sets off across the cosmos in search of the legendary fighter."
+            overview: "Beerus, the God of Destruction, awakens from his decades-long slumber after having a prophetic dream of a powerful warrior known as the Super Saiyan God. Accompanied by Whis, Beerus sets off across the cosmos in search of the legendary fighter.",
+            hasDub: true
           },
           {
             episode: 2,
@@ -89,9 +89,10 @@ window._ANIME_DATA = [
             episode: 7,
             title: "Resurrection 'F'",
             absoluteEpisode: 7,
+            airDate: "2026-11-22",
+            rating: 7.9,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/521/1302609.jpg",
             duration: "24m",
-            airDate: "2026-11-22",
             overview: "Following the climactic celestial duel between Goku and Lord Beerus, tranquility returns to Earth as Goku and Vegeta resume their training. Meanwhile, Sorbet and the remnants of the Frieza Force arrive on Earth in search of the Dragon Balls, plotting to resurrect the galactic tyrant Lord Frieza."
           }
         ]

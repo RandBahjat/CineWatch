@@ -166,7 +166,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "Winter Break",
             airDate: "2026-11-06",
-            rating: 7.8,
+            rating: 8.2,
             thumbnail: "https://image.tmdb.org/t/p/w780/of7B5XrkaEWb43cUmdKh2Q4WNIL.jpg",
             duration: "38 min",
             overview: "Alone at Christmas, Lane is invited to spend the holidays with Loïs's family in the mountains. Away from Belrose, their bond takes on a new dimension. But Max's unexpected return disrupts their growing closeness and throws Loïs's feelings into turmoil."
@@ -184,7 +184,7 @@ window._SERIES_DATA = [
             episode: 6,
             title: "Supermad",
             airDate: "2026-11-06",
-            rating: 7.8,
+            rating: 7.2,
             thumbnail: "https://image.tmdb.org/t/p/w780/x3NEBScqC2QcEdm6fuyskF1b7n5.jpg",
             duration: "42 min",
             overview: "Hurt, Loïs refocuses on her future and switches to medicine, keeping her distance from Lane despite his apologies. Consumed by regret, Lane withdraws into himself. He decides to take control of his destiny by writing his own story. The Gala becomes the stage for revelations, where Lane will finally break free from the chains of his past and bring the truth to light."
@@ -704,7 +704,7 @@ window._SERIES_DATA = [
             episode: 1,
             title: "No Strings",
             airDate: "2026-10-13",
-            rating: 7.9,
+            rating: 7.8,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615067.jpg",
             duration: "53 min",
             overview: "Vision, rebooted and hiding, consults F.R.I.D.A.Y., E.D.I.T.H., J.A.R.V.I.S., and Ultron. A bounty forces him on the run with Thomas Shepard, possibly his reincarnated son. He must resist Ultron's influence and solve the mystery."
@@ -722,7 +722,7 @@ window._SERIES_DATA = [
             episode: 3,
             title: "Reboot",
             airDate: "2026-10-20",
-            rating: 8,
+            rating: 7.9,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617395.jpg",
             duration: "52 min",
             overview: "Tommy risks everything to initiate a high-stakes hard reset on Vision's core systems, inadvertently opening a backdoor to a lethal digital entity known as the Butcherbird Killer."
@@ -731,7 +731,7 @@ window._SERIES_DATA = [
             episode: 4,
             title: "Malware",
             airDate: "2026-10-20",
-            rating: 8.5,
+            rating: 8.4,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/646/1617400.jpg",
             duration: "48 min",
             overview: "When the Butcherbird breaches Vision's mindspace, a desperate Vision surrenders physical control of his synthezoid body to Ultron, unleashing devastating consequences as Ultron takes the wheel."
@@ -740,7 +740,7 @@ window._SERIES_DATA = [
             episode: 5,
             title: "Firewall",
             airDate: "2026-10-27",
-            rating: 7.9,
+            rating: 7.6,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620878.jpg",
             duration: "46 min",
             overview: "Trapped in the digital attic of his own consciousness, Vision and his AI allies work frantically to decipher Ultron's sinister real-world scheme while facing a brutal ultimatum to drop the firewall."
@@ -749,7 +749,7 @@ window._SERIES_DATA = [
             episode: 6,
             title: "Deadlock",
             airDate: "2026-10-27",
-            rating: 8.5,
+            rating: 8.1,
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/648/1620880.jpg",
             duration: "54 min",
             overview: "As Ultron initiates a catastrophic hive-mind convergence and bounty hunters close in on Tommy, Vision makes an agonizing sacrifice to disable the internal firewalls and break the deadlock."
@@ -11823,8 +11823,8 @@ window._SERIES_DATA = [
             rating: 9.2,
             thumbnail: "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
             duration: "22 min",
-            overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy.",
-            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E09.mp4"
+            videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/Miraculous_S06E09.mp4",
+            overview: "Haunting echoes of the past surface as Marinette and Adrien uncover hidden truths about the Agreste family legacy."
           },
           {
             episode: 10,
