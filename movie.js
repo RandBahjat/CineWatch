@@ -2914,7 +2914,8 @@ function updateSectionSEO(viewName) {
 
   // Push clean URL to address bar so sharing links reflect the section
   try {
-    const relPath = viewName === 'home' ? '/' : `/?section=${encodeURIComponent(viewName)}`;
+    const cleanSections = ['movies', 'series', 'anime', '4k', 'watchlist', 'continue'];
+    const relPath = cleanSections.includes(viewName) ? `/?section=${encodeURIComponent(viewName)}` : '/';
     if (window.location.pathname + window.location.search !== relPath) {
       window.history.replaceState({ section: viewName }, seo.title, relPath);
     }
