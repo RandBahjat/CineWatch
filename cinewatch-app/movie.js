@@ -2600,6 +2600,9 @@ function _performSwitchView(viewName) {
     state.currentDetailsFrom4k = true;
   } else if (viewName !== 'details') {
     state.currentDetailsFrom4k = false;
+    if (state.previousView === '4k') {
+      state.previousView = viewName;
+    }
   }
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
