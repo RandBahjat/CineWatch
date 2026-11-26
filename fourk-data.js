@@ -17,7 +17,7 @@ window._FOURK_DATA = [
     duration: "2h 52m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/eF8okKdXfiFJ1pvKMp2fAqIPzkY.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/xRcoqYmjdwnQfSKLAu7kr1huhhx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5xfk0z9WlkhRhjCf7cdpiKP5UIa.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_IMAX_4K_UHD.mp4",
     trailerUrl: "",
     overview: "After years of brutal war, Odysseus sets sail for home — but the gods have other plans. Crossing a treacherous Mediterranean, he and his crew face the Cyclops Polyphemus, the deadly call of the Sirens, and the sorceress Circe, each trial pushing him closer to the edge of what he can endure to see Ithaca again.",
