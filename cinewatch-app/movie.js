@@ -2104,7 +2104,8 @@ function renderContinueWatchingPage() {
     .join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => {
+      card.onclick = (e) => {
+        e.stopPropagation();
         if (gridId === "fourkGrid") {
           state.currentDetailsFrom4k = true;
           openDetailsModal(card.dataset.id, true);
@@ -2235,7 +2236,8 @@ function renderBrowseGrid(items, gridId, page) {
 
     grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isPoster)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => {
+      card.onclick = (e) => {
+        e.stopPropagation();
         if (gridId === "fourkGrid") {
           state.currentDetailsFrom4k = true;
           openDetailsModal(card.dataset.id, true);
