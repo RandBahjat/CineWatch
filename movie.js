@@ -6868,8 +6868,8 @@ function bindEventListeners() {
         if (movie) saveRecentSearch(movie.title);
         searchDropdown.classList.add("hidden");
         closeSearchModal();
-        const in4kView = state.activeView === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
-        openDetailsModal(movieId, in4kView ? true : null);
+        const in4kView = state.activeView === '4k';
+        openDetailsModal(movieId, in4kView ? true : false);
       }
     };
   }

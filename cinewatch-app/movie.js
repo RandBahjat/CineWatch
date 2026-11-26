@@ -6563,23 +6563,26 @@ function bindEventListeners() {
       e.stopPropagation();
       const movieId = playBtn.dataset.id;
       const resumeTime = parseFloat(playBtn.dataset.resumeTime || 0);
-      openVideoPlayer(movieId, resumeTime);
+      const is4kPlay = playBtn.closest('#fourkGrid, #fourkSection') !== null;
+      openVideoPlayer(movieId, resumeTime, is4kPlay);
       return;
     }
 
     // Entire Movie Card Click -> Details Modal (handles both carousel & browse cards)
-    const card = e.target.closest(".movie-card") || e.target.closest(".nav-dropdown-card");
+    const card = e.target.closest(".movie-card");
     if (card) {
       const movieId = card.dataset.id;
+      if (!movieId) return;
 
       // In Continue Watching selection mode, let card.onclick handle selection exclusively
       if (state.isCwSelectionMode && card.classList.contains("continue-card")) {
         return;
       }
 
-      const is4kCard = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null || state.activeView === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
-      const isNon4kSection = state.activeView === 'movies' || state.activeView === 'series' || state.activeView === 'anime' || (typeof window !== 'undefined' && (window.location.search.includes('section=movies') || window.location.search.includes('section=series') || window.location.search.includes('section=anime')));
-      openDetailsModal(movieId, is4kCard ? true : (isNon4kSection ? false : null));
+      const in4kDom = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null;
+      const inStandardDom = card.closest('#moviesGrid, #moviesSection, #seriesGrid, #seriesSection, #animeGrid, #animeSection, #filteredGrid, #watchlistGrid, #continueGrid, #defaultShelves, #heroBanner, #detailsSimilarsGrid') !== null;
+      const is4kCard = in4kDom || (!inStandardDom && state.activeView === '4k');
+      openDetailsModal(movieId, is4kCard ? true : false);
     }
   });
 
@@ -6865,8 +6868,8 @@ function bindEventListeners() {
         if (movie) saveRecentSearch(movie.title);
         searchDropdown.classList.add("hidden");
         closeSearchModal();
-        const in4kView = state.activeView === '4k' || (typeof window !== 'undefined' && window.location.search.includes('section=4k'));
-        openDetailsModal(movieId, in4kView ? true : null);
+        const in4kView = state.activeView === '4k';
+        openDetailsModal(movieId, in4kView ? true : false);
       }
     };
   }
