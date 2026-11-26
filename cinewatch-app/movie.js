@@ -1684,12 +1684,13 @@ function renderContinueWatchingShelf() {
     .join("");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
-    card.onclick = () => {
+    card.onclick = (e) => {
+      e.stopPropagation();
       const item = state.continueWatching[card.dataset.id];
       if (item && item.currentTime) {
-        openVideoPlayer(card.dataset.id, item.currentTime);
+        openVideoPlayer(card.dataset.id, item.currentTime, false);
       } else {
-        openDetailsModal(card.dataset.id);
+        openDetailsModal(card.dataset.id, false);
       }
     };
   });
