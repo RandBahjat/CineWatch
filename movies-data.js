@@ -7026,7 +7026,7 @@ window._MOVIES_DATA = [
     videoUrl: "872585",
     trailerUrl: "",
     overview: "A sweeping biographical drama that chronicles the life of theoretical physicist J. Robert Oppenheimer, the charismatic director of the Manhattan Project's Los Alamos Laboratory. The film explores his pivotal role in developing the atomic bomb during World War II, the triumphant and horrific reality of the Trinity test, and the severe political and personal fallout he faced years later during a fraught 1954 security clearance hearing amidst the Red Scare.",
-    overviewKurdish: "دوای چەندین ساڵ لە جەنگی خوێناوی، ئۆدیسیۆس بە کەشتی بەرەو نیشتمان دەگەڕێتەوە — بەڵام خوداوەندەکان پلانی تریان هەیە. لە کاتی تێپەڕین بە دەریای پڕ مەترسیی ناوەڕاستدا، ئەو و دەستەکەی ڕووبەڕووی پۆلیفیمۆسی یەکچاو، بانگی کوشندەی سایرنەکان و جادووگەر سیرسی دەبنەوە، هەر تاقیکردنەوەیەکیش زیاتر بەرەو سنووری بەرگەگرتن دەیبات بۆ ئەوەی جارێکی تر ئیتاکا ببینێتەوە.",
+    overviewKurdish: "",
     director: "Christopher Nolan",
     cast: ["Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr., Florence Pugh, Josh Hartnett, Casey Affleck, Rami Malek, Kenneth Branagh"],
     trending: false,
