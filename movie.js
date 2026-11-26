@@ -4920,19 +4920,6 @@ function applyAuthSlideState(index) {
     slide.classList.toggle("is-active", i === targetIdx);
   });
   cwAuthCurrentSlide = targetIdx;
-
-  const activeSlide = slides[targetIdx];
-  const badgeEl = document.getElementById("authVisualBadge");
-  const titleEl = document.getElementById("authVisualTitle");
-  const metaEl = document.getElementById("authVisualMeta");
-  if (badgeEl && activeSlide.dataset.badge) badgeEl.textContent = activeSlide.dataset.badge;
-  if (titleEl && activeSlide.dataset.title) titleEl.textContent = activeSlide.dataset.title;
-  if (metaEl && activeSlide.dataset.meta) metaEl.textContent = activeSlide.dataset.meta;
-
-  const dots = document.querySelectorAll("#authVisualDots .auth-visual-dot");
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === targetIdx);
-  });
 }
 
 function startAuthSlideshow() {
@@ -4944,21 +4931,6 @@ function startAuthSlideshow() {
   if (cwAuthSlideshowTimer) {
     clearInterval(cwAuthSlideshowTimer);
     cwAuthSlideshowTimer = null;
-  }
-
-  // Bind dot navigation once
-  const dotsWrap = document.getElementById("authVisualDots");
-  if (dotsWrap && !dotsWrap._dotsBound) {
-    dotsWrap._dotsBound = true;
-    dotsWrap.addEventListener("click", (e) => {
-      const btn = e.target.closest(".auth-visual-dot");
-      if (!btn) return;
-      const idx = parseInt(btn.dataset.slideIndex, 10);
-      if (!isNaN(idx)) {
-        applyAuthSlideState(idx);
-        startAuthSlideshow();
-      }
-    });
   }
 
   applyAuthSlideState(cwAuthCurrentSlide);
