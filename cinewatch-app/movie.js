@@ -4457,9 +4457,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
         videoUrl = parentMovie.hdVideoUrl;
       } else {
         const directStream = (typeof videoUrl === 'string' && (videoUrl.startsWith('http') || videoUrl.includes('.mp4') || videoUrl.includes('.mkv'))) ? videoUrl : (
-          (parentMovie.fourkVideoUrl && (parentMovie.fourkVideoUrl.startsWith('http') || parentMovie.fourkVideoUrl.includes('.mp4'))) ? parentMovie.fourkVideoUrl : (
-            (fourkMeta?.videoUrl && (fourkMeta.videoUrl.startsWith('http') || fourkMeta.videoUrl.includes('.mp4'))) ? fourkMeta.videoUrl : null
-          )
+          (parentMovie.videoUrl && (parentMovie.videoUrl.startsWith('http') || parentMovie.videoUrl.includes('.mp4') || parentMovie.videoUrl.includes('.mkv'))) ? parentMovie.videoUrl : null
         );
         if (directStream) {
           videoUrl = directStream;
@@ -4468,6 +4466,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
             { quality: "720p HD", url: directStream },
             { quality: "480p SD", url: directStream }
           ];
+        } else {
+          window._cwQualities = null;
         }
       }
     }
