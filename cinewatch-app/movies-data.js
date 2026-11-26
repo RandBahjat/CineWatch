@@ -3951,7 +3951,7 @@ window._MOVIES_DATA = [
     videoUrl: "27205",
     trailerUrl: "",
     overview: "Dom Cobb is a master thief with a rare ability to infiltrate people's dreams and extract their deepest secrets. His unique skill has made him a valuable — and wanted — man, costing him everything he holds dear. Offered a chance to have his old life restored, Cobb takes on a seemingly impossible final job: instead of stealing an idea, he must plant one, navigating through layered dreams within dreams where the line between reality and imagination grows increasingly dangerous to define.",
-    overviewKurdish: "دوای چەندین ساڵ لە جەنگی خوێناوی، ئۆدیسیۆس بە کەشتی بەرەو نیشتمان دەگەڕێتەوە — بەڵام خوداوەندەکان پلانی تریان هەیە. لە کاتی تێپەڕین بە دەریای پڕ مەترسیی ناوەڕاستدا، ئەو و دەستەکەی ڕووبەڕووی پۆلیفیمۆسی یەکچاو، بانگی کوشندەی سایرنەکان و جادووگەر سیرسی دەبنەوە، هەر تاقیکردنەوەیەکیش زیاتر بەرەو سنووری بەرگەگرتن دەیبات بۆ ئەوەی جارێکی تر ئیتاکا ببینێتەوە.",
+    overviewKurdish: "",
     director: "Christopher Nolan",
     cast: ["Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy, Marion Cotillard"],
     trending: false,
