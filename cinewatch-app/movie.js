@@ -4637,11 +4637,7 @@ async function openVideoPlayer(movieId, startAtSec = 0, is4k = null) {
       const def = movie.qualities.find(q => q.default) || movie.qualities[0];
       if (def && def.url) targetUrl = def.url;
     } else {
-      const directStream = (typeof targetUrl === 'string' && (targetUrl.startsWith('http') || targetUrl.includes('.mp4') || targetUrl.includes('.mkv'))) ? targetUrl : (
-        (movie.fourkVideoUrl && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.includes('.mp4'))) ? movie.fourkVideoUrl : (
-          (fourkCandidate?.videoUrl && (fourkCandidate.videoUrl.startsWith('http') || fourkCandidate.videoUrl.includes('.mp4'))) ? fourkCandidate.videoUrl : null
-        )
-      );
+      const directStream = (typeof targetUrl === 'string' && (targetUrl.startsWith('http') || targetUrl.includes('.mp4') || targetUrl.includes('.mkv'))) ? targetUrl : null;
       if (directStream) {
         targetUrl = directStream;
         window._cwQualities = [
@@ -8242,11 +8238,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
     } else {
       const fallbackStream = (cleanUrl && (cleanUrl.startsWith('http') || cleanUrl.includes('.mp4') || cleanUrl.includes('.mkv') || cleanUrl.includes('.m3u8'))) ? cleanUrl : (
-        (ref?.fourkVideoUrl && (ref.fourkVideoUrl.startsWith('http') || ref.fourkVideoUrl.includes('.mp4'))) ? ref.fourkVideoUrl : (
-          (fourkMatch?.videoUrl && (fourkMatch.videoUrl.startsWith('http') || fourkMatch.videoUrl.includes('.mp4'))) ? fourkMatch.videoUrl : (
-            (ref?.videoUrl && (ref.videoUrl.startsWith('http') || ref.videoUrl.includes('.mp4'))) ? ref.videoUrl : null
-          )
-        )
+        (ref?.videoUrl && (ref.videoUrl.startsWith('http') || ref.videoUrl.includes('.mp4'))) ? ref.videoUrl : null
       );
       if (fallbackStream) {
         cleanUrl = fallbackStream;
