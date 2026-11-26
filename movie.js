@@ -2806,17 +2806,21 @@ function _performSwitchView(viewName) {
     hideAll();
     watchlistSection.classList.remove("hidden");
     renderWatchlist();
+    updateSectionSEO('watchlist');
   } else if (viewName === "continue") {
     hideAll();
     if (continueSection) continueSection.classList.remove("hidden");
     renderContinueWatchingPage();
+    updateSectionSEO('continue');
   } else if (viewName === "genres") {
     hideAll();
     filteredSection.classList.remove("hidden");
     renderFilteredGrid(MOVIES, "Explore All Titles");
+    updateSectionSEO('genres');
   } else if (viewName === "search") {
     hideAll();
     filteredSection.classList.remove("hidden");
+    updateSectionSEO('search');
   } else if (viewName === "details") {
     hideAll();
     if (detailsSection) detailsSection.classList.remove("hidden");
