@@ -33,9 +33,31 @@ window._FOURK_DATA = [
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
 
+{
+    id: "the-odyssey-2026",
+    title: "The Odyssey",
+    type: "Movie",
+    year: 2026,
+    rating: 8.4,
+    age: "PG-13",
+    duration: "2h 52m",
+    genres: ["Action", "Adventure", "Fantasy"],
+    poster: "https://image.tmdb.org/t/p/original/eF8okKdXfiFJ1pvKMp2fAqIPzkY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5xfk0z9WlkhRhjCf7cdpiKP5UIa.jpg",
+    videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_IMAX_4K_UHD.mp4",
+    trailerUrl: "",
+    overview: "After years of brutal war, Odysseus sets sail for home — but the gods have other plans. Crossing a treacherous Mediterranean, he and his crew face the Cyclops Polyphemus, the deadly call of the Sirens, and the sorceress Circe, each trial pushing him closer to the edge of what he can endure to see Ithaca again.",
+    overviewKurdish: "دوای چەندین ساڵ لە جەنگی خوێناوی، ئۆدیسیۆس بە کەشتی بەرەو نیشتمان دەگەڕێتەوە — بەڵام خوداوەندەکان پلانی تریان هەیە. لە کاتی تێپەڕین بە دەریای پڕ مەترسیی ناوەڕاستدا، ئەو و دەستەکەی ڕووبەڕووی پۆلیفیمۆسی یەکچاو، بانگی کوشندەی سایرنەکان و جادووگەر سیرسی دەبنەوە، هەر تاقیکردنەوەیەکیش زیاتر بەرەو سنووری بەرگەگرتن دەیبات بۆ ئەوەی جارێکی تر ئیتاکا ببینێتەوە.",
+    director: "Christopher Nolan",
+    cast: ["Matt Damon", "Anne Hathaway", "Tom Holland", "Robert Pattinson", "Charlize Theron"],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [],
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_English.vtt","srclang":"en","default":true}]
+  },
 
 
-  
   // ============================================================
   // 2. Resident Evil (2026)
   // ============================================================
