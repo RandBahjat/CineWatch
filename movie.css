@@ -4732,57 +4732,35 @@ body.auth-modal-open::-webkit-scrollbar {
   color: #ffffff;
 }
 
-/* RIGHT SIDE: Cinema Picture Showcase Panel */
+/* RIGHT SIDE: Seamless Edge-to-Edge Cinema Picture Showcase */
 .auth-split-visual {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 16px 16px 16px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: clamp(260px, 27%, 410px);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   overflow: hidden;
   background: #08090d;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.16) 13%, rgba(0, 0, 0, 0.65) 26%, #000000 42%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.16) 13%, rgba(0, 0, 0, 0.65) 26%, #000000 42%);
 }
 
 .auth-visual-frame {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 22px;
+  border-radius: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
-  background: #0d0f17;
+  border: none;
+  box-shadow: none;
+  background: #08090d;
 }
 
-.auth-visual-top-pill {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 4;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  background: rgba(10, 12, 18, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.auth-visual-live-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #e50914;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.9);
-}
-
-/* Movie Slideshow inside Right Showcase Frame */
+/* Movie Slideshow inside Right Seamless Showcase */
 .auth-fullscreen-bg-container {
   position: absolute;
   inset: 0;
@@ -4803,10 +4781,10 @@ body.auth-modal-open::-webkit-scrollbar {
   background-repeat: no-repeat;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.06);
-  transition: opacity 1.15s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 7s ease-out,
-              visibility 1.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.05);
+  transition: opacity 1.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 8s ease-out,
+              visibility 1.3s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   will-change: opacity, transform;
 }
@@ -4818,7 +4796,7 @@ body.auth-modal-open::-webkit-scrollbar {
   z-index: 1;
 }
 
-/* Subtle Bottom Gradient Overlay so Artwork Remains Vivid */
+/* Silky Edge Feather & Bottom Gradient Overlay (Zero Hard Borders) */
 .auth-fullscreen-overlay {
   position: absolute;
   inset: 0;
@@ -4826,63 +4804,66 @@ body.auth-modal-open::-webkit-scrollbar {
   height: 100%;
   z-index: 2;
   background:
-    linear-gradient(to top, rgba(8, 9, 13, 0.92) 0%, rgba(8, 9, 13, 0.45) 36%, rgba(8, 9, 13, 0.04) 72%, rgba(8, 9, 13, 0.25) 100%),
-    linear-gradient(to right, rgba(8, 9, 13, 0.35) 0%, transparent 25%);
+    linear-gradient(90deg, #08090d 0%, rgba(8, 9, 13, 0.72) 15%, rgba(8, 9, 13, 0.24) 30%, transparent 48%),
+    linear-gradient(to top, rgba(8, 9, 13, 0.88) 0%, rgba(8, 9, 13, 0.34) 24%, transparent 52%);
   pointer-events: none;
 }
 
 .auth-visual-caption {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: clamp(180px, 26%, 320px);
+  right: 36px;
+  bottom: 28px;
   z-index: 4;
-  padding: 28px 30px;
+  padding: 0;
 }
 
 .auth-visual-badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 6px;
-  background: rgba(229, 9, 20, 0.9);
-  color: #ffffff;
-  font-size: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ff4757;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.4);
+  margin-bottom: 6px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
 .auth-visual-title {
-  margin: 0 0 6px;
-  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  margin: 0 0 4px;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
   font-weight: 800;
   color: #ffffff;
   letter-spacing: -0.02em;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.65);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.78);
 }
 
 .auth-visual-meta {
-  margin: 0 0 16px;
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.78);
-  font-weight: 500;
+  margin: 0 0 12px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
 }
 
 .auth-visual-dots {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
 }
 
 .auth-visual-dot {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 3px;
   padding: 0;
   border: none;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.28);
   cursor: pointer;
   transition: width 0.3s ease, background 0.3s ease;
 }
@@ -4892,8 +4873,8 @@ body.auth-modal-open::-webkit-scrollbar {
 }
 
 .auth-visual-dot.active {
-  width: 26px;
-  background: #e50914;
+  width: 28px;
+  background: #ffffff;
 }
 
 /* Compact Height Tuning for 620px-760px Laptop Screens */
