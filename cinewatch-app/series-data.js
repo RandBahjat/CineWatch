@@ -5,7 +5,111 @@
 window._SERIES_DATA = [
 
   // ============================================================
-  // 1. The Greatest (2026)
+  // 1. Blade Runner 2099 (2026)
+  // ============================================================
+  {
+    id: "blade-runner-2099-2026",
+    title: "Blade Runner 2099",
+    type: "TV Show",
+    year: 2026,
+    rating: 7.4,
+    age: "TV-MA",
+    duration: "1 Season",
+    genres: ["Sci-Fi", "Action", "Drama", "Mystery", "Thriller"],
+    poster: "https://static.tvmaze.com/uploads/images/original_untouched/653/1634189.jpg",
+    backdrop: "https://static.tvmaze.com/uploads/images/original_untouched/646/1615182.jpg",
+    videoUrl: "171802",
+    trailerUrl: "https://www.youtube.com/watch?v=1d4x_eSdqNc",
+    overview: "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
+    overviewKurdish: "پەنجا ساڵ دوای ڕووداوەکانی «بڵەید ڕەنەر ٢٠٤٩»، شاری لۆس ئەنجلس سەرلەنوێ لەدایکبووەتەوە، بەڵام نەک بە دەستی مرۆڤایەتی. کۆرا، کە هەڵهاتوویەکە لە کۆتا هەوڵیدا بۆ ئەوەی چیدی ڕانەکات، دوایین ناسنامە دەپۆشێت: بڵەید ڕەنەر. ناچار دەکرێت هاوبەشی لەگەڵ ئۆڵویندا بکات، کە ڕێپلیکەنتێکە و تەنها چەند ڕۆژێکی ماوە بۆ مردن، تا پێکەوە ڕاوەدووی کەسێکی هەڵهاتوو بنێن کە ڕاستییەک دەشارێتەوە دەشێت شارە ناسک و لاوازەکەیان بڕووخێنێت.",
+    director: "Silka Luisa",
+    cast: ["Michelle Yeoh", "Hunter Schafer", "Dimitri Abold", "Lewis Gribben", "Tom Burke"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Hades",
+            airDate: "2026-11-24",
+            rating: 8.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633623.jpg",
+            duration: "62 min",
+            overview: "A brutal raid presses Cora to infiltrate the Los Angeles Police Department to retrieve a confiscated item that exposes a buried truth."
+          },
+          {
+            episode: 2,
+            title: "Birther of Worlds",
+            airDate: "2026-11-24",
+            rating: 9,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633624.jpg",
+            duration: "61 min",
+            overview: "Battling to cover up their own secrets, Cora and Olwen partner to hunt a rogue colleague."
+          },
+          {
+            episode: 3,
+            title: "Ho, Ho, Folks",
+            airDate: "2026-11-24",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633625.jpg",
+            duration: "55 min",
+            overview: "Cora risks exposure when her past deceit lands her brother in danger. Olwen's missteps force her to retrace her past with a missing Replicant."
+          },
+          {
+            episode: 4,
+            title: "Memory, Hither Come",
+            airDate: "2026-11-24",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633626.jpg",
+            duration: "52 min",
+            overview: "Cora and Olwen track runaways to a Mexico City hideout. As dark ambitions clash with hidden secrets, both women confront painful pasts."
+          },
+          {
+            episode: 5,
+            title: "My Lord",
+            airDate: "2026-11-24",
+            rating: 8.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633627.jpg",
+            duration: "54 min",
+            overview: "Cora investigates her past while Olwen faces new threats, forcing a dangerous reckoning."
+          },
+          {
+            episode: 6,
+            title: "Kill the Killers",
+            airDate: "2026-11-24",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633628.jpg",
+            duration: "51 min",
+            overview: "Cora and Olwen forge an uneasy alliance to hunt a lost relic. On Cora's home turf, old ghosts and new dangers close in. Hunted themselves, they must choose: compete or survive together."
+          },
+          {
+            episode: 7,
+            title: "One More Kiss, Dear",
+            airDate: "2026-11-24",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633629.jpg",
+            duration: "57 min",
+            overview: "Out of time and out of options, Olwen turns to Cora. Their uneasy alliance is tested when the past catches up to their doorstep."
+          },
+          {
+            episode: 8,
+            title: "Share the Fantasy",
+            airDate: "2026-11-24",
+            rating: 8.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633630.jpg",
+            duration: "61 min",
+            overview: "Olwen's final hours meet Cora's desperate bid for legacy. When ambitions collide, no one escapes unchanged."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 2. The Greatest (2026)
   // ============================================================
   {
     id: "the-greatest-2026",
