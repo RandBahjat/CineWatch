@@ -4952,6 +4952,11 @@ function stopAuthSlideshow() {
 }
 
 function openAuthModal() {
+  document.documentElement.classList.add("auth-modal-open");
+  document.body.classList.add("auth-modal-open");
+  document.documentElement.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
+
   if (typeof window.showAuth === 'function') {
     window.showAuth();
     startAuthSlideshow();
@@ -4964,7 +4969,6 @@ function openAuthModal() {
   modal.style.opacity = "1";
   modal.style.visibility = "visible";
   modal.style.pointerEvents = "auto";
-  document.body.style.overflow = "hidden";
 
   // Reset forms and hide Turnstile widgets
   const loginForm = document.getElementById("loginForm") || document.getElementById("formSignIn");
@@ -5040,6 +5044,11 @@ function closeAuthModal() {
     localStorage.setItem("cw_auth_prompt_last_shown", Date.now().toString());
   } catch (e) {}
 
+  document.documentElement.classList.remove("auth-modal-open");
+  document.body.classList.remove("auth-modal-open");
+  document.documentElement.style.overflow = "";
+  document.body.style.overflow = "";
+
   if (typeof window.hideAuth === 'function') {
     window.hideAuth();
     return;
@@ -5051,7 +5060,6 @@ function closeAuthModal() {
   modal.style.visibility = "hidden";
   modal.style.pointerEvents = "none";
   modal.style.display = "none";
-  document.body.style.overflow = "";
 }
 window.closeAuthModal = closeAuthModal;
 
@@ -7151,7 +7159,7 @@ function bindEventListeners() {
   if (cancelCpBtn) {
     cancelCpBtn.onclick = (e) => {
       e.preventDefault();
-      document.getElementById("authModal").classList.add("hidden");
+      closeAuthModal();
     };
   }
 
@@ -7201,7 +7209,7 @@ function bindEventListeners() {
           alertEl.classList.remove("hidden");
 
           setTimeout(() => {
-            document.getElementById("authModal").classList.add("hidden");
+            closeAuthModal();
             alertEl.classList.add("hidden");
             changePasswordForm.reset();
             showToast("Password updated securely!");
@@ -7258,7 +7266,7 @@ function bindEventListeners() {
 
           setTimeout(async () => {
             if (window.CW_API) await window.CW_API.signOut();
-            document.getElementById("authModal").classList.add("hidden");
+            closeAuthModal();
             alertEl.classList.add("hidden");
             recoveryPasswordForm.reset();
             showToast("Password updated! Please log in again.");
