@@ -33,6 +33,9 @@ window._FOURK_DATA = [
     subtitles: [{"label":"Kurdish (Sorani)","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_Kurdish.vtt","srclang":"ku","default":true},{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/Spider-Man_Brand_New_Day_English.vtt","srclang":"en","default":false}]
   },
 
+
+
+  
   // ============================================================
   // 2. Resident Evil (2026)
   // ============================================================
