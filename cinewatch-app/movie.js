@@ -2152,7 +2152,8 @@ function renderFilteredGrid(movieList, titleText) {
     const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
     filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
-      card.onclick = () => {
+      card.onclick = (e) => {
+        e.stopPropagation();
         state.currentDetailsFrom4k = false;
         openDetailsModal(card.dataset.id, false);
       };
