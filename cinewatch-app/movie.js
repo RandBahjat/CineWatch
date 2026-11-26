@@ -4909,6 +4909,32 @@ function setupVideoControls(video) {
 let cwAuthSlideshowTimer = null;
 let cwAuthCurrentSlide = 0;
 
+function applyAuthSlideState(index) {
+  const container = document.getElementById("authFullscreenBgContainer");
+  if (!container) return;
+  const slides = container.querySelectorAll(".auth-fullscreen-bg");
+  if (!slides.length) return;
+
+  const targetIdx = ((index % slides.length) + slides.length) % slides.length;
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("is-active", i === targetIdx);
+  });
+  cwAuthCurrentSlide = targetIdx;
+
+  const activeSlide = slides[targetIdx];
+  const badgeEl = document.getElementById("authVisualBadge");
+  const titleEl = document.getElementById("authVisualTitle");
+  const metaEl = document.getElementById("authVisualMeta");
+  if (badgeEl && activeSlide.dataset.badge) badgeEl.textContent = activeSlide.dataset.badge;
+  if (titleEl && activeSlide.dataset.title) titleEl.textContent = activeSlide.dataset.title;
+  if (metaEl && activeSlide.dataset.meta) metaEl.textContent = activeSlide.dataset.meta;
+
+  const dots = document.querySelectorAll("#authVisualDots .auth-visual-dot");
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === targetIdx);
+  });
+}
+
 function startAuthSlideshow() {
   const container = document.getElementById("authFullscreenBgContainer");
   if (!container) return;
@@ -4918,6 +4944,28 @@ function startAuthSlideshow() {
   if (cwAuthSlideshowTimer) {
     clearInterval(cwAuthSlideshowTimer);
     cwAuthSlideshowTimer = null;
+  }
+
+  // Bind dot navigation once
+  const dotsWrap = document.getElementById("authVisualDots");
+  if (dotsWrap && !dotsWrap._dotsBound) {
+    dotsWrap._dotsBound = true;
+    dotsWrap.addEventListener("click", (e) => {
+      const btn = e.target.closest(".auth-visual-dot");
+      if (!btn) return;
+      const idx = parseInt(btn.dataset.slideIndex, 10);
+      if (!isNaN(idx)) {
+        applyAuthSlideState(idx);
+        startAuthSlideshow();
+      }
+    });
+  }
+
+  applyAuthSlideState(cwAuthCurrentSlide);
+
+  // Skip image preloading & rotation when visual panel is hidden on mobile screens
+  if (window.matchMedia && window.matchMedia("(max-width: 820px)").matches) {
+    return;
   }
 
   // Preload slides for seamless crossfading
@@ -4938,10 +4986,9 @@ function startAuthSlideshow() {
       stopAuthSlideshow();
       return;
     }
-    slides[cwAuthCurrentSlide].classList.remove("is-active");
-    cwAuthCurrentSlide = (cwAuthCurrentSlide + 1) % slides.length;
-    slides[cwAuthCurrentSlide].classList.add("is-active");
-  }, 4000);
+    if (window.matchMedia && window.matchMedia("(max-width: 820px)").matches) return;
+    applyAuthSlideState(cwAuthCurrentSlide + 1);
+  }, 4500);
 }
 
 function stopAuthSlideshow() {
