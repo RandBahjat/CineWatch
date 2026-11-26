@@ -4796,7 +4796,7 @@ body.auth-modal-open::-webkit-scrollbar {
   z-index: 1;
 }
 
-/* Silky Edge Feather & Bottom Gradient Overlay (Zero Hard Borders) */
+/* Silky Left Edge Feather Overlay (Zero Text, Zero Hard Borders) */
 .auth-fullscreen-overlay {
   position: absolute;
   inset: 0;
@@ -4805,76 +4805,8 @@ body.auth-modal-open::-webkit-scrollbar {
   z-index: 2;
   background:
     linear-gradient(90deg, #08090d 0%, rgba(8, 9, 13, 0.72) 15%, rgba(8, 9, 13, 0.24) 30%, transparent 48%),
-    linear-gradient(to top, rgba(8, 9, 13, 0.88) 0%, rgba(8, 9, 13, 0.34) 24%, transparent 52%);
+    linear-gradient(to top, rgba(8, 9, 13, 0.35) 0%, transparent 18%);
   pointer-events: none;
-}
-
-.auth-visual-caption {
-  position: absolute;
-  left: clamp(220px, 29%, 340px);
-  right: 36px;
-  bottom: 28px;
-  z-index: 4;
-  padding: 0;
-}
-
-.auth-visual-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  color: #ff4757;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
-}
-
-.auth-visual-title {
-  margin: 0 0 4px;
-  font-size: clamp(1.35rem, 2vw, 1.85rem);
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.02em;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.78);
-}
-
-.auth-visual-meta {
-  margin: 0 0 12px;
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.72);
-  font-weight: 400;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
-}
-
-.auth-visual-dots {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.auth-visual-dot {
-  width: 12px;
-  height: 3px;
-  padding: 0;
-  border: none;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.28);
-  cursor: pointer;
-  transition: width 0.3s ease, background 0.3s ease;
-}
-
-.auth-visual-dot:hover {
-  background: rgba(255, 255, 255, 0.65);
-}
-
-.auth-visual-dot.active {
-  width: 28px;
-  background: #ffffff;
 }
 
 /* Compact Height Tuning for 620px-760px Laptop Screens */
