@@ -4811,7 +4811,7 @@ body.auth-modal-open::-webkit-scrollbar {
 
 .auth-visual-caption {
   position: absolute;
-  left: clamp(180px, 26%, 320px);
+  left: clamp(220px, 29%, 340px);
   right: 36px;
   bottom: 28px;
   z-index: 4;
