@@ -1936,7 +1936,10 @@ function renderBecauseYouWatchedShelf() {
 
   // Wire click event to open details modal
   track.querySelectorAll(".movie-card").forEach((card) => {
-    card.onclick = () => openDetailsModal(card.dataset.id);
+    card.onclick = (e) => {
+      e.stopPropagation();
+      openDetailsModal(card.dataset.id, false);
+    };
   });
 }
 
@@ -1965,7 +1968,10 @@ function renderWatchlistHomeShelf() {
   track.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie)).join("");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
-    card.onclick = () => openDetailsModal(card.dataset.id);
+    card.onclick = (e) => {
+      e.stopPropagation();
+      openDetailsModal(card.dataset.id, false);
+    };
   });
 }
 
