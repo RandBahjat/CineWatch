@@ -1354,7 +1354,9 @@ window._MOVIES_DATA = [
     cast: ["Matt Damon", "Anne Hathaway", "Tom Holland", "Robert Pattinson", "Charlize Theron"],
     trending: true,
     featured: true,
-    is4k: false,
+    fourkVideoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_IMAX_4K_UHD.mp4",
+    is4k: true,
+    subtitles: [{"label":"English","file":"https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_English.vtt","srclang":"en","default":true}],
     seasons: []
   },
 
