@@ -16,7 +16,7 @@ window._FOURK_DATA = [
     age: "PG-13",
     duration: "2h 52m",
     genres: ["Action", "Adventure", "Fantasy"],
-    poster: "https://image.tmdb.org/t/p/original/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+    poster: "https://image.tmdb.org/t/p/original/eF8okKdXfiFJ1pvKMp2fAqIPzkY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xRcoqYmjdwnQfSKLAu7kr1huhhx.jpg",
     videoUrl: "https://pub-8831c11f477044598f386d280daece6c.r2.dev/The_Odyssey_2026_IMAX_4K_UHD.mp4",
     trailerUrl: "",
