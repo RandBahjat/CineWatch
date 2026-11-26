@@ -1524,7 +1524,10 @@ function attachTrackClickDelegate(track) {
   if (track && !track._hasDelegate) {
     track.addEventListener('click', (e) => {
       const card = e.target.closest('.movie-card');
-      if (card && card.dataset.id) openDetailsModal(card.dataset.id);
+      if (card && card.dataset.id) {
+        e.stopPropagation();
+        openDetailsModal(card.dataset.id, false);
+      }
     });
     track._hasDelegate = true;
   }
