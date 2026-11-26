@@ -4943,10 +4943,11 @@ body.auth-modal-open::-webkit-scrollbar {
     margin-bottom: 0.65rem;
   }
   .auth-brand-icon {
-    width: 34px;
-    height: 34px;
-    margin-bottom: 6px;
-    font-size: 1.15rem;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 7px;
+    border-radius: 11px;
+    font-size: 1.22rem;
   }
   .auth-title {
     font-size: 1.28rem;
