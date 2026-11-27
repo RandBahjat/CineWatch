@@ -28,7 +28,6 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    id: "I Play 
     title: "I Play Rocky",
     type: "Movie",
     year: 2026,
