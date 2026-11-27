@@ -42,7 +42,7 @@ window._MOVIES_DATA = [
     overview: "Sixteen years after the events of Little Fockers, family chaos erupts anew when Greg and Pam Focker's now-grown son, Henry, decides to marry Olivia Jones—a strong-willed former FBI hostage negotiator who appears to be his complete mismatch. As the extended Focker and Byrnes clans gather for the holidays, Greg's desperate attempts to prove himself and outdo his formidable father-in-law, Jack, trigger a hilarious spiral of lies, bickering, and domestic disasters.",
     overviewKurdish: "شانزە ساڵ دوای ڕووداوەکانی فیلمی پێشوو، جارێکی دیکە ئاژاوە و پشێوی دەگەڕێتەوە ناو خێزانی فۆکەر کاتێک «هێنری»، کوڕە گەورەبووەکەی گرێگ و پام، بڕیار دەدات هاوسەرگیری لەگەڵ «ئۆلیڤیا جۆنز» بکات؛ ژنێکی بەهێز و دانوستانکاری پێشووی ئێف بی ئای کە بە تەواوی لەگەڵ کەسایەتیی ئەودا جیاوازە. لەگەڵ کۆبوونەوەی خێزانەکان لە پشووەکاندا، هەوڵە بێهوودەکانی گرێگ بۆ سەلماندنی خۆی و سەرکەوتن بەسەر خەزوورە توندەکەیدا (جاک)، دەبێتە هۆی زنجیرەیەک درۆ، دەمەقاڵێ و کارەساتی کۆمیدی.",
     director: "John Hamburg",
-    cast: ["Anthony Mackie, Jamie Dornan, Jack Kesy, Agathe Rousselle, Sallie Harmsen"],
+    cast: ["Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson, Teri Polo, Blythe Danner, Skyler Gisondo, Beanie Feldstein, Eduardo Franco"],
     trending: true,
     featured: false,
     is4k: false,
