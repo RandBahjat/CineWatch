@@ -34,7 +34,7 @@ window._MOVIES_DATA = [
     rating: 6.1,
     age: "PG-13",
     duration: "1h 45m",
-    genres: ["Comedy", "Drama", "History"],
+    genres: ["Comedy"],
     poster: "https://image.tmdb.org/t/p/original/gAVfLoxLt1RXDLVmboyISrSDICO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
     videoUrl: "254630",
