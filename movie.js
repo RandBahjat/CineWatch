@@ -63,11 +63,11 @@ try {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = [
+  "Focker In-Law",
   "I Play Rocky",
   "The Oddyssey",
   "Model Citizen",
   "Campus Drivers",
-  "",
   "The Dog Stars",
   "By Any Means",
   "A Dog's Perfect Christmas",
