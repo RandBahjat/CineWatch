@@ -28,7 +28,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "I Play Rocky",
+    title: "",
     type: "Movie",
     year: 2026,
     rating: 8.2,
