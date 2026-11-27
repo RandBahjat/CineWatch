@@ -428,6 +428,42 @@ window._SERIES_DATA = [
             thumbnail: "https://episodes.metahub.space/tt33043892/2/1/w780.jpg",
             duration: "51 min",
             overview: "Dexter manages to track down some of the remaining serial killers from Prater's vault but struggles to find purpose beyond the hunt. As Harrison begins his NYPD career, a media-savvy murderer emerges and puts the city on edge."
+          },
+          {
+            episode: 2,
+            title: "Fallen",
+            airDate: "2026-11-06",
+            rating: 8.5,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oRr8xKcJvgFihuQWRmrszL85kt7.jpg",
+            duration: "58 min",
+            overview: "Navigating his mid-life crisis, Dexter finds no comfort as the Five Borough Killer captivates New York City. Meanwhile, his son Harrison starts at NYPD Homicide."
+          },
+          {
+            episode: 3,
+            title: "Live Free and Die",
+            airDate: "2026-11-13",
+            rating: 8.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/oWZuaIlTLMxjBndfNiKjg7JGwEU.jpg",
+            duration: "55 min",
+            overview: "Dexter closes in on a ruthless killer terrorizing the city, but a fleeting clue is all he has to go on; as Harrison settles into his new role at NYPD Homicide, mounting pressure, old rivals and dangerous suspects threaten to derail the hunt."
+          },
+          {
+            episode: 4,
+            title: "Young Blood",
+            airDate: "2026-11-20",
+            rating: 8.7,
+            thumbnail: "https://image.tmdb.org/t/p/w780/w2YnTPg97BraCoAdeFckvtYl97r.jpg",
+            duration: "60 min",
+            overview: "Dexter investigates a young killer's notorious legacy and weighs whether the Code still applies, while Harrison proves himself in the field."
+          },
+          {
+            episode: 5,
+            title: "Out of the Past",
+            airDate: "2026-11-27",
+            rating: 9.6,
+            thumbnail: "https://image.tmdb.org/t/p/w780/a7Ofz6lgowoSVajts2FhhQOpNJK.jpg",
+            duration: "53 min",
+            overview: "A familiar face from Dexter's past resurfaces, challenging his beliefs and reshaping his next move; as Harrison takes on greater responsibility within the NYPD, the hunt for the Five Borough Killer intensifies across New York."
           }
         ]
       }
