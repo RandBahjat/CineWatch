@@ -35,7 +35,7 @@ window._MOVIES_DATA = [
     age: "PG-13",
     duration: "1h 45m",
     genres: ["Comedy"],
-    poster: "https://image.tmdb.org/t/p/original/gAVfLoxLt1RXDLVmboyISrSDICO.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iHJhSfqFpDMOyeMc6h6BOeHxse2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
     videoUrl: "254630",
     trailerUrl: "https://www.youtube.com/watch?v=cDroSYeUlG4",
