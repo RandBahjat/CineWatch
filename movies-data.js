@@ -40,7 +40,7 @@ window._MOVIES_DATA = [
     videoUrl: "1400336",
     trailerUrl: "https://youtu.be/vyISuWUWcFs?si=y-myIVObMy4Dld4J",
     overview: "Sixteen years after the events of Little Fockers, family chaos erupts anew when Greg and Pam Focker's now-grown son, Henry, decides to marry Olivia Jones—a strong-willed former FBI hostage negotiator who appears to be his complete mismatch. As the extended Focker and Byrnes clans gather for the holidays, Greg's desperate attempts to prove himself and outdo his formidable father-in-law, Jack, trigger a hilarious spiral of lies, bickering, and domestic disasters.",
-    overviewKurdish: "چیرۆکی دزییەکی گەورە کە پلانەکەی ١٢ مانگی پێدەچێت، لە ماوەی ١٢ کاتژمێردا جێبەجێ دەکرێت، و ئەگەر دزەکە لە ماوەی ١٢ ڕۆژدا دەستگیر نەکرێت، هەرگیز دەستگیر ناکرێت. لە سێ کاتی جیاواز و پڕ لە گرژیدا، بریکارێکی ئێف بی ئای و تاوانبارێکی بەئەزموون لە یارییەکی کوشندەی پشیلە و مشک لە سەرتاسەری ئەوروپادا ڕووبەڕووی یەکتر دەبنەوە.",
+    overviewKurdish: "شانزە ساڵ دوای ڕووداوەکانی فیلمی پێشوو، جارێکی دیکە ئاژاوە و پشێوی دەگەڕێتەوە ناو خێزانی فۆکەر کاتێک «هێنری»، کوڕە گەورەبووەکەی گرێگ و پام، بڕیار دەدات هاوسەرگیری لەگەڵ «ئۆلیڤیا جۆنز» بکات؛ ژنێکی بەهێز و دانوستانکاری پێشووی ئێف بی ئای کە بە تەواوی لەگەڵ کەسایەتیی ئەودا جیاوازە. لەگەڵ کۆبوونەوەی خێزانەکان لە پشووەکاندا، هەوڵە بێهوودەکانی گرێگ بۆ سەلماندنی خۆی و سەرکەوتن بەسەر خەزوورە توندەکەیدا (جاک)، دەبێتە هۆی زنجیرەیەک درۆ، دەمەقاڵێ و کارەساتی کۆمیدی.",
     director: "Kari Skogland",
     cast: ["Anthony Mackie, Jamie Dornan, Jack Kesy, Agathe Rousselle, Sallie Harmsen"],
     trending: true,
