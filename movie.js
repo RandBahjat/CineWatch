@@ -67,7 +67,7 @@ let FEATURED_TITLES = [
   "The Oddyssey",
   "Model Citizen",
   "Campus Drivers",
-  "Clayface",
+  "",
   "The Dog Stars",
   "By Any Means",
   "A Dog's Perfect Christmas",
