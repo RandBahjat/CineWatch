@@ -33,7 +33,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 6.1,
     age: "PG-13",
-    duration: "2h 08m",
+    duration: "1h 08m",
     genres: ["Biography", "Drama", "History"],
     poster: "https://image.tmdb.org/t/p/original/gAVfLoxLt1RXDLVmboyISrSDICO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
