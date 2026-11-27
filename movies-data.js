@@ -39,7 +39,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
     videoUrl: "1400336",
     trailerUrl: "https://youtu.be/vyISuWUWcFs?si=y-myIVObMy4Dld4J",
-    overview: "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
+    overview: "Sixteen years after the events of Little Fockers, family chaos erupts anew when Greg and Pam Focker's now-grown son, Henry, decides to marry Olivia Jones—a strong-willed former FBI hostage negotiator who appears to be his complete mismatch. As the extended Focker and Byrnes clans gather for the holidays, Greg's desperate attempts to prove himself and outdo his formidable father-in-law, Jack, trigger a hilarious spiral of lies, bickering, and domestic disasters.",
     overviewKurdish: "چیرۆکی دزییەکی گەورە کە پلانەکەی ١٢ مانگی پێدەچێت، لە ماوەی ١٢ کاتژمێردا جێبەجێ دەکرێت، و ئەگەر دزەکە لە ماوەی ١٢ ڕۆژدا دەستگیر نەکرێت، هەرگیز دەستگیر ناکرێت. لە سێ کاتی جیاواز و پڕ لە گرژیدا، بریکارێکی ئێف بی ئای و تاوانبارێکی بەئەزموون لە یارییەکی کوشندەی پشیلە و مشک لە سەرتاسەری ئەوروپادا ڕووبەڕووی یەکتر دەبنەوە.",
     director: "Kari Skogland",
     cast: ["Anthony Mackie, Jamie Dornan, Jack Kesy, Agathe Rousselle, Sallie Harmsen"],
