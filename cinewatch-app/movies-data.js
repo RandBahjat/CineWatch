@@ -33,7 +33,7 @@ window._MOVIES_DATA = [
     rating: 6.6,
     age: "R",
     duration: "1h 52m",
-    genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
+    genres: ["Biograp", "Adventure", "Sci-Fi","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
     videoUrl: "1300968",
