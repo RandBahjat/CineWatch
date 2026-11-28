@@ -27,7 +27,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Social Reckoning ",
+    title: "The Social Reckoning",
     type: "Movie",
     year: 2026,
     rating: 6.6,

@@ -85,7 +85,7 @@ let TOP_10_TRENDING_TODAY = [
   "Dexter: Resurrection",
   "Spider-Man: Brand New Day",
   "The Hunting Wives",
-  "VisionQuest"
+  "The Social Reckoning"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
   "Model Citizen",
