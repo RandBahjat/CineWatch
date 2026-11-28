@@ -27,7 +27,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "he Hunger Games: Sunrise on the Reaping",
+    title: "Way of the Warrior Kid",
     type: "Movie",
     year: 2026,
     rating: 7.5,
