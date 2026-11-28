@@ -82,7 +82,7 @@ let TOP_10_TRENDING_TODAY = [
   "The Odyssey",
   "The Hunger Games: Sunrise on the Reaping",
   "Way of the Warrior Kid",
-  "Godzilla Minus Zero",
+  "Dexter: Resurrection",
   "Possible Love",
   "Primetime",
   "VisionQuest"
