@@ -76,7 +76,7 @@ let FEATURED_TITLES = [
   
 ];
 let TOP_10_TRENDING_TODAY = [
-  "Model Citizen",
+  "Street Fighter",
   "The Oddyssey",
   "The Good Lawyer",
   "Other Mommy",
