@@ -5,7 +5,188 @@
 window._SERIES_DATA = [
 
   // ============================================================
-  // 1. Blade Runner 2099 (2026)
+  // 1. The Hunting Wives (2025)
+  // ============================================================
+  {
+    id: "the-hunting-wives-2025",
+    title: "The Hunting Wives",
+    type: "TV Show",
+    year: 2025,
+    rating: 6.8,
+    age: "TV-MA",
+    duration: "2 Seasons",
+    genres: ["Drama", "Mystery", "Thriller"],
+    poster: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448883.jpg",
+    backdrop: "https://static.tvmaze.com/uploads/images/original_untouched/579/1449372.jpg",
+    videoUrl: "244447",
+    trailerUrl: "https://www.youtube.com/watch?v=hRvDakXnaOs",
+    overview: "The Hunting Wives tells the story of Sophie O'Neil and her family's move from the East Coast to deep-red East Texas, where she succumbs to socialite Margo Banks' irresistible charms—and finds her life consumed by obsession, seduction, and murder.",
+    overviewKurdish: "چیرۆکی «ژنە ڕاوچییەکان» باس لە گواستنەوەی سۆفی ئۆنیڵ و خێزانەکەی دەکات لە کەناری ڕۆژهەڵاتەوە بۆ قووڵایی ڕۆژهەڵاتی تێکساس، لەوێ دەکەوێتە ژێر کاریگەریی سەرنجڕاکێشییە بێئەندازەکەی خانمە بەناوبانگ مارگۆ بانکسەوە و ژیانی دەبێتە قوربانیی هەوەس، فریودان و تاوانی کوشتن.",
+    director: "Rebecca Cutter",
+    cast: ["Brittany Snow", "Malin Akerman", "Jaime Ray Newman", "George Ferrier", "Evan Jonigkeit", "Karen Rodriguez", "Dermot Mulroney"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Strange and Unfamiliar Places",
+            airDate: "2025-07-21",
+            rating: 6.8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448193.jpg",
+            duration: "51 min",
+            overview: "At a party for her husband's new boss, Sophie tries to make a good impression and finds herself drawn to the alluring and mysterious Margo."
+          },
+          {
+            episode: 2,
+            title: "Knockin' Boots",
+            airDate: "2025-07-21",
+            rating: 7.2,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448194.jpg",
+            duration: "50 min",
+            overview: "As Jed prepares to run for governor, Margo attempts to keep their past secrets buried. Abby navigates rising temptations toward the pastor's son, Brad."
+          },
+          {
+            episode: 3,
+            title: "Sunrise Tells the Story",
+            airDate: "2025-07-21",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448195.jpg",
+            duration: "53 min",
+            overview: "Margo shares a scandalous secret with Sophie, and the ladies embark on a hunting trip that goes from fun to fraught when unexpected guests arrive."
+          },
+          {
+            episode: 4,
+            title: "Cheat Day",
+            airDate: "2025-07-21",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448196.jpg",
+            duration: "46 min",
+            overview: "After a body is discovered in the woods, tensions ignite as Margo and Brad rush to align their stories. Sophie searches for her missing handgun."
+          },
+          {
+            episode: 5,
+            title: "Not Her First Rodeo",
+            airDate: "2025-07-21",
+            rating: 7.3,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448197.jpg",
+            duration: "49 min",
+            overview: "Police question Sophie at home and at the station. Jill takes matters into her own hands to protect Brad's alibi, pressuring his friend to stay quiet."
+          },
+          {
+            episode: 6,
+            title: "Deep in the Heart of Texas",
+            airDate: "2025-07-21",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448198.jpg",
+            duration: "49 min",
+            overview: "Convinced she's being framed, Sophie approaches Margo's estranged brother for answers. Jed's campaign leads to a talk show appearance."
+          },
+          {
+            episode: 7,
+            title: "Shooting Star",
+            airDate: "2025-07-21",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448199.jpg",
+            duration: "48 min",
+            overview: "Margo and Sophie form an uneasy alliance to find the killer and track a familiar suspect. Meanwhile, the sheriff's office closes in on a new lead."
+          },
+          {
+            episode: 8,
+            title: "Sophie's Choice",
+            airDate: "2025-07-21",
+            rating: 7.4,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448200.jpg",
+            duration: "56 min",
+            overview: "Released from custody, Sophie thinks she's in the clear — until a life-altering realization about Margo makes her question everything."
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Scared Straight",
+            airDate: "2026-11-26",
+            rating: 7.7,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633848.jpg",
+            duration: "55 min",
+            overview: "As a new murder investigation begins, Margo tries to locate her brother — but she's not the only one on the hunt. Sophie works to salvage her marriage."
+          },
+          {
+            episode: 2,
+            title: "This Is the Killer Speaking",
+            airDate: "2026-11-26",
+            rating: 8,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633849.jpg",
+            duration: "57 min",
+            overview: "Sophie scrambles to cover her tracks, but her attempts to play it cool at a campaign fundraiser get heated when she crosses paths with Margo and Callie."
+          },
+          {
+            episode: 3,
+            title: "Back in the Saddle",
+            airDate: "2026-11-26",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633850.jpg",
+            duration: "53 min",
+            overview: "Margo and Jed have different ideas about how to handle a vengeful Zelda. Sophie struggles to move on from the past. Callie wears her heart on her sleeve."
+          },
+          {
+            episode: 4,
+            title: "Riders on the Storm",
+            airDate: "2026-11-26",
+            rating: 7.5,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633851.jpg",
+            duration: "60 min",
+            overview: "A confrontation at the lake house puts Margo in harm's way. Sophie makes a devastating confession that leaves her future up in the air."
+          },
+          {
+            episode: 5,
+            title: "Sonny Came Home",
+            airDate: "2026-11-26",
+            rating: null,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633852.jpg",
+            duration: "57 min",
+            overview: "Brad spirals out of control after taking a twisted trip down memory lane. Nadia digs deeper into Abby's death. Margo splurges on a luxurious gift."
+          },
+          {
+            episode: 6,
+            title: "Last Dance",
+            airDate: "2026-11-26",
+            rating: null,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633853.jpg",
+            duration: "59 min",
+            overview: "A shocking faceoff with Brad leaves Margo leaning on Sophie — and questioning her sense of self. Salazar searches for a suspect in Kyle's murder case."
+          },
+          {
+            episode: 7,
+            title: "Freak on a Leash",
+            airDate: "2026-11-26",
+            rating: null,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633854.jpg",
+            duration: "55 min",
+            overview: "As Jed's ruthless campaign manager consolidates control, Margo is trapped in the role of dutiful wife. Callie and Nadia take aim at Abby's killer."
+          },
+          {
+            episode: 8,
+            title: "Good Luck, Babe",
+            airDate: "2026-11-26",
+            rating: null,
+            thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/653/1633855.jpg",
+            duration: "53 min",
+            overview: "Justice, betrayal and self-preservation collide as the police close in on their prime suspects and Margo and Sophie plot a high-stakes move."
+          }
+        ]
+      }
+    ]
+  },
+
+  // ============================================================
+  // 2. Blade Runner 2099 (2026)
   // ============================================================
   {
     id: "blade-runner-2099-2026",
