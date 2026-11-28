@@ -669,6 +669,10 @@ var state = {
   seriesFilter: "all",
   animePage: 1,
   animeFilter: "all",
+  actorsPage: 1,
+  actorsFilter: "all",
+  actorsSearch: "",
+  selectedActor: null,
   searchFilter: "all",
 };
 
