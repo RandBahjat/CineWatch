@@ -3396,6 +3396,132 @@ body.rtl-layout .details-back-btn svg {
   color: #d1d5db;
 }
 
+/* Detail Page Actor Portrait Strip */
+#detailsCastContainer.details-cast-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: 1.15rem;
+  width: 100%;
+  max-width: 780px;
+}
+
+#detailsCastContainer .cast-text {
+  display: block;
+  width: 100%;
+}
+
+.details-cast-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.85rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0.15rem 0.55rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+
+.details-cast-grid::-webkit-scrollbar {
+  height: 5px;
+}
+
+.details-cast-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+}
+
+.actor-avatar-frame {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.actor-avatar-fallback {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.actor-avatar-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  opacity: 0;
+  transition: opacity 0.28s ease, transform 0.35s ease;
+  display: block;
+}
+
+.actor-avatar-img.is-loaded {
+  opacity: 1;
+}
+
+.details-actor-card {
+  flex: 0 0 82px;
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.details-actor-card:hover {
+  transform: translateY(-3px);
+}
+
+.details-actor-avatar {
+  width: 74px;
+  height: 94px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  font-size: 1.15rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.details-actor-card:hover .details-actor-avatar {
+  border-color: rgba(229, 9, 20, 0.85);
+  box-shadow: 0 10px 24px rgba(229, 9, 20, 0.28);
+}
+
+.details-actor-card:hover .actor-avatar-img.is-loaded {
+  transform: scale(1.05);
+}
+
+.details-actor-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  line-height: 1.25;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details-actor-card:hover .details-actor-name {
+  color: #ffffff;
+}
+
 .btn-play-circle {
   background: #fff;
   color: #000;
