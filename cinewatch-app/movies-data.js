@@ -37,7 +37,7 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/4cg0lBYVkDfbPXnf8QBZfFemS7z.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zEETWZO08bGupF6VQwNdSauoy0v.jpg",
     videoUrl: "1281331",
-    trailerUrl: "https://youtu.be/fS35YSjopjE?si=mqew9Aij_qsLIQPi",
+    trailerUrl: "https://youtu.be/MfHEZw7Xw_c?si=EpmWLEw0LLsGLI9x",
     overview: "Set twenty-four years before the events of The Hunger Games, the story begins on the morning of the reaping for the 50th Hunger Games—also known as the Second Quarter Quell—where twice as many tributes are taken from each district. Sixteen-year-old Haymitch Abernathy of District 12 is unexpectedly torn from his family and the girl he loves, thrust into a deceptively beautiful yet lethally engineered arena alongside forty-seven other tributes. Navigating the Capitol's ruthless propaganda and President Snow's twisted games, Haymitch discovers a spark of rebellion that will change Panem—and haunt him—forever.",
     overviewKurdish: "چیرۆکەکە بیست و چوار ساڵ پێش ڕووداوەکانی فیلمی یەکەمی «یارییەکانی برسێتی» ڕوودەدات و لە بەیانی ڕۆژی هەڵبژاردنی پەنجاهەمین خولی یارییەکاندا دەست پێدەکات، کە تێیدا دوو هێندەی جاران گەنج لە هەر ناوچەیەکەوە دەبرێنە ناو گۆڕەپانی مەرگەوە. «هەیمیچ ئابێرناسی» تەمەن شانزە ساڵ لە ناوچەی ١٢ بە شێوەیەکی چاوەڕواننەکراو لە خێزانەکەی و خۆشەویستەکەی دادەبڕێت و لەگەڵ چل و حەوت بەشداربووی دیکەدا فڕێ دەدرێتە ناو گۆڕەپانێکی جوان بەڵام پڕ لە تەڵە و ژەهر. لەناو درۆ و پڕوپاگەندە بێبەزەییەکانی کاپیتۆڵ و یارییە شەڕانگێزەکانی سەرۆک سنۆدا، هەیمیچ ناچارە تەنها بۆ مانەوە شەڕ نەکات، بەڵکو ڕووبەڕووی سیستەمێک ببێتەوە کە ژیانی بۆ هەمیشە دەگۆڕێت.",
     director: "Francis Lawrence",
