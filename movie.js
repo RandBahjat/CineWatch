@@ -7391,7 +7391,7 @@ function bindEventListeners() {
       }
 
       const in4kDom = card.closest('#fourkGrid') !== null || card.closest('#fourkSection') !== null;
-      const inStandardDom = card.closest('#moviesGrid, #moviesSection, #seriesGrid, #seriesSection, #animeGrid, #animeSection, #filteredGrid, #watchlistGrid, #continueGrid, #defaultShelves, #heroBanner, #detailsSimilarsGrid') !== null;
+      const inStandardDom = card.closest('#moviesGrid, #moviesSection, #seriesGrid, #seriesSection, #animeGrid, #animeSection, #actorFilmographyGrid, #actorsSection, #filteredGrid, #watchlistGrid, #continueGrid, #defaultShelves, #heroBanner, #detailsSimilarsGrid') !== null;
       const is4kCard = in4kDom || (!inStandardDom && state.activeView === '4k');
       openDetailsModal(movieId, is4kCard ? true : false);
     }
@@ -8882,7 +8882,14 @@ function bindEventListeners() {
     }
 
     const targetSection = params.get('section') || params.get('view') || 'home';
-    if (state.activeView !== targetSection && SECTION_VIEWS.includes(targetSection)) {
+    const popActor = params.get('actor') ? params.get('actor').trim() : null;
+    if (targetSection === 'actors' && SECTION_VIEWS.includes('actors')) {
+      if (state.activeView !== 'actors' || state.selectedActor !== popActor) {
+        state.selectedActor = popActor;
+        _performSwitchView('actors');
+      }
+    } else if (state.activeView !== targetSection && SECTION_VIEWS.includes(targetSection)) {
+      if (targetSection !== 'actors') state.selectedActor = null;
       _performSwitchView(targetSection);
     }
   });
