@@ -3366,7 +3366,7 @@ function _performSwitchView(viewName) {
 
   const mobileDockBrowse = document.getElementById("mobileDockBrowse");
   if (mobileDockBrowse) {
-    if (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === '4k') {
+    if (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'actors' || viewName === 'continue' || viewName === '4k') {
       mobileDockBrowse.classList.add("active");
     } else if (viewName === 'home' || viewName === 'watchlist') {
       mobileDockBrowse.classList.remove("active");
@@ -3374,7 +3374,7 @@ function _performSwitchView(viewName) {
   }
 
   document.body.classList.remove("mobile-browse-open");
-  document.body.classList.remove("view-home", "view-movies", "view-series", "view-anime", "view-4k", "view-watchlist", "view-continue", "view-genres", "view-search", "view-details");
+  document.body.classList.remove("view-home", "view-movies", "view-series", "view-anime", "view-actors", "view-4k", "view-watchlist", "view-continue", "view-genres", "view-search", "view-details");
   document.body.classList.add("view-" + viewName);
 
   if (window.updateNavGlider) window.updateNavGlider(true);
@@ -3390,6 +3390,7 @@ function _performSwitchView(viewName) {
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
   const animeSection = document.getElementById("animeSection");
+  const actorsSection = document.getElementById("actorsSection");
   const detailsSection = document.getElementById("detailsSection");
 
   const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
@@ -3408,6 +3409,7 @@ function _performSwitchView(viewName) {
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
     if (animeSection) animeSection.classList.add("hidden");
+    if (actorsSection) actorsSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (becauseShelf) becauseShelf.classList.add("hidden");
