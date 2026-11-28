@@ -30,7 +30,7 @@ window._MOVIES_DATA = [
     title: "Way of the Warrior Kid",
     type: "Movie",
     year: 2026,
-    rating: 7.5,
+    rating: 6.4,
     age: "PG-13",
     duration: "2h 38m",
     genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
