@@ -9,7 +9,7 @@ window._MOVIES_DATA = [
     title: "The Hunger Games: Sunrise on the Reaping",
     type: "Movie",
     year: 2026,
-    rating: 8.2,
+    rating: 7,
     age: "PG-13",
     duration: "2h 08m",
     genres: ["Biography", "Drama", "History"],
