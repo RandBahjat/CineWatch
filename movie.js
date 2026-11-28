@@ -3329,7 +3329,7 @@ function _performSwitchView(viewName) {
   const browseTrigger = document.getElementById("navBrowseTrigger");
   const browseCards = document.querySelectorAll(".nav-dropdown-card");
   const homeBtn = document.getElementById("navHomeBtn");
-  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === 'watchlist' || viewName === '4k');
+  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'actors' || viewName === 'continue' || viewName === 'watchlist' || viewName === '4k');
 
   if (browseTrigger) {
     if (isBrowseSubView) {
