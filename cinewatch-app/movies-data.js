@@ -35,7 +35,7 @@ window._MOVIES_DATA = [
     duration: "1h 52m",
     genres: ["Biography","Drama","History"],
     poster: "https://image.tmdb.org/t/p/original/4cg0lBYVkDfbPXnf8QBZfFemS7z.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zEETWZO08bGupF6VQwNdSauoy0v.jpg",
     videoUrl: "1300968",
     trailerUrl: "https://youtu.be/fS35YSjopjE?si=mqew9Aij_qsLIQPi",
     overview: "Set twenty-four years before the events of The Hunger Games, the story begins on the morning of the reaping for the 50th Hunger Games—also known as the Second Quarter Quell—where twice as many tributes are taken from each district. Sixteen-year-old Haymitch Abernathy of District 12 is unexpectedly torn from his family and the girl he loves, thrust into a deceptively beautiful yet lethally engineered arena alongside forty-seven other tributes. Navigating the Capitol's ruthless propaganda and President Snow's twisted games, Haymitch discovers a spark of rebellion that will change Panem—and haunt him—forever.",
