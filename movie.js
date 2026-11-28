@@ -84,7 +84,7 @@ let TOP_10_TRENDING_TODAY = [
   "Way of the Warrior Kid",
   "Dexter: Resurrection",
   "Spider-Man: Brand New Day",
-  "Primetime",
+  "The Hunting Wives",
   "VisionQuest"
 ];
 let TRENDING_THIS_WEEK_MOVIES = [
