@@ -7052,9 +7052,17 @@ function bindEventListeners() {
   function renderSmartAiFallbackPanel(rawQuery, seq, localCandidates) {
     const ui = getSearchUiStrings(rawQuery);
     const hasLocal = localCandidates.length > 0;
-    const localCardsHtml = hasLocal
-      ? `<div class="search-ai-cards">${localCandidates.slice(0, 4).map((m, i) => renderSearchItemHtml(m, i)).join("")}</div>`
-      : "";
+    const renderRelatedSection = (items, badgeText = "") => {
+      if (!items || items.length === 0) return "";
+      return `
+        <div class="search-related-section" id="searchRelatedSection">
+          <div class="search-section-header"><span>${ui.relatedLabel}</span></div>
+          <div class="search-related-list">
+            ${items.slice(0, 4).map((m, i) => renderSearchItemHtml(m, i, badgeText)).join("")}
+          </div>
+        </div>
+      `;
+    };
 
     searchDropdown.innerHTML = `
       <div class="search-no-results-card">
@@ -7064,34 +7072,8 @@ function bindEventListeners() {
           <div class="search-no-results-sub">${ui.noResultSub}</div>
         </div>
       </div>
-      <div class="search-ai-panel" id="searchAiPanel">
-        <div class="search-ai-header">
-          <span class="search-ai-badge"><ion-icon name="sparkles"></ion-icon> ${ui.aiHeader}</span>
-          <button type="button" class="search-ai-ask-btn" id="searchAiAskBtn">
-            <ion-icon name="chatbubbles-outline"></ion-icon> ${ui.askAiBtn}
-          </button>
-        </div>
-        <div class="search-ai-body" id="searchAiBody">
-          ${rawQuery.length >= 2 && typeof window.querySmartSearchAI === "function"
-            ? `<div class="search-ai-loading"><span class="search-ai-spinner"></span><span>${ui.aiLoading}</span></div>`
-            : `<p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>${localCardsHtml}`
-          }
-        </div>
-      </div>
+      <div id="searchRelatedHost">${hasLocal ? renderRelatedSection(localCandidates) : ""}</div>
     `;
-
-    const askBtn = document.getElementById("searchAiAskBtn");
-    if (askBtn) {
-      askBtn.onclick = (ev) => {
-        ev.stopPropagation();
-        closeSearchModal();
-        if (typeof window.openAiWithPrompt === "function") {
-          window.openAiWithPrompt(rawQuery);
-        } else if (typeof window.openAiModal === "function") {
-          window.openAiModal();
-        }
-      };
-    }
 
     searchDropdown.classList.remove("hidden");
 
@@ -7108,30 +7090,12 @@ function bindEventListeners() {
         const aiResult = await window.querySmartSearchAI(rawQuery, state.searchFilter, localCandidates, signal);
         if (seq !== _smartSearchSeq) return;
 
-        const bodyEl = document.getElementById("searchAiBody");
-        if (!bodyEl) return;
-
-        if (aiResult && (aiResult.statusNote || (aiResult.items && aiResult.items.length > 0))) {
-          const cards = (aiResult.items || []).slice(0, 4).map((m, i) => renderSearchItemHtml(m, i, "AI Pick")).join("");
-          bodyEl.innerHTML = `
-            ${aiResult.statusNote ? `<p class="search-ai-note">${escapeSearchHtml(aiResult.statusNote)}</p>` : ""}
-            ${cards ? `<div class="search-ai-cards">${cards}</div>` : ""}
-          `;
-        } else {
-          bodyEl.innerHTML = `
-            <p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>
-            ${localCardsHtml}
-          `;
+        const hostEl = document.getElementById("searchRelatedHost");
+        if (hostEl && aiResult && aiResult.items && aiResult.items.length > 0) {
+          hostEl.innerHTML = renderRelatedSection(aiResult.items);
         }
       } catch (err) {
         if (err?.name === "AbortError" || seq !== _smartSearchSeq) return;
-        const bodyEl = document.getElementById("searchAiBody");
-        if (bodyEl) {
-          bodyEl.innerHTML = `
-            <p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>
-            ${localCardsHtml}
-          `;
-        }
       }
     }, 420);
   }
@@ -7151,29 +7115,10 @@ function bindEventListeners() {
 
         const matches = fuzzySearchWithMeta(query);
         if (matches.length > 0) {
-          const ui = getSearchUiStrings(rawQuery);
           searchDropdown.innerHTML = matches
             .slice(0, 15)
             .map(({ movie: m, matchReason }, i) => renderSearchItemHtml(m, i, matchReason))
-            .join("") + `
-            <div class="search-ai-shortcut" id="searchAiShortcutBtn">
-              <ion-icon name="sparkles-outline"></ion-icon>
-              <span>${ui.askAiBtn}: "<strong>${escapeSearchHtml(rawQuery)}</strong>"</span>
-              <ion-icon name="arrow-forward-outline" style="margin-left:auto;"></ion-icon>
-            </div>
-          `;
-          const shortcut = document.getElementById("searchAiShortcutBtn");
-          if (shortcut) {
-            shortcut.onclick = (ev) => {
-              ev.stopPropagation();
-              closeSearchModal();
-              if (typeof window.openAiWithPrompt === "function") {
-                window.openAiWithPrompt(rawQuery);
-              } else if (typeof window.openAiModal === "function") {
-                window.openAiModal();
-              }
-            };
-          }
+            .join("");
           searchDropdown.classList.remove("hidden");
         } else {
           const localCandidates = findSmartAiCandidates(query);

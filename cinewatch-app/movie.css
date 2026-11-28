@@ -1937,9 +1937,9 @@ body.rtl-layout .modal-search-clear {
   align-items: center;
   padding: 0.12rem 0.5rem;
   border-radius: 999px;
-  background: rgba(0, 229, 255, 0.12);
-  border: 1px solid rgba(0, 229, 255, 0.3);
-  color: #67e8f9;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 0.7rem;
   font-weight: 600;
 }
@@ -1952,7 +1952,6 @@ body.rtl-layout .modal-search-clear {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 0.6rem;
 }
 
 .search-no-results-icon {
@@ -1987,112 +1986,14 @@ body.rtl-layout .modal-search-clear {
   margin-top: 0.2rem;
 }
 
-.search-ai-panel {
-  border-radius: 14px;
-  padding: 0.95rem 1rem;
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.07), rgba(229, 9, 20, 0.06));
-  border: 1px solid rgba(0, 229, 255, 0.24);
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  animation: searchItemIn 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+.search-related-section {
+  margin-top: 0.75rem;
 }
 
-.search-ai-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-}
-
-.search-ai-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #67e8f9;
-}
-
-.search-ai-ask-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.36rem 0.78rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 229, 255, 0.35);
-  background: rgba(0, 229, 255, 0.12);
-  color: #e0f7fa;
-  font-size: 0.76rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.search-ai-ask-btn:hover {
-  background: rgba(0, 229, 255, 0.22);
-  border-color: #00e5ff;
-  color: #fff;
-}
-
-.search-ai-loading {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.75);
-  padding: 0.2rem 0;
-}
-
-.search-ai-spinner {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 229, 255, 0.25);
-  border-top-color: #00e5ff;
-  animation: searchAiSpin 0.75s linear infinite;
-  flex-shrink: 0;
-}
-
-@keyframes searchAiSpin {
-  to { transform: rotate(360deg); }
-}
-
-.search-ai-note {
-  font-size: 0.84rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.86);
-  margin: 0;
-}
-
-.search-ai-cards {
+.search-related-list {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  margin-top: 0.55rem;
-}
-
-.search-ai-shortcut {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin-top: 0.35rem;
-  padding: 0.62rem 0.85rem;
-  border-radius: 12px;
-  background: rgba(0, 229, 255, 0.08);
-  border: 1px dashed rgba(0, 229, 255, 0.3);
-  color: #a5f3fc;
-  font-size: 0.82rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.search-ai-shortcut:hover {
-  background: rgba(0, 229, 255, 0.16);
-  border-color: #00e5ff;
-  color: #fff;
 }
 
 /* User Profile Badge */
