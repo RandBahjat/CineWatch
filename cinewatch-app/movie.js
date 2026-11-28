@@ -6861,34 +6861,22 @@ function bindEventListeners() {
     const safeQ = escapeSearchHtml(query);
     if (cookies.includes('googtrans=/en/ckb')) {
       return {
-        noResultTitle: `هیچ ئەنجامێک نەدۆزرایەوە بۆ "<strong>${safeQ}</strong>"`,
+        noResultTitle: `هیچ ئەنجامێک نەدۆزرایەوە بۆ <strong>${safeQ}</strong>`,
         noResultSub: 'ئەم ناونیشانە لە کەتەلۆگی ئێستای CineWatch دا نییە.',
-        aiHeader: 'ئەنجامی زیرەکی CineWatch AI',
-        aiLoading: `گەڕانی زیرەک شیکردنەوە بۆ "${safeQ}" دەکات...`,
-        aiFallbackSimilar: 'لێکچوونێکی تەواو نەدۆزرایەوە، بەڵام ئەمانە نزیکترین پێشنیارن لە کەتەلۆگەکەماندا:',
-        aiNoSuggestions: 'وشەیەکی تر، ناوی ئەکتەر، یان ژانرێک تاقی بکەرەوە، یان پرسیار لە CineWatch AI بکە.',
-        askAiBtn: 'پرسیار لە CineWatch AI بکە',
+        relatedLabel: 'ناونیشانە پەیوەندیدارەکان لە CineWatch',
       };
     }
     if (cookies.includes('googtrans=/en/ar')) {
       return {
-        noResultTitle: `لا توجد نتائج لـ "<strong>${safeQ}</strong>"`,
+        noResultTitle: `لا توجد نتائج لـ <strong>${safeQ}</strong>`,
         noResultSub: 'هذا العنوان غير موجود حالياً في مكتبة CineWatch.',
-        aiHeader: 'نتائج الذكاء الاصطناعي من CineWatch',
-        aiLoading: `جاري البحث الذكي عن بدائل لـ "${safeQ}"...`,
-        aiFallbackSimilar: 'لم نعثر على تطابق تام، لكن قد تعجبك هذه العناوين المشابهة في مكتبتنا:',
-        aiNoSuggestions: 'جرّب التحقق من الإملاء أو اسم ممثل أو نوع، أو اسأل CineWatch AI.',
-        askAiBtn: 'اسأل CineWatch AI',
+        relatedLabel: 'عناوين مشابهة في CineWatch',
       };
     }
     return {
-      noResultTitle: `No results found for "<strong>${safeQ}</strong>"`,
+      noResultTitle: `No results found for <strong>${safeQ}</strong>`,
       noResultSub: 'This title is not currently available in the CineWatch catalog.',
-      aiHeader: 'CineWatch AI Smart Result',
-      aiLoading: `Analyzing "${safeQ}" for smart recommendations...`,
-      aiFallbackSimilar: 'No exact match found, but here are related titles available in our library:',
-      aiNoSuggestions: 'Try checking spelling, switching between All / Movies / Series, or asking CineWatch AI.',
-      askAiBtn: 'Ask CineWatch AI',
+      relatedLabel: 'Related titles in CineWatch',
     };
   }
 
