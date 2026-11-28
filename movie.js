@@ -2144,7 +2144,7 @@ function renderFilteredGrid(movieList, titleText, searchQuery = null) {
     const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
     const isAr = (document.cookie || '').includes('googtrans=/en/ar');
     const headingText = safeQuery
-      ? (isCkb ? `هیچ ئەنجامێک نەدۆزرایەوە بۆ "${safeQuery}"` : (isAr ? `لا توجد نتائج لـ "${safeQuery}"` : `No results found for "${safeQuery}"`))
+      ? (isCkb ? `هیچ ئەنجامێک نەدۆزرایەوە بۆ ${safeQuery}` : (isAr ? `لا توجد نتائج لـ ${safeQuery}` : `No results found for ${safeQuery}`))
       : (isCkb ? 'هیچ ناونیشانێک نەدۆزرایەوە' : (isAr ? 'لم يتم العثور على نتائج' : 'No titles found'));
     const subText = isCkb
       ? 'ئەم ناونیشانە لە کەتەلۆگەکەماندا نییە. دەتوانیت داوای پێشنیار لە یاریدەدەری زیرەکی CineWatch بکەیت.'
@@ -2174,12 +2174,9 @@ function renderFilteredGrid(movieList, titleText, searchQuery = null) {
           if (!list || list.length === 0) return;
           const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
           host.innerHTML = `
-            <div class="search-ai-panel" style="margin-top:0.5rem;">
-              <div class="search-ai-header">
-                <span class="search-ai-badge"><ion-icon name="sparkles"></ion-icon> ${ui.aiHeader}</span>
-              </div>
-              <p class="search-ai-note">${escapeSearchHtml(noteText)}</p>
-              <div class="browse-grid" style="margin-top:0.5rem; margin-bottom:0 !important;">
+            <div style="margin-top:0.75rem;">
+              <div class="search-section-header" style="margin-bottom:0.85rem;"><span>${escapeSearchHtml(noteText)}</span></div>
+              <div class="browse-grid" style="margin-bottom:0 !important;">
                 ${list.slice(0, 8).map(m => createMovieCardHTML(m, null, isMobileGrid)).join("")}
               </div>
             </div>
@@ -2192,11 +2189,11 @@ function renderFilteredGrid(movieList, titleText, searchQuery = null) {
             };
           });
         };
-        renderSuggestions(ui.aiFallbackSimilar, candidates.slice(0, 4));
+        renderSuggestions(ui.relatedLabel, candidates.slice(0, 4));
         if (typeof window.querySmartSearchAI === "function") {
           window.querySmartSearchAI(searchQuery, state.searchFilter, candidates).then((aiRes) => {
             if (aiRes && aiRes.items && aiRes.items.length > 0) {
-              renderSuggestions(aiRes.statusNote || ui.aiFallbackSimilar, aiRes.items);
+              renderSuggestions(ui.relatedLabel, aiRes.items);
             }
           }).catch(() => {});
         }
