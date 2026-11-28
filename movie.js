@@ -6601,83 +6601,281 @@ function bindEventListeners() {
     }
   });
 
-  // ── Fuzzy Search Helper ──
+  // ── Smart Search Engine (Stop-Word Aware + Typo & Credit Matching + AI Fallback) ──
+  const SEARCH_STOP_WORDS = new Set([
+    "the", "a", "an", "of", "in", "on", "at", "to", "for", "and", "or",
+    "by", "with", "from", "is", "it", "my", "as", "into", "part", "vol", "chapter"
+  ]);
+
+  function escapeSearchHtml(str) {
+    return String(str || "").replace(/[&<>"']/g, (ch) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    }[ch]));
+  }
+
   // Normalizes a string: lowercase, strip hyphens/special chars/spaces for loose matching
   function norm(str) {
     if (!str) return '';
     return String(str).toLowerCase().replace(/[^a-z0-9]/g, '');
   }
 
-  // Returns a relevance score — higher = better match
-  function searchScore(movie, rawQuery) {
+  function tokenizeSearch(str) {
+    return String(str || '')
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter(Boolean);
+  }
+
+  // Bounded Levenshtein edit distance for lightweight typo tolerance
+  function editDistance(a, b, maxDist = 2) {
+    if (a === b) return 0;
+    const lenA = a.length;
+    const lenB = b.length;
+    if (Math.abs(lenA - lenB) > maxDist) return maxDist + 1;
+    let prev = Array.from({ length: lenB + 1 }, (_, j) => j);
+    for (let i = 1; i <= lenA; i++) {
+      const curr = [i];
+      let rowMin = i;
+      for (let j = 1; j <= lenB; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        const val = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+        curr.push(val);
+        if (val < rowMin) rowMin = val;
+      }
+      if (rowMin > maxDist) return maxDist + 1;
+      prev = curr;
+    }
+    return prev[lenB];
+  }
+
+  function tokenMatchesWordList(tok, words) {
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      if (w === tok) return 1;
+      if (tok.length >= 3 && w.startsWith(tok)) return 0.9;
+      if (tok.length >= 4 && w.length >= 4) {
+        const allow = tok.length >= 7 && w.length >= 7 ? 2 : 1;
+        if (editDistance(tok, w, allow) <= allow) return 0.72;
+      }
+    }
+    return 0;
+  }
+
+  function filterBySearchTab(movie) {
+    if (!movie) return false;
+    const isSeries = movie.type === 'TV Show' || movie.type === 'Series' || (Array.isArray(movie.seasons) && movie.seasons.length > 0);
+    if (state.searchFilter === 'movie' && isSeries) return false;
+    if (state.searchFilter === 'series' && !isSeries) return false;
+    return true;
+  }
+
+  // Returns { score, matchReason } — 0 if no genuine match
+  function evaluateSearchMatch(movie, rawQuery) {
     const q = rawQuery.trim().toLowerCase();
     const qNorm = norm(q);
-    if (!qNorm) return 0;
+    if (!qNorm) return { score: 0, matchReason: '' };
 
     let score = 0;
-    const title = movie.title.toLowerCase();
+    let matchReason = '';
+    const title = String(movie.title || '').toLowerCase();
     const titleNorm = norm(movie.title);
+    const titleWords = tokenizeSearch(title);
+    const allTokens = tokenizeSearch(q);
+    const coreTokens = allTokens.filter(t => !SEARCH_STOP_WORDS.has(t));
+    const effectiveTokens = coreTokens.length > 0 ? coreTokens : allTokens;
 
-    // Exact match
+    // 1. Exact, prefix, or full-phrase substring title match
     if (titleNorm === qNorm) {
-      score += 200;
-    }
-    // Starts with match
-    else if (titleNorm.startsWith(qNorm)) {
-      score += 150;
-    }
-    // Exact substring match on normalized title (handles "spiderman" → "Spider-Man")
-    else if (titleNorm.includes(qNorm)) {
-      score += 100;
-    }
-    // Partial word match on real title
-    else if (title.includes(q)) {
-      score += 90;
-    }
-
-    // Check individual query words against title words
-    const queryWords = q.split(/\s+/).filter(Boolean);
-    if (queryWords.length > 0) {
-      const titleWords = title.split(/[\s\-:,.'!?&]+/).filter(Boolean);
-      let matchedWordCount = 0;
-      queryWords.forEach(qw => {
-        const nw = norm(qw);
-        if (nw && titleWords.some(tw => norm(tw).includes(nw))) {
-          matchedWordCount++;
+      score = 500;
+    } else if (qNorm.length >= 2 && titleNorm.startsWith(qNorm)) {
+      score = 400;
+    } else if (title.includes(q) || (qNorm.length >= 3 && titleNorm.includes(qNorm))) {
+      score = 320;
+    } else if (effectiveTokens.length > 0) {
+      // 2. Every core word must match the title (prevents "The Social Reckoning" from matching "The Dog Stars" or "The Odyssey")
+      let minQuality = 1;
+      let allMatched = true;
+      for (let i = 0; i < effectiveTokens.length; i++) {
+        const quality = tokenMatchesWordList(effectiveTokens[i], titleWords);
+        if (quality === 0) {
+          allMatched = false;
+          break;
         }
-      });
-      // REQUIRE all words to match the title to be considered a strong title match
-      if (matchedWordCount === queryWords.length) {
-        score += 80;
-      } else if (matchedWordCount > 0) {
-        // Partial multi-word match (e.g. 2 out of 3 words match)
-        score += (matchedWordCount / queryWords.length) * 60;
+        if (quality < minQuality) minQuality = quality;
+      }
+      if (allMatched && (effectiveTokens.length > 1 || qNorm.length >= 2)) {
+        score = Math.round(270 * minQuality);
+        if (minQuality < 0.85) matchReason = 'Closest match';
+      } else if (effectiveTokens.length === 1 && qNorm.length >= 5 && Math.abs(titleNorm.length - qNorm.length) <= 2) {
+        const dist = editDistance(qNorm, titleNorm, 2);
+        if (dist <= 2) {
+          score = 220 - dist * 20;
+          matchReason = 'Closest match';
+        }
       }
     }
 
-    // Boost score slightly for popularity/rating to break ties and show better results first
+    // 3. Cast / Director exact or full core-token match
+    if (score === 0 && q.length >= 3) {
+      const director = String(movie.director || '').toLowerCase();
+      const castArr = Array.isArray(movie.cast) ? movie.cast : (movie.cast ? [String(movie.cast)] : []);
+      const castList = castArr.join(', ').toLowerCase();
+      if (director && (director.includes(q) || (effectiveTokens.length > 0 && effectiveTokens.every(t => tokenizeSearch(director).includes(t))))) {
+        score = 210;
+        matchReason = `Director: ${movie.director}`;
+      } else if (castList && (castList.includes(q) || (effectiveTokens.length > 0 && effectiveTokens.every(t => tokenizeSearch(castList).includes(t))))) {
+        score = 200;
+        const matchedActor = castArr.find(a => String(a).toLowerCase().includes(q) || effectiveTokens.every(t => String(a).toLowerCase().includes(t)));
+        matchReason = matchedActor ? `Cast: ${matchedActor}` : 'Cast match';
+      }
+    }
+
+    // 4. Genre / Anime / Release Year match (enables quick category tags & year searches)
+    if (score === 0 && q.length >= 3) {
+      const genres = Array.isArray(movie.genres) ? movie.genres : [];
+      const genreNorms = genres.map(g => norm(g));
+      const queryGenreNorm = qNorm === 'anime' ? 'animation' : qNorm;
+      const matchedGenreIdx = genreNorms.findIndex(gn => gn === queryGenreNorm || (queryGenreNorm === 'scifi' && gn === 'sciencefiction'));
+      if (matchedGenreIdx !== -1 || (qNorm === 'anime' && (movie.isAnime || String(movie.type || '').toLowerCase() === 'anime'))) {
+        score = 175;
+        matchReason = qNorm === 'anime' ? 'Anime' : `Genre: ${genres[matchedGenreIdx]}`;
+      } else if (/^(19|20)\d{2}$/.test(q) && String(movie.year || '') === q) {
+        score = 155;
+        matchReason = `Released ${movie.year}`;
+      }
+    }
+
+    // Tie-breakers for popularity & rating
     if (score > 0) {
-      if (movie.trending) score += 5;
-      if (movie.featured) score += 5;
-      if (typeof movie.rating === "number" || (!isNaN(Number(movie.rating)) && movie.rating !== "")) {
-        score += Number(movie.rating) / 10;
+      if (movie.trending) score += 6;
+      if (movie.featured) score += 4;
+      const numRating = Number(movie.rating);
+      if (!isNaN(numRating) && movie.rating !== '') {
+        score += numRating / 10;
       }
     }
 
-    return score;
+    return { score, matchReason };
+  }
+
+  function fuzzySearchWithMeta(query) {
+    return MOVIES
+      .filter(filterBySearchTab)
+      .map(m => {
+        const res = evaluateSearchMatch(m, query);
+        return { movie: m, score: res.score, matchReason: res.matchReason };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score);
   }
 
   function fuzzySearch(query) {
-    return MOVIES
-      .map(m => ({ movie: m, score: searchScore(m, query) }))
-      .filter(({ score, movie }) => {
-        if (score === 0) return false;
-        if (state.searchFilter === 'movie' && movie.type !== 'Movie') return false;
-        if (state.searchFilter === 'series' && movie.type !== 'TV Show') return false;
-        return true;
-      })
-      .sort((a, b) => b.score - a.score)
-      .map(({ movie }) => movie);
+    return fuzzySearchWithMeta(query).map(item => item.movie);
+  }
+
+  // Local semantic / partial-concept candidates used by Smart AI fallback (ignores stop words)
+  function findSmartAiCandidates(query) {
+    const coreTokens = tokenizeSearch(query).filter(t => !SEARCH_STOP_WORDS.has(t) && t.length >= 3);
+    if (coreTokens.length === 0) return [];
+
+    const scored = [];
+    for (let i = 0; i < MOVIES.length; i++) {
+      const m = MOVIES[i];
+      if (!filterBySearchTab(m)) continue;
+
+      const titleWords = tokenizeSearch(m.title);
+      const genreWords = tokenizeSearch((m.genres || []).join(' '));
+      const creditWords = tokenizeSearch(`${m.director || ''} ${(m.cast || []).join(' ')}`);
+      const overviewWords = tokenizeSearch(m.overview || '');
+
+      let s = 0;
+      let hitCount = 0;
+      for (let k = 0; k < coreTokens.length; k++) {
+        const tok = coreTokens[k];
+        if (titleWords.some(w => w === tok || (w.startsWith(tok) && tok.length >= 4))) {
+          s += 38;
+          hitCount++;
+        } else if (genreWords.some(w => w === tok)) {
+          s += 30;
+          hitCount++;
+        } else if (creditWords.some(w => w === tok)) {
+          s += 28;
+          hitCount++;
+        } else if (overviewWords.some(w => w === tok)) {
+          s += 16;
+          hitCount++;
+        }
+      }
+
+      if (s >= 28 && hitCount > 0) {
+        const ratingBoost = !isNaN(Number(m.rating)) ? Number(m.rating) / 10 : 0;
+        scored.push({ movie: m, score: s + (m.trending ? 4 : 0) + ratingBoost });
+      }
+    }
+
+    return scored.sort((a, b) => b.score - a.score).slice(0, 20).map(x => x.movie);
+  }
+
+  function getSearchUiStrings(query) {
+    const cookies = document.cookie || '';
+    const safeQ = escapeSearchHtml(query);
+    if (cookies.includes('googtrans=/en/ckb')) {
+      return {
+        noResultTitle: `هیچ ئەنجامێک نەدۆزرایەوە بۆ "<strong>${safeQ}</strong>"`,
+        noResultSub: 'ئەم ناونیشانە لە کەتەلۆگی ئێستای CineWatch دا نییە.',
+        aiHeader: 'ئەنجامی زیرەکی CineWatch AI',
+        aiLoading: `گەڕانی زیرەک شیکردنەوە بۆ "${safeQ}" دەکات...`,
+        aiFallbackSimilar: 'لێکچوونێکی تەواو نەدۆزرایەوە، بەڵام ئەمانە نزیکترین پێشنیارن لە کەتەلۆگەکەماندا:',
+        aiNoSuggestions: 'وشەیەکی تر، ناوی ئەکتەر، یان ژانرێک تاقی بکەرەوە، یان پرسیار لە CineWatch AI بکە.',
+        askAiBtn: 'پرسیار لە CineWatch AI بکە',
+      };
+    }
+    if (cookies.includes('googtrans=/en/ar')) {
+      return {
+        noResultTitle: `لا توجد نتائج لـ "<strong>${safeQ}</strong>"`,
+        noResultSub: 'هذا العنوان غير موجود حالياً في مكتبة CineWatch.',
+        aiHeader: 'نتائج الذكاء الاصطناعي من CineWatch',
+        aiLoading: `جاري البحث الذكي عن بدائل لـ "${safeQ}"...`,
+        aiFallbackSimilar: 'لم نعثر على تطابق تام، لكن قد تعجبك هذه العناوين المشابهة في مكتبتنا:',
+        aiNoSuggestions: 'جرّب التحقق من الإملاء أو اسم ممثل أو نوع، أو اسأل CineWatch AI.',
+        askAiBtn: 'اسأل CineWatch AI',
+      };
+    }
+    return {
+      noResultTitle: `No results found for "<strong>${safeQ}</strong>"`,
+      noResultSub: 'This title is not currently available in the CineWatch catalog.',
+      aiHeader: 'CineWatch AI Smart Result',
+      aiLoading: `Analyzing "${safeQ}" for smart recommendations...`,
+      aiFallbackSimilar: 'No exact match found, but here are related titles available in our library:',
+      aiNoSuggestions: 'Try checking spelling, switching between All / Movies / Series, or asking CineWatch AI.',
+      askAiBtn: 'Ask CineWatch AI',
+    };
+  }
+
+  function renderSearchItemHtml(m, idx, reason = '') {
+    const typeLabel = m.type || (m.seasons ? 'TV Show' : 'Movie');
+    const reasonHtml = reason ? `<span class="search-match-tag">${escapeSearchHtml(reason)}</span>` : '';
+    return `
+      <div class="search-item" data-id="${escapeSearchHtml(m.id)}" style="animation-delay: ${idx * 28}ms">
+        <img src="${m.poster || m.backdrop}" alt="${escapeSearchHtml(m.title)}" loading="lazy">
+        <div class="search-item-info">
+          <div class="search-item-title notranslate" translate="no">${escapeSearchHtml(m.title)}</div>
+          <div class="search-item-meta notranslate" translate="no">
+            <span class="search-item-badge">${escapeSearchHtml(typeLabel)}</span>
+            <span>${m.year || ''}</span>
+            <span class="search-item-rating">⭐ ${formatRating(m.rating)}</span>
+            ${reasonHtml}
+          </div>
+        </div>
+        <div class="search-item-action">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
+    `;
   }
 
   // ── Search Modal ──
@@ -6693,6 +6891,22 @@ function bindEventListeners() {
   const clearRecentBtn = document.getElementById("clearRecentBtn");
   const searchFilterBtn = document.getElementById("searchFilterBtn");
   const searchFilterDropdown = document.getElementById("searchFilterDropdown");
+
+  let _smartSearchTimer = null;
+  let _smartSearchAbort = null;
+  let _smartSearchSeq = 0;
+
+  function cancelPendingSmartSearch() {
+    if (_smartSearchTimer) {
+      clearTimeout(_smartSearchTimer);
+      _smartSearchTimer = null;
+    }
+    if (_smartSearchAbort) {
+      _smartSearchAbort.abort();
+      _smartSearchAbort = null;
+    }
+    _smartSearchSeq++;
+  }
 
   // Load Recents
   function getRecentSearches() {
@@ -6717,9 +6931,9 @@ function bindEventListeners() {
     if (recents.length > 0) {
       searchRecentSection.classList.remove("hidden");
       searchRecentList.innerHTML = recents.map(r => `
-        <div class="search-recent-item" data-query="${r}">
+        <div class="search-recent-item" data-query="${escapeSearchHtml(r)}">
           <ion-icon name="time-outline"></ion-icon>
-          <span>${r}</span>
+          <span>${escapeSearchHtml(r)}</span>
         </div>
       `).join("");
     } else {
@@ -6728,6 +6942,7 @@ function bindEventListeners() {
   }
 
   function openSearchModal() {
+    cancelPendingSmartSearch();
     state.currentDetailsFrom4k = false;
     searchModal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
@@ -6736,12 +6951,15 @@ function bindEventListeners() {
       searchClearBtn.classList.add("hidden");
       searchDropdown.classList.add("hidden");
     }
+    const exploreSec = document.getElementById("searchExploreSection");
+    if (exploreSec) exploreSec.classList.remove("hidden");
     renderRecentSearches();
     // slight delay so CSS transition fires
     setTimeout(() => searchInput && searchInput.focus(), 100);
   }
 
   function closeSearchModal() {
+    cancelPendingSmartSearch();
     searchModal.classList.add("hidden");
     document.body.style.overflow = "";
   }
@@ -6807,9 +7025,99 @@ function bindEventListeners() {
     }
   });
 
+  function renderSmartAiFallbackPanel(rawQuery, seq, localCandidates) {
+    const ui = getSearchUiStrings(rawQuery);
+    const hasLocal = localCandidates.length > 0;
+    const localCardsHtml = hasLocal
+      ? `<div class="search-ai-cards">${localCandidates.slice(0, 4).map((m, i) => renderSearchItemHtml(m, i)).join("")}</div>`
+      : "";
+
+    searchDropdown.innerHTML = `
+      <div class="search-no-results-card">
+        <div class="search-no-results-icon"><ion-icon name="search-outline"></ion-icon></div>
+        <div class="search-no-results-copy">
+          <div class="search-no-results-title">${ui.noResultTitle}</div>
+          <div class="search-no-results-sub">${ui.noResultSub}</div>
+        </div>
+      </div>
+      <div class="search-ai-panel" id="searchAiPanel">
+        <div class="search-ai-header">
+          <span class="search-ai-badge"><ion-icon name="sparkles"></ion-icon> ${ui.aiHeader}</span>
+          <button type="button" class="search-ai-ask-btn" id="searchAiAskBtn">
+            <ion-icon name="chatbubbles-outline"></ion-icon> ${ui.askAiBtn}
+          </button>
+        </div>
+        <div class="search-ai-body" id="searchAiBody">
+          ${rawQuery.length >= 2 && typeof window.querySmartSearchAI === "function"
+            ? `<div class="search-ai-loading"><span class="search-ai-spinner"></span><span>${ui.aiLoading}</span></div>`
+            : `<p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>${localCardsHtml}`
+          }
+        </div>
+      </div>
+    `;
+
+    const askBtn = document.getElementById("searchAiAskBtn");
+    if (askBtn) {
+      askBtn.onclick = (ev) => {
+        ev.stopPropagation();
+        closeSearchModal();
+        if (typeof window.openAiWithPrompt === "function") {
+          window.openAiWithPrompt(rawQuery);
+        } else if (typeof window.openAiModal === "function") {
+          window.openAiModal();
+        }
+      };
+    }
+
+    searchDropdown.classList.remove("hidden");
+
+    if (rawQuery.length < 2 || typeof window.querySmartSearchAI !== "function") {
+      return;
+    }
+
+    _smartSearchTimer = setTimeout(async () => {
+      if (seq !== _smartSearchSeq) return;
+      _smartSearchAbort = new AbortController();
+      const signal = _smartSearchAbort.signal;
+
+      try {
+        const aiResult = await window.querySmartSearchAI(rawQuery, state.searchFilter, localCandidates, signal);
+        if (seq !== _smartSearchSeq) return;
+
+        const bodyEl = document.getElementById("searchAiBody");
+        if (!bodyEl) return;
+
+        if (aiResult && (aiResult.statusNote || (aiResult.items && aiResult.items.length > 0))) {
+          const cards = (aiResult.items || []).slice(0, 4).map((m, i) => renderSearchItemHtml(m, i, "AI Pick")).join("");
+          bodyEl.innerHTML = `
+            ${aiResult.statusNote ? `<p class="search-ai-note">${escapeSearchHtml(aiResult.statusNote)}</p>` : ""}
+            ${cards ? `<div class="search-ai-cards">${cards}</div>` : ""}
+          `;
+        } else {
+          bodyEl.innerHTML = `
+            <p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>
+            ${localCardsHtml}
+          `;
+        }
+      } catch (err) {
+        if (err?.name === "AbortError" || seq !== _smartSearchSeq) return;
+        const bodyEl = document.getElementById("searchAiBody");
+        if (bodyEl) {
+          bodyEl.innerHTML = `
+            <p class="search-ai-note">${hasLocal ? ui.aiFallbackSimilar : ui.aiNoSuggestions}</p>
+            ${localCardsHtml}
+          `;
+        }
+      }
+    }, 420);
+  }
+
   if (searchInput) {
     searchInput.oninput = (e) => {
-      const query = e.target.value.trim().toLowerCase();
+      cancelPendingSmartSearch();
+      const seq = _smartSearchSeq;
+      const rawQuery = e.target.value.trim();
+      const query = rawQuery.toLowerCase();
       const exploreSec = document.getElementById("searchExploreSection");
 
       if (query.length > 0) {
@@ -6817,33 +7125,35 @@ function bindEventListeners() {
         if (searchRecentSection) searchRecentSection.classList.add("hidden");
         if (exploreSec) exploreSec.classList.add("hidden");
 
-        const matches = fuzzySearch(query);
+        const matches = fuzzySearchWithMeta(query);
         if (matches.length > 0) {
+          const ui = getSearchUiStrings(rawQuery);
           searchDropdown.innerHTML = matches
             .slice(0, 15)
-            .map(
-              (m, i) => `
-            <div class="search-item" data-id="${m.id}" style="animation-delay: ${i * 30}ms">
-              <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy">
-              <div class="search-item-info">
-                <div class="search-item-title notranslate" translate="no">${m.title}</div>
-                <div class="search-item-meta notranslate" translate="no">
-                  <span class="search-item-badge">${m.type || (m.seasons ? 'TV Show' : 'Movie')}</span>
-                  <span>${m.year || ''}</span>
-                  <span class="search-item-rating">⭐ ${formatRating(m.rating)}</span>
-                </div>
-              </div>
-              <div class="search-item-action">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
+            .map(({ movie: m, matchReason }, i) => renderSearchItemHtml(m, i, matchReason))
+            .join("") + `
+            <div class="search-ai-shortcut" id="searchAiShortcutBtn">
+              <ion-icon name="sparkles-outline"></ion-icon>
+              <span>${ui.askAiBtn}: "<strong>${escapeSearchHtml(rawQuery)}</strong>"</span>
+              <ion-icon name="arrow-forward-outline" style="margin-left:auto;"></ion-icon>
             </div>
-          `,
-            )
-            .join("");
+          `;
+          const shortcut = document.getElementById("searchAiShortcutBtn");
+          if (shortcut) {
+            shortcut.onclick = (ev) => {
+              ev.stopPropagation();
+              closeSearchModal();
+              if (typeof window.openAiWithPrompt === "function") {
+                window.openAiWithPrompt(rawQuery);
+              } else if (typeof window.openAiModal === "function") {
+                window.openAiModal();
+              }
+            };
+          }
           searchDropdown.classList.remove("hidden");
         } else {
-          searchDropdown.innerHTML = `<div class="search-no-results">No titles found matching "<strong>${query}</strong>"</div>`;
-          searchDropdown.classList.remove("hidden");
+          const localCandidates = findSmartAiCandidates(query);
+          renderSmartAiFallbackPanel(rawQuery, seq, localCandidates);
         }
       } else {
         if (searchClearBtn) searchClearBtn.classList.add("hidden");
@@ -6859,19 +7169,21 @@ function bindEventListeners() {
         searchDropdown.classList.add("hidden");
         if (query.length > 0) {
           saveRecentSearch(query);
-          const qLower = query.toLowerCase();
           const matches = fuzzySearch(query);
           closeSearchModal();
           switchView("search");
-          renderFilteredGrid(matches, `Search Results for "${query}"`);
+          renderFilteredGrid(matches, `Search Results for "${query}"`, query);
         }
       }
     };
 
     searchClearBtn.onclick = () => {
+      cancelPendingSmartSearch();
       searchInput.value = "";
       searchClearBtn.classList.add("hidden");
       searchDropdown.classList.add("hidden");
+      const exploreSec = document.getElementById("searchExploreSection");
+      if (exploreSec) exploreSec.classList.remove("hidden");
       renderRecentSearches();
     };
 
