@@ -2117,7 +2117,7 @@ function renderContinueWatchingPage() {
     });
 }
 
-function renderFilteredGrid(movieList, titleText) {
+function renderFilteredGrid(movieList, titleText, searchQuery = null) {
   const filteredSection = document.getElementById("filteredSection");
   const defaultShelves = document.getElementById("defaultShelves");
   const watchlistSection = document.getElementById("watchlistSection");
@@ -2140,12 +2140,27 @@ function renderFilteredGrid(movieList, titleText) {
   filteredCount.textContent = `${movieList.length} ${movieList.length === 1 ? "title" : "titles"} found`;
 
   if (movieList.length === 0) {
+    const safeQuery = searchQuery ? String(searchQuery).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])) : '';
+    const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
+    const isAr = (document.cookie || '').includes('googtrans=/en/ar');
+    const headingText = safeQuery
+      ? (isCkb ? `هیچ ئەنجامێک نەدۆزرایەوە بۆ "${safeQuery}"` : (isAr ? `لا توجد نتائج لـ "${safeQuery}"` : `No results found for "${safeQuery}"`))
+      : (isCkb ? 'هیچ ناونیشانێک نەدۆزرایەوە' : (isAr ? 'لم يتم العثور على نتائج' : 'No titles found'));
+    const subText = isCkb
+      ? 'ئەم ناونیشانە لە کەتەلۆگەکەماندا نییە. دەتوانیت داوای پێشنیار لە یاریدەدەری زیرەکی CineWatch بکەیت.'
+      : (isAr ? 'هذا العنوان غير متوفر حالياً في المكتبة. جرب البحث بكلمة أخرى أو اطلب اقتراحات من المساعد الذكي.' : 'This title is not currently in our catalog. Try another keyword or ask CineWatch AI for similar picks.');
+    const exploreLabel = isCkb ? 'گەڕان لە هەموو ناونیشانەکان' : (isAr ? 'استكشاف كل العناوين' : 'Explore All Titles');
+    const aiBtnLabel = isCkb ? 'داوا لە CineWatch AI بکە' : (isAr ? 'اسأل CineWatch AI' : 'Ask CineWatch AI');
+
     filteredGrid.innerHTML = `
       <div class="empty-state" style="grid-column: 1 / -1;">
         <div class="empty-icon"><ion-icon name="search-outline"></ion-icon></div>
-        <h3>No titles found</h3>
-        <p>Try searching for a different keyword or genre.</p>
-        <button class="btn btn-primary mt-4" onclick="switchView('movies')">Explore All Titles</button>
+        <h3>${headingText}</h3>
+        <p>${subText}</p>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center; margin-top:1.25rem;">
+          ${safeQuery ? `<button class="btn btn-primary" onclick="if(window.openAiWithPrompt) window.openAiWithPrompt(${JSON.stringify(searchQuery).replace(/"/g, '&quot;')})"><ion-icon name="sparkles-outline" style="vertical-align:-2px;margin-right:4px;"></ion-icon>${aiBtnLabel}</button>` : ''}
+          <button class="btn ${safeQuery ? 'btn-secondary' : 'btn-primary'}" onclick="switchView('movies')">${exploreLabel}</button>
+        </div>
       </div>
     `;
   } else {
