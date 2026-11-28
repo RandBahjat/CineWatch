@@ -7119,12 +7119,59 @@ function bindEventListeners() {
       state.animeFilter = genre;
       state.animePage = 1;
       renderAnimeSection();
+    } else if (section === "actors") {
+      state.actorsFilter = genre;
+      state.actorsPage = 1;
+      renderActorsSection();
     } else if (section === "fourk") {
       state.fourkFilter = genre;
       state.fourkPage = 1;
       render4kSection();
     }
   });
+
+  // Actors Directory Search & Back Button
+  const actorsSearchInput = document.getElementById("actorsSearchInput");
+  const actorsSearchClear = document.getElementById("actorsSearchClear");
+  const actorsBackBtn = document.getElementById("actorsBackBtn");
+  let actorsSearchTimer = null;
+
+  if (actorsSearchInput) {
+    actorsSearchInput.addEventListener("input", () => {
+      const val = actorsSearchInput.value;
+      if (actorsSearchClear) actorsSearchClear.classList.toggle("hidden", !val.trim());
+      clearTimeout(actorsSearchTimer);
+      actorsSearchTimer = setTimeout(() => {
+        state.actorsSearch = val;
+        state.actorsPage = 1;
+        state.selectedActor = null;
+        renderActorsSection();
+      }, 120);
+    });
+  }
+
+  if (actorsSearchClear && actorsSearchInput) {
+    actorsSearchClear.addEventListener("click", () => {
+      actorsSearchInput.value = "";
+      actorsSearchClear.classList.add("hidden");
+      state.actorsSearch = "";
+      state.actorsPage = 1;
+      renderActorsSection();
+      actorsSearchInput.focus();
+    });
+  }
+
+  if (actorsBackBtn) {
+    actorsBackBtn.addEventListener("click", () => {
+      state.selectedActor = null;
+      try {
+        window.history.pushState({ section: "actors" }, "Actors | CineWatch", "/?section=actors");
+      } catch (err) {}
+      renderActorsSection();
+      updateSectionSEO("actors");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 
   // Browse View Mode Toggle Buttons (Backdrop vs Poster view)
   document.addEventListener("click", (e) => {
