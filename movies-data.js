@@ -17,7 +17,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
     videoUrl: "1300968",
     trailerUrl: "https://youtu.be/fS35YSjopjE?si=mqew9Aij_qsLIQPi",
-    overview: "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
+    overview: "Set twenty-four years before the events of The Hunger Games, the story begins on the morning of the reaping for the 50th Hunger Games—also known as the Second Quarter Quell—where twice as many tributes are taken from each district. Sixteen-year-old Haymitch Abernathy of District 12 is unexpectedly torn from his family and the girl he loves, thrust into a deceptively beautiful yet lethally engineered arena alongside forty-seven other tributes. Navigating the Capitol's ruthless propaganda and President Snow's twisted games, Haymitch discovers a spark of rebellion that will change Panem—and haunt him—forever.",
     overviewKurdish: "چیرۆکی دزییەکی گەورە کە پلانەکەی ١٢ مانگی پێدەچێت، لە ماوەی ١٢ کاتژمێردا جێبەجێ دەکرێت، و ئەگەر دزەکە لە ماوەی ١٢ ڕۆژدا دەستگیر نەکرێت، هەرگیز دەستگیر ناکرێت. لە سێ کاتی جیاواز و پڕ لە گرژیدا، بریکارێکی ئێف بی ئای و تاوانبارێکی بەئەزموون لە یارییەکی کوشندەی پشیلە و مشک لە سەرتاسەری ئەوروپادا ڕووبەڕووی یەکتر دەبنەوە.",
     director: "Kari Skogland",
     cast: ["Anthony Mackie, Jamie Dornan, Jack Kesy, Agathe Rousselle, Sallie Harmsen"],
