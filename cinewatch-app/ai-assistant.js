@@ -507,7 +507,7 @@ Return STRICT JSON with keys:
 
     async function callModel(model) {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 9000);
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
       const onExternalAbort = () => controller.abort();
       if (externalSignal) {
         if (externalSignal.aborted) {
