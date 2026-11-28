@@ -3564,6 +3564,15 @@ function updateSectionSEO(viewName) {
       description: 'Stream the best anime series and anime movies free on CineWatch — action, romance, fantasy, isekai and more.',
       url: `${BASE}/?section=anime`
     },
+    actors: {
+      title: state.selectedActor ? `${state.selectedActor} — Movies & Series | CineWatch` : 'Actors & Cast Directory | CineWatch',
+      description: state.selectedActor
+        ? `Browse all movies and TV series featuring ${state.selectedActor} on CineWatch.`
+        : 'Browse actors and cast members across movies, series, and anime on CineWatch.',
+      url: state.selectedActor
+        ? `${BASE}/?section=actors&actor=${encodeURIComponent(state.selectedActor)}`
+        : `${BASE}/?section=actors`
+    },
     '4k': {
       title: 'Watch 4K Ultra HD Movies & Series | CineWatch VIP',
       description: 'Stream 4K Ultra HD movies and series on CineWatch. Unlock crystal-clear 4K content with a VIP membership.',
@@ -3620,10 +3629,13 @@ function updateSectionSEO(viewName) {
 
   // Push clean URL to address bar so sharing links reflect the section
   try {
-    const cleanSections = ['movies', 'series', 'anime', '4k', 'watchlist', 'continue'];
-    const relPath = cleanSections.includes(viewName) ? `/?section=${encodeURIComponent(viewName)}` : '/';
+    const cleanSections = ['movies', 'series', 'anime', 'actors', '4k', 'watchlist', 'continue'];
+    let relPath = cleanSections.includes(viewName) ? `/?section=${encodeURIComponent(viewName)}` : '/';
+    if (viewName === 'actors' && state.selectedActor) {
+      relPath += `&actor=${encodeURIComponent(state.selectedActor)}`;
+    }
     if (window.location.pathname + window.location.search !== relPath) {
-      window.history.replaceState({ section: viewName }, seo.title, relPath);
+      window.history.replaceState({ section: viewName, actor: viewName === 'actors' ? state.selectedActor : null }, seo.title, relPath);
     }
   } catch(e) {}
 }
