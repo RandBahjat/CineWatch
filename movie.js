@@ -3499,6 +3499,15 @@ function _performSwitchView(viewName) {
       const bar = document.getElementById("animeFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
     }, 60);
+  } else if (viewName === "actors") {
+    hideAll();
+    if (actorsSection) actorsSection.classList.remove("hidden");
+    renderActorsSection();
+    updateSectionSEO('actors');
+    setTimeout(() => {
+      const bar = document.getElementById("actorsFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
   } else if (viewName === "watchlist") {
     hideAll();
     watchlistSection.classList.remove("hidden");

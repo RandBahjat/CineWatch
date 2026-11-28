@@ -3390,6 +3390,7 @@ function _performSwitchView(viewName) {
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
   const animeSection = document.getElementById("animeSection");
+  const actorsSection = document.getElementById("actorsSection");
   const detailsSection = document.getElementById("detailsSection");
 
   const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
@@ -3408,6 +3409,7 @@ function _performSwitchView(viewName) {
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
     if (animeSection) animeSection.classList.add("hidden");
+    if (actorsSection) actorsSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (becauseShelf) becauseShelf.classList.add("hidden");
@@ -3495,6 +3497,15 @@ function _performSwitchView(viewName) {
     updateSectionSEO('anime');
     setTimeout(() => {
       const bar = document.getElementById("animeFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
+  } else if (viewName === "actors") {
+    hideAll();
+    if (actorsSection) actorsSection.classList.remove("hidden");
+    renderActorsSection();
+    updateSectionSEO('actors');
+    setTimeout(() => {
+      const bar = document.getElementById("actorsFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
     }, 60);
   } else if (viewName === "watchlist") {
