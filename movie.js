@@ -1122,6 +1122,10 @@ async function initApp() {
     updateBrowseViewToggles();
 
     if (targetSection && targetSection !== 'home' && SECTION_VIEWS.includes(targetSection)) {
+      if (targetSection === 'actors') {
+        const actorParam = new URLSearchParams(window.location.search).get('actor');
+        state.selectedActor = actorParam ? actorParam.trim() : null;
+      }
       state.activeView = targetSection;
       _performSwitchView(targetSection);
       await dismissLoader();
@@ -2526,6 +2530,638 @@ function render4kSection() {
   renderBrowsePagination("fourkPagination", currPage, totalPages, (p) => {
     state.fourkPage = p;
     render4kSection();
+  });
+}
+
+// ==========================================
+// ACTORS DIRECTORY & PORTRAIT PHOTO CACHE
+// ==========================================
+const ACTOR_PHOTO_STORAGE_KEY = "cw_actor_photos_v1";
+const ACTOR_PHOTO_CACHE_TTL_MS = 14 * 24 * 60 * 60 * 1000;
+const ACTOR_PHOTO_MISS_TTL_MS = 24 * 60 * 60 * 1000;
+const ACTORS_PAGE_SIZE = 24;
+const ACTOR_AVATAR_GRADIENTS = [
+  "linear-gradient(135deg, #b91c1c, #7f1d1d)",
+  "linear-gradient(135deg, #1d4ed8, #1e3a8a)",
+  "linear-gradient(135deg, #6d28d9, #4c1d95)",
+  "linear-gradient(135deg, #0f766e, #134e4a)",
+  "linear-gradient(135deg, #c2410c, #7c2d12)",
+  "linear-gradient(135deg, #be185d, #831843)",
+  "linear-gradient(135deg, #0369a1, #0c4a6e)",
+  "linear-gradient(135deg, #4338ca, #312e81)"
+];
+
+let actorPhotoMemCache = null;
+const actorPhotoInFlight = new Map();
+const actorPhotoQueue = [];
+let actorPhotoActiveCount = 0;
+let cachedActorsDirMeta = { len: -1, firstId: "", lastId: "", list: [], byKey: new Map() };
+
+function normalizeActorKey(name) {
+  return String(name || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function escapeActorAttr(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function parseCastNames(rawCast) {
+  if (!rawCast) return [];
+  const items = Array.isArray(rawCast) ? rawCast : [rawCast];
+  const seen = new Set();
+  const names = [];
+  items.forEach((entry) => {
+    if (!entry) return;
+    String(entry)
+      .split(/,\s*/g)
+      .forEach((part) => {
+        const clean = part.replace(/\s+/g, " ").trim();
+        if (!clean || clean === "-" || /^n\/a$/i.test(clean)) return;
+        const key = normalizeActorKey(clean);
+        if (!key || seen.has(key)) return;
+        seen.add(key);
+        names.push(clean);
+      });
+  });
+  return names;
+}
+
+function getActorInitials(name) {
+  const parts = String(name || "").trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "?";
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function getActorAvatarGradient(name) {
+  let hash = 0;
+  const str = String(name || "");
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash + str.charCodeAt(i)) | 0;
+  }
+  return ACTOR_AVATAR_GRADIENTS[Math.abs(hash) % ACTOR_AVATAR_GRADIENTS.length];
+}
+
+function getActorPhotoStore() {
+  if (actorPhotoMemCache) return actorPhotoMemCache;
+  actorPhotoMemCache = {};
+  try {
+    const raw = localStorage.getItem(ACTOR_PHOTO_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === "object") actorPhotoMemCache = parsed;
+    }
+  } catch (e) {}
+  return actorPhotoMemCache;
+}
+
+function saveActorPhotoStore(key, url) {
+  const store = getActorPhotoStore();
+  store[key] = { u: url || "", t: Date.now() };
+  try {
+    const keys = Object.keys(store);
+    if (keys.length > 1200) {
+      keys
+        .sort((a, b) => (store[a]?.t || 0) - (store[b]?.t || 0))
+        .slice(0, keys.length - 1000)
+        .forEach((oldKey) => delete store[oldKey]);
+    }
+    localStorage.setItem(ACTOR_PHOTO_STORAGE_KEY, JSON.stringify(store));
+  } catch (e) {}
+}
+
+function getCachedActorPhoto(name) {
+  const key = normalizeActorKey(name);
+  const store = getActorPhotoStore();
+  const entry = store[key];
+  if (!entry || typeof entry !== "object") return undefined;
+  const age = Date.now() - (entry.t || 0);
+  const ttl = entry.u ? ACTOR_PHOTO_CACHE_TTL_MS : ACTOR_PHOTO_MISS_TTL_MS;
+  if (age > ttl) {
+    delete store[key];
+    return undefined;
+  }
+  return entry.u || "";
+}
+
+function applyActorPhotoToDom(actorKey, url) {
+  if (!url) return;
+  document.querySelectorAll('img[data-actor-photo-key]').forEach((img) => {
+    if (img.dataset.actorPhotoKey === actorKey && img.getAttribute("src") !== url) {
+      img.onload = () => img.classList.add("is-loaded");
+      img.onerror = () => img.classList.remove("is-loaded");
+      img.src = url;
+    }
+  });
+}
+
+async function fetchActorPhotoFromApis(name) {
+  const targetKey = normalizeActorKey(name);
+  try {
+    const res = await fetch(`https://api.tvmaze.com/search/people?q=${encodeURIComponent(name)}`);
+    if (res.ok) {
+      const list = await res.json();
+      if (Array.isArray(list)) {
+        const exact = list.find((item) => {
+          const pName = normalizeActorKey(item?.person?.name);
+          return pName === targetKey && (item?.person?.image?.medium || item?.person?.image?.original);
+        });
+        const imgUrl = exact?.person?.image?.medium || exact?.person?.image?.original;
+        if (imgUrl) return imgUrl;
+      }
+    }
+  } catch (e) {}
+
+  try {
+    const wikiRes = await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(name)}&gsrlimit=4&prop=pageimages|description&piprop=thumbnail&pithumbsize=400&format=json&origin=*`
+    );
+    if (wikiRes.ok) {
+      const data = await wikiRes.json();
+      const pages = Object.values(data?.query?.pages || {});
+      pages.sort((a, b) => (a.index || 99) - (b.index || 99));
+      const actorDescRe = /actor|actress|filmmaker|voice|comedian|performer|singer|director|stunt/i;
+      const best =
+        pages.find(
+          (p) =>
+            p.thumbnail?.source &&
+            !/\.svg(\?|$)/i.test(p.thumbnail.source) &&
+            normalizeActorKey(p.title).startsWith(targetKey) &&
+            actorDescRe.test(p.description || "")
+        ) ||
+        pages.find(
+          (p) =>
+            p.thumbnail?.source &&
+            !/\.svg(\?|$)/i.test(p.thumbnail.source) &&
+            actorDescRe.test(p.description || "")
+        ) ||
+        pages.find(
+          (p) =>
+            p.thumbnail?.source &&
+            !/\.svg(\?|$)/i.test(p.thumbnail.source) &&
+            normalizeActorKey(p.title) === targetKey
+        );
+      if (best?.thumbnail?.source) return best.thumbnail.source;
+    }
+  } catch (e) {}
+
+  try {
+    const fallbackRes = await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(name + " actor")}&gsrlimit=2&prop=pageimages|description&piprop=thumbnail&pithumbsize=400&format=json&origin=*`
+    );
+    if (fallbackRes.ok) {
+      const data = await fallbackRes.json();
+      const pages = Object.values(data?.query?.pages || {});
+      pages.sort((a, b) => (a.index || 99) - (b.index || 99));
+      const match = pages.find(
+        (p) => p.thumbnail?.source && !/\.svg(\?|$)/i.test(p.thumbnail.source)
+      );
+      if (match?.thumbnail?.source) return match.thumbnail.source;
+    }
+  } catch (e) {}
+
+  return "";
+}
+
+function drainActorPhotoQueue() {
+  while (actorPhotoActiveCount < 4 && actorPhotoQueue.length > 0) {
+    const { name, key, resolve } = actorPhotoQueue.shift();
+    actorPhotoActiveCount++;
+    fetchActorPhotoFromApis(name)
+      .then((url) => {
+        saveActorPhotoStore(key, url);
+        applyActorPhotoToDom(key, url);
+        resolve(url);
+      })
+      .catch(() => {
+        saveActorPhotoStore(key, "");
+        resolve("");
+      })
+      .finally(() => {
+        actorPhotoInFlight.delete(key);
+        actorPhotoActiveCount--;
+        drainActorPhotoQueue();
+      });
+  }
+}
+
+function ensureActorPhotoLoaded(name) {
+  const key = normalizeActorKey(name);
+  if (!key) return Promise.resolve("");
+  const cached = getCachedActorPhoto(name);
+  if (cached !== undefined) {
+    if (cached) applyActorPhotoToDom(key, cached);
+    return Promise.resolve(cached);
+  }
+  if (actorPhotoInFlight.has(key)) return actorPhotoInFlight.get(key);
+
+  const p = new Promise((resolve) => {
+    actorPhotoQueue.push({ name, key, resolve });
+    drainActorPhotoQueue();
+  });
+  actorPhotoInFlight.set(key, p);
+  return p;
+}
+
+function createActorAvatarHTML(name, extraClass = "") {
+  const key = normalizeActorKey(name);
+  const cached = getCachedActorPhoto(name);
+  const initials = getActorInitials(name);
+  const grad = getActorAvatarGradient(name);
+  const safeName = escapeActorAttr(name);
+  const safeKey = escapeActorAttr(key);
+  const safeSrc = cached ? `src="${escapeActorAttr(cached)}"` : "";
+  return `
+    <div class="actor-avatar-frame ${extraClass}" style="background:${grad};">
+      <span class="actor-avatar-fallback" aria-hidden="true">${escapeActorAttr(initials)}</span>
+      <img class="actor-avatar-img" data-actor-photo-key="${safeKey}" ${safeSrc} alt="${safeName}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>`;
+}
+
+function hydrateActorPhotos(rootEl) {
+  if (!rootEl) return;
+  const seen = new Map();
+  rootEl.querySelectorAll("img[data-actor-photo-key]").forEach((img) => {
+    img.onload = () => img.classList.add("is-loaded");
+    img.onerror = () => img.classList.remove("is-loaded");
+    if (img.getAttribute("src")) {
+      if (img.complete && img.naturalWidth > 0) img.classList.add("is-loaded");
+    }
+    const actorName = img.getAttribute("alt") || "";
+    const key = img.dataset.actorPhotoKey;
+    if (key && actorName && !seen.has(key)) seen.set(key, actorName);
+  });
+  seen.forEach((actorName) => ensureActorPhotoLoaded(actorName));
+}
+
+function buildActorsDirectory() {
+  const len = MOVIES.length;
+  const firstId = len ? MOVIES[0].id : "";
+  const lastId = len ? MOVIES[len - 1].id : "";
+  if (
+    cachedActorsDirMeta.len === len &&
+    cachedActorsDirMeta.firstId === firstId &&
+    cachedActorsDirMeta.lastId === lastId
+  ) {
+    return cachedActorsDirMeta;
+  }
+
+  const byKey = new Map();
+  MOVIES.forEach((movie) => {
+    const castNames = parseCastNames(movie.cast);
+    castNames.forEach((displayName) => {
+      const key = normalizeActorKey(displayName);
+      let entry = byKey.get(key);
+      if (!entry) {
+        entry = {
+          name: displayName,
+          key,
+          titles: [],
+          titleIds: new Set(),
+          movieCount: 0,
+          seriesCount: 0,
+          animeCount: 0,
+          topRating: 0
+        };
+        byKey.set(key, entry);
+      }
+      if (!entry.titleIds.has(movie.id)) {
+        entry.titleIds.add(movie.id);
+        entry.titles.push(movie);
+        const isAnime = !!(movie.isAnime || movie.genres?.includes("Anime"));
+        const isSeries = movie.isSeries === true || movie.type === "series" || movie.type === "tv";
+        if (isAnime) entry.animeCount++;
+        else if (isSeries) entry.seriesCount++;
+        else entry.movieCount++;
+        const r = parseFloat(movie.rating) || 0;
+        if (r > entry.topRating) entry.topRating = r;
+      }
+    });
+  });
+
+  const list = Array.from(byKey.values()).map((actor) => {
+    actor.titles.sort((a, b) => {
+      const yearDiff = (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
+      if (yearDiff !== 0) return yearDiff;
+      return (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0);
+    });
+    return actor;
+  });
+
+  list.sort((a, b) => {
+    const diff = b.titles.length - a.titles.length;
+    if (diff !== 0) return diff;
+    const rateDiff = b.topRating - a.topRating;
+    if (Math.abs(rateDiff) > 0.05) return rateDiff;
+    return a.name.localeCompare(b.name);
+  });
+
+  cachedActorsDirMeta = { len, firstId, lastId, list, byKey };
+  return cachedActorsDirMeta;
+}
+
+function getActorsUiLang() {
+  const cookies = document.cookie || "";
+  if (cookies.includes("googtrans=/en/ckb")) return "ckb";
+  if (cookies.includes("googtrans=/en/ar")) return "ar";
+  return "en";
+}
+
+function updateActorsSectionLabels(lang) {
+  const copy = {
+    en: {
+      title: "Actors",
+      searchPlaceholder: "Search actors or titles...",
+      all: "All",
+      popular: "Most Credits",
+      movies: "Movies",
+      series: "Series",
+      anime: "Anime",
+      back: "Back to All Actors"
+    },
+    ckb: {
+      title: "ئەکتەرەکان",
+      searchPlaceholder: "گەڕان بۆ ئەکتەر یان فیلم...",
+      all: "هەموو",
+      popular: "زۆرترین بەشداری",
+      movies: "فیلمەکان",
+      series: "زنجیرەکان",
+      anime: "ئەنیمێ",
+      back: "گەڕانەوە بۆ هەموو ئەکتەرەکان"
+    },
+    ar: {
+      title: "الممثلون",
+      searchPlaceholder: "ابحث عن ممثل أو عمل...",
+      all: "الكل",
+      popular: "الأكثر أعمالاً",
+      movies: "أفلام",
+      series: "مسلسلات",
+      anime: "أنمي",
+      back: "العودة إلى جميع الممثلين"
+    }
+  }[lang] || {};
+
+  const titleEl = document.getElementById("actorsSectionTitle");
+  if (titleEl && copy.title) {
+    titleEl.innerHTML = `<ion-icon name="people-outline"></ion-icon> ${copy.title}`;
+  }
+  const searchInput = document.getElementById("actorsSearchInput");
+  if (searchInput && copy.searchPlaceholder) searchInput.placeholder = copy.searchPlaceholder;
+  const fAll = document.getElementById("actorsFilterAll");
+  const fPop = document.getElementById("actorsFilterPopular");
+  const fMov = document.getElementById("actorsFilterMovies");
+  const fSer = document.getElementById("actorsFilterSeries");
+  const fAni = document.getElementById("actorsFilterAnime");
+  const bLbl = document.getElementById("actorsBackLabel");
+  if (fAll) fAll.textContent = copy.all;
+  if (fPop) fPop.textContent = copy.popular;
+  if (fMov) fMov.textContent = copy.movies;
+  if (fSer) fSer.textContent = copy.series;
+  if (fAni) fAni.textContent = copy.anime;
+  if (bLbl) bLbl.textContent = copy.back;
+}
+
+function openActorProfile(actorName, pushHistory = true) {
+  const cleanName = String(actorName || "").trim();
+  if (!cleanName) return;
+
+  if (state.activeView === "details") {
+    const prevTrailer = document.getElementById("detailsTrailerIframe");
+    if (prevTrailer) prevTrailer.remove();
+    const prevWrap = document.querySelector("#detailsBg .trailer-iframe-wrap");
+    if (prevWrap) {
+      prevWrap.innerHTML = "";
+      prevWrap.classList.remove("active");
+      prevWrap.classList.add("hidden");
+    }
+  }
+
+  state.selectedActor = cleanName;
+  if (pushHistory) {
+    try {
+      const targetUrl = `/?section=actors&actor=${encodeURIComponent(cleanName)}`;
+      if (window.location.pathname + window.location.search !== targetUrl) {
+        window.history.pushState(
+          { section: "actors", actor: cleanName },
+          `${cleanName} | CineWatch`,
+          targetUrl
+        );
+      }
+    } catch (e) {}
+  }
+
+  if (state.activeView !== "actors") {
+    _performSwitchView("actors");
+  } else {
+    renderActorsSection();
+    updateSectionSEO("actors");
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderSelectedActorProfile(actorName, dirMeta, lang) {
+  const dirView = document.getElementById("actorsDirectoryView");
+  const profView = document.getElementById("actorProfileView");
+  const banner = document.getElementById("actorProfileBanner");
+  const grid = document.getElementById("actorFilmographyGrid");
+  const filmLabel = document.getElementById("actorFilmographyLabel");
+  if (!dirView || !profView || !banner || !grid) return;
+
+  dirView.classList.add("hidden");
+  profView.classList.remove("hidden");
+
+  const key = normalizeActorKey(actorName);
+  const actorObj = dirMeta.byKey.get(key) || {
+    name: actorName,
+    key,
+    titles: [],
+    movieCount: 0,
+    seriesCount: 0,
+    animeCount: 0
+  };
+  const titles = actorObj.titles || [];
+
+  const titleWord = (n) =>
+    lang === "ckb" ? `${formatNumber(n)} ناونیشان` : lang === "ar" ? `${n} أعمال` : `${n} title${n !== 1 ? "s" : ""}`;
+  const movieWord = (n) =>
+    lang === "ckb" ? `${formatNumber(n)} فیلم` : lang === "ar" ? `${n} فيلم` : `${n} Movie${n !== 1 ? "s" : ""}`;
+  const seriesWord = (n) =>
+    lang === "ckb" ? `${formatNumber(n)} زنجیرە` : lang === "ar" ? `${n} مسلسل` : `${n} Series`;
+  const animeWord = (n) =>
+    lang === "ckb" ? `${formatNumber(n)} ئەنیمێ` : lang === "ar" ? `${n} أنمي` : `${n} Anime`;
+
+  const pills = [];
+  pills.push(`<span class="actor-stat-pill accent">${titleWord(titles.length)}</span>`);
+  if (actorObj.movieCount > 0) pills.push(`<span class="actor-stat-pill">${movieWord(actorObj.movieCount)}</span>`);
+  if (actorObj.seriesCount > 0) pills.push(`<span class="actor-stat-pill">${seriesWord(actorObj.seriesCount)}</span>`);
+  if (actorObj.animeCount > 0) pills.push(`<span class="actor-stat-pill">${animeWord(actorObj.animeCount)}</span>`);
+
+  const subtitle =
+    lang === "ckb"
+      ? "بەرهەمە بەردەستەکان لە CineWatch"
+      : lang === "ar"
+        ? "الأعمال المتوفرة على CineWatch"
+        : "Available movies & series on CineWatch";
+
+  banner.innerHTML = `
+    ${createActorAvatarHTML(actorObj.name, "actor-profile-avatar")}
+    <div class="actor-profile-meta">
+      <h1 class="actor-profile-name">${escapeActorAttr(actorObj.name)}</h1>
+      <p class="actor-profile-subtitle">${subtitle}</p>
+      <div class="actor-profile-stats">${pills.join("")}</div>
+    </div>`;
+  hydrateActorPhotos(banner);
+
+  if (filmLabel) {
+    filmLabel.textContent =
+      lang === "ckb"
+        ? `بەشدارییەکانی ${actorObj.name}: ${formatNumber(titles.length)}`
+        : lang === "ar"
+          ? `أعمال ${actorObj.name}: ${titles.length}`
+          : `Filmography (${titles.length})`;
+  }
+
+  const isPoster = getBrowseViewMode() === "poster";
+  grid.classList.toggle("poster-view", isPoster);
+  grid.classList.toggle("backdrop-view", !isPoster);
+  if (titles.length === 0) {
+    grid.innerHTML = `
+      <div class="browse-empty">
+        <div class="empty-icon">🎬</div>
+        <h3>No titles found</h3>
+        <p>No catalog credits matched this actor.</p>
+      </div>`;
+  } else {
+    grid.innerHTML = titles.map((m) => createMovieCardHTML(m, null, isPoster)).join("");
+    grid.querySelectorAll(".movie-card").forEach((card) => {
+      card.onclick = (e) => {
+        e.stopPropagation();
+        state.currentDetailsFrom4k = false;
+        openDetailsModal(card.dataset.id, false);
+      };
+    });
+  }
+}
+
+function renderActorsSection() {
+  const lang = getActorsUiLang();
+  updateActorsSectionLabels(lang);
+  const dirMeta = buildActorsDirectory();
+
+  const dirView = document.getElementById("actorsDirectoryView");
+  const profView = document.getElementById("actorProfileView");
+  if (state.selectedActor) {
+    renderSelectedActorProfile(state.selectedActor, dirMeta, lang);
+    return;
+  }
+
+  if (dirView) dirView.classList.remove("hidden");
+  if (profView) profView.classList.add("hidden");
+
+  const filter = state.actorsFilter || "all";
+  const query = normalizeActorKey(state.actorsSearch || "");
+
+  let filtered = dirMeta.list.filter((actor) => {
+    if (filter === "popular" && actor.titles.length < 2) return false;
+    if (filter === "movies" && actor.movieCount === 0) return false;
+    if (filter === "series" && actor.seriesCount === 0) return false;
+    if (filter === "anime" && actor.animeCount === 0) return false;
+    if (query) {
+      const nameMatch = actor.key.includes(query);
+      const titleMatch = actor.titles.some((t) => normalizeActorKey(t.title).includes(query));
+      return nameMatch || titleMatch;
+    }
+    return true;
+  });
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / ACTORS_PAGE_SIZE));
+  if ((state.actorsPage || 1) > totalPages) state.actorsPage = totalPages;
+  const currPage = state.actorsPage || 1;
+
+  const countEl = document.getElementById("actorsCount");
+  if (countEl) {
+    countEl.textContent =
+      lang === "ckb"
+        ? `${formatNumber(filtered.length)} ئەکتەر`
+        : lang === "ar"
+          ? `${filtered.length} ممثل`
+          : `${filtered.length} actor${filtered.length !== 1 ? "s" : ""}`;
+  }
+
+  const labelEl = document.getElementById("actorsCountLabel");
+  if (labelEl) {
+    labelEl.textContent =
+      lang === "ckb"
+        ? `ئەکتەرەکان: ${formatNumber(filtered.length)}`
+        : lang === "ar"
+          ? `الممثلون: ${filtered.length}`
+          : `Actors: ${filtered.length}`;
+  }
+
+  document.querySelectorAll("#actorsFilterBar .browse-filter-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.genre === filter);
+  });
+
+  const grid = document.getElementById("actorsGrid");
+  if (grid) {
+    const start = (currPage - 1) * ACTORS_PAGE_SIZE;
+    const pageActors = filtered.slice(start, start + ACTORS_PAGE_SIZE);
+    if (pageActors.length === 0) {
+      grid.innerHTML = `
+        <div class="browse-empty">
+          <div class="empty-icon"><ion-icon name="people-outline"></ion-icon></div>
+          <h3>No actors found</h3>
+          <p>Try a different name or filter.</p>
+        </div>`;
+    } else {
+      grid.innerHTML = pageActors
+        .map((actor) => {
+          const n = actor.titles.length;
+          const badgeTxt =
+            lang === "ckb"
+              ? `${formatNumber(n)} بەرهەم`
+              : lang === "ar"
+                ? `${n} أعمال`
+                : `${n} title${n !== 1 ? "s" : ""}`;
+          const knownFor = actor.titles
+            .slice(0, 2)
+            .map((t) => t.title)
+            .join(" • ");
+          return `
+            <button type="button" class="actor-browse-card" data-actor="${escapeActorAttr(actor.name)}" aria-label="${escapeActorAttr(actor.name)}">
+              <div class="actor-card-photo-wrap">
+                ${createActorAvatarHTML(actor.name, "actor-browse-avatar")}
+                <span class="actor-credit-badge">${badgeTxt}</span>
+              </div>
+              <div class="actor-card-info">
+                <h3 class="actor-browse-name">${escapeActorAttr(actor.name)}</h3>
+                <p class="actor-known-for">${escapeActorAttr(knownFor)}</p>
+              </div>
+            </button>`;
+        })
+        .join("");
+
+      grid.querySelectorAll(".actor-browse-card").forEach((card) => {
+        card.onclick = () => {
+          openActorProfile(card.dataset.actor, true);
+        };
+      });
+      hydrateActorPhotos(grid);
+    }
+  }
+
+  renderBrowsePagination("actorsPagination", currPage, totalPages, (p) => {
+    state.actorsPage = p;
+    renderActorsSection();
   });
 }
 
