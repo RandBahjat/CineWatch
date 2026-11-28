@@ -32,7 +32,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 6.4,
     age: "PG-13",
-    duration: "2h 38m",
+    duration: "1h 46m",
     genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
