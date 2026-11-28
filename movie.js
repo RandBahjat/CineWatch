@@ -83,7 +83,7 @@ let TOP_10_TRENDING_TODAY = [
   "The Hunger Games: Sunrise on the Reaping",
   "Way of the Warrior Kid",
   "Dexter: Resurrection",
-  "Possible Love",
+  "Spider-Man: Brand New Day",
   "Primetime",
   "VisionQuest"
 ];
