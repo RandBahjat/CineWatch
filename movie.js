@@ -6850,6 +6850,20 @@ function bindEventListeners() {
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
       if (link.dataset.view) {
+        if (link.dataset.view === "actors") {
+          state.selectedActor = null;
+          if (state.activeView === "actors") {
+            try {
+              if (window.location.search !== "?section=actors") {
+                window.history.pushState({ section: "actors" }, "Actors | CineWatch", "/?section=actors");
+              }
+            } catch (err) {}
+            renderActorsSection();
+            updateSectionSEO("actors");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+          }
+        }
         switchView(link.dataset.view);
       }
     };
@@ -6960,6 +6974,20 @@ function bindEventListeners() {
       if (targetView) {
         const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
         if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
+        if (targetView === "actors") {
+          state.selectedActor = null;
+          if (state.activeView === "actors") {
+            try {
+              if (window.location.search !== "?section=actors") {
+                window.history.pushState({ section: "actors" }, "Actors | CineWatch", "/?section=actors");
+              }
+            } catch (err) {}
+            renderActorsSection();
+            updateSectionSEO("actors");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+          }
+        }
         switchView(targetView);
       } else if (card.id === 'browseCardAi') {
         if (typeof window.openAiModal === 'function') {
