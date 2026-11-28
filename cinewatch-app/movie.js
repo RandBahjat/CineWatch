@@ -77,7 +77,7 @@ let FEATURED_TITLES = [
 ];
 let TOP_10_TRENDING_TODAY = [
   "Street Fighter",
-  "The Oddyssey",
+  "Blade Runner 2099",
   "The Good Lawyer",
   "Other Mommy",
   "Heart of the Beast",
