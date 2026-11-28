@@ -39,7 +39,9 @@ window._MOVIES_DATA = [
     videoUrl: "1281331",
     trailerUrl: "https://youtu.be/MfHEZw7Xw_c?si=EpmWLEw0LLsGLI9x",
     overview: "Written and directed by Aaron Sorkin as a companion piece to The Social Network, the film chronicles the explosive true story behind The Wall Street Journal's Facebook Files investigation. When former Facebook engineer Frances Haugen becomes disillusioned by the tech giant's internal research showing the real-world harm of its algorithms, she partners with investigative journalist Jeff Horwitz to leak thousands of internal documents—sparking a fierce legal, political, and moral showdown with Mark Zuckerberg and the empire he built.",
-    overviewKurdish: "",
+    overviewKurdish: "لە نووسین و دەرهێنانی ئارۆن سۆرکین وەک تەواوکەرێک بۆ فیلمی «تۆڕی کۆمەڵایەتی»، ئەم فیلمە چیرۆکە ڕاستەقینە و هەژێنەرەکەی پشت لێکۆڵینەوەی «فایلەکانی فەیسبووک» دەگێڕێتەوە. کاتێک «فرانسیس هۆگن»، ئەندازیاری پێشووی فەیسبووک، بۆی دەردەکەوێت کە کۆمپانیاکە بە ئەنقەست چاوپۆشی لە زیانە مەترسیدارەکانی ئەلگۆریتمەکانی دەکات، هاوپەیمانی لەگەڵ ڕۆژنامەنووسی بنکۆڵکار «جێف هۆرویتز» دەبەستێت بۆ دزەپێکردنی هەزاران بەڵگەنامەی نهێنی، ئەمەش ململانێیەکی توندی یاسایی، سیاسی و ئەخلاقی لەگەڵ مارک زوکەربێرگ و ئیمپراتۆریەتە تەکنەلۆجییەکەیدا هەڵدەگیرسێنێت.
+
+Director: Aaron Sorkin",
     director: "Francis Lawrence",
     cast: ["Joseph Zada, Ralph Fiennes, Elle Fanning, Jesse Plemons, Mckenna Grace, Kieran Culkin, Glenn Close, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., Ben Wang, Woody Harrelson, Jennifer Lawrence, Josh Hutcherson"],
     trending: true,
