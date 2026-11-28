@@ -34,7 +34,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 52m",
     genres: ["Biography","Drama","History"],
-    poster: "https://www.themoviedb.org/t/p/w1280/vWbEuI3LuFOGYZIxESLAmwFwtvr.jpg",
+    poster: "https://image.tmdb.org/t/p/original/4cg0lBYVkDfbPXnf8QBZfFemS7z.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
     videoUrl: "1300968",
     trailerUrl: "https://youtu.be/fS35YSjopjE?si=mqew9Aij_qsLIQPi",
