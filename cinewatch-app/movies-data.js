@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
-    videoUrl: "254630",
+    videoUrl: "1300968",
     trailerUrl: "https://www.youtube.com/watch?v=cDroSYeUlG4",
     overview: "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
     overviewKurdish: "چیرۆکی دزییەکی گەورە کە پلانەکەی ١٢ مانگی پێدەچێت، لە ماوەی ١٢ کاتژمێردا جێبەجێ دەکرێت، و ئەگەر دزەکە لە ماوەی ١٢ ڕۆژدا دەستگیر نەکرێت، هەرگیز دەستگیر ناکرێت. لە سێ کاتی جیاواز و پڕ لە گرژیدا، بریکارێکی ئێف بی ئای و تاوانبارێکی بەئەزموون لە یارییەکی کوشندەی پشیلە و مشک لە سەرتاسەری ئەوروپادا ڕووبەڕووی یەکتر دەبنەوە.",
