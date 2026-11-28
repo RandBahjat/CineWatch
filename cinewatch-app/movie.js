@@ -80,7 +80,7 @@ let TOP_10_TRENDING_TODAY = [
   "Blade Runner 2099",
   "Avengers: Doomsday",
   "The Odyssey",
-  "Heart of the Beast",
+  "The Hunger Games: Sunrise on the Reaping",
   "Resident Evil",
   "Godzilla Minus Zero",
   "Possible Love",
