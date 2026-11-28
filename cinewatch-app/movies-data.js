@@ -40,7 +40,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/R1ECMLrwDYQ?si=4cIEHltNDGrY-QJY",
     overview: "Based on the bestselling novel by former Navy SEAL Jocko Willink, the story follows Marc, a shy, bullied 13-year-old who struggles at school and dreads the transition into high school. When his uncle Jake—a decorated Navy SEAL recovering from a serious injury—comes to stay for the summer, Jake puts Marc through a rigorous, military-inspired training regimen. Teaching him discipline, self-defense, and resilience, Jake helps his nephew find his inner warrior and face his bullies, while the mentorship simultaneously helps Jake confront his own personal demons.",
     overviewKurdish: "لەسەر بنەمای ڕۆمانە پڕفرۆشەکەی جۆکۆ ویلینک، چیرۆکەکە باس لە کوڕێکی شەرمنی سێزدە ساڵان دەکات بە ناوی «مارک»، کە لە قوتابخانە بەردەوام ڕووبەڕووی گێچەڵ و سوکایەتی دەبێتەوە و ترسی لە دەستپێکردنی قۆناغی ئامادەیی هەیە. کاتێک خاڵی، «جەیک»، کە سەربازێکی هێزە تایبەتەکانی دەریاییە و لە قۆناغی چاکبوونەوەدایە لە برینێکی سەخت، بۆ پشووی هاوین دێتە لایان، مارک دەخاتە ژێر بەرنامەیەکی مەشق و ڕاهێنانی سەربازیی توندەوە. لە ڕێگەی فێرکردنی ڕێکوپێکی، خۆپاراستن و متمانەبەخۆبوونەوە، جەیک یارمەتی مارک دەدات جەنگاوەرە شاراوەکەی ناخی بدۆزێتەوە و ڕووبەڕووی گێچەڵکاران ببێتەوە، لە کاتێکدا خودی جەیکیش خەریکی ڕووبەڕووبوونەوەی کێشە و برینەکانی خۆیەتی.",
-    director: "Francis Lawrence",
+    director: "McG",
     cast: ["Joseph Zada, Ralph Fiennes, Elle Fanning, Jesse Plemons, Mckenna Grace, Kieran Culkin, Glenn Close, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., Ben Wang, Woody Harrelson, Jennifer Lawrence, Josh Hutcherson"],
     trending: true,
     featured: false,
