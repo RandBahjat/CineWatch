@@ -4559,10 +4559,28 @@ function openDetailsModal(movieId, from4k = null) {
     }
 
     if (castContainer && castText) {
-      if (movie.cast && movie.cast.length > 0) {
-        castText.textContent = movie.cast.join(", ");
+      const castNames = parseCastNames(movie.cast);
+      if (castNames.length > 0) {
+        castText.innerHTML = `<div class="details-cast-grid" role="list">${castNames
+          .map(
+            (actorName) => `
+          <button type="button" class="details-actor-card" data-actor="${escapeActorAttr(actorName)}" role="listitem" title="${escapeActorAttr(actorName)}">
+            ${createActorAvatarHTML(actorName, "details-actor-avatar")}
+            <span class="details-actor-name">${escapeActorAttr(actorName)}</span>
+          </button>`
+          )
+          .join("")}</div>`;
+        castText.querySelectorAll(".details-actor-card").forEach((btn) => {
+          btn.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            openActorProfile(btn.dataset.actor, true);
+          };
+        });
+        hydrateActorPhotos(castText);
         castContainer.classList.remove("hidden");
       } else {
+        castText.innerHTML = "";
         castContainer.classList.add("hidden");
       }
     }
