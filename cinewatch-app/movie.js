@@ -998,7 +998,7 @@ function recordWatchEvent(movieId) {
 // 3. UI RENDERERS & CONTROLLERS
 // ==========================================
 
-const SECTION_VIEWS = ['home', 'movies', 'series', 'anime', '4k', 'watchlist', 'continue'];
+const SECTION_VIEWS = ['home', 'movies', 'series', 'anime', 'actors', '4k', 'watchlist', 'continue'];
 
 function getSectionUrl(sectionName) {
   try {
@@ -1006,12 +1006,16 @@ function getSectionUrl(sectionName) {
     url.searchParams.delete('v');
     url.searchParams.delete('movie');
     url.searchParams.delete('series');
+    url.searchParams.delete('actor');
     if (sectionName === 'home') {
       url.searchParams.delete('section');
       url.searchParams.delete('view');
     } else {
       url.searchParams.delete('view');
       url.searchParams.set('section', sectionName);
+      if (sectionName === 'actors' && state.selectedActor) {
+        url.searchParams.set('actor', state.selectedActor);
+      }
     }
     return url.toString();
   } catch (e) {
