@@ -429,6 +429,137 @@ ${catalogData}
     }
   };
 
+  // Smart Search AI helper used by spotlight search when exact catalog matches are missing or descriptive
+  const _smartSearchCache = new Map();
+
+  function filterMediaByType(list, filterType) {
+    if (!Array.isArray(list)) return [];
+    if (filterType === "movie") return list.filter((m) => m && m.type !== "TV Show" && !m.isAnime);
+    if (filterType === "series") return list.filter((m) => m && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0)));
+    return list;
+  }
+
+  window.openAiWithPrompt = function (promptText) {
+    const cleaned = String(promptText || "").trim();
+    openAiModal();
+    if (cleaned && typeof window.sendAiChatMessage === "function") {
+      setTimeout(() => window.sendAiChatMessage(cleaned), 120);
+    }
+  };
+
+  window.querySmartSearchAI = async function (queryText, filterType = "all", localCandidates = [], externalSignal = null) {
+    const q = String(queryText || "").trim();
+    if (q.length < 2) return null;
+
+    const lang = getActiveLang();
+    const cacheKey = `${lang}::${filterType}::${q.toLowerCase()}`;
+    if (_smartSearchCache.has(cacheKey)) {
+      return _smartSearchCache.get(cacheKey);
+    }
+
+    const allFiltered = filterMediaByType(getAllMedia(), filterType);
+    if (!allFiltered.length) return null;
+
+    // Combine passed semantic candidates + keyword catalog hits + popular top titles
+    const seenIds = new Set();
+    const pool = [];
+    const addCandidate = (m) => {
+      if (!m || !m.id || seenIds.has(m.id)) return;
+      seenIds.add(m.id);
+      pool.push(m);
+    };
+
+    filterMediaByType(localCandidates, filterType).forEach(addCandidate);
+    filterMediaByType(searchCatalogForQuery(q), filterType).forEach(addCandidate);
+
+    const popularPool = allFiltered
+      .slice()
+      .sort((a, b) => ((b.trending ? 2 : 0) + (Number(b.rating) || 0) / 10) - ((a.trending ? 2 : 0) + (Number(a.rating) || 0) / 10))
+      .slice(0, 35);
+    popularPool.forEach(addCandidate);
+
+    const compactCatalog = pool.slice(0, 45).map((m) => {
+      const genres = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(", ") : String(m.genres || "");
+      const cast = Array.isArray(m.cast) ? m.cast.slice(0, 3).join(", ") : String(m.cast || "");
+      return `${m.id} | ${m.title} (${m.year || ""}) | ${m.type || "Movie"} | ${genres} | ${cast}`;
+    }).join("\n");
+
+    const langName = lang === "ckb" ? "Kurdish Sorani" : (lang === "ar" ? "Arabic" : "English");
+    const prompt = `User searched CineWatch (${filterType}) for: "${q}"
+There is NO exact match in the local title search.
+
+Available CineWatch catalog slice (ONLY pick IDs from this list):
+${compactCatalog}
+
+Return STRICT JSON with keys:
+- "statusNote": string (1-2 concise sentences in ${langName}; clearly state if "${q}" is not available / not found in CineWatch, and briefly introduce the closest alternatives ONLY if genuinely related in topic, mood, cast, or spelling. If "${q}" is gibberish or unrelated to everything in the catalog, simply say no results were found and suggest checking spelling or trying another keyword.)
+- "recommendedIds": string[] (0 to 4 exact IDs from the list above that genuinely relate to "${q}" — NEVER recommend unrelated movies just because they share words like "The" or "A". Return [] if nothing truly fits.)`;
+
+    const payload = {
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.2,
+        maxOutputTokens: 320,
+        thinkingConfig: { thinkingBudget: 0 },
+        responseMimeType: "application/json",
+      },
+    };
+
+    async function callModel(model) {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 9000);
+      const onExternalAbort = () => controller.abort();
+      if (externalSignal) {
+        if (externalSignal.aborted) {
+          clearTimeout(timeoutId);
+          throw new DOMException("Aborted", "AbortError");
+        }
+        externalSignal.addEventListener("abort", onExternalAbort, { once: true });
+      }
+      try {
+        const res = await fetch(getApiEndpoint(model), {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+          signal: controller.signal,
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        const raw = json?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        return JSON.parse(raw);
+      } finally {
+        clearTimeout(timeoutId);
+        if (externalSignal) externalSignal.removeEventListener("abort", onExternalAbort);
+      }
+    }
+
+    try {
+      let parsed;
+      try {
+        parsed = await callModel(PRIMARY_MODEL);
+      } catch (err) {
+        if (err?.name === "AbortError") throw err;
+        parsed = await callModel(FALLBACK_MODEL);
+      }
+
+      const idMap = new Map(allFiltered.map((m) => [String(m.id), m]));
+      const items = (Array.isArray(parsed?.recommendedIds) ? parsed.recommendedIds : [])
+        .map((id) => idMap.get(String(id)))
+        .filter(Boolean)
+        .slice(0, 4);
+
+      const result = {
+        statusNote: typeof parsed?.statusNote === "string" ? parsed.statusNote.trim() : "",
+        items,
+      };
+      _smartSearchCache.set(cacheKey, result);
+      return result;
+    } catch (err) {
+      if (err?.name === "AbortError") throw err;
+      return null;
+    }
+  };
+
   // Setup Event Listeners on DOM Ready
   function initAiAssistant() {
     const navAiBtn = document.getElementById("navAiBtn");
