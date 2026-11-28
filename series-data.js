@@ -16,7 +16,7 @@ window._SERIES_DATA = [
     age: "TV-MA",
     duration: "2 Seasons",
     genres: ["Drama", "Mystery", "Thriller"],
-    poster: "https://static.tvmaze.com/uploads/images/original_untouched/579/1448883.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/iKL02GmejLCGBJr7XHU82vvqA1C.jpg",
     backdrop: "https://static.tvmaze.com/uploads/images/original_untouched/579/1449372.jpg",
     videoUrl: "244447",
     trailerUrl: "https://www.youtube.com/watch?v=hRvDakXnaOs",
