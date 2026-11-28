@@ -6155,6 +6155,31 @@ body.auth-modal-open::-webkit-scrollbar {
     margin-bottom: 0.45rem !important;
   }
 
+  #detailsCastContainer.details-cast-list {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 0.55rem !important;
+    margin-top: 0.85rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .details-actor-card {
+    flex: 0 0 74px;
+    width: 74px;
+  }
+
+  .details-actor-avatar {
+    width: 66px;
+    height: 84px;
+    border-radius: 10px;
+  }
+
+  .details-actor-name {
+    font-size: 0.73rem;
+  }
+
   .cast-label {
     font-weight: 700 !important;
     color: rgba(255, 255, 255, 0.55) !important;
@@ -7890,6 +7915,293 @@ body.auth-modal-open::-webkit-scrollbar {
   color: #fff;
   font-weight: 700;
   box-shadow: 0 3px 12px rgba(229, 9, 20, 0.4);
+}
+
+/* ================================================
+   ACTORS DIRECTORY & PROFILE SECTION
+   ================================================ */
+.actors-title-row {
+  align-items: center;
+}
+
+.actors-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex: 1 1 230px;
+  max-width: 340px;
+  min-width: 200px;
+}
+
+.actors-search-icon {
+  position: absolute;
+  left: 0.9rem;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+}
+
+.actors-search-input {
+  width: 100%;
+  padding: 0.58rem 2.35rem 0.58rem 2.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actors-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.actors-search-input:focus {
+  border-color: rgba(229, 9, 20, 0.75);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.18);
+}
+
+.actors-search-clear {
+  position: absolute;
+  right: 0.6rem;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.15rem;
+}
+
+.actors-search-clear:hover {
+  color: #fff;
+}
+
+.actors-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.actor-browse-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  text-align: start;
+  color: inherit;
+  font-family: inherit;
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+}
+
+.actor-browse-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(229, 9, 20, 0.65);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.actor-card-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #12151e;
+}
+
+.actor-browse-avatar {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.actor-browse-card:hover .actor-avatar-img.is-loaded {
+  transform: scale(1.06);
+}
+
+.actor-credit-badge {
+  position: absolute;
+  bottom: 0.55rem;
+  right: 0.55rem;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(9, 11, 16, 0.84);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f9fafb;
+  font-size: 0.72rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+
+.actor-card-info {
+  padding: 0.72rem 0.78rem 0.82rem;
+  width: 100%;
+}
+
+.actor-browse-name {
+  margin: 0 0 0.2rem;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actor-known-for {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actor-profile-topbar {
+  margin-bottom: 1.25rem;
+}
+
+.actor-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.52rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f3f4f6;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.actor-back-btn:hover {
+  background: rgba(229, 9, 20, 0.16);
+  border-color: rgba(229, 9, 20, 0.65);
+  color: #fff;
+  transform: translateX(-2px);
+}
+
+.actor-profile-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.65rem;
+}
+
+.actor-profile-avatar {
+  width: 132px;
+  height: 174px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  font-size: 2.3rem;
+}
+
+.actor-profile-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.actor-profile-name {
+  margin: 0 0 0.35rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.4px;
+}
+
+.actor-profile-subtitle {
+  margin: 0 0 0.85rem;
+  color: #9ca3af;
+  font-size: 0.94rem;
+}
+
+.actor-profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.actor-stat-pill {
+  padding: 0.32rem 0.82rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.actor-stat-pill.accent {
+  background: rgba(229, 9, 20, 0.18);
+  border-color: rgba(229, 9, 20, 0.5);
+  color: #fca5a5;
+}
+
+@media (max-width: 1200px) {
+  .actors-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .actors-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .actors-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem 0.75rem;
+  }
+
+  .actors-search-wrap {
+    margin-left: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .actor-profile-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.1rem;
+    gap: 1rem;
+  }
+
+  .actor-profile-avatar {
+    width: 104px;
+    height: 138px;
+  }
+
+  .actor-profile-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .actors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Custom Avatar Upload Styles */
