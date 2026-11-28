@@ -30,7 +30,7 @@ window._MOVIES_DATA = [
     title: "The Social Reckoning ",
     type: "Movie",
     year: 2026,
-    rating: 7.5,
+    rating: 6.6,
     age: "PG-13",
     duration: "2h 38m",
     genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
