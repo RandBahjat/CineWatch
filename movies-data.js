@@ -6,7 +6,6 @@ window._MOVIES_DATA = [
 
  
   {
-    id: "I Play Rocky",
     title: "I Play Rocky",
     type: "Movie",
     year: 2026,
