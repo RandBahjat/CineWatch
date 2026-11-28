@@ -81,7 +81,7 @@ let TOP_10_TRENDING_TODAY = [
   "Avengers: Doomsday",
   "The Odyssey",
   "The Hunger Games: Sunrise on the Reaping",
-  "Resident Evil",
+  "Way of the Warrior Kid",
   "Godzilla Minus Zero",
   "Possible Love",
   "Primetime",
