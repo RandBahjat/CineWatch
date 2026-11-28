@@ -2162,7 +2162,46 @@ function renderFilteredGrid(movieList, titleText, searchQuery = null) {
           <button class="btn ${safeQuery ? 'btn-secondary' : 'btn-primary'}" onclick="switchView('movies')">${exploreLabel}</button>
         </div>
       </div>
+      <div id="filteredAiSuggestionsHost" style="grid-column: 1 / -1;"></div>
     `;
+
+    if (searchQuery && typeof findSmartAiCandidates === "function") {
+      const candidates = findSmartAiCandidates(searchQuery);
+      const host = document.getElementById("filteredAiSuggestionsHost");
+      if (host && candidates.length > 0) {
+        const ui = getSearchUiStrings(searchQuery);
+        const renderSuggestions = (noteText, list) => {
+          if (!list || list.length === 0) return;
+          const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
+          host.innerHTML = `
+            <div class="search-ai-panel" style="margin-top:0.5rem;">
+              <div class="search-ai-header">
+                <span class="search-ai-badge"><ion-icon name="sparkles"></ion-icon> ${ui.aiHeader}</span>
+              </div>
+              <p class="search-ai-note">${escapeSearchHtml(noteText)}</p>
+              <div class="browse-grid" style="margin-top:0.5rem; margin-bottom:0 !important;">
+                ${list.slice(0, 8).map(m => createMovieCardHTML(m, null, isMobileGrid)).join("")}
+              </div>
+            </div>
+          `;
+          host.querySelectorAll(".movie-card").forEach((card) => {
+            card.onclick = (ev) => {
+              ev.stopPropagation();
+              state.currentDetailsFrom4k = false;
+              openDetailsModal(card.dataset.id, false);
+            };
+          });
+        };
+        renderSuggestions(ui.aiFallbackSimilar, candidates.slice(0, 4));
+        if (typeof window.querySmartSearchAI === "function") {
+          window.querySmartSearchAI(searchQuery, state.searchFilter, candidates).then((aiRes) => {
+            if (aiRes && aiRes.items && aiRes.items.length > 0) {
+              renderSuggestions(aiRes.statusNote || ui.aiFallbackSimilar, aiRes.items);
+            }
+          }).catch(() => {});
+        }
+      }
+    }
   } else {
     const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
     filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
