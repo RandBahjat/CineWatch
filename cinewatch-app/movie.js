@@ -79,7 +79,7 @@ let TOP_10_TRENDING_TODAY = [
   "Street Fighter",
   "Blade Runner 2099",
   "Avengers: Doomsday",
-  "Other Mommy",
+  "The Odyssey",
   "Heart of the Beast",
   "Resident Evil",
   "Godzilla Minus Zero",
