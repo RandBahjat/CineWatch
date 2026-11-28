@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
     duration: "2h 38m",
     genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
     videoUrl: "254630",
     trailerUrl: "https://www.youtube.com/watch?v=cDroSYeUlG4",
     overview: "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
