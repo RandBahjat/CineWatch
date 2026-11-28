@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     rating: 7.5,
     age: "PG-13",
     duration: "2h 38m",
-    genres: ["Action", "Adventure", "Sci-Fi","Drama",""],
+    genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
     poster: "https://image.tmdb.org/t/p/original/gAVfLoxLt1RXDLVmboyISrSDICO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
     videoUrl: "254630",
