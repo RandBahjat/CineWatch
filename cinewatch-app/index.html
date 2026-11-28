@@ -1312,6 +1312,59 @@
             <div class="browse-pagination" id="fourkPagination"></div>
         </section>
 
+        <!-- ===== ACTORS SECTION ===== -->
+        <section class="browse-section hidden" id="actorsSection">
+            <div id="actorsDirectoryView">
+                <div class="browse-section-header">
+                    <div class="browse-title-row actors-title-row">
+                        <h1 class="browse-title" id="actorsSectionTitle"><ion-icon name="people-outline"></ion-icon> Actors</h1>
+                        <span class="browse-count" id="actorsCount">0 actors</span>
+                        <div class="actors-search-wrap">
+                            <ion-icon name="search-outline" class="actors-search-icon"></ion-icon>
+                            <input type="text" id="actorsSearchInput" class="actors-search-input" placeholder="Search actors..." autocomplete="off" aria-label="Search actors">
+                            <button type="button" id="actorsSearchClear" class="actors-search-clear hidden" aria-label="Clear search">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="browse-filter-wrapper">
+                        <button class="filter-scroll-btn prev" data-target="actorsFilterBar" aria-label="Scroll left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <div class="browse-filter-bar" id="actorsFilterBar">
+                            <button class="browse-filter-btn active" data-genre="all" data-section="actors" id="actorsFilterAll">All</button>
+                            <button class="browse-filter-btn" data-genre="popular" data-section="actors" id="actorsFilterPopular">Most Credits</button>
+                            <button class="browse-filter-btn" data-genre="movies" data-section="actors" id="actorsFilterMovies">Movies</button>
+                            <button class="browse-filter-btn" data-genre="series" data-section="actors" id="actorsFilterSeries">Series</button>
+                            <button class="browse-filter-btn" data-genre="anime" data-section="actors" id="actorsFilterAnime">Anime</button>
+                        </div>
+                        <button class="filter-scroll-btn next" data-target="actorsFilterBar" aria-label="Scroll right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="browse-results-bar">
+                    <span id="actorsCountLabel">Showing all actors</span>
+                </div>
+                <div class="actors-grid" id="actorsGrid"></div>
+                <div class="browse-pagination" id="actorsPagination"></div>
+            </div>
+
+            <div id="actorProfileView" class="hidden">
+                <div class="actor-profile-topbar">
+                    <button type="button" class="actor-back-btn" id="actorsBackBtn">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        <span id="actorsBackLabel">Back to All Actors</span>
+                    </button>
+                </div>
+                <div class="actor-profile-banner" id="actorProfileBanner"></div>
+                <div class="browse-results-bar">
+                    <span id="actorFilmographyLabel">Filmography</span>
+                </div>
+                <div class="browse-grid" id="actorFilmographyGrid"></div>
+            </div>
+        </section>
+
         <!-- Category Shelves Container -->
         <div id="defaultShelves">
             <!-- Shelf 0: Top 10 Trending Today -->
