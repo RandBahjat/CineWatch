@@ -534,13 +534,17 @@ Return STRICT JSON with keys:
     }
 
     try {
-      let parsed;
-      try {
-        parsed = await callModel(PRIMARY_MODEL);
-      } catch (err) {
-        if (err?.name === "AbortError") throw err;
-        parsed = await callModel(FALLBACK_MODEL);
+      let parsed = null;
+      const modelsToTry = [PRIMARY_MODEL, FALLBACK_MODEL, "gemini-3.8-flash"];
+      for (let i = 0; i < modelsToTry.length; i++) {
+        try {
+          parsed = await callModel(modelsToTry[i]);
+          if (parsed) break;
+        } catch (err) {
+          if (err?.name === "AbortError") throw err;
+        }
       }
+      if (!parsed) return null;
 
       const idMap = new Map(allFiltered.map((m) => [String(m.id), m]));
       const items = (Array.isArray(parsed?.recommendedIds) ? parsed.recommendedIds : [])
