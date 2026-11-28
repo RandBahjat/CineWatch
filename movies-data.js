@@ -27,7 +27,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Hunger Games: Sunrise on the Reaping",
+    title: "",
     type: "Movie",
     year: 2026,
     rating: 7.5,
