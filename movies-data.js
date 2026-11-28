@@ -27,6 +27,27 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "The Hunger Games: Sunrise on the Reaping",
+    type: "Movie",
+    year: 2026,
+    rating: 7.5,
+    age: "PG-13",
+    duration: "2h 38m",
+    genres: ["Action", "Adventure", "Sci-Fi","Drama","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3JCU7NkZeljHmEVgGGhfWouuewP.jpg",
+    videoUrl: "1300968",
+    trailerUrl: "https://youtu.be/fS35YSjopjE?si=mqew9Aij_qsLIQPi",
+    overview: "Set twenty-four years before the events of The Hunger Games, the story begins on the morning of the reaping for the 50th Hunger Games—also known as the Second Quarter Quell—where twice as many tributes are taken from each district. Sixteen-year-old Haymitch Abernathy of District 12 is unexpectedly torn from his family and the girl he loves, thrust into a deceptively beautiful yet lethally engineered arena alongside forty-seven other tributes. Navigating the Capitol's ruthless propaganda and President Snow's twisted games, Haymitch discovers a spark of rebellion that will change Panem—and haunt him—forever.",
+    overviewKurdish: "چیرۆکەکە بیست و چوار ساڵ پێش ڕووداوەکانی فیلمی یەکەمی «یارییەکانی برسێتی» ڕوودەدات و لە بەیانی ڕۆژی هەڵبژاردنی پەنجاهەمین خولی یارییەکاندا دەست پێدەکات، کە تێیدا دوو هێندەی جاران گەنج لە هەر ناوچەیەکەوە دەبرێنە ناو گۆڕەپانی مەرگەوە. «هەیمیچ ئابێرناسی» تەمەن شانزە ساڵ لە ناوچەی ١٢ بە شێوەیەکی چاوەڕواننەکراو لە خێزانەکەی و خۆشەویستەکەی دادەبڕێت و لەگەڵ چل و حەوت بەشداربووی دیکەدا فڕێ دەدرێتە ناو گۆڕەپانێکی جوان بەڵام پڕ لە تەڵە و ژەهر. لەناو درۆ و پڕوپاگەندە بێبەزەییەکانی کاپیتۆڵ و یارییە شەڕانگێزەکانی سەرۆک سنۆدا، هەیمیچ ناچارە تەنها بۆ مانەوە شەڕ نەکات، بەڵکو ڕووبەڕووی سیستەمێک ببێتەوە کە ژیانی بۆ هەمیشە دەگۆڕێت.",
+    director: "Francis Lawrence",
+    cast: ["Joseph Zada, Ralph Fiennes, Elle Fanning, Jesse Plemons, Mckenna Grace, Kieran Culkin, Glenn Close, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., Ben Wang, Woody Harrelson, Jennifer Lawrence, Josh Hutcherson"],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Way of the Warrior Kid",
     type: "Movie",
     year: 2026,
