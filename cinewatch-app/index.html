@@ -302,7 +302,7 @@
           var params = new URLSearchParams(window.location.search);
           var sec = params.get('section') || params.get('view');
           var isNav = sessionStorage.getItem('cw_navigated');
-          if (sec && ['home', 'movies', 'series', 'anime', 'watchlist', 'continue'].indexOf(sec) !== -1) {
+          if (sec && ['home', 'movies', 'series', 'anime', 'actors', 'watchlist', 'continue'].indexOf(sec) !== -1) {
             document.body.classList.remove('view-home');
             document.body.classList.add('view-' + sec);
           }
